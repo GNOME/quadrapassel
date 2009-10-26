@@ -5,8 +5,8 @@
   <!ENTITY appversion "2.12">
   <!ENTITY manrevision "2.8">
   <!ENTITY date "June 2004">
-  <!ENTITY app "<application>Gnometris</application>">
-  <!ENTITY appname "Gnometris">
+  <!ENTITY app "<application>Quadrapassel</application>">
+  <!ENTITY appname "Quadrapassel">
   <!ENTITY version "2.8"> 
 ]>
 
@@ -28,7 +28,7 @@
 
     <abstract role="description">
       <para>
-	Gnometris is GNOME's version of Tetris, the classic game of 
+	Quadrapassel is GNOME's version of Tetris, the classic game of 
 	interlocking four-piece blocks. As they fall from the top, 
 	the player must orient them to fit the other blocks at the 
 	bottom so that they form a complete horizontal line, in which 
@@ -119,7 +119,7 @@ application or
   </articleinfo>
 
   <indexterm zone="index"> 
-    <primary>Gnometris</primary> 
+    <primary>Quadrapassel</primary> 
   </indexterm>
 
 <!-- ==============================Document Body==================-->
@@ -128,17 +128,17 @@ application or
  <title>Introduction</title>
 
 <!--synopsis of game-->
-  <para><application>Gnometris</application> comes from the classic falling-block game, <application>Tetris</application>. The goal of the game is to create complete horizontal lines of blocks, which will disappear. The blocks come in seven different shapes made from four blocks each: one straight, two L-shaped, one square, and two S-shaped. The blocks fall from the top center of the screen in a random order. You rotate the blocks and move them across the screen to drop them in complete lines. You score by dropping blocks fast and completing lines. As your score gets higher, you level up and the blocks fall faster.</para>
+  <para><application>Quadrapassel</application> comes from the classic falling-block game, <application>Tetris</application>. The goal of the game is to create complete horizontal lines of blocks, which will disappear. The blocks come in seven different shapes made from four blocks each: one straight, two L-shaped, one square, and two S-shaped. The blocks fall from the top center of the screen in a random order. You rotate the blocks and move them across the screen to drop them in complete lines. You score by dropping blocks fast and completing lines. As your score gets higher, you level up and the blocks fall faster.</para>
 
 <!--running game-->
-   <para>To run <application>Gnometris</application>, select <menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, or type <command>gnometris</command> in the command line.</para>
+   <para>To run <application>Quadrapassel</application>, select <menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, or type <command>quadrapassel</command> in the command line.</para>
 
 <!--part of gnome-games-->
-   <para><application>Gnometris</application> is included in the <filename>gnome-games</filename> package, which is part of the GNOME desktop environment. This document describes version &version; of <application>Gnometris</application>.</para>
+   <para><application>Quadrapassel</application> is included in the <filename>gnome-games</filename> package, which is part of the GNOME desktop environment. This document describes version &version; of <application>Quadrapassel</application>.</para>
 </sect1>
 
 <sect1 id="s1-playing">
- <title>Playing <application>Gnometris</application></title>
+ <title>Playing <application>Quadrapassel</application></title>
   <para>You can score through two actions: completing lines and dropping blocks quickly. </para>
    <sect2 id="s2-block-moving">
      <title> Moving the Blocks</title>
@@ -165,11 +165,11 @@ application or
     </sect2>
     <sect2 id="s2-endgame">
      <title>Ending the Game</title>
-      <para>Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</guimenuitem></menuchoice> to end your current game without quiting Gnometris.</para>
+      <para>Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</guimenuitem></menuchoice> to end your current game without quiting Quadrapassel.</para>
     </sect2>
     <sect2 id="s2-quitgame">
-     <title>Quiting the <application>Gnometris</application></title>
-      <para>To completely quit <application>Gnometris</application> go to <menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></menuchoice>. If you are in the middle of a game when you quit, you will end your game without saving your score.</para>
+     <title>Quiting the <application>Quadrapassel</application></title>
+      <para>To completely quit <application>Quadrapassel</application> go to <menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></menuchoice>. If you are in the middle of a game when you quit, you will end your game without saving your score.</para>
     </sect2>
     <sect2 id="s2-scoring">
      <title>Scoring Points</title>
@@ -183,10 +183,10 @@ application or
 
  
 <sect1 id="s1-customizegame">
- <title>Customizing <application>Gnometris</application></title>
+ <title>Customizing <application>Quadrapassel</application></title>
   <sect2 id="s2-customstartup">
    <title>Customizing Game Start-up</title>
-    <para>By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize a variety of features for the start-up of each Gnometris game: number and density of pre-filled rows, and starting level. "Pre-filled rows" refers to how many rows will already have blocks in them when you start each new game.</para>
+    <para>By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize a variety of features for the start-up of each Quadrapassel game: number and density of pre-filled rows, and starting level. "Pre-filled rows" refers to how many rows will already have blocks in them when you start each new game.</para>
     <sect3 id="s3-numberpfr">
      <title>Number of Pre-filled Rows</title>
       <para>You can change the number of rows that already have blocks at the start-up of each new game by using the spin box. You can start with up to 19 rows pre-filled at the start-up of your game. The default number of pre-filled rows is zero.</para>
@@ -233,15 +233,15 @@ application or
      </sect3>
    </sect2>
    <sect2 id="s2-customlook">
-    <title>Customizing the Look of <application>Gnometris</application></title>
-    <para>Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize the look of <application>Gnometris</application>: images for the blocks.</para>
+    <title>Customizing the Look of <application>Quadrapassel</application></title>
+    <para>Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize the look of <application>Quadrapassel</application>: images for the blocks.</para>
      <sect3 id="s3-blockimage">
       <title>Block Image</title>
        <para>You can change the style of the blocks, including image and size. There are a variety of pre-made styles.</para>
      </sect3>
      <sect3 id="s3-background">
        <title>Background</title> <para>If you drag your favorite image
-       into the <application>Gnometris</application> window it will be
+       into the <application>Quadrapassel</application> window it will be
        used as the background. If you want a solid color as the
        background drag one in from either the color picker or from
        <application>nautlilus'</application> <guimenuitem>Backgrounds
@@ -254,7 +254,7 @@ application or
 <sect1 id="authors">
   <title>Authors</title>
   <para>
-   <application>Gnometris</application> was written by J. Marcin Gorycki
+   <application>Quadrapassel</application> was written by J. Marcin Gorycki
    in 1999 and maintained by Gnome Games Team since then. This manual was
    written by Angela Boyle.
    To report a bug or make a suggestion regarding this application or

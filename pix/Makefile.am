@@ -1,4 +1,4 @@
-pixmapdir = $(pkgdatadir)/gnometris/pixmaps
+pixmapdir = $(pkgdatadir)/quadrapassel/pixmaps
 
 pixmap_DATA = \
 	7blocks-tig.png \

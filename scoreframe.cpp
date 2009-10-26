@@ -104,7 +104,7 @@ ScoreFrame::scoreLastLineBonus ()
 {
 	incScore (10000*level);
 	// FIXME: Get it its own sound?
-	games_sound_play ("gnometris");
+	games_sound_play ("quadrapassel");
 }
 
 int

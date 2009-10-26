@@ -144,7 +144,7 @@ Tetris::Tetris(int cmdlLevel):
 
 	/* Locate our background image. */
 
-	outdir = g_build_filename (g_get_user_data_dir (), "gnometris", NULL);
+	outdir = g_build_filename (g_get_user_data_dir (), "quadrapassel", NULL);
 	g_mkdir_with_parents (outdir, 0700);
 	bgPixmap = g_build_filename (outdir, "background.bin", NULL);
 	g_free (outdir);
@@ -152,7 +152,7 @@ Tetris::Tetris(int cmdlLevel):
 	/*  Use default background image, if none found in user's home dir.*/
 	if (!g_file_test (bgPixmap, G_FILE_TEST_EXISTS)) {
 		dname = games_runtime_get_directory (GAMES_RUNTIME_GAME_PIXMAP_DIRECTORY);
-		defaultPixmap = g_build_filename (dname, "gnometris.svg", NULL);
+		defaultPixmap = g_build_filename (dname, "quadrapassel.svg", NULL);
 		default_bgimage = true;
 	}
 
@@ -853,7 +853,7 @@ Tetris::manageFallen()
 
 	int levelAfter = scoreFrame->scoreLines (field->checkFullLines());
 	if (levelAfter != levelBefore)
-		games_sound_play ("gnometris");
+		games_sound_play ("quadrapassel");
 	if ((levelBefore != levelAfter) || fastFall)
 		generateTimer(levelAfter);
 
@@ -1273,7 +1273,7 @@ Tetris::gameNew(GtkAction *action, void *d)
 	t->field->hidePauseMessage();
 	t->field->hideGameOverMessage();
 
-	games_sound_play ("gnometris");
+	games_sound_play ("quadrapassel");
 
 	return TRUE;
 }
@@ -1282,7 +1282,7 @@ int
 Tetris::gameHelp(GtkAction *action, void *data)
 {
 	Tetris *t = (Tetris*) data;
-	games_help_display(t->getWidget(), "gnometris", NULL);
+	games_help_display(t->getWidget(), "quadrapassel", NULL);
 	return TRUE;
 }
 

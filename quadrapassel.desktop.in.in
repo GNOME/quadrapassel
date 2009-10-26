@@ -1,8 +1,8 @@
 [Desktop Entry]
-_Name=Gnometris
+_Name=Quadrapassel
 _Comment=Fit falling blocks together
 Icon=gnome-gnometris
-Exec=gnometris
+Exec=quadrapassel
 Terminal=false
 Type=Application
 Categories=GNOME;GTK;Game;BlocksGame;

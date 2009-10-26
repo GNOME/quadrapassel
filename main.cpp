@@ -34,7 +34,7 @@ main(int argc, char *argv[])
 	gboolean retval;
 	GError *error = NULL;
 
-	if (!games_runtime_init ("gnometris"))
+	if (!games_runtime_init ("quadrapassel"))
 		return 1;
 
 #ifdef ENABLE_SETGID
@@ -63,11 +63,11 @@ main(int argc, char *argv[])
 		return 1;
 	}
 
-	g_set_application_name (_("Gnometris"));
+	g_set_application_name (_("Quadrapassel"));
 
 	gtk_window_set_default_icon_name ("gnome-gnometris");
 
-	games_conf_initialise ("Gnometris");
+	games_conf_initialise ("Quadrapassel");
 
 	if (clutter_init_with_args (NULL, NULL, NULL, NULL, NULL, &error) != CLUTTER_INIT_SUCCESS) {
 		g_printerr ("Failed to initialise clutter: %s\n", error->message);

@@ -2,9 +2,9 @@
 
   <schemalist>
     <schema>
-      <key>/schemas/apps/gnometris/options/block_pixmap</key>
-      <applyto>/apps/gnometris/options/block_pixmap</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/options/block_pixmap</key>
+      <applyto>/apps/quadrapassel/options/block_pixmap</applyto>
+      <owner>quadrapassel</owner>
       <type>string</type> 
       <default>7blocks-gw.png</default>
       <locale name="C">
@@ -14,9 +14,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/options/theme</key>
-      <applyto>/apps/gnometris/options/theme</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/options/theme</key>
+      <applyto>/apps/quadrapassel/options/theme</applyto>
+      <owner>quadrapassel</owner>
       <type>string</type> 
       <default>tangoshaded</default>
       <locale name="C">
@@ -26,9 +26,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/options/starting_level</key>
-      <applyto>/apps/gnometris/options/starting_level</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/options/starting_level</key>
+      <applyto>/apps/quadrapassel/options/starting_level</applyto>
+      <owner>quadrapassel</owner>
       <type>int</type> 
       <default>1</default>
       <locale name="C">
@@ -38,9 +38,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/options/usebgimage</key>
-      <applyto>/apps/gnometris/options/usebgimage</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/options/usebgimage</key>
+      <applyto>/apps/quadrapassel/options/usebgimage</applyto>
+      <owner>quadrapassel</owner>
       <type>bool</type> 
       <default>TRUE</default>
       <locale name="C">
@@ -50,9 +50,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/options/bgcolor</key>
-      <applyto>/apps/gnometris/options/bgcolor</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/options/bgcolor</key>
+      <applyto>/apps/quadrapassel/options/bgcolor</applyto>
+      <owner>quadrapassel</owner>
       <type>string</type> 
       <default>Black</default>
       <locale name="C">
@@ -62,9 +62,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/options/do_preview</key>
-      <applyto>/apps/gnometris/options/do_preview</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/options/do_preview</key>
+      <applyto>/apps/quadrapassel/options/do_preview</applyto>
+      <owner>quadrapassel</owner>
       <type>bool</type> 
       <default>TRUE</default>
       <locale name="C">
@@ -74,9 +74,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/options/do_preview</key>
-      <applyto>/apps/gnometris/options/do_preview</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/options/do_preview</key>
+      <applyto>/apps/quadrapassel/options/do_preview</applyto>
+      <owner>quadrapassel</owner>
       <type>bool</type> 
       <default>TRUE</default>
       <locale name="C">
@@ -86,9 +86,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/options/use_target</key>
-      <applyto>/apps/gnometris/options/use_target</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/options/use_target</key>
+      <applyto>/apps/quadrapassel/options/use_target</applyto>
+      <owner>quadrapassel</owner>
       <type>bool</type> 
       <default>FALSE</default>
       <locale name="C">
@@ -98,9 +98,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/options/random_block_colors</key>
-      <applyto>/apps/gnometris/options/random_block_colors</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/options/random_block_colors</key>
+      <applyto>/apps/quadrapassel/options/random_block_colors</applyto>
+      <owner>quadrapassel</owner>
       <type>bool</type> 
       <default>FALSE</default>
       <locale name="C">
@@ -110,9 +110,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/options/rotate_counter_clock_wise</key>
-      <applyto>/apps/gnometris/options/rotate_counter_clock_wise</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/options/rotate_counter_clock_wise</key>
+      <applyto>/apps/quadrapassel/options/rotate_counter_clock_wise</applyto>
+      <owner>quadrapassel</owner>
       <type>bool</type> 
       <default>TRUE</default>
       <locale name="C">
@@ -122,9 +122,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/options/line_fill_height</key>
-      <applyto>/apps/gnometris/options/line_fill_height</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/options/line_fill_height</key>
+      <applyto>/apps/quadrapassel/options/line_fill_height</applyto>
+      <owner>quadrapassel</owner>
       <type>int</type> 
       <default>0</default>
       <locale name="C">
@@ -134,9 +134,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/options/line_fill_probability</key>
-      <applyto>/apps/gnometris/options/line_fill_probability</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/options/line_fill_probability</key>
+      <applyto>/apps/quadrapassel/options/line_fill_probability</applyto>
+      <owner>quadrapassel</owner>
       <type>int</type> 
       <default>5</default>
       <locale name="C">
@@ -146,9 +146,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/controls/key_left</key>
-      <applyto>/apps/gnometris/controls/key_left</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/controls/key_left</key>
+      <applyto>/apps/quadrapassel/controls/key_left</applyto>
+      <owner>quadrapassel</owner>
       <type>int</type>
       <default>65361</default>
       <locale name="C">
@@ -158,9 +158,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/controls/key_right</key>
-      <applyto>/apps/gnometris/controls/key_right</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/controls/key_right</key>
+      <applyto>/apps/quadrapassel/controls/key_right</applyto>
+      <owner>quadrapassel</owner>
       <type>int</type>
       <default>65363</default>
       <locale name="C">
@@ -170,9 +170,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/controls/key_down</key>
-      <applyto>/apps/gnometris/controls/key_down</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/controls/key_down</key>
+      <applyto>/apps/quadrapassel/controls/key_down</applyto>
+      <owner>quadrapassel</owner>
       <type>int</type>
       <default>65364</default>
       <locale name="C">
@@ -182,9 +182,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/controls/key_drop</key>
-      <applyto>/apps/gnometris/controls/key_drop</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/controls/key_drop</key>
+      <applyto>/apps/quadrapassel/controls/key_drop</applyto>
+      <owner>quadrapassel</owner>
       <type>int</type>
       <default>32</default>
       <locale name="C">
@@ -194,9 +194,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/controls/key_rotate</key>
-      <applyto>/apps/gnometris/controls/key_rotate</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/controls/key_rotate</key>
+      <applyto>/apps/quadrapassel/controls/key_rotate</applyto>
+      <owner>quadrapassel</owner>
       <type>int</type>
       <default>65362</default>
       <locale name="C">
@@ -206,9 +206,9 @@
     </schema>
 
     <schema>
-      <key>/schemas/apps/gnometris/controls/key_pause</key>
-      <applyto>/apps/gnometris/controls/key_pause</applyto>
-      <owner>gnometris</owner>
+      <key>/schemas/apps/quadrapassel/controls/key_pause</key>
+      <applyto>/apps/quadrapassel/controls/key_pause</applyto>
+      <owner>quadrapassel</owner>
       <type>int</type>
       <default>65299</default>
       <locale name="C">
