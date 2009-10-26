@@ -16,11 +16,11 @@ msgstr ""
 "X-Poedit-Language: Chinese\n"
 "X-Poedit-Country: CHINA\n"
 
-#: C/gnometris.xml:27(title)
+#: C/quadrapassel.xml:27(title)
 msgid "<application>Gnometris</application> Manual"
 msgstr "<application>Gnometris</application> 手册"
 
-#: C/gnometris.xml:30(para)
+#: C/quadrapassel.xml:30(para)
 msgid ""
 "Gnometris is GNOME's version of Tetris, the classic game of interlocking "
 "four-piece blocks. As they fall from the top, the player must orient them to "
@@ -31,19 +31,19 @@ msgstr ""
 "戏者必须调整它们以适合底端的其他方块，然后它们形成一个完整的横线，该情况下该"
 "线上的方块消失，游戏者获得分数。 "
 
-#: C/gnometris.xml:40(year)
+#: C/quadrapassel.xml:40(year)
 msgid "2004"
 msgstr "2004"
 
-#: C/gnometris.xml:41(holder)
+#: C/quadrapassel.xml:41(holder)
 msgid "Angela Boyle"
 msgstr "Angela Boyle"
 
-#: C/gnometris.xml:56(publishername) C/gnometris.xml:95(para)
+#: C/quadrapassel.xml:56(publishername) C/quadrapassel.xml:95(para)
 msgid "GNOME Documentation Project"
 msgstr "GNOME 文档项目"
 
-#: C/gnometris.xml:2(para)
+#: C/quadrapassel.xml:2(para)
 msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
@@ -58,7 +58,7 @@ msgstr ""
 "fdl\">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副"
 "本。"
 
-#: C/gnometris.xml:12(para)
+#: C/quadrapassel.xml:12(para)
 msgid ""
 "This manual is part of a collection of GNOME manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
@@ -68,7 +68,7 @@ msgstr ""
 "本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手"
 "册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。"
 
-#: C/gnometris.xml:19(para)
+#: C/quadrapassel.xml:19(para)
 msgid ""
 "Many of the names used by companies to distinguish their products and "
 "services are claimed as trademarks. Where those names appear in any GNOME "
@@ -80,7 +80,7 @@ msgstr ""
 "档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而"
 "表明它们是商标。"
 
-#: C/gnometris.xml:35(para)
+#: C/quadrapassel.xml:35(para)
 msgid ""
 "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
 "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
@@ -101,7 +101,7 @@ msgstr ""
 "维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，"
 "那么您就没有权利使用任何文档或文档的修改版本；并且"
 
-#: C/gnometris.xml:55(para)
+#: C/quadrapassel.xml:55(para)
 msgid ""
 "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
 "NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
@@ -121,7 +121,7 @@ msgstr ""
 "失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关"
 "的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。"
 
-#: C/gnometris.xml:28(para)
+#: C/quadrapassel.xml:28(para)
 msgid ""
 "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
 "OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
@@ -130,39 +130,39 @@ msgstr ""
 "本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有"
 "以下含义：<placeholder-1/>"
 
-#: C/gnometris.xml:67(firstname)
+#: C/quadrapassel.xml:67(firstname)
 msgid "Angela"
 msgstr "Angela"
 
-#: C/gnometris.xml:68(surname)
+#: C/quadrapassel.xml:68(surname)
 msgid "Boyle"
 msgstr "Boyle"
 
-#: C/gnometris.xml:70(email)
+#: C/quadrapassel.xml:70(email)
 msgid "anjela@u.washington.edu"
 msgstr "anjela@u.washington.edu"
 
-#: C/gnometris.xml:89(revnumber)
+#: C/quadrapassel.xml:89(revnumber)
 msgid "Gnometris Manual V2.8"
 msgstr "Gnometris 手册 2.8 版"
 
-#: C/gnometris.xml:90(date)
+#: C/quadrapassel.xml:90(date)
 msgid "June 2004"
 msgstr "2004 年 6 月"
 
-#: C/gnometris.xml:92(para)
+#: C/quadrapassel.xml:92(para)
 msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
 msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
 
-#: C/gnometris.xml:100(releaseinfo)
+#: C/quadrapassel.xml:100(releaseinfo)
 msgid "This manual describes version 2.12 of Gnometris."
 msgstr "本手册描述的是 2.12 版的 Gnometris。"
 
-#: C/gnometris.xml:107(title)
+#: C/quadrapassel.xml:107(title)
 msgid "Feedback"
 msgstr "反馈"
 
-#: C/gnometris.xml:108(para)
+#: C/quadrapassel.xml:108(para)
 msgid ""
 "To report a bug or make a suggestion regarding the <application>Gnometris</"
 "application> application or this manual, follow the directions in the <ulink "
@@ -173,16 +173,16 @@ msgstr ""
 "以下指导<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME 反"
 "馈页面</ulink>。"
 
-#: C/gnometris.xml:120(primary)
+#: C/quadrapassel.xml:120(primary)
 msgid "Gnometris"
 msgstr "Gnometris"
 
-#: C/gnometris.xml:126(title)
+#: C/quadrapassel.xml:126(title)
 msgid "Introduction"
 msgstr "简介"
 
 #. synopsis of game
-#: C/gnometris.xml:129(para)
+#: C/quadrapassel.xml:129(para)
 msgid ""
 "<application>Gnometris</application> comes from the classic falling-block "
 "game, <application>Tetris</application>. The goal of the game is to create "
@@ -202,7 +202,7 @@ msgstr ""
 "提高，方块下降速度变快。"
 
 #. running game
-#: C/gnometris.xml:132(para)
+#: C/quadrapassel.xml:132(para)
 msgid ""
 "To run <application>Gnometris</application>, select "
 "<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
@@ -214,7 +214,7 @@ msgstr ""
 "menuchoice>，或在命令行中输入 <command>gnometris</command>。"
 
 #. part of gnome-games
-#: C/gnometris.xml:135(para)
+#: C/quadrapassel.xml:135(para)
 msgid ""
 "<application>Gnometris</application> is included in the <filename>gnome-"
 "games</filename> package, which is part of the GNOME desktop environment. "
@@ -224,25 +224,25 @@ msgstr ""
 "包中, 是 GNOME 桌面环境的一部分。本文档描述的是 2.8 版的 "
 "<application>Gnometris</application>。"
 
-#: C/gnometris.xml:139(title)
+#: C/quadrapassel.xml:139(title)
 msgid "Playing <application>Gnometris</application>"
 msgstr "进行<application>Gnometris</application>游戏"
 
-#: C/gnometris.xml:140(para)
+#: C/quadrapassel.xml:140(para)
 msgid ""
 "You can score through two actions: completing lines and dropping blocks "
 "quickly."
 msgstr "您可以通过两个动作获取分数：排成一线和快速下降方块。"
 
-#: C/gnometris.xml:142(title)
+#: C/quadrapassel.xml:142(title)
 msgid "Moving the Blocks"
 msgstr "移动方块"
 
-#: C/gnometris.xml:143(para)
+#: C/quadrapassel.xml:143(para)
 msgid "To play the game, you only need the four arrow keys."
 msgstr "要进行游戏，您只需要四个方向键。"
 
-#: C/gnometris.xml:146(para)
+#: C/quadrapassel.xml:146(para)
 msgid ""
 "<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
 "correspondingly across the screen."
@@ -250,7 +250,7 @@ msgstr ""
 "<keycap>左方向键</keycap> 和 <keycap>右方向键 </keycap> 可在游戏面板上横向移"
 "动方块。"
 
-#: C/gnometris.xml:149(para)
+#: C/quadrapassel.xml:149(para)
 msgid ""
 "<keycap>Up</keycap> rotates the block. The default rotation is "
 "counterclockwise. You can change the rotation under "
@@ -262,7 +262,7 @@ msgstr ""
 "块，通过  <menuchoice><guimenu>设置</guimenu><guimenuitem>首选项</"
 "guimenuitem></menuchoice> ，并反选<guilabel>逆时针旋转方块</guilabel>。"
 
-#: C/gnometris.xml:152(para)
+#: C/quadrapassel.xml:152(para)
 msgid ""
 "<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down "
 "the screen faster.<keycap>Down</keycap> moves the block down faster. "
@@ -272,11 +272,11 @@ msgstr ""
 "<keycap>下方向键</keycap>使方块加速下落。<keycap>空格键</keycap>可使方块直接"
 "下落到底部。"
 
-#: C/gnometris.xml:157(title)
+#: C/quadrapassel.xml:157(title)
 msgid "Starting a New Game"
 msgstr "开始新游戏"
 
-#: C/gnometris.xml:158(para)
+#: C/quadrapassel.xml:158(para)
 msgid ""
 "To begin a new game, go to <menuchoice><guimenu>Game</"
 "guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
@@ -293,11 +293,11 @@ msgstr ""
 "示您获得的分数。<guilabel>行数</guilabel>显示完成的行数。<guilabel>等级</"
 "guilabel> 显示游戏的难度等级。"
 
-#: C/gnometris.xml:161(title)
+#: C/quadrapassel.xml:161(title)
 msgid "Pausing the Game"
 msgstr "暂停游戏"
 
-#: C/gnometris.xml:162(para)
+#: C/quadrapassel.xml:162(para)
 msgid ""
 "To pause your game, go to <menuchoice><guimenu>Game</"
 "guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
@@ -310,11 +310,11 @@ msgstr ""
 "继续游戏，再次执行<menuchoice><guimenu>游戏</guimenu><guimenuitem>暂停游戏</"
 "guimenuitem></menuchoice>。"
 
-#: C/gnometris.xml:165(title)
+#: C/quadrapassel.xml:165(title)
 msgid "Ending the Game"
 msgstr "结束游戏"
 
-#: C/gnometris.xml:166(para)
+#: C/quadrapassel.xml:166(para)
 msgid ""
 "Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
 "guimenuitem></menuchoice> to end your current game without quiting Gnometris."
@@ -322,11 +322,11 @@ msgstr ""
 "执行<menuchoice><guimenu>游戏</guimenu><guimenuitem>结束游戏</guimenuitem></"
 "menuchoice> 可不退出 Gnometris 程序的情况下结束当前游戏。"
 
-#: C/gnometris.xml:169(title)
+#: C/quadrapassel.xml:169(title)
 msgid "Quiting the <application>Gnometris</application>"
 msgstr "退出 <application>Gnometris</application>"
 
-#: C/gnometris.xml:170(para)
+#: C/quadrapassel.xml:170(para)
 msgid ""
 "To completely quit <application>Gnometris</application> go to "
 "<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
@@ -337,11 +337,11 @@ msgstr ""
 "戏</guimenu><guimenuitem>退出</guimenuitem></menuchoice>。如果您在游戏中退"
 "出，游戏会退出，分数不会被保存。"
 
-#: C/gnometris.xml:173(title)
+#: C/quadrapassel.xml:173(title)
 msgid "Scoring Points"
 msgstr "游戏分数"
 
-#: C/gnometris.xml:174(para)
+#: C/quadrapassel.xml:174(para)
 msgid ""
 "You score points through two methods: dropping blocks faster and deleting "
 "complete lines of blocks. When you delete lines, you get more points, but "
@@ -353,11 +353,11 @@ msgstr ""
 "时，您将会获得更多的分数，但加速方块下落将会更快的增加分数。当你等级提高时，"
 "方块将会快速下落。最高等级是 10 ，此时您将只有 1 秒的时间安排每个方块。"
 
-#: C/gnometris.xml:177(title)
+#: C/quadrapassel.xml:177(title)
 msgid "Viewing Past Scores"
 msgstr "查看过去的分数"
 
-#: C/gnometris.xml:178(para)
+#: C/quadrapassel.xml:178(para)
 msgid ""
 "You can view the top ten scores played on your computer through "
 "<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
@@ -368,15 +368,15 @@ msgstr ""
 "guimenu><guimenuitem>分数</guimenuitem></menuchoice>。用户的名字显示在分数和"
 "游戏时刻后。"
 
-#: C/gnometris.xml:184(title)
+#: C/quadrapassel.xml:184(title)
 msgid "Customizing <application>Gnometris</application>"
 msgstr "自定义<application>Gnometris</application>"
 
-#: C/gnometris.xml:186(title)
+#: C/quadrapassel.xml:186(title)
 msgid "Customizing Game Start-up"
 msgstr "自定义游戏初始状态"
 
-#: C/gnometris.xml:187(para)
+#: C/quadrapassel.xml:187(para)
 msgid ""
 "By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
 "guimenuitem></menuchoice>, you can customize a variety of features for the "
@@ -388,11 +388,11 @@ msgstr ""
 "menuchoice>，您可以自定义每次游戏开始时的状态特性：预填充的行数和密度，游戏等"
 "级。“预填充行数”指每次开始新游戏时已有方块的行数。"
 
-#: C/gnometris.xml:189(title)
+#: C/quadrapassel.xml:189(title)
 msgid "Number of Pre-filled Rows"
 msgstr "预填充的行数"
 
-#: C/gnometris.xml:190(para)
+#: C/quadrapassel.xml:190(para)
 msgid ""
 "You can change the number of rows that already have blocks at the start-up "
 "of each new game by using the spin box. You can start with up to 19 rows pre-"
@@ -402,11 +402,11 @@ msgstr ""
 "您可以通过微调按钮调整每次新游戏开始时已有方块的行数。开始游戏时预填充行数允"
 "许最大值为 19 。默认预填充的行数是 0 。"
 
-#: C/gnometris.xml:193(title)
+#: C/quadrapassel.xml:193(title)
 msgid "Density of Pre-filled Rows"
 msgstr "预填充行中的密度"
 
-#: C/gnometris.xml:194(para)
+#: C/quadrapassel.xml:194(para)
 msgid ""
 "You can change the density of the blocks in the pre-filled rows at the start-"
 "up of each game. You can choose a density up to 10 blocks. You should first "
@@ -417,11 +417,11 @@ msgstr ""
 "您必须首先在 <guilabel>预填充行数</guilabel> 中选择你要预备填充的行数。默认的"
 "方块密度是 3 。"
 
-#: C/gnometris.xml:197(title)
+#: C/quadrapassel.xml:197(title)
 msgid "Level to Start On"
 msgstr "启动的等级"
 
-#: C/gnometris.xml:198(para)
+#: C/quadrapassel.xml:198(para)
 msgid ""
 "You can adjust the level of difficulty you start on. The highest level you "
 "can start on is 10, which is the highest level you can play to. The default "
@@ -430,11 +430,11 @@ msgstr ""
 "您可以调整游戏开始时的难度等级。您可以设置的最高级别是 10 级，也是您进行游戏"
 "所能达到的最高级别。默认的启动等级是 1 。"
 
-#: C/gnometris.xml:202(title)
+#: C/quadrapassel.xml:202(title)
 msgid "Customizing the Blocks"
 msgstr "自定义方块"
 
-#: C/gnometris.xml:203(para)
+#: C/quadrapassel.xml:203(para)
 msgid ""
 "From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
 "guimenuitem></menuchoice>, you can customize a variety of features related "
@@ -444,11 +444,11 @@ msgstr ""
 "menuchoice>，您可以自定义许多方块的特性：预览下一个方块，方块的颜色，方块的旋"
 "转。"
 
-#: C/gnometris.xml:205(title)
+#: C/quadrapassel.xml:205(title)
 msgid "Enable sounds"
 msgstr "启用声音"
 
-#: C/gnometris.xml:206(para)
+#: C/quadrapassel.xml:206(para)
 msgid ""
 "Turn the sound effects on and off using this option. If you are playing this "
 "game in any area which you share with other people, you should probably "
@@ -456,11 +456,11 @@ msgid ""
 msgstr ""
 "开启和关闭音效使用该选项。如果在有其他人的场合进行本游戏，您可能要选择关闭。"
 
-#: C/gnometris.xml:209(title)
+#: C/quadrapassel.xml:209(title)
 msgid "Preview Next Block"
 msgstr "预览下一个方块"
 
-#: C/gnometris.xml:210(para)
+#: C/quadrapassel.xml:210(para)
 msgid ""
 "Choose this option if you want to see the next block that is going to fall. "
 "This feature helps you plan the placement of your blocks."
@@ -468,11 +468,11 @@ msgstr ""
 "如果您想要查看将要下落的下一个方块请选择该选项。该特性能够帮助您安排方块的放"
 "置位置。"
 
-#: C/gnometris.xml:213(title)
+#: C/quadrapassel.xml:213(title)
 msgid "Use Random Block Colors"
 msgstr "使用随机方块颜色"
 
-#: C/gnometris.xml:214(para)
+#: C/quadrapassel.xml:214(para)
 msgid ""
 "Choose if you want the various block configurations to be color coded or "
 "randomly colored. If you use the colors to help you identify blocks, random "
@@ -481,20 +481,20 @@ msgstr ""
 "选定它以使将各式方块配置成预定颜色或随机颜色。如果使用颜色将帮助您识别方块，"
 "随机颜色将使游戏难度增加。"
 
-#: C/gnometris.xml:217(title)
+#: C/quadrapassel.xml:217(title)
 msgid "Rotate Blocks Counterclockwise"
 msgstr "逆时钟方向旋转方块"
 
-#: C/gnometris.xml:218(para)
+#: C/quadrapassel.xml:218(para)
 msgid ""
 "Choose this option if you want the blocks to rotate counterclockwise or not."
 msgstr "选择此选项以指定逆时针旋转或者相反。"
 
-#: C/gnometris.xml:221(title)
+#: C/quadrapassel.xml:221(title)
 msgid "Show where the block will land"
 msgstr "显示方块要下落的位置"
 
-#: C/gnometris.xml:222(para)
+#: C/quadrapassel.xml:222(para)
 msgid ""
 "If this feature is used a grey image of the block will show you where the "
 "block will land. This feature is very useful for beginning players, but "
@@ -503,11 +503,11 @@ msgstr ""
 "此特性使用一个方块的灰色图像并将显示方块下落位置。该特性对初级用户非常有用，"
 "但熟练的游戏者会感到干扰。"
 
-#: C/gnometris.xml:230(title)
+#: C/quadrapassel.xml:230(title)
 msgid "Customizing the Look of <application>Gnometris</application>"
 msgstr "自定义<application>Gnometris</application>的外观"
 
-#: C/gnometris.xml:231(para)
+#: C/quadrapassel.xml:231(para)
 msgid ""
 "Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
 "guimenuitem></menuchoice>, you can customize the look of "
@@ -517,21 +517,21 @@ msgstr ""
 "menuchoice>，您可以自定义<application>Gnometris</application>的外观：方块图"
 "像。"
 
-#: C/gnometris.xml:233(title)
+#: C/quadrapassel.xml:233(title)
 msgid "Block Image"
 msgstr "方块图像"
 
-#: C/gnometris.xml:234(para)
+#: C/quadrapassel.xml:234(para)
 msgid ""
 "You can change the style of the blocks, including image and size. There are "
 "a variety of pre-made styles."
 msgstr "您可以改变方块的类型，包括图像和大小。本游戏已有许多预设类型。"
 
-#: C/gnometris.xml:237(title)
+#: C/quadrapassel.xml:237(title)
 msgid "Background"
 msgstr "背景"
 
-#: C/gnometris.xml:237(para)
+#: C/quadrapassel.xml:237(para)
 msgid ""
 "If you drag your favorite image into the <application>Gnometris</"
 "application> window it will be used as the background. If you want a solid "
@@ -544,11 +544,11 @@ msgstr ""
 "<application>nautlilus'</application><guimenuitem>背景和徽标</guimenuitem> 对"
 "话框中选择(该对话框的重设项目也可使用)。"
 
-#: C/gnometris.xml:249(title)
+#: C/quadrapassel.xml:249(title)
 msgid "Authors"
 msgstr "作者"
 
-#: C/gnometris.xml:250(para)
+#: C/quadrapassel.xml:250(para)
 msgid ""
 "<application>Gnometris</application> was written by J. Marcin Gorycki in "
 "1999 and maintained by Gnome Games Team since then. This manual was written "
@@ -561,11 +561,11 @@ msgstr ""
 "供建议，按照以下链接的指导<ulink url=\"ghelp:user-guide?feedback-bugs\" type="
 "\"help\">文档</ulink>。"
 
-#: C/gnometris.xml:274(title)
+#: C/quadrapassel.xml:274(title)
 msgid "License"
 msgstr "许可"
 
-#: C/gnometris.xml:275(para)
+#: C/quadrapassel.xml:275(para)
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
@@ -577,7 +577,7 @@ msgstr ""
 "\"gnome-help:gpl\"><citetitle>GNU GPL协议</citetitle></ulink>自由发放和/或修"
 "改它；GPL 协议应该采用第二版或以后的任何版本。"
 
-#: C/gnometris.xml:277(para)
+#: C/quadrapassel.xml:277(para)
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -588,7 +588,7 @@ msgstr ""
 "它所造成的任何直接或间接后果都不承担任何责任。请参看<citetitle>GNU General "
 "Public License</citetitle>获取更多的信息。"
 
-#: C/gnometris.xml:279(para)
+#: C/quadrapassel.xml:279(para)
 msgid ""
 "A copy of the <citetitle>GNU General Public License</citetitle> is included "
 "as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
@@ -608,6 +608,6 @@ msgstr ""
 "<citetitle>GNU General Public License</citetitle>的副本。"
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: C/gnometris.xml:0(None)
+#: C/quadrapassel.xml:0(None)
 msgid "translator-credits"
 msgstr "Zhang Miao <mymzhang@gmail.com>,2009."

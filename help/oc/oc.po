@@ -20,27 +20,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);X-Generator: KBabel 1.11.4\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: C/gnometris.xml:27(title)
+#: C/quadrapassel.xml:27(title)
 msgid "<application>Gnometris</application> Manual V2.8"
 msgstr ""
 
-#: C/gnometris.xml:30(para)
+#: C/quadrapassel.xml:30(para)
 msgid "Gnometris is the classic game of interlocking quadrominoes."
 msgstr ""
 
-#: C/gnometris.xml:36(year)
+#: C/quadrapassel.xml:36(year)
 msgid "2004"
 msgstr "2004"
 
-#: C/gnometris.xml:37(holder)
+#: C/quadrapassel.xml:37(holder)
 msgid "Angela Boyle"
 msgstr "Angela Boyle"
 
-#: C/gnometris.xml:52(publishername) C/gnometris.xml:91(para)
+#: C/quadrapassel.xml:52(publishername) C/quadrapassel.xml:91(para)
 msgid "GNOME Documentation Project"
 msgstr "Projècte de documentacion de GNOME"
 
-#: C/gnometris.xml:2(para)
+#: C/quadrapassel.xml:2(para)
 msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
@@ -50,7 +50,7 @@ msgid ""
 "in the file COPYING-DOCS distributed with this manual."
 msgstr ""
 
-#: C/gnometris.xml:12(para)
+#: C/quadrapassel.xml:12(para)
 msgid ""
 "This manual is part of a collection of GNOME manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
@@ -58,7 +58,7 @@ msgid ""
 "section 6 of the license."
 msgstr ""
 
-#: C/gnometris.xml:19(para)
+#: C/quadrapassel.xml:19(para)
 msgid ""
 "Many of the names used by companies to distinguish their products and "
 "services are claimed as trademarks. Where those names appear in any GNOME "
@@ -67,7 +67,7 @@ msgid ""
 "capital letters."
 msgstr ""
 
-#: C/gnometris.xml:35(para)
+#: C/quadrapassel.xml:35(para)
 msgid ""
 "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
 "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
@@ -82,7 +82,7 @@ msgid ""
 "OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
 msgstr ""
 
-#: C/gnometris.xml:55(para)
+#: C/quadrapassel.xml:55(para)
 msgid ""
 "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
 "NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
@@ -96,62 +96,62 @@ msgid ""
 "POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 
-#: C/gnometris.xml:28(para)
+#: C/quadrapassel.xml:28(para)
 msgid ""
 "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
 "OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
 "<placeholder-1/>"
 msgstr ""
 
-#: C/gnometris.xml:63(firstname)
+#: C/quadrapassel.xml:63(firstname)
 msgid "Angela"
 msgstr "Angela"
 
-#: C/gnometris.xml:64(surname)
+#: C/quadrapassel.xml:64(surname)
 msgid "Boyle"
 msgstr "Boyle"
 
-#: C/gnometris.xml:66(email)
+#: C/quadrapassel.xml:66(email)
 msgid "anjela@u.washington.edu"
 msgstr "anjela@u.washington.edu"
 
-#: C/gnometris.xml:85(revnumber)
+#: C/quadrapassel.xml:85(revnumber)
 msgid "Gnometris Manual V2.8"
 msgstr ""
 
-#: C/gnometris.xml:86(date)
+#: C/quadrapassel.xml:86(date)
 msgid "June 2004"
 msgstr "Junh de 2004"
 
-#: C/gnometris.xml:88(para)
+#: C/quadrapassel.xml:88(para)
 msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
 msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
 
-#: C/gnometris.xml:96(releaseinfo)
+#: C/quadrapassel.xml:96(releaseinfo)
 msgid "This manual describes version 2.12 of Gnometris."
 msgstr ""
 
-#: C/gnometris.xml:103(title)
+#: C/quadrapassel.xml:103(title)
 msgid "Feedback"
 msgstr ""
 
-#: C/gnometris.xml:104(para)
+#: C/quadrapassel.xml:104(para)
 msgid ""
 "To report a bug or make a suggestion regarding the <application>Gnometris</"
 "application> application or this manual, follow the directions in the <ulink "
 "url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</ulink>."
 msgstr ""
 
-#: C/gnometris.xml:116(primary)
+#: C/quadrapassel.xml:116(primary)
 msgid "GNOME Tali"
 msgstr "GNOME Tali"
 
-#: C/gnometris.xml:122(title)
+#: C/quadrapassel.xml:122(title)
 msgid "Introduction"
 msgstr "Introduccion"
 
 #. synopsis of game
-#: C/gnometris.xml:125(para)
+#: C/quadrapassel.xml:125(para)
 msgid ""
 "<application>Gnometris</application> comes from the classic falling-block "
 "game, <application>Tetris</application>. The goal of the game is to create "
@@ -165,7 +165,7 @@ msgid ""
 msgstr ""
 
 #. running game
-#: C/gnometris.xml:128(para)
+#: C/quadrapassel.xml:128(para)
 msgid ""
 "To run <application>Gnometris</application>, select "
 "<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
@@ -174,38 +174,38 @@ msgid ""
 msgstr ""
 
 #. part of gnome-games
-#: C/gnometris.xml:131(para)
+#: C/quadrapassel.xml:131(para)
 msgid ""
 "<application>Gnometris</application> is included in the <filename>gnome-"
 "games</filename> package, which is part of the GNOME desktop environment. "
 "This document describes version 2.8 of <application>Gnometris</application>."
 msgstr ""
 
-#: C/gnometris.xml:135(title)
+#: C/quadrapassel.xml:135(title)
 msgid "Playing <application>Gnometris</application>"
 msgstr ""
 
-#: C/gnometris.xml:136(para)
+#: C/quadrapassel.xml:136(para)
 msgid ""
 "You can score through two actions: completing lines and dropping blocks "
 "quickly."
 msgstr ""
 
-#: C/gnometris.xml:138(title)
+#: C/quadrapassel.xml:138(title)
 msgid "Moving the Blocks"
 msgstr ""
 
-#: C/gnometris.xml:139(para)
+#: C/quadrapassel.xml:139(para)
 msgid "To play the game, you only need the four arrow keys."
 msgstr ""
 
-#: C/gnometris.xml:142(para)
+#: C/quadrapassel.xml:142(para)
 msgid ""
 "<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
 "correspondingly across the screen."
 msgstr ""
 
-#: C/gnometris.xml:145(para)
+#: C/quadrapassel.xml:145(para)
 msgid ""
 "<keycap>Up</keycap> rotates the block. The default rotation is "
 "counterclockwise. You can change the rotation under "
@@ -214,18 +214,18 @@ msgid ""
 "counterclockwise</guilabel>."
 msgstr ""
 
-#: C/gnometris.xml:148(para)
+#: C/quadrapassel.xml:148(para)
 msgid ""
 "<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down "
 "the screen faster.<keycap>Down</keycap> moves the block down faster. "
 "<keycap>Space-bar</keycap> moves the block directly to the bottom."
 msgstr ""
 
-#: C/gnometris.xml:153(title)
+#: C/quadrapassel.xml:153(title)
 msgid "Starting a New Game"
 msgstr ""
 
-#: C/gnometris.xml:154(para)
+#: C/quadrapassel.xml:154(para)
 msgid ""
 "To begin a new game, go to <menuchoice><guimenu>Game</"
 "guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
@@ -237,11 +237,11 @@ msgid ""
 "guilabel> shows the level of difficulty you are on."
 msgstr ""
 
-#: C/gnometris.xml:157(title)
+#: C/quadrapassel.xml:157(title)
 msgid "Pausing the Game"
 msgstr ""
 
-#: C/gnometris.xml:158(para)
+#: C/quadrapassel.xml:158(para)
 msgid ""
 "To pause your game, go to <menuchoice><guimenu>Game</"
 "guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
@@ -250,21 +250,21 @@ msgid ""
 "guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
 msgstr ""
 
-#: C/gnometris.xml:161(title)
+#: C/quadrapassel.xml:161(title)
 msgid "Ending the Game"
 msgstr ""
 
-#: C/gnometris.xml:162(para)
+#: C/quadrapassel.xml:162(para)
 msgid ""
 "Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
 "guimenuitem></menuchoice> to end your current game without quiting Gnometris."
 msgstr ""
 
-#: C/gnometris.xml:165(title)
+#: C/quadrapassel.xml:165(title)
 msgid "Quiting the <application>Gnometris</application>"
 msgstr ""
 
-#: C/gnometris.xml:166(para)
+#: C/quadrapassel.xml:166(para)
 msgid ""
 "To completely quit <application>Gnometris</application> go to "
 "<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
@@ -272,11 +272,11 @@ msgid ""
 "your game without saving your score."
 msgstr ""
 
-#: C/gnometris.xml:169(title)
+#: C/quadrapassel.xml:169(title)
 msgid "Scoring Points"
 msgstr ""
 
-#: C/gnometris.xml:170(para)
+#: C/quadrapassel.xml:170(para)
 msgid ""
 "You score points through two methods: dropping blocks faster and deleting "
 "complete lines of blocks. When you delete lines, you get more points, but "
@@ -285,11 +285,11 @@ msgid ""
 "have just over a second to manipulate each block."
 msgstr ""
 
-#: C/gnometris.xml:173(title)
+#: C/quadrapassel.xml:173(title)
 msgid "Viewing Past Scores"
 msgstr ""
 
-#: C/gnometris.xml:174(para)
+#: C/quadrapassel.xml:174(para)
 msgid ""
 "You can view the top ten scores played on your computer through "
 "<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
@@ -297,15 +297,15 @@ msgid ""
 "date they played."
 msgstr ""
 
-#: C/gnometris.xml:180(title)
+#: C/quadrapassel.xml:180(title)
 msgid "Customizing <application>Gnometris</application>"
 msgstr ""
 
-#: C/gnometris.xml:182(title)
+#: C/quadrapassel.xml:182(title)
 msgid "Customizing Game Start-up"
 msgstr ""
 
-#: C/gnometris.xml:183(para)
+#: C/quadrapassel.xml:183(para)
 msgid ""
 "By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
 "guimenuitem></menuchoice>, you can customize a variety of features for the "
@@ -314,11 +314,11 @@ msgid ""
 "have blocks in them when you start each new game."
 msgstr ""
 
-#: C/gnometris.xml:185(title)
+#: C/quadrapassel.xml:185(title)
 msgid "Number of Pre-filled Rows"
 msgstr ""
 
-#: C/gnometris.xml:186(para)
+#: C/quadrapassel.xml:186(para)
 msgid ""
 "You can change the number of rows that already have blocks at the start-up "
 "of each new game by using the spin box. You can start with up to 19 rows pre-"
@@ -326,11 +326,11 @@ msgid ""
 "is zero."
 msgstr ""
 
-#: C/gnometris.xml:189(title)
+#: C/quadrapassel.xml:189(title)
 msgid "Density of Pre-filled Rows"
 msgstr ""
 
-#: C/gnometris.xml:190(para)
+#: C/quadrapassel.xml:190(para)
 msgid ""
 "You can change the density of the blocks in the pre-filled rows at the start-"
 "up of each game. You can choose a density up to 10 blocks. You should first "
@@ -338,105 +338,105 @@ msgid ""
 "filled Rows</guilabel>. The default density of blocks is three."
 msgstr ""
 
-#: C/gnometris.xml:193(title)
+#: C/quadrapassel.xml:193(title)
 msgid "Level to Start On"
 msgstr ""
 
-#: C/gnometris.xml:194(para)
+#: C/quadrapassel.xml:194(para)
 msgid ""
 "You can adjust the level of difficulty you start on. The highest level you "
 "can start on is 10, which is the highest level you can play to. The default "
 "starting level is one."
 msgstr ""
 
-#: C/gnometris.xml:198(title)
+#: C/quadrapassel.xml:198(title)
 msgid "Customizing the Blocks"
 msgstr ""
 
-#: C/gnometris.xml:199(para)
+#: C/quadrapassel.xml:199(para)
 msgid ""
 "From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
 "guimenuitem></menuchoice>, you can customize a variety of features related "
 "to the blocks: previewing the next block, block colors, and block rotation."
 msgstr ""
 
-#: C/gnometris.xml:201(title)
+#: C/quadrapassel.xml:201(title)
 msgid "Enable sounds"
 msgstr "Activar los sons"
 
-#: C/gnometris.xml:202(para)
+#: C/quadrapassel.xml:202(para)
 msgid ""
 "Turn the sound effects on and off using this option. If you are playing this "
 "game in any area which you share with other people, you should probably "
 "select off."
 msgstr ""
 
-#: C/gnometris.xml:205(title)
+#: C/quadrapassel.xml:205(title)
 msgid "Preview Next Block"
 msgstr ""
 
-#: C/gnometris.xml:206(para)
+#: C/quadrapassel.xml:206(para)
 msgid ""
 "Choose this option if you want to see the next block that is going to fall. "
 "This feature helps you plan the placement of your blocks."
 msgstr ""
 
-#: C/gnometris.xml:209(title)
+#: C/quadrapassel.xml:209(title)
 msgid "Use Random Block Colors"
 msgstr ""
 
-#: C/gnometris.xml:210(para)
+#: C/quadrapassel.xml:210(para)
 msgid ""
 "Choose if you want the various block configurations to be color coded or "
 "randomly colored. If you use the colors to help you identify blocks, random "
 "colors will make the game more difficult."
 msgstr ""
 
-#: C/gnometris.xml:213(title)
+#: C/quadrapassel.xml:213(title)
 msgid "Rotate Blocks Counterclockwise"
 msgstr ""
 
-#: C/gnometris.xml:214(para)
+#: C/quadrapassel.xml:214(para)
 msgid "Choose this option if you want the blocks to rotate counterclockwise or not."
 msgstr ""
 
-#: C/gnometris.xml:217(title)
+#: C/quadrapassel.xml:217(title)
 msgid "Show where the block will land"
 msgstr ""
 
-#: C/gnometris.xml:218(para)
+#: C/quadrapassel.xml:218(para)
 msgid ""
 "If this feature is used a grey image of the block will show you where the "
 "block will land. This feature is very useful for beginning players, but "
 "experienced players will find it a distraction."
 msgstr ""
 
-#: C/gnometris.xml:226(title)
+#: C/quadrapassel.xml:226(title)
 msgid "Customizing the Look of <application>Gnometris</application>"
 msgstr ""
 
-#: C/gnometris.xml:227(para)
+#: C/quadrapassel.xml:227(para)
 msgid ""
 "Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
 "guimenuitem></menuchoice>, you can customize the look of "
 "<application>Gnometris</application>: images for the blocks."
 msgstr ""
 
-#: C/gnometris.xml:229(title)
+#: C/quadrapassel.xml:229(title)
 msgid "Block Image"
 msgstr ""
 
-#: C/gnometris.xml:230(para)
+#: C/quadrapassel.xml:230(para)
 msgid ""
 "You can change the style of the blocks, including image and size. There are "
 "a variety of pre-made styles."
 msgstr ""
 
-#: C/gnometris.xml:233(title)
+#: C/quadrapassel.xml:233(title)
 msgid "Background"
 msgstr "Fons"
 
-#: C/gnometris.xml:233(para)
+#: C/quadrapassel.xml:233(para)
 msgid ""
 "If you drag your favorite image into the <application>Gnometris</"
 "application> window it will be used as the background. If you want a solid "
@@ -445,11 +445,11 @@ msgid ""
 "guimenuitem> dialog (the reset item from that dialog also works)."
 msgstr ""
 
-#: C/gnometris.xml:245(title)
+#: C/quadrapassel.xml:245(title)
 msgid "Authors"
 msgstr "Autors"
 
-#: C/gnometris.xml:246(para)
+#: C/quadrapassel.xml:246(para)
 msgid ""
 "<application>Klotski</application> was written by J. Marcin Gorycki "
 "(<email>janusz.gorycki@intel.com</email>). This manual was written by Angela "
@@ -458,11 +458,11 @@ msgid ""
 "\" type=\"help\">document</ulink>."
 msgstr ""
 
-#: C/gnometris.xml:270(title)
+#: C/quadrapassel.xml:270(title)
 msgid "License"
 msgstr "Licéncia"
 
-#: C/gnometris.xml:271(para)
+#: C/quadrapassel.xml:271(para)
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
@@ -471,7 +471,7 @@ msgid ""
 "option) any later version."
 msgstr ""
 
-#: C/gnometris.xml:273(para)
+#: C/quadrapassel.xml:273(para)
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -479,7 +479,7 @@ msgid ""
 "License</citetitle> for more details."
 msgstr ""
 
-#: C/gnometris.xml:275(para)
+#: C/quadrapassel.xml:275(para)
 msgid ""
 "A copy of the <citetitle>GNU General Public License</citetitle> is included "
 "as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
@@ -492,7 +492,7 @@ msgid ""
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: C/gnometris.xml:0(None)
+#: C/quadrapassel.xml:0(None)
 msgid "translator-credits"
 msgstr "Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>"
 
