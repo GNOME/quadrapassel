@@ -1,0 +1,222 @@
+<gconfschemafile>
+
+  <schemalist>
+    <schema>
+      <key>/schemas/apps/gnometris/options/block_pixmap</key>
+      <applyto>/apps/gnometris/options/block_pixmap</applyto>
+      <owner>gnometris</owner>
+      <type>string</type> 
+      <default>7blocks-gw.png</default>
+      <locale name="C">
+        <short>Image to use for drawing blocks</short>
+        <long>Image to use for drawing blocks.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/options/theme</key>
+      <applyto>/apps/gnometris/options/theme</applyto>
+      <owner>gnometris</owner>
+      <type>string</type> 
+      <default>tangoshaded</default>
+      <locale name="C">
+        <short>The theme used for rendering the blocks</short>
+        <long>The name of the theme used for rendering the blocks and the background.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/options/starting_level</key>
+      <applyto>/apps/gnometris/options/starting_level</applyto>
+      <owner>gnometris</owner>
+      <type>int</type> 
+      <default>1</default>
+      <locale name="C">
+        <short>Level to start with</short>
+        <long>Level to start with.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/options/usebgimage</key>
+      <applyto>/apps/gnometris/options/usebgimage</applyto>
+      <owner>gnometris</owner>
+      <type>bool</type> 
+      <default>TRUE</default>
+      <locale name="C">
+        <short>Whether to use the background image</short>
+        <long>This selects whether or not to draw the background image over the background color.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/options/bgcolor</key>
+      <applyto>/apps/gnometris/options/bgcolor</applyto>
+      <owner>gnometris</owner>
+      <type>string</type> 
+      <default>Black</default>
+      <locale name="C">
+        <short>The background color</short>
+        <long>The background color, in a format gdk_color_parse understands.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/options/do_preview</key>
+      <applyto>/apps/gnometris/options/do_preview</applyto>
+      <owner>gnometris</owner>
+      <type>bool</type> 
+      <default>TRUE</default>
+      <locale name="C">
+        <short>Whether to preview the next block</short>
+        <long>Whether to preview the next block.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/options/do_preview</key>
+      <applyto>/apps/gnometris/options/do_preview</applyto>
+      <owner>gnometris</owner>
+      <type>bool</type> 
+      <default>TRUE</default>
+      <locale name="C">
+        <short>Whether to preview the next block</short>
+        <long>Whether to preview the next block.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/options/use_target</key>
+      <applyto>/apps/gnometris/options/use_target</applyto>
+      <owner>gnometris</owner>
+      <type>bool</type> 
+      <default>FALSE</default>
+      <locale name="C">
+        <short>Whether to provide a target</short>
+        <long>Whether to provide a graphical representation of where a block will land.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/options/random_block_colors</key>
+      <applyto>/apps/gnometris/options/random_block_colors</applyto>
+      <owner>gnometris</owner>
+      <type>bool</type> 
+      <default>FALSE</default>
+      <locale name="C">
+        <short>Whether to give blocks random colors</short>
+        <long>Whether to give blocks random colors.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/options/rotate_counter_clock_wise</key>
+      <applyto>/apps/gnometris/options/rotate_counter_clock_wise</applyto>
+      <owner>gnometris</owner>
+      <type>bool</type> 
+      <default>TRUE</default>
+      <locale name="C">
+        <short>Whether to rotate counter clock wise</short>
+        <long>Whether to rotate counter clock wise.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/options/line_fill_height</key>
+      <applyto>/apps/gnometris/options/line_fill_height</applyto>
+      <owner>gnometris</owner>
+      <type>int</type> 
+      <default>0</default>
+      <locale name="C">
+        <short>The number of rows to fill</short>
+        <long>The number of rows that are filled with random blocks at the start of the game.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/options/line_fill_probability</key>
+      <applyto>/apps/gnometris/options/line_fill_probability</applyto>
+      <owner>gnometris</owner>
+      <type>int</type> 
+      <default>5</default>
+      <locale name="C">
+        <short>The density of filled rows</short>
+        <long>The density of blocks in rows filled at the start of the game. The value is between 0 (for no blocks) and 10 (for a completely filled row).</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/controls/key_left</key>
+      <applyto>/apps/gnometris/controls/key_left</applyto>
+      <owner>gnometris</owner>
+      <type>int</type>
+      <default>65361</default>
+      <locale name="C">
+        <short>Move left</short>
+        <long>Key press to move left.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/controls/key_right</key>
+      <applyto>/apps/gnometris/controls/key_right</applyto>
+      <owner>gnometris</owner>
+      <type>int</type>
+      <default>65363</default>
+      <locale name="C">
+        <short>Move right</short>
+        <long>Key press to move right.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/controls/key_down</key>
+      <applyto>/apps/gnometris/controls/key_down</applyto>
+      <owner>gnometris</owner>
+      <type>int</type>
+      <default>65364</default>
+      <locale name="C">
+        <short>Move down</short>
+        <long>Key press to move down.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/controls/key_drop</key>
+      <applyto>/apps/gnometris/controls/key_drop</applyto>
+      <owner>gnometris</owner>
+      <type>int</type>
+      <default>32</default>
+      <locale name="C">
+        <short>Drop</short>
+        <long>Key press to drop.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/controls/key_rotate</key>
+      <applyto>/apps/gnometris/controls/key_rotate</applyto>
+      <owner>gnometris</owner>
+      <type>int</type>
+      <default>65362</default>
+      <locale name="C">
+        <short>Rotate</short>
+        <long>Key press to rotate.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnometris/controls/key_pause</key>
+      <applyto>/apps/gnometris/controls/key_pause</applyto>
+      <owner>gnometris</owner>
+      <type>int</type>
+      <default>65299</default>
+      <locale name="C">
+        <short>Pause</short>
+        <long>Key press to pause.</long>
+      </locale>
+    </schema>
+
+  </schemalist>
+
+</gconfschemafile>

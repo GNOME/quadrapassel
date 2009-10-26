@@ -1,0 +1,8 @@
+ASAP:
+* Clean up the code - remove global variables, smaller, more specialize classes, 
+   less static methods etc.
+
+Next:
+* configurable field size
+* major redesign: tetris, jewel and trojka in one shell (Sergey's (sipan@mit.edu) idea)
+

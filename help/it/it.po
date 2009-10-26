@@ -1,0 +1,664 @@
+# Italian translation of gnometris manul
+# Copyright (C) 2008, 2009 Free Software Foundation, Inc.
+# This file is distributed under the same licese as the gnome-games package.
+# Alessio Treglia <quadrispro@ubuntu.com>, 2008
+# Milo Casagrande <milo@ubuntu.com>, 2009
+msgid ""
+msgstr ""
+"Project-Id-Version: manuale gnometris\n"
+"POT-Creation-Date: 2009-03-11 20:01+0000\n"
+"PO-Revision-Date: 2009-03-11 21:07+0100\n"
+"Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: C/gnometris.xml:27(title)
+msgid "<application>Gnometris</application> Manual"
+msgstr "Manuale di <application>Gnometris</application>"
+
+#: C/gnometris.xml:30(para)
+msgid ""
+"Gnometris is GNOME's version of Tetris, the classic game of interlocking "
+"four-piece blocks. As they fall from the top, the player must orient them to "
+"fit the other blocks at the bottom so that they form a complete horizontal "
+"line, in which case that line disappears and the player gains points."
+msgstr ""
+"Gnometris è la versione di Tetris per GNOME, il classico gioco a incastro di "
+"blocchi da quattro pezzi. Mentre cadono dall'alto, il giocatore deve "
+"orientarli in modo da formare, con gli altri blocchi in basso, delle righe "
+"orizzontali complete, che scompariranno, ottenendo così dei punti."
+
+#: C/gnometris.xml:40(year)
+msgid "2004"
+msgstr "2004"
+
+#: C/gnometris.xml:41(holder)
+msgid "Angela Boyle"
+msgstr "Angela Boyle"
+
+#: C/gnometris.xml:56(publishername) C/gnometris.xml:95(para)
+msgid "GNOME Documentation Project"
+msgstr "Progetto di documentazione GNOME"
+
+#: C/gnometris.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr "Questo documento può essere copiato, distribuito o modificato solo in conformità con i termini della GNU Free Documentation License (GFDL) Versione 1.1 o delle versioni successive pubblicate dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Una copia della GFDL è disponibile a questo <ulink type=\"help\" url=\"ghelp:fdl\">collegamento</ulink> o nel file COPYING-DOCS distribuito con questo manuale."
+
+#: C/gnometris.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Questo manuale è parte di una collezione di manuali di GNOME distribuita "
+"sotto la GFDL. Se si vuole distribuire questo manuale separatamente dalla "
+"collezione, lo si può fare aggiungendo una copia della licenza al manuale, "
+"come descritto nella sezione 6 della licenza."
+
+#: C/gnometris.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Molti dei nomi utilizzati dalle aziende per distinguere i loro prodotti e "
+"servizi sono rivendicati come marchi commerciali. Dove questi nomi appaiono "
+"nella documentazione di GNOME, e i membri del progetto di documentazione di "
+"GNOME sono informati di questi marchi commerciali, allora i nomi sono in "
+"lettere maiuscole o con la lettera iniziale maiuscola."
+
+#: C/gnometris.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"IL DOCUMENTO VIENE FORNITO SENZA GARANZIE DI ALCUN TIPO,ESPLICITE O "
+"IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL "
+"DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, "
+"COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI "
+"DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA "
+"QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE "
+"MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO "
+"PRESENTARE QUALUNQUE TIPO DI DIFETTO,IL COSTO DI EVENTUALI INTERVENTI DI "
+"ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL "
+"REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA "
+"LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO "
+"DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I "
+"TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E"
+
+#: C/gnometris.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI "
+"COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE "
+"CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, "
+"QUALUNQUE DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O "
+"QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI "
+"QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O "
+"CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER "
+"PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO "
+"DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO "
+"DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE "
+"CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI."
+
+#: C/gnometris.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"QUESTO DOCUMENTO E LE SUE VERSIONI MODIFICATE SONO FORNITI IN BASE AI "
+"TERMINI DELLA GNU FREE DOCUMENTATION LICENSE, SOTTO INTESO CHE: <placeholder-"
+"1/>"
+
+#: C/gnometris.xml:67(firstname)
+msgid "Angela"
+msgstr "Angela"
+
+#: C/gnometris.xml:68(surname)
+msgid "Boyle"
+msgstr "Boyle"
+
+#: C/gnometris.xml:70(email)
+msgid "anjela@u.washington.edu"
+msgstr "anjela@u.washington.edu"
+
+#: C/gnometris.xml:89(revnumber)
+msgid "Gnometris Manual V2.8"
+msgstr "Manuale di Gnometris V2.8"
+
+#: C/gnometris.xml:90(date)
+msgid "June 2004"
+msgstr "Giugno 2004"
+
+#: C/gnometris.xml:92(para)
+msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
+msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
+
+#: C/gnometris.xml:100(releaseinfo)
+msgid "This manual describes version 2.12 of Gnometris."
+msgstr "Questo manuale si riferisce alla versione 2.12 di Gnometris."
+
+#: C/gnometris.xml:107(title)
+msgid "Feedback"
+msgstr "Commenti"
+
+#: C/gnometris.xml:108(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Gnometris</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr "Per segnalare un problema o inviare suggerimenti sull'applicazione <application>Gnometris</application> o su questo manuale, seguire le istruzioni presenti alla <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">pagina di commenti su GNOME</ulink>."
+
+#: C/gnometris.xml:120(primary)
+msgid "Gnometris"
+msgstr "Gnometris"
+
+#: C/gnometris.xml:126(title)
+msgid "Introduction"
+msgstr "Introduzione"
+
+#. synopsis of game
+#: C/gnometris.xml:129(para)
+msgid ""
+"<application>Gnometris</application> comes from the classic falling-block "
+"game, <application>Tetris</application>. The goal of the game is to create "
+"complete horizontal lines of blocks, which will disappear. The blocks come "
+"in seven different shapes made from four blocks each: one straight, two L-"
+"shaped, one square, and two S-shaped. The blocks fall from the top center of "
+"the screen in a random order. You rotate the blocks and move them across the "
+"screen to drop them in complete lines. You score by dropping blocks fast and "
+"completing lines. As your score gets higher, you level up and the blocks "
+"fall faster."
+msgstr ""
+"<application>Gnometris</application> deriva dal classico gioco dei blocchi "
+"che cadono, <application>Tetris</application>. L'obiettivo del gioco è "
+"creare delle righe orizzontali di blocchi che, una volta completate, "
+"scompariranno. I blocchi, formati da quattro pezzi ognuno, possono essere di "
+"sette forme differenti: uno rettilineo, due a forma di L, uno quadrato e due "
+"a forma di S. I blocchi cadono centralmente dall'alto dello schermo in "
+"ordine casuale, è possibile ruotarli e spostarli in modo da creare, con "
+"essi, delle righe complete. I punti si ottengono facendo cadere velocemente "
+"i blocchi e completando le righe. Con l'aumentare del proprio punteggio si "
+"passerà di livello e i blocchi cadranno sempre più velocemente."
+
+#. running game
+#: C/gnometris.xml:132(para)
+msgid ""
+"To run <application>Gnometris</application>, select "
+"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
+"guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, or type "
+"<command>gnometris</command> in the command line."
+msgstr ""
+"Per avviare <application>Gnometris</application>, selezionare "
+"<menuchoice><guimenu>Applicazioni</guimenu><guisubmenu>Giochi</"
+"guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, oppure "
+"digitare <command>gnometris</command> in una finestra di terminale."
+
+#. part of gnome-games
+#: C/gnometris.xml:135(para)
+msgid ""
+"<application>Gnometris</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>Gnometris</application>."
+msgstr ""
+"<application>Gnometris</application> è incluso nel pacchetto <filename>gnome-"
+"games</filename>, che fa parte dell'ambiente grafico GNOME. Questo documento "
+"si riferisce alla versione 2.8 di <application>Gnometris</application>."
+
+#: C/gnometris.xml:139(title)
+msgid "Playing <application>Gnometris</application>"
+msgstr "Giocare a <application>Gnometris</application>"
+
+#: C/gnometris.xml:140(para)
+msgid ""
+"You can score through two actions: completing lines and dropping blocks "
+"quickly."
+msgstr ""
+"È possibile ottenere punti in due modi: completando le righe e facendo "
+"cadere i blocchi velocemente."
+
+#: C/gnometris.xml:142(title)
+msgid "Moving the Blocks"
+msgstr "Spostare i blocchi"
+
+#: C/gnometris.xml:143(para)
+msgid "To play the game, you only need the four arrow keys."
+msgstr "Durante il gioco sono necessarie solo le quattro frecce direzionali."
+
+#: C/gnometris.xml:146(para)
+msgid ""
+"<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
+"correspondingly across the screen."
+msgstr ""
+"<keycap>Sinistra</keycap> e <keycap>Destra</keycap> muovono il blocco nelle "
+"direzioni corrispondenti nella schermata."
+
+#: C/gnometris.xml:149(para)
+msgid ""
+"<keycap>Up</keycap> rotates the block. The default rotation is "
+"counterclockwise. You can change the rotation under "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks "
+"counterclockwise</guilabel>."
+msgstr "Con il tasto <keycap>Su</keycap> si ruota il blocco. Il senso predefinito della rotazione è antiorario ed è possibile cambiarlo andando in <menuchoice><guimenu>Impostazioni</guimenu><guimenuitem>Preferenze</guimenuitem></menuchoice> e deselezionando l'opzione <guilabel>Ruotare in senso antiorario</guilabel>."
+
+#: C/gnometris.xml:152(para)
+msgid ""
+"<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down "
+"the screen faster.<keycap>Down</keycap> moves the block down faster. "
+"<keycap>Space-bar</keycap> moves the block directly to the bottom."
+msgstr ""
+"Con i tasti <keycap>Giù</keycap> e <keycap>Barra spaziatrice</keycap> si può "
+"spostare il blocco velocemente verso il basso. Con il tasto <keycap>Giù</"
+"keycap> si accelera la caduta del blocco, con la <keycap>Barra spaziatrice</"
+"keycap> si sposta il blocco direttamente nella parte inferiore."
+
+#: C/gnometris.xml:157(title)
+msgid "Starting a New Game"
+msgstr "Cominciare una nuova partita"
+
+#: C/gnometris.xml:158(para)
+msgid ""
+"To begin a new game, go to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
+"begin dropping blocks from the center of the top of the window. The default "
+"start-up of the game has no blocks in the game window and shows the next "
+"block that will fall in the upper right hand corner. <guilabel>Score</"
+"guilabel> shows the number of points you have earned. <guilabel>Lines</"
+"guilabel> shows the number of lines you have completed. <guilabel>Level</"
+"guilabel> shows the level of difficulty you are on."
+msgstr ""
+"Per iniziare una nuova partita è sufficiente andare su "
+"<menuchoice><guimenu>Gioco</guimenu><guimenuitem>Nuovo</guimenuitem></"
+"menuchoice>. La partita inizierà con la caduta dei blocchi dal centro della "
+"parte superiore della finestra. All'inizio della partita non sono presenti "
+"blocchi nella finestra di gioco e, nell'angolo in alto a destra, viene "
+"mostrato il prossimo blocco che cadrà. <guilabel>Punteggio</guilabel> mostra "
+"il numero di punti guadagnati, <guilabel>Linee</guilabel> mostra il numero "
+"di linee completate e <guilabel>Livello</guilabel> mostra l'attuale livello "
+"di difficoltà in cui ci si trova."
+
+#: C/gnometris.xml:161(title)
+msgid "Pausing the Game"
+msgstr "Mettere in pausa la partita"
+
+#: C/gnometris.xml:162(para)
+msgid ""
+"To pause your game, go to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
+"pause a game when you are playing. The time limit on pausing your game is "
+"unlimited. To unpause the game, go back to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
+msgstr ""
+"Per mettere in pausa la propria partita, andare su "
+"<menuchoice><guimenu>Gioco</guimenu><guimenuitem>Pausa</guimenuitem></"
+"menuchoice>. È possibile sospendere una partita solo mentre la si sta "
+"giocando, inoltre non c'è un tempo limite per la pausa. Per riprendere a "
+"giocare, andare nuovamente su <menuchoice><guimenu>Gioco</"
+"guimenu><guimenuitem>Pausa</guimenuitem></menuchoice>."
+
+#: C/gnometris.xml:165(title)
+msgid "Ending the Game"
+msgstr "Terminare le partita"
+
+#: C/gnometris.xml:166(para)
+msgid ""
+"Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
+"guimenuitem></menuchoice> to end your current game without quiting Gnometris."
+msgstr ""
+"Fare clic su <menuchoice><guimenu>Gioco</guimenu><guimenuitem>Fine gioco</"
+"guimenuitem></menuchoice> per terminare il gioco corrente senza uscire da "
+"Gnometris."
+
+#: C/gnometris.xml:169(title)
+msgid "Quiting the <application>Gnometris</application>"
+msgstr "Uscire da <application>Gnometris</application>"
+
+#: C/gnometris.xml:170(para)
+msgid ""
+"To completely quit <application>Gnometris</application> go to "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
+"menuchoice>. If you are in the middle of a game when you quit, you will end "
+"your game without saving your score."
+msgstr ""
+"Per uscire completamente da <application>Gnometris</application> fare clic "
+"su <menuchoice><guimenu>Gioco</guimenu><guimenuitem>Esci</guimenuitem></"
+"menuchoice>. Se si esce dal gioco durante lo svolgimento di una partita, "
+"quest'ultima verrà terminata senza salvare il proprio punteggio."
+
+#: C/gnometris.xml:173(title)
+msgid "Scoring Points"
+msgstr "Ottenere punti"
+
+#: C/gnometris.xml:174(para)
+msgid ""
+"You score points through two methods: dropping blocks faster and deleting "
+"complete lines of blocks. When you delete lines, you get more points, but "
+"dropping blocks faster will quickly add up. As you level up, the blocks will "
+"begin falling faster. The highest level is 10, at which point you will only "
+"have just over a second to manipulate each block."
+msgstr ""
+"Ci sono due metodi per ottenere i punti: velocizzando la caduta dei blocchi "
+"e cancellando linee complete degli stessi. Cancellando le linee si "
+"totalizzano più punti, ma facendo cadere velocemente i blocchi si ottengono "
+"più velocemente. Con l'aumentare del livello di gioco i blocchi cadranno "
+"sempre più velocemente; il livello più alto è il numero 10, durante il quale "
+"si avrà a disposizione poco più di un secondo di tempo per gestire ogni "
+"blocco."
+
+#: C/gnometris.xml:177(title)
+msgid "Viewing Past Scores"
+msgstr "Visualizzare i punteggi passati"
+
+#: C/gnometris.xml:178(para)
+msgid ""
+"You can view the top ten scores played on your computer through "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
+"menuchoice>. The names of the users are shown next the their score and the "
+"date they played."
+msgstr ""
+"È possibile visualizzare i dieci migliori punteggi del proprio computer "
+"facendo clic su <menuchoice><guimenu>Gioco</guimenu><guimenuitem>Punteggi</"
+"guimenuitem></menuchoice>. I nomi degli utenti vengono affiancati al "
+"punteggio ottenuto e alla data in cui hanno giocato."
+
+#: C/gnometris.xml:184(title)
+msgid "Customizing <application>Gnometris</application>"
+msgstr "Personalizzare <application>Gnometris</application>"
+
+#: C/gnometris.xml:186(title)
+msgid "Customizing Game Start-up"
+msgstr "Personalizzare l'inizio del gioco"
+
+#: C/gnometris.xml:187(para)
+msgid ""
+"By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize a variety of features for the "
+"start-up of each Gnometris game: number and density of pre-filled rows, and "
+"starting level. \"Pre-filled rows\" refers to how many rows will already "
+"have blocks in them when you start each new game."
+msgstr ""
+"Andando su <menuchoice><guimenu>Impostazioni</"
+"guimenu><guimenuitem>Preferenze</guimenuitem></menuchoice>, è possibile "
+"personalizzare un'ampia scelta di caratteristiche dell'avvio di ogni partita "
+"di Gnometris, come il numero e la densità delle righe già riempite e il "
+"livello iniziale. L'opzione «Numero di righe già riempite» indica quante "
+"righe conterranno già dei blocchi all'inizio della partita."
+
+#: C/gnometris.xml:189(title)
+msgid "Number of Pre-filled Rows"
+msgstr "Numero di righe già riempite"
+
+#: C/gnometris.xml:190(para)
+msgid ""
+"You can change the number of rows that already have blocks at the start-up "
+"of each new game by using the spin box. You can start with up to 19 rows pre-"
+"filled at the start-up of your game. The default number of pre-filled rows "
+"is zero."
+msgstr ""
+"È possibile modificare il numero di righe già riempite da blocchi all'inizio "
+"di ogni nuova partita utilizzando la casella corrispondente. È possibile "
+"iniziare le partita con un numero di righe già riempite pari a un massimo di "
+"19, mentre, in modo predefinito, tale numero sarà 0."
+
+#: C/gnometris.xml:193(title)
+msgid "Density of Pre-filled Rows"
+msgstr "Densità dei blocchi nelle righe già riempite"
+
+#: C/gnometris.xml:194(para)
+msgid ""
+"You can change the density of the blocks in the pre-filled rows at the start-"
+"up of each game. You can choose a density up to 10 blocks. You should first "
+"choose how many rows you want pre-filled under <guilabel>Number of Pre-"
+"filled Rows</guilabel>. The default density of blocks is three."
+msgstr ""
+"È possibile modificare la densità dei blocchi nelle righe già riempite "
+"all'inizio di ogni gioco. È possibile modificare la densità fino a un "
+"massimo di 10 blocchi. Si dovrebbe prima scegliere quante righe si "
+"desiderano avere già riempite con l'opzione <guilabel>Numero di righe già "
+"riempite</guilabel>. La densità predefinita è tre."
+
+#: C/gnometris.xml:197(title)
+msgid "Level to Start On"
+msgstr "Livello iniziale"
+
+#: C/gnometris.xml:198(para)
+msgid ""
+"You can adjust the level of difficulty you start on. The highest level you "
+"can start on is 10, which is the highest level you can play to. The default "
+"starting level is one."
+msgstr ""
+"È possibile cambiare il livello di difficoltà iniziale. Il livello più alto "
+"è il livello 10, il quale è anche il livello massimo di gioco. Il livello "
+"iniziale predefinito è 1."
+
+#: C/gnometris.xml:202(title)
+msgid "Customizing the Blocks"
+msgstr "Personalizzare i blocchi."
+
+#: C/gnometris.xml:203(para)
+msgid ""
+"From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize a variety of features related "
+"to the blocks: previewing the next block, block colors, and block rotation."
+msgstr ""
+"Attraverso <menuchoice><guimenu>Impostazioni</"
+"guimenu><guimenuitem>Preferenze</guimenuitem></menuchoice> è possibile "
+"personalizzare una scelta di caratteristiche legate ai blocchi, come i "
+"colori, il senso di rotazione e l'anteprima del blocco successivo."
+
+#: C/gnometris.xml:205(title)
+msgid "Enable sounds"
+msgstr "Abilitare i suoni"
+
+#: C/gnometris.xml:206(para)
+msgid ""
+"Turn the sound effects on and off using this option. If you are playing this "
+"game in any area which you share with other people, you should probably "
+"select off."
+msgstr ""
+"Con questa opzione si possono abilitare e disabilitare gli effetti sonori. "
+"Se si sta giocando in un luogo condiviso con altre persone, è probabile che "
+"si desideri disabilitare tale opzione."
+
+#: C/gnometris.xml:209(title)
+msgid "Preview Next Block"
+msgstr "Anteprima prossimo blocco"
+
+#: C/gnometris.xml:210(para)
+msgid ""
+"Choose this option if you want to see the next block that is going to fall. "
+"This feature helps you plan the placement of your blocks."
+msgstr ""
+"Scegliere questa opzione se si desidera conoscere quale sarà il prossimo "
+"oggetto a cadere. Questa caratteristica può essere d'aiuto per pianificare "
+"il posizionamento dei propri blocchi."
+
+#: C/gnometris.xml:213(title)
+msgid "Use Random Block Colors"
+msgstr "Usare colori casuali per i blocchi"
+
+#: C/gnometris.xml:214(para)
+msgid ""
+"Choose if you want the various block configurations to be color coded or "
+"randomly colored. If you use the colors to help you identify blocks, random "
+"colors will make the game more difficult."
+msgstr ""
+"Scegliere se si desidera che le varie configurazioni dei blocchi vengano "
+"colorate in maniera definita oppure in modo casuale. Se si usano i colori "
+"per facilitare l'identificazione dei blocchi, la scelta casuale dei colori "
+"rende il gioco più difficile."
+
+#: C/gnometris.xml:217(title)
+msgid "Rotate Blocks Counterclockwise"
+msgstr "Ruotare in senso antiorario"
+
+#: C/gnometris.xml:218(para)
+msgid ""
+"Choose this option if you want the blocks to rotate counterclockwise or not."
+msgstr ""
+"Scegliere questa opzione se si desidera ruotare i blocchi in senso "
+"antiorario."
+
+#: C/gnometris.xml:221(title)
+msgid "Show where the block will land"
+msgstr "Mostrare dove atterrerà il blocco"
+
+#: C/gnometris.xml:222(para)
+msgid ""
+"If this feature is used a grey image of the block will show you where the "
+"block will land. This feature is very useful for beginning players, but "
+"experienced players will find it a distraction."
+msgstr ""
+"Se questa opzione è abilitata verrà utilizzata un'immagine grigia per "
+"segnalare la posizione nella quale cadrà il blocco. Questa caratteristica è "
+"molto utile per i giocatori alle prime armi, mentre i giocatori esperti la "
+"considereranno una distrazione."
+
+#: C/gnometris.xml:230(title)
+msgid "Customizing the Look of <application>Gnometris</application>"
+msgstr "Personalizzare l'aspetto di <application>Gnometris</application>"
+
+#: C/gnometris.xml:231(para)
+msgid ""
+"Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize the look of "
+"<application>Gnometris</application>: images for the blocks."
+msgstr ""
+"In <menuchoice><guimenu>Impostazioni</guimenu><guimenuitem>Preferenze</"
+"guimenuitem></menuchoice> è possibile personalizzare l'aspetto di "
+"<application>Gnometris</application>: le immagini per i blocchi."
+
+#: C/gnometris.xml:233(title)
+msgid "Block Image"
+msgstr "Immagine del blocco"
+
+#: C/gnometris.xml:234(para)
+msgid ""
+"You can change the style of the blocks, including image and size. There are "
+"a variety of pre-made styles."
+msgstr ""
+"È possibile cambiare lo stile dei blocchi, incluse le immagini e la "
+"dimensione. Sono disponibili vari stili già pronti."
+
+#: C/gnometris.xml:237(title)
+msgid "Background"
+msgstr "Sfondo"
+
+#: C/gnometris.xml:237(para)
+msgid ""
+"If you drag your favorite image into the <application>Gnometris</"
+"application> window it will be used as the background. If you want a solid "
+"color as the background drag one in from either the color picker or from "
+"<application>nautlilus'</application><guimenuitem>Backgrounds and Emblems</"
+"guimenuitem> dialog (the reset item from that dialog also works)."
+msgstr ""
+"Se si trascina la propria immagine preferita nella finestra di "
+"<application>Gnometris</application> verrà usata come sfondo. Se invece si "
+"desidera uno sfondo in tinta unita trascinare un colore dalla raccolta "
+"oppure dalla finestra di dialogo <guimenuitem>Sfondi e simboli</guimenuitem> "
+"di <application>nautlilus</application> (anche l'elemento «Azzera» presente "
+"nella finestra di dialogo funziona)."
+
+#: C/gnometris.xml:249(title)
+msgid "Authors"
+msgstr "Autori"
+
+#: C/gnometris.xml:250(para)
+msgid ""
+"<application>Gnometris</application> was written by J. Marcin Gorycki in "
+"1999 and maintained by Gnome Games Team since then. This manual was written "
+"by Angela Boyle. To report a bug or make a suggestion regarding this "
+"application or this manual, follow the directions in this <ulink url=\"ghelp:"
+"user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr "<application>Gnometris</application> è stato scritto da J. Marcin Gorycki nel 1999 e mantenuto dallo «Gnome Games Team» da allora. Questo manuale è stato scritto da Angela Boyle. Per segnalare bug o inviare suggerimenti su questa applicazione o su questo manuale, seguire le indicazioni contenute in questo <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">documento</ulink>."
+
+#: C/gnometris.xml:274(title)
+msgid "License"
+msgstr "Licenza"
+
+#: C/gnometris.xml:275(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"Questo programma e le opere artistiche sono software libero; è lecito "
+"redistribuirli e/o modificarli secondo i termini della <citetitle>GNU "
+"General Public License</citetitle> come è pubblicata dalla Free Software "
+"Foundation; o la versione 2 della licenza o (a propria scelta) una versione "
+"successiva."
+
+#: C/gnometris.xml:277(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Questo programma è distribuito nella speranza che sia utile, ma SENZA ALCUNA "
+"GARANZIA; senza neppure la garanzia implicita di NEGOZIABILITÀ o di "
+"APPLICABILITÀ PER UN PARTICOLARE SCOPO. Si veda la <citetitle>GNU General "
+"Public License</citetitle> per avere maggiori dettagli."
+
+#: C/gnometris.xml:279(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"Una copia della <citetitle>GNU General Public License</citetitle> è inclusa "
+"nell'appendice del <citetitle>Manuale dell'utente GNOME</citetitle>. Inoltre "
+"è possibile ottenere una copia della <citetitle>GNU General Public License</"
+"citetitle> dalla Free Software Foundation visitando <ulink url=\"http://www."
+"fsf.org\" type=\"http\">il sito web</ulink> oppure scrivendo a <address> "
+"Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</"
+"street><city>Boston</city>, <state>MA</state><postcode>02110-1301</"
+"postcode><country>USA</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gnometris.xml:0(None)
+msgid "translator-credits"
+msgstr "Alessio Treglia <quadrispro@ubuntu-it.org>, 2008"
+
+#~ msgid "GNOME Tali"
+#~ msgstr "Gnometris"

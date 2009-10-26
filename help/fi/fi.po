@@ -1,0 +1,657 @@
+# Finnish help for gnometris (part of gnome-games package).
+# Copyright (C) 2009 Valto Wirkola.
+# This file is distributed under the same license as the package.
+# Valto Wirkola <valto [dot] wirkola [at] yahoo [dot] com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnometris\n"
+"POT-Creation-Date: 2009-03-07 20:24+0000\n"
+"PO-Revision-Date: 2009-03-08 21:14+0200\n"
+"Last-Translator: Valto Wirkola <valto [dot] wirkola [at] yahoo [dot] com>\n"
+"Language-Team: Finnish <<gnome-fi-laatu@lists.sourceforge.net>>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: C/gnometris.xml:27(title)
+msgid "<application>Gnometris</application> Manual"
+msgstr "<application>Gnometris</application> - Käyttöopas"
+
+#: C/gnometris.xml:30(para)
+msgid ""
+"Gnometris is GNOME's version of Tetris, the classic game of interlocking "
+"four-piece blocks. As they fall from the top, the player must orient them to "
+"fit the other blocks at the bottom so that they form a complete horizontal "
+"line, in which case that line disappears and the player gains points."
+msgstr ""
+"Gnometris on GNOMEn versio Tetriksestä, klassisesta 4-osaisten palikoiden "
+"pudottelupelistä. Pelaajan täytyy pyöritellä putoavat palikat toistensa "
+"väliin siten, että niistä syntyy aukoton vaakasuora rivi. Rivi katoaa ja "
+"pelaaja saa pisteitä."
+
+#: C/gnometris.xml:40(year)
+msgid "2004"
+msgstr "2004"
+
+#: C/gnometris.xml:41(holder)
+msgid "Angela Boyle"
+msgstr "Angela Boyle"
+
+#: C/gnometris.xml:56(publishername) C/gnometris.xml:95(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOMEn dokumentointiprojekti"
+
+#: C/gnometris.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software "
+"Foundationin julkaiseman GNU Free Documentation License -lisenssin (GFDL) "
+"version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman "
+"vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. "
+"Kopion GFDL:stä voi nähdä napsauttamalla <ulink type=\"help\" url=\"ghelp:fdl"
+"\">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-"
+"nimisen tiedoston."
+
+#: C/gnometris.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Tämä käyttöopas on osa GNOMEn GFDL-lisenssin alla julkaisemaa "
+"käyttöopaskokoelmaa. Jos haluat jakaa tätä käyttöohjetta erillään "
+"kokoelmasta, voit tehdä niin lisäämällä kopion lisenssistä käyttöoppaaseen, "
+"kuten lisenssin luvussa 6 kerrotaan."
+
+#: C/gnometris.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Monet yritysten käyttämät tuotteiden ja palveluiden nimet ovat omistettuja "
+"tavaramerkkejä. Kun näitä nimiä näkyy GNOMEn dokumentaatiossa ja GNOME "
+"Documentation Project:in jäsenet ovat korostaneet näitä tavaramerkkejä, "
+"nimet on kirjoitettu isolla alkukirjaimella tai kokonaan isoilla kirjaimilla."
+
+#: C/gnometris.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"ASIAKIRJA TARJOTAAN SELLAISENAAN, ILMAN MINKÄÄNLAISTA KIRJATTUA TAI "
+"KONKLUDENTTISTA RAJATONTA TAKUUTA ASIAKIRJAN TAI SEN MUOKATUN VERSION "
+"VIRHEETTÖMYYDESTÄ, SOPIVUUDESTA KAUPALLISEEN KÄYTTÖÖN TAI TIETTYYN "
+"KÄYTTÖTARKOITUKSEEN TAI LOUKKAAMATTOMUUDESTA. TÄYSI VASTUU ASIAKIRJAN TAI "
+"SEN MUOKATUN VERSION LAADUSTA, TARKKUUDESTA JA TOIMIVUUDESTA ON KÄYTTÄJÄLLÄ. "
+"JOS ASIAKIRJA TAI SEN MUOKATTU VERSIO OSOITTAUTUU JOLLAKIN TAVALLA "
+"VIRHEELLISEKSI, KÄYTTÄJÄ (EI ALKUPERÄINEN KIRJOITTAJA TAI MUU TEKIJÄ) VASTAA "
+"PALVELUJEN, KORJAUSTEN TAI OIKAISUJEN KUSTANNUKSISTA. TÄMÄ "
+"VASTUUVAPAUSLAUSEKE ON EROTTAMATON OSA LISENSSIÄ. ASIAKIRJAN TAI SEN "
+"MUOKATTUJEN VERSIOIDEN KÄYTTÖ ON SALLITTUA VAIN TÄMÄN VASTUUVAPAUSLAUSEKKEEN "
+"NOJALLA; SEKÄ"
+
+#: C/gnometris.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"MISSÄÄN OLOSUHTEISSA TAI MINKÄÄN OIKEUSLAITOKSEN ALAISUUDESSA, NIIN "
+"OIKEUSLOUKKAUKSISSA (MUKAAN LUKIEN HUOLIMATTOMUUS), SOPIMUS TAI MUUTOIN, "
+"ASIAKIRJAN TAI SEN MUOKATUN VERSION TEKIJÄ, ALKUPERÄINEN KIRJOITTAJA, KUKAAN "
+"AVUSTAJISTA, KUKAAN LEVITTÄJÄ TAIKKA KUKAAN TARJOAJA EI OLE VASTUUSSA "
+"KENELLEKÄÄN SUORASTA, EPÄSUORASTA, ERITYISESTÄ, TAPATURMAISESTA TAI "
+"VÄLILLISESTÄ VAHINGOSTA SISÄLTÄEN RAJOITUKSETTA VAHINGOT LIIKEARVON "
+"MENETYKSESTÄ, TYÖN KESKEYTYMISESTÄ, TIETOKONEVIRHEESTÄ TAI -HÄIRIÖSTÄ TAIKKA "
+"MISTÄÄN MUUSTA VAHINGOSTA TAI MENETYKSESTÄ, JOKA ILMENEE TAI LIITTYY "
+"ASIAKIRJAN TAI SEN MUOKATUN VERSION KÄYTTÖÖN EDES SILLOIN KUN OSAPUOLTA ON "
+"OLLUT TIETOINEN TÄLLAISEN VAHINGON MAHDOLLISUUDESTA."
+
+#: C/gnometris.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"ASIAKIRJA SEKÄ MUOKATUT VERSIOT ASIAKIRJASTA TARJOTAAN GNU FREE "
+"DOCUMENTATION LICENSEN EHDOIN SEKÄ YMMÄRTÄEN ETTÄ: <placeholder-1/>"
+
+#: C/gnometris.xml:67(firstname)
+msgid "Angela"
+msgstr "Angela"
+
+#: C/gnometris.xml:68(surname)
+msgid "Boyle"
+msgstr "Boyle"
+
+#: C/gnometris.xml:70(email)
+msgid "anjela@u.washington.edu"
+msgstr "anjela@u.washington.edu"
+
+#: C/gnometris.xml:89(revnumber)
+msgid "Gnometris Manual V2.8"
+msgstr "Gnometris - Käyttöohje V2.8"
+
+#: C/gnometris.xml:90(date)
+msgid "June 2004"
+msgstr "Kesäkuu 2004"
+
+#: C/gnometris.xml:92(para)
+msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
+msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
+
+#: C/gnometris.xml:100(releaseinfo)
+msgid "This manual describes version 2.12 of Gnometris."
+msgstr "Tämä käyttöohje käsittelee Gnometris-pelin versiota 2.12"
+
+#: C/gnometris.xml:107(title)
+msgid "Feedback"
+msgstr "Palaute"
+
+#: C/gnometris.xml:108(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Gnometris</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"Voit raportoida vikoja ja tehdä ehdotuksia <application>Gnometris</"
+"application>-sovellukseen ja tähän käyttöohjeeseen liittyen <ulink url="
+"\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOMEn palautesivulla</"
+"ulink>."
+
+#: C/gnometris.xml:120(primary)
+msgid "Gnometris"
+msgstr "Gnometris"
+
+#: C/gnometris.xml:126(title)
+msgid "Introduction"
+msgstr "Johdanto"
+
+#. synopsis of game
+#: C/gnometris.xml:129(para)
+msgid ""
+"<application>Gnometris</application> comes from the classic falling-block "
+"game, <application>Tetris</application>. The goal of the game is to create "
+"complete horizontal lines of blocks, which will disappear. The blocks come "
+"in seven different shapes made from four blocks each: one straight, two L-"
+"shaped, one square, and two S-shaped. The blocks fall from the top center of "
+"the screen in a random order. You rotate the blocks and move them across the "
+"screen to drop them in complete lines. You score by dropping blocks fast and "
+"completing lines. As your score gets higher, you level up and the blocks "
+"fall faster."
+msgstr ""
+"<application>Gnometris</application> on muunnelma klassisesta "
+"palikoidenpudottelupelistä, <application>Tetriksestä</application>. Pelissä "
+"pyritään hävittämään palikoita tekemällä niistä aukottomia vaakarivejä. "
+"Palikoita on seitsemää eri muotoa, jotka kaikki koostuvat neljän palikan "
+"sarjoista: yksi suora, kaksi L:n muotoista, yksi neliö ja kaksi S:n "
+"muotoista. Palikat putoilevat keskeltä ylhäältä satunnaisessa "
+"järjestyksessä. Tarkoituksena on kääntää ja liikuttaa putoavia palikoita "
+"näytöllä ja tehdä niistä täysiä rivejä. Saat pisteitä palikoiden nopeasta "
+"pudottamisesta ja täyttyneistä riveistä. Kun pisteesi lisääntyvät, "
+"vaikeustaso kasvaa ja palikat putoilevat nopeammin."
+
+#. running game
+#: C/gnometris.xml:132(para)
+msgid ""
+"To run <application>Gnometris</application>, select "
+"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
+"guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, or type "
+"<command>gnometris</command> in the command line."
+msgstr ""
+"Voit käynnistää <application>Gnometriksen</application> valitsemalla "
+"<menuchoice><guimenu>Sovellukset</guimenu><guisubmenu>Pelit</"
+"guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice> tai kirjoita "
+"komentoriville <command>gnometris</command>."
+
+#. part of gnome-games
+#: C/gnometris.xml:135(para)
+msgid ""
+"<application>Gnometris</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>Gnometris</application>."
+msgstr ""
+"<application>Gnometris</application> on osa <filename>gnome-games</filename>-"
+"pakettia, joka on osa GNOME-työpöytäympäristöä. Tämä asiakirja käsittelee "
+"<application>Gnometriksen</application> versiota 2.8."
+
+#: C/gnometris.xml:139(title)
+msgid "Playing <application>Gnometris</application>"
+msgstr "<application>Gnometriksen</application> pelaaminen"
+
+#: C/gnometris.xml:140(para)
+msgid ""
+"You can score through two actions: completing lines and dropping blocks "
+"quickly."
+msgstr ""
+"Saat pisteitä kahdella tavalla: täysistä riveistä ja nopeasti pudotetuista "
+"palikoista."
+
+#: C/gnometris.xml:142(title)
+msgid "Moving the Blocks"
+msgstr "Palikoiden liikuttaminen"
+
+#: C/gnometris.xml:143(para)
+msgid "To play the game, you only need the four arrow keys."
+msgstr "Pelin pelaamiseen tarvitset vain nuolinäppäimiä."
+
+#: C/gnometris.xml:146(para)
+msgid ""
+"<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
+"correspondingly across the screen."
+msgstr ""
+"<keycap>Vasen</keycap> ja <keycap>Oikea</keycap> liikuttavat palikkaa "
+"vasemmalle ja oikealle."
+
+#: C/gnometris.xml:149(para)
+msgid ""
+"<keycap>Up</keycap> rotates the block. The default rotation is "
+"counterclockwise. You can change the rotation under "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks "
+"counterclockwise</guilabel>."
+msgstr ""
+"<keycap>Ylös</keycap> kääntää palikkaa. Oletuskääntymissuunta on "
+"vastapäivään. Voit vaihtaa kääntymissuuntaa kohdassa "
+"<menuchoice><guimenu>Asetukset</guimenu><guimenuitem>Asetukset</"
+"guimenuitem></menuchoice> ja poistamalla valinnan kohdasta <guilabel>Pyöritä "
+"palikoita vastapäivään</guilabel>."
+
+#: C/gnometris.xml:152(para)
+msgid ""
+"<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down "
+"the screen faster.<keycap>Down</keycap> moves the block down faster. "
+"<keycap>Space-bar</keycap> moves the block directly to the bottom."
+msgstr ""
+"<keycap>Alas</keycap> ja <keycap>Välilyönti</keycap> liikuttavat palikkaa "
+"nopeammin alaspäin. <keycap>Alas</keycap> liikuttaa palikkaa nopeammin kun "
+"taas <keycap>välilyönti</keycap> tiputtaa palikan suoraan alas."
+
+#: C/gnometris.xml:157(title)
+msgid "Starting a New Game"
+msgstr "Uuden pelin aloittaminen"
+
+#: C/gnometris.xml:158(para)
+msgid ""
+"To begin a new game, go to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
+"begin dropping blocks from the center of the top of the window. The default "
+"start-up of the game has no blocks in the game window and shows the next "
+"block that will fall in the upper right hand corner. <guilabel>Score</"
+"guilabel> shows the number of points you have earned. <guilabel>Lines</"
+"guilabel> shows the number of lines you have completed. <guilabel>Level</"
+"guilabel> shows the level of difficulty you are on."
+msgstr ""
+"Voit aloittaa pelin etenemällä valikoissa <menuchoice><guimenu>Peli</"
+"guimenu><guimenuitem>Uusi</guimenuitem></menuchoice>. Palikat alkavat pudota "
+"ikkunan yläosan keskiöstä. Oletuksena pelin alussa pelikentällä ei ole "
+"palikoita ja seuraavana putoava palikka näkyy ikkunan oikeassa ylänurkassa. "
+"<guilabel>Pisteet</guilabel>-kohdassa näkyy keräämäsi pistemäärä, "
+"<guilabel>Rivejä</guilabel>-kohdassa täyttyneiden rivien määrä ja "
+"<guilabel>Taso</guilabel>-kohdassa nykyisen vaikeustasosi."
+
+# "Pause" odottaa uutta suomennosta.
+#: C/gnometris.xml:161(title)
+msgid "Pausing the Game"
+msgstr "Pelin keskeyttäminen"
+
+# "Pause" odottaa suomennostaan
+#: C/gnometris.xml:162(para)
+msgid ""
+"To pause your game, go to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
+"pause a game when you are playing. The time limit on pausing your game is "
+"unlimited. To unpause the game, go back to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
+msgstr "Voit keskeyttää pelin etenemällä valikoissa <menuchoice><guimenu>Peli</guimenu><guimenuitem>Keskeytä</guimenuitem></menuchoice>. Voit keskeyttää pelin vain pelatessasi. Pelin keskeytyksen pituudella ei ole aikarajaa. Jatkaaksesi peliä palaa takaisin <menuchoice><guimenu>Peli</guimenu><guimenuitem>Keskeytä</guimenuitem></menuchoice>."
+
+#: C/gnometris.xml:165(title)
+msgid "Ending the Game"
+msgstr "Pelin lopettaminen"
+
+#: C/gnometris.xml:166(para)
+msgid ""
+"Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
+"guimenuitem></menuchoice> to end your current game without quiting Gnometris."
+msgstr ""
+"Lopettaaksesi pelin sulkematta Gnometrista, etene valikoissa "
+"<menuchoice><guimenu>Peli</guimenu><guimenuitem>Lopeta peli</guimenuitem></"
+"menuchoice>."
+
+#: C/gnometris.xml:169(title)
+msgid "Quiting the <application>Gnometris</application>"
+msgstr "<application>Gnometriksen</application> lopettaminen"
+
+#: C/gnometris.xml:170(para)
+msgid ""
+"To completely quit <application>Gnometris</application> go to "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
+"menuchoice>. If you are in the middle of a game when you quit, you will end "
+"your game without saving your score."
+msgstr ""
+"Sulkeaksesi <application>Gnometriksen</application> kokonaan, etene "
+"valikoissa <menuchoice><guimenu>Peli</guimenu><guimenuitem>Lopeta</"
+"guimenuitem></menuchoice>. Jos poistut kesken pelin, peli päättyy ja "
+"pisteitäsi ei tallenneta."
+
+#: C/gnometris.xml:173(title)
+msgid "Scoring Points"
+msgstr "Pisteytys"
+
+#: C/gnometris.xml:174(para)
+msgid ""
+"You score points through two methods: dropping blocks faster and deleting "
+"complete lines of blocks. When you delete lines, you get more points, but "
+"dropping blocks faster will quickly add up. As you level up, the blocks will "
+"begin falling faster. The highest level is 10, at which point you will only "
+"have just over a second to manipulate each block."
+msgstr ""
+"Saat pisteitä kahdella tavalla: pudottamalla palikoita nopeasti ja "
+"hävittämällä rivejä niitä täyttämällä. Kun hävität rivejä, saat enemmän "
+"pisteitä, mutta pudottamalla palikoita nopeasti, saat nopeasti lisää "
+"pisteitä. Kun tasosi kasvaa, palikat putoavat nopeammin. Korkein taso on 10, "
+"jossa sinulla on vähän yli sekunti aikaa käsitellä yksittäistä palikkaa."
+
+#: C/gnometris.xml:177(title)
+msgid "Viewing Past Scores"
+msgstr "Pistehistorian katselu"
+
+#: C/gnometris.xml:178(para)
+msgid ""
+"You can view the top ten scores played on your computer through "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
+"menuchoice>. The names of the users are shown next the their score and the "
+"date they played."
+msgstr ""
+"Voit katsoa kymmentä parasta tietokoneellasi pelattua pistemäärää "
+"<menuchoice><guimenu>Peli</guimenu><guimenuitem>Pisteet</guimenuitem></"
+"menuchoice>. Pelaajien nimet ja päivämäärät näkyvät pistemäärien vieressä."
+
+#: C/gnometris.xml:184(title)
+msgid "Customizing <application>Gnometris</application>"
+msgstr "<application>Gnometriksen</application> räätälöinti"
+
+#: C/gnometris.xml:186(title)
+msgid "Customizing Game Start-up"
+msgstr "Pelin käynnistyksen räätälöinti"
+
+#: C/gnometris.xml:187(para)
+msgid ""
+"By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize a variety of features for the "
+"start-up of each Gnometris game: number and density of pre-filled rows, and "
+"starting level. \"Pre-filled rows\" refers to how many rows will already "
+"have blocks in them when you start each new game."
+msgstr ""
+"Voit räätälöidä käynnistysasetuksia etenemällä "
+"valikoissa<menuchoice><guimenu>Asetukset</guimenu><guimenuitem>Asetukset</"
+"guimenuitem></menuchoice>. Voit räätälöidä monia jokaisen Gnometris-pelin "
+"käynnistykseen liittyviä toimintoja, kuten esitäytettyjen rivien tiheyden ja "
+"määrän. \"Esitäytettyjen rivien määrä\" määrittää, kuinka monessa rivissä on "
+"palikoita jokaisen pelin alussa"
+
+#: C/gnometris.xml:189(title)
+msgid "Number of Pre-filled Rows"
+msgstr "Esitäytettyjen rivien määrä"
+
+#: C/gnometris.xml:190(para)
+msgid ""
+"You can change the number of rows that already have blocks at the start-up "
+"of each new game by using the spin box. You can start with up to 19 rows pre-"
+"filled at the start-up of your game. The default number of pre-filled rows "
+"is zero."
+msgstr ""
+"Voit valita monessako rivissä on palikoita pelin alussa käyttämällä "
+"lukurullaa. Voit aloittaa pelin jopa 19 esitäytetyn rivin kanssa. Oletuksena "
+"esitäytettyjä rivejä ei ole."
+
+#: C/gnometris.xml:193(title)
+msgid "Density of Pre-filled Rows"
+msgstr "Esitäytetyn rivin vahvuus"
+
+#: C/gnometris.xml:194(para)
+msgid ""
+"You can change the density of the blocks in the pre-filled rows at the start-"
+"up of each game. You can choose a density up to 10 blocks. You should first "
+"choose how many rows you want pre-filled under <guilabel>Number of Pre-"
+"filled Rows</guilabel>. The default density of blocks is three."
+msgstr ""
+"Voit valita, kuinka tiheitä esitäytetyt rivit ovat pelin alussa käyttämällä "
+"lukurullaa. Voit valita tiheydeksi jopa 10 palikkaa. Esitäytettyjen rivien "
+"määrän tulisi olla valittuna ennen tiheyden valintaa. Oletustiheys on 3 "
+"palikkaa."
+
+#: C/gnometris.xml:197(title)
+msgid "Level to Start On"
+msgstr "Aloitustaso"
+
+#: C/gnometris.xml:198(para)
+msgid ""
+"You can adjust the level of difficulty you start on. The highest level you "
+"can start on is 10, which is the highest level you can play to. The default "
+"starting level is one."
+msgstr ""
+"Voit asettaa tason, jolta peli alkaa. Korkein mahdollinen aloitustaso on 10, "
+"joka on myös pelin korkein taso. Oletuksena aloitustaso on 1."
+
+#: C/gnometris.xml:202(title)
+msgid "Customizing the Blocks"
+msgstr "Palikoiden räätälöinti"
+
+#: C/gnometris.xml:203(para)
+msgid ""
+"From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize a variety of features related "
+"to the blocks: previewing the next block, block colors, and block rotation."
+msgstr ""
+"Asetuksista (<menuchoice><guimenu>Asetukset</guimenu><guimenuitem>Asetukset</"
+"guimenuitem></menuchoice>) voit räätälöidä useita palikoiden ominaisuuksia: "
+"seuraavan palikan esikatselua, palikoiden värejä ja kiertoa."
+
+#: C/gnometris.xml:205(title)
+msgid "Enable sounds"
+msgstr "Äänet päälle"
+
+#: C/gnometris.xml:206(para)
+msgid ""
+"Turn the sound effects on and off using this option. If you are playing this "
+"game in any area which you share with other people, you should probably "
+"select off."
+msgstr ""
+"Voit kytkeä äänitehosteet päälle ja pois tällä valinnalla. Jos pelaat peliä "
+"alueella, jossa on muita ihmisiä, sinun olisi hyvä kytkeä äänet pois."
+
+#: C/gnometris.xml:209(title)
+msgid "Preview Next Block"
+msgstr "Seuraavan palikan esikatselu"
+
+#: C/gnometris.xml:210(para)
+msgid ""
+"Choose this option if you want to see the next block that is going to fall. "
+"This feature helps you plan the placement of your blocks."
+msgstr ""
+"Valitse tämä asetus, jos haluat nähdä seuraavana putoavan palikan. Tämän "
+"toiminto auttaa sinua suunnittelemaan palikoiden asettelua."
+
+#: C/gnometris.xml:213(title)
+msgid "Use Random Block Colors"
+msgstr "Käytä satunnaisia palikan värejä"
+
+#: C/gnometris.xml:214(para)
+msgid ""
+"Choose if you want the various block configurations to be color coded or "
+"randomly colored. If you use the colors to help you identify blocks, random "
+"colors will make the game more difficult."
+msgstr ""
+"Valitse, jos haluat eri palikoiden olevan värikoodattuja tai satunnaisen "
+"värisiä. Jos käytät värejä palikoiden tunnistamiseen, satunnaiset värit "
+"vaikeuttavat peliä."
+
+#: C/gnometris.xml:217(title)
+msgid "Rotate Blocks Counterclockwise"
+msgstr "Pyöritä palikoita vastapäivään"
+
+#: C/gnometris.xml:218(para)
+msgid ""
+"Choose this option if you want the blocks to rotate counterclockwise or not."
+msgstr ""
+"Valitse tämä asetus, jos haluat palikoiden pyörivän myötä- tai vastapäivään"
+
+#: C/gnometris.xml:221(title)
+msgid "Show where the block will land"
+msgstr "Näytä mihin palikka laskeutuu"
+
+#: C/gnometris.xml:222(para)
+msgid ""
+"If this feature is used a grey image of the block will show you where the "
+"block will land. This feature is very useful for beginning players, but "
+"experienced players will find it a distraction."
+msgstr ""
+"Jos toiminto on päällä, harmaa palikan kuva näyttää, minne palikka putoaa. "
+"Toiminto on hyödyllinen aloitteleville pelaajille, mutta kokeneemmat "
+"pelaajat tuntevat sen häiritsevänä."
+
+#: C/gnometris.xml:230(title)
+msgid "Customizing the Look of <application>Gnometris</application>"
+msgstr "<application>Gnometriksen</application> ulkoasun räätälöinti"
+
+#: C/gnometris.xml:231(para)
+msgid ""
+"Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize the look of "
+"<application>Gnometris</application>: images for the blocks."
+msgstr ""
+"Asetuksissa (<menuchoice><guimenu>Asetukset</guimenu><guimenuitem>Asetukset</"
+"guimenuitem></menuchoice>) voit räätälöidä <application>Gnometriksen</"
+"application> ulkoasua: palikoiden tyyliä."
+
+#: C/gnometris.xml:233(title)
+msgid "Block Image"
+msgstr "Palikoiden tyyli"
+
+#: C/gnometris.xml:234(para)
+msgid ""
+"You can change the style of the blocks, including image and size. There are "
+"a variety of pre-made styles."
+msgstr ""
+"Voit vaihtaa palikoiden tyyliä, kuten kuvaa ja kokoa. Pelin mukana tulee "
+"useita valmiita tyylejä."
+
+#: C/gnometris.xml:237(title)
+msgid "Background"
+msgstr "Taustakuva"
+
+#: C/gnometris.xml:237(para)
+msgid ""
+"If you drag your favorite image into the <application>Gnometris</"
+"application> window it will be used as the background. If you want a solid "
+"color as the background drag one in from either the color picker or from "
+"<application>nautlilus'</application><guimenuitem>Backgrounds and Emblems</"
+"guimenuitem> dialog (the reset item from that dialog also works)."
+msgstr ""
+"Jos vedät lempikuvasi <application>Gnometriksen</application> ikkunaan, "
+"kuvaa käytetään taustakuvana. Jos haluat tasaisen värin taustaksi, vedä väri "
+"joko värinvalitsimesta tai <application>nautilus</application>-sovelluksen "
+"<guimenuitem>Taustat ja tunnusmerkit</guimenuitem>-valintaikkunaa "
+"(valintaikkunan palautin toimii myös)"
+
+#: C/gnometris.xml:249(title)
+msgid "Authors"
+msgstr "Tekijät"
+
+#: C/gnometris.xml:250(para)
+msgid ""
+"<application>Gnometris</application> was written by J. Marcin Gorycki in "
+"1999 and maintained by Gnome Games Team since then. This manual was written "
+"by Angela Boyle. To report a bug or make a suggestion regarding this "
+"application or this manual, follow the directions in this <ulink url=\"ghelp:"
+"user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>Gnometriksen</application> on kirjoittanut J. Marcin Gorycki "
+"vuonna 1999 ja sitä on siitä asti ylläpitänyt Gnome Games Team. Käyttöohjeen "
+"on kirjoittanut Angela Boyle. Voit raportoida ohjelmavirheen tai ehdotuksen "
+"sovellukseen tai käyttöohjeeseen liittyen <ulink url=\"ghelp:user-guide?"
+"feedback-bugs\" type=\"help\">näiden ohjeiden</ulink> mukaisesti."
+
+#: C/gnometris.xml:274(title)
+msgid "License"
+msgstr "Käyttöoikeus"
+
+#: C/gnometris.xml:275(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"Tämä ohjelma on vapaa ohjelmisto. Voit jaella ja/tai muokata sitä Free "
+"Software Foundationin<ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public Licensen</citetitle></ulink> version 2 tai "
+"(valintasi mukaan) uudemman ehtojen mukaisesti."
+
+#: C/gnometris.xml:277(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Ohjelma on jaettu toivoen sen olevan hyödyllinen, mutta ILMAN MITÄÄN "
+"TAKUUTA, edes epäsuoraa takuuta MYYNTIKELPOISEKSI ja SOPIVAKSI ERITYISEEN "
+"KÄYTTÖTARKOITUKSEEN. Katso lisätietoa <citetitle>GNU General Public License</"
+"citetitle>."
+
+#: C/gnometris.xml:279(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"<citetitle>GNU General Public License</citetitle> on liitetty liitteenä "
+"<citetitle>GNOME Users Guide</citetitle>-käyttöohjekokoelmaan. Voit myös "
+"hankkia kopion <citetitle>GNU General Public Licensesta</citetitle> Free "
+"Software Foundationilta käymällä <ulink type=\"http\" url=\"http://www.fsf."
+"org\">heidän Web-sivustollaan</ulink> tai kirjoittamalla osoitteeseen "
+"<address> Free Software Foundation, Inc. <street>59 Temple Place</street> - "
+"Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gnometris.xml:0(None)
+msgid "translator-credits"
+msgstr "Valto Wirkola <valto [dot] wirkola [at] yahoo [dot] com> 2009"

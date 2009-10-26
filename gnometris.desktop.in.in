@@ -1,0 +1,13 @@
+[Desktop Entry]
+_Name=Gnometris
+_Comment=Fit falling blocks together
+Icon=gnome-gnometris
+Exec=gnometris
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Game;BlocksGame;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-games
+X-GNOME-Bugzilla-Component=BugBuddyBugs
+X-GNOME-Bugzilla-Version=@VERSION@
+StartupNotify=true

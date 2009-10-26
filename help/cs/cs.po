@@ -1,0 +1,676 @@
+# Czech translation of gnometris help.
+# Copyright (C) 2009 the author(s) of gnome-games.
+# This file is distributed under the same license as the gnometris help.
+# Marek Černocký <marek@manet.cz>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games gnome-2-28\n"
+"POT-Creation-Date: 2009-07-11 21:17+0000\n"
+"PO-Revision-Date: 2009-07-12 00:19+0100\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-Country: CZECH REPUBLIC\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: C/gnometris.xml:27(title)
+msgid "<application>Gnometris</application> Manual"
+msgstr "Příručka ke hře <application>Gnometris</application>"
+
+#: C/gnometris.xml:30(para)
+msgid ""
+"Gnometris is GNOME's version of Tetris, the classic game of interlocking "
+"four-piece blocks. As they fall from the top, the player must orient them to "
+"fit the other blocks at the bottom so that they form a complete horizontal "
+"line, in which case that line disappears and the player gains points."
+msgstr ""
+"Gnometris je varianta GNOME hry Tetris, klasické hry skládání bloků. Jak "
+"bloky padají shora, hráč je musí natočit tak, aby zapadly do bloků dole. "
+"Cílem je vyplnit souvislou řadu, která potom zmizí a hráč obdrží body."
+
+#: C/gnometris.xml:40(year)
+msgid "2004"
+msgstr "2004"
+
+#: C/gnometris.xml:41(holder)
+msgid "Angela Boyle"
+msgstr "Angela Boyle"
+
+#: C/gnometris.xml:56(publishername) C/gnometris.xml:97(para)
+msgid "GNOME Documentation Project"
+msgstr "Dokumentační projekt GNOME"
+
+#: C/gnometris.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU "
+"Free Documentation License, verze 1.1 nebo jakékoli další verze vydané "
+"nadací Free Software Foundation; bez neměnných oddílů, bez textů předních "
+"desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu "
+"jménem <ulink type=\"help\" url=\"ghelp:fdl\">GNU Free Documentation "
+"License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou."
+
+#: C/gnometris.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod "
+"licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, "
+"musíte přiložit kopii licence dle popisu v sekci 6 dané licence."
+
+#: C/gnometris.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou "
+"ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a "
+"členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se "
+"jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s "
+"velkým písmenem na začátku."
+
+#: C/gnometris.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, "
+"NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ "
+"VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO "
+"NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, "
+"NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO "
+"JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO "
+"JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY "
+"ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO "
+"LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI "
+"ÚPRAVY TOHOTO DOKUMENTU; DÁLE"
+
+#: C/gnometris.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN "
+"(VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, "
+"KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO "
+"UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN "
+"ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ "
+"ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY "
+"DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO "
+"JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE "
+"K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY "
+"TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ."
+
+#: C/gnometris.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU "
+"FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <placeholder-1/>"
+
+#: C/gnometris.xml:67(firstname)
+msgid "Angela"
+msgstr "Angela"
+
+#: C/gnometris.xml:68(surname)
+msgid "Boyle"
+msgstr "Boyle"
+
+#: C/gnometris.xml:70(email)
+msgid "anjela@u.washington.edu"
+msgstr "anjela@u.washington.edu"
+
+#: C/gnometris.xml:91(revnumber)
+msgid "Gnometris Manual V2.8"
+msgstr "Příručka V2.8 ke hře Gnometris"
+
+#: C/gnometris.xml:92(date)
+msgid "June 2004"
+msgstr "Červen 2004"
+
+#: C/gnometris.xml:94(para)
+msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
+msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
+
+#: C/gnometris.xml:102(releaseinfo)
+msgid "This manual describes version 2.12 of Gnometris."
+msgstr "Tato příručka popisuje verzi 2.12 hry Gnometris."
+
+#: C/gnometris.xml:109(title)
+msgid "Feedback"
+msgstr "Ohlasy"
+
+#: C/gnometris.xml:110(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Gnometris</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+" Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k "
+"aplikaci <application>Gnometris</application> nebo této příručce, postupujte "
+"dle instrukcí na stránce <ulink url=\"ghelp:gnome-feedback\" type=\"help"
+"\">Stránka s ohlasy na GNOME</ulink>."
+
+#: C/gnometris.xml:122(primary)
+msgid "Gnometris"
+msgstr "Gnometris"
+
+#: C/gnometris.xml:128(title)
+msgid "Introduction"
+msgstr "Úvod"
+
+#. synopsis of game
+#: C/gnometris.xml:131(para)
+msgid ""
+"<application>Gnometris</application> comes from the classic falling-block "
+"game, <application>Tetris</application>. The goal of the game is to create "
+"complete horizontal lines of blocks, which will disappear. The blocks come "
+"in seven different shapes made from four blocks each: one straight, two L-"
+"shaped, one square, and two S-shaped. The blocks fall from the top center of "
+"the screen in a random order. You rotate the blocks and move them across the "
+"screen to drop them in complete lines. You score by dropping blocks fast and "
+"completing lines. As your score gets higher, you level up and the blocks "
+"fall faster."
+msgstr ""
+"<application>Gnometris</application> vychází z klasické hry s padajícími "
+"bloky nazývané <application>Tetris</application>. Cílem hry je vytvořit "
+"celistvou vodorovnou řadu bloků, která následně zmizí. Bloky se objevují v "
+"sedmi různých tvarech vytvořených vždy ze čtyř kostek: jeden přímý, dva do "
+"L, jeden čtvercový a dva do S. Bloky padají ze středu horní části hrací "
+"plochy v náhodném pořadí. Může bloky otáčet a posouvat, tak aby vyplnily "
+"řadu. Za zkompletování celé řady a rychlejší posun bloků se vám zvyšuje "
+"skóre. Jak vám skóre roste, dostáváte se do vyšších úrovní a bloky padají "
+"rychleji."
+
+#. running game
+#: C/gnometris.xml:134(para)
+msgid ""
+"To run <application>Gnometris</application>, select "
+"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
+"guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, or type "
+"<command>gnometris</command> in the command line."
+msgstr ""
+"<application>Gnometris</application> spustíte volbou "
+"<menuchoice><guimenu>Aplikace</guimenu><guisubmenu>Hry</"
+"guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice> nebo zadáním "
+"<command>gnometris</command> v příkazovém řádku."
+
+#. part of gnome-games
+#: C/gnometris.xml:137(para)
+msgid ""
+"<application>Gnometris</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>Gnometris</application>."
+msgstr ""
+"<application>Gnometris</application> je součástí balíku <filename>gnome-"
+"games</filename>, který patří k pracovnímu prostředí GNOME. Tento dokument "
+"popisuje verzi 2.8 aplikace <application>Gnometris</application>."
+
+#: C/gnometris.xml:141(title)
+msgid "Playing <application>Gnometris</application>"
+msgstr "Jak hrát <application>Gnometris</application>"
+
+#: C/gnometris.xml:142(para)
+msgid ""
+"You can score through two actions: completing lines and dropping blocks "
+"quickly."
+msgstr ""
+"Skóre můžete zvyšovat dvěma způsoby: vyplněním řady a rychlejším posunem "
+"bloků"
+
+#: C/gnometris.xml:144(title)
+msgid "Moving the Blocks"
+msgstr "Posun bloků"
+
+#: C/gnometris.xml:145(para)
+msgid "To play the game, you only need the four arrow keys."
+msgstr "K hraní hry vám postačí kurzorové klávesy se šipkami."
+
+#: C/gnometris.xml:148(para)
+msgid ""
+"<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
+"correspondingly across the screen."
+msgstr ""
+"<keycap>Levá</keycap> a <keycap>pravá</keycap> posouvají bloky příslušným "
+"směrem po hrací ploše."
+
+#: C/gnometris.xml:151(para)
+msgid ""
+"<keycap>Up</keycap> rotates the block. The default rotation is "
+"counterclockwise. You can change the rotation under "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks "
+"counterclockwise</guilabel>."
+msgstr ""
+"<keycap>Nahoru</keycap> blok otáčí. Výchozí směr otáčení je proti směru "
+"hodinových ručiček. Můžete to i změnit v <menuchoice><guimenu>Nastavení</"
+"guimenu><guimenuitem>Volby</guimenuitem></menuchoice> a vypnutím "
+"<guilabel>Otáčet bloky proti směru hodinových ručiček</guilabel>."
+
+#: C/gnometris.xml:154(para)
+msgid ""
+"<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down "
+"the screen faster.<keycap>Down</keycap> moves the block down faster. "
+"<keycap>Space-bar</keycap> moves the block directly to the bottom."
+msgstr ""
+"<keycap>Dolů</keycap> a <keycap>Mezerník</keycap> posune blok po ploše "
+"rychle dolů. <keycap>Dolů</keycap> provádí rychlejší posun bloku. "
+"<keycap>Mezerník</keycap> posune blok přímo úplně dolů."
+
+#: C/gnometris.xml:159(title)
+msgid "Starting a New Game"
+msgstr "Započetí nové hry"
+
+#: C/gnometris.xml:160(para)
+msgid ""
+"To begin a new game, go to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
+"begin dropping blocks from the center of the top of the window. The default "
+"start-up of the game has no blocks in the game window and shows the next "
+"block that will fall in the upper right hand corner. <guilabel>Score</"
+"guilabel> shows the number of points you have earned. <guilabel>Lines</"
+"guilabel> shows the number of lines you have completed. <guilabel>Level</"
+"guilabel> shows the level of difficulty you are on."
+msgstr ""
+"Pokud chcete začít novou hru, tak zvolte <menuchoice><guimenu>Hra</"
+"guimenu><guimenuitem>Nová</guimenuitem></menuchoice>. Hra začne padáním "
+"bloků ze středu horní části hrací plochy. Standardně je po spuštění plocha "
+"bez bloků a v pravém horním rohu se zobrazuje nápověda, jaký blok bude padat "
+"jako příští. <guilabel>Skóre</guilabel> zobrazuje počet bodů, které jste "
+"nahráli. <guilabel>Řad</guilabel> zobrazuje počet řád, které jste kompletně "
+"sestavili. <guilabel>Úroveň</guilabel> zobrazuje úroveň složitosti, ve které "
+"se nacházíte."
+
+#: C/gnometris.xml:163(title)
+msgid "Pausing the Game"
+msgstr "Pozastavení hry"
+
+#: C/gnometris.xml:164(para)
+msgid ""
+"To pause your game, go to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
+"pause a game when you are playing. The time limit on pausing your game is "
+"unlimited. To unpause the game, go back to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
+msgstr ""
+"Pozastavit můžete hru pomocí <menuchoice><guimenu>Hra</"
+"guimenu><guimenuitem>Pozastavit</guimenuitem></menuchoice>. Hru můžete "
+"pozastavit jen během hraní. Neexistuje žádný limit, jak dlouho může být hra "
+"pozastavená. Pokračovat ve hře můžete opětovnou volbou "
+"<menuchoice><guimenu>Hra</guimenu><guimenuitem>Pozastavit</guimenuitem></"
+"menuchoice>."
+
+#: C/gnometris.xml:167(title)
+msgid "Ending the Game"
+msgstr "Ukončení hry"
+
+#: C/gnometris.xml:168(para)
+msgid ""
+"Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
+"guimenuitem></menuchoice> to end your current game without quiting Gnometris."
+msgstr ""
+"Volbou <menuchoice><guimenu>Hra</guimenu><guimenuitem>Ukončit hru</"
+"guimenuitem></menuchoice> ukončíte současnou hru aniž byste ukončili celý "
+"Gnometris."
+
+#: C/gnometris.xml:171(title)
+msgid "Quiting the <application>Gnometris</application>"
+msgstr "Ukončení <application>Gnometris</application>"
+
+#: C/gnometris.xml:172(para)
+msgid ""
+"To completely quit <application>Gnometris</application> go to "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
+"menuchoice>. If you are in the middle of a game when you quit, you will end "
+"your game without saving your score."
+msgstr ""
+"Pokud chcete úplně ukončit <application>Gnometris</application>, tak jděte "
+"na <menuchoice><guimenu>Hra</guimenu><guimenuitem>Ukončit</guimenuitem></"
+"menuchoice>. Pokud aplikaci ukončíte během hraní, skončí se hra bez uložení "
+"vašeho skóre."
+
+#: C/gnometris.xml:175(title)
+msgid "Scoring Points"
+msgstr "Přidělování bodů"
+
+#: C/gnometris.xml:176(para)
+msgid ""
+"You score points through two methods: dropping blocks faster and deleting "
+"complete lines of blocks. When you delete lines, you get more points, but "
+"dropping blocks faster will quickly add up. As you level up, the blocks will "
+"begin falling faster. The highest level is 10, at which point you will only "
+"have just over a second to manipulate each block."
+msgstr ""
+"Body do skóre můžete obdržet dvěma způsoby: rychlejším posunem bloků a "
+"vymazáním kompletně vyplněné řady. Když vyplníte řadu, dostanete více bodů, "
+"ale rychlejším posunem bloků body přibývají rychleji. Jak se dostáváte do "
+"vyšších úrovní, bloky padají rychleji. Nejvyšší úroveň je 10, ve která máte "
+"jen něco přes sekundu na manipulaci s každým blokem."
+
+#: C/gnometris.xml:179(title)
+msgid "Viewing Past Scores"
+msgstr "Prohlížení nahraného skóre"
+
+#: C/gnometris.xml:180(para)
+msgid ""
+"You can view the top ten scores played on your computer through "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
+"menuchoice>. The names of the users are shown next the their score and the "
+"date they played."
+msgstr ""
+"Přes <menuchoice><guimenu>Hra</guimenu><guimenuitem>Skóre</guimenuitem></"
+"menuchoice> se můžete podívat nejlepších deset skóre. Vedle skóre najdete "
+"jméno hráče a datum, kdy bylo nahráno."
+
+#: C/gnometris.xml:186(title)
+msgid "Customizing <application>Gnometris</application>"
+msgstr "Přizpůsobení hry <application>Gnometris</application>"
+
+#: C/gnometris.xml:188(title)
+msgid "Customizing Game Start-up"
+msgstr "Přizpůsobení počátečního stavu hry"
+
+#: C/gnometris.xml:189(para)
+msgid ""
+"By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize a variety of features for the "
+"start-up of each Gnometris game: number and density of pre-filled rows, and "
+"starting level. \"Pre-filled rows\" refers to how many rows will already "
+"have blocks in them when you start each new game."
+msgstr ""
+"Přes <menuchoice><guimenu>Nastavení</guimenu><guimenuitem>Volby</"
+"guimenuitem></menuchoice> si můžete přizpůsobit různé vlastnosti pro "
+"spuštění jednotlivých her: počet a hustotu předvyplněných řad a počáteční "
+"úroveň. „Předvyplněné řady“ určují kolik řad bude již částečně vyplněno "
+"bloky hned po spuštění jednotlivé hry."
+
+#: C/gnometris.xml:191(title)
+msgid "Number of Pre-filled Rows"
+msgstr "Počet předvyplněných řad"
+
+#: C/gnometris.xml:192(para)
+msgid ""
+"You can change the number of rows that already have blocks at the start-up "
+"of each new game by using the spin box. You can start with up to 19 rows pre-"
+"filled at the start-up of your game. The default number of pre-filled rows "
+"is zero."
+msgstr ""
+"Můžete změnit počet řad, které budou již při startu částečně obsazené bloky. "
+"Jednotlivé hry můžete začínat až s 19 předvyplněnými řadami. Výchozí počet "
+"předvyplněných řad je nula."
+
+#: C/gnometris.xml:195(title)
+msgid "Density of Pre-filled Rows"
+msgstr "Hustota kostek v předvyplněné řadě"
+
+#: C/gnometris.xml:196(para)
+msgid ""
+"You can change the density of the blocks in the pre-filled rows at the start-"
+"up of each game. You can choose a density up to 10 blocks. You should first "
+"choose how many rows you want pre-filled under <guilabel>Number of Pre-"
+"filled Rows</guilabel>. The default density of blocks is three."
+msgstr ""
+"Můžete změnit hustotu kostek v předvyplněných řadách při startu jednotlivých "
+"her. Můžete nastavit hustotu až 10 bloků. Nejdříve byste měli v "
+"<guilabel>Počet předvyplněných řad</guilabel> nastavit, kolik řad chcete "
+"předvyplnit. Výchozí hustota bloků je tři."
+
+#: C/gnometris.xml:199(title)
+msgid "Level to Start On"
+msgstr "Počáteční úroveň"
+
+#: C/gnometris.xml:200(para)
+msgid ""
+"You can adjust the level of difficulty you start on. The highest level you "
+"can start on is 10, which is the highest level you can play to. The default "
+"starting level is one."
+msgstr ""
+"Můžete nastavit úroveň náročnosti při startu. Nejvyšší úroveň, na které "
+"můžete začít je 10, což je i nejvyšší úroveň, na které můžete hrát. Výchozí "
+"počáteční úroveň je jedna."
+
+#: C/gnometris.xml:204(title)
+msgid "Customizing the Gameplay"
+msgstr "Přizpůsobení hraní hry"
+
+#: C/gnometris.xml:205(para)
+msgid ""
+"From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize a variety of features related "
+"to the blocks: previewing the next block, block colors, and block rotation."
+msgstr ""
+"Přes <menuchoice><guimenu>Nastavení</guimenu><guimenuitem>Volby</"
+"guimenuitem></menuchoice> si můžete přizpůsobovat různé vlastnosti bloků: "
+"náhled následujícího bloku, barvu bloku a otáčení bloku."
+
+#: C/gnometris.xml:207(title)
+msgid "Enable sounds"
+msgstr "Povolit zvuky"
+
+#: C/gnometris.xml:208(para)
+msgid ""
+"Turn the sound effects on and off using this option. If you are playing this "
+"game in any area which you share with other people, you should probably "
+"select off."
+msgstr ""
+"Tato volba slouží k zapnutí a vypnutí zvukových efektů. Pokud hrajete hru v "
+"místě, kde jsou další lide je vhodné zvuky vypnout."
+
+#: C/gnometris.xml:211(title)
+msgid "Preview Next Block"
+msgstr "Náhled dalšího bloku"
+
+#: C/gnometris.xml:212(para)
+msgid ""
+"Choose this option if you want to see the next block that is going to fall. "
+"This feature helps you plan the placement of your blocks."
+msgstr ""
+"Pokud chcete vidět, jaký blok bude padat jako další, vyberte tuto volbu. "
+"Díky této funkce můžete plánovat umístění dalšího bloku."
+
+#: C/gnometris.xml:215(title)
+msgid "Use Random Block Colors"
+msgstr "Používat náhodné barvy bloků"
+
+#: C/gnometris.xml:216(para)
+msgid ""
+"Choose if you want the various block configurations to be color coded or "
+"randomly colored. If you use the colors to help you identify blocks, random "
+"colors will make the game more difficult."
+msgstr ""
+"Toto volbou měníte, zda mají barvy určovat typ bloku nebo být náhodné. Pokud "
+"se podle barev řídíte při určování typu bloku, náhodné barvy vám hru ztíží."
+
+#: C/gnometris.xml:219(title)
+msgid "Bastard Mode"
+msgstr "Režim mizera"
+
+#: C/gnometris.xml:220(para)
+msgid ""
+"Choose this option if you want to select mode that is designed specifically "
+"to annoy the player. With this feature enabled, you never get the piece you "
+"want, and very seldom complete a row. Next block preview doesn't correspond "
+"to actual piece you get next, but to the one you probably wish to get."
+msgstr ""
+"Tuto volbu si vyberte, pokud chcete nastavit režim speciálně navržený k "
+"naštvání hráče. Pokud je zapnutý, nikdy vám nepůjde díl, který byste chtěli, "
+"a tak jen výjimečně dokončíte řadu. A ke všemu náhled následujícího dílu "
+"neodpovídá dílu, který doopravdy dostanete, ale tomu, který byste "
+"pravděpodobně chtěli dostat. "
+
+#: C/gnometris.xml:223(title)
+msgid "Rotate Blocks Counterclockwise"
+msgstr "Otáček bloky proti směru hodinových ručiček"
+
+#: C/gnometris.xml:224(para)
+msgid ""
+"Choose this option if you want the blocks to rotate counterclockwise or not."
+msgstr ""
+"Touto volbou se řídí, zda se má otáček proti směru nebo po směru hodinových "
+"ručiček"
+
+#: C/gnometris.xml:227(title)
+msgid "Show where the block will land"
+msgstr "Zobrazovat, kam blok dopadne"
+
+#: C/gnometris.xml:228(para)
+msgid ""
+"If this feature is used a grey image of the block will show you where the "
+"block will land. This feature is very useful for beginning players, but "
+"experienced players will find it a distraction."
+msgstr ""
+"Pokud je tato volba zapnutá, šedý obrázek naznačí, kam blok přistane. Tato "
+"volba může hodně pomoct začátečníkům, ale experty obvykle rozptyluje."
+
+#: C/gnometris.xml:236(title)
+msgid "Customizing the Look of <application>Gnometris</application>"
+msgstr "Přizpůsobení vzhledu <application>Gnometris</application>"
+
+#: C/gnometris.xml:237(para)
+msgid ""
+"Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize the look of "
+"<application>Gnometris</application>: images for the blocks."
+msgstr ""
+"V <menuchoice><guimenu>Nastavení</guimenu><guimenuitem>Volby</guimenuitem></"
+"menuchoice> si můžete přizpůsobit vzhled <application>Gnometris</"
+"application>: styl bloků."
+
+#: C/gnometris.xml:239(title)
+msgid "Block Image"
+msgstr "Styl bloků"
+
+#: C/gnometris.xml:240(para)
+msgid ""
+"You can change the style of the blocks, including image and size. There are "
+"a variety of pre-made styles."
+msgstr ""
+"Můžete změnit styl bloků včetně obrázku a velikosti. K dispozici jsou různé "
+"předdefinované styly."
+
+#: C/gnometris.xml:243(title)
+msgid "Background"
+msgstr "Pozadí"
+
+#: C/gnometris.xml:243(para)
+msgid ""
+"If you drag your favorite image into the <application>Gnometris</"
+"application> window it will be used as the background. If you want a solid "
+"color as the background drag one in from either the color picker or from "
+"<application>nautlilus'</application><guimenuitem>Backgrounds and Emblems</"
+"guimenuitem> dialog (the reset item from that dialog also works)."
+msgstr ""
+"Přetažením vašeho oblíbeného obrázku myší do okna <application>Gnometris</"
+"application> se tento obrázek použije jako pozadí. Pokud chcete použít na "
+"pozadí jednolitou barvu, přesuňte ji z dialogu pro výběr barev nebo z "
+"dialogu <guimenuitem>Pozadí a emblémy</guimenuitem> aplikace "
+"<application>nautlilus'</application> (lze přesunou i ostatní pozadí)."
+
+#: C/gnometris.xml:255(title)
+msgid "Authors"
+msgstr "Autoři"
+
+#: C/gnometris.xml:256(para)
+msgid ""
+"<application>Gnometris</application> was written by J. Marcin Gorycki in "
+"1999 and maintained by Gnome Games Team since then. This manual was written "
+"by Angela Boyle. To report a bug or make a suggestion regarding this "
+"application or this manual, follow the directions in this <ulink url=\"ghelp:"
+"user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>Gnometris</application> napsal J. Marcin Gorycki v roce 1999 a "
+"od té doby jej udržuje Gnome Games Team. Tuto příručku napsala Angela Boyle. "
+"Pokud chcete nahlásit chybu nebo podat návrh týkající se této aplikace nebo "
+"tohoto návodu, tak se řiďte instrukcemi v tomto <ulink url=\"ghelp:user-"
+"guide?feedback-bugs\" type=\"help\">dokumentu</ulink>."
+
+#: C/gnometris.xml:280(title)
+msgid "License"
+msgstr "Licence"
+
+#: C/gnometris.xml:281(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"Tento program je svobodný software. Můžete jej dále šířit a/nebo upravovat "
+"za dodržení podmínek <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink>, tak jak ji "
+"vydala Free Software Foundation ve verzi 2 nebo (dle vaší volby) novější."
+
+#: C/gnometris.xml:283(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Tento program je šířen s přesvědčením, že může být užitečný, ale BEZ "
+"JAKÝCHKOLIV ZÁRUK, bez předpokládané záruky na OBCHODOVATELNOST nebo "
+"VHODNOST PRO URČITÝ ÚČEL. Více podrobností najdete v <citetitle>GNU General "
+"Public License</citetitle>."
+
+#: C/gnometris.xml:285(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"Kopie <citetitle>GNU General Public License</citetitle> je zahrnuta v "
+"dodatku <citetitle>Uživatelské příručky GNOME</citetitle>. Kopii "
+"<citetitle>GNU General Public License</citetitle> můžete také získat od Free "
+"Software Foundation navštívením <ulink type=\"http\" url=\"http://www.fsf.org"
+"\">jejich webu</ulink> nebo zasláním žádosti na <address> Free Software "
+"Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</"
+"city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</"
+"country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gnometris.xml:0(None)
+msgid "translator-credits"
+msgstr "Marek Černocký <marek@manet.cz>, 2009."
