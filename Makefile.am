@@ -4,9 +4,9 @@ if BUILD_HELP
 SUBDIRS += help
 endif
 
-bin_PROGRAMS=gnometris
+bin_PROGRAMS=quadrapassel
 
-gnometris_SOURCES = \
+quadrapassel_SOURCES = \
 	main.cpp \
 	blocks.cpp \
 	blocks.h \
@@ -25,17 +25,17 @@ gnometris_SOURCES = \
 	blocks-cache.cpp \
 	blocks-cache.h
 
-gnometris_CPPFLAGS = \
+quadrapassel_CPPFLAGS = \
 	-I$(top_srcdir) \
 	$(AM_CPPFLAGS)
 
-gnometris_CXXFLAGS = \
+quadrapassel_CXXFLAGS = \
 	$(GTK_CFLAGS) \
 	$(CLUTTER_CFLAGS) \
 	$(CLUTTER_GTK_CFLAGS) \
 	$(AM_CXXFLAGS)
 
-gnometris_LDADD = \
+quadrapassel_LDADD = \
 	$(top_builddir)/libgames-support/libgames-support.la \
 	$(CLUTTER_LIBS) \
 	$(CLUTTER_GTK_LIBS) \
@@ -43,36 +43,36 @@ gnometris_LDADD = \
 	$(INTLLIBS)
 
 if HAVE_GNOME
-gnometris_CXXFLAGS += $(GNOME_CFLAGS)
-gnometris_LDADD += $(GNOME_LIBS)
+quadrapassel_CXXFLAGS += $(GNOME_CFLAGS)
+quadrapassel_LDADD += $(GNOME_LIBS)
 endif
 
 if HAVE_RSVG
-gnometris_CXXFLAGS += $(RSVG_CFLAGS) 
-gnometris_LDADD += $(RSVG_LIBS)
+quadrapassel_CXXFLAGS += $(RSVG_CFLAGS) 
+quadrapassel_LDADD += $(RSVG_LIBS)
 endif
 
 if WITH_GTHREAD
-gnometris_CXXFLAGS += $(GHTREAD_CFLAGS)
-gnometris_LDADD += $(GTHREAD_LIBS)
+quadrapassel_CXXFLAGS += $(GHTREAD_CFLAGS)
+quadrapassel_LDADD += $(GTHREAD_LIBS)
 endif
 
-pixmapdir = $(pkgdatadir)/gnometris/pixmaps
-pixmap_DATA = gnometris.svg
+pixmapdir = $(pkgdatadir)/quadrapassel/pixmaps
+pixmap_DATA = quadrapassel.svg
 
 Gamesdir = $(datadir)/applications
-Games_in_files = gnometris.desktop.in.in
+Games_in_files = quadrapassel.desktop.in.in
 Games_DATA = $(Games_in_files:.desktop.in.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
-schema_in_files = gnometris.schemas.in
+schema_in_files = quadrapassel.schemas.in
 if HAVE_GNOME
 schemadir = $(GCONF_SCHEMA_FILE_DIR)
 schema_DATA = $(schema_in_files:.schemas.in=.schemas)
 endif
 @INTLTOOL_SCHEMAS_RULE@
 
-man_MANS = gnometris.6
+man_MANS = quadrapassel.6
 
 EXTRA_DIST = AUTHORS \
 	$(pixmap_DATA) \
@@ -81,16 +81,16 @@ EXTRA_DIST = AUTHORS \
 
 install-data-local:
 if GCONF_SCHEMAS_INSTALL
-	GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(top_builddir)/gnometris/$(schema_DATA)
+	GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(top_builddir)/quadrapassel/$(schema_DATA)
 endif
 	-$(mkinstalldirs) $(DESTDIR)$(scoredir)
-	-touch $(DESTDIR)$(scoredir)/gnometris.scores
-	-chown $(scores_user):$(scores_group) $(DESTDIR)$(scoredir)/gnometris.scores
-	-chmod 664 $(DESTDIR)$(scoredir)/gnometris.scores
+	-touch $(DESTDIR)$(scoredir)/quadrapassel.scores
+	-chown $(scores_user):$(scores_group) $(DESTDIR)$(scoredir)/quadrapassel.scores
+	-chmod 664 $(DESTDIR)$(scoredir)/quadrapassel.scores
 
 install-exec-hook:
 	-if test "$(setgid)" = "true"; then \
-	  chgrp $(scores_group) $(DESTDIR)$(bindir)/gnometris && chmod 2555 $(DESTDIR)$(bindir)/gnometris ;\
+	  chgrp $(scores_group) $(DESTDIR)$(bindir)/quadrapassel && chmod 2555 $(DESTDIR)$(bindir)/quadrapassel ;\
 	fi
 
 DISTCLEANFILES = $(Games_DATA) $(schema_DATA)
