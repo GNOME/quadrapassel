@@ -1,0 +1,690 @@
+# Serbian translation of gnome-games
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2009.
+#
+# This file is distributed under the same license as the gnome-games package.
+#
+# Translated on 2009-10-23 by Бранко Кокановић <branko.kokanovic@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"POT-Creation-Date: 2009-10-24 08:06+0000\n"
+"PO-Revision-Date: 2009-10-24 16:59+0200\n"
+"Last-Translator: Бранко Кокановић <branko.kokanovic@gmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n%"
+"10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: C/gnometris.xml:27(title)
+msgid "<application>Gnometris</application> Manual"
+msgstr "Упутство за <application>Гномов тетрис</application>"
+
+#: C/gnometris.xml:30(para)
+msgid ""
+"Gnometris is GNOME's version of Tetris, the classic game of interlocking "
+"four-piece blocks. As they fall from the top, the player must orient them to "
+"fit the other blocks at the bottom so that they form a complete horizontal "
+"line, in which case that line disappears and the player gains points."
+msgstr ""
+"Ово је Гномова верзија тетриса, класичне игре слагања четвороделних "
+"блокова. Док блокови падају, играч их мора тако усмерити да се уклапају у "
+"блокове који су већ на дну слажући пуну водоравну линију. Када се направи пуна "
+"водоравна линија, она нестаје и играч добија поене."
+
+#: C/gnometris.xml:40(year)
+msgid "2004"
+msgstr "2004"
+
+#: C/gnometris.xml:41(holder)
+msgid "Angela Boyle"
+msgstr "Angela Boyle"
+
+#: C/gnometris.xml:56(publishername) C/gnometris.xml:97(para)
+msgid "GNOME Documentation Project"
+msgstr "Пројекат Гномове документације"
+
+#: C/gnometris.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Дозвољено умножавање, ширење, вршење измена овог документа под условима Гну-"
+"ове Слободне Документационе Дозволе (ГСДД), верзије 1.1 или било које "
+"накнадне верзије без непромењивих одељака, текста на насловној и последњој "
+"страни, а коју је објавила Задужбина Слободног Софтвера. Примерак ГСДД-е "
+"можете пронаћи на овој <ulink type=\"help\" url=\"ghelp:fdl\">адреси</ulink> "
+"или у датотеци COPYING-DOCS која је приложена уз ово упутство."
+
+#: C/gnometris.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Ово упутство је део скупа Гном докумената објављених под GFDL. Уколико "
+"желите да расподељујете ово упутство одвојено од скупа, то можете урадити "
+"додавањем примерка лиценце документу, како је описано у одељку 6 саме "
+"лиценце."
+
+#: C/gnometris.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Многи називи које компаније користе у циљу препознатљивости својих производа "
+"и услуга представљају робне марке. Када (уколико) се такви називи појављују"
+"(спомињу) у било којем Гномовом документу, а чланови Гномовог "
+"документационог пројекта имају сазнања о томе, тада су називи исписани "
+"великим словима или са великим почетним словима."
+
+#: C/gnometris.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"ДОКУМЕНТ ЈЕ ДОСТУПАН СА СВИМ СВОЈИМ ДОБРИМ И ЛОШИМ СТРАНАМА БЕЗ БИЛО КАКВОГ "
+"ЈАМСТВА, БИЛО ОНО ИЗРЕЧЕНО ИЛИ НЕ, УКЉУЧУЈУЋИ БЕЗ ОГРАНИЧЕЊА, ЈАМСТВО ДА ЈЕ "
+"ОВАЈ ДОКУМЕНТ ИЛИ ЊЕГОВА ИЗМЕЊЕНА ВЕРЗИЈА БЕЗ НЕДОСТАТАКА, СПРЕМАН ЗА "
+"ТРЖИШТЕ, СВРСИСХОДАН И НЕ НАРУШАВА ЗАКОНСКЕ НОРМЕ. ЦЕЛОКУПАН РИЗИК КОЈИ СЕ "
+"ОДНОСИ НА КВАЛИТЕТ, ТАЧНОСТ И ДОМЕТ (УЧИНАК) ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ "
+"ВЕРЗИЈЕ СНОСИ КОРИСНИК. УКОЛИКО СЕ У БИЛО КОЈЕМ ДОКУМЕНТУ ИЛИ ЊЕГОВОЈ "
+"ИЗМЕЊЕНОЈ ВЕРЗИЈИ ПОЈАВИ НЕДОСТАТАК (ГРЕШКА) БИЛО КОЈЕ ВРСТЕ, КОРИСНИК (А НЕ "
+"АУТОР ИЗВОРНЕ ВЕРЗИЈЕ, БИЛО КОЈИ ДРУГИ АУТОР ИЛИ САРАДНИК) СНОСИ СВЕ "
+"ТРОШКОВЕ НЕОПХОДНОГ СЕРВИСИРАЊА, ПОПРАВКЕ ИЛИ ИСПРАВКЕ. ОВО ОГРАНИЧЕЊЕ "
+"ЈАМСТВА ПРЕДСТАВЉА САСТАВНИ ДЕО ОВЕ ДОЗВОЛЕ. УПОТРЕБА БИЛО КОЈЕГ ДОКУМЕНТА "
+"ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ НИЈЕ ДОЗВОЉЕНА ОСИМ ПОД УСЛОВИМА ОВОГ ОГРАНИЧЕЊА "
+"ЈАМСТВА."
+
+#: C/gnometris.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"НИ ПОД КАКВИМ ОКОЛНОСТИМА ИЛИ ЗАКОНУ, БИЛО ЗБОГ КРШЕЊА (ИЛИ НЕМАРА) УГОВОРА, "
+"ИЛИ НА БИЛО КОЈИ ДРУГИ НАЧИН, АУТОР (ПРВОБИТНЕ ВЕРЗИЈЕ), САРАДНИК ИЛИ "
+"ИСПОРУЧИВАЛАЦ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ, НИТИ ДОБАВЉАЧ БИЛО КОЈЕ "
+"ОД НАВЕДЕНИХ СТРАНА НЕЋЕ СНОСИТИ МАТЕРИЈАЛНУ ОДГОВОРНОСТ ЗА НАСТАЛА "
+"ДИРЕКТНА, ИНДИРЕКТНА, ПОСЕБНА, СЛУЧАЈНА ИЛИ ТИМЕ НАСТАЛА ОШТЕЋЕЊА БИЛО КОЈЕ "
+"ВРСТЕ УКЉУЧУЈУЋИ, БЕЗ ОГРАНИЧЕЊА, ШТЕТУ НАНЕСЕНУ УГЛЕДУ ФИРМЕ, ПРЕСТАНКУ "
+"ПРОИЗВОДЊЕ, ОТКАЗИВАЊЕ РАДА РАЧУНАРА ИЛИ КВАРА КАО И ЗА СВЕ ОСТАЛЕ ШТЕТЕ ИЛИ "
+"ГУБИТКЕ НАСТАЛЕ УСЛЕД КОРИШЋЕЊА ДОКУМЕНТА И ЊЕГОВИХ ИЗМЕЊЕНИХ ВЕРЗИЈА ЧАК И "
+"АКО ЈЕ ОШТЕЋЕНА СТРАНА БИЛА ОБАВЕШТЕНА О МОГУЋНОСТИ НАСТАНКА ТЕ ШТЕТЕ."
+
+#: C/gnometris.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"ОВАЈ ДОКУМЕНТ И ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СУ ДОСТУПНЕ ПОД УСЛОВИМА ГНУ-ОВЕ "
+"СЛОБОДНЕ ДОКУМЕНТАЦИОНЕ ДОЗВОЛЕ УЗ ДОДАТНУ САГЛАСНОСТ ДА: <placeholder-1/>"
+
+#: C/gnometris.xml:67(firstname)
+msgid "Angela"
+msgstr "Angela"
+
+#: C/gnometris.xml:68(surname)
+msgid "Boyle"
+msgstr "Boyle"
+
+#: C/gnometris.xml:70(email)
+msgid "anjela@u.washington.edu"
+msgstr "anjela@u.washington.edu"
+
+#: C/gnometris.xml:91(revnumber)
+msgid "Gnometris Manual V2.8"
+msgstr "Упутство за Гном тетрис v2.8"
+
+#: C/gnometris.xml:92(date)
+msgid "June 2004"
+msgstr "Јун 2004."
+
+#: C/gnometris.xml:94(para)
+msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
+msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
+
+#: C/gnometris.xml:102(releaseinfo)
+msgid "This manual describes version 2.12 of Gnometris."
+msgstr "Ово упуство је написано за Гном тетрис 2.12."
+
+#: C/gnometris.xml:109(title)
+msgid "Feedback"
+msgstr "Примедбе"
+
+#: C/gnometris.xml:110(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Gnometris</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"Да бисте пријавили грешку или дали предлог у вези програма <application>Гномов "
+"тетрис</application> или његовог упутства, пратите смернице на <ulink url="
+"\"ghelp:user-guide?feedback-bugs\" type=\"help\">Гномовој страни за "
+"примедбе</ulink>."
+
+#: C/gnometris.xml:122(primary)
+msgid "Gnometris"
+msgstr "Гномов тетрис"
+
+#: C/gnometris.xml:128(title)
+msgid "Introduction"
+msgstr "Увод"
+
+#. synopsis of game
+#: C/gnometris.xml:131(para)
+msgid ""
+"<application>Gnometris</application> comes from the classic falling-block "
+"game, <application>Tetris</application>. The goal of the game is to create "
+"complete horizontal lines of blocks, which will disappear. The blocks come "
+"in seven different shapes made from four blocks each: one straight, two L-"
+"shaped, one square, and two S-shaped. The blocks fall from the top center of "
+"the screen in a random order. You rotate the blocks and move them across the "
+"screen to drop them in complete lines. You score by dropping blocks fast and "
+"completing lines. As your score gets higher, you level up and the blocks "
+"fall faster."
+msgstr ""
+"<application>Гномов тетрис</application> је настао од <application>Тетриса</"
+"application>, класичне игре са падајућим блоковима. Циљ игре је да попуните "
+"водоравне линије блоковима, које тада нестају. Блокови имају седам "
+"различитих облика, а сви блокови су састављени од четири дела: један прав, "
+"два у облику латиничног слова L, један квадрат и један у облику латиничног "
+"слова S. Блокови падају из центра горњег дела екрана без одређеног "
+"редоследа. Блокове треба да окрећете и померате по екрану да бисте их "
+"спустили тако да направе пуну линију. Поена добијате када брже спуштате "
+"блокове и када попуњавате линије. Како вам број бодова расте, игра "
+"постаје све тежа и блокови падају све брже."
+
+#. running game
+#: C/gnometris.xml:134(para)
+msgid ""
+"To run <application>Gnometris</application>, select "
+"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
+"guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, or type "
+"<command>gnometris</command> in the command line."
+msgstr ""
+"Да бисте покренули <application>Гномов тетрис</application>, изаберите "
+"<menuchoice><guimenu>Програми</guimenu><guisubmenu>Игре</"
+"guisubmenu><guimenuitem>Гномов тетрис</guimenuitem></menuchoice>, или "
+"откуцајте <command>gnometris</command> у командној линији."
+
+#. part of gnome-games
+#: C/gnometris.xml:137(para)
+msgid ""
+"<application>Gnometris</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>Gnometris</application>."
+msgstr ""
+"<application>Гномов тетрис</application> је укључен у пакет <filename>gnome-games</"
+"filename>, који је део Гномовог радног окружења. Овај документ је "
+"написан за <application>Гномов тетрис</application> 2.8."
+
+#: C/gnometris.xml:141(title)
+msgid "Playing <application>Gnometris</application>"
+msgstr "Играње <application>Гномовог тетриса</application>"
+
+#: C/gnometris.xml:142(para)
+msgid ""
+"You can score through two actions: completing lines and dropping blocks "
+"quickly."
+msgstr ""
+"Поене можете добити на два начина: попуњавајући редове и спуштајући "
+"блокове брже него што падају."
+
+#: C/gnometris.xml:144(title)
+msgid "Moving the Blocks"
+msgstr "Померање блокова"
+
+#: C/gnometris.xml:145(para)
+msgid "To play the game, you only need the four arrow keys."
+msgstr ""
+"Да бисте играли игру, потребна су вам само четири тастера са стрелицама."
+
+#: C/gnometris.xml:148(para)
+msgid ""
+"<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
+"correspondingly across the screen."
+msgstr ""
+"Тастери <keycap>Лево</keycap> и <keycap>Десно</keycap> померају блок "
+"лево и десно преко екрана."
+
+#: C/gnometris.xml:151(para)
+msgid ""
+"<keycap>Up</keycap> rotates the block. The default rotation is "
+"counterclockwise. You can change the rotation under "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks "
+"counterclockwise</guilabel>."
+msgstr ""
+"Тастер <keycap>Горе</keycap> окреће блок. Подразумевани смер ротације је супротно "
+"од смера казаљке на сату. Смер ротације можете променити из менија "
+"<menuchoice><guimenu>Подешавања</guimenu><guimenuitem>Поставке</"
+"guimenuitem></menuchoice> искључивањем опције <guilabel>Окрећи супротно "
+"смеру казаљке на сату</guilabel>."
+
+#: C/gnometris.xml:154(para)
+msgid ""
+"<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down "
+"the screen faster.<keycap>Down</keycap> moves the block down faster. "
+"<keycap>Space-bar</keycap> moves the block directly to the bottom."
+msgstr ""
+"Тастер <keycap>Доле</keycap> и тастер за <keycap>Размак</keycap> померају блок брже "
+"наниже. Тастер <keycap>Доле</keycap> помера блок брже на доле, док <keycap>Размак</"
+"keycap> одмах спушта блок до дна."
+
+#: C/gnometris.xml:159(title)
+msgid "Starting a New Game"
+msgstr "Покретање нове игре"
+
+#: C/gnometris.xml:160(para)
+msgid ""
+"To begin a new game, go to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
+"begin dropping blocks from the center of the top of the window. The default "
+"start-up of the game has no blocks in the game window and shows the next "
+"block that will fall in the upper right hand corner. <guilabel>Score</"
+"guilabel> shows the number of points you have earned. <guilabel>Lines</"
+"guilabel> shows the number of lines you have completed. <guilabel>Level</"
+"guilabel> shows the level of difficulty you are on."
+msgstr ""
+"Да покренете нову игру, изаберите <menuchoice><guimenu>Игра</guimenu>"
+"<guimenuitem>Нова</guimenuitem></menuchoice> из менија. Игра ће започети "
+"падањем блокова из средине горњег дела прозора. Подразумеван "
+"почетак игре је када на дну нема унапред попуњених блокова, а са стране се "
+"приказује следећи блок. <guilabel>Резултат</guilabel> приказује број "
+"добијених поена. <guilabel>Линије</guilabel> приказује број до тада "
+"попуњених редова. <guilabel>Ниво</guilabel> приказује ниво тежине на коме се "
+"тренутно налазите."
+
+#: C/gnometris.xml:163(title)
+msgid "Pausing the Game"
+msgstr "Паузирање игре"
+
+#: C/gnometris.xml:164(para)
+msgid ""
+"To pause your game, go to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
+"pause a game when you are playing. The time limit on pausing your game is "
+"unlimited. To unpause the game, go back to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
+msgstr ""
+"Да бисте паузирали игру, изаберите <menuchoice><guimenu>Игра</"
+"guimenu><guimenuitem>Пауза</guimenuitem></menuchoice> из менија. Игру "
+"можете паузирати једино ако је у том тренутку играте. Време за које "
+"је игра паузирана је неограничено. Да опет покренете игру, "
+"идите на <menuchoice><guimenu>Игра</guimenu><guimenuitem>Пауза"
+"</guimenuitem></menuchoice>."
+
+#: C/gnometris.xml:167(title)
+msgid "Ending the Game"
+msgstr "Завршавање игре"
+
+#: C/gnometris.xml:168(para)
+msgid ""
+"Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
+"guimenuitem></menuchoice> to end your current game without quiting Gnometris."
+msgstr ""
+"Изаберите <menuchoice><guimenu>Игра</guimenu><guimenuitem>Заврши игру</"
+"guimenuitem></menuchoice> да бисте завршили тренутну игру без изласка из "
+"Гномовог тетриса."
+
+#: C/gnometris.xml:171(title)
+msgid "Quiting the <application>Gnometris</application>"
+msgstr "Излазак из <application>Гномовог тетриса</application>"
+
+#: C/gnometris.xml:172(para)
+msgid ""
+"To completely quit <application>Gnometris</application> go to "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
+"menuchoice>. If you are in the middle of a game when you quit, you will end "
+"your game without saving your score."
+msgstr ""
+"Да потпуно изађете из <application>Гном тетриса</application>, кликните "
+"<menuchoice><guimenu>Игра</guimenu><guimenuitem>Изађи</guimenuitem></"
+"menuchoice> ставку менија. Ако сте у том тренутку играли игру, она ће бити "
+"завршена без чувања резултата."
+
+#: C/gnometris.xml:175(title)
+msgid "Scoring Points"
+msgstr "Добијање поена"
+
+#: C/gnometris.xml:176(para)
+msgid ""
+"You score points through two methods: dropping blocks faster and deleting "
+"complete lines of blocks. When you delete lines, you get more points, but "
+"dropping blocks faster will quickly add up. As you level up, the blocks will "
+"begin falling faster. The highest level is 10, at which point you will only "
+"have just over a second to manipulate each block."
+msgstr ""
+"Поене добијате на два начина: бржим спуштањем блокова и брисањем попуњених "
+"редова. Када избришете ред, добијате више поена, али брже спуштање блокова "
+"чешће доноси поене. Када прелазите на веће нивое, блокови крећу брже да "
+"падају. Највећи ниво је 10., када имате само једну секунду да правилно "
+"наместите блок пре него што падне."
+
+#: C/gnometris.xml:179(title)
+msgid "Viewing Past Scores"
+msgstr "Преглед претходних резултата"
+
+#: C/gnometris.xml:180(para)
+msgid ""
+"You can view the top ten scores played on your computer through "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
+"menuchoice>. The names of the users are shown next the their score and the "
+"date they played."
+msgstr ""
+"Можете погледати десет најбољих резулата играних на рачунару из менија "
+"<menuchoice><guimenu>Игра</guimenu><guimenuitem>Резултати</guimenuitem></"
+"menuchoice>. Имена корисника су приказана поред њихових резултата и датума "
+"када су те резултате остварили."
+
+#: C/gnometris.xml:186(title)
+msgid "Customizing <application>Gnometris</application>"
+msgstr "Прилагођавање <application>Гномовог тетриса</application>"
+
+#: C/gnometris.xml:188(title)
+msgid "Customizing Game Start-up"
+msgstr "Прилагођавање почетка игре"
+
+#: C/gnometris.xml:189(para)
+msgid ""
+"By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize a variety of features for the "
+"start-up of each Gnometris game: number and density of pre-filled rows, and "
+"starting level. \"Pre-filled rows\" refers to how many rows will already "
+"have blocks in them when you start each new game."
+msgstr ""
+"Из менија <menuchoice><guimenu>Подешавања</guimenu><guimenuitem>Поставке</"
+"guimenuitem></menuchoice>, можете прилагодити мноштво могућности за почетак "
+"сваке игре тетриса: број и густину унапред попуњених редова. „Унапред "
+"попуњени редови“ се односе на то колико ће редова већ имати блокове када "
+"покренете нову игру."
+
+#: C/gnometris.xml:191(title)
+msgid "Number of Pre-filled Rows"
+msgstr "Број унапред попуњених редова"
+
+#: C/gnometris.xml:192(para)
+msgid ""
+"You can change the number of rows that already have blocks at the start-up "
+"of each new game by using the spin box. You can start with up to 19 rows pre-"
+"filled at the start-up of your game. The default number of pre-filled rows "
+"is zero."
+msgstr ""
+"Можете изменити број редова који имају унапред постављене блокове на почетку "
+"сваке игре користећи вртеће дугме. Можете почети са највише 19 унапред "
+"попуњених редова на почетку игре. Подразумевани број унапред попуњених "
+"редова је нула."
+
+#: C/gnometris.xml:195(title)
+msgid "Density of Pre-filled Rows"
+msgstr "Густина унапред попуњених редова"
+
+#: C/gnometris.xml:196(para)
+msgid ""
+"You can change the density of the blocks in the pre-filled rows at the start-"
+"up of each game. You can choose a density up to 10 blocks. You should first "
+"choose how many rows you want pre-filled under <guilabel>Number of Pre-"
+"filled Rows</guilabel>. The default density of blocks is three."
+msgstr ""
+"Можете мењати густину блокова у унапред попуњеним редовима на почетку сваке "
+"игре. Густина може да иде до 10 блокова. Прво треба да одаберете колико "
+"желите унапред попуњених редова у <guilabel>Броју унапред попуњених редова</"
+"guilabel>. Подразумевана густина блокова је три."
+
+#: C/gnometris.xml:199(title)
+msgid "Level to Start On"
+msgstr "Почетни ниво"
+
+#: C/gnometris.xml:200(para)
+msgid ""
+"You can adjust the level of difficulty you start on. The highest level you "
+"can start on is 10, which is the highest level you can play to. The default "
+"starting level is one."
+msgstr ""
+"Можете подесити ниво тежине на коме започињете игру. Највиши ниво на коме "
+"можете почети је 10. Ово је уједно и највиши ниво игрице. Подразумевани "
+"почетни ниво је први."
+
+#: C/gnometris.xml:204(title)
+msgid "Customizing the Gameplay"
+msgstr "Прилагођавање игре"
+
+#: C/gnometris.xml:205(para)
+msgid ""
+"From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize a variety of features related "
+"to the blocks: previewing the next block, block colors, and block rotation."
+msgstr ""
+"Из менија <menuchoice><guimenu>Подешавања</guimenu><guimenuitem>Поставке</"
+"guimenuitem></menuchoice>, можете прилагодити мноштво могућности везаних за "
+"блокове: преглед следећег блока, боје блокова, окретање блокова."
+
+#: C/gnometris.xml:207(title)
+msgid "Enable sounds"
+msgstr "Укључивање звукова"
+
+#: C/gnometris.xml:208(para)
+msgid ""
+"Turn the sound effects on and off using this option. If you are playing this "
+"game in any area which you share with other people, you should probably "
+"select off."
+msgstr ""
+"Укључите или искључите звук коришћењем ове опције. Ако игру играте у "
+"простору који делите са другим људима, вероватно би требало да искључите "
+"звук."
+
+#: C/gnometris.xml:211(title)
+msgid "Preview Next Block"
+msgstr "Приказивање следећег блока"
+
+#: C/gnometris.xml:212(para)
+msgid ""
+"Choose this option if you want to see the next block that is going to fall. "
+"This feature helps you plan the placement of your blocks."
+msgstr ""
+"Штиклирајте ову опцију ако желите да видите који ће следећи блок пасти. Ова "
+"могућност вам помаже да испланирате постављање блокова."
+
+#: C/gnometris.xml:215(title)
+msgid "Use Random Block Colors"
+msgstr "Коришћење насумичних боја блокова"
+
+#: C/gnometris.xml:216(para)
+msgid ""
+"Choose if you want the various block configurations to be color coded or "
+"randomly colored. If you use the colors to help you identify blocks, random "
+"colors will make the game more difficult."
+msgstr ""
+"Овим подешавањем се бира да ли желите да блокови истог облика имају исте "
+"боје или желите да сваки нови блок има насумично одабрану боју. Ако вам боја "
+"значи да вам помогне да препознате блок, насумичне боје ће вам отежати игру."
+
+#: C/gnometris.xml:219(title)
+msgid "Bastard Mode"
+msgstr "Безобразни режим"
+
+#: C/gnometris.xml:220(para)
+msgid ""
+"Choose this option if you want to select mode that is designed specifically "
+"to annoy the player. With this feature enabled, you never get the piece you "
+"want, and very seldom complete a row. Next block preview doesn't correspond "
+"to actual piece you get next, but to the one you probably wish to get."
+msgstr ""
+"Одаберите ову опцију ако желите режим тако направљен да намерно нервира "
+"играча. Када је ова могућност укључена, никад вам неће доћи блок који вам "
+"треба и јако ретко можете да попуните ред. Приказ следећег блока не одговара "
+"стварном блоку који ће наићи следећи, већ оном који бисте ви највише желели "
+"да дође."
+
+#: C/gnometris.xml:223(title)
+msgid "Rotate Blocks Counterclockwise"
+msgstr "Окретање супротно смеру казаљке на сату"
+
+#: C/gnometris.xml:224(para)
+msgid ""
+"Choose this option if you want the blocks to rotate counterclockwise or not."
+msgstr ""
+"Штиклирајте ову опцију ако желите да се блокови ротирају супротно од смера "
+"казаљке на сату."
+
+#: C/gnometris.xml:227(title)
+msgid "Show where the block will land"
+msgstr "Приказивање где ће блок бити приземљен"
+
+#: C/gnometris.xml:228(para)
+msgid ""
+"If this feature is used a grey image of the block will show you where the "
+"block will land. This feature is very useful for beginning players, but "
+"experienced players will find it a distraction."
+msgstr ""
+"Ако се користи ова могућност, сива слика блока ће бити приказана тамо где ће "
+"се блок спустити. Ова могућност је веома корисна почетницима, али ће "
+"вероватно сметати искуснијим играчима."
+
+#: C/gnometris.xml:236(title)
+msgid "Customizing the Look of <application>Gnometris</application>"
+msgstr "Прилагођавање изгледа <application>Гномовог тетриса</application>"
+
+#: C/gnometris.xml:237(para)
+msgid ""
+"Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize the look of "
+"<application>Gnometris</application>: images for the blocks."
+msgstr ""
+"Из менија <menuchoice><guimenu>Подешавања</guimenu><guimenuitem>Поставке</"
+"guimenuitem></menuchoice>, можете прилагодити изглед <application>Гномовог "
+"тетриса</application>: слике блокова."
+
+#: C/gnometris.xml:239(title)
+msgid "Block Image"
+msgstr "Слике блокова"
+
+#: C/gnometris.xml:240(para)
+msgid ""
+"You can change the style of the blocks, including image and size. There are "
+"a variety of pre-made styles."
+msgstr ""
+"Можете изменити стил блокова, укључујући ту њихову слику и величину. Постоји "
+"мноштво готових стилова."
+
+#: C/gnometris.xml:243(title)
+msgid "Background"
+msgstr "Позадина"
+
+#: C/gnometris.xml:243(para)
+msgid ""
+"If you drag your favorite image into the <application>Gnometris</"
+"application> window it will be used as the background. If you want a solid "
+"color as the background drag one in from either the color picker or from "
+"<application>nautlilus'</application><guimenuitem>Backgrounds and Emblems</"
+"guimenuitem> dialog (the reset item from that dialog also works)."
+msgstr ""
+"Ако превучете вашу омиљену слику у прозор <application>Гномовог тетриса</"
+"application>, она ће бити искоришћена као позадина. Ако желите једнобојну "
+"позадину, превуците боју из било ког прозорчета за избор боја или из "
+"<application>Наутилусовог</application> прозорчета <guimenuitem>Позадине и "
+"обележја</guimenuitem> (ставка „Врати“ из истог дијалога такође функционише)."
+
+#: C/gnometris.xml:255(title)
+msgid "Authors"
+msgstr "Аутори"
+
+#: C/gnometris.xml:256(para)
+msgid ""
+"<application>Gnometris</application> was written by J. Marcin Gorycki in "
+"1999 and maintained by Gnome Games Team since then. This manual was written "
+"by Angela Boyle. To report a bug or make a suggestion regarding this "
+"application or this manual, follow the directions in this <ulink url=\"ghelp:"
+"user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>Гномов тетрис</application> је 1999. написао J. Marcin Gorycki и "
+"од тада га одржава Гномов тим за игре. Ово упутство је написала Angela "
+"Boyle. Да бисте пријавили грешке или дали предлог у вези овог програма или "
+"његовог упутства, пратите смернице из <ulink url=\"ghelp:user-guide?feedback-"
+"bugs\" type=\"help\">документа</ulink>."
+
+#: C/gnometris.xml:280(title)
+msgid "License"
+msgstr "Лиценца"
+
+#: C/gnometris.xml:281(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"Овај програм је слободан софтвер; можете га расподељивати и/или га мењати "
+"под условима <citetitle>ГНУ Опште Јавне Лиценце (GNU GPL)</citetitle> како "
+"је објављује Задужбина за Слободни Софтвер (FSF); било верзије 2 те Лиценце, "
+"било (по вашем нахођењу) било које новије верзије."
+
+#: C/gnometris.xml:283(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Овај програм се расподељује у нади да ће бити од користи, али БЕЗ ИКАКВИХ "
+"ГАРАНЦИЈА; чак и без подразумеване гаранције КОРИСНОСТИ или ПРИЛАГОЂЕНОСТИ "
+"ОДРЕЂЕНОЈ НАМЕНИ.  Видите <citetitle>ГНУ Општу Јавну Лиценцу</citetitle> за "
+"више детаља."
+
+#: C/gnometris.xml:285(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"Примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> је укључен у додатку "
+"<citetitle>Гномовог корисничког водича</citetitle>. Такође можете набавити "
+"примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> од Задужбине за "
+"Слободни Софтвер одлазећи на <ulink url=\"http://www.fsf.org\" type=\"http"
+"\">њихову веб адресу</ulink> или пишући на <address> Free Software "
+"Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</"
+"city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</"
+"country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/gnometris.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"Бранко Кокановић <branko.kokanovic@gmail.com>\n"
+"\n"
+"Prevod.org — превод на српски језик"
