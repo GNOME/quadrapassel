@@ -157,7 +157,7 @@ Tetris::Tetris(int cmdlLevel):
 	}
 
 	w = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-	gtk_window_set_title (GTK_WINDOW (w), _("Gnometris"));
+	gtk_window_set_title (GTK_WINDOW (w), _("Quadrapassel"));
 
 	g_signal_connect (w, "delete_event", G_CALLBACK (gameQuit), this);
 	gtk_drag_dest_set (w, GTK_DEST_DEFAULT_ALL, targets,
@@ -570,7 +570,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 
 	/* create the dialog */
 	t->setupdialog =
-		gtk_dialog_new_with_buttons(_("Gnometris Preferences"),
+		gtk_dialog_new_with_buttons(_("Quadrapassel Preferences"),
 					    GTK_WINDOW (t->w),
 					    (GtkDialogFlags)0,
 					    GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE,
@@ -1295,16 +1295,16 @@ Tetris::gameAbout(GtkAction *action, void *d)
 
 	const gchar * const documenters[] = { "Angela Boyle", NULL };
 
-	gchar *license = games_get_license (_("Gnometris"));
+	gchar *license = games_get_license (_("Quadrapassel"));
 
 	gtk_show_about_dialog (GTK_WINDOW (t->getWidget()),
 #if GTK_CHECK_VERSION (2, 11, 0)
-			       "program-name", _("Gnometris"),
+			       "program-name", _("Qua"),
 #else
-			       "name", _("Gnometris"),
+			       "name", _("Quadrapassel"),
 #endif
 			       "version", VERSION,
-			       "comments", _("A classic game of fitting falling blocks together.\n\nGnometris is a part of GNOME Games."),
+			       "comments", _("A classic game of fitting falling blocks together.\n\nQuadrapassel is a part of GNOME Games."),
 			       "copyright", "Copyright \xc2\xa9 1999 J. Marcin Gorycki, 2000-2009 Others",
 			       "license", license,
 			       "website-label", _("GNOME Games web site"),
