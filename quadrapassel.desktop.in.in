@@ -1,7 +1,7 @@
 [Desktop Entry]
 _Name=Quadrapassel
 _Comment=Fit falling blocks together
-Icon=gnome-gnometris
+Icon=gnome-quadrapassel
 Exec=quadrapassel
 Terminal=false
 Type=Application
