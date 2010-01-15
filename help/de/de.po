@@ -1,11 +1,11 @@
-# German translation of the Gnometris manual.
-# Mario Blättermann <mariobl@gnome.org>, 2008, 2009.
+# German translation of the Quadrapassel manual.
+# Mario Blättermann <mariobl@gnome.org>, 2008-2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnometris\n"
-"POT-Creation-Date: 2009-06-15 19:57+0000\n"
-"PO-Revision-Date: 2009-07-28 21:39+0100\n"
+"Project-Id-Version: quadrapassel\n"
+"POT-Creation-Date: 2010-01-15 18:30+0000\n"
+"PO-Revision-Date: 2010-01-15 23:06+0100\n"
 "Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -15,17 +15,17 @@ msgstr ""
 "X-Poedit-Country: GERMANY\n"
 
 #: C/quadrapassel.xml:27(title)
-msgid "<application>Gnometris</application> Manual"
-msgstr "<application>Gnometris</application>-Handbuch"
+msgid "<application>Quadrapassel</application> Manual"
+msgstr "<application>Quadrapassel</application>-Handbuch"
 
 #: C/quadrapassel.xml:30(para)
 msgid ""
-"Gnometris is GNOME's version of Tetris, the classic game of interlocking four-"
-"piece blocks. As they fall from the top, the player must orient them to fit "
-"the other blocks at the bottom so that they form a complete horizontal line, "
-"in which case that line disappears and the player gains points."
+"Quadrapassel is GNOME's version of Tetris, the classic game of interlocking "
+"four-piece blocks. As they fall from the top, the player must orient them to "
+"fit the other blocks at the bottom so that they form a complete horizontal "
+"line, in which case that line disappears and the player gains points."
 msgstr ""
-"Gnometris ist die GNOME-Version von Tetris, dem klassischen Spiel zum "
+"Quadrapassel ist die GNOME-Version von Tetris, dem klassischen Spiel zum "
 "Zusammenfügen vierteiliger Blöcke. Während die Blöcke fallen, muss der "
 "Spieler diese so drehen, dass sie zusammen mit bereits liegenden Blöcken eine "
 "geschlossene horizontale Linie bilden, welche dann entfernt wird und der "
@@ -165,8 +165,8 @@ msgid "anjela@u.washington.edu"
 msgstr "anjela@u.washington.edu"
 
 #: C/quadrapassel.xml:91(revnumber)
-msgid "Gnometris Manual V2.8"
-msgstr "Gnometris-Handbuch V2.8"
+msgid "Quadrapassel Manual V2.8"
+msgstr "Quadrapassel-Handbuch V2.8"
 
 #: C/quadrapassel.xml:92(date)
 msgid "June 2004"
@@ -177,8 +177,8 @@ msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
 msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
 
 #: C/quadrapassel.xml:102(releaseinfo)
-msgid "This manual describes version 2.12 of Gnometris."
-msgstr "Dieses Handbuch beschreibt Version 2.12 von Gnometris."
+msgid "This manual describes version 2.12 of Quadrapassel."
+msgstr "Dieses Handbuch beschreibt Version 2.12 von Quadrapassel."
 
 #: C/quadrapassel.xml:109(title)
 msgid "Feedback"
@@ -186,19 +186,19 @@ msgstr "Rückmeldungen"
 
 #: C/quadrapassel.xml:110(para)
 msgid ""
-"To report a bug or make a suggestion regarding the <application>Gnometris</"
+"To report a bug or make a suggestion regarding the <application>Quadrapassel</"
 "application> application or this manual, follow the directions in the <ulink "
 "url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
 "ulink>."
 msgstr ""
 "Um einen Fehler zu melden oder einen Vorschlag zur Anwendung "
-"<application>Gnometris</application> oder zu diesem Handbuch zu machen, "
+"<application>Quadrapassel</application> oder zu diesem Handbuch zu machen, "
 "folgen Sie den Anweisungen auf der <ulink url=\"ghelp:user-guide?feedback-bugs"
 "\" type=\"help\">GNOME-Seite für Rückmeldungen</ulink>."
 
 #: C/quadrapassel.xml:122(primary)
-msgid "Gnometris"
-msgstr "Gnometris"
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
 
 #: C/quadrapassel.xml:128(title)
 msgid "Introduction"
@@ -207,7 +207,7 @@ msgstr "Einführung"
 #. synopsis of game
 #: C/quadrapassel.xml:131(para)
 msgid ""
-"<application>Gnometris</application> comes from the classic falling-block "
+"<application>Quadrapassel</application> comes from the classic falling-block "
 "game, <application>Tetris</application>. The goal of the game is to create "
 "complete horizontal lines of blocks, which will disappear. The blocks come in "
 "seven different shapes made from four blocks each: one straight, two L-"
@@ -217,7 +217,7 @@ msgid ""
 "completing lines. As your score gets higher, you level up and the blocks fall "
 "faster."
 msgstr ""
-"<application>Gnometris</application> entstammt dem klassischen Spiel mit "
+"<application>Quadrapassel</application> entstammt dem klassischen Spiel mit "
 "fallenden Blöcken, <application>Tetris</application>. Ziel des Spiels ist es, "
 "aus den Blöcken eine komplette horizontale Linie zu bilden, die dann entfernt "
 "wird. Die Blöcke kommen in sieben verschiedenen Formen, die aus jeweils vier "
@@ -231,30 +231,31 @@ msgstr ""
 #. running game
 #: C/quadrapassel.xml:134(para)
 msgid ""
-"To run <application>Gnometris</application>, select "
+"To run <application>Quadrapassel</application>, select "
 "<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
-"guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, or type "
-"<command>gnometris</command> in the command line."
+"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, or type "
+"<command>quadrapassel</command> in the command line."
 msgstr ""
-"Um <application>Gnometris</application> zu starten, wählen Sie "
+"Um <application>Quadrapassel</application> zu starten, wählen Sie "
 "<menuchoice><guimenu>Anwendungen</guimenu><guisubmenu>Spiele</"
-"guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, oder geben "
-"<command>gnometris</command> in einer Befehlszeile ein."
+"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, oder geben "
+"<command>Quadrapassel</command> in einer Befehlszeile ein."
 
 #. part of gnome-games
 #: C/quadrapassel.xml:137(para)
 msgid ""
-"<application>Gnometris</application> is included in the <filename>gnome-"
+"<application>Quadrapassel</application> is included in the <filename>gnome-"
 "games</filename> package, which is part of the GNOME desktop environment. "
-"This document describes version 2.8 of <application>Gnometris</application>."
+"This document describes version 2.8 of <application>Quadrapassel</"
+"application>."
 msgstr ""
-"<application>Gnometris</application> ist Teil des Pakets <filename>gnome-"
+"<application>Quadrapassel</application> ist Teil des Pakets <filename>gnome-"
 "games</filename>, das Teil der GNOME-Desktopumgebung ist. Dieses Dokument "
-"beschreibt Version 2.8 von <application>Gnometris</application>"
+"beschreibt Version 2.8 von <application>Quadrapassel</application>"
 
 #: C/quadrapassel.xml:141(title)
-msgid "Playing <application>Gnometris</application>"
-msgstr "<application>Gnometris</application> spielen"
+msgid "Playing <application>Quadrapassel</application>"
+msgstr "<application>Quadrapassel</application> spielen"
 
 # Das müsste noch mal jemand überprüfen
 #: C/quadrapassel.xml:142(para)
@@ -355,24 +356,24 @@ msgstr "Das Spiel beenden"
 #: C/quadrapassel.xml:168(para)
 msgid ""
 "Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</guimenuitem></"
-"menuchoice> to end your current game without quiting Gnometris."
+"menuchoice> to end your current game without quiting Quadrapassel."
 msgstr ""
 "Wählen Sie <menuchoice><guimenu>Spiel</guimenu><guimenuitem>Spiel beenden</"
-"guimenuitem></menuchoice>, um das laufende Spiel zu beenden, ohne Gnometris "
-"zu schließen."
+"guimenuitem></menuchoice>, um das laufende Spiel zu beenden, ohne "
+"Quadrapassel zu schließen."
 
 #: C/quadrapassel.xml:171(title)
-msgid "Quiting the <application>Gnometris</application>"
-msgstr "<application>Gnometris</application> beenden"
+msgid "Quiting the <application>Quadrapassel</application>"
+msgstr "<application>Quadrapassel</application> beenden"
 
 #: C/quadrapassel.xml:172(para)
 msgid ""
-"To completely quit <application>Gnometris</application> go to "
+"To completely quit <application>Quadrapassel</application> go to "
 "<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
 "menuchoice>. If you are in the middle of a game when you quit, you will end "
 "your game without saving your score."
 msgstr ""
-"Um <application>Gnometris</application> vollständig zu beenden, wählen Sie "
+"Um <application>Quadrapassel</application> vollständig zu beenden, wählen Sie "
 "<menuchoice><guimenu>Spiel</guimenu><guimenuitem>Beenden</guimenuitem></"
 "menuchoice>. Wenn Sie mitten in einem laufenden Spiel beenden, wird dieses "
 "beendet, ohne den Punktestand zu speichern."
@@ -414,8 +415,8 @@ msgstr ""
 "Spielers und der Zeitpunkt des betreffenden Spiels."
 
 #: C/quadrapassel.xml:186(title)
-msgid "Customizing <application>Gnometris</application>"
-msgstr "<application>Gnometris</application> anpassen"
+msgid "Customizing <application>Quadrapassel</application>"
+msgstr "<application>Quadrapassel</application> anpassen"
 
 #: C/quadrapassel.xml:188(title)
 msgid "Customizing Game Start-up"
@@ -425,16 +426,16 @@ msgstr "Start des Spiels anpassen"
 msgid ""
 "By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
 "guimenuitem></menuchoice>, you can customize a variety of features for the "
-"start-up of each Gnometris game: number and density of pre-filled rows, and "
-"starting level. \"Pre-filled rows\" refers to how many rows will already have "
-"blocks in them when you start each new game."
+"start-up of each Quadrapassel game: number and density of pre-filled rows, "
+"and starting level. \"Pre-filled rows\" refers to how many rows will already "
+"have blocks in them when you start each new game."
 msgstr ""
 "Wenn Sie <menuchoice><guimenu>Einstellungen</"
 "guimenu><guimenuitem>Einstellungen</guimenuitem></menuchoice> wählen, können "
-"Sie eine Vielzahl der Funktionen jedes Gnometris-Spiels anpassen: Anzahl und "
-"Dichte der zu Beginn gefüllten Zeilen, sowie den Level beim Start. »Zu Beginn "
-"gefüllte Zeilen« bezeichnet, wieviele Zeilen bereits Blöcke enthalten dürfen, "
-"wenn Sie ein neues Spiel starten."
+"Sie eine Vielzahl der Funktionen jedes Quadrapassel-Spiels anpassen: Anzahl "
+"und Dichte der zu Beginn gefüllten Zeilen, sowie den Level beim Start. »Zu "
+"Beginn gefüllte Zeilen« bezeichnet, wieviele Zeilen bereits Blöcke enthalten "
+"dürfen, wenn Sie ein neues Spiel starten."
 
 #: C/quadrapassel.xml:191(title)
 msgid "Number of Pre-filled Rows"
@@ -483,7 +484,6 @@ msgstr ""
 "erreichbare Level. Der Standard ist 1."
 
 #: C/quadrapassel.xml:204(title)
-#| msgid "Customizing the Blocks"
 msgid "Customizing the Gameplay"
 msgstr "Anpassen des Spiels"
 
@@ -583,18 +583,18 @@ msgstr ""
 "aber für fortgeschrittene Spieler dürfte das eher hinderlich sein."
 
 #: C/quadrapassel.xml:236(title)
-msgid "Customizing the Look of <application>Gnometris</application>"
-msgstr "Aussehen von <application>Gnometris</application> anpassen"
+msgid "Customizing the Look of <application>Quadrapassel</application>"
+msgstr "Aussehen von <application>Quadrapassel</application> anpassen"
 
 #: C/quadrapassel.xml:237(para)
 msgid ""
 "Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
 "guimenuitem></menuchoice>, you can customize the look of "
-"<application>Gnometris</application>: images for the blocks."
+"<application>Quadrapassel</application>: images for the blocks."
 msgstr ""
 "Unter <menuchoice><guimenu>Einstellungen</guimenu><guimenuitem>Einstellungen</"
-"guimenuitem></menuchoice> können Sie das Aussehen der <application>Gnometris</"
-"application>-Blöcke anpassen: Stil der Blöcke."
+"guimenuitem></menuchoice> können Sie das Aussehen der "
+"<application>Quadrapassel</application>-Blöcke anpassen: Stil der Blöcke."
 
 #: C/quadrapassel.xml:239(title)
 msgid "Block Image"
@@ -614,13 +614,13 @@ msgstr "Hintergrund"
 
 #: C/quadrapassel.xml:243(para)
 msgid ""
-"If you drag your favorite image into the <application>Gnometris</application> "
-"window it will be used as the background. If you want a solid color as the "
-"background drag one in from either the color picker or from "
+"If you drag your favorite image into the <application>Quadrapassel</"
+"application> window it will be used as the background. If you want a solid "
+"color as the background drag one in from either the color picker or from "
 "<application>nautlilus'</application><guimenuitem>Backgrounds and Emblems</"
 "guimenuitem> dialog (the reset item from that dialog also works)."
 msgstr ""
-"Wenn Sie ihr Lieblingsbild in das  <application>Gnometris</application>-"
+"Wenn Sie ihr Lieblingsbild in das  <application>Quadrapassel</application>-"
 "Fenster ziehen, wird dieses als Hintergund verwendet. Sollten Sie einen "
 "einfarbigen Hintergund bevorzugen, können Sie diesen aus einem Farbwähler-"
 "Dialog oder aus <application>Nautilus'</application><guimenuitem>Hintergründe "
@@ -633,13 +633,13 @@ msgstr "Autoren"
 
 #: C/quadrapassel.xml:256(para)
 msgid ""
-"<application>Gnometris</application> was written by J. Marcin Gorycki in 1999 "
-"and maintained by Gnome Games Team since then. This manual was written by "
-"Angela Boyle. To report a bug or make a suggestion regarding this application "
-"or this manual, follow the directions in this <ulink url=\"ghelp:user-guide?"
-"feedback-bugs\" type=\"help\">document</ulink>."
+"<application>Quadrapassel</application> was written by J. Marcin Gorycki in "
+"1999 and maintained by Gnome Games Team since then. This manual was written "
+"by Angela Boyle. To report a bug or make a suggestion regarding this "
+"application or this manual, follow the directions in this <ulink url=\"ghelp:"
+"user-guide?feedback-bugs\" type=\"help\">document</ulink>."
 msgstr ""
-"<application>Gnometris</application> wurde im Jahre 1999 von J. Marcin "
+"<application>Quadrapassel</application> wurde im Jahre 1999 von J. Marcin "
 "Gorycki (<email>janusz.gorycki@intel.com</email>) geschrieben und seitdem vom "
 "Gnome-Games-Team entwickelt. Dieses Handbuch wurde von Angela Boyle "
 "geschrieben. Um einen Fehler zu melden oder Vorschläge zu dieser Anwendung "
@@ -700,7 +700,7 @@ msgstr ""
 "state><postcode>02111-1301</postcode><country>USA</country></address> "
 "schreiben."
 
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/quadrapassel.xml:0(None)
 msgid "translator-credits"
-msgstr "Mario Blättermann <mariobl@gnome.org>, 2008, 2009"
+msgstr "Mario Blättermann <mariobl@gnome.org>, 2008, 2009, 2010"
