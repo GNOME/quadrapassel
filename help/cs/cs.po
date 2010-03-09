@@ -1,13 +1,13 @@
 # Czech translation of gnometris help.
 # Copyright (C) 2009 the author(s) of gnome-games.
 # This file is distributed under the same license as the gnometris help.
-# Marek Černocký <marek@manet.cz>, 2009.
+# Marek Černocký <marek@manet.cz>, 2009, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games gnome-2-28\n"
-"POT-Creation-Date: 2009-07-11 21:17+0000\n"
-"PO-Revision-Date: 2009-07-12 00:19+0100\n"
+"POT-Creation-Date: 2010-03-05 17:07+0000\n"
+"PO-Revision-Date: 2010-03-07 23:00+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,19 +19,20 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: C/quadrapassel.xml:27(title)
-msgid "<application>Gnometris</application> Manual"
-msgstr "Příručka ke hře <application>Gnometris</application>"
+msgid "<application>Quadrapassel</application> Manual"
+msgstr "Příručka ke hře <application>Quadrapassel</application>"
 
 #: C/quadrapassel.xml:30(para)
 msgid ""
-"Gnometris is GNOME's version of Tetris, the classic game of interlocking "
+"Quadrapassel is GNOME's version of Tetris, the classic game of interlocking "
 "four-piece blocks. As they fall from the top, the player must orient them to "
 "fit the other blocks at the bottom so that they form a complete horizontal "
 "line, in which case that line disappears and the player gains points."
 msgstr ""
-"Gnometris je varianta GNOME hry Tetris, klasické hry skládání bloků. Jak "
-"bloky padají shora, hráč je musí natočit tak, aby zapadly do bloků dole. "
-"Cílem je vyplnit souvislou řadu, která potom zmizí a hráč obdrží body."
+"Quadrapassel je varianta GNOME hry Tetris, klasické hry skládání bloků "
+"sestávajících ze čtyř dílů. Jak bloky padají shora, hráč je musí natočit "
+"tak, aby zapadly do bloků dole. Cílem je vyplnit souvislou řadu, která potom "
+"zmizí a hráč obdrží body."
 
 #: C/quadrapassel.xml:40(year)
 msgid "2004"
@@ -157,8 +158,8 @@ msgid "anjela@u.washington.edu"
 msgstr "anjela@u.washington.edu"
 
 #: C/quadrapassel.xml:91(revnumber)
-msgid "Gnometris Manual V2.8"
-msgstr "Příručka V2.8 ke hře Gnometris"
+msgid "Quadrapassel Manual V2.8"
+msgstr "Příručka V2.8 ke hře Quadrapassel"
 
 #: C/quadrapassel.xml:92(date)
 msgid "June 2004"
@@ -169,8 +170,8 @@ msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
 msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
 
 #: C/quadrapassel.xml:102(releaseinfo)
-msgid "This manual describes version 2.12 of Gnometris."
-msgstr "Tato příručka popisuje verzi 2.12 hry Gnometris."
+msgid "This manual describes version 2.12 of Quadrapassel."
+msgstr "Tato příručka popisuje hru Quadrapassel ve verzi 2.12."
 
 #: C/quadrapassel.xml:109(title)
 msgid "Feedback"
@@ -178,19 +179,19 @@ msgstr "Ohlasy"
 
 #: C/quadrapassel.xml:110(para)
 msgid ""
-"To report a bug or make a suggestion regarding the <application>Gnometris</"
-"application> application or this manual, follow the directions in the <ulink "
-"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
-"ulink>."
+"To report a bug or make a suggestion regarding the "
+"<application>Quadrapassel</application> application or this manual, follow "
+"the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
+"\"help\">GNOME Feedback Page</ulink>."
 msgstr ""
 " Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k "
-"aplikaci <application>Gnometris</application> nebo této příručce, postupujte "
-"dle instrukcí na stránce <ulink url=\"ghelp:gnome-feedback\" type=\"help"
-"\">Stránka s ohlasy na GNOME</ulink>."
+"aplikaci <application>Quadrapassel</application> nebo této příručce, "
+"postupujte dle instrukcí na stránce <ulink url=\"ghelp:gnome-feedback\" type="
+"\"help\">Stránka s ohlasy na GNOME</ulink>."
 
 #: C/quadrapassel.xml:122(primary)
-msgid "Gnometris"
-msgstr "Gnometris"
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
 
 #: C/quadrapassel.xml:128(title)
 msgid "Introduction"
@@ -199,7 +200,7 @@ msgstr "Úvod"
 #. synopsis of game
 #: C/quadrapassel.xml:131(para)
 msgid ""
-"<application>Gnometris</application> comes from the classic falling-block "
+"<application>Quadrapassel</application> comes from the classic falling-block "
 "game, <application>Tetris</application>. The goal of the game is to create "
 "complete horizontal lines of blocks, which will disappear. The blocks come "
 "in seven different shapes made from four blocks each: one straight, two L-"
@@ -209,7 +210,7 @@ msgid ""
 "completing lines. As your score gets higher, you level up and the blocks "
 "fall faster."
 msgstr ""
-"<application>Gnometris</application> vychází z klasické hry s padajícími "
+"<application>Quadrapassel</application> vychází z klasické hry s padajícími "
 "bloky nazývané <application>Tetris</application>. Cílem hry je vytvořit "
 "celistvou vodorovnou řadu bloků, která následně zmizí. Bloky se objevují v "
 "sedmi různých tvarech vytvořených vždy ze čtyř kostek: jeden přímý, dva do "
@@ -222,30 +223,31 @@ msgstr ""
 #. running game
 #: C/quadrapassel.xml:134(para)
 msgid ""
-"To run <application>Gnometris</application>, select "
+"To run <application>Quadrapassel</application>, select "
 "<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
-"guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, or type "
-"<command>gnometris</command> in the command line."
+"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, or type "
+"<command>quadrapassel</command> in the command line."
 msgstr ""
-"<application>Gnometris</application> spustíte volbou "
+"<application>Quadrapassel</application> spustíte volbou "
 "<menuchoice><guimenu>Aplikace</guimenu><guisubmenu>Hry</"
-"guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice> nebo zadáním "
-"<command>gnometris</command> v příkazovém řádku."
+"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice> nebo zadáním "
+"<command>quadrapassel</command> v příkazovém řádku."
 
 #. part of gnome-games
 #: C/quadrapassel.xml:137(para)
 msgid ""
-"<application>Gnometris</application> is included in the <filename>gnome-"
+"<application>Quadrapassel</application> is included in the <filename>gnome-"
 "games</filename> package, which is part of the GNOME desktop environment. "
-"This document describes version 2.8 of <application>Gnometris</application>."
+"This document describes version 2.8 of <application>Quadrapassel</"
+"application>."
 msgstr ""
-"<application>Gnometris</application> je součástí balíku <filename>gnome-"
+"<application>Quadrapassel</application> je součástí balíku <filename>gnome-"
 "games</filename>, který patří k pracovnímu prostředí GNOME. Tento dokument "
-"popisuje verzi 2.8 aplikace <application>Gnometris</application>."
+"popisuje verzi 2.8 aplikace <application>Quadrapassel</application>."
 
 #: C/quadrapassel.xml:141(title)
-msgid "Playing <application>Gnometris</application>"
-msgstr "Jak hrát <application>Gnometris</application>"
+msgid "Playing <application>Quadrapassel</application>"
+msgstr "Jak hrát <application>Quadrapassel</application>"
 
 #: C/quadrapassel.xml:142(para)
 msgid ""
@@ -344,27 +346,28 @@ msgstr "Ukončení hry"
 #: C/quadrapassel.xml:168(para)
 msgid ""
 "Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
-"guimenuitem></menuchoice> to end your current game without quiting Gnometris."
+"guimenuitem></menuchoice> to end your current game without quiting "
+"Quadrapassel."
 msgstr ""
 "Volbou <menuchoice><guimenu>Hra</guimenu><guimenuitem>Ukončit hru</"
 "guimenuitem></menuchoice> ukončíte současnou hru aniž byste ukončili celý "
-"Gnometris."
+"Quadrapassel."
 
 #: C/quadrapassel.xml:171(title)
-msgid "Quiting the <application>Gnometris</application>"
-msgstr "Ukončení <application>Gnometris</application>"
+msgid "Quiting the <application>Quadrapassel</application>"
+msgstr "Ukončení hry <application>Quadrapassel</application>"
 
 #: C/quadrapassel.xml:172(para)
 msgid ""
-"To completely quit <application>Gnometris</application> go to "
+"To completely quit <application>Quadrapassel</application> go to "
 "<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
 "menuchoice>. If you are in the middle of a game when you quit, you will end "
 "your game without saving your score."
 msgstr ""
-"Pokud chcete úplně ukončit <application>Gnometris</application>, tak jděte "
-"na <menuchoice><guimenu>Hra</guimenu><guimenuitem>Ukončit</guimenuitem></"
-"menuchoice>. Pokud aplikaci ukončíte během hraní, skončí se hra bez uložení "
-"vašeho skóre."
+"Pokud chcete úplně ukončit <application>Quadrapassel</application>, tak "
+"jděte na <menuchoice><guimenu>Hra</guimenu><guimenuitem>Ukončit</"
+"guimenuitem></menuchoice>. Pokud aplikaci ukončíte během hraní, skončí se "
+"hra bez uložení vašeho skóre."
 
 #: C/quadrapassel.xml:175(title)
 msgid "Scoring Points"
@@ -400,8 +403,8 @@ msgstr ""
 "jméno hráče a datum, kdy bylo nahráno."
 
 #: C/quadrapassel.xml:186(title)
-msgid "Customizing <application>Gnometris</application>"
-msgstr "Přizpůsobení hry <application>Gnometris</application>"
+msgid "Customizing <application>Quadrapassel</application>"
+msgstr "Přizpůsobení hry <application>Quadrapassel</application>"
 
 #: C/quadrapassel.xml:188(title)
 msgid "Customizing Game Start-up"
@@ -411,15 +414,15 @@ msgstr "Přizpůsobení počátečního stavu hry"
 msgid ""
 "By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
 "guimenuitem></menuchoice>, you can customize a variety of features for the "
-"start-up of each Gnometris game: number and density of pre-filled rows, and "
-"starting level. \"Pre-filled rows\" refers to how many rows will already "
+"start-up of each Quadrapassel game: number and density of pre-filled rows, "
+"and starting level. \"Pre-filled rows\" refers to how many rows will already "
 "have blocks in them when you start each new game."
 msgstr ""
-"Přes <menuchoice><guimenu>Nastavení</guimenu><guimenuitem>Volby</"
+"Přes <menuchoice><guimenu>Nastavení</guimenu><guimenuitem>Předvolby</"
 "guimenuitem></menuchoice> si můžete přizpůsobit různé vlastnosti pro "
-"spuštění jednotlivých her: počet a hustotu předvyplněných řad a počáteční "
-"úroveň. „Předvyplněné řady“ určují kolik řad bude již částečně vyplněno "
-"bloky hned po spuštění jednotlivé hry."
+"spuštění jednotlivých her Quadrapassel: počet a hustotu předvyplněných řad a "
+"počáteční úroveň. „Předvyplněné řady“ určují kolik řad bude již částečně "
+"vyplněno bloky hned po spuštění jednotlivé hry."
 
 #: C/quadrapassel.xml:191(title)
 msgid "Number of Pre-filled Rows"
@@ -560,18 +563,18 @@ msgstr ""
 "volba může hodně pomoct začátečníkům, ale experty obvykle rozptyluje."
 
 #: C/quadrapassel.xml:236(title)
-msgid "Customizing the Look of <application>Gnometris</application>"
-msgstr "Přizpůsobení vzhledu <application>Gnometris</application>"
+msgid "Customizing the Look of <application>Quadrapassel</application>"
+msgstr "Přizpůsobení vzhledu <application>Quadrapassel</application>"
 
 #: C/quadrapassel.xml:237(para)
 msgid ""
 "Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
 "guimenuitem></menuchoice>, you can customize the look of "
-"<application>Gnometris</application>: images for the blocks."
+"<application>Quadrapassel</application>: images for the blocks."
 msgstr ""
-"V <menuchoice><guimenu>Nastavení</guimenu><guimenuitem>Volby</guimenuitem></"
-"menuchoice> si můžete přizpůsobit vzhled <application>Gnometris</"
-"application>: styl bloků."
+"V <menuchoice><guimenu>Nastavení</guimenu><guimenuitem>Předvolby</"
+"guimenuitem></menuchoice> si můžete přizpůsobit vzhled "
+"<application>Quadrapassel</application>: styl bloků."
 
 #: C/quadrapassel.xml:239(title)
 msgid "Block Image"
@@ -591,13 +594,13 @@ msgstr "Pozadí"
 
 #: C/quadrapassel.xml:243(para)
 msgid ""
-"If you drag your favorite image into the <application>Gnometris</"
+"If you drag your favorite image into the <application>Quadrapassel</"
 "application> window it will be used as the background. If you want a solid "
 "color as the background drag one in from either the color picker or from "
 "<application>nautlilus'</application><guimenuitem>Backgrounds and Emblems</"
 "guimenuitem> dialog (the reset item from that dialog also works)."
 msgstr ""
-"Přetažením vašeho oblíbeného obrázku myší do okna <application>Gnometris</"
+"Přetažením vašeho oblíbeného obrázku myší do okna <application>Quadrapassel</"
 "application> se tento obrázek použije jako pozadí. Pokud chcete použít na "
 "pozadí jednolitou barvu, přesuňte ji z dialogu pro výběr barev nebo z "
 "dialogu <guimenuitem>Pozadí a emblémy</guimenuitem> aplikace "
@@ -609,17 +612,17 @@ msgstr "Autoři"
 
 #: C/quadrapassel.xml:256(para)
 msgid ""
-"<application>Gnometris</application> was written by J. Marcin Gorycki in "
+"<application>Quadrapassel</application> was written by J. Marcin Gorycki in "
 "1999 and maintained by Gnome Games Team since then. This manual was written "
 "by Angela Boyle. To report a bug or make a suggestion regarding this "
 "application or this manual, follow the directions in this <ulink url=\"ghelp:"
 "user-guide?feedback-bugs\" type=\"help\">document</ulink>."
 msgstr ""
-"<application>Gnometris</application> napsal J. Marcin Gorycki v roce 1999 a "
-"od té doby jej udržuje Gnome Games Team. Tuto příručku napsala Angela Boyle. "
-"Pokud chcete nahlásit chybu nebo podat návrh týkající se této aplikace nebo "
-"tohoto návodu, tak se řiďte instrukcemi v tomto <ulink url=\"ghelp:user-"
-"guide?feedback-bugs\" type=\"help\">dokumentu</ulink>."
+"<application>Quadrapassel</application> napsal J. Marcin Gorycki v roce 1999 "
+"a od té doby jej udržuje Gnome Games Team. Tuto příručku napsala Angela "
+"Boyle. Pokud chcete nahlásit chybu nebo podat návrh týkající se této "
+"aplikace nebo tohoto návodu, tak se řiďte instrukcemi v tomto <ulink url="
+"\"ghelp:user-guide?feedback-bugs\" type=\"help\">dokumentu</ulink>."
 
 #: C/quadrapassel.xml:280(title)
 msgid "License"
@@ -670,7 +673,11 @@ msgstr ""
 "city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</"
 "country></address>"
 
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/quadrapassel.xml:0(None)
 msgid "translator-credits"
-msgstr "Marek Černocký <marek@manet.cz>, 2009."
+msgstr "Marek Černocký <marek@manet.cz>, 2009, 2010."
+
+#~ msgid "Gnometris"
+#~ msgstr "Gnometris"
+
