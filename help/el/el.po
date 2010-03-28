@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnometris.HEAD.el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-07 12:57+0100\n"
-"PO-Revision-Date: 2009-01-05 21:40+0200\n"
-"Last-Translator: Marios Zindilis <m.zindilis@dmajor.org>\n"
+"POT-Creation-Date: 2010-03-28 11:16+0000\n"
+"PO-Revision-Date: 2010-03-28 20:56+0200\n"
+"Last-Translator: Bakaoukas Nikolaos <nikolaosx1@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,16 +18,19 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #: C/quadrapassel.xml:27(title)
-msgid "<application>Gnometris</application> Manual"
-msgstr "Τεκμηρίωση <application>Gnometris</application>"
+#| msgid "<application>Gnometris</application> Manual"
+msgid "<application>Quadrapassel</application> Manual"
+msgstr "Τεκμηρίωση για τα <application>Τουβλάκια</application>"
 
 #: C/quadrapassel.xml:30(para)
-msgid ""
-"Gnometris is GNOME's version of Tetris, the classic game of interlocking "
-"four-piece blocks. As they fall from the top, the player must orient them to "
-"fit the other blocks at the bottom so that they form a complete horizontal "
-"line, in which case that line disappears and the player gains points."
-msgstr "Το Gnometris είναι μια εκδοχή για το GNOME του Tetris, του κλασσικού παιχνιδιού τακτοποίησης κομματιών. Καθώς πέφτουν από πάνω, ο χρήστης πρέπει να τα προσανατολίσει ώστε να ταιριάξουν στα άλλα κομμάτια στο κάτω μέρος, ώστε να διαμορφώνονται πλήρεις οριζόντιες γραμμές. Σ' αυτή την περίπτωση οι γραμμές εξαφανίζονται και ο παίκτης κερδίζει πόντους. "
+#| msgid ""
+#| "Gnometris is GNOME's version of Tetris, the classic game of interlocking "
+#| "four-piece blocks. As they fall from the top, the player must orient them "
+#| "to fit the other blocks at the bottom so that they form a complete "
+#| "horizontal line, in which case that line disappears and the player gains "
+#| "points."
+msgid "Quadrapassel is GNOME's version of Tetris, the classic game of interlocking four-piece blocks. As they fall from the top, the player must orient them to fit the other blocks at the bottom so that they form a complete horizontal line, in which case that line disappears and the player gains points."
+msgstr "Τα Τουβλάκια είναι μια εκδοχή για το GNOME του Tetris, του κλασσικού παιχνιδιού τακτοποίησης των κομματιών. Καθώς πέφτουν από πάνω, ο χρήστης πρέπει να τα προσανατολίσει ώστε να ταιριάξουν στα άλλα κομμάτια στο κάτω μέρος, ώστε να διαμορφώνονται πλήρεις οριζόντιες γραμμές. Σ' αυτή την περίπτωση οι γραμμές εξαφανίζονται και ο παίκτης κερδίζει πόντους."
 
 #: C/quadrapassel.xml:40(year)
 msgid "2004"
@@ -37,106 +40,34 @@ msgstr "2004"
 msgid "Angela Boyle"
 msgstr "Angela Boyle"
 
-#: C/quadrapassel.xml:56(publishername) C/quadrapassel.xml:95(para)
+#: C/quadrapassel.xml:56(publishername)
+#: C/quadrapassel.xml:97(para)
 msgid "GNOME Documentation Project"
 msgstr "Έργο τεκμηρίωσης GNOME"
 
 #: C/quadrapassel.xml:2(para)
-msgid ""
-"Permission is granted to copy, distribute and/or modify this document under "
-"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
-"later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
-"in the file COPYING-DOCS distributed with this manual."
-msgstr ""
-"Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό τους "
-"όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή "
-"μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά "
-"Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε να "
-"βρείτε ένα αντίγραφο της GFDL σε αυτόν τον <ulink type=\"help\" url=\"ghelp:"
-"fdl\">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε με αυτόν "
-"τον οδηγό."
+msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any later version published by the Free Software Foundation with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+msgstr "Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σε αυτόν τον <ulink type=\"help\" url=\"ghelp:fdl\">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε με αυτόν τον οδηγό."
 
 #: C/quadrapassel.xml:12(para)
-msgid ""
-"This manual is part of a collection of GNOME manuals distributed under the "
-"GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in "
-"section 6 of the license."
-msgstr ""
-"Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME όπως "
-"διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την "
-"τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση "
-"συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 "
-"της άδειας."
+msgid "This manual is part of a collection of GNOME manuals distributed under the GFDL. If you want to distribute this manual separately from the collection, you can do so by adding a copy of the license to the manual, as described in section 6 of the license."
+msgstr "Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME όπως διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 της άδειας."
 
 #: C/quadrapassel.xml:19(para)
-msgid ""
-"Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any GNOME "
-"documentation, and the members of the GNOME Documentation Project are made "
-"aware of those trademarks, then the names are in capital letters or initial "
-"capital letters."
-msgstr ""
-"Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα "
-"προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέν. Όπου αυτά τα ονόματα "
-"εμφανίζονται στην τεκμηρίωση GNOME, και τα μέλη της ομάδας τεκμηρίωσης GNOME "
-"έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με "
-"αρχικούς κεφαλαίους χαρακτήρες."
+msgid "Many of the names used by companies to distinguish their products and services are claimed as trademarks. Where those names appear in any GNOME documentation, and the members of the GNOME Documentation Project are made aware of those trademarks, then the names are in capital letters or initial capital letters."
+msgstr "Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέν. Όπου αυτά τα ονόματα εμφανίζονται στην τεκμηρίωση GNOME, και τα μέλη της ομάδας τεκμηρίωσης GNOME έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με αρχικούς κεφαλαίους χαρακτήρες."
 
 #: C/quadrapassel.xml:35(para)
-msgid ""
-"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
-"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
-"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
-"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
-"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
-"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
-"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
-"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
-"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
-"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
-"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
-msgstr ""
-"Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ \"ΩΣ ΕΧΕΙ\", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ ΝΑ "
-"ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΓΙΑ "
-"ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ "
-"ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ "
-"ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ "
-"ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. "
-"ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ "
-"ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ."
+msgid "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr "Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ \"ΩΣ ΕΧΕΙ\", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ ΝΑ ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ."
 
 #: C/quadrapassel.xml:55(para)
-msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
-"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
-"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
-"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
-"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
-"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
-"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
-"POSSIBILITY OF SUCH DAMAGES."
-msgstr ""
-"ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή "
-"ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ "
-"ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ "
-"ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ "
-"ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ "
-"ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ."
+msgid "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES."
+msgstr "ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ."
 
 #: C/quadrapassel.xml:28(para)
-msgid ""
-"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
-"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
-"<placeholder-1/>"
-msgstr ""
-"ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ "
-"ΑΔΕΙΑΣ GNU FREE DOCUMENTATION ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <placeholder-"
-"1/>"
+msgid "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: <placeholder-1/>"
+msgstr "ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΑΔΕΙΑΣ GNU FREE DOCUMENTATION ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <placeholder-1/>"
 
 #: C/quadrapassel.xml:67(firstname)
 msgid "Angela"
@@ -150,531 +81,339 @@ msgstr "Boyle"
 msgid "anjela@u.washington.edu"
 msgstr "anjela@u.washington.edu"
 
-#: C/quadrapassel.xml:89(revnumber)
-msgid "Gnometris Manual V2.8"
-msgstr "Τεκμηρίωση Gnometris V2.8"
+#: C/quadrapassel.xml:91(revnumber)
+#| msgid "Gnometris Manual V2.8"
+msgid "Quadrapassel Manual V2.8"
+msgstr "Τεκμηρίωση για τα Τουβλάκια έκδοση 2.8"
 
-#: C/quadrapassel.xml:90(date)
+#: C/quadrapassel.xml:92(date)
 msgid "June 2004"
 msgstr "Ιούνιος 2004"
 
-#: C/quadrapassel.xml:92(para)
+#: C/quadrapassel.xml:94(para)
 msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
 msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
 
-#: C/quadrapassel.xml:100(releaseinfo)
-msgid "This manual describes version 2.12 of Gnometris."
-msgstr "Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.12 του Gnometris."
+#: C/quadrapassel.xml:102(releaseinfo)
+#| msgid "This manual describes version 2.12 of Gnometris."
+msgid "This manual describes version 2.12 of Quadrapassel."
+msgstr "Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.12 του παιχνιδιού Τουβλάκια."
 
-#: C/quadrapassel.xml:107(title)
+#: C/quadrapassel.xml:109(title)
 msgid "Feedback"
 msgstr "Ανάδραση"
 
-#: C/quadrapassel.xml:108(para)
-msgid ""
-"To report a bug or make a suggestion regarding the <application>Gnometris</"
-"application> application or this manual, follow the directions in the <ulink "
-"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
-"ulink>."
-msgstr ""
-"Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με το "
-"<application>Gnometris</application>  ή αυτή την τεκμηρίωση, ακολουθήστε τις "
-"οδηγίες στη σελίδα <ulink "
-"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">ανάδρασης GNOME </ulink>."
+#: C/quadrapassel.xml:110(para)
+#| msgid ""
+#| "To report a bug or make a suggestion regarding the "
+#| "<application>Gnometris</application> application or this manual, follow "
+#| "the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
+#| "\"help\">GNOME Feedback Page</ulink>."
+msgid "To report a bug or make a suggestion regarding the <application>Quadrapassel</application> application or this manual, follow the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr "Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με τα <application>Τουβλάκια</application>  ή αυτή την τεκμηρίωση, ακολουθήστε τις οδηγίες στη σελίδα <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">σελίδα ανατροφοδότησης του GNOME</ulink>."
 
-#: C/quadrapassel.xml:120(primary)
-msgid "Gnometris"
-msgstr "Gnometris"
+#: C/quadrapassel.xml:122(primary)
+msgid "Quadrapassel"
+msgstr "Τουβλάκια"
 
-#: C/quadrapassel.xml:126(title)
+#: C/quadrapassel.xml:128(title)
 msgid "Introduction"
 msgstr "Εισαγωγή"
 
 #. synopsis of game
-#: C/quadrapassel.xml:129(para)
-msgid ""
-"<application>Gnometris</application> comes from the classic falling-block "
-"game, <application>Tetris</application>. The goal of the game is to create "
-"complete horizontal lines of blocks, which will disappear. The blocks come "
-"in seven different shapes made from four blocks each: one straight, two L-"
-"shaped, one square, and two S-shaped. The blocks fall from the top center of "
-"the screen in a random order. You rotate the blocks and move them across the "
-"screen to drop them in complete lines. You score by dropping blocks fast and "
-"completing lines. As your score gets higher, you level up and the blocks "
-"fall faster."
-msgstr ""
-"Το Gnometris προέρχεται από το κλασικό παιχνίδι κύβων, Tetris. Ο στόχος του "
-"παιχνιδιού είναι να δημιουργηθούν οι πλήρεις οριζόντιες γραμμές κύβων, οι "
-"οποίες θα εξαφανιστούν. Οι κύβοι έρχονται σε επτά διαφορετικές μορφές που "
-"γίνονται από τέσσερις κύβους κάθε ένας: ένας ευθύς, δύο με σχήμα L, ένα "
-"τετράγωνο, και δύο σχήμα S. Οι κύβοι πέφτουν από το κορυφαίο κέντρο της "
-"οθόνης σε μια τυχαία σειρά. Εσείς περιστρέφετε τους κύβους και τους κινείτε "
-"στην οθόνη για να τους ρίξετε και να δημιουργήσετε πλήρεις γραμμές. Αυξάνετε "
-"την βαθμολογία σας με τη ρίψη των κύβων γρήγορων και την ολοκλήρωση των "
-"γραμμών. Όσο η βαθμολογία σας αυξάνεται, αυξάνεται και το επίπεδο δυσκολίας, "
-"και η πτώση των κύβων γίνεται γρηγορότερη."
+#: C/quadrapassel.xml:131(para)
+#| msgid ""
+#| "<application>Gnometris</application> comes from the classic falling-block "
+#| "game, <application>Tetris</application>. The goal of the game is to "
+#| "create complete horizontal lines of blocks, which will disappear. The "
+#| "blocks come in seven different shapes made from four blocks each: one "
+#| "straight, two L-shaped, one square, and two S-shaped. The blocks fall "
+#| "from the top center of the screen in a random order. You rotate the "
+#| "blocks and move them across the screen to drop them in complete lines. "
+#| "You score by dropping blocks fast and completing lines. As your score "
+#| "gets higher, you level up and the blocks fall faster."
+msgid "<application>Quadrapassel</application> comes from the classic falling-block game, <application>Tetris</application>. The goal of the game is to create complete horizontal lines of blocks, which will disappear. The blocks come in seven different shapes made from four blocks each: one straight, two L-shaped, one square, and two S-shaped. The blocks fall from the top center of the screen in a random order. You rotate the blocks and move them across the screen to drop them in complete lines. You score by dropping blocks fast and completing lines. As your score gets higher, you level up and the blocks fall faster."
+msgstr "Τα Τουβλάκια προέρχονται από το κλασικό παιχνίδι κύβων, <application>Tetris</application>. Ο στόχος του παιχνιδιού είναι να δημιουργηθούν οι πλήρεις οριζόντιες γραμμές κύβων, οι οποίες θα εξαφανιστούν. Οι κύβοι έρχονται σε επτά διαφορετικές μορφές που γίνονται από τέσσερις κύβους κάθε ένας: ένας ευθύς, δύο με σχήμα L, ένα τετράγωνο, και δύο σχήμα S. Οι κύβοι πέφτουν από το πάνω κέντρο της οθόνης με τυχαία σειρά. Εσείς περιστρέφετε τους κύβους και τους κινείτε στην οθόνη για να τους ρίξετε και να δημιουργήσετε πλήρεις γραμμές. Αυξάνετε την βαθμολογία σας με τη ρίψη των κύβων γρήγορων και την ολοκλήρωση των γραμμών. Όσο η βαθμολογία σας αυξάνεται, αυξάνεται και το επίπεδο δυσκολίας, και η πτώση των κύβων γίνεται γρηγορότερη."
 
 #. running game
-#: C/quadrapassel.xml:132(para)
-msgid ""
-"To run <application>Gnometris</application>, select "
-"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
-"guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, or type "
-"<command>gnometris</command> in the command line."
-msgstr ""
-"Για να τρέξετε το <application>Gnometris</application>, επιλέξτε "
-"<menuchoice><guimenu>Εφαρμογές</guimenu><guisubmenu>Παιγνίδια</"
-"guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, ή "
-"πληκτρολογείστε <command>gnometris</command> στην γραμμή εντολών."
+#: C/quadrapassel.xml:134(para)
+#| msgid ""
+#| "To run <application>Gnometris</application>, select "
+#| "<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
+#| "guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, or type "
+#| "<command>gnometris</command> in the command line."
+msgid "To run <application>Quadrapassel</application>, select <menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, or type <command>quadrapassel</command> in the command line."
+msgstr "Για να παίξετε με τα <application>Τουβλάκια</application>, επιλέξτε <menuchoice><guimenu>Εφαρμογές</guimenu><guisubmenu>Παιγνίδια</guisubmenu><guimenuitem>Τουβλάκια</guimenuitem></menuchoice>, ή πληκτρολογείστε <command>quadrapassel</command> στην γραμμή εντολών."
 
 #. part of gnome-games
-#: C/quadrapassel.xml:135(para)
-msgid ""
-"<application>Gnometris</application> is included in the <filename>gnome-"
-"games</filename> package, which is part of the GNOME desktop environment. "
-"This document describes version 2.8 of <application>Gnometris</application>."
-msgstr ""
-"To <application>Gnometris</application> συμπεριλαμβάνεται στο πακέτο "
-"<filename>gnome-games</filename>, το οποίο είναι κομμάτι του γραφικού "
-"περιβάλλοντος επιφάνειας εργασίας GNOME. Αυτό το κείμενο περιγράφει την "
-"έκδοση 2.8 του <application>Gnometris</application>."
+#: C/quadrapassel.xml:137(para)
+#| msgid ""
+#| "<application>Gnometris</application> is included in the <filename>gnome-"
+#| "games</filename> package, which is part of the GNOME desktop environment. "
+#| "This document describes version 2.8 of <application>Gnometris</"
+#| "application>."
+msgid "<application>Quadrapassel</application> is included in the <filename>gnome-games</filename> package, which is part of the GNOME desktop environment. This document describes version 2.8 of <application>Quadrapassel</application>."
+msgstr "Tα <application>Τουβλάκια</application> συμπεριλαμβάνεται στο πακέτο <filename>gnome-games</filename>, το οποίο είναι κομμάτι του γραφικού περιβάλλοντος επιφάνειας εργασίας GNOME. Αυτό το έγγραφο περιγράφει την έκδοση 2.8 του παιχνιδιού <application>Τουβλάκια</application>."
 
-#: C/quadrapassel.xml:139(title)
-msgid "Playing <application>Gnometris</application>"
-msgstr "Παίζοντας  <application>Gnometris</application>"
+#: C/quadrapassel.xml:141(title)
+#| msgid "Playing <application>Gnometris</application>"
+msgid "Playing <application>Quadrapassel</application>"
+msgstr "Παίζοντας με τα <application>Τουβλάκια</application>"
 
-#: C/quadrapassel.xml:140(para)
-msgid ""
-"You can score through two actions: completing lines and dropping blocks "
-"quickly."
-msgstr ""
-"Μπορείτε να αυξήσετε την βαθμολογία σας με δύο τρόπους: συμπληρώνοντας "
-"γραμμές και ρίχνοντας τους κύβους γρήγορα."
+#: C/quadrapassel.xml:142(para)
+msgid "You can score through two actions: completing lines and dropping blocks quickly."
+msgstr "Μπορείτε να αυξήσετε την βαθμολογία σας με δύο τρόπους: συμπληρώνοντας γραμμές και ρίχνοντας τους κύβους γρήγορα."
 
-#: C/quadrapassel.xml:142(title)
+#: C/quadrapassel.xml:144(title)
 msgid "Moving the Blocks"
 msgstr "Μετακινώντας τους Κύβους"
 
-#: C/quadrapassel.xml:143(para)
+#: C/quadrapassel.xml:145(para)
 msgid "To play the game, you only need the four arrow keys."
 msgstr "Για να παίξετε το παιχνίδι, χρειάζεστε μόνο τα τέσσερα πλήκτρα βέλη."
 
-#: C/quadrapassel.xml:146(para)
-msgid ""
-"<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
-"correspondingly across the screen."
-msgstr ""
-"Το <keycap>Left</keycap> (Αριστερό Βέλος) και το <keycap>Right</keycap> "
-"(Δεξί Βέλος) μετακινούν τον κύβο αντίστοιχα στην οθόνη."
+#: C/quadrapassel.xml:148(para)
+msgid "<keycap>Left</keycap> and <keycap>Right</keycap> move the block correspondingly across the screen."
+msgstr "Το <keycap>Left</keycap> (Αριστερό Βέλος) και το <keycap>Right</keycap> (Δεξί Βέλος) μετακινούν τον κύβο αντίστοιχα στην οθόνη."
 
-#: C/quadrapassel.xml:149(para)
-msgid ""
-"<keycap>Up</keycap> rotates the block. The default rotation is "
-"counterclockwise. You can change the rotation under "
-"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks "
-"counterclockwise</guilabel>."
-msgstr ""
-"Το <keycap>Up</keycap> (Πάνω Βέλος) περιστρέφει τον κύβο. Η προεπιλεγμένη "
-"φοράς περιστροφής είναι προς τα αριστερά. Μπορείτε να αλλάξετε την φορά "
-"πηγαίνωντας στο <menuchoice><guimenu>Ρυθμίσεις</"
-"guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice> και ξεδιαλέγωντας "
-"το <guilabel>Περιστροφή κύβων προς τα αριστερά</guilabel>."
+#: C/quadrapassel.xml:151(para)
+msgid "<keycap>Up</keycap> rotates the block. The default rotation is counterclockwise. You can change the rotation under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks counterclockwise</guilabel>."
+msgstr "Το <keycap>Up</keycap> (Πάνω Βέλος) περιστρέφει τον κύβο. Η προεπιλεγμένη φοράς περιστροφής είναι προς τα αριστερά. Μπορείτε να αλλάξετε την φορά πηγαίνωντας στο <menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice> και ξεδιαλέγωντας το <guilabel>Περιστροφή κύβων προς τα αριστερά</guilabel>."
 
-#: C/quadrapassel.xml:152(para)
-msgid ""
-"<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down "
-"the screen faster.<keycap>Down</keycap> moves the block down faster. "
-"<keycap>Space-bar</keycap> moves the block directly to the bottom."
-msgstr ""
-"Το <keycap>Down</keycap> (Κάτω Βέλος) και το <keycap>Space Bar</keycap> "
-"μετακινούν το κύβο κάτω στην οθόνη γρηγορότερα. Το <keycap>Down</keycap> "
-"(Κάτω Βέλος) μετακινεί το κύβο κάτω γρηγορότερα. Το <keycap>Space-bar</"
-"keycap> μετακινεί το κύβο κατευθείαν στο χαμηλότερο δυνατό σημείο."
+#: C/quadrapassel.xml:154(para)
+msgid "<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down the screen faster.<keycap>Down</keycap> moves the block down faster. <keycap>Space-bar</keycap> moves the block directly to the bottom."
+msgstr "Το <keycap>Down</keycap> (Κάτω Βέλος) και το <keycap>Space Bar</keycap> μετακινούν το κύβο κάτω στην οθόνη γρηγορότερα. Το <keycap>Down</keycap> (Κάτω Βέλος) μετακινεί το κύβο κάτω γρηγορότερα. Το <keycap>Space-bar</keycap> μετακινεί το κύβο κατευθείαν στο χαμηλότερο δυνατό σημείο."
 
-#: C/quadrapassel.xml:157(title)
+#: C/quadrapassel.xml:159(title)
 msgid "Starting a New Game"
 msgstr "Εκκίνηση Νέου Παιγνιδιού"
 
-#: C/quadrapassel.xml:158(para)
-msgid ""
-"To begin a new game, go to <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
-"begin dropping blocks from the center of the top of the window. The default "
-"start-up of the game has no blocks in the game window and shows the next "
-"block that will fall in the upper right hand corner. <guilabel>Score</"
-"guilabel> shows the number of points you have earned. <guilabel>Lines</"
-"guilabel> shows the number of lines you have completed. <guilabel>Level</"
-"guilabel> shows the level of difficulty you are on."
-msgstr ""
-"Για να ξεκινήσετε ένα νέο παιγνίδι, πηγαίνετε στο "
-"<menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Νέο Παιγνίδι</"
-"guimenuitem></menuchoice>Το παιγνίδι θα ξεκινήσει με κύβους να πέφτουν από "
-"το κέντρο και κορυφή της οθόνης. Η προεπιλεγμένη αρχή του παιγνιδιού δεν "
-"έχει κύβους στην οθόνη και δείχνει το επόμενο κύβο ο οποίος θα πέσει στην "
-"πάνω δεξιά γωνία. <guilabel>Βαθμολογία</guilabel> δείχνει την βαθμολογία σας "
-"στο παιγνίδι. <guilabel>Γραμμές</guilabel> δείχνει τον αριθμό των γραμμών "
-"που έχετε συμπληρώσει.<guilabel>Επίπεδο</guilabel> δείχνει το επίπεδο "
-"δυσκολίας στο οποίο παίζεται εκείνη την στιγμή."
+#: C/quadrapassel.xml:160(para)
+msgid "To begin a new game, go to <menuchoice><guimenu>Game</guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will begin dropping blocks from the center of the top of the window. The default start-up of the game has no blocks in the game window and shows the next block that will fall in the upper right hand corner. <guilabel>Score</guilabel> shows the number of points you have earned. <guilabel>Lines</guilabel> shows the number of lines you have completed. <guilabel>Level</guilabel> shows the level of difficulty you are on."
+msgstr "Για να ξεκινήσετε ένα νέο παιγνίδι, πηγαίνετε στο <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Νέο Παιγνίδι</guimenuitem></menuchoice>Το παιγνίδι θα ξεκινήσει με κύβους να πέφτουν από το κέντρο και κορυφή της οθόνης. Η προεπιλεγμένη αρχή του παιγνιδιού δεν έχει κύβους στην οθόνη και δείχνει το επόμενο κύβο ο οποίος θα πέσει στην πάνω δεξιά γωνία. <guilabel>Βαθμολογία</guilabel> δείχνει την βαθμολογία σας στο παιγνίδι. <guilabel>Γραμμές</guilabel> δείχνει τον αριθμό των γραμμών που έχετε συμπληρώσει.<guilabel>Επίπεδο</guilabel> δείχνει το επίπεδο δυσκολίας στο οποίο παίζεται εκείνη την στιγμή."
 
-#: C/quadrapassel.xml:161(title)
+#: C/quadrapassel.xml:163(title)
 msgid "Pausing the Game"
 msgstr "Παύση Παιγνιδιού"
 
-#: C/quadrapassel.xml:162(para)
-msgid ""
-"To pause your game, go to <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
-"pause a game when you are playing. The time limit on pausing your game is "
-"unlimited. To unpause the game, go back to <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
-msgstr ""
-"Για να σταματήσετε προσωρινά το παιγνίδι, πηγαίνετε στο "
-"<menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Παύση Παιγνιδιού</"
-"guimenuitem></menuchoice>. Μπορείτε να σταματήσετε ένα παιγνίδι μόνο όταν "
-"παίζετε. Το χρονικό όριο για το οποίο σταματάει το παιγνίδι είναι "
-"απεριόριστο. Για να συνεχίσετε το παιγνίδι, πηγαίνετε πίσω στο "
-"<menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Παύση Παιγνιδιού</"
-"guimenuitem></menuchoice>. "
+#: C/quadrapassel.xml:164(para)
+msgid "To pause your game, go to <menuchoice><guimenu>Game</guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only pause a game when you are playing. The time limit on pausing your game is unlimited. To unpause the game, go back to <menuchoice><guimenu>Game</guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
+msgstr "Για να σταματήσετε προσωρινά το παιγνίδι, πηγαίνετε στο <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Παύση Παιγνιδιού</guimenuitem></menuchoice>. Μπορείτε να σταματήσετε ένα παιγνίδι μόνο όταν παίζετε. Το χρονικό όριο για το οποίο σταματάει το παιγνίδι είναι απεριόριστο. Για να συνεχίσετε το παιγνίδι, πηγαίνετε πίσω στο <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Παύση Παιγνιδιού</guimenuitem></menuchoice>. "
 
-#: C/quadrapassel.xml:165(title)
+#: C/quadrapassel.xml:167(title)
 msgid "Ending the Game"
 msgstr "Τέλος Παιγνιδιού"
 
-#: C/quadrapassel.xml:166(para)
-msgid ""
-"Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
-"guimenuitem></menuchoice> to end your current game without quiting Gnometris."
-msgstr ""
-"Επιλέξτε <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Τέλος "
-"Παιγνιδιού</guimenuitem></menuchoice> για να τερματίσετε το παιγνίδι το "
-"οποίο παίζεται χωρίς να εγκαταλείψετε το Gnometris."
+#: C/quadrapassel.xml:168(para)
+#| msgid ""
+#| "Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
+#| "guimenuitem></menuchoice> to end your current game without quiting "
+#| "Gnometris."
+msgid "Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</guimenuitem></menuchoice> to end your current game without quiting Quadrapassel."
+msgstr "Επιλέξτε <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Τέλος Παιγνιδιού</guimenuitem></menuchoice> για να τερματίσετε το τρέχον παιγνίδι το χωρίς να εγκαταλείψετε τα Τουβλάκια."
 
-#: C/quadrapassel.xml:169(title)
-msgid "Quiting the <application>Gnometris</application>"
-msgstr "Κλείσιμο του <application>Gnometris</application>"
+#: C/quadrapassel.xml:171(title)
+#| msgid "Quiting the <application>Gnometris</application>"
+msgid "Quiting the <application>Quadrapassel</application>"
+msgstr "Κλείσιμο του παιχνιδιού <application>Τουβλάκια</application>"
 
-#: C/quadrapassel.xml:170(para)
-msgid ""
-"To completely quit <application>Gnometris</application> go to "
-"<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
-"menuchoice>. If you are in the middle of a game when you quit, you will end "
-"your game without saving your score."
-msgstr ""
-"Για να εγκαταλείψετε την εφαρμογή <application>Gnometris</application> "
-"επιλέξτε <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Έξοδος</"
-"guimenuitem></menuchoice>. Εάν είστε στην μέση του παιγνιδιού όταν "
-"εγκαταλείπετε, το παιγνίδι θα τελειώσει χωρίς να αποθηκευτεί η βαθμολογία "
-"σας. "
+#: C/quadrapassel.xml:172(para)
+#| msgid ""
+#| "To completely quit <application>Gnometris</application> go to "
+#| "<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
+#| "menuchoice>. If you are in the middle of a game when you quit, you will "
+#| "end your game without saving your score."
+msgid "To completely quit <application>Quadrapassel</application> go to <menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></menuchoice>. If you are in the middle of a game when you quit, you will end your game without saving your score."
+msgstr "Για να εγκαταλείψετε πλήρως την εφαρμογή <application>Τουβλάκια</application> επιλέξτε <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Έξοδος</guimenuitem></menuchoice>. Εάν είστε στην μέση του παιγνιδιού όταν γίνεται η έξοδος, το παιγνίδι θα τελειώσει χωρίς να αποθηκευτεί η βαθμολογία σας."
 
-#: C/quadrapassel.xml:173(title)
+#: C/quadrapassel.xml:175(title)
 msgid "Scoring Points"
 msgstr "Βαθμολογία"
 
-#: C/quadrapassel.xml:174(para)
-msgid ""
-"You score points through two methods: dropping blocks faster and deleting "
-"complete lines of blocks. When you delete lines, you get more points, but "
-"dropping blocks faster will quickly add up. As you level up, the blocks will "
-"begin falling faster. The highest level is 10, at which point you will only "
-"have just over a second to manipulate each block."
-msgstr ""
-"Αυξάνετε την βαθμολογία σας με δύο μεθόδους: είτε ρίχνοντας του κύβους "
-"γρηγορότερα είτε διαγράφοντας τις ολοκληρωμένες γραμμές των κύβων. Όταν "
-"διαγράφετε γραμμές, κερδίζετε περισσότερους πόντους, αλλά ρίχνοντας τους "
-"κύβους γρηγορότερα θα στοιβάζονται και περισσότεροι. Καθώς ανεβαίνετε "
-"επίπεδα, οι κύβοι θα ξεκινήσουν να πέφτουν γρηγορότερα. Το μεγαλύτερο "
-"επίπεδο είναι το 10, στο οποίο έχετε μόλις ένα δευτερόλεπτο να "
-"διαχειριστείτε τον κάθε κύβο. "
+#: C/quadrapassel.xml:176(para)
+msgid "You score points through two methods: dropping blocks faster and deleting complete lines of blocks. When you delete lines, you get more points, but dropping blocks faster will quickly add up. As you level up, the blocks will begin falling faster. The highest level is 10, at which point you will only have just over a second to manipulate each block."
+msgstr "Αυξάνετε την βαθμολογία σας με δύο μεθόδους: είτε ρίχνοντας του κύβους γρηγορότερα είτε διαγράφοντας τις ολοκληρωμένες γραμμές των κύβων. Όταν διαγράφετε γραμμές, κερδίζετε περισσότερους πόντους, αλλά ρίχνοντας τους κύβους γρηγορότερα θα στοιβάζονται και περισσότεροι. Καθώς ανεβαίνετε επίπεδα, οι κύβοι θα ξεκινήσουν να πέφτουν γρηγορότερα. Το μεγαλύτερο επίπεδο είναι το 10, στο οποίο έχετε μόλις ένα δευτερόλεπτο να διαχειριστείτε τον κάθε κύβο. "
 
-#: C/quadrapassel.xml:177(title)
+#: C/quadrapassel.xml:179(title)
 msgid "Viewing Past Scores"
 msgstr "Προβολή πίνακα βαθμολογίας"
 
-#: C/quadrapassel.xml:178(para)
-msgid ""
-"You can view the top ten scores played on your computer through "
-"<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
-"menuchoice>. The names of the users are shown next the their score and the "
-"date they played."
-msgstr ""
-"Μπορείτε να δείτε τις κορυφαίες 10 βαθμολογίες στον υπολογιστή σας μέσω του "
-"<menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Βαθμολογίες</"
-"guimenuitem></menuchoice>. Τα ονόματα των χρηστών εμφανίζονται δίπλα στην "
-"βαθμολογία τους και την ημερομηνία κατά την οποίαν έπαιξαν."
-
-#: C/quadrapassel.xml:184(title)
-msgid "Customizing <application>Gnometris</application>"
-msgstr "Παραμετροποίηση <application>Gnometris</application>"
+#: C/quadrapassel.xml:180(para)
+msgid "You can view the top ten scores played on your computer through <menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></menuchoice>. The names of the users are shown next the their score and the date they played."
+msgstr "Μπορείτε να δείτε τις κορυφαίες 10 βαθμολογίες στον υπολογιστή σας μέσω του <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Βαθμολογίες</guimenuitem></menuchoice>. Τα ονόματα των χρηστών εμφανίζονται δίπλα στην βαθμολογία τους και την ημερομηνία κατά την οποίαν έπαιξαν."
 
 #: C/quadrapassel.xml:186(title)
+#| msgid "Customizing <application>Gnometris</application>"
+msgid "Customizing <application>Quadrapassel</application>"
+msgstr "Παραμετροποίηση του παιχνιδιού <application>Τουβλάκια</application>"
+
+#: C/quadrapassel.xml:188(title)
 msgid "Customizing Game Start-up"
 msgstr "Παραμετροποίηση του παιγνιδιού κατά την εκκίνηση"
 
-#: C/quadrapassel.xml:187(para)
-msgid ""
-"By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice>, you can customize a variety of features for the "
-"start-up of each Gnometris game: number and density of pre-filled rows, and "
-"starting level. \"Pre-filled rows\" refers to how many rows will already "
-"have blocks in them when you start each new game."
-msgstr ""
-"Πηγαίνοντας στις <menuchoice><guimenu>Ρυθμίσεις</"
-"guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice>, μπορείτε να "
-"προσαρμόσετε ποικίλα χαρακτηριστικά γνωρίσματα για το ξεκίνημα κάθε "
-"παιχνιδιού Gnometris: αριθμό και πυκνότητα των προ-γεμισμένων σειρών, και "
-"αρχικό επίπεδο. \"Προ-γεμισμένες σειρές \" αναφέρεται σε πόσες σειρές θα "
-"έχουν ήδη τους κύβους όταν αρχίζετε ένα νέο παιχνίδι."
+#: C/quadrapassel.xml:189(para)
+#| msgid ""
+#| "By going to <menuchoice><guimenu>Settings</"
+#| "guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can "
+#| "customize a variety of features for the start-up of each Gnometris game: "
+#| "number and density of pre-filled rows, and starting level. \"Pre-filled "
+#| "rows\" refers to how many rows will already have blocks in them when you "
+#| "start each new game."
+msgid "By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize a variety of features for the start-up of each Quadrapassel game: number and density of pre-filled rows, and starting level. \"Pre-filled rows\" refers to how many rows will already have blocks in them when you start each new game."
+msgstr "Πηγαίνοντας στις <menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice>, μπορείτε να προσαρμόσετε ποικιλία χαρακτηριστικών γνωρισμάτων για το ξεκίνημα κάθε παιχνιδιού Τουβλάκια: αριθμό και πυκνότητα των προ-γεμισμένων σειρών, και αρχικό επίπεδο. Οι \"Προ-γεμισμένες σειρές \" αναφέρονται σε πόσες σειρές θα έχουν ήδη τους κύβους όταν αρχίζετε ένα νέο παιχνίδι."
 
-#: C/quadrapassel.xml:189(title)
+#: C/quadrapassel.xml:191(title)
 msgid "Number of Pre-filled Rows"
 msgstr "Αριθμός προ-συμπληρωμένων γραμμών:"
 
-#: C/quadrapassel.xml:190(para)
-msgid ""
-"You can change the number of rows that already have blocks at the start-up "
-"of each new game by using the spin box. You can start with up to 19 rows pre-"
-"filled at the start-up of your game. The default number of pre-filled rows "
-"is zero."
-msgstr ""
-"Μπορείτε να αλλάξετε τον αριθμό σειρών που έχουν ήδη τους κύβους στο "
-"ξεκίνημα κάθε νέου παιχνιδιού με τη χρησιμοποίηση του κιβωτίου περιστροφής. "
-"Μπορείτε να αρχίσετε με μέχρι 19 σειρές που γεμίζονται εκ των προτέρων στο "
-"ξεκίνημα του παιχνιδιού σας. Ο αριθμός προεπιλογής προ-γεμισμένων σειρών "
-"είναι μηδέν."
+#: C/quadrapassel.xml:192(para)
+msgid "You can change the number of rows that already have blocks at the start-up of each new game by using the spin box. You can start with up to 19 rows pre-filled at the start-up of your game. The default number of pre-filled rows is zero."
+msgstr "Μπορείτε να αλλάξετε τον αριθμό σειρών που έχουν ήδη τους κύβους στο ξεκίνημα κάθε νέου παιχνιδιού με τη χρησιμοποίηση του κιβωτίου περιστροφής. Μπορείτε να αρχίσετε με μέχρι 19 σειρές που γεμίζονται εκ των προτέρων στο ξεκίνημα του παιχνιδιού σας. Ο αριθμός προεπιλογής προ-γεμισμένων σειρών είναι μηδέν."
 
-#: C/quadrapassel.xml:193(title)
+#: C/quadrapassel.xml:195(title)
 msgid "Density of Pre-filled Rows"
 msgstr "Πυκνότητα κύβων στις προ-συμπληρωμένες γραμμές:"
 
-#: C/quadrapassel.xml:194(para)
-msgid ""
-"You can change the density of the blocks in the pre-filled rows at the start-"
-"up of each game. You can choose a density up to 10 blocks. You should first "
-"choose how many rows you want pre-filled under <guilabel>Number of Pre-"
-"filled Rows</guilabel>. The default density of blocks is three."
-msgstr ""
-"Μπορείτε να αλλάξετε την πυκνότητα των κύβων στις προ-γεμισμένες σειρές στην "
-"αρχή κάθε παιγνιδιού. Μπορείτε να διαλέξετε πυκνότητα έως και 10 κύβους. Θα "
-"πρέπει πρώτα να διαλέξετε πόσες γραμμές θέλετε να προ-γεμίσετε κάτω από τον "
-"<guilabel>Αριθμό προ-συμπληρωμένων γραμμών</guilabel>. Η προ-επιλεγμένη "
-"πυκνότητα των κύβων είναι τρία."
+#: C/quadrapassel.xml:196(para)
+msgid "You can change the density of the blocks in the pre-filled rows at the start-up of each game. You can choose a density up to 10 blocks. You should first choose how many rows you want pre-filled under <guilabel>Number of Pre-filled Rows</guilabel>. The default density of blocks is three."
+msgstr "Μπορείτε να αλλάξετε την πυκνότητα των κύβων στις προ-γεμισμένες σειρές στην αρχή κάθε παιγνιδιού. Μπορείτε να διαλέξετε πυκνότητα έως και 10 κύβους. Θα πρέπει πρώτα να διαλέξετε πόσες γραμμές θέλετε να προ-γεμίσετε κάτω από τον <guilabel>Αριθμό προ-συμπληρωμένων γραμμών</guilabel>. Η προ-επιλεγμένη πυκνότητα των κύβων είναι τρία."
 
-#: C/quadrapassel.xml:197(title)
+#: C/quadrapassel.xml:199(title)
 msgid "Level to Start On"
 msgstr "Επίπεδο εκκίνησης"
 
-#: C/quadrapassel.xml:198(para)
-msgid ""
-"You can adjust the level of difficulty you start on. The highest level you "
-"can start on is 10, which is the highest level you can play to. The default "
-"starting level is one."
-msgstr ""
-"Μπορείτε να καθορίσετε το επίπεδο δυσκολίας στο οποίο ξεκινάτε. Το "
-"μεγαλύτερο επίπεδο είναι το 10, το οποίο είναι το μεγαλύτερο που μπορείτε να "
-"παίξετε. Το προεπιλεγμένο επίπεδο εκκίνησης είναι το ένα."
+#: C/quadrapassel.xml:200(para)
+msgid "You can adjust the level of difficulty you start on. The highest level you can start on is 10, which is the highest level you can play to. The default starting level is one."
+msgstr "Μπορείτε να καθορίσετε το επίπεδο δυσκολίας στο οποίο ξεκινάτε. Το μεγαλύτερο επίπεδο είναι το 10, το οποίο είναι το μεγαλύτερο που μπορείτε να παίξετε. Το προεπιλεγμένο επίπεδο εκκίνησης είναι το ένα."
 
-#: C/quadrapassel.xml:202(title)
-msgid "Customizing the Blocks"
-msgstr "Παραμετροποίηση των Κύβων"
+#: C/quadrapassel.xml:204(title)
+#| msgid "Customizing the Blocks"
+msgid "Customizing the Gameplay"
+msgstr "Παραμετροποίηση του παιχνιδίού"
 
-#: C/quadrapassel.xml:203(para)
-msgid ""
-"From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice>, you can customize a variety of features related "
-"to the blocks: previewing the next block, block colors, and block rotation."
-msgstr ""
-"Από τις <menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Επιλογές</"
-"guimenuitem></menuchoice>, μπορείτε να παραμετροποιήσετε μια ποικιλία "
-"δυνατοτήτων σχετικών με τους κύβους: προεπισκόπηση επόμενου κύβου, χρώματα "
-"των κύβων, και περιστροφή των κύβων. "
+#: C/quadrapassel.xml:205(para)
+msgid "From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize a variety of features related to the blocks: previewing the next block, block colors, and block rotation."
+msgstr "Από τις <menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice>, μπορείτε να παραμετροποιήσετε μια ποικιλία δυνατοτήτων σχετικών με τους κύβους: προεπισκόπηση επόμενου κύβου, χρώματα των κύβων, και περιστροφή των κύβων. "
 
-#: C/quadrapassel.xml:205(title)
+#: C/quadrapassel.xml:207(title)
 msgid "Enable sounds"
 msgstr "Ενεργοποίηση ήχων"
 
-#: C/quadrapassel.xml:206(para)
-msgid ""
-"Turn the sound effects on and off using this option. If you are playing this "
-"game in any area which you share with other people, you should probably "
-"select off."
-msgstr ""
-"Απ/Ενεργοποιήστε τον ήχο χρησιμοποιώντας αυτήν την επιλογή. Εάν παίζετε αυτό "
-"το παιγνίδι σε ένα μέρος στο οποίο βρίσκονται και άλλοι άνθρωποι, θα πρέπει "
-"πιθανότατα να τον απενεργοποιήσετε. "
+#: C/quadrapassel.xml:208(para)
+msgid "Turn the sound effects on and off using this option. If you are playing this game in any area which you share with other people, you should probably select off."
+msgstr "Απ/Ενεργοποιήστε τον ήχο χρησιμοποιώντας αυτήν την επιλογή. Εάν παίζετε αυτό το παιγνίδι σε ένα μέρος στο οποίο βρίσκονται και άλλοι άνθρωποι, θα πρέπει πιθανότατα να τον απενεργοποιήσετε. "
 
-#: C/quadrapassel.xml:209(title)
+#: C/quadrapassel.xml:211(title)
 msgid "Preview Next Block"
 msgstr "Προεπισκόπιση Επόμενου Κύβου"
 
-#: C/quadrapassel.xml:210(para)
-msgid ""
-"Choose this option if you want to see the next block that is going to fall. "
-"This feature helps you plan the placement of your blocks."
-msgstr ""
-"Διαλέξτε αυτή την επιλογή αν θέλετε να βλέπετε τον επόμενο κύβο που "
-"πρόκειται να πέσει. Αυτή η δυνατότητα σας βοηθάει να σχεδιάζετε την "
-"τοποθέτηση των κύβων."
+#: C/quadrapassel.xml:212(para)
+msgid "Choose this option if you want to see the next block that is going to fall. This feature helps you plan the placement of your blocks."
+msgstr "Διαλέξτε αυτή την επιλογή αν θέλετε να βλέπετε τον επόμενο κύβο που πρόκειται να πέσει. Αυτή η δυνατότητα σας βοηθάει να σχεδιάζετε την τοποθέτηση των κύβων."
 
-#: C/quadrapassel.xml:213(title)
+#: C/quadrapassel.xml:215(title)
 msgid "Use Random Block Colors"
-msgstr "Τυχαία Χρώματα Κύβων"
+msgstr "Τυχαία χρώματα κύβων"
 
-#: C/quadrapassel.xml:214(para)
-msgid ""
-"Choose if you want the various block configurations to be color coded or "
-"randomly colored. If you use the colors to help you identify blocks, random "
-"colors will make the game more difficult."
-msgstr ""
-"Διαλέξτε αν θέλετε οι ποικίλες παραμετροποιήσεις των κύβων να υπακούν σε "
-"χρωματικό κώδικα ή να είναι τυχαία χρωματισμένες. Εάν χρησιμοποιείτε το "
-"χρώμα για να αναγνωρίσετε τους κύβους, τα τυχαία χρώματα θα αυξήσουν το "
-"βαθμό δυσκολίας του παιγνιδιού. "
+#: C/quadrapassel.xml:216(para)
+msgid "Choose if you want the various block configurations to be color coded or randomly colored. If you use the colors to help you identify blocks, random colors will make the game more difficult."
+msgstr "Διαλέξτε αν θέλετε οι ποικίλες παραμετροποιήσεις των κύβων να υπακούν σε χρωματικό κώδικα ή να είναι τυχαία χρωματισμένες. Εάν χρησιμοποιείτε το χρώμα για να αναγνωρίσετε τους κύβους, τα τυχαία χρώματα θα αυξήσουν το βαθμό δυσκολίας του παιγνιδιού. "
 
-#: C/quadrapassel.xml:217(title)
+#: C/quadrapassel.xml:219(title)
+msgid "Bastard Mode"
+msgstr "Σατανικά δύσκολο παιχνίδι"
+
+#: C/quadrapassel.xml:220(para)
+msgid "Choose this option if you want to select mode that is designed specifically to annoy the player. With this feature enabled, you never get the piece you want, and very seldom complete a row. Next block preview doesn't correspond to actual piece you get next, but to the one you probably wish to get."
+msgstr "Διαλέξτε αυτήν την επιλογή εάν θέλετε να ενεργοποιήσετε τον τρόπο λειτουργίας του παιχνιδιού που έχει ως μοναδικό σκοπό να σπάσει τα νεύρα του παίχτη. Με αυτό το χαρακτηριστικό ενεργοποιημένο, δεν σας έρχεται ποτέ το κομμάτι που θέλετε, και πολύ σπάνια θα γεμίσει μια σειρά. Η προβολή του επόμενου τούβλου δεν αντιστοιχεί στο πραγματικό κομμάτι που θα εμφανιστεί, αλλά μάλλον αυτού που θα θέλατε να σας έρθει."
+
+#: C/quadrapassel.xml:223(title)
 msgid "Rotate Blocks Counterclockwise"
 msgstr "Περιστροφή Κύβων Προς Τα Αριστερά"
 
-#: C/quadrapassel.xml:218(para)
+#: C/quadrapassel.xml:224(para)
 msgid "Choose this option if you want the blocks to rotate counterclockwise or not."
-msgstr ""
-"Διαλέξτε αυτήν την επιλογή αν θέλετε οι κύβοι να μετακινούνται προς τα "
-"αριστερά η όχι. "
+msgstr "Διαλέξτε αυτήν την επιλογή αν θέλετε οι κύβοι να μετακινούνται προς τα αριστερά η όχι. "
 
-#: C/quadrapassel.xml:221(title)
+#: C/quadrapassel.xml:227(title)
 msgid "Show where the block will land"
 msgstr "Εμφάνιση της θέσης προσγείωσης του κομματιού"
 
-#: C/quadrapassel.xml:222(para)
-msgid ""
-"If this feature is used a grey image of the block will show you where the "
-"block will land. This feature is very useful for beginning players, but "
-"experienced players will find it a distraction."
-msgstr ""
-"Εάν χρησιμοποιείτε αυτήν την δυνατότητα μία γκρι εικόνα θα σας δείχνει την "
-"τοποθεσία όπου θα προσγειωθεί ο κύβος. Αυτή η δυνατότητα είναι πολύ χρήσιμη "
-"για τους αρχάριους παίχτες, οι έμπειροι παίχτες όμως θα το βρουν ως απόσπαση "
-"προσοχής."
+#: C/quadrapassel.xml:228(para)
+msgid "If this feature is used a grey image of the block will show you where the block will land. This feature is very useful for beginning players, but experienced players will find it a distraction."
+msgstr "Εάν χρησιμοποιείτε αυτήν την δυνατότητα μία γκρι εικόνα θα σας δείχνει την τοποθεσία όπου θα προσγειωθεί ο κύβος. Αυτή η δυνατότητα είναι πολύ χρήσιμη για τους αρχάριους παίχτες, οι έμπειροι παίχτες όμως θα το βρουν ως απόσπαση προσοχής."
 
-#: C/quadrapassel.xml:230(title)
-msgid "Customizing the Look of <application>Gnometris</application>"
-msgstr "Παραμετροποίηση Εμφάνισης του <application>Gnometris</application>"
+#: C/quadrapassel.xml:236(title)
+#| msgid "Customizing the Look of <application>Gnometris</application>"
+msgid "Customizing the Look of <application>Quadrapassel</application>"
+msgstr "Παραμετροποίηση της εμφάνισης του παιχνιδιού <application>Τουβλάκια</application>"
 
-#: C/quadrapassel.xml:231(para)
-msgid ""
-"Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice>, you can customize the look of "
-"<application>Gnometris</application>: images for the blocks."
-msgstr ""
-"Στις <menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Επιλογές</"
-"guimenuitem></menuchoice>, μπορείτε να παραμετροποιήσετε την εμφάνιση του "
-"<application>Gnometris</application>: εικόνες για τους κύβους. "
+#: C/quadrapassel.xml:237(para)
+#| msgid ""
+#| "Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+#| "guimenuitem></menuchoice>, you can customize the look of "
+#| "<application>Gnometris</application>: images for the blocks."
+msgid "Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize the look of <application>Quadrapassel</application>: images for the blocks."
+msgstr "Κάτω από τις <menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice>, μπορείτε να παραμετροποιήσετε την εμφάνιση του παιχνιδιού <application> Τουβλάκια</application>: εικόνες για τα τουβλάκια."
 
-#: C/quadrapassel.xml:233(title)
+#: C/quadrapassel.xml:239(title)
 msgid "Block Image"
 msgstr "Εικόνα Κύβου"
 
-#: C/quadrapassel.xml:234(para)
-msgid ""
-"You can change the style of the blocks, including image and size. There are "
-"a variety of pre-made styles."
-msgstr ""
-"Μπορείτε να αλλάξετε το στυλ των κύβων, συμπεριλαμβανομένων εικόνας και "
-"μεγέθους. Υπάρχει μια ποικιλία προ-κατασκευασμένων στυλ. "
+#: C/quadrapassel.xml:240(para)
+msgid "You can change the style of the blocks, including image and size. There are a variety of pre-made styles."
+msgstr "Μπορείτε να αλλάξετε το στυλ των κύβων, συμπεριλαμβανομένων εικόνας και μεγέθους. Υπάρχει μια ποικιλία προ-κατασκευασμένων στυλ. "
 
-#: C/quadrapassel.xml:237(title)
+#: C/quadrapassel.xml:243(title)
 msgid "Background"
 msgstr "Παρασκήνιο"
 
-#: C/quadrapassel.xml:237(para)
-msgid ""
-"If you drag your favorite image into the <application>Gnometris</"
-"application> window it will be used as the background. If you want a solid "
-"color as the background drag one in from either the color picker or from "
-"<application>nautlilus'</application><guimenuitem>Backgrounds and Emblems</"
-"guimenuitem> dialog (the reset item from that dialog also works)."
-msgstr ""
-"Εάν σύρετε την αγαπημένη εικόνα σας στο παράθυρο <application>Gnometris</"
-"application> θα χρησιμοποιηθεί ως παρασκήνιο. Εάν θέλετε ένα στερεό χρώμα ως "
-"παρασκήνιο τότε σύρετε ένα μέσα από τον συλλέκτη χρώματος είτε από το "
-"διάλογο <application>nautlilus'</application><guimenuitem>Παρασκήνια και "
-"Εμβλήματα</guimenuitem> (το επαναφορά αντικειμένου από εκείνη την εργασία "
-"διαλόγου δουλεύει επίσης)."
+#: C/quadrapassel.xml:243(para)
+#| msgid ""
+#| "If you drag your favorite image into the <application>Gnometris</"
+#| "application> window it will be used as the background. If you want a "
+#| "solid color as the background drag one in from either the color picker or "
+#| "from <application>nautlilus'</application><guimenuitem>Backgrounds and "
+#| "Emblems</guimenuitem> dialog (the reset item from that dialog also works)."
+msgid "If you drag your favorite image into the <application>Quadrapassel</application> window it will be used as the background. If you want a solid color as the background drag one in from either the color picker or from <application>nautlilus'</application><guimenuitem>Backgrounds and Emblems</guimenuitem> dialog (the reset item from that dialog also works)."
+msgstr "Εάν σύρετε την αγαπημένη εικόνα σας στο παράθυρο <application>Τουβλάκια</application> θα χρησιμοποιηθεί ως παρασκήνιο. Εάν θέλετε ένα μόνο χρώμα ως παρασκήνιο τότε σύρετε ένα είτε μέσα από τον συλλέκτη χρώματος, είτε από το παράθυρο διαλόγου του <application>nautlilus'</application><guimenuitem>Παρασκήνια και Εμβλήματα</guimenuitem> (το επαναφορά αντικειμένου από αυτόν τον διαλόγου δουλεύει επίσης)."
 
-#: C/quadrapassel.xml:249(title)
+#: C/quadrapassel.xml:255(title)
 msgid "Authors"
 msgstr "Συγγραφείς"
 
-#: C/quadrapassel.xml:250(para)
-msgid ""
-"<application>Gnometris</application> was written by J. Marcin Gorycki in "
-"1999 and maintained by Gnome Games Team since then. This manual was written "
-"by Angela Boyle. To report a bug or make a suggestion regarding this "
-"application or this manual, follow the directions in this <ulink url=\"ghelp:"
-"user-guide?feedback-bugs\" type=\"help\">document</ulink>."
-msgstr ""
-"Το <application>Gnometris</application> δημιουργήθηκε από τον J. Marcin "
-"Gorycki το 1999 και συντηρείται από την Ομάδα παιχνιδιών του GNOME έκτοτε. Αυτή η τεκμηρίωση γράφτηκε από την Angela Boyle. Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με αυτή την εφαρμογή ή αυτή την τεκμηρίωση, ακολουθήστε τις "
-"οδηγίες σε αυτό το <ulink url=\"ghelp:"
-"user-guide?feedback-bugs\" type=\"help\">έγγραφο</ulink>. "
+#: C/quadrapassel.xml:256(para)
+#| msgid ""
+#| "<application>Gnometris</application> was written by J. Marcin Gorycki in "
+#| "1999 and maintained by Gnome Games Team since then. This manual was "
+#| "written by Angela Boyle. To report a bug or make a suggestion regarding "
+#| "this application or this manual, follow the directions in this <ulink url="
+#| "\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgid "<application>Quadrapassel</application> was written by J. Marcin Gorycki in 1999 and maintained by Gnome Games Team since then. This manual was written by Angela Boyle. To report a bug or make a suggestion regarding this application or this manual, follow the directions in this <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr "Τα <application> Τουβλάκια</application> δημιουργήθηκαν από τον J. Marcin Gorycki το 1999 και συντηρείται από την Ομάδα παιχνιδιών του GNOME έκτοτε. Αυτή η τεκμηρίωση γράφτηκε από την Angela Boyle. Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με αυτή την εφαρμογή ή αυτή την τεκμηρίωση, ακολουθήστε τις οδηγίες σε αυτό το <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">έγγραφο</ulink>."
 
-#: C/quadrapassel.xml:274(title)
+#: C/quadrapassel.xml:280(title)
 msgid "License"
 msgstr "Άδεια χρήσης"
 
-#: C/quadrapassel.xml:275(para)
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
-"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
-"the Free Software Foundation; either version 2 of the License, or (at your "
-"option) any later version."
-msgstr ""
-"Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/και "
-"τροποποίησή του υπό τους όρους της Γενικής Άδειας Δημόσιας Χρήσης GNU "
-"(<ulink type=\"help\" url=\"gnome-help:gpl\"><citetitle>GNU General Public "
-"License</citetitle></ulink>) όπως αυτή δημοσιεύεται από το Ίδρυμα Ελεύθερου "
-"Λογισμικού (Free Software Foundation) - είτε της έκδοσης 2 της άδειας, είτε "
-"(κατ' επιλογήν) οποιασδήποτε μεταγενέστερης έκδοσης."
+#: C/quadrapassel.xml:281(para)
+msgid "This program is free software; you can redistribute it and/or modify it under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl\"><citetitle>GNU General Public License</citetitle></ulink> as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
+msgstr "Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/και τροποποίησή του υπό τους όρους της Γενικής Άδειας Δημόσιας Χρήσης GNU (<ulink type=\"help\" url=\"gnome-help:gpl\"><citetitle>GNU General Public License</citetitle></ulink>) όπως αυτή δημοσιεύεται από το Ίδρυμα Ελεύθερου Λογισμικού (Free Software Foundation) - είτε της έκδοσης 2 της άδειας, είτε (κατ' επιλογήν) οποιασδήποτε μεταγενέστερης έκδοσης."
 
-#: C/quadrapassel.xml:277(para)
-msgid ""
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
-"License</citetitle> for more details."
-msgstr ""
-"Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ "
-"ΚΑΜΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ - χωρίς ακόμη και την έμμεση εγγύηση "
-"ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε για "
-"περισσότερες λεπτομέρειες την Γενική Άδεια Δημόσιας Χρήσης GNU "
-"(<citetitle>GNU General Public License</citetitle>)."
+#: C/quadrapassel.xml:283(para)
+msgid "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public License</citetitle> for more details."
+msgstr "Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΚΑΜΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ - χωρίς ακόμη και την έμμεση εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε για περισσότερες λεπτομέρειες την Γενική Άδεια Δημόσιας Χρήσης GNU (<citetitle>GNU General Public License</citetitle>)."
 
-#: C/quadrapassel.xml:279(para)
-msgid ""
-"A copy of the <citetitle>GNU General Public License</citetitle> is included "
-"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
-"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
-"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
-"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
-"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
-"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
-"postcode><country>USA</country></address>"
-msgstr ""
-"Ένα αντίγραφο της Γενικής Δημόσιας Άδειας Χρήσης (<citetitle>GNU General "
-"Public License</citetitle>) συμπεριλαμβάνεται ως παράρτημα στον  "
-"<citetitle>Οδηγό Χρηστών GNOME </citetitle>. Μπορείτε επίσης να αποκτήσετε "
-"ένα αντίγραφο της Γενικής Δημόσιας Άδειας Χρήσης (<citetitle>GNU General "
-"Public License</citetitle>) από το Free Software Foundation επισκεπτόμενοι "
-"<ulink url=\"http://www.fsf.org\" type=\"http\"> την ιστοσελίδα τους</ulink> "
-"ή γράφωντας τους στο<address> Free Software Foundation, Inc. <street>59 "
-"Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</"
-"state><postcode>02111-1307</postcode><country>USA</country></address>"
+#: C/quadrapassel.xml:285(para)
+msgid "A copy of the <citetitle>GNU General Public License</citetitle> is included as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also obtain a copy of the <citetitle>GNU General Public License</citetitle> from the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://www.fsf.org\">their Web site</ulink> or by writing to <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address>"
+msgstr "Ένα αντίγραφο της Γενικής Δημόσιας Άδειας Χρήσης (<citetitle>GNU General Public License</citetitle>) συμπεριλαμβάνεται ως παράρτημα στον  <citetitle>Οδηγό Χρηστών GNOME </citetitle>. Μπορείτε επίσης να αποκτήσετε ένα αντίγραφο της Γενικής Δημόσιας Άδειας Χρήσης (<citetitle>GNU General Public License</citetitle>) από το Free Software Foundation επισκεπτόμενοι <ulink url=\"http://www.fsf.org\" type=\"http\"> την ιστοσελίδα τους</ulink> ή γράφωντας τους στο<address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address>"
 
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/quadrapassel.xml:0(None)
 msgid "translator-credits"
 msgstr ""
-"Ελληνική μεταφραστική ομάδα GNOME - http://www.gnome.gr/\n"
-"  Χρήστος Μπούνταλης <mpounta@gmail.com>, 2007"
+"Χρήστος Μπούνταλης <mpounta@gmail.com>, 2007\n"
+"Νικόλαος Μπακαούκας <nikolaosx1@gmail.com>, 2010"
 
+#~ msgid "Gnometris"
+#~ msgstr "Gnometris"
