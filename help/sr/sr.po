@@ -8,8 +8,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
-"POT-Creation-Date: 2009-10-24 08:06+0000\n"
-"PO-Revision-Date: 2009-10-24 16:59+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-19 13:32+0000\n"
+"PO-Revision-Date: 2010-02-20 12:56+0100\n"
 "Last-Translator: Бранко Кокановић <branko.kokanovic@gmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,35 +19,35 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n%"
 "10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: C/gnometris.xml:27(title)
-msgid "<application>Gnometris</application> Manual"
-msgstr "Упутство за <application>Гномов тетрис</application>"
+#: C/quadrapassel.xml:27(title)
+msgid "<application>Quadrapassel</application> Manual"
+msgstr "Упутство за <application>Четворку</application>"
 
-#: C/gnometris.xml:30(para)
+#: C/quadrapassel.xml:30(para)
 msgid ""
-"Gnometris is GNOME's version of Tetris, the classic game of interlocking "
+"Quadrapassel is GNOME's version of Tetris, the classic game of interlocking "
 "four-piece blocks. As they fall from the top, the player must orient them to "
 "fit the other blocks at the bottom so that they form a complete horizontal "
 "line, in which case that line disappears and the player gains points."
 msgstr ""
-"Ово је Гномова верзија тетриса, класичне игре слагања четвороделних "
+"Четворка је Гномова верзија тетриса, класичне игре слагања четвороделних "
 "блокова. Док блокови падају, играч их мора тако усмерити да се уклапају у "
-"блокове који су већ на дну слажући пуну водоравну линију. Када се направи пуна "
-"водоравна линија, она нестаје и играч добија поене."
+"блокове који су већ на дну слажући пуну водоравну линију. Када се направи "
+"пуна водоравна линија, она нестаје и играч добија поене."
 
-#: C/gnometris.xml:40(year)
+#: C/quadrapassel.xml:40(year)
 msgid "2004"
 msgstr "2004"
 
-#: C/gnometris.xml:41(holder)
+#: C/quadrapassel.xml:41(holder)
 msgid "Angela Boyle"
 msgstr "Angela Boyle"
 
-#: C/gnometris.xml:56(publishername) C/gnometris.xml:97(para)
+#: C/quadrapassel.xml:56(publishername) C/quadrapassel.xml:97(para)
 msgid "GNOME Documentation Project"
 msgstr "Пројекат Гномове документације"
 
-#: C/gnometris.xml:2(para)
+#: C/quadrapassel.xml:2(para)
 msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
@@ -62,7 +63,7 @@ msgstr ""
 "можете пронаћи на овој <ulink type=\"help\" url=\"ghelp:fdl\">адреси</ulink> "
 "или у датотеци COPYING-DOCS која је приложена уз ово упутство."
 
-#: C/gnometris.xml:12(para)
+#: C/quadrapassel.xml:12(para)
 msgid ""
 "This manual is part of a collection of GNOME manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
@@ -74,7 +75,7 @@ msgstr ""
 "додавањем примерка лиценце документу, како је описано у одељку 6 саме "
 "лиценце."
 
-#: C/gnometris.xml:19(para)
+#: C/quadrapassel.xml:19(para)
 msgid ""
 "Many of the names used by companies to distinguish their products and "
 "services are claimed as trademarks. Where those names appear in any GNOME "
@@ -88,7 +89,7 @@ msgstr ""
 "документационог пројекта имају сазнања о томе, тада су називи исписани "
 "великим словима или са великим почетним словима."
 
-#: C/gnometris.xml:35(para)
+#: C/quadrapassel.xml:35(para)
 msgid ""
 "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
 "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
@@ -115,7 +116,7 @@ msgstr ""
 "ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ НИЈЕ ДОЗВОЉЕНА ОСИМ ПОД УСЛОВИМА ОВОГ ОГРАНИЧЕЊА "
 "ЈАМСТВА."
 
-#: C/gnometris.xml:55(para)
+#: C/quadrapassel.xml:55(para)
 msgid ""
 "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
 "NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
@@ -138,7 +139,7 @@ msgstr ""
 "ГУБИТКЕ НАСТАЛЕ УСЛЕД КОРИШЋЕЊА ДОКУМЕНТА И ЊЕГОВИХ ИЗМЕЊЕНИХ ВЕРЗИЈА ЧАК И "
 "АКО ЈЕ ОШТЕЋЕНА СТРАНА БИЛА ОБАВЕШТЕНА О МОГУЋНОСТИ НАСТАНКА ТЕ ШТЕТЕ."
 
-#: C/gnometris.xml:28(para)
+#: C/quadrapassel.xml:28(para)
 msgid ""
 "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
 "OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
@@ -147,62 +148,62 @@ msgstr ""
 "ОВАЈ ДОКУМЕНТ И ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СУ ДОСТУПНЕ ПОД УСЛОВИМА ГНУ-ОВЕ "
 "СЛОБОДНЕ ДОКУМЕНТАЦИОНЕ ДОЗВОЛЕ УЗ ДОДАТНУ САГЛАСНОСТ ДА: <placeholder-1/>"
 
-#: C/gnometris.xml:67(firstname)
+#: C/quadrapassel.xml:67(firstname)
 msgid "Angela"
 msgstr "Angela"
 
-#: C/gnometris.xml:68(surname)
+#: C/quadrapassel.xml:68(surname)
 msgid "Boyle"
 msgstr "Boyle"
 
-#: C/gnometris.xml:70(email)
+#: C/quadrapassel.xml:70(email)
 msgid "anjela@u.washington.edu"
 msgstr "anjela@u.washington.edu"
 
-#: C/gnometris.xml:91(revnumber)
-msgid "Gnometris Manual V2.8"
-msgstr "Упутство за Гном тетрис v2.8"
+#: C/quadrapassel.xml:91(revnumber)
+msgid "Quadrapassel Manual V2.8"
+msgstr "Упутство за Четворку v2.8"
 
-#: C/gnometris.xml:92(date)
+#: C/quadrapassel.xml:92(date)
 msgid "June 2004"
 msgstr "Јун 2004."
 
-#: C/gnometris.xml:94(para)
+#: C/quadrapassel.xml:94(para)
 msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
 msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
 
-#: C/gnometris.xml:102(releaseinfo)
-msgid "This manual describes version 2.12 of Gnometris."
-msgstr "Ово упуство је написано за Гном тетрис 2.12."
+#: C/quadrapassel.xml:102(releaseinfo)
+msgid "This manual describes version 2.12 of Quadrapassel."
+msgstr "Ово упуство је написано за Четворку 2.12."
 
-#: C/gnometris.xml:109(title)
+#: C/quadrapassel.xml:109(title)
 msgid "Feedback"
 msgstr "Примедбе"
 
-#: C/gnometris.xml:110(para)
+#: C/quadrapassel.xml:110(para)
 msgid ""
-"To report a bug or make a suggestion regarding the <application>Gnometris</"
-"application> application or this manual, follow the directions in the <ulink "
-"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
-"ulink>."
+"To report a bug or make a suggestion regarding the "
+"<application>Quadrapassel</application> application or this manual, follow "
+"the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
+"\"help\">GNOME Feedback Page</ulink>."
 msgstr ""
-"Да бисте пријавили грешку или дали предлог у вези програма <application>Гномов "
-"тетрис</application> или његовог упутства, пратите смернице на <ulink url="
-"\"ghelp:user-guide?feedback-bugs\" type=\"help\">Гномовој страни за "
-"примедбе</ulink>."
+"Да бисте пријавили грешку или дали предлог у вези програма "
+"<application>Четворка</application> или његовог упутства, пратите смернице "
+"на <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Гномовој "
+"страни за примедбе</ulink>."
 
-#: C/gnometris.xml:122(primary)
-msgid "Gnometris"
-msgstr "Гномов тетрис"
+#: C/quadrapassel.xml:122(primary)
+msgid "Quadrapassel"
+msgstr "Четворка"
 
-#: C/gnometris.xml:128(title)
+#: C/quadrapassel.xml:128(title)
 msgid "Introduction"
 msgstr "Увод"
 
 #. synopsis of game
-#: C/gnometris.xml:131(para)
+#: C/quadrapassel.xml:131(para)
 msgid ""
-"<application>Gnometris</application> comes from the classic falling-block "
+"<application>Quadrapassel</application> comes from the classic falling-block "
 "game, <application>Tetris</application>. The goal of the game is to create "
 "complete horizontal lines of blocks, which will disappear. The blocks come "
 "in seven different shapes made from four blocks each: one straight, two L-"
@@ -212,7 +213,7 @@ msgid ""
 "completing lines. As your score gets higher, you level up and the blocks "
 "fall faster."
 msgstr ""
-"<application>Гномов тетрис</application> је настао од <application>Тетриса</"
+"<application>Четворка</application> је настала од <application>Тетриса</"
 "application>, класичне игре са падајућим блоковима. Циљ игре је да попуните "
 "водоравне линије блоковима, које тада нестају. Блокови имају седам "
 "различитих облика, а сви блокови су састављени од четири дела: један прав, "
@@ -220,63 +221,64 @@ msgstr ""
 "слова S. Блокови падају из центра горњег дела екрана без одређеног "
 "редоследа. Блокове треба да окрећете и померате по екрану да бисте их "
 "спустили тако да направе пуну линију. Поена добијате када брже спуштате "
-"блокове и када попуњавате линије. Како вам број бодова расте, игра "
-"постаје све тежа и блокови падају све брже."
+"блокове и када попуњавате линије. Како вам број бодова расте, игра постаје "
+"све тежа и блокови падају све брже."
 
 #. running game
-#: C/gnometris.xml:134(para)
+#: C/quadrapassel.xml:134(para)
 msgid ""
-"To run <application>Gnometris</application>, select "
+"To run <application>Quadrapassel</application>, select "
 "<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
-"guisubmenu><guimenuitem>Gnometris</guimenuitem></menuchoice>, or type "
-"<command>gnometris</command> in the command line."
+"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, or type "
+"<command>quadrapassel</command> in the command line."
 msgstr ""
-"Да бисте покренули <application>Гномов тетрис</application>, изаберите "
+"Да бисте покренули <application>Четворку</application>, изаберите "
 "<menuchoice><guimenu>Програми</guimenu><guisubmenu>Игре</"
-"guisubmenu><guimenuitem>Гномов тетрис</guimenuitem></menuchoice>, или "
-"откуцајте <command>gnometris</command> у командној линији."
+"guisubmenu><guimenuitem>Четворка</guimenuitem></menuchoice>, или откуцајте "
+"<command>quadrapassel</command> у командној линији."
 
 #. part of gnome-games
-#: C/gnometris.xml:137(para)
+#: C/quadrapassel.xml:137(para)
 msgid ""
-"<application>Gnometris</application> is included in the <filename>gnome-"
+"<application>Quadrapassel</application> is included in the <filename>gnome-"
 "games</filename> package, which is part of the GNOME desktop environment. "
-"This document describes version 2.8 of <application>Gnometris</application>."
+"This document describes version 2.8 of <application>Quadrapassel</"
+"application>."
 msgstr ""
-"<application>Гномов тетрис</application> је укључен у пакет <filename>gnome-games</"
-"filename>, који је део Гномовог радног окружења. Овај документ је "
-"написан за <application>Гномов тетрис</application> 2.8."
+"<application>Четворка</application> је укључен у пакет <filename>gnome-"
+"games</filename>, који је део Гномовог радног окружења. Овај документ је "
+"написан за <application>Четворку</application> 2.8."
 
-#: C/gnometris.xml:141(title)
-msgid "Playing <application>Gnometris</application>"
-msgstr "Играње <application>Гномовог тетриса</application>"
+#: C/quadrapassel.xml:141(title)
+msgid "Playing <application>Quadrapassel</application>"
+msgstr "Играње <application>Четворке</application>"
 
-#: C/gnometris.xml:142(para)
+#: C/quadrapassel.xml:142(para)
 msgid ""
 "You can score through two actions: completing lines and dropping blocks "
 "quickly."
 msgstr ""
-"Поене можете добити на два начина: попуњавајући редове и спуштајући "
-"блокове брже него што падају."
+"Поене можете добити на два начина: попуњавајући редове и спуштајући блокове "
+"брже него што падају."
 
-#: C/gnometris.xml:144(title)
+#: C/quadrapassel.xml:144(title)
 msgid "Moving the Blocks"
 msgstr "Померање блокова"
 
-#: C/gnometris.xml:145(para)
+#: C/quadrapassel.xml:145(para)
 msgid "To play the game, you only need the four arrow keys."
 msgstr ""
 "Да бисте играли игру, потребна су вам само четири тастера са стрелицама."
 
-#: C/gnometris.xml:148(para)
+#: C/quadrapassel.xml:148(para)
 msgid ""
 "<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
 "correspondingly across the screen."
 msgstr ""
-"Тастери <keycap>Лево</keycap> и <keycap>Десно</keycap> померају блок "
-"лево и десно преко екрана."
+"Тастери <keycap>Лево</keycap> и <keycap>Десно</keycap> померају блок лево и "
+"десно преко екрана."
 
-#: C/gnometris.xml:151(para)
+#: C/quadrapassel.xml:151(para)
 msgid ""
 "<keycap>Up</keycap> rotates the block. The default rotation is "
 "counterclockwise. You can change the rotation under "
@@ -284,27 +286,27 @@ msgid ""
 "guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks "
 "counterclockwise</guilabel>."
 msgstr ""
-"Тастер <keycap>Горе</keycap> окреће блок. Подразумевани смер ротације је супротно "
-"од смера казаљке на сату. Смер ротације можете променити из менија "
+"Тастер <keycap>Горе</keycap> окреће блок. Подразумевани смер ротације је "
+"супротно од смера казаљке на сату. Смер ротације можете променити из менија "
 "<menuchoice><guimenu>Подешавања</guimenu><guimenuitem>Поставке</"
 "guimenuitem></menuchoice> искључивањем опције <guilabel>Окрећи супротно "
 "смеру казаљке на сату</guilabel>."
 
-#: C/gnometris.xml:154(para)
+#: C/quadrapassel.xml:154(para)
 msgid ""
 "<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down "
 "the screen faster.<keycap>Down</keycap> moves the block down faster. "
 "<keycap>Space-bar</keycap> moves the block directly to the bottom."
 msgstr ""
-"Тастер <keycap>Доле</keycap> и тастер за <keycap>Размак</keycap> померају блок брже "
-"наниже. Тастер <keycap>Доле</keycap> помера блок брже на доле, док <keycap>Размак</"
-"keycap> одмах спушта блок до дна."
+"Тастер <keycap>Доле</keycap> и тастер за <keycap>Размак</keycap> померају "
+"блок брже наниже. Тастер <keycap>Доле</keycap> помера блок брже на доле, док "
+"<keycap>Размак</keycap> одмах спушта блок до дна."
 
-#: C/gnometris.xml:159(title)
+#: C/quadrapassel.xml:159(title)
 msgid "Starting a New Game"
 msgstr "Покретање нове игре"
 
-#: C/gnometris.xml:160(para)
+#: C/quadrapassel.xml:160(para)
 msgid ""
 "To begin a new game, go to <menuchoice><guimenu>Game</"
 "guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
@@ -315,20 +317,20 @@ msgid ""
 "guilabel> shows the number of lines you have completed. <guilabel>Level</"
 "guilabel> shows the level of difficulty you are on."
 msgstr ""
-"Да покренете нову игру, изаберите <menuchoice><guimenu>Игра</guimenu>"
-"<guimenuitem>Нова</guimenuitem></menuchoice> из менија. Игра ће започети "
-"падањем блокова из средине горњег дела прозора. Подразумеван "
+"Да покренете нову игру, изаберите <menuchoice><guimenu>Игра</"
+"guimenu><guimenuitem>Нова</guimenuitem></menuchoice> из менија. Игра ће "
+"започети падањем блокова из средине горњег дела прозора. Подразумеван "
 "почетак игре је када на дну нема унапред попуњених блокова, а са стране се "
 "приказује следећи блок. <guilabel>Резултат</guilabel> приказује број "
 "добијених поена. <guilabel>Линије</guilabel> приказује број до тада "
 "попуњених редова. <guilabel>Ниво</guilabel> приказује ниво тежине на коме се "
 "тренутно налазите."
 
-#: C/gnometris.xml:163(title)
+#: C/quadrapassel.xml:163(title)
 msgid "Pausing the Game"
 msgstr "Паузирање игре"
 
-#: C/gnometris.xml:164(para)
+#: C/quadrapassel.xml:164(para)
 msgid ""
 "To pause your game, go to <menuchoice><guimenu>Game</"
 "guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
@@ -337,46 +339,47 @@ msgid ""
 "guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
 msgstr ""
 "Да бисте паузирали игру, изаберите <menuchoice><guimenu>Игра</"
-"guimenu><guimenuitem>Пауза</guimenuitem></menuchoice> из менија. Игру "
-"можете паузирати једино ако је у том тренутку играте. Време за које "
-"је игра паузирана је неограничено. Да опет покренете игру, "
-"идите на <menuchoice><guimenu>Игра</guimenu><guimenuitem>Пауза"
-"</guimenuitem></menuchoice>."
+"guimenu><guimenuitem>Пауза</guimenuitem></menuchoice> из менија. Игру можете "
+"паузирати једино ако је у том тренутку играте. Време за које је игра "
+"паузирана је неограничено. Да опет покренете игру, идите на "
+"<menuchoice><guimenu>Игра</guimenu><guimenuitem>Пауза</guimenuitem></"
+"menuchoice>."
 
-#: C/gnometris.xml:167(title)
+#: C/quadrapassel.xml:167(title)
 msgid "Ending the Game"
 msgstr "Завршавање игре"
 
-#: C/gnometris.xml:168(para)
+#: C/quadrapassel.xml:168(para)
 msgid ""
 "Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
-"guimenuitem></menuchoice> to end your current game without quiting Gnometris."
+"guimenuitem></menuchoice> to end your current game without quiting "
+"Quadrapassel."
 msgstr ""
 "Изаберите <menuchoice><guimenu>Игра</guimenu><guimenuitem>Заврши игру</"
 "guimenuitem></menuchoice> да бисте завршили тренутну игру без изласка из "
-"Гномовог тетриса."
+"Четворке."
 
-#: C/gnometris.xml:171(title)
-msgid "Quiting the <application>Gnometris</application>"
-msgstr "Излазак из <application>Гномовог тетриса</application>"
+#: C/quadrapassel.xml:171(title)
+msgid "Quiting the <application>Quadrapassel</application>"
+msgstr "Излазак из <application>Четворке</application>"
 
-#: C/gnometris.xml:172(para)
+#: C/quadrapassel.xml:172(para)
 msgid ""
-"To completely quit <application>Gnometris</application> go to "
+"To completely quit <application>Quadrapassel</application> go to "
 "<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
 "menuchoice>. If you are in the middle of a game when you quit, you will end "
 "your game without saving your score."
 msgstr ""
-"Да потпуно изађете из <application>Гном тетриса</application>, кликните "
+"Да потпуно изађете из <application>Четворке</application>, кликните "
 "<menuchoice><guimenu>Игра</guimenu><guimenuitem>Изађи</guimenuitem></"
 "menuchoice> ставку менија. Ако сте у том тренутку играли игру, она ће бити "
 "завршена без чувања резултата."
 
-#: C/gnometris.xml:175(title)
+#: C/quadrapassel.xml:175(title)
 msgid "Scoring Points"
 msgstr "Добијање поена"
 
-#: C/gnometris.xml:176(para)
+#: C/quadrapassel.xml:176(para)
 msgid ""
 "You score points through two methods: dropping blocks faster and deleting "
 "complete lines of blocks. When you delete lines, you get more points, but "
@@ -390,11 +393,11 @@ msgstr ""
 "падају. Највећи ниво је 10., када имате само једну секунду да правилно "
 "наместите блок пре него што падне."
 
-#: C/gnometris.xml:179(title)
+#: C/quadrapassel.xml:179(title)
 msgid "Viewing Past Scores"
 msgstr "Преглед претходних резултата"
 
-#: C/gnometris.xml:180(para)
+#: C/quadrapassel.xml:180(para)
 msgid ""
 "You can view the top ten scores played on your computer through "
 "<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
@@ -406,33 +409,33 @@ msgstr ""
 "menuchoice>. Имена корисника су приказана поред њихових резултата и датума "
 "када су те резултате остварили."
 
-#: C/gnometris.xml:186(title)
-msgid "Customizing <application>Gnometris</application>"
-msgstr "Прилагођавање <application>Гномовог тетриса</application>"
+#: C/quadrapassel.xml:186(title)
+msgid "Customizing <application>Quadrapassel</application>"
+msgstr "Прилагођавање <application>Четворке</application>"
 
-#: C/gnometris.xml:188(title)
+#: C/quadrapassel.xml:188(title)
 msgid "Customizing Game Start-up"
 msgstr "Прилагођавање почетка игре"
 
-#: C/gnometris.xml:189(para)
+#: C/quadrapassel.xml:189(para)
 msgid ""
 "By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
 "guimenuitem></menuchoice>, you can customize a variety of features for the "
-"start-up of each Gnometris game: number and density of pre-filled rows, and "
-"starting level. \"Pre-filled rows\" refers to how many rows will already "
+"start-up of each Quadrapassel game: number and density of pre-filled rows, "
+"and starting level. \"Pre-filled rows\" refers to how many rows will already "
 "have blocks in them when you start each new game."
 msgstr ""
 "Из менија <menuchoice><guimenu>Подешавања</guimenu><guimenuitem>Поставке</"
 "guimenuitem></menuchoice>, можете прилагодити мноштво могућности за почетак "
-"сваке игре тетриса: број и густину унапред попуњених редова. „Унапред "
+"сваке игре Четворке: број и густину унапред попуњених редова. „Унапред "
 "попуњени редови“ се односе на то колико ће редова већ имати блокове када "
 "покренете нову игру."
 
-#: C/gnometris.xml:191(title)
+#: C/quadrapassel.xml:191(title)
 msgid "Number of Pre-filled Rows"
 msgstr "Број унапред попуњених редова"
 
-#: C/gnometris.xml:192(para)
+#: C/quadrapassel.xml:192(para)
 msgid ""
 "You can change the number of rows that already have blocks at the start-up "
 "of each new game by using the spin box. You can start with up to 19 rows pre-"
@@ -444,11 +447,11 @@ msgstr ""
 "попуњених редова на почетку игре. Подразумевани број унапред попуњених "
 "редова је нула."
 
-#: C/gnometris.xml:195(title)
+#: C/quadrapassel.xml:195(title)
 msgid "Density of Pre-filled Rows"
 msgstr "Густина унапред попуњених редова"
 
-#: C/gnometris.xml:196(para)
+#: C/quadrapassel.xml:196(para)
 msgid ""
 "You can change the density of the blocks in the pre-filled rows at the start-"
 "up of each game. You can choose a density up to 10 blocks. You should first "
@@ -460,11 +463,11 @@ msgstr ""
 "желите унапред попуњених редова у <guilabel>Броју унапред попуњених редова</"
 "guilabel>. Подразумевана густина блокова је три."
 
-#: C/gnometris.xml:199(title)
+#: C/quadrapassel.xml:199(title)
 msgid "Level to Start On"
 msgstr "Почетни ниво"
 
-#: C/gnometris.xml:200(para)
+#: C/quadrapassel.xml:200(para)
 msgid ""
 "You can adjust the level of difficulty you start on. The highest level you "
 "can start on is 10, which is the highest level you can play to. The default "
@@ -474,11 +477,11 @@ msgstr ""
 "можете почети је 10. Ово је уједно и највиши ниво игрице. Подразумевани "
 "почетни ниво је први."
 
-#: C/gnometris.xml:204(title)
+#: C/quadrapassel.xml:204(title)
 msgid "Customizing the Gameplay"
 msgstr "Прилагођавање игре"
 
-#: C/gnometris.xml:205(para)
+#: C/quadrapassel.xml:205(para)
 msgid ""
 "From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
 "guimenuitem></menuchoice>, you can customize a variety of features related "
@@ -488,11 +491,11 @@ msgstr ""
 "guimenuitem></menuchoice>, можете прилагодити мноштво могућности везаних за "
 "блокове: преглед следећег блока, боје блокова, окретање блокова."
 
-#: C/gnometris.xml:207(title)
+#: C/quadrapassel.xml:207(title)
 msgid "Enable sounds"
 msgstr "Укључивање звукова"
 
-#: C/gnometris.xml:208(para)
+#: C/quadrapassel.xml:208(para)
 msgid ""
 "Turn the sound effects on and off using this option. If you are playing this "
 "game in any area which you share with other people, you should probably "
@@ -502,11 +505,11 @@ msgstr ""
 "простору који делите са другим људима, вероватно би требало да искључите "
 "звук."
 
-#: C/gnometris.xml:211(title)
+#: C/quadrapassel.xml:211(title)
 msgid "Preview Next Block"
 msgstr "Приказивање следећег блока"
 
-#: C/gnometris.xml:212(para)
+#: C/quadrapassel.xml:212(para)
 msgid ""
 "Choose this option if you want to see the next block that is going to fall. "
 "This feature helps you plan the placement of your blocks."
@@ -514,11 +517,11 @@ msgstr ""
 "Штиклирајте ову опцију ако желите да видите који ће следећи блок пасти. Ова "
 "могућност вам помаже да испланирате постављање блокова."
 
-#: C/gnometris.xml:215(title)
+#: C/quadrapassel.xml:215(title)
 msgid "Use Random Block Colors"
 msgstr "Коришћење насумичних боја блокова"
 
-#: C/gnometris.xml:216(para)
+#: C/quadrapassel.xml:216(para)
 msgid ""
 "Choose if you want the various block configurations to be color coded or "
 "randomly colored. If you use the colors to help you identify blocks, random "
@@ -528,11 +531,11 @@ msgstr ""
 "боје или желите да сваки нови блок има насумично одабрану боју. Ако вам боја "
 "значи да вам помогне да препознате блок, насумичне боје ће вам отежати игру."
 
-#: C/gnometris.xml:219(title)
+#: C/quadrapassel.xml:219(title)
 msgid "Bastard Mode"
 msgstr "Безобразни режим"
 
-#: C/gnometris.xml:220(para)
+#: C/quadrapassel.xml:220(para)
 msgid ""
 "Choose this option if you want to select mode that is designed specifically "
 "to annoy the player. With this feature enabled, you never get the piece you "
@@ -545,22 +548,22 @@ msgstr ""
 "стварном блоку који ће наићи следећи, већ оном који бисте ви највише желели "
 "да дође."
 
-#: C/gnometris.xml:223(title)
+#: C/quadrapassel.xml:223(title)
 msgid "Rotate Blocks Counterclockwise"
 msgstr "Окретање супротно смеру казаљке на сату"
 
-#: C/gnometris.xml:224(para)
+#: C/quadrapassel.xml:224(para)
 msgid ""
 "Choose this option if you want the blocks to rotate counterclockwise or not."
 msgstr ""
 "Штиклирајте ову опцију ако желите да се блокови ротирају супротно од смера "
 "казаљке на сату."
 
-#: C/gnometris.xml:227(title)
+#: C/quadrapassel.xml:227(title)
 msgid "Show where the block will land"
 msgstr "Приказивање где ће блок бити приземљен"
 
-#: C/gnometris.xml:228(para)
+#: C/quadrapassel.xml:228(para)
 msgid ""
 "If this feature is used a grey image of the block will show you where the "
 "block will land. This feature is very useful for beginning players, but "
@@ -570,25 +573,25 @@ msgstr ""
 "се блок спустити. Ова могућност је веома корисна почетницима, али ће "
 "вероватно сметати искуснијим играчима."
 
-#: C/gnometris.xml:236(title)
-msgid "Customizing the Look of <application>Gnometris</application>"
-msgstr "Прилагођавање изгледа <application>Гномовог тетриса</application>"
+#: C/quadrapassel.xml:236(title)
+msgid "Customizing the Look of <application>Quadrapassel</application>"
+msgstr "Прилагођавање изгледа <application>Четворке</application>"
 
-#: C/gnometris.xml:237(para)
+#: C/quadrapassel.xml:237(para)
 msgid ""
 "Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
 "guimenuitem></menuchoice>, you can customize the look of "
-"<application>Gnometris</application>: images for the blocks."
+"<application>Quadrapassel</application>: images for the blocks."
 msgstr ""
 "Из менија <menuchoice><guimenu>Подешавања</guimenu><guimenuitem>Поставке</"
-"guimenuitem></menuchoice>, можете прилагодити изглед <application>Гномовог "
-"тетриса</application>: слике блокова."
+"guimenuitem></menuchoice>, можете прилагодити изглед <application>Четворке</"
+"application>: слике блокова."
 
-#: C/gnometris.xml:239(title)
+#: C/quadrapassel.xml:239(title)
 msgid "Block Image"
 msgstr "Слике блокова"
 
-#: C/gnometris.xml:240(para)
+#: C/quadrapassel.xml:240(para)
 msgid ""
 "You can change the style of the blocks, including image and size. There are "
 "a variety of pre-made styles."
@@ -596,47 +599,47 @@ msgstr ""
 "Можете изменити стил блокова, укључујући ту њихову слику и величину. Постоји "
 "мноштво готових стилова."
 
-#: C/gnometris.xml:243(title)
+#: C/quadrapassel.xml:243(title)
 msgid "Background"
 msgstr "Позадина"
 
-#: C/gnometris.xml:243(para)
+#: C/quadrapassel.xml:243(para)
 msgid ""
-"If you drag your favorite image into the <application>Gnometris</"
+"If you drag your favorite image into the <application>Quadrapassel</"
 "application> window it will be used as the background. If you want a solid "
 "color as the background drag one in from either the color picker or from "
 "<application>nautlilus'</application><guimenuitem>Backgrounds and Emblems</"
 "guimenuitem> dialog (the reset item from that dialog also works)."
 msgstr ""
-"Ако превучете вашу омиљену слику у прозор <application>Гномовог тетриса</"
+"Ако превучете вашу омиљену слику у прозор <application>Четворке</"
 "application>, она ће бити искоришћена као позадина. Ако желите једнобојну "
 "позадину, превуците боју из било ког прозорчета за избор боја или из "
 "<application>Наутилусовог</application> прозорчета <guimenuitem>Позадине и "
 "обележја</guimenuitem> (ставка „Врати“ из истог дијалога такође функционише)."
 
-#: C/gnometris.xml:255(title)
+#: C/quadrapassel.xml:255(title)
 msgid "Authors"
 msgstr "Аутори"
 
-#: C/gnometris.xml:256(para)
+#: C/quadrapassel.xml:256(para)
 msgid ""
-"<application>Gnometris</application> was written by J. Marcin Gorycki in "
+"<application>Quadrapassel</application> was written by J. Marcin Gorycki in "
 "1999 and maintained by Gnome Games Team since then. This manual was written "
 "by Angela Boyle. To report a bug or make a suggestion regarding this "
 "application or this manual, follow the directions in this <ulink url=\"ghelp:"
 "user-guide?feedback-bugs\" type=\"help\">document</ulink>."
 msgstr ""
-"<application>Гномов тетрис</application> је 1999. написао J. Marcin Gorycki и "
-"од тада га одржава Гномов тим за игре. Ово упутство је написала Angela "
-"Boyle. Да бисте пријавили грешке или дали предлог у вези овог програма или "
-"његовог упутства, пратите смернице из <ulink url=\"ghelp:user-guide?feedback-"
-"bugs\" type=\"help\">документа</ulink>."
+"<application>Четворку</application> је 1999. написао J. Marcin Gorycki и од "
+"тада га одржава Гномов тим за игре. Ово упутство је написала Angela Boyle. "
+"Да бисте пријавили грешке или дали предлог у вези овог програма или његовог "
+"упутства, пратите смернице из <ulink url=\"ghelp:user-guide?feedback-bugs\" "
+"type=\"help\">документа</ulink>."
 
-#: C/gnometris.xml:280(title)
+#: C/quadrapassel.xml:280(title)
 msgid "License"
 msgstr "Лиценца"
 
-#: C/gnometris.xml:281(para)
+#: C/quadrapassel.xml:281(para)
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
@@ -649,7 +652,7 @@ msgstr ""
 "је објављује Задужбина за Слободни Софтвер (FSF); било верзије 2 те Лиценце, "
 "било (по вашем нахођењу) било које новије верзије."
 
-#: C/gnometris.xml:283(para)
+#: C/quadrapassel.xml:283(para)
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -661,7 +664,7 @@ msgstr ""
 "ОДРЕЂЕНОЈ НАМЕНИ.  Видите <citetitle>ГНУ Општу Јавну Лиценцу</citetitle> за "
 "више детаља."
 
-#: C/gnometris.xml:285(para)
+#: C/quadrapassel.xml:285(para)
 msgid ""
 "A copy of the <citetitle>GNU General Public License</citetitle> is included "
 "as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
@@ -682,9 +685,12 @@ msgstr ""
 "country></address>"
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: C/gnometris.xml:0(None)
+#: C/quadrapassel.xml:0(None)
 msgid "translator-credits"
 msgstr ""
 "Бранко Кокановић <branko.kokanovic@gmail.com>\n"
 "\n"
 "Prevod.org — превод на српски језик"
+
+#~ msgid "Gnometris"
+#~ msgstr "Гномов тетрис"
