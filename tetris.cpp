@@ -836,7 +836,7 @@ Tetris::generateTimer(int level)
 		g_source_remove(timeoutId);
 
 	// With 0.8, the old level 10 should be hit at about level 20.
-	int intv = (int) round (1000.0 * pow (0.8, level - 1));
+	int intv = (int) round (80 + 800.0 * pow (0.75, level - 1));
 	if (intv <= 10)
 		intv = 10;
 
