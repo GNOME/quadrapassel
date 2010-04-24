@@ -35,6 +35,7 @@
 #include <libgames-support/games-runtime.h>
 #include <libgames-support/games-sound.h>
 #include <libgames-support/games-stock.h>
+#include <libgames-support/games-pause-action.h>
 
 #include "tetris.h"
 #include "blocks.h"
@@ -108,8 +109,6 @@ Tetris::Tetris(int cmdlLevel):
 	{ "SettingsMenu", NULL, N_("_Settings") },
 	{ "HelpMenu", NULL, N_("_Help") },
 	{ "NewGame", GAMES_STOCK_NEW_GAME, NULL, NULL, NULL, G_CALLBACK (gameNew) },
-	{ "Pause", GAMES_STOCK_PAUSE_GAME, NULL, NULL, NULL, G_CALLBACK (gamePause) },
-	{ "Resume", GAMES_STOCK_RESUME_GAME, NULL, NULL, NULL, G_CALLBACK (gamePause) },
 	{ "Scores", GAMES_STOCK_SCORES, NULL, NULL, NULL, G_CALLBACK (gameTopTen) },
 	{ "EndGame", GAMES_STOCK_END_GAME, NULL, NULL, NULL, G_CALLBACK (gameEnd) },
 	{ "Quit", GTK_STOCK_QUIT, NULL, NULL, NULL, G_CALLBACK (gameQuit) },
@@ -124,7 +123,6 @@ Tetris::Tetris(int cmdlLevel):
 	"    <menu action='GameMenu'>"
 	"      <menuitem action='NewGame'/>"
 	"      <menuitem action='Pause'/>"
-	"      <menuitem action='Resume'/>"
 	"      <separator/>"
 	"      <menuitem action='Scores'/>"
 	"      <menuitem action='EndGame'/>"
@@ -191,13 +189,12 @@ Tetris::Tetris(int cmdlLevel):
 	gtk_window_add_accel_group (GTK_WINDOW (w), accel_group);
 
 	new_game_action = gtk_action_group_get_action (action_group, "NewGame");
-	pause_action = gtk_action_group_get_action (action_group, "Pause");
-	resume_action = gtk_action_group_get_action (action_group, "Resume");
+	pause_action = GTK_ACTION (games_pause_action_new ("Pause"));
+    g_signal_connect (G_OBJECT (pause_action), "state-changed", G_CALLBACK (gamePause), this);
+	gtk_action_group_add_action_with_accel (action_group, pause_action, NULL);
 	scores_action = gtk_action_group_get_action (action_group, "Scores");
 	end_game_action = gtk_action_group_get_action (action_group, "EndGame");
 	preferences_action = gtk_action_group_get_action (action_group, "Preferences");
-
-	games_stock_set_pause_actions (pause_action, resume_action);
 
 	menubar = gtk_ui_manager_get_widget (ui_manager, "/MainMenu");
 
@@ -1179,11 +1176,6 @@ Tetris::togglePause()
 		field->showPauseMessage();
 	else
 		field->hidePauseMessage();
-
-	gtk_action_set_sensitive (pause_action, !paused);
-	gtk_action_set_sensitive (resume_action, paused);
-	gtk_action_set_visible (pause_action, !paused);
-	gtk_action_set_visible (resume_action, paused);
 }
 
 void
@@ -1264,8 +1256,6 @@ Tetris::gameNew(GtkAction *action, void *d)
 	t->field->putBlockInField(FALLING);
 	t->preview->previewBlock(blocknr_next, color_next);
 
-	gtk_action_set_visible(t->pause_action, TRUE);
-	gtk_action_set_visible(t->resume_action, FALSE);
 	gtk_action_set_sensitive(t->pause_action, TRUE);
 	gtk_action_set_sensitive(t->end_game_action, TRUE);
 	gtk_action_set_sensitive(t->preferences_action, FALSE);
