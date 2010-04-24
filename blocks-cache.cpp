@@ -93,7 +93,11 @@ blocks_cache_clear (BlocksCache *cache)
 
     if (handle != COGL_INVALID_HANDLE &&
         !IS_FAILED_HANDLE (handle)) {
+#if CLUTTER_CHECK_VERSION(1, 2, 0)
+      cogl_handle_unref (handle);
+#else
       cogl_texture_unref (handle);
+#endif
     }
 
     priv->colours[i] = COGL_INVALID_HANDLE;
