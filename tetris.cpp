@@ -690,7 +690,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 
 	/* bastard mode */
 	t->bastard_mode_toggle =
-		gtk_check_button_new_with_mnemonic (_("_Bastard mode"));
+		gtk_check_button_new_with_mnemonic (_("Choose difficult _blocks"));
 	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON (t->bastard_mode_toggle),
 				     bastard_mode);
 	g_signal_connect (t->bastard_mode_toggle, "clicked",
