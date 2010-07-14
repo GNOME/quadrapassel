@@ -215,8 +215,8 @@ application or
       <title>Use Random Block Colors</title>
        <para>Choose if you want the various block configurations to be color coded or randomly colored. If you use the colors to help you identify blocks, random colors will make the game more difficult.</para>
      </sect3>
-     <sect3 id="s3-bastard-mode">
-      <title>Bastard Mode</title>
+     <sect3 id="s3-difficult-block-mode">
+      <title>Choose Difficult Blocks</title>
        <para>Choose this option if you want to select mode that is designed specifically to annoy the player. With this feature enabled, you never get the piece you want, and very seldom complete a row. Next block preview doesn't correspond to actual piece you get next, but to the one you probably wish to get.</para>
      </sect3>
      <sect3 id="s3-block-rotation">
