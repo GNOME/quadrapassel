@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
-"POT-Creation-Date: 2010-01-15 18:30+0000\n"
-"PO-Revision-Date: 2010-01-15 23:06+0100\n"
+"POT-Creation-Date: 2010-07-14 00:07+0000\n"
+"PO-Revision-Date: 2010-07-28 22:13+0100\n"
 "Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -540,8 +540,8 @@ msgstr ""
 "gestalten."
 
 #: C/quadrapassel.xml:219(title)
-msgid "Bastard Mode"
-msgstr "Bastard-Modus"
+msgid "Choose Difficult Blocks"
+msgstr "Schwierige Blöcke wählen"
 
 #: C/quadrapassel.xml:220(para)
 msgid ""
@@ -704,3 +704,6 @@ msgstr ""
 #: C/quadrapassel.xml:0(None)
 msgid "translator-credits"
 msgstr "Mario Blättermann <mariobl@gnome.org>, 2008, 2009, 2010"
+
+#~ msgid "Bastard Mode"
+#~ msgstr "Bastard-Modus"
