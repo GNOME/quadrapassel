@@ -363,7 +363,7 @@ BlockOps::checkFullLines()
 	clutter_behaviour_remove_all (explode_fade_behaviour);
 	clutter_behaviour_remove_all (explode_scale_behaviour);
 
-	for (int y = MIN (posy + 4, LINES); y > 0; --y)
+	for (int y = MIN (posy + 4, LINES - 1); y >= 0; --y)
 	{
 		if (checkFullLine (y))
 		{
