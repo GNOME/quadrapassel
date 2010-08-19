@@ -108,7 +108,8 @@ Preview::previewBlock(gint bnr, gint bcol)
 	for (x = 0; x < PREVIEW_WIDTH; x++) {
 		for (y = 0; y < PREVIEW_HEIGHT; y++) {
 			if ((blocknr != -1) &&
-			    blockTable[blocknr][rot_next][x][y]) {
+			    blockTable[blocknr][rot_next][x][y] &&
+			    !bastard_mode) {
 				blocks[x][y].emptyCell ();
 				blocks[x][y].what = LAYING;
 				blocks[x][y].createActor (piece,

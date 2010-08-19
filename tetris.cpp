@@ -504,6 +504,12 @@ Tetris::setBastardMode(GtkWidget *widget, void *d)
 {
 	games_conf_set_boolean (KEY_OPTIONS_GROUP, KEY_BASTARD_MODE,
 				gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
+
+	/* Disable the preview option to indicate that it is
+		unavailable in bastard mode */
+	Tetris *t = (Tetris*) d;
+	gtk_widget_set_sensitive(t->do_preview_toggle,
+		gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)) ? FALSE : TRUE);
 }
 
 void
@@ -695,6 +701,13 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	g_signal_connect (t->bastard_mode_toggle, "clicked",
 			  G_CALLBACK (setBastardMode), d);
 	gtk_box_pack_start (GTK_BOX (fvbox), t->bastard_mode_toggle, 0, 0, 0);
+
+	/* If bastard mode is active then disable the preview option
+		to indicate that it is unavailable in bastard mode */
+	if(gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON (t->bastard_mode_toggle)))
+	{
+		gtk_widget_set_sensitive(t->do_preview_toggle, FALSE);
+	}
 
 	/* rotate counter clock wise */
  	t->rotate_counter_clock_wise_toggle =
