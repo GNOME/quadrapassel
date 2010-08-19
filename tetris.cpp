@@ -784,7 +784,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	t->theme_preview->setTheme (t->themeno);
 	gtk_box_pack_start(GTK_BOX(fvbox), t->theme_preview->getWidget(), TRUE, TRUE, 0);
 
-	t->theme_preview->previewBlock(4, 0);
+	t->theme_preview->previewBlock(4, 0, TRUE);
 
 	gtk_widget_show_all (t->setupdialog);
 	gtk_action_set_sensitive(t->new_game_action, FALSE);
@@ -1201,7 +1201,7 @@ Tetris::generate()
 	if (field->generateFallingBlock())
 	{
 		field->putBlockInField(FALLING);
-		preview->previewBlock(blocknr_next, color_next);
+		preview->previewBlock(blocknr_next, color_next, FALSE);
 		onePause = true;
 	}
 	else
@@ -1225,7 +1225,7 @@ Tetris::endOfGame()
 	color_next = -1;
 	blocknr_next = -1;
 	rot_next = -1;
-	preview->previewBlock(-1, -1);
+	preview->previewBlock(-1, -1, FALSE);
 	field->hidePauseMessage();
 	field->showGameOverMessage();
 	games_sound_play ("gameover");
@@ -1271,7 +1271,7 @@ Tetris::gameNew(GtkAction *action, void *d)
 
 	t->field->generateFallingBlock();
 	t->field->putBlockInField(FALLING);
-	t->preview->previewBlock(blocknr_next, color_next);
+	t->preview->previewBlock(blocknr_next, color_next, FALSE);
 
 	gtk_action_set_sensitive(t->pause_action, TRUE);
 	gtk_action_set_sensitive(t->end_game_action, TRUE);

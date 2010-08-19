@@ -38,7 +38,7 @@ public:
 
 	void enable (bool enable);
 	void setTheme (guint id);
-	void previewBlock (int bnr, int bcolor);
+	void previewBlock (int bnr, int bcolor, bool force);
 
 private:
 	GtkWidget *w;

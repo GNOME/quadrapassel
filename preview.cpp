@@ -91,25 +91,31 @@ Preview::setTheme (guint id)
 	if (!cache)
 		cache = blocks_cache_new ();
 	blocks_cache_set_theme (cache, themeID);
-	previewBlock (blocknr, color);
+	previewBlock (blocknr, color, TRUE);
 }
 
 void
-Preview::previewBlock(gint bnr, gint bcol)
+Preview::previewBlock(gint bnr, gint bcol, bool force)
 {
 	ClutterActor *stage;
 	stage = gtk_clutter_embed_get_stage (GTK_CLUTTER_EMBED (w));
 
 	int x, y;
+	bool disable = FALSE;
 
 	blocknr = bnr;
 	color = bcol;
 
+	if(!force && (!do_preview || bastard_mode))
+	{
+		disable = TRUE;
+	}
+
 	for (x = 0; x < PREVIEW_WIDTH; x++) {
 		for (y = 0; y < PREVIEW_HEIGHT; y++) {
-			if ((blocknr != -1) &&
-			    blockTable[blocknr][rot_next][x][y] &&
-			    !bastard_mode) {
+			if (!disable && 
+			    (blocknr != -1) &&
+			    blockTable[blocknr][rot_next][x][y]) {
 				blocks[x][y].emptyCell ();
 				blocks[x][y].what = LAYING;
 				blocks[x][y].createActor (piece,
@@ -142,7 +148,7 @@ Preview::resize(GtkWidget *widget, GtkAllocation *allocation, Preview *p)
 	if (!p->cache)
 		p->cache = blocks_cache_new ();
 	blocks_cache_set_size (p->cache, p->cell_size);
-	p->previewBlock (p->blocknr, p->color);
+	p->previewBlock (p->blocknr, p->color, TRUE);
 	return FALSE;
 }
 

@@ -66,6 +66,7 @@ extern int rot_next;
 
 extern bool random_block_colors;
 extern bool bastard_mode;
+extern bool do_preview;
 
 class Preview;
 class BlockOps;
