@@ -1,0 +1,681 @@
+# Japanese translation for gnome-games.
+# Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-games package.
+# Hiroyuki Sekihara <hiroyuki.sekihara@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games gnome-2-32\n"
+"POT-Creation-Date: 2010-09-23 12:37+0000\n"
+"PO-Revision-Date: 2010-09-23 22:42+0900\n"
+"Last-Translator: Hiroyuki Sekihara <hiroyuki.sekihara@gmail.com>\n"
+"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Virtaal 0.5.2\n"
+
+#: C/quadrapassel.xml:27(title)
+msgid "<application>Quadrapassel</application> Manual"
+msgstr "<application>Quadrapassel</application> マニュアル"
+
+#: C/quadrapassel.xml:30(para)
+msgid ""
+"Quadrapassel is GNOME's version of Tetris, the classic game of interlocking "
+"four-piece blocks. As they fall from the top, the player must orient them to "
+"fit the other blocks at the bottom so that they form a complete horizontal "
+"line, in which case that line disappears and the player gains points."
+msgstr ""
+"Quadrapassel は、\"テトリス\" という、4つのブロック片を組み合わせる古典的ゲー"
+"ムの GNOME 版です。プレイヤーは上から落ちてくるブロックを回転させて、下の他の"
+"ブロックと組み合わせて、水平のラインを作らなければなりません。水平のラインが"
+"揃ったら、そのラインは消えてプレイヤーの得点となります。"
+
+#: C/quadrapassel.xml:40(year)
+msgid "2004"
+msgstr "2004"
+
+#: C/quadrapassel.xml:41(holder)
+msgid "Angela Boyle"
+msgstr "Angela Boyle"
+
+#: C/quadrapassel.xml:56(publishername) C/quadrapassel.xml:97(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOME Documentation Project"
+
+#: C/quadrapassel.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"この文書を、フリーソフトウェア財団発行の GNU フリー文書利用許諾契約書 (GFDL) "
+"のバージョン 1.1 かそれ以降が定める条件の下で複製、頒布、あるいは改変すること"
+"を許可します。変更不可部分、表カバーテキスト、裏カバーテキストは存在しませ"
+"ん。この利用許諾契約書 (GFDL) の複製は<ulink type=\"help\" url=\"ghelp:fdl\">"
+"このリンク</ulink> またはこのマニュアルと一緒に配布されているファイル "
+"COPYING-DOCS を参照してください。"
+
+#: C/quadrapassel.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"このマニュアルは GFDL の下で配布される GNOME マニュアルのコレクションの一部で"
+"す。コレクションと別にこのマニュアルを配布したい場合は、ライセンスの第六節に"
+"あるようにライセンスのコピーをマニュアルに加えれば配布できます。"
+
+#: C/quadrapassel.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"製品やサービスを区別するために企業によって利用されている名称の多くは登録商標"
+"です。これらの名称が GNOME ドキュメントで使われていて GNOMEドキュメントプロ"
+"ジェクトのメンバーが商標と認識している場合、これらの名前を大文字あるいは語句"
+"の最初の文字を大文字で記述しています。"
+
+#: C/quadrapassel.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+
+#: C/quadrapassel.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+
+#: C/quadrapassel.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+
+#: C/quadrapassel.xml:67(firstname)
+msgid "Angela"
+msgstr "Angela"
+
+#: C/quadrapassel.xml:68(surname)
+msgid "Boyle"
+msgstr "Boyle"
+
+#: C/quadrapassel.xml:70(email)
+msgid "anjela@u.washington.edu"
+msgstr "anjela@u.washington.edu"
+
+#: C/quadrapassel.xml:91(revnumber)
+msgid "Quadrapassel Manual V2.8"
+msgstr "Quadrapassel マニュアル V2.8"
+
+#: C/quadrapassel.xml:92(date)
+msgid "June 2004"
+msgstr "2004年6月"
+
+#: C/quadrapassel.xml:94(para)
+msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
+msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
+
+#: C/quadrapassel.xml:102(releaseinfo)
+msgid "This manual describes version 2.12 of Quadrapassel."
+msgstr ""
+"このマニュアルでは、Quadrapassel のバージョン 2.12 について説明します。"
+
+#: C/quadrapassel.xml:109(title)
+msgid "Feedback"
+msgstr "フィードバック"
+
+#: C/quadrapassel.xml:110(para)
+msgid ""
+"To report a bug or make a suggestion regarding the "
+"<application>Quadrapassel</application> application or this manual, follow "
+"the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
+"\"help\">GNOME Feedback Page</ulink>."
+msgstr ""
+"<application>Quadrapassel</application> アプリケーションやこのドキュメントに"
+"関するバグの報告や提案については <ulink url=\"ghelp:gnome-feedback\" type="
+"\"help\">GNOME Feedback Page</ulink> に従ってください。"
+
+#: C/quadrapassel.xml:122(primary)
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#: C/quadrapassel.xml:128(title)
+msgid "Introduction"
+msgstr "はじめに"
+
+#. synopsis of game
+#: C/quadrapassel.xml:131(para)
+msgid ""
+"<application>Quadrapassel</application> comes from the classic falling-block "
+"game, <application>Tetris</application>. The goal of the game is to create "
+"complete horizontal lines of blocks, which will disappear. The blocks come "
+"in seven different shapes made from four blocks each: one straight, two L-"
+"shaped, one square, and two S-shaped. The blocks fall from the top center of "
+"the screen in a random order. You rotate the blocks and move them across the "
+"screen to drop them in complete lines. You score by dropping blocks fast and "
+"completing lines. As your score gets higher, you level up and the blocks "
+"fall faster."
+msgstr ""
+"<application>Quadrapassel</application> は、古典的なブロック落としゲームの "
+"<application>Tetris</application> を元に作られました。ゲームの目的は、ブロッ"
+"クを消すために、水平のラインを作ることです。ゲームでは4つのブロックを元に、7"
+"つの異なる形状: 1つは直線のブロック、2つのL字型のブロック、1つの正方形ブロッ"
+"ク、そして2つのS字型のブロック を使用します。ブロックは中央上部から、ランダム"
+"な順番で落ちてきます。あなたはブロックを回転させ、スクリーン上を移動させてブ"
+"ロックを落とし、水平なラインを作ってください。ブロックの落ちる速さと、作られ"
+"たラインの数により得点を獲得します。得点が高くなると、レベルが上がってブロッ"
+"クの落ちる速度も速くなります。"
+
+#. running game
+#: C/quadrapassel.xml:134(para)
+msgid ""
+"To run <application>Quadrapassel</application>, select "
+"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
+"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, or type "
+"<command>quadrapassel</command> in the command line."
+msgstr ""
+"<application>Quadrapassel</application> を起動するには、<menuchoice><guimenu>"
+"アプリケーション</guimenu><guisubmenu>ゲーム</"
+"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice> を選択する"
+"か、コマンドラインで <command>quadrapassel</command> と入力します。"
+
+#. part of gnome-games
+#: C/quadrapassel.xml:137(para)
+msgid ""
+"<application>Quadrapassel</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>Quadrapassel</"
+"application>."
+msgstr ""
+"<application>Quadrapassel</application> は、GNOME デスクトップ環境の一部であ"
+"る、<filename>gnome-games</filename> パッケージに含まれています。このドキュメ"
+"ントでは、<application>Quadrapassel</application> のバージョン2.8について説明"
+"します。"
+
+#: C/quadrapassel.xml:141(title)
+msgid "Playing <application>Quadrapassel</application>"
+msgstr "<application>Quadrapassel</application> をプレイする"
+
+#: C/quadrapassel.xml:142(para)
+msgid ""
+"You can score through two actions: completing lines and dropping blocks "
+"quickly."
+msgstr ""
+"ラインを作ること、そしてブロックを速く落とすという、2つの操作により得点を上げ"
+"ることができます。"
+
+#: C/quadrapassel.xml:144(title)
+msgid "Moving the Blocks"
+msgstr "ブロックを移動する"
+
+#: C/quadrapassel.xml:145(para)
+msgid "To play the game, you only need the four arrow keys."
+msgstr "ゲームをプレイするのに必要なキーは、矢印キーだけです。"
+
+#: C/quadrapassel.xml:148(para)
+msgid ""
+"<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
+"correspondingly across the screen."
+msgstr ""
+"<keycap>左</keycap> と <keycap>右</keycap> でスクリーン上のブロックを移動させ"
+"ます。"
+
+#: C/quadrapassel.xml:151(para)
+msgid ""
+"<keycap>Up</keycap> rotates the block. The default rotation is "
+"counterclockwise. You can change the rotation under "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks "
+"counterclockwise</guilabel>."
+msgstr ""
+"<keycap>上</keycap> はブロックを回転させます。デフォルトは反時計回りです。回"
+"転させる方向は、<menuchoice><guimenu>設定</guimenu><guimenuitem>設定</"
+"guimenuitem></menuchoice> の <guilabel>反時計回りに回転させる</guilabel> をオ"
+"フにすれば変更できます。"
+
+#: C/quadrapassel.xml:154(para)
+msgid ""
+"<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down "
+"the screen faster.<keycap>Down</keycap> moves the block down faster. "
+"<keycap>Space-bar</keycap> moves the block directly to the bottom."
+msgstr ""
+"<keycap>下</keycap> と <keycap>スペース</keycap> で、ブロックを速く落とすこと"
+"ができます。<keycap>下</keycap> はブロックを速く落とし、<keycap>スペース</"
+"keycap> はブロックを一気に下まで落とします。"
+
+#: C/quadrapassel.xml:159(title)
+msgid "Starting a New Game"
+msgstr "新しいゲームを開始する"
+
+#: C/quadrapassel.xml:160(para)
+msgid ""
+"To begin a new game, go to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
+"begin dropping blocks from the center of the top of the window. The default "
+"start-up of the game has no blocks in the game window and shows the next "
+"block that will fall in the upper right hand corner. <guilabel>Score</"
+"guilabel> shows the number of points you have earned. <guilabel>Lines</"
+"guilabel> shows the number of lines you have completed. <guilabel>Level</"
+"guilabel> shows the level of difficulty you are on."
+msgstr ""
+"新しいゲームを開始するには、<menuchoice><guimenu>ゲーム</"
+"guimenu><guimenuitem>新ゲーム</guimenuitem></menuchoice> を選択します。ゲーム"
+"が開始されると、ウィンドウの中央上部からブロックが落ちてきます。ゲームをデ"
+"フォルトの設定で開始したときは、ゲーム ウィンドウにはブロックがなく、次のブ"
+"ロックが右上に表示されます。<guilabel>得点</guilabel> には、あなたが獲得した"
+"得点が表示され、<guilabel>ライン</guilabel> には、完成させたラインの数が表示"
+"されます。<guilabel>レベル</guilabel> には、現在の難易度が表示されます。"
+
+#: C/quadrapassel.xml:163(title)
+msgid "Pausing the Game"
+msgstr "ゲームの一時停止"
+
+#: C/quadrapassel.xml:164(para)
+msgid ""
+"To pause your game, go to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
+"pause a game when you are playing. The time limit on pausing your game is "
+"unlimited. To unpause the game, go back to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
+msgstr ""
+"ゲームを一時停止するには、<menuchoice><guimenu>ゲーム</guimenu><guimenuitem>"
+"一時停止</guimenuitem></menuchoice> を選択します。一時停止できるのは、ゲーム"
+"のプレイ中だけで、一時停止させる時間に制限はありません。ゲームを再開する場合"
+"は、<menuchoice><guimenu>ゲーム</guimenu><guimenuitem>再開</guimenuitem></"
+"menuchoice> を選択します。"
+
+#: C/quadrapassel.xml:167(title)
+msgid "Ending the Game"
+msgstr "ゲームを終了する"
+
+#: C/quadrapassel.xml:168(para)
+msgid ""
+"Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
+"guimenuitem></menuchoice> to end your current game without quiting "
+"Quadrapassel."
+msgstr ""
+"<menuchoice><guimenu>ゲーム</guimenu><guimenuitem>ゲームの終了</"
+"guimenuitem></menuchoice> で、Quadrapassel を閉じずに、現在プレイしているゲー"
+"ムを終了することができます。"
+
+#: C/quadrapassel.xml:171(title)
+msgid "Quiting the <application>Quadrapassel</application>"
+msgstr "<application>Quadrapassel</application> を閉じる"
+
+#: C/quadrapassel.xml:172(para)
+msgid ""
+"To completely quit <application>Quadrapassel</application> go to "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
+"menuchoice>. If you are in the middle of a game when you quit, you will end "
+"your game without saving your score."
+msgstr ""
+"<application>Quadrapassel</application> を閉じるには、<menuchoice><guimenu>"
+"ゲーム</guimenu><guimenuitem>終了</guimenuitem></menuchoice> を選択します。"
+"Quadrapassel を閉じたときにゲームの途中だった場合、得点はセーブされずにゲーム"
+"が終了します。"
+
+#: C/quadrapassel.xml:175(title)
+msgid "Scoring Points"
+msgstr "得点のポイント"
+
+#: C/quadrapassel.xml:176(para)
+msgid ""
+"You score points through two methods: dropping blocks faster and deleting "
+"complete lines of blocks. When you delete lines, you get more points, but "
+"dropping blocks faster will quickly add up. As you level up, the blocks will "
+"begin falling faster. The highest level is 10, at which point you will only "
+"have just over a second to manipulate each block."
+msgstr ""
+"得点を上げるには2つの方法があります: ブロックを速く落とすこと、そしてブロック"
+"のラインを消すことです。ラインを消すと、得点を得ることができます。しかし、ブ"
+"ロックを速く落とすことにより、より多く得点することができます。レベルがアップ"
+"するにつれ、ブロックの落下は速くなります。最高のレベル10では、ブロックを操作"
+"する時間は、1秒余りしかありません。"
+
+#: C/quadrapassel.xml:179(title)
+msgid "Viewing Past Scores"
+msgstr "過去のスコアを表示する"
+
+#: C/quadrapassel.xml:180(para)
+msgid ""
+"You can view the top ten scores played on your computer through "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
+"menuchoice>. The names of the users are shown next the their score and the "
+"date they played."
+msgstr ""
+"<menuchoice><guimenu>ゲーム</guimenu><guimenuitem>得点</guimenuitem></"
+"menuchoice> を選択して、あなたのコンピュータでプレイされたゲーム得点のトップ"
+"10を見ることができます。得点の横には、ユーザの名前と、プレイした日付が表示さ"
+"れます。"
+
+#: C/quadrapassel.xml:186(title)
+msgid "Customizing <application>Quadrapassel</application>"
+msgstr "<application>Quadrapassel</application> をカスタマイズする"
+
+#: C/quadrapassel.xml:188(title)
+msgid "Customizing Game Start-up"
+msgstr "ゲーム開始時の設定のカスタマイズ"
+
+#: C/quadrapassel.xml:189(para)
+msgid ""
+"By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize a variety of features for the "
+"start-up of each Quadrapassel game: number and density of pre-filled rows, "
+"and starting level. \"Pre-filled rows\" refers to how many rows will already "
+"have blocks in them when you start each new game."
+msgstr ""
+"<menuchoice><guimenu>設定</guimenu><guimenuitem>設定</guimenuitem></"
+"menuchoice> で、Quadrapassel のさまざまなゲーム機能をカスタマイズできます: 事"
+"前に埋めておくブロックの高さと幅の数や、開始時のレベルをカスタマイズすること"
+"ができます。\"事前に埋めておく高さ\" では、新しいゲームを開始したときに、どれ"
+"だけのラインをブロックで埋めておくかを設定します。"
+
+#: C/quadrapassel.xml:191(title)
+msgid "Number of Pre-filled Rows"
+msgstr "事前に埋めておく高さ"
+
+#: C/quadrapassel.xml:192(para)
+msgid ""
+"You can change the number of rows that already have blocks at the start-up "
+"of each new game by using the spin box. You can start with up to 19 rows pre-"
+"filled at the start-up of your game. The default number of pre-filled rows "
+"is zero."
+msgstr ""
+"ゲームを開始したときに、あらかじめブロックで埋めておく高さを設定するには、ス"
+"ピン ボックスを使います。開始時に事前に埋めておく高さは19まで設定することがで"
+"きます。事前に埋めておく高さのデフォルトは 0です。"
+
+#: C/quadrapassel.xml:195(title)
+msgid "Density of Pre-filled Rows"
+msgstr "事前に埋めておく高さ"
+
+#: C/quadrapassel.xml:196(para)
+msgid ""
+"You can change the density of the blocks in the pre-filled rows at the start-"
+"up of each game. You can choose a density up to 10 blocks. You should first "
+"choose how many rows you want pre-filled under <guilabel>Number of Pre-"
+"filled Rows</guilabel>. The default density of blocks is three."
+msgstr ""
+"ゲーム開始時に事前に埋めておく、ブロックの幅の数を変更することができます。幅"
+"の数は10まで変更することができます。最初に <guilabel>事前に埋めておく高さ</"
+"guilabel> で、事前に埋めておく高さを選択してください。デフォルトのブロックの"
+"幅は 3です。"
+
+#: C/quadrapassel.xml:199(title)
+msgid "Level to Start On"
+msgstr "開始時のレベル"
+
+#: C/quadrapassel.xml:200(para)
+msgid ""
+"You can adjust the level of difficulty you start on. The highest level you "
+"can start on is 10, which is the highest level you can play to. The default "
+"starting level is one."
+msgstr ""
+"開始時の難易度のレベルを設定することができます。開始時に設定できる最高のレベ"
+"ルは10で、これはあなたがプレイすることができる最高のレベルです。デフォルトの"
+"開始時のレベルは 1です。"
+
+#: C/quadrapassel.xml:204(title)
+msgid "Customizing the Gameplay"
+msgstr "ゲームプレイ設定のカスタマイズ"
+
+#: C/quadrapassel.xml:205(para)
+msgid ""
+"From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize a variety of features related "
+"to the blocks: previewing the next block, block colors, and block rotation."
+msgstr ""
+"<menuchoice><guimenu>設定</guimenu><guimenuitem>設定</guimenuitem></"
+"menuchoice> で、ブロックに関するさまざまな機能をカスタマイズできます: 次のブ"
+"ロックを表示するか、ブロックの色、ブロックの回転方向などをカスタマイズできま"
+"す。"
+
+#: C/quadrapassel.xml:207(title)
+msgid "Enable sounds"
+msgstr "サウンドを有効にする"
+
+#: C/quadrapassel.xml:208(para)
+msgid ""
+"Turn the sound effects on and off using this option. If you are playing this "
+"game in any area which you share with other people, you should probably "
+"select off."
+msgstr ""
+"このオプションは、サウンド効果のオン/オフの切り替えに使用します。ほかの人がい"
+"る場所などでゲームをプレイするときは、オフにするべきでしょう。"
+
+#: C/quadrapassel.xml:211(title)
+msgid "Preview Next Block"
+msgstr "次のブロックを表示する"
+
+#: C/quadrapassel.xml:212(para)
+msgid ""
+"Choose this option if you want to see the next block that is going to fall. "
+"This feature helps you plan the placement of your blocks."
+msgstr ""
+"このオプションを選択すると、次に落ちてくるブロックを見ることができます。この"
+"機能により、ブロックを配置するプランをたてることができます。"
+
+#: C/quadrapassel.xml:215(title)
+msgid "Use Random Block Colors"
+msgstr "ブロックの色をランダムに変更する"
+
+#: C/quadrapassel.xml:216(para)
+msgid ""
+"Choose if you want the various block configurations to be color coded or "
+"randomly colored. If you use the colors to help you identify blocks, random "
+"colors will make the game more difficult."
+msgstr ""
+"選択した場合、ブロックの色が、あらかじめブロックに設定された色ではない、ラン"
+"ダムな色になります。もしブロックを色で見分けている場合は、色がランダムになる"
+"のでゲームの難易度が高くなります。"
+
+#: C/quadrapassel.xml:219(title)
+msgid "Choose Difficult Blocks"
+msgstr "難しいブロックを選択する"
+
+#: C/quadrapassel.xml:220(para)
+msgid ""
+"Choose this option if you want to select mode that is designed specifically "
+"to annoy the player. With this feature enabled, you never get the piece you "
+"want, and very seldom complete a row. Next block preview doesn't correspond "
+"to actual piece you get next, but to the one you probably wish to get."
+msgstr ""
+"プレイヤー悩ませるようデザインされたモードでプレイしたいときに選択します。こ"
+"のオプションを有効にした場合、あなたが欲しいブロックは決して手に入らず、ライ"
+"ンはほとんど完成させられないでしょう。次のブロックとして表示されるブロック"
+"は、次にあなたが欲しい(であろう)ブロックですが、実際に次に落ちてくるのは違う"
+"ブロックです。"
+
+#: C/quadrapassel.xml:223(title)
+msgid "Rotate Blocks Counterclockwise"
+msgstr "反時計回りに回転させる"
+
+#: C/quadrapassel.xml:224(para)
+msgid ""
+"Choose this option if you want the blocks to rotate counterclockwise or not."
+msgstr ""
+"このオプションではブロックを反時計回りに回転させるかどうかを選択します。"
+
+#: C/quadrapassel.xml:227(title)
+msgid "Show where the block will land"
+msgstr "ブロックを落とす場所を表示する"
+
+#: C/quadrapassel.xml:228(para)
+msgid ""
+"If this feature is used a grey image of the block will show you where the "
+"block will land. This feature is very useful for beginning players, but "
+"experienced players will find it a distraction."
+msgstr ""
+"この機能を有効にした場合、ブロックの着地する位置に、ブロックのイメージが灰色"
+"で表示されます。これは初心者にとってはとても便利な機能ですが、経験を積んだプ"
+"レイヤーは邪魔だと思うかもしれません。"
+
+#: C/quadrapassel.xml:236(title)
+msgid "Customizing the Look of <application>Quadrapassel</application>"
+msgstr "<application>Quadrapassel</application> の外観をカスタマイズする"
+
+#: C/quadrapassel.xml:237(para)
+msgid ""
+"Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize the look of "
+"<application>Quadrapassel</application>: images for the blocks."
+msgstr ""
+"<menuchoice><guimenu>設定</guimenu><guimenuitem>設定</guimenuitem></"
+"menuchoice> により、<application>Quadrapassel</application> の外観: ブロック"
+"のイメージ をカスタマイズすることができます。"
+
+#: C/quadrapassel.xml:239(title)
+msgid "Block Image"
+msgstr "ブロックのイメージ"
+
+#: C/quadrapassel.xml:240(para)
+msgid ""
+"You can change the style of the blocks, including image and size. There are "
+"a variety of pre-made styles."
+msgstr ""
+"ブロックのイメージやサイズを含む、スタイルの変更ができます。あらかじめ、いく"
+"つかのスタイルが用意されています。"
+
+#: C/quadrapassel.xml:243(title)
+msgid "Background"
+msgstr "背景"
+
+#: C/quadrapassel.xml:243(para)
+msgid ""
+"If you drag your favorite image into the <application>Quadrapassel</"
+"application> window it will be used as the background. If you want a solid "
+"color as the background drag one in from either the color picker or from "
+"<application>nautlilus'</application><guimenuitem>Backgrounds and Emblems</"
+"guimenuitem> dialog (the reset item from that dialog also works)."
+msgstr ""
+"あなたのお気に入りの画像を、<application>Quadrapassel</application> のウィン"
+"ドウにドラッグすると、その画像が背景として使用されます。背景を単色にしたい場"
+"合は、<application>nautlilus</application> の <guimenuitem>背景とエンブレム</"
+"guimenuitem> ダイアログで色を選択して、ドラッグします(ダイアログのリセット ア"
+"イテムも機能します)。"
+
+#: C/quadrapassel.xml:255(title)
+msgid "Authors"
+msgstr "作者"
+
+#: C/quadrapassel.xml:256(para)
+msgid ""
+"<application>Quadrapassel</application> was written by J. Marcin Gorycki in "
+"1999 and maintained by Gnome Games Team since then. This manual was written "
+"by Angela Boyle. To report a bug or make a suggestion regarding this "
+"application or this manual, follow the directions in this <ulink url=\"ghelp:"
+"user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>Quadrapassel</application> は、1999年に J. Marcin Gorycki によっ"
+"て記述され、以後は gnome-games によりメンテナンスされています。このドキュメン"
+"トの原文は Angela Boyle によって記述されました。このアプリケーションやマニュ"
+"アルにたいするバグや提案を行う場合は、この <ulink url=\"ghelp:user-guide?"
+"feedback-bugs\" type=\"help\">ドキュメント</ulink> にしたがってください。"
+
+#: C/quadrapassel.xml:280(title)
+msgid "License"
+msgstr "ライセンス"
+
+#: C/quadrapassel.xml:281(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェア財"
+"団によって発行された <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU 一般公衆利用許諾契約書</citetitle></ulink> (バージョン2か、"
+"希望によってはそれ以降のバージョンのうちどれか)の定める条件の下で再頒布または"
+"改変することができます。"
+
+#: C/quadrapassel.xml:283(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"このプログラムは有用であることを願って頒布されますが、*全くの無保証*です。商"
+"業可能性の保証や特定の目的への適合性は、言外に示されたものも含め全く存在しま"
+"せん。詳しくは <citetitle>GNU 一般公衆利用許諾契約書</citetitle> をご覧くださ"
+"い。"
+
+#: C/quadrapassel.xml:285(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"<citetitle>GNU General Public License</citetitle> のコピーは "
+"<citetitle>GNOME Users Guide</citetitle> の付録に含まれています。"
+"<citetitle>GNU General Public License</citetitle> のコピーの入手は <ulink "
+"type=\"http\" url=\"http://www.fsf.org\">Free Software Foundationのウェブサイ"
+"ト</ulink> を訪れるか、<address>Free Software Foundation,Inc.<street>59 "
+"Temple Place</street> - Suite 330 <city>Boston</city>,<state>MA</"
+"state><postcode>02111-1307</postcode><country>USA</country></address> にメー"
+"ルしてください。"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/quadrapassel.xml:0(None)
+msgid "translator-credits"
+msgstr "Hiroyuki Sekihara <hiroyuki.sekihara@gmail.com>, 2010."
