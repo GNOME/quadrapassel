@@ -441,12 +441,12 @@ Tetris::initOptions ()
 	if (line_fill_prob > 10)
 		line_fill_prob = 10;
 
-	moveLeft = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_LEFT, GDK_Left);
-	moveRight = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_RIGHT, GDK_Right);
-	moveDown = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_DOWN, GDK_Down);
-	moveDrop = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_DROP, GDK_Pause);
-	moveRotate = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_ROTATE, GDK_Up);
-	movePause = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_PAUSE, GDK_space);
+	moveLeft = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_LEFT, GDK_KEY_Left);
+	moveRight = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_RIGHT, GDK_KEY_Right);
+	moveDown = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_DOWN, GDK_KEY_Down);
+	moveDrop = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_DROP, GDK_KEY_Pause);
+	moveRotate = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_ROTATE, GDK_KEY_Up);
+	movePause = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_PAUSE, GDK_KEY_space);
 
 	bgcolourstr = confGetString (KEY_OPTIONS_GROUP, KEY_BG_COLOUR, "Black");
 	gdk_color_parse (bgcolourstr, &bgcolour);
@@ -482,35 +482,35 @@ void
 Tetris::setSound (GtkWidget *widget, gpointer data)
 {
 	games_conf_set_boolean (KEY_OPTIONS_GROUP, KEY_SOUND,
-				GTK_TOGGLE_BUTTON (widget)->active);
+				gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
 }
 
 void
 Tetris::setSelectionPreview(GtkWidget *widget, void *d)
 {
 	games_conf_set_boolean (KEY_OPTIONS_GROUP, KEY_DO_PREVIEW,
-				GTK_TOGGLE_BUTTON (widget)->active);
+				gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
 }
 
 void
 Tetris::setSelectionBlocks(GtkWidget *widget, void *d)
 {
 	games_conf_set_boolean (KEY_OPTIONS_GROUP, KEY_RANDOM_BLOCK_COLORS,
-				GTK_TOGGLE_BUTTON (widget)->active);
+				gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
 }
 
 void
 Tetris::setBastardMode(GtkWidget *widget, void *d)
 {
 	games_conf_set_boolean (KEY_OPTIONS_GROUP, KEY_BASTARD_MODE,
-				GTK_TOGGLE_BUTTON (widget)->active);
+				gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
 }
 
 void
 Tetris::setRotateCounterClockWise(GtkWidget *widget, void *d)
 {
 	games_conf_set_boolean (KEY_OPTIONS_GROUP, KEY_ROTATE_COUNTER_CLOCKWISE,
-				GTK_TOGGLE_BUTTON (widget)->active);
+				gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
 }
 
 void
@@ -555,7 +555,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	GtkWidget *frame;
 	GtkWidget *table;
 	GtkWidget *fvbox;
-	GtkObject *adj;
+	GtkAdjustment *adj;
 	GtkWidget *controls_list;
 
 	Tetris *t = (Tetris*) d;
@@ -572,9 +572,9 @@ Tetris::gameProperties(GtkAction *action, void *d)
 					    (GtkDialogFlags)0,
 					    GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE,
 					    NULL);
-	gtk_dialog_set_has_separator (GTK_DIALOG (t->setupdialog), FALSE);
 	gtk_container_set_border_width (GTK_CONTAINER (t->setupdialog), 5);
-	gtk_box_set_spacing (GTK_BOX (GTK_DIALOG (t->setupdialog)->vbox), 2);
+	vbox = gtk_dialog_get_content_area (GTK_DIALOG (t->setupdialog));
+	gtk_box_set_spacing (GTK_BOX (vbox), 2);
 	g_signal_connect (t->setupdialog, "close",
 			  G_CALLBACK (setupdialogDestroy), d);
 	g_signal_connect (t->setupdialog, "response",
@@ -582,8 +582,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 
 	notebook = gtk_notebook_new ();
 	gtk_container_set_border_width (GTK_CONTAINER (notebook), 5);
-	gtk_box_pack_start (GTK_BOX(GTK_DIALOG(t->setupdialog)->vbox), notebook,
-			    TRUE, TRUE, 0);
+	gtk_box_pack_start (GTK_BOX(vbox), notebook, TRUE, TRUE, 0);
 
 	/* game page */
 	vbox = gtk_vbox_new (FALSE, 18);
@@ -736,12 +735,12 @@ Tetris::gameProperties(GtkAction *action, void *d)
 
 	controls_list = games_controls_list_new (KEY_CONTROLS_GROUP);
 	games_controls_list_add_controls (GAMES_CONTROLS_LIST (controls_list),
-					  KEY_MOVE_LEFT, _("Move left"), GDK_Left,
-					  KEY_MOVE_RIGHT, _("Move right"), GDK_Right,
-					  KEY_MOVE_DOWN, _("Move down"), GDK_Down,
-					  KEY_MOVE_DROP, _("Drop"), GDK_Pause,
-					  KEY_MOVE_ROTATE, _("Rotate"), GDK_Up,
-					  KEY_MOVE_PAUSE, _("Pause"), GDK_space,
+					  KEY_MOVE_LEFT, _("Move left"), GDK_KEY_Left,
+					  KEY_MOVE_RIGHT, _("Move right"), GDK_KEY_Right,
+					  KEY_MOVE_DOWN, _("Move down"), GDK_KEY_Down,
+					  KEY_MOVE_DROP, _("Drop"), GDK_KEY_Pause,
+					  KEY_MOVE_ROTATE, _("Rotate"), GDK_KEY_Up,
+					  KEY_MOVE_PAUSE, _("Pause"), GDK_KEY_space,
 					  NULL);
 
 	gtk_box_pack_start (GTK_BOX (fvbox), controls_list, TRUE, TRUE, 0);
@@ -758,10 +757,10 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	fvbox = gtk_vbox_new (FALSE, 6);
 	gtk_container_add (GTK_CONTAINER (frame), fvbox);
 
-	GtkWidget *omenu = gtk_combo_box_new_text ();
+	GtkWidget *omenu = gtk_combo_box_text_new ();
 	const ThemeTableEntry *entry = ThemeTable;
 	while (entry->id) {
-		gtk_combo_box_append_text (GTK_COMBO_BOX (omenu), entry->name);
+		gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (omenu), entry->name);
 		entry++;
 	}
 	gtk_combo_box_set_active (GTK_COMBO_BOX (omenu), t->themeno);
@@ -1047,6 +1046,8 @@ Tetris::dragDrop(GtkWidget *widget, GdkDragContext *context,
 		 gint x, gint y, GtkSelectionData *data, guint info,
 		 guint time, Tetris * t)
 {
+	gint selection_length;
+	const guchar *selection_data;
 	const char *fileuri;
 
 	GError *error = NULL;
@@ -1071,7 +1072,10 @@ Tetris::dragDrop(GtkWidget *widget, GdkDragContext *context,
 
 	/* FIXME: Dropped URLs from mozilla don't work (see below). */
 
-	if (data->length < 0) {
+	selection_length = gtk_selection_data_get_length (data);
+	selection_data = gtk_selection_data_get_data (data);
+
+	if (selection_length < 0) {
 		gtk_drag_finish (context, FALSE, FALSE, time);
 		return;
 	}
@@ -1079,8 +1083,8 @@ Tetris::dragDrop(GtkWidget *widget, GdkDragContext *context,
 	gtk_drag_finish (context, TRUE, FALSE, time);
 
 	if (info == COLOUR) {
-		if (data->length == 8)
-			decodeColour ((guint16 *)data->data, t);
+		if (selection_length == 8)
+			decodeColour ((guint16 *)selection_data, t);
 		return;
 	}
 
@@ -1089,7 +1093,7 @@ Tetris::dragDrop(GtkWidget *widget, GdkDragContext *context,
 		return;
 	}
 
-	fileuri = decodeDropData ((char *)data->data, info);
+	fileuri = decodeDropData ((char *)selection_data, info);
 	/* Silently ignore bad data. */
 	if (fileuri == NULL)
 		goto error_exit;
@@ -1288,11 +1292,7 @@ Tetris::gameAbout(GtkAction *action, void *d)
 	gchar *license = games_get_license (_("Quadrapassel"));
 
 	gtk_show_about_dialog (GTK_WINDOW (t->getWidget()),
-#if GTK_CHECK_VERSION (2, 11, 0)
 			       "program-name", _("Qua"),
-#else
-			       "name", _("Quadrapassel"),
-#endif
 			       "version", VERSION,
 			       "comments", _("A classic game of fitting falling blocks together.\n\nQuadrapassel is a part of GNOME Games."),
 			       "copyright", "Copyright \xc2\xa9 1999 J. Marcin Gorycki, 2000-2009 Others",
