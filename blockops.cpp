@@ -28,7 +28,7 @@
 #include <clutter-gtk/clutter-gtk.h>
 #include "tetris.h"
 
-#define FONT "Sans Bold"
+#define FONT "Sans"
 
 gboolean
 BlockOps::move_end (ClutterTimeline *time, BlockOps *f)
@@ -805,19 +805,21 @@ BlockOps::drawMessage()
 	g_object_unref (dummy_layout);
 
 	// desired height : lh = widget width * 0.9 : lw
-	pango_font_description_set_absolute_size (desc, ((float) lh / lw) * PANGO_SCALE * width * 0.8);
+	pango_font_description_set_absolute_size (desc, ((float) lh / lw) * PANGO_SCALE * width * 0.7);
 	pango_layout_set_font_description (layout, desc);
 	pango_font_description_free (desc);
 
 	pango_layout_get_size (layout, &lw, &lh);
 	cairo_move_to (cr, -((double)lw / PANGO_SCALE) / 2, -((double)lh / PANGO_SCALE) / 2);
 	pango_cairo_layout_path (cr, layout);
-	cairo_set_source_rgb (cr, 1.0, 1.0, 1.0);
-	cairo_fill_preserve (cr);
-	cairo_set_source_rgb (cr, 0.0, 0.0, 0.0);
+	cairo_set_source_rgb (cr, 0.333333333333, 0.341176470588, 0.32549019607);
+
 	/* A linewidth of 2 pixels at the default size. */
-	cairo_set_line_width (cr, width/220.0);
-	cairo_stroke (cr);
+	cairo_set_line_width (cr, width/100.0);
+	cairo_stroke_preserve (cr);
+
+	cairo_set_source_rgb (cr, 1.0, 1.0, 1.0);
+	cairo_fill (cr);
 
 	g_object_unref(layout);
 	cairo_destroy (cr);
