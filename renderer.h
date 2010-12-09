@@ -51,9 +51,14 @@ public:
 
 protected:	
 	gboolean usegrads;
-
-private:
-	void drawRoundedRectangle (cairo_t *cr, gdouble x, gdouble y, gdouble w, gdouble h, gdouble r);
 };
+
+class CleanBlock:public Renderer {
+public:
+	CleanBlock ();
+	virtual void drawCell (cairo_t *cr, guint color);
+};
+
+void drawRoundedRectangle (cairo_t *cr, gdouble x, gdouble y, gdouble w, gdouble h, gdouble r);
 
 #endif // __renderer_h__

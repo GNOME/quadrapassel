@@ -30,6 +30,7 @@
 const ThemeTableEntry ThemeTable[] = {{N_("Plain"), "plain"},
 				      {N_("Tango Flat"), "tangoflat"},
 				      {N_("Tango Shaded"), "tangoshaded"},
+				      {N_("Clean"), "clean"},
 				      {NULL, NULL}};
 
 
@@ -57,6 +58,9 @@ Renderer * rendererFactory (guint id)
 {
 	Renderer *r;
 	switch (id) {
+	case 3:
+		r = new CleanBlock ();
+		break;
 	case 2:
 		r = new TangoBlock (TRUE);
 		break;
@@ -93,6 +97,90 @@ void Renderer::drawCell (cairo_t *cr, guint color)
 				colours[color][1],
 				colours[color][2]);
 	cairo_paint (cr);
+}
+
+CleanBlock::CleanBlock () : Renderer ()
+{
+}
+
+void CleanBlock::drawCell (cairo_t *cr, guint color)
+{
+	cairo_pattern_t *pat = NULL;
+	/* The colors, first the lighter then the darker fill (for the gradient)
+	   and then the stroke color  */
+	const gdouble colours[8][3][3] = {
+					  {{0.780392156863, 0.247058823529, 0.247058823529},
+					   {0.713725490196, 0.192156862745, 0.192156862745},
+					   {0.61568627451, 0.164705882353, 0.164705882353}}, /* red */
+
+					  {{0.552941176471, 0.788235294118, 0.32549019607},
+					   {0.474509803922, 0.713725490196, 0.243137254902},
+					   {0.388235294118, 0.596078431373, 0.18431372549}}, /* green */
+
+					  {{0.313725490196, 0.450980392157, 0.623529411765},
+					   {0.239215686275, 0.345098039216, 0.474509803922},
+					   {0.21568627451, 0.313725490196, 0.435294117647}}, /* blue */
+
+					  {{1.0, 1.0, 1.0},
+					   {0.909803921569, 0.909803921569, 0.898039215686},
+					   {0.701960784314, 0.701960784314, 0.670588235294}}, /* white */
+
+					  {{0.945098039216, 0.878431372549, 0.321568627451},
+					   {0.929411764706, 0.839215686275, 0.113725490196},
+					   {0.760784313725, 0.682352941176, 0.0274509803922}}, /* yellow */
+
+					  {{0.576470588235, 0.364705882353, 0.607843137255},
+					   {0.443137254902, 0.282352941176, 0.46666666666},
+					   {0.439215686275, 0.266666666667, 0.46666666666}}, /* purple */
+
+					  {{0.890196078431, 0.572549019608, 0.258823529412},
+					   {0.803921568627, 0.450980392157, 0.101960784314},
+					   {0.690196078431, 0.388235294118, 0.0901960784314}}, /* orange */
+
+					  {{0.392156862745, 0.392156862745, 0.392156862745},
+					   {0.262745098039, 0.262745098039, 0.262745098039},
+					   {0.21568627451, 0.235294117647, 0.23921568627}} /* grey */
+					 };
+
+	color = CLAMP (color, 0, 6);
+
+	/* Layout the block */
+	drawRoundedRectangle (cr, 0.05, 0.05, 0.9, 0.9, 0.05);
+
+	/* Draw outline */
+	cairo_set_source_rgb(cr, colours[color][2][0],
+			     colours[color][2][1],
+			     colours[color][2][2]);
+
+	cairo_set_line_width (cr, 0.1);
+	cairo_stroke_preserve (cr);
+
+
+	/* Create fill gradient */
+	pat = cairo_pattern_create_linear (0.35, 0, 0.55, 0.9);
+	cairo_pattern_add_color_stop_rgb (pat, 0.0, colours[color][0][0],
+						colours[color][0][1],
+						colours[color][0][2]);
+	cairo_pattern_add_color_stop_rgb (pat, 1.0, colours[color][1][0],
+						colours[color][1][1],
+						colours[color][1][2]);
+	cairo_set_source (cr, pat);
+	cairo_fill (cr);  /* Fill in block */
+
+	cairo_pattern_destroy (pat);
+}
+
+void drawRoundedRectangle (cairo_t * cr, gdouble x, gdouble y, gdouble w, gdouble h, gdouble r)
+{
+	cairo_move_to(cr, x+r, y);
+	cairo_line_to(cr, x+w-r, y);
+	cairo_curve_to(cr, x+w-(r/2), y, x+w, y+(r/2), x+w, y+r);
+	cairo_line_to(cr, x+w, y+h-r);
+	cairo_curve_to(cr, x+w, y+h-(r/2), x+w-(r/2), y+h, x+w-r, y+h);
+	cairo_line_to(cr, x+r, y+h);
+	cairo_curve_to(cr, x+(r/2), y+h, x, y+h-(r/2), x, y+h-r);
+	cairo_line_to(cr, x, y+r);
+	cairo_curve_to(cr, x, y+(r/2), x+(r/2), y, x+r, y);
 }
 
 TangoBlock::TangoBlock (gboolean grad) : Renderer ()
@@ -206,17 +294,3 @@ void TangoBlock::drawCell (cairo_t *cr, guint color)
 	if (usegrads)
 		cairo_pattern_destroy (pat);
 }
-
-void TangoBlock::drawRoundedRectangle (cairo_t * cr, gdouble x, gdouble y, gdouble w, gdouble h, gdouble r)
-{
-	cairo_move_to(cr, x+r, y);
-	cairo_line_to(cr, x+w-r, y);
-	cairo_curve_to(cr, x+w-(r/2), y, x+w, y+(r/2), x+w, y+r);
-	cairo_line_to(cr, x+w, y+h-r);
-	cairo_curve_to(cr, x+w, y+h-(r/2), x+w-(r/2), y+h, x+w-r, y+h);
-	cairo_line_to(cr, x+r, y+h);
-	cairo_curve_to(cr, x+(r/2), y+h, x, y+h-(r/2), x, y+h-r);
-	cairo_line_to(cr, x, y+r);
-	cairo_curve_to(cr, x, y+(r/2), x+(r/2), y, x+r, y);
-}
-
