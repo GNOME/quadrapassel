@@ -39,11 +39,7 @@ HighScores::HighScores ()
 
 gint HighScores::add (gint score)
 {
-	GamesScoreValue value;
-
-	value.plain = score;
-
-	return games_scores_add_score (highscores, value);
+	return games_scores_add_score (highscores, games_score_new_plain (score));
 }
 
 void HighScores::show (GtkWindow *parent_window, gint highlight)
