@@ -1292,7 +1292,7 @@ Tetris::gameAbout(GtkAction *action, void *d)
 	gchar *license = games_get_license (_("Quadrapassel"));
 
 	gtk_show_about_dialog (GTK_WINDOW (t->getWidget()),
-			       "program-name", _("Qua"),
+			       "program-name", _("Quadrapassel"),
 			       "version", VERSION,
 			       "comments", _("A classic game of fitting falling blocks together.\n\nQuadrapassel is a part of GNOME Games."),
 			       "copyright", "Copyright \xc2\xa9 1999 J. Marcin Gorycki, 2000-2009 Others",
