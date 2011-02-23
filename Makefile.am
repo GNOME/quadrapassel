@@ -31,14 +31,14 @@ quadrapassel_CPPFLAGS = \
 
 quadrapassel_CXXFLAGS = \
 	$(GTK_CFLAGS) \
-	$(CLUTTER_CFLAGS) \
 	$(CLUTTER_GTK_CFLAGS) \
+	$(CLUTTER_CFLAGS) \
 	$(AM_CXXFLAGS)
 
 quadrapassel_LDADD = \
 	$(top_builddir)/libgames-support/libgames-support.la \
-	$(CLUTTER_LIBS) \
 	$(CLUTTER_GTK_LIBS) \
+	$(CLUTTER_LIBS) \
 	$(GTK_LIBS) \
 	$(INTLLIBS)
 
