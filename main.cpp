@@ -69,8 +69,15 @@ main(int argc, char *argv[])
 
 	games_conf_initialise ("Quadrapassel");
 
-	if (gtk_clutter_init_with_args (NULL, NULL, NULL, NULL, NULL, &error) != CLUTTER_INIT_SUCCESS) {
-		g_printerr ("Failed to initialise clutter: %s\n", error->message);
+	if (gtk_clutter_init_with_args (NULL, NULL, NULL, NULL, NULL, &error) != CLUTTER_INIT_SUCCESS || error) {
+		GtkWidget *dialog = gtk_message_dialog_new (NULL,
+						GTK_DIALOG_MODAL,
+						GTK_MESSAGE_ERROR,
+						GTK_BUTTONS_NONE,
+						"Unable to initialize Clutter:\n%s", error->message);
+		gtk_window_set_title (GTK_WINDOW (dialog), g_get_application_name ());
+		gtk_dialog_run (GTK_DIALOG (dialog));
+		gtk_widget_destroy (dialog);
 		g_error_free (error);
 		return 1;
 	}
