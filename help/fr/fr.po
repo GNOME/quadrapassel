@@ -4,13 +4,14 @@
 #
 # Bruno Brouard <annoa.b@gmail.com>, 2007-2009.
 # Claude Paroz <claude@2xlibre.net>, 2007-2009.
+# Alexandre Franke <alexandre.franke@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master fr\n"
-"POT-Creation-Date: 2010-01-08 21:43+0000\n"
-"PO-Revision-Date: 2010-01-08 22:55+0100\n"
-"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
+"POT-Creation-Date: 2011-05-10 19:23+0000\n"
+"PO-Revision-Date: 2011-05-14 22:13+0100\n"
+"Last-Translator: Alexandre Franke <alexandre.franke@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,11 +28,11 @@ msgid ""
 "fit the other blocks at the bottom so that they form a complete horizontal "
 "line, in which case that line disappears and the player gains points."
 msgstr ""
-"Quadrapassel est une variante GNOME de Tetris, le classique jeu d'emboîtement "
-"de blocs de quatre pièces. Pendant qu'ils tombent du haut, le joueur doit "
-"les orienter afin qu'ils s'emboîtent avec les autres blocs du bas pour "
-"former si possible une ligne horizontale complète. Dans ce cas, la ligne "
-"disparaît et le joueur gagne des points."
+"Quadrapassel est une variante GNOME de Tetris, le classique jeu "
+"d'emboîtement de blocs de quatre pièces. Pendant qu'ils tombent du haut, le "
+"joueur doit les orienter afin qu'ils s'emboîtent avec les autres blocs du "
+"bas pour former si possible une ligne horizontale complète. Dans ce cas, la "
+"ligne disparaît et le joueur gagne des points."
 
 #: C/quadrapassel.xml:40(year)
 msgid "2004"
@@ -237,8 +238,8 @@ msgid ""
 msgstr ""
 "Pour lancer <application>Quadrapassel</application>, sélectionnez "
 "<menuchoice><guimenu>Applications</guimenu><guisubmenu>Jeux</"
-"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, ou saisissez "
-"la commande <command>quadrapassel</command> dans un terminal."
+"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, ou "
+"saisissez la commande <command>quadrapassel</command> dans un terminal."
 
 #. part of gnome-games
 #: C/quadrapassel.xml:137(para)
@@ -250,8 +251,8 @@ msgid ""
 msgstr ""
 "<application>Quadrapassel</application> est inclus dans le paquet "
 "<filename>gnome-games</filename> qui fait partie de l'environnement de "
-"bureau GNOME. Ce document présente la version 2.8 de <application>Quadrapassel</"
-"application>."
+"bureau GNOME. Ce document présente la version 2.8 de "
+"<application>Quadrapassel</application>."
 
 #: C/quadrapassel.xml:141(title)
 msgid "Playing <application>Quadrapassel</application>"
@@ -375,8 +376,8 @@ msgid ""
 "menuchoice>. If you are in the middle of a game when you quit, you will end "
 "your game without saving your score."
 msgstr ""
-"Pour quitter définitivement <application>Quadrapassel</application>, utilisez "
-"le menu <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Quitter</"
+"Pour quitter définitivement <application>Quadrapassel</application>, "
+"utilisez le menu <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Quitter</"
 "guimenuitem></menuchoice>. Si une partie est en cours lorsque vous quittez, "
 "la partie s'arrête sans sauvegarder votre score."
 
@@ -543,8 +544,8 @@ msgstr ""
 "vont rendre le jeu plus difficile."
 
 #: C/quadrapassel.xml:219(title)
-msgid "Bastard Mode"
-msgstr "Mode pernicieux"
+msgid "Choose Difficult Blocks"
+msgstr "Choisir des blocs difficiles"
 
 #: C/quadrapassel.xml:220(para)
 msgid ""
@@ -625,10 +626,10 @@ msgid ""
 "guimenuitem> dialog (the reset item from that dialog also works)."
 msgstr ""
 "Si vous faites glisser votre image favorite sur la fenêtre de "
-"<application>Quadrapassel</application>, elle sera utilisée comme arrière-plan. "
-"Si vous désirez une couleur unie comme arrière-plan, faites-en glisser une "
-"soit à partir d'une fenêtre de sélection de couleur ou bien à partir de la "
-"boîte de dialogue <guimenuitem>Arrière-plans et emblèmes</guimenuitem> de "
+"<application>Quadrapassel</application>, elle sera utilisée comme arrière-"
+"plan. Si vous désirez une couleur unie comme arrière-plan, faites-en glisser "
+"une soit à partir d'une fenêtre de sélection de couleur ou bien à partir de "
+"la boîte de dialogue <guimenuitem>Arrière-plans et emblèmes</guimenuitem> de "
 "<application>Nautilus</application> (le bouton Réinitialiser de cette boîte "
 "de dialogue fonctionne également)."
 
@@ -706,3 +707,6 @@ msgid "translator-credits"
 msgstr ""
 "Bruno Brouard <annoa.b@gmail.com>, 2007-2009\n"
 "Claude Paroz <claude@2xlibre.net>, 2007-2010"
+
+#~ msgid "Bastard Mode"
+#~ msgstr "Mode pernicieux"
