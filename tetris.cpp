@@ -198,9 +198,9 @@ Tetris::Tetris(int cmdlLevel):
 
 	menubar = gtk_ui_manager_get_widget (ui_manager, "/MainMenu");
 
-	GtkWidget * hb = gtk_hbox_new(FALSE, 0);
+	GtkWidget * hb = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
 
-	vbox = gtk_vbox_new (FALSE, 0);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	gtk_container_add (GTK_CONTAINER (w), vbox);
 	gtk_box_pack_start (GTK_BOX (vbox), menubar, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (vbox), hb, TRUE, TRUE, 0);
@@ -212,7 +212,7 @@ Tetris::Tetris(int cmdlLevel):
 	gtk_widget_set_events(w, gtk_widget_get_events(w) |
 			      GDK_KEY_PRESS_MASK | GDK_KEY_RELEASE_MASK);
 
-	GtkWidget *vb1 = gtk_vbox_new(FALSE, 0);
+	GtkWidget *vb1 = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
 	gtk_container_set_border_width(GTK_CONTAINER(vb1), 10);
 	gtk_box_pack_start(GTK_BOX(vb1), aspect_frame, TRUE, TRUE, 0);
 	gtk_box_pack_start(GTK_BOX(hb), vb1, TRUE, TRUE, 0);
@@ -222,7 +222,7 @@ Tetris::Tetris(int cmdlLevel):
 	g_signal_connect (w, "key_press_event", G_CALLBACK (keyPressHandler), this);
 	g_signal_connect (w, "key_release_event", G_CALLBACK (keyReleaseHandler), this);
 
-	GtkWidget *vb2 = gtk_vbox_new(FALSE, 0);
+	GtkWidget *vb2 = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
 	gtk_container_set_border_width(GTK_CONTAINER(vb2), 10);
 	gtk_box_pack_end(GTK_BOX(hb), vb2, 0, 0, 0);
 
@@ -591,7 +591,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	gtk_box_pack_start (GTK_BOX(vbox), notebook, TRUE, TRUE, 0);
 
 	/* game page */
-	vbox = gtk_vbox_new (FALSE, 18);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 18);
 	gtk_container_set_border_width (GTK_CONTAINER (vbox), 12);
 	label = gtk_label_new (_("Game"));
 	gtk_notebook_append_page (GTK_NOTEBOOK(notebook), vbox, label);
@@ -662,7 +662,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 			    FALSE, FALSE, 0);
 
 	frame = games_frame_new (_("Operation"));
-	fvbox = gtk_vbox_new (FALSE, 6);
+	fvbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 
 	/* sound */
 	t->sound_toggle =
@@ -735,7 +735,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	gtk_table_set_col_spacings (GTK_TABLE (table), 12);
 
 	/* controls page */
-	vbox = gtk_vbox_new (FALSE, 0);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	gtk_container_set_border_width (GTK_CONTAINER (vbox), 12);
 	label = gtk_label_new (_("Controls"));
 	gtk_notebook_append_page (GTK_NOTEBOOK(notebook), vbox, label);
@@ -743,7 +743,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	frame = games_frame_new (_("Keyboard Controls"));
 	gtk_container_add (GTK_CONTAINER (vbox), frame);
 
-	fvbox = gtk_vbox_new (FALSE, 6);
+	fvbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_container_add (GTK_CONTAINER (frame), fvbox);
 
 	controls_list = games_controls_list_new (KEY_CONTROLS_GROUP);
@@ -759,7 +759,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	gtk_box_pack_start (GTK_BOX (fvbox), controls_list, TRUE, TRUE, 0);
 
 	/* theme page */
-	vbox = gtk_vbox_new (FALSE, 0);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	gtk_container_set_border_width (GTK_CONTAINER (vbox), 12);
 	label = gtk_label_new (_("Theme"));
 	gtk_notebook_append_page (GTK_NOTEBOOK(notebook), vbox, label);
@@ -767,7 +767,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	frame = games_frame_new (_("Block Style"));
 	gtk_container_add (GTK_CONTAINER (vbox), frame);
 
-	fvbox = gtk_vbox_new (FALSE, 6);
+	fvbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_container_add (GTK_CONTAINER (frame), fvbox);
 
 	GtkWidget *omenu = gtk_combo_box_text_new ();
