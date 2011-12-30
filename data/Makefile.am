@@ -1,14 +1,14 @@
 SUBDIRS = icons
 
 pixmapdir = $(pkgdatadir)/quadrapassel/pixmaps
-pixmap_DATA = 
+pixmap_DATA = \
 	quadrapassel.svg \
 	7blocks-tig.png \
 	7blocks-gw.png
 
-gamesdir = $(datadir)/applications
-games_in_files = quadrapassel.desktop.in.in
-games_DATA = $(games_in_files:.desktop.in.in=.desktop)
+desktopdir = $(datadir)/applications
+desktop_in_files = quadrapassel.desktop.in.in
+desktop_DATA = $(desktop_in_files:.desktop.in.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
 schema_in_files = quadrapassel.schemas.in
@@ -22,6 +22,7 @@ man_MANS = quadrapassel.6
 
 EXTRA_DIST = \
 	$(pixmap_DATA) \
+	$(desktop_in_files) \
 	$(schema_in_files) \
 	$(man_MANS)
 
@@ -30,6 +31,6 @@ if GCONF_SCHEMAS_INSTALL
 	GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(top_builddir)/quadrapassel/data/$(schema_DATA)
 endif
 
-DISTCLEANFILES = $(games_DATA) $(schema_DATA)
+DISTCLEANFILES = $(desktop_DATA) $(schema_DATA)
 
 -include $(top_srcdir)/git.mk
