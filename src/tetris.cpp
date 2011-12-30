@@ -559,7 +559,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	GtkWidget *vbox;
 	GtkWidget *label;
 	GtkWidget *frame;
-	GtkWidget *table;
+	GtkWidget *grid;
 	GtkWidget *fvbox;
 	GtkAdjustment *adj;
 	GtkWidget *controls_list;
@@ -597,17 +597,15 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	gtk_notebook_append_page (GTK_NOTEBOOK(notebook), vbox, label);
 
 	frame = games_frame_new (_("Setup"));
-	table = gtk_table_new (3, 2, FALSE);
-	gtk_table_set_row_spacings (GTK_TABLE (table), 6);
-	gtk_table_set_col_spacings (GTK_TABLE (table), 12);
+	grid = gtk_grid_new ();
+	gtk_grid_set_row_spacing (GTK_GRID (grid), 6);
+	gtk_grid_set_column_spacing (GTK_GRID (grid), 12);
 
 	/* pre-filled rows */
 	label = gtk_label_new_with_mnemonic (_("_Number of pre-filled rows:"));
 	gtk_misc_set_alignment (GTK_MISC (label), 0, 0.5);
-	gtk_table_attach (GTK_TABLE (table), label, 0, 1, 0, 1,
-			  (GtkAttachOptions) GTK_FILL,
-			  (GtkAttachOptions) 0,
-			  0, 0);
+    gtk_widget_set_hexpand (label, TRUE);
+	gtk_grid_attach (GTK_GRID (grid), label, 0, 0, 1, 1);
 
 	adj = gtk_adjustment_new (t->line_fill_height, 0, LINES-1, 1, 5, 0);
 	t->fill_height_spinner = gtk_spin_button_new (GTK_ADJUSTMENT (adj), 10, 0);
@@ -617,16 +615,14 @@ Tetris::gameProperties(GtkAction *action, void *d)
 		(GTK_SPIN_BUTTON (t->fill_height_spinner), TRUE);
 	g_signal_connect (t->fill_height_spinner, "value_changed",
 			  G_CALLBACK (lineFillHeightChanged), t);
-	gtk_table_attach_defaults (GTK_TABLE (table), t->fill_height_spinner, 1, 2, 0, 1);
+	gtk_grid_attach (GTK_GRID (grid), t->fill_height_spinner, 1, 0, 2, 1);
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), t->fill_height_spinner);
 
 	/* pre-filled rows density */
 	label = gtk_label_new_with_mnemonic (_("_Density of blocks in a pre-filled row:"));
 	gtk_misc_set_alignment (GTK_MISC (label), 0, 0.5);
-	gtk_table_attach (GTK_TABLE (table), label, 0, 1, 1, 2,
-			  (GtkAttachOptions) GTK_FILL,
-			  (GtkAttachOptions) 0,
-			  0, 0);
+    gtk_widget_set_hexpand (label, TRUE);
+	gtk_grid_attach (GTK_GRID (grid), label, 0, 1, 1, 1);
 
 	adj = gtk_adjustment_new (t->line_fill_prob, 0, 10, 1, 5, 0);
 	t->fill_prob_spinner = gtk_spin_button_new (GTK_ADJUSTMENT (adj), 10, 0);
@@ -636,16 +632,14 @@ Tetris::gameProperties(GtkAction *action, void *d)
 		(GTK_SPIN_BUTTON (t->fill_prob_spinner), TRUE);
 	g_signal_connect (t->fill_prob_spinner, "value_changed",
 		          G_CALLBACK (lineFillProbChanged), t);
-	gtk_table_attach_defaults (GTK_TABLE (table), t->fill_prob_spinner, 1, 2, 1, 2);
+	gtk_grid_attach (GTK_GRID (grid), t->fill_prob_spinner, 1, 1, 1, 1);
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), t->fill_prob_spinner);
 
 	/* starting level */
 	label = gtk_label_new_with_mnemonic (_("_Starting level:"));
 	gtk_misc_set_alignment (GTK_MISC (label), 0, 0.5);
-	gtk_table_attach (GTK_TABLE (table), label, 0, 1, 2, 3,
-			  (GtkAttachOptions) GTK_FILL,
-			  (GtkAttachOptions) 0,
-			  0, 0);
+    gtk_widget_set_hexpand (label, TRUE);    
+	gtk_grid_attach (GTK_GRID (grid), label, 0, 2, 1, 1);
 
 	adj = gtk_adjustment_new (t->startingLevel, 1, 20, 1, 5, 0);
 	t->sentry = gtk_spin_button_new (GTK_ADJUSTMENT (adj), 10.0, 0);
@@ -654,10 +648,10 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	gtk_spin_button_set_snap_to_ticks (GTK_SPIN_BUTTON (t->sentry), TRUE);
 	g_signal_connect (t->sentry, "value_changed",
 			  G_CALLBACK (startingLevelChanged), t);
-	gtk_table_attach_defaults (GTK_TABLE (table), t->sentry, 1, 2, 2, 3);
+	gtk_grid_attach (GTK_GRID (grid), t->sentry, 1, 2, 1, 1);
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), t->sentry);
 
-	gtk_container_add (GTK_CONTAINER (frame), table);
+	gtk_container_add (GTK_CONTAINER (frame), grid);
 	gtk_box_pack_start (GTK_BOX (vbox), frame,
 			    FALSE, FALSE, 0);
 
@@ -729,10 +723,10 @@ Tetris::gameProperties(GtkAction *action, void *d)
 			    FALSE, FALSE, 0);
 
 	frame = games_frame_new (_("Theme"));
-	table = gtk_table_new (2, 2, FALSE);
-	gtk_container_set_border_width (GTK_CONTAINER (table), 0);
-	gtk_table_set_row_spacings (GTK_TABLE (table), 6);
-	gtk_table_set_col_spacings (GTK_TABLE (table), 12);
+	grid = gtk_grid_new ();
+	gtk_container_set_border_width (GTK_CONTAINER (grid), 0);
+	gtk_grid_set_row_spacing (GTK_GRID (grid), 6);
+	gtk_grid_set_column_spacing (GTK_GRID (grid), 12);
 
 	/* controls page */
 	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);

@@ -42,38 +42,31 @@ ScoreFrame::ScoreFrame(int cmdlLevel)
 
 	level = startingLevel;
 
-	w = gtk_table_new (3, 2, FALSE);
+	w = gtk_grid_new ();
 
 	scoreLabel = gtk_label_new (_("Score:"));
 	gtk_misc_set_alignment (GTK_MISC (scoreLabel), 0.0, 0.5);
-	gtk_table_attach_defaults (GTK_TABLE (w), scoreLabel,
-				   0, 1, 0, 1);
+ 	gtk_grid_attach (GTK_GRID (w), scoreLabel, 0, 0, 1, 1);
 	sprintf(b, "%7d", 0);
 	scorew = gtk_label_new (b);
 	gtk_misc_set_alignment (GTK_MISC (scorew), 1.0, 0.5);
-	gtk_table_attach_defaults (GTK_TABLE (w), scorew,
-				   1, 2, 0, 1);
+	gtk_grid_attach (GTK_GRID (w), scorew, 1, 0, 1, 1);
 
 	linesLabel = gtk_label_new (_("Lines:"));
 	gtk_misc_set_alignment (GTK_MISC (linesLabel), 0.0, 0.5);
-	gtk_table_attach_defaults (GTK_TABLE (w), linesLabel,
-				   0, 1, 1, 2);
+	gtk_grid_attach (GTK_GRID (w), linesLabel, 0, 1, 1, 1);
 	sprintf(b, "%7d", 0);
 	linesw = gtk_label_new (b);
 	gtk_misc_set_alignment (GTK_MISC (linesw), 1.0, 0.5);
-	gtk_table_attach_defaults (GTK_TABLE (w), linesw,
-				   1, 2, 1, 2);
-
+	gtk_grid_attach (GTK_GRID (w), linesw, 1, 1, 1, 1);
 
 	levelLabel = gtk_label_new (_("Level:"));
 	gtk_misc_set_alignment (GTK_MISC (levelLabel), 0.0, 0.5);
-	gtk_table_attach_defaults (GTK_TABLE (w), levelLabel,
-				   0, 1, 2, 3);
+	gtk_grid_attach (GTK_GRID (w), levelLabel, 0, 2, 1, 1);
 	sprintf(b, "%7d", level);
 	levelw = gtk_label_new (b);
 	gtk_misc_set_alignment (GTK_MISC (levelw), 1.0, 0.5);
-	gtk_table_attach_defaults (GTK_TABLE (w), levelw,
-				   1, 2, 2, 3);
+	gtk_grid_attach (GTK_GRID (w), levelw, 1, 2, 1, 1);
 
 }
 
