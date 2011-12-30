@@ -11,3 +11,5 @@ icon24_DATA = 24x24/quadrapassel.png
 icon32_DATA = 32x32/quadrapassel.png
 icon48_DATA = 48x48/quadrapassel.png
 iconscalable_DATA = scalable/quadrapassel.svg
+
+EXTRA_DIST = $(icon16_DATA) $(icon22_DATA) $(icon24_DATA) $(icon32_DATA) $(icon48_DATA) $(icon256_DATA) $(iconscalable_DATA)
