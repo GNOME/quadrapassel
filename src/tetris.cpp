@@ -735,7 +735,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	gtk_notebook_append_page (GTK_NOTEBOOK(notebook), vbox, label);
 
 	frame = games_frame_new (_("Keyboard Controls"));
-	gtk_container_add (GTK_CONTAINER (vbox), frame);
+	gtk_box_pack_start (GTK_BOX (vbox), frame, TRUE, TRUE, 0);
 
 	fvbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_container_add (GTK_CONTAINER (frame), fvbox);
@@ -759,7 +759,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	gtk_notebook_append_page (GTK_NOTEBOOK(notebook), vbox, label);
 
 	frame = games_frame_new (_("Block Style"));
-	gtk_container_add (GTK_CONTAINER (vbox), frame);
+	gtk_box_pack_start (GTK_BOX (vbox), frame, TRUE, TRUE, 0);
 
 	fvbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_container_add (GTK_CONTAINER (frame), fvbox);
