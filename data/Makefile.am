@@ -1,3 +1,5 @@
+SUBDIRS = icons
+
 pixmapdir = $(pkgdatadir)/quadrapassel/pixmaps
 pixmap_DATA = 
 	quadrapassel.svg \

@@ -65,7 +65,7 @@ main(int argc, char *argv[])
 
 	g_set_application_name (_("Quadrapassel"));
 
-	gtk_window_set_default_icon_name ("gnome-quadrapassel");
+	gtk_window_set_default_icon_name ("quadrapassel");
 
 	games_conf_initialise ("Quadrapassel");
 
