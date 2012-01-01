@@ -27,8 +27,6 @@
 #include "renderer.h"
 #include "blocks-cache.h"
 
-#include <libgames-support/games-debug.h>
-
 struct _BlocksCachePrivate
 {
   guint theme;
@@ -85,9 +83,6 @@ blocks_cache_clear (BlocksCache *cache)
   BlocksCachePrivate *priv = cache->priv;
   int i;
 
-  _games_debug_print (GAMES_DEBUG_BLOCKS_CACHE,
-                      "blocks_cache_clear\n");
-
   for (i = 0; i < NCOLOURS; i++) {
     CoglHandle handle = priv->colours[i];
 
@@ -142,15 +137,6 @@ blocks_cache_finalize (GObject *object)
   BlocksCachePrivate *priv = cache->priv;
 
   g_free (priv->colours);
-
-#ifdef GNOME_ENABLE_DEBUG
-  _GAMES_DEBUG_IF (GAMES_DEBUG_BLOCKS_CACHE) {
-    _games_debug_print (GAMES_DEBUG_BLOCKS_CACHE,
-                        "BlocksCache %p statistics: %u calls with %u hits and %u misses for a hit/total of %.3f\n",
-                        cache, priv->n_calls, priv->cache_hits, priv->n_calls - priv->cache_hits,
-                        priv->n_calls > 0 ? (double) priv->cache_hits / (double) priv->n_calls : 0.0);
-  }
-#endif
 
   G_OBJECT_CLASS (blocks_cache_parent_class)->finalize (object);
 }
