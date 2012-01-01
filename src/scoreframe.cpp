@@ -31,13 +31,7 @@
 ScoreFrame::ScoreFrame(int cmdlLevel)
 	: score(0), lines(0)
 {
-	if (cmdlLevel)
-		startingLevel = cmdlLevel;
-	else {
-		startingLevel = games_conf_get_integer (KEY_OPTIONS_GROUP,
-							KEY_STARTING_LEVEL,
-							NULL);
-	}
+	startingLevel = cmdlLevel;
 	startingLevel = CLAMP (startingLevel, 1, 20);
 
 	level = startingLevel;

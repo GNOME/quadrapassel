@@ -22,7 +22,6 @@
 #include <config.h>
 
 #include <libgames-support/games-scores.h>
-#include <libgames-support/games-conf.h>
 #include <clutter-gtk/clutter-gtk.h>
 
 #include "tetris.h"
@@ -63,8 +62,6 @@ main(int argc, char *argv[])
 
 	gtk_window_set_default_icon_name ("quadrapassel");
 
-	games_conf_initialise ("Quadrapassel");
-
 	if (gtk_clutter_init_with_args (NULL, NULL, NULL, NULL, NULL, &error) != CLUTTER_INIT_SUCCESS || error) {
 		GtkWidget *dialog = gtk_message_dialog_new (NULL,
 						GTK_DIALOG_MODAL,
@@ -83,8 +80,6 @@ main(int argc, char *argv[])
 	gtk_main();
 
 	delete t;
-
-	games_conf_shutdown ();
 
 	return 0;
 }

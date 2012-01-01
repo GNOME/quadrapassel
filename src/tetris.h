@@ -28,33 +28,6 @@
 #include <gtk/gtk.h>
 //#include <gdk-pixbuf/gdk-pixbuf.h>
 
-#include <libgames-support/games-conf.h>
-
-#define KEY_OPTIONS_GROUP             "options"
-#define KEY_BG_COLOUR                 "bgcolor"
-#define KEY_BLOCK_PIXMAP              "block_pixmap"
-#define KEY_DO_PREVIEW                "do_preview"
-#define KEY_LINE_FILL_HEIGHT          "line_fill_height"
-#define KEY_LINE_FILL_PROBABILITY     "line_fill_probability"
-#define KEY_BASTARD_MODE              "bastard_mode"
-#define KEY_RANDOM_BLOCK_COLORS       "random_block_colors"
-#define KEY_ROTATE_COUNTER_CLOCKWISE  "rotate_counter_clock_wise"
-#define KEY_SOUND                     "sound"
-#define KEY_STARTING_LEVEL            "starting_level"
-#define KEY_THEME                     "theme"
-#define KEY_USE_BG_IMAGE              "usebgimage"
-#define KEY_USE_TARGET                "use_target"
-
-#define KEY_CONTROLS_GROUP  "controls"
-#define KEY_MOVE_DOWN       "key_down"
-#define KEY_MOVE_DROP       "key_drop"
-#define KEY_MOVE_LEFT       "key_left"
-#define KEY_MOVE_PAUSE      "key_pause"
-#define KEY_MOVE_RIGHT      "key_right"
-#define KEY_MOVE_ROTATE     "key_rotate"
-
-#define KEY_SAVED_GROUP     "saved"
-
 extern int LINES;
 extern int COLUMNS;
 
@@ -87,6 +60,7 @@ public:
 	void setupPixmap ();
 
 private:
+    GSettings *settings;
 	GtkWidget * w;
 
 	GList *themeList;
@@ -150,14 +124,7 @@ private:
 	static void lineFillProbChanged (GtkWidget * spin, gpointer data);
 	static void startingLevelChanged (GtkWidget * spin, gpointer data);
 
-	static void confNotify (GamesConf *conf, const char *group,
-				const char *key, gpointer data);
-	static gchar *confGetString (const char *group, const char *key,
-				     const char *default_val);
-	static int confGetInt (const char *group, const char *key,
-			       int default_val);
-	static gboolean confGetBoolean (const char *group, const char *key,
-					gboolean default_val);
+	static void confNotify (GSettings *setting, const char *key, gpointer data);
 	void initOptions ();
 	void setOptions ();
 	void writeOptions ();

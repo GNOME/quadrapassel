@@ -150,6 +150,8 @@ Tetris::Tetris(int cmdlLevel):
 		default_bgimage = true;
 	}
 
+	settings = g_settings_new ("org.gnome.quadrapassel");
+
 	w = gtk_window_new (GTK_WINDOW_TOPLEVEL);
 	gtk_window_set_title (GTK_WINDOW (w), _("Quadrapassel"));
 
@@ -166,7 +168,7 @@ Tetris::Tetris(int cmdlLevel):
 	line_fill_prob = 5;
 
 	gtk_window_set_default_size (GTK_WINDOW (w), DEFAULT_WIDTH, DEFAULT_HEIGHT);
-	games_conf_add_window (GTK_WINDOW (w), KEY_SAVED_GROUP);
+	//games_conf_add_window (GTK_WINDOW (w), KEY_SAVED_GROUP);
 
 	preview = new Preview ();
 	field = new BlockOps ();
@@ -224,6 +226,8 @@ Tetris::Tetris(int cmdlLevel):
 
 	gtk_box_pack_start(GTK_BOX(vb2), preview->getWidget(), FALSE, FALSE, 0);
 
+	if (cmdlineLevel <= 0)
+        cmdlineLevel = g_settings_get_int (settings, "starting-level");
 	scoreFrame = new ScoreFrame(cmdlineLevel);
 
 	gtk_box_pack_end(GTK_BOX(vb2), scoreFrame->getWidget(), TRUE, FALSE, 0);
@@ -239,8 +243,8 @@ Tetris::Tetris(int cmdlLevel):
 	gtk_action_set_sensitive(end_game_action, FALSE);
 	gtk_action_set_sensitive(preferences_action, TRUE);
 
-	confNotifyID = g_signal_connect (games_conf_get_default (),
-					 "value-changed",
+	confNotifyID = g_signal_connect (settings,
+					 "changed",
 					 G_CALLBACK (confNotify),
 					 this);
 }
@@ -261,7 +265,7 @@ Tetris::~Tetris()
 		g_free(defaultPixmap);
 
 	if (confNotifyID != 0)
-		g_signal_handler_disconnect (games_conf_get_default (), confNotifyID);
+		g_signal_handler_disconnect (settings, confNotifyID);
 }
 
 void
@@ -358,42 +362,12 @@ Tetris::setupPixmap()
 }
 
 void
-Tetris::confNotify (GamesConf *conf, const char *group, const char *key, gpointer data)
+Tetris::confNotify (GSettings *settings, const char *key, gpointer data)
 {
-	if (!group)
-		return;
-
 	Tetris *t = (Tetris *) data;
 
 	t->initOptions ();
 	t->setOptions ();
-}
-
-char *
-Tetris::confGetString (const char *group, const char *key, const char *default_val)
-{
-	return games_conf_get_string_with_default (group, key, default_val);
-}
-
-int
-Tetris::confGetInt (const char *group, const char *key, int default_val)
-{
-	return games_conf_get_integer_with_default (group, key, default_val);
-}
-
-gboolean
-Tetris::confGetBoolean (const char *group, const char *key, gboolean default_val)
-{
-	gboolean val;
-	GError *error = NULL;
-
-	val = games_conf_get_boolean (group, key, &error);
-	if (error) {
-		g_error_free (error);
-		val = default_val;
-	}
-
-	return val;
 }
 
 void
@@ -401,54 +375,54 @@ Tetris::initOptions ()
 {
 	gchar *bgcolourstr;
 
-	themeno = themeNameToNumber (confGetString (KEY_OPTIONS_GROUP, KEY_THEME, "plain"));
+	themeno = themeNameToNumber (g_settings_get_string (settings, "theme"));
 	field->setTheme (themeno);
 	preview->setTheme (themeno);
 
-	startingLevel = confGetInt (KEY_OPTIONS_GROUP, KEY_STARTING_LEVEL, 1);
+	startingLevel = g_settings_get_int (settings, "starting-level");
 	if (startingLevel < 1)
 		startingLevel = 1;
 	if (startingLevel > 20)
 		startingLevel = 20;
 
-	sound_enable (confGetBoolean (KEY_OPTIONS_GROUP, KEY_SOUND, TRUE));
+	sound_enable (g_settings_get_boolean (settings, "sound"));
 
-	do_preview = confGetBoolean (KEY_OPTIONS_GROUP, KEY_DO_PREVIEW, TRUE);
+	do_preview = g_settings_get_boolean (settings, "do-preview");
 
 	if (preview) {
 		preview->enable(do_preview);
 	}
 
-	random_block_colors = confGetBoolean (KEY_OPTIONS_GROUP, KEY_RANDOM_BLOCK_COLORS, TRUE);
+	random_block_colors = g_settings_get_boolean (settings, "random-block-colors");
 
-	bastard_mode = confGetBoolean (KEY_OPTIONS_GROUP, KEY_BASTARD_MODE, FALSE);
+	bastard_mode = g_settings_get_boolean (settings, "pick-difficult-blocks");
 
-	rotateCounterClockWise = confGetBoolean (KEY_OPTIONS_GROUP, KEY_ROTATE_COUNTER_CLOCKWISE, TRUE);
+	rotateCounterClockWise = g_settings_get_boolean (settings, "rotate-counter-clock-wise");
 
-	line_fill_height = confGetInt (KEY_OPTIONS_GROUP, KEY_LINE_FILL_HEIGHT, 0);
+	line_fill_height = g_settings_get_int (settings, "line-fill-height");
 	if (line_fill_height < 0)
 		line_fill_height = 0;
 	if (line_fill_height > 19)
 		line_fill_height = 19;
 
-	line_fill_prob = confGetInt (KEY_OPTIONS_GROUP, KEY_LINE_FILL_PROBABILITY, 0);
+	line_fill_prob = g_settings_get_int (settings, "line-fill-probability");
 	if (line_fill_prob < 0)
 		line_fill_prob = 0;
 	if (line_fill_prob > 10)
 		line_fill_prob = 10;
 
-	moveLeft = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_LEFT, GDK_KEY_Left);
-	moveRight = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_RIGHT, GDK_KEY_Right);
-	moveDown = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_DOWN, GDK_KEY_Down);
-	moveDrop = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_DROP, GDK_KEY_Pause);
-	moveRotate = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_ROTATE, GDK_KEY_Up);
-	movePause = games_conf_get_keyval_with_default (KEY_CONTROLS_GROUP, KEY_MOVE_PAUSE, GDK_KEY_space);
+	moveLeft = g_settings_get_int (settings, "key-left");
+	moveRight = g_settings_get_int (settings, "key-right");
+	moveDown = g_settings_get_int (settings, "key-down");
+	moveDrop = g_settings_get_int (settings, "key-drop");
+	moveRotate = g_settings_get_int (settings, "key-rotate");
+	movePause = g_settings_get_int (settings, "key-pause");
 
-	bgcolourstr = confGetString (KEY_OPTIONS_GROUP, KEY_BG_COLOUR, "Black");
+	bgcolourstr = g_settings_get_string (settings, "bg-color");
 	gdk_color_parse (bgcolourstr, &bgcolour);
 	g_free (bgcolourstr);
 
-	usebg = confGetBoolean (KEY_OPTIONS_GROUP, KEY_USE_BG_IMAGE, TRUE);
+	usebg = g_settings_get_boolean (settings, "use-bg-image");
 }
 
 void
@@ -477,33 +451,32 @@ Tetris::setOptions ()
 void
 Tetris::setSound (GtkWidget *widget, gpointer data)
 {
-	games_conf_set_boolean (KEY_OPTIONS_GROUP, KEY_SOUND,
-				gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
+	Tetris *t = (Tetris *) data;
+	g_settings_set_boolean (t->settings, "sound", gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
 }
 
 void
 Tetris::setSelectionPreview(GtkWidget *widget, void *d)
 {
-	games_conf_set_boolean (KEY_OPTIONS_GROUP, KEY_DO_PREVIEW,
-				gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
+	Tetris *t = (Tetris *) d;  
+	g_settings_set_boolean (t->settings, "do-preview", gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
 }
 
 void
 Tetris::setSelectionBlocks(GtkWidget *widget, void *d)
 {
-	games_conf_set_boolean (KEY_OPTIONS_GROUP, KEY_RANDOM_BLOCK_COLORS,
-				gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
+	Tetris *t = (Tetris *) d;
+	g_settings_set_boolean (t->settings, "random-block-colors", gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
 }
 
 void
 Tetris::setBastardMode(GtkWidget *widget, void *d)
 {
-	games_conf_set_boolean (KEY_OPTIONS_GROUP, KEY_BASTARD_MODE,
-				gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
+	Tetris *t = (Tetris *) d;
+	g_settings_set_boolean (t->settings, "pick-difficult-blocks", gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
 
 	/* Disable the preview option to indicate that it is
 		unavailable in bastard mode */
-	Tetris *t = (Tetris*) d;
 	gtk_widget_set_sensitive(t->do_preview_toggle,
 		gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)) ? FALSE : TRUE);
 }
@@ -511,8 +484,8 @@ Tetris::setBastardMode(GtkWidget *widget, void *d)
 void
 Tetris::setRotateCounterClockWise(GtkWidget *widget, void *d)
 {
-	games_conf_set_boolean (KEY_OPTIONS_GROUP, KEY_ROTATE_COUNTER_CLOCKWISE,
-				gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
+	Tetris *t = (Tetris *) d;
+	g_settings_set_boolean (t->settings, "rotate-counter-clock-wise", gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)));
 }
 
 void
@@ -523,29 +496,31 @@ Tetris::setSelection(GtkWidget *widget, void *data)
 
 	t->themeno = gtk_combo_box_get_active (GTK_COMBO_BOX (widget));
 	t->field->setTheme (t->themeno);
-	games_conf_set_string (KEY_OPTIONS_GROUP, KEY_THEME,
-			       ThemeTable[t->themeno].id);
+	g_settings_set_string (t->settings, "theme", ThemeTable[t->themeno].id);
 }
 
 void
 Tetris::lineFillHeightChanged (GtkWidget *spin, gpointer data)
 {
+	Tetris *t = (Tetris *) data;
 	gint value = gtk_spin_button_get_value_as_int (GTK_SPIN_BUTTON (spin));
-	games_conf_set_integer (KEY_OPTIONS_GROUP, KEY_LINE_FILL_HEIGHT, value);
+	g_settings_set_int (t->settings, "line-fill-height", value);
 }
 
 void
 Tetris::lineFillProbChanged (GtkWidget *spin, gpointer data)
 {
+	Tetris *t = (Tetris *) data;
 	gint value = gtk_spin_button_get_value_as_int (GTK_SPIN_BUTTON (spin));
-	games_conf_set_integer (KEY_OPTIONS_GROUP, KEY_LINE_FILL_PROBABILITY, value);
+	g_settings_set_int (t->settings, "line-fill-probability", value);
 }
 
 void
 Tetris::startingLevelChanged (GtkWidget *spin, gpointer data)
 {
+	Tetris *t = (Tetris *) data;
 	gint value = gtk_spin_button_get_value_as_int (GTK_SPIN_BUTTON (spin));
-	games_conf_set_integer (KEY_OPTIONS_GROUP, KEY_STARTING_LEVEL, value);
+	g_settings_set_int (t->settings, "starting-level", value);
 }
 
 int
@@ -736,14 +711,14 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	fvbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_container_add (GTK_CONTAINER (frame), fvbox);
 
-	controls_list = games_controls_list_new (KEY_CONTROLS_GROUP);
+	controls_list = games_controls_list_new_settings (t->settings);
 	games_controls_list_add_controls (GAMES_CONTROLS_LIST (controls_list),
-					  KEY_MOVE_LEFT, _("Move left"), GDK_KEY_Left,
-					  KEY_MOVE_RIGHT, _("Move right"), GDK_KEY_Right,
-					  KEY_MOVE_DOWN, _("Move down"), GDK_KEY_Down,
-					  KEY_MOVE_DROP, _("Drop"), GDK_KEY_Pause,
-					  KEY_MOVE_ROTATE, _("Rotate"), GDK_KEY_Up,
-					  KEY_MOVE_PAUSE, _("Pause"), GDK_KEY_space,
+					  "key-left", _("Move left"), GDK_KEY_Left,
+					  "key-right", _("Move right"), GDK_KEY_Right,
+					  "key-down", _("Move down"), GDK_KEY_Down,
+					  "key-drop", _("Drop"), GDK_KEY_space,
+					  "key-rotate", _("Rotate"), GDK_KEY_Up,
+					  "key-pause", _("Pause"), GDK_KEY_Pause,
 					  NULL);
 
 	gtk_box_pack_start (GTK_BOX (fvbox), controls_list, TRUE, TRUE, 0);
@@ -976,11 +951,11 @@ void Tetris::saveBgOptions ()
 {
 	gchar cbuffer[64];
 
-	games_conf_set_boolean (KEY_OPTIONS_GROUP, KEY_USE_BG_IMAGE, usebg);
+	g_settings_set_boolean (settings, "use-bg-image", usebg);
 
 	g_snprintf (cbuffer, sizeof (cbuffer), "#%04x%04x%04x",
 		    bgcolour.red, bgcolour.green, bgcolour.blue);
-	games_conf_set_string (KEY_OPTIONS_GROUP, KEY_BG_COLOUR, cbuffer);
+	g_settings_set_string (settings, "bg-color", cbuffer);
 }
 
 void

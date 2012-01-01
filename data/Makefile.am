@@ -1,5 +1,10 @@
 SUBDIRS = icons
 
+gsettings_in_file = org.gnome.quadrapassel.gschema.xml.in
+gsettings_SCHEMAS = $(gsettings_in_file:.xml.in=.xml)
+@INTLTOOL_XML_NOMERGE_RULE@
+@GSETTINGS_RULES@
+
 pixmapdir = $(datadir)/quadrapassel/pixmaps
 pixmap_DATA = \
 	quadrapassel.svg \
@@ -11,26 +16,14 @@ desktop_in_files = quadrapassel.desktop.in.in
 desktop_DATA = $(desktop_in_files:.desktop.in.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
-schema_in_files = quadrapassel.schemas.in
-if HAVE_GNOME
-schemadir = $(GCONF_SCHEMA_FILE_DIR)
-schema_DATA = $(schema_in_files:.schemas.in=.schemas)
-endif
-@INTLTOOL_SCHEMAS_RULE@
-
 man_MANS = quadrapassel.6
 
 EXTRA_DIST = \
+	$(gsettings_in_file) \
 	$(pixmap_DATA) \
 	$(desktop_in_files) \
-	$(schema_in_files) \
 	$(man_MANS)
 
-install-data-local:
-if GCONF_SCHEMAS_INSTALL
-	GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(top_builddir)/quadrapassel/data/$(schema_DATA)
-endif
-
-DISTCLEANFILES = $(desktop_DATA) $(schema_DATA)
+DISTCLEANFILES = $(desktop_DATA) $(gsettings_SCHEMAS)
 
 -include $(top_srcdir)/git.mk
