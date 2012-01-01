@@ -23,10 +23,10 @@
 
 #include <libgames-support/games-conf.h>
 #include <libgames-support/games-frame.h>
-#include <libgames-support/games-sound.h>
 
 #include "scoreframe.h"
 #include "tetris.h"
+#include "sound.h"
 
 ScoreFrame::ScoreFrame(int cmdlLevel)
 	: score(0), lines(0)
@@ -97,7 +97,7 @@ ScoreFrame::scoreLastLineBonus ()
 {
 	incScore (10000*level);
 	// FIXME: Get it its own sound?
-	games_sound_play ("quadrapassel");
+	sound_play ("quadrapassel");
 }
 
 int
@@ -111,19 +111,19 @@ ScoreFrame::scoreLines(int newlines)
 			return level;
 		case 1:
 			linescore = 40;
-			games_sound_play ("lines1");
+			sound_play ("lines1");
 			break;
 		case 2:
 			linescore = 100;
-			games_sound_play ("lines2");
+			sound_play ("lines2");
 			break;
 		case 3:
 			linescore = 300;
-			games_sound_play ("lines3");
+			sound_play ("lines3");
 			break;
 		case 4:
 			linescore = 1200;
-			games_sound_play ("lines3");
+			sound_play ("lines3");
 			break;
 	}
 	incScore (level*linescore);

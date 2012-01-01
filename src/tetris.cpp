@@ -31,9 +31,6 @@
 
 #include <libgames-support/games-controls.h>
 #include <libgames-support/games-frame.h>
-#include <libgames-support/games-help.h>
-#include <libgames-support/games-runtime.h>
-#include <libgames-support/games-sound.h>
 #include <libgames-support/games-stock.h>
 #include <libgames-support/games-pause-action.h>
 
@@ -44,6 +41,7 @@
 #include "preview.h"
 #include "blockops.h"
 #include "renderer.h"
+#include "sound.h"
 
 int LINES = 20;
 int COLUMNS = 14;
@@ -95,7 +93,6 @@ Tetris::Tetris(int cmdlLevel):
 	GtkWidget *menubar;
 
 	gchar *outdir;
-	const char *dname;
 
 	const GtkTargetEntry targets[] = {{(gchar*) "text/uri-list", 0, URI_LIST},
 					  {(gchar*) "property/bgimage", 0, URI_LIST},
@@ -149,8 +146,7 @@ Tetris::Tetris(int cmdlLevel):
 
 	/*  Use default background image, if none found in user's home dir.*/
 	if (!g_file_test (bgPixmap, G_FILE_TEST_EXISTS)) {
-		dname = games_runtime_get_directory (GAMES_RUNTIME_GAME_PIXMAP_DIRECTORY);
-		defaultPixmap = g_build_filename (dname, "quadrapassel.svg", NULL);
+		defaultPixmap = g_build_filename (DATA_DIRECTORY, "pixmaps", "quadrapassel.svg", NULL);
 		default_bgimage = true;
 	}
 
@@ -415,7 +411,7 @@ Tetris::initOptions ()
 	if (startingLevel > 20)
 		startingLevel = 20;
 
-	games_sound_enable (confGetBoolean (KEY_OPTIONS_GROUP, KEY_SOUND, TRUE));
+	sound_enable (confGetBoolean (KEY_OPTIONS_GROUP, KEY_SOUND, TRUE));
 
 	do_preview = confGetBoolean (KEY_OPTIONS_GROUP, KEY_DO_PREVIEW, TRUE);
 
@@ -462,7 +458,7 @@ Tetris::setOptions ()
 		gtk_spin_button_set_value (GTK_SPIN_BUTTON (sentry), startingLevel);
 		gtk_spin_button_set_value (GTK_SPIN_BUTTON (fill_prob_spinner), line_fill_prob);
 		gtk_spin_button_set_value (GTK_SPIN_BUTTON (fill_height_spinner), line_fill_height);
-		gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (sound_toggle), games_sound_is_enabled ());
+		gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (sound_toggle), sound_is_enabled ());
 		gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (do_preview_toggle), do_preview);
 		gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (random_block_colors_toggle), random_block_colors);
 		gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (bastard_mode_toggle), bastard_mode);
@@ -662,7 +658,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	t->sound_toggle =
 		gtk_check_button_new_with_mnemonic (_("_Enable sounds"));
 	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON (t->sound_toggle),
-				     games_sound_is_enabled ());
+				     sound_is_enabled ());
 	g_signal_connect (t->sound_toggle, "clicked",
 			  G_CALLBACK (setSound), d);
 	gtk_box_pack_start (GTK_BOX (fvbox), t->sound_toggle, 0, 0, 0);
@@ -850,13 +846,13 @@ void
 Tetris::manageFallen()
 {
 	field->fallingToLaying();
-	games_sound_play ("land");
+	sound_play ("land");
 
 	int levelBefore = scoreFrame->getLevel();
 
 	int levelAfter = scoreFrame->scoreLines (field->checkFullLines());
 	if (levelAfter != levelBefore)
-		games_sound_play ("quadrapassel");
+		sound_play ("quadrapassel");
 	if ((levelBefore != levelAfter) || fastFall)
 		generateTimer(levelAfter);
 
@@ -918,17 +914,17 @@ Tetris::keyPressHandler(GtkWidget *widget, GdkEvent *event, Tetris *t)
 	if (keyval == toupper(t->moveLeft)) {
 		res = t->field->moveBlockLeft();
 		if (res)
-			games_sound_play ("slide");
+			sound_play ("slide");
 		t->onePause = false;
 	} else if (keyval == toupper(t->moveRight)) {
 		res = t->field->moveBlockRight();
 		if (res)
-			games_sound_play ("slide");
+			sound_play ("slide");
 		t->onePause = false;
 	} else if (keyval == toupper(t->moveRotate)) {
 		res = t->field->rotateBlock(rotateCounterClockWise);
 		if (res)
-			games_sound_play ("turn");
+			sound_play ("turn");
 		t->onePause = false;
 	} else if (keyval == toupper(t->moveDown)) {
 		if (!t->fastFall && !t->onePause) {
@@ -1222,7 +1218,7 @@ Tetris::endOfGame()
 	preview->previewBlock(-1, -1, FALSE);
 	field->hidePauseMessage();
 	field->showGameOverMessage();
-	games_sound_play ("gameover");
+	sound_play ("gameover");
 	inPlay = false;
 
 	if (scoreFrame->getScore() > 0)
@@ -1274,7 +1270,7 @@ Tetris::gameNew(GtkAction *action, void *d)
 	t->field->hidePauseMessage();
 	t->field->hideGameOverMessage();
 
-	games_sound_play ("quadrapassel");
+	sound_play ("quadrapassel");
 
 	return TRUE;
 }
@@ -1283,7 +1279,13 @@ int
 Tetris::gameHelp(GtkAction *action, void *data)
 {
 	Tetris *t = (Tetris*) data;
-	games_help_display(t->getWidget(), "quadrapassel", NULL);
+	GError *error = NULL;
+
+	gtk_show_uri (gtk_widget_get_screen (t->getWidget ()), "ghelp:quadrapassel", gtk_get_current_event_time (), &error);
+	if (error)
+		g_warning ("Failed to show help: %s", error->message);
+	g_clear_error (&error);
+
 	return TRUE;
 }
 

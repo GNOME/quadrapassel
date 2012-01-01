@@ -23,7 +23,6 @@
 
 #include <libgames-support/games-scores.h>
 #include <libgames-support/games-conf.h>
-#include <libgames-support/games-runtime.h>
 #include <clutter-gtk/clutter-gtk.h>
 
 #include "tetris.h"
@@ -33,9 +32,6 @@ main(int argc, char *argv[])
 {
 	gboolean retval;
 	GError *error = NULL;
-
-	if (!games_runtime_init ("quadrapassel"))
-		return 1;
 
 #ifdef ENABLE_SETGID
 	setgid_io_init ();
@@ -89,8 +85,6 @@ main(int argc, char *argv[])
 	delete t;
 
 	games_conf_shutdown ();
-
-	games_runtime_shutdown ();
 
 	return 0;
 }

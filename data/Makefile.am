@@ -1,6 +1,6 @@
 SUBDIRS = icons
 
-pixmapdir = $(pkgdatadir)/quadrapassel/pixmaps
+pixmapdir = $(datadir)/quadrapassel/pixmaps
 pixmap_DATA = \
 	quadrapassel.svg \
 	7blocks-tig.png \

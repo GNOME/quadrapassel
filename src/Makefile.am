@@ -17,20 +17,26 @@ quadrapassel_SOURCES = \
 	renderer.cpp \
 	renderer.h \
 	blocks-cache.cpp \
-	blocks-cache.h
+	blocks-cache.h \
+	sound.cpp \
+	sound.h
 
 quadrapassel_CPPFLAGS = \
 	-I$(top_srcdir) \
 	$(AM_CPPFLAGS)
 
 quadrapassel_CXXFLAGS = \
+	-DDATA_DIRECTORY=\"$(datadir)/quadrapassel\" \
+	-DSOUND_DIRECTORY=\"$(pkgdatadir)/sounds\" \
 	$(GTK_CFLAGS) \
+	$(CANBERRA_GTK_CFLAGS) \
 	$(CLUTTER_GTK_CFLAGS) \
 	$(CLUTTER_CFLAGS) \
 	$(AM_CXXFLAGS)
 
 quadrapassel_LDADD = \
 	$(top_builddir)/libgames-support/libgames-support.la \
+	$(CANBERRA_GTK_LIBS) \
 	$(CLUTTER_GTK_LIBS) \
 	$(CLUTTER_LIBS) \
 	$(GTK_LIBS) \
