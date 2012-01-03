@@ -42,11 +42,6 @@ quadrapassel_LDADD = \
 	$(GTK_LIBS) \
 	$(INTLLIBS)
 
-if HAVE_GNOME
-quadrapassel_CXXFLAGS += $(GNOME_CFLAGS)
-quadrapassel_LDADD += $(GNOME_LIBS)
-endif
-
 if HAVE_RSVG
 quadrapassel_CXXFLAGS += $(RSVG_CFLAGS) 
 quadrapassel_LDADD += $(RSVG_LIBS)
