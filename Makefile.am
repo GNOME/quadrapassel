@@ -1,8 +1,4 @@
-SUBDIRS = src data
-
-if BUILD_HELP
-SUBDIRS += help
-endif
+SUBDIRS = src data help
 
 install-data-local:
 	-$(mkinstalldirs) $(DESTDIR)$(scoredir)
