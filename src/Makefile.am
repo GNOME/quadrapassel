@@ -47,11 +47,6 @@ quadrapassel_CXXFLAGS += $(RSVG_CFLAGS)
 quadrapassel_LDADD += $(RSVG_LIBS)
 endif
 
-if WITH_GTHREAD
-quadrapassel_CXXFLAGS += $(GHTREAD_CFLAGS)
-quadrapassel_LDADD += $(GTHREAD_LIBS)
-endif
-
 install-exec-hook:
 	-if test "$(setgid)" = "true"; then \
 	  chgrp $(scores_group) $(DESTDIR)$(bindir)/quadrapassel && chmod 2555 $(DESTDIR)$(bindir)/quadrapassel ;\
