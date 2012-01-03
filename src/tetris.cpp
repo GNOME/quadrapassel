@@ -711,7 +711,7 @@ Tetris::gameProperties(GtkAction *action, void *d)
 	fvbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_container_add (GTK_CONTAINER (frame), fvbox);
 
-	controls_list = games_controls_list_new_settings (t->settings);
+	controls_list = games_controls_list_new (t->settings);
 	games_controls_list_add_controls (GAMES_CONTROLS_LIST (controls_list),
 					  "key-left", _("Move left"), GDK_KEY_Left,
 					  "key-right", _("Move right"), GDK_KEY_Right,

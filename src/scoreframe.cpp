@@ -21,7 +21,6 @@
 
 #include <config.h>
 
-#include <libgames-support/games-conf.h>
 #include <libgames-support/games-frame.h>
 
 #include "scoreframe.h"
