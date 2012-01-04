@@ -6,24 +6,15 @@
       <_description>Image to use for drawing blocks.</_description>
     </key>
     <key name="theme" type="s">
-      <default>'tangoshaded'</default>
+      <default>'clean'</default>
       <_summary>The theme used for rendering the blocks</_summary>
       <_description>The name of the theme used for rendering the blocks and the background.</_description>
     </key>
     <key name="starting-level" type="i">
       <default>1</default>
+      <range min="1" max="20"/>
       <_summary>Level to start with</_summary>
       <_description>Level to start with.</_description>
-    </key>
-    <key name="use-bg-image" type="b">
-      <default>true</default>
-      <_summary>Whether to use the background image</_summary>
-      <_description>This selects whether or not to draw the background image over the background color.</_description>
-    </key>
-    <key name="bg-color" type="s">
-      <default>'Black'</default>
-      <_summary>The background color</_summary>
-      <_description>The background color, in a format gdk_color_parse understands.</_description>
     </key>
     <key name="do-preview" type="b">
       <default>true</default>
@@ -47,11 +38,13 @@
     </key>
     <key name="line-fill-height" type="i">
       <default>0</default>
+      <range min="0" max="19"/>
       <_summary>The number of rows to fill</_summary>
       <_description>The number of rows that are filled with random blocks at the start of the game.</_description>
     </key>
     <key name="line-fill-probability" type="i">
       <default>5</default>
+      <range min="0" max="10"/>
       <_summary>The density of filled rows</_summary>
       <_description>The density of blocks in rows filled at the start of the game. The value is between 0 (for no blocks) and 10 (for a completely filled row).</_description>
     </key>

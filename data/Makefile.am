@@ -5,11 +5,16 @@ gsettings_SCHEMAS = $(gsettings_in_file:.xml.in=.xml)
 @INTLTOOL_XML_NOMERGE_RULE@
 @GSETTINGS_RULES@
 
-pixmapdir = $(datadir)/quadrapassel/pixmaps
-pixmap_DATA = \
-	quadrapassel.svg \
-	7blocks-tig.png \
-	7blocks-gw.png
+soundsdir = $(datadir)/quadrapassel/sounds
+sounds_DATA = \
+	gameover.ogg \
+	land.ogg \
+	lines1.ogg \
+	lines2.ogg \
+	lines3.ogg \
+	slide.ogg \
+	turn.ogg \
+	quadrapassel.ogg
 
 desktopdir = $(datadir)/applications
 desktop_in_files = quadrapassel.desktop.in.in
@@ -20,7 +25,7 @@ man_MANS = quadrapassel.6
 
 EXTRA_DIST = \
 	$(gsettings_in_file) \
-	$(pixmap_DATA) \
+	$(sounds_DATA) \
 	$(desktop_in_files) \
 	$(man_MANS)
 

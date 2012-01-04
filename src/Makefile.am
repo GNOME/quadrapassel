@@ -1,39 +1,37 @@
 bin_PROGRAMS = quadrapassel
 
 quadrapassel_SOURCES = \
-	main.cpp \
-	blocks.cpp \
-	blocks.h \
-	highscores.cpp \
-	highscores.h \
-	scoreframe.cpp \
-	scoreframe.h \
-	tetris.cpp \
-	tetris.h \
-	preview.cpp \
-	preview.h \
-	blockops.cpp \
-	blockops.h \
-	renderer.cpp \
-	renderer.h \
-	blocks-cache.cpp \
-	blocks-cache.h \
-	sound.cpp \
-	sound.h
+	config.vapi \
+	fixes.vapi \
+	quadrapassel.vala \
+	preview.vala \
+	game.vala \
+	game-view.vala
 
-quadrapassel_CPPFLAGS = \
-	-I$(top_srcdir) \
-	$(AM_CPPFLAGS)
-
-quadrapassel_CXXFLAGS = \
+quadrapassel_CFLAGS = \
+	-I$(top_srcdir)/libgames-support \
+	-DVERSION=\"$(VERSION)\" \
+	-DGETTEXT_PACKAGE=\"$(GETTEXT_PACKAGE)\" \
 	-DDATA_DIRECTORY=\"$(datadir)/quadrapassel\" \
-	-DSOUND_DIRECTORY=\"$(pkgdatadir)/sounds\" \
+	-DSOUND_DIRECTORY=\"$(datadir)/quadrapassel/sounds\" \
 	-DLOCALEDIR=\"$(datadir)/locale\" \
 	$(GTK_CFLAGS) \
 	$(CANBERRA_GTK_CFLAGS) \
 	$(CLUTTER_GTK_CFLAGS) \
-	$(CLUTTER_CFLAGS) \
-	$(AM_CXXFLAGS)
+	$(CLUTTER_CFLAGS)
+
+quadrapassel_VALAFLAGS = \
+	--pkg posix \
+	--pkg gtk+-3.0 \
+	--pkg pango \
+	--pkg pangocairo \
+	--pkg clutter-1.0 \
+	--pkg clutter-gtk-1.0 \
+	--pkg cogl-1.0 \
+	--pkg libcanberra \
+	--pkg libcanberra-gtk \
+	--vapidir $(top_srcdir)/libgames-support \
+	--pkg GnomeGamesSupport-1.0
 
 quadrapassel_LDADD = \
 	$(top_builddir)/libgames-support/libgames-support.la \
@@ -44,7 +42,7 @@ quadrapassel_LDADD = \
 	$(INTLLIBS)
 
 if HAVE_RSVG
-quadrapassel_CXXFLAGS += $(RSVG_CFLAGS) 
+quadrapassel_CFLAGS += $(RSVG_CFLAGS) 
 quadrapassel_LDADD += $(RSVG_LIBS)
 endif
 
