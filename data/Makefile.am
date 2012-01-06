@@ -24,6 +24,7 @@ EXTRA_DIST = \
 	$(desktop_in_files) \
 	$(man_MANS)
 
+CLEANFILES = $(desktop_DATA) $(gsettings_SCHEMAS)
 DISTCLEANFILES = $(desktop_DATA) $(gsettings_SCHEMAS)
 
 -include $(top_srcdir)/git.mk
