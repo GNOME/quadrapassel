@@ -32,9 +32,7 @@ main(int argc, char *argv[])
 	gboolean retval;
 	GError *error = NULL;
 
-#ifdef ENABLE_SETGID
-	setgid_io_init ();
-#endif
+    games_scores_startup ();
 
 	int cmdlineLevel = 0;
 
