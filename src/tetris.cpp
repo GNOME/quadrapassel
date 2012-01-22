@@ -1256,7 +1256,7 @@ Tetris::gameHelp(GtkAction *action, void *data)
 	Tetris *t = (Tetris*) data;
 	GError *error = NULL;
 
-	gtk_show_uri (gtk_widget_get_screen (t->getWidget ()), "ghelp:quadrapassel", gtk_get_current_event_time (), &error);
+	gtk_show_uri (gtk_widget_get_screen (t->getWidget ()), "help:quadrapassel", gtk_get_current_event_time (), &error);
 	if (error)
 		g_warning ("Failed to show help: %s", error->message);
 	g_clear_error (&error);

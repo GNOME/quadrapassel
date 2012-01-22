@@ -1,14 +1,12 @@
-include $(top_srcdir)/gnome-doc-utils.make
+@YELP_HELP_RULES@
+HELP_ID = quadrapassel
 
-DOC_LINGUAS = ca cs de el en_GB es eu fi fr it ja oc sl sr sr@latin sv zh_CN
+HELP_MEDIA = 
 
-DOC_MODULE = quadrapassel
+HELP_FILES = \
+	legal.xml \
+	quadrapassel.xml
 
-DOC_ENTITIES = \
-	legal.xml
-
-DOC_FIGURES =
-
-dist-hook: doc-dist-hook
+HELP_LINGUAS = ca cs de el en_GB es eu fi fr it ja oc sl sr sr@latin sv zh_CN
 
 -include $(top_srcdir)/git.mk
