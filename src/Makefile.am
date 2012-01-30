@@ -28,6 +28,7 @@ quadrapassel_CPPFLAGS = \
 quadrapassel_CXXFLAGS = \
 	-DDATA_DIRECTORY=\"$(datadir)/quadrapassel\" \
 	-DSOUND_DIRECTORY=\"$(pkgdatadir)/sounds\" \
+	-DLOCALEDIR=\"$(datadir)/locale\" \
 	$(GTK_CFLAGS) \
 	$(CANBERRA_GTK_CFLAGS) \
 	$(CLUTTER_GTK_CFLAGS) \
