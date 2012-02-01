@@ -50,4 +50,8 @@ install-exec-hook:
 	  chgrp $(scores_group) $(DESTDIR)$(bindir)/quadrapassel && chmod 2555 $(DESTDIR)$(bindir)/quadrapassel ;\
 	fi
 
+CLEANFILES = \
+	$(patsubst %.vala,%.c,$(filter %.vala, $(SOURCES))) \
+	*_vala.stamp
+
 -include $(top_srcdir)/git.mk
