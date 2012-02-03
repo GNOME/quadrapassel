@@ -109,7 +109,7 @@ public class Quadrapassel
         }
         main_window.add_accel_group (ui_manager.get_accel_group ());
 
-        pause_action = new GnomeGamesSupport.PauseAction ("_pause");
+        pause_action = new GnomeGamesSupport.PauseAction ("_Pause");
         pause_action.state_changed.connect (pause_cb);
         action_group.add_action_with_accel (pause_action, null);
 
