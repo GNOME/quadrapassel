@@ -59,7 +59,7 @@ public class Quadrapassel
         "  <menubar name='MainMenu'>" +
         "    <menu action='GameMenu'>" +
         "      <menuitem action='NewGame'/>" +
-        "      <menuitem action='_pause'/>" +
+        "      <menuitem action='_Pause'/>" +
         "      <separator/>" +
         "      <menuitem action='Scores'/>" +
         "      <separator/>" +
@@ -317,7 +317,7 @@ public class Quadrapassel
                                     "key-down", _("Move down"), 0,
                                     "key-drop", _("Drop"), 0,
                                     "key-rotate", _("Rotate"), 0,
-                                    "key-pause", _("_pause"), 0,
+                                    "key-pause", _("_Pause"), 0,
                                     null);
 
         fvbox.pack_start (controls_list, true, true, 0);
