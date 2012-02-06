@@ -21,10 +21,10 @@
       <_summary>Whether to preview the next block</_summary>
       <_description>Whether to preview the next block.</_description>
     </key>
-    <key name="use-target" type="b">
+    <key name="show-shadow" type="b">
       <default>false</default>
-      <_summary>Whether to provide a target</_summary>
-      <_description>Whether to provide a graphical representation of where a block will land.</_description>
+      <_summary>Whether to show where the moving piece will land</_summary>
+      <_description>Whether to show where the moving piece will land.</_description>
     </key>
     <key name="random-block-colors" type="b">
       <default>false</default>

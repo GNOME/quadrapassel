@@ -209,7 +209,7 @@ public class Game : Object
 {
     /* Falling shape */
     public Shape? shape = null;
-
+    
     /* Next shape to be used */
     public Shape? next_shape = null;
 
@@ -254,6 +254,23 @@ public class Game : Object
             if (has_started)
                 setup_drop_timer ();
             pause_changed ();
+        }
+    }
+
+    /* The y co-ordinate of the shadow of the falling shape */
+    public int shadow_y
+    {
+        get
+        {
+            if (shape == null)
+                return 0;
+
+            var d = 0;
+            var g = copy ();
+            while (g.move_shape (0, 1, 0))
+                d++;
+
+            return shape.y + d;
         }
     }
 

@@ -64,6 +64,16 @@ public class GameView : GtkClutter.Embed
     /* The shape currently falling */
     private Clutter.Group? shape = null;
 
+    /* Shadow of falling piece */
+    private Clutter.Clone? shape_shadow = null;
+    
+    private bool _show_shadow = false;
+    public bool show_shadow
+    {
+        get { return _show_shadow; }
+        set { _show_shadow = value; update_shadow (); }
+    }
+
     /* Overlay to draw messages on */
     private TextOverlay text_overlay;
 
@@ -128,6 +138,8 @@ public class GameView : GtkClutter.Embed
         shape = new Clutter.Group ();
         playing_field.add (shape);
         shape.set_position (game.shape.x * cell_size, game.shape.y * cell_size);
+        update_shadow ();
+
         foreach (var block in game.shape.blocks)
         {
             var actor = new BlockActor (block, block_textures[block.color]);
@@ -142,11 +154,34 @@ public class GameView : GtkClutter.Embed
     {
         play_sound ("slide");
         shape.animate (Clutter.AnimationMode.EASE_IN_QUAD, 30, "x", (float) game.shape.x * cell_size);
+        if (shape_shadow != null)
+            shape_shadow.set_position (game.shape.x * cell_size, game.shadow_y * cell_size);
+    }
+    
+    private void update_shadow ()
+    {
+        if (show_shadow)
+        {
+            if (shape_shadow == null)
+            {
+                shape_shadow = new Clutter.Clone (shape);
+                shape_shadow.set_opacity (32);
+                playing_field.add (shape_shadow);
+            }
+            shape_shadow.set_position (game.shape.x * cell_size, game.shadow_y * cell_size);
+        }
+        else
+        {
+            if (shape_shadow != null)
+                shape_shadow.destroy ();
+            shape_shadow = null;
+        }
     }
 
     private void shape_dropped_cb ()
     {
         shape.animate (Clutter.AnimationMode.EASE_IN_QUAD, 60, "y", (float) game.shape.y * cell_size);
+        update_shadow ();
     }
 
     private void shape_rotated_cb ()
@@ -157,6 +192,7 @@ public class GameView : GtkClutter.Embed
             var actor = shape_blocks.lookup (block);
             actor.set_position (block.x * cell_size, block.y * cell_size);
         }
+        update_shadow ();
     }
 
     private void shape_landed_cb (int[] lines, List<Block> line_blocks)
@@ -181,6 +217,9 @@ public class GameView : GtkClutter.Embed
         /* Remove the moving shape */
         shape.destroy ();
         shape = null;
+        if (shape_shadow != null)
+            shape_shadow.destroy ();
+        shape_shadow = null;
         shape_blocks.remove_all ();
 
         /* Land the shape blocks */
@@ -261,6 +300,7 @@ public class GameView : GtkClutter.Embed
         }
         if (shape != null)
             shape.set_position (game.shape.x * cell_size, game.shape.y * cell_size);
+        update_shadow ();
 
         text_overlay.set_size (get_allocated_width (), get_allocated_height ());
         text_overlay.raise_top ();

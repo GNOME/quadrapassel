@@ -36,7 +36,7 @@ public class Quadrapassel
     private Gtk.CheckButton do_preview_toggle;
     private Gtk.CheckButton difficult_blocks_toggle;
     private Gtk.CheckButton rotate_counter_clock_wise_toggle;
-    private Gtk.CheckButton use_target_toggle;
+    private Gtk.CheckButton show_shadow_toggle;
     private Gtk.CheckButton sound_toggle;
 
     private const Gtk.ActionEntry actions[] =
@@ -88,6 +88,7 @@ public class Quadrapassel
         view = new GameView ();
         view.theme = settings.get_string ("theme");
         view.mute = !settings.get_boolean ("sound");
+        view.show_shadow = settings.get_boolean ("show-shadow");
 
         preview = new Preview ();
         preview.theme = settings.get_string ("theme");
@@ -287,8 +288,9 @@ public class Quadrapassel
         rotate_counter_clock_wise_toggle.toggled.connect (set_rotate_counter_clock_wise);
         fvbox.pack_start (rotate_counter_clock_wise_toggle, false, false, 0);
 
-        use_target_toggle = new Gtk.CheckButton.with_mnemonic (_("Show _where the block will land"));
-        fvbox.pack_start (use_target_toggle, false, false, 0);
+        show_shadow_toggle = new Gtk.CheckButton.with_mnemonic (_("Show _where the block will land"));
+        show_shadow_toggle.toggled.connect (user_target_toggled_cb);
+        fvbox.pack_start (show_shadow_toggle, false, false, 0);
 
         frame.add (fvbox);
         vbox.pack_start (frame, false, false, 0);
@@ -396,6 +398,13 @@ public class Quadrapassel
     private void set_rotate_counter_clock_wise ()
     {
         settings.set_boolean ("rotate-counter-clock-wise", rotate_counter_clock_wise_toggle.get_active ());
+    }
+
+    private void user_target_toggled_cb ()
+    {
+        var show_shadow = show_shadow_toggle.get_active ();
+        settings.set_boolean ("show-shadow", show_shadow);
+        view.show_shadow = show_shadow;
     }
 
     private void theme_combo_changed_cb (Gtk.ComboBox widget)
