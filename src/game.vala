@@ -372,6 +372,8 @@ public class Game : Object
 
     public void set_fast_forward (bool enable)
     {
+        if (fast_forward == enable)
+            return;
         fast_forward = enable;
         setup_drop_timer ();
     }
