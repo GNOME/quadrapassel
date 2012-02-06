@@ -58,8 +58,9 @@ public class Preview : GtkClutter.Embed
         block_textures = new BlockTexture[NCOLORS];
         for (var i = 0; i < block_textures.length; i++)
         {
+            block_textures[i] = new BlockTexture (i);
             // FIXME: Have to set a size to avoid an assertion in Clutter
-            block_textures[i] = new BlockTexture (i, 1);
+            block_textures[i].set_surface_size (1, 1);
             block_textures[i].hide ();
             stage.add_actor (block_textures[i]);
         }

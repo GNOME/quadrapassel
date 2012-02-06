@@ -113,13 +113,16 @@ public class GameView : GtkClutter.Embed
         stage.add_actor (playing_field);
 
         text_overlay = new TextOverlay ();
+        // FIXME: Have to set a size to avoid an assertion in Clutter
+        text_overlay.set_surface_size (1, 1);
         stage.add (text_overlay);
 
         block_textures = new BlockTexture[NCOLORS];
         for (var i = 0; i < block_textures.length; i++)
         {
+            block_textures[i] = new BlockTexture (i);
             // FIXME: Have to set a size to avoid an assertion in Clutter
-            block_textures[i] = new BlockTexture (i, 1);
+            block_textures[i].set_surface_size (1, 1);
             block_textures[i].hide ();
             stage.add_actor (block_textures[i]);
         }
@@ -427,10 +430,9 @@ public class BlockTexture : Clutter.CairoTexture
         }
     }
     
-    public BlockTexture (int color, int size)
+    public BlockTexture (int color)
     {
         auto_resize = true;
-        set_surface_size (size, size);
         this.color = color.clamp (0, 6);
     }
 
