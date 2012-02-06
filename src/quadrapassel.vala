@@ -99,6 +99,7 @@ public class Quadrapassel
         view.theme = settings.get_string ("theme");
         view.mute = !settings.get_boolean ("sound");
         view.show_shadow = settings.get_boolean ("show-shadow");
+        view.game = new Game (20, 14, 1, 20, 10);
 
         preview = new Preview ();
         preview.theme = settings.get_string ("theme");
