@@ -160,7 +160,7 @@ public class GameView : GtkClutter.Embed
     
     private void update_shadow ()
     {
-        if (show_shadow)
+        if (game != null && show_shadow)
         {
             if (shape_shadow == null)
             {
