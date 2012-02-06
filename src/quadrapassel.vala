@@ -73,6 +73,10 @@ public class Quadrapassel
         "      <menuitem action='About'/>" +
         "    </menu>" +
         "  </menubar>" +
+        "    <toolbar name='Toolbar'>" +
+        "        <toolitem action='NewGame'/>" +
+        "        <toolitem action='_Pause'/>" +
+        "    </toolbar>" +
         "</ui>";
 
         settings = new Settings ("org.gnome.quadrapassel");
@@ -84,6 +88,9 @@ public class Quadrapassel
 
         main_window.set_default_size (500, 550);
         //games_conf_add_window (main_window, KEY_SAVED_GROUP);
+
+        var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        main_window.add (vbox);
 
         view = new GameView ();
         view.theme = settings.get_string ("theme");
@@ -99,6 +106,7 @@ public class Quadrapassel
         var action_group = new Gtk.ActionGroup ("MenuActions");
         action_group.set_translation_domain (GETTEXT_PACKAGE);
         action_group.add_actions (actions, this);
+        action_group.get_action ("NewGame").is_important = true;
         var ui_manager = new Gtk.UIManager ();
         ui_manager.insert_action_group (action_group, 0);
         try
@@ -115,12 +123,14 @@ public class Quadrapassel
         action_group.add_action_with_accel (pause_action, null);
 
         var menubar = ui_manager.get_widget ("/MainMenu");
+        vbox.pack_start (menubar, false, true, 0);
+
+        var toolbar = (Gtk.Toolbar) ui_manager.get_widget ("/Toolbar");
+        toolbar.show_arrow = false;
+        toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_PRIMARY_TOOLBAR);
+        vbox.pack_start (toolbar, false, true, 0);
 
         var hb = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
-
-        var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        main_window.add (vbox);
-        vbox.pack_start (menubar, false, false, 0);
         vbox.pack_start (hb, true, true, 0);
 
         main_window.set_events (main_window.get_events () | Gdk.EventMask.KEY_PRESS_MASK | Gdk.EventMask.KEY_RELEASE_MASK);
