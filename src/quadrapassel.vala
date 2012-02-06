@@ -27,6 +27,7 @@ public class Quadrapassel
     private GnomeGamesSupport.Scores high_scores;
 
     private GnomeGamesSupport.PauseAction pause_action;
+    private GnomeGamesSupport.FullscreenAction fullscreen_action;
 
     private Gtk.Dialog preferences_dialog;
     private Gtk.SpinButton starting_level_spin;
@@ -66,6 +67,7 @@ public class Quadrapassel
         "      <menuitem action='Quit'/>" +
         "    </menu>" +
         "    <menu action='SettingsMenu'>" +
+        "      <menuitem action='Fullscreen'/>" +
         "      <menuitem action='Preferences'/>" +
         "    </menu>" +
         "    <menu action='HelpMenu'>" +
@@ -76,6 +78,7 @@ public class Quadrapassel
         "    <toolbar name='Toolbar'>" +
         "        <toolitem action='NewGame'/>" +
         "        <toolitem action='_Pause'/>" +
+        "        <toolitem action='Fullscreen'/>" +
         "    </toolbar>" +
         "</ui>";
 
@@ -121,6 +124,9 @@ public class Quadrapassel
         pause_action = new GnomeGamesSupport.PauseAction ("_Pause");
         pause_action.state_changed.connect (pause_cb);
         action_group.add_action_with_accel (pause_action, null);
+
+        fullscreen_action = new GnomeGamesSupport.FullscreenAction ("Fullscreen", main_window);
+        action_group.add_action_with_accel (fullscreen_action, null);
 
         var menubar = ui_manager.get_widget ("/MainMenu");
         vbox.pack_start (menubar, false, true, 0);
