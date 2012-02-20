@@ -1,4 +1,4 @@
-public class Quadrapassel
+public class Quadrapassel : Gtk.Application
 {
     /* Application settings */
     private Settings settings;
@@ -55,6 +55,13 @@ public class Quadrapassel
 
     public Quadrapassel ()
     {
+        Object (application_id: "org.gnome.quadrapassel", flags: ApplicationFlags.FLAGS_NONE);
+    }
+    
+    protected override void startup ()
+    {
+        base.startup ();
+
         var ui_description =
         "<ui>" +
         "  <menubar name='MainMenu'>" +
@@ -84,15 +91,16 @@ public class Quadrapassel
 
         settings = new Settings ("org.gnome.quadrapassel");
 
-        main_window = new Gtk.Window (Gtk.WindowType.TOPLEVEL);
+        main_window = new Gtk.ApplicationWindow (this);
+        main_window.set_events (main_window.get_events () | Gdk.EventMask.KEY_PRESS_MASK | Gdk.EventMask.KEY_RELEASE_MASK);
         main_window.set_title (_("Quadrapassel"));
-
-        main_window.delete_event.connect (window_delete_event_cb);
-
+        main_window.key_press_event.connect (key_press_event_cb);
+        main_window.key_release_event.connect (key_release_event_cb);
         main_window.set_default_size (500, 550);
         //games_conf_add_window (main_window, KEY_SAVED_GROUP);
 
         var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        vbox.show ();
         main_window.add (vbox);
 
         view = new GameView ();
@@ -100,10 +108,7 @@ public class Quadrapassel
         view.mute = !settings.get_boolean ("sound");
         view.show_shadow = settings.get_boolean ("show-shadow");
         view.game = new Game (20, 14, 1, 20, 10);
-
-        preview = new Preview ();
-        preview.theme = settings.get_string ("theme");
-        preview.enabled = settings.get_boolean ("do-preview");
+        view.show ();
 
         /* prepare menus */
         GnomeGamesSupport.stock_init ();
@@ -130,56 +135,66 @@ public class Quadrapassel
         action_group.add_action_with_accel (fullscreen_action, null);
 
         var menubar = ui_manager.get_widget ("/MainMenu");
+        menubar.show ();
         vbox.pack_start (menubar, false, true, 0);
 
         var toolbar = (Gtk.Toolbar) ui_manager.get_widget ("/Toolbar");
         toolbar.show_arrow = false;
         toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_PRIMARY_TOOLBAR);
+        toolbar.show ();
         vbox.pack_start (toolbar, false, true, 0);
 
         var hb = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+        hb.show ();
         vbox.pack_start (hb, true, true, 0);
-
-        main_window.set_events (main_window.get_events () | Gdk.EventMask.KEY_PRESS_MASK | Gdk.EventMask.KEY_RELEASE_MASK);
 
         var vb1 = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         vb1.set_border_width (10);
         vb1.pack_start (view, true, true, 0);
+        vb1.show ();
         hb.pack_start (vb1, true, true, 0);
-
-        main_window.key_press_event.connect (key_press_event_cb);
-        main_window.key_release_event.connect (key_release_event_cb);
 
         var vb2 = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         vb2.set_border_width (10);
+        vb2.show ();
         hb.pack_end (vb2, false, false, 0);
 
+        preview = new Preview ();
+        preview.theme = settings.get_string ("theme");
+        preview.enabled = settings.get_boolean ("do-preview");
+        preview.show ();
         vb2.pack_start (preview, false, false, 0);
 
         var score_grid = new Gtk.Grid ();
+        score_grid.show ();
+        vb2.pack_end (score_grid, true, false, 0);
 
         var label = new Gtk.Label (_("Score:"));
         label.set_alignment (0.0f, 0.5f);
+        label.show ();
         score_grid.attach (label, 0, 0, 1, 1);
         score_label = new Gtk.Label ("0");
         score_label.set_alignment (1.0f, 0.5f);
+        score_label.show ();
         score_grid.attach (score_label, 1, 0, 1, 1);
 
         label = new Gtk.Label (_("Lines:"));
         label.set_alignment (0.0f, 0.5f);
+        label.show ();
         score_grid.attach (label, 0, 1, 1, 1);
         n_destroyed_label = new Gtk.Label ("0");
         n_destroyed_label.set_alignment (1.0f, 0.5f);
+        n_destroyed_label.show ();
         score_grid.attach (n_destroyed_label, 1, 1, 1, 1);
 
         label = new Gtk.Label (_("Level:"));
         label.set_alignment (0.0f, 0.5f);
+        label.show ();
         score_grid.attach (label, 0, 2, 1, 1);
         level_label = new Gtk.Label ("0");
         level_label.set_alignment (1.0f, 0.5f);
+        level_label.show ();
         score_grid.attach (level_label, 1, 2, 1, 1);
-
-        vb2.pack_end (score_grid, true, false, 0);
 
         high_scores = new GnomeGamesSupport.Scores ("quadrapassel",
                                                     new GnomeGamesSupport.ScoresCategory[0],
@@ -191,9 +206,18 @@ public class Quadrapassel
         pause_action.sensitive = false;
     }
 
-    public void show ()
+    protected override void shutdown ()
     {
-        main_window.show_all ();
+        base.shutdown ();
+
+        /* Record the score if the game isn't over. */
+        if (game != null && game.score > 0)
+            high_scores.add_plain_score (game.score);
+    }
+
+    protected override void activate ()
+    {
+        main_window.present ();
     }
 
     private void preferences_dialog_close_cb ()
@@ -462,24 +486,9 @@ public class Quadrapassel
             game.paused = pause_action.get_is_paused ();
     }
 
-    private bool window_delete_event_cb (Gtk.Widget window, Gdk.EventAny event)
-    {
-        quit ();
-        return true;
-    }
-
     private void quit_cb (Gtk.Action action)
     {
-        quit ();
-    }
-
-    private void quit ()
-    {
-        /* Record the score if the game isn't over. */
-        if (game != null && game.score > 0)
-            high_scores.add_plain_score (game.score);
-
-        Gtk.main_quit ();
+        main_window.destroy ();
     }
 
     private bool key_press_event_cb (Gtk.Widget widget, Gdk.EventKey event)
@@ -714,10 +723,6 @@ public class Quadrapassel
         }
 
         var app = new Quadrapassel ();
-        app.show ();
-
-        Gtk.main ();
-
-        return Posix.EXIT_SUCCESS;
+        return app.run (args);
     }
 }
