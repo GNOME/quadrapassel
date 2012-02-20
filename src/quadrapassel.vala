@@ -613,7 +613,7 @@ public class Quadrapassel : Gtk.Application
             switch (dialog.run ())
             {
             case Gtk.ResponseType.REJECT:
-                Gtk.main_quit ();
+                main_window.destroy ();
                 break;
             default:
                 new_game ();
