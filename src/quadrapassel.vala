@@ -364,7 +364,7 @@ public class Quadrapassel : Gtk.Application
                                     "key-down", _("Move down"), 0,
                                     "key-drop", _("Drop"), 0,
                                     "key-rotate", _("Rotate"), 0,
-                                    "key-pause", _("_Pause"), 0,
+                                    "key-pause", _("Pause"), 0,
                                     null);
 
         fvbox.pack_start (controls_list, true, true, 0);
