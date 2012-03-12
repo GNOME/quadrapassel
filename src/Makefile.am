@@ -15,6 +15,7 @@ quadrapassel_CFLAGS = \
 	-DSOUND_DIRECTORY=\"$(datadir)/quadrapassel/sounds\" \
 	-DLOCALEDIR=\"$(datadir)/locale\" \
 	$(GTK_CFLAGS) \
+	$(RSVG_CFLAGS) \
 	$(CANBERRA_GTK_CFLAGS) \
 	$(CLUTTER_GTK_CFLAGS) \
 	$(CLUTTER_CFLAGS)
@@ -38,12 +39,8 @@ quadrapassel_LDADD = \
 	$(CLUTTER_GTK_LIBS) \
 	$(CLUTTER_LIBS) \
 	$(GTK_LIBS) \
+	$(RSVG_LIBS) \
 	$(INTLLIBS)
-
-if HAVE_RSVG
-quadrapassel_CFLAGS += $(RSVG_CFLAGS) 
-quadrapassel_LDADD += $(RSVG_LIBS)
-endif
 
 install-exec-hook:
 	-if test "$(setgid)" = "true"; then \
