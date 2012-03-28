@@ -1,0 +1,42 @@
+<page xmlns="http://projectmallard.org/1.0/"
+	type="topic" style="task"
+	id="get-involved">
+  <info>
+    <revision pkgversion="3.4.0" version="0.1" date="2012-03-27" status="draft"/>
+    <link type="guide" xref="index#play"/>
+    <credit type="author copyright">
+      <name>Elena Petrevska</name>
+      <email>elenapetrevska77@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+<title>Get Involved!</title>
+
+<section>
+	<p><link xref="reportproblem">Report</link></p> 
+	<p>Any problem? Feel free to file a bug.</p>
+</section>
+
+<section>
+	<p><link xref="develop">Develop</link></p>
+	<p>Have an idea for developing the game? We are always open for new things!</p>
+</section>
+<section>
+	<p><link xref="documentation">Documentation</link></p> 
+	<p>Contribute to the documentation, freely!</p>
+</section>
+
+<section>
+	<p><link xref="translate">Translate</link></p>
+	<p>You know some world language?</p>
+</section>
+
+<section>
+  <p><link xref="index"><media type="image" src="media/go-home.png" />HOME</link></p>
+</section>
+
+</page>

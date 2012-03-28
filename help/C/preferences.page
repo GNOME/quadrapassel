@@ -1,0 +1,71 @@
+<page xmlns="http://projectmallard.org/1.0/"
+	type="guide" style="task"
+	id="preferences">
+  <info>
+    <revision pkgversion="3.4.0" version="0.1" date="2012-03-27" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Elena Petrevska</name>
+      <email>elenapetrevska77@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+
+<title>Game Preferences</title>
+
+<p>If you want to change the game preferences, go to <gui> Settings > Preferences > Game </gui>. There are three tabs available. The <gui>Controls</gui> tab is explained in <link xref="keyboard"> Controls</link>; <gui>Game</gui> and <gui>Theme</gui> are explained here:</p>
+
+<section>
+<title>Game</title>
+   <p>Under the <gui>Game</gui> tab, you can change the way in which the game starts. Many options visible in this window, are available here:</p>
+
+<figure>
+  <media type="image" src="media/gamepreference.png" />
+  <desc>Game Preference Tab</desc>
+
+</figure>
+ <p>All these options serve to help you adapt the game based on your needs.</p>
+</section>
+
+<section>
+<title>Setup</title>
+<list>
+  <item><p><gui> Number of pre-filled rows</gui> serves as an indicator of how many rows with blocks there will be immediately after you start.</p></item>
+  <item><p><gui> Density of blocks in a pre-filled row </gui>controls how dense, or how many blocks there will be immediately after you start.</p></item>
+  <item><p><gui> Starting level</gui> controls the speed with which you will start</p></item>
+</list>
+<p>These options can vary from 0 to 19, 0 to 10, and 0 to 20 respectively.</p>
+</section>
+
+<section>
+<title>Operation</title>
+<list>
+  <item><p><gui> Enable sounds</gui> controls if there is sound while playing.</p></item>
+  <item><p>Checking <gui> Preview next block </gui>enables you to see what the next block will be.</p></item>
+  <item><p><gui> Use random block colours </gui> serves to change/keep the colour of the blocks that are the same to each other. (ex. "The square will always be blue" or "The square will randomly change its colour").</p></item>
+  <item><p>Checked/Unchecked <gui> Choose difficult blocks </gui> option will change the difficulty of the blocks that fall. Checking this option means that there will be harder and more complex blocks released one after another.</p></item>
+  <item><p>The rotation, by default, is counterclockwise. If you want to change it, uncheck the <gui> Rotate blocks counterclockwise </gui>option.</p></item>
+  <item><p> This option is mostly beneficial for beginners.<gui> Show were the block will land </gui>will detect the place where the block will fall, thus will make it easier for you to land the block on the correct position.</p></item>
+</list>
+</section>
+
+<section>
+<title>Theme</title>
+<p>To be able to change the theme, go to <gui> Settings > Preference > Theme</gui>. Four different themes are available for Quadrapassel. It is a matter of choice what everyone prefers, so you can decide about your own. What changes are the blocks' contours. The window looks like this:</p>
+<figure>
+   <media type="image" src="media/themewindow.png"/>
+   <desc>The Theme Window</desc>
+</figure>
+<p>and you should decide between: Plain, Tango Flat, Tango Shaded, and Clean. It is up to you !</p>
+</section>
+
+<section>
+ <p><link xref="settings"><media type="image" src="media/go-previous.png" />Settings</link></p>
+ <p><link xref="index"><media type="image" src="media/go-home.png" />HOME</link></p>
+</section>
+
+</page>

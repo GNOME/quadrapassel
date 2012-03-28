@@ -1,0 +1,45 @@
+<page xmlns="http://projectmallard.org/1.0/"
+	type="topic" style="task"
+	id="playgame">
+  <info>
+    <revision pkgversion="3.4.0" version="0.1" date="2012-03-27" status="draft"/>
+    <link type="guide" xref="index#play"/>
+    <credit type="author copyright">
+      <name>Elena Petrevska</name>
+      <email>elenapetrevska77@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>PLAY PLAY PLAY!</title>
+
+<section>
+<title>How To Play</title>
+
+<list>
+  <item><p><key>LEFT</key> and <key>RIGHT</key> move the blocks across the screen.</p></item>
+  <item><p><key>UP</key> rotates the block. The rotation (which is counterclockwise) can be changed in Preferences.</p></item>
+  <item><p> <key>SPACEBAR</key> and <key>DOWN</key> are moving the block faster. The <key>SPACEBAR</key> is immediately moving it to the ground, and <key>DOWN</key> is increasing the speed of movement.</p></item>
+  <item><p>Once you are familiar with the controls, you are ready to play!</p></item>
+</list>
+</section>
+
+<section>
+<title>Rules</title>
+
+<list>
+        There are couple of rules that you should have in mind:
+	<item><p> At any time during the game, you can <link xref="keyboard">pause</link> it, end it, start a <link xref="keyboard">new game</link>,get <link xref="keyboard">help</link> and <link xref="keyboard">quit</link> the program.</p></item>
+	<item><p> If you want to change some preference, that is, to open <gui>Setting > Preferences</gui>, you should end your game first.</p></item>
+	<item><p>As soon as you click the menu, you pause the game. </p></item> 
+	<item><p>You can pause the game as many times as you want!</p></item>
+</list>
+</section>
+
+
+<section><p><link xref="index"><media type="image" src="media/go-home.png" />HOME</link></p></section>
+
+</page>

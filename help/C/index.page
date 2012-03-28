@@ -1,0 +1,74 @@
+<page xmlns="http://projectmallard.org/1.0/"
+	type="guide" style="task"
+	id="index">
+  <info>
+    <title type='link' role="trail"> <media type="image" src="media/quadrapassel22.png" /></title>
+    <title type='link'>Quadrapassel</title>
+    <title type='text'>Quadrapassel</title>
+    <revision pkgversion="3.2.1" version="0.1" date="2012-03-27" status="draft"/>
+    <credit type="author copyright">
+      <name>Elena Petrevska</name>
+      <email>elenapetrevska77@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+<title><media type="image" src="media/quadrapassel.png">Quadrapassel logo</media>Quadrapassel</title>
+
+  <p>In Quadrapassel, the GNOME version of Tetris, your goal is to create as many complete horizontal lines as possible. The lines are made from seven different shapes that, in a random order, fall from the top center of the screen. Your task is to rotate and move them across the screen to make complete lines. By making complete horizontal lines, you score more, you level up and the blocks fall faster.</p>
+
+
+
+<table rules="all" shade="all">
+  <tr>
+    <td><p><media type="image" src="media/fig4.png" /></p></td>
+    <td><p></p></td>
+    <td><p></p></td>
+    <td><p></p></td>
+    <td><p></p></td>
+    <td><p><media type="image" src="media/fig5.png" /></p></td>
+  </tr> 
+  <tr>
+    <td><p></p></td>
+    <td colspan="2"><p><link xref="playgame">PLAY Game</link></p></td> 
+    <td colspan="2"><p><link xref="scoremore">Score MORE</link></p></td>
+    <td><p></p></td>
+  </tr> 
+  <tr>
+    <td><p></p></td>
+    <td><p></p></td>
+    <td><p><media type="image" src="media/part1.jpg" width="90" /></p></td>
+    <td><p> <media type="image" src="media/part2.jpg" width="90" /></p></td>
+    <td><p></p></td>
+    <td><p></p></td>
+  </tr>
+  <tr>
+    <td><p></p></td>
+    <td><p></p></td>
+    <td><p><media type="image" src="media/part3.jpg" width="90" /></p></td>
+    <td><p><media type="image" src="media/part4.jpg" width="90" /></p></td>
+    <td><p></p></td>
+    <td><p></p></td>
+  </tr>
+   <tr>
+    <td><p></p></td>
+    <td  colspan="2"><p><link xref="settings">Settings</link></p></td>
+    <td  colspan="2"><p><link xref="get-involved">GET Involved</link></p></td>
+    <td><p></p></td>
+    <td><p></p></td>
+  </tr>
+ <tr>
+    <td><p><media type="image" src="media/fig3.png" /></p></td>
+    <td><p></p></td>
+    <td><p></p></td>
+    <td><p></p></td>
+    <td><p></p></td>
+    <td><p><media type="image" src="media/fig2.png" /></p></td>
+  </tr>
+
+</table>
+
+</page>
+

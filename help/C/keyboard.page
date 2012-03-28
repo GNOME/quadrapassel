@@ -1,0 +1,47 @@
+<page xmlns="http://projectmallard.org/1.0/"
+	type="guide" style="task"
+	id="keyboard">
+  <info>
+    <revision pkgversion="3.4.0" version="0.1" date="2012-03-27" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Elena Petrevska</name>
+      <email>elenapetrevska77@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+<title>Keyboard</title>
+
+<section>
+<title>Shortcuts</title>
+<p>Some of the controls given by default are:</p> 
+<list>
+  <item><p> For starting a new game, <key>CTRL</key>+<key>N</key>.  </p></item>
+  <item><p> For pausing the game, <key>Pause</key>.</p></item>
+  <item><p> For quitting <key>CTRL</key>+<key>Q</key></p></item>
+  <item><p> For <gui>Contents</gui>, <key>F1</key>.</p></item>
+  <item><p> For managing the menu using the keyboard, hold <key>ALT</key>, and the letters in the menu will be underlined. Pressing those underlined letters (either <key>G</key>, <key>S</key> or <key>H</key>), while holding <key>ALT</key>, leads you inside the menu.</p></item>
+</list>
+</section>
+
+<section>
+<title>Changing the Controls</title>
+<p>
+If you want to make changes in the keyboard controls, go to <gui> Settings > Preference > Controls </gui>. You will see this window:</p> 
+<figure>
+ <media type="image" src="media/controlswindow.png" width="200" />
+ <desc>The <gui>Controls</gui> Window</desc>
+</figure>
+<p> By double-clicking on the given controls,thus pressing the new one, you can change the control keys.</p>
+</section>
+
+<section>
+<p><link xref="settings"><media type="image" src="media/go-previous.png" />Settings</link></p>
+<p><link xref="index"><media type="image" src="media/go-home.png" /> HOME</link></p>
+</section>
+
+</page>

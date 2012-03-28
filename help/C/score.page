@@ -1,0 +1,40 @@
+<page xmlns="http://projectmallard.org/1.0/"
+	type="topic" style="task"
+	id="scoremore">
+  <info>
+    <revision pkgversion="3.4.0" version="0.1" date="2012-03-27" status="draft"/>
+    <link type="guide" xref="index#play"/>
+    <credit type="author copyright">
+      <name>Elena Petrevska</name>
+      <email>elenapetrevska77@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+<title>Score</title>
+<p>Do you think you can reach level 10?</p>
+
+<section>
+<title>Score More</title>
+ <p>If you start from level 1, the only way is by completing more lines,that is, scoring more points.In order for you to have better score, try to adapt the screen, the keyboard, and the level (the speed) that fits you the most! You can make many changes to: the keyboard controls, the contour of the blocks, the number and density of lines with which you start, and the speed of falling. How you can change them can be found in <link xref="preferences">Preference</link>, under <link xref="settings">Settings</link>. After deciding what fits you the most, you will rock!</p>
+</section>
+
+<section>
+<title>High Scores</title>
+<p>Everyone wants to be on the top of the list, right? In <gui> Game > Scores </gui> you can find the records from the highest to the lowest score. That looks like this:</p>
+ 
+<figure>
+   <media type="image" src="media/highscorelist.png" width="200"/>
+   <desc>High Scores</desc>
+</figure>
+ 
+<p>The scores cannot be deleted, so do not worry that someone will remove your best high score!</p>
+</section>
+
+
+<section><p><link xref="index"><media type="image" src="media/go-home.png" />HOME</link></p></section>
+
+</page>
