@@ -5,7 +5,7 @@ HELP_MEDIA =
 
 HELP_FILES = \
 	legal.xml \
-	quadrapassel.xml
+	index.docbook
 
 HELP_LINGUAS = ca cs de el en_GB es eu fi fr it ja oc sl sr sr@latin sv zh_CN
 
