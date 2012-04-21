@@ -1,0 +1,779 @@
+# Romanian translation for gnome-games.
+# Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-games package.
+# Nicolae Antonio <anto.nicolae@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"POT-Creation-Date: 2012-04-01 21:11+0000\n"
+"PO-Revision-Date: 2010-12-30 01:22+0300\n"
+"Last-Translator: Nicolae Antonio <anto.nicolae@gmail.com>\n"
+"Language-Team: Romanian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
+"X-Generator: Virtaal 0.6.1\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#, fuzzy
+#| msgid "translator-credits"
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Nicolae Antonio <anto.nicolae@gmail.com>"
+
+#: C/index.docbook:27(articleinfo/title)
+msgid "<application>Quadrapassel</application> Manual"
+msgstr "<application>Quadrapassel</application> Manualul utilizatorului"
+
+#: C/index.docbook:30(abstract/para)
+msgid ""
+"Quadrapassel is GNOME's version of Tetris, the classic game of interlocking "
+"four-piece blocks. As they fall from the top, the player must orient them to "
+"fit the other blocks at the bottom so that they form a complete horizontal "
+"line, in which case that line disappears and the player gains points."
+msgstr ""
+"Quadrapassel este versiunea GNOME Tetrisului, jocul clasic de intercalare a "
+"unor blocuri din patru bucăți. Pe măsură ce cad din partea de sus, jucătorul "
+"trebuie să le orienteze pentru a se potrivi cu celelalte blocuri din partea "
+"de jos, astfel încât acestea să formeze o linie orizontală completă, caz în "
+"care linia dispare și jucătorul obține puncte."
+
+#: C/index.docbook:39(articleinfo/copyright)
+msgid "<year>2004</year> <holder>Angela Boyle</holder>"
+msgstr ""
+
+#: C/index.docbook:56(publisher/publishername)
+#: C/index.docbook:97(revdescription/para)
+msgid "GNOME Documentation Project"
+msgstr "Proiectul de documentație GNOME"
+
+#: C/index.docbook:2(legalnotice/para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Copierea, distribuirea și/sau modificarea acestui document este permisă în "
+"conformitate cu termenii GNU Free Documentation License (GFDL), versiunea "
+"1.1 sau orice versiune ulterioară publicată de Free Software Foundation fără "
+"Invariant Sections, fără Front-Cover Texts și fără Back-Cover Texts. Puteți "
+"găsi o copie a GFDL la acestă <ulink type=\"help\" url=\"ghelp:fdl"
+"\">legătură</ulink> sau în fișierul COPYING-DOCS distribuit împreună cu "
+"acest manual."
+
+#: C/index.docbook:12(legalnotice/para) C/legal.xml:12(legalnotice/para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Acest manual este parte dintr-o colecție de manuale GNOME distribuit sub "
+"GFDL. Dacă doriți să distribuiți acest manual separat de colecție, puteți "
+"face acest lucru adăugând manualului o copie a licenței, conform descrierii "
+"din secțiunea 6 a licenței."
+
+#: C/index.docbook:19(legalnotice/para) C/legal.xml:19(legalnotice/para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Multe dintre numele folosite de companii pentru a distinge produsele și "
+"serviciile lor sunt revendicate ca mărci comerciale. Atunci când aceste nume "
+"apar în orice documentație GNOME, și membrii proiectului de documentare "
+"GNOME sunt informați despre aceste mărci comerciale, ele sunt scrise cu "
+"majuscule sau cu majusculă inițială."
+
+#: C/index.docbook:35(listitem/para) C/legal.xml:35(listitem/para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"DOCUMENTUL ESTE OFERIT \"CA ATARE\", FĂRĂ NICIUN FEL DE GARANȚIE, FIE "
+"EXPLICITĂ SAU IMPLICITĂ, INCLUSIVĂ, FĂRĂ LIMITARE, GARANȚIILE CĂ DOCUMENTUL "
+"SAU O VERSIUNE MODIFICATĂ A LUI ESTE FĂRĂ DEFECTE VANDABILE, PENTRU UN "
+"ANUMIT SCOP ANUME SAU NEÎNCĂLCABILĂ. RISCUL PENTRU CALITATEA, PRECIZIA, ȘI "
+"PERFORMANȚA DOCUMENTULUI SAU A VERSIUNILOR MODIFICATE VA FI AL "
+"DUMNEAVOASTRĂ. AR TREBUI CA ORICE DOCUMENT SAU VERSIUNE MODIFICATĂ A LUI SĂ "
+"SE DOVEDEASCĂ A FI INCOMPLET ÎN ORICE PRIVINȚĂ, TU (NU AUTORUL INIȚIAL SAU "
+"ORICE ALT CONTRIBUITOR) ASUMĂ-ȚI COSTUL ORICĂRUI SERVICIU NECESAR, REPARAȚII "
+"SAU CORECTĂRI. ACEASTĂ RESPONSABILITATE DE GARANȚIE CONSTITUIE O PARTE "
+"ESENȚIALĂ A ACESTEI LICENȚE. NU ESTE AUTORIZAT NICI UN FOLOS AL ORICĂRUI ALT "
+"DOCUMENT SAU VERSIUNE MODIFICATĂ A LUI ÎN ACEST SCOP CU EXCEPȚIA RESPECTĂRII "
+"ACESTOR TERMENI; ȘI"
+
+#: C/index.docbook:55(listitem/para) C/legal.xml:55(listitem/para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"ÎN NICIO CIRCUMSTANȚĂ ȘI ÎN NICI O TEORIE LEGALĂ, DACĂ ÎN PREJUDICIUL "
+"(INCLUSIV NEGLIJENȚA), CONTRACTUL, SAU ÎN CAZ CONTRAR, ESTE AUTORUL, "
+"SCRIITORUL INIȚIAL, ORICE CONTRIBUITOR SAU ORICE DISTRIBUITOR AL "
+"DOCUMENTULUI SAU VERSIUNEA MODIFICATĂ A ACESTUIA SAU ORICE FURNIZOR AL UNEIA "
+"DINTRE PĂRȚI, RĂSPUNZĂTOR PENTRU ORICE PERSOANĂ PENTRU ORICE DIRECTE, "
+"INDIRECTE, SPECIALE, INCIDENTALE SAU PAGUBE SUBSECVENȚE DE ORICE CARACTER "
+"INCLUSIV, FĂRĂ LIMITARE, DESPĂGUBIRI PENTRU PIERDERILE DE BUNĂVOINȚĂ, "
+"ÎNTRERUPERE A ACTIVITĂȚII, DEFECȚIUNE DE CALCULATOR, SAU ORICE ALTCEVA ȘI "
+"TOATE CELELALTE DAUNE SAU PIERDERI REZULTATE DIN SAU LEGATE DE UTILIZAREA "
+"DOCUMENTULUI ȘI VERSIUNILOR MODIFICATE ALE ACESTUIA, CHIAR DACĂ ACESTE PĂRȚI "
+"AU FOST INFORMATE DE POSIBILITATEA UNOR ASTFEL DE DAUNE."
+
+#: C/index.docbook:28(legalnotice/para) C/legal.xml:28(legalnotice/para)
+#, fuzzy
+#| msgid ""
+#| "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
+#| "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
+#| "UNDERSTANDING THAT: <placeholder-1/>"
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<_:orderedlist-1/>"
+msgstr ""
+"ACEST DOCUMENT ȘI VERSIUNILE MODIFICATE ALE ACESTUI DOCUMENT SUNT FURNIZATE "
+"ÎN CONFORMITATE CU TERMENII GNU FREE DOCUMENTATION LICENSE CU ÎNȚELEGEREA "
+"CĂ: </placeholder-1>"
+
+#: C/index.docbook:66(authorgroup/author)
+msgid ""
+"<firstname>Angela</firstname> <surname>Boyle</surname> <affiliation> "
+"<address> <email>anjela@u.washington.edu</email> </address> </affiliation>"
+msgstr ""
+
+#: C/index.docbook:94(revdescription/para)
+msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
+msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
+
+#: C/index.docbook:90(revhistory/revision)
+msgid ""
+"<revnumber>Quadrapassel Manual V2.8</revnumber> <date>June 2004</date> <_:"
+"revdescription-1/>"
+msgstr ""
+
+#: C/index.docbook:102(articleinfo/releaseinfo)
+msgid "This manual describes version 2.12 of Quadrapassel."
+msgstr "Acest manual descrie versiunea 2.12 a lui Quadrapassel."
+
+#: C/index.docbook:109(legalnotice/title)
+msgid "Feedback"
+msgstr "Sugestii"
+
+#: C/index.docbook:110(legalnotice/para)
+msgid ""
+"To report a bug or make a suggestion regarding the "
+"<application>Quadrapassel</application> application or this manual, follow "
+"the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
+"\"help\">GNOME Feedback Page</ulink>."
+msgstr ""
+"Pentru a raporta o eroare sau pentru a face o sugestie cu privire la "
+"aplicația <application>Quadrapassel</application> sau la acest manual, "
+"urmați instrucțiunile de pe <ulink url=\"ghelp:user-guide?feedback-bugs\" "
+"type=\"help\">pagina de sugestii GNOME</ulink>."
+
+#: C/index.docbook:121(article/indexterm)
+msgid "<primary>Quadrapassel</primary>"
+msgstr ""
+
+#: C/index.docbook:128(sect1/title)
+msgid "Introduction"
+msgstr "Introducere"
+
+#: C/index.docbook:131(sect1/para)
+msgid ""
+"<application>Quadrapassel</application> comes from the classic falling-block "
+"game, <application>Tetris</application>. The goal of the game is to create "
+"complete horizontal lines of blocks, which will disappear. The blocks come "
+"in seven different shapes made from four blocks each: one straight, two L-"
+"shaped, one square, and two S-shaped. The blocks fall from the top center of "
+"the screen in a random order. You rotate the blocks and move them across the "
+"screen to drop them in complete lines. You score by dropping blocks fast and "
+"completing lines. As your score gets higher, you level up and the blocks "
+"fall faster."
+msgstr ""
+"<application>Quadrapassel</application> derivează de la jocul clasic în care "
+"cad blocuri, <application>Tetris</application>. Scopul jocului este de a "
+"crea linii orizontale complete din blocuri, care vor dispărea. Blocurile vin "
+"în șapte forme diferite fiecare făcute din patru blocuri: unul drept, două "
+"în formă de L, un pătrat, și două în formă de S. Blocurile cad de la centrul "
+"părții de sus a ecranului într-o ordine aleatoare. Dumneavoastră rotiți "
+"blocurile și le mutați pe ecran pentru a le plasa în linii complete. "
+"Obțineți puncte plasând blocurile rapid și completând linii. Pe măsură ce "
+"punctajul devine mai mare, veți avansa în nivel și blocurile vor cădea mai "
+"repede."
+
+#: C/index.docbook:134(sect1/para)
+msgid ""
+"To run <application>Quadrapassel</application>, select "
+"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
+"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, or type "
+"<command>quadrapassel</command> in the command line."
+msgstr ""
+"Pentru a rula <application>Quadrapassel</application>, selectați "
+"<menuchoice><guimenu>Aplicații</guimenu><guisubmenu>Jocuri</"
+"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, sau tastați "
+"<command>Quadrapassel</command> în linia de comandă."
+
+#: C/index.docbook:137(sect1/para)
+msgid ""
+"<application>Quadrapassel</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>Quadrapassel</"
+"application>."
+msgstr ""
+"<application>Quadrapassel</application> este inclus în pachetul "
+"<filename>gnome-games</filename>, care este parte din mediul de lucru GNOME. "
+"Acest document descrie versiunea 2.8 de <application>Quadrapassel</"
+"application>."
+
+#: C/index.docbook:141(sect1/title)
+msgid "Playing <application>Quadrapassel</application>"
+msgstr "Cum se joacă <application>Quadrapassel</application>"
+
+#: C/index.docbook:142(sect1/para)
+msgid ""
+"You can score through two actions: completing lines and dropping blocks "
+"quickly."
+msgstr ""
+"Puteți obține puncte prin două acțiuni: completând linii și plasând blocuri "
+"rapid."
+
+#: C/index.docbook:144(sect2/title)
+msgid "Moving the Blocks"
+msgstr "Mutarea blocurilor"
+
+#: C/index.docbook:145(sect2/para)
+msgid "To play the game, you only need the four arrow keys."
+msgstr "Pentru a juca jocul, aveți nevoie doar de cele patru taste săgeți."
+
+#: C/index.docbook:148(listitem/para)
+msgid ""
+"<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
+"correspondingly across the screen."
+msgstr ""
+"<keycap>Stânga</keycap> și <keycap>Dreapta</keycap> mută blocul "
+"corespunzător pe ecran."
+
+#: C/index.docbook:151(listitem/para)
+msgid ""
+"<keycap>Up</keycap> rotates the block. The default rotation is "
+"counterclockwise. You can change the rotation under "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks "
+"counterclockwise</guilabel>."
+msgstr ""
+"<keycap>Sus</keycap> rotește blocul. Rotația implicită este cea invers "
+"acelor de ceasornic. Aveți posibilitatea să modificați rotația în "
+"<menuchoice><guimenu>Configurări</guimenu><guimenuitem>Preferințe</"
+"guimenuitem></menuchoice> și deselectarea <guilabel>Rotire blocuri în sens "
+"anti-orar</guilabel>."
+
+#: C/index.docbook:154(listitem/para)
+msgid ""
+"<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down "
+"the screen faster.<keycap>Down</keycap> moves the block down faster. "
+"<keycap>Space-bar</keycap> moves the block directly to the bottom."
+msgstr ""
+"<keycap>Jos</keycap> și <keycap>Bara de spațiu</keycap> mută blocul în jos "
+"pe ecran mai repede. <keycap>Jos</keycap> mută blocul în jos mai repede. "
+"<keycap>Bara de spațiu</keycap> mută blocul direct în partea de jos."
+
+#: C/index.docbook:159(sect2/title)
+msgid "Starting a New Game"
+msgstr "Începerea unui joc nou"
+
+#: C/index.docbook:160(sect2/para)
+msgid ""
+"To begin a new game, go to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
+"begin dropping blocks from the center of the top of the window. The default "
+"start-up of the game has no blocks in the game window and shows the next "
+"block that will fall in the upper right hand corner. <guilabel>Score</"
+"guilabel> shows the number of points you have earned. <guilabel>Lines</"
+"guilabel> shows the number of lines you have completed. <guilabel>Level</"
+"guilabel> shows the level of difficulty you are on."
+msgstr ""
+"Pentru a începe un joc nou, navigați la <menuchoice><guimenu>Joc</"
+"guimenu><guimenuitem>Joc nou</guimenuitem></menuchoice>. Jocul va elibera "
+"blocuri din centrul părții de sus a ferestrei. Jocul de pornire implicit nu "
+"are blocuri în fereastra de joc și arată următorul bloc care va cădea în "
+"colțul din dreapta sus. <guilabel>Punctaj</guilabel> arată numărul de puncte "
+"pe care le-ați primit. <guilabel>Linii</guilabel> arată numărul de linii pe "
+"care le-ați completat. <guilabel>Nivel</guilabel> arată nivelul de "
+"dificultate la care sunteți."
+
+#: C/index.docbook:163(sect2/title)
+msgid "Pausing the Game"
+msgstr "Întreruperea jocului"
+
+#: C/index.docbook:164(sect2/para)
+msgid ""
+"To pause your game, go to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
+"pause a game when you are playing. The time limit on pausing your game is "
+"unlimited. To unpause the game, go back to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
+msgstr ""
+"Pentru a întrerupe jocul, navigați la <menuchoice><guimenu>Joc</"
+"guimenu><guimenuitem>Întrerupe jocul</guimenuitem></menuchoice>. Puteți "
+"întrerupe jocul doar când jucați. Timpul maxim de întrerupere a jocului este "
+"nelimitat. Pentru a relua jocul, navigați înapoi la "
+"<menuchoice><guimenu>Joc</guimenu><guimenuitem>Întrerupe joc</guimenuitem></"
+"menuchoice>."
+
+#: C/index.docbook:167(sect2/title)
+msgid "Ending the Game"
+msgstr "Încheierea jocului"
+
+#: C/index.docbook:168(sect2/para)
+msgid ""
+"Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
+"guimenuitem></menuchoice> to end your current game without quiting "
+"Quadrapassel."
+msgstr ""
+"Navigați la <menuchoice><guimenu>Joc</guimenu><guimenuitem>End Game</"
+"guimenuitem></menuchoice> pentru a încheia jocul fără a ieși din "
+"Quadrapassel."
+
+#: C/index.docbook:171(sect2/title)
+msgid "Quiting the <application>Quadrapassel</application>"
+msgstr "Închiderea lui <application>Quadrapassel</application>"
+
+#: C/index.docbook:172(sect2/para)
+msgid ""
+"To completely quit <application>Quadrapassel</application> go to "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
+"menuchoice>. If you are in the middle of a game when you quit, you will end "
+"your game without saving your score."
+msgstr ""
+"Pentru a ieși complet din <application>Quadrapassel</application> navigați "
+"la <menuchoice><guimenu>Joc</guimenu><guimenuitem>Ieși</guimenuitem></"
+"menuchoice>. Dacă sunteți în mijlocul unui joc când ieșiți, veți termina "
+"jocul fără a salva punctajul."
+
+#: C/index.docbook:175(sect2/title)
+msgid "Scoring Points"
+msgstr "Obținerea punctelor"
+
+#: C/index.docbook:176(sect2/para)
+msgid ""
+"You score points through two methods: dropping blocks faster and deleting "
+"complete lines of blocks. When you delete lines, you get more points, but "
+"dropping blocks faster will quickly add up. As you level up, the blocks will "
+"begin falling faster. The highest level is 10, at which point you will only "
+"have just over a second to manipulate each block."
+msgstr ""
+"Obțineți puncte prin două metode: plasând blocuri mai rapid și ștergând "
+"liniile complete de blocuri. Când ștergeți linii, primiți mai multe puncte, "
+"dar plasând blocuri mai rapid va adăuga puncte repede. Pe măsură ce avansați "
+"în nivel, blocurile vor începe să cadă mai rapid. Cel mai mare nivel este "
+"10, punct în care veți avea puțin peste o secundă să manipulați fiecare bloc."
+
+#: C/index.docbook:179(sect2/title)
+msgid "Viewing Past Scores"
+msgstr "Vizualizarea punctajelor anterioare"
+
+#: C/index.docbook:180(sect2/para)
+msgid ""
+"You can view the top ten scores played on your computer through "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
+"menuchoice>. The names of the users are shown next the their score and the "
+"date they played."
+msgstr ""
+"Aveți posibilitatea să vizualizați primele zece punctaje jucate pe "
+"calculatorul dumneavoastră prin <menuchoice><guimenu>Joc</"
+"guimenu><guimenuitem>Punctaje</guimenuitem></menuchoice>. Numele "
+"utilizatorilor sunt afișate lângă punctajul lor și data la care au jucat."
+
+#: C/index.docbook:186(sect1/title)
+msgid "Customizing <application>Quadrapassel</application>"
+msgstr "Personalizarea jocului <application>Quadrapassel</application>"
+
+#: C/index.docbook:188(sect2/title)
+msgid "Customizing Game Start-up"
+msgstr "Personalizarea pornirii jocului"
+
+#: C/index.docbook:189(sect2/para)
+msgid ""
+"By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize a variety of features for the "
+"start-up of each Quadrapassel game: number and density of pre-filled rows, "
+"and starting level. \"Pre-filled rows\" refers to how many rows will already "
+"have blocks in them when you start each new game."
+msgstr ""
+"Ducându-vă la <menuchoice><guimenu>Configurări</"
+"guimenu><guimenuitem>Preferințe</guimenuitem></menuchoice>, puteți "
+"personaliza o varietate de funcții pentru pornirea fiecărui joc "
+"Quadrapassel: numărul și densitatea rândurilor pre-umplute și nivelul de "
+"pornire. „Rândurile pre-umplute” se referă la câte rânduri vor avea deja "
+"blocuri în ele când începeți fiecare joc nou."
+
+#: C/index.docbook:191(sect3/title)
+msgid "Number of Pre-filled Rows"
+msgstr "Numărul de rânduri pre-umplute"
+
+#: C/index.docbook:192(sect3/para)
+msgid ""
+"You can change the number of rows that already have blocks at the start-up "
+"of each new game by using the spin box. You can start with up to 19 rows pre-"
+"filled at the start-up of your game. The default number of pre-filled rows "
+"is zero."
+msgstr ""
+"Aveți posibilitatea să modificați numărul de rânduri care deja au blocuri la "
+"pornirea fiecărui joc nou folosind caseta de spin. Puteți începe cu până la "
+"19 rânduri pre-umplute la pornirea jocului. Numărul implicit de rânduri pre-"
+"umplute este zero."
+
+#: C/index.docbook:195(sect3/title)
+msgid "Density of Pre-filled Rows"
+msgstr "Densitatea rândurilor pre-umplute"
+
+#: C/index.docbook:196(sect3/para)
+msgid ""
+"You can change the density of the blocks in the pre-filled rows at the start-"
+"up of each game. You can choose a density up to 10 blocks. You should first "
+"choose how many rows you want pre-filled under <guilabel>Number of Pre-"
+"filled Rows</guilabel>. The default density of blocks is three."
+msgstr ""
+"Aveți posibilitatea să modificați densitatea blocurilor în rândurile pre-"
+"umplute la pornirea fiecărui joc. Puteți alege o densitate de până la 10 "
+"blocuri. Ar trebui să alegeți mai întâi cât de multe rânduri doriți pre-"
+"umplute de la <guilabel>Număr de rânduri pre-umplute</guilabel>. Densitatea "
+"implicită a blocurilor este trei."
+
+#: C/index.docbook:199(sect3/title)
+msgid "Level to Start On"
+msgstr "Nivelul la pornire"
+
+#: C/index.docbook:200(sect3/para)
+msgid ""
+"You can adjust the level of difficulty you start on. The highest level you "
+"can start on is 10, which is the highest level you can play to. The default "
+"starting level is one."
+msgstr ""
+"Puteți regla nivelul de dificultate cu care începeți. Cel mai înalt nivel la "
+"care puteți începe este 10, care este cel mai înalt nivel la care se poate "
+"juca. Nivelul implicit de pornire este unu."
+
+#: C/index.docbook:204(sect2/title)
+msgid "Customizing the Gameplay"
+msgstr "Personalizarea jocului"
+
+#: C/index.docbook:205(sect2/para)
+msgid ""
+"From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize a variety of features related "
+"to the blocks: previewing the next block, block colors, and block rotation."
+msgstr ""
+"De la <menuchoice><guimenu>Setări</guimenu><guimenuitem>Preferințe</"
+"guimenuitem></menuchoice>, aveți posibilitatea să particularizați o "
+"varietate de funcții legate de blocuri: previzualizarea următorului bloc, "
+"culorile blocurilor și modul de rotație al blocurilor."
+
+#: C/index.docbook:207(sect3/title)
+msgid "Enable sounds"
+msgstr "Activarea sunetelor"
+
+#: C/index.docbook:208(sect3/para)
+msgid ""
+"Turn the sound effects on and off using this option. If you are playing this "
+"game in any area which you share with other people, you should probably "
+"select off."
+msgstr ""
+"Activați și dezactivați efectele sonore folosind această opțiune. Dacă "
+"jucați acest joc într-o zonă pe care o partajați cu alte persoane, ar trebui "
+"probabil să le dezactivați."
+
+#: C/index.docbook:211(sect3/title)
+msgid "Preview Next Block"
+msgstr "Previzualizarea blocului următor"
+
+#: C/index.docbook:212(sect3/para)
+msgid ""
+"Choose this option if you want to see the next block that is going to fall. "
+"This feature helps you plan the placement of your blocks."
+msgstr ""
+"Alegeți această opțiune dacă doriți să vedeți următorul bloc care va cădea. "
+"Această funcție vă ajută să vă planificați plasarea blocurilor dumneavoastră."
+
+#: C/index.docbook:215(sect3/title)
+msgid "Use Random Block Colors"
+msgstr "Folosirea de culori aleatoare pentru blocuri"
+
+#: C/index.docbook:216(sect3/para)
+msgid ""
+"Choose if you want the various block configurations to be color coded or "
+"randomly colored. If you use the colors to help you identify blocks, random "
+"colors will make the game more difficult."
+msgstr ""
+"Alegeți opțiunea dacă doriți ca diversele configurații de blocuri să aibă o "
+"culoare specifică sau să fie colorate aleator. Dacă folosiți culorile pentru "
+"a vă ajuta să identificați blocuri, culorile aleatoare vor face jocul mai "
+"dificil."
+
+#: C/index.docbook:219(sect3/title)
+msgid "Choose Difficult Blocks"
+msgstr "Alegerea blocurilor dificile"
+
+#: C/index.docbook:220(sect3/para)
+msgid ""
+"Choose this option if you want to select mode that is designed specifically "
+"to annoy the player. With this feature enabled, you never get the piece you "
+"want, and very seldom complete a row. Next block preview doesn't correspond "
+"to actual piece you get next, but to the one you probably wish to get."
+msgstr ""
+"Alegeți această opțiune dacă doriți modul care este proiectat special pentru "
+"a enerva jucătorul. Cu această funcție activată, nu veți obține niciodată "
+"piesa pe care o doriți, și foarte rar veți completa un rând. Previzualizarea "
+"următorului bloc nu corespunde cu bucata următoare, ci cea pe care, "
+"probabil, doriți să o obțineți."
+
+#: C/index.docbook:223(sect3/title)
+msgid "Rotate Blocks Counterclockwise"
+msgstr "Rotirea blocurilor în sens anti-orar"
+
+#: C/index.docbook:224(sect3/para)
+msgid ""
+"Choose this option if you want the blocks to rotate counterclockwise or not."
+msgstr ""
+"Alegeți această opțiune dacă doriți ca blocurile să se rotească invers "
+"acelor de ceasornic sau nu."
+
+#: C/index.docbook:227(sect3/title)
+msgid "Show where the block will land"
+msgstr "Indicarea locului unde va cădea blocul"
+
+#: C/index.docbook:228(sect3/para)
+msgid ""
+"If this feature is used a grey image of the block will show you where the "
+"block will land. This feature is very useful for beginning players, but "
+"experienced players will find it a distraction."
+msgstr ""
+"Dacă această funcție este folosită o imagine gri a blocului va indica locul "
+"în care blocul va cădea. Această funcție este foarte utilă pentru "
+"începători, dar jucătorii experimentați o vor considera o distragere."
+
+#: C/index.docbook:236(sect2/title)
+msgid "Customizing the Look of <application>Quadrapassel</application>"
+msgstr ""
+"Personalizarea aspectului jocului <application>Quadrapassel</application>"
+
+#: C/index.docbook:237(sect2/para)
+msgid ""
+"Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize the look of "
+"<application>Quadrapassel</application>: images for the blocks."
+msgstr ""
+"În <menuchoice><guimenu>Setări</guimenu><guimenuitem>Preferințe</"
+"guimenuitem></menuchoice>, aveți posibilitatea să particularizați aspectul "
+"jocului <application>Quadrapassel</application>: imagini pentru blocuri."
+
+#: C/index.docbook:239(sect3/title)
+msgid "Block Image"
+msgstr "Imaginea blocurilor"
+
+#: C/index.docbook:240(sect3/para)
+msgid ""
+"You can change the style of the blocks, including image and size. There are "
+"a variety of pre-made styles."
+msgstr ""
+"Aveți posibilitatea să modificați stilul blocurilor, inclusiv imaginea și "
+"dimensiunea. Există o varietate de stiluri prefabricate."
+
+#: C/index.docbook:243(sect3/title)
+msgid "Background"
+msgstr "Fundalul"
+
+#: C/index.docbook:243(sect3/para)
+#, fuzzy
+#| msgid ""
+#| "If you drag your favorite image into the <application>Quadrapassel</"
+#| "application> window it will be used as the background. If you want a "
+#| "solid color as the background drag one in from either the color picker or "
+#| "from <application>nautlilus'</application><guimenuitem>Backgrounds and "
+#| "Emblems</guimenuitem> dialog (the reset item from that dialog also works)."
+msgid ""
+"If you drag your favorite image into the <application>Quadrapassel</"
+"application> window it will be used as the background. If you want a solid "
+"color as the background drag one in from either the color picker or from "
+"<application>nautlilus'</application> <guimenuitem>Backgrounds and Emblems</"
+"guimenuitem> dialog (the reset item from that dialog also works)."
+msgstr ""
+"Dacă glisați imaginea dumneavoastră favorită în fereastra "
+"<application>Quadrapassel</application>, aceasta va fi utilizată ca fundal. "
+"Dacă doriți o culoare solidă ca fundal glisați una fie de la selectorul de "
+"culori fie din fereastra de dialog <application>nautlilus'</applicationsens "
+"anti-orarguimenuitem>Fonduri și embleme</guimenuitem> (funcționează și "
+"elementul de restabilire din acel dialog)."
+
+#: C/index.docbook:255(sect1/title)
+msgid "Authors"
+msgstr "Autori"
+
+#: C/index.docbook:256(sect1/para)
+msgid ""
+"<application>Quadrapassel</application> was written by J. Marcin Gorycki in "
+"1999 and maintained by Gnome Games Team since then. This manual was written "
+"by Angela Boyle. To report a bug or make a suggestion regarding this "
+"application or this manual, follow the directions in this <ulink url=\"ghelp:"
+"user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>Quadrapassel</application> a fost scris de J.Marcin Gorycki în "
+"1999 și întreținută de atunci de Gnome Games Team. Acest manual a fost scris "
+"de Angela Boyle. Pentru a raporta un defect sau pentru a face o sugestie cu "
+"privire la acestă aplicație sau la acest manual, urmați instrucțiunile din "
+"acest <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</"
+"ulink>."
+
+#: C/index.docbook:280(sect1/title)
+msgid "License"
+msgstr "Licență"
+
+#: C/index.docbook:281(sect1/para)
+#, fuzzy
+#| msgid ""
+#| "This program is free software; you can redistribute it and/or modify it "
+#| "under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+#| "\"><citetitle>GNU General Public License</citetitle></ulink> as published "
+#| "by the Free Software Foundation; either version 2 of the License, or (at "
+#| "your option) any later version."
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl\"> "
+"<citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"Acest program este liber; îl puteți redistribui și/sau modifica în "
+"conformitate cu termenii <ulink type=\"help\" url=\"gnome-help:gpl"
+"\">licenței Publice Generale GNU</citetitle></ulink> așa cum este publicată "
+"de Free Software Foundation; fie versiunea 2 a Licenței, fie (la latitudinea "
+"dumneavoastră) orice versiune ulterioară."
+
+#: C/index.docbook:283(sect1/para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Acest program este distribuit cu speranța că va fi util, dar FĂRĂ NICIO "
+"GARANȚIE; chiar și fără garanția implicită de VANDABILITATE sau POTRIVIRE "
+"PENTRU UN ANUMIT SCOP. Pentru mai multe detalii consultați "
+"<citetitle>Licența Publică Generală GNU</citetitle>."
+
+#: C/index.docbook:286(para/address)
+#, no-wrap
+msgid ""
+"\n"
+"    Free Software Foundation, Inc.\n"
+"    <street>59 Temple Place</street> - Suite 330\n"
+"    <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode>\n"
+"    <country>USA</country>\n"
+"   "
+msgstr ""
+
+#: C/index.docbook:285(sect1/para)
+#, fuzzy
+#| msgid ""
+#| "A copy of the <citetitle>GNU General Public License</citetitle> is "
+#| "included as an appendix to the <citetitle>GNOME Users Guide</citetitle>. "
+#| "You may also obtain a copy of the <citetitle>GNU General Public License</"
+#| "citetitle> from the Free Software Foundation by visiting <ulink type="
+#| "\"http\" url=\"http://www.fsf.org\">their Web site</ulink> or by writing "
+#| "to <address> Free Software Foundation, Inc. <street>59 Temple Place</"
+#| "street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-"
+#| "1307</postcode><country>USA</country></address>"
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <_:address-1/>"
+msgstr ""
+"O copie a <citetitle> GNU General Public License </citetitle> este inclus ca "
+"anexă la <citetitle> GNOME Utilizatorii Ghid </citetitle> . Puteţi obţine, "
+"de asemenea, o copie a <citetitle> GNU General Public License </citetitle> "
+"de la Free Software Foundation, vizitând <ulink type=\"http\" url=\"http://"
+"www.fsf.org\"> Web site-ul lor </ulink> sau scriind la <address> Free "
+"Software Foundation, Inc <street> 59 Temple Place </street> - Suite 330 "
+"<city> Boston </city> , <state> MA </state><postcode> 02111-1307 </"
+"postcode><country> Statele Unite ale Americii </country></address>"
+
+#: C/legal.xml:9(para/ulink)
+msgid "link"
+msgstr ""
+
+#: C/legal.xml:2(legalnotice/para)
+#, fuzzy
+#| msgid ""
+#| "Permission is granted to copy, distribute and/or modify this document "
+#| "under the terms of the GNU Free Documentation License (GFDL), Version 1.1 "
+#| "or any later version published by the Free Software Foundation with no "
+#| "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
+#| "can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl"
+#| "\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"with this manual."
+msgstr ""
+"Copierea, distribuirea și/sau modificarea acestui document este permisă în "
+"conformitate cu termenii GNU Free Documentation License (GFDL), versiunea "
+"1.1 sau orice versiune ulterioară publicată de Free Software Foundation fără "
+"Invariant Sections, fără Front-Cover Texts și fără Back-Cover Texts. Puteți "
+"găsi o copie a GFDL la acestă <ulink type=\"help\" url=\"ghelp:fdl"
+"\">legătură</ulink> sau în fișierul COPYING-DOCS distribuit împreună cu "
+"acest manual."
+
+#~ msgid "2004"
+#~ msgstr "2004"
+
+#~ msgid "Angela Boyle"
+#~ msgstr "Angela Boyle"
+
+#~ msgid "Angela"
+#~ msgstr "Angela"
+
+#~ msgid "Boyle"
+#~ msgstr "Boyle"
+
+#~ msgid "anjela@u.washington.edu"
+#~ msgstr "anjela@u.washington.edu"
+
+#~ msgid "Quadrapassel Manual V2.8"
+#~ msgstr "Quadrapassel - Manualul utilizatorului, versiunea 2.8"
+
+#~ msgid "June 2004"
+#~ msgstr "Iunie 2004"
+
+#~ msgid "Quadrapassel"
+#~ msgstr "Quadrapassel"
