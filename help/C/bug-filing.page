@@ -22,7 +22,7 @@
 
 <title>Report a Problem</title>
 <p>
-   <app>Quadrapassel</app> is maintained by a volunteer community. You are welcome to participate.  If you notice a problem you can file a <em>bug report</em>. To file a bug, go to <link href = "https://bugzilla.gnome.org/"/>.
+   If you notice a problem you can file a <em>bug report</em>. To file a bug, go to <link href = "https://bugzilla.gnome.org/"/>.
    </p>
    <p>
    This is a bug tracking system where users and developers can file details about bugs, crashes and request enhancements.  
@@ -45,7 +45,7 @@
       Your report will be given an ID number, and its status will be updated as it is being dealt with.
    </p>
 
-<section>
+<section id="previous-home"><title></title>
  <p><link xref="get-involved"><media type="image" src="media/go-previous.png" />Get Involved</link></p>
  <p><link xref="index"><media type="image" src="media/go-home.png" />HOME</link></p>
 </section>

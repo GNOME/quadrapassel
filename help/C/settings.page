@@ -9,25 +9,23 @@
       <email>elenapetrevska77@gmail.com</email>
       <years>2012</years>
     </credit>
-    <license>
-      <p>Creative Commons Share Alike 3.0</p>
-    </license>
   </info>
 
 <title>Settings</title>
 <p>Something wrong? Some control should be changed?</p>
 
-<section>
-	<p><link xref="keyboard">Keyboard</link></p> 
-	<p>Shorter paths? Useful keys?</p>
+<section id="keyboard"><title></title>
+  <p><link xref="keyboard">Keyboard</link></p>
+  <p>Shorter paths? Useful keys?</p>
 </section>
 
-<section>
-	<p><link xref="preferences">Preferences</link></p>
-	<p>Preferences for the game and the theme.</p>
+<section id="preferences"><title></title>
+  <p><link xref="preferences">Preferences</link></p>
+  <p>Preferences for the game and the theme.</p>
 </section>
 
 
-<section><p><link xref="index"><media type="image" src="media/go-home.png" />HOME</link></p></section>
+<section id="home"><title></title>
+<p><link xref="index"><media type="image" src="media/go-home.png" />HOME</link></p></section>
 
 </page>

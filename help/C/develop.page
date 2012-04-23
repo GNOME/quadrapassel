@@ -21,12 +21,9 @@
   </info>
 
 <title>Help develop</title>
- <p>
-  The <app>GNOME Games</app> are developed and maintained by a volunteer community.  You are welcome to participate.
- </p>
  <p>If you would like to <link href="https://live.gnome.org/GnomeGames/Contributing">help develop <app>GNOME Games</app></link>, you can get in touch with the developers using <link href="https://cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games">irc</link>, or via our <link href="http://mail.gnome.org/mailman/listinfo/games-list">mailing list</link>.</p>
 
-<section>
+<section id="previous-home"><title></title>
  <p><link xref="get-involved"><media type="image" src="media/go-previous.png" />Get Involved</link></p>
  <p><link xref="index"><media type="image" src="media/go-home.png" />HOME</link></p>
 </section>
