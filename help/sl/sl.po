@@ -1,518 +1,487 @@
-# Slovenian translation for gnome-games-quadrapassel help.
-# Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
-# This file is distributed under the same license as the gnome-games package.
-#
-# Ime Priimek <email@naslov>, leto.
-# Matej Urbančič <mateju@svn.gnome.org>, 2010.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-games-quadrapassel help master\n"
-"POT-Creation-Date: 2010-10-10 08:01+0000\n"
-"PO-Revision-Date: 2010-10-19 20:33+0200\n"
-"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
-"Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
+"Project-Id-Version: Quadrassel master\n"
+"POT-Creation-Date: 2012-06-28 15:49+0000\n"
+"PO-Revision-Date: 2012-07-10 21:09+0100\n"
+"Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
+"Language-Team: Slovenian gnome translation team <gnome-si@googlegreoups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 or n%100==4 ? 3 : 0)\n"
 "X-Poedit-Language: Slovenian\n"
 "X-Poedit-Country: SLOVENIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: C/quadrapassel.xml:27(title)
-msgid "<application>Quadrapassel</application> Manual"
-msgstr ""
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Andrej Žnidaršič <andrej.znidarsic@ubuntu.com>"
 
-#: C/quadrapassel.xml:30(para)
-msgid ""
-"Quadrapassel is GNOME's version of Tetris, the classic game of interlocking "
-"four-piece blocks. As they fall from the top, the player must orient them to "
-"fit the other blocks at the bottom so that they form a complete horizontal "
-"line, in which case that line disappears and the player gains points."
-msgstr ""
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:5(media)
+msgctxt "_"
+msgid "external ref='media/quadrapassel22.png' md5='4d2440a988c86ad179d0f8148263d8b9'"
+msgstr "external ref='media/quadrapassel22.png' md5='4d2440a988c86ad179d0f8148263d8b9'"
 
-#: C/quadrapassel.xml:40(year)
-msgid "2004"
-msgstr "2004"
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:18(media)
+msgctxt "_"
+msgid "external ref='media/quadrapassel.png' md5='95b96f006d5876090ff7a2305652658c'"
+msgstr "external ref='media/quadrapassel.png' md5='95b96f006d5876090ff7a2305652658c'"
 
-#: C/quadrapassel.xml:41(holder)
-msgid "Angela Boyle"
-msgstr "Angela Boyle"
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:26(media)
+msgctxt "_"
+msgid "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
+msgstr "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
 
-#: C/quadrapassel.xml:56(publishername) C/quadrapassel.xml:97(para)
-msgid "GNOME Documentation Project"
-msgstr ""
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:31(media)
+msgctxt "_"
+msgid "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
+msgstr "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
 
-#: C/quadrapassel.xml:2(para)
-msgid ""
-"Permission is granted to copy, distribute and/or modify this document under "
-"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
-"later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
-"in the file COPYING-DOCS distributed with this manual."
-msgstr ""
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:42(media)
+msgctxt "_"
+msgid "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
+msgstr "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
 
-#: C/quadrapassel.xml:12(para)
-msgid ""
-"This manual is part of a collection of GNOME manuals distributed under the "
-"GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in "
-"section 6 of the license."
-msgstr ""
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:43(media)
+msgctxt "_"
+msgid "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
+msgstr "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
 
-#: C/quadrapassel.xml:19(para)
-msgid ""
-"Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any GNOME "
-"documentation, and the members of the GNOME Documentation Project are made "
-"aware of those trademarks, then the names are in capital letters or initial "
-"capital letters."
-msgstr ""
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:50(media)
+msgctxt "_"
+msgid "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
+msgstr "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
 
-#: C/quadrapassel.xml:35(para)
-msgid ""
-"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
-"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
-"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
-"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
-"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
-"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
-"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
-"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
-"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
-"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
-"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
-msgstr ""
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:51(media)
+msgctxt "_"
+msgid "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
+msgstr "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
 
-#: C/quadrapassel.xml:55(para)
-msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
-"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
-"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
-"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
-"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
-"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
-"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
-"POSSIBILITY OF SUCH DAMAGES."
-msgstr ""
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:63(media)
+msgctxt "_"
+msgid "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
+msgstr "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
 
-#: C/quadrapassel.xml:28(para)
-msgid ""
-"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
-"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
-"<placeholder-1/>"
-msgstr ""
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:68(media)
+msgctxt "_"
+msgid "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
+msgstr "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
 
-#: C/quadrapassel.xml:67(firstname)
-msgid "Angela"
-msgstr "Angela"
-
-#: C/quadrapassel.xml:68(surname)
-msgid "Boyle"
-msgstr "Boyle"
-
-#: C/quadrapassel.xml:70(email)
-msgid "anjela@u.washington.edu"
-msgstr "anjela@u.washington.edu"
-
-#: C/quadrapassel.xml:91(revnumber)
-msgid "Quadrapassel Manual V2.8"
-msgstr ""
-
-#: C/quadrapassel.xml:92(date)
-msgid "June 2004"
-msgstr ""
-
-#: C/quadrapassel.xml:94(para)
-msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
-msgstr ""
-
-#: C/quadrapassel.xml:102(releaseinfo)
-msgid "This manual describes version 2.12 of Quadrapassel."
-msgstr ""
-
-#: C/quadrapassel.xml:109(title)
-msgid "Feedback"
-msgstr "Odziv"
-
-#: C/quadrapassel.xml:110(para)
-msgid ""
-"To report a bug or make a suggestion regarding the "
-"<application>Quadrapassel</application> application or this manual, follow "
-"the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
-"\"help\">GNOME Feedback Page</ulink>."
-msgstr ""
-
-#: C/quadrapassel.xml:122(primary)
+#: C/index.page:6(info/title)
+msgctxt "link"
 msgid "Quadrapassel"
 msgstr "Kvadetris"
 
-#: C/quadrapassel.xml:128(title)
+#: C/index.page:7(info/title)
+msgctxt "text"
+msgid "Quadrapassel"
+msgstr "Kvadetris"
+
+#: C/index.page:10(credit/name)
+msgid "Elena Petrevska"
+msgstr "Elena Petrevska"
+
+#: C/index.page:12(credit/years)
+msgid "2012"
+msgstr "2012"
+
+#: C/index.page:15(license/p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons - deljenje pod enakimi pogoji 3.0"
+
+#: C/index.page:18(page/title)
+msgid "<media type=\"image\" src=\"media/quadrapassel.png\">Quadrapassel logo</media>Quadrapassel"
+msgstr "<media type=\"image\" src=\"media/quadrapassel.png\">Logotip Kvadetris</media>Kvadetris"
+
+#: C/index.page:20(page/p)
+msgid "In Quadrapassel, the GNOME version of Tetris, your goal is to create as many complete horizontal lines as possible. The lines are made from seven different shapes that, in a random order, fall from the top center of the screen. Your task is to rotate and move them across the screen to make complete lines. By making complete horizontal lines, you score more, you level up and the blocks fall faster."
+msgstr "V Kvadetrisu, GNOME različici Tetrisa, je vaš cilj ustvariti kolikor je mogoče vodoravnih vrstic. Vrstice so narejene iz sedmih različnih oblik ki, v naključnem redu, padajo z vrha središča zaslona. Vaša naloga je zavrteti in premakniti bloke preko zaslona, da dokončate vrstice. Ko dopolnite vodoravne vrstice, dobite več točk, dosežete višjo raven in bloki padajo hitreje."
+
+#: C/index.page:35(td/p)
+msgid "<link xref=\"playgame\">PLAY Game</link>"
+msgstr "<link xref=\"playgame\">IGRAJ igro</link>"
+
+#: C/index.page:36(td/p)
+msgid "<link xref=\"scoremore\">Score MORE</link>"
+msgstr "<link xref=\"scoremore\">Več o točkah</link>"
+
+#: C/index.page:57(td/p)
+msgid "<link xref=\"settings\">Settings</link>"
+msgstr "<link xref=\"settings\">Nastavitve</link>"
+
+#: C/index.page:58(td/p)
+msgid "<link xref=\"get-involved\">GET Involved</link>"
+msgstr "<link xref=\"get-involved\">Pridružite se</link>"
+
+#: C/legal.xml:9(para/ulink)
+msgid "link"
+msgstr "povezava"
+
+#: C/legal.xml:2(legalnotice/para)
+msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any later version published by the Free Software Foundation with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed with this manual."
+msgstr "Dano je dovoljenje za kopiranje, distribucijo in/ali spreminjanje tega dokumenta pod pogoji GNU Free Documentation License (GFDL) različice 1.1 ali katerekoli novejše različice, ki jo je objavil Free Software Foundation brez odsekov Invariant, brez besedila naslovnice in za naslovnico. Kopijo GFDL lahko najdete na <_ulink-1/> ali v datoteki COPYING-DOCS, ki se razširja s tem priročnikom."
+
+#: C/legal.xml:12(legalnotice/para)
+#: C/index.docbook:12(legalnotice/para)
+msgid "This manual is part of a collection of GNOME manuals distributed under the GFDL. If you want to distribute this manual separately from the collection, you can do so by adding a copy of the license to the manual, as described in section 6 of the license."
+msgstr "Ta priročnik je del zbirke priročnikov GNOME distribuiranih pod GFDL. V primeru, da želite ta priročnik razširjati ločeno od zbirke, je treba priročniku dodati kopije dovoljenja, kot je opisano v odseku 6."
+
+#: C/legal.xml:19(legalnotice/para)
+#: C/index.docbook:19(legalnotice/para)
+msgid "Many of the names used by companies to distinguish their products and services are claimed as trademarks. Where those names appear in any GNOME documentation, and the members of the GNOME Documentation Project are made aware of those trademarks, then the names are in capital letters or initial capital letters."
+msgstr "Veliko imen podjetja uporabljajo za ločevanje njihovih izdelkov in storitev, zato si jih lastijo kot blagovne znamke. Kjer se ta mena pojavijo v katerikoli dokumentaciji GNOME in člani dokumentacijskega projekta GNOME vedo za njih, so imena v velikih črkah ali pa se začnejo z velikimi črkami."
+
+#: C/legal.xml:35(listitem/para)
+#: C/index.docbook:35(listitem/para)
+msgid "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr "DOKUMENT JE ZAGOTOVLJEN \"KOT JE\" BREZ KAKRŠNEKOLI GARANCIJE, IZRAŽENE ALI PREDPOSTAVLJENE VKLJUČNO BREZ OMEJITEV, GARANCIJE DA JE DOKUMENT ALI SPREMENJENA RAZLIČICA DOKUMENTA BREZ NAPAK, PRIMERNA ZA DOLOČEN NAMEN ALI NE KRŠI PATENTOV. CELOTNO TVEGANJE GLEDE KAKOVOSTI, NATANČNOSTI IN ZMOGLJIVOSTI DOKUMENTA ALI SPREMENJENE RAZLIČICE DOKUMENTA JE NA VAS. V PRIMERU DA DOKUMENT ALI SPREMENJENA RAZLIČICA DOKUMENTA IZKAŽE ZA DEFEKTNO NA KAKRŠENKOLI NAČIN, VI (NE PISEC, AVTOR ALI KATERIKOLI DRUG PRISPEVAJOČI) KRIJETE STROŠKE MOREBITNEGA ZAHTEVANEGA POPRAVILA ALI POPRAVKA. TA IZJAVA O OMEJITVI ODGOVORNOSTI JE NUJEN DEL TEGA DOVOLJENA. UPORABA DOKUMENTA ALI SPREMENJENE RAZLIČICE TEGA DOKUMENTA NI DOVOLJENA RAZEN POD POGOJEM TE IZJAVE IN"
+
+#: C/legal.xml:55(listitem/para)
+#: C/index.docbook:55(listitem/para)
+msgid "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES."
+msgstr "POD NOBENIMI POGOJI IN NOBENO PRAVNO TEORIJO NE GLEDE NA NJENO SKLENITEV BO AVTOR, ZAČETNI PISEC ALI KATERIKOLI SODELUJOČI ALI DISTRIBUTOR DOKUMENTA ALI SPREMENJENE RAZLIČICE DOKUMENTA ALI KATERIKOLI PONUDNIK BIL ODGOVOREN KOMURKOLI ZA NEPOSREDNO, POSREDNO, NAKLJUČNO ALI POSLEDIČNE ŠKODE KAKRŠNEKOLI VRSTE BREZ OMEJITEV VKLJUČNO S ŠKODAMI ZARADI IZGUBE DOBRE VOLJE, ZAUSTAVITVE DELA, TEŽAVE ALI OKVARE RAČUNALNIKA ALI KATEREKOLI IN VSE ŠKODE ALI IZGUBE ZARADI ALI POVEZANE Z UPORABO DOKUMENTA IN SPREMENJENIH RAZLIČIC DOKUMENTA TUDI ČE JE BILA OSEBA OBVEŠČENA O MOŽNOSTI TAKE ŠKODE."
+
+#: C/legal.xml:28(legalnotice/para)
+#: C/index.docbook:28(legalnotice/para)
+msgid "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: <_:orderedlist-1/>"
+msgstr "DOKUMENT IN SPREMENJENE RAZLIČICE DOKUMENTA SO ZAGOTOVLJENE POD POGOJI GNU FREE DOCUMENTATION LICENCE Z NADALJNJIM RAZUMEVANJE DA: <placeholder-1/>"
+
+#: C/index.docbook:27(articleinfo/title)
+msgid "<application>Quadrapassel</application> Manual"
+msgstr "Priročnik <application>Kvadetris</application>"
+
+#: C/index.docbook:30(abstract/para)
+msgid "Quadrapassel is GNOME's version of Tetris, the classic game of interlocking four-piece blocks. As they fall from the top, the player must orient them to fit the other blocks at the bottom so that they form a complete horizontal line, in which case that line disappears and the player gains points."
+msgstr "Kvadetris je GNOME-ova različica Tetrisa, klasične igre zlaganja blokov iz štirih kosov. Medtem ko padajo z vrha jih mora igralec usmeriti, da se prilagodijo drugim blokom na dnu tako da tvorijo celotno vodoravno črto. V tem primeru ta črta izgine in igralec dobi točke."
+
+#: C/index.docbook:39(articleinfo/copyright)
+msgid "<year>2004</year> <holder>Angela Boyle</holder>"
+msgstr "<year>2004</year> <holder>Angela Boyle</holder>"
+
+#: C/index.docbook:56(publisher/publishername)
+#: C/index.docbook:97(revdescription/para)
+msgid "GNOME Documentation Project"
+msgstr "Projekt dokumentacije GNOME"
+
+#: C/index.docbook:2(legalnotice/para)
+msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any later version published by the Free Software Foundation with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+msgstr "Dovoljeno je kopiranje, razširjanje in/ali spreminjanje tega dokumenta pod pogoji GNU Free Documentation License (GFDL) različice 1.1 ali katerekoli kasnejše različice, ki jo je objavila Free Software Foundation brez stalnih odsekov, besedila naslovnice in zadnje strani. Kopijo GFDL lahko najdete na tej <ulink type=\"help\" url=\"ghelp:fdl\">povezavi</ulink> ali v COPYING-DOCS distribuiranim s tem priročnikom."
+
+#: C/index.docbook:66(authorgroup/author)
+msgid "<firstname>Angela</firstname> <surname>Boyle</surname> <affiliation> <address> <email>anjela@u.washington.edu</email> </address> </affiliation>"
+msgstr "<firstname>Angela</firstname> <surname>Boyle</surname> <affiliation> <address> <email>anjela@u.washington.edu</email> </address> </affiliation>"
+
+#: C/index.docbook:94(revdescription/para)
+msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
+msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
+
+#: C/index.docbook:90(revhistory/revision)
+msgid "<revnumber>Quadrapassel Manual V2.8</revnumber> <date>June 2004</date> <_:revdescription-1/>"
+msgstr "<revnumber>Vodnik Kvadetris V2.8</revnumber> <date>Junij 2004</date> <_:revdescription-1/>"
+
+#: C/index.docbook:102(articleinfo/releaseinfo)
+msgid "This manual describes version 2.12 of Quadrapassel."
+msgstr "Ta priročnik opisuje Kvadetris različice 2.12."
+
+#: C/index.docbook:109(legalnotice/title)
+msgid "Feedback"
+msgstr "Odziv"
+
+#: C/index.docbook:110(legalnotice/para)
+msgid "To report a bug or make a suggestion regarding the <application>Quadrapassel</application> application or this manual, follow the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr "Za poročanje hrošča ali predlog glede programa <application>Kvadetris</application> ali tega vodnika sledite smernicam na <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Strani odziva GNOME</ulink>."
+
+#: C/index.docbook:121(article/indexterm)
+msgid "<primary>Quadrapassel</primary>"
+msgstr "<primary>Kvadetris</primary>"
+
+#: C/index.docbook:128(sect1/title)
 msgid "Introduction"
 msgstr "Uvod"
 
-#. synopsis of game
-#: C/quadrapassel.xml:131(para)
-msgid ""
-"<application>Quadrapassel</application> comes from the classic falling-block "
-"game, <application>Tetris</application>. The goal of the game is to create "
-"complete horizontal lines of blocks, which will disappear. The blocks come "
-"in seven different shapes made from four blocks each: one straight, two L-"
-"shaped, one square, and two S-shaped. The blocks fall from the top center of "
-"the screen in a random order. You rotate the blocks and move them across the "
-"screen to drop them in complete lines. You score by dropping blocks fast and "
-"completing lines. As your score gets higher, you level up and the blocks "
-"fall faster."
-msgstr ""
+#: C/index.docbook:131(sect1/para)
+msgid "<application>Quadrapassel</application> comes from the classic falling-block game, <application>Tetris</application>. The goal of the game is to create complete horizontal lines of blocks, which will disappear. The blocks come in seven different shapes made from four blocks each: one straight, two L-shaped, one square, and two S-shaped. The blocks fall from the top center of the screen in a random order. You rotate the blocks and move them across the screen to drop them in complete lines. You score by dropping blocks fast and completing lines. As your score gets higher, you level up and the blocks fall faster."
+msgstr "<application>Kvadetris</application> izhaja iz igre padajočih blokov, <application>Tetris</application>. Cilj igre je ustvariti polne vodoravne črte blokov, ki bodo izginili. Bloki so v sedmih različnih oblikah, ki so sestavljeni iz štirih blokov, en raven, dva v obliki črke L, en kvadrat in dva v obliki črke S. Bloki padajo s sredine vrha zaslona v naključnem vrstnem redu. Bloke zavrtite in jih premaknete po zaslonu ter spustite tako, da dokončate vrstice. Točke dobite s hitrim spuščanjem blokov in dokončanjem vrstic. Ko dobite več točk, pridete na višjo raven in bloki padajo hitreje."
 
-#. running game
-#: C/quadrapassel.xml:134(para)
-msgid ""
-"To run <application>Quadrapassel</application>, select "
-"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
-"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, or type "
-"<command>quadrapassel</command> in the command line."
-msgstr ""
+#: C/index.docbook:134(sect1/para)
+msgid "To run <application>Quadrapassel</application>, select <menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, or type <command>quadrapassel</command> in the command line."
+msgstr "Za zagon <application>Kvadetris</application> izberite <menuchoice><guimenu>Programi</guimenu><guisubmenu>Igre</guisubmenu><guimenuitem>Kvadetris</guimenuitem></menuchoice> ali vnesite <command>quadrapassel</command> v ukazno vrstico."
 
-#. part of gnome-games
-#: C/quadrapassel.xml:137(para)
-msgid ""
-"<application>Quadrapassel</application> is included in the <filename>gnome-"
-"games</filename> package, which is part of the GNOME desktop environment. "
-"This document describes version 2.8 of <application>Quadrapassel</"
-"application>."
-msgstr ""
+#: C/index.docbook:137(sect1/para)
+msgid "<application>Quadrapassel</application> is included in the <filename>gnome-games</filename> package, which is part of the GNOME desktop environment. This document describes version 2.8 of <application>Quadrapassel</application>."
+msgstr "<application>Kvadetris</application> je vključen v paket <filename>gnome-games</filename>, ki je del namiznega okolja GNOME. Ta dokument opisuje različico <application>Kvadetris</application> 2.8."
 
-#: C/quadrapassel.xml:141(title)
+#: C/index.docbook:141(sect1/title)
 msgid "Playing <application>Quadrapassel</application>"
-msgstr ""
+msgstr "Igranje igre <application>Kvadetris</application>"
 
-#: C/quadrapassel.xml:142(para)
-msgid ""
-"You can score through two actions: completing lines and dropping blocks "
-"quickly."
-msgstr ""
+#: C/index.docbook:142(sect1/para)
+msgid "You can score through two actions: completing lines and dropping blocks quickly."
+msgstr "Točke lahko dobite na dva načina: dopolnjevanje vrstic in hitro spuščanje blokov."
 
-#: C/quadrapassel.xml:144(title)
+#: C/index.docbook:144(sect2/title)
 msgid "Moving the Blocks"
-msgstr ""
+msgstr "Premikanje blokov"
 
-#: C/quadrapassel.xml:145(para)
+#: C/index.docbook:145(sect2/para)
 msgid "To play the game, you only need the four arrow keys."
-msgstr ""
+msgstr "Za igranje igre potrebujete le štiri smerne tipke."
 
-#: C/quadrapassel.xml:148(para)
-msgid ""
-"<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
-"correspondingly across the screen."
-msgstr ""
+#: C/index.docbook:148(listitem/para)
+msgid "<keycap>Left</keycap> and <keycap>Right</keycap> move the block correspondingly across the screen."
+msgstr "<keycap>Levo</keycap> in <keycap>Desno</keycap> premakneta blok po zaslonu."
 
-#: C/quadrapassel.xml:151(para)
-msgid ""
-"<keycap>Up</keycap> rotates the block. The default rotation is "
-"counterclockwise. You can change the rotation under "
-"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks "
-"counterclockwise</guilabel>."
-msgstr ""
+#: C/index.docbook:151(listitem/para)
+msgid "<keycap>Up</keycap> rotates the block. The default rotation is counterclockwise. You can change the rotation under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks counterclockwise</guilabel>."
+msgstr "<keycap>Navzgor</keycap> zavrti blok. Privzeto vrtenje je v nasprotni smeri urinega kazalca. Vrtenje lahko spremenite pod <menuchoice><guimenu>Nastavitve</guimenu><guimenuitem>Možnosti</guimenuitem></menuchoice> in odstranitvijo izbire <guilabel>Zavrti bloke v nasprotni smeri urinega kazalca</guilabel>."
 
-#: C/quadrapassel.xml:154(para)
-msgid ""
-"<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down "
-"the screen faster.<keycap>Down</keycap> moves the block down faster. "
-"<keycap>Space-bar</keycap> moves the block directly to the bottom."
-msgstr ""
+#: C/index.docbook:154(listitem/para)
+msgid "<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down the screen faster.<keycap>Down</keycap> moves the block down faster. <keycap>Space-bar</keycap> moves the block directly to the bottom."
+msgstr "<keycap>Navzdol</keycap> in <keycap>Preslednica</keycap> premakne blok navzdol po zaslonu hitreje.<keycap>Navzdol</keycap> premakne blok navzdol hitreje. <keycap>Preslednica</keycap> premakne blok neposredno na dno."
 
-#: C/quadrapassel.xml:159(title)
+#: C/index.docbook:159(sect2/title)
 msgid "Starting a New Game"
-msgstr ""
+msgstr "Začenjanje nove igre"
 
-#: C/quadrapassel.xml:160(para)
-msgid ""
-"To begin a new game, go to <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
-"begin dropping blocks from the center of the top of the window. The default "
-"start-up of the game has no blocks in the game window and shows the next "
-"block that will fall in the upper right hand corner. <guilabel>Score</"
-"guilabel> shows the number of points you have earned. <guilabel>Lines</"
-"guilabel> shows the number of lines you have completed. <guilabel>Level</"
-"guilabel> shows the level of difficulty you are on."
-msgstr ""
+#: C/index.docbook:160(sect2/para)
+msgid "To begin a new game, go to <menuchoice><guimenu>Game</guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will begin dropping blocks from the center of the top of the window. The default start-up of the game has no blocks in the game window and shows the next block that will fall in the upper right hand corner. <guilabel>Score</guilabel> shows the number of points you have earned. <guilabel>Lines</guilabel> shows the number of lines you have completed. <guilabel>Level</guilabel> shows the level of difficulty you are on."
+msgstr "Za začetek nove igre pojdite v <menuchoice><guimenu>Igra</guimenu><guimenuitem>Nova igra</guimenuitem></menuchoice>. Igra bo začela spuščati bloke s središča vrha okna. Privzeto začeta igra nima blokov v oknu igre in pokaže blok, ki bo padel naslednji, v zgornji desni kot. <guilabel>Rezultat</guilabel> pokaže število točk, ki ste jih zaslužili. <guilabel>Vrstice</guilabel> pokaže število dokončanih vrstic. <guilabel>Oznaka</guilabel> pokaže raven težavnosti."
 
-#: C/quadrapassel.xml:163(title)
+#: C/index.docbook:163(sect2/title)
 msgid "Pausing the Game"
-msgstr ""
+msgstr "Premor igre"
 
-#: C/quadrapassel.xml:164(para)
-msgid ""
-"To pause your game, go to <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
-"pause a game when you are playing. The time limit on pausing your game is "
-"unlimited. To unpause the game, go back to <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
-msgstr ""
+#: C/index.docbook:164(sect2/para)
+msgid "To pause your game, go to <menuchoice><guimenu>Game</guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only pause a game when you are playing. The time limit on pausing your game is unlimited. To unpause the game, go back to <menuchoice><guimenu>Game</guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
+msgstr "Za premor igre pojdite v <menuchoice><guimenu>Igra</guimenu><guimenuitem>Premor igre</guimenuitem></menuchoice>. Premor igre lahko naredite le, ko igrate. Časovna omejitev premora igre je neomejena. Za končanje premora igre pojdite nazaj v <menuchoice><guimenu>Igra</guimenu><guimenuitem>Premor igre</guimenuitem></menuchoice>."
 
-#: C/quadrapassel.xml:167(title)
+#: C/index.docbook:167(sect2/title)
 msgid "Ending the Game"
-msgstr ""
+msgstr "Končanje igre"
 
-#: C/quadrapassel.xml:168(para)
-msgid ""
-"Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
-"guimenuitem></menuchoice> to end your current game without quiting "
-"Quadrapassel."
-msgstr ""
+#: C/index.docbook:168(sect2/para)
+msgid "Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</guimenuitem></menuchoice> to end your current game without quiting Quadrapassel."
+msgstr "Pojdite v <menuchoice><guimenu>Meni</guimenu><guimenuitem>Končaj igro</guimenuitem></menuchoice> za končanje vaše trentne igre brez končanja programa."
 
-#: C/quadrapassel.xml:171(title)
+#: C/index.docbook:171(sect2/title)
 msgid "Quiting the <application>Quadrapassel</application>"
-msgstr ""
+msgstr "Končanje programa <application>Kvadetris</application>"
 
-#: C/quadrapassel.xml:172(para)
-msgid ""
-"To completely quit <application>Quadrapassel</application> go to "
-"<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
-"menuchoice>. If you are in the middle of a game when you quit, you will end "
-"your game without saving your score."
-msgstr ""
+#: C/index.docbook:172(sect2/para)
+msgid "To completely quit <application>Quadrapassel</application> go to <menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></menuchoice>. If you are in the middle of a game when you quit, you will end your game without saving your score."
+msgstr "Za popolno končanje programa <application>Kvadetris</application> pojdite v <menuchoice><guimenu>Igra</guimenu><guimenuitem>Končaj</guimenuitem></menuchoice>. Če ste ob končanju med igro, bo vaša igra končana brez shranitve rezultata."
 
-#: C/quadrapassel.xml:175(title)
+#: C/index.docbook:175(sect2/title)
 msgid "Scoring Points"
-msgstr ""
+msgstr "Dodeljevanje točk"
 
-#: C/quadrapassel.xml:176(para)
-msgid ""
-"You score points through two methods: dropping blocks faster and deleting "
-"complete lines of blocks. When you delete lines, you get more points, but "
-"dropping blocks faster will quickly add up. As you level up, the blocks will "
-"begin falling faster. The highest level is 10, at which point you will only "
-"have just over a second to manipulate each block."
-msgstr ""
+#: C/index.docbook:176(sect2/para)
+msgid "You score points through two methods: dropping blocks faster and deleting complete lines of blocks. When you delete lines, you get more points, but dropping blocks faster will quickly add up. As you level up, the blocks will begin falling faster. The highest level is 10, at which point you will only have just over a second to manipulate each block."
+msgstr "Točke dosežete na dva načina: spustitev blokov hitreje in izbris celotnih vrstic blokov. Ko vrstice izbrišete dobite več točk, toda hitrejše spuščanje blokov se hitro doda. Ko napredujete, bodo bloki začeli padati hitreje. Najvišja raven je 10. Takrat boste imeli le rahlo več kot sekundo za upravljanje vsakega bloka."
 
-#: C/quadrapassel.xml:179(title)
+#: C/index.docbook:179(sect2/title)
 msgid "Viewing Past Scores"
-msgstr ""
+msgstr "Ogled preteklih rezultatov"
 
-#: C/quadrapassel.xml:180(para)
-msgid ""
-"You can view the top ten scores played on your computer through "
-"<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
-"menuchoice>. The names of the users are shown next the their score and the "
-"date they played."
-msgstr ""
+#: C/index.docbook:180(sect2/para)
+msgid "You can view the top ten scores played on your computer through <menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></menuchoice>. The names of the users are shown next the their score and the date they played."
+msgstr "V meniju <menuchoice><guimenu>Igra</guimenu><guimenuitem>Rezultati</guimenuitem></menuchoice> lahko vidite deset najboljših rezultatov. Poleg rezultatov uporabnika in datuma igranja so prikazana njihova imena."
 
-#: C/quadrapassel.xml:186(title)
+#: C/index.docbook:186(sect1/title)
 msgid "Customizing <application>Quadrapassel</application>"
-msgstr ""
+msgstr "Prilagajanje <application>Kvadetrisa</application>"
 
-#: C/quadrapassel.xml:188(title)
+#: C/index.docbook:188(sect2/title)
 msgid "Customizing Game Start-up"
-msgstr ""
+msgstr "Prilagoditev začetka igre"
 
-#: C/quadrapassel.xml:189(para)
-msgid ""
-"By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice>, you can customize a variety of features for the "
-"start-up of each Quadrapassel game: number and density of pre-filled rows, "
-"and starting level. \"Pre-filled rows\" refers to how many rows will already "
-"have blocks in them when you start each new game."
-msgstr ""
+#: C/index.docbook:189(sect2/para)
+msgid "By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize a variety of features for the start-up of each Quadrapassel game: number and density of pre-filled rows, and starting level. \"Pre-filled rows\" refers to how many rows will already have blocks in them when you start each new game."
+msgstr "V <menuchoice><guimenu>Nastavitve</guimenu><guimenuitem>Možnosti</guimenuitem></menuchoice> lahko prilagodite številne zmožnosti zagona vsake igre Kvadetris: število in gostota predhodno zapolnjenih vrstic in začetna raven. \"Predhodno zapolnjene vrstice\" določiti koliko vrstic bo ob začetku igre že vsebovalo bloke."
 
-#: C/quadrapassel.xml:191(title)
+#: C/index.docbook:191(sect3/title)
 msgid "Number of Pre-filled Rows"
-msgstr ""
+msgstr "Število začetno zapolnjenih vrstic"
 
-#: C/quadrapassel.xml:192(para)
-msgid ""
-"You can change the number of rows that already have blocks at the start-up "
-"of each new game by using the spin box. You can start with up to 19 rows pre-"
-"filled at the start-up of your game. The default number of pre-filled rows "
-"is zero."
-msgstr ""
+#: C/index.docbook:192(sect3/para)
+msgid "You can change the number of rows that already have blocks at the start-up of each new game by using the spin box. You can start with up to 19 rows pre-filled at the start-up of your game. The default number of pre-filled rows is zero."
+msgstr "S pomočjo vrtilnega polja lahko spremenite lahko število vrstic, ki že vsebujejo bloke ob začetku igre . Začnete lahko z do 19 predhodno zapolnjenimi vrsticami na začetku  igre. Privzeto število prehodno zapolnjenih vrstic je 0."
 
-#: C/quadrapassel.xml:195(title)
+#: C/index.docbook:195(sect3/title)
 msgid "Density of Pre-filled Rows"
-msgstr ""
+msgstr "Gostota začetno zapolnjenih vrstic"
 
-#: C/quadrapassel.xml:196(para)
-msgid ""
-"You can change the density of the blocks in the pre-filled rows at the start-"
-"up of each game. You can choose a density up to 10 blocks. You should first "
-"choose how many rows you want pre-filled under <guilabel>Number of Pre-"
-"filled Rows</guilabel>. The default density of blocks is three."
-msgstr ""
+#: C/index.docbook:196(sect3/para)
+msgid "You can change the density of the blocks in the pre-filled rows at the start-up of each game. You can choose a density up to 10 blocks. You should first choose how many rows you want pre-filled under <guilabel>Number of Pre-filled Rows</guilabel>. The default density of blocks is three."
+msgstr "Spremenite lahko gostoto blokov v predhodno zapolnjenih vrsticah na začetku vsakge igre. Izberete lahko gostoto do 10 blokov. Najprej izberite koliko vrstice želite predhodno zapolniti pod <guilabel>Število predhodno zapolnjenih vrstic</guilabel>. Privzeta gostota blokov je tri."
 
-#: C/quadrapassel.xml:199(title)
+#: C/index.docbook:199(sect3/title)
 msgid "Level to Start On"
-msgstr ""
+msgstr "Raven začetne težavnosti"
 
-#: C/quadrapassel.xml:200(para)
-msgid ""
-"You can adjust the level of difficulty you start on. The highest level you "
-"can start on is 10, which is the highest level you can play to. The default "
-"starting level is one."
-msgstr ""
+#: C/index.docbook:200(sect3/para)
+msgid "You can adjust the level of difficulty you start on. The highest level you can start on is 10, which is the highest level you can play to. The default starting level is one."
+msgstr "Prialgodite lahko raven začetne težavnosti. Najvišja raven začetka in hkrati najvišja mogoča raven je 10. Privzeta začetna raven je ena."
 
-#: C/quadrapassel.xml:204(title)
+#: C/index.docbook:204(sect2/title)
 msgid "Customizing the Gameplay"
-msgstr ""
+msgstr "Prilagoditev igre"
 
-#: C/quadrapassel.xml:205(para)
-msgid ""
-"From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice>, you can customize a variety of features related "
-"to the blocks: previewing the next block, block colors, and block rotation."
-msgstr ""
+#: C/index.docbook:205(sect2/para)
+msgid "From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize a variety of features related to the blocks: previewing the next block, block colors, and block rotation."
+msgstr "Iz <menuchoice><guimenu>Nastavitve</guimenu><guimenuitem>Možnosti</guimenuitem></menuchoice> lahko prilagodite številne zmožnosti povezane z bloki: predogled naslednjega bloka, barve blokov in vrtenje blokov."
 
-#: C/quadrapassel.xml:207(title)
+#: C/index.docbook:207(sect3/title)
 msgid "Enable sounds"
-msgstr ""
+msgstr "Omogoči zvok"
 
-#: C/quadrapassel.xml:208(para)
-msgid ""
-"Turn the sound effects on and off using this option. If you are playing this "
-"game in any area which you share with other people, you should probably "
-"select off."
-msgstr ""
+#: C/index.docbook:208(sect3/para)
+msgid "Turn the sound effects on and off using this option. If you are playing this game in any area which you share with other people, you should probably select off."
+msgstr "S to možnostjo lahko vklopite ali izklopite zvočne učinke. Če to igro igrate v področju, ki ga delite z drugimi, je to zmožnost pametno izklopiti."
 
-#: C/quadrapassel.xml:211(title)
+#: C/index.docbook:211(sect3/title)
 msgid "Preview Next Block"
-msgstr ""
+msgstr "Predogled naslednjega bloka"
 
-#: C/quadrapassel.xml:212(para)
-msgid ""
-"Choose this option if you want to see the next block that is going to fall. "
-"This feature helps you plan the placement of your blocks."
-msgstr ""
+#: C/index.docbook:212(sect3/para)
+msgid "Choose this option if you want to see the next block that is going to fall. This feature helps you plan the placement of your blocks."
+msgstr "Izberite to možnost, če želite videti, kam bo blok padel. Ta zmožnost vam pomaga načrtovati postavitev svojih blokov."
 
-#: C/quadrapassel.xml:215(title)
+#: C/index.docbook:215(sect3/title)
 msgid "Use Random Block Colors"
-msgstr ""
+msgstr "Uporabi naključne barve blokov"
 
-#: C/quadrapassel.xml:216(para)
-msgid ""
-"Choose if you want the various block configurations to be color coded or "
-"randomly colored. If you use the colors to help you identify blocks, random "
-"colors will make the game more difficult."
-msgstr ""
+#: C/index.docbook:216(sect3/para)
+msgid "Choose if you want the various block configurations to be color coded or randomly colored. If you use the colors to help you identify blocks, random colors will make the game more difficult."
+msgstr "Izberite, če želite, da so različni bloki barvno obarvani ali naključno obarvani. Če za določitev blokov uporabite barve, bodo naključne barve naredile igro težjo."
 
-#: C/quadrapassel.xml:219(title)
+#: C/index.docbook:219(sect3/title)
 msgid "Choose Difficult Blocks"
-msgstr ""
+msgstr "Izbor težjih blokov"
 
-#: C/quadrapassel.xml:220(para)
-msgid ""
-"Choose this option if you want to select mode that is designed specifically "
-"to annoy the player. With this feature enabled, you never get the piece you "
-"want, and very seldom complete a row. Next block preview doesn't correspond "
-"to actual piece you get next, but to the one you probably wish to get."
-msgstr ""
+#: C/index.docbook:220(sect3/para)
+msgid "Choose this option if you want to select mode that is designed specifically to annoy the player. With this feature enabled, you never get the piece you want, and very seldom complete a row. Next block preview doesn't correspond to actual piece you get next, but to the one you probably wish to get."
+msgstr "Izberite to možnost, če želite izbrati način, ki je zasnovan za spravljanje igralca v slabo voljo. Če izberete to zmožnost, nikoli ne boste dobili bloka, ki ga želite, in zelo redko boste dopolnili vrstico. Predogled naslednjega bloka ne ustreza bloku, ki bo na voljo naslednji, ampak bloku, ki bi si ga verjetno želeli dobiti."
 
-#: C/quadrapassel.xml:223(title)
+#: C/index.docbook:223(sect3/title)
 msgid "Rotate Blocks Counterclockwise"
-msgstr ""
+msgstr "Zavrti bloke v obratni smeri urinega kazalca"
 
-#: C/quadrapassel.xml:224(para)
-msgid ""
-"Choose this option if you want the blocks to rotate counterclockwise or not."
-msgstr ""
+#: C/index.docbook:224(sect3/para)
+msgid "Choose this option if you want the blocks to rotate counterclockwise or not."
+msgstr "Izberite to možnost, če želite, da se bloki vrtijo v nasprotni smeri urinega kazalca ali ne."
 
-#: C/quadrapassel.xml:227(title)
+#: C/index.docbook:227(sect3/title)
 msgid "Show where the block will land"
-msgstr ""
+msgstr "Pokaži kje bo lik pristal."
 
-#: C/quadrapassel.xml:228(para)
-msgid ""
-"If this feature is used a grey image of the block will show you where the "
-"block will land. This feature is very useful for beginning players, but "
-"experienced players will find it a distraction."
-msgstr ""
+#: C/index.docbook:228(sect3/para)
+msgid "If this feature is used a grey image of the block will show you where the block will land. This feature is very useful for beginning players, but experienced players will find it a distraction."
+msgstr "Če uporabite to zmožnost, bo siva slika bloka prikazala, kje bo blok pristal. Ta zmožnost je zelo uporabna za začetnike, izkušene uporabnike pa bo verjetno motila."
 
-#: C/quadrapassel.xml:236(title)
+#: C/index.docbook:236(sect2/title)
 msgid "Customizing the Look of <application>Quadrapassel</application>"
-msgstr ""
+msgstr "Prilagoditev videza <application>Kvadetris</application>"
 
-#: C/quadrapassel.xml:237(para)
-msgid ""
-"Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice>, you can customize the look of "
-"<application>Quadrapassel</application>: images for the blocks."
-msgstr ""
+#: C/index.docbook:237(sect2/para)
+msgid "Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize the look of <application>Quadrapassel</application>: images for the blocks."
+msgstr "Pod <menuchoice><guimenu>Nastavitve</guimenu><guimenuitem>Možnosti</guimenuitem></menuchoice> lahko prilagodite videz slik blokov <application>Kvadetris</application>:"
 
-#: C/quadrapassel.xml:239(title)
+#: C/index.docbook:239(sect3/title)
 msgid "Block Image"
-msgstr ""
+msgstr "Slika lika"
 
-#: C/quadrapassel.xml:240(para)
-msgid ""
-"You can change the style of the blocks, including image and size. There are "
-"a variety of pre-made styles."
-msgstr ""
+#: C/index.docbook:240(sect3/para)
+msgid "You can change the style of the blocks, including image and size. There are a variety of pre-made styles."
+msgstr "Slog blokov, vključno s sliko in velikostjo lahko spremenite. Na voljo so številni predhodno narejeni slogi."
 
-#: C/quadrapassel.xml:243(title)
+#: C/index.docbook:243(sect3/title)
 msgid "Background"
-msgstr ""
+msgstr "Ozadje"
 
-#: C/quadrapassel.xml:243(para)
-msgid ""
-"If you drag your favorite image into the <application>Quadrapassel</"
-"application> window it will be used as the background. If you want a solid "
-"color as the background drag one in from either the color picker or from "
-"<application>nautlilus'</application><guimenuitem>Backgrounds and Emblems</"
-"guimenuitem> dialog (the reset item from that dialog also works)."
-msgstr ""
+#: C/index.docbook:243(sect3/para)
+msgid "If you drag your favorite image into the <application>Quadrapassel</application> window it will be used as the background. If you want a solid color as the background drag one in from either the color picker or from <application>nautlilus'</application> <guimenuitem>Backgrounds and Emblems</guimenuitem> dialog (the reset item from that dialog also works)."
+msgstr "Če svojo najljubšo sliko povlečete v okno <application>Kvadetris</application>, bo uporabljena kot ozadje. Če želite kot ozadje imeti polno barvo povlecite barvo iz izbirnika barv ali iz <application>nautilusovega</application> pogovornega okna <guimenuitem>Ozadja in značke</guimenuitem> (v tem pogovornem oknu deluje tudi predmet ponastavitev)."
 
-#: C/quadrapassel.xml:255(title)
+#: C/index.docbook:255(sect1/title)
 msgid "Authors"
 msgstr "Avtorji"
 
-#: C/quadrapassel.xml:256(para)
-msgid ""
-"<application>Quadrapassel</application> was written by J. Marcin Gorycki in "
-"1999 and maintained by Gnome Games Team since then. This manual was written "
-"by Angela Boyle. To report a bug or make a suggestion regarding this "
-"application or this manual, follow the directions in this <ulink url=\"ghelp:"
-"user-guide?feedback-bugs\" type=\"help\">document</ulink>."
-msgstr ""
+#: C/index.docbook:256(sect1/para)
+msgid "<application>Quadrapassel</application> was written by J. Marcin Gorycki in 1999 and maintained by Gnome Games Team since then. This manual was written by Angela Boyle. To report a bug or make a suggestion regarding this application or this manual, follow the directions in this <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr "<application>Kvadetris</application> je napisal J. Marcin Gorycki leta 1999. Od takrat ga vzdržuje ekipa Gnome Games. Ta priročnik je napisala Angela Boyle. Za poročanje hrošča ali podajanje predloga glede tega programa ali priročnika sledite navodilom v tem <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">dokumentu</ulink>."
 
-#: C/quadrapassel.xml:280(title)
+#: C/index.docbook:280(sect1/title)
 msgid "License"
 msgstr "Dovoljenje"
 
-#: C/quadrapassel.xml:281(para)
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
-"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
-"the Free Software Foundation; either version 2 of the License, or (at your "
-"option) any later version."
-msgstr ""
+#: C/index.docbook:281(sect1/para)
+msgid "This program is free software; you can redistribute it and/or modify it under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl\"> <citetitle>GNU General Public License</citetitle></ulink> as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
+msgstr "Ta program je prost program, lahko ga distribuirate in/ali spreminjate pod pogoji <ulink type=\"help\" url=\"gnome-help:gpl\"> <citetitle>Splošnega javnega dovoljenja GNU</citetitle></ulink> kot ga je objavil Free Software Foundation ali različico 2 licence ali (po vaši želji) katerakoli kasnejša različica."
 
-#: C/quadrapassel.xml:283(para)
-msgid ""
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
-"License</citetitle> for more details."
-msgstr ""
+#: C/index.docbook:283(sect1/para)
+msgid "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public License</citetitle> for more details."
+msgstr "Program je na voljo v upanju, da bo uporaben, vendar je BREZ VSAKRŠNEGA JAMSTVA; tudi brez jamstva o USTREZNOSTI ZA PRODAJO ali PRIMERNOSTI ZA UPORABO. Za več podrobnosti si glejte besedilo <citetitle>Splošnega javnega dovoljenja (GNU GPL)</citetitle>"
 
-#: C/quadrapassel.xml:285(para)
+#: C/index.docbook:286(para/address)
+#, no-wrap
 msgid ""
-"A copy of the <citetitle>GNU General Public License</citetitle> is included "
-"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
-"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
-"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
-"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
-"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
-"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
-"postcode><country>USA</country></address>"
+"\n"
+"    Free Software Foundation, Inc.\n"
+"    <street>59 Temple Place</street> - Suite 330\n"
+"    <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode>\n"
+"    <country>USA</country>\n"
+"   "
 msgstr ""
+"\n"
+"    Free Software Foundation, Inc.\n"
+"    <street>59 Temple Place</street> - Suite 330\n"
+"    <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode>\n"
+"    <country>USA</country>\n"
+"   "
 
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: C/quadrapassel.xml:0(None)
-msgid "translator-credits"
-msgstr ""
+#: C/index.docbook:285(sect1/para)
+msgid "A copy of the <citetitle>GNU General Public License</citetitle> is included as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also obtain a copy of the <citetitle>GNU General Public License</citetitle> from the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://www.fsf.org\">their Web site</ulink> or by writing to <_:address-1/>"
+msgstr "Kopija <citetitle>Splošnega javnega dovoljenja GNU</citetitle> je vključena kot priloga <citetitle>Uporabniškemu vodniku GNOME</citetitle>. Kopijo <citetitle>Splošnega javnega dovoljenaj GNU</citetitle> lahko dobite od Free Software Foundaton z obiskom njihovega <ulink type=\"http\" url=\"http://www.fsf.org\">spletišča</ulink> ali pisanjem na <_:address-1/>"
+
