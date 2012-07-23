@@ -253,15 +253,12 @@ public class Quadrapassel : Gtk.Application
         notebook.set_border_width (5);
         vbox.pack_start (notebook, true, true, 0);
 
-        vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 18);
-        vbox.set_border_width (12);
-        var label = new Gtk.Label (_("Game"));
-        notebook.append_page (vbox, label);
-
-        var frame = new GnomeGamesSupport.Frame (_("Setup"));
         var grid = new Gtk.Grid ();
         grid.set_row_spacing (6);
         grid.set_column_spacing (12);
+        grid.border_width = 12;
+        var label = new Gtk.Label (_("Game"));
+        notebook.append_page (grid, label);
 
         /* pre-filled rows */
         label = new Gtk.Label.with_mnemonic (_("_Number of pre-filled rows:"));
@@ -274,7 +271,7 @@ public class Quadrapassel : Gtk.Application
         fill_height_spinner.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
         fill_height_spinner.set_snap_to_ticks (true);
         fill_height_spinner.value_changed.connect (fill_height_spinner_value_changed_cb);
-        grid.attach (fill_height_spinner, 1, 0, 2, 1);
+        grid.attach (fill_height_spinner, 1, 0, 1, 1);
         label.set_mnemonic_widget (fill_height_spinner);
 
         /* pre-filled rows density */
@@ -305,59 +302,33 @@ public class Quadrapassel : Gtk.Application
         grid.attach (starting_level_spin, 1, 2, 1, 1);
         label.set_mnemonic_widget (starting_level_spin);
 
-        frame.add (grid);
-        vbox.pack_start (frame, false, false, 0);
-
-        frame = new GnomeGamesSupport.Frame (_("Operation"));
-        var fvbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 6);
-
         sound_toggle = new Gtk.CheckButton.with_mnemonic (_("_Enable sounds"));
         sound_toggle.set_active (settings.get_boolean ("sound"));
         sound_toggle.toggled.connect (sound_toggle_toggled_cb);
-        fvbox.pack_start (sound_toggle, false, false, 0);
+        grid.attach (sound_toggle, 0, 3, 2, 1);
 
         do_preview_toggle = new Gtk.CheckButton.with_mnemonic (_("_Preview next block"));
         do_preview_toggle.set_active (settings.get_boolean ("do-preview"));
         do_preview_toggle.toggled.connect (do_preview_toggle_toggled_cb);
-        fvbox.pack_start (do_preview_toggle, false, false, 0);
+        grid.attach (do_preview_toggle, 0, 4, 2, 1);
 
         difficult_blocks_toggle = new Gtk.CheckButton.with_mnemonic (_("Choose difficult _blocks"));
         difficult_blocks_toggle.set_active (settings.get_boolean ("pick-difficult-blocks"));
         difficult_blocks_toggle.toggled.connect (difficult_blocks_toggled_cb);
-        fvbox.pack_start (difficult_blocks_toggle, false, false, 0);
+        grid.attach (difficult_blocks_toggle, 0, 5, 2, 1);
 
         /* rotate counter clock wise */
         rotate_counter_clock_wise_toggle = new Gtk.CheckButton.with_mnemonic (_("_Rotate blocks counterclockwise"));
         rotate_counter_clock_wise_toggle.set_active (settings.get_boolean ("rotate-counter-clock-wise"));
         rotate_counter_clock_wise_toggle.toggled.connect (set_rotate_counter_clock_wise);
-        fvbox.pack_start (rotate_counter_clock_wise_toggle, false, false, 0);
+        grid.attach (rotate_counter_clock_wise_toggle, 0, 6, 2, 1);
 
         show_shadow_toggle = new Gtk.CheckButton.with_mnemonic (_("Show _where the block will land"));
         show_shadow_toggle.set_active (settings.get_boolean ("show-shadow"));
         show_shadow_toggle.toggled.connect (user_target_toggled_cb);
-        fvbox.pack_start (show_shadow_toggle, false, false, 0);
-
-        frame.add (fvbox);
-        vbox.pack_start (frame, false, false, 0);
-
-        frame = new GnomeGamesSupport.Frame (_("Theme"));
-        grid = new Gtk.Grid ();
-        grid.set_border_width (0);
-        grid.set_row_spacing (6);
-        grid.set_column_spacing (12);
+        grid.attach (show_shadow_toggle, 0, 7, 2, 1);
 
         /* controls page */
-        vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        vbox.set_border_width (12);
-        label = new Gtk.Label (_("Controls"));
-        notebook.append_page (vbox, label);
-
-        frame = new GnomeGamesSupport.Frame (_("Keyboard Controls"));
-        vbox.pack_start (frame, true, true, 0);
-
-        fvbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 6);
-        frame.add (fvbox);
-
         var controls_list = new GnomeGamesSupport.ControlsList (settings);
         controls_list.add_controls ("key-left", _("Move left"), 0,
                                     "key-right", _("Move right"), 0,
@@ -366,8 +337,9 @@ public class Quadrapassel : Gtk.Application
                                     "key-rotate", _("Rotate"), 0,
                                     "key-pause", _("Pause"), 0,
                                     null);
-
-        fvbox.pack_start (controls_list, true, true, 0);
+        controls_list.border_width = 12;
+        label = new Gtk.Label (_("Controls"));
+        notebook.append_page (controls_list, label);
 
         /* theme page */
         vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
@@ -375,13 +347,8 @@ public class Quadrapassel : Gtk.Application
         label = new Gtk.Label (_("Theme"));
         notebook.append_page (vbox, label);
 
-        frame = new GnomeGamesSupport.Frame (_("Block Style"));
-        vbox.pack_start (frame, true, true, 0);
-
-        fvbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 6);
-        frame.add (fvbox);
-
         var theme_combo = new Gtk.ComboBox ();
+        vbox.pack_start (theme_combo, false, true, 0);
         var theme_store = new Gtk.ListStore (2, typeof (string), typeof (string));
         theme_combo.model = theme_store;
         var renderer = new Gtk.CellRendererText ();
@@ -411,12 +378,11 @@ public class Quadrapassel : Gtk.Application
             theme_combo.set_active_iter (iter);
 
         theme_combo.changed.connect (theme_combo_changed_cb);
-        fvbox.pack_start (theme_combo, false, false, 0);
 
         theme_preview = new Preview ();
         theme_preview.game = new Game ();
         theme_preview.theme = settings.get_string ("theme");
-        fvbox.pack_start (theme_preview, true, true, 0);
+        vbox.pack_start (theme_preview, true, true, 0);
 
         preferences_dialog.show_all ();
     }
