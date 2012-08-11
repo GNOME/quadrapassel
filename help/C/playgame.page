@@ -2,8 +2,7 @@
 	type="topic" style="task"
 	id="playgame">
   <info>
-    <revision pkgversion="3.4.0" version="0.1" date="2012-03-27" status="draft"/>
-    <link type="guide" xref="index#play"/>
+    <revision pkgversion="3.5.5" version="0.1" date="2012-08-11" status="review"/>
     <credit type="author copyright">
       <name>Elena Petrevska</name>
       <email>elenapetrevska77@gmail.com</email>
@@ -25,21 +24,18 @@
 
 <list>
   <item><p>The <key>&#8592;</key> and <key>&#8594;</key> keys move the blocks across the screen.</p></item>
-  <item><p>The <key>&#8593;</key> key rotates the block. The rotation (which is counterclockwise by default) can be changed in <link xref="preferences">Preferences</link>.</p></item>
-  <item><p>The <key>SPACEBAR</key> and <key>&#8595;</key> key increase the speed of the drop. The <key>SPACEBAR</key> causes a hard-drop (instant move to the bottom). The <key>&#8595;</key> key causes a hard-drop (temporary increase in speed while the key is held down).</p></item>
-  <item><p>Once you are familiar with the controls, you are ready to play!</p></item>
+  <item><p>The <key>&#8593;</key> key rotates the block. The rotation (which is counterclockwise by default) can be changed in the <link xref="preferences">Preferences</link>.</p></item>
+  <item><p>The <key>SPACEBAR</key> and <key>&#8595;</key> key increase the speed of the drop. The <key>SPACEBAR</key> causes a hard-drop (instant move to the bottom). The <key>&#8595;</key> key causes a soft-drop (temporary increase in speed while the key is held down).</p></item>
 </list>
 </section>
 
 <section id="rules">
 <title>Rules</title>
 
-<p>There are couple of rules that you should keep in mind:</p>
+<p>There are a couple of rules that you should keep in mind:</p>
 <list>
-	<item><p> At any time during the game, you can <link xref="keyboard">pause</link>, end, start a <link xref="keyboard">new game</link>, get <link xref="keyboard">help</link> and <link xref="keyboard">quit</link> the program.</p></item>
-	<item><p> If you want to change some preference, that is, to open <guiseq><gui>Setting</gui><gui>Preferences</gui></guiseq>, you should end your game first.</p></item>
-	<item><p>As soon as you click the menu, you pause the game.</p></item>
-	<item><p>You can pause the game as many times as you want!</p></item>
+  <item><p>You can pause, end, start a new game, get help or quit the program at any time.</p></item>
+  <item><p>You can pause the game as many times as you want.</p></item>
 </list>
 </section>
 

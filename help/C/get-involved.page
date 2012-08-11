@@ -1,9 +1,8 @@
 <page xmlns="http://projectmallard.org/1.0/"
-	type="topic" style="task"
+	type="guide" style="task"
 	id="get-involved">
   <info>
-    <revision pkgversion="3.4.0" version="0.1" date="2012-03-27" status="draft"/>
-    <link type="guide" xref="index#play"/>
+    <revision pkgversion="3.5.5" version="0.1" date="2012-08-11" status="review"/>
     <credit type="author copyright">
       <name>Elena Petrevska</name>
       <email>elenapetrevska77@gmail.com</email>
@@ -14,29 +13,10 @@
     </license>
   </info>
 
-<title>Get Involved!</title>
+<title>Get Involved</title>
 <p>
 <app>Quadrapassel</app> is maintained by a volunteer community. You are invited to participate in any of the following ways.
 </p>
-<section id="bugs"><title></title>
-	<p><link xref="reportproblem">Report</link></p> 
-	<p>Found a problem? Feel free to file a bug.</p>
-</section>
-
-<section id="develop"><title></title>
-	<p><link xref="develop">Develop</link></p>
-	<p>Have a plan for developing the game? We are always open to new ideas!</p>
-</section>
-
-<section id="document"><title></title>
-	<p><link xref="documentation">Documentation</link></p> 
-	<p>Contribute to the documentation, freely!</p>
-</section>
-
-<section id="translate"><title></title>
-	<p><link xref="translate">Translate</link></p>
-	<p>Do you know a world language?</p>
-</section>
 
 <section id="home"><title></title>
   <p><link xref="index"><media type="image" src="media/go-home.png" />HOME</link></p>

@@ -1,11 +1,10 @@
 <page xmlns="http://projectmallard.org/1.0/"
       type="topic" style="task"
-      id="reportproblem">
+      id="bug-filing">
 
   <info>
-    <link type="guide" xref="index#get-involved"/>
-    <link type="seealso" xref="commandline"/>
-    <revision pkgversion="3.4.0" version="0.1" date="2012-03-27" status="draft"/>
+    <revision pkgversion="3.5.5" version="0.1" date="2012-08-11" status="review"/>
+    <link type="guide" xref="get-involved"/>
     <credit type="author copyright">
       <name>Tiffany Antopolski</name>
       <email>tiffany.antopolski@gmail.com</email>
@@ -18,6 +17,7 @@
     <license>
       <p>Creative Commons Share Alike 3.0</p>
     </license>
+    <desc>Found a problem? Feel free to file a bug.</desc>
   </info>
 
 <title>Report a Problem</title>
@@ -25,7 +25,7 @@
    If you notice a problem you can file a <em>bug report</em>. To file a bug, go to <link href = "https://bugzilla.gnome.org/"/>.
    </p>
    <p>
-   This is a bug tracking system where users and developers can file details about bugs, crashes and request enhancements.  
+   This is a bug tracking system where users and developers can file details about bugs, crashes and request enhancements.
    </p>
    <p>
    To participate you need an account which will give you the ability to gain access, file bugs, and make comments.  Also, you need to register so you can receive updates by e-mail about the status of your bug. If you don't already have an account, just click on the <gui>New Account</gui> link to create one.
@@ -35,7 +35,7 @@
    Before reporting a bug, please read the <link href = "https://bugzilla.gnome.org/page.cgi?id=bug-writing.html">bug writing guidelines</link>,  and please <link href="https://bugzilla.gnome.org/browse.cgi?product=gnome-games">browse</link> for the bug to see if it already exists.
    </p>
    <p>
-   To file your bug, choose the component <gui>quadrapassel</gui> in the <gui>Component</gui> menu. 
+   To file your bug, choose the component <gui>quadrapassel</gui> in the <gui>Component</gui> menu.
    </p>
    <p>
    If you are requesting a new feature, choose <gui>enhancement</gui> in the <gui>Severity</gui> menu.
