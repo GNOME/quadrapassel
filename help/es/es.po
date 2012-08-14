@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnometris.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-11 22:44+0000\n"
-"PO-Revision-Date: 2012-08-13 10:52+0200\n"
+"POT-Creation-Date: 2012-08-13 08:58+0000\n"
+"PO-Revision-Date: 2012-08-14 12:33+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -212,13 +212,6 @@ msgstr ""
 "media>Quadrapassel"
 
 #: C/index.page:20(page/p)
-#| msgid ""
-#| "In Quadrapassel, the GNOME version of Tetris, your goal is to create as "
-#| "many complete horizontal lines as possible. The lines are made from seven "
-#| "different shapes that, in a random order, fall from the top center of the "
-#| "screen. Your task is to rotate and move them across the screen to make "
-#| "complete lines. By making complete horizontal lines, you score more, you "
-#| "level up and the blocks fall faster."
 msgid ""
 "In Quadrapassel, the GNOME version of Tetris, your goal is to create as many "
 "complete horizontal lines as possible. The lines are made from seven "
@@ -235,22 +228,18 @@ msgstr ""
 "rápido. A medida que avanza, aumenta la velocidad de caída de los bloques."
 
 #: C/index.page:33(td/p)
-#| msgid "<link xref=\"playgame\">PLAY Game</link>"
 msgid "<link xref=\"playgame\">Play the game</link>"
 msgstr "<link xref=\"playgame\">Jugar</link>"
 
 #: C/index.page:34(td/p)
-#| msgid "<link xref=\"scoremore\">Score MORE</link>"
 msgid "<link xref=\"score\">Score points</link>"
 msgstr "<link xref=\"score\">Puntuaciones</link>"
 
 #: C/index.page:55(td/p)
-#| msgid "<link xref=\"settings\">Settings</link>"
 msgid "<link xref=\"preferences\">Preferences</link>"
 msgstr "<link xref=\"preferences\">Preferencias</link>"
 
 #: C/index.page:56(td/p)
-#| msgid "<link xref=\"get-involved\">GET Involved</link>"
 msgid "<link xref=\"get-involved\">Get involved</link>"
 msgstr "<link xref=\"get-involved\">Involucrarse</link>"
 
@@ -275,9 +264,6 @@ msgstr "<link xref=\"get-involved\">Involucrarse</link>"
 #. whatever you like once you have updated your copy of the file.
 #: C/bug-filing.page:49(media) C/develop.page:28(media)
 #: C/documentation.page:28(media) C/translate.page:41(media)
-#| msgctxt "_"
-#| msgid ""
-#| "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
 msgctxt "_"
 msgid ""
 "external ref='media/go-previous.png' md5='e9ce3da4ee6497ce2f38178c3c929872'"
@@ -327,8 +313,6 @@ msgstr ""
 #: C/documentation.page:29(media) C/get-involved.page:22(media)
 #: C/playgame.page:43(media) C/preferences.page:72(media)
 #: C/score.page:37(media) C/translate.page:42(media)
-#| msgctxt "_"
-#| msgid "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
 msgctxt "_"
 msgid "external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
 msgstr ""
@@ -343,7 +327,7 @@ msgstr "Tiffany Antopolski"
 
 #: C/bug-filing.page:20(info/desc)
 msgid "Found a problem? Feel free to file a bug."
-msgstr ""
+msgstr "¿Ha encontrado un error? Siéntase libre de abrir un informe de error."
 
 #: C/bug-filing.page:23(page/title)
 msgid "Report a Problem"
@@ -354,6 +338,8 @@ msgid ""
 "If you notice a problem you can file a <em>bug report</em>. To file a bug, "
 "go to <link href=\"https://bugzilla.gnome.org/\"/>."
 msgstr ""
+"Si ha encontrado un error, puede abrir un <em>informe de error</em>. Para "
+"hacerlo, vaya a <link href=\"https://bugzilla.gnome.org/\"/>."
 
 #: C/bug-filing.page:27(page/p)
 msgid ""
@@ -398,6 +384,8 @@ msgid ""
 "To file your bug, choose the component <gui>quadrapassel</gui> in the "
 "<gui>Component</gui> menu."
 msgstr ""
+"Para enviar su informe de error, elija el componente <gui>quadrapassel</gui> "
+"en el menú <gui>Component</gui>."
 
 #: C/bug-filing.page:40(page/p)
 msgid ""
@@ -405,16 +393,20 @@ msgid ""
 "<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
 "click <gui>Commit</gui>."
 msgstr ""
+"Si está solicitando una característica nueva, elija <gui>enhancement</gui> "
+"en el menú <gui>Severity</gui>. Rellene las secciones «Summary» y "
+"«Description» y pulse en <gui>Commit</gui>."
 
 #: C/bug-filing.page:44(page/p)
 msgid ""
 "Your report will be given an ID number, and its status will be updated as it "
 "is being dealt with."
 msgstr ""
+"Se asignará un número de ID a su informe, y su estado se actualizará a "
+"medida que se vaya tratando."
 
 #: C/bug-filing.page:49(section/p) C/develop.page:28(section/p)
 #: C/documentation.page:28(section/p) C/translate.page:41(section/p)
-#| msgid "<link xref=\"get-involved\">GET Involved</link>"
 msgid ""
 "<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous.png"
 "\"/>Get Involved</link>"
@@ -436,6 +428,8 @@ msgstr ""
 #: C/develop.page:21(info/desc)
 msgid "Have a plan for developing the game? We are always open to new ideas."
 msgstr ""
+"¿Tiene una idea para desarrollar un juego? Siempre estamos dispuestos a "
+"escuchar nuevas ideas."
 
 #: C/develop.page:24(page/title)
 msgid "Help develop"
@@ -450,10 +444,16 @@ msgid ""
 "href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
 "link>."
 msgstr ""
+"Si quiere <link href=\"https://live.gnome.org/GnomeGames/Contributing"
+"\">contribuir al desarrollo de los <app>juegos de GNOME</app></link>, puede "
+"ponerse en contacto con los desarrolladores usando <link href=\"https://"
+"cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</"
+"link>, o mediante la <link href=\"http://mail.gnome.org/mailman/listinfo/"
+"games-list\">lista de correo</link>."
 
 #: C/documentation.page:19(info/desc)
 msgid "Contribute to the documentation."
-msgstr ""
+msgstr "Contribuir con la documentación"
 
 #: C/documentation.page:22(page/title)
 msgid "Help write documentation"
@@ -466,6 +466,10 @@ msgid ""
 "gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
 "mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgstr ""
+"Para colaborar con el Proyecto de documentación, póngase en contacto usando "
+"<link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%"
+"2Fdocs\">irc</link>, o mediante la <link href=\"http://mail.gnome.org/"
+"mailman/listinfo/gnome-doc-list\">lista de correo</link>."
 
 #: C/documentation.page:25(page/p)
 msgid ""
@@ -484,9 +488,10 @@ msgid ""
 "<app>Quadrapassel</app> is maintained by a volunteer community. You are "
 "invited to participate in any of the following ways."
 msgstr ""
+"<app>Quadrapassel</app> lo mantiene una comunidad de voluntarios. Si quiere "
+"participar de alguna de las siguientes maneras, es bienvenido."
 
 #: C/legal.xml:3(p/link)
-#| msgid "Creative Commons Share Alike 3.0"
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 msgstr "Creative Commons de Atribución-Compartir Igual 3.0 sin soporte"
 
@@ -574,22 +579,18 @@ msgstr ""
 "sa/3.0/\"> Escrito de Commons</link>."
 
 #: C/playgame.page:16(license/p)
-#| msgid "Creative Commons Share Alike 3.0"
 msgid "Creative Commons Attribution Share Alike 3.0"
 msgstr "Creative Commons Atribución - Compartir igual 3.0"
 
 #: C/playgame.page:20(page/title)
 msgid "PLAY PLAY PLAY!"
-msgstr ""
+msgstr "Jugar, jugar, jugar"
 
 #: C/playgame.page:23(section/title)
 msgid "How To Play"
 msgstr "Cómo jugar"
 
 #: C/playgame.page:26(item/p)
-#| msgid ""
-#| "<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
-#| "correspondingly across the screen."
 msgid ""
 "The <key>←</key> and <key>→</key> keys move the blocks across the screen."
 msgstr ""
@@ -602,6 +603,9 @@ msgid ""
 "counterclockwise by default) can be changed in the <link xref=\"preferences"
 "\">Preferences</link>."
 msgstr ""
+"La tecla <key>↑</key> rota el bloque. La rotación (que, de manera "
+"predeterminada, es en sentido anti-horario) se puede cambiar en las <link "
+"xref=\"preferences\">Preferencias</link>."
 
 #: C/playgame.page:28(item/p)
 msgid ""
@@ -610,6 +614,10 @@ msgid ""
 "<key>↓</key> key causes a soft-drop (temporary increase in speed while the "
 "key is held down)."
 msgstr ""
+"Las teclas <key>Espacio</key> y <key>↓</key> incrementan la velocidad de la "
+"caída. La tecla <key>Espacio</key> hace que la ficha caiga de golpe. La "
+"tecla <key>↓</key> acelera la caída de la ficha temporalmente, mientras se "
+"mantiene pulsada."
 
 #: C/playgame.page:33(section/title)
 msgid "Rules"
@@ -617,21 +625,23 @@ msgstr "Reglas"
 
 #: C/playgame.page:35(section/p)
 msgid "There are a couple of rules that you should keep in mind:"
-msgstr ""
+msgstr "Hay una serie de reglas que debe tener en cuenta:"
 
 #: C/playgame.page:37(item/p)
 msgid ""
 "You can pause, end, start a new game, get help or quit the program at any "
 "time."
 msgstr ""
+"Puede pausar, terminar, iniciar una partida, obtener ayuda o salir del "
+"programa en cualquier momento."
 
 #: C/playgame.page:38(item/p)
 msgid "You can pause the game as many times as you want."
-msgstr ""
+msgstr "Puede pausar el juego tantas veces como quiera."
 
 #: C/preferences.page:18(info/desc)
 msgid "Preferences for the game and the theme."
-msgstr ""
+msgstr "Preferencias del juego y del tema."
 
 #: C/preferences.page:22(page/title)
 msgid "Game Preferences"
@@ -642,12 +652,16 @@ msgid ""
 "To change the game preferences, click the <guiseq><gui>Quadrapassel menu</"
 "gui><gui>Preferences</gui></guiseq>."
 msgstr ""
+"Para cambiar las preferencias del juego, pulse el <guiseq><gui>menú de "
+"Quadrapassel</gui><gui>Preferencias</gui></guiseq>."
 
 #: C/preferences.page:26(page/p)
 msgid ""
 "The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
 "<gui>Theme</gui>."
 msgstr ""
+"Las tres pestañas disponibles son <gui>Controles</gui>, <gui>Juego</gui> y "
+"<gui>Tema</gui>."
 
 #: C/preferences.page:29(section/title)
 msgid "Controls"
@@ -668,6 +682,8 @@ msgid ""
 "Under the <gui>Game</gui> tab, you can change the way in which the game "
 "starts:"
 msgstr ""
+"En la pestaña <gui>Juego</gui> puede cambiar la manera en la que empieza el "
+"juego:"
 
 #: C/preferences.page:37(item/p)
 msgid ""
@@ -683,7 +699,7 @@ msgstr ""
 
 #: C/preferences.page:39(item/p)
 msgid "<gui>Starting level</gui> controls the speed with which you will start."
-msgstr ""
+msgstr "<gui>Nivel inicial</gui> controla la velocidad con la que empieza."
 
 #: C/preferences.page:41(section/p)
 msgid "These options can vary from 0 to 19, 0 to 10, and 1 to 20 respectively."
@@ -691,30 +707,25 @@ msgstr ""
 
 #: C/preferences.page:43(section/p)
 msgid "Other available options are:"
-msgstr ""
+msgstr "Otras opciones disponibles son:"
 
 #: C/preferences.page:45(item/p)
-#| msgid "Enable sounds"
 msgid "<gui>Enable sounds</gui>"
 msgstr "<gui>Activar sonidos</gui>"
 
 #: C/preferences.page:46(item/p)
-#| msgid "Preview Next Block"
 msgid "<gui>Preview next block</gui>"
 msgstr "<gui>Ver próximo bloque</gui>"
 
 #: C/preferences.page:47(item/p)
-#| msgid "Choose Difficult Blocks"
 msgid "<gui>Choose difficult blocks</gui>"
 msgstr "<gui>Seleccionar la dificultad de los bloques</gui>"
 
 #: C/preferences.page:48(item/p)
-#| msgid "Rotate Blocks Counterclockwise"
 msgid "<gui>Rotate blocks counterclockwise</gui>"
 msgstr "<gui>Rotar en sentido contrario al reloj</gui>"
 
 #: C/preferences.page:49(item/p)
-#| msgid "Show where the block will land"
 msgid "<gui>Show where the block will land</gui>"
 msgstr "<gui>Mostrar dónde aterrizará el bloque</gui>"
 
@@ -730,38 +741,40 @@ msgstr "Para cambiar el tema:"
 msgid ""
 "click the <guiseq><gui>Quadrapassel menu</gui><gui>Preference</gui></guiseq>."
 msgstr ""
+"pulse en el <guiseq><gui>menú de Quadrapassel</gui><gui>Preferencias</gui></"
+"guiseq>."
 
 #: C/preferences.page:58(item/p)
 msgid "select the <gui>Theme</gui> tab."
-msgstr ""
+msgstr "seleccione la pestaña <gui>Tema</gui>."
 
 #: C/preferences.page:60(section/p)
 msgid "Four different themes are available for the blocks' contours:"
-msgstr ""
+msgstr "Hay disponibles 4 tipos diferentes de contornos de bloques:"
 
 #: C/preferences.page:64(item/p)
 msgid "Plain"
-msgstr ""
+msgstr "Plano"
 
 #: C/preferences.page:65(item/p)
 msgid "Tango Flat"
-msgstr ""
+msgstr "Tango liso"
 
 #: C/preferences.page:66(item/p)
 msgid "Tango Shaded"
-msgstr ""
+msgstr "Tango sombreado"
 
 #: C/preferences.page:67(item/p)
 msgid "Clean"
-msgstr "Limpiar"
+msgstr "Limpio"
 
 #: C/score.page:20(page/title)
 msgid "Score"
-msgstr ""
+msgstr "Puntuación"
 
 #: C/score.page:21(page/p)
 msgid "Do you think you can reach level 10?"
-msgstr ""
+msgstr "¿Cree que puede llegar al nivel 10?"
 
 #: C/score.page:24(section/title)
 msgid "Score More"
@@ -784,7 +797,6 @@ msgid ""
 msgstr ""
 
 #: C/score.page:30(section/title)
-#| msgid "Viewing Past Scores"
 msgid "High Scores"
 msgstr "Puntuaciones más altas"
 
@@ -803,7 +815,7 @@ msgstr ""
 
 #: C/translate.page:16(info/desc)
 msgid "Do you know a world language?"
-msgstr ""
+msgstr "¿Conoce un idioma?"
 
 #: C/translate.page:19(page/title)
 msgid "Help translate"
@@ -814,6 +826,8 @@ msgid ""
 "The <app>GNOME games</app> user interface and documentation is being "
 "translated by a world-wide volunteer community."
 msgstr ""
+"La interfaz de usuario de los <app>juegos de GNOME</app> y su documentación "
+"las traduce una comunidad de voluntarios de todo el mundo."
 
 #: C/translate.page:25(page/p)
 msgid ""
