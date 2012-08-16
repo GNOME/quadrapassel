@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnometris.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-13 08:58+0000\n"
-"PO-Revision-Date: 2012-08-14 12:33+0200\n"
+"POT-Creation-Date: 2012-08-14 14:28+0000\n"
+"PO-Revision-Date: 2012-08-16 17:07+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -672,6 +672,8 @@ msgid ""
 "By double-clicking on the given controls, thus selecting the new one, you "
 "can change the control keys."
 msgstr ""
+"Al pulsar dos veces en los controles dados y, por lo tanto, seleccionando "
+"uno nuevo, puede cambiar las teclas de controles."
 
 #: C/preferences.page:34(section/title)
 msgid "Game"
@@ -690,12 +692,16 @@ msgid ""
 "<gui>Number of pre-filled rows</gui> indicates how many rows with blocks "
 "there will be when the game starts."
 msgstr ""
+"<gui>Número de filas prerrellenadas</gui> indica cuántas filas con bloques "
+"habrá cuando empiece la partida."
 
 #: C/preferences.page:38(item/p)
 msgid ""
 "<gui>Density of blocks in a pre-filled row</gui> indicates how many blocks "
 "there will be in a pre-filled row when the game starts."
 msgstr ""
+"<gui>Densidad de los los bloques en una fila prerrellenada</gui> indica "
+"cuántos bloques habrá en una fila prerrellenada cuando empiece la partida."
 
 #: C/preferences.page:39(item/p)
 msgid "<gui>Starting level</gui> controls the speed with which you will start."
@@ -704,6 +710,7 @@ msgstr "<gui>Nivel inicial</gui> controla la velocidad con la que empieza."
 #: C/preferences.page:41(section/p)
 msgid "These options can vary from 0 to 19, 0 to 10, and 1 to 20 respectively."
 msgstr ""
+"Estas opciones pueden variar de 0 a 19, 0 a 10 y de 1 a 20, respectivamente."
 
 #: C/preferences.page:43(section/p)
 msgid "Other available options are:"
@@ -787,6 +794,10 @@ msgid ""
 "have a better score, try to adapt the screen, the keyboard, and the level "
 "(the speed) that fits you the most!"
 msgstr ""
+"Si empieza en el nivel 1, la única manera de pasar al siguiente nivel es "
+"completar más lineas, es decir, acumular más puntos. Para obtener una mejor "
+"puntuación, pruebe a adaptar la pantalla, el teclado y el nivel (la "
+"velocidad) que más le convenga."
 
 #: C/score.page:26(section/p)
 msgid ""
@@ -795,6 +806,10 @@ msgid ""
 "of drop. You can change your settings in in <link xref=\"preferences"
 "\">Preference</link>. After deciding what fits you the most, you will rock!"
 msgstr ""
+"Puede cambiar los controles del teclado, el contorno de los bloques, el "
+"número y la densidad de las líneas con las que empieza y la velocidad de la "
+"caída. Puede cambiar su configuración en <link xref=\"preferences"
+"\">Preferencias</link>. Después de elegir la mejor, seguro que gana."
 
 #: C/score.page:30(section/title)
 msgid "High Scores"
@@ -806,12 +821,17 @@ msgid ""
 "gui><gui>Scores</gui></guiseq> you can find the records from the highest to "
 "the lowest score."
 msgstr ""
+"Todo el mundo quieres estar en la cima de la lista, ¿verdad? En "
+"<guiseq><gui>Juego</gui><gui>Puntuación</gui></guiseq> puede ver las "
+"puntuaciones, desde las más altas hasta las más bajas."
 
 #: C/score.page:33(section/p)
 msgid ""
 "The scores cannot be deleted, so do not worry that someone will remove your "
 "best high score!"
 msgstr ""
+"La puntuación no se puede borrar, así que no se preocupe si alguien le quita "
+"su puntuación más alta."
 
 #: C/translate.page:16(info/desc)
 msgid "Do you know a world language?"
