@@ -44,8 +44,8 @@ msgid "GNOME Documentation Project"
 msgstr "GNOMEn dokumentointiprojekti"
 
 #: C/quadrapassel.xml:2(para)
-msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any later version published by the Free Software Foundation with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
-msgstr "Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software Foundationin julkaiseman GNU Free Documentation License -lisenssin (GFDL) version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. Kopion GFDL:stä voi nähdä napsauttamalla <ulink type=\"help\" url=\"ghelp:fdl\">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-nimisen tiedoston."
+msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any later version published by the Free Software Foundation with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy of the GFDL at this <ulink type=\"help\" url=\"help:fdl\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+msgstr "Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software Foundationin julkaiseman GNU Free Documentation License -lisenssin (GFDL) version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. Kopion GFDL:stä voi nähdä napsauttamalla <ulink type=\"help\" url=\"help:fdl\">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-nimisen tiedoston."
 
 #: C/quadrapassel.xml:12(para)
 msgid "This manual is part of a collection of GNOME manuals distributed under the GFDL. If you want to distribute this manual separately from the collection, you can do so by adding a copy of the license to the manual, as described in section 6 of the license."
@@ -397,8 +397,8 @@ msgid "License"
 msgstr "Käyttöoikeus"
 
 #: C/quadrapassel.xml:281(para)
-msgid "This program is free software; you can redistribute it and/or modify it under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl\"><citetitle>GNU General Public License</citetitle></ulink> as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "Tämä ohjelma on vapaa ohjelmisto. Voit jaella ja/tai muokata sitä Free Software Foundationin<ulink type=\"help\" url=\"gnome-help:gpl\"><citetitle>GNU General Public Licensen</citetitle></ulink> version 2 tai (valintasi mukaan) uudemman ehtojen mukaisesti."
+msgid "This program is free software; you can redistribute it and/or modify it under the terms of the <ulink type=\"help\" url=\"help:gpl\"><citetitle>GNU General Public License</citetitle></ulink> as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
+msgstr "Tämä ohjelma on vapaa ohjelmisto. Voit jaella ja/tai muokata sitä Free Software Foundationin<ulink type=\"help\" url=\"help:gpl\"><citetitle>GNU General Public Licensen</citetitle></ulink> version 2 tai (valintasi mukaan) uudemman ehtojen mukaisesti."
 
 #: C/quadrapassel.xml:283(para)
 msgid "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public License</citetitle> for more details."
