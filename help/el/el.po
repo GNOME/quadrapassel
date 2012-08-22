@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnometris.HEAD.el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-10 21:38+0000\n"
-"PO-Revision-Date: 2012-07-11 21:26+0200\n"
+"POT-Creation-Date: 2012-08-11 22:44+0000\n"
+"PO-Revision-Date: 2012-08-22 02:34+0200\n"
 "Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "Language: el\n"
@@ -22,10 +22,19 @@ msgstr ""
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Χρήστος Μπούνταλης <mpounta@gmail.com>, 2007\n"
-"Νικόλαος Μπακαούκας <nikolaosx1@gmail.com>, 2010\n"
-"Μιχάλης Κοτσαρίνης <mk73628@gmail.com>, 2010"
+"Ελληνική μεταφραστική ομάδα GNOME\n"
+" Χρήστος Μπούνταλης <mpounta@gmail.com>, 2007\n"
+" Νικόλαος Μπακαούκας <nikolaosx1@gmail.com>, 2010\n"
+" Μιχάλης Κοτσαρίνης <mk73628@gmail.com>, 2010\n"
+" Θάνος Τρυφωνίδης <tomtryf@gmail.com>, 2012\n"
+"\n"
+"Για περισσότερες πληροφορίες, επισκεφθείτε την σελίδα http://gnome.gr/"
 
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
@@ -43,6 +52,11 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
 #: C/index.page:18(media)
 msgctxt "_"
 msgid ""
@@ -54,7 +68,12 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:26(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:24(media)
 msgctxt "_"
 msgid "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
 msgstr "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
@@ -63,7 +82,12 @@ msgstr "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:31(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:29(media)
 msgctxt "_"
 msgid "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
 msgstr "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
@@ -72,7 +96,12 @@ msgstr "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:42(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:40(media)
 msgctxt "_"
 msgid "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
 msgstr "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
@@ -81,7 +110,12 @@ msgstr "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:43(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:41(media)
 msgctxt "_"
 msgid "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
 msgstr "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
@@ -90,7 +124,12 @@ msgstr "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:50(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:48(media)
 msgctxt "_"
 msgid "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
 msgstr "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
@@ -99,7 +138,12 @@ msgstr "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:51(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:49(media)
 msgctxt "_"
 msgid "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
 msgstr "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
@@ -108,7 +152,12 @@ msgstr "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:63(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:61(media)
 msgctxt "_"
 msgid "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
 msgstr "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
@@ -117,7 +166,12 @@ msgstr "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:68(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:66(media)
 msgctxt "_"
 msgid "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
 msgstr "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
@@ -132,15 +186,26 @@ msgctxt "text"
 msgid "Quadrapassel"
 msgstr "Τουβλάκια"
 
-#: C/index.page:10(credit/name)
+#: C/index.page:10(credit/name) C/bug-filing.page:14(credit/name)
+#: C/develop.page:15(credit/name) C/documentation.page:13(credit/name)
+#: C/get-involved.page:7(credit/name) C/playgame.page:7(credit/name)
+#: C/preferences.page:7(credit/name) C/score.page:7(credit/name)
+#: C/translate.page:13(credit/name)
 msgid "Elena Petrevska"
 msgstr "Elena Petrevska"
 
-#: C/index.page:12(credit/years)
+#: C/index.page:12(credit/years) C/bug-filing.page:11(credit/years)
+#: C/develop.page:12(credit/years) C/documentation.page:10(credit/years)
+#: C/get-involved.page:9(credit/years) C/playgame.page:9(credit/years)
+#: C/preferences.page:9(credit/years) C/score.page:9(credit/years)
+#: C/translate.page:10(credit/years)
 msgid "2012"
 msgstr "2012"
 
-#: C/index.page:15(license/p)
+#: C/index.page:15(license/p) C/bug-filing.page:18(license/p)
+#: C/develop.page:19(license/p) C/documentation.page:17(license/p)
+#: C/get-involved.page:12(license/p) C/preferences.page:16(license/p)
+#: C/score.page:16(license/p)
 msgid "Creative Commons Share Alike 3.0"
 msgstr "Creative Commons Share Alike 3.0"
 
@@ -153,13 +218,20 @@ msgstr ""
 "Τουβλάκια</media>Τουβλάκια"
 
 #: C/index.page:20(page/p)
+#| msgid ""
+#| "In Quadrapassel, the GNOME version of Tetris, your goal is to create as "
+#| "many complete horizontal lines as possible. The lines are made from seven "
+#| "different shapes that, in a random order, fall from the top center of the "
+#| "screen. Your task is to rotate and move them across the screen to make "
+#| "complete lines. By making complete horizontal lines, you score more, you "
+#| "level up and the blocks fall faster."
 msgid ""
 "In Quadrapassel, the GNOME version of Tetris, your goal is to create as many "
 "complete horizontal lines as possible. The lines are made from seven "
-"different shapes that, in a random order, fall from the top center of the "
-"screen. Your task is to rotate and move them across the screen to make "
-"complete lines. By making complete horizontal lines, you score more, you "
-"level up and the blocks fall faster."
+"different shapes. The shapes fall randomly from the top center of the "
+"screen. Your task is to rotate and move the shapes across the screen to make "
+"complete lines. By making complete horizontal lines, you score points and "
+"move up levels. As you progress, the speed of the falling blocks increases."
 msgstr ""
 "Στα Τουβλάκια, η GNOME έκδοση του Tetris, ο στόχος του παιχνιδιού είναι να "
 "δημιουργηθούν πλήρεις οριζόντιες γραμμές κύβων. Οι κύβοι έρχονται σε επτά "
@@ -169,729 +241,1311 @@ msgstr ""
 "η βαθμολογία σας αυξάνεται, αυξάνεται και το επίπεδο δυσκολίας, και η πτώση "
 "των κύβων γίνεται γρηγορότερη."
 
-#: C/index.page:35(td/p)
-msgid "<link xref=\"playgame\">PLAY Game</link>"
-msgstr "<link xref=\"playgame\">ΠΑΙΞΤΕ ένα παιχνίδι</link>"
+#: C/index.page:33(td/p)
+#| msgid "<link xref=\"playgame\">PLAY Game</link>"
+msgid "<link xref=\"playgame\">Play the game</link>"
+msgstr "<link xref=\"playgame\">Παίξτε το παιχνίδι</link>"
 
-#: C/index.page:36(td/p)
-msgid "<link xref=\"scoremore\">Score MORE</link>"
-msgstr "<link xref=\"scoremore\">Σκοράρετε ΠΕΡΙΣΣΟΤΕΡΑ</link>"
+#: C/index.page:34(td/p)
+#| msgid "<link xref=\"scoremore\">Score MORE</link>"
+msgid "<link xref=\"score\">Score points</link>"
+msgstr "<link xref=\"score\">Σημειώστε πόντους</link>"
 
-#: C/index.page:57(td/p)
-msgid "<link xref=\"settings\">Settings</link>"
-msgstr "<link xref=\"settings\">Ρυθμίσεις</link>"
+#: C/index.page:55(td/p)
+#| msgid "<link xref=\"settings\">Settings</link>"
+msgid "<link xref=\"preferences\">Preferences</link>"
+msgstr "<link xref=\"preferences\">Προτιμήσεις</link>"
 
-#: C/index.page:58(td/p)
-msgid "<link xref=\"get-involved\">GET Involved</link>"
-msgstr "<link xref=\"get-involved\">Συμμετάσχετε</link>"
+#: C/index.page:56(td/p)
+#| msgid "<link xref=\"get-involved\">GET Involved</link>"
+msgid "<link xref=\"get-involved\">Get involved</link>"
+msgstr "<link xref=\"get-involved\">Συμμετοχή</link>"
 
-#: C/legal.xml:9(para/ulink)
-msgid "link"
-msgstr "σύνδεσμο"
-
-#: C/legal.xml:2(legalnotice/para)
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/bug-filing.page:49(media) C/develop.page:28(media)
+#: C/documentation.page:28(media) C/translate.page:41(media)
+#| msgctxt "_"
+#| msgid ""
+#| "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
+msgctxt "_"
 msgid ""
-"Permission is granted to copy, distribute and/or modify this document under "
-"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
-"later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
-"with this manual."
+"external ref='media/go-previous.png' md5='e9ce3da4ee6497ce2f38178c3c929872'"
 msgstr ""
-"Χορηγείται άδεια αντιγραφής, διανομής και/ή τροποποίησης του παρόντος "
-"εγγράφου υπό τους όρους της έκδοσης 1.1 της Ελεύθερης Άδειας Τεκμηρίωσης GNU "
-"(GFDL), ή οποιασδήποτε μεταγενέστερης έκδοσής αυτής από το Ίδρυμα Ελεύθερου "
-"Λογισμικού (FSF), χωρίς αμετάβλητα τμήματα, κείμενα εξωφύλλου και κείμενα "
-"οπισθοφύλλου. Αντίγραφο της άδειας GFDL είναι διαθέσιμο στον ακόλουθο <_:"
-"ulink-1/>, ή στο αρχείο COPYING-DOCS που διανέμεται μαζί με το παρόν "
-"εγχειρίδιο."
+"external ref='media/go-previous.png' md5='e9ce3da4ee6497ce2f38178c3c929872'"
 
-#: C/legal.xml:12(legalnotice/para) C/index.docbook:12(legalnotice/para)
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/bug-filing.page:50(media) C/develop.page:29(media)
+#: C/documentation.page:29(media) C/get-involved.page:22(media)
+#: C/playgame.page:43(media) C/preferences.page:72(media)
+#: C/score.page:37(media) C/translate.page:42(media)
+#| msgctxt "_"
+#| msgid "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
+msgctxt "_"
+msgid "external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
+msgstr ""
+"external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
+
+#: C/bug-filing.page:9(credit/name) C/develop.page:10(credit/name)
+#: C/documentation.page:8(credit/name) C/playgame.page:12(credit/name)
+#: C/preferences.page:12(credit/name) C/score.page:12(credit/name)
+#: C/translate.page:8(credit/name)
+msgid "Tiffany Antopolski"
+msgstr "Tiffany Antopolski"
+
+#: C/bug-filing.page:20(info/desc)
+msgid "Found a problem? Feel free to file a bug."
+msgstr "Βρήκατε ένα πρόβλημα; Μη διστάσετε να αναφέρετε το σφάλμα."
+
+#: C/bug-filing.page:23(page/title)
+msgid "Report a Problem"
+msgstr "Αναφορά ενός προβλήματος"
+
+#: C/bug-filing.page:24(page/p)
 msgid ""
-"This manual is part of a collection of GNOME manuals distributed under the "
-"GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in "
-"section 6 of the license."
+"If you notice a problem you can file a <em>bug report</em>. To file a bug, "
+"go to <link href=\"https://bugzilla.gnome.org/\"/>."
 msgstr ""
-"Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME όπως "
-"διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την "
-"τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση "
-"συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 "
-"της άδειας."
+"Αν παρατηρήσετε κάποιο πρόβλημα μπορείτε να κάνετε μια <em>αναφορά σφάλματος "
+"(bug report)</em>. Για να κάνετε αναφορά σφάλματος πηγαίνετε <link href="
+"\"https://bugzilla.gnome.org/\"/>."
 
-#: C/legal.xml:19(legalnotice/para) C/index.docbook:19(legalnotice/para)
+#: C/bug-filing.page:27(page/p)
 msgid ""
-"Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any GNOME "
-"documentation, and the members of the GNOME Documentation Project are made "
-"aware of those trademarks, then the names are in capital letters or initial "
-"capital letters."
+"This is a bug tracking system where users and developers can file details "
+"about bugs, crashes and request enhancements."
 msgstr ""
-"Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα "
-"προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέν. Όπου αυτά τα ονόματα "
-"εμφανίζονται στην τεκμηρίωση GNOME, και τα μέλη της ομάδας τεκμηρίωσης GNOME "
-"έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με "
-"αρχικούς κεφαλαίους χαρακτήρες."
+"Αυτό είναι ένα σύστημα καταγραφής σφαλμάτων όπου χρήστες και προγραμματιστές "
+"μπορούν να κάνουν αναφορές για σφάλματα, «κρασαρίσματα» και βελτιώσεις."
 
-#: C/legal.xml:35(listitem/para) C/index.docbook:35(listitem/para)
+#: C/bug-filing.page:30(page/p)
 msgid ""
-"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
-"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
-"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
-"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
-"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
-"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
-"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
-"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
-"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
-"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
-"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+"To participate you need an account which will give you the ability to gain "
+"access, file bugs, and make comments. Also, you need to register so you can "
+"receive updates by e-mail about the status of your bug. If you don't already "
+"have an account, just click on the <gui>New Account</gui> link to create one."
 msgstr ""
-"Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ \"ΩΣ ΕΧΕΙ\", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ ΝΑ "
-"ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΓΙΑ "
-"ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ "
-"ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ "
-"ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ "
-"ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. "
-"ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ "
-"ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ."
+"Για να συμμετάσχετε χρειαζόσαστε έναν λογαριασμό που θα σας δώσει τη "
+"δυνατότητα να αποκτήσετε πρόσβαση σε αρχεία σφαλμάτων και να σχολιάσετε. "
+"Επίσης, χρειάζεται να καταχωρηθείτε έτσι ώστε να μπορείτε να δεχόσαστε "
+"ενημερώσεις ηλεκτρονικά για την κατάσταση του σφάλματός σας. Εάν δεν έχετε "
+"ήδη ένα λογαριασμό, πατήστε απλά στο σύνδεσμο <gui>New Account</gui> για να "
+"δημιουργήσετε έναν."
 
-#: C/legal.xml:55(listitem/para) C/index.docbook:55(listitem/para)
+#: C/bug-filing.page:33(page/p)
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
-"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
-"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
-"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
-"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
-"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
-"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
-"POSSIBILITY OF SUCH DAMAGES."
+"Once you have an account, log in, click on <guiseq><gui>File a Bug</"
+"gui><gui>Applications</gui><gui>gnome-games</gui></guiseq>. Before reporting "
+"a bug, please read the <link href=\"https://bugzilla.gnome.org/page.cgi?"
+"id=bug-writing.html\">bug writing guidelines</link>, and please <link href="
+"\"https://bugzilla.gnome.org/browse.cgi?product=gnome-games\">browse</link> "
+"for the bug to see if it already exists."
 msgstr ""
-"ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή "
-"ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ "
-"ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ "
-"ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ "
-"ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ "
-"ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ."
+"Μόλις δημιουργήσετε λογαριασμό, συνδεθείτε (log in), πατήστε στο "
+"<guiseq><gui>File a Bug</gui><gui>Applications</gui><gui>gnome-games</gui></"
+"guiseq>. Πριν αναφέρετε ένα σφάλμα, παρακαλώ διαβάστε το <link href="
+"\"https://bugzilla.gnome.org/page.cgi?id=bug-writing.html\">bug writing "
+"guidelines</link>, και παρακαλώ κάντε <link href=\"https://bugzilla.gnome."
+"org/browse.cgi?product=gnome-games\">αναζήτηση</link> για να δείτε αν "
+"υπάρχει η ίδια αναφορά ήδη."
 
-#: C/legal.xml:28(legalnotice/para) C/index.docbook:28(legalnotice/para)
+#: C/bug-filing.page:37(page/p)
 msgid ""
-"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
-"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
-"<_:orderedlist-1/>"
+"To file your bug, choose the component <gui>quadrapassel</gui> in the "
+"<gui>Component</gui> menu."
 msgstr ""
-"ΤΟ ΠΑΡΟΝ ΕΓΓΡΑΦΟ ΚΑΙ ΟΙ ΤΡΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ "
-"ΟΡΟΥΣ ΤΗΣ ΕΛΕΥΘΕΡΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗΣ GNU (GFDL) ΚΑΙ ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ "
-"ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <_:orderedlist-1/>"
+"Για να αναφέρετε το σφάλμα, διαλέξτε το συστατικό <gui>quadrapassel</gui> "
+"στο μενού <gui>Component</gui>."
 
-#: C/index.docbook:27(articleinfo/title)
-msgid "<application>Quadrapassel</application> Manual"
-msgstr "Τεκμηρίωση για τα <application>Τουβλάκια</application>"
-
-#: C/index.docbook:30(abstract/para)
+#: C/bug-filing.page:40(page/p)
 msgid ""
-"Quadrapassel is GNOME's version of Tetris, the classic game of interlocking "
-"four-piece blocks. As they fall from the top, the player must orient them to "
-"fit the other blocks at the bottom so that they form a complete horizontal "
-"line, in which case that line disappears and the player gains points."
+"If you are requesting a new feature, choose <gui>enhancement</gui> in the "
+"<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
+"click <gui>Commit</gui>."
 msgstr ""
-"Τα Τουβλάκια είναι μια εκδοχή για το GNOME του Tetris, του κλασσικού "
-"παιχνιδιού τακτοποίησης των κομματιών. Καθώς πέφτουν από πάνω, ο χρήστης "
-"πρέπει να τα προσανατολίσει ώστε να ταιριάξουν στα άλλα κομμάτια στο κάτω "
-"μέρος, ώστε να διαμορφώνονται πλήρεις οριζόντιες γραμμές. Σ' αυτή την "
-"περίπτωση οι γραμμές εξαφανίζονται και ο παίκτης κερδίζει πόντους."
+"Αν θέλετε κάποιο καινούργιο χαρακτηριστικό, διαλέξτε <gui>enhancement</gui> "
+"στο μενού <gui>Severity</gui>. Συμπληρώστε την Περίληψη και την Περιγραφή "
+"και πατήστε <gui>Commit</gui>."
 
-#: C/index.docbook:39(articleinfo/copyright)
-msgid "<year>2004</year> <holder>Angela Boyle</holder>"
-msgstr "<year>2004</year> <holder>Angela Boyle</holder>"
-
-#: C/index.docbook:56(publisher/publishername)
-#: C/index.docbook:97(revdescription/para)
-msgid "GNOME Documentation Project"
-msgstr "Έργο τεκμηρίωσης GNOME"
-
-#: C/index.docbook:2(legalnotice/para)
+#: C/bug-filing.page:44(page/p)
 msgid ""
-"Permission is granted to copy, distribute and/or modify this document under "
-"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
-"later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
-"in the file COPYING-DOCS distributed with this manual."
+"Your report will be given an ID number, and its status will be updated as it "
+"is being dealt with."
 msgstr ""
-"Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό τους "
-"όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή "
-"μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά "
-"Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε να "
-"βρείτε ένα αντίγραφο της GFDL σε αυτόν τον <ulink type=\"help\" url=\"ghelp:"
-"fdl\">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε με αυτόν "
-"τον οδηγό."
+"Θα δοθεί ένας αριθμός ID στην αναφορά σας, και η κατάσταση του θα ενημερωθεί "
+"σαν να αντιμετωπίστηκε."
 
-#: C/index.docbook:66(authorgroup/author)
+#: C/bug-filing.page:49(section/p) C/develop.page:28(section/p)
+#: C/documentation.page:28(section/p) C/translate.page:41(section/p)
+#| msgid "<link xref=\"get-involved\">GET Involved</link>"
 msgid ""
-"<firstname>Angela</firstname> <surname>Boyle</surname> <affiliation> "
-"<address> <email>anjela@u.washington.edu</email> </address> </affiliation>"
+"<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous.png"
+"\"/>Get Involved</link>"
 msgstr ""
-"<firstname>Angela</firstname> <surname>Boyle</surname> <affiliation> "
-"<address> <email>anjela@u.washington.edu</email> </address> </affiliation>"
+"<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous.png"
+"\"/>Συμμετοχή</link>"
 
-#: C/index.docbook:94(revdescription/para)
-msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
-msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
-
-#: C/index.docbook:90(revhistory/revision)
+#: C/bug-filing.page:50(section/p) C/develop.page:29(section/p)
+#: C/documentation.page:29(section/p) C/get-involved.page:22(section/p)
+#: C/playgame.page:43(section/p) C/preferences.page:72(section/p)
+#: C/score.page:37(section/p) C/translate.page:42(section/p)
 msgid ""
-"<revnumber>Quadrapassel Manual V2.8</revnumber> <date>June 2004</date> <_:"
-"revdescription-1/>"
+"<link xref=\"index\"><media type=\"image\" src=\"media/go-home.png\"/>HOME</"
+"link>"
 msgstr ""
-"<revnumber>Εγχειρίδιο Τουβλάκια V2.8</revnumber> <date>Ιούνιος 2004</date> "
-"<_:revdescription-1/>"
+"<link xref=\"index\"><media type=\"image\" src=\"media/go-home.png\"/>ΑΡΧΗ</"
+"link>"
 
-#: C/index.docbook:102(articleinfo/releaseinfo)
-msgid "This manual describes version 2.12 of Quadrapassel."
+#: C/develop.page:21(info/desc)
+msgid "Have a plan for developing the game? We are always open to new ideas."
 msgstr ""
-"Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.12 του παιχνιδιού Τουβλάκια."
+"Έχετε ένα σχέδιο για την ανάπτυξη του παιχνιδιού; Είμαστε πάντα ανοιχτοί σε "
+"νέες ιδέες."
 
-#: C/index.docbook:109(legalnotice/title)
-msgid "Feedback"
-msgstr "Ανάδραση"
+#: C/develop.page:24(page/title)
+msgid "Help develop"
+msgstr "Βοήθεια στην ανάπτυξη"
 
-#: C/index.docbook:110(legalnotice/para)
+#: C/develop.page:25(page/p)
 msgid ""
-"To report a bug or make a suggestion regarding the "
-"<application>Quadrapassel</application> application or this manual, follow "
-"the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
-"\"help\">GNOME Feedback Page</ulink>."
+"If you would like to <link href=\"https://live.gnome.org/GnomeGames/"
+"Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
+"touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
+"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
+"link>."
 msgstr ""
-"Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με τα "
-"<application>Τουβλάκια</application>  ή αυτή την τεκμηρίωση, ακολουθήστε τις "
-"οδηγίες στη σελίδα <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
-"\">σελίδα ανατροφοδότησης του GNOME</ulink>."
+"Εάν θα θέλατε να <link href=\"https://live.gnome.org/GnomeGames/Contributing"
+"\">βοηθήσετε στην ανάπτυξη των <app>παιχνιδιών του GNOME</app></link>, "
+"μπορείτε να επικοινωνήσετε με τους προγραμματιστές χρησιμοποιώντας το <link "
+"href=\"https://cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-"
+"games\">irc</link>, ή μέσα από τη <link href=\"http://mail.gnome.org/mailman/"
+"listinfo/games-list\">λίστα αλληλογραφίας μας</link>."
 
-#: C/index.docbook:121(article/indexterm)
-msgid "<primary>Quadrapassel</primary>"
-msgstr "<primary>Τουβλάκια</primary>"
+#: C/documentation.page:19(info/desc)
+msgid "Contribute to the documentation."
+msgstr "Συμμετοχή στην τεκμηρίωση."
 
-#: C/index.docbook:128(sect1/title)
-msgid "Introduction"
-msgstr "Εισαγωγή"
+#: C/documentation.page:22(page/title)
+msgid "Help write documentation"
+msgstr "Βοήθεια συγγραφής τεκμηρίωσης"
 
-#: C/index.docbook:131(sect1/para)
+#: C/documentation.page:23(page/p)
 msgid ""
-"<application>Quadrapassel</application> comes from the classic falling-block "
-"game, <application>Tetris</application>. The goal of the game is to create "
-"complete horizontal lines of blocks, which will disappear. The blocks come "
-"in seven different shapes made from four blocks each: one straight, two L-"
-"shaped, one square, and two S-shaped. The blocks fall from the top center of "
-"the screen in a random order. You rotate the blocks and move them across the "
-"screen to drop them in complete lines. You score by dropping blocks fast and "
-"completing lines. As your score gets higher, you level up and the blocks "
-"fall faster."
+"To contribute to the Documentation Project, feel free to get in touch with "
+"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
+"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
+"mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgstr ""
-"Τα Τουβλάκια προέρχονται από το κλασικό παιχνίδι κύβων, <application>Tetris</"
-"application>. Ο στόχος του παιχνιδιού είναι να δημιουργηθούν οι πλήρεις "
-"οριζόντιες γραμμές κύβων, οι οποίες θα εξαφανιστούν. Οι κύβοι έρχονται σε "
-"επτά διαφορετικές μορφές που γίνονται από τέσσερις κύβους κάθε ένας: ένας "
-"ευθύς, δύο με σχήμα L, ένα τετράγωνο, και δύο σχήμα S. Οι κύβοι πέφτουν από "
-"το πάνω κέντρο της οθόνης με τυχαία σειρά. Εσείς περιστρέφετε τους κύβους "
-"και τους κινείτε στην οθόνη για να τους ρίξετε και να δημιουργήσετε πλήρεις "
-"γραμμές. Αυξάνετε την βαθμολογία σας με τη ρίψη των κύβων γρήγορων και την "
-"ολοκλήρωση των γραμμών. Όσο η βαθμολογία σας αυξάνεται, αυξάνεται και το "
-"επίπεδο δυσκολίας, και η πτώση των κύβων γίνεται γρηγορότερη."
+"Για συμμετοχή στο έργο τεκμηρίωσης, επικοινωνήστε μαζί μας χρησιμοποιώντας "
+"το <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org"
+"%2Fdocs\">irc</link>, ή μέσα από την <link href=\"http://mail.gnome.org/"
+"mailman/listinfo/gnome-doc-list\">λίστα αλληλογραφίας μας</link>."
 
-#: C/index.docbook:134(sect1/para)
+#: C/documentation.page:25(page/p)
 msgid ""
-"To run <application>Quadrapassel</application>, select "
-"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
-"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, or type "
-"<command>quadrapassel</command> in the command line."
+"Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"\">wiki</link> page contains useful information."
 msgstr ""
-"Για να παίξετε με τα <application>Τουβλάκια</application>, επιλέξτε "
-"<menuchoice><guimenu>Εφαρμογές</guimenu><guisubmenu>Παιγνίδια</"
-"guisubmenu><guimenuitem>Τουβλάκια</guimenuitem></menuchoice>, ή "
-"πληκτρολογείστε <command>quadrapassel</command> στην γραμμή εντολών."
+"Το <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"\">wiki</link> μας περιέχει χρήσιμες πληροφορίες."
 
-#: C/index.docbook:137(sect1/para)
+#: C/get-involved.page:16(page/title)
+msgid "Get Involved"
+msgstr "Συμμετοχή"
+
+#: C/get-involved.page:17(page/p)
 msgid ""
-"<application>Quadrapassel</application> is included in the <filename>gnome-"
-"games</filename> package, which is part of the GNOME desktop environment. "
-"This document describes version 2.8 of <application>Quadrapassel</"
-"application>."
+"<app>Quadrapassel</app> is maintained by a volunteer community. You are "
+"invited to participate in any of the following ways."
 msgstr ""
-"Tα <application>Τουβλάκια</application> συμπεριλαμβάνεται στο πακέτο "
-"<filename>gnome-games</filename>, το οποίο είναι κομμάτι του γραφικού "
-"περιβάλλοντος επιφάνειας εργασίας GNOME. Αυτό το έγγραφο περιγράφει την "
-"έκδοση 2.8 του παιχνιδιού <application>Τουβλάκια</application>."
+"Τα <app>Τουβλάκια</app> διατηρούνται από μια εθελοντική κοινότητα. Είστε "
+"ευπρόσδεκτοι να συμμετάσχετε με οποιοδήποτε από τους ακόλουθους τρόπους."
 
-#: C/index.docbook:141(sect1/title)
-msgid "Playing <application>Quadrapassel</application>"
-msgstr "Παίζοντας με τα <application>Τουβλάκια</application>"
+#: C/legal.xml:3(p/link)
+#| msgid "Creative Commons Share Alike 3.0"
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 
-#: C/index.docbook:142(sect1/para)
-msgid ""
-"You can score through two actions: completing lines and dropping blocks "
-"quickly."
-msgstr ""
-"Μπορείτε να αυξήσετε την βαθμολογία σας με δύο τρόπους: συμπληρώνοντας "
-"γραμμές και ρίχνοντας τους κύβους γρήγορα."
+#: C/legal.xml:3(license/p)
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Αυτό το έργο έχει αδειοδοτηθεί υπό την <_:link-1/>."
 
-#: C/index.docbook:144(sect2/title)
-msgid "Moving the Blocks"
-msgstr "Μετακινώντας τους κύβους"
+#: C/license.page:8(info/desc)
+msgid "Legal information."
+msgstr "Νομικές πληροφορίες."
 
-#: C/index.docbook:145(sect2/para)
-msgid "To play the game, you only need the four arrow keys."
-msgstr "Για να παίξετε το παιχνίδι, χρειάζεστε μόνο τα τέσσερα πλήκτρα βέλη."
-
-#: C/index.docbook:148(listitem/para)
-msgid ""
-"<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
-"correspondingly across the screen."
-msgstr ""
-"Το <keycap>Left</keycap> (Αριστερό Βέλος) και το <keycap>Right</keycap> "
-"(Δεξί Βέλος) μετακινούν τον κύβο αντίστοιχα στην οθόνη."
-
-#: C/index.docbook:151(listitem/para)
-msgid ""
-"<keycap>Up</keycap> rotates the block. The default rotation is "
-"counterclockwise. You can change the rotation under "
-"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks "
-"counterclockwise</guilabel>."
-msgstr ""
-"Το <keycap>Up</keycap> (Πάνω Βέλος) περιστρέφει τον κύβο. Η προεπιλεγμένη "
-"φοράς περιστροφής είναι προς τα αριστερά. Μπορείτε να αλλάξετε την φορά "
-"πηγαίνωντας στο <menuchoice><guimenu>Ρυθμίσεις</"
-"guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice> και ξεδιαλέγωντας "
-"το <guilabel>Περιστροφή κύβων προς τα αριστερά</guilabel>."
-
-#: C/index.docbook:154(listitem/para)
-msgid ""
-"<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down "
-"the screen faster.<keycap>Down</keycap> moves the block down faster. "
-"<keycap>Space-bar</keycap> moves the block directly to the bottom."
-msgstr ""
-"Το <keycap>Down</keycap> (Κάτω Βέλος) και το <keycap>Space Bar</keycap> "
-"μετακινούν το κύβο κάτω στην οθόνη γρηγορότερα. Το <keycap>Down</keycap> "
-"(Κάτω Βέλος) μετακινεί το κύβο κάτω γρηγορότερα. Το <keycap>Space-bar</"
-"keycap> μετακινεί το κύβο κατευθείαν στο χαμηλότερο δυνατό σημείο."
-
-#: C/index.docbook:159(sect2/title)
-msgid "Starting a New Game"
-msgstr "Εκκίνηση Νέου Παιγνιδιού"
-
-#: C/index.docbook:160(sect2/para)
-msgid ""
-"To begin a new game, go to <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
-"begin dropping blocks from the center of the top of the window. The default "
-"start-up of the game has no blocks in the game window and shows the next "
-"block that will fall in the upper right hand corner. <guilabel>Score</"
-"guilabel> shows the number of points you have earned. <guilabel>Lines</"
-"guilabel> shows the number of lines you have completed. <guilabel>Level</"
-"guilabel> shows the level of difficulty you are on."
-msgstr ""
-"Για να ξεκινήσετε ένα νέο παιγνίδι, πηγαίνετε στο "
-"<menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Νέο Παιγνίδι</"
-"guimenuitem></menuchoice>Το παιγνίδι θα ξεκινήσει με κύβους να πέφτουν από "
-"το κέντρο και κορυφή της οθόνης. Η προεπιλεγμένη αρχή του παιγνιδιού δεν "
-"έχει κύβους στην οθόνη και δείχνει το επόμενο κύβο ο οποίος θα πέσει στην "
-"πάνω δεξιά γωνία. <guilabel>Βαθμολογία</guilabel> δείχνει την βαθμολογία σας "
-"στο παιγνίδι. <guilabel>Γραμμές</guilabel> δείχνει τον αριθμό των γραμμών "
-"που έχετε συμπληρώσει.<guilabel>Επίπεδο</guilabel> δείχνει το επίπεδο "
-"δυσκολίας στο οποίο παίζεται εκείνη την στιγμή."
-
-#: C/index.docbook:163(sect2/title)
-msgid "Pausing the Game"
-msgstr "Παύση Παιχνιδιού"
-
-#: C/index.docbook:164(sect2/para)
-msgid ""
-"To pause your game, go to <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
-"pause a game when you are playing. The time limit on pausing your game is "
-"unlimited. To unpause the game, go back to <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
-msgstr ""
-"Για να σταματήσετε προσωρινά το παιγνίδι, πηγαίνετε στο "
-"<menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Παύση Παιγνιδιού</"
-"guimenuitem></menuchoice>. Μπορείτε να σταματήσετε ένα παιγνίδι μόνο όταν "
-"παίζετε. Το χρονικό όριο για το οποίο σταματάει το παιγνίδι είναι "
-"απεριόριστο. Για να συνεχίσετε το παιγνίδι, πηγαίνετε πίσω στο "
-"<menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Παύση Παιγνιδιού</"
-"guimenuitem></menuchoice>. "
-
-#: C/index.docbook:167(sect2/title)
-msgid "Ending the Game"
-msgstr "Τέλος Παιγνιδιού"
-
-#: C/index.docbook:168(sect2/para)
-msgid ""
-"Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
-"guimenuitem></menuchoice> to end your current game without quiting "
-"Quadrapassel."
-msgstr ""
-"Επιλέξτε <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Τέλος "
-"Παιγνιδιού</guimenuitem></menuchoice> για να τερματίσετε το τρέχον παιγνίδι "
-"το χωρίς να εγκαταλείψετε τα Τουβλάκια."
-
-#: C/index.docbook:171(sect2/title)
-msgid "Quiting the <application>Quadrapassel</application>"
-msgstr "Κλείσιμο του παιχνιδιού <application>Τουβλάκια</application>"
-
-#: C/index.docbook:172(sect2/para)
-msgid ""
-"To completely quit <application>Quadrapassel</application> go to "
-"<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
-"menuchoice>. If you are in the middle of a game when you quit, you will end "
-"your game without saving your score."
-msgstr ""
-"Για να εγκαταλείψετε πλήρως την εφαρμογή <application>Τουβλάκια</"
-"application> επιλέξτε <menuchoice><guimenu>Παιγνίδι</"
-"guimenu><guimenuitem>Έξοδος</guimenuitem></menuchoice>. Εάν είστε στην μέση "
-"του παιγνιδιού όταν γίνεται η έξοδος, το παιγνίδι θα τελειώσει χωρίς να "
-"αποθηκευτεί η βαθμολογία σας."
-
-#: C/index.docbook:175(sect2/title)
-msgid "Scoring Points"
-msgstr "Βαθμολογία"
-
-#: C/index.docbook:176(sect2/para)
-msgid ""
-"You score points through two methods: dropping blocks faster and deleting "
-"complete lines of blocks. When you delete lines, you get more points, but "
-"dropping blocks faster will quickly add up. As you level up, the blocks will "
-"begin falling faster. The highest level is 10, at which point you will only "
-"have just over a second to manipulate each block."
-msgstr ""
-"Αυξάνετε την βαθμολογία σας με δύο μεθόδους: είτε ρίχνοντας του κύβους "
-"γρηγορότερα είτε διαγράφοντας τις ολοκληρωμένες γραμμές των κύβων. Όταν "
-"διαγράφετε γραμμές, κερδίζετε περισσότερους πόντους, αλλά ρίχνοντας τους "
-"κύβους γρηγορότερα θα στοιβάζονται και περισσότεροι. Καθώς ανεβαίνετε "
-"επίπεδα, οι κύβοι θα ξεκινήσουν να πέφτουν γρηγορότερα. Το μεγαλύτερο "
-"επίπεδο είναι το 10, στο οποίο έχετε μόλις ένα δευτερόλεπτο να "
-"διαχειριστείτε τον κάθε κύβο. "
-
-#: C/index.docbook:179(sect2/title)
-msgid "Viewing Past Scores"
-msgstr "Προβολή πίνακα βαθμολογίας"
-
-#: C/index.docbook:180(sect2/para)
-msgid ""
-"You can view the top ten scores played on your computer through "
-"<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
-"menuchoice>. The names of the users are shown next the their score and the "
-"date they played."
-msgstr ""
-"Μπορείτε να δείτε τις κορυφαίες 10 βαθμολογίες στον υπολογιστή σας μέσω του "
-"<menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Βαθμολογίες</"
-"guimenuitem></menuchoice>. Τα ονόματα των χρηστών εμφανίζονται δίπλα στην "
-"βαθμολογία τους και την ημερομηνία κατά την οποίαν έπαιξαν."
-
-#: C/index.docbook:186(sect1/title)
-msgid "Customizing <application>Quadrapassel</application>"
-msgstr "Παραμετροποίηση του παιχνιδιού <application>Τουβλάκια</application>"
-
-#: C/index.docbook:188(sect2/title)
-msgid "Customizing Game Start-up"
-msgstr "Παραμετροποίηση του παιγνιδιού κατά την εκκίνηση"
-
-#: C/index.docbook:189(sect2/para)
-msgid ""
-"By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice>, you can customize a variety of features for the "
-"start-up of each Quadrapassel game: number and density of pre-filled rows, "
-"and starting level. \"Pre-filled rows\" refers to how many rows will already "
-"have blocks in them when you start each new game."
-msgstr ""
-"Πηγαίνοντας στις <menuchoice><guimenu>Ρυθμίσεις</"
-"guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice>, μπορείτε να "
-"προσαρμόσετε ποικιλία χαρακτηριστικών γνωρισμάτων για το ξεκίνημα κάθε "
-"παιχνιδιού Τουβλάκια: αριθμό και πυκνότητα των προ-γεμισμένων σειρών, και "
-"αρχικό επίπεδο. Οι \"Προ-γεμισμένες σειρές \" αναφέρονται σε πόσες σειρές θα "
-"έχουν ήδη τους κύβους όταν αρχίζετε ένα νέο παιχνίδι."
-
-#: C/index.docbook:191(sect3/title)
-msgid "Number of Pre-filled Rows"
-msgstr "Αριθμός προ-συμπληρωμένων γραμμών:"
-
-#: C/index.docbook:192(sect3/para)
-msgid ""
-"You can change the number of rows that already have blocks at the start-up "
-"of each new game by using the spin box. You can start with up to 19 rows pre-"
-"filled at the start-up of your game. The default number of pre-filled rows "
-"is zero."
-msgstr ""
-"Μπορείτε να αλλάξετε τον αριθμό σειρών που έχουν ήδη τους κύβους στο "
-"ξεκίνημα κάθε νέου παιχνιδιού με τη χρησιμοποίηση του κιβωτίου περιστροφής. "
-"Μπορείτε να αρχίσετε με μέχρι 19 σειρές που γεμίζονται εκ των προτέρων στο "
-"ξεκίνημα του παιχνιδιού σας. Ο αριθμός προεπιλογής προ-γεμισμένων σειρών "
-"είναι μηδέν."
-
-#: C/index.docbook:195(sect3/title)
-msgid "Density of Pre-filled Rows"
-msgstr "Πυκνότητα κύβων στις προ-συμπληρωμένες γραμμές:"
-
-#: C/index.docbook:196(sect3/para)
-msgid ""
-"You can change the density of the blocks in the pre-filled rows at the start-"
-"up of each game. You can choose a density up to 10 blocks. You should first "
-"choose how many rows you want pre-filled under <guilabel>Number of Pre-"
-"filled Rows</guilabel>. The default density of blocks is three."
-msgstr ""
-"Μπορείτε να αλλάξετε την πυκνότητα των κύβων στις προ-γεμισμένες σειρές στην "
-"αρχή κάθε παιγνιδιού. Μπορείτε να διαλέξετε πυκνότητα έως και 10 κύβους. Θα "
-"πρέπει πρώτα να διαλέξετε πόσες γραμμές θέλετε να προ-γεμίσετε κάτω από τον "
-"<guilabel>Αριθμό προ-συμπληρωμένων γραμμών</guilabel>. Η προ-επιλεγμένη "
-"πυκνότητα των κύβων είναι τρία."
-
-#: C/index.docbook:199(sect3/title)
-msgid "Level to Start On"
-msgstr "Επίπεδο εκκίνησης"
-
-#: C/index.docbook:200(sect3/para)
-msgid ""
-"You can adjust the level of difficulty you start on. The highest level you "
-"can start on is 10, which is the highest level you can play to. The default "
-"starting level is one."
-msgstr ""
-"Μπορείτε να καθορίσετε το επίπεδο δυσκολίας στο οποίο ξεκινάτε. Το "
-"μεγαλύτερο επίπεδο είναι το 10, το οποίο είναι το μεγαλύτερο που μπορείτε να "
-"παίξετε. Το προεπιλεγμένο επίπεδο εκκίνησης είναι το ένα."
-
-#: C/index.docbook:204(sect2/title)
-msgid "Customizing the Gameplay"
-msgstr "Παραμετροποίηση του παιχνιδίού"
-
-#: C/index.docbook:205(sect2/para)
-msgid ""
-"From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice>, you can customize a variety of features related "
-"to the blocks: previewing the next block, block colors, and block rotation."
-msgstr ""
-"Από τις <menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Επιλογές</"
-"guimenuitem></menuchoice>, μπορείτε να παραμετροποιήσετε μια ποικιλία "
-"δυνατοτήτων σχετικών με τους κύβους: προεπισκόπηση επόμενου κύβου, χρώματα "
-"των κύβων, και περιστροφή των κύβων. "
-
-#: C/index.docbook:207(sect3/title)
-msgid "Enable sounds"
-msgstr "Ενεργοποίηση ήχων"
-
-#: C/index.docbook:208(sect3/para)
-msgid ""
-"Turn the sound effects on and off using this option. If you are playing this "
-"game in any area which you share with other people, you should probably "
-"select off."
-msgstr ""
-"Απ/Ενεργοποιήστε τον ήχο χρησιμοποιώντας αυτήν την επιλογή. Εάν παίζετε αυτό "
-"το παιγνίδι σε ένα μέρος στο οποίο βρίσκονται και άλλοι άνθρωποι, θα πρέπει "
-"πιθανότατα να τον απενεργοποιήσετε. "
-
-#: C/index.docbook:211(sect3/title)
-msgid "Preview Next Block"
-msgstr "Προεπισκόπιση επόμενου κύβου"
-
-#: C/index.docbook:212(sect3/para)
-msgid ""
-"Choose this option if you want to see the next block that is going to fall. "
-"This feature helps you plan the placement of your blocks."
-msgstr ""
-"Διαλέξτε αυτή την επιλογή αν θέλετε να βλέπετε τον επόμενο κύβο που "
-"πρόκειται να πέσει. Αυτή η δυνατότητα σας βοηθάει να σχεδιάζετε την "
-"τοποθέτηση των κύβων."
-
-#: C/index.docbook:215(sect3/title)
-msgid "Use Random Block Colors"
-msgstr "Τυχαία χρώματα κύβων"
-
-#: C/index.docbook:216(sect3/para)
-msgid ""
-"Choose if you want the various block configurations to be color coded or "
-"randomly colored. If you use the colors to help you identify blocks, random "
-"colors will make the game more difficult."
-msgstr ""
-"Διαλέξτε αν θέλετε οι ποικίλες παραμετροποιήσεις των κύβων να υπακούν σε "
-"χρωματικό κώδικα ή να είναι τυχαία χρωματισμένες. Εάν χρησιμοποιείτε το "
-"χρώμα για να αναγνωρίσετε τους κύβους, τα τυχαία χρώματα θα αυξήσουν το "
-"βαθμό δυσκολίας του παιγνιδιού. "
-
-#: C/index.docbook:219(sect3/title)
-msgid "Choose Difficult Blocks"
-msgstr "Επιλέξτε δύσκολους κύβους"
-
-#: C/index.docbook:220(sect3/para)
-msgid ""
-"Choose this option if you want to select mode that is designed specifically "
-"to annoy the player. With this feature enabled, you never get the piece you "
-"want, and very seldom complete a row. Next block preview doesn't correspond "
-"to actual piece you get next, but to the one you probably wish to get."
-msgstr ""
-"Διαλέξτε αυτήν την επιλογή εάν θέλετε να ενεργοποιήσετε τον τρόπο "
-"λειτουργίας του παιχνιδιού που έχει ως μοναδικό σκοπό να σπάσει τα νεύρα του "
-"παίχτη. Με αυτό το χαρακτηριστικό ενεργοποιημένο, δεν σας έρχεται ποτέ το "
-"κομμάτι που θέλετε, και πολύ σπάνια θα γεμίσει μια σειρά. Η προβολή του "
-"επόμενου τούβλου δεν αντιστοιχεί στο πραγματικό κομμάτι που θα εμφανιστεί, "
-"αλλά μάλλον αυτού που θα θέλατε να σας έρθει."
-
-#: C/index.docbook:223(sect3/title)
-msgid "Rotate Blocks Counterclockwise"
-msgstr "Περιστροφή κύβων αριστερόστροφα"
-
-#: C/index.docbook:224(sect3/para)
-msgid ""
-"Choose this option if you want the blocks to rotate counterclockwise or not."
-msgstr ""
-"Διαλέξτε αυτήν την επιλογή αν θέλετε οι κύβοι να περιστρέφονται "
-"αριστερόστροφα ή όχι. "
-
-#: C/index.docbook:227(sect3/title)
-msgid "Show where the block will land"
-msgstr "Εμφάνιση της θέσης προσγείωσης του κομματιού"
-
-#: C/index.docbook:228(sect3/para)
-msgid ""
-"If this feature is used a grey image of the block will show you where the "
-"block will land. This feature is very useful for beginning players, but "
-"experienced players will find it a distraction."
-msgstr ""
-"Εάν χρησιμοποιείτε αυτήν την δυνατότητα μία γκρι εικόνα θα σας δείχνει την "
-"τοποθεσία όπου θα προσγειωθεί ο κύβος. Αυτή η δυνατότητα είναι πολύ χρήσιμη "
-"για τους αρχάριους παίχτες, οι έμπειροι παίχτες όμως θα θεωρήσουν ότι αποσπά "
-"την προσοχή."
-
-#: C/index.docbook:236(sect2/title)
-msgid "Customizing the Look of <application>Quadrapassel</application>"
-msgstr ""
-"Παραμετροποίηση της εμφάνισης του παιχνιδιού <application>Τουβλάκια</"
-"application>"
-
-#: C/index.docbook:237(sect2/para)
-msgid ""
-"Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice>, you can customize the look of "
-"<application>Quadrapassel</application>: images for the blocks."
-msgstr ""
-"Κάτω από τις <menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Επιλογές</"
-"guimenuitem></menuchoice>, μπορείτε να παραμετροποιήσετε την εμφάνιση του "
-"παιχνιδιού <application> Τουβλάκια</application>: εικόνες για τα τουβλάκια."
-
-#: C/index.docbook:239(sect3/title)
-msgid "Block Image"
-msgstr "Εικόνα κύβου"
-
-#: C/index.docbook:240(sect3/para)
-msgid ""
-"You can change the style of the blocks, including image and size. There are "
-"a variety of pre-made styles."
-msgstr ""
-"Μπορείτε να αλλάξετε το στυλ των κύβων, συμπεριλαμβανομένων εικόνας και "
-"μεγέθους. Υπάρχει μια ποικιλία προ-κατασκευασμένων στυλ. "
-
-#: C/index.docbook:243(sect3/title)
-msgid "Background"
-msgstr "Παρασκήνιο"
-
-#: C/index.docbook:243(sect3/para)
-msgid ""
-"If you drag your favorite image into the <application>Quadrapassel</"
-"application> window it will be used as the background. If you want a solid "
-"color as the background drag one in from either the color picker or from "
-"<application>nautlilus'</application> <guimenuitem>Backgrounds and Emblems</"
-"guimenuitem> dialog (the reset item from that dialog also works)."
-msgstr ""
-"Εάν σύρετε την αγαπημένη εικόνα σας στο παράθυρο <application>Τουβλάκια</"
-"application> θα χρησιμοποιηθεί ως παρασκήνιο. Εάν θέλετε ένα μόνο χρώμα ως "
-"παρασκήνιο τότε σύρετε ένα είτε μέσα από τον συλλέκτη χρώματος, είτε από το "
-"παράθυρο διαλόγου του <application>nautlilus'</application> "
-"<guimenuitem>Παρασκήνια και Εμβλήματα</guimenuitem> (το επαναφορά "
-"αντικειμένου από αυτό το παράθυρο διαλόγου δουλεύει επίσης)."
-
-#: C/index.docbook:255(sect1/title)
-msgid "Authors"
-msgstr "Συγγραφείς"
-
-#: C/index.docbook:256(sect1/para)
-msgid ""
-"<application>Quadrapassel</application> was written by J. Marcin Gorycki in "
-"1999 and maintained by Gnome Games Team since then. This manual was written "
-"by Angela Boyle. To report a bug or make a suggestion regarding this "
-"application or this manual, follow the directions in this <ulink url=\"ghelp:"
-"user-guide?feedback-bugs\" type=\"help\">document</ulink>."
-msgstr ""
-"Τα <application> Τουβλάκια</application> δημιουργήθηκαν από τον J. Marcin "
-"Gorycki το 1999 και συντηρούνται από την Ομάδα παιχνιδιών του GNOME έκτοτε. "
-"Αυτή η τεκμηρίωση γράφτηκε από την Angela Boyle. Για να αναφέρετε ένα σφάλμα "
-"ή να κάνετε μια πρόταση σχετικά με αυτή την εφαρμογή ή αυτή την τεκμηρίωση, "
-"ακολουθήστε τις οδηγίες σε αυτό το <ulink url=\"ghelp:user-guide?feedback-"
-"bugs\" type=\"help\">έγγραφο</ulink>."
-
-#: C/index.docbook:280(sect1/title)
+#: C/license.page:11(page/title)
 msgid "License"
 msgstr "Άδεια χρήσης"
 
-#: C/index.docbook:281(sect1/para)
+#: C/license.page:12(page/p)
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl\"> "
-"<citetitle>GNU General Public License</citetitle></ulink> as published by "
-"the Free Software Foundation; either version 2 of the License, or (at your "
-"option) any later version."
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
 msgstr ""
-"Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/και "
-"τροποποίησή του υπό τους όρους της <ulink type=\"help\" url=\"gnome-help:gpl"
-"\"> <citetitle>GNU General Public License</citetitle></ulink> όπως αυτή "
-"δημοσιεύεται από το Ίδρυμα Ελεύθερου Λογισμικού (Free Software Foundation) - "
-"είτε της έκδοσης 2 της άδειας, είτε (κατ' επιλογή σας) οποιασδήποτε "
-"μεταγενέστερης έκδοσης."
+"Αυτό το έργο διανέμεται υπό την άδεια CreativeCommons Attribution-Share "
+"Alike 3.0 Unported."
 
-#: C/index.docbook:283(sect1/para)
-msgid ""
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
-"License</citetitle> for more details."
-msgstr ""
-"Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ "
-"ΚΑΜΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ - χωρίς ακόμη και την έμμεση εγγύηση "
-"ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε για "
-"περισσότερες λεπτομέρειες την Γενική Άδεια Δημόσιας Χρήσης GNU "
-"(<citetitle>GNU General Public License</citetitle>)."
+#: C/license.page:20(page/p)
+msgid "You are free:"
+msgstr "Μπορείτε να:"
 
-#: C/index.docbook:286(para/address)
-#, no-wrap
-msgid ""
-"\n"
-"    Free Software Foundation, Inc.\n"
-"    <street>59 Temple Place</street> - Suite 330\n"
-"    <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode>\n"
-"    <country>USA</country>\n"
-"   "
-msgstr ""
-"\n"
-"   Ίδρυμα Ελεύθερου Λογισμικού, Inc.\n"
-"    <street>59 Temple Place</street> - Suite 330\n"
-"    <city>Βοστόνη</city>, <state>MA</state> <postcode>02111-1307</postcode>\n"
-"    <country>Η.Π.Α</country>\n"
-"   "
+#: C/license.page:25(item/title)
+msgid "<em>To share</em>"
+msgstr "<em>Να μοιραστείτε</em>"
 
-#: C/index.docbook:285(sect1/para)
+#: C/license.page:26(item/p)
+msgid "To copy, distribute and transmit the work."
+msgstr "Να αντιγράψετε, να διανείμετε και να μεταδόσετε το έργο."
+
+#: C/license.page:29(item/title)
+msgid "<em>To remix</em>"
+msgstr "<em>Να τροποιήσετε</em>"
+
+#: C/license.page:30(item/p)
+msgid "To adapt the work."
+msgstr "Να προσαρμόσετε το έργο."
+
+#: C/license.page:33(page/p)
+msgid "Under the following conditions:"
+msgstr "Υπό τους εξής όρους:"
+
+#: C/license.page:38(item/title)
+msgid "<em>Attribution</em>"
+msgstr "<em>Απόδοση</em>"
+
+#: C/license.page:39(item/p)
 msgid ""
-"A copy of the <citetitle>GNU General Public License</citetitle> is included "
-"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
-"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
-"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
-"www.fsf.org\">their Web site</ulink> or by writing to <_:address-1/>"
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
 msgstr ""
-"Αντίγραφο της <citetitle>Γενικής Άδειας Δημόσιας Χρήσης GNU (GPL)</"
-"citetitle> περιλαμβάνεται ως παράρτημα στον <citetitle>Οδηγό χρήστη GNOME</"
-"citetitle>. Επίσης, αντίγραφο της <citetitle>Γενικής Άδειας Δημόσιας Χρήσης "
-"GNU (GPL)</citetitle> μπορείτε να παραλάβετε από το  Ίδρυμα Ελεύθερου "
-"Λογισμικού (FSS), είτε επισκεπτόμενοι τον <ulink type=\"http\" url=\"http://"
-"www.fsf.org\">ιστοχώρο</ulink> του, είτε γράφοντας στη διεύθυνση <_:"
-"address-1/>"
+"Πρέπει να αναφέρετε την πηγή του έργου με τον τρόπο που καθορίζεται από το "
+"δημιουργό του ή αυτόν που παρέχει την άδεια (αλλά όχι με τρόπο που να εννοεί "
+"ότι εγκρίνουν εσάς ή τη δική σας χρήση του έργου)."
+
+#: C/license.page:46(item/title)
+msgid "<em>Share Alike</em>"
+msgstr "<em>Παρόμοια διανομή</em>"
+
+#: C/license.page:47(item/p)
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Αν μετατρέψετε, μετασχηματίσετε ή επεκτείνετε αυτό το έργο, μπορείτε να "
+"αναδιανείμετε το αποτέλεσμα υπό την ίδια, παρόμοια ή συμβατή άδεια χρήσης."
+
+#: C/license.page:53(page/p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Για το πλήρες κείμενο της άδειας, δείτε τον <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">ιστότοπο CreativeCommons</"
+"link>, ή διαβάστε όλη την <link href=\"http://creativecommons.org/licenses/"
+"by-sa/3.0/\">Πράξη Commons</link>."
+
+#: C/playgame.page:16(license/p)
+#| msgid "Creative Commons Share Alike 3.0"
+msgid "Creative Commons Attribution Share Alike 3.0"
+msgstr "Creative Commons Attribution-Share Alike 3.0 Unported License"
+
+#: C/playgame.page:20(page/title)
+msgid "PLAY PLAY PLAY!"
+msgstr "ΠΑΙΞΤΕ ΠΑΙΞΤΕ ΠΑΙΞΤΕ !"
+
+#: C/playgame.page:23(section/title)
+msgid "How To Play"
+msgstr "Πως να παίξετε"
+
+#: C/playgame.page:26(item/p)
+#| msgid ""
+#| "<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
+#| "correspondingly across the screen."
+msgid ""
+"The <key>←</key> and <key>→</key> keys move the blocks across the screen."
+msgstr ""
+"Τα πλήκτρα <key>←</key> και <key>→</key> μετακινούν το τούβλο αντίστοιχα "
+"στην οθόνη."
+
+#: C/playgame.page:27(item/p)
+msgid ""
+"The <key>↑</key> key rotates the block. The rotation (which is "
+"counterclockwise by default) can be changed in the <link xref=\"preferences"
+"\">Preferences</link>."
+msgstr ""
+"Το πλήκτρο <key>↑</key> περιστρέφει το τουβλάκι. Η περιστροφή (που από "
+"προεπιλογή είναι αριστερόστροφη) μπορεί να αλλαχθεί στις <link xref="
+"\"preferences\">Προτιμήσεις</link>."
+
+#: C/playgame.page:28(item/p)
+msgid ""
+"The <key>SPACEBAR</key> and <key>↓</key> key increase the speed of the drop. "
+"The <key>SPACEBAR</key> causes a hard-drop (instant move to the bottom). The "
+"<key>↓</key> key causes a soft-drop (temporary increase in speed while the "
+"key is held down)."
+msgstr ""
+"Τα πλήκτρα <key>Διάστημα</key> και <key>↓</key> αυξάνουν την ταχύτητα της "
+"ρίψης. Το <key>Διάστημα</key> προκαλεί σκληρή ρίψη (άμεση κίνηση προς τα "
+"κάτω) ενώ το πλήκτρο <key>↓</key> προκαλεί απαλή ρίψη (προσωρινή αύξηση της "
+"ταχύτητας καθώς το πλήκτρο είναι πατημένο)."
+
+#: C/playgame.page:33(section/title)
+msgid "Rules"
+msgstr "Κανόνες"
+
+#: C/playgame.page:35(section/p)
+msgid "There are a couple of rules that you should keep in mind:"
+msgstr "Υπάρχουν μερικοί κανόνες που πρέπει να θυμάστε:"
+
+#: C/playgame.page:37(item/p)
+msgid ""
+"You can pause, end, start a new game, get help or quit the program at any "
+"time."
+msgstr ""
+"Μπορείτε ανά πάση στιγμή να διακόψετε, να τερματίσετε, να ξεκινήσετε ένα νέο "
+"παιχνίδι, να βοηθηθείτε ή κλείσετε το πρόγραμμα"
+
+#: C/playgame.page:38(item/p)
+msgid "You can pause the game as many times as you want."
+msgstr "Μπορείτε να διακόψετε το παιχνίδι όσες φορές θέλετε."
+
+#: C/preferences.page:18(info/desc)
+msgid "Preferences for the game and the theme."
+msgstr "Προτιμήσεις για το παιχνίδι και το θέμα."
+
+#: C/preferences.page:22(page/title)
+msgid "Game Preferences"
+msgstr "Προτιμήσεις παιχνιδιού"
+
+#: C/preferences.page:24(page/p)
+msgid ""
+"To change the game preferences, click the <guiseq><gui>Quadrapassel menu</"
+"gui><gui>Preferences</gui></guiseq>."
+msgstr ""
+"Για να αλλάξετε τις προτιμήσεις του παιχνιδιού, κάντε κλικ στο "
+"<guiseq><gui>Τουβλάκια</gui><gui>Προτιμήσεις</gui></guiseq>."
+
+#: C/preferences.page:26(page/p)
+msgid ""
+"The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
+"<gui>Theme</gui>."
+msgstr ""
+"Οι τρεις διαθέσιμες καρτέλες είναι <gui>Έλεγχοι</gui>, <gui>Παιχνίδι</gui> "
+"και <gui>Θέμα</gui>."
+
+#: C/preferences.page:29(section/title)
+msgid "Controls"
+msgstr "Έλεγχοι"
+
+#: C/preferences.page:30(section/p)
+msgid ""
+"By double-clicking on the given controls, thus selecting the new one, you "
+"can change the control keys."
+msgstr ""
+"Με διπλό κλικ πάνω στους δοσμένους ελέγχους, επιλέγοντας έτσι έναν νέο, "
+"μπορείτε να αλλάξετε τα πλήκτρα ελέγχου."
+
+#: C/preferences.page:34(section/title)
+msgid "Game"
+msgstr "Παιχνίδι"
+
+#: C/preferences.page:35(section/p)
+msgid ""
+"Under the <gui>Game</gui> tab, you can change the way in which the game "
+"starts:"
+msgstr ""
+"Στη καρτέλα <gui>Παιχνίδι</gui>, μπορείτε να αλλάξετε το τρόπο που ξεκινά το "
+"παιχνίδι:"
+
+#: C/preferences.page:37(item/p)
+msgid ""
+"<gui>Number of pre-filled rows</gui> indicates how many rows with blocks "
+"there will be when the game starts."
+msgstr ""
+"Ο <gui>Αριθμός προ-συμπληρωμένων γραμμών</gui> δείχνει πόσες γραμμές με "
+"τουβλάκια θα υπάρχουν όταν ξεκινά το παιχνίδι."
+
+#: C/preferences.page:38(item/p)
+msgid ""
+"<gui>Density of blocks in a pre-filled row</gui> indicates how many blocks "
+"there will be in a pre-filled row when the game starts."
+msgstr ""
+"Η <gui>Πυκνότητα τούβλων στις προ-συμπληρωμένες γραμμές</gui> δείχνει πόσα "
+"τουβλάκια θα υπάρχουν σε μια προ-συμπληρωμένη γραμμή όταν ξεκινά το παιχνίδι."
+
+#: C/preferences.page:39(item/p)
+msgid "<gui>Starting level</gui> controls the speed with which you will start."
+msgstr ""
+"Το <gui>Επίπεδο εκκίνησης</gui> ελέγχει τη ταχύτητα με την οποία θα "
+"ξεκινήσετε."
+
+#: C/preferences.page:41(section/p)
+msgid "These options can vary from 0 to 19, 0 to 10, and 1 to 20 respectively."
+msgstr ""
+"Αυτές οι επιλογές μπορεί να ποικίλουν από 0 έως 19, 0 έως 10, και 1 έως 20 "
+"αντίστοιχα."
+
+#: C/preferences.page:43(section/p)
+msgid "Other available options are:"
+msgstr "Άλλες διαθέσιμες επιλογές είναι:"
+
+#: C/preferences.page:45(item/p)
+#| msgid "Enable sounds"
+msgid "<gui>Enable sounds</gui>"
+msgstr "<gui>Ενεργοποίηση ήχων</gui>"
+
+#: C/preferences.page:46(item/p)
+#| msgid "Preview Next Block"
+msgid "<gui>Preview next block</gui>"
+msgstr "<gui>Προεπισκόπηση επόμενου τούβλου</gui>"
+
+#: C/preferences.page:47(item/p)
+#| msgid "Choose Difficult Blocks"
+msgid "<gui>Choose difficult blocks</gui>"
+msgstr "<gui>Επιλογή δύσκολων τούβλων</gui>"
+
+#: C/preferences.page:48(item/p)
+#| msgid "Rotate Blocks Counterclockwise"
+msgid "<gui>Rotate blocks counterclockwise</gui>"
+msgstr "<gui>Περιστροφή τούβλου αριστερόστροφα</gui>"
+
+#: C/preferences.page:49(item/p)
+#| msgid "Show where the block will land"
+msgid "<gui>Show where the block will land</gui>"
+msgstr "<gui>Εμφάνιση της θέσης προσγείωσης του τούβλου</gui>"
+
+#: C/preferences.page:54(section/title)
+msgid "Theme"
+msgstr "Θέμα"
+
+#: C/preferences.page:55(section/p)
+msgid "To change the theme:"
+msgstr "Για να αλλάξετε το θέμα:"
+
+#: C/preferences.page:57(item/p)
+msgid ""
+"click the <guiseq><gui>Quadrapassel menu</gui><gui>Preference</gui></guiseq>."
+msgstr ""
+"κάντε κλικ στο μενού <guiseq><gui>Τουβλάκια</gui><gui>Προτιμήσεις</gui></"
+"guiseq>."
+
+#: C/preferences.page:58(item/p)
+msgid "select the <gui>Theme</gui> tab."
+msgstr "επιλέξτε την καρτέλα <gui>Θέμα</gui>."
+
+#: C/preferences.page:60(section/p)
+msgid "Four different themes are available for the blocks' contours:"
+msgstr ""
+"Τέσσερα διαφορετικά θέματα είναι διαθέσιμα για το περίγραμμα των τούβλων:"
+
+#: C/preferences.page:64(item/p)
+msgid "Plain"
+msgstr "Απλό"
+
+#: C/preferences.page:65(item/p)
+msgid "Tango Flat"
+msgstr "Επίπεδο Tango"
+
+#: C/preferences.page:66(item/p)
+msgid "Tango Shaded"
+msgstr "Σκιασμένο Tango"
+
+#: C/preferences.page:67(item/p)
+msgid "Clean"
+msgstr "Καθαρό"
+
+#: C/score.page:20(page/title)
+msgid "Score"
+msgstr "Βαθμολογία"
+
+#: C/score.page:21(page/p)
+msgid "Do you think you can reach level 10?"
+msgstr "Πιστεύετε πως μπορείτε να φτάσετε στο επίπεδο 10;"
+
+#: C/score.page:24(section/title)
+msgid "Score More"
+msgstr "Σκοράρετε περισσότερα"
+
+#: C/score.page:25(section/p)
+msgid ""
+"If you start from level 1, the only way to go to the next level is by "
+"completing more lines, that is, scoring more points. In order for you to "
+"have a better score, try to adapt the screen, the keyboard, and the level "
+"(the speed) that fits you the most!"
+msgstr ""
+"Αν ξεκινήσετε από το επίπεδο 1, ο μόνος τρόπος για να πάτε στο επόμενο "
+"επίπεδο είναι συμπληρώνοντας περισσότερες γραμμές, όπου παίρνετε "
+"περισσότερους πόντους.  Για να πάρετε καλύτερη βαθμολογία, προσπαθήστε να "
+"προσαρμόσετε την οθόνη, το πληκτρολόγιο και το επίπεδο (την ταχύτητα) που "
+"σας ταιριάζει περισσότερο!"
+
+#: C/score.page:26(section/p)
+msgid ""
+"You can make many changes to the keyboard controls, the contour of the "
+"blocks, the number and density of lines with which you start, and the speed "
+"of drop. You can change your settings in in <link xref=\"preferences"
+"\">Preference</link>. After deciding what fits you the most, you will rock!"
+msgstr ""
+"Μπορείτε να κάνετε αρκετές αλλαγές στους ελέγχους του πληκτρολογίου, το "
+"περίγραμμα των τούβλων, τον αριθμό και την πυκνότητα των γραμμών που θα "
+"ξεκινήσετε, καθώς και την ταχύτητα της ρίψης.Μπορείτε να αλλάξετε τις "
+"ρυθμίσεις σας από τις <link xref=\"preferences\">Προτιμήσεις</link>. Αφού "
+"αποφασίσετε τι σας ταιριάζει περισσότερο, θα είστε ο καλύτερος!"
+
+#: C/score.page:30(section/title)
+#| msgid "Viewing Past Scores"
+msgid "High Scores"
+msgstr "Υψηλές βαθμολογίες"
+
+#: C/score.page:31(section/p)
+msgid ""
+"Everyone wants to be on the top of the list, right? In <guiseq><gui>Game</"
+"gui><gui>Scores</gui></guiseq> you can find the records from the highest to "
+"the lowest score."
+msgstr ""
+"Όλοι θέλουν να είναι στην κορυφή της λίστας, σωστά; Στο "
+"<guiseq><gui>Παιχνίδι</gui><gui>Βαθμολογίες</gui></guiseq> θα βρείτε τις "
+"καταγραφές από την υψηλότερη στη χαμηλότερη βαθμολογία."
+
+#: C/score.page:33(section/p)
+msgid ""
+"The scores cannot be deleted, so do not worry that someone will remove your "
+"best high score!"
+msgstr ""
+"Οι βαθμολογίες δεν μπορούν να διαγραφούν, γι' αυτό μην ανησυχείτε ότι "
+"κάποιος θα αφαιρέσει την υψηλότερη σας βαθμολογία!"
+
+#: C/translate.page:16(info/desc)
+msgid "Do you know a world language?"
+msgstr "Γνωρίζετε κάποια γλώσσα;"
+
+#: C/translate.page:19(page/title)
+msgid "Help translate"
+msgstr "Βοήθεια στη μετάφραση"
+
+#: C/translate.page:21(page/p)
+msgid ""
+"The <app>GNOME games</app> user interface and documentation is being "
+"translated by a world-wide volunteer community."
+msgstr ""
+"Η διεπαφή και η τεκμηρίωση του χρήστη των <app>παιχνιδιών του GNOME</app> "
+"αναπτύσσονται και συντηρούνται από μια παγκόσμια εθελοντική κοινότητα."
+
+#: C/translate.page:25(page/p)
+msgid ""
+"There are <link href=\"http://l10n.gnome.org/module/gnome-games/\">many "
+"languages</link> for which translations are still needed."
+msgstr ""
+"Υπάρχουν <link href=\"http://l10n.gnome.org/module/gnome-games/\">πολλές "
+"γλώσσες</link> για τις οποίες απαιτούνται μεταφράσεις."
+
+#: C/translate.page:29(page/p)
+msgid ""
+"To start translating you will need to <link href=\"http:l10n.gnome.org"
+"\">create an account</link> and join the <link href=\"http://l10n.gnome.org/"
+"teams/\">translation team</link> for your language. This will give you the "
+"ability to upload new translations."
+msgstr ""
+"Για να ξεκινήσετε να μεταφράζετε πρέπει να <link href=\"http:l10n.gnome.org"
+"\">δημιουργήσετε έναν λογαριασμό</link> και να συμμετάσχετε στην <link href="
+"\"http://l10n.gnome.org/teams/\">ομάδα μετάφρασης</link> της γλώσσας σας. "
+"Αυτό θα σας δώσει την δυνατότητα να ανεβάσετε νέες μεταφράσεις."
+
+#: C/translate.page:33(page/p)
+msgid ""
+"You can chat with GNOME translators using <link href=\"https://cbe003.chat."
+"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. People on the "
+"channel are located worldwide, so you may not get an immediate response as a "
+"result of timezone differences."
+msgstr ""
+"Μπορείτε να συζητήσετε με μεταφραστές του GNOME χρησιμοποιώντας το <link "
+"href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n"
+"\">irc</link>. Άνθρωποι στο κανάλι βρίσκονται παντού, έτσι μπορείτε να "
+"πάρετε μια άμεση απάντηση ως αποτέλεσμα των διαφορών ώρας."
+
+#: C/translate.page:37(page/p)
+msgid ""
+"Alternatively, you can contact the Internationalization Team using their "
+"<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+"list</link>."
+msgstr ""
+"Εναλλακτικά, μπορείτε να επικοινωνήσετε με την ομάδα διεθνοποίησης "
+"χρησιμοποιώντας την <link href=\"http://mail.gnome.org/mailman/listinfo/"
+"gnome-i18n\">λίστα αλληλογραφίας</link> τους."
+
+#~ msgid "link"
+#~ msgstr "σύνδεσμο"
+
+#~ msgid ""
+#~ "Permission is granted to copy, distribute and/or modify this document "
+#~ "under the terms of the GNU Free Documentation License (GFDL), Version 1.1 "
+#~ "or any later version published by the Free Software Foundation with no "
+#~ "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
+#~ "can find a copy of the GFDL at this <_:ulink-1/> or in the file COPYING-"
+#~ "DOCS distributed with this manual."
+#~ msgstr ""
+#~ "Χορηγείται άδεια αντιγραφής, διανομής και/ή τροποποίησης του παρόντος "
+#~ "εγγράφου υπό τους όρους της έκδοσης 1.1 της Ελεύθερης Άδειας Τεκμηρίωσης "
+#~ "GNU (GFDL), ή οποιασδήποτε μεταγενέστερης έκδοσής αυτής από το Ίδρυμα "
+#~ "Ελεύθερου Λογισμικού (FSF), χωρίς αμετάβλητα τμήματα, κείμενα εξωφύλλου "
+#~ "και κείμενα οπισθοφύλλου. Αντίγραφο της άδειας GFDL είναι διαθέσιμο στον "
+#~ "ακόλουθο <_:ulink-1/>, ή στο αρχείο COPYING-DOCS που διανέμεται μαζί με "
+#~ "το παρόν εγχειρίδιο."
+
+#~ msgid ""
+#~ "This manual is part of a collection of GNOME manuals distributed under "
+#~ "the GFDL. If you want to distribute this manual separately from the "
+#~ "collection, you can do so by adding a copy of the license to the manual, "
+#~ "as described in section 6 of the license."
+#~ msgstr ""
+#~ "Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME όπως "
+#~ "διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την "
+#~ "τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η "
+#~ "τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται "
+#~ "στον τομέα 6 της άδειας."
+
+#~ msgid ""
+#~ "Many of the names used by companies to distinguish their products and "
+#~ "services are claimed as trademarks. Where those names appear in any GNOME "
+#~ "documentation, and the members of the GNOME Documentation Project are "
+#~ "made aware of those trademarks, then the names are in capital letters or "
+#~ "initial capital letters."
+#~ msgstr ""
+#~ "Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν "
+#~ "τα προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέν. Όπου αυτά τα "
+#~ "ονόματα εμφανίζονται στην τεκμηρίωση GNOME, και τα μέλη της ομάδας "
+#~ "τεκμηρίωσης GNOME έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους "
+#~ "χαρακτήρες ή με αρχικούς κεφαλαίους χαρακτήρες."
+
+#~ msgid ""
+#~ "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+#~ "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES "
+#~ "THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+#~ "MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+#~ "RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+#~ "MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+#~ "MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+#~ "WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+#~ "SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES "
+#~ "AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS "
+#~ "DISCLAIMER; AND"
+#~ msgstr ""
+#~ "Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ \"ΩΣ ΕΧΕΙ\", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ "
+#~ "ΝΑ ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ "
+#~ "ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή "
+#~ "ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ "
+#~ "ΕΙΝΑΙ ΛΑΘΟΣ ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ "
+#~ "ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ "
+#~ "ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ "
+#~ "ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ."
+
+#~ msgid ""
+#~ "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT "
+#~ "(INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL "
+#~ "WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE "
+#~ "LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR "
+#~ "CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, "
+#~ "DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR "
+#~ "MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR "
+#~ "RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, "
+#~ "EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH "
+#~ "DAMAGES."
+#~ msgstr ""
+#~ "ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή "
+#~ "ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ "
+#~ "ΓΙΑ ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ "
+#~ "ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή "
+#~ "ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ "
+#~ "ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ."
+
+#~ msgid ""
+#~ "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
+#~ "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
+#~ "UNDERSTANDING THAT: <_:orderedlist-1/>"
+#~ msgstr ""
+#~ "ΤΟ ΠΑΡΟΝ ΕΓΓΡΑΦΟ ΚΑΙ ΟΙ ΤΡΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ "
+#~ "ΟΡΟΥΣ ΤΗΣ ΕΛΕΥΘΕΡΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗΣ GNU (GFDL) ΚΑΙ ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ "
+#~ "ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <_:orderedlist-1/>"
+
+#~ msgid "<application>Quadrapassel</application> Manual"
+#~ msgstr "Τεκμηρίωση για τα <application>Τουβλάκια</application>"
+
+#~ msgid ""
+#~ "Quadrapassel is GNOME's version of Tetris, the classic game of "
+#~ "interlocking four-piece blocks. As they fall from the top, the player "
+#~ "must orient them to fit the other blocks at the bottom so that they form "
+#~ "a complete horizontal line, in which case that line disappears and the "
+#~ "player gains points."
+#~ msgstr ""
+#~ "Τα Τουβλάκια είναι μια εκδοχή για το GNOME του Tetris, του κλασσικού "
+#~ "παιχνιδιού τακτοποίησης των κομματιών. Καθώς πέφτουν από πάνω, ο χρήστης "
+#~ "πρέπει να τα προσανατολίσει ώστε να ταιριάξουν στα άλλα κομμάτια στο κάτω "
+#~ "μέρος, ώστε να διαμορφώνονται πλήρεις οριζόντιες γραμμές. Σ' αυτή την "
+#~ "περίπτωση οι γραμμές εξαφανίζονται και ο παίκτης κερδίζει πόντους."
+
+#~ msgid "<year>2004</year> <holder>Angela Boyle</holder>"
+#~ msgstr "<year>2004</year> <holder>Angela Boyle</holder>"
+
+#~ msgid "GNOME Documentation Project"
+#~ msgstr "Έργο τεκμηρίωσης GNOME"
+
+#~ msgid ""
+#~ "Permission is granted to copy, distribute and/or modify this document "
+#~ "under the terms of the GNU Free Documentation License (GFDL), Version 1.1 "
+#~ "or any later version published by the Free Software Foundation with no "
+#~ "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
+#~ "can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl"
+#~ "\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+#~ msgstr ""
+#~ "Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό "
+#~ "τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή "
+#~ "μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά "
+#~ "Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε "
+#~ "να βρείτε ένα αντίγραφο της GFDL σε αυτόν τον <ulink type=\"help\" url="
+#~ "\"ghelp:fdl\">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε "
+#~ "με αυτόν τον οδηγό."
+
+#~ msgid ""
+#~ "<firstname>Angela</firstname> <surname>Boyle</surname> <affiliation> "
+#~ "<address> <email>anjela@u.washington.edu</email> </address> </affiliation>"
+#~ msgstr ""
+#~ "<firstname>Angela</firstname> <surname>Boyle</surname> <affiliation> "
+#~ "<address> <email>anjela@u.washington.edu</email> </address> </affiliation>"
+
+#~ msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
+#~ msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
+
+#~ msgid ""
+#~ "<revnumber>Quadrapassel Manual V2.8</revnumber> <date>June 2004</date> <_:"
+#~ "revdescription-1/>"
+#~ msgstr ""
+#~ "<revnumber>Εγχειρίδιο Τουβλάκια V2.8</revnumber> <date>Ιούνιος 2004</"
+#~ "date> <_:revdescription-1/>"
+
+#~ msgid "This manual describes version 2.12 of Quadrapassel."
+#~ msgstr ""
+#~ "Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.12 του παιχνιδιού Τουβλάκια."
+
+#~ msgid "Feedback"
+#~ msgstr "Ανάδραση"
+
+#~ msgid ""
+#~ "To report a bug or make a suggestion regarding the "
+#~ "<application>Quadrapassel</application> application or this manual, "
+#~ "follow the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs"
+#~ "\" type=\"help\">GNOME Feedback Page</ulink>."
+#~ msgstr ""
+#~ "Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με τα "
+#~ "<application>Τουβλάκια</application>  ή αυτή την τεκμηρίωση, ακολουθήστε "
+#~ "τις οδηγίες στη σελίδα <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
+#~ "\"help\">σελίδα ανατροφοδότησης του GNOME</ulink>."
+
+#~ msgid "<primary>Quadrapassel</primary>"
+#~ msgstr "<primary>Τουβλάκια</primary>"
+
+#~ msgid "Introduction"
+#~ msgstr "Εισαγωγή"
+
+#~ msgid ""
+#~ "<application>Quadrapassel</application> comes from the classic falling-"
+#~ "block game, <application>Tetris</application>. The goal of the game is to "
+#~ "create complete horizontal lines of blocks, which will disappear. The "
+#~ "blocks come in seven different shapes made from four blocks each: one "
+#~ "straight, two L-shaped, one square, and two S-shaped. The blocks fall "
+#~ "from the top center of the screen in a random order. You rotate the "
+#~ "blocks and move them across the screen to drop them in complete lines. "
+#~ "You score by dropping blocks fast and completing lines. As your score "
+#~ "gets higher, you level up and the blocks fall faster."
+#~ msgstr ""
+#~ "Τα Τουβλάκια προέρχονται από το κλασικό παιχνίδι κύβων, "
+#~ "<application>Tetris</application>. Ο στόχος του παιχνιδιού είναι να "
+#~ "δημιουργηθούν οι πλήρεις οριζόντιες γραμμές κύβων, οι οποίες θα "
+#~ "εξαφανιστούν. Οι κύβοι έρχονται σε επτά διαφορετικές μορφές που γίνονται "
+#~ "από τέσσερις κύβους κάθε ένας: ένας ευθύς, δύο με σχήμα L, ένα τετράγωνο, "
+#~ "και δύο σχήμα S. Οι κύβοι πέφτουν από το πάνω κέντρο της οθόνης με τυχαία "
+#~ "σειρά. Εσείς περιστρέφετε τους κύβους και τους κινείτε στην οθόνη για να "
+#~ "τους ρίξετε και να δημιουργήσετε πλήρεις γραμμές. Αυξάνετε την βαθμολογία "
+#~ "σας με τη ρίψη των κύβων γρήγορων και την ολοκλήρωση των γραμμών. Όσο η "
+#~ "βαθμολογία σας αυξάνεται, αυξάνεται και το επίπεδο δυσκολίας, και η πτώση "
+#~ "των κύβων γίνεται γρηγορότερη."
+
+#~ msgid ""
+#~ "To run <application>Quadrapassel</application>, select "
+#~ "<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
+#~ "guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, or type "
+#~ "<command>quadrapassel</command> in the command line."
+#~ msgstr ""
+#~ "Για να παίξετε με τα <application>Τουβλάκια</application>, επιλέξτε "
+#~ "<menuchoice><guimenu>Εφαρμογές</guimenu><guisubmenu>Παιγνίδια</"
+#~ "guisubmenu><guimenuitem>Τουβλάκια</guimenuitem></menuchoice>, ή "
+#~ "πληκτρολογείστε <command>quadrapassel</command> στην γραμμή εντολών."
+
+#~ msgid ""
+#~ "<application>Quadrapassel</application> is included in the "
+#~ "<filename>gnome-games</filename> package, which is part of the GNOME "
+#~ "desktop environment. This document describes version 2.8 of "
+#~ "<application>Quadrapassel</application>."
+#~ msgstr ""
+#~ "Tα <application>Τουβλάκια</application> συμπεριλαμβάνεται στο πακέτο "
+#~ "<filename>gnome-games</filename>, το οποίο είναι κομμάτι του γραφικού "
+#~ "περιβάλλοντος επιφάνειας εργασίας GNOME. Αυτό το έγγραφο περιγράφει την "
+#~ "έκδοση 2.8 του παιχνιδιού <application>Τουβλάκια</application>."
+
+#~ msgid "Playing <application>Quadrapassel</application>"
+#~ msgstr "Παίζοντας με τα <application>Τουβλάκια</application>"
+
+#~ msgid ""
+#~ "You can score through two actions: completing lines and dropping blocks "
+#~ "quickly."
+#~ msgstr ""
+#~ "Μπορείτε να αυξήσετε την βαθμολογία σας με δύο τρόπους: συμπληρώνοντας "
+#~ "γραμμές και ρίχνοντας τους κύβους γρήγορα."
+
+#~ msgid "Moving the Blocks"
+#~ msgstr "Μετακινώντας τους κύβους"
+
+#~ msgid "To play the game, you only need the four arrow keys."
+#~ msgstr ""
+#~ "Για να παίξετε το παιχνίδι, χρειάζεστε μόνο τα τέσσερα πλήκτρα βέλη."
+
+#~ msgid ""
+#~ "<keycap>Up</keycap> rotates the block. The default rotation is "
+#~ "counterclockwise. You can change the rotation under "
+#~ "<menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+#~ "guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks "
+#~ "counterclockwise</guilabel>."
+#~ msgstr ""
+#~ "Το <keycap>Up</keycap> (Πάνω Βέλος) περιστρέφει τον κύβο. Η προεπιλεγμένη "
+#~ "φοράς περιστροφής είναι προς τα αριστερά. Μπορείτε να αλλάξετε την φορά "
+#~ "πηγαίνωντας στο <menuchoice><guimenu>Ρυθμίσεις</"
+#~ "guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice> και "
+#~ "ξεδιαλέγωντας το <guilabel>Περιστροφή κύβων προς τα αριστερά</guilabel>."
+
+#~ msgid ""
+#~ "<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block "
+#~ "down the screen faster.<keycap>Down</keycap> moves the block down faster. "
+#~ "<keycap>Space-bar</keycap> moves the block directly to the bottom."
+#~ msgstr ""
+#~ "Το <keycap>Down</keycap> (Κάτω Βέλος) και το <keycap>Space Bar</keycap> "
+#~ "μετακινούν το κύβο κάτω στην οθόνη γρηγορότερα. Το <keycap>Down</keycap> "
+#~ "(Κάτω Βέλος) μετακινεί το κύβο κάτω γρηγορότερα. Το <keycap>Space-bar</"
+#~ "keycap> μετακινεί το κύβο κατευθείαν στο χαμηλότερο δυνατό σημείο."
+
+#~ msgid "Starting a New Game"
+#~ msgstr "Εκκίνηση Νέου Παιγνιδιού"
+
+#~ msgid ""
+#~ "To begin a new game, go to <menuchoice><guimenu>Game</"
+#~ "guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
+#~ "begin dropping blocks from the center of the top of the window. The "
+#~ "default start-up of the game has no blocks in the game window and shows "
+#~ "the next block that will fall in the upper right hand corner. "
+#~ "<guilabel>Score</guilabel> shows the number of points you have earned. "
+#~ "<guilabel>Lines</guilabel> shows the number of lines you have completed. "
+#~ "<guilabel>Level</guilabel> shows the level of difficulty you are on."
+#~ msgstr ""
+#~ "Για να ξεκινήσετε ένα νέο παιγνίδι, πηγαίνετε στο "
+#~ "<menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Νέο Παιγνίδι</"
+#~ "guimenuitem></menuchoice>Το παιγνίδι θα ξεκινήσει με κύβους να πέφτουν "
+#~ "από το κέντρο και κορυφή της οθόνης. Η προεπιλεγμένη αρχή του παιγνιδιού "
+#~ "δεν έχει κύβους στην οθόνη και δείχνει το επόμενο κύβο ο οποίος θα πέσει "
+#~ "στην πάνω δεξιά γωνία. <guilabel>Βαθμολογία</guilabel> δείχνει την "
+#~ "βαθμολογία σας στο παιγνίδι. <guilabel>Γραμμές</guilabel> δείχνει τον "
+#~ "αριθμό των γραμμών που έχετε συμπληρώσει.<guilabel>Επίπεδο</guilabel> "
+#~ "δείχνει το επίπεδο δυσκολίας στο οποίο παίζεται εκείνη την στιγμή."
+
+#~ msgid "Pausing the Game"
+#~ msgstr "Παύση Παιχνιδιού"
+
+#~ msgid ""
+#~ "To pause your game, go to <menuchoice><guimenu>Game</"
+#~ "guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
+#~ "pause a game when you are playing. The time limit on pausing your game is "
+#~ "unlimited. To unpause the game, go back to <menuchoice><guimenu>Game</"
+#~ "guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
+#~ msgstr ""
+#~ "Για να σταματήσετε προσωρινά το παιγνίδι, πηγαίνετε στο "
+#~ "<menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Παύση Παιγνιδιού</"
+#~ "guimenuitem></menuchoice>. Μπορείτε να σταματήσετε ένα παιγνίδι μόνο όταν "
+#~ "παίζετε. Το χρονικό όριο για το οποίο σταματάει το παιγνίδι είναι "
+#~ "απεριόριστο. Για να συνεχίσετε το παιγνίδι, πηγαίνετε πίσω στο "
+#~ "<menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Παύση Παιγνιδιού</"
+#~ "guimenuitem></menuchoice>. "
+
+#~ msgid "Ending the Game"
+#~ msgstr "Τέλος Παιγνιδιού"
+
+#~ msgid ""
+#~ "Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
+#~ "guimenuitem></menuchoice> to end your current game without quiting "
+#~ "Quadrapassel."
+#~ msgstr ""
+#~ "Επιλέξτε <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Τέλος "
+#~ "Παιγνιδιού</guimenuitem></menuchoice> για να τερματίσετε το τρέχον "
+#~ "παιγνίδι το χωρίς να εγκαταλείψετε τα Τουβλάκια."
+
+#~ msgid "Quiting the <application>Quadrapassel</application>"
+#~ msgstr "Κλείσιμο του παιχνιδιού <application>Τουβλάκια</application>"
+
+#~ msgid ""
+#~ "To completely quit <application>Quadrapassel</application> go to "
+#~ "<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
+#~ "menuchoice>. If you are in the middle of a game when you quit, you will "
+#~ "end your game without saving your score."
+#~ msgstr ""
+#~ "Για να εγκαταλείψετε πλήρως την εφαρμογή <application>Τουβλάκια</"
+#~ "application> επιλέξτε <menuchoice><guimenu>Παιγνίδι</"
+#~ "guimenu><guimenuitem>Έξοδος</guimenuitem></menuchoice>. Εάν είστε στην "
+#~ "μέση του παιγνιδιού όταν γίνεται η έξοδος, το παιγνίδι θα τελειώσει χωρίς "
+#~ "να αποθηκευτεί η βαθμολογία σας."
+
+#~ msgid "Scoring Points"
+#~ msgstr "Βαθμολογία"
+
+#~ msgid ""
+#~ "You score points through two methods: dropping blocks faster and deleting "
+#~ "complete lines of blocks. When you delete lines, you get more points, but "
+#~ "dropping blocks faster will quickly add up. As you level up, the blocks "
+#~ "will begin falling faster. The highest level is 10, at which point you "
+#~ "will only have just over a second to manipulate each block."
+#~ msgstr ""
+#~ "Αυξάνετε την βαθμολογία σας με δύο μεθόδους: είτε ρίχνοντας του κύβους "
+#~ "γρηγορότερα είτε διαγράφοντας τις ολοκληρωμένες γραμμές των κύβων. Όταν "
+#~ "διαγράφετε γραμμές, κερδίζετε περισσότερους πόντους, αλλά ρίχνοντας τους "
+#~ "κύβους γρηγορότερα θα στοιβάζονται και περισσότεροι. Καθώς ανεβαίνετε "
+#~ "επίπεδα, οι κύβοι θα ξεκινήσουν να πέφτουν γρηγορότερα. Το μεγαλύτερο "
+#~ "επίπεδο είναι το 10, στο οποίο έχετε μόλις ένα δευτερόλεπτο να "
+#~ "διαχειριστείτε τον κάθε κύβο. "
+
+#~ msgid ""
+#~ "You can view the top ten scores played on your computer through "
+#~ "<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
+#~ "menuchoice>. The names of the users are shown next the their score and "
+#~ "the date they played."
+#~ msgstr ""
+#~ "Μπορείτε να δείτε τις κορυφαίες 10 βαθμολογίες στον υπολογιστή σας μέσω "
+#~ "του <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Βαθμολογίες</"
+#~ "guimenuitem></menuchoice>. Τα ονόματα των χρηστών εμφανίζονται δίπλα στην "
+#~ "βαθμολογία τους και την ημερομηνία κατά την οποίαν έπαιξαν."
+
+#~ msgid "Customizing <application>Quadrapassel</application>"
+#~ msgstr "Παραμετροποίηση του παιχνιδιού <application>Τουβλάκια</application>"
+
+#~ msgid "Customizing Game Start-up"
+#~ msgstr "Παραμετροποίηση του παιγνιδιού κατά την εκκίνηση"
+
+#~ msgid ""
+#~ "By going to <menuchoice><guimenu>Settings</"
+#~ "guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can "
+#~ "customize a variety of features for the start-up of each Quadrapassel "
+#~ "game: number and density of pre-filled rows, and starting level. \"Pre-"
+#~ "filled rows\" refers to how many rows will already have blocks in them "
+#~ "when you start each new game."
+#~ msgstr ""
+#~ "Πηγαίνοντας στις <menuchoice><guimenu>Ρυθμίσεις</"
+#~ "guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice>, μπορείτε να "
+#~ "προσαρμόσετε ποικιλία χαρακτηριστικών γνωρισμάτων για το ξεκίνημα κάθε "
+#~ "παιχνιδιού Τουβλάκια: αριθμό και πυκνότητα των προ-γεμισμένων σειρών, και "
+#~ "αρχικό επίπεδο. Οι \"Προ-γεμισμένες σειρές \" αναφέρονται σε πόσες σειρές "
+#~ "θα έχουν ήδη τους κύβους όταν αρχίζετε ένα νέο παιχνίδι."
+
+#~ msgid "Number of Pre-filled Rows"
+#~ msgstr "Αριθμός προ-συμπληρωμένων γραμμών:"
+
+#~ msgid ""
+#~ "You can change the number of rows that already have blocks at the start-"
+#~ "up of each new game by using the spin box. You can start with up to 19 "
+#~ "rows pre-filled at the start-up of your game. The default number of pre-"
+#~ "filled rows is zero."
+#~ msgstr ""
+#~ "Μπορείτε να αλλάξετε τον αριθμό σειρών που έχουν ήδη τους κύβους στο "
+#~ "ξεκίνημα κάθε νέου παιχνιδιού με τη χρησιμοποίηση του κιβωτίου "
+#~ "περιστροφής. Μπορείτε να αρχίσετε με μέχρι 19 σειρές που γεμίζονται εκ "
+#~ "των προτέρων στο ξεκίνημα του παιχνιδιού σας. Ο αριθμός προεπιλογής προ-"
+#~ "γεμισμένων σειρών είναι μηδέν."
+
+#~ msgid "Density of Pre-filled Rows"
+#~ msgstr "Πυκνότητα κύβων στις προ-συμπληρωμένες γραμμές:"
+
+#~ msgid ""
+#~ "You can change the density of the blocks in the pre-filled rows at the "
+#~ "start-up of each game. You can choose a density up to 10 blocks. You "
+#~ "should first choose how many rows you want pre-filled under "
+#~ "<guilabel>Number of Pre-filled Rows</guilabel>. The default density of "
+#~ "blocks is three."
+#~ msgstr ""
+#~ "Μπορείτε να αλλάξετε την πυκνότητα των κύβων στις προ-γεμισμένες σειρές "
+#~ "στην αρχή κάθε παιγνιδιού. Μπορείτε να διαλέξετε πυκνότητα έως και 10 "
+#~ "κύβους. Θα πρέπει πρώτα να διαλέξετε πόσες γραμμές θέλετε να προ-γεμίσετε "
+#~ "κάτω από τον <guilabel>Αριθμό προ-συμπληρωμένων γραμμών</guilabel>. Η προ-"
+#~ "επιλεγμένη πυκνότητα των κύβων είναι τρία."
+
+#~ msgid "Level to Start On"
+#~ msgstr "Επίπεδο εκκίνησης"
+
+#~ msgid ""
+#~ "You can adjust the level of difficulty you start on. The highest level "
+#~ "you can start on is 10, which is the highest level you can play to. The "
+#~ "default starting level is one."
+#~ msgstr ""
+#~ "Μπορείτε να καθορίσετε το επίπεδο δυσκολίας στο οποίο ξεκινάτε. Το "
+#~ "μεγαλύτερο επίπεδο είναι το 10, το οποίο είναι το μεγαλύτερο που μπορείτε "
+#~ "να παίξετε. Το προεπιλεγμένο επίπεδο εκκίνησης είναι το ένα."
+
+#~ msgid "Customizing the Gameplay"
+#~ msgstr "Παραμετροποίηση του παιχνιδίού"
+
+#~ msgid ""
+#~ "From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+#~ "guimenuitem></menuchoice>, you can customize a variety of features "
+#~ "related to the blocks: previewing the next block, block colors, and block "
+#~ "rotation."
+#~ msgstr ""
+#~ "Από τις <menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Επιλογές</"
+#~ "guimenuitem></menuchoice>, μπορείτε να παραμετροποιήσετε μια ποικιλία "
+#~ "δυνατοτήτων σχετικών με τους κύβους: προεπισκόπηση επόμενου κύβου, "
+#~ "χρώματα των κύβων, και περιστροφή των κύβων. "
+
+#~ msgid ""
+#~ "Turn the sound effects on and off using this option. If you are playing "
+#~ "this game in any area which you share with other people, you should "
+#~ "probably select off."
+#~ msgstr ""
+#~ "Απ/Ενεργοποιήστε τον ήχο χρησιμοποιώντας αυτήν την επιλογή. Εάν παίζετε "
+#~ "αυτό το παιγνίδι σε ένα μέρος στο οποίο βρίσκονται και άλλοι άνθρωποι, θα "
+#~ "πρέπει πιθανότατα να τον απενεργοποιήσετε. "
+
+#~ msgid ""
+#~ "Choose this option if you want to see the next block that is going to "
+#~ "fall. This feature helps you plan the placement of your blocks."
+#~ msgstr ""
+#~ "Διαλέξτε αυτή την επιλογή αν θέλετε να βλέπετε τον επόμενο κύβο που "
+#~ "πρόκειται να πέσει. Αυτή η δυνατότητα σας βοηθάει να σχεδιάζετε την "
+#~ "τοποθέτηση των κύβων."
+
+#~ msgid "Use Random Block Colors"
+#~ msgstr "Τυχαία χρώματα κύβων"
+
+#~ msgid ""
+#~ "Choose if you want the various block configurations to be color coded or "
+#~ "randomly colored. If you use the colors to help you identify blocks, "
+#~ "random colors will make the game more difficult."
+#~ msgstr ""
+#~ "Διαλέξτε αν θέλετε οι ποικίλες παραμετροποιήσεις των κύβων να υπακούν σε "
+#~ "χρωματικό κώδικα ή να είναι τυχαία χρωματισμένες. Εάν χρησιμοποιείτε το "
+#~ "χρώμα για να αναγνωρίσετε τους κύβους, τα τυχαία χρώματα θα αυξήσουν το "
+#~ "βαθμό δυσκολίας του παιγνιδιού. "
+
+#~ msgid ""
+#~ "Choose this option if you want to select mode that is designed "
+#~ "specifically to annoy the player. With this feature enabled, you never "
+#~ "get the piece you want, and very seldom complete a row. Next block "
+#~ "preview doesn't correspond to actual piece you get next, but to the one "
+#~ "you probably wish to get."
+#~ msgstr ""
+#~ "Διαλέξτε αυτήν την επιλογή εάν θέλετε να ενεργοποιήσετε τον τρόπο "
+#~ "λειτουργίας του παιχνιδιού που έχει ως μοναδικό σκοπό να σπάσει τα νεύρα "
+#~ "του παίχτη. Με αυτό το χαρακτηριστικό ενεργοποιημένο, δεν σας έρχεται "
+#~ "ποτέ το κομμάτι που θέλετε, και πολύ σπάνια θα γεμίσει μια σειρά. Η "
+#~ "προβολή του επόμενου τούβλου δεν αντιστοιχεί στο πραγματικό κομμάτι που "
+#~ "θα εμφανιστεί, αλλά μάλλον αυτού που θα θέλατε να σας έρθει."
+
+#~ msgid ""
+#~ "Choose this option if you want the blocks to rotate counterclockwise or "
+#~ "not."
+#~ msgstr ""
+#~ "Διαλέξτε αυτήν την επιλογή αν θέλετε οι κύβοι να περιστρέφονται "
+#~ "αριστερόστροφα ή όχι. "
+
+#~ msgid ""
+#~ "If this feature is used a grey image of the block will show you where the "
+#~ "block will land. This feature is very useful for beginning players, but "
+#~ "experienced players will find it a distraction."
+#~ msgstr ""
+#~ "Εάν χρησιμοποιείτε αυτήν την δυνατότητα μία γκρι εικόνα θα σας δείχνει "
+#~ "την τοποθεσία όπου θα προσγειωθεί ο κύβος. Αυτή η δυνατότητα είναι πολύ "
+#~ "χρήσιμη για τους αρχάριους παίχτες, οι έμπειροι παίχτες όμως θα θεωρήσουν "
+#~ "ότι αποσπά την προσοχή."
+
+#~ msgid "Customizing the Look of <application>Quadrapassel</application>"
+#~ msgstr ""
+#~ "Παραμετροποίηση της εμφάνισης του παιχνιδιού <application>Τουβλάκια</"
+#~ "application>"
+
+#~ msgid ""
+#~ "Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+#~ "guimenuitem></menuchoice>, you can customize the look of "
+#~ "<application>Quadrapassel</application>: images for the blocks."
+#~ msgstr ""
+#~ "Κάτω από τις <menuchoice><guimenu>Ρυθμίσεις</"
+#~ "guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice>, μπορείτε να "
+#~ "παραμετροποιήσετε την εμφάνιση του παιχνιδιού <application> Τουβλάκια</"
+#~ "application>: εικόνες για τα τουβλάκια."
+
+#~ msgid "Block Image"
+#~ msgstr "Εικόνα κύβου"
+
+#~ msgid ""
+#~ "You can change the style of the blocks, including image and size. There "
+#~ "are a variety of pre-made styles."
+#~ msgstr ""
+#~ "Μπορείτε να αλλάξετε το στυλ των κύβων, συμπεριλαμβανομένων εικόνας και "
+#~ "μεγέθους. Υπάρχει μια ποικιλία προ-κατασκευασμένων στυλ. "
+
+#~ msgid "Background"
+#~ msgstr "Παρασκήνιο"
+
+#~ msgid ""
+#~ "If you drag your favorite image into the <application>Quadrapassel</"
+#~ "application> window it will be used as the background. If you want a "
+#~ "solid color as the background drag one in from either the color picker or "
+#~ "from <application>nautlilus'</application> <guimenuitem>Backgrounds and "
+#~ "Emblems</guimenuitem> dialog (the reset item from that dialog also works)."
+#~ msgstr ""
+#~ "Εάν σύρετε την αγαπημένη εικόνα σας στο παράθυρο <application>Τουβλάκια</"
+#~ "application> θα χρησιμοποιηθεί ως παρασκήνιο. Εάν θέλετε ένα μόνο χρώμα "
+#~ "ως παρασκήνιο τότε σύρετε ένα είτε μέσα από τον συλλέκτη χρώματος, είτε "
+#~ "από το παράθυρο διαλόγου του <application>nautlilus'</application> "
+#~ "<guimenuitem>Παρασκήνια και Εμβλήματα</guimenuitem> (το επαναφορά "
+#~ "αντικειμένου από αυτό το παράθυρο διαλόγου δουλεύει επίσης)."
+
+#~ msgid "Authors"
+#~ msgstr "Συγγραφείς"
+
+#~ msgid ""
+#~ "<application>Quadrapassel</application> was written by J. Marcin Gorycki "
+#~ "in 1999 and maintained by Gnome Games Team since then. This manual was "
+#~ "written by Angela Boyle. To report a bug or make a suggestion regarding "
+#~ "this application or this manual, follow the directions in this <ulink url="
+#~ "\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+#~ msgstr ""
+#~ "Τα <application> Τουβλάκια</application> δημιουργήθηκαν από τον J. Marcin "
+#~ "Gorycki το 1999 και συντηρούνται από την Ομάδα παιχνιδιών του GNOME "
+#~ "έκτοτε. Αυτή η τεκμηρίωση γράφτηκε από την Angela Boyle. Για να αναφέρετε "
+#~ "ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με αυτή την εφαρμογή ή αυτή "
+#~ "την τεκμηρίωση, ακολουθήστε τις οδηγίες σε αυτό το <ulink url=\"ghelp:"
+#~ "user-guide?feedback-bugs\" type=\"help\">έγγραφο</ulink>."
+
+#~ msgid ""
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl\"> "
+#~ "<citetitle>GNU General Public License</citetitle></ulink> as published by "
+#~ "the Free Software Foundation; either version 2 of the License, or (at "
+#~ "your option) any later version."
+#~ msgstr ""
+#~ "Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/"
+#~ "και τροποποίησή του υπό τους όρους της <ulink type=\"help\" url=\"gnome-"
+#~ "help:gpl\"> <citetitle>GNU General Public License</citetitle></ulink> "
+#~ "όπως αυτή δημοσιεύεται από το Ίδρυμα Ελεύθερου Λογισμικού (Free Software "
+#~ "Foundation) - είτε της έκδοσης 2 της άδειας, είτε (κατ' επιλογή σας) "
+#~ "οποιασδήποτε μεταγενέστερης έκδοσης."
+
+#~ msgid ""
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the "
+#~ "<citetitle>GNU General Public License</citetitle> for more details."
+#~ msgstr ""
+#~ "Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά "
+#~ "ΧΩΡΙΣ ΚΑΜΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ - χωρίς ακόμη και την έμμεση εγγύηση "
+#~ "ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε για "
+#~ "περισσότερες λεπτομέρειες την Γενική Άδεια Δημόσιας Χρήσης GNU "
+#~ "(<citetitle>GNU General Public License</citetitle>)."
+
+#~ msgid ""
+#~ "\n"
+#~ "    Free Software Foundation, Inc.\n"
+#~ "    <street>59 Temple Place</street> - Suite 330\n"
+#~ "    <city>Boston</city>, <state>MA</state> <postcode>02111-1307</"
+#~ "postcode>\n"
+#~ "    <country>USA</country>\n"
+#~ "   "
+#~ msgstr ""
+#~ "\n"
+#~ "   Ίδρυμα Ελεύθερου Λογισμικού, Inc.\n"
+#~ "    <street>59 Temple Place</street> - Suite 330\n"
+#~ "    <city>Βοστόνη</city>, <state>MA</state> <postcode>02111-1307</"
+#~ "postcode>\n"
+#~ "    <country>Η.Π.Α</country>\n"
+#~ "   "
+
+#~ msgid ""
+#~ "A copy of the <citetitle>GNU General Public License</citetitle> is "
+#~ "included as an appendix to the <citetitle>GNOME Users Guide</citetitle>. "
+#~ "You may also obtain a copy of the <citetitle>GNU General Public License</"
+#~ "citetitle> from the Free Software Foundation by visiting <ulink type="
+#~ "\"http\" url=\"http://www.fsf.org\">their Web site</ulink> or by writing "
+#~ "to <_:address-1/>"
+#~ msgstr ""
+#~ "Αντίγραφο της <citetitle>Γενικής Άδειας Δημόσιας Χρήσης GNU (GPL)</"
+#~ "citetitle> περιλαμβάνεται ως παράρτημα στον <citetitle>Οδηγό χρήστη "
+#~ "GNOME</citetitle>. Επίσης, αντίγραφο της <citetitle>Γενικής Άδειας "
+#~ "Δημόσιας Χρήσης GNU (GPL)</citetitle> μπορείτε να παραλάβετε από το  "
+#~ "Ίδρυμα Ελεύθερου Λογισμικού (FSS), είτε επισκεπτόμενοι τον <ulink type="
+#~ "\"http\" url=\"http://www.fsf.org\">ιστοχώρο</ulink> του, είτε γράφοντας "
+#~ "στη διεύθυνση <_:address-1/>"
 
 #~ msgid "2004"
 #~ msgstr "2004"
