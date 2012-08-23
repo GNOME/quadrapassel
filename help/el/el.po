@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnometris.HEAD.el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-08-11 22:44+0000\n"
-"PO-Revision-Date: 2012-08-22 02:34+0200\n"
+"PO-Revision-Date: 2012-08-23 13:27+0200\n"
 "Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "Language: el\n"
@@ -475,7 +475,7 @@ msgstr ""
 "μπορείτε να επικοινωνήσετε με τους προγραμματιστές χρησιμοποιώντας το <link "
 "href=\"https://cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-"
 "games\">irc</link>, ή μέσα από τη <link href=\"http://mail.gnome.org/mailman/"
-"listinfo/games-list\">λίστα αλληλογραφίας μας</link>."
+"listinfo/games-list\">λίστα αλληλογραφίας</link> μας."
 
 #: C/documentation.page:19(info/desc)
 msgid "Contribute to the documentation."
@@ -495,7 +495,7 @@ msgstr ""
 "Για συμμετοχή στο έργο τεκμηρίωσης, επικοινωνήστε μαζί μας χρησιμοποιώντας "
 "το <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org"
 "%2Fdocs\">irc</link>, ή μέσα από την <link href=\"http://mail.gnome.org/"
-"mailman/listinfo/gnome-doc-list\">λίστα αλληλογραφίας μας</link>."
+"mailman/listinfo/gnome-doc-list\">λίστα αλληλογραφίας</link> μας."
 
 #: C/documentation.page:25(page/p)
 msgid ""
@@ -556,7 +556,7 @@ msgstr "Να αντιγράψετε, να διανείμετε και να με�
 
 #: C/license.page:29(item/title)
 msgid "<em>To remix</em>"
-msgstr "<em>Να τροποιήσετε</em>"
+msgstr "<em>Να τροποποιήσετε</em>"
 
 #: C/license.page:30(item/p)
 msgid "To adapt the work."
