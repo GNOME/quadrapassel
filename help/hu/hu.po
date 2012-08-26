@@ -1,0 +1,889 @@
+# Hungarian translation for gnome-games_quadrapassel.
+# Copyright (C) 2012 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-games package.
+#
+# László Ádám Kohajda <kla.kohi at gmail dot com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"POT-Creation-Date: 2012-08-25 07:21+0000\n"
+"PO-Revision-Date: 2012-08-25 21:14+0200\n"
+"Last-Translator: \n"
+"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.4\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Kohajda László Ádám <kla.kohi at gmail dot com>, 2012"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:5(media)
+msgctxt "_"
+msgid ""
+"external ref='media/quadrapassel22.png' "
+"md5='4d2440a988c86ad179d0f8148263d8b9'"
+msgstr ""
+"external ref='media/quadrapassel22.png' "
+"md5='4d2440a988c86ad179d0f8148263d8b9'"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:18(media)
+msgctxt "_"
+msgid ""
+"external ref='media/quadrapassel.png' md5='95b96f006d5876090ff7a2305652658c'"
+msgstr ""
+"external ref='media/quadrapassel.png' md5='95b96f006d5876090ff7a2305652658c'"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:24(media)
+msgctxt "_"
+msgid "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
+msgstr "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:29(media)
+msgctxt "_"
+msgid "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
+msgstr "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:40(media)
+msgctxt "_"
+msgid "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
+msgstr "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:41(media)
+msgctxt "_"
+msgid "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
+msgstr "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:48(media)
+msgctxt "_"
+msgid "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
+msgstr "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:49(media)
+msgctxt "_"
+msgid "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
+msgstr "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:61(media)
+msgctxt "_"
+msgid "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
+msgstr "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:66(media)
+msgctxt "_"
+msgid "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
+msgstr "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
+
+#: C/index.page:6(info/title)
+msgctxt "link"
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#: C/index.page:7(info/title)
+msgctxt "text"
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#: C/index.page:10(credit/name) C/bug-filing.page:14(credit/name)
+#: C/develop.page:15(credit/name) C/documentation.page:13(credit/name)
+#: C/get-involved.page:7(credit/name) C/playgame.page:7(credit/name)
+#: C/preferences.page:7(credit/name) C/score.page:7(credit/name)
+#: C/translate.page:13(credit/name)
+msgid "Elena Petrevska"
+msgstr "Elena Petrevska"
+
+#: C/index.page:12(credit/years) C/bug-filing.page:11(credit/years)
+#: C/develop.page:12(credit/years) C/documentation.page:10(credit/years)
+#: C/get-involved.page:9(credit/years) C/playgame.page:9(credit/years)
+#: C/preferences.page:9(credit/years) C/score.page:9(credit/years)
+#: C/translate.page:10(credit/years)
+msgid "2012"
+msgstr "2012"
+
+#: C/index.page:15(license/p) C/bug-filing.page:18(license/p)
+#: C/develop.page:19(license/p) C/documentation.page:17(license/p)
+#: C/get-involved.page:12(license/p) C/preferences.page:16(license/p)
+#: C/score.page:16(license/p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#: C/index.page:18(page/title)
+msgid ""
+"<media type=\"image\" src=\"media/quadrapassel.png\">Quadrapassel logo</"
+"media>Quadrapassel"
+msgstr ""
+"<media type=\"image\" src=\"media/quadrapassel.png\">Quadrapassel logo</"
+"media>Quadrapassel"
+
+#: C/index.page:20(page/p)
+msgid ""
+"In Quadrapassel, the GNOME version of Tetris, your goal is to create as many "
+"complete horizontal lines as possible. The lines are made from seven "
+"different shapes. The shapes fall randomly from the top center of the "
+"screen. Your task is to rotate and move the shapes across the screen to make "
+"complete lines. By making complete horizontal lines, you score points and "
+"move up levels. As you progress, the speed of the falling blocks increases."
+msgstr ""
+"A Quadrapasselben, amely a Tetris GNOME verziója, a cél annyi vízszintes sor "
+"teljes kitöltése amennyi csak lehetséges. A sorok hét különböző formából "
+"állhatnak. A formák véletlenszerűen esnek fentről lefele a képernyő közepén. "
+"Feladata ezek forgatása és mozgatása a képernyőn, hogy azok sorokat "
+"alkossanak. Sorok létrehozásával ön pontokat szerez és szinteket lép. A "
+"játék előrehaladtával a zuhanó blokkok sebessége nő."
+
+#: C/index.page:33(td/p)
+msgid "<link xref=\"playgame\">Play the game</link>"
+msgstr "<link xref=\"playgame\">Játsszon</link>"
+
+#: C/index.page:34(td/p)
+msgid "<link xref=\"score\">Score points</link>"
+msgstr "<link xref=\"score\">Szerezzen pontokat</link>"
+
+#: C/index.page:55(td/p)
+msgid "<link xref=\"preferences\">Preferences</link>"
+msgstr "<link xref=\"preferences\">Beállítások</link>"
+
+#: C/index.page:56(td/p)
+msgid "<link xref=\"get-involved\">Get involved</link>"
+msgstr "<link xref=\"get-involved\">Közreműködés</link>"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/bug-filing.page:49(media) C/develop.page:28(media)
+#: C/documentation.page:28(media) C/translate.page:41(media)
+msgctxt "_"
+msgid ""
+"external ref='media/go-previous.png' md5='e9ce3da4ee6497ce2f38178c3c929872'"
+msgstr ""
+"external ref='media/go-previous.png' md5='e9ce3da4ee6497ce2f38178c3c929872'"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/bug-filing.page:50(media) C/develop.page:29(media)
+#: C/documentation.page:29(media) C/get-involved.page:22(media)
+#: C/playgame.page:43(media) C/preferences.page:72(media)
+#: C/score.page:37(media) C/translate.page:42(media)
+msgctxt "_"
+msgid "external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
+msgstr ""
+"external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
+
+#: C/bug-filing.page:9(credit/name) C/develop.page:10(credit/name)
+#: C/documentation.page:8(credit/name) C/playgame.page:12(credit/name)
+#: C/preferences.page:12(credit/name) C/score.page:12(credit/name)
+#: C/translate.page:8(credit/name)
+msgid "Tiffany Antopolski"
+msgstr "Tiffany Antopolski"
+
+#: C/bug-filing.page:20(info/desc)
+msgid "Found a problem? Feel free to file a bug."
+msgstr "Hibát talált? Küldje el hibajelentését."
+
+#: C/bug-filing.page:23(page/title)
+msgid "Report a Problem"
+msgstr "Hiba jelentése"
+
+#: C/bug-filing.page:24(page/p)
+msgid ""
+"If you notice a problem you can file a <em>bug report</em>. To file a bug, "
+"go to <link href=\"https://bugzilla.gnome.org/\"/>."
+msgstr ""
+"Ha hibát észlelt, beküldhet egy <em>hibajelentést</em>. Ehhez keresse fel a "
+"<link href=\"https://bugzilla.gnome.org/\"/> oldalt."
+
+#: C/bug-filing.page:27(page/p)
+msgid ""
+"This is a bug tracking system where users and developers can file details "
+"about bugs, crashes and request enhancements."
+msgstr ""
+"Ez egy hibakövető rendszer, ahová a felhasználók és fejlesztők beküldhetik a "
+"hibákkal, összeomlásokkal kapcsolatos adatokat, és továbbfejlesztéseket "
+"kérhetnek."
+
+#: C/bug-filing.page:30(page/p)
+msgid ""
+"To participate you need an account which will give you the ability to gain "
+"access, file bugs, and make comments. Also, you need to register so you can "
+"receive updates by e-mail about the status of your bug. If you don't already "
+"have an account, just click on the <gui>New Account</gui> link to create one."
+msgstr ""
+"A részvételhez létre kell hoznia egy fiókot, amely lehetővé teszi a "
+"hozzáférést, hibajelentések beküldését és a hibákhoz való hozzászólást. A "
+"regisztráció után a hozzászólásokat e-mailben is megkaphatja. Ha még nincs "
+"fiókja, akkor a <gui>New Account</gui> hivatkozásra kattintva létrehozhat "
+"egyet."
+
+#: C/bug-filing.page:33(page/p)
+msgid ""
+"Once you have an account, log in, click on <guiseq><gui>File a Bug</"
+"gui><gui>Applications</gui><gui>gnome-games</gui></guiseq>. Before reporting "
+"a bug, please read the <link href=\"https://bugzilla.gnome.org/page.cgi?"
+"id=bug-writing.html\">bug writing guidelines</link>, and please <link href="
+"\"https://bugzilla.gnome.org/browse.cgi?product=gnome-games\">browse</link> "
+"for the bug to see if it already exists."
+msgstr ""
+"Ha létrehozta fiókját, jelentkezzen be, kattintson a <guiseq><gui>File a "
+"Bug</gui><gui>Applications</gui><gui>gnome-games</gui></guiseq> "
+"hivatkozásokra. Hiba jelentése előtt olvassa el a <link href=\"https://"
+"bugzilla.gnome.org/page.cgi?id=bug-writing.html\">hibajelentés-írási "
+"irányelveket</link>, és <link href=\"https://bugzilla.gnome.org/browse.cgi?"
+"product=gnome-games\">ellenőrizze</link>, hogy nincs-e már a hiba bejelentve."
+
+#: C/bug-filing.page:37(page/p)
+msgid ""
+"To file your bug, choose the component <gui>quadrapassel</gui> in the "
+"<gui>Component</gui> menu."
+msgstr ""
+"A hiba bejelentéséhez válassza ki a <gui>quadrapassel</gui> összetevőt a "
+"<gui>Component</gui> menüben."
+
+#: C/bug-filing.page:40(page/p)
+msgid ""
+"If you are requesting a new feature, choose <gui>enhancement</gui> in the "
+"<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
+"click <gui>Commit</gui>."
+msgstr ""
+"Ha új szolgáltatást kér, válassza az <gui>enhancement</gui> lehetőséget a "
+"<gui>Severity</gui> menüben. Töltse ki a Summary és Description szakaszokat, "
+"és kattintson a <gui>Commit</gui> gombra."
+
+#: C/bug-filing.page:44(page/p)
+msgid ""
+"Your report will be given an ID number, and its status will be updated as it "
+"is being dealt with."
+msgstr ""
+"A hibajelentés kapni fog egy azonosítószámot, az állapota pedig a "
+"feldolgozása során frissülni fog."
+
+#: C/bug-filing.page:49(section/p) C/develop.page:28(section/p)
+#: C/documentation.page:28(section/p) C/translate.page:41(section/p)
+msgid ""
+"<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous.png"
+"\"/>Get Involved</link>"
+msgstr ""
+"<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous.png"
+"\"/>Közreműködés</link>"
+
+#: C/bug-filing.page:50(section/p) C/develop.page:29(section/p)
+#: C/documentation.page:29(section/p) C/get-involved.page:22(section/p)
+#: C/playgame.page:43(section/p) C/preferences.page:72(section/p)
+#: C/score.page:37(section/p) C/translate.page:42(section/p)
+msgid ""
+"<link xref=\"index\"><media type=\"image\" src=\"media/go-home.png\"/>HOME</"
+"link>"
+msgstr ""
+"<link xref=\"index\"><media type=\"image\" src=\"media/go-home.png\"/"
+">Kezdőlap</link>"
+
+#: C/develop.page:21(info/desc)
+msgid "Have a plan for developing the game? We are always open to new ideas."
+msgstr ""
+"Van egy ötlete a játék fejlesztésével kapcsolatban? Mindig nyitottak vagyunk "
+"az új dolgokra."
+
+#: C/develop.page:24(page/title)
+msgid "Help develop"
+msgstr "Segítsen a fejlesztésben"
+
+#: C/develop.page:25(page/p)
+msgid ""
+"If you would like to <link href=\"https://live.gnome.org/GnomeGames/"
+"Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
+"touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
+"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
+"link>."
+msgstr ""
+"Ha szeretne <link href=\"https://live.gnome.org/GnomeGames/Contributing"
+"\">közreműködni a <app>GNOME Games</app> fejlesztésében</link>, akkor a "
+"fejlesztőkkel a kapcsolatot <link href=\"https://cbe005.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fgnomegames\">IRC</link>-n vagy a <link href="
+"\"http://mail.gnome.org/mailman/listinfo/games-list\">levelezőlistán</link> "
+"veheti fel."
+
+#: C/documentation.page:19(info/desc)
+msgid "Contribute to the documentation."
+msgstr "Járuljon hozzá a dokumentációhoz."
+
+#: C/documentation.page:22(page/title)
+msgid "Help write documentation"
+msgstr "Segítsen dokumentációt írni"
+
+#: C/documentation.page:23(page/p)
+msgid ""
+"To contribute to the Documentation Project, feel free to get in touch with "
+"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
+"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
+"mailman/listinfo/gnome-doc-list\">mailing list</link>."
+msgstr ""
+"A dokumentációs projekthez csatlakozáshoz keresse fel nyugodtan az <link "
+"href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fdocs"
+"\">irc</link> csatornát vagy a <link href=\"http://mail.gnome.org/mailman/"
+"listinfo/gnome-doc-list\">levelezőlistát</link>."
+
+#: C/documentation.page:25(page/p)
+msgid ""
+"Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"\">wiki</link> page contains useful information."
+msgstr ""
+"A projekt <link href=\"https://live.gnome.org/DocumentationProject/"
+"Contributing\">wiki</link> oldala tartalmazza a legfontosabb információkat."
+
+#: C/get-involved.page:16(page/title)
+msgid "Get Involved"
+msgstr "Közreműködés"
+
+#: C/get-involved.page:17(page/p)
+msgid ""
+"<app>Quadrapassel</app> is maintained by a volunteer community. You are "
+"invited to participate in any of the following ways."
+msgstr ""
+"A <gui>Quadrapasselt</gui> egy önkéntes közösség tartja karban. "
+"Közreműködését szívesen fogadjuk!"
+
+#: C/legal.xml:3(p/link)
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+
+#: C/legal.xml:3(license/p)
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Ez a munka a <_:link-1/> feltételei szerint használható."
+
+#: C/license.page:8(info/desc)
+msgid "Legal information."
+msgstr "Jogi információk."
+
+#: C/license.page:11(page/title)
+msgid "License"
+msgstr "Licenc"
+
+#: C/license.page:12(page/p)
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Ez a mű a CreativeCommons Attribution-Share Alike 3.0 Unported licenc "
+"feltételei szerint terjeszthető."
+
+#: C/license.page:20(page/p)
+msgid "You are free:"
+msgstr "Jogában áll:"
+
+#: C/license.page:25(item/title)
+msgid "<em>To share</em>"
+msgstr "<em>Megosztani</em>"
+
+#: C/license.page:26(item/p)
+msgid "To copy, distribute and transmit the work."
+msgstr "Másolni, terjeszteni és továbbítani a művet."
+
+#: C/license.page:29(item/title)
+msgid "<em>To remix</em>"
+msgstr "<em>Feldolgozni</em>"
+
+#: C/license.page:30(item/p)
+msgid "To adapt the work."
+msgstr "Módosítani a művet."
+
+#: C/license.page:33(page/p)
+msgid "Under the following conditions:"
+msgstr "A következő feltételek szerint:"
+
+#: C/license.page:38(item/title)
+msgid "<em>Attribution</em>"
+msgstr "<em>Nevezd meg!</em>"
+
+#: C/license.page:39(item/p)
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"A szerző vagy a jogosult által meghatározott módon fel kell tüntetned a "
+"műhöz kapcsolódó információkat (pl. a szerző nevét vagy álnevét, a Mű címét)."
+
+#: C/license.page:46(item/title)
+msgid "<em>Share Alike</em>"
+msgstr "<em>Így add tovább!</em>"
+
+#: C/license.page:47(item/p)
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Ha megváltoztatod, átalakítod, feldolgozod ezt a művet, az így létrejött "
+"alkotást csak a jelenlegivel megegyező licenc alatt terjesztheted."
+
+#: C/license.page:53(page/p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"A licenc teljes szövegéért lásd a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/legalcode\">CreativeCommons weboldalát</link>, vagy a "
+"teljes <link href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Commons "
+"összefoglalót</link>."
+
+#: C/playgame.page:16(license/p)
+msgid "Creative Commons Attribution Share Alike 3.0"
+msgstr "Creative Commons Attribution Share Alike 3.0"
+
+#: C/playgame.page:20(page/title)
+msgid "PLAY PLAY PLAY!"
+msgstr "JÁTSSZ JÁTSSZ JÁTSSZ!"
+
+#: C/playgame.page:23(section/title)
+msgid "How To Play"
+msgstr "Hogyan kell játszani"
+
+#: C/playgame.page:26(item/p)
+msgid ""
+"The <key>←</key> and <key>→</key> keys move the blocks across the screen."
+msgstr ""
+"A képernyőn a <key>←</key> és <key>→</key> billentyűk mozgatják a blokkokat."
+
+#: C/playgame.page:27(item/p)
+msgid ""
+"The <key>↑</key> key rotates the block. The rotation (which is "
+"counterclockwise by default) can be changed in the <link xref=\"preferences"
+"\">Preferences</link>."
+msgstr ""
+"A <key>↑</key> billentyű forgatja a blokkokat. A forgatás, amely "
+"alapértelmezetten órajárással ellentétes, megváltoztatható a <link xref="
+"\"preferences\">Beállításokban</link>."
+
+#: C/playgame.page:28(item/p)
+msgid ""
+"The <key>SPACEBAR</key> and <key>↓</key> key increase the speed of the drop. "
+"The <key>SPACEBAR</key> causes a hard-drop (instant move to the bottom). The "
+"<key>↓</key> key causes a soft-drop (temporary increase in speed while the "
+"key is held down)."
+msgstr ""
+"A <key>Szóköz</key> és <key>↓</key> billentyűk megnövelik az esés "
+"sebességét. A <key>Szóköz</key> hirtelen esést eredményez (azonnal a "
+"legaljára kerül). A <key>↓</key> billentyű gyorsított esést eredményez "
+"(ideiglenesen megnő a sebesség, amíg a gomb le van nyomva)."
+
+#: C/playgame.page:33(section/title)
+msgid "Rules"
+msgstr "Szabályok"
+
+#: C/playgame.page:35(section/p)
+msgid "There are a couple of rules that you should keep in mind:"
+msgstr "Van néhány szabály, amelyet nem árt fejben tartani."
+
+#: C/playgame.page:37(item/p)
+msgid ""
+"You can pause, end, start a new game, get help or quit the program at any "
+"time."
+msgstr ""
+"Bármikor megállíthatja, befejezheti, újat kezdhet, segítséget kérhet vagy "
+"kiléphet a programból."
+
+#: C/playgame.page:38(item/p)
+msgid "You can pause the game as many times as you want."
+msgstr "Bármennyiszer megállíthatja a játékot."
+
+#: C/preferences.page:18(info/desc)
+msgid "Preferences for the game and the theme."
+msgstr "A játék és a téma beállításai."
+
+#: C/preferences.page:22(page/title)
+msgid "Game Preferences"
+msgstr "Játék beállításai"
+
+#: C/preferences.page:24(page/p)
+msgid ""
+"To change the game preferences, click the <guiseq><gui>Quadrapassel menu</"
+"gui><gui>Preferences</gui></guiseq>."
+msgstr ""
+"A játék beállításainak módosításához kattintson a <guiseq><gui>Quadrapassel</"
+"gui><gui>Beállítások</gui></guiseq> menüpontra."
+
+#: C/preferences.page:26(page/p)
+msgid ""
+"The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
+"<gui>Theme</gui>."
+msgstr ""
+"Három lap érhető el: <gui>Vezérlés</gui>, <gui>Játék</gui> és <gui>Téma</"
+"gui>."
+
+#: C/preferences.page:29(section/title)
+msgid "Controls"
+msgstr "Vezérlés"
+
+#: C/preferences.page:30(section/p)
+msgid ""
+"By double-clicking on the given controls, thus selecting the new one, you "
+"can change the control keys."
+msgstr ""
+"A megadott billentyűre való dupla kattintás esetén módosíthatjuk azt egy új "
+"megadásával."
+
+#: C/preferences.page:34(section/title)
+msgid "Game"
+msgstr "Játék"
+
+#: C/preferences.page:35(section/p)
+msgid ""
+"Under the <gui>Game</gui> tab, you can change the way in which the game "
+"starts:"
+msgstr ""
+"A <gui>Játék</gui> lapnál azt lehet beállítani, hogyan is kezdődjön a játék:"
+
+#: C/preferences.page:37(item/p)
+msgid ""
+"<gui>Number of pre-filled rows</gui> indicates how many rows with blocks "
+"there will be when the game starts."
+msgstr ""
+"<gui>Az Előre kitöltött sorok száma</gui> megmutatja, hogy hány sor lesz "
+"blokkokkal kitöltve a játék kezdetén."
+
+#: C/preferences.page:38(item/p)
+msgid ""
+"<gui>Density of blocks in a pre-filled row</gui> indicates how many blocks "
+"there will be in a pre-filled row when the game starts."
+msgstr ""
+"<gui>A blokkok sűrűsége az előre feltöltött sorokban</gui> megmutatja, hogy "
+"hány blokk lesz elhelyezve az előre feltöltött sorokban a játék kezdetén."
+
+#: C/preferences.page:39(item/p)
+msgid "<gui>Starting level</gui> controls the speed with which you will start."
+msgstr "A <gui>Kezdőszint</gui> kezeli a sebességet, amellyel a játék indul."
+
+#: C/preferences.page:41(section/p)
+msgid "These options can vary from 0 to 19, 0 to 10, and 1 to 20 respectively."
+msgstr ""
+"Ezek egyenként változtathatóak 0-tól 19-ig, 0-tól 10-ig és 1-től 20-ig."
+
+#: C/preferences.page:43(section/p)
+msgid "Other available options are:"
+msgstr "Egyéb elérhető beállítások:"
+
+#: C/preferences.page:45(item/p)
+msgid "<gui>Enable sounds</gui>"
+msgstr "<gui>Hangok bekapcsolása</gui>"
+
+#: C/preferences.page:46(item/p)
+msgid "<gui>Preview next block</gui>"
+msgstr "<gui>Következő blokk előnézete</gui>"
+
+#: C/preferences.page:47(item/p)
+msgid "<gui>Choose difficult blocks</gui>"
+msgstr "<gui>Nehéz blokkok választása</gui>"
+
+#: C/preferences.page:48(item/p)
+msgid "<gui>Rotate blocks counterclockwise</gui>"
+msgstr "<gui>Blokkok forgatása óramutató járásával ellentétes irányba</gui>"
+
+#: C/preferences.page:49(item/p)
+msgid "<gui>Show where the block will land</gui>"
+msgstr "<gui>A blokk várható helyének megjelenítése</gui>"
+
+#: C/preferences.page:54(section/title)
+msgid "Theme"
+msgstr "Téma"
+
+#: C/preferences.page:55(section/p)
+msgid "To change the theme:"
+msgstr "Téma kiválasztása:"
+
+#: C/preferences.page:57(item/p)
+msgid ""
+"click the <guiseq><gui>Quadrapassel menu</gui><gui>Preference</gui></guiseq>."
+msgstr ""
+"kattintson a <guiseq><gui>Quadrapassel</gui><gui>Beállítások</gui></guiseq> "
+"menüpontra."
+
+#: C/preferences.page:58(item/p)
+msgid "select the <gui>Theme</gui> tab."
+msgstr "válassza a <gui>Téma</gui> lapot."
+
+#: C/preferences.page:60(section/p)
+msgid "Four different themes are available for the blocks' contours:"
+msgstr "Négy különböző téma érhető el a blokkok számára:"
+
+#: C/preferences.page:64(item/p)
+msgid "Plain"
+msgstr "Egyszerű"
+
+#: C/preferences.page:65(item/p)
+msgid "Tango Flat"
+msgstr "Sima Tango"
+
+#: C/preferences.page:66(item/p)
+msgid "Tango Shaded"
+msgstr "Árnyékolt Tango"
+
+#: C/preferences.page:67(item/p)
+msgid "Clean"
+msgstr "Tisztítás"
+
+#: C/score.page:20(page/title)
+msgid "Score"
+msgstr "Pontszám"
+
+#: C/score.page:21(page/p)
+msgid "Do you think you can reach level 10?"
+msgstr "Azt hiszi, hogy elérheti a 10. szintet?"
+
+#: C/score.page:24(section/title)
+msgid "Score More"
+msgstr "Szerezzen több pontot"
+
+#: C/score.page:25(section/p)
+msgid ""
+"If you start from level 1, the only way to go to the next level is by "
+"completing more lines, that is, scoring more points. In order for you to "
+"have a better score, try to adapt the screen, the keyboard, and the level "
+"(the speed) that fits you the most!"
+msgstr ""
+"Amennyiben az első szinten kezd, csak úgy juthat tovább, ha több teljes sort "
+"hoz létre, mint amennyi van. Ezáltal több pontot szerez. Jobb pontszám "
+"érdekében, próbáljon alkalmazkodni a képernyőhöz, a billentyűzethez és a "
+"szinthez (sebességhez), amely önnek a legjobban megfelel."
+
+#: C/score.page:26(section/p)
+msgid ""
+"You can make many changes to the keyboard controls, the contour of the "
+"blocks, the number and density of lines with which you start, and the speed "
+"of drop. You can change your settings in in <link xref=\"preferences"
+"\">Preference</link>. After deciding what fits you the most, you will rock!"
+msgstr ""
+"Sok változtatást tud végrehajtani, mint például a billentyűzet vezérlés, a "
+"blokkok kinézete, a kezdésnél feltöltött sorok száma és az esés sebessége. "
+"Beállításait a <link xref=\"preferences\">Beállítások</link> menüpontban "
+"tudja módosítani. Miután eldöntötte, hogy mi az ami a legjobban megfelel, ön "
+"lesz az ász."
+
+#: C/score.page:30(section/title)
+msgid "High Scores"
+msgstr "Pontszámok"
+
+#: C/score.page:31(section/p)
+msgid ""
+"Everyone wants to be on the top of the list, right? In <guiseq><gui>Game</"
+"gui><gui>Scores</gui></guiseq> you can find the records from the highest to "
+"the lowest score."
+msgstr ""
+"Mindenki a lista elején szeretne lenni, nemde? A <guiseq><gui>Quadrapassel</"
+"gui><gui>Pontszámok</gui></guiseq> menüpontjában találja meg a legjobbtól a "
+"leggyengébb eredményig pontszámait."
+
+#: C/score.page:33(section/p)
+msgid ""
+"The scores cannot be deleted, so do not worry that someone will remove your "
+"best high score!"
+msgstr ""
+"A pontszámok nem törölhetőek, így nem kell aggódnia, hogy valaki kitörölné "
+"az ön legjobb pontszámát."
+
+#: C/translate.page:16(info/desc)
+msgid "Do you know a world language?"
+msgstr "Ismer egy világnyelvet?"
+
+#: C/translate.page:19(page/title)
+msgid "Help translate"
+msgstr "Segítsen a fordításban"
+
+#: C/translate.page:21(page/p)
+msgid ""
+"The <app>GNOME games</app> user interface and documentation is being "
+"translated by a world-wide volunteer community."
+msgstr ""
+"A <gui>GNOME Games</gui> felhasználói felületét és súgóját egy világszintű "
+"önkéntes közösség fordítja."
+
+#: C/translate.page:25(page/p)
+msgid ""
+"There are <link href=\"http://l10n.gnome.org/module/gnome-games/\">many "
+"languages</link> for which translations are still needed."
+msgstr ""
+"<link href=\"http://l10n.gnome.org/module/gnome-games/\">Számos nyelv van</"
+"link>, amelyhez még szükség van fordításokra."
+
+#: C/translate.page:29(page/p)
+msgid ""
+"To start translating you will need to <link href=\"http:l10n.gnome.org"
+"\">create an account</link> and join the <link href=\"http://l10n.gnome.org/"
+"teams/\">translation team</link> for your language. This will give you the "
+"ability to upload new translations."
+msgstr ""
+"A fordítás elkezdéséhez <link href=\"http:l10n.gnome.org\">létre kell hoznia "
+"egy fiókot</link>, és csatlakoznia kell a nyelvének megfelelő <link href="
+"\"http://l10n.gnome.org/teams/\">fordítócsapathoz</link>. Ez lehetővé teszi "
+"Önnek az új fordítások feltöltését."
+
+#: C/translate.page:33(page/p)
+msgid ""
+"You can chat with GNOME translators using <link href=\"https://cbe003.chat."
+"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. People on the "
+"channel are located worldwide, so you may not get an immediate response as a "
+"result of timezone differences."
+msgstr ""
+"A GNOME fordítókkal <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A"
+"%2F%2Firc.gnome.org%2Fi18n\">IRC-en</link> is cseveghet. A csatornán a világ "
+"minden részéről vannak emberek, így előfordulhat, hogy az időzóna-eltérések "
+"miatt nem kap azonnal választ."
+
+#: C/translate.page:37(page/p)
+msgid ""
+"Alternatively, you can contact the Internationalization Team using their "
+"<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+"list</link>."
+msgstr ""
+"Ennek alternatívájaként megkeresheti a nemzetközi fordítócsapatot <link href="
+"\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">levelezőlistán</link> "
+"is. A magyar csapat <link href=\"http://l10n.gnome.org/languages/hu/"
+"\">kezdőoldalán</link> megtalálja a magyar levelezőlista címét és a "
+"fordítások megkezdéséhez szükséges információkat."
