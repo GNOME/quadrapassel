@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the gnome-games package.
 #
 # László Ádám Kohajda <kla.kohi at gmail dot com>, 2012.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "POT-Creation-Date: 2012-08-25 07:21+0000\n"
-"PO-Revision-Date: 2012-08-25 21:14+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2012-08-28 13:56+0200\n"
+"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -206,7 +207,7 @@ msgid ""
 "<media type=\"image\" src=\"media/quadrapassel.png\">Quadrapassel logo</"
 "media>Quadrapassel"
 msgstr ""
-"<media type=\"image\" src=\"media/quadrapassel.png\">Quadrapassel logo</"
+"<media type=\"image\" src=\"media/quadrapassel.png\">Quadrapassel logó</"
 "media>Quadrapassel"
 
 #: C/index.page:20(page/p)
@@ -222,7 +223,7 @@ msgstr ""
 "teljes kitöltése amennyi csak lehetséges. A sorok hét különböző formából "
 "állhatnak. A formák véletlenszerűen esnek fentről lefele a képernyő közepén. "
 "Feladata ezek forgatása és mozgatása a képernyőn, hogy azok sorokat "
-"alkossanak. Sorok létrehozásával ön pontokat szerez és szinteket lép. A "
+"alkossanak. A sorok kitöltésével pontokat szerezhet és szintet léphet. A "
 "játék előrehaladtával a zuhanó blokkok sebessége nő."
 
 #: C/index.page:33(td/p)
@@ -325,7 +326,7 @@ msgstr "Tiffany Antopolski"
 
 #: C/bug-filing.page:20(info/desc)
 msgid "Found a problem? Feel free to file a bug."
-msgstr "Hibát talált? Küldje el hibajelentését."
+msgstr "Hibát talált? Küldjön hibajelentést!"
 
 #: C/bug-filing.page:23(page/title)
 msgid "Report a Problem"
@@ -401,7 +402,7 @@ msgid ""
 "is being dealt with."
 msgstr ""
 "A hibajelentés kapni fog egy azonosítószámot, az állapota pedig a "
-"feldolgozása során frissülni fog."
+"feldolgozás során frissülni fog."
 
 #: C/bug-filing.page:49(section/p) C/develop.page:28(section/p)
 #: C/documentation.page:28(section/p) C/translate.page:41(section/p)
@@ -426,7 +427,7 @@ msgstr ""
 #: C/develop.page:21(info/desc)
 msgid "Have a plan for developing the game? We are always open to new ideas."
 msgstr ""
-"Van egy ötlete a játék fejlesztésével kapcsolatban? Mindig nyitottak vagyunk "
+"Ötlete van a játék fejlesztésével kapcsolatban? Mindig nyitottak vagyunk "
 "az új dolgokra."
 
 #: C/develop.page:24(page/title)
@@ -443,7 +444,7 @@ msgid ""
 "link>."
 msgstr ""
 "Ha szeretne <link href=\"https://live.gnome.org/GnomeGames/Contributing"
-"\">közreműködni a <app>GNOME Games</app> fejlesztésében</link>, akkor a "
+"\">közreműködni a <app>GNOME játékok</app> fejlesztésében</link>, akkor a "
 "fejlesztőkkel a kapcsolatot <link href=\"https://cbe005.chat.mibbit.com/?"
 "url=irc%3A%2F%2Firc.gnome.org%2Fgnomegames\">IRC</link>-n vagy a <link href="
 "\"http://mail.gnome.org/mailman/listinfo/games-list\">levelezőlistán</link> "
@@ -464,7 +465,7 @@ msgid ""
 "gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
 "mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgstr ""
-"A dokumentációs projekthez csatlakozáshoz keresse fel nyugodtan az <link "
+"A dokumentációs projekthez csatlakozáshoz keresse fel az <link "
 "href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fdocs"
 "\">irc</link> csatornát vagy a <link href=\"http://mail.gnome.org/mailman/"
 "listinfo/gnome-doc-list\">levelezőlistát</link>."
@@ -547,7 +548,7 @@ msgid ""
 "licensor (but not in any way that suggests that they endorse you or your use "
 "of the work)."
 msgstr ""
-"A szerző vagy a jogosult által meghatározott módon fel kell tüntetned a "
+"A szerző vagy a jogosult által meghatározott módon fel kell tüntetnie a "
 "műhöz kapcsolódó információkat (pl. a szerző nevét vagy álnevét, a Mű címét)."
 
 #: C/license.page:46(item/title)
@@ -559,8 +560,8 @@ msgid ""
 "If you alter, transform, or build upon this work, you may distribute the "
 "resulting work only under the same, similar or a compatible license."
 msgstr ""
-"Ha megváltoztatod, átalakítod, feldolgozod ezt a művet, az így létrejött "
-"alkotást csak a jelenlegivel megegyező licenc alatt terjesztheted."
+"Ha megváltoztatja, átalakítja, feldolgozza ezt a művet, az így létrejött "
+"alkotást csak a jelenlegivel megegyező licenc alatt terjesztheti."
 
 #: C/license.page:53(page/p)
 msgid ""
@@ -580,11 +581,11 @@ msgstr "Creative Commons Attribution Share Alike 3.0"
 
 #: C/playgame.page:20(page/title)
 msgid "PLAY PLAY PLAY!"
-msgstr "JÁTSSZ JÁTSSZ JÁTSSZ!"
+msgstr "Játékmenet"
 
 #: C/playgame.page:23(section/title)
 msgid "How To Play"
-msgstr "Hogyan kell játszani"
+msgstr "Hogyan kell játszani?"
 
 #: C/playgame.page:26(item/p)
 msgid ""
@@ -612,7 +613,7 @@ msgstr ""
 "A <key>Szóköz</key> és <key>↓</key> billentyűk megnövelik az esés "
 "sebességét. A <key>Szóköz</key> hirtelen esést eredményez (azonnal a "
 "legaljára kerül). A <key>↓</key> billentyű gyorsított esést eredményez "
-"(ideiglenesen megnő a sebesség, amíg a gomb le van nyomva)."
+"(ideiglenesen megnő a sebesség, amíg a billentyű le van nyomva)."
 
 #: C/playgame.page:33(section/title)
 msgid "Rules"
@@ -620,14 +621,15 @@ msgstr "Szabályok"
 
 #: C/playgame.page:35(section/p)
 msgid "There are a couple of rules that you should keep in mind:"
-msgstr "Van néhány szabály, amelyet nem árt fejben tartani."
+msgstr "Van néhány szabály, amelyeket nem árt észben tartani."
 
 #: C/playgame.page:37(item/p)
 msgid ""
 "You can pause, end, start a new game, get help or quit the program at any "
 "time."
 msgstr ""
-"Bármikor megállíthatja, befejezheti, újat kezdhet, segítséget kérhet vagy "
+"Bármikor megállíthatja vagy befejezheti a játékot, új játékot kezdhet, "
+"segítséget kérhet vagy "
 "kiléphet a programból."
 
 #: C/playgame.page:38(item/p)
@@ -667,8 +669,8 @@ msgid ""
 "By double-clicking on the given controls, thus selecting the new one, you "
 "can change the control keys."
 msgstr ""
-"A megadott billentyűre való dupla kattintás esetén módosíthatjuk azt egy új "
-"megadásával."
+"Az egyes billentyűnevekre való dupla kattintással módosíthatja azokat, az új "
+"billentyű lenyomásával."
 
 #: C/preferences.page:34(section/title)
 msgid "Game"
@@ -679,14 +681,14 @@ msgid ""
 "Under the <gui>Game</gui> tab, you can change the way in which the game "
 "starts:"
 msgstr ""
-"A <gui>Játék</gui> lapnál azt lehet beállítani, hogyan is kezdődjön a játék:"
+"A <gui>Játék</gui> lapon azt lehet beállítani, hogyan is kezdődjön a játék:"
 
 #: C/preferences.page:37(item/p)
 msgid ""
 "<gui>Number of pre-filled rows</gui> indicates how many rows with blocks "
 "there will be when the game starts."
 msgstr ""
-"<gui>Az Előre kitöltött sorok száma</gui> megmutatja, hogy hány sor lesz "
+"<gui>Az előre kitöltött sorok száma</gui> mező megadja, hogy hány sor lesz "
 "blokkokkal kitöltve a játék kezdetén."
 
 #: C/preferences.page:38(item/p)
@@ -694,17 +696,16 @@ msgid ""
 "<gui>Density of blocks in a pre-filled row</gui> indicates how many blocks "
 "there will be in a pre-filled row when the game starts."
 msgstr ""
-"<gui>A blokkok sűrűsége az előre feltöltött sorokban</gui> megmutatja, hogy "
+"<gui>A blokkok sűrűsége az előre feltöltött sorokban</gui> megadja, hogy "
 "hány blokk lesz elhelyezve az előre feltöltött sorokban a játék kezdetén."
 
 #: C/preferences.page:39(item/p)
 msgid "<gui>Starting level</gui> controls the speed with which you will start."
-msgstr "A <gui>Kezdőszint</gui> kezeli a sebességet, amellyel a játék indul."
+msgstr "A <gui>Kezdőszint</gui> megadja a sebességet, amellyel a játék indul."
 
 #: C/preferences.page:41(section/p)
 msgid "These options can vary from 0 to 19, 0 to 10, and 1 to 20 respectively."
-msgstr ""
-"Ezek egyenként változtathatóak 0-tól 19-ig, 0-tól 10-ig és 1-től 20-ig."
+msgstr "Ezek rendre 0-tól 19-ig, 0-tól 10-ig és 1-től 20-ig változtathatók."
 
 #: C/preferences.page:43(section/p)
 msgid "Other available options are:"
@@ -736,22 +737,22 @@ msgstr "Téma"
 
 #: C/preferences.page:55(section/p)
 msgid "To change the theme:"
-msgstr "Téma kiválasztása:"
+msgstr "A téma megváltoztatásához:"
 
 #: C/preferences.page:57(item/p)
 msgid ""
 "click the <guiseq><gui>Quadrapassel menu</gui><gui>Preference</gui></guiseq>."
 msgstr ""
-"kattintson a <guiseq><gui>Quadrapassel</gui><gui>Beállítások</gui></guiseq> "
-"menüpontra."
+"Válassza a <guiseq><gui>Quadrapassel</gui><gui>Beállítások</gui></guiseq> "
+"menüpontot."
 
 #: C/preferences.page:58(item/p)
 msgid "select the <gui>Theme</gui> tab."
-msgstr "válassza a <gui>Téma</gui> lapot."
+msgstr "Válassza a <gui>Téma</gui> lapot."
 
 #: C/preferences.page:60(section/p)
 msgid "Four different themes are available for the blocks' contours:"
-msgstr "Négy különböző téma érhető el a blokkok számára:"
+msgstr "Négy különböző téma érhető el a blokkokhoz:"
 
 #: C/preferences.page:64(item/p)
 msgid "Plain"
@@ -767,7 +768,7 @@ msgstr "Árnyékolt Tango"
 
 #: C/preferences.page:67(item/p)
 msgid "Clean"
-msgstr "Tisztítás"
+msgstr "Letisztult"
 
 #: C/score.page:20(page/title)
 msgid "Score"
@@ -775,7 +776,7 @@ msgstr "Pontszám"
 
 #: C/score.page:21(page/p)
 msgid "Do you think you can reach level 10?"
-msgstr "Azt hiszi, hogy elérheti a 10. szintet?"
+msgstr "Úgy érzi, elérheti a 10. szintet?"
 
 #: C/score.page:24(section/title)
 msgid "Score More"
@@ -789,9 +790,9 @@ msgid ""
 "(the speed) that fits you the most!"
 msgstr ""
 "Amennyiben az első szinten kezd, csak úgy juthat tovább, ha több teljes sort "
-"hoz létre, mint amennyi van. Ezáltal több pontot szerez. Jobb pontszám "
-"érdekében, próbáljon alkalmazkodni a képernyőhöz, a billentyűzethez és a "
-"szinthez (sebességhez), amely önnek a legjobban megfelel."
+"hoz létre, azaz több pontot szerez. Jobb pontszám "
+"eléréséhez próbálja módosítani a képernyőt, a billentyűzetet és a "
+"szintet (sebességet), hogy a legjobban megfeleljen Önnek."
 
 #: C/score.page:26(section/p)
 msgid ""
@@ -800,11 +801,11 @@ msgid ""
 "of drop. You can change your settings in in <link xref=\"preferences"
 "\">Preference</link>. After deciding what fits you the most, you will rock!"
 msgstr ""
-"Sok változtatást tud végrehajtani, mint például a billentyűzet vezérlés, a "
-"blokkok kinézete, a kezdésnél feltöltött sorok száma és az esés sebessége. "
+"Sok változtatást tud végrehajtani a billentyűzetes vezérlésen, a "
+"blokkok kinézetén, a kezdésnél feltöltött sorok számán és az esés sebességén. "
 "Beállításait a <link xref=\"preferences\">Beállítások</link> menüpontban "
-"tudja módosítani. Miután eldöntötte, hogy mi az ami a legjobban megfelel, ön "
-"lesz az ász."
+"tudja módosítani. Miután eldöntötte, hogy mi felel meg legjobban, Ön "
+"lesz az ász!"
 
 #: C/score.page:30(section/title)
 msgid "High Scores"
@@ -817,8 +818,9 @@ msgid ""
 "the lowest score."
 msgstr ""
 "Mindenki a lista elején szeretne lenni, nemde? A <guiseq><gui>Quadrapassel</"
-"gui><gui>Pontszámok</gui></guiseq> menüpontjában találja meg a legjobbtól a "
-"leggyengébb eredményig pontszámait."
+"gui><gui>Pontszámok</gui></guiseq> menüpontjában találja meg a pontszámokat a "
+"legjobbtól a "
+"leggyengébbig."
 
 #: C/score.page:33(section/p)
 msgid ""
@@ -826,11 +828,11 @@ msgid ""
 "best high score!"
 msgstr ""
 "A pontszámok nem törölhetőek, így nem kell aggódnia, hogy valaki kitörölné "
-"az ön legjobb pontszámát."
+"az Ön legjobb pontszámát."
 
 #: C/translate.page:16(info/desc)
 msgid "Do you know a world language?"
-msgstr "Ismer egy világnyelvet?"
+msgstr "Ismer idegen nyelveket?"
 
 #: C/translate.page:19(page/title)
 msgid "Help translate"
@@ -841,7 +843,7 @@ msgid ""
 "The <app>GNOME games</app> user interface and documentation is being "
 "translated by a world-wide volunteer community."
 msgstr ""
-"A <gui>GNOME Games</gui> felhasználói felületét és súgóját egy világszintű "
+"A <gui>GNOME játékok</gui> felhasználói felületét és súgóját egy világszintű "
 "önkéntes közösség fordítja."
 
 #: C/translate.page:25(page/p)
@@ -887,3 +889,4 @@ msgstr ""
 "is. A magyar csapat <link href=\"http://l10n.gnome.org/languages/hu/"
 "\">kezdőoldalán</link> megtalálja a magyar levelezőlista címét és a "
 "fordítások megkezdéséhez szükséges információkat."
+
