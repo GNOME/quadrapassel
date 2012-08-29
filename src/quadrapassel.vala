@@ -68,6 +68,11 @@ public class Quadrapassel : Gtk.Application
         base.startup ();
 
         add_action_entries (action_entries, this);
+        add_accelerator ("<Primary>n", "app.new-game", null);
+        add_accelerator ("Pause", "app.pause", null);
+        add_accelerator ("F11", "app.fullscreen", null);
+        add_accelerator ("F1", "app.help", null);
+        add_accelerator ("<Primary>q", "app.quit", null);
         pause_action = lookup_action ("pause") as SimpleAction;
 
         var menu = new Menu ();
@@ -112,26 +117,30 @@ public class Quadrapassel : Gtk.Application
         view.game = new Game (20, 14, 1, 20, 10);
         view.show ();
 
-        GnomeGamesSupport.stock_init ();
-
         var toolbar = new Gtk.Toolbar ();
         toolbar.show ();
         toolbar.show_arrow = false;
         toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_PRIMARY_TOOLBAR);
         vbox.pack_start (toolbar, false, true, 0);
 
-        var new_game_button = new Gtk.ToolButton.from_stock (GnomeGamesSupport.STOCK_NEW_GAME);
+        var new_game_button = new Gtk.ToolButton (null, _("_New"));
+        new_game_button.use_underline = true;
+        new_game_button.icon_name = "document-new";
         new_game_button.action_name = "app.new-game";
         new_game_button.is_important = true;
         new_game_button.show ();
         toolbar.insert (new_game_button, -1);
 
-        pause_button = new Gtk.ToolButton.from_stock (GnomeGamesSupport.STOCK_PAUSE_GAME);
+        pause_button = new Gtk.ToolButton (null, _("_Pause"));
+        pause_button.icon_name = "media-playback-pause";
+        pause_button.use_underline = true;
         pause_button.action_name = "app.pause";
         pause_button.show ();
         toolbar.insert (pause_button, -1);
 
-        fullscreen_button = new Gtk.ToolButton.from_stock (GnomeGamesSupport.STOCK_FULLSCREEN);
+        fullscreen_button = new Gtk.ToolButton (null, _("_Fullscreen"));
+        fullscreen_button.icon_name = "view-fullscreen";
+        fullscreen_button.use_underline = true;
         fullscreen_button.action_name = "app.fullscreen";
         fullscreen_button.show ();
         toolbar.insert (fullscreen_button, -1);
@@ -217,9 +226,15 @@ public class Quadrapassel : Gtk.Application
         {
             is_fullscreen = (event.new_window_state & Gdk.WindowState.FULLSCREEN) != 0;
             if (is_fullscreen)
-                fullscreen_button.stock_id = GnomeGamesSupport.STOCK_LEAVE_FULLSCREEN;
+            {
+                fullscreen_button.label = _("_Leave Fullscreen");
+                fullscreen_button.icon_name = "view-restore";
+            }
             else
-                fullscreen_button.stock_id = GnomeGamesSupport.STOCK_FULLSCREEN;
+            {
+                fullscreen_button.label = _("_Fullscreen");            
+                fullscreen_button.icon_name = "view-fullscreen";
+            }
         }
         return false;
     }
@@ -589,9 +604,15 @@ public class Quadrapassel : Gtk.Application
     private void pause_changed_cb ()
     {
         if (game.paused)
-            pause_button.stock_id = GnomeGamesSupport.STOCK_RESUME_GAME;
+        {
+            pause_button.icon_name = "media-playback-start";
+            pause_button.label = _("Res_ume");
+        }
         else
-            pause_button.stock_id = GnomeGamesSupport.STOCK_PAUSE_GAME;
+        {
+            pause_button.icon_name = "media-playback-pause";
+            pause_button.label = _("_Pause");
+        }
     }
 
     private void shape_landed_cb (int[] lines, List<Block> line_blocks)
