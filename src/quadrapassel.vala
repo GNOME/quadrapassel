@@ -4,7 +4,11 @@ public class Quadrapassel : Gtk.Application
     private Settings settings;
 
     /* Main window */
-    private Gtk.Window main_window;
+    private Gtk.Window window;
+    private int window_width;
+    private int window_height;
+    private bool is_fullscreen;
+    private bool is_maximized;
 
     /* Game being played */
     private Game? game = null;
@@ -26,9 +30,10 @@ public class Quadrapassel : Gtk.Application
 
     private GnomeGamesSupport.Scores high_scores;
 
-    private SimpleAction pause;
-    private GnomeGamesSupport.PauseAction pause_action;
-    private GnomeGamesSupport.FullscreenAction fullscreen_action;
+    private SimpleAction pause_action;
+
+    private Gtk.ToolButton pause_button;
+    private Gtk.ToolButton fullscreen_button;
 
     private Gtk.Dialog preferences_dialog;
     private Gtk.SpinButton starting_level_spin;
@@ -44,17 +49,13 @@ public class Quadrapassel : Gtk.Application
     private const GLib.ActionEntry[] action_entries =
     {
         { "new-game",      new_game_cb    },
-        { "pause",         toggle_cb,    null, "false",     pause_changed         },
+        { "pause",         pause_cb       },
         { "scores",        scores_cb      },
         { "preferences",   preferences_cb },
+        { "fullscreen",    fullscreen_cb  },
         { "help",          help_cb        },
         { "about",         about_cb       },
         { "quit",          quit_cb        }
-    };
-
-    private const Gtk.ActionEntry actions[] =
-    {
-       { "NewGame", GnomeGamesSupport.STOCK_NEW_GAME, null, null, null, new_game_cb }
     };
 
     public Quadrapassel ()
@@ -67,7 +68,7 @@ public class Quadrapassel : Gtk.Application
         base.startup ();
 
         add_action_entries (action_entries, this);
-        pause = lookup_action ("pause") as SimpleAction;
+        pause_action = lookup_action ("pause") as SimpleAction;
 
         var menu = new Menu ();
         var section = new Menu ();
@@ -87,17 +88,22 @@ public class Quadrapassel : Gtk.Application
 
         settings = new Settings ("org.gnome.quadrapassel");
 
-        main_window = new Gtk.ApplicationWindow (this);
-        main_window.set_events (main_window.get_events () | Gdk.EventMask.KEY_PRESS_MASK | Gdk.EventMask.KEY_RELEASE_MASK);
-        main_window.set_title (_("Quadrapassel"));
-        main_window.key_press_event.connect (key_press_event_cb);
-        main_window.key_release_event.connect (key_release_event_cb);
-        main_window.set_default_size (500, 550);
-        //games_conf_add_window (main_window, KEY_SAVED_GROUP);
+        window = new Gtk.ApplicationWindow (this);
+        window.set_events (window.get_events () | Gdk.EventMask.KEY_PRESS_MASK | Gdk.EventMask.KEY_RELEASE_MASK);
+        window.title = _("Quadrapassel");
+        window.configure_event.connect (window_configure_event_cb);
+        window.window_state_event.connect (window_state_event_cb);
+        window.key_press_event.connect (key_press_event_cb);
+        window.key_release_event.connect (key_release_event_cb);
+        window.set_default_size (settings.get_int ("window-width"), settings.get_int ("window-height"));        
+        if (settings.get_boolean ("window-is-fullscreen"))
+            window.fullscreen ();
+        else if (settings.get_boolean ("window-is-maximized"))
+            window.maximize ();
 
         var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         vbox.show ();
-        main_window.add (vbox);
+        window.add (vbox);
 
         view = new GameView ();
         view.theme = settings.get_string ("theme");
@@ -108,43 +114,27 @@ public class Quadrapassel : Gtk.Application
 
         GnomeGamesSupport.stock_init ();
 
-        var action_group = new Gtk.ActionGroup ("group");
-        action_group.set_translation_domain (GETTEXT_PACKAGE);
-        action_group.add_actions (actions, this);
-        action_group.get_action ("NewGame").is_important = true;
-
-        var ui_manager = new Gtk.UIManager ();
-        ui_manager.insert_action_group (action_group, 0);
-        try
-        {
-            var ui_description =
-            "<ui>" +
-            "    <toolbar name='Toolbar'>" +
-            "        <toolitem action='NewGame'/>" +
-            "        <toolitem action='_Pause'/>" +
-            "        <toolitem action='Fullscreen'/>" +
-            "    </toolbar>" +
-            "</ui>";
-            ui_manager.add_ui_from_string (ui_description, -1);
-        }
-        catch (Error e)
-        {
-            warning ("Failed to load UI: %s", e.message);
-        }
-        main_window.add_accel_group (ui_manager.get_accel_group ());
-
-        pause_action = new GnomeGamesSupport.PauseAction ("_Pause");
-        pause_action.state_changed.connect (pause_cb);
-        action_group.add_action_with_accel (pause_action, null);
-
-        fullscreen_action = new GnomeGamesSupport.FullscreenAction ("Fullscreen", main_window);
-        action_group.add_action_with_accel (fullscreen_action, null);
-
-        var toolbar = (Gtk.Toolbar) ui_manager.get_widget ("/Toolbar");
+        var toolbar = new Gtk.Toolbar ();
+        toolbar.show ();
         toolbar.show_arrow = false;
         toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_PRIMARY_TOOLBAR);
-        toolbar.show ();
         vbox.pack_start (toolbar, false, true, 0);
+
+        var new_game_button = new Gtk.ToolButton.from_stock (GnomeGamesSupport.STOCK_NEW_GAME);
+        new_game_button.action_name = "app.new-game";
+        new_game_button.is_important = true;
+        new_game_button.show ();
+        toolbar.insert (new_game_button, -1);
+
+        pause_button = new Gtk.ToolButton.from_stock (GnomeGamesSupport.STOCK_PAUSE_GAME);
+        pause_button.action_name = "app.pause";
+        pause_button.show ();
+        toolbar.insert (pause_button, -1);
+
+        fullscreen_button = new Gtk.ToolButton.from_stock (GnomeGamesSupport.STOCK_FULLSCREEN);
+        fullscreen_button.action_name = "app.fullscreen";
+        fullscreen_button.show ();
+        toolbar.insert (fullscreen_button, -1);
 
         var hb = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
         hb.show ();
@@ -205,13 +195,44 @@ public class Quadrapassel : Gtk.Application
                                                     0,
                                                     GnomeGamesSupport.ScoreStyle.PLAIN_DESCENDING);
 
-        pause_action.sensitive = false;
-        pause.change_state (false);
+        pause_action.set_enabled (false);
+    }
+
+    private bool window_configure_event_cb (Gdk.EventConfigure event)
+    {
+        if (!is_maximized && !is_fullscreen)
+        {
+            window_width = event.width;
+            window_height = event.height;
+        }
+
+        return false;
+    }
+
+    private bool window_state_event_cb (Gdk.EventWindowState event)
+    {
+        if ((event.changed_mask & Gdk.WindowState.MAXIMIZED) != 0)
+            is_maximized = (event.new_window_state & Gdk.WindowState.MAXIMIZED) != 0;
+        if ((event.changed_mask & Gdk.WindowState.FULLSCREEN) != 0)
+        {
+            is_fullscreen = (event.new_window_state & Gdk.WindowState.FULLSCREEN) != 0;
+            if (is_fullscreen)
+                fullscreen_button.stock_id = GnomeGamesSupport.STOCK_LEAVE_FULLSCREEN;
+            else
+                fullscreen_button.stock_id = GnomeGamesSupport.STOCK_FULLSCREEN;
+        }
+        return false;
     }
 
     protected override void shutdown ()
     {
         base.shutdown ();
+
+        /* Save window state */
+        settings.set_int ("window-width", window_width);
+        settings.set_int ("window-height", window_height);
+        settings.set_boolean ("window-is-maximized", is_maximized);
+        settings.set_boolean ("window-is-fullscreen", is_fullscreen);
 
         /* Record the score if the game isn't over. */
         if (game != null && game.score > 0)
@@ -220,7 +241,15 @@ public class Quadrapassel : Gtk.Application
 
     protected override void activate ()
     {
-        main_window.present ();
+        window.present ();
+    }
+
+    private void fullscreen_cb ()
+    {
+        if (is_fullscreen)
+            window.unfullscreen ();
+        else
+            window.fullscreen ();
     }
 
     private void preferences_dialog_close_cb ()
@@ -242,7 +271,7 @@ public class Quadrapassel : Gtk.Application
             return;
         }
 
-        preferences_dialog = new Gtk.Dialog.with_buttons (_("Quadrapassel Preferences"), main_window, (Gtk.DialogFlags)0, Gtk.Stock.CLOSE, Gtk.ResponseType.CLOSE, null);
+        preferences_dialog = new Gtk.Dialog.with_buttons (_("Quadrapassel Preferences"), window, (Gtk.DialogFlags)0, Gtk.Stock.CLOSE, Gtk.ResponseType.CLOSE, null);
         preferences_dialog.set_border_width (5);
         var vbox = (Gtk.Box) preferences_dialog.get_content_area ();
         vbox.set_spacing (2);
@@ -449,26 +478,15 @@ public class Quadrapassel : Gtk.Application
         settings.set_int ("starting-level", value);
     }
 
-    private void toggle_cb (SimpleAction action, Variant? parameter)
-    {
-        action.change_state (!(bool) action.get_state ());
-    }
-
-    private void pause_changed (SimpleAction action, Variant state)
-    {
-        pause_action.set_is_paused ((bool) state);
-    }
-
     private void pause_cb ()
     {
         if (game != null)
-            game.paused = pause_action.get_is_paused ();
-        pause.set_state (pause_action.get_is_paused ());
+            game.paused = !game.paused;
     }
 
     private void quit_cb ()
     {
-        main_window.destroy ();
+        window.destroy ();
     }
 
     private bool key_press_event_cb (Gtk.Widget widget, Gdk.EventKey event)
@@ -480,7 +498,7 @@ public class Quadrapassel : Gtk.Application
 
         if (keyval == upper_key (settings.get_int ("key-pause")))
         {
-            pause_action.set_is_paused (!pause_action.get_is_paused ());
+            game.paused = !game.paused;
             return true;
         }
 
@@ -556,6 +574,7 @@ public class Quadrapassel : Gtk.Application
         }
 
         game = new Game (20, 14, settings.get_int ("starting-level"), settings.get_int ("line-fill-height"), settings.get_int ("line-fill-probability"), settings.get_boolean ("pick-difficult-blocks"));
+        game.pause_changed.connect (pause_changed_cb);
         game.shape_landed.connect (shape_landed_cb);
         game.complete.connect (complete_cb);
         preview.game = game;
@@ -564,7 +583,15 @@ public class Quadrapassel : Gtk.Application
         game.start ();
 
         update_score ();
-        pause_action.sensitive = true;
+        pause_action.set_enabled (true);
+    }
+
+    private void pause_changed_cb ()
+    {
+        if (game.paused)
+            pause_button.stock_id = GnomeGamesSupport.STOCK_RESUME_GAME;
+        else
+            pause_button.stock_id = GnomeGamesSupport.STOCK_PAUSE_GAME;
     }
 
     private void shape_landed_cb (int[] lines, List<Block> line_blocks)
@@ -574,11 +601,11 @@ public class Quadrapassel : Gtk.Application
 
     private void complete_cb ()
     {
-        pause_action.sensitive = false;
+        pause_action.set_enabled (false);
         if (game.score > 0)
         {
             var pos = high_scores.add_plain_score (game.score);
-            var dialog = new GnomeGamesSupport.ScoresDialog (main_window, high_scores, _("Quadrapassel Scores"));
+            var dialog = new GnomeGamesSupport.ScoresDialog (window, high_scores, _("Quadrapassel Scores"));
             var title = _("Puzzle solved!");
             var message = _("You didn't make the top ten, better luck next time.");
             if (pos == 1)
@@ -593,7 +620,7 @@ public class Quadrapassel : Gtk.Application
             switch (dialog.run ())
             {
             case Gtk.ResponseType.REJECT:
-                main_window.destroy ();
+                window.destroy ();
                 break;
             default:
                 new_game ();
@@ -625,7 +652,7 @@ public class Quadrapassel : Gtk.Application
     {
         try
         {
-            Gtk.show_uri (main_window.get_screen (), "help:quadrapassel", Gtk.get_current_event_time ());
+            Gtk.show_uri (window.get_screen (), "help:quadrapassel", Gtk.get_current_event_time ());
         }
         catch (Error e)
         {
@@ -638,7 +665,7 @@ public class Quadrapassel : Gtk.Application
         string[] authors = { "Gnome Games Team", null };
         string[] documenters = { "Angela Boyle", null };
 
-        Gtk.show_about_dialog (main_window,
+        Gtk.show_about_dialog (window,
                                "program-name", _("Quadrapassel"),
                                "version", VERSION,
                                "comments", _("A classic game of fitting falling blocks together.\n\nQuadrapassel is a part of GNOME Games."),
@@ -649,14 +676,14 @@ public class Quadrapassel : Gtk.Application
                                "documenters", documenters,
                                "translator-credits", _("translator-credits"),
                                "logo-icon-name", "quadrapassel",
-                               "website", "http://wwmain_window.gnome.org/projects/gnome-games/",
+                               "website", "http://wwwindow.gnome.org/projects/gnome-games/",
                                "wrap-license", true,
                                null);
     }
 
     private void scores_cb ()
     {
-        var dialog = new GnomeGamesSupport.ScoresDialog (main_window, high_scores, _("Quadrapassel Scores"));
+        var dialog = new GnomeGamesSupport.ScoresDialog (window, high_scores, _("Quadrapassel Scores"));
         dialog.run ();
         dialog.destroy ();
     }
