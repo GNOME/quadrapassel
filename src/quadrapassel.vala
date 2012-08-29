@@ -685,13 +685,14 @@ public class Quadrapassel : Gtk.Application
     {
         string[] authors = { "Gnome Games Team", null };
         string[] documenters = { "Angela Boyle", null };
+        var license = "Quadrapassel is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n\nQuadrapassel is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with Quadrapassel; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA";
 
         Gtk.show_about_dialog (window,
                                "program-name", _("Quadrapassel"),
                                "version", VERSION,
                                "comments", _("A classic game of fitting falling blocks together.\n\nQuadrapassel is a part of GNOME Games."),
                                "copyright", "Copyright \xc2\xa9 1999 J. Marcin Gorycki, 2000-2009 Others",
-                               "license", GnomeGamesSupport.get_license (_("Quadrapassel")),
+                               "license", license,
                                "website-label", _("GNOME Games web site"),
                                "authors", authors,
                                "documenters", documenters,
