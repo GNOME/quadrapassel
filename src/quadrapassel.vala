@@ -45,6 +45,7 @@ public class Quadrapassel : Gtk.Application
     private Gtk.CheckButton rotate_counter_clock_wise_toggle;
     private Gtk.CheckButton show_shadow_toggle;
     private Gtk.CheckButton sound_toggle;
+    private Gtk.ListStore controls_model;
 
     private const GLib.ActionEntry[] action_entries =
     {
@@ -373,15 +374,44 @@ public class Quadrapassel : Gtk.Application
         grid.attach (show_shadow_toggle, 0, 7, 2, 1);
 
         /* controls page */
-        var controls_list = new GnomeGamesSupport.ControlsList (settings);
-        controls_list.add_controls ("key-left", _("Move left"), 0,
-                                    "key-right", _("Move right"), 0,
-                                    "key-down", _("Move down"), 0,
-                                    "key-drop", _("Drop"), 0,
-                                    "key-rotate", _("Rotate"), 0,
-                                    "key-pause", _("Pause"), 0,
-                                    null);
+        controls_model = new Gtk.ListStore (4, typeof (string), typeof (string), typeof (uint), typeof (uint));
+        Gtk.TreeIter iter;
+        controls_model.append (out iter);
+        var keyval = settings.get_int ("key-left");
+        controls_model.set (iter, 0, "key-left", 1, _("Move left"), 2, keyval);
+        controls_model.append (out iter);
+        keyval = settings.get_int ("key-right");
+        controls_model.set (iter, 0, "key-right", 1, _("Move right"), 2, keyval);
+        controls_model.append (out iter);
+        keyval = settings.get_int ("key-down");
+        controls_model.set (iter, 0, "key-down", 1, _("Move down"), 2, keyval);
+        controls_model.append (out iter);
+        keyval = settings.get_int ("key-drop");
+        controls_model.set (iter, 0, "key-drop", 1, _("Drop"), 2, keyval);
+        controls_model.append (out iter);
+        keyval = settings.get_int ("key-rotate");
+        controls_model.set (iter, 0, "key-rotate", 1, _("Rotate"), 2, keyval);
+        controls_model.append (out iter);
+        keyval = settings.get_int ("key-pause");
+        controls_model.set (iter, 0, "key-pause", 1, _("Pause"), 2, keyval);
+        var controls_view = new Gtk.TreeView.with_model (controls_model);
+        controls_view.headers_visible = false;
+        controls_view.enable_search = false;
+        var label_renderer = new Gtk.CellRendererText ();
+        controls_view.insert_column_with_attributes (-1, "Control", label_renderer, "text", 1);
+        var key_renderer = new Gtk.CellRendererAccel ();
+        key_renderer.editable = true;
+        key_renderer.accel_mode = Gtk.CellRendererAccelMode.OTHER;
+        key_renderer.accel_edited.connect (accel_edited_cb);
+        key_renderer.accel_cleared.connect (accel_cleared_cb);
+        controls_view.insert_column_with_attributes (-1, "Key", key_renderer, "accel-key", 2, "accel-mods", 3);
+
+        var controls_list = new Gtk.ScrolledWindow (null, null);
         controls_list.border_width = 12;
+        controls_list.hscrollbar_policy = Gtk.PolicyType.NEVER;
+        controls_list.vscrollbar_policy = Gtk.PolicyType.ALWAYS;
+        controls_list.shadow_type = Gtk.ShadowType.IN;
+        controls_list.add (controls_view);
         label = new Gtk.Label (_("Controls"));
         notebook.append_page (controls_list, label);
 
@@ -398,8 +428,6 @@ public class Quadrapassel : Gtk.Application
         var renderer = new Gtk.CellRendererText ();
         theme_combo.pack_start (renderer, true);
         theme_combo.add_attribute (renderer, "text", 0);
-
-        Gtk.TreeIter iter;
 
         theme_store.append (out iter);
         theme_store.set (iter, 0, _("Plain"), 1, "plain", -1);
@@ -460,6 +488,44 @@ public class Quadrapassel : Gtk.Application
         var show_shadow = show_shadow_toggle.get_active ();
         settings.set_boolean ("show-shadow", show_shadow);
         view.show_shadow = show_shadow;
+    }
+
+    private void accel_edited_cb (Gtk.CellRendererAccel cell, string path_string, uint keyval, Gdk.ModifierType mask, uint hardware_keycode)
+    {
+        var path = new Gtk.TreePath.from_string (path_string);
+        if (path == null)
+            return;
+
+        Gtk.TreeIter iter;
+        if (!controls_model.get_iter (out iter, path))
+            return;
+
+        string? key = null;
+        controls_model.get (iter, 0, out key);
+        if (key == null)
+            return;
+
+        controls_model.set (iter, 2, keyval);
+        settings.set_int (key, (int) keyval);
+    }
+
+    private void accel_cleared_cb (Gtk.CellRendererAccel cell, string path_string)
+    {
+        var path = new Gtk.TreePath.from_string (path_string);
+        if (path == null)
+            return;
+
+        Gtk.TreeIter iter;
+        if (!controls_model.get_iter (out iter, path))
+            return;
+
+        string? key = null;
+        controls_model.get (iter, 0, out key);
+        if (key == null)
+            return;
+
+        controls_model.set (iter, 2, 0);
+        settings.set_int (key, 0);
     }
 
     private void theme_combo_changed_cb (Gtk.ComboBox widget)
