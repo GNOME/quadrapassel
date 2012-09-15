@@ -7,17 +7,21 @@
 # Claude Paroz <claude@2xlibre.net>, 2007-2009.
 # Alexandre Franke <alexandre.franke@gmail.com>, 2011.
 # Alain Lojewski <allomervan@gmail.com>, 2012.
+# Mickael Albertus <mickael.albertus@gmail.com>, 2012.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master fr\n"
-"POT-Creation-Date: 2012-05-08 09:50+0000\n"
-"PO-Revision-Date: 2012-05-08 19:38+0200\n"
-"Last-Translator: Alain Lojewski <allomervan@gmail.com>\n"
+"POT-Creation-Date: 2012-09-06 19:11+0000\n"
+"PO-Revision-Date: 2012-09-15 19:49+0200\n"
+"Last-Translator: Mickael Albertus <mickael.albertus@gmail.com>\n"
 "Language-Team: French <gnomefr@traduc.org>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Gtranslator 2.91.5\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -25,8 +29,14 @@ msgid "translator-credits"
 msgstr ""
 "Bruno Brouard <annoa.b@gmail.com>, 2007-2009,2012\n"
 "Claude Paroz <claude@2xlibre.net>, 2007-2010\n"
-"Alain Lojewski <allomervan@gmail.com>, 2012"
+"Alain Lojewski <allomervan@gmail.com>, 2012\n"
+"Mickael Albertus <mickael.albertus@gmail.com>, 2012"
 
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
@@ -44,6 +54,11 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
 #: C/index.page:18(media)
 msgctxt "_"
 msgid ""
@@ -55,7 +70,12 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:26(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:24(media)
 msgctxt "_"
 msgid "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
 msgstr "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
@@ -64,7 +84,12 @@ msgstr "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:31(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:29(media)
 msgctxt "_"
 msgid "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
 msgstr "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
@@ -73,7 +98,12 @@ msgstr "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:42(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:40(media)
 msgctxt "_"
 msgid "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
 msgstr "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
@@ -82,7 +112,12 @@ msgstr "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:43(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:41(media)
 msgctxt "_"
 msgid "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
 msgstr "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
@@ -91,7 +126,12 @@ msgstr "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:50(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:48(media)
 msgctxt "_"
 msgid "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
 msgstr "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
@@ -100,7 +140,12 @@ msgstr "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:51(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:49(media)
 msgctxt "_"
 msgid "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
 msgstr "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
@@ -109,7 +154,12 @@ msgstr "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:63(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:61(media)
 msgctxt "_"
 msgid "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
 msgstr "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
@@ -118,7 +168,12 @@ msgstr "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:68(media)
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:66(media)
 msgctxt "_"
 msgid "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
 msgstr "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
@@ -133,15 +188,26 @@ msgctxt "text"
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
-#: C/index.page:10(credit/name)
+#: C/index.page:10(credit/name) C/bug-filing.page:14(credit/name)
+#: C/develop.page:15(credit/name) C/documentation.page:13(credit/name)
+#: C/get-involved.page:7(credit/name) C/playgame.page:7(credit/name)
+#: C/preferences.page:7(credit/name) C/score.page:7(credit/name)
+#: C/translate.page:13(credit/name)
 msgid "Elena Petrevska"
 msgstr "Elena Petrevska"
 
-#: C/index.page:12(credit/years)
+#: C/index.page:12(credit/years) C/bug-filing.page:11(credit/years)
+#: C/develop.page:12(credit/years) C/documentation.page:10(credit/years)
+#: C/get-involved.page:9(credit/years) C/playgame.page:9(credit/years)
+#: C/preferences.page:9(credit/years) C/score.page:9(credit/years)
+#: C/translate.page:10(credit/years)
 msgid "2012"
 msgstr "2012"
 
-#: C/index.page:15(license/p)
+#: C/index.page:15(license/p) C/bug-filing.page:18(license/p)
+#: C/develop.page:19(license/p) C/documentation.page:17(license/p)
+#: C/get-involved.page:12(license/p) C/preferences.page:16(license/p)
+#: C/score.page:16(license/p)
 msgid "Creative Commons Share Alike 3.0"
 msgstr ""
 "Creative Commons Paternité-Partage des Conditions Initiales à l'Identique 3.0"
@@ -158,738 +224,1310 @@ msgstr ""
 msgid ""
 "In Quadrapassel, the GNOME version of Tetris, your goal is to create as many "
 "complete horizontal lines as possible. The lines are made from seven "
-"different shapes that, in a random order, fall from the top center of the "
-"screen. Your task is to rotate and move them across the screen to make "
-"complete lines. By making complete horizontal lines, you score more, you "
-"level up and the blocks fall faster."
+"different shapes. The shapes fall randomly from the top center of the "
+"screen. Your task is to rotate and move the shapes across the screen to make "
+"complete lines. By making complete horizontal lines, you score points and "
+"move up levels. As you progress, the speed of the falling blocks increases."
 msgstr ""
 "Dans Quadrapassel, la version GNOME de Tétris, votre but est de créer autant "
 "de lignes horizontales complètes que possible. Les lignes sont constituées "
-"de sept formes différentes qui tombent à partir du centre supérieur de "
-"l'écran dans un ordre aléatoire. Vous devez les faire tourner et les "
+"de sept formes différentes. Les formes tombent à partir du centre supérieur "
+"de l'écran dans un ordre aléatoire. Vous devez les faire tourner et les "
 "déplacez à l'écran afin de compléter les lignes. Au fur et à mesure que vous "
 "complétez les lignes, le score augmente, le niveau s'élève et les blocs "
 "tombent plus vite."
 
-#: C/index.page:35(td/p)
-msgid "<link xref=\"playgame\">PLAY Game</link>"
+#: C/index.page:33(td/p)
+msgid "<link xref=\"playgame\">Play the game</link>"
 msgstr "<link xref=\"playgame\">Déroulement d'une partie</link>"
 
-#: C/index.page:36(td/p)
-msgid "<link xref=\"scoremore\">Score MORE</link>"
-msgstr "<link xref=\"scoremore\">Amélioration de votre score</link>"
+#: C/index.page:34(td/p)
+msgid "<link xref=\"score\">Score points</link>"
+msgstr "<link xref=\"score\">Amélioration de votre score</link>"
 
-#: C/index.page:57(td/p)
-msgid "<link xref=\"settings\">Settings</link>"
-msgstr "<link xref=\"settings\">Paramètres</link>"
+#: C/index.page:55(td/p)
+msgid "<link xref=\"preferences\">Preferences</link>"
+msgstr "<link xref=\"preferences\">Préférences</link>"
 
-#: C/index.page:58(td/p)
-msgid "<link xref=\"get-involved\">GET Involved</link>"
+#: C/index.page:56(td/p)
+msgid "<link xref=\"get-involved\">Get involved</link>"
 msgstr "<link xref=\"get-involved\">Comment s'impliquer</link>"
 
-#: C/legal.xml:9(para/ulink)
-msgid "link"
-msgstr "lien"
-
-#: C/legal.xml:2(legalnotice/para)
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/bug-filing.page:49(media) C/develop.page:28(media)
+#: C/documentation.page:28(media) C/translate.page:41(media)
+msgctxt "_"
 msgid ""
-"Permission is granted to copy, distribute and/or modify this document under "
-"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
-"later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
-"with this manual."
+"external ref='media/go-previous.png' md5='e9ce3da4ee6497ce2f38178c3c929872'"
 msgstr ""
-"Permission vous est donnée de copier, distribuer et/ou modifier ce document "
-"selon les termes de la Licence GNU Free Documentation License, Version 1.1 "
-"ou ultérieure publiée par la Free Software Foundation sans section "
-"inaltérable, sans texte de première page de couverture ni texte de dernière "
-"page de couverture. Vous trouverez un exemplaire de cette licence en suivant "
-"ce <_:ulink-1/> ou dans le fichier COPYING-DOCS fourni avec le présent "
-"manuel."
+"external ref='media/go-previous.png' md5='e9ce3da4ee6497ce2f38178c3c929872'"
 
-#: C/legal.xml:12(legalnotice/para) C/index.docbook:12(legalnotice/para)
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/bug-filing.page:50(media) C/develop.page:29(media)
+#: C/documentation.page:29(media) C/get-involved.page:22(media)
+#: C/playgame.page:43(media) C/preferences.page:72(media)
+#: C/score.page:37(media) C/translate.page:42(media)
+msgctxt "_"
+msgid "external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
+msgstr ""
+"external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
+
+#: C/bug-filing.page:9(credit/name) C/develop.page:10(credit/name)
+#: C/documentation.page:8(credit/name) C/playgame.page:12(credit/name)
+#: C/preferences.page:12(credit/name) C/score.page:12(credit/name)
+#: C/translate.page:8(credit/name)
+msgid "Tiffany Antopolski"
+msgstr "Tiffany Antopolski"
+
+#: C/bug-filing.page:20(info/desc)
+msgid "Found a problem? Feel free to file a bug."
+msgstr ""
+"Vous rencontrez un problème ? N'hésitez pas à faire un rapport d'anomalie."
+
+#: C/bug-filing.page:23(page/title)
+msgid "Report a Problem"
+msgstr "Signaler un problème"
+
+#: C/bug-filing.page:24(page/p)
 msgid ""
-"This manual is part of a collection of GNOME manuals distributed under the "
-"GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in "
-"section 6 of the license."
+"If you notice a problem you can file a <em>bug report</em>. To file a bug, "
+"go to <link href=\"https://bugzilla.gnome.org/\"/>."
 msgstr ""
-"Ce manuel fait partie de la collection de manuels GNOME distribués selon les "
-"termes de la licence de documentation libre GNU. Si vous souhaitez "
-"distribuer ce manuel indépendamment de la collection, vous devez joindre un "
-"exemplaire de la licence au document, comme indiqué dans la section 6 de "
-"celle-ci."
+"Si vous constatez un problème, vous pouvez déposer un <em>rapport "
+"d'anomalie</em>. Pour signaler une anomalie, allez sur <link href=\"https://"
+"bugzilla.gnome.org/\"/>."
 
-#: C/legal.xml:19(legalnotice/para) C/index.docbook:19(legalnotice/para)
+#: C/bug-filing.page:27(page/p)
 msgid ""
-"Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any GNOME "
-"documentation, and the members of the GNOME Documentation Project are made "
-"aware of those trademarks, then the names are in capital letters or initial "
-"capital letters."
+"This is a bug tracking system where users and developers can file details "
+"about bugs, crashes and request enhancements."
 msgstr ""
-"La plupart des noms utilisés par les entreprises pour distinguer leurs "
-"produits et services sont des marques déposées. Lorsque ces noms "
-"apparaissent dans la documentation GNOME et que les membres du projet de "
-"Documentation GNOME sont informés de l'existence de ces marques déposées, "
-"soit ces noms entiers, soit leur première lettre est en majuscule."
+"C'est un système de suivi des anomalies où les utilisateurs et les "
+"développeurs peuvent déposer des détails sur les anomalies, plantages et des "
+"demandes d'amélioration."
 
-#: C/legal.xml:35(listitem/para) C/index.docbook:35(listitem/para)
+#: C/bug-filing.page:30(page/p)
 msgid ""
-"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
-"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
-"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
-"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
-"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
-"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
-"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
-"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
-"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
-"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
-"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+"To participate you need an account which will give you the ability to gain "
+"access, file bugs, and make comments. Also, you need to register so you can "
+"receive updates by e-mail about the status of your bug. If you don't already "
+"have an account, just click on the <gui>New Account</gui> link to create one."
 msgstr ""
-"LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE "
-"OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE BONNE QUALITÉ "
-"MARCHANDE OU D'APTITUDE À UN EMPLOI PARTICULIER OU AUTORISÉ DU DOCUMENT OU "
-"DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA "
-"QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE "
-"MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, "
-"L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE "
-"PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU "
-"CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE "
-"PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE "
-"SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ "
-"SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; ET"
+"Pour participer, vous devez avoir un compte qui vous permettra d'accéder, de "
+"rapporter des anomalies et de faire des commentaires. En outre, vous devez "
+"vous inscrire afin de recevoir les mises à jour par courriel concernant "
+"l'état de votre anomalie. Si vous ne possédez pas encore de compte, il "
+"suffit de cliquer sur le lien <gui>Nouveau compte</gui> pour en créer un."
 
-#: C/legal.xml:55(listitem/para) C/index.docbook:55(listitem/para)
+#: C/bug-filing.page:33(page/p)
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
-"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
-"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
-"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
-"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
-"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
-"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
-"POSSIBILITY OF SUCH DAMAGES."
+"Once you have an account, log in, click on <guiseq><gui>File a Bug</"
+"gui><gui>Applications</gui><gui>gnome-games</gui></guiseq>. Before reporting "
+"a bug, please read the <link href=\"https://bugzilla.gnome.org/page.cgi?"
+"id=bug-writing.html\">bug writing guidelines</link>, and please <link href="
+"\"https://bugzilla.gnome.org/browse.cgi?product=gnome-games\">browse</link> "
+"for the bug to see if it already exists."
 msgstr ""
-"EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL "
-"S'AGISSE DE RESPONSABILITÉ CIVILE (Y COMPRIS LA NÉGLIGENCE), CONTRACTUELLE "
-"OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT ET TOUT "
-"DISTRIBUTEUR DE CE DOCUMENT OU DE SA VERSION DE MISE À JOUR AINSI QUE TOUT "
-"FOURNISSEUR DE QUELQUE PARTIE QUE CE SOIT NE POURRONT ÊTRE TENUS "
-"RESPONSABLES À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, "
-"PARTICULIER OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES "
-"DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, AUX ARRÊTS DE TRAVAIL, AUX "
-"DÉFAILLANCES ET AUX DYSFONCTIONNEMENTS INFORMATIQUES OU TOUT AUTRE DOMMAGE "
-"OU PERTE LIÉE À L'UTILISATION DU PRÉSENT DOCUMENT ET DE SES VERSIONS DE MISE "
-"À JOUR, ET CE MÊME SI CES PARTIES ONT ÉTÉ INFORMÉES DE LA POSSIBILITÉ DE "
-"TELS DOMMAGES."
+"Une fois que vous avez un compte, connectez-vous et cliquez sur "
+"<guiseq><gui>Rapporter une anomalie</gui><gui>Applications</gui><gui>gnome-"
+"games</gui></guiseq>. Avant de rapporter une anomalie, veuillez lire les "
+"<link href=\"https://bugzilla.gnome.org/page.cgi?id=bug-writing.html"
+"\">directives d'écriture d'anomalies</link>, et veuillez <link href="
+"\"https://bugzilla.gnome.org/browse.cgi?product=gnome-games\">parcourir</"
+"link> les anomalies pour voir si il existe déjà."
 
-#: C/legal.xml:28(legalnotice/para) C/index.docbook:28(legalnotice/para)
+#: C/bug-filing.page:37(page/p)
 msgid ""
-"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
-"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
-"<_:orderedlist-1/>"
+"To file your bug, choose the component <gui>quadrapassel</gui> in the "
+"<gui>Component</gui> menu."
 msgstr ""
-"LE PRÉSENT DOCUMENT ET SES VERSIONS MODIFIÉES SONT FOURNIS SELON LES TERMES "
-"DE LA LICENCE DE DOCUMENTATION LIBRE GNU SACHANT QUE : <_:orderedlist-1/>"
+"Pour déposer votre rapport d'anomalies, choisissez le composant "
+"<gui>quadrapassel</gui> dans le menu <gui>Composant</gui>."
 
-#: C/index.docbook:27(articleinfo/title)
-msgid "<application>Quadrapassel</application> Manual"
-msgstr "Manuel de <application>Quadrapassel</application>"
-
-#: C/index.docbook:30(abstract/para)
+#: C/bug-filing.page:40(page/p)
 msgid ""
-"Quadrapassel is GNOME's version of Tetris, the classic game of interlocking "
-"four-piece blocks. As they fall from the top, the player must orient them to "
-"fit the other blocks at the bottom so that they form a complete horizontal "
-"line, in which case that line disappears and the player gains points."
+"If you are requesting a new feature, choose <gui>enhancement</gui> in the "
+"<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
+"click <gui>Commit</gui>."
 msgstr ""
-"Quadrapassel est une variante GNOME de Tetris, le classique jeu "
-"d'emboîtement de blocs de quatre pièces. Pendant qu'ils tombent du haut, le "
-"joueur doit les orienter afin qu'ils s'emboîtent avec les autres blocs du "
-"bas pour former si possible une ligne horizontale complète. Dans ce cas, la "
-"ligne disparaît et le joueur gagne des points."
+"Si vous voulez demander une nouvelle fonctionnalité, choisissez "
+"<gui>amélioration</gui> dans le menu <gui>Gravité</gui>. Remplissez les "
+"sections « Résumé » et « Description » et cliquez sur <gui>Soumettre</gui>."
 
-#: C/index.docbook:39(articleinfo/copyright)
-msgid "<year>2004</year> <holder>Angela Boyle</holder>"
-msgstr "<year>2004</year> <holder>Angela Boyle</holder>"
-
-#: C/index.docbook:56(publisher/publishername)
-#: C/index.docbook:97(revdescription/para)
-msgid "GNOME Documentation Project"
-msgstr "Projet de documentation GNOME"
-
-#: C/index.docbook:2(legalnotice/para)
+#: C/bug-filing.page:44(page/p)
 msgid ""
-"Permission is granted to copy, distribute and/or modify this document under "
-"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
-"later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <ulink type=\"help\" url=\"help:fdl\">link</ulink> or "
-"in the file COPYING-DOCS distributed with this manual."
+"Your report will be given an ID number, and its status will be updated as it "
+"is being dealt with."
 msgstr ""
-"Permission vous est donnée de copier, distribuer et/ou modifier ce document "
-"selon les termes de la Licence GNU Free Documentation License, Version 1.1 "
-"ou ultérieure publiée par la Free Software Foundation sans section "
-"inaltérable, sans texte de première page de couverture ni texte de dernière "
-"page de couverture. Vous trouverez un exemplaire de cette licence en suivant "
-"ce <ulink type=\"help\" url=\"help:fdl\">lien</ulink> ou dans le fichier "
-"COPYING-DOCS fourni avec le présent manuel."
+"Votre rapport aura un numéro d'identification et son statut sera mis à jour "
+"une fois traité."
 
-#: C/index.docbook:66(authorgroup/author)
+#: C/bug-filing.page:49(section/p) C/develop.page:28(section/p)
+#: C/documentation.page:28(section/p) C/translate.page:41(section/p)
 msgid ""
-"<firstname>Angela</firstname> <surname>Boyle</surname> <affiliation> "
-"<address> <email>anjela@u.washington.edu</email> </address> </affiliation>"
+"<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous.png"
+"\"/>Get Involved</link>"
 msgstr ""
-"<firstname>Angela</firstname> <surname>Boyle</surname> <affiliation> "
-"<address> <email>anjela@u.washington.edu</email> </address> </affiliation>"
+"<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous.png"
+"\"/>Comment s'impliquer</link>"
 
-#: C/index.docbook:94(revdescription/para)
-msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
-msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
-
-#: C/index.docbook:90(revhistory/revision)
+#: C/bug-filing.page:50(section/p) C/develop.page:29(section/p)
+#: C/documentation.page:29(section/p) C/get-involved.page:22(section/p)
+#: C/playgame.page:43(section/p) C/preferences.page:72(section/p)
+#: C/score.page:37(section/p) C/translate.page:42(section/p)
 msgid ""
-"<revnumber>Quadrapassel Manual V2.8</revnumber> <date>June 2004</date> <_:"
-"revdescription-1/>"
+"<link xref=\"index\"><media type=\"image\" src=\"media/go-home.png\"/>HOME</"
+"link>"
 msgstr ""
-"<revnumber>Manuel de Quadrapassel V 2.8</revnumber> <date>Juin 2004</date> "
-"<_:revdescription-1/>"
+"<link xref=\"index\"><media type=\"image\" src=\"media/go-home.png\"/"
+">ACCUEIL</link>"
 
-#: C/index.docbook:102(articleinfo/releaseinfo)
-msgid "This manual describes version 2.12 of Quadrapassel."
-msgstr "Ce manuel documente la version 2.12 de Quadrapassel."
+#: C/develop.page:21(info/desc)
+msgid "Have a plan for developing the game? We are always open to new ideas."
+msgstr ""
+"Vous avez un plan pour le développement du jeu ? Nous sommes toujours "
+"ouverts à de nouvelles idées."
 
-#: C/index.docbook:109(legalnotice/title)
-msgid "Feedback"
-msgstr "Votre avis"
+#: C/develop.page:24(page/title)
+msgid "Help develop"
+msgstr "Aider au développement"
 
-#: C/index.docbook:110(legalnotice/para)
+#: C/develop.page:25(page/p)
 msgid ""
-"To report a bug or make a suggestion regarding the "
-"<application>Quadrapassel</application> application or this manual, follow "
-"the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
-"\"help\">GNOME Feedback Page</ulink>."
+"If you would like to <link href=\"https://live.gnome.org/GnomeGames/"
+"Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
+"touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
+"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
+"link>."
 msgstr ""
-"Pour rapporter une anomalie ou émettre une suggestion concernant "
-"<application>Quadrapassel</application> ou ce manuel, procédez comme indiqué "
-"sur la <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">page de "
-"réactions sur GNOME</ulink>."
+"Si vous souhaitez <link href=\"https://live.gnome.org/GnomeGames/Contributing"
+"\">aider au développement des <app>Jeux GNOME</app></link>, vous pouvez "
+"entrer en contact en utilisant l'<link href=\"https://cbe005.chat.mibbit."
+"com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">IRC</link>, ou via notre "
+"<link href=\"http://mail.gnome.org/mailman/listinfo/games-list\">liste de "
+"discussion</link>."
 
-#: C/index.docbook:121(article/indexterm)
-msgid "<primary>Quadrapassel</primary>"
-msgstr "<primary>Quadrapassel</primary>"
+#: C/documentation.page:19(info/desc)
+msgid "Contribute to the documentation."
+msgstr "Contribuer à la documentation."
 
-#: C/index.docbook:128(sect1/title)
-msgid "Introduction"
-msgstr "Introduction"
+#: C/documentation.page:22(page/title)
+msgid "Help write documentation"
+msgstr "Aider à écrire la documentation"
 
-#: C/index.docbook:131(sect1/para)
+#: C/documentation.page:23(page/p)
 msgid ""
-"<application>Quadrapassel</application> comes from the classic falling-block "
-"game, <application>Tetris</application>. The goal of the game is to create "
-"complete horizontal lines of blocks, which will disappear. The blocks come "
-"in seven different shapes made from four blocks each: one straight, two L-"
-"shaped, one square, and two S-shaped. The blocks fall from the top center of "
-"the screen in a random order. You rotate the blocks and move them across the "
-"screen to drop them in complete lines. You score by dropping blocks fast and "
-"completing lines. As your score gets higher, you level up and the blocks "
-"fall faster."
+"To contribute to the Documentation Project, feel free to get in touch with "
+"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
+"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
+"mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgstr ""
-"<application>Quadrapassel</application> est une déclinaison de "
-"<application>Tétris</application>, le jeu classique de blocs qui tombent. Le "
-"but du jeu est de créer des lignes horizontales complètes de blocs qui vont "
-"disparaître. Les blocs possèdent sept formes différentes, toutes réalisées à "
-"partir de quatre blocs : une forme droite, deux en forme de L, une carrée et "
-"deux en forme de S. Les blocs tombent à partir du centre supérieur de "
-"l'écran dans un ordre aléatoire. Vous faites tourner les blocs et vous les "
-"déplacez à l'écran afin qu'ils complètent les lignes en tombant. Au fur et à "
-"mesure que le score augmente, le niveau du jeu change et les blocs tombent plus "
-"vite."
+"Pour contribuer au projet de documentation, n'hésitez pas à entrer en "
+"contact avec nous en utilisant l'<link href=\"https://cbe003.chat.mibbit."
+"com/?url=irc%3A%2F%2Firc.gnome.org%2Fdocs\">IRC</link>, ou via notre <link "
+"href=\"http://mail.gnome.org/mailman/listinfo/gnome-doc-list\">liste de "
+"discussion</link>."
 
-#: C/index.docbook:134(sect1/para)
+#: C/documentation.page:25(page/p)
 msgid ""
-"To run <application>Quadrapassel</application>, select "
-"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
-"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, or type "
-"<command>quadrapassel</command> in the command line."
+"Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"\">wiki</link> page contains useful information."
 msgstr ""
-"Pour lancer <application>Quadrapassel</application>, sélectionnez "
-"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Jeux</"
-"guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, ou "
-"saisissez la commande <command>quadrapassel</command> dans un terminal."
+"Notre page <link href=\"https://live.gnome.org/DocumentationProject/"
+"Contributing\">wiki</link> contient des informations utiles."
 
-#: C/index.docbook:137(sect1/para)
+#: C/get-involved.page:16(page/title)
+msgid "Get Involved"
+msgstr "Impliquez-vous !"
+
+#: C/get-involved.page:17(page/p)
 msgid ""
-"<application>Quadrapassel</application> is included in the <filename>gnome-"
-"games</filename> package, which is part of the GNOME desktop environment. "
-"This document describes version 2.8 of <application>Quadrapassel</"
-"application>."
+"<app>Quadrapassel</app> is maintained by a volunteer community. You are "
+"invited to participate in any of the following ways."
 msgstr ""
-"<application>Quadrapassel</application> est inclus dans le paquet "
-"<filename>gnome-games</filename> qui fait partie de l'environnement de "
-"bureau GNOME. Ce document présente la version 2.8 de "
-"<application>Quadrapassel</application>."
+"<app>Quadrapassel</app> est maintenu par une communauté de bénévoles. Vous "
+"êtes invités à participer de l'une des manières suivantes."
 
-#: C/index.docbook:141(sect1/title)
-msgid "Playing <application>Quadrapassel</application>"
-msgstr "Jouer à <application>Quadrapassel</application>"
-
-#: C/index.docbook:142(sect1/para)
-msgid ""
-"You can score through two actions: completing lines and dropping blocks "
-"quickly."
+#: C/legal.xml:3(p/link)
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 msgstr ""
-"Il y a deux manières de marquer des points : compléter des lignes et faire "
-"tomber les blocs rapidement."
+"Creative Commons Paternité-Partage des Conditions Initiales à l'Identique "
+"3.0 Unported"
 
-#: C/index.docbook:144(sect2/title)
-msgid "Moving the Blocks"
-msgstr "Déplacement des blocs"
+#: C/legal.xml:3(license/p)
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Cette œuvre est distribuée sous <_:link-1/>."
 
-#: C/index.docbook:145(sect2/para)
-msgid "To play the game, you only need the four arrow keys."
-msgstr ""
-"Seules les quatre touches de direction sont nécessaires pour jouer à ce jeu."
+#: C/license.page:8(info/desc)
+msgid "Legal information."
+msgstr "Informations légales."
 
-#: C/index.docbook:148(listitem/para)
-msgid ""
-"<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
-"correspondingly across the screen."
-msgstr ""
-"<keycap>Flèche gauche</keycap> et <keycap>Flèche droite</keycap> déplacent "
-"le bloc à l'écran dans les directions correspondantes."
-
-#: C/index.docbook:151(listitem/para)
-msgid ""
-"<keycap>Up</keycap> rotates the block. The default rotation is "
-"counterclockwise. You can change the rotation under "
-"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks "
-"counterclockwise</guilabel>."
-msgstr ""
-"<keycap>Flèche haut</keycap> fait tourner le bloc. Par défaut, la rotation "
-"se fait dans le sens inverse des aiguilles d'une montre. Changez le sens de "
-"rotation à travers le menu <menuchoice><guimenu>Préférences</"
-"guimenu><guimenuitem>Préférences</guimenuitem></menuchoice> en décochant "
-"l'option <guilabel>Tourner les blocs dans le sens inverse des aiguilles "
-"d'une montre</guilabel>."
-
-#: C/index.docbook:154(listitem/para)
-msgid ""
-"<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down "
-"the screen faster.<keycap>Down</keycap> moves the block down faster. "
-"<keycap>Space-bar</keycap> moves the block directly to the bottom."
-msgstr ""
-"La <keycap>Flèche bas</keycap> et la <keycap>Barre d'espace</keycap> "
-"déplacent le bloc vers le bas plus rapidement. La <keycap>Barre d'espace</"
-"keycap> fait immédiatement tomber le bloc tout en bas."
-
-#: C/index.docbook:159(sect2/title)
-msgid "Starting a New Game"
-msgstr "Démarrage d'un nouveau jeu"
-
-#: C/index.docbook:160(sect2/para)
-msgid ""
-"To begin a new game, go to <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
-"begin dropping blocks from the center of the top of the window. The default "
-"start-up of the game has no blocks in the game window and shows the next "
-"block that will fall in the upper right hand corner. <guilabel>Score</"
-"guilabel> shows the number of points you have earned. <guilabel>Lines</"
-"guilabel> shows the number of lines you have completed. <guilabel>Level</"
-"guilabel> shows the level of difficulty you are on."
-msgstr ""
-"Pour démarrer un nouveau jeu, utilisez le menu <menuchoice><guimenu>Jeu</"
-"guimenu><guimenuitem>Nouveau</guimenuitem></menuchoice>. Le jeu commence "
-"alors à faire tomber des blocs à partir du centre supérieur de la fenêtre. "
-"Par défaut, il n'y a pas de blocs dans la fenêtre de jeu et le prochain bloc "
-"qui tombera est montré dans le coin en haut à droite. <guilabel>Score</"
-"guilabel> indique le nombre de points gagnés. <guilabel>Lignes</guilabel> "
-"indique le nombre de lignes que vous avez complétées. <guilabel>Niveau</"
-"guilabel> indique le niveau de difficulté actuel."
-
-#: C/index.docbook:163(sect2/title)
-msgid "Pausing the Game"
-msgstr "Pause"
-
-#: C/index.docbook:164(sect2/para)
-msgid ""
-"To pause your game, go to <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
-"pause a game when you are playing. The time limit on pausing your game is "
-"unlimited. To unpause the game, go back to <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
-msgstr ""
-"Pour faire une pause, utilisez le menu <menuchoice><guimenu>Jeu</"
-"guimenu><guimenuitem>Pause</guimenuitem></menuchoice>. Il n'est possible de "
-"faire une pause que lorsqu'un jeu est en cours. La durée de la pause est "
-"illimitée. Pour reprendre la partie, réutilisez le menu "
-"<menuchoice><guimenu>Jeu</guimenu><guimenuitem>Pause</guimenuitem></"
-"menuchoice>."
-
-#: C/index.docbook:167(sect2/title)
-msgid "Ending the Game"
-msgstr "Fin d'un jeu"
-
-#: C/index.docbook:168(sect2/para)
-msgid ""
-"Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
-"guimenuitem></menuchoice> to end your current game without quiting "
-"Quadrapassel."
-msgstr ""
-"Utilisez le menu <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Fin du jeu</"
-"guimenuitem></menuchoice> pour arrêter le jeu en cours sans quitter "
-"Quadrapassel."
-
-#: C/index.docbook:171(sect2/title)
-msgid "Quiting the <application>Quadrapassel</application>"
-msgstr "Fermeture de <application>Quadrapassel</application>"
-
-#: C/index.docbook:172(sect2/para)
-msgid ""
-"To completely quit <application>Quadrapassel</application> go to "
-"<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
-"menuchoice>. If you are in the middle of a game when you quit, you will end "
-"your game without saving your score."
-msgstr ""
-"Pour quitter définitivement <application>Quadrapassel</application>, "
-"utilisez le menu <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Quitter</"
-"guimenuitem></menuchoice>. Si une partie est en cours lorsque vous quittez, "
-"la partie s'arrête sans sauvegarder votre score."
-
-#: C/index.docbook:175(sect2/title)
-msgid "Scoring Points"
-msgstr "Comptage des points"
-
-#: C/index.docbook:176(sect2/para)
-msgid ""
-"You score points through two methods: dropping blocks faster and deleting "
-"complete lines of blocks. When you delete lines, you get more points, but "
-"dropping blocks faster will quickly add up. As you level up, the blocks will "
-"begin falling faster. The highest level is 10, at which point you will only "
-"have just over a second to manipulate each block."
-msgstr ""
-"Il y a deux méthodes pour marquer des points : faire tomber plus rapidement "
-"les blocs et détruire des lignes complètes de blocs. Quand vous détruisez "
-"des lignes, vous obtenez plus de points, mais en faisant tomber les blocs "
-"plus rapidement, les points s'additionnent vite. Plus le niveau s'élève, "
-"plus les blocs tombent rapidement. Le niveau le plus élevé est 10. À ce "
-"niveau, il ne vous reste plus qu'un peu plus d'une seconde pour manipuler "
-"chaque bloc."
-
-#: C/index.docbook:179(sect2/title)
-msgid "Viewing Past Scores"
-msgstr "Affichage des anciens scores"
-
-#: C/index.docbook:180(sect2/para)
-msgid ""
-"You can view the top ten scores played on your computer through "
-"<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
-"menuchoice>. The names of the users are shown next the their score and the "
-"date they played."
-msgstr ""
-"Vous pouvez voir les dix meilleurs scores obtenus sur votre ordinateur en "
-"choisissant <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Scores</"
-"guimenuitem></menuchoice>. Les noms des joueurs sont affichés à côté de leur "
-"score ainsi que la date à laquelle ils ont joué."
-
-#: C/index.docbook:186(sect1/title)
-msgid "Customizing <application>Quadrapassel</application>"
-msgstr "Personnalisation de <application>Quadrapassel</application>"
-
-#: C/index.docbook:188(sect2/title)
-msgid "Customizing Game Start-up"
-msgstr "Personnalisation du démarrage du jeu"
-
-#: C/index.docbook:189(sect2/para)
-msgid ""
-"By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice>, you can customize a variety of features for the "
-"start-up of each Quadrapassel game: number and density of pre-filled rows, "
-"and starting level. \"Pre-filled rows\" refers to how many rows will already "
-"have blocks in them when you start each new game."
-msgstr ""
-"À partir du menu <menuchoice><guimenu>Préférences</"
-"guimenu><guimenuitem>Préférences</guimenuitem></menuchoice>, vous pouvez "
-"personnaliser à votre guise le comportement de Quadrapassel au démarrage de "
-"chaque nouveau jeu : nombre et densité des lignes préremplies et niveau de "
-"départ. « Lignes préremplies » se réfère au nombre de lignes qui contiennent "
-"déjà des blocs au démarrage de chaque nouveau jeu."
-
-#: C/index.docbook:191(sect3/title)
-msgid "Number of Pre-filled Rows"
-msgstr "Nombre de lignes préremplies"
-
-#: C/index.docbook:192(sect3/para)
-msgid ""
-"You can change the number of rows that already have blocks at the start-up "
-"of each new game by using the spin box. You can start with up to 19 rows pre-"
-"filled at the start-up of your game. The default number of pre-filled rows "
-"is zero."
-msgstr ""
-"Vous pouvez changez le nombre de lignes qui contiennent déjà des blocs au "
-"démarrage de chaque jeu en utilisant la zone de sélection numérique. Vous "
-"pouvez choisir jusqu'à 19 lignes préremplies au démarrage du jeu. Par "
-"défaut, le nombre de lignes préremplies est zéro."
-
-#: C/index.docbook:195(sect3/title)
-msgid "Density of Pre-filled Rows"
-msgstr "Densité des lignes préremplies"
-
-#: C/index.docbook:196(sect3/para)
-msgid ""
-"You can change the density of the blocks in the pre-filled rows at the start-"
-"up of each game. You can choose a density up to 10 blocks. You should first "
-"choose how many rows you want pre-filled under <guilabel>Number of Pre-"
-"filled Rows</guilabel>. The default density of blocks is three."
-msgstr ""
-"Vous pouvez changer la densité de blocs dans les lignes préremplies au "
-"démarrage du jeu. Vous pouvez choisir jusqu'à une densité de 10 blocs. Vous "
-"devez d'abord choisir le nombre de lignes pré-remplies grâce à "
-"<guilabel>Nombre de lignes préremplies</guilabel>. Par défaut, la densité de "
-"blocs est trois."
-
-#: C/index.docbook:199(sect3/title)
-msgid "Level to Start On"
-msgstr "Niveau de départ"
-
-#: C/index.docbook:200(sect3/para)
-msgid ""
-"You can adjust the level of difficulty you start on. The highest level you "
-"can start on is 10, which is the highest level you can play to. The default "
-"starting level is one."
-msgstr ""
-"Vous pouvez ajuster le niveau de difficulté initial. Le niveau de départ le "
-"plus haut est 10, ce qui est le plus haut niveau auquel vous pouvez jouer. "
-"Par défaut, le niveau de départ est 1."
-
-#: C/index.docbook:204(sect2/title)
-msgid "Customizing the Gameplay"
-msgstr "Personnalisation du jeu"
-
-#: C/index.docbook:205(sect2/para)
-msgid ""
-"From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice>, you can customize a variety of features related "
-"to the blocks: previewing the next block, block colors, and block rotation."
-msgstr ""
-"À partir du menu <menuchoice><guimenu>Préférences</"
-"guimenu><guimenuitem>Préférences</guimenuitem></menuchoice>, vous pouvez "
-"personnaliser certaines caractéristiques des blocs : prévisualisation du "
-"prochain bloc, couleurs et rotation des blocs."
-
-#: C/index.docbook:207(sect3/title)
-msgid "Enable sounds"
-msgstr "Activer les sons"
-
-#: C/index.docbook:208(sect3/para)
-msgid ""
-"Turn the sound effects on and off using this option. If you are playing this "
-"game in any area which you share with other people, you should probably "
-"select off."
-msgstr ""
-"Activez et désactivez les effets sonores en utilisant cette option. Si vous "
-"jouez à ce jeu dans un lieu que vous partagez avec d'autres personnes, vous "
-"devriez probablement choisir de les désactiver."
-
-#: C/index.docbook:211(sect3/title)
-msgid "Preview Next Block"
-msgstr "Voir le prochain bloc"
-
-#: C/index.docbook:212(sect3/para)
-msgid ""
-"Choose this option if you want to see the next block that is going to fall. "
-"This feature helps you plan the placement of your blocks."
-msgstr ""
-"Cochez cette option si vous voulez voir à l'avance le prochain bloc qui va "
-"tomber. Cette fonctionnalité vous aide à planifier le placement de vos blocs."
-
-#: C/index.docbook:215(sect3/title)
-msgid "Use Random Block Colors"
-msgstr "Couleurs aléatoires des blocs"
-
-#: C/index.docbook:216(sect3/para)
-msgid ""
-"Choose if you want the various block configurations to be color coded or "
-"randomly colored. If you use the colors to help you identify blocks, random "
-"colors will make the game more difficult."
-msgstr ""
-"Choisissez si vous désirez que les différents types de blocs soient codés "
-"par une couleur ou bien coloriés de manière aléatoire. Si vous utilisez les "
-"couleurs pour vous aider à identifier les blocs, des couleurs aléatoires "
-"vont rendre le jeu plus difficile."
-
-#: C/index.docbook:219(sect3/title)
-msgid "Choose Difficult Blocks"
-msgstr "Choisir des blocs difficiles"
-
-#: C/index.docbook:220(sect3/para)
-msgid ""
-"Choose this option if you want to select mode that is designed specifically "
-"to annoy the player. With this feature enabled, you never get the piece you "
-"want, and very seldom complete a row. Next block preview doesn't correspond "
-"to actual piece you get next, but to the one you probably wish to get."
-msgstr ""
-"Choisissez cette option si vous souhaitez activer un mode de jeu conçu pour "
-"ennuyer le joueur. Avec cette option, vous n'obtenez jamais la pièce que "
-"vous voulez et il est rare de pouvoir compléter une ligne. L'aperçu du bloc "
-"suivant ne correspond pas au bloc qui sera effectivement le suivant, mais "
-"plutôt au bloc que vous auriez souhaité obtenir."
-
-#: C/index.docbook:223(sect3/title)
-msgid "Rotate Blocks Counterclockwise"
-msgstr "Tourner les blocs dans le sens inverse des aiguilles d'une montre"
-
-#: C/index.docbook:224(sect3/para)
-msgid ""
-"Choose this option if you want the blocks to rotate counterclockwise or not."
-msgstr ""
-"Cochez cette option si vous désirez que les blocs tournent dans le sens "
-"inverse des aiguilles d'une montre."
-
-#: C/index.docbook:227(sect3/title)
-msgid "Show where the block will land"
-msgstr "Afficher où les blocs vont atterrir"
-
-#: C/index.docbook:228(sect3/para)
-msgid ""
-"If this feature is used a grey image of the block will show you where the "
-"block will land. This feature is very useful for beginning players, but "
-"experienced players will find it a distraction."
-msgstr ""
-"Si vous utilisez cette fonctionnalité, une image grisée du bloc vous indique "
-"l'emplacement où le bloc va atterrir. Ceci est très utile pour les joueurs "
-"débutants, mais les joueurs expérimentés trouvent cela plutôt gênant."
-
-#: C/index.docbook:236(sect2/title)
-msgid "Customizing the Look of <application>Quadrapassel</application>"
-msgstr ""
-"Personnalisation de l'apparence de <application>Quadrapassel</application>"
-
-#: C/index.docbook:237(sect2/para)
-msgid ""
-"Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice>, you can customize the look of "
-"<application>Quadrapassel</application>: images for the blocks."
-msgstr ""
-"À partir du menu <menuchoice><guimenu>Préférences</"
-"guimenu><guimenuitem>Préférences</guimenuitem></menuchoice>, vous pouvez "
-"personnaliser l'apparence de <application>Quadrapassel</application> : style "
-"des blocs."
-
-#: C/index.docbook:239(sect3/title)
-msgid "Block Image"
-msgstr "Style de blocs"
-
-#: C/index.docbook:240(sect3/para)
-msgid ""
-"You can change the style of the blocks, including image and size. There are "
-"a variety of pre-made styles."
-msgstr ""
-"Vous pouvez changer le style des blocs, y compris leur image et leur taille. "
-"Il existe un certain nombre de styles prédéfinis."
-
-#: C/index.docbook:243(sect3/title)
-msgid "Background"
-msgstr "Arrière-plan"
-
-#: C/index.docbook:243(sect3/para)
-msgid ""
-"If you drag your favorite image into the <application>Quadrapassel</"
-"application> window it will be used as the background. If you want a solid "
-"color as the background drag one in from either the color picker or from "
-"<application>nautlilus'</application> <guimenuitem>Backgrounds and Emblems</"
-"guimenuitem> dialog (the reset item from that dialog also works)."
-msgstr ""
-"Si vous faites glisser votre image favorite sur la fenêtre de "
-"<application>Quadrapassel</application>, elle sera utilisée comme arrière-"
-"plan. Si vous désirez une couleur unie comme arrière-plan, faites-en glisser "
-"une soit à partir d'une fenêtre de sélection de couleur ou bien à partir de "
-"la boîte de dialogue <guimenuitem>Arrière-plans et emblèmes</guimenuitem> de "
-"<application>Nautilus</application> (le bouton Réinitialiser de cette boîte "
-"de dialogue fonctionne également)."
-
-#: C/index.docbook:255(sect1/title)
-msgid "Authors"
-msgstr "Auteurs"
-
-#: C/index.docbook:256(sect1/para)
-msgid ""
-"<application>Quadrapassel</application> was written by J. Marcin Gorycki in "
-"1999 and maintained by Gnome Games Team since then. This manual was written "
-"by Angela Boyle. To report a bug or make a suggestion regarding this "
-"application or this manual, follow the directions in this <ulink url=\"ghelp:"
-"user-guide?feedback-bugs\" type=\"help\">document</ulink>."
-msgstr ""
-"<application>Quadrapassel</application> a été écrit par J. Marcin Gorycki en "
-"1999 et maintenu depuis par l'équipe « Gnome Games ». Ce manuel a été écrit "
-"par Angela Boyle. Pour signaler une anomalie ou émettre une suggestion "
-"concernant cette application ou ce manuel, procédez comme indiqué dans ce "
-"<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
-
-#: C/index.docbook:280(sect1/title)
+#: C/license.page:11(page/title)
 msgid "License"
 msgstr "Licence"
 
-#: C/index.docbook:281(sect1/para)
+#: C/license.page:12(page/p)
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the <ulink type=\"help\" url=\"help:gpl\"> "
-"<citetitle>GNU General Public License</citetitle></ulink> as published by "
-"the Free Software Foundation; either version 2 of the License, or (at your "
-"option) any later version."
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
 msgstr ""
-"Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le "
-"modifier selon les termes de la <ulink type=\"help\" url=\"help:gpl\"> "
-"<citetitle>GNU General Public License</citetitle></ulink>, tels que publiés "
-"par la Free Software Foundation ; soit la version 2 de cette licence ou (à "
-"votre choix) toute version ultérieure."
+"Cette œuvre est distribuée sous licence Creative Commons Paternité-Partage "
+"des Conditions Initiales à l'Identique 3.0 Unported."
 
-#: C/index.docbook:283(sect1/para)
-msgid ""
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
-"License</citetitle> for more details."
-msgstr ""
-"Ce programme est distribué dans l’espoir qu’il sera utile, mais SANS AUCUNE "
-"GARANTIE, ni explicite ni implicite; sans même les garanties de "
-"commercialisation ou d’adaptation dans un but spécifique. Se référer à la "
-"<citetitle>GNU General Public License</citetitle> pour plus de détails."
+#: C/license.page:20(page/p)
+msgid "You are free:"
+msgstr "Vous êtes libre :"
 
-#: C/index.docbook:286(para/address)
-#, no-wrap
-msgid ""
-"\n"
-"    Free Software Foundation, Inc.\n"
-"    <street>59 Temple Place</street> - Suite 330\n"
-"    <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode>\n"
-"    <country>USA</country>\n"
-"   "
-msgstr ""
-"\n"
-"    Free Software Foundation, Inc.\n"
-"    <street>59 Temple Place</street> - Suite 330\n"
-"    <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode>\n"
-"    <country>USA</country>\n"
-"   "
+#: C/license.page:25(item/title)
+msgid "<em>To share</em>"
+msgstr "<em>de partager</em>"
 
-#: C/index.docbook:285(sect1/para)
+#: C/license.page:26(item/p)
+msgid "To copy, distribute and transmit the work."
+msgstr "de reproduire, distribuer et communiquer cette création."
+
+#: C/license.page:29(item/title)
+msgid "<em>To remix</em>"
+msgstr "<em>de modifier</em>"
+
+#: C/license.page:30(item/p)
+msgid "To adapt the work."
+msgstr "d'adapter cette création,"
+
+#: C/license.page:33(page/p)
+msgid "Under the following conditions:"
+msgstr "selon les conditions suivantes :"
+
+#: C/license.page:38(item/title)
+msgid "<em>Attribution</em>"
+msgstr "<em>Paternité</em>"
+
+#: C/license.page:39(item/p)
 msgid ""
-"A copy of the <citetitle>GNU General Public License</citetitle> is included "
-"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
-"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
-"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
-"www.fsf.org\">their Web site</ulink> or by writing to <_:address-1/>"
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
 msgstr ""
-"Une copie de la <citetitle>GNU General Public License</citetitle> est "
-"incluse sous forme d'annexe au <citetitle>Guide d'utilisation du bureau "
-"GNOME</citetitle>. Vous pouvez également obtenir une copie de la "
-"<citetitle>GNU General Public License</citetitle> à la Free Software "
-"Foundation en visitant <ulink type=\"http\" url=\"http://www.fsf.org\">leur "
-"site Web</ulink> ou en écrivant à <_:address-1/>"
+"Vous devez citer le nom de l'auteur original de la manière indiquée par "
+"l'auteur de l'œuvre ou le titulaire des droits qui vous confère cette "
+"autorisation (mais pas d'une manière qui suggérerait qu'ils vous soutiennent "
+"ou approuvent votre utilisation de l'œuvre)."
+
+#: C/license.page:46(item/title)
+msgid "<em>Share Alike</em>"
+msgstr "<em>Partage des conditions initiales à l'identique</em>"
+
+#: C/license.page:47(item/p)
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Si vous modifiez, transformez ou adaptez cette création, vous n'avez le "
+"droit de distribuer la création qui en résulte que sous un contrat identique "
+"à celui-ci."
+
+#: C/license.page:53(page/p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Pour prendre connaissance du texte complet de la licence, consultez le <link "
+"href=\\\"http://creativecommons.org/licenses/by-sa/3.0/legalcode\\\">site "
+"Web CreativeCommons</link> ou lisez in extenso le <link href=\\\"http://"
+"creativecommons.org/licenses/by-sa/3.0/\\\">contrat Commons</link>."
+
+#: C/playgame.page:16(license/p)
+msgid "Creative Commons Attribution Share Alike 3.0"
+msgstr ""
+"Creative Commons Paternité-Partage des Conditions Initiales à l'Identique 3.0"
+
+#: C/playgame.page:20(page/title)
+msgid "PLAY PLAY PLAY!"
+msgstr "JOUER JOUER JOUER !"
+
+#: C/playgame.page:23(section/title)
+msgid "How To Play"
+msgstr "Comment jouer"
+
+#: C/playgame.page:26(item/p)
+msgid ""
+"The <key>←</key> and <key>→</key> keys move the blocks across the screen."
+msgstr ""
+"Les touches <key>←</key> et <key>→</key> déplacent les blocs à l'écran."
+
+#: C/playgame.page:27(item/p)
+msgid ""
+"The <key>↑</key> key rotates the block. The rotation (which is "
+"counterclockwise by default) can be changed in the <link xref=\"preferences"
+"\">Preferences</link>."
+msgstr ""
+"La touche <key>↑</key> fait tourner le bloc. La rotation (qui se fait dans "
+"le sens inverse des aiguilles d'un montre par défaut) peut être modifiée "
+"dans les <link xref=\"preferences\">Préférences</link>."
+
+#: C/playgame.page:28(item/p)
+msgid ""
+"The <key>SPACEBAR</key> and <key>↓</key> key increase the speed of the drop. "
+"The <key>SPACEBAR</key> causes a hard-drop (instant move to the bottom). The "
+"<key>↓</key> key causes a soft-drop (temporary increase in speed while the "
+"key is held down)."
+msgstr ""
+"Les touches <key>Barre d'espace</key> et <key>↓</key> augmentent la "
+"vitesse de chute. La <key>barre d'espace</key> entraîne une chute brutale "
+"(déplacement instantané vers le bas). La touche <key>↓</key> "
+"entraîne une chute douce (la vitesse augmente temporairement tant que la "
+"touche est maintenue enfoncée)."
+
+#: C/playgame.page:33(section/title)
+msgid "Rules"
+msgstr "Règles"
+
+#: C/playgame.page:35(section/p)
+msgid "There are a couple of rules that you should keep in mind:"
+msgstr "Il y a quelques règles que vous devez garder à l'esprit :"
+
+#: C/playgame.page:37(item/p)
+msgid ""
+"You can pause, end, start a new game, get help or quit the program at any "
+"time."
+msgstr ""
+"Vous pouvez mettre en pause, terminer, démarrer un nouveau jeu, obtenir de "
+"l'aide ou quitter le programme à tout moment."
+
+#: C/playgame.page:38(item/p)
+msgid "You can pause the game as many times as you want."
+msgstr ""
+"Vous pouvez mettre le jeu en pause autant de fois que vous le souhaitez."
+
+#: C/preferences.page:18(info/desc)
+msgid "Preferences for the game and the theme."
+msgstr "Préférences pour le jeu et le thème."
+
+#: C/preferences.page:22(page/title)
+msgid "Game Preferences"
+msgstr "Préférences de jeux"
+
+#: C/preferences.page:24(page/p)
+msgid ""
+"To change the game preferences, click the <guiseq><gui>Quadrapassel menu</"
+"gui><gui>Preferences</gui></guiseq>."
+msgstr ""
+"Pour modifier les préférences du jeu, cliquez sur <guiseq><gui>Menu "
+"Quadrapassel</gui><gui>Préférences</gui></guiseq>."
+
+#: C/preferences.page:26(page/p)
+msgid ""
+"The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
+"<gui>Theme</gui>."
+msgstr ""
+"Les trois onglets disponibles sont <gui>Commandes</gui>, <gui>Jeu</gui> et "
+"<gui>Thème</gui>."
+
+#: C/preferences.page:29(section/title)
+msgid "Controls"
+msgstr "Contrôles"
+
+#: C/preferences.page:30(section/p)
+msgid ""
+"By double-clicking on the given controls, thus selecting the new one, you "
+"can change the control keys."
+msgstr ""
+"En double-cliquant sur les commandes proposées, en sélectionnant donc la "
+"nouvelle commande, vous pouvez modifier les touches de contrôle."
+
+#: C/preferences.page:34(section/title)
+msgid "Game"
+msgstr "Jeu"
+
+#: C/preferences.page:35(section/p)
+msgid ""
+"Under the <gui>Game</gui> tab, you can change the way in which the game "
+"starts:"
+msgstr ""
+"Sous l'onglet <gui>Jeu</gui>, vous pouvez modifier la façon dont le jeu "
+"commence :"
+
+#: C/preferences.page:37(item/p)
+msgid ""
+"<gui>Number of pre-filled rows</gui> indicates how many rows with blocks "
+"there will be when the game starts."
+msgstr ""
+"<gui>Nombre de lignes pré-remplies</gui> indique combien de lignes avec des "
+"blocs il y aura lorsque le jeu démarre."
+
+#: C/preferences.page:38(item/p)
+msgid ""
+"<gui>Density of blocks in a pre-filled row</gui> indicates how many blocks "
+"there will be in a pre-filled row when the game starts."
+msgstr ""
+"<gui>Densité de blocs dans les lignes pré-remplies</gui> indique combien de "
+"blocs il y aura dans une ligne pré-remplie lorsque le jeu démarre."
+
+#: C/preferences.page:39(item/p)
+msgid "<gui>Starting level</gui> controls the speed with which you will start."
+msgstr ""
+"<gui>Niveau de départ</gui> contrôle la vitesse avec laquelle vous démarrez."
+
+#: C/preferences.page:41(section/p)
+msgid "These options can vary from 0 to 19, 0 to 10, and 1 to 20 respectively."
+msgstr ""
+"Ces options peuvent varier respectivement de 0 à 19, de 0 à 10 et de 1 à 20."
+
+#: C/preferences.page:43(section/p)
+msgid "Other available options are:"
+msgstr "Les autres options valides sont les suivantes :"
+
+#: C/preferences.page:45(item/p)
+msgid "<gui>Enable sounds</gui>"
+msgstr "<gui>Activer les sons</gui>"
+
+#: C/preferences.page:46(item/p)
+msgid "<gui>Preview next block</gui>"
+msgstr "<gui>Voir le prochain bloc</gui>"
+
+#: C/preferences.page:47(item/p)
+msgid "<gui>Choose difficult blocks</gui>"
+msgstr "<gui>Choisir des blocs difficiles</gui>"
+
+#: C/preferences.page:48(item/p)
+msgid "<gui>Rotate blocks counterclockwise</gui>"
+msgstr ""
+"<gui>Tourner les blocs dans le sens inverse des aiguilles d'une montre</gui>"
+
+#: C/preferences.page:49(item/p)
+msgid "<gui>Show where the block will land</gui>"
+msgstr "<gui>Afficher où les blocs vont atterrir</gui>"
+
+#: C/preferences.page:54(section/title)
+msgid "Theme"
+msgstr "Thème"
+
+#: C/preferences.page:55(section/p)
+msgid "To change the theme:"
+msgstr "Pour changer le thème :"
+
+#: C/preferences.page:57(item/p)
+msgid ""
+"click the <guiseq><gui>Quadrapassel menu</gui><gui>Preference</gui></guiseq>."
+msgstr ""
+"Cliquez sur <guiseq><gui>Menu Quadrapassel</gui><gui>Préférences</gui></"
+"guiseq>"
+
+#: C/preferences.page:58(item/p)
+msgid "select the <gui>Theme</gui> tab."
+msgstr "sélectionnez l'onglet <gui>Thème</gui>."
+
+#: C/preferences.page:60(section/p)
+msgid "Four different themes are available for the blocks' contours:"
+msgstr "Quatre thèmes différents sont disponibles pour les contours des blocs."
+
+#: C/preferences.page:64(item/p)
+msgid "Plain"
+msgstr "Ordinaire"
+
+#: C/preferences.page:65(item/p)
+msgid "Tango Flat"
+msgstr "Tango plat"
+
+#: C/preferences.page:66(item/p)
+msgid "Tango Shaded"
+msgstr "Tango ombré"
+
+#: C/preferences.page:67(item/p)
+msgid "Clean"
+msgstr "Clean"
+
+#: C/score.page:20(page/title)
+msgid "Score"
+msgstr "Score"
+
+#: C/score.page:21(page/p)
+msgid "Do you think you can reach level 10?"
+msgstr "Pensez-vous pouvoir atteindre le niveau 10 ?"
+
+#: C/score.page:24(section/title)
+msgid "Score More"
+msgstr "Amélioration du score"
+
+#: C/score.page:25(section/p)
+msgid ""
+"If you start from level 1, the only way to go to the next level is by "
+"completing more lines, that is, scoring more points. In order for you to "
+"have a better score, try to adapt the screen, the keyboard, and the level "
+"(the speed) that fits you the most!"
+msgstr ""
+"Si vous commencez à partir du niveau 1, la seule façon d'aller au prochain "
+"niveau est de compléter plus de lignes, et donc, de marquer plus de points. "
+"Pour que vous puissiez avoir un meilleur score, essayez d'adapter l'écran, "
+"le clavier et le niveau (la vitesse) qui vous conviennent le mieux !"
+
+#: C/score.page:26(section/p)
+msgid ""
+"You can make many changes to the keyboard controls, the contour of the "
+"blocks, the number and density of lines with which you start, and the speed "
+"of drop. You can change your settings in in <link xref=\"preferences"
+"\">Preference</link>. After deciding what fits you the most, you will rock!"
+msgstr ""
+"Vous pouvez faire de nombreux changements au niveau des commandes du "
+"clavier, du contour des blocs, du nombre et de la densité des lignes avec "
+"lesquelles vous commencez, ainsi que la vitesse de chute. Vous pouvez "
+"modifier vos paramètres de préférences dans <link xref=\"preferences"
+"\">Préférences</link>. Une fois paramétré, ça va secouer !"
+
+#: C/score.page:30(section/title)
+msgid "High Scores"
+msgstr "Meilleurs scores"
+
+#: C/score.page:31(section/p)
+msgid ""
+"Everyone wants to be on the top of the list, right? In <guiseq><gui>Game</"
+"gui><gui>Scores</gui></guiseq> you can find the records from the highest to "
+"the lowest score."
+msgstr ""
+"Tout le monde aimerait être en tête de liste, non ? In <guiseq><gui>Jeu</"
+"gui><gui>Scores</gui></guiseq> vous pouvez trouver les scores du plus élevé "
+"au plus faible."
+
+#: C/score.page:33(section/p)
+msgid ""
+"The scores cannot be deleted, so do not worry that someone will remove your "
+"best high score!"
+msgstr ""
+"Les scores ne peuvent pas être effacés. Ne vous-en faite pas : personne ne "
+"peut effacer vos meilleurs scores !"
+
+#: C/translate.page:16(info/desc)
+msgid "Do you know a world language?"
+msgstr "Connaissez-vous une langue mondiale ?"
+
+#: C/translate.page:19(page/title)
+msgid "Help translate"
+msgstr "Aider à traduire"
+
+#: C/translate.page:21(page/p)
+msgid ""
+"The <app>GNOME games</app> user interface and documentation is being "
+"translated by a world-wide volunteer community."
+msgstr ""
+"L'interface utilisateur et la documentation des <app>jeux GNOME</app> est "
+"traduite par une communauté de bénévoles dans le monde entier."
+
+#: C/translate.page:25(page/p)
+msgid ""
+"There are <link href=\"http://l10n.gnome.org/module/gnome-games/\">many "
+"languages</link> for which translations are still needed."
+msgstr ""
+"Il y a de <link href=\"http://l10n.gnome.org/module/gnome-games/"
+"\">nombreuses langues</link> pour lesquelles des traductions sont encore "
+"nécessaires."
+
+#: C/translate.page:29(page/p)
+msgid ""
+"To start translating you will need to <link href=\"http:l10n.gnome.org"
+"\">create an account</link> and join the <link href=\"http://l10n.gnome.org/"
+"teams/\">translation team</link> for your language. This will give you the "
+"ability to upload new translations."
+msgstr ""
+"Pour commencer à traduire, vous devez <link href=\"http:l10n.gnome.org"
+"\">créer un compte</link> et rejoindre l'<link href=\"http://l10n.gnome.org/"
+"teams/\">équipe de traduction</link> de votre langue. Cela vous donnera la "
+"possibilité de téléverser des nouvelles traductions."
+
+#: C/translate.page:33(page/p)
+msgid ""
+"You can chat with GNOME translators using <link href=\"https://cbe003.chat."
+"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. People on the "
+"channel are located worldwide, so you may not get an immediate response as a "
+"result of timezone differences."
+msgstr ""
+"Vous pouvez discuter avec des traducteurs GNOME en utilisant l'<link href="
+"\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n"
+"\">IRC</link>. Les gens sur ce canal viennent du monde entier, ce qui fait "
+"que vous pouvez ne pas obtenir une réponse immédiate à la suite de "
+"différences de fuseau horaire."
+
+#: C/translate.page:37(page/p)
+msgid ""
+"Alternatively, you can contact the Internationalization Team using their "
+"<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+"list</link>."
+msgstr ""
+"À la place, vous pouvez contacter l'équipe d'internationalisation en "
+"utilisant leur <link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n"
+"\">liste de discussion</link>."
+
+#~ msgid "link"
+#~ msgstr "lien"
+
+#~ msgid ""
+#~ "Permission is granted to copy, distribute and/or modify this document "
+#~ "under the terms of the GNU Free Documentation License (GFDL), Version 1.1 "
+#~ "or any later version published by the Free Software Foundation with no "
+#~ "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
+#~ "can find a copy of the GFDL at this <_:ulink-1/> or in the file COPYING-"
+#~ "DOCS distributed with this manual."
+#~ msgstr ""
+#~ "Permission vous est donnée de copier, distribuer et/ou modifier ce "
+#~ "document selon les termes de la Licence GNU Free Documentation License, "
+#~ "Version 1.1 ou ultérieure publiée par la Free Software Foundation sans "
+#~ "section inaltérable, sans texte de première page de couverture ni texte "
+#~ "de dernière page de couverture. Vous trouverez un exemplaire de cette "
+#~ "licence en suivant ce <_:ulink-1/> ou dans le fichier COPYING-DOCS fourni "
+#~ "avec le présent manuel."
+
+#~ msgid ""
+#~ "This manual is part of a collection of GNOME manuals distributed under "
+#~ "the GFDL. If you want to distribute this manual separately from the "
+#~ "collection, you can do so by adding a copy of the license to the manual, "
+#~ "as described in section 6 of the license."
+#~ msgstr ""
+#~ "Ce manuel fait partie de la collection de manuels GNOME distribués selon "
+#~ "les termes de la licence de documentation libre GNU. Si vous souhaitez "
+#~ "distribuer ce manuel indépendamment de la collection, vous devez joindre "
+#~ "un exemplaire de la licence au document, comme indiqué dans la section 6 "
+#~ "de celle-ci."
+
+#~ msgid ""
+#~ "Many of the names used by companies to distinguish their products and "
+#~ "services are claimed as trademarks. Where those names appear in any GNOME "
+#~ "documentation, and the members of the GNOME Documentation Project are "
+#~ "made aware of those trademarks, then the names are in capital letters or "
+#~ "initial capital letters."
+#~ msgstr ""
+#~ "La plupart des noms utilisés par les entreprises pour distinguer leurs "
+#~ "produits et services sont des marques déposées. Lorsque ces noms "
+#~ "apparaissent dans la documentation GNOME et que les membres du projet de "
+#~ "Documentation GNOME sont informés de l'existence de ces marques déposées, "
+#~ "soit ces noms entiers, soit leur première lettre est en majuscule."
+
+#~ msgid ""
+#~ "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+#~ "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES "
+#~ "THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+#~ "MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+#~ "RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+#~ "MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+#~ "MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+#~ "WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+#~ "SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES "
+#~ "AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS "
+#~ "DISCLAIMER; AND"
+#~ msgstr ""
+#~ "LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, "
+#~ "EXPRESSE OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE "
+#~ "BONNE QUALITÉ MARCHANDE OU D'APTITUDE À UN EMPLOI PARTICULIER OU AUTORISÉ "
+#~ "DU DOCUMENT OU DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE "
+#~ "RELATIF À LA QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU "
+#~ "DE SA VERSION DE MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE "
+#~ "S'AVÉRAIT DÉFECTUEUSE, L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, "
+#~ "L'AUTEUR, NI TOUT AUTRE PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE "
+#~ "INTERVENTION, RÉPARATION OU CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE "
+#~ "RESPONSABILITÉ CONSTITUE UNE PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE "
+#~ "UTILISATION DE CE DOCUMENT OU DE SA VERSION MODIFIÉE N'EST AUTORISÉE AUX "
+#~ "TERMES DU PRÉSENT ACCORD, EXCEPTÉ SOUS CETTE DÉNÉGATION DE "
+#~ "RESPONSABILITÉ ; ET"
+
+#~ msgid ""
+#~ "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT "
+#~ "(INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL "
+#~ "WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE "
+#~ "LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR "
+#~ "CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, "
+#~ "DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR "
+#~ "MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR "
+#~ "RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, "
+#~ "EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH "
+#~ "DAMAGES."
+#~ msgstr ""
+#~ "EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL "
+#~ "S'AGISSE DE RESPONSABILITÉ CIVILE (Y COMPRIS LA NÉGLIGENCE), "
+#~ "CONTRACTUELLE OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT "
+#~ "ET TOUT DISTRIBUTEUR DE CE DOCUMENT OU DE SA VERSION DE MISE À JOUR AINSI "
+#~ "QUE TOUT FOURNISSEUR DE QUELQUE PARTIE QUE CE SOIT NE POURRONT ÊTRE TENUS "
+#~ "RESPONSABLES À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, "
+#~ "PARTICULIER OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES "
+#~ "DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, AUX ARRÊTS DE TRAVAIL, AUX "
+#~ "DÉFAILLANCES ET AUX DYSFONCTIONNEMENTS INFORMATIQUES OU TOUT AUTRE "
+#~ "DOMMAGE OU PERTE LIÉE À L'UTILISATION DU PRÉSENT DOCUMENT ET DE SES "
+#~ "VERSIONS DE MISE À JOUR, ET CE MÊME SI CES PARTIES ONT ÉTÉ INFORMÉES DE "
+#~ "LA POSSIBILITÉ DE TELS DOMMAGES."
+
+#~ msgid ""
+#~ "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
+#~ "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
+#~ "UNDERSTANDING THAT: <_:orderedlist-1/>"
+#~ msgstr ""
+#~ "LE PRÉSENT DOCUMENT ET SES VERSIONS MODIFIÉES SONT FOURNIS SELON LES "
+#~ "TERMES DE LA LICENCE DE DOCUMENTATION LIBRE GNU SACHANT QUE : <_:"
+#~ "orderedlist-1/>"
+
+#~ msgid "<application>Quadrapassel</application> Manual"
+#~ msgstr "Manuel de <application>Quadrapassel</application>"
+
+#~ msgid ""
+#~ "Quadrapassel is GNOME's version of Tetris, the classic game of "
+#~ "interlocking four-piece blocks. As they fall from the top, the player "
+#~ "must orient them to fit the other blocks at the bottom so that they form "
+#~ "a complete horizontal line, in which case that line disappears and the "
+#~ "player gains points."
+#~ msgstr ""
+#~ "Quadrapassel est une variante GNOME de Tetris, le classique jeu "
+#~ "d'emboîtement de blocs de quatre pièces. Pendant qu'ils tombent du haut, "
+#~ "le joueur doit les orienter afin qu'ils s'emboîtent avec les autres blocs "
+#~ "du bas pour former si possible une ligne horizontale complète. Dans ce "
+#~ "cas, la ligne disparaît et le joueur gagne des points."
+
+#~ msgid "<year>2004</year> <holder>Angela Boyle</holder>"
+#~ msgstr "<year>2004</year> <holder>Angela Boyle</holder>"
+
+#~ msgid "GNOME Documentation Project"
+#~ msgstr "Projet de documentation GNOME"
+
+#~ msgid ""
+#~ "Permission is granted to copy, distribute and/or modify this document "
+#~ "under the terms of the GNU Free Documentation License (GFDL), Version 1.1 "
+#~ "or any later version published by the Free Software Foundation with no "
+#~ "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
+#~ "can find a copy of the GFDL at this <ulink type=\"help\" url=\"help:fdl"
+#~ "\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+#~ msgstr ""
+#~ "Permission vous est donnée de copier, distribuer et/ou modifier ce "
+#~ "document selon les termes de la Licence GNU Free Documentation License, "
+#~ "Version 1.1 ou ultérieure publiée par la Free Software Foundation sans "
+#~ "section inaltérable, sans texte de première page de couverture ni texte "
+#~ "de dernière page de couverture. Vous trouverez un exemplaire de cette "
+#~ "licence en suivant ce <ulink type=\"help\" url=\"help:fdl\">lien</ulink> "
+#~ "ou dans le fichier COPYING-DOCS fourni avec le présent manuel."
+
+#~ msgid ""
+#~ "<firstname>Angela</firstname> <surname>Boyle</surname> <affiliation> "
+#~ "<address> <email>anjela@u.washington.edu</email> </address> </affiliation>"
+#~ msgstr ""
+#~ "<firstname>Angela</firstname> <surname>Boyle</surname> <affiliation> "
+#~ "<address> <email>anjela@u.washington.edu</email> </address> </affiliation>"
+
+#~ msgid "Angela Boyle <email>anjela@u.washington.edu</email>"
+#~ msgstr "Angela Boyle <email>anjela@u.washington.edu</email>"
+
+#~ msgid ""
+#~ "<revnumber>Quadrapassel Manual V2.8</revnumber> <date>June 2004</date> <_:"
+#~ "revdescription-1/>"
+#~ msgstr ""
+#~ "<revnumber>Manuel de Quadrapassel V 2.8</revnumber> <date>Juin 2004</"
+#~ "date> <_:revdescription-1/>"
+
+#~ msgid "This manual describes version 2.12 of Quadrapassel."
+#~ msgstr "Ce manuel documente la version 2.12 de Quadrapassel."
+
+#~ msgid "Feedback"
+#~ msgstr "Votre avis"
+
+#~ msgid ""
+#~ "To report a bug or make a suggestion regarding the "
+#~ "<application>Quadrapassel</application> application or this manual, "
+#~ "follow the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs"
+#~ "\" type=\"help\">GNOME Feedback Page</ulink>."
+#~ msgstr ""
+#~ "Pour rapporter une anomalie ou émettre une suggestion concernant "
+#~ "<application>Quadrapassel</application> ou ce manuel, procédez comme "
+#~ "indiqué sur la <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+#~ "\">page de réactions sur GNOME</ulink>."
+
+#~ msgid "<primary>Quadrapassel</primary>"
+#~ msgstr "<primary>Quadrapassel</primary>"
+
+#~ msgid "Introduction"
+#~ msgstr "Introduction"
+
+#~ msgid ""
+#~ "<application>Quadrapassel</application> comes from the classic falling-"
+#~ "block game, <application>Tetris</application>. The goal of the game is to "
+#~ "create complete horizontal lines of blocks, which will disappear. The "
+#~ "blocks come in seven different shapes made from four blocks each: one "
+#~ "straight, two L-shaped, one square, and two S-shaped. The blocks fall "
+#~ "from the top center of the screen in a random order. You rotate the "
+#~ "blocks and move them across the screen to drop them in complete lines. "
+#~ "You score by dropping blocks fast and completing lines. As your score "
+#~ "gets higher, you level up and the blocks fall faster."
+#~ msgstr ""
+#~ "<application>Quadrapassel</application> est une déclinaison de "
+#~ "<application>Tétris</application>, le jeu classique de blocs qui tombent. "
+#~ "Le but du jeu est de créer des lignes horizontales complètes de blocs qui "
+#~ "vont disparaître. Les blocs possèdent sept formes différentes, toutes "
+#~ "réalisées à partir de quatre blocs : une forme droite, deux en forme de "
+#~ "L, une carrée et deux en forme de S. Les blocs tombent à partir du centre "
+#~ "supérieur de l'écran dans un ordre aléatoire. Vous faites tourner les "
+#~ "blocs et vous les déplacez à l'écran afin qu'ils complètent les lignes en "
+#~ "tombant. Au fur et à mesure que le score augmente, le niveau du jeu "
+#~ "change et les blocs tombent plus vite."
+
+#~ msgid ""
+#~ "To run <application>Quadrapassel</application>, select "
+#~ "<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
+#~ "guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, or type "
+#~ "<command>quadrapassel</command> in the command line."
+#~ msgstr ""
+#~ "Pour lancer <application>Quadrapassel</application>, sélectionnez "
+#~ "<menuchoice><guimenu>Applications</guimenu><guisubmenu>Jeux</"
+#~ "guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, ou "
+#~ "saisissez la commande <command>quadrapassel</command> dans un terminal."
+
+#~ msgid ""
+#~ "<application>Quadrapassel</application> is included in the "
+#~ "<filename>gnome-games</filename> package, which is part of the GNOME "
+#~ "desktop environment. This document describes version 2.8 of "
+#~ "<application>Quadrapassel</application>."
+#~ msgstr ""
+#~ "<application>Quadrapassel</application> est inclus dans le paquet "
+#~ "<filename>gnome-games</filename> qui fait partie de l'environnement de "
+#~ "bureau GNOME. Ce document présente la version 2.8 de "
+#~ "<application>Quadrapassel</application>."
+
+#~ msgid "Playing <application>Quadrapassel</application>"
+#~ msgstr "Jouer à <application>Quadrapassel</application>"
+
+#~ msgid ""
+#~ "You can score through two actions: completing lines and dropping blocks "
+#~ "quickly."
+#~ msgstr ""
+#~ "Il y a deux manières de marquer des points : compléter des lignes et "
+#~ "faire tomber les blocs rapidement."
+
+#~ msgid "Moving the Blocks"
+#~ msgstr "Déplacement des blocs"
+
+#~ msgid "To play the game, you only need the four arrow keys."
+#~ msgstr ""
+#~ "Seules les quatre touches de direction sont nécessaires pour jouer à ce "
+#~ "jeu."
+
+#~ msgid ""
+#~ "<keycap>Up</keycap> rotates the block. The default rotation is "
+#~ "counterclockwise. You can change the rotation under "
+#~ "<menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+#~ "guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks "
+#~ "counterclockwise</guilabel>."
+#~ msgstr ""
+#~ "<keycap>Flèche haut</keycap> fait tourner le bloc. Par défaut, la "
+#~ "rotation se fait dans le sens inverse des aiguilles d'une montre. Changez "
+#~ "le sens de rotation à travers le menu <menuchoice><guimenu>Préférences</"
+#~ "guimenu><guimenuitem>Préférences</guimenuitem></menuchoice> en décochant "
+#~ "l'option <guilabel>Tourner les blocs dans le sens inverse des aiguilles "
+#~ "d'une montre</guilabel>."
+
+#~ msgid ""
+#~ "<keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block "
+#~ "down the screen faster.<keycap>Down</keycap> moves the block down faster. "
+#~ "<keycap>Space-bar</keycap> moves the block directly to the bottom."
+#~ msgstr ""
+#~ "La <keycap>Flèche bas</keycap> et la <keycap>Barre d'espace</keycap> "
+#~ "déplacent le bloc vers le bas plus rapidement. La <keycap>Barre d'espace</"
+#~ "keycap> fait immédiatement tomber le bloc tout en bas."
+
+#~ msgid "Starting a New Game"
+#~ msgstr "Démarrage d'un nouveau jeu"
+
+#~ msgid ""
+#~ "To begin a new game, go to <menuchoice><guimenu>Game</"
+#~ "guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will "
+#~ "begin dropping blocks from the center of the top of the window. The "
+#~ "default start-up of the game has no blocks in the game window and shows "
+#~ "the next block that will fall in the upper right hand corner. "
+#~ "<guilabel>Score</guilabel> shows the number of points you have earned. "
+#~ "<guilabel>Lines</guilabel> shows the number of lines you have completed. "
+#~ "<guilabel>Level</guilabel> shows the level of difficulty you are on."
+#~ msgstr ""
+#~ "Pour démarrer un nouveau jeu, utilisez le menu <menuchoice><guimenu>Jeu</"
+#~ "guimenu><guimenuitem>Nouveau</guimenuitem></menuchoice>. Le jeu commence "
+#~ "alors à faire tomber des blocs à partir du centre supérieur de la "
+#~ "fenêtre. Par défaut, il n'y a pas de blocs dans la fenêtre de jeu et le "
+#~ "prochain bloc qui tombera est montré dans le coin en haut à droite. "
+#~ "<guilabel>Score</guilabel> indique le nombre de points gagnés. "
+#~ "<guilabel>Lignes</guilabel> indique le nombre de lignes que vous avez "
+#~ "complétées. <guilabel>Niveau</guilabel> indique le niveau de difficulté "
+#~ "actuel."
+
+#~ msgid "Pausing the Game"
+#~ msgstr "Pause"
+
+#~ msgid ""
+#~ "To pause your game, go to <menuchoice><guimenu>Game</"
+#~ "guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>. You can only "
+#~ "pause a game when you are playing. The time limit on pausing your game is "
+#~ "unlimited. To unpause the game, go back to <menuchoice><guimenu>Game</"
+#~ "guimenu><guimenuitem>Pause Game</guimenuitem></menuchoice>."
+#~ msgstr ""
+#~ "Pour faire une pause, utilisez le menu <menuchoice><guimenu>Jeu</"
+#~ "guimenu><guimenuitem>Pause</guimenuitem></menuchoice>. Il n'est possible "
+#~ "de faire une pause que lorsqu'un jeu est en cours. La durée de la pause "
+#~ "est illimitée. Pour reprendre la partie, réutilisez le menu "
+#~ "<menuchoice><guimenu>Jeu</guimenu><guimenuitem>Pause</guimenuitem></"
+#~ "menuchoice>."
+
+#~ msgid "Ending the Game"
+#~ msgstr "Fin d'un jeu"
+
+#~ msgid ""
+#~ "Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</"
+#~ "guimenuitem></menuchoice> to end your current game without quiting "
+#~ "Quadrapassel."
+#~ msgstr ""
+#~ "Utilisez le menu <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Fin du "
+#~ "jeu</guimenuitem></menuchoice> pour arrêter le jeu en cours sans quitter "
+#~ "Quadrapassel."
+
+#~ msgid "Quiting the <application>Quadrapassel</application>"
+#~ msgstr "Fermeture de <application>Quadrapassel</application>"
+
+#~ msgid ""
+#~ "To completely quit <application>Quadrapassel</application> go to "
+#~ "<menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></"
+#~ "menuchoice>. If you are in the middle of a game when you quit, you will "
+#~ "end your game without saving your score."
+#~ msgstr ""
+#~ "Pour quitter définitivement <application>Quadrapassel</application>, "
+#~ "utilisez le menu <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Quitter</"
+#~ "guimenuitem></menuchoice>. Si une partie est en cours lorsque vous "
+#~ "quittez, la partie s'arrête sans sauvegarder votre score."
+
+#~ msgid "Scoring Points"
+#~ msgstr "Comptage des points"
+
+#~ msgid ""
+#~ "You score points through two methods: dropping blocks faster and deleting "
+#~ "complete lines of blocks. When you delete lines, you get more points, but "
+#~ "dropping blocks faster will quickly add up. As you level up, the blocks "
+#~ "will begin falling faster. The highest level is 10, at which point you "
+#~ "will only have just over a second to manipulate each block."
+#~ msgstr ""
+#~ "Il y a deux méthodes pour marquer des points : faire tomber plus "
+#~ "rapidement les blocs et détruire des lignes complètes de blocs. Quand "
+#~ "vous détruisez des lignes, vous obtenez plus de points, mais en faisant "
+#~ "tomber les blocs plus rapidement, les points s'additionnent vite. Plus le "
+#~ "niveau s'élève, plus les blocs tombent rapidement. Le niveau le plus "
+#~ "élevé est 10. À ce niveau, il ne vous reste plus qu'un peu plus d'une "
+#~ "seconde pour manipuler chaque bloc."
+
+#~ msgid ""
+#~ "You can view the top ten scores played on your computer through "
+#~ "<menuchoice><guimenu>Game</guimenu><guimenuitem>Scores</guimenuitem></"
+#~ "menuchoice>. The names of the users are shown next the their score and "
+#~ "the date they played."
+#~ msgstr ""
+#~ "Vous pouvez voir les dix meilleurs scores obtenus sur votre ordinateur en "
+#~ "choisissant <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Scores</"
+#~ "guimenuitem></menuchoice>. Les noms des joueurs sont affichés à côté de "
+#~ "leur score ainsi que la date à laquelle ils ont joué."
+
+#~ msgid "Customizing <application>Quadrapassel</application>"
+#~ msgstr "Personnalisation de <application>Quadrapassel</application>"
+
+#~ msgid "Customizing Game Start-up"
+#~ msgstr "Personnalisation du démarrage du jeu"
+
+#~ msgid ""
+#~ "By going to <menuchoice><guimenu>Settings</"
+#~ "guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can "
+#~ "customize a variety of features for the start-up of each Quadrapassel "
+#~ "game: number and density of pre-filled rows, and starting level. \"Pre-"
+#~ "filled rows\" refers to how many rows will already have blocks in them "
+#~ "when you start each new game."
+#~ msgstr ""
+#~ "À partir du menu <menuchoice><guimenu>Préférences</"
+#~ "guimenu><guimenuitem>Préférences</guimenuitem></menuchoice>, vous pouvez "
+#~ "personnaliser à votre guise le comportement de Quadrapassel au démarrage "
+#~ "de chaque nouveau jeu : nombre et densité des lignes préremplies et "
+#~ "niveau de départ. « Lignes préremplies » se réfère au nombre de lignes "
+#~ "qui contiennent déjà des blocs au démarrage de chaque nouveau jeu."
+
+#~ msgid "Number of Pre-filled Rows"
+#~ msgstr "Nombre de lignes préremplies"
+
+#~ msgid ""
+#~ "You can change the number of rows that already have blocks at the start-"
+#~ "up of each new game by using the spin box. You can start with up to 19 "
+#~ "rows pre-filled at the start-up of your game. The default number of pre-"
+#~ "filled rows is zero."
+#~ msgstr ""
+#~ "Vous pouvez changez le nombre de lignes qui contiennent déjà des blocs au "
+#~ "démarrage de chaque jeu en utilisant la zone de sélection numérique. Vous "
+#~ "pouvez choisir jusqu'à 19 lignes préremplies au démarrage du jeu. Par "
+#~ "défaut, le nombre de lignes préremplies est zéro."
+
+#~ msgid "Density of Pre-filled Rows"
+#~ msgstr "Densité des lignes préremplies"
+
+#~ msgid ""
+#~ "You can change the density of the blocks in the pre-filled rows at the "
+#~ "start-up of each game. You can choose a density up to 10 blocks. You "
+#~ "should first choose how many rows you want pre-filled under "
+#~ "<guilabel>Number of Pre-filled Rows</guilabel>. The default density of "
+#~ "blocks is three."
+#~ msgstr ""
+#~ "Vous pouvez changer la densité de blocs dans les lignes préremplies au "
+#~ "démarrage du jeu. Vous pouvez choisir jusqu'à une densité de 10 blocs. "
+#~ "Vous devez d'abord choisir le nombre de lignes pré-remplies grâce à "
+#~ "<guilabel>Nombre de lignes préremplies</guilabel>. Par défaut, la densité "
+#~ "de blocs est trois."
+
+#~ msgid "Level to Start On"
+#~ msgstr "Niveau de départ"
+
+#~ msgid ""
+#~ "You can adjust the level of difficulty you start on. The highest level "
+#~ "you can start on is 10, which is the highest level you can play to. The "
+#~ "default starting level is one."
+#~ msgstr ""
+#~ "Vous pouvez ajuster le niveau de difficulté initial. Le niveau de départ "
+#~ "le plus haut est 10, ce qui est le plus haut niveau auquel vous pouvez "
+#~ "jouer. Par défaut, le niveau de départ est 1."
+
+#~ msgid "Customizing the Gameplay"
+#~ msgstr "Personnalisation du jeu"
+
+#~ msgid ""
+#~ "From <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+#~ "guimenuitem></menuchoice>, you can customize a variety of features "
+#~ "related to the blocks: previewing the next block, block colors, and block "
+#~ "rotation."
+#~ msgstr ""
+#~ "À partir du menu <menuchoice><guimenu>Préférences</"
+#~ "guimenu><guimenuitem>Préférences</guimenuitem></menuchoice>, vous pouvez "
+#~ "personnaliser certaines caractéristiques des blocs : prévisualisation du "
+#~ "prochain bloc, couleurs et rotation des blocs."
+
+#~ msgid ""
+#~ "Turn the sound effects on and off using this option. If you are playing "
+#~ "this game in any area which you share with other people, you should "
+#~ "probably select off."
+#~ msgstr ""
+#~ "Activez et désactivez les effets sonores en utilisant cette option. Si "
+#~ "vous jouez à ce jeu dans un lieu que vous partagez avec d'autres "
+#~ "personnes, vous devriez probablement choisir de les désactiver."
+
+#~ msgid ""
+#~ "Choose this option if you want to see the next block that is going to "
+#~ "fall. This feature helps you plan the placement of your blocks."
+#~ msgstr ""
+#~ "Cochez cette option si vous voulez voir à l'avance le prochain bloc qui "
+#~ "va tomber. Cette fonctionnalité vous aide à planifier le placement de vos "
+#~ "blocs."
+
+#~ msgid "Use Random Block Colors"
+#~ msgstr "Couleurs aléatoires des blocs"
+
+#~ msgid ""
+#~ "Choose if you want the various block configurations to be color coded or "
+#~ "randomly colored. If you use the colors to help you identify blocks, "
+#~ "random colors will make the game more difficult."
+#~ msgstr ""
+#~ "Choisissez si vous désirez que les différents types de blocs soient codés "
+#~ "par une couleur ou bien coloriés de manière aléatoire. Si vous utilisez "
+#~ "les couleurs pour vous aider à identifier les blocs, des couleurs "
+#~ "aléatoires vont rendre le jeu plus difficile."
+
+#~ msgid ""
+#~ "Choose this option if you want to select mode that is designed "
+#~ "specifically to annoy the player. With this feature enabled, you never "
+#~ "get the piece you want, and very seldom complete a row. Next block "
+#~ "preview doesn't correspond to actual piece you get next, but to the one "
+#~ "you probably wish to get."
+#~ msgstr ""
+#~ "Choisissez cette option si vous souhaitez activer un mode de jeu conçu "
+#~ "pour ennuyer le joueur. Avec cette option, vous n'obtenez jamais la pièce "
+#~ "que vous voulez et il est rare de pouvoir compléter une ligne. L'aperçu "
+#~ "du bloc suivant ne correspond pas au bloc qui sera effectivement le "
+#~ "suivant, mais plutôt au bloc que vous auriez souhaité obtenir."
+
+#~ msgid ""
+#~ "Choose this option if you want the blocks to rotate counterclockwise or "
+#~ "not."
+#~ msgstr ""
+#~ "Cochez cette option si vous désirez que les blocs tournent dans le sens "
+#~ "inverse des aiguilles d'une montre."
+
+#~ msgid ""
+#~ "If this feature is used a grey image of the block will show you where the "
+#~ "block will land. This feature is very useful for beginning players, but "
+#~ "experienced players will find it a distraction."
+#~ msgstr ""
+#~ "Si vous utilisez cette fonctionnalité, une image grisée du bloc vous "
+#~ "indique l'emplacement où le bloc va atterrir. Ceci est très utile pour "
+#~ "les joueurs débutants, mais les joueurs expérimentés trouvent cela plutôt "
+#~ "gênant."
+
+#~ msgid "Customizing the Look of <application>Quadrapassel</application>"
+#~ msgstr ""
+#~ "Personnalisation de l'apparence de <application>Quadrapassel</application>"
+
+#~ msgid ""
+#~ "Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+#~ "guimenuitem></menuchoice>, you can customize the look of "
+#~ "<application>Quadrapassel</application>: images for the blocks."
+#~ msgstr ""
+#~ "À partir du menu <menuchoice><guimenu>Préférences</"
+#~ "guimenu><guimenuitem>Préférences</guimenuitem></menuchoice>, vous pouvez "
+#~ "personnaliser l'apparence de <application>Quadrapassel</application> : "
+#~ "style des blocs."
+
+#~ msgid "Block Image"
+#~ msgstr "Style de blocs"
+
+#~ msgid ""
+#~ "You can change the style of the blocks, including image and size. There "
+#~ "are a variety of pre-made styles."
+#~ msgstr ""
+#~ "Vous pouvez changer le style des blocs, y compris leur image et leur "
+#~ "taille. Il existe un certain nombre de styles prédéfinis."
+
+#~ msgid "Background"
+#~ msgstr "Arrière-plan"
+
+#~ msgid ""
+#~ "If you drag your favorite image into the <application>Quadrapassel</"
+#~ "application> window it will be used as the background. If you want a "
+#~ "solid color as the background drag one in from either the color picker or "
+#~ "from <application>nautlilus'</application> <guimenuitem>Backgrounds and "
+#~ "Emblems</guimenuitem> dialog (the reset item from that dialog also works)."
+#~ msgstr ""
+#~ "Si vous faites glisser votre image favorite sur la fenêtre de "
+#~ "<application>Quadrapassel</application>, elle sera utilisée comme arrière-"
+#~ "plan. Si vous désirez une couleur unie comme arrière-plan, faites-en "
+#~ "glisser une soit à partir d'une fenêtre de sélection de couleur ou bien à "
+#~ "partir de la boîte de dialogue <guimenuitem>Arrière-plans et emblèmes</"
+#~ "guimenuitem> de <application>Nautilus</application> (le bouton "
+#~ "Réinitialiser de cette boîte de dialogue fonctionne également)."
+
+#~ msgid "Authors"
+#~ msgstr "Auteurs"
+
+#~ msgid ""
+#~ "<application>Quadrapassel</application> was written by J. Marcin Gorycki "
+#~ "in 1999 and maintained by Gnome Games Team since then. This manual was "
+#~ "written by Angela Boyle. To report a bug or make a suggestion regarding "
+#~ "this application or this manual, follow the directions in this <ulink url="
+#~ "\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+#~ msgstr ""
+#~ "<application>Quadrapassel</application> a été écrit par J. Marcin Gorycki "
+#~ "en 1999 et maintenu depuis par l'équipe « Gnome Games ». Ce manuel a été "
+#~ "écrit par Angela Boyle. Pour signaler une anomalie ou émettre une "
+#~ "suggestion concernant cette application ou ce manuel, procédez comme "
+#~ "indiqué dans ce <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+#~ "\">document</ulink>."
+
+#~ msgid ""
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the <ulink type=\"help\" url=\"help:gpl\"> "
+#~ "<citetitle>GNU General Public License</citetitle></ulink> as published by "
+#~ "the Free Software Foundation; either version 2 of the License, or (at "
+#~ "your option) any later version."
+#~ msgstr ""
+#~ "Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le "
+#~ "modifier selon les termes de la <ulink type=\"help\" url=\"help:gpl\"> "
+#~ "<citetitle>GNU General Public License</citetitle></ulink>, tels que "
+#~ "publiés par la Free Software Foundation ; soit la version 2 de cette "
+#~ "licence ou (à votre choix) toute version ultérieure."
+
+#~ msgid ""
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the "
+#~ "<citetitle>GNU General Public License</citetitle> for more details."
+#~ msgstr ""
+#~ "Ce programme est distribué dans l’espoir qu’il sera utile, mais SANS "
+#~ "AUCUNE GARANTIE, ni explicite ni implicite; sans même les garanties de "
+#~ "commercialisation ou d’adaptation dans un but spécifique. Se référer à la "
+#~ "<citetitle>GNU General Public License</citetitle> pour plus de détails."
+
+#~ msgid ""
+#~ "\n"
+#~ "    Free Software Foundation, Inc.\n"
+#~ "    <street>59 Temple Place</street> - Suite 330\n"
+#~ "    <city>Boston</city>, <state>MA</state> <postcode>02111-1307</"
+#~ "postcode>\n"
+#~ "    <country>USA</country>\n"
+#~ "   "
+#~ msgstr ""
+#~ "\n"
+#~ "    Free Software Foundation, Inc.\n"
+#~ "    <street>59 Temple Place</street> - Suite 330\n"
+#~ "    <city>Boston</city>, <state>MA</state> <postcode>02111-1307</"
+#~ "postcode>\n"
+#~ "    <country>USA</country>\n"
+#~ "   "
+
+#~ msgid ""
+#~ "A copy of the <citetitle>GNU General Public License</citetitle> is "
+#~ "included as an appendix to the <citetitle>GNOME Users Guide</citetitle>. "
+#~ "You may also obtain a copy of the <citetitle>GNU General Public License</"
+#~ "citetitle> from the Free Software Foundation by visiting <ulink type="
+#~ "\"http\" url=\"http://www.fsf.org\">their Web site</ulink> or by writing "
+#~ "to <_:address-1/>"
+#~ msgstr ""
+#~ "Une copie de la <citetitle>GNU General Public License</citetitle> est "
+#~ "incluse sous forme d'annexe au <citetitle>Guide d'utilisation du bureau "
+#~ "GNOME</citetitle>. Vous pouvez également obtenir une copie de la "
+#~ "<citetitle>GNU General Public License</citetitle> à la Free Software "
+#~ "Foundation en visitant <ulink type=\"http\" url=\"http://www.fsf.org"
+#~ "\">leur site Web</ulink> ou en écrivant à <_:address-1/>"
