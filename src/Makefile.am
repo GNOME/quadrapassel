@@ -5,10 +5,10 @@ quadrapassel_SOURCES = \
 	quadrapassel.vala \
 	preview.vala \
 	game.vala \
-	game-view.vala
+	game-view.vala \
+	history.vala
 
 quadrapassel_CFLAGS = \
-	-I$(top_srcdir)/libgames-support \
 	-DVERSION=\"$(VERSION)\" \
 	-DGETTEXT_PACKAGE=\"$(GETTEXT_PACKAGE)\" \
 	-DDATA_DIRECTORY=\"$(datadir)/quadrapassel\" \
@@ -29,23 +29,15 @@ quadrapassel_VALAFLAGS = \
 	--pkg clutter-gtk-1.0 \
 	--pkg cogl-1.0 \
 	--pkg libcanberra \
-	--pkg libcanberra-gtk \
-	--vapidir $(top_srcdir)/libgames-support \
-	--pkg GnomeGamesSupport-1.0
+	--pkg libcanberra-gtk
 
 quadrapassel_LDADD = \
-	$(top_builddir)/libgames-support/libgames-support.la \
 	$(CANBERRA_GTK_LIBS) \
 	$(CLUTTER_GTK_LIBS) \
 	$(CLUTTER_LIBS) \
 	$(GTK_LIBS) \
 	$(RSVG_LIBS) \
 	$(INTLLIBS)
-
-install-exec-hook:
-	-if test "$(setgid)" = "true"; then \
-	  chgrp $(scores_group) $(DESTDIR)$(bindir)/quadrapassel && chmod 2555 $(DESTDIR)$(bindir)/quadrapassel ;\
-	fi
 
 CLEANFILES = \
 	$(patsubst %.vala,%.c,$(filter %.vala, $(SOURCES))) \

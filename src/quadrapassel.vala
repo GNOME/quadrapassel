@@ -28,7 +28,7 @@ public class Quadrapassel : Gtk.Application
     /* Label showing the current level */
     private Gtk.Label level_label;
 
-    private GnomeGamesSupport.Scores high_scores;
+    private History history;
 
     private SimpleAction pause_action;
 
@@ -198,12 +198,8 @@ public class Quadrapassel : Gtk.Application
         level_label.show ();
         score_grid.attach (level_label, 1, 2, 1, 1);
 
-        high_scores = new GnomeGamesSupport.Scores ("quadrapassel",
-                                                    new GnomeGamesSupport.ScoresCategory[0],
-                                                    null,
-                                                    null,
-                                                    0,
-                                                    GnomeGamesSupport.ScoreStyle.PLAIN_DESCENDING);
+        history = new History (Path.build_filename (Environment.get_user_data_dir (), "quadrapassel", "history"));
+        history.load ();
 
         pause_action.set_enabled (false);
     }
@@ -252,7 +248,12 @@ public class Quadrapassel : Gtk.Application
 
         /* Record the score if the game isn't over. */
         if (game != null && game.score > 0)
-            high_scores.add_plain_score (game.score);
+        {
+            var date = new DateTime.now_local ();
+            var entry = new HistoryEntry (date, game.score);
+            history.add (entry);
+            history.save ();
+        }
     }
 
     protected override void activate ()
@@ -691,30 +692,28 @@ public class Quadrapassel : Gtk.Application
         pause_action.set_enabled (false);
         if (game.score > 0)
         {
-            var pos = high_scores.add_plain_score (game.score);
-            var dialog = new GnomeGamesSupport.ScoresDialog (window, high_scores, _("Quadrapassel Scores"));
-            var title = _("Puzzle solved!");
-            var message = _("You didn't make the top ten, better luck next time.");
-            if (pos == 1)
-                message = _("Your score is the best!");
-            else if (pos > 1)
-                message = _("Your score has made the top ten.");
-            dialog.set_message ("<b>%s</b>\n\n%s".printf (title, message));
-            dialog.set_buttons (GnomeGamesSupport.ScoresButtons.QUIT_BUTTON | GnomeGamesSupport.ScoresButtons.NEW_GAME_BUTTON);
-            if (pos > 0)
-                dialog.set_hilight (pos);
+            var date = new DateTime.now_local ();
+            var entry = new HistoryEntry (date, game.score);
+            history.add (entry);
+            history.save ();
 
-            switch (dialog.run ())
-            {
-            case Gtk.ResponseType.REJECT:
+            if (show_scores (entry, true) == Gtk.ResponseType.CLOSE)
                 window.destroy ();
-                break;
-            default:
+            else
                 new_game ();
-                break;
-            }
-            dialog.destroy ();
         }
+    }
+
+    private int show_scores (HistoryEntry? selected_entry = null, bool show_quit = false)
+    {
+        var dialog = new ScoreDialog (history, selected_entry, show_quit);
+        dialog.modal = true;
+        dialog.transient_for = window;
+
+        var result = dialog.run ();
+        dialog.destroy ();
+
+        return result;
     }
 
     private void update_score ()
@@ -771,9 +770,7 @@ public class Quadrapassel : Gtk.Application
 
     private void scores_cb ()
     {
-        var dialog = new GnomeGamesSupport.ScoresDialog (window, high_scores, _("Quadrapassel Scores"));
-        dialog.run ();
-        dialog.destroy ();
+        show_scores ();
     }
 
     public static int main (string[] args)
@@ -783,8 +780,6 @@ public class Quadrapassel : Gtk.Application
         Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
         Intl.textdomain (GETTEXT_PACKAGE);
 
-        GnomeGamesSupport.scores_startup ();
-    
         var context = new OptionContext ("");
 
         context.add_group (Gtk.get_option_group (true));
@@ -819,5 +814,77 @@ public class Quadrapassel : Gtk.Application
 
         var app = new Quadrapassel ();
         return app.run (args);
+    }
+}
+
+public class ScoreDialog : Gtk.Dialog
+{
+    private History history;
+    private HistoryEntry? selected_entry = null;
+    private Gtk.ListStore score_model;
+
+    public ScoreDialog (History history, HistoryEntry? selected_entry = null, bool show_quit = false)
+    {
+        this.history = history;
+        history.entry_added.connect (entry_added_cb);
+        this.selected_entry = selected_entry;
+
+        if (show_quit)
+        {
+            add_button (Gtk.Stock.QUIT, Gtk.ResponseType.CLOSE);
+            add_button (_("New Game"), Gtk.ResponseType.OK);
+        }
+        else
+            add_button (Gtk.Stock.OK, Gtk.ResponseType.DELETE_EVENT);
+        set_size_request (200, 300);
+
+        var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 5);
+        vbox.border_width = 6;
+        vbox.show ();
+        get_content_area ().pack_start (vbox, true, true, 0);
+
+        var scroll = new Gtk.ScrolledWindow (null, null);
+        scroll.shadow_type = Gtk.ShadowType.ETCHED_IN;
+        scroll.set_policy (Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC);
+        scroll.show ();
+        vbox.pack_start (scroll, true, true, 0);
+
+        score_model = new Gtk.ListStore (3, typeof (string), typeof (string), typeof (int));
+
+        var scores = new Gtk.TreeView ();
+        var renderer = new Gtk.CellRendererText ();
+        scores.insert_column_with_attributes (-1, _("Date"), renderer, "text", 0, "weight", 2);
+        renderer = new Gtk.CellRendererText ();
+        renderer.xalign = 1.0f;
+        scores.insert_column_with_attributes (-1, _("Score"), renderer, "text", 1, "weight", 2);
+        scores.model = score_model;
+        scores.show ();
+        scroll.add (scores);
+
+        var entries = history.entries.copy ();
+        entries.sort (compare_entries);
+        foreach (var entry in entries)
+            entry_added_cb (entry);
+    }
+
+    private static int compare_entries (HistoryEntry a, HistoryEntry b)
+    {
+        if (a.score != b.score)
+            return a.score - b.score;
+        return a.date.compare (b.date);
+    }
+
+    private void entry_added_cb (HistoryEntry entry)
+    {
+        var date_label = entry.date.format ("%d/%m/%Y");
+        var score_label = "%i".printf (entry.score);
+
+        int weight = Pango.Weight.NORMAL;
+        if (entry == selected_entry)
+            weight = Pango.Weight.BOLD;
+
+        Gtk.TreeIter iter;
+        score_model.append (out iter);
+        score_model.set (iter, 0, date_label, 1, score_label, 2, weight);
     }
 }
