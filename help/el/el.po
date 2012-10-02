@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnometris.HEAD.el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-11 22:44+0000\n"
-"PO-Revision-Date: 2012-08-23 13:27+0200\n"
+"POT-Creation-Date: 2012-09-24 23:50+0000\n"
+"PO-Revision-Date: 2012-09-29 13:04+0200\n"
 "Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "Language: el\n"
@@ -215,16 +215,9 @@ msgid ""
 "media>Quadrapassel"
 msgstr ""
 "<media type=\"image\" src=\"media/quadrapassel.png\">Λογότυπου του "
-"Τουβλάκια</media>Τουβλάκια"
+"Τουβλάκια</media> Τουβλάκια"
 
 #: C/index.page:20(page/p)
-#| msgid ""
-#| "In Quadrapassel, the GNOME version of Tetris, your goal is to create as "
-#| "many complete horizontal lines as possible. The lines are made from seven "
-#| "different shapes that, in a random order, fall from the top center of the "
-#| "screen. Your task is to rotate and move them across the screen to make "
-#| "complete lines. By making complete horizontal lines, you score more, you "
-#| "level up and the blocks fall faster."
 msgid ""
 "In Quadrapassel, the GNOME version of Tetris, your goal is to create as many "
 "complete horizontal lines as possible. The lines are made from seven "
@@ -238,26 +231,22 @@ msgstr ""
 "διαφορετικές μορφές, με τυχαία σειρά, που πέφτουν από το πάνω κέντρο της "
 "οθόνης. Εσείς περιστρέφετε τους κύβους και τους κινείτε στην οθόνη για να "
 "δημιουργήσετε πλήρεις γραμμές.  Όσο κάνετε πλήρεις οριζόντιες γραμμές κύβων, "
-"η βαθμολογία σας αυξάνεται, αυξάνεται και το επίπεδο δυσκολίας, και η πτώση "
-"των κύβων γίνεται γρηγορότερη."
+"αυξάνεται η βαθμολογία σας, το επίπεδο δυσκολίας, και η πτώση των κύβων "
+"γίνεται γρηγορότερη."
 
 #: C/index.page:33(td/p)
-#| msgid "<link xref=\"playgame\">PLAY Game</link>"
 msgid "<link xref=\"playgame\">Play the game</link>"
 msgstr "<link xref=\"playgame\">Παίξτε το παιχνίδι</link>"
 
 #: C/index.page:34(td/p)
-#| msgid "<link xref=\"scoremore\">Score MORE</link>"
 msgid "<link xref=\"score\">Score points</link>"
 msgstr "<link xref=\"score\">Σημειώστε πόντους</link>"
 
 #: C/index.page:55(td/p)
-#| msgid "<link xref=\"settings\">Settings</link>"
 msgid "<link xref=\"preferences\">Preferences</link>"
 msgstr "<link xref=\"preferences\">Προτιμήσεις</link>"
 
 #: C/index.page:56(td/p)
-#| msgid "<link xref=\"get-involved\">GET Involved</link>"
 msgid "<link xref=\"get-involved\">Get involved</link>"
 msgstr "<link xref=\"get-involved\">Συμμετοχή</link>"
 
@@ -282,9 +271,6 @@ msgstr "<link xref=\"get-involved\">Συμμετοχή</link>"
 #. whatever you like once you have updated your copy of the file.
 #: C/bug-filing.page:49(media) C/develop.page:28(media)
 #: C/documentation.page:28(media) C/translate.page:41(media)
-#| msgctxt "_"
-#| msgid ""
-#| "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
 msgctxt "_"
 msgid ""
 "external ref='media/go-previous.png' md5='e9ce3da4ee6497ce2f38178c3c929872'"
@@ -334,8 +320,6 @@ msgstr ""
 #: C/documentation.page:29(media) C/get-involved.page:22(media)
 #: C/playgame.page:43(media) C/preferences.page:72(media)
 #: C/score.page:37(media) C/translate.page:42(media)
-#| msgctxt "_"
-#| msgid "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
 msgctxt "_"
 msgid "external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
 msgstr ""
@@ -432,7 +416,6 @@ msgstr ""
 
 #: C/bug-filing.page:49(section/p) C/develop.page:28(section/p)
 #: C/documentation.page:28(section/p) C/translate.page:41(section/p)
-#| msgid "<link xref=\"get-involved\">GET Involved</link>"
 msgid ""
 "<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous.png"
 "\"/>Get Involved</link>"
@@ -494,7 +477,7 @@ msgid ""
 msgstr ""
 "Για συμμετοχή στο έργο τεκμηρίωσης, επικοινωνήστε μαζί μας χρησιμοποιώντας "
 "το <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org"
-"%2Fdocs\">irc</link>, ή μέσα από την <link href=\"http://mail.gnome.org/"
+"%2Fdocs\">irc</link>, ή μέσα από τη <link href=\"http://mail.gnome.org/"
 "mailman/listinfo/gnome-doc-list\">λίστα αλληλογραφίας</link> μας."
 
 #: C/documentation.page:25(page/p)
@@ -502,8 +485,8 @@ msgid ""
 "Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
 msgstr ""
-"Το <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
-"\">wiki</link> μας περιέχει χρήσιμες πληροφορίες."
+"Επίσης το <link href=\"https://live.gnome.org/DocumentationProject/"
+"Contributing\">wiki</link> μας περιέχει χρήσιμες πληροφορίες."
 
 #: C/get-involved.page:16(page/title)
 msgid "Get Involved"
@@ -518,7 +501,6 @@ msgstr ""
 "ευπρόσδεκτοι να συμμετάσχετε με οποιοδήποτε από τους ακόλουθους τρόπους."
 
 #: C/legal.xml:3(p/link)
-#| msgid "Creative Commons Share Alike 3.0"
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 
@@ -605,7 +587,6 @@ msgstr ""
 "by-sa/3.0/\">Πράξη Commons</link>."
 
 #: C/playgame.page:16(license/p)
-#| msgid "Creative Commons Share Alike 3.0"
 msgid "Creative Commons Attribution Share Alike 3.0"
 msgstr "Creative Commons Attribution-Share Alike 3.0 Unported License"
 
@@ -618,9 +599,6 @@ msgid "How To Play"
 msgstr "Πως να παίξετε"
 
 #: C/playgame.page:26(item/p)
-#| msgid ""
-#| "<keycap>Left</keycap> and <keycap>Right</keycap> move the block "
-#| "correspondingly across the screen."
 msgid ""
 "The <key>←</key> and <key>→</key> keys move the blocks across the screen."
 msgstr ""
@@ -750,27 +728,22 @@ msgid "Other available options are:"
 msgstr "Άλλες διαθέσιμες επιλογές είναι:"
 
 #: C/preferences.page:45(item/p)
-#| msgid "Enable sounds"
 msgid "<gui>Enable sounds</gui>"
 msgstr "<gui>Ενεργοποίηση ήχων</gui>"
 
 #: C/preferences.page:46(item/p)
-#| msgid "Preview Next Block"
 msgid "<gui>Preview next block</gui>"
 msgstr "<gui>Προεπισκόπηση επόμενου τούβλου</gui>"
 
 #: C/preferences.page:47(item/p)
-#| msgid "Choose Difficult Blocks"
 msgid "<gui>Choose difficult blocks</gui>"
 msgstr "<gui>Επιλογή δύσκολων τούβλων</gui>"
 
 #: C/preferences.page:48(item/p)
-#| msgid "Rotate Blocks Counterclockwise"
 msgid "<gui>Rotate blocks counterclockwise</gui>"
 msgstr "<gui>Περιστροφή τούβλου αριστερόστροφα</gui>"
 
 #: C/preferences.page:49(item/p)
-#| msgid "Show where the block will land"
 msgid "<gui>Show where the block will land</gui>"
 msgstr "<gui>Εμφάνιση της θέσης προσγείωσης του τούβλου</gui>"
 
@@ -853,7 +826,6 @@ msgstr ""
 "αποφασίσετε τι σας ταιριάζει περισσότερο, θα είστε ο καλύτερος!"
 
 #: C/score.page:30(section/title)
-#| msgid "Viewing Past Scores"
 msgid "High Scores"
 msgstr "Υψηλές βαθμολογίες"
 
@@ -930,8 +902,8 @@ msgid ""
 "list</link>."
 msgstr ""
 "Εναλλακτικά, μπορείτε να επικοινωνήσετε με την ομάδα διεθνοποίησης "
-"χρησιμοποιώντας την <link href=\"http://mail.gnome.org/mailman/listinfo/"
-"gnome-i18n\">λίστα αλληλογραφίας</link> τους."
+"χρησιμοποιώντας τη <link href=\"http://mail.gnome.org/mailman/listinfo/gnome-"
+"i18n\">λίστα αλληλογραφίας</link> τους."
 
 #~ msgid "link"
 #~ msgstr "σύνδεσμο"
