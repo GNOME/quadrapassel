@@ -1,0 +1,5 @@
+quadrapassel/data/quadrapassel.desktop.in
+quadrapassel/src/game.c
+quadrapassel/src/game-view.c
+quadrapassel/src/preview.c
+quadrapassel/src/quadrapassel.c
