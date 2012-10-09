@@ -1,9 +1,9 @@
 # List of source files containing translatable strings.
 # Please keep this file in alphabetical order.
 [encoding: UTF-8]
-quadrapassel/data/org.gnome.quadrapassel.gschema.xml.in
-quadrapassel/data/quadrapassel.desktop.in.in
-quadrapassel/src/game.vala
-quadrapassel/src/game-view.vala
-quadrapassel/src/preview.vala
-quadrapassel/src/quadrapassel.vala
+data/org.gnome.quadrapassel.gschema.xml.in
+data/quadrapassel.desktop.in.in
+src/game.vala
+src/game-view.vala
+src/preview.vala
+src/quadrapassel.vala
