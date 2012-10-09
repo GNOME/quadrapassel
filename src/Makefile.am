@@ -14,11 +14,7 @@ quadrapassel_CFLAGS = \
 	-DDATA_DIRECTORY=\"$(datadir)/quadrapassel\" \
 	-DSOUND_DIRECTORY=\"$(datadir)/quadrapassel/sounds\" \
 	-DLOCALEDIR=\"$(datadir)/locale\" \
-	$(GTK_CFLAGS) \
-	$(RSVG_CFLAGS) \
-	$(CANBERRA_GTK_CFLAGS) \
-	$(CLUTTER_GTK_CFLAGS) \
-	$(CLUTTER_CFLAGS)
+	$(QUADRAPASSEL_CFLAGS)
 
 quadrapassel_VALAFLAGS = \
 	--pkg posix \
@@ -32,12 +28,7 @@ quadrapassel_VALAFLAGS = \
 	--pkg libcanberra-gtk
 
 quadrapassel_LDADD = \
-	$(CANBERRA_GTK_LIBS) \
-	$(CLUTTER_GTK_LIBS) \
-	$(CLUTTER_LIBS) \
-	$(GTK_LIBS) \
-	$(RSVG_LIBS) \
-	$(INTLLIBS)
+	$(QUADRAPASSEL_LIBS)
 
 CLEANFILES = \
 	$(patsubst %.vala,%.c,$(filter %.vala, $(SOURCES))) \
