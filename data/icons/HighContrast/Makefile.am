@@ -10,6 +10,6 @@ icon22_DATA = 22x22/quadrapassel.png
 icon24_DATA = 24x24/quadrapassel.png
 icon32_DATA = 32x32/quadrapassel.png
 icon48_DATA = 48x48/quadrapassel.png
-icon256_DATA = 48x48/quadrapassel.png
+icon256_DATA = 256x256/quadrapassel.png
 
 EXTRA_DIST = $(icon16_DATA) $(icon22_DATA) $(icon24_DATA) $(icon32_DATA) $(icon48_DATA) $(icon256_DATA)
