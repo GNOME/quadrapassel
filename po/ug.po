@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-12-02 22:26+0000\n"
-"PO-Revision-Date: 2011-11-09 16:10+0900\n"
-"Last-Translator: Gheyret Kenji<gheyret@yahoo.com>\n"
+"POT-Creation-Date: 2013-01-20 00:26+0000\n"
+"PO-Revision-Date: 2013-02-24 11:47+0900\n"
+"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -52,12 +52,10 @@ msgid "Whether to preview the next block."
 msgstr "كېيىنكى بۆلەكنى ئالدىن كۆرەمدۇ يوق."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:9
-#| msgid "Show _where the block will land"
 msgid "Whether to show where the moving piece will land"
 msgstr "يۆتكىلىدىغان ئۇرۇقنىڭ قەيەرگە قويۇلىدىغانلىقىنى كۆرسەتسۇنمۇ"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:10
-#| msgid "Show _where the block will land"
 msgid "Whether to show where the moving piece will land."
 msgstr "يۆتكىلىدىغان ئۇرۇقنىڭ قەيەرگە قويۇلىدىغانلىقىنى كۆرسەتسۇنمۇ."
 
@@ -98,24 +96,20 @@ msgid ""
 msgstr "ئويۇن باشلانغاندا ئالدىن تولدۇرۇلىدىغان قۇرلارنىڭ زىچلىقى. قىممىتى 0(بۆلەك يوق) دىن 10(قۇر تولۇق تولدۇرۇلىدۇ) غىچە بولىدۇ."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:19
-#| msgid "Whether or not to play event sounds."
 msgid "Whether to play sounds"
 msgstr "ئاۋاز قويسۇنمۇ يوق"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:20
-#| msgid "Whether or not to play event sounds."
 msgid "Whether to play sounds."
 msgstr "ئاۋاز قويسۇنمۇ يوق."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:21
-#| msgid "Whether to give blocks random colors"
 msgid "Whether to pick blocks that are hard to place"
-msgstr ""
+msgstr "قويۇش تەس بولغان بۆلەكلەرنى ئالسۇنمۇ"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:22
-#| msgid "Whether to give blocks random colors."
 msgid "Whether to pick blocks that are hard to place."
-msgstr ""
+msgstr "قويۇش تەس بولغان بۆلەكلەرنى ئالامدۇ-يوق."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:23
 #: ../src/quadrapassel.vala:382
@@ -172,12 +166,10 @@ msgid "Key press to pause."
 msgstr "كۇنۇپكا بېسىلسا ۋاقىتلىق توختايدۇ."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:35
-#| msgid "The width of the main window in pixels."
 msgid "Width of the window in pixels"
 msgstr "كۆزنەكنىڭ پىكسېل  بىلەن ئىپادىلەنگەن كەڭلىكى"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:36
-#| msgid "The height of the main window in pixels."
 msgid "Height of the window in pixels"
 msgstr "كۆزنەكنىڭ پىكسېل  بىلەن ئىپادىلەنگەن ئېگىزلىكى"
 
@@ -224,7 +216,6 @@ msgid "_Scores"
 msgstr "ئېرىشكەن نومۇرلار"
 
 #: ../src/quadrapassel.vala:85
-#| msgid "Preferences"
 msgid "_Preferences"
 msgstr "مايىللىق(_P)"
 
@@ -353,13 +344,7 @@ msgstr "گىنوم ئويۇنلىرى تورتۇراسى"
 msgid "translator-credits"
 msgstr "Gheyret Kenji <gheyret@gmail.com>\n"
 "Sahran<sahran@live.com>\n"
-"Muhemmed Erdem <misran_erdem@hotmail.com>\n"
-"\n"
-"Launchpad Contributions:\n"
-"  Abdumomin.Kadir https://launchpad.net/~abdumomin-kadir\n"
-"  Gheyret T.Kenji https://launchpad.net/~gheyret\n"
-"  Gheyret T.Kenji https://launchpad.net/~gheyretkenji\n"
-"  Sahran https://launchpad.net/~sahran"
+"Muhemmed Erdem <misran_erdem@hotmail.com>"
 
 #: ../src/quadrapassel.vala:835
 msgid "New Game"
