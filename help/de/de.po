@@ -1,11 +1,11 @@
 # German translation of the Quadrapassel manual.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2010, 2012.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2010, 2012, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: quadrapassel\n"
-"POT-Creation-Date: 2012-08-22 19:45+0000\n"
-"PO-Revision-Date: 2012-09-01 23:42+0100\n"
+"Project-Id-Version: quadrapassel manual\n"
+"POT-Creation-Date: 2012-12-02 22:31+0000\n"
+"PO-Revision-Date: 2013-03-05 10:56+0100\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
@@ -213,10 +213,18 @@ msgid ""
 "lines. By making complete horizontal lines, you score points and move up "
 "levels. As you progress, the speed of the falling blocks increases."
 msgstr ""
+"In Quadrapassel, der GNOME-Version von Tetris, ist es Ihr Ziel, so viele "
+"horizontale Reihen wie möglich zu vervollständigen. Die Reihen werden aus "
+"sieben verschiedenen Blockformen zusammengestellt. Die Blöcke fallen in "
+"zufälliger Folge aus der oberen Mitte des Spielfeldes. Ihre Aufgabe ist es, "
+"sie über das Spielfeld zu bewegen und die zu drehen, so dass die Reihen "
+"vervollständigt werden können. Dafür erhalten Sie Punkte und erreichen eine "
+"höhere Spielstufe. Je weiter Sie vorankommen, umso schneller fallen die "
+"Blöcke."
 
 #: C/index.page:33(td/p)
 msgid "<link xref=\"playgame\">Play the game</link>"
-msgstr ""
+msgstr "<link xref=\"playgame\">Spielverlauf</link>"
 
 #: C/index.page:34(td/p)
 msgid "<link xref=\"score\">Score points</link>"
@@ -323,6 +331,8 @@ msgid ""
 "If you notice a problem you can file a <em>bug report</em>. To file a bug, go "
 "to <link href=\"https://bugzilla.gnome.org/\"/>."
 msgstr ""
+"Falls Sie ein Problem entdecken, können Sie einen <em>Fehler melden</em>. Um "
+"dies zu tun, besuchen Sie <link href=\"https://bugzilla.gnome.org/\"/>."
 
 #: C/bug-filing.page:27(page/p)
 msgid ""
@@ -406,6 +416,8 @@ msgid ""
 "<link xref=\"index\"><media type=\"image\" src=\"media/go-home.png\"/>HOME</"
 "link>"
 msgstr ""
+"<link xref=\"index\"><media type=\"image\" src=\"media/go-home.png\"/"
+">Startseite</link>"
 
 #: C/develop.page:21(info/desc)
 msgid "Have a plan for developing the game? We are always open to new ideas."
@@ -571,7 +583,7 @@ msgstr "Creative Commons Attribution Share Alike 3.0"
 
 #: C/playgame.page:20(page/title)
 msgid "PLAY PLAY PLAY!"
-msgstr ""
+msgstr "PLAY PLAY PLAY!"
 
 #: C/playgame.page:23(section/title)
 msgid "How To Play"
@@ -601,6 +613,11 @@ msgid ""
 "<key>↓</key> key causes a soft-drop (temporary increase in speed while the "
 "key is held down)."
 msgstr ""
+"Die <key>Leertaste</key> und <key>↓</key>-Taste erhöhen die Geschwindigkeit "
+"des Ablegens. Die <key>Leertaste</key> lässt den Block fallen (direkte "
+"Verschiebung nach untern). Die <key>↓</key>-Taste legt den Block weich ab "
+"(vorübergehende Erhöhung der Geschwindigkeit, so lange die Taste gedrückt "
+"gehalten wird)."
 
 #: C/playgame.page:33(section/title)
 msgid "Rules"
@@ -608,7 +625,7 @@ msgstr "Regeln"
 
 #: C/playgame.page:35(section/p)
 msgid "There are a couple of rules that you should keep in mind:"
-msgstr ""
+msgstr "Es gibt einige Regeln, die Sie im Kopf behalten sollten:"
 
 #: C/playgame.page:37(item/p)
 msgid ""
@@ -635,12 +652,16 @@ msgid ""
 "To change the game preferences, click the <guiseq><gui>Quadrapassel menu</"
 "gui><gui>Preferences</gui></guiseq>."
 msgstr ""
+"Um die Einstellungen des Spiels zu ändern, wählen Sie "
+"<guiseq><gui>Quadrapassel-Menü</gui><gui>Einstellungen</gui></guiseq>."
 
 #: C/preferences.page:26(page/p)
 msgid ""
 "The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
 "<gui>Theme</gui>."
 msgstr ""
+"Die drei Reiter <gui>Steuerung</gui>, <gui>Spiel</gui> und <gui>Thema</gui> "
+"sind verfügbar."
 
 #: C/preferences.page:29(section/title)
 msgid "Controls"
@@ -651,6 +672,8 @@ msgid ""
 "By double-clicking on the given controls, thus selecting the new one, you can "
 "change the control keys."
 msgstr ""
+"Durch Doppelklick auf die angegebenen Steuerungen und Auswahl der neuen "
+"können Sie die Tasten verändern, die für die Steuerung verwendet werden."
 
 #: C/preferences.page:34(section/title)
 msgid "Game"
@@ -661,26 +684,35 @@ msgid ""
 "Under the <gui>Game</gui> tab, you can change the way in which the game "
 "starts:"
 msgstr ""
+"Im Reiter <gui>Spiel</gui> können Sie angeben, wie das Spiel starten soll:"
 
 #: C/preferences.page:37(item/p)
 msgid ""
 "<gui>Number of pre-filled rows</gui> indicates how many rows with blocks "
 "there will be when the game starts."
 msgstr ""
+"<gui>Zu Beginn gefüllte Zeilen</gui> gibt an, wie viele Zeilen mit Blöcken "
+"bereits vorhanden sind, wenn das Spiel startet."
 
 #: C/preferences.page:38(item/p)
 msgid ""
 "<gui>Density of blocks in a pre-filled row</gui> indicates how many blocks "
 "there will be in a pre-filled row when the game starts."
 msgstr ""
+"<gui>Blockdichte in vorausgefüllten Zeilen</gui> gibt an, wie viele Blöcke "
+"eine vorgefüllte Zeile enthält, wenn das Spiel startet."
 
 #: C/preferences.page:39(item/p)
 msgid "<gui>Starting level</gui> controls the speed with which you will start."
 msgstr ""
+"<gui>Anfangsspielstufe</gui> steuert die Geschwindigkeit, mit der Sie ein "
+"Spiel beginnen."
 
 #: C/preferences.page:41(section/p)
 msgid "These options can vary from 0 to 19, 0 to 10, and 1 to 20 respectively."
 msgstr ""
+"Diese Options können variieren von 0 bis 19, 0 bis 10 beziehungsweise 1 bis "
+"20."
 
 #: C/preferences.page:43(section/p)
 msgid "Other available options are:"
@@ -718,14 +750,16 @@ msgstr "So ändern Sie das Thema:"
 msgid ""
 "click the <guiseq><gui>Quadrapassel menu</gui><gui>Preference</gui></guiseq>."
 msgstr ""
+"Wählen Sie <guiseq><gui>Quadrapassel-Menü</gui><gui>Einstellungen</gui></"
+"guiseq>."
 
 #: C/preferences.page:58(item/p)
 msgid "select the <gui>Theme</gui> tab."
-msgstr ""
+msgstr "Wählen Sie den Reiter <gui>Thema</gui>."
 
 #: C/preferences.page:60(section/p)
 msgid "Four different themes are available for the blocks' contours:"
-msgstr ""
+msgstr "Vier verschiedene Themen sind für die Formen der Blöcke verfügbar:"
 
 #: C/preferences.page:64(item/p)
 msgid "Plain"
@@ -745,15 +779,15 @@ msgstr "Sauber"
 
 #: C/score.page:20(page/title)
 msgid "Score"
-msgstr ""
+msgstr "Punkte erzielen"
 
 #: C/score.page:21(page/p)
 msgid "Do you think you can reach level 10?"
-msgstr ""
+msgstr "Meinen Sie, dass Sie die Spielstufe 10 erreichen können?"
 
 #: C/score.page:24(section/title)
 msgid "Score More"
-msgstr ""
+msgstr "Beste Ergebnisse"
 
 #: C/score.page:25(section/p)
 msgid ""
@@ -762,6 +796,10 @@ msgid ""
 "a better score, try to adapt the screen, the keyboard, and the level (the "
 "speed) that fits you the most!"
 msgstr ""
+"Wenn Sie aus Spielstufe 1 starten, können Sie die nächste Stufe nur durch "
+"Vervollständigen von mehr Linien erreichen, das heißt, durch mehr Punkte. Um "
+"Ihre Ergebnisse zu verbessern, suchen Sie sich den Bildschirm, die Tastatur "
+"und die Spielstufe aus, die am besten zu Ihnen passt!"
 
 #: C/score.page:26(section/p)
 msgid ""
@@ -770,10 +808,15 @@ msgid ""
 "of drop. You can change your settings in in <link xref=\"preferences"
 "\">Preference</link>. After deciding what fits you the most, you will rock!"
 msgstr ""
+"Sie können die Tastatursteuerung, die Formen der Blöcke, die Anzahl und "
+"Dichte der beim Start vorgefüllten Zeilen und die Geschwindigkeit des "
+"Ablegens ändern. Sie ändern Ihre Einstellungen in <link xref=\"preferences"
+"\">Einstellungen</link>. Wenn Sie sich entschieden haben, was am besten zu "
+"Ihnen passt, wünschen wir Ihnen viel Spaß!"
 
 #: C/score.page:30(section/title)
 msgid "High Scores"
-msgstr ""
+msgstr "Bestwerte"
 
 #: C/score.page:31(section/p)
 msgid ""
@@ -781,12 +824,17 @@ msgid ""
 "gui><gui>Scores</gui></guiseq> you can find the records from the highest to "
 "the lowest score."
 msgstr ""
+"Jeder möchte gern auf dem Siegertreppchen stehen, nicht wahr? In "
+"<guiseq><gui>Spiel</gui><gui>Ergebnisse</gui></guiseq> finden Sie die "
+"Aufzeichnungen von der höchsten bis zur niedrigsten erreichten Punktzahl."
 
 #: C/score.page:33(section/p)
 msgid ""
 "The scores cannot be deleted, so do not worry that someone will remove your "
 "best high score!"
 msgstr ""
+"Die Ergebnisse können nicht gelöscht werden, seien Sie daher unbesorgt, dass "
+"jemand Ihren Bestwert entfernen könnte!"
 
 #: C/translate.page:16(info/desc)
 msgid "Do you know a world language?"
@@ -846,4 +894,3 @@ msgstr ""
 "Alternativ können Sie das Internationalisierungsteam über dessen <link href="
 "\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">Mailingliste</link> "
 "kontaktieren."
-
