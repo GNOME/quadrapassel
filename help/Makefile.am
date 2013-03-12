@@ -30,6 +30,6 @@ HELP_FILES = \
 	score.page		\
 	translate.page
 
-HELP_LINGUAS = ca cs de el en_GB es eu fi fr hu it ja oc ro sl sr sr@latin sv zh_CN
+HELP_LINGUAS = ca cs de el en_GB es eu fi fr gl hu it ja oc ro sl sr sr@latin sv zh_CN
 
 -include $(top_srcdir)/git.mk
