@@ -1,0 +1,354 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Tajik Gnome\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=quadrapassel&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-01-20 00:26+0000\n"
+"PO-Revision-Date: 2013-01-21 14:18+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: \n"
+"Language: Tajik\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:1
+msgid "Image to use for drawing blocks"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:2
+msgid "Image to use for drawing blocks."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:3
+msgid "The theme used for rendering the blocks"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:4
+msgid "The name of the theme used for rendering the blocks and the background."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:5
+msgid "Level to start with"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:6
+msgid "Level to start with."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:7
+msgid "Whether to preview the next block"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:8
+msgid "Whether to preview the next block."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:9
+msgid "Whether to show where the moving piece will land"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:10
+msgid "Whether to show where the moving piece will land."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:11
+msgid "Whether to give blocks random colors"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:12
+msgid "Whether to give blocks random colors."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:13
+msgid "Whether to rotate counter clock wise"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:14
+msgid "Whether to rotate counter clock wise."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:15
+msgid "The number of rows to fill"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:16
+msgid ""
+"The number of rows that are filled with random blocks at the start of the "
+"game."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:17
+msgid "The density of filled rows"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:18
+msgid ""
+"The density of blocks in rows filled at the start of the game. The value is "
+"between 0 (for no blocks) and 10 (for a completely filled row)."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:19
+msgid "Whether to play sounds"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:20
+msgid "Whether to play sounds."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:21
+msgid "Whether to pick blocks that are hard to place"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:22
+msgid "Whether to pick blocks that are hard to place."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:23
+#: ../src/quadrapassel.vala:382
+msgid "Move left"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:24
+msgid "Key press to move left."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:25
+#: ../src/quadrapassel.vala:385
+msgid "Move right"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:26
+msgid "Key press to move right."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:27
+#: ../src/quadrapassel.vala:388
+msgid "Move down"
+msgstr "Интиқол додан ба поён"
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:28
+msgid "Key press to move down."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:29
+#: ../src/quadrapassel.vala:391
+msgid "Drop"
+msgstr "Партофтан"
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:30
+msgid "Key press to drop."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:31
+#: ../src/quadrapassel.vala:394
+msgid "Rotate"
+msgstr "Давр занондан"
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:32
+msgid "Key press to rotate."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:33
+#: ../src/quadrapassel.vala:397
+msgid "Pause"
+msgstr "Таваққуф кардан"
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:34
+msgid "Key press to pause."
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:35
+msgid "Width of the window in pixels"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:36
+msgid "Height of the window in pixels"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:37
+msgid "true if the window is maximized"
+msgstr ""
+
+#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:38
+msgid "true if the window is fullscren"
+msgstr ""
+
+#: ../data/quadrapassel.desktop.in.in.h:1 ../src/quadrapassel.vala:99
+#: ../src/quadrapassel.vala:756 ../src/quadrapassel.vala:798
+msgid "Quadrapassel"
+msgstr ""
+
+#: ../data/quadrapassel.desktop.in.in.h:2
+msgid "Fit falling blocks together"
+msgstr ""
+
+#: ../data/quadrapassel.desktop.in.in.h:3
+msgid "tetris;"
+msgstr ""
+
+#: ../src/game-view.vala:330
+msgid "Paused"
+msgstr "Таваққуфшуда"
+
+#: ../src/game-view.vala:332
+msgid "Game Over"
+msgstr ""
+
+#: ../src/quadrapassel.vala:82
+msgid "_New Game"
+msgstr "_Бозии нав"
+
+#: ../src/quadrapassel.vala:83 ../src/quadrapassel.vala:135
+#: ../src/quadrapassel.vala:681
+msgid "_Pause"
+msgstr "_Таваққуф кардан"
+
+#: ../src/quadrapassel.vala:84
+msgid "_Scores"
+msgstr ""
+
+#: ../src/quadrapassel.vala:85
+msgid "_Preferences"
+msgstr "_Хусусиятҳо"
+
+#: ../src/quadrapassel.vala:88
+msgid "_Help"
+msgstr "_Кӯмак"
+
+#: ../src/quadrapassel.vala:89
+msgid "_About"
+msgstr "_Дар бораи барнома"
+
+#: ../src/quadrapassel.vala:92
+msgid "_Quit"
+msgstr "_Баромад"
+
+#: ../src/quadrapassel.vala:127
+msgid "_New"
+msgstr "_Нав"
+
+#: ../src/quadrapassel.vala:142 ../src/quadrapassel.vala:232
+msgid "_Fullscreen"
+msgstr "_Экрани пурра"
+
+#: ../src/quadrapassel.vala:174
+msgid "Score:"
+msgstr ""
+
+#: ../src/quadrapassel.vala:183
+msgid "Lines:"
+msgstr "Хатҳо:"
+
+#: ../src/quadrapassel.vala:192
+msgid "Level:"
+msgstr "Сатҳ:"
+
+#: ../src/quadrapassel.vala:227
+msgid "_Leave Fullscreen"
+msgstr ""
+
+#: ../src/quadrapassel.vala:291
+msgid "Quadrapassel Preferences"
+msgstr ""
+
+#: ../src/quadrapassel.vala:306
+msgid "Game"
+msgstr "Бозӣ"
+
+#. pre-filled rows
+#: ../src/quadrapassel.vala:310
+msgid "_Number of pre-filled rows:"
+msgstr ""
+
+#. pre-filled rows density
+#: ../src/quadrapassel.vala:324
+msgid "_Density of blocks in a pre-filled row:"
+msgstr ""
+
+#. starting level
+#: ../src/quadrapassel.vala:338
+msgid "_Starting level:"
+msgstr ""
+
+#: ../src/quadrapassel.vala:351
+msgid "_Enable sounds"
+msgstr ""
+
+#: ../src/quadrapassel.vala:356
+msgid "_Preview next block"
+msgstr ""
+
+#: ../src/quadrapassel.vala:361
+msgid "Choose difficult _blocks"
+msgstr ""
+
+#. rotate counter clock wise
+#: ../src/quadrapassel.vala:367
+msgid "_Rotate blocks counterclockwise"
+msgstr ""
+
+#: ../src/quadrapassel.vala:372
+msgid "Show _where the block will land"
+msgstr ""
+
+#: ../src/quadrapassel.vala:416
+msgid "Controls"
+msgstr "Унсурҳои идоракунӣ"
+
+#: ../src/quadrapassel.vala:422
+msgid "Theme"
+msgstr "Мавзӯъ"
+
+#: ../src/quadrapassel.vala:434
+msgid "Plain"
+msgstr ""
+
+#: ../src/quadrapassel.vala:439
+msgid "Tango Flat"
+msgstr ""
+
+#: ../src/quadrapassel.vala:444
+msgid "Tango Shaded"
+msgstr ""
+
+#: ../src/quadrapassel.vala:449
+msgid "Clean"
+msgstr "Пок кардан"
+
+#: ../src/quadrapassel.vala:676
+msgid "Res_ume"
+msgstr "Дубора _анҷом додан"
+
+#: ../src/quadrapassel.vala:758
+msgid ""
+"A classic game of fitting falling blocks together.\n"
+"\n"
+"Quadrapassel is a part of GNOME Games."
+msgstr ""
+
+#: ../src/quadrapassel.vala:761
+msgid "GNOME Games web site"
+msgstr ""
+
+#: ../src/quadrapassel.vala:764
+msgid "translator-credits"
+msgstr ""
+
+#: ../src/quadrapassel.vala:835
+msgid "New Game"
+msgstr "Бозии нав"
+
+#: ../src/quadrapassel.vala:856
+msgid "Date"
+msgstr "Сана"
+
+#: ../src/quadrapassel.vala:859
+msgid "Score"
+msgstr ""
