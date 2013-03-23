@@ -4495,7 +4495,7 @@ msgstr "ਡਿੱਗਦੇ ਬਲਾਕਾਂ ਨੂੰ ਇੱਕਠੇ ਕਰ�
 #: ../quadrapassel/data/quadrapassel.desktop.in.in.h:3
 #| msgid "Gnometris"
 msgid "tetris;"
-msgstr "ਟਟਰਿਸ:"
+msgstr "ਟਟਰਿਸ;"
 
 #: ../quadrapassel/src/game-view.vala:332
 msgid "Game Over"
