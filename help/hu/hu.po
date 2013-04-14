@@ -1,9 +1,9 @@
 # Hungarian translation for gnome-games_quadrapassel.
-# Copyright (C) 2012 Free Software Foundation, Inc.
+# Copyright (C) 2012, 2013 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-games package.
 #
 # László Ádám Kohajda <kla.kohi at gmail dot com>, 2012.
-# Gabor Kelemen <kelemeng at gnome dot hu>, 2012.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
@@ -487,7 +487,7 @@ msgid ""
 "<app>Quadrapassel</app> is maintained by a volunteer community. You are "
 "invited to participate in any of the following ways."
 msgstr ""
-"A <gui>Quadrapasselt</gui> egy önkéntes közösség tartja karban. "
+"A <app>Quadrapasselt</app> egy önkéntes közösség tartja karban. "
 "Közreműködését szívesen fogadjuk!"
 
 #: C/legal.xml:3(p/link)
@@ -843,7 +843,7 @@ msgid ""
 "The <app>GNOME games</app> user interface and documentation is being "
 "translated by a world-wide volunteer community."
 msgstr ""
-"A <gui>GNOME játékok</gui> felhasználói felületét és súgóját egy világszintű "
+"A <app>GNOME játékok</app> felhasználói felületét és súgóját egy világszintű "
 "önkéntes közösség fordítja."
 
 #: C/translate.page:25(page/p)
