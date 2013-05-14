@@ -353,16 +353,16 @@ public class Quadrapassel : Gtk.Application
         sound_toggle.toggled.connect (sound_toggle_toggled_cb);
         grid.attach (sound_toggle, 0, 3, 2, 1);
 
+        difficult_blocks_toggle = new Gtk.CheckButton.with_mnemonic (_("Choose difficult _blocks"));
+        difficult_blocks_toggle.set_active (settings.get_boolean ("pick-difficult-blocks"));
+        difficult_blocks_toggle.toggled.connect (difficult_blocks_toggled_cb);
+        grid.attach (difficult_blocks_toggle, 0, 4, 2, 1);
+
         do_preview_toggle = new Gtk.CheckButton.with_mnemonic (_("_Preview next block"));
         do_preview_toggle.set_active (settings.get_boolean ("do-preview"));
         do_preview_toggle.set_sensitive(!settings.get_boolean ("pick-difficult-blocks"));
         do_preview_toggle.toggled.connect (do_preview_toggle_toggled_cb);
-        grid.attach (do_preview_toggle, 0, 4, 2, 1);
-
-        difficult_blocks_toggle = new Gtk.CheckButton.with_mnemonic (_("Choose difficult _blocks"));
-        difficult_blocks_toggle.set_active (settings.get_boolean ("pick-difficult-blocks"));
-        difficult_blocks_toggle.toggled.connect (difficult_blocks_toggled_cb);
-        grid.attach (difficult_blocks_toggle, 0, 5, 2, 1);
+        grid.attach (do_preview_toggle, 0, 5, 2, 1);
 
         /* rotate counter clock wise */
         rotate_counter_clock_wise_toggle = new Gtk.CheckButton.with_mnemonic (_("_Rotate blocks counterclockwise"));
