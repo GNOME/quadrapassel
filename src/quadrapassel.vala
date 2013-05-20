@@ -159,7 +159,7 @@ public class Quadrapassel : Gtk.Application
         var vb2 = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         vb2.set_border_width (10);
         vb2.show ();
-        hb.pack_end (vb2, false, false, 0);
+        hb.pack_end (vb2, true, false, 0);
 
         preview = new Preview ();
         preview.theme = settings.get_string ("theme");

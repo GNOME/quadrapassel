@@ -77,7 +77,12 @@ public class Preview : GtkClutter.Embed
             piece.destroy ();
 
         if (game == null || game.next_shape == null || !enabled)
+        {
+            set_visible(false);
             return;
+        }
+
+        set_visible (true);
 
         piece = new Clutter.Group ();
         var stage = (Clutter.Stage) get_stage ();
