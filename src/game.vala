@@ -311,7 +311,9 @@ public class Game : Object
             }
         }
 
-        if (!pick_difficult_blocks)
+        if (pick_difficult_blocks)
+            next_shape = pick_difficult_shape ();
+        else
             next_shape = pick_random_shape ();
     }
 
@@ -426,13 +428,12 @@ public class Game : Object
 
     private void add_shape ()
     {
+        shape = (owned) next_shape;
+
         if (pick_difficult_blocks)
-            shape = pick_difficult_shape ();
+            next_shape = pick_difficult_shape ();
         else
-        {
-            shape = (owned) next_shape;
             next_shape = pick_random_shape ();
-        }
 
         foreach (var b in shape.blocks)
         {
