@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2013-03-09 04:07+0000\n"
-"PO-Revision-Date: 2012-09-18 20:37+0200\n"
+"PO-Revision-Date: 2013-06-02 17:53+0200\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
@@ -293,7 +293,7 @@ msgstr "Habilita _el so"
 
 #: ../src/quadrapassel.vala:356
 msgid "_Preview next block"
-msgstr "_Previsualitza el següent bloc"
+msgstr "_Previsualitza el bloc següent"
 
 #: ../src/quadrapassel.vala:361
 msgid "Choose difficult _blocks"
