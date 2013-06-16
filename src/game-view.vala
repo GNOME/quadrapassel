@@ -21,6 +21,7 @@ public class GameView : GtkClutter.Embed
             /* Remove any existing block */
             blocks.remove_all ();
             playing_field.remove_all ();
+            shape_shadow = null;
 
             /* Add in the current blocks */
             if (game.shape != null)
