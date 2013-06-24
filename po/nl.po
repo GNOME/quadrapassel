@@ -42,8 +42,8 @@ msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-21 23:41+0200\n"
-"PO-Revision-Date: 2011-09-18 10:00+0200\n"
-"Last-Translator: Redmar <redmar@ubuntu-nl.org>\n"
+"PO-Revision-Date: 2013-06-24 19:50+0200\n"
+"Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -2681,20 +2681,20 @@ msgstr "Normaal"
 
 #: ../quadrapassel/renderer.cpp:31
 msgid "Tango Flat"
-msgstr "Tango egaal"
+msgstr "Tango (egaal)"
 
 #: ../quadrapassel/renderer.cpp:32
 msgid "Tango Shaded"
-msgstr "Tango schaduw"
+msgstr "Tango (schaduw)"
 
 # leegmaken/wissen
 #: ../quadrapassel/renderer.cpp:33
 msgid "Clean"
-msgstr "Wissen"
+msgstr "Helder"
 
 #: ../quadrapassel/scoreframe.cpp:57
 msgid "Lines:"
-msgstr "Lijnen:"
+msgstr "Rijen:"
 
 #: ../quadrapassel/tetris.cpp:576
 msgid "Quadrapassel Preferences"
