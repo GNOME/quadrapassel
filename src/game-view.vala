@@ -20,7 +20,7 @@ public class GameView : GtkClutter.Embed
 
             /* Remove any existing block */
             blocks.remove_all ();
-            playing_field.remove_all ();
+            playing_field.remove_all_children ();
             shape_shadow = null;
 
             /* Add in the current blocks */
@@ -60,10 +60,10 @@ public class GameView : GtkClutter.Embed
         }
     }
 
-    private Clutter.Group playing_field;
+    private Clutter.Actor playing_field;
 
     /* The shape currently falling */
-    private Clutter.Group? shape = null;
+    private Clutter.Actor? shape = null;
 
     /* Shadow of falling piece */
     private Clutter.Clone? shape_shadow = null;
@@ -108,10 +108,10 @@ public class GameView : GtkClutter.Embed
 
         var stage = (Clutter.Stage) get_stage ();
         Clutter.Color stage_color = { 0x0, 0x0, 0x0, 0xff };
-        stage.set_color (stage_color);
+        stage.set_background_color (stage_color);
 
-        playing_field = new Clutter.Group ();
-        stage.add_actor (playing_field);
+        playing_field = new Clutter.Actor ();
+        stage.add_child (playing_field);
 
         text_overlay = new TextOverlay ();
         // FIXME: Have to set a size to avoid an assertion in Clutter
@@ -125,7 +125,7 @@ public class GameView : GtkClutter.Embed
             // FIXME: Have to set a size to avoid an assertion in Clutter
             block_textures[i].set_surface_size (1, 1);
             block_textures[i].hide ();
-            stage.add_actor (block_textures[i]);
+            stage.add_child (block_textures[i]);
         }
     }
 
@@ -139,7 +139,7 @@ public class GameView : GtkClutter.Embed
 
     private void shape_added_cb ()
     {
-        shape = new Clutter.Group ();
+        shape = new Clutter.Actor ();
         playing_field.add (shape);
         shape.set_position (game.shape.x * cell_size, game.shape.y * cell_size);
         update_shadow ();
@@ -157,9 +157,13 @@ public class GameView : GtkClutter.Embed
     private void shape_moved_cb ()
     {
         play_sound ("slide");
-        shape.animate (Clutter.AnimationMode.EASE_IN_QUAD, 30, "x", (float) game.shape.x * cell_size);
+        shape.save_easing_state ();
+        shape.set_easing_mode (Clutter.AnimationMode.EASE_IN_QUAD);
+        shape.set_easing_duration (30);
+        shape.set_x ((float) game.shape.x * cell_size);
         if (shape_shadow != null)
             shape_shadow.set_position (game.shape.x * cell_size, game.shadow_y * cell_size);
+        shape.restore_easing_state ();
     }
     
     private void update_shadow ()
@@ -184,8 +188,12 @@ public class GameView : GtkClutter.Embed
 
     private void shape_dropped_cb ()
     {
-        shape.animate (Clutter.AnimationMode.EASE_IN_QUAD, 60, "y", (float) game.shape.y * cell_size);
+        shape.save_easing_state ();
+        shape.set_easing_mode (Clutter.AnimationMode.EASE_IN_QUAD);
+        shape.set_easing_duration (60);
+        shape.set_y ((float) game.shape.y * cell_size);
         update_shadow ();
+        shape.restore_easing_state ();
     }
 
     private void shape_rotated_cb ()
@@ -247,9 +255,9 @@ public class GameView : GtkClutter.Embed
         /* Drop blocks that have moved */
         if (lines.length > 0)
         {
-            var timeline = new Clutter.Timeline (60);
             n_lines_destroyed = lines.length;
-            timeline.completed.connect (fall_completed_cb);
+
+            Clutter.Actor? reference_actor = null;
             for (var x = 0; x < game.width; x++)
             {
                 for (var y = 0; y < game.height; y++)
@@ -259,19 +267,36 @@ public class GameView : GtkClutter.Embed
                         continue;
 
                     var actor = blocks.lookup (block);
-                    actor.animate_with_timeline (Clutter.AnimationMode.EASE_IN_QUAD, timeline, "x", (float) block.x * cell_size, "y", (float) block.y * cell_size);
+                    reference_actor = actor;
+
+                    actor.save_easing_state ();
+                    actor.set_easing_mode (Clutter.AnimationMode.EASE_IN_QUAD);
+                    actor.set_easing_duration (60);
+                    actor.set_position ((float) block.x * cell_size, (float) block.y * cell_size);
+                    actor.restore_easing_state ();
                 }
+            }
+
+            if (reference_actor != null)
+            {
+                /* If there were no blocks falling, do not create an earthquake effect */
+                reference_actor.transitions_completed.connect (fall_completed_cb);
             }
         }
     }
 
-    private void fall_completed_cb (Clutter.Timeline timeline)
+    private void fall_completed_cb ()
     {
         /* Do an earthquake effect */
         float x, y;
         playing_field.get_position (out x, out y);
         playing_field.set_position (x, y + cell_size * n_lines_destroyed * 0.25f);
-        playing_field.animate (Clutter.AnimationMode.EASE_OUT_BOUNCE, 720 / (5 - n_lines_destroyed), "x", x, "y", y);
+
+        playing_field.save_easing_state ();
+        playing_field.set_easing_duration (720 / (5 - n_lines_destroyed));
+        playing_field.set_easing_mode (Clutter.AnimationMode.EASE_OUT_BOUNCE);
+        playing_field.set_position (x, y);
+        playing_field.restore_easing_state ();
     }
 
     private void size_allocate_cb (Gtk.Widget widget, Gtk.Allocation allocation)
@@ -307,7 +332,7 @@ public class GameView : GtkClutter.Embed
         update_shadow ();
 
         text_overlay.set_size (get_allocated_width (), get_allocated_height ());
-        text_overlay.raise_top ();
+        text_overlay.get_parent ().set_child_above_sibling (text_overlay, null);
 
         playing_field.set_size (game.width * cell_size, game.height * cell_size);
         playing_field.set_position ((get_allocated_width () - playing_field.get_width ()) * 0.5f,
@@ -348,12 +373,17 @@ private class BlockActor : Clutter.Clone
 
     public void explode ()
     {
-        raise_top ();
-        var timeline = new Clutter.Timeline (720);
-        timeline.completed.connect (explode_complete_cb);
-        animate_with_timeline (Clutter.AnimationMode.EASE_OUT_QUINT, timeline, "opacity", 0, "scale-x", 2f, "scale-y", 2f);
+        get_parent ().set_child_above_sibling (this, null);
+
+        save_easing_state ();
+        set_easing_mode (Clutter.AnimationMode.EASE_OUT_QUINT);
+        set_easing_duration (720);
+        set_opacity (0);
+        set_scale (2f, 2f);
+        transitions_completed.connect (explode_complete_cb);
+        restore_easing_state ();
     }
-    
+
     private void explode_complete_cb ()
     {
         destroy ();

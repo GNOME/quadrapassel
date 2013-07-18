@@ -4,7 +4,7 @@ public class Preview : GtkClutter.Embed
     private BlockTexture[] block_textures;
 
     /* Clutter representation of a piece */
-    private Clutter.Group? piece = null;
+    private Clutter.Actor? piece = null;
 
     public string theme
     {
@@ -53,7 +53,7 @@ public class Preview : GtkClutter.Embed
         var stage = (Clutter.Stage) get_stage ();
 
         Clutter.Color stage_color = { 0x0, 0x0, 0x0, 0xff };
-        stage.set_color (stage_color);
+        stage.set_background_color (stage_color);
 
         block_textures = new BlockTexture[NCOLORS];
         for (var i = 0; i < block_textures.length; i++)
@@ -62,7 +62,7 @@ public class Preview : GtkClutter.Embed
             // FIXME: Have to set a size to avoid an assertion in Clutter
             block_textures[i].set_surface_size (1, 1);
             block_textures[i].hide ();
-            stage.add_actor (block_textures[i]);
+            stage.add_child (block_textures[i]);
         }
     }
 
@@ -84,9 +84,9 @@ public class Preview : GtkClutter.Embed
 
         set_visible (true);
 
-        piece = new Clutter.Group ();
+        piece = new Clutter.Actor ();
         var stage = (Clutter.Stage) get_stage ();
-        stage.add_actor (piece);
+        stage.add_child (piece);
 
         var min_width = 4, max_width = 0, min_height = 4, max_height = 0;
         foreach (var b in game.next_shape.blocks)
@@ -99,13 +99,18 @@ public class Preview : GtkClutter.Embed
             var a = new Clutter.Clone (block_textures[b.color]);
             a.set_size (cell_size, cell_size);
             a.set_position (b.x * cell_size, b.y * cell_size);
-            piece.add_actor (a);
+            piece.add_child (a);
         }
 
-        piece.set_anchor_point ((min_width + max_width) * 0.5f * cell_size, (min_height + max_height) * 0.5f * cell_size);
-        piece.set_position (get_allocated_width () / 2, get_allocated_height () / 2);
+        piece.set_pivot_point (0.5f, 0.5f);
+        piece.set_position ((get_allocated_width () - (min_width + max_width) * cell_size) / 2, (get_allocated_height () - (min_height + max_height) * cell_size) / 2);
         piece.set_scale (0.6, 0.6);
-        piece.animate (Clutter.AnimationMode.EASE_IN_OUT_SINE, 180, "scale-x", 1.0, "scale-y", 1.0);
+
+        piece.save_easing_state ();
+        piece.set_easing_mode (Clutter.AnimationMode.EASE_IN_OUT_SINE);
+        piece.set_easing_duration (180);
+        piece.set_scale (1.0, 1.0);
+        piece.restore_easing_state ();
     }
 
     private void size_allocate_cb (Gtk.Allocation allocation)
