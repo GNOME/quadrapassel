@@ -34,4 +34,11 @@
       <gnome:userid>jclinton</gnome:userid>
     </foaf:Person>
   </maintainer>
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Mario Wenzel</foaf:name>
+      <foaf:mbox rdf:resource="mailto:maweki@gmail.com" />
+      <gnome:userid>mariowenzel</gnome:userid>
+    </foaf:Person>
+  </maintainer>
 </Project>
