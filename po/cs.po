@@ -37,15 +37,15 @@ msgstr ""
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:1
 msgid "Image to use for drawing blocks"
-msgstr "Obrázek, který se má používat pro kreslení kostek"
+msgstr "Obrázek, který se má používat pro kreslení bloků"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:2
 msgid "Image to use for drawing blocks."
-msgstr "Obrázek, který se má používat pro kreslení kostek."
+msgstr "Obrázek, který se má používat pro kreslení bloků."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:3
 msgid "The theme used for rendering the blocks"
-msgstr "Motiv používaný pro vykreslování kostek"
+msgstr "Motiv používaný pro vykreslování bloků"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:4
 msgid "The name of the theme used for rendering the blocks and the background."
@@ -69,11 +69,11 @@ msgstr "Zda zobrazovat náhled dalšího bloku."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:9
 msgid "Whether to show where the moving piece will land"
-msgstr "Zda zobrazovat, kam blok dopadne"
+msgstr "Zda ukazovat, kam blok dopadne"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:10
 msgid "Whether to show where the moving piece will land."
-msgstr "Zda zobrazovat, kam padající blok dopadne."
+msgstr "Zda ukazovat, kam padající blok dopadne."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:11
 msgid "Whether to give blocks random colors"
@@ -110,7 +110,7 @@ msgid ""
 "The density of blocks in rows filled at the start of the game. The value is "
 "between 0 (for no blocks) and 10 (for a completely filled row)."
 msgstr ""
-"Hustota bloků v řádcích vyplněných při startu hry. Hodnota je mezi 0 (žádné "
+"Hustota kostek v řádcích vyplněných při startu hry. Hodnota je mezi 0 (žádné "
 "bloky) a 10 (úplně vyplněný řádek)."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:19
@@ -315,7 +315,7 @@ msgstr "Otáčet bloky p_roti směru hodinových ručiček"
 
 #: ../src/quadrapassel.vala:373
 msgid "Show _where the block will land"
-msgstr "Zobrazovat, _kam blok dopadne"
+msgstr "Ukazovat, _kam blok dopadne"
 
 #: ../src/quadrapassel.vala:417
 msgid "Controls"
@@ -339,7 +339,7 @@ msgstr "Oblé stínované"
 
 #: ../src/quadrapassel.vala:450
 msgid "Clean"
-msgstr "Vyčistit"
+msgstr "Čisté"
 
 #: ../src/quadrapassel.vala:678
 msgid "Res_ume"
