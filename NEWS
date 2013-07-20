@@ -1,3 +1,25 @@
+quadrapassel 3.8.2
+==================
+
+Colin Kinloch:
+      Fixed repeated down press bug
+
+Mario Wenzel:
+      Hiding preview embed when preview is unavailable or disabled
+      Disable preview-button in difficult block mode
+      Fix bug where falling block shadow would get missing
+      Fix segmentation fault when down key was released after game was over
+
+Michael Catanzaro:
+      help: update translate  link for new module name
+      
+Andika Triwidada:
+      Updated Indonesian translation
+
+Yuri Myasoedov:
+      Updated Russian translation
+
+
 quadrapassel 3.8.1
 ==================
 
