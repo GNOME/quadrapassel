@@ -372,7 +372,7 @@ public class Game : Object
 
     public void set_fast_forward (bool enable)
     {
-        if (fast_forward == enable)
+        if (fast_forward == enable || game_over)
             return;
         if (enable)
             if(!move_shape (0, 1, 0))
