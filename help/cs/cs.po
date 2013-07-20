@@ -481,7 +481,7 @@ msgid ""
 "invited to participate in any of the following ways."
 msgstr ""
 "O <app>Quadrapassel</app> se stará komunita dobrovolníků. Vaše případná "
-"účast bud vítána v kterékoliv z následujících činností."
+"účast bude vítána v kterékoliv z následujících činností."
 
 #: C/legal.xml:3(p/link)
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
