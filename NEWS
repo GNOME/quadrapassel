@@ -1,3 +1,46 @@
+quadrapassel 3.9.5
+==================
+
+Colin Kinloch:
+      Fixed repeated down press bug
+
+Mario Wenzel:
+      Hiding preview embed when preview is unavailable or disabled
+      Disable preview-button in difficult block mode
+      Fix bug where falling block shadow would get missing
+      Removed deprecated clutter animation
+      Fix segmentation fault when down key was released after game was over
+
+Michael Catanzaro:
+      Don't choose difficult blocks by default.
+      Switch preview and difficult blocks in settings
+      help: add missing space between icon and title
+      help: update translate  link for new module name
+
+Andika Triwidada:
+      Updated Indonesian translation
+
+Daniel Mustieles:
+      Updated Spanish translation
+
+Marek Černocký:
+      Updated Czech translation
+
+Gil Forcada:
+      [l10n] Update Catalan documentation
+
+OKANO Takayoshi:
+      l10n: Update Japanese translation
+
+Wouter Bolsterlee:
+      Updated Dutch translation
+
+Gabor Kelemen:
+      Fix tags in the Hungarian help
+
+Jiro Matsuzawa:
+      help: Fix obsolete product of bugzilla
+
 quadrapassel 3.8.0
 ==================
 
