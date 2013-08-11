@@ -13,3 +13,5 @@ icon48_DATA = 48x48/quadrapassel.png
 iconscalable_DATA = scalable/quadrapassel.svg
 
 EXTRA_DIST = $(icon16_DATA) $(icon22_DATA) $(icon24_DATA) $(icon32_DATA) $(icon48_DATA) $(iconscalable_DATA)
+
+-include $(top_srcdir)/git.mk
