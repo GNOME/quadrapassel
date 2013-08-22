@@ -12,8 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master fr\n"
-"POT-Creation-Date: 2012-09-06 19:11+0000\n"
-"PO-Revision-Date: 2013-02-20 20:21+0100\n"
+"POT-Creation-Date: 2013-07-18 12:34+0000\n"
+"PO-Revision-Date: 2013-08-22 11:57+0200\n"
 "Last-Translator: Mickael Albertus <mickael.albertus@gmail.com>\n"
 "Language-Team: French <gnomefr@traduc.org>\n"
 "Language: fr\n"
@@ -215,10 +215,10 @@ msgstr ""
 #: C/index.page:18(page/title)
 msgid ""
 "<media type=\"image\" src=\"media/quadrapassel.png\">Quadrapassel logo</"
-"media>Quadrapassel"
+"media> Quadrapassel"
 msgstr ""
 "<media type=\"image\" src=\"media/quadrapassel.png\">Logo de Quadrapassel</"
-"media>Quadrapassel"
+"media> Quadrapassel"
 
 #: C/index.page:20(page/p)
 msgid ""
@@ -272,7 +272,7 @@ msgstr "<link xref=\"get-involved\">Comment s'impliquer</link>"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/bug-filing.page:49(media) C/develop.page:28(media)
+#: C/bug-filing.page:51(media) C/develop.page:28(media)
 #: C/documentation.page:28(media) C/translate.page:41(media)
 msgctxt "_"
 msgid ""
@@ -319,7 +319,7 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/bug-filing.page:50(media) C/develop.page:29(media)
+#: C/bug-filing.page:52(media) C/develop.page:29(media)
 #: C/documentation.page:29(media) C/get-involved.page:22(media)
 #: C/playgame.page:43(media) C/preferences.page:72(media)
 #: C/score.page:37(media) C/translate.page:42(media)
@@ -375,32 +375,24 @@ msgstr ""
 "l'état de votre anomalie. Si vous ne possédez pas encore de compte, il "
 "suffit de cliquer sur le lien <gui>Nouveau compte</gui> pour en créer un."
 
-#: C/bug-filing.page:33(page/p)
+#: C/bug-filing.page:34(page/p)
 msgid ""
 "Once you have an account, log in, click on <guiseq><gui>File a Bug</"
-"gui><gui>Applications</gui><gui>gnome-games</gui></guiseq>. Before reporting "
-"a bug, please read the <link href=\"https://bugzilla.gnome.org/page.cgi?"
-"id=bug-writing.html\">bug writing guidelines</link>, and please <link href="
-"\"https://bugzilla.gnome.org/browse.cgi?product=gnome-games\">browse</link> "
-"for the bug to see if it already exists."
+"gui><gui>Applications</gui><gui>quadrapassel</gui></guiseq>. Before "
+"reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
+"page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
+"<link href=\"https://bugzilla.gnome.org/browse.cgi?product=quadrapassel"
+"\">browse</link> for the bug to see if it already exists."
 msgstr ""
 "Une fois que vous avez un compte, connectez-vous et cliquez sur "
-"<guiseq><gui>Rapporter une anomalie</gui><gui>Applications</gui><gui>gnome-"
-"games</gui></guiseq>. Avant de rapporter une anomalie, veuillez lire les "
+"<guiseq><gui>Rapporter une anomalie</gui><gui>Applications</gui><gui>quadrapassel"
+"</gui></guiseq>. Avant de rapporter une anomalie, veuillez lire les "
 "<link href=\"https://bugzilla.gnome.org/page.cgi?id=bug-writing.html"
 "\">directives d'écriture d'anomalies</link>, et veuillez <link href="
-"\"https://bugzilla.gnome.org/browse.cgi?product=gnome-games\">parcourir</"
+"\"https://bugzilla.gnome.org/browse.cgi?product=quadrapassel\">parcourir</"
 "link> les anomalies pour voir si il existe déjà."
 
-#: C/bug-filing.page:37(page/p)
-msgid ""
-"To file your bug, choose the component <gui>quadrapassel</gui> in the "
-"<gui>Component</gui> menu."
-msgstr ""
-"Pour déposer votre rapport d'anomalies, choisissez le composant "
-"<gui>quadrapassel</gui> dans le menu <gui>Composant</gui>."
-
-#: C/bug-filing.page:40(page/p)
+#: C/bug-filing.page:42(page/p)
 msgid ""
 "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
 "<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
@@ -410,7 +402,7 @@ msgstr ""
 "<gui>amélioration</gui> dans le menu <gui>Gravité</gui>. Remplissez les "
 "sections « Résumé » et « Description » et cliquez sur <gui>Soumettre</gui>."
 
-#: C/bug-filing.page:44(page/p)
+#: C/bug-filing.page:46(page/p)
 msgid ""
 "Your report will be given an ID number, and its status will be updated as it "
 "is being dealt with."
@@ -418,7 +410,7 @@ msgstr ""
 "Votre rapport aura un numéro d'identification et son statut sera mis à jour "
 "une fois traité."
 
-#: C/bug-filing.page:49(section/p) C/develop.page:28(section/p)
+#: C/bug-filing.page:51(section/p) C/develop.page:28(section/p)
 #: C/documentation.page:28(section/p) C/translate.page:41(section/p)
 msgid ""
 "<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous.png"
@@ -427,7 +419,7 @@ msgstr ""
 "<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous.png"
 "\"/>Comment s'impliquer</link>"
 
-#: C/bug-filing.page:50(section/p) C/develop.page:29(section/p)
+#: C/bug-filing.page:52(section/p) C/develop.page:29(section/p)
 #: C/documentation.page:29(section/p) C/get-involved.page:22(section/p)
 #: C/playgame.page:43(section/p) C/preferences.page:72(section/p)
 #: C/score.page:37(section/p) C/translate.page:42(section/p)
@@ -591,8 +583,8 @@ msgid ""
 "sa/3.0/\">Commons Deed</link>."
 msgstr ""
 "Pour prendre connaissance du texte complet de la licence, consultez le <link "
-"href=\"http://creativecommons.org/licenses/by-sa/3.0/legalcode\">site "
-"Web CreativeCommons</link> ou lisez in extenso le <link href=\"http://"
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/legalcode\">site Web "
+"CreativeCommons</link> ou lisez in extenso le <link href=\"http://"
 "creativecommons.org/licenses/by-sa/3.0/\">contrat Commons</link>."
 
 #: C/playgame.page:16(license/p)
@@ -631,11 +623,11 @@ msgid ""
 "<key>↓</key> key causes a soft-drop (temporary increase in speed while the "
 "key is held down)."
 msgstr ""
-"Les touches <key>Barre d'espace</key> et <key>↓</key> augmentent la "
-"vitesse de chute. La <key>barre d'espace</key> entraîne une chute brutale "
-"(déplacement instantané vers le bas). La touche <key>↓</key> "
-"entraîne une chute douce (la vitesse augmente temporairement tant que la "
-"touche est maintenue enfoncée)."
+"Les touches <key>Barre d'espace</key> et <key>↓</key> augmentent la vitesse "
+"de chute. La <key>barre d'espace</key> entraîne une chute brutale "
+"(déplacement instantané vers le bas). La touche <key>↓</key> entraîne une "
+"chute douce (la vitesse augmente temporairement tant que la touche est "
+"maintenue enfoncée)."
 
 #: C/playgame.page:33(section/title)
 msgid "Rules"
@@ -873,10 +865,10 @@ msgstr ""
 
 #: C/translate.page:25(page/p)
 msgid ""
-"There are <link href=\"http://l10n.gnome.org/module/gnome-games/\">many "
+"There are <link href=\"http://l10n.gnome.org/module/quadrapassel/\">many "
 "languages</link> for which translations are still needed."
 msgstr ""
-"Il y a de <link href=\"http://l10n.gnome.org/module/gnome-games/"
+"Il y a de <link href=\"http://l10n.gnome.org/module/quadrapassel/"
 "\">nombreuses langues</link> pour lesquelles des traductions sont encore "
 "nécessaires."
 
@@ -914,6 +906,13 @@ msgstr ""
 "À la place, vous pouvez contacter l'équipe d'internationalisation en "
 "utilisant leur <link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n"
 "\">liste de discussion</link>."
+
+#~ msgid ""
+#~ "To file your bug, choose the component <gui>quadrapassel</gui> in the "
+#~ "<gui>Component</gui> menu."
+#~ msgstr ""
+#~ "Pour déposer votre rapport d'anomalies, choisissez le composant "
+#~ "<gui>quadrapassel</gui> dans le menu <gui>Composant</gui>."
 
 #~ msgid "link"
 #~ msgstr "lien"
