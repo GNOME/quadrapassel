@@ -358,6 +358,7 @@ public class Game : Object
         add_shape ();
         setup_drop_timer ();
         started ();
+        pause_changed ();
     }
 
     public bool move_left ()
