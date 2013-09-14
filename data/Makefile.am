@@ -21,9 +21,13 @@ desktop_in_files = quadrapassel.desktop.in.in
 desktop_DATA = $(desktop_in_files:.desktop.in.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
+appdatadir = $(datadir)/appdata
+appdata_DATA = quadrapassel.appdata.xml
+
 man_MANS = quadrapassel.6
 
 EXTRA_DIST = \
+	$(appdata_DATA) \
 	$(gsettings_in_file) \
 	$(sounds_DATA) \
 	$(desktop_in_files) \
