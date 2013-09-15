@@ -117,10 +117,12 @@ public class GameView : GtkClutter.Embed
         size_allocate.connect (size_allocate_cb);
 
         var stage = (Clutter.Stage) get_stage ();
-        Clutter.Color stage_color = { 0x0, 0x0, 0x0, 0xff };
+        Clutter.Color stage_color = { 0x10, 0x10, 0x10, 0xff };
+        Clutter.Color field_color = { 0x0, 0x0, 0x0, 0xff };
         stage.set_background_color (stage_color);
 
         playing_field = new Clutter.Actor ();
+        playing_field.set_background_color (field_color);
         stage.add_child (playing_field);
 
         text_overlay = new TextOverlay ();
