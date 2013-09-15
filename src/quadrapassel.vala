@@ -322,7 +322,8 @@ public class Quadrapassel : Gtk.Application
         label.set_hexpand (true);
         grid.attach (label, 0, 0, 1, 1);
 
-        var adj = new Gtk.Adjustment (settings.get_int ("line-fill-height"), 0, game.height - 1, 1, 5, 0);
+        var adj = new Gtk.Adjustment (settings.get_int ("line-fill-height"), 0, 15, 1, 5, 0);
+        // the maximum should be at least 4 less than the new game height but as long as the game height is a magic 20 and not a setting, we can keep it at 15
         fill_height_spinner = new Gtk.SpinButton (adj, 10, 0);
         fill_height_spinner.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
         fill_height_spinner.set_snap_to_ticks (true);
