@@ -244,6 +244,8 @@ public class GameView : GtkClutter.Embed
         shape_shadow = null;
         shape_blocks.remove_all ();
 
+        n_lines_destroyed = lines.length;
+
         /* Land the shape blocks */
         foreach (var block in game.shape.blocks)
         {
@@ -251,7 +253,7 @@ public class GameView : GtkClutter.Embed
             playing_field.add (actor);
             blocks.insert (block, actor);
             actor.set_size (cell_size, cell_size);
-            actor.set_position (block.x * cell_size, block.y * cell_size);
+            actor.set_position (block.x * cell_size, (block.y - n_lines_destroyed) * cell_size);
         }
 
         /* Explode blocks */
@@ -265,9 +267,6 @@ public class GameView : GtkClutter.Embed
         /* Drop blocks that have moved */
         if (lines.length > 0)
         {
-            n_lines_destroyed = lines.length;
-
-            Clutter.Actor? reference_actor = null;
             for (var x = 0; x < game.width; x++)
             {
                 for (var y = 0; y < game.height; y++)
@@ -277,36 +276,15 @@ public class GameView : GtkClutter.Embed
                         continue;
 
                     var actor = blocks.lookup (block);
-                    reference_actor = actor;
 
                     actor.save_easing_state ();
-                    actor.set_easing_mode (Clutter.AnimationMode.EASE_IN_QUAD);
-                    actor.set_easing_duration (60);
+                    actor.set_easing_mode (Clutter.AnimationMode.EASE_OUT_BOUNCE);
+                    actor.set_easing_duration ((int) (300 * Math.sqrt (n_lines_destroyed)));
                     actor.set_position ((float) block.x * cell_size, (float) block.y * cell_size);
                     actor.restore_easing_state ();
                 }
             }
-
-            if (reference_actor != null)
-            {
-                /* If there were no blocks falling, do not create an earthquake effect */
-                reference_actor.transitions_completed.connect (fall_completed_cb);
-            }
         }
-    }
-
-    private void fall_completed_cb ()
-    {
-        /* Do an earthquake effect */
-        float x, y;
-        playing_field.get_position (out x, out y);
-        playing_field.set_position (x, y + cell_size * n_lines_destroyed * 0.25f);
-
-        playing_field.save_easing_state ();
-        playing_field.set_easing_duration (720 / (5 - n_lines_destroyed));
-        playing_field.set_easing_mode (Clutter.AnimationMode.EASE_OUT_BOUNCE);
-        playing_field.set_position (x, y);
-        playing_field.restore_easing_state ();
     }
 
     private void size_allocate_cb (Gtk.Widget widget, Gtk.Allocation allocation)
