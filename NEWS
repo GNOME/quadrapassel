@@ -1,3 +1,19 @@
+quadrapassel 3.9.92
+====================
+
+Michael Catanzaro:
+      Add an appdata file
+
+Mario Wenzel:
+      Reset pause button when game starts
+      Remove earthquake and make falling slower and more realistically
+      Fix issue with pre filled Lines
+      give stage lighter color
+
+Enrico Nicoletto:
+      Enabled Brazilian Portuguese translation
+      Updated Brazilian Portuguese translation
+
 quadrapassel 3.9.91
 ====================
 
