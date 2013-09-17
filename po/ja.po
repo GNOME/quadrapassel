@@ -12,10 +12,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games gnome-2-32\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-03-27 16:58+0000\n"
-"PO-Revision-Date: 2013-04-13 23:34+0900\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=quadrapassel&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-08-25 14:08+0000\n"
+"PO-Revision-Date: 2013-05-10 12:24+0900\n"
 "Last-Translator: OKANO Takayoshi <kano@na.rim.or.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -50,44 +49,42 @@ msgstr "ゲーム開始時のレベルです。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:7
 msgid "Whether to preview the next block"
-msgstr "次のブロックのプレビューを表示するかどうか"
+msgstr "次のブロックのプレビューを表示する"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:8
 msgid "Whether to preview the next block."
-msgstr "次のブロックのプレビューを表示するかどうかです。"
+msgstr "次のブロックのプレビューを表示するかどうかの設定です。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:9
 msgid "Whether to show where the moving piece will land"
-msgstr "ブロックを落とす場所を表示するかどうか"
+msgstr "ブロックを落とす場所を表示する"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:10
 msgid "Whether to show where the moving piece will land."
-msgstr "ブロックを落とす場所を表示するかどうかです。"
+msgstr "ブロックを落とす場所を表示するかどうかの設定です。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:11
 msgid "Whether to give blocks random colors"
-msgstr "ブロックの色をランダムにするかどうか"
+msgstr "ブロックの色をランダムにする"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:12
 msgid "Whether to give blocks random colors."
-msgstr "ブロックの色をランダムにするかどうかです。"
+msgstr "ブロックの色をランダムにするかどうかの設定です。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:13
 msgid "Whether to rotate counter clock wise"
-msgstr "反時計周りに回転させるかどうか"
+msgstr "反時計周りに回転させる"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:14
 msgid "Whether to rotate counter clock wise."
-msgstr "反時計周りに回転させるかどうかです。"
+msgstr "反時計周りに回転させるかどうかの設定です。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:15
 msgid "The number of rows to fill"
 msgstr "事前に埋めておくブロックの高さ"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:16
-msgid ""
-"The number of rows that are filled with random blocks at the start of the "
-"game."
+msgid "The number of rows that are filled with random blocks at the start of the game."
 msgstr "ゲーム開始時にランダムなブロックで事前に埋めておくブロックの高さです。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:17
@@ -95,31 +92,27 @@ msgid "The density of filled rows"
 msgstr "事前に埋めておくブロックの密度"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:18
-msgid ""
-"The density of blocks in rows filled at the start of the game. The value is "
-"between 0 (for no blocks) and 10 (for a completely filled row)."
-msgstr ""
-"ゲーム開始時に事前に埋めておくブロックの密度です。指定可能な値は 0 (ブロック"
-"なし) 〜 10 (すべて埋める) です。"
+msgid "The density of blocks in rows filled at the start of the game. The value is between 0 (for no blocks) and 10 (for a completely filled row)."
+msgstr "ゲーム開始時に事前に埋めておくブロックの密度です。指定可能な値は 0 (ブロックなし) 〜 10 (すべて埋める) です。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:19
 msgid "Whether to play sounds"
-msgstr "サウンドを演奏するかどうか"
+msgstr "サウンドを有効にする"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:20
 msgid "Whether to play sounds."
-msgstr "サウンドを演奏するかどうかです。"
+msgstr "サウンドを有効にするかどうかの設定です。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:21
 msgid "Whether to pick blocks that are hard to place"
-msgstr ""
+msgstr "積みにくいブロックを優先的に落下させる"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:22
 msgid "Whether to pick blocks that are hard to place."
-msgstr ""
+msgstr "積みにくいブロックを優先的に落下させるかどうかの設定です。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:23
-#: ../src/quadrapassel.vala:382
+#: ../src/quadrapassel.vala:383
 msgid "Move left"
 msgstr "左へ移動する"
 
@@ -128,7 +121,7 @@ msgid "Key press to move left."
 msgstr "左に移動するキーです。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:25
-#: ../src/quadrapassel.vala:385
+#: ../src/quadrapassel.vala:386
 msgid "Move right"
 msgstr "右へ移動する"
 
@@ -137,7 +130,7 @@ msgid "Key press to move right."
 msgstr "右に移動するキーです。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:27
-#: ../src/quadrapassel.vala:388
+#: ../src/quadrapassel.vala:389
 msgid "Move down"
 msgstr "下へ移動する"
 
@@ -146,7 +139,7 @@ msgid "Key press to move down."
 msgstr "下へ移動する時に使用するキーです。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:29
-#: ../src/quadrapassel.vala:391
+#: ../src/quadrapassel.vala:392
 msgid "Drop"
 msgstr "ブロックを落とす"
 
@@ -155,7 +148,7 @@ msgid "Key press to drop."
 msgstr "落とす時に使用するキーです。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:31
-#: ../src/quadrapassel.vala:394
+#: ../src/quadrapassel.vala:395
 msgid "Rotate"
 msgstr "回転する"
 
@@ -164,7 +157,7 @@ msgid "Key press to rotate."
 msgstr "回転させる時に使用するキーです。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:33
-#: ../src/quadrapassel.vala:397
+#: ../src/quadrapassel.vala:398
 msgid "Pause"
 msgstr "一時停止"
 
@@ -189,7 +182,7 @@ msgid "true if the window is fullscren"
 msgstr "ウィンドウがフルスクリーンの場合は TRUE"
 
 #: ../data/quadrapassel.desktop.in.in.h:1 ../src/quadrapassel.vala:99
-#: ../src/quadrapassel.vala:756 ../src/quadrapassel.vala:798
+#: ../src/quadrapassel.vala:758 ../src/quadrapassel.vala:800
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -201,11 +194,11 @@ msgstr "落ちてくるブロックを組み合わせて消し去ってくださ
 msgid "tetris;"
 msgstr "tetris;テトリス;"
 
-#: ../src/game-view.vala:330
+#: ../src/game-view.vala:331
 msgid "Paused"
 msgstr "一時停止"
 
-#: ../src/game-view.vala:332
+#: ../src/game-view.vala:333
 msgid "Game Over"
 msgstr "ゲームオーバー"
 
@@ -214,7 +207,7 @@ msgid "_New Game"
 msgstr "新しいゲーム(_N)"
 
 #: ../src/quadrapassel.vala:83 ../src/quadrapassel.vala:135
-#: ../src/quadrapassel.vala:681
+#: ../src/quadrapassel.vala:683
 msgid "_Pause"
 msgstr "一時停止(_P)"
 
@@ -293,48 +286,48 @@ msgstr "サウンドを有効にする(_E)"
 msgid "_Preview next block"
 msgstr "次のブロックを表示する(_P)"
 
-#: ../src/quadrapassel.vala:361
+#: ../src/quadrapassel.vala:362
 msgid "Choose difficult _blocks"
-msgstr "難しいブロックを選択する(_B)"
+msgstr "積みにくいブロックを優先的に落下させる(_B)"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:367
+#: ../src/quadrapassel.vala:368
 msgid "_Rotate blocks counterclockwise"
 msgstr "反時計周りに回転させる(_R)"
 
-#: ../src/quadrapassel.vala:372
+#: ../src/quadrapassel.vala:373
 msgid "Show _where the block will land"
 msgstr "ブロックを落とす場所を表示する(_W)"
 
-#: ../src/quadrapassel.vala:416
+#: ../src/quadrapassel.vala:417
 msgid "Controls"
 msgstr "操作"
 
-#: ../src/quadrapassel.vala:422
+#: ../src/quadrapassel.vala:423
 msgid "Theme"
 msgstr "テーマ"
 
-#: ../src/quadrapassel.vala:434
+#: ../src/quadrapassel.vala:435
 msgid "Plain"
 msgstr "プレーン"
 
-#: ../src/quadrapassel.vala:439
+#: ../src/quadrapassel.vala:440
 msgid "Tango Flat"
 msgstr "Tango フラット"
 
-#: ../src/quadrapassel.vala:444
+#: ../src/quadrapassel.vala:445
 msgid "Tango Shaded"
 msgstr "Tango 影付き"
 
-#: ../src/quadrapassel.vala:449
+#: ../src/quadrapassel.vala:450
 msgid "Clean"
 msgstr "クリーン"
 
-#: ../src/quadrapassel.vala:676
+#: ../src/quadrapassel.vala:678
 msgid "Res_ume"
 msgstr "再開(_U)"
 
-#: ../src/quadrapassel.vala:758
+#: ../src/quadrapassel.vala:760
 msgid ""
 "A classic game of fitting falling blocks together.\n"
 "\n"
@@ -344,11 +337,11 @@ msgstr ""
 "\n"
 "Quadrapassel は GNOME ゲーム集の一部です。"
 
-#: ../src/quadrapassel.vala:761
+#: ../src/quadrapassel.vala:763
 msgid "GNOME Games web site"
 msgstr "GNOME ゲーム集のウェブサイト"
 
-#: ../src/quadrapassel.vala:764
+#: ../src/quadrapassel.vala:766
 msgid "translator-credits"
 msgstr ""
 "相花 毅 <takeshi.aihana@gmail.com>\n"
@@ -360,14 +353,14 @@ msgstr ""
 "Yukihiro Nakai <Nakai@technologist.com>\n"
 "日本GNOMEユーザー会 <http://www.gnome.gr.jp>"
 
-#: ../src/quadrapassel.vala:835
+#: ../src/quadrapassel.vala:837
 msgid "New Game"
 msgstr "新しいゲーム"
 
-#: ../src/quadrapassel.vala:856
+#: ../src/quadrapassel.vala:858
 msgid "Date"
 msgstr "日付"
 
-#: ../src/quadrapassel.vala:859
+#: ../src/quadrapassel.vala:861
 msgid "Score"
 msgstr "得点"
