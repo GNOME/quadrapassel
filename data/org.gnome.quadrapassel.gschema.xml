@@ -1,0 +1,108 @@
+<schemalist>
+  <schema id="org.gnome.quadrapassel" path="/org/gnome/quadrapassel/">
+    <key name="block-pixmap" type="s">
+      <default>'7blocks-gw.png'</default>
+      <summary>Image to use for drawing blocks</summary>
+      <description>Image to use for drawing blocks.</description>
+    </key>
+    <key name="theme" type="s">
+      <default>'clean'</default>
+      <summary>The theme used for rendering the blocks</summary>
+      <description>The name of the theme used for rendering the blocks and the background.</description>
+    </key>
+    <key name="starting-level" type="i">
+      <default>1</default>
+      <range min="1" max="20"/>
+      <summary>Level to start with</summary>
+      <description>Level to start with.</description>
+    </key>
+    <key name="do-preview" type="b">
+      <default>true</default>
+      <summary>Whether to preview the next block</summary>
+      <description>Whether to preview the next block.</description>
+    </key>
+    <key name="show-shadow" type="b">
+      <default>false</default>
+      <summary>Whether to show where the moving piece will land</summary>
+      <description>Whether to show where the moving piece will land.</description>
+    </key>
+    <key name="random-block-colors" type="b">
+      <default>false</default>
+      <summary>Whether to give blocks random colors</summary>
+      <description>Whether to give blocks random colors.</description>
+    </key>
+    <key name="rotate-counter-clock-wise" type="b">
+      <default>true</default>
+      <summary>Whether to rotate counter clock wise</summary>
+      <description>Whether to rotate counter clock wise.</description>
+    </key>
+    <key name="line-fill-height" type="i">
+      <default>0</default>
+      <range min="0" max="19"/>
+      <summary>The number of rows to fill</summary>
+      <description>The number of rows that are filled with random blocks at the start of the game.</description>
+    </key>
+    <key name="line-fill-probability" type="i">
+      <default>5</default>
+      <range min="0" max="10"/>
+      <summary>The density of filled rows</summary>
+      <description>The density of blocks in rows filled at the start of the game. The value is between 0 (for no blocks) and 10 (for a completely filled row).</description>
+    </key>
+    <key name="sound" type="b">
+      <default>true</default>
+      <summary>Whether to play sounds</summary>
+      <description>Whether to play sounds.</description>
+    </key>
+    <key name="pick-difficult-blocks" type="b">
+      <default>false</default>
+      <summary>Whether to pick blocks that are hard to place</summary>
+      <description>Whether to pick blocks that are hard to place.</description>
+    </key>
+    <key name="key-left" type="i">
+      <default>65361</default>
+      <summary>Move left</summary>
+      <description>Key press to move left.</description>
+    </key>
+    <key name="key-right" type="i">
+      <default>65363</default>
+      <summary>Move right</summary>
+      <description>Key press to move right.</description>
+    </key>
+    <key name="key-down" type="i">
+      <default>65364</default>
+      <summary>Move down</summary>
+      <description>Key press to move down.</description>
+    </key>
+    <key name="key-drop" type="i">
+      <default>32</default>
+      <summary>Drop</summary>
+      <description>Key press to drop.</description>
+    </key>
+    <key name="key-rotate" type="i">
+      <default>65362</default>
+      <summary>Rotate</summary>
+      <description>Key press to rotate.</description>
+    </key>
+    <key name="key-pause" type="i">
+      <default>65299</default>
+      <summary>Pause</summary>
+      <description>Key press to pause.</description>
+    </key>
+    <key name="window-width" type="i">
+      <default>500</default>
+      <summary>Width of the window in pixels</summary>
+    </key>
+    <key name="window-height" type="i">
+      <default>500</default>
+      <summary>Height of the window in pixels</summary>
+    </key>
+    <key name="window-is-maximized" type="b">
+      <default>false</default>
+      <summary>true if the window is maximized</summary>
+    </key>
+    <key name="window-is-fullscreen" type="b">
+      <default>false</default>
+      <summary>true if the window is fullscren</summary>
+    </key>
+  </schema>
+</schemalist>

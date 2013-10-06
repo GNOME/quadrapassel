@@ -1,8 +1,6 @@
 SUBDIRS = icons
 
-gsettings_in_file = org.gnome.quadrapassel.gschema.xml.in
-gsettings_SCHEMAS = $(gsettings_in_file:.xml.in=.xml)
-@INTLTOOL_XML_NOMERGE_RULE@
+gsettings_SCHEMAS = org.gnome.quadrapassel.gschema.xml
 @GSETTINGS_RULES@
 
 soundsdir = $(datadir)/quadrapassel/sounds
@@ -28,13 +26,12 @@ man_MANS = quadrapassel.6
 
 EXTRA_DIST = \
 	$(appdata_DATA) \
-	$(gsettings_in_file) \
+	$(gsettings_SCHEMAS) \
 	$(sounds_DATA) \
 	$(desktop_in_files) \
 	$(man_MANS)
 
-CLEANFILES = $(desktop_DATA) $(gsettings_SCHEMAS)
-DISTCLEANFILES = $(gsettings_SCHEMAS)
+CLEANFILES = $(desktop_DATA)
 
 check-local: $(appdata_DATA) $(desktop_DATA)
 	$(APPDATA_VALIDATE) $(appdata_DATA)
