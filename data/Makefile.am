@@ -17,8 +17,8 @@ sounds_DATA = \
 	quadrapassel.ogg
 
 desktopdir = $(datadir)/applications
-desktop_in_files = quadrapassel.desktop.in.in
-desktop_DATA = $(desktop_in_files:.desktop.in.in=.desktop)
+desktop_in_files = quadrapassel.desktop.in
+desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
 appdatadir = $(datadir)/appdata
@@ -34,7 +34,7 @@ EXTRA_DIST = \
 	$(man_MANS)
 
 CLEANFILES = $(desktop_DATA) $(gsettings_SCHEMAS)
-DISTCLEANFILES = $(desktop_DATA) $(gsettings_SCHEMAS)
+DISTCLEANFILES = $(gsettings_SCHEMAS)
 
 check-local: $(appdata_DATA) $(desktop_DATA)
 	$(APPDATA_VALIDATE) $(appdata_DATA)
