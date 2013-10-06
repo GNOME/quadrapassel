@@ -27,6 +27,9 @@ PKG_CHECK_MODULES(QUADRAPASSEL, [
   clutter-gtk-1.0 >= $CLUTTER_REQUIRED
 ])
 
+AC_PATH_PROG(APPDATA_VALIDATE, appdata-validate)
+AC_PATH_PROG(DESKTOP_FILE_VALIDATE, desktop-file-validate)
+
 dnl ###########################################################################
 dnl Internationalization
 dnl ###########################################################################
