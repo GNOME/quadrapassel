@@ -20,18 +20,22 @@ desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
 appdatadir = $(datadir)/appdata
-appdata_DATA = quadrapassel.appdata.xml
+appdata_in_files = quadrapassel.appdata.xml.in
+appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+@INTLTOOL_XML_RULE@
 
 man_MANS = quadrapassel.6
 
 EXTRA_DIST = \
-	$(appdata_DATA) \
+	$(appdata_in_files) \
 	$(gsettings_SCHEMAS) \
 	$(sounds_DATA) \
 	$(desktop_in_files) \
 	$(man_MANS)
 
-CLEANFILES = $(desktop_DATA)
+CLEANFILES = \
+	$(appdata_DATA) \
+	$(desktop_DATA)
 
 check-local: $(appdata_DATA) $(desktop_DATA)
 	$(APPDATA_VALIDATE) $(appdata_DATA)
