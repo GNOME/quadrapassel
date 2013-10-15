@@ -14,7 +14,8 @@ quadrapassel_CFLAGS = \
 	-DDATA_DIRECTORY=\"$(datadir)/quadrapassel\" \
 	-DSOUND_DIRECTORY=\"$(datadir)/quadrapassel/sounds\" \
 	-DLOCALEDIR=\"$(datadir)/locale\" \
-	$(QUADRAPASSEL_CFLAGS)
+	$(QUADRAPASSEL_CFLAGS) \
+	-w
 
 quadrapassel_VALAFLAGS = \
 	--pkg posix \
