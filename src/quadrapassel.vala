@@ -298,7 +298,11 @@ public class Quadrapassel : Gtk.Application
             return;
         }
 
-        preferences_dialog = new Gtk.Dialog.with_buttons (_("Quadrapassel Preferences"), window, (Gtk.DialogFlags)0, Gtk.Stock.CLOSE, Gtk.ResponseType.CLOSE, null);
+        preferences_dialog = new Gtk.Dialog.with_buttons (_("Quadrapassel Preferences"),
+                                                          window,
+                                                          (Gtk.DialogFlags)0,
+                                                          _("_Close"), Gtk.ResponseType.CLOSE,
+                                                          null);
         preferences_dialog.set_border_width (5);
         var vbox = (Gtk.Box) preferences_dialog.get_content_area ();
         vbox.set_spacing (2);
@@ -844,11 +848,11 @@ public class ScoreDialog : Gtk.Dialog
 
         if (show_quit)
         {
-            add_button (Gtk.Stock.QUIT, Gtk.ResponseType.CLOSE);
+            add_button (_("_Quit"), Gtk.ResponseType.CLOSE);
             add_button (_("New Game"), Gtk.ResponseType.OK);
         }
         else
-            add_button (Gtk.Stock.OK, Gtk.ResponseType.DELETE_EVENT);
+            add_button (_("_OK"), Gtk.ResponseType.DELETE_EVENT);
         set_size_request (200, 300);
 
         var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 5);
