@@ -1,4 +1,4 @@
-AC_INIT(quadrapassel, 3.9.92)
+AC_INIT(quadrapassel, 3.11.1)
 AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-xz foreign])
 AM_SILENT_RULES([yes])
 AM_MAINTAINER_MODE

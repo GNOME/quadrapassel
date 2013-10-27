@@ -1,3 +1,22 @@
+quadrapassel 3.11.1
+====================
+
+Robert Ancell:
+      Disable all C warnings
+      Stop using deprecated Gtk.Stock
+
+Michael Catanzaro:
+      Remove .desktop.in.in and BugBuddy info
+      Rely on intltool >=0.50 for gsettings translation
+      changes in appdata file
+      Update screenshot for new appdata-validate
+
+Mario Wenzel:
+      Use the dark theme
+
+OKANO Takayoshi:
+      Update Japanese translation
+
 quadrapassel 3.9.92
 ====================
 
