@@ -883,7 +883,7 @@ public class ScoreDialog : Gtk.Dialog
     private static int compare_entries (HistoryEntry a, HistoryEntry b)
     {
         if (a.score != b.score)
-            return a.score - b.score;
+            return b.score - a.score;
         return a.date.compare (b.date);
     }
 
