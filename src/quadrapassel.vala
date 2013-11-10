@@ -487,15 +487,22 @@ public class Quadrapassel : Gtk.Application
 
     private void do_preview_toggle_toggled_cb ()
     {
-        var do_preview = do_preview_toggle.get_active ();
-        settings.set_boolean ("do-preview", do_preview);
-        preview.enabled = do_preview;
+        settings.set_boolean ("do-preview", do_preview_toggle.get_active ());
+        update_preview_settings ();
     }
 
     private void difficult_blocks_toggled_cb ()
     {
         settings.set_boolean ("pick-difficult-blocks", difficult_blocks_toggle.get_active ());
         do_preview_toggle.set_sensitive(!settings.get_boolean ("pick-difficult-blocks"));
+        update_preview_settings ();
+    }
+
+    private void update_preview_settings ()
+    {
+        var do_preview = do_preview_toggle.get_active ();
+        var difficult_block_mode = difficult_blocks_toggle.get_active ();
+        preview.enabled = do_preview && !difficult_block_mode;
     }
 
     private void set_rotate_counter_clock_wise ()
