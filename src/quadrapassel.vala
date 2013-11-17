@@ -170,6 +170,7 @@ public class Quadrapassel : Gtk.Application
 
         var vb2 = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         vb2.set_border_width (10);
+        //vb2.set_homogeneous (true);
         vb2.show ();
         hb.pack_end (vb2, true, false, 0);
 
@@ -180,35 +181,40 @@ public class Quadrapassel : Gtk.Application
         vb2.pack_start (preview, false, false, 0);
 
         var score_grid = new Gtk.Grid ();
+        score_grid.set_row_homogeneous (true);
         score_grid.show ();
         vb2.pack_end (score_grid, true, false, 0);
 
         var label = new Gtk.Label (_("Score:"));
-        label.set_alignment (0.0f, 0.5f);
+        label.set_alignment (0.5f, 0.5f);
+        label.set_size_request (120, -1); // should be at least as wide as the preview area
         label.show ();
         score_grid.attach (label, 0, 0, 1, 1);
-        score_label = new Gtk.Label ("0");
-        score_label.set_alignment (1.0f, 0.5f);
+        score_label = new Gtk.Label ("<big>-</big>");
+        score_label.set_use_markup (true);
+        score_label.set_alignment (0.5f, 0.0f);
         score_label.show ();
-        score_grid.attach (score_label, 1, 0, 1, 1);
+        score_grid.attach (score_label, 0, 1, 1, 2);
 
         label = new Gtk.Label (_("Lines:"));
-        label.set_alignment (0.0f, 0.5f);
+        label.set_alignment (0.5f, 0.5f);
         label.show ();
-        score_grid.attach (label, 0, 1, 1, 1);
-        n_destroyed_label = new Gtk.Label ("0");
-        n_destroyed_label.set_alignment (1.0f, 0.5f);
+        score_grid.attach (label, 0, 4, 1, 1);
+        n_destroyed_label = new Gtk.Label ("<big>-</big>");
+        n_destroyed_label.set_use_markup (true);
+        n_destroyed_label.set_alignment (0.5f, 0.0f);
         n_destroyed_label.show ();
-        score_grid.attach (n_destroyed_label, 1, 1, 1, 1);
+        score_grid.attach (n_destroyed_label, 0, 5, 1, 2);
 
         label = new Gtk.Label (_("Level:"));
-        label.set_alignment (0.0f, 0.5f);
+        label.set_alignment (0.5f, 0.5f);
         label.show ();
-        score_grid.attach (label, 0, 2, 1, 1);
-        level_label = new Gtk.Label ("0");
-        level_label.set_alignment (1.0f, 0.5f);
+        score_grid.attach (label, 0, 8, 1, 1);
+        level_label = new Gtk.Label ("<big>-</big>");
+        level_label.set_use_markup (true);
+        level_label.set_alignment (0.5f, 0.0f);
         level_label.show ();
-        score_grid.attach (level_label, 1, 2, 1, 1);
+        score_grid.attach (level_label, 0, 9, 1, 2);
 
         history = new History (Path.build_filename (Environment.get_user_data_dir (), "quadrapassel", "history"));
         history.load ();
@@ -755,9 +761,9 @@ public class Quadrapassel : Gtk.Application
             n_lines_destroyed = game.n_lines_destroyed;
         }
 
-        score_label.set_text ("%d".printf (score));
-        level_label.set_text ("%d".printf (level));
-        n_destroyed_label.set_text ("%d".printf (n_lines_destroyed));
+        score_label.set_markup ("<big>%d</big>".printf (score));
+        level_label.set_markup ("<big>%d</big>".printf (level));
+        n_destroyed_label.set_markup ("<big>%d</big>".printf (n_lines_destroyed));
     }
 
     private void help_cb ()
