@@ -1,3 +1,21 @@
+quadrapassel 3.11.2
+====================
+
+Michael Catanzaro:
+      Check for *-validate before using it
+      Run autoupdate
+      Sort scores from highest to lowest
+
+Mario Wenzel:
+      Make preview area available at the start of the game (if it is enabled)
+      Changing text layout of sidebar
+
+Daniel Mustieles:
+      Updated Spanish translation
+
+Dimitris Spingos:
+      Updated Greek translation
+
 quadrapassel 3.11.1
 ====================
 
