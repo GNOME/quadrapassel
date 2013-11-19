@@ -796,7 +796,7 @@ public class Quadrapassel : Gtk.Application
                                "documenters", documenters,
                                "translator-credits", _("translator-credits"),
                                "logo-icon-name", "quadrapassel",
-                               "website", "http://wwwindow.gnome.org/projects/gnome-games/",
+                               "website", "http://www.gnome.org/projects/gnome-games/",
                                null);
     }
 
