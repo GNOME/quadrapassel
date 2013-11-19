@@ -16,6 +16,8 @@ public class Preview : GtkClutter.Embed
     /* Clutter representation of a piece */
     private Clutter.Actor? piece = null;
 
+    private Gtk.Frame? parent_frame = null;
+
     public string theme
     {
         set
@@ -52,9 +54,11 @@ public class Preview : GtkClutter.Embed
         set { _enabled = value; update_block (); }
     }
 
-    public Preview ()
+    public Preview (Gtk.Frame? parent)
     {
         size_allocate.connect (size_allocate_cb);
+
+        parent_frame = parent;
 
         /* FIXME: We should scale with the rest of the UI, but that requires
          * changes to the widget layout - i.e. wrap the preview in an
@@ -122,6 +126,15 @@ public class Preview : GtkClutter.Embed
         piece.set_easing_duration (180);
         piece.set_scale (1.0, 1.0);
         piece.restore_easing_state ();
+    }
+
+    public void set_visible(bool visible)
+    {
+        base.set_visible (visible);
+        if (parent_frame != null)
+        {
+            parent_frame.set_visible (visible);
+        }
     }
 
     private void size_allocate_cb (Gtk.Allocation allocation)

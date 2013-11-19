@@ -174,11 +174,15 @@ public class Quadrapassel : Gtk.Application
         vb2.show ();
         hb.pack_end (vb2, true, false, 0);
 
-        preview = new Preview ();
+        var preview_frame = new Gtk.Frame (_("Next:"));
+        preview_frame.set_label_align (0.5f, 1.0f);
+        preview = new Preview (preview_frame);
         preview.theme = settings.get_string ("theme");
         preview.enabled = settings.get_boolean ("do-preview");
+        preview_frame.add (preview);
+        preview_frame.show ();
         preview.show ();
-        vb2.pack_start (preview, false, false, 0);
+        vb2.pack_start (preview_frame, false, false, 0);
 
         var score_grid = new Gtk.Grid ();
         score_grid.set_row_homogeneous (true);
@@ -476,7 +480,7 @@ public class Quadrapassel : Gtk.Application
 
         theme_combo.changed.connect (theme_combo_changed_cb);
 
-        theme_preview = new Preview ();
+        theme_preview = new Preview (null);
         theme_preview.game = new Game ();
         theme_preview.theme = settings.get_string ("theme");
         vbox.pack_start (theme_preview, true, true, 0);
