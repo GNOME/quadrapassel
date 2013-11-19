@@ -6,7 +6,8 @@ quadrapassel_SOURCES = \
 	preview.vala \
 	game.vala \
 	game-view.vala \
-	history.vala
+	history.vala \
+	score-dialog.vala
 
 quadrapassel_CFLAGS = \
 	-DVERSION=\"$(VERSION)\" \
