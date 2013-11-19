@@ -733,16 +733,14 @@ public class Quadrapassel : Gtk.Application
             history.add (entry);
             history.save ();
 
-            if (show_scores (entry, true) == Gtk.ResponseType.CLOSE)
-                window.destroy ();
-            else
+            if (show_scores (entry, true) == Gtk.ResponseType.OK)
                 new_game ();
         }
     }
 
-    private int show_scores (HistoryEntry? selected_entry = null, bool show_quit = false)
+    private int show_scores (HistoryEntry? selected_entry = null, bool show_close = false)
     {
-        var dialog = new ScoreDialog (history, selected_entry, show_quit);
+        var dialog = new ScoreDialog (history, selected_entry, show_close);
         dialog.modal = true;
         dialog.transient_for = window;
 
