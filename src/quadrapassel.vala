@@ -782,7 +782,7 @@ public class Quadrapassel : Gtk.Application
 
     private void about_cb ()
     {
-        string[] authors = { "Gnome Games Team", null };
+        string[] authors = { "GNOME Games Team", null };
         string[] documenters = { "Angela Boyle", null };
 
         Gtk.show_about_dialog (window,
