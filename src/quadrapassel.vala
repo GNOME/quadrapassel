@@ -854,6 +854,7 @@ public class ScoreDialog : Gtk.Dialog
     private History history;
     private HistoryEntry? selected_entry = null;
     private Gtk.ListStore score_model;
+    private Gtk.TreeView scores;
 
     public ScoreDialog (History history, HistoryEntry? selected_entry = null, bool show_quit = false)
     {
@@ -883,7 +884,7 @@ public class ScoreDialog : Gtk.Dialog
 
         score_model = new Gtk.ListStore (3, typeof (string), typeof (string), typeof (int));
 
-        var scores = new Gtk.TreeView ();
+        scores = new Gtk.TreeView ();
         var renderer = new Gtk.CellRendererText ();
         scores.insert_column_with_attributes (-1, _("Date"), renderer, "text", 0, "weight", 2);
         renderer = new Gtk.CellRendererText ();
@@ -918,5 +919,19 @@ public class ScoreDialog : Gtk.Dialog
         Gtk.TreeIter iter;
         score_model.append (out iter);
         score_model.set (iter, 0, date_label, 1, score_label, 2, weight);
+
+        if (entry == selected_entry)
+        {
+            var piter = iter;
+            if (score_model.iter_previous (ref piter))
+            {
+                var ppiter = piter;
+                if (score_model.iter_previous (ref ppiter))
+                    piter = ppiter;
+            }
+            else
+                piter = iter;
+            scores.scroll_to_cell (score_model.get_path (piter), null, false, 0, 0);
+        }
     }
 }
