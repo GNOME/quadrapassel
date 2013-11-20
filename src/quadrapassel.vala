@@ -174,7 +174,7 @@ public class Quadrapassel : Gtk.Application
         vb2.show ();
         hb.pack_end (vb2, true, false, 0);
 
-        var preview_frame = new Gtk.Frame (_("Next:"));
+        var preview_frame = new Gtk.Frame (_("Next"));
         preview_frame.set_label_align (0.5f, 1.0f);
         preview = new Preview (preview_frame);
         preview.theme = settings.get_string ("theme");
@@ -189,7 +189,7 @@ public class Quadrapassel : Gtk.Application
         score_grid.show ();
         vb2.pack_end (score_grid, true, false, 0);
 
-        var label = new Gtk.Label (_("Score:"));
+        var label = new Gtk.Label (_("Score"));
         label.set_alignment (0.5f, 0.5f);
         label.set_size_request (120, -1); // should be at least as wide as the preview area
         label.show ();
@@ -200,7 +200,7 @@ public class Quadrapassel : Gtk.Application
         score_label.show ();
         score_grid.attach (score_label, 0, 1, 1, 2);
 
-        label = new Gtk.Label (_("Lines:"));
+        label = new Gtk.Label (_("Lines"));
         label.set_alignment (0.5f, 0.5f);
         label.show ();
         score_grid.attach (label, 0, 4, 1, 1);
@@ -210,7 +210,7 @@ public class Quadrapassel : Gtk.Application
         n_destroyed_label.show ();
         score_grid.attach (n_destroyed_label, 0, 5, 1, 2);
 
-        label = new Gtk.Label (_("Level:"));
+        label = new Gtk.Label (_("Level"));
         label.set_alignment (0.5f, 0.5f);
         label.show ();
         score_grid.attach (label, 0, 8, 1, 1);
