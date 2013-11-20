@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: gnome-games.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-10-20 03:24+0000\n"
-"PO-Revision-Date: 2013-11-04 18:04+0100\n"
+"POT-Creation-Date: 2013-11-19 17:41+0000\n"
+"PO-Revision-Date: 2013-11-20 13:08+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -121,7 +121,7 @@ msgid "Whether to pick blocks that are hard to place."
 msgstr "Indica si se deben coger bloques difíciles de colocar."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:398
+#: ../src/quadrapassel.vala:410
 msgid "Move left"
 msgstr "Mover izquierda"
 
@@ -130,7 +130,7 @@ msgid "Key press to move left."
 msgstr "Tecla para izquierda."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:401
+#: ../src/quadrapassel.vala:413
 msgid "Move right"
 msgstr "Mover derecha"
 
@@ -139,7 +139,7 @@ msgid "Key press to move right."
 msgstr "Tecla para derecha."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:404
+#: ../src/quadrapassel.vala:416
 msgid "Move down"
 msgstr "Bajar"
 
@@ -148,7 +148,7 @@ msgid "Key press to move down."
 msgstr "Tecla para bajar."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:407
+#: ../src/quadrapassel.vala:419
 msgid "Drop"
 msgstr "Soltar"
 
@@ -157,7 +157,7 @@ msgid "Key press to drop."
 msgstr "Tecla para soltar."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:410
+#: ../src/quadrapassel.vala:422
 msgid "Rotate"
 msgstr "Rotar"
 
@@ -166,7 +166,7 @@ msgid "Key press to rotate."
 msgstr "Tecla para rotar."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:413
+#: ../src/quadrapassel.vala:425
 msgid "Pause"
 msgstr "Pausa"
 
@@ -216,8 +216,8 @@ msgstr ""
 "en algunas filas. También puede, en lugar de permitir que los bloques caigan "
 "aleatoriamente, seleccionar los bloques que serán más difíciles de colocar."
 
-#: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:109
-#: ../src/quadrapassel.vala:773 ../src/quadrapassel.vala:815
+#: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:111
+#: ../src/quadrapassel.vala:789 ../src/quadrapassel.vala:830
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -237,150 +237,158 @@ msgstr "Detenido"
 msgid "Game Over"
 msgstr "Juego terminado"
 
-#: ../src/quadrapassel.vala:92
+#: ../src/quadrapassel.vala:94
 msgid "_New Game"
 msgstr "Juego _nuevo"
 
-#: ../src/quadrapassel.vala:93 ../src/quadrapassel.vala:145
-#: ../src/quadrapassel.vala:698
+#: ../src/quadrapassel.vala:95 ../src/quadrapassel.vala:147
+#: ../src/quadrapassel.vala:717
 msgid "_Pause"
 msgstr "_Pausa"
 
-#: ../src/quadrapassel.vala:94
+#: ../src/quadrapassel.vala:96
 msgid "_Scores"
 msgstr "_Puntuación"
 
-#: ../src/quadrapassel.vala:95
+#: ../src/quadrapassel.vala:97
 msgid "_Preferences"
 msgstr "_Preferencias"
 
-#: ../src/quadrapassel.vala:98
+#: ../src/quadrapassel.vala:100
 msgid "_Help"
 msgstr "Ay_uda"
 
-#: ../src/quadrapassel.vala:99
+#: ../src/quadrapassel.vala:101
 msgid "_About"
 msgstr "_Acerca de"
 
-#: ../src/quadrapassel.vala:102 ../src/quadrapassel.vala:851
+#: ../src/quadrapassel.vala:104
 msgid "_Quit"
 msgstr "_Salir"
 
-#: ../src/quadrapassel.vala:137
+#: ../src/quadrapassel.vala:139
 msgid "_New"
 msgstr "_Nuevo"
 
-#: ../src/quadrapassel.vala:152 ../src/quadrapassel.vala:242
+#: ../src/quadrapassel.vala:154 ../src/quadrapassel.vala:254
 msgid "_Fullscreen"
 msgstr "_Pantalla completa"
 
-#: ../src/quadrapassel.vala:184
+#: ../src/quadrapassel.vala:177
+msgid "Next:"
+msgstr "Siguiente:"
+
+#: ../src/quadrapassel.vala:192
 msgid "Score:"
 msgstr "Puntuación:"
 
-#: ../src/quadrapassel.vala:193
+#: ../src/quadrapassel.vala:203
 msgid "Lines:"
 msgstr "Líneas:"
 
-#: ../src/quadrapassel.vala:202
+#: ../src/quadrapassel.vala:213
 msgid "Level:"
 msgstr "Nivel:"
 
-#: ../src/quadrapassel.vala:237
+#: ../src/quadrapassel.vala:249
 msgid "_Leave Fullscreen"
 msgstr "Abandonar _pantalla completa"
 
-#: ../src/quadrapassel.vala:301
+#: ../src/quadrapassel.vala:313
 msgid "Quadrapassel Preferences"
 msgstr "Preferencias de Quadrapassel"
 
-#: ../src/quadrapassel.vala:304
+#: ../src/quadrapassel.vala:316
 msgid "_Close"
 msgstr "_Cerrar"
 
-#: ../src/quadrapassel.vala:320
+#: ../src/quadrapassel.vala:332
 msgid "Game"
 msgstr "Juego"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:324
+#: ../src/quadrapassel.vala:336
 msgid "_Number of pre-filled rows:"
 msgstr "_Número de filas prerrellenadas:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:339
+#: ../src/quadrapassel.vala:351
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Densidad de bloques en una fila prerrellenada:"
 
 #. starting level
-#: ../src/quadrapassel.vala:353
+#: ../src/quadrapassel.vala:365
 msgid "_Starting level:"
 msgstr "_Nivel inicial:"
 
-#: ../src/quadrapassel.vala:366
+#: ../src/quadrapassel.vala:378
 msgid "_Enable sounds"
 msgstr "_Activar sonidos"
 
-#: ../src/quadrapassel.vala:371
+#: ../src/quadrapassel.vala:383
 msgid "Choose difficult _blocks"
 msgstr "Seleccionar la dificultad de los _bloques"
 
-#: ../src/quadrapassel.vala:376
+#: ../src/quadrapassel.vala:388
 msgid "_Preview next block"
 msgstr "Ver _próximo bloque"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:383
+#: ../src/quadrapassel.vala:395
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Rotar en sentido contrario al reloj"
 
-#: ../src/quadrapassel.vala:388
+#: ../src/quadrapassel.vala:400
 msgid "Show _where the block will land"
 msgstr "Mostrar _dónde aterrizará el bloque"
 
-#: ../src/quadrapassel.vala:432
+#: ../src/quadrapassel.vala:444
 msgid "Controls"
 msgstr "Controles"
 
-#: ../src/quadrapassel.vala:438
+#: ../src/quadrapassel.vala:450
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/quadrapassel.vala:450
+#: ../src/quadrapassel.vala:462
 msgid "Plain"
 msgstr "Plano"
 
-#: ../src/quadrapassel.vala:455
+#: ../src/quadrapassel.vala:467
 msgid "Tango Flat"
 msgstr "Tango liso"
 
-#: ../src/quadrapassel.vala:460
+#: ../src/quadrapassel.vala:472
 msgid "Tango Shaded"
 msgstr "Tango sombreado"
 
-#: ../src/quadrapassel.vala:465
+#: ../src/quadrapassel.vala:477
 msgid "Clean"
 msgstr "Limpiar"
 
-#: ../src/quadrapassel.vala:693
+#: ../src/quadrapassel.vala:712
 msgid "Res_ume"
 msgstr "C_ontinuar"
 
-#: ../src/quadrapassel.vala:775
+#: ../src/quadrapassel.vala:791
+#| msgid ""
+#| "A classic game of fitting falling blocks together.\n"
+#| "\n"
+#| "Quadrapassel is a part of GNOME Games."
 msgid ""
-"A classic game of fitting falling blocks together.\n"
+"A classic game of fitting falling blocks together\n"
 "\n"
 "Quadrapassel is a part of GNOME Games."
 msgstr ""
 "El clásico juego de encajar bloques que caen.\n"
 "\n"
-"Quadrapassel es parte de los Juegos de GNOME."
+"Quadrapassel es parte de los juegos de GNOME."
 
-#: ../src/quadrapassel.vala:778
+#: ../src/quadrapassel.vala:794
 msgid "GNOME Games web site"
 msgstr "Página web de los juegos de GNOME"
 
-#: ../src/quadrapassel.vala:781
+#: ../src/quadrapassel.vala:797
 msgid "translator-credits"
 msgstr ""
 "Daniel Mustieles <daniel.mustieles@gmail.com>, 2008-2012\n"
@@ -389,21 +397,17 @@ msgstr ""
 "Germán Poo Caamaño <gpoo@ubiobio.cl>\n"
 "Pablo Saratxaga <pablo@mandrakesoft.com>"
 
-#: ../src/quadrapassel.vala:852
-msgid "New Game"
-msgstr "Partida nueva"
+#~ msgid "New Game"
+#~ msgstr "Partida nueva"
 
-#: ../src/quadrapassel.vala:855
-msgid "_OK"
-msgstr "_Aceptar"
+#~ msgid "_OK"
+#~ msgstr "_Aceptar"
 
-#: ../src/quadrapassel.vala:873
-msgid "Date"
-msgstr "Fecha"
+#~ msgid "Date"
+#~ msgstr "Fecha"
 
-#: ../src/quadrapassel.vala:876
-msgid "Score"
-msgstr "Puntuación"
+#~ msgid "Score"
+#~ msgstr "Puntuación"
 
 #~ msgid "Chess"
 #~ msgstr "Ajedrez"
@@ -1054,9 +1058,6 @@ msgstr "Puntuación"
 
 #~ msgid "Scores"
 #~ msgstr "Puntuación"
-
-#~ msgid "Next:"
-#~ msgstr "Siguiente:"
 
 #~ msgid "0"
 #~ msgstr "0"
