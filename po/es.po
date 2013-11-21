@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: gnome-games.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-11-19 17:41+0000\n"
-"PO-Revision-Date: 2013-11-20 13:08+0100\n"
+"POT-Creation-Date: 2013-11-21 00:14+0000\n"
+"PO-Revision-Date: 2013-11-21 10:32+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -275,20 +275,23 @@ msgid "_Fullscreen"
 msgstr "_Pantalla completa"
 
 #: ../src/quadrapassel.vala:177
-msgid "Next:"
-msgstr "Siguiente:"
+#| msgid "Next:"
+msgid "Next"
+msgstr "Siguiente"
 
-#: ../src/quadrapassel.vala:192
-msgid "Score:"
-msgstr "Puntuación:"
+#: ../src/quadrapassel.vala:192 ../src/score-dialog.vala:51
+msgid "Score"
+msgstr "Puntuación"
 
 #: ../src/quadrapassel.vala:203
-msgid "Lines:"
-msgstr "Líneas:"
+#| msgid "Lines:"
+msgid "Lines"
+msgstr "Líneas"
 
 #: ../src/quadrapassel.vala:213
-msgid "Level:"
-msgstr "Nivel:"
+#| msgid "Level:"
+msgid "Level"
+msgstr "Nivel"
 
 #: ../src/quadrapassel.vala:249
 msgid "_Leave Fullscreen"
@@ -298,7 +301,7 @@ msgstr "Abandonar _pantalla completa"
 msgid "Quadrapassel Preferences"
 msgstr "Preferencias de Quadrapassel"
 
-#: ../src/quadrapassel.vala:316
+#: ../src/quadrapassel.vala:316 ../src/score-dialog.vala:26
 msgid "_Close"
 msgstr "_Cerrar"
 
@@ -371,10 +374,6 @@ msgid "Res_ume"
 msgstr "C_ontinuar"
 
 #: ../src/quadrapassel.vala:791
-#| msgid ""
-#| "A classic game of fitting falling blocks together.\n"
-#| "\n"
-#| "Quadrapassel is a part of GNOME Games."
 msgid ""
 "A classic game of fitting falling blocks together\n"
 "\n"
@@ -397,17 +396,20 @@ msgstr ""
 "Germán Poo Caamaño <gpoo@ubiobio.cl>\n"
 "Pablo Saratxaga <pablo@mandrakesoft.com>"
 
-#~ msgid "New Game"
-#~ msgstr "Partida nueva"
+#: ../src/score-dialog.vala:27
+msgid "New Game"
+msgstr "Partida nueva"
 
-#~ msgid "_OK"
-#~ msgstr "_Aceptar"
+#: ../src/score-dialog.vala:30
+msgid "_OK"
+msgstr "_Aceptar"
 
-#~ msgid "Date"
-#~ msgstr "Fecha"
+#: ../src/score-dialog.vala:48
+msgid "Date"
+msgstr "Fecha"
 
-#~ msgid "Score"
-#~ msgstr "Puntuación"
+#~ msgid "Score:"
+#~ msgstr "Puntuación:"
 
 #~ msgid "Chess"
 #~ msgstr "Ajedrez"
