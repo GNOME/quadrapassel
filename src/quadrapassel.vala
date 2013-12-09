@@ -99,8 +99,6 @@ public class Quadrapassel : Gtk.Application
         menu.append_section (null, section);
         section.append (_("_Help"), "app.help");
         section.append (_("_About"), "app.about");
-        section = new Menu ();
-        menu.append_section (null, section);
         section.append (_("_Quit"), "app.quit");
         set_app_menu (menu);
 
