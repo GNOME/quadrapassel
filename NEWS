@@ -1,3 +1,29 @@
+quadrapassel 3.11.3
+====================
+
+Mario Wenzel:
+      Added frame around preview area
+
+Michael Catanzaro:
+      Score dialog: autoscroll to new score
+      Split ScoreDialog into its own file
+      Scores dialog: replace Quit with Close
+      About dialog: switch to GtkLicense
+      app menu: standardize Help/About/Quit
+
+Piotr Drąg:
+      Updated POTFILES.in and POTFILES.skip
+
+Daniel Mustieles:
+      Updated Spanish translation
+
+Dimitris Spingos:
+      Updated Greek translation
+
+Fábio Nogueira:
+      Updated Brazilian Portuguese translation
+
+
 quadrapassel 3.11.2
 ====================
 
