@@ -789,12 +789,11 @@ public class Quadrapassel : Gtk.Application
                                "comments", _("A classic game of fitting falling blocks together\n\nQuadrapassel is a part of GNOME Games."),
                                "copyright", "Copyright \xc2\xa9 1999 J. Marcin Gorycki, 2000-2009 Others",
                                "license-type", Gtk.License.GPL_2_0,
-                               "website-label", _("GNOME Games web site"),
                                "authors", authors,
                                "documenters", documenters,
                                "translator-credits", _("translator-credits"),
                                "logo-icon-name", "quadrapassel",
-                               "website", "http://www.gnome.org/projects/gnome-games/",
+                               "website", "https://wiki.gnome.org/Apps/Quadrapassel",
                                null);
     }
 
