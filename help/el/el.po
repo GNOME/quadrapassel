@@ -3,20 +3,22 @@
 # Copyright (C) Free Software Foundation Inc, 2007
 # Χρήστος Μπούνταλης <mpounta@gmail.com>, 2007.
 # Marios Zindilis <m.zindilis@dmajor.org>, 2009.
+# Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnometris.HEAD.el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-24 23:50+0000\n"
-"PO-Revision-Date: 2012-09-29 13:04+0200\n"
-"Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
-"Language-Team: Greek <team@gnome.gr>\n"
+"POT-Creation-Date: 2013-12-30 00:20+0000\n"
+"PO-Revision-Date: 2014-01-11 18:11+0300\n"
+"Last-Translator: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>\n"
+"Language-Team: www.gnome.gr\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -27,19 +29,15 @@ msgstr ""
 " Νικόλαος Μπακαούκας <nikolaosx1@gmail.com>, 2010\n"
 " Μιχάλης Κοτσαρίνης <mk73628@gmail.com>, 2010\n"
 " Θάνος Τρυφωνίδης <tomtryf@gmail.com>, 2012\n"
-"\n"
+" Δημήτρης Σπίγγος <dmtrs32@gmail.com>, 2014\n"
 "Για περισσότερες πληροφορίες, επισκεφθείτε την σελίδα http://gnome.gr/"
 
+#. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:5(media)
+#: C/index.page:5
 msgctxt "_"
 msgid ""
 "external ref='media/quadrapassel22.png' "
@@ -48,176 +46,142 @@ msgstr ""
 "external ref='media/quadrapassel22.png' "
 "md5='4d2440a988c86ad179d0f8148263d8b9'"
 
+#. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:18(media)
+#: C/index.page:18
 msgctxt "_"
 msgid ""
 "external ref='media/quadrapassel.png' md5='95b96f006d5876090ff7a2305652658c'"
 msgstr ""
 "external ref='media/quadrapassel.png' md5='95b96f006d5876090ff7a2305652658c'"
 
+#. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:24(media)
+#: C/index.page:24
 msgctxt "_"
 msgid "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
 msgstr "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
 
+#. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:29(media)
+#: C/index.page:29
 msgctxt "_"
 msgid "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
 msgstr "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
 
+#. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:40(media)
+#: C/index.page:40
 msgctxt "_"
 msgid "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
 msgstr "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
 
+#. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:41(media)
+#: C/index.page:41
 msgctxt "_"
 msgid "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
 msgstr "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
 
+#. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:48(media)
+#: C/index.page:48
 msgctxt "_"
 msgid "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
 msgstr "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
 
+#. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:49(media)
+#: C/index.page:49
 msgctxt "_"
 msgid "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
 msgstr "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
 
+#. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:61(media)
+#: C/index.page:61
 msgctxt "_"
 msgid "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
 msgstr "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
 
+#. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:66(media)
+#: C/index.page:66
 msgctxt "_"
 msgid "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
 msgstr "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
 
-#: C/index.page:6(info/title)
+#. (itstool) path: info/title
+#: C/index.page:6
 msgctxt "link"
 msgid "Quadrapassel"
 msgstr "Τουβλάκια"
 
-#: C/index.page:7(info/title)
+#. (itstool) path: info/title
+#: C/index.page:7
 msgctxt "text"
 msgid "Quadrapassel"
 msgstr "Τουβλάκια"
 
-#: C/index.page:10(credit/name) C/bug-filing.page:14(credit/name)
-#: C/develop.page:15(credit/name) C/documentation.page:13(credit/name)
-#: C/get-involved.page:7(credit/name) C/playgame.page:7(credit/name)
-#: C/preferences.page:7(credit/name) C/score.page:7(credit/name)
-#: C/translate.page:13(credit/name)
+#. (itstool) path: credit/name
+#: C/index.page:10 C/bug-filing.page:14 C/develop.page:15
+#: C/documentation.page:13 C/get-involved.page:7 C/playgame.page:7
+#: C/preferences.page:7 C/score.page:7 C/translate.page:13
 msgid "Elena Petrevska"
 msgstr "Elena Petrevska"
 
-#: C/index.page:12(credit/years) C/bug-filing.page:11(credit/years)
-#: C/develop.page:12(credit/years) C/documentation.page:10(credit/years)
-#: C/get-involved.page:9(credit/years) C/playgame.page:9(credit/years)
-#: C/preferences.page:9(credit/years) C/score.page:9(credit/years)
-#: C/translate.page:10(credit/years)
+#. (itstool) path: credit/years
+#: C/index.page:12 C/bug-filing.page:11 C/develop.page:12
+#: C/documentation.page:10 C/get-involved.page:9 C/playgame.page:9
+#: C/preferences.page:9 C/score.page:9 C/translate.page:10
 msgid "2012"
 msgstr "2012"
 
-#: C/index.page:15(license/p) C/bug-filing.page:18(license/p)
-#: C/develop.page:19(license/p) C/documentation.page:17(license/p)
-#: C/get-involved.page:12(license/p) C/preferences.page:16(license/p)
-#: C/score.page:16(license/p)
+#. (itstool) path: license/p
+#: C/index.page:15 C/bug-filing.page:18 C/develop.page:19
+#: C/documentation.page:17 C/get-involved.page:12 C/preferences.page:16
+#: C/score.page:16
 msgid "Creative Commons Share Alike 3.0"
 msgstr "Creative Commons Share Alike 3.0"
 
-#: C/index.page:18(page/title)
+#. (itstool) path: page/title
+#: C/index.page:18
 msgid ""
 "<media type=\"image\" src=\"media/quadrapassel.png\">Quadrapassel logo</"
-"media>Quadrapassel"
+"media> Quadrapassel"
 msgstr ""
-"<media type=\"image\" src=\"media/quadrapassel.png\">Λογότυπου του "
+"<media type=\"image\" src=\"media/quadrapassel.png\">Λογότυπος του "
 "Τουβλάκια</media> Τουβλάκια"
 
-#: C/index.page:20(page/p)
+#. (itstool) path: page/p
+#: C/index.page:20
 msgid ""
 "In Quadrapassel, the GNOME version of Tetris, your goal is to create as many "
 "complete horizontal lines as possible. The lines are made from seven "
@@ -234,113 +198,70 @@ msgstr ""
 "αυξάνεται η βαθμολογία σας, το επίπεδο δυσκολίας, και η πτώση των κύβων "
 "γίνεται γρηγορότερη."
 
-#: C/index.page:33(td/p)
+#. (itstool) path: td/p
+#: C/index.page:33
 msgid "<link xref=\"playgame\">Play the game</link>"
 msgstr "<link xref=\"playgame\">Παίξτε το παιχνίδι</link>"
 
-#: C/index.page:34(td/p)
+#. (itstool) path: td/p
+#: C/index.page:34
 msgid "<link xref=\"score\">Score points</link>"
 msgstr "<link xref=\"score\">Σημειώστε πόντους</link>"
 
-#: C/index.page:55(td/p)
+#. (itstool) path: td/p
+#: C/index.page:55
 msgid "<link xref=\"preferences\">Preferences</link>"
 msgstr "<link xref=\"preferences\">Προτιμήσεις</link>"
 
-#: C/index.page:56(td/p)
+#. (itstool) path: td/p
+#: C/index.page:56
 msgid "<link xref=\"get-involved\">Get involved</link>"
 msgstr "<link xref=\"get-involved\">Συμμετοχή</link>"
 
+#. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/bug-filing.page:49(media) C/develop.page:28(media)
-#: C/documentation.page:28(media) C/translate.page:41(media)
+#: C/bug-filing.page:51 C/develop.page:28 C/documentation.page:28
+#: C/translate.page:41
 msgctxt "_"
 msgid ""
 "external ref='media/go-previous.png' md5='e9ce3da4ee6497ce2f38178c3c929872'"
 msgstr ""
 "external ref='media/go-previous.png' md5='e9ce3da4ee6497ce2f38178c3c929872'"
 
+#. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/bug-filing.page:50(media) C/develop.page:29(media)
-#: C/documentation.page:29(media) C/get-involved.page:22(media)
-#: C/playgame.page:43(media) C/preferences.page:72(media)
-#: C/score.page:37(media) C/translate.page:42(media)
+#: C/bug-filing.page:52 C/develop.page:29 C/documentation.page:29
+#: C/get-involved.page:22 C/playgame.page:43 C/preferences.page:72
+#: C/score.page:37 C/translate.page:42
 msgctxt "_"
 msgid "external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
 msgstr ""
 "external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
 
-#: C/bug-filing.page:9(credit/name) C/develop.page:10(credit/name)
-#: C/documentation.page:8(credit/name) C/playgame.page:12(credit/name)
-#: C/preferences.page:12(credit/name) C/score.page:12(credit/name)
-#: C/translate.page:8(credit/name)
+#. (itstool) path: credit/name
+#: C/bug-filing.page:9 C/develop.page:10 C/documentation.page:8
+#: C/playgame.page:12 C/preferences.page:12 C/score.page:12 C/translate.page:8
 msgid "Tiffany Antopolski"
 msgstr "Tiffany Antopolski"
 
-#: C/bug-filing.page:20(info/desc)
+#. (itstool) path: info/desc
+#: C/bug-filing.page:20
 msgid "Found a problem? Feel free to file a bug."
 msgstr "Βρήκατε ένα πρόβλημα; Μη διστάσετε να αναφέρετε το σφάλμα."
 
-#: C/bug-filing.page:23(page/title)
+#. (itstool) path: page/title
+#: C/bug-filing.page:23
 msgid "Report a Problem"
 msgstr "Αναφορά ενός προβλήματος"
 
-#: C/bug-filing.page:24(page/p)
+#. (itstool) path: page/p
+#: C/bug-filing.page:24
 msgid ""
 "If you notice a problem you can file a <em>bug report</em>. To file a bug, "
 "go to <link href=\"https://bugzilla.gnome.org/\"/>."
@@ -349,7 +270,8 @@ msgstr ""
 "(bug report)</em>. Για να κάνετε αναφορά σφάλματος πηγαίνετε <link href="
 "\"https://bugzilla.gnome.org/\"/>."
 
-#: C/bug-filing.page:27(page/p)
+#. (itstool) path: page/p
+#: C/bug-filing.page:27
 msgid ""
 "This is a bug tracking system where users and developers can file details "
 "about bugs, crashes and request enhancements."
@@ -357,7 +279,8 @@ msgstr ""
 "Αυτό είναι ένα σύστημα καταγραφής σφαλμάτων όπου χρήστες και προγραμματιστές "
 "μπορούν να κάνουν αναφορές για σφάλματα, «κρασαρίσματα» και βελτιώσεις."
 
-#: C/bug-filing.page:30(page/p)
+#. (itstool) path: page/p
+#: C/bug-filing.page:30
 msgid ""
 "To participate you need an account which will give you the ability to gain "
 "access, file bugs, and make comments. Also, you need to register so you can "
@@ -371,32 +294,26 @@ msgstr ""
 "ήδη ένα λογαριασμό, πατήστε απλά στο σύνδεσμο <gui>New Account</gui> για να "
 "δημιουργήσετε έναν."
 
-#: C/bug-filing.page:33(page/p)
+#. (itstool) path: page/p
+#: C/bug-filing.page:34
 msgid ""
 "Once you have an account, log in, click on <guiseq><gui>File a Bug</"
-"gui><gui>Applications</gui><gui>gnome-games</gui></guiseq>. Before reporting "
-"a bug, please read the <link href=\"https://bugzilla.gnome.org/page.cgi?"
-"id=bug-writing.html\">bug writing guidelines</link>, and please <link href="
-"\"https://bugzilla.gnome.org/browse.cgi?product=gnome-games\">browse</link> "
-"for the bug to see if it already exists."
+"gui><gui>Applications</gui><gui>quadrapassel</gui></guiseq>. Before "
+"reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
+"page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
+"<link href=\"https://bugzilla.gnome.org/browse.cgi?product=quadrapassel"
+"\">browse</link> for the bug to see if it already exists."
 msgstr ""
-"Μόλις δημιουργήσετε λογαριασμό, συνδεθείτε (log in), πατήστε στο "
-"<guiseq><gui>File a Bug</gui><gui>Applications</gui><gui>gnome-games</gui></"
-"guiseq>. Πριν αναφέρετε ένα σφάλμα, παρακαλώ διαβάστε το <link href="
+"Μόλις δημιουργήσετε έναν λογαριασμό, συνδεθείτε, πατήστε στο "
+"<guiseq><gui>File a Bug</gui><gui>Applications</gui><gui>quadrapassel</gui></"
+"guiseq>. Πριν αναφέρετε ένα σφάλμα, παρακαλούμε διαβάστε το <link href="
 "\"https://bugzilla.gnome.org/page.cgi?id=bug-writing.html\">bug writing "
-"guidelines</link>, και παρακαλώ κάντε <link href=\"https://bugzilla.gnome."
-"org/browse.cgi?product=gnome-games\">αναζήτηση</link> για να δείτε αν "
+"guidelines</link> και παρακαλούμε <link href=\"https://bugzilla.gnome.org/"
+"browse.cgi?product=quadrapassel\">περιηγηθείτε</link> για να δείτε αν "
 "υπάρχει η ίδια αναφορά ήδη."
 
-#: C/bug-filing.page:37(page/p)
-msgid ""
-"To file your bug, choose the component <gui>quadrapassel</gui> in the "
-"<gui>Component</gui> menu."
-msgstr ""
-"Για να αναφέρετε το σφάλμα, διαλέξτε το συστατικό <gui>quadrapassel</gui> "
-"στο μενού <gui>Component</gui>."
-
-#: C/bug-filing.page:40(page/p)
+#. (itstool) path: page/p
+#: C/bug-filing.page:42
 msgid ""
 "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
 "<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
@@ -406,7 +323,8 @@ msgstr ""
 "στο μενού <gui>Severity</gui>. Συμπληρώστε την Περίληψη και την Περιγραφή "
 "και πατήστε <gui>Commit</gui>."
 
-#: C/bug-filing.page:44(page/p)
+#. (itstool) path: page/p
+#: C/bug-filing.page:46
 msgid ""
 "Your report will be given an ID number, and its status will be updated as it "
 "is being dealt with."
@@ -414,8 +332,9 @@ msgstr ""
 "Θα δοθεί ένας αριθμός ID στην αναφορά σας, και η κατάσταση του θα ενημερωθεί "
 "σαν να αντιμετωπίστηκε."
 
-#: C/bug-filing.page:49(section/p) C/develop.page:28(section/p)
-#: C/documentation.page:28(section/p) C/translate.page:41(section/p)
+#. (itstool) path: section/p
+#: C/bug-filing.page:51 C/develop.page:28 C/documentation.page:28
+#: C/translate.page:41
 msgid ""
 "<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous.png"
 "\"/>Get Involved</link>"
@@ -423,10 +342,10 @@ msgstr ""
 "<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous.png"
 "\"/>Συμμετοχή</link>"
 
-#: C/bug-filing.page:50(section/p) C/develop.page:29(section/p)
-#: C/documentation.page:29(section/p) C/get-involved.page:22(section/p)
-#: C/playgame.page:43(section/p) C/preferences.page:72(section/p)
-#: C/score.page:37(section/p) C/translate.page:42(section/p)
+#. (itstool) path: section/p
+#: C/bug-filing.page:52 C/develop.page:29 C/documentation.page:29
+#: C/get-involved.page:22 C/playgame.page:43 C/preferences.page:72
+#: C/score.page:37 C/translate.page:42
 msgid ""
 "<link xref=\"index\"><media type=\"image\" src=\"media/go-home.png\"/>HOME</"
 "link>"
@@ -434,17 +353,20 @@ msgstr ""
 "<link xref=\"index\"><media type=\"image\" src=\"media/go-home.png\"/>ΑΡΧΗ</"
 "link>"
 
-#: C/develop.page:21(info/desc)
+#. (itstool) path: info/desc
+#: C/develop.page:21
 msgid "Have a plan for developing the game? We are always open to new ideas."
 msgstr ""
 "Έχετε ένα σχέδιο για την ανάπτυξη του παιχνιδιού; Είμαστε πάντα ανοιχτοί σε "
 "νέες ιδέες."
 
-#: C/develop.page:24(page/title)
+#. (itstool) path: page/title
+#: C/develop.page:24
 msgid "Help develop"
 msgstr "Βοήθεια στην ανάπτυξη"
 
-#: C/develop.page:25(page/p)
+#. (itstool) path: page/p
+#: C/develop.page:25
 msgid ""
 "If you would like to <link href=\"https://live.gnome.org/GnomeGames/"
 "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
@@ -460,15 +382,18 @@ msgstr ""
 "games\">irc</link>, ή μέσα από τη <link href=\"http://mail.gnome.org/mailman/"
 "listinfo/games-list\">λίστα αλληλογραφίας</link> μας."
 
-#: C/documentation.page:19(info/desc)
+#. (itstool) path: info/desc
+#: C/documentation.page:19
 msgid "Contribute to the documentation."
 msgstr "Συμμετοχή στην τεκμηρίωση."
 
-#: C/documentation.page:22(page/title)
+#. (itstool) path: page/title
+#: C/documentation.page:22
 msgid "Help write documentation"
 msgstr "Βοήθεια συγγραφής τεκμηρίωσης"
 
-#: C/documentation.page:23(page/p)
+#. (itstool) path: page/p
+#: C/documentation.page:23
 msgid ""
 "To contribute to the Documentation Project, feel free to get in touch with "
 "us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
@@ -480,7 +405,8 @@ msgstr ""
 "%2Fdocs\">irc</link>, ή μέσα από τη <link href=\"http://mail.gnome.org/"
 "mailman/listinfo/gnome-doc-list\">λίστα αλληλογραφίας</link> μας."
 
-#: C/documentation.page:25(page/p)
+#. (itstool) path: page/p
+#: C/documentation.page:25
 msgid ""
 "Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
@@ -488,11 +414,13 @@ msgstr ""
 "Επίσης το <link href=\"https://live.gnome.org/DocumentationProject/"
 "Contributing\">wiki</link> μας περιέχει χρήσιμες πληροφορίες."
 
-#: C/get-involved.page:16(page/title)
+#. (itstool) path: page/title
+#: C/get-involved.page:16
 msgid "Get Involved"
 msgstr "Συμμετοχή"
 
-#: C/get-involved.page:17(page/p)
+#. (itstool) path: page/p
+#: C/get-involved.page:17
 msgid ""
 "<app>Quadrapassel</app> is maintained by a volunteer community. You are "
 "invited to participate in any of the following ways."
@@ -500,23 +428,28 @@ msgstr ""
 "Τα <app>Τουβλάκια</app> διατηρούνται από μια εθελοντική κοινότητα. Είστε "
 "ευπρόσδεκτοι να συμμετάσχετε με οποιοδήποτε από τους ακόλουθους τρόπους."
 
-#: C/legal.xml:3(p/link)
+#. (itstool) path: p/link
+#: C/legal.xml:3
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 
-#: C/legal.xml:3(license/p)
+#. (itstool) path: license/p
+#: C/legal.xml:3
 msgid "This work is licensed under a <_:link-1/>."
 msgstr "Αυτό το έργο έχει αδειοδοτηθεί υπό την <_:link-1/>."
 
-#: C/license.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/license.page:8
 msgid "Legal information."
 msgstr "Νομικές πληροφορίες."
 
-#: C/license.page:11(page/title)
+#. (itstool) path: page/title
+#: C/license.page:11
 msgid "License"
 msgstr "Άδεια χρήσης"
 
-#: C/license.page:12(page/p)
+#. (itstool) path: page/p
+#: C/license.page:12
 msgid ""
 "This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
 "Unported license."
@@ -524,35 +457,43 @@ msgstr ""
 "Αυτό το έργο διανέμεται υπό την άδεια CreativeCommons Attribution-Share "
 "Alike 3.0 Unported."
 
-#: C/license.page:20(page/p)
+#. (itstool) path: page/p
+#: C/license.page:20
 msgid "You are free:"
 msgstr "Μπορείτε να:"
 
-#: C/license.page:25(item/title)
+#. (itstool) path: item/title
+#: C/license.page:25
 msgid "<em>To share</em>"
 msgstr "<em>Να μοιραστείτε</em>"
 
-#: C/license.page:26(item/p)
+#. (itstool) path: item/p
+#: C/license.page:26
 msgid "To copy, distribute and transmit the work."
 msgstr "Να αντιγράψετε, να διανείμετε και να μεταδόσετε το έργο."
 
-#: C/license.page:29(item/title)
+#. (itstool) path: item/title
+#: C/license.page:29
 msgid "<em>To remix</em>"
 msgstr "<em>Να τροποποιήσετε</em>"
 
-#: C/license.page:30(item/p)
+#. (itstool) path: item/p
+#: C/license.page:30
 msgid "To adapt the work."
 msgstr "Να προσαρμόσετε το έργο."
 
-#: C/license.page:33(page/p)
+#. (itstool) path: page/p
+#: C/license.page:33
 msgid "Under the following conditions:"
 msgstr "Υπό τους εξής όρους:"
 
-#: C/license.page:38(item/title)
+#. (itstool) path: item/title
+#: C/license.page:38
 msgid "<em>Attribution</em>"
 msgstr "<em>Απόδοση</em>"
 
-#: C/license.page:39(item/p)
+#. (itstool) path: item/p
+#: C/license.page:39
 msgid ""
 "You must attribute the work in the manner specified by the author or "
 "licensor (but not in any way that suggests that they endorse you or your use "
@@ -562,11 +503,13 @@ msgstr ""
 "δημιουργό του ή αυτόν που παρέχει την άδεια (αλλά όχι με τρόπο που να εννοεί "
 "ότι εγκρίνουν εσάς ή τη δική σας χρήση του έργου)."
 
-#: C/license.page:46(item/title)
+#. (itstool) path: item/title
+#: C/license.page:46
 msgid "<em>Share Alike</em>"
 msgstr "<em>Παρόμοια διανομή</em>"
 
-#: C/license.page:47(item/p)
+#. (itstool) path: item/p
+#: C/license.page:47
 msgid ""
 "If you alter, transform, or build upon this work, you may distribute the "
 "resulting work only under the same, similar or a compatible license."
@@ -574,7 +517,8 @@ msgstr ""
 "Αν μετατρέψετε, μετασχηματίσετε ή επεκτείνετε αυτό το έργο, μπορείτε να "
 "αναδιανείμετε το αποτέλεσμα υπό την ίδια, παρόμοια ή συμβατή άδεια χρήσης."
 
-#: C/license.page:53(page/p)
+#. (itstool) path: page/p
+#: C/license.page:53
 msgid ""
 "For the full text of the license, see the <link href=\"http://"
 "creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
@@ -586,26 +530,31 @@ msgstr ""
 "link>, ή διαβάστε όλη την <link href=\"http://creativecommons.org/licenses/"
 "by-sa/3.0/\">Πράξη Commons</link>."
 
-#: C/playgame.page:16(license/p)
+#. (itstool) path: license/p
+#: C/playgame.page:16
 msgid "Creative Commons Attribution Share Alike 3.0"
 msgstr "Creative Commons Attribution-Share Alike 3.0 Unported License"
 
-#: C/playgame.page:20(page/title)
+#. (itstool) path: page/title
+#: C/playgame.page:20
 msgid "PLAY PLAY PLAY!"
 msgstr "ΠΑΙΞΤΕ ΠΑΙΞΤΕ ΠΑΙΞΤΕ !"
 
-#: C/playgame.page:23(section/title)
+#. (itstool) path: section/title
+#: C/playgame.page:23
 msgid "How To Play"
 msgstr "Πως να παίξετε"
 
-#: C/playgame.page:26(item/p)
+#. (itstool) path: item/p
+#: C/playgame.page:26
 msgid ""
 "The <key>←</key> and <key>→</key> keys move the blocks across the screen."
 msgstr ""
 "Τα πλήκτρα <key>←</key> και <key>→</key> μετακινούν το τούβλο αντίστοιχα "
 "στην οθόνη."
 
-#: C/playgame.page:27(item/p)
+#. (itstool) path: item/p
+#: C/playgame.page:27
 msgid ""
 "The <key>↑</key> key rotates the block. The rotation (which is "
 "counterclockwise by default) can be changed in the <link xref=\"preferences"
@@ -615,7 +564,8 @@ msgstr ""
 "προεπιλογή είναι αριστερόστροφη) μπορεί να αλλαχθεί στις <link xref="
 "\"preferences\">Προτιμήσεις</link>."
 
-#: C/playgame.page:28(item/p)
+#. (itstool) path: item/p
+#: C/playgame.page:28
 msgid ""
 "The <key>SPACEBAR</key> and <key>↓</key> key increase the speed of the drop. "
 "The <key>SPACEBAR</key> causes a hard-drop (instant move to the bottom). The "
@@ -627,15 +577,18 @@ msgstr ""
 "κάτω) ενώ το πλήκτρο <key>↓</key> προκαλεί απαλή ρίψη (προσωρινή αύξηση της "
 "ταχύτητας καθώς το πλήκτρο είναι πατημένο)."
 
-#: C/playgame.page:33(section/title)
+#. (itstool) path: section/title
+#: C/playgame.page:33
 msgid "Rules"
 msgstr "Κανόνες"
 
-#: C/playgame.page:35(section/p)
+#. (itstool) path: section/p
+#: C/playgame.page:35
 msgid "There are a couple of rules that you should keep in mind:"
 msgstr "Υπάρχουν μερικοί κανόνες που πρέπει να θυμάστε:"
 
-#: C/playgame.page:37(item/p)
+#. (itstool) path: item/p
+#: C/playgame.page:37
 msgid ""
 "You can pause, end, start a new game, get help or quit the program at any "
 "time."
@@ -643,19 +596,23 @@ msgstr ""
 "Μπορείτε ανά πάση στιγμή να διακόψετε, να τερματίσετε, να ξεκινήσετε ένα νέο "
 "παιχνίδι, να βοηθηθείτε ή κλείσετε το πρόγραμμα"
 
-#: C/playgame.page:38(item/p)
+#. (itstool) path: item/p
+#: C/playgame.page:38
 msgid "You can pause the game as many times as you want."
 msgstr "Μπορείτε να διακόψετε το παιχνίδι όσες φορές θέλετε."
 
-#: C/preferences.page:18(info/desc)
+#. (itstool) path: info/desc
+#: C/preferences.page:18
 msgid "Preferences for the game and the theme."
 msgstr "Προτιμήσεις για το παιχνίδι και το θέμα."
 
-#: C/preferences.page:22(page/title)
+#. (itstool) path: page/title
+#: C/preferences.page:22
 msgid "Game Preferences"
 msgstr "Προτιμήσεις παιχνιδιού"
 
-#: C/preferences.page:24(page/p)
+#. (itstool) path: page/p
+#: C/preferences.page:24
 msgid ""
 "To change the game preferences, click the <guiseq><gui>Quadrapassel menu</"
 "gui><gui>Preferences</gui></guiseq>."
@@ -663,7 +620,8 @@ msgstr ""
 "Για να αλλάξετε τις προτιμήσεις του παιχνιδιού, κάντε κλικ στο "
 "<guiseq><gui>Τουβλάκια</gui><gui>Προτιμήσεις</gui></guiseq>."
 
-#: C/preferences.page:26(page/p)
+#. (itstool) path: page/p
+#: C/preferences.page:26
 msgid ""
 "The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
 "<gui>Theme</gui>."
@@ -671,11 +629,13 @@ msgstr ""
 "Οι τρεις διαθέσιμες καρτέλες είναι <gui>Έλεγχοι</gui>, <gui>Παιχνίδι</gui> "
 "και <gui>Θέμα</gui>."
 
-#: C/preferences.page:29(section/title)
+#. (itstool) path: section/title
+#: C/preferences.page:29
 msgid "Controls"
 msgstr "Έλεγχοι"
 
-#: C/preferences.page:30(section/p)
+#. (itstool) path: section/p
+#: C/preferences.page:30
 msgid ""
 "By double-clicking on the given controls, thus selecting the new one, you "
 "can change the control keys."
@@ -683,11 +643,13 @@ msgstr ""
 "Με διπλό κλικ πάνω στους δοσμένους ελέγχους, επιλέγοντας έτσι έναν νέο, "
 "μπορείτε να αλλάξετε τα πλήκτρα ελέγχου."
 
-#: C/preferences.page:34(section/title)
+#. (itstool) path: section/title
+#: C/preferences.page:34
 msgid "Game"
 msgstr "Παιχνίδι"
 
-#: C/preferences.page:35(section/p)
+#. (itstool) path: section/p
+#: C/preferences.page:35
 msgid ""
 "Under the <gui>Game</gui> tab, you can change the way in which the game "
 "starts:"
@@ -695,7 +657,8 @@ msgstr ""
 "Στη καρτέλα <gui>Παιχνίδι</gui>, μπορείτε να αλλάξετε το τρόπο που ξεκινά το "
 "παιχνίδι:"
 
-#: C/preferences.page:37(item/p)
+#. (itstool) path: item/p
+#: C/preferences.page:37
 msgid ""
 "<gui>Number of pre-filled rows</gui> indicates how many rows with blocks "
 "there will be when the game starts."
@@ -703,7 +666,8 @@ msgstr ""
 "Ο <gui>Αριθμός προ-συμπληρωμένων γραμμών</gui> δείχνει πόσες γραμμές με "
 "τουβλάκια θα υπάρχουν όταν ξεκινά το παιχνίδι."
 
-#: C/preferences.page:38(item/p)
+#. (itstool) path: item/p
+#: C/preferences.page:38
 msgid ""
 "<gui>Density of blocks in a pre-filled row</gui> indicates how many blocks "
 "there will be in a pre-filled row when the game starts."
@@ -711,95 +675,116 @@ msgstr ""
 "Η <gui>Πυκνότητα τούβλων στις προ-συμπληρωμένες γραμμές</gui> δείχνει πόσα "
 "τουβλάκια θα υπάρχουν σε μια προ-συμπληρωμένη γραμμή όταν ξεκινά το παιχνίδι."
 
-#: C/preferences.page:39(item/p)
+#. (itstool) path: item/p
+#: C/preferences.page:39
 msgid "<gui>Starting level</gui> controls the speed with which you will start."
 msgstr ""
 "Το <gui>Επίπεδο εκκίνησης</gui> ελέγχει τη ταχύτητα με την οποία θα "
 "ξεκινήσετε."
 
-#: C/preferences.page:41(section/p)
+#. (itstool) path: section/p
+#: C/preferences.page:41
 msgid "These options can vary from 0 to 19, 0 to 10, and 1 to 20 respectively."
 msgstr ""
 "Αυτές οι επιλογές μπορεί να ποικίλουν από 0 έως 19, 0 έως 10, και 1 έως 20 "
 "αντίστοιχα."
 
-#: C/preferences.page:43(section/p)
+#. (itstool) path: section/p
+#: C/preferences.page:43
 msgid "Other available options are:"
 msgstr "Άλλες διαθέσιμες επιλογές είναι:"
 
-#: C/preferences.page:45(item/p)
+#. (itstool) path: item/p
+#: C/preferences.page:45
 msgid "<gui>Enable sounds</gui>"
 msgstr "<gui>Ενεργοποίηση ήχων</gui>"
 
-#: C/preferences.page:46(item/p)
+#. (itstool) path: item/p
+#: C/preferences.page:46
 msgid "<gui>Preview next block</gui>"
 msgstr "<gui>Προεπισκόπηση επόμενου τούβλου</gui>"
 
-#: C/preferences.page:47(item/p)
+#. (itstool) path: item/p
+#: C/preferences.page:47
 msgid "<gui>Choose difficult blocks</gui>"
 msgstr "<gui>Επιλογή δύσκολων τούβλων</gui>"
 
-#: C/preferences.page:48(item/p)
+#. (itstool) path: item/p
+#: C/preferences.page:48
 msgid "<gui>Rotate blocks counterclockwise</gui>"
 msgstr "<gui>Περιστροφή τούβλου αριστερόστροφα</gui>"
 
-#: C/preferences.page:49(item/p)
+#. (itstool) path: item/p
+#: C/preferences.page:49
 msgid "<gui>Show where the block will land</gui>"
 msgstr "<gui>Εμφάνιση της θέσης προσγείωσης του τούβλου</gui>"
 
-#: C/preferences.page:54(section/title)
+#. (itstool) path: section/title
+#: C/preferences.page:54
 msgid "Theme"
 msgstr "Θέμα"
 
-#: C/preferences.page:55(section/p)
+#. (itstool) path: section/p
+#: C/preferences.page:55
 msgid "To change the theme:"
 msgstr "Για να αλλάξετε το θέμα:"
 
-#: C/preferences.page:57(item/p)
+#. (itstool) path: item/p
+#: C/preferences.page:57
 msgid ""
 "click the <guiseq><gui>Quadrapassel menu</gui><gui>Preference</gui></guiseq>."
 msgstr ""
 "κάντε κλικ στο μενού <guiseq><gui>Τουβλάκια</gui><gui>Προτιμήσεις</gui></"
 "guiseq>."
 
-#: C/preferences.page:58(item/p)
+#. (itstool) path: item/p
+#: C/preferences.page:58
 msgid "select the <gui>Theme</gui> tab."
 msgstr "επιλέξτε την καρτέλα <gui>Θέμα</gui>."
 
-#: C/preferences.page:60(section/p)
+#. (itstool) path: section/p
+#: C/preferences.page:60
 msgid "Four different themes are available for the blocks' contours:"
 msgstr ""
 "Τέσσερα διαφορετικά θέματα είναι διαθέσιμα για το περίγραμμα των τούβλων:"
 
-#: C/preferences.page:64(item/p)
+#. (itstool) path: item/p
+#: C/preferences.page:64
 msgid "Plain"
 msgstr "Απλό"
 
-#: C/preferences.page:65(item/p)
+#. (itstool) path: item/p
+#: C/preferences.page:65
 msgid "Tango Flat"
 msgstr "Επίπεδο Tango"
 
-#: C/preferences.page:66(item/p)
+#. (itstool) path: item/p
+#: C/preferences.page:66
 msgid "Tango Shaded"
 msgstr "Σκιασμένο Tango"
 
-#: C/preferences.page:67(item/p)
+#. (itstool) path: item/p
+#: C/preferences.page:67
 msgid "Clean"
 msgstr "Καθαρό"
 
-#: C/score.page:20(page/title)
+#. (itstool) path: page/title
+#: C/score.page:20
 msgid "Score"
 msgstr "Βαθμολογία"
 
-#: C/score.page:21(page/p)
+#. (itstool) path: page/p
+#: C/score.page:21
 msgid "Do you think you can reach level 10?"
 msgstr "Πιστεύετε πως μπορείτε να φτάσετε στο επίπεδο 10;"
 
-#: C/score.page:24(section/title)
+#. (itstool) path: section/title
+#: C/score.page:24
 msgid "Score More"
 msgstr "Σκοράρετε περισσότερα"
 
-#: C/score.page:25(section/p)
+#. (itstool) path: section/p
+#: C/score.page:25
 msgid ""
 "If you start from level 1, the only way to go to the next level is by "
 "completing more lines, that is, scoring more points. In order for you to "
@@ -812,7 +797,8 @@ msgstr ""
 "προσαρμόσετε την οθόνη, το πληκτρολόγιο και το επίπεδο (την ταχύτητα) που "
 "σας ταιριάζει περισσότερο!"
 
-#: C/score.page:26(section/p)
+#. (itstool) path: section/p
+#: C/score.page:26
 msgid ""
 "You can make many changes to the keyboard controls, the contour of the "
 "blocks, the number and density of lines with which you start, and the speed "
@@ -825,11 +811,13 @@ msgstr ""
 "ρυθμίσεις σας από τις <link xref=\"preferences\">Προτιμήσεις</link>. Αφού "
 "αποφασίσετε τι σας ταιριάζει περισσότερο, θα είστε ο καλύτερος!"
 
-#: C/score.page:30(section/title)
+#. (itstool) path: section/title
+#: C/score.page:30
 msgid "High Scores"
 msgstr "Υψηλές βαθμολογίες"
 
-#: C/score.page:31(section/p)
+#. (itstool) path: section/p
+#: C/score.page:31
 msgid ""
 "Everyone wants to be on the top of the list, right? In <guiseq><gui>Game</"
 "gui><gui>Scores</gui></guiseq> you can find the records from the highest to "
@@ -839,7 +827,8 @@ msgstr ""
 "<guiseq><gui>Παιχνίδι</gui><gui>Βαθμολογίες</gui></guiseq> θα βρείτε τις "
 "καταγραφές από την υψηλότερη στη χαμηλότερη βαθμολογία."
 
-#: C/score.page:33(section/p)
+#. (itstool) path: section/p
+#: C/score.page:33
 msgid ""
 "The scores cannot be deleted, so do not worry that someone will remove your "
 "best high score!"
@@ -847,15 +836,18 @@ msgstr ""
 "Οι βαθμολογίες δεν μπορούν να διαγραφούν, γι' αυτό μην ανησυχείτε ότι "
 "κάποιος θα αφαιρέσει την υψηλότερη σας βαθμολογία!"
 
-#: C/translate.page:16(info/desc)
+#. (itstool) path: info/desc
+#: C/translate.page:16
 msgid "Do you know a world language?"
 msgstr "Γνωρίζετε κάποια γλώσσα;"
 
-#: C/translate.page:19(page/title)
+#. (itstool) path: page/title
+#: C/translate.page:19
 msgid "Help translate"
 msgstr "Βοήθεια στη μετάφραση"
 
-#: C/translate.page:21(page/p)
+#. (itstool) path: page/p
+#: C/translate.page:21
 msgid ""
 "The <app>GNOME games</app> user interface and documentation is being "
 "translated by a world-wide volunteer community."
@@ -863,15 +855,17 @@ msgstr ""
 "Η διεπαφή και η τεκμηρίωση του χρήστη των <app>παιχνιδιών του GNOME</app> "
 "αναπτύσσονται και συντηρούνται από μια παγκόσμια εθελοντική κοινότητα."
 
-#: C/translate.page:25(page/p)
+#. (itstool) path: page/p
+#: C/translate.page:25
 msgid ""
-"There are <link href=\"http://l10n.gnome.org/module/gnome-games/\">many "
+"There are <link href=\"http://l10n.gnome.org/module/quadrapassel/\">many "
 "languages</link> for which translations are still needed."
 msgstr ""
-"Υπάρχουν <link href=\"http://l10n.gnome.org/module/gnome-games/\">πολλές "
+"Υπάρχουν <link href=\"http://l10n.gnome.org/module/quadrapassel/\">πολλές "
 "γλώσσες</link> για τις οποίες απαιτούνται μεταφράσεις."
 
-#: C/translate.page:29(page/p)
+#. (itstool) path: page/p
+#: C/translate.page:29
 msgid ""
 "To start translating you will need to <link href=\"http:l10n.gnome.org"
 "\">create an account</link> and join the <link href=\"http://l10n.gnome.org/"
@@ -883,7 +877,8 @@ msgstr ""
 "\"http://l10n.gnome.org/teams/\">ομάδα μετάφρασης</link> της γλώσσας σας. "
 "Αυτό θα σας δώσει την δυνατότητα να ανεβάσετε νέες μεταφράσεις."
 
-#: C/translate.page:33(page/p)
+#. (itstool) path: page/p
+#: C/translate.page:33
 msgid ""
 "You can chat with GNOME translators using <link href=\"https://cbe003.chat."
 "mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. People on the "
@@ -895,7 +890,8 @@ msgstr ""
 "\">irc</link>. Άνθρωποι στο κανάλι βρίσκονται παντού, έτσι μπορείτε να "
 "πάρετε μια άμεση απάντηση ως αποτέλεσμα των διαφορών ώρας."
 
-#: C/translate.page:37(page/p)
+#. (itstool) path: page/p
+#: C/translate.page:37
 msgid ""
 "Alternatively, you can contact the Internationalization Team using their "
 "<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
@@ -904,6 +900,13 @@ msgstr ""
 "Εναλλακτικά, μπορείτε να επικοινωνήσετε με την ομάδα διεθνοποίησης "
 "χρησιμοποιώντας τη <link href=\"http://mail.gnome.org/mailman/listinfo/gnome-"
 "i18n\">λίστα αλληλογραφίας</link> τους."
+
+#~ msgid ""
+#~ "To file your bug, choose the component <gui>quadrapassel</gui> in the "
+#~ "<gui>Component</gui> menu."
+#~ msgstr ""
+#~ "Για να αναφέρετε το σφάλμα, διαλέξτε το συστατικό <gui>quadrapassel</gui> "
+#~ "στο μενού <gui>Component</gui>."
 
 #~ msgid "link"
 #~ msgstr "σύνδεσμο"
