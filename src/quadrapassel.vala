@@ -675,13 +675,13 @@ public class Quadrapassel : Gtk.Application
         if (game.paused)
         {
             bool rtl = Gtk.Widget.get_default_direction () == Gtk.TextDirection.RTL;
-            pause_play_button_image.set_from_icon_name (rtl ? "media-playback-start-rtl" :
-                                                              "media-playback-start",
+            pause_play_button_image.set_from_icon_name (rtl ? "media-playback-start-rtl-symbolic" :
+                                                              "media-playback-start-symbolic",
                                                         Gtk.IconSize.DIALOG);
         }
         else
         {
-            pause_play_button_image.set_from_icon_name ("media-playback-pause", Gtk.IconSize.DIALOG);
+            pause_play_button_image.set_from_icon_name ("media-playback-pause-symbolic", Gtk.IconSize.DIALOG);
         }
     }
 
@@ -693,7 +693,7 @@ public class Quadrapassel : Gtk.Application
     private void complete_cb ()
     {
         pause_action.set_enabled (false);
-        pause_play_button_image.set_from_icon_name ( "view-refresh" , Gtk.IconSize.DIALOG);
+        pause_play_button_image.set_from_icon_name ( "view-refresh-symbolic" , Gtk.IconSize.DIALOG);
         pause_play_button.action_name = "app.new-game";
 
         if (game.score > 0)
