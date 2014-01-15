@@ -103,6 +103,7 @@ public class Quadrapassel : Gtk.Application
         settings = new Settings ("org.gnome.quadrapassel");
 
         window = new Gtk.ApplicationWindow (this);
+        window.icon_name = "quadrapassel";
         window.set_events (window.get_events () | Gdk.EventMask.KEY_PRESS_MASK | Gdk.EventMask.KEY_RELEASE_MASK);
         window.title = _("Quadrapassel");
         window.configure_event.connect (window_configure_event_cb);
@@ -112,6 +113,12 @@ public class Quadrapassel : Gtk.Application
         window.set_default_size (settings.get_int ("window-width"), settings.get_int ("window-height"));        
         if (settings.get_boolean ("window-is-maximized"))
             window.maximize ();
+
+        var headerbar = new Gtk.HeaderBar ();
+        headerbar.show_close_button = true;
+        headerbar.set_title (_("Quadrapassel"));
+        headerbar.show ();
+        window.set_titlebar (headerbar);
 
         var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         vbox.show ();
