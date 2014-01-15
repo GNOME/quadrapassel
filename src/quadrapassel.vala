@@ -45,6 +45,9 @@ public class Quadrapassel : Gtk.Application
     private Gtk.ToolButton pause_button;
     private Gtk.ToolButton fullscreen_button;
 
+    private Gtk.Button pause_play_button;
+    private Gtk.Image pause_play_button_image;
+
     private Gtk.Dialog preferences_dialog;
     private Gtk.SpinButton starting_level_spin;
     private Preview theme_preview;
@@ -156,6 +159,14 @@ public class Quadrapassel : Gtk.Application
         fullscreen_button.show ();
         toolbar.insert (fullscreen_button, -1);
 
+        pause_play_button = new Gtk.Button();
+        pause_play_button_image = new Gtk.Image.from_icon_name ("media-playback-start-symbolic", Gtk.IconSize.DIALOG);
+        pause_play_button.add (pause_play_button_image);
+        pause_play_button.action_name = "app.new-game";
+        pause_play_button.hexpand = true;
+        pause_play_button_image.show ();
+        pause_play_button.show ();
+
         var hb = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
         hb.show ();
         vbox.pack_start (hb, true, true, 0);
@@ -217,6 +228,9 @@ public class Quadrapassel : Gtk.Application
         level_label.set_alignment (0.5f, 0.0f);
         level_label.show ();
         score_grid.attach (level_label, 0, 9, 1, 2);
+
+        score_grid.attach (pause_play_button, 0, 11, 1, 2);
+
 
         history = new History (Path.build_filename (Environment.get_user_data_dir (), "quadrapassel", "history"));
         history.load ();
@@ -700,6 +714,7 @@ public class Quadrapassel : Gtk.Application
 
         update_score ();
         pause_action.set_enabled (true);
+        pause_play_button.action_name = "app.pause";
     }
 
     private void pause_changed_cb ()
@@ -708,11 +723,13 @@ public class Quadrapassel : Gtk.Application
         {
             pause_button.icon_name = "media-playback-start";
             pause_button.label = _("Res_ume");
+            pause_play_button_image.set_from_icon_name ("media-playback-start", Gtk.IconSize.DIALOG);
         }
         else
         {
             pause_button.icon_name = "media-playback-pause";
             pause_button.label = _("_Pause");
+            pause_play_button_image.set_from_icon_name ("media-playback-pause", Gtk.IconSize.DIALOG);
         }
     }
 
@@ -724,6 +741,9 @@ public class Quadrapassel : Gtk.Application
     private void complete_cb ()
     {
         pause_action.set_enabled (false);
+        pause_play_button_image.set_from_icon_name ( "view-refresh" , Gtk.IconSize.DIALOG);
+        pause_play_button.action_name = "app.new-game";
+
         if (game.score > 0)
         {
             var date = new DateTime.now_local ();
