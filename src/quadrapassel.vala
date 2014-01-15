@@ -131,8 +131,12 @@ public class Quadrapassel : Gtk.Application
         view.game = new Game (20, 14, 1, 20, 10);
         view.show ();
 
+        bool rtl = Gtk.Widget.get_default_direction () == Gtk.TextDirection.RTL;
+
         pause_play_button = new Gtk.Button();
-        pause_play_button_image = new Gtk.Image.from_icon_name ("media-playback-start-symbolic", Gtk.IconSize.DIALOG);
+        pause_play_button_image = new Gtk.Image.from_icon_name (rtl ? "media-playback-start-rtl-symbolic" :
+                                                                      "media-playback-start-symbolic",
+                                                                Gtk.IconSize.DIALOG);
         pause_play_button.add (pause_play_button_image);
         pause_play_button.action_name = "app.new-game";
         pause_play_button.hexpand = true;
@@ -670,7 +674,10 @@ public class Quadrapassel : Gtk.Application
     {
         if (game.paused)
         {
-            pause_play_button_image.set_from_icon_name ("media-playback-start", Gtk.IconSize.DIALOG);
+            bool rtl = Gtk.Widget.get_default_direction () == Gtk.TextDirection.RTL;
+            pause_play_button_image.set_from_icon_name (rtl ? "media-playback-start-rtl" :
+                                                              "media-playback-start",
+                                                        Gtk.IconSize.DIALOG);
         }
         else
         {
