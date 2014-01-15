@@ -17,7 +17,6 @@ public class Quadrapassel : Gtk.Application
     private Gtk.Window window;
     private int window_width;
     private int window_height;
-    private bool is_fullscreen;
     private bool is_maximized;
 
     /* Game being played */
@@ -42,9 +41,6 @@ public class Quadrapassel : Gtk.Application
 
     private SimpleAction pause_action;
 
-    private Gtk.ToolButton pause_button;
-    private Gtk.ToolButton fullscreen_button;
-
     private Gtk.Button pause_play_button;
     private Gtk.Image pause_play_button_image;
 
@@ -66,7 +62,6 @@ public class Quadrapassel : Gtk.Application
         { "pause",         pause_cb       },
         { "scores",        scores_cb      },
         { "preferences",   preferences_cb },
-        { "fullscreen",    fullscreen_cb  },
         { "help",          help_cb        },
         { "about",         about_cb       },
         { "quit",          quit_cb        }
@@ -115,9 +110,7 @@ public class Quadrapassel : Gtk.Application
         window.key_press_event.connect (key_press_event_cb);
         window.key_release_event.connect (key_release_event_cb);
         window.set_default_size (settings.get_int ("window-width"), settings.get_int ("window-height"));        
-        if (settings.get_boolean ("window-is-fullscreen"))
-            window.fullscreen ();
-        else if (settings.get_boolean ("window-is-maximized"))
+        if (settings.get_boolean ("window-is-maximized"))
             window.maximize ();
 
         var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
@@ -130,34 +123,6 @@ public class Quadrapassel : Gtk.Application
         view.show_shadow = settings.get_boolean ("show-shadow");
         view.game = new Game (20, 14, 1, 20, 10);
         view.show ();
-
-        var toolbar = new Gtk.Toolbar ();
-        toolbar.show ();
-        toolbar.show_arrow = false;
-        toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_PRIMARY_TOOLBAR);
-        vbox.pack_start (toolbar, false, true, 0);
-
-        var new_game_button = new Gtk.ToolButton (null, _("_New"));
-        new_game_button.use_underline = true;
-        new_game_button.icon_name = "document-new";
-        new_game_button.action_name = "app.new-game";
-        new_game_button.is_important = true;
-        new_game_button.show ();
-        toolbar.insert (new_game_button, -1);
-
-        pause_button = new Gtk.ToolButton (null, _("_Pause"));
-        pause_button.icon_name = "media-playback-pause";
-        pause_button.use_underline = true;
-        pause_button.action_name = "app.pause";
-        pause_button.show ();
-        toolbar.insert (pause_button, -1);
-
-        fullscreen_button = new Gtk.ToolButton (null, _("_Fullscreen"));
-        fullscreen_button.icon_name = "view-fullscreen";
-        fullscreen_button.use_underline = true;
-        fullscreen_button.action_name = "app.fullscreen";
-        fullscreen_button.show ();
-        toolbar.insert (fullscreen_button, -1);
 
         pause_play_button = new Gtk.Button();
         pause_play_button_image = new Gtk.Image.from_icon_name ("media-playback-start-symbolic", Gtk.IconSize.DIALOG);
@@ -240,7 +205,7 @@ public class Quadrapassel : Gtk.Application
 
     private bool window_configure_event_cb (Gdk.EventConfigure event)
     {
-        if (!is_maximized && !is_fullscreen)
+        if (!is_maximized)
         {
             window_width = event.width;
             window_height = event.height;
@@ -253,20 +218,6 @@ public class Quadrapassel : Gtk.Application
     {
         if ((event.changed_mask & Gdk.WindowState.MAXIMIZED) != 0)
             is_maximized = (event.new_window_state & Gdk.WindowState.MAXIMIZED) != 0;
-        if ((event.changed_mask & Gdk.WindowState.FULLSCREEN) != 0)
-        {
-            is_fullscreen = (event.new_window_state & Gdk.WindowState.FULLSCREEN) != 0;
-            if (is_fullscreen)
-            {
-                fullscreen_button.label = _("_Leave Fullscreen");
-                fullscreen_button.icon_name = "view-restore";
-            }
-            else
-            {
-                fullscreen_button.label = _("_Fullscreen");            
-                fullscreen_button.icon_name = "view-fullscreen";
-            }
-        }
         return false;
     }
 
@@ -278,7 +229,6 @@ public class Quadrapassel : Gtk.Application
         settings.set_int ("window-width", window_width);
         settings.set_int ("window-height", window_height);
         settings.set_boolean ("window-is-maximized", is_maximized);
-        settings.set_boolean ("window-is-fullscreen", is_fullscreen);
 
         /* Record the score if the game isn't over. */
         if (game != null && game.score > 0)
@@ -293,14 +243,6 @@ public class Quadrapassel : Gtk.Application
     protected override void activate ()
     {
         window.present ();
-    }
-
-    private void fullscreen_cb ()
-    {
-        if (is_fullscreen)
-            window.unfullscreen ();
-        else
-            window.fullscreen ();
     }
 
     private void preferences_dialog_close_cb ()
@@ -721,14 +663,10 @@ public class Quadrapassel : Gtk.Application
     {
         if (game.paused)
         {
-            pause_button.icon_name = "media-playback-start";
-            pause_button.label = _("Res_ume");
             pause_play_button_image.set_from_icon_name ("media-playback-start", Gtk.IconSize.DIALOG);
         }
         else
         {
-            pause_button.icon_name = "media-playback-pause";
-            pause_button.label = _("_Pause");
             pause_play_button_image.set_from_icon_name ("media-playback-pause", Gtk.IconSize.DIALOG);
         }
     }
