@@ -128,7 +128,7 @@ public class Preview : GtkClutter.Embed
         piece.restore_easing_state ();
     }
 
-    public void set_visible(bool visible)
+    public new void set_visible (bool visible)
     {
         base.set_visible (visible);
         if (parent_frame != null)
