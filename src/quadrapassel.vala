@@ -140,6 +140,7 @@ public class Quadrapassel : Gtk.Application
         pause_play_button.add (pause_play_button_image);
         pause_play_button.action_name = "app.new-game";
         pause_play_button.hexpand = true;
+        pause_play_button.relief = Gtk.ReliefStyle.NONE;
         pause_play_button_image.show ();
         pause_play_button.show ();
 
