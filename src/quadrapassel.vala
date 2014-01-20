@@ -742,7 +742,7 @@ public class Quadrapassel : Gtk.Application
                                "program-name", _("Quadrapassel"),
                                "version", VERSION,
                                "comments", _("A classic game of fitting falling blocks together\n\nQuadrapassel is a part of GNOME Games."),
-                               "copyright", "Copyright \xc2\xa9 1999 J. Marcin Gorycki, 2000-2009 Others",
+                               "copyright", "Copyright © 1999 J. Marcin Gorycki, 2000–2009 Others",
                                "license-type", Gtk.License.GPL_2_0,
                                "authors", authors,
                                "documenters", documenters,
