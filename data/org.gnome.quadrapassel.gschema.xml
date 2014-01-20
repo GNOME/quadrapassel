@@ -89,11 +89,11 @@
       <description>Key press to pause.</description>
     </key>
     <key name="window-width" type="i">
-      <default>780</default>
+      <default>587</default>
       <summary>Width of the window in pixels</summary>
     </key>
     <key name="window-height" type="i">
-      <default>600</default>
+      <default>555</default>
       <summary>Height of the window in pixels</summary>
     </key>
     <key name="window-is-maximized" type="b">
