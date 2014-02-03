@@ -89,7 +89,7 @@
       <description>Key press to pause.</description>
     </key>
     <key name="window-width" type="i">
-      <default>587</default>
+      <default>585</default>
       <summary>Width of the window in pixels</summary>
     </key>
     <key name="window-height" type="i">
