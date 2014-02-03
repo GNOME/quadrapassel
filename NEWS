@@ -1,3 +1,31 @@
+quadrapassel 3.11.5
+====================
+
+Michael Catanzaro:
+      Remove Pause from the app menu
+
+Mario Wenzel:
+      Redone Layout, Removed toolbar and fullscreen mode, added headerbar
+      Add multi-functional button (new game, pause, unpause)
+      Change GTK dependency to 3.10
+      Change default window size to something nicer looking
+
+Yosef Or Boczko:
+      Fix the start icon in RTL
+      Updated Hebrew translation
+
+Wylmer Wang:
+      Update Chinese simplified translation
+
+Chao-Hsiung Liao:
+      Updated Traditional Chinese translation
+
+Kjartan Maraas:
+      Updated Norwegian bokmål translation
+
+Marek Černocký:
+      Updated Czech translation
+
 quadrapassel 3.11.4
 ====================
 
