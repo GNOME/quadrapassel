@@ -119,8 +119,8 @@ public class Quadrapassel : Gtk.Application
         headerbar.show ();
         window.set_titlebar (headerbar);
 
-        var score_grid = new Gtk.Grid ();
-        window.add (score_grid);
+        var game_grid = new Gtk.Grid ();
+        window.add (game_grid);
 
         view = new GameView ();
         view.theme = settings.get_string ("theme");
@@ -129,7 +129,7 @@ public class Quadrapassel : Gtk.Application
         view.game = new Game (20, 14, 1, 20, 10);
         view.show ();
 
-        score_grid.attach (view, 0, 0, 2, 18);
+        game_grid.attach (view, 0, 0, 2, 18);
 
         bool rtl = Gtk.Widget.get_default_direction () == Gtk.TextDirection.RTL;
 
@@ -154,40 +154,40 @@ public class Quadrapassel : Gtk.Application
         preview_frame.show ();
         preview.show ();
 
-        score_grid.attach (preview_frame, 2, 1, 1, 3);
-        score_grid.show ();
+        game_grid.attach (preview_frame, 2, 1, 1, 3);
+        game_grid.show ();
 
         var label = new Gtk.Label (_("Score"));
         label.set_alignment (0.5f, 0.5f);
         label.show ();
-        score_grid.attach (label, 2, 5, 1, 1);
+        game_grid.attach (label, 2, 5, 1, 1);
         score_label = new Gtk.Label ("<big>-</big>");
         score_label.set_use_markup (true);
         score_label.set_alignment (0.5f, 0.0f);
         score_label.show ();
-        score_grid.attach (score_label, 2, 6, 1, 2);
+        game_grid.attach (score_label, 2, 6, 1, 2);
 
         label = new Gtk.Label (_("Lines"));
         label.set_alignment (0.5f, 0.5f);
         label.show ();
-        score_grid.attach (label, 2, 9, 1, 1);
+        game_grid.attach (label, 2, 9, 1, 1);
         n_destroyed_label = new Gtk.Label ("<big>-</big>");
         n_destroyed_label.set_use_markup (true);
         n_destroyed_label.set_alignment (0.5f, 0.0f);
         n_destroyed_label.show ();
-        score_grid.attach (n_destroyed_label, 2, 10, 1, 2);
+        game_grid.attach (n_destroyed_label, 2, 10, 1, 2);
 
         label = new Gtk.Label (_("Level"));
         label.set_alignment (0.5f, 0.5f);
         label.show ();
-        score_grid.attach (label, 2, 13, 1, 1);
+        game_grid.attach (label, 2, 13, 1, 1);
         level_label = new Gtk.Label ("<big>-</big>");
         level_label.set_use_markup (true);
         level_label.set_alignment (0.5f, 0.0f);
         level_label.show ();
-        score_grid.attach (level_label, 2, 14, 1, 2);
+        game_grid.attach (level_label, 2, 14, 1, 2);
 
-        score_grid.attach (pause_play_button, 2, 16, 1, 2);
+        game_grid.attach (pause_play_button, 2, 16, 1, 2);
 
 
         history = new History (Path.build_filename (Environment.get_user_data_dir (), "quadrapassel", "history"));
