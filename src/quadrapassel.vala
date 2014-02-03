@@ -120,6 +120,7 @@ public class Quadrapassel : Gtk.Application
         window.set_titlebar (headerbar);
 
         var game_grid = new Gtk.Grid ();
+        game_grid.set_column_homogeneous(true);
         window.add (game_grid);
 
         view = new GameView ();
