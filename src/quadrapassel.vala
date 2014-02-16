@@ -140,6 +140,7 @@ public class Quadrapassel : Gtk.Application
                                                                 Gtk.IconSize.DIALOG);
         pause_play_button.add (pause_play_button_image);
         pause_play_button.action_name = "app.new-game";
+        pause_play_button.tooltip_text = _("Start a new game");
         pause_play_button.valign = Gtk.Align.CENTER;
         pause_play_button.halign = Gtk.Align.CENTER;
         pause_play_button.relief = Gtk.ReliefStyle.NONE;
@@ -661,10 +662,12 @@ public class Quadrapassel : Gtk.Application
             pause_play_button_image.set_from_icon_name (rtl ? "media-playback-start-rtl-symbolic" :
                                                               "media-playback-start-symbolic",
                                                         Gtk.IconSize.DIALOG);
+            pause_play_button.tooltip_text = _("Unpause the game");
         }
         else
         {
             pause_play_button_image.set_from_icon_name ("media-playback-pause-symbolic", Gtk.IconSize.DIALOG);
+            pause_play_button.tooltip_text = _("Pause the game");
         }
     }
 
@@ -678,6 +681,7 @@ public class Quadrapassel : Gtk.Application
         pause_action.set_enabled (false);
         pause_play_button_image.set_from_icon_name ( "view-refresh-symbolic" , Gtk.IconSize.DIALOG);
         pause_play_button.action_name = "app.new-game";
+        pause_play_button.tooltip_text = _("Start a new game");
 
         if (game.score > 0)
         {
