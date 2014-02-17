@@ -5,15 +5,15 @@
 # Lucas Vieites <lucas@codexion.com>, 2007, 2008.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
 # Chris Leonard <cjl@laptop.org>, 2012.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2008, 2009, 2010, 2011, 2012, 2013.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2008, 2009, 2010, 2011, 2012, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-11-21 00:14+0000\n"
-"PO-Revision-Date: 2013-11-21 10:32+0100\n"
+"POT-Creation-Date: 2014-02-17 11:17+0000\n"
+"PO-Revision-Date: 2014-02-17 16:30+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -121,7 +121,7 @@ msgid "Whether to pick blocks that are hard to place."
 msgstr "Indica si se deben coger bloques difíciles de colocar."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:410
+#: ../src/quadrapassel.vala:359
 msgid "Move left"
 msgstr "Mover izquierda"
 
@@ -130,7 +130,7 @@ msgid "Key press to move left."
 msgstr "Tecla para izquierda."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:413
+#: ../src/quadrapassel.vala:362
 msgid "Move right"
 msgstr "Mover derecha"
 
@@ -139,7 +139,7 @@ msgid "Key press to move right."
 msgstr "Tecla para derecha."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:416
+#: ../src/quadrapassel.vala:365
 msgid "Move down"
 msgstr "Bajar"
 
@@ -148,7 +148,7 @@ msgid "Key press to move down."
 msgstr "Tecla para bajar."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:419
+#: ../src/quadrapassel.vala:368
 msgid "Drop"
 msgstr "Soltar"
 
@@ -157,7 +157,7 @@ msgid "Key press to drop."
 msgstr "Tecla para soltar."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:422
+#: ../src/quadrapassel.vala:371
 msgid "Rotate"
 msgstr "Rotar"
 
@@ -166,7 +166,7 @@ msgid "Key press to rotate."
 msgstr "Tecla para rotar."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:425
+#: ../src/quadrapassel.vala:374
 msgid "Pause"
 msgstr "Pausa"
 
@@ -185,10 +185,6 @@ msgstr "Altura de la ventana en píxeles"
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:37
 msgid "true if the window is maximized"
 msgstr "cierto si la ventana está maximizada"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:38
-msgid "true if the window is fullscren"
-msgstr "cierto si la ventana está en pantalla completa"
 
 #: ../data/quadrapassel.appdata.xml.in.h:1
 msgid ""
@@ -216,8 +212,9 @@ msgstr ""
 "en algunas filas. También puede, en lugar de permitir que los bloques caigan "
 "aleatoriamente, seleccionar los bloques que serán más difíciles de colocar."
 
-#: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:111
-#: ../src/quadrapassel.vala:789 ../src/quadrapassel.vala:830
+#: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
+#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:746
+#: ../src/quadrapassel.vala:786
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -237,143 +234,132 @@ msgstr "Detenido"
 msgid "Game Over"
 msgstr "Juego terminado"
 
-#: ../src/quadrapassel.vala:94
+#: ../src/quadrapassel.vala:92
 msgid "_New Game"
 msgstr "Juego _nuevo"
 
-#: ../src/quadrapassel.vala:95 ../src/quadrapassel.vala:147
-#: ../src/quadrapassel.vala:717
-msgid "_Pause"
-msgstr "_Pausa"
-
-#: ../src/quadrapassel.vala:96
+#: ../src/quadrapassel.vala:93
 msgid "_Scores"
 msgstr "_Puntuación"
 
-#: ../src/quadrapassel.vala:97
+#: ../src/quadrapassel.vala:94
 msgid "_Preferences"
 msgstr "_Preferencias"
 
-#: ../src/quadrapassel.vala:100
+#: ../src/quadrapassel.vala:97
 msgid "_Help"
 msgstr "Ay_uda"
 
-#: ../src/quadrapassel.vala:101
+#: ../src/quadrapassel.vala:98
 msgid "_About"
 msgstr "_Acerca de"
 
-#: ../src/quadrapassel.vala:104
+#: ../src/quadrapassel.vala:99
 msgid "_Quit"
 msgstr "_Salir"
 
-#: ../src/quadrapassel.vala:139
-msgid "_New"
-msgstr "_Nuevo"
+#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:684
+msgid "Start a new game"
+msgstr "Iniciar un juego nuevo"
 
-#: ../src/quadrapassel.vala:154 ../src/quadrapassel.vala:254
-msgid "_Fullscreen"
-msgstr "_Pantalla completa"
-
-#: ../src/quadrapassel.vala:177
-#| msgid "Next:"
+#: ../src/quadrapassel.vala:150
 msgid "Next"
 msgstr "Siguiente"
 
-#: ../src/quadrapassel.vala:192 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:162 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "Puntuación"
 
-#: ../src/quadrapassel.vala:203
-#| msgid "Lines:"
+#: ../src/quadrapassel.vala:172
 msgid "Lines"
 msgstr "Líneas"
 
-#: ../src/quadrapassel.vala:213
-#| msgid "Level:"
+#: ../src/quadrapassel.vala:182
 msgid "Level"
 msgstr "Nivel"
 
-#: ../src/quadrapassel.vala:249
-msgid "_Leave Fullscreen"
-msgstr "Abandonar _pantalla completa"
-
-#: ../src/quadrapassel.vala:313
+#: ../src/quadrapassel.vala:262
 msgid "Quadrapassel Preferences"
 msgstr "Preferencias de Quadrapassel"
 
-#: ../src/quadrapassel.vala:316 ../src/score-dialog.vala:26
+#: ../src/quadrapassel.vala:265 ../src/score-dialog.vala:26
 msgid "_Close"
 msgstr "_Cerrar"
 
-#: ../src/quadrapassel.vala:332
+#: ../src/quadrapassel.vala:281
 msgid "Game"
 msgstr "Juego"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:336
+#: ../src/quadrapassel.vala:285
 msgid "_Number of pre-filled rows:"
 msgstr "_Número de filas prerrellenadas:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:351
+#: ../src/quadrapassel.vala:300
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Densidad de bloques en una fila prerrellenada:"
 
 #. starting level
-#: ../src/quadrapassel.vala:365
+#: ../src/quadrapassel.vala:314
 msgid "_Starting level:"
 msgstr "_Nivel inicial:"
 
-#: ../src/quadrapassel.vala:378
+#: ../src/quadrapassel.vala:327
 msgid "_Enable sounds"
 msgstr "_Activar sonidos"
 
-#: ../src/quadrapassel.vala:383
+#: ../src/quadrapassel.vala:332
 msgid "Choose difficult _blocks"
 msgstr "Seleccionar la dificultad de los _bloques"
 
-#: ../src/quadrapassel.vala:388
+#: ../src/quadrapassel.vala:337
 msgid "_Preview next block"
 msgstr "Ver _próximo bloque"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:395
+#: ../src/quadrapassel.vala:344
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Rotar en sentido contrario al reloj"
 
-#: ../src/quadrapassel.vala:400
+#: ../src/quadrapassel.vala:349
 msgid "Show _where the block will land"
 msgstr "Mostrar _dónde aterrizará el bloque"
 
-#: ../src/quadrapassel.vala:444
+#: ../src/quadrapassel.vala:393
 msgid "Controls"
 msgstr "Controles"
 
-#: ../src/quadrapassel.vala:450
+#: ../src/quadrapassel.vala:399
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/quadrapassel.vala:462
+#: ../src/quadrapassel.vala:411
 msgid "Plain"
 msgstr "Plano"
 
-#: ../src/quadrapassel.vala:467
+#: ../src/quadrapassel.vala:416
 msgid "Tango Flat"
 msgstr "Tango liso"
 
-#: ../src/quadrapassel.vala:472
+#: ../src/quadrapassel.vala:421
 msgid "Tango Shaded"
 msgstr "Tango sombreado"
 
-#: ../src/quadrapassel.vala:477
+#: ../src/quadrapassel.vala:426
 msgid "Clean"
 msgstr "Limpiar"
 
-#: ../src/quadrapassel.vala:712
-msgid "Res_ume"
-msgstr "C_ontinuar"
+#: ../src/quadrapassel.vala:665
+#| msgid "Pause the game"
+msgid "Unpause the game"
+msgstr "Reanudar el juego"
 
-#: ../src/quadrapassel.vala:791
+#: ../src/quadrapassel.vala:670
+msgid "Pause the game"
+msgstr "Pausar el juego"
+
+#: ../src/quadrapassel.vala:748
 msgid ""
 "A classic game of fitting falling blocks together\n"
 "\n"
@@ -383,11 +369,7 @@ msgstr ""
 "\n"
 "Quadrapassel es parte de los juegos de GNOME."
 
-#: ../src/quadrapassel.vala:794
-msgid "GNOME Games web site"
-msgstr "Página web de los juegos de GNOME"
-
-#: ../src/quadrapassel.vala:797
+#: ../src/quadrapassel.vala:753
 msgid "translator-credits"
 msgstr ""
 "Daniel Mustieles <daniel.mustieles@gmail.com>, 2008-2012\n"
@@ -407,6 +389,27 @@ msgstr "_Aceptar"
 #: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "Fecha"
+
+#~ msgid "true if the window is fullscren"
+#~ msgstr "cierto si la ventana está en pantalla completa"
+
+#~ msgid "_Pause"
+#~ msgstr "_Pausa"
+
+#~ msgid "_New"
+#~ msgstr "_Nuevo"
+
+#~ msgid "_Fullscreen"
+#~ msgstr "_Pantalla completa"
+
+#~ msgid "_Leave Fullscreen"
+#~ msgstr "Abandonar _pantalla completa"
+
+#~ msgid "Res_ume"
+#~ msgstr "C_ontinuar"
+
+#~ msgid "GNOME Games web site"
+#~ msgstr "Página web de los juegos de GNOME"
 
 #~ msgid "Score:"
 #~ msgstr "Puntuación:"
@@ -435,9 +438,6 @@ msgstr "Fecha"
 
 #~ msgid "_Contents"
 #~ msgstr "Índ_ice"
-
-#~ msgid "Start a new game"
-#~ msgstr "Iniciar un juego nuevo"
 
 #~ msgid "Undo Move"
 #~ msgstr "Deshacer movimiento"
@@ -1130,9 +1130,6 @@ msgstr "Fecha"
 
 #~ msgid "End the current network game and return to network server"
 #~ msgstr "Terminar la partida de red actual y volver al servidor de red"
-
-#~ msgid "Pause the game"
-#~ msgstr "Pausar el juego"
 
 #~ msgid "Show a list of players in the network game"
 #~ msgstr "Mostrar una lista de jugadores en la partida de red"
@@ -2474,7 +2471,8 @@ msgstr "Fecha"
 #~ msgstr "Usar la bandera de «desconocido»"
 
 #~ msgid "Set to true to be able to mark squares as unknown."
-#~ msgstr "Ponga el valor a «true» para poder marcar cuadros como desconocidos."
+#~ msgstr ""
+#~ "Ponga el valor a «true» para poder marcar cuadros como desconocidos."
 
 #~ msgid "Warning about too many flags"
 #~ msgstr "Advertir acerca de demasiadas banderas"
@@ -5387,8 +5385,8 @@ msgstr "Fecha"
 #~ "'lan' (long algebraic notation) or 'san' (standard algebraic notation)"
 #~ msgstr ""
 #~ "El formato en el que mostrar jugadas, puede ser «humano» (legible por "
-#~ "personas), «lan» (notación algebraica larga - «long algebraic notation») o "
-#~ "«san» (notación algebraica estándar - «standard algebraic notation»)"
+#~ "personas), «lan» (notación algebraica larga - «long algebraic notation») "
+#~ "o «san» (notación algebraica estándar - «standard algebraic notation»)"
 
 #~ msgid "The piece style to use. Can be one of: 'simple' or 'fancy'"
 #~ msgstr "El estilo de pieza que usar. Puede ser «simple» o «fantasía»."
@@ -5400,9 +5398,9 @@ msgstr "Fecha"
 #~ "g. handhelds)"
 #~ msgstr ""
 #~ "El lado del tablero que está en primero plano, "
-#~ "«white» (blanco),«black» (negro), «current» (el jugador actual), «human» (el "
-#~ "lado del jugador humano actual) o «facetoface» (apropiado para jugadores a "
-#~ "cada lado de la pantalla, ej. dispositivos portátiles)"
+#~ "«white» (blanco),«black» (negro), «current» (el jugador actual), "
+#~ "«human» (el lado del jugador humano actual) o «facetoface» (apropiado "
+#~ "para jugadores a cada lado de la pantalla, ej. dispositivos portátiles)"
 
 #~ msgid "Logs"
 #~ msgstr "Registros"
