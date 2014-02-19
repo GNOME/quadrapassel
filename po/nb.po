@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games 3.11.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-26 16:54+0100\n"
-"PO-Revision-Date: 2014-01-26 16:54+0100\n"
+"POT-Creation-Date: 2014-02-19 23:46+0100\n"
+"PO-Revision-Date: 2014-02-19 23:47+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -114,7 +114,7 @@ msgid "Whether to pick blocks that are hard to place."
 msgstr "Om det skal velges blokker som er vanskelig å plassere."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:357
+#: ../src/quadrapassel.vala:359
 msgid "Move left"
 msgstr "Flytt til venstre"
 
@@ -123,7 +123,7 @@ msgid "Key press to move left."
 msgstr "Tastetrykk for å gå til venstre."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:360
+#: ../src/quadrapassel.vala:362
 msgid "Move right"
 msgstr "Flytt til høyre"
 
@@ -132,7 +132,7 @@ msgid "Key press to move right."
 msgstr "Tastetrykk for å gå til høyre."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:363
+#: ../src/quadrapassel.vala:365
 msgid "Move down"
 msgstr "Flytt ned"
 
@@ -141,7 +141,7 @@ msgid "Key press to move down."
 msgstr "Tastetrykk for å flytte ned."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:366
+#: ../src/quadrapassel.vala:368
 msgid "Drop"
 msgstr "Slipp"
 
@@ -150,7 +150,7 @@ msgid "Key press to drop."
 msgstr "Tastetrykk for å slippe."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:369
+#: ../src/quadrapassel.vala:371
 msgid "Rotate"
 msgstr "Roter"
 
@@ -159,7 +159,7 @@ msgid "Key press to rotate."
 msgstr "Tastetrykk for å rotere."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:372
+#: ../src/quadrapassel.vala:374
 msgid "Pause"
 msgstr "Pause"
 
@@ -197,8 +197,8 @@ msgid ""
 msgstr ""
 
 #: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
-#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:741
-#: ../src/quadrapassel.vala:781
+#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:746
+#: ../src/quadrapassel.vala:786
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -242,95 +242,107 @@ msgstr "_Om"
 msgid "_Quit"
 msgstr "A_vslutt"
 
-#: ../src/quadrapassel.vala:148
+#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:684
+msgid "Start a new game"
+msgstr "Start et nytt spill"
+
+#: ../src/quadrapassel.vala:150
 msgid "Next"
 msgstr "Neste"
 
-#: ../src/quadrapassel.vala:160 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:162 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "Poeng"
 
-#: ../src/quadrapassel.vala:170
+#: ../src/quadrapassel.vala:172
 msgid "Lines"
 msgstr "Linjer"
 
-#: ../src/quadrapassel.vala:180
+#: ../src/quadrapassel.vala:182
 msgid "Level"
 msgstr "Nivå"
 
-#: ../src/quadrapassel.vala:260
+#: ../src/quadrapassel.vala:262
 msgid "Quadrapassel Preferences"
 msgstr "Brukervalg for Quadrapassel"
 
-#: ../src/quadrapassel.vala:263 ../src/score-dialog.vala:26
+#: ../src/quadrapassel.vala:265 ../src/score-dialog.vala:26
 msgid "_Close"
 msgstr "_Lukk"
 
-#: ../src/quadrapassel.vala:279
+#: ../src/quadrapassel.vala:281
 msgid "Game"
 msgstr "Spill"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:283
+#: ../src/quadrapassel.vala:285
 msgid "_Number of pre-filled rows:"
 msgstr "A_ntall forhåndsutfylte rader:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:298
+#: ../src/quadrapassel.vala:300
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Tetthet for blokker i forhåndsutfylt rad:"
 
 #. starting level
-#: ../src/quadrapassel.vala:312
+#: ../src/quadrapassel.vala:314
 msgid "_Starting level:"
 msgstr "_Startnivå:"
 
-#: ../src/quadrapassel.vala:325
+#: ../src/quadrapassel.vala:327
 msgid "_Enable sounds"
 msgstr "A_ktiver lyder"
 
-#: ../src/quadrapassel.vala:330
+#: ../src/quadrapassel.vala:332
 msgid "Choose difficult _blocks"
 msgstr "Velg vanskelige _blokker"
 
-#: ../src/quadrapassel.vala:335
+#: ../src/quadrapassel.vala:337
 msgid "_Preview next block"
 msgstr "_Forhåndsvis neste blokk"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:342
+#: ../src/quadrapassel.vala:344
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Roter blokker mot klokken"
 
-#: ../src/quadrapassel.vala:347
+#: ../src/quadrapassel.vala:349
 msgid "Show _where the block will land"
 msgstr "Vis h_vor blokken skal lande"
 
-#: ../src/quadrapassel.vala:391
+#: ../src/quadrapassel.vala:393
 msgid "Controls"
 msgstr "Kontroller"
 
-#: ../src/quadrapassel.vala:397
+#: ../src/quadrapassel.vala:399
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/quadrapassel.vala:409
+#: ../src/quadrapassel.vala:411
 msgid "Plain"
 msgstr "Vanlig"
 
-#: ../src/quadrapassel.vala:414
+#: ../src/quadrapassel.vala:416
 msgid "Tango Flat"
 msgstr "Tango flat"
 
-#: ../src/quadrapassel.vala:419
+#: ../src/quadrapassel.vala:421
 msgid "Tango Shaded"
 msgstr "Tango skyggelagt"
 
-#: ../src/quadrapassel.vala:424
+#: ../src/quadrapassel.vala:426
 msgid "Clean"
 msgstr "Tøm"
 
-#: ../src/quadrapassel.vala:743
+#: ../src/quadrapassel.vala:665
+msgid "Unpause the game"
+msgstr "Start spillet igjen"
+
+#: ../src/quadrapassel.vala:670
+msgid "Pause the game"
+msgstr "Sett spillet på pause"
+
+#: ../src/quadrapassel.vala:748
 msgid ""
 "A classic game of fitting falling blocks together\n"
 "\n"
@@ -340,7 +352,7 @@ msgstr ""
 "\n"
 "Quadrapassel er en del av GNOME-spill."
 
-#: ../src/quadrapassel.vala:748
+#: ../src/quadrapassel.vala:753
 msgid "translator-credits"
 msgstr ""
 "Kjartan Maraas <kmaraas@gnome.org>\n"
