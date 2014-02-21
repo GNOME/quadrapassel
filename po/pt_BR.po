@@ -1,5 +1,5 @@
-# Brazilian Portuguese translation of gnome-games.
-# Copyright (C) 1999-2013 Free Software Foundation, Inc.
+# Brazilian Portuguese translation of quadrapassel.
+# Copyright (C) 1999-2014 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-games package.
 # Sandro Nunes Henrique <sandro@conectiva.com.br>, 1999.
 # Cândida Nunes da Silva <candida@zaz.com.br>, 2000-2001.
@@ -22,22 +22,23 @@
 # Flamarion Jorge <jorge.flamarion@gmail.com>, 2011.
 # Djavan Fagundes <djavan@comum.org>, 2012.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2013.
+# Rafael Ferreira <rafaelf.f.1@gmail.com>, 2014.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-games\n"
+"Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-12-09 18:19+0000\n"
-"PO-Revision-Date: 2013-12-15 11:12-0300\n"
-"Last-Translator: Fábio Nogueira <deb-user-ba@ubuntu.com>\n"
+"POT-Creation-Date: 2014-02-21 11:20+0000\n"
+"PO-Revision-Date: 2014-02-21 10:37-0300\n"
+"Last-Translator: Rafael Ferreira <rafael.f.f1@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.6.4\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:1
@@ -137,7 +138,7 @@ msgid "Whether to pick blocks that are hard to place."
 msgstr "Escolher blocos que são difíceis de colocar."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:408
+#: ../src/quadrapassel.vala:359
 msgid "Move left"
 msgstr "Ir para esquerda"
 
@@ -146,7 +147,7 @@ msgid "Key press to move left."
 msgstr "Tecla para mover à esquerda."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:411
+#: ../src/quadrapassel.vala:362
 msgid "Move right"
 msgstr "Ir para a direita"
 
@@ -155,7 +156,7 @@ msgid "Key press to move right."
 msgstr "Tecla para mover à direita."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:414
+#: ../src/quadrapassel.vala:365
 msgid "Move down"
 msgstr "Move para baixo"
 
@@ -164,7 +165,7 @@ msgid "Key press to move down."
 msgstr "Tecla para mover para baixo."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:417
+#: ../src/quadrapassel.vala:368
 msgid "Drop"
 msgstr "Soltar"
 
@@ -173,7 +174,7 @@ msgid "Key press to drop."
 msgstr "Tecla para soltar."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:420
+#: ../src/quadrapassel.vala:371
 msgid "Rotate"
 msgstr "Girar"
 
@@ -182,7 +183,7 @@ msgid "Key press to rotate."
 msgstr "Tecla para girar."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:423
+#: ../src/quadrapassel.vala:374
 msgid "Pause"
 msgstr "Pausar"
 
@@ -201,10 +202,6 @@ msgstr "A altura da janela em pixels."
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:37
 msgid "true if the window is maximized"
 msgstr "verdadeiro se a janela estiver maximizada"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:38
-msgid "true if the window is fullscren"
-msgstr "verdadeiro se a janela estiver em tela cheia"
 
 #: ../data/quadrapassel.appdata.xml.in.h:1
 msgid ""
@@ -234,8 +231,9 @@ msgstr ""
 "aleatória, ele pode selecionar blocos que serão difíceis para você colocar."
 
 # O novo nome do Gnometetris é muito estranho (Quadrapassel), pensei em traduzi-lo simplesmente como Tetris ou utilizar a nomeação antiga, mas as traduções em outros idiomas também mantiveram o nome original (Quadrapassel).
-#: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:109
-#: ../src/quadrapassel.vala:787 ../src/quadrapassel.vala:828
+#: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
+#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:746
+#: ../src/quadrapassel.vala:786
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -255,140 +253,132 @@ msgstr "Pausado"
 msgid "Game Over"
 msgstr "Fim do jogo"
 
-#: ../src/quadrapassel.vala:94
+#: ../src/quadrapassel.vala:92
 msgid "_New Game"
 msgstr "_Novo jogo"
 
-#: ../src/quadrapassel.vala:95 ../src/quadrapassel.vala:145
-#: ../src/quadrapassel.vala:715
-msgid "_Pause"
-msgstr "_Pausar"
-
-#: ../src/quadrapassel.vala:96
+#: ../src/quadrapassel.vala:93
 msgid "_Scores"
 msgstr "_Pontuações"
 
-#: ../src/quadrapassel.vala:97
+#: ../src/quadrapassel.vala:94
 msgid "_Preferences"
 msgstr "_Preferências"
 
-#: ../src/quadrapassel.vala:100
+#: ../src/quadrapassel.vala:97
 msgid "_Help"
 msgstr "Aj_uda"
 
-#: ../src/quadrapassel.vala:101
+#: ../src/quadrapassel.vala:98
 msgid "_About"
 msgstr "_Sobre"
 
-#: ../src/quadrapassel.vala:102
+#: ../src/quadrapassel.vala:99
 msgid "_Quit"
 msgstr "Sai_r"
 
-#: ../src/quadrapassel.vala:137
-msgid "_New"
-msgstr "_Novo"
+#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:684
+msgid "Start a new game"
+msgstr "Inicia um novo jogo"
 
-#: ../src/quadrapassel.vala:152 ../src/quadrapassel.vala:252
-msgid "_Fullscreen"
-msgstr "_Tela cheia"
-
-#: ../src/quadrapassel.vala:175
+#: ../src/quadrapassel.vala:150
 msgid "Next"
 msgstr "Próximo"
 
-#: ../src/quadrapassel.vala:190 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:162 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "Pontuação"
 
-#: ../src/quadrapassel.vala:201
+#: ../src/quadrapassel.vala:172
 msgid "Lines"
 msgstr "Linhas"
 
-#: ../src/quadrapassel.vala:211
+#: ../src/quadrapassel.vala:182
 msgid "Level"
 msgstr "Nível"
 
-#: ../src/quadrapassel.vala:247
-msgid "_Leave Fullscreen"
-msgstr "Sair de tela c_heia"
-
-#: ../src/quadrapassel.vala:311
+#: ../src/quadrapassel.vala:262
 msgid "Quadrapassel Preferences"
 msgstr "Preferências do Quadrapassel"
 
-#: ../src/quadrapassel.vala:314 ../src/score-dialog.vala:26
+#: ../src/quadrapassel.vala:265 ../src/score-dialog.vala:26
 msgid "_Close"
 msgstr "_Fechar"
 
-#: ../src/quadrapassel.vala:330
+#: ../src/quadrapassel.vala:281
 msgid "Game"
 msgstr "Jogo"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:334
+#: ../src/quadrapassel.vala:285
 msgid "_Number of pre-filled rows:"
 msgstr "_Número de linhas já preenchidas:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:349
+#: ../src/quadrapassel.vala:300
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Densidade de blocos nas linhas já preenchidas:"
 
 #. starting level
-#: ../src/quadrapassel.vala:363
+#: ../src/quadrapassel.vala:314
 msgid "_Starting level:"
 msgstr "Nível _inicial:"
 
-#: ../src/quadrapassel.vala:376
+#: ../src/quadrapassel.vala:327
 msgid "_Enable sounds"
 msgstr "_Habilitar sons"
 
-#: ../src/quadrapassel.vala:381
+#: ../src/quadrapassel.vala:332
 msgid "Choose difficult _blocks"
 msgstr "Escolher dificuldades dos _blocos"
 
-#: ../src/quadrapassel.vala:386
+#: ../src/quadrapassel.vala:337
 msgid "_Preview next block"
 msgstr "_Visualizar próximo bloco"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:393
+#: ../src/quadrapassel.vala:344
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Girar blocos no sentido anti-horário"
 
-#: ../src/quadrapassel.vala:398
+#: ../src/quadrapassel.vala:349
 msgid "Show _where the block will land"
 msgstr "Mostrar _onde o bloco vai cair"
 
-#: ../src/quadrapassel.vala:442
+#: ../src/quadrapassel.vala:393
 msgid "Controls"
 msgstr "Controles"
 
-#: ../src/quadrapassel.vala:448
+#: ../src/quadrapassel.vala:399
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/quadrapassel.vala:460
+#: ../src/quadrapassel.vala:411
 msgid "Plain"
 msgstr "Plano"
 
-#: ../src/quadrapassel.vala:465
+#: ../src/quadrapassel.vala:416
 msgid "Tango Flat"
 msgstr "Tango Plano"
 
-#: ../src/quadrapassel.vala:470
+#: ../src/quadrapassel.vala:421
 msgid "Tango Shaded"
 msgstr "Tango Sombreado"
 
-#: ../src/quadrapassel.vala:475
+#: ../src/quadrapassel.vala:426
 msgid "Clean"
 msgstr "Limpar"
 
-#: ../src/quadrapassel.vala:710
-msgid "Res_ume"
-msgstr "Contin_uar"
+#: ../src/quadrapassel.vala:665
+#| msgid "Pause the game"
+msgid "Unpause the game"
+msgstr "Resume o jogo"
 
-#: ../src/quadrapassel.vala:789
+#: ../src/quadrapassel.vala:670
+msgid "Pause the game"
+msgstr "Pausa o jogo"
+
+#: ../src/quadrapassel.vala:748
 msgid ""
 "A classic game of fitting falling blocks together\n"
 "\n"
@@ -398,11 +388,7 @@ msgstr ""
 "\n"
 "Quadrapassel faz parte do GNOME Games."
 
-#: ../src/quadrapassel.vala:792
-msgid "GNOME Games web site"
-msgstr "Site do GNOME Games"
-
-#: ../src/quadrapassel.vala:795
+#: ../src/quadrapassel.vala:753
 msgid "translator-credits"
 msgstr ""
 "Sandro Nunes Henrique <sandro@conectiva.com.br>\n"
@@ -433,6 +419,27 @@ msgstr "_OK"
 msgid "Date"
 msgstr "Data"
 
+#~ msgid "true if the window is fullscren"
+#~ msgstr "verdadeiro se a janela estiver em tela cheia"
+
+#~ msgid "_Pause"
+#~ msgstr "_Pausar"
+
+#~ msgid "_New"
+#~ msgstr "_Novo"
+
+#~ msgid "_Fullscreen"
+#~ msgstr "_Tela cheia"
+
+#~ msgid "_Leave Fullscreen"
+#~ msgstr "Sair de tela c_heia"
+
+#~ msgid "Res_ume"
+#~ msgstr "Contin_uar"
+
+#~ msgid "GNOME Games web site"
+#~ msgstr "Site do GNOME Games"
+
 #~ msgid "Score:"
 #~ msgstr "Pontuação:"
 
@@ -459,9 +466,6 @@ msgstr "Data"
 
 #~ msgid "_Contents"
 #~ msgstr "S_umário"
-
-#~ msgid "Start a new game"
-#~ msgstr "Inicia um novo jogo"
 
 #~ msgid "Undo Move"
 #~ msgstr "Desfazer movimento"
@@ -1152,9 +1156,6 @@ msgstr "Data"
 
 #~ msgid "End the current network game and return to network server"
 #~ msgstr "Finaliza o jogo via rede atual e retorna ao servidor de rede"
-
-#~ msgid "Pause the game"
-#~ msgstr "Pausa o jogo"
 
 #~ msgid "Show a list of players in the network game"
 #~ msgstr "Mostra uma lista de jogadores na rede"
