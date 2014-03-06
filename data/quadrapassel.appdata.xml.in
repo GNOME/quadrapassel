@@ -19,7 +19,7 @@
   </_p>
  </description>
  <screenshots>
-  <screenshot type="default" width="1024" height="576">https://people.gnome.org/~mcatanzaro/quadrapassel.png</screenshot>
+  <screenshot type="default" width="648" height="398">https://people.gnome.org/~mcatanzaro/quadrapassel.png</screenshot>
  </screenshots>
  <url type="homepage">https://wiki.gnome.org/Apps/Quadrapassel</url>
  <updatecontact>games_list_at_gnome.org</updatecontact>
