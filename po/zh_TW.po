@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gnome-games 3.3.91\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-21 23:00+0000\n"
-"PO-Revision-Date: 2014-02-02 08:37+0800\n"
+"POT-Creation-Date: 2014-03-05 23:21+0000\n"
+"PO-Revision-Date: 2014-03-08 19:51+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
 "Language-Team: Chinese (traditional)\n"
 "Language: zh_TW\n"
@@ -117,7 +117,7 @@ msgid "Whether to pick blocks that are hard to place."
 msgstr "是否挑選很難放置的方塊。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:357
+#: ../src/quadrapassel.vala:359
 msgid "Move left"
 msgstr "向左移動"
 
@@ -126,7 +126,7 @@ msgid "Key press to move left."
 msgstr "向左移所使用的按鍵。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:360
+#: ../src/quadrapassel.vala:362
 msgid "Move right"
 msgstr "向右移動"
 
@@ -135,7 +135,7 @@ msgid "Key press to move right."
 msgstr "向右移所使用的按鍵。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:363
+#: ../src/quadrapassel.vala:365
 msgid "Move down"
 msgstr "向下移動"
 
@@ -144,7 +144,7 @@ msgid "Key press to move down."
 msgstr "令方塊加速下移的按鍵。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:366
+#: ../src/quadrapassel.vala:368
 msgid "Drop"
 msgstr "跌下"
 
@@ -153,7 +153,7 @@ msgid "Key press to drop."
 msgstr "令方塊跌下底部的按鍵。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:369
+#: ../src/quadrapassel.vala:371
 msgid "Rotate"
 msgstr "旋轉"
 
@@ -162,7 +162,7 @@ msgid "Key press to rotate."
 msgstr "表示旋轉方塊的按鍵。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:372
+#: ../src/quadrapassel.vala:374
 msgid "Pause"
 msgstr "暫停"
 
@@ -207,8 +207,8 @@ msgstr ""
 "塊給您。"
 
 #: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
-#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:741
-#: ../src/quadrapassel.vala:781
+#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:746
+#: ../src/quadrapassel.vala:786
 msgid "Quadrapassel"
 msgstr "俄羅斯方塊"
 
@@ -252,102 +252,108 @@ msgstr "關於(_A)"
 msgid "_Quit"
 msgstr "結束(_Q)"
 
-#: ../src/quadrapassel.vala:148
-#| msgid "Next:"
+#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:684
+msgid "Start a new game"
+msgstr "開始另一局"
+
+#: ../src/quadrapassel.vala:150
 msgid "Next"
 msgstr "下一個"
 
-#: ../src/quadrapassel.vala:160 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:162 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "分數"
 
-#: ../src/quadrapassel.vala:170
-#| msgid "Lines:"
+#: ../src/quadrapassel.vala:172
 msgid "Lines"
 msgstr "列數"
 
-#: ../src/quadrapassel.vala:180
-#| msgid "Level:"
+#: ../src/quadrapassel.vala:182
 msgid "Level"
 msgstr "級數"
 
-#: ../src/quadrapassel.vala:260
+#: ../src/quadrapassel.vala:262
 msgid "Quadrapassel Preferences"
 msgstr "俄羅斯方塊偏好設定"
 
-#: ../src/quadrapassel.vala:263 ../src/score-dialog.vala:26
+#: ../src/quadrapassel.vala:265 ../src/score-dialog.vala:26
 msgid "_Close"
 msgstr "關閉(_C)"
 
-#: ../src/quadrapassel.vala:279
+#: ../src/quadrapassel.vala:281
 msgid "Game"
 msgstr "遊戲"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:283
+#: ../src/quadrapassel.vala:285
 msgid "_Number of pre-filled rows:"
 msgstr "預先填充的列數(_N)："
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:298
+#: ../src/quadrapassel.vala:300
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "預先填充時每列的密度(_D)："
 
 #. starting level
-#: ../src/quadrapassel.vala:312
+#: ../src/quadrapassel.vala:314
 msgid "_Starting level:"
 msgstr "開始級數(_S)："
 
-#: ../src/quadrapassel.vala:325
+#: ../src/quadrapassel.vala:327
 msgid "_Enable sounds"
 msgstr "開啟音效(_E)"
 
-#: ../src/quadrapassel.vala:330
+#: ../src/quadrapassel.vala:332
 msgid "Choose difficult _blocks"
 msgstr "選擇困難的方塊(_B)"
 
-#: ../src/quadrapassel.vala:335
+#: ../src/quadrapassel.vala:337
 msgid "_Preview next block"
 msgstr "預覽下個方塊(_P)"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:342
+#: ../src/quadrapassel.vala:344
 msgid "_Rotate blocks counterclockwise"
 msgstr "方塊以逆時針方向旋轉(_R)"
 
-#: ../src/quadrapassel.vala:347
+#: ../src/quadrapassel.vala:349
 msgid "Show _where the block will land"
 msgstr "顯示方塊落點提示(_W)"
 
-#: ../src/quadrapassel.vala:391
+#: ../src/quadrapassel.vala:393
 msgid "Controls"
 msgstr "控制"
 
-#: ../src/quadrapassel.vala:397
+#: ../src/quadrapassel.vala:399
 msgid "Theme"
 msgstr "佈景主題"
 
-#: ../src/quadrapassel.vala:409
+#: ../src/quadrapassel.vala:411
 msgid "Plain"
 msgstr "單色"
 
-#: ../src/quadrapassel.vala:414
+#: ../src/quadrapassel.vala:416
 msgid "Tango Flat"
 msgstr "Tango 平滑"
 
-#: ../src/quadrapassel.vala:419
+#: ../src/quadrapassel.vala:421
 msgid "Tango Shaded"
 msgstr "Tango 陰影"
 
-#: ../src/quadrapassel.vala:424
+#: ../src/quadrapassel.vala:426
 msgid "Clean"
 msgstr "清除"
 
-#: ../src/quadrapassel.vala:743
-#| msgid ""
-#| "A classic game of fitting falling blocks together.\n"
-#| "\n"
-#| "Quadrapassel is a part of GNOME Games."
+#: ../src/quadrapassel.vala:665
+#| msgid "Pause the game"
+msgid "Unpause the game"
+msgstr "取消暫停遊戲"
+
+#: ../src/quadrapassel.vala:670
+msgid "Pause the game"
+msgstr "暫停遊戲"
+
+#: ../src/quadrapassel.vala:748
 msgid ""
 "A classic game of fitting falling blocks together\n"
 "\n"
@@ -357,7 +363,7 @@ msgstr ""
 "\n"
 "Quadrapassel (俄羅斯方塊) 是 GNOME 遊戲的一部分。"
 
-#: ../src/quadrapassel.vala:748
+#: ../src/quadrapassel.vala:753
 msgid "translator-credits"
 msgstr ""
 "如對翻譯有任何意見，請送一封電子郵件給\n"
@@ -426,9 +432,6 @@ msgstr "日期"
 
 #~ msgid "_Contents"
 #~ msgstr "內容(_C)"
-
-#~ msgid "Start a new game"
-#~ msgstr "開始另一局"
 
 #~ msgid "Undo Move"
 #~ msgstr "回手"
@@ -1106,9 +1109,6 @@ msgstr "日期"
 
 #~ msgid "End the current network game and return to network server"
 #~ msgstr "終止目前的網路遊戲，回到伺服器"
-
-#~ msgid "Pause the game"
-#~ msgstr "暫停遊戲"
 
 #~ msgid "Show a list of players in the network game"
 #~ msgstr "顯示網路遊戲中的玩家名單"
