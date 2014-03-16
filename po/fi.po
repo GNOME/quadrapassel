@@ -4,101 +4,101 @@
 #
 #
 # Gnome 2012-03 Finnish translation sprint participants:
-# Jiri Grönroos
 # Niklas Laxström
 # Sami Pesonen <sampeson@iki.fi>, 2002-2005.
 # Ilkka Tuohela <hile@iki.fi>, 2005-2009.
 # Timo Jyrinki <timo.jyrinki@iki.fi>, 2008.
-# Jiri Grönroos <jiri.gronroos@iki.fi>, 2012, 2013.
+# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2012, 2013, 2014.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-12-02 22:26+0000\n"
-"PO-Revision-Date: 2013-03-23 15:23+0200\n"
+"POT-Creation-Date: 2014-02-16 17:28+0000\n"
+"PO-Revision-Date: 2014-03-05 21:34+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
-"Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
+"Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Launchpad-Export-Date: 2010-09-13 15:09+0000\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Gtranslator 2.91.6\n"
 "X-POT-Import-Date: 2012-03-05 14:46:29+0000\n"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:1
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:1
 msgid "Image to use for drawing blocks"
 msgstr "Palikoiden piirtämiseen käytetty kuva"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:2
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:2
 msgid "Image to use for drawing blocks."
 msgstr "Palikoiden piirtämiseen käytetty kuva."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:3
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:3
 msgid "The theme used for rendering the blocks"
 msgstr "Palikoiden piirtämiseen käytetty teema"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:4
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:4
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "Palikoiden ja taustan piirtoon käytetyn teeman nimi."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:5
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:5
 msgid "Level to start with"
 msgstr "Aloituskenttä"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:6
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:6
 msgid "Level to start with."
 msgstr "Aloituskenttä."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:7
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:7
 msgid "Whether to preview the next block"
 msgstr "Tulisiko näyttää seuraavan palikan esikatselu"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:8
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:8
 msgid "Whether to preview the next block."
 msgstr "Tulisiko näyttää seuraavan palikan esikatselu."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:9
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:9
 msgid "Whether to show where the moving piece will land"
 msgstr "Näytetäänkö mihin liikkuva palikka laskeutuu"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:10
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:10
 msgid "Whether to show where the moving piece will land."
 msgstr "Näytetäänkö mihin liikkuva palikka laskeutuu."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:11
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:11
 msgid "Whether to give blocks random colors"
 msgstr "Tulisiko palikoille antaa satunnaiset värit"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:12
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:12
 msgid "Whether to give blocks random colors."
 msgstr "Tulisiko palikoille antaa satunnaiset värit."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:13
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:13
 msgid "Whether to rotate counter clock wise"
 msgstr "Pyöritetäänkö vastapäivään"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:14
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:14
 msgid "Whether to rotate counter clock wise."
 msgstr "Pyöritetäänkö vastapäivään."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:15
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:15
 msgid "The number of rows to fill"
 msgstr "Täytettävien rivien lukumäärä"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:16
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:16
 msgid ""
 "The number of rows that are filled with random blocks at the start of the "
 "game."
 msgstr "Rivien lukumäärä mitä täytetään satunnaisilla palikoilla pelin alussa."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:17
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:17
 msgid "The density of filled rows"
 msgstr "Täytetyn rivin tiheys"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:18
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:18
 msgid ""
 "The density of blocks in rows filled at the start of the game. The value is "
 "between 0 (for no blocks) and 10 (for a completely filled row)."
@@ -106,258 +106,275 @@ msgstr ""
 "Täytettyjen rivien palikkatiheys pelin alussa. Arvo on välillä 0 (ei "
 "palikoita) ja 10 (täysin täytetty rivi)."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:19
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:19
 msgid "Whether to play sounds"
 msgstr "Toistetaanko äänet"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:20
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:20
 msgid "Whether to play sounds."
 msgstr "Toistetaanko äänet?"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:21
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:21
 #, fuzzy
 msgid "Whether to pick blocks that are hard to place"
 msgstr "Tulisiko palikoille antaa satunnaiset värit"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:22
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:22
 #, fuzzy
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Tulisiko palikoille antaa satunnaiset värit."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:23
-#: ../src/quadrapassel.vala:382
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
+#: ../src/quadrapassel.vala:359
 msgid "Move left"
 msgstr "Siirry vasemmalle"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:24
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:24
 msgid "Key press to move left."
 msgstr "Näppäin vasemmalle siirtämiseen."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:25
-#: ../src/quadrapassel.vala:385
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
+#: ../src/quadrapassel.vala:362
 msgid "Move right"
 msgstr "Siirry oikealle"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:26
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:26
 msgid "Key press to move right."
 msgstr "Näppäin oikealle siirtämiseen."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:27
-#: ../src/quadrapassel.vala:388
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
+#: ../src/quadrapassel.vala:365
 msgid "Move down"
 msgstr "Liikuta alas"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:28
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:28
 msgid "Key press to move down."
 msgstr "Näppäin alas siirtämiseen."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:29
-#: ../src/quadrapassel.vala:391
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
+#: ../src/quadrapassel.vala:368
 msgid "Drop"
 msgstr "Tiputa"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:30
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:30
 msgid "Key press to drop."
 msgstr "Näppäin tiputtamiseen."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:31
-#: ../src/quadrapassel.vala:394
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
+#: ../src/quadrapassel.vala:371
 msgid "Rotate"
 msgstr "Pyöritä"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:32
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:32
 msgid "Key press to rotate."
 msgstr "Näppäin kierittämiseen."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:33
-#: ../src/quadrapassel.vala:397
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
+#: ../src/quadrapassel.vala:374
 msgid "Pause"
 msgstr "Keskeytä"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:34
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:34
 msgid "Key press to pause."
 msgstr "Taukonäppäin."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:35
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:35
 msgid "Width of the window in pixels"
 msgstr "Ikkunan leveys kuvapisteinä"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:36
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:36
 msgid "Height of the window in pixels"
 msgstr "Ikkunan korkeus kuvapisteinä"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:37
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:37
 msgid "true if the window is maximized"
 msgstr "tosi jos ikkuna on suurennettu"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.in.h:38
-msgid "true if the window is fullscren"
+#: ../data/quadrapassel.appdata.xml.in.h:1
+msgid ""
+"Quadrapassel is a derivitive of the classic Russian falling-block game. "
+"Reposition and rotate the blocks as they fall, and attempt to fit them "
+"together. When you form a complete horizontal row of blocks, the row will "
+"disappear and you score points. The game is over when the blocks get stacked "
+"too high. As your score gets higher, you level up and the blocks fall faster."
 msgstr ""
 
-#: ../data/quadrapassel.desktop.in.in.h:1 ../src/quadrapassel.vala:99
-#: ../src/quadrapassel.vala:756 ../src/quadrapassel.vala:798
+#: ../data/quadrapassel.appdata.xml.in.h:2
+msgid ""
+"If you're looking for a challenge, Quadrapassel allows you to increase the "
+"initial speed of the blocks, or begin the game with partial blocks on some "
+"of the rows. Or, instead of allowing the blocks to fall randomly, it can "
+"select blocks that will be hard for you to place."
+msgstr ""
+
+#: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
+#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:746
+#: ../src/quadrapassel.vala:786
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
-#: ../data/quadrapassel.desktop.in.in.h:2
+#: ../data/quadrapassel.desktop.in.h:2
 msgid "Fit falling blocks together"
 msgstr "Sovita putoavat palikat yhteen"
 
-#: ../data/quadrapassel.desktop.in.in.h:3
+#: ../data/quadrapassel.desktop.in.h:3
 msgid "tetris;"
 msgstr "tetris;"
 
-#: ../src/game-view.vala:330
+#: ../src/game-view.vala:346
 msgid "Paused"
 msgstr "Keskeytetty"
 
-#: ../src/game-view.vala:332
+#: ../src/game-view.vala:348
 msgid "Game Over"
 msgstr "Peli päättyi."
 
-#: ../src/quadrapassel.vala:82
+#: ../src/quadrapassel.vala:92
 msgid "_New Game"
 msgstr "_Uusi peli"
 
-#: ../src/quadrapassel.vala:83 ../src/quadrapassel.vala:135
-#: ../src/quadrapassel.vala:681
-msgid "_Pause"
-msgstr "_Keskeytä"
-
-#: ../src/quadrapassel.vala:84
+#: ../src/quadrapassel.vala:93
 msgid "_Scores"
 msgstr "_Pisteet"
 
-#: ../src/quadrapassel.vala:85
+#: ../src/quadrapassel.vala:94
 msgid "_Preferences"
 msgstr "_Asetukset"
 
-#: ../src/quadrapassel.vala:88
+#: ../src/quadrapassel.vala:97
 msgid "_Help"
 msgstr "O_hje"
 
-#: ../src/quadrapassel.vala:89
+#: ../src/quadrapassel.vala:98
 msgid "_About"
 msgstr "_Tietoja"
 
-#: ../src/quadrapassel.vala:92
+#: ../src/quadrapassel.vala:99
 msgid "_Quit"
 msgstr "_Lopeta"
 
-#: ../src/quadrapassel.vala:127
-msgid "_New"
-msgstr "_Uusi"
+#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:684
+msgid "Start a new game"
+msgstr "Aloita uusi peli"
 
-#: ../src/quadrapassel.vala:142 ../src/quadrapassel.vala:232
-msgid "_Fullscreen"
-msgstr "_Koko näyttö"
+#: ../src/quadrapassel.vala:150
+#| msgid "Next:"
+msgid "Next"
+msgstr "Seuraava"
 
-#: ../src/quadrapassel.vala:174
-msgid "Score:"
-msgstr "Pisteet:"
+#: ../src/quadrapassel.vala:162 ../src/score-dialog.vala:51
+msgid "Score"
+msgstr "Pisteet"
 
-#: ../src/quadrapassel.vala:183
-msgid "Lines:"
-msgstr "Rivejä:"
+#: ../src/quadrapassel.vala:172
+#| msgid "Lines:"
+msgid "Lines"
+msgstr "Rivejä"
 
-#: ../src/quadrapassel.vala:192
-msgid "Level:"
-msgstr "Taso:"
+#: ../src/quadrapassel.vala:182
+#| msgid "Level:"
+msgid "Level"
+msgstr "Taso"
 
-#: ../src/quadrapassel.vala:227
-msgid "_Leave Fullscreen"
-msgstr "P_oistu koko näytön tilasta"
-
-#: ../src/quadrapassel.vala:291
+#: ../src/quadrapassel.vala:262
 msgid "Quadrapassel Preferences"
 msgstr "Quadrapassel-asetukset"
 
-#: ../src/quadrapassel.vala:306
+#: ../src/quadrapassel.vala:265 ../src/score-dialog.vala:26
+msgid "_Close"
+msgstr "_Sulje"
+
+#: ../src/quadrapassel.vala:281
 msgid "Game"
 msgstr "Peli"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:310
+#: ../src/quadrapassel.vala:285
 msgid "_Number of pre-filled rows:"
 msgstr "_Esitäytettyjen rivien määrä:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:324
+#: ../src/quadrapassel.vala:300
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "E_sitäytetyn rivin vahvuus:"
 
 #. starting level
-#: ../src/quadrapassel.vala:338
+#: ../src/quadrapassel.vala:314
 msgid "_Starting level:"
 msgstr "_Aloitustaso:"
 
-#: ../src/quadrapassel.vala:351
+#: ../src/quadrapassel.vala:327
 msgid "_Enable sounds"
 msgstr "Ää_net päälle"
 
-#: ../src/quadrapassel.vala:356
-msgid "_Preview next block"
-msgstr "Se_uraavan palikan esikatselu"
-
-#: ../src/quadrapassel.vala:361
+#: ../src/quadrapassel.vala:332
 msgid "Choose difficult _blocks"
 msgstr "Valitse vaikeat _palikat"
 
+#: ../src/quadrapassel.vala:337
+msgid "_Preview next block"
+msgstr "Se_uraavan palikan esikatselu"
+
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:367
+#: ../src/quadrapassel.vala:344
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Pyöritä palikoita vastapäivään"
 
-#: ../src/quadrapassel.vala:372
+#: ../src/quadrapassel.vala:349
 msgid "Show _where the block will land"
 msgstr "Näytä mihin palikka _laskeutuu"
 
-#: ../src/quadrapassel.vala:416
+#: ../src/quadrapassel.vala:393
 msgid "Controls"
 msgstr "Ohjaimet"
 
-#: ../src/quadrapassel.vala:422
+#: ../src/quadrapassel.vala:399
 msgid "Theme"
 msgstr "Teema"
 
-#: ../src/quadrapassel.vala:434
+#: ../src/quadrapassel.vala:411
 msgid "Plain"
 msgstr "Paljas"
 
-#: ../src/quadrapassel.vala:439
+#: ../src/quadrapassel.vala:416
 msgid "Tango Flat"
 msgstr "Tango, litteä"
 
-#: ../src/quadrapassel.vala:444
+#: ../src/quadrapassel.vala:421
 msgid "Tango Shaded"
 msgstr "Tango, varjostettu"
 
-#: ../src/quadrapassel.vala:449
+#: ../src/quadrapassel.vala:426
 msgid "Clean"
 msgstr "Tyhjennä"
 
-#: ../src/quadrapassel.vala:676
-msgid "Res_ume"
-msgstr "_Jatka"
+#: ../src/quadrapassel.vala:665
+#| msgid "Pause the game"
+msgid "Unpause the game"
+msgstr "Jatka peliä"
 
-#: ../src/quadrapassel.vala:758
+#: ../src/quadrapassel.vala:670
+msgid "Pause the game"
+msgstr "Keskeytä peli"
+
+#: ../src/quadrapassel.vala:748
+#| msgid ""
+#| "A classic game of fitting falling blocks together.\n"
+#| "\n"
+#| "Quadrapassel is a part of GNOME Games."
 msgid ""
-"A classic game of fitting falling blocks together.\n"
+"A classic game of fitting falling blocks together\n"
 "\n"
 "Quadrapassel is a part of GNOME Games."
 msgstr ""
 "Klassinen putoavien palikoiden peli.\n"
 "\n"
-"Quadrapassel on osa Gnome-pelejä."
+"Quadrapassel on osa Gnomen pelejä."
 
-#: ../src/quadrapassel.vala:761
-msgid "GNOME Games web site"
-msgstr "GNOMEn pelien www-sivut"
-
-#: ../src/quadrapassel.vala:764
+#: ../src/quadrapassel.vala:753
 msgid "translator-credits"
 msgstr ""
-"Jiri Grönroos, 2013\n"
+"Jiri Grönroos, 2013-2014\n"
 "Timo Jyrinki, 2008\n"
 "Ilkka Tuohela, 2006-2009\n"
 "Sami Pesonen, 2002-2005\n"
@@ -375,19 +392,38 @@ msgstr ""
 "  Timo Jyrinki https://launchpad.net/~timo-jyrinki\n"
 "  eGetin https://launchpad.net/~egetin"
 
-#: ../src/quadrapassel.vala:835
+#: ../src/score-dialog.vala:27
 msgid "New Game"
 msgstr "Uusi peli"
 
-#: ../src/quadrapassel.vala:856
+#: ../src/score-dialog.vala:30
+msgid "_OK"
+msgstr "_OK"
+
+#: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "Päiväys"
 
-#: ../src/quadrapassel.vala:859
-#| msgctxt "score-dialog"
-#| msgid "Score"
-msgid "Score"
-msgstr "Pisteet"
+#~ msgid "_Pause"
+#~ msgstr "_Keskeytä"
+
+#~ msgid "_New"
+#~ msgstr "_Uusi"
+
+#~ msgid "_Fullscreen"
+#~ msgstr "_Koko näyttö"
+
+#~ msgid "Score:"
+#~ msgstr "Pisteet:"
+
+#~ msgid "_Leave Fullscreen"
+#~ msgstr "P_oistu koko näytön tilasta"
+
+#~ msgid "Res_ume"
+#~ msgstr "_Jatka"
+
+#~ msgid "GNOME Games web site"
+#~ msgstr "GNOMEn pelien www-sivut"
 
 #~ msgid "Chess"
 #~ msgstr "Shakki"
@@ -412,9 +448,6 @@ msgstr "Pisteet"
 
 #~ msgid "_Contents"
 #~ msgstr "_Sisältö"
-
-#~ msgid "Start a new game"
-#~ msgstr "Aloita uusi peli"
 
 #~ msgid "Undo Move"
 #~ msgstr "Peru siirto"
@@ -1033,9 +1066,6 @@ msgstr "Pisteet"
 #~ msgid "Scores"
 #~ msgstr "Pisteet"
 
-#~ msgid "Next:"
-#~ msgstr "Seuraava:"
-
 #~ msgid "0"
 #~ msgstr "0"
 
@@ -1105,9 +1135,6 @@ msgstr "Pisteet"
 
 #~ msgid "End the current network game and return to network server"
 #~ msgstr "Lopeta nykyinen verkkopeli ja palaa verkkopalvelimelle"
-
-#~ msgid "Pause the game"
-#~ msgstr "Keskeytä peli"
 
 #~ msgid "Show a list of players in the network game"
 #~ msgstr "Näytä lista verkkopelin pelaajista"
