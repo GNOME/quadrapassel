@@ -5,7 +5,7 @@
  <licence>CC0</licence>
  <description>
   <_p>
-   Quadrapassel is a derivitive of the classic Russian falling-block game.
+   Quadrapassel is a derivative of a classic Russian falling-block game.
    Reposition and rotate the blocks as they fall, and attempt to fit them
    together. When you form a complete horizontal row of blocks, the row will
    disappear and you score points. The game is over when the blocks get stacked
