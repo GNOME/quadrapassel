@@ -1,4 +1,5 @@
 <page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
 	type="topic" style="task"
 	id="playgame">
   <info>
@@ -40,6 +41,6 @@
 </section>
 
 <section id="home"><title></title>
-  <p><link xref="index"><media type="image" src="media/go-home.png" />HOME</link></p></section>
+  <p><link xref="index"><media type="image" src="media/go-home.png" its:translate="no" />HOME</link></p></section>
 
 </page>

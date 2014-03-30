@@ -1,8 +1,9 @@
 <page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
 	type="guide" style="task"
 	id="index">
   <info>
-    <title type='link' role="trail"> <media type="image" src="media/quadrapassel22.png" /></title>
+    <title type='link' role="trail"> <media type="image" src="media/quadrapassel22.png" its:translate="no" /></title>
     <title type='link'>Quadrapassel</title>
     <title type='text'>Quadrapassel</title>
     <revision pkgversion="3.5.5" version="0.1" date="2012-08-11" status="review"/>
@@ -15,18 +16,18 @@
       <p>Creative Commons Share Alike 3.0</p>
     </license>
   </info>
-<title><media type="image" src="media/quadrapassel.png">Quadrapassel logo</media> Quadrapassel</title>
+<title><media type="image" src="media/quadrapassel.png" its:translate="no"><span its:translate="yes">Quadrapassel logo</span></media> Quadrapassel</title>
 
   <p>In Quadrapassel, the GNOME version of Tetris, your goal is to create as many complete horizontal lines as possible. The lines are made from seven different shapes. The shapes fall randomly from the top center of the screen. Your task is to rotate and move the shapes across the screen to make complete lines. By making complete horizontal lines, you score points and move up levels. As you progress, the speed of the falling blocks increases.</p>
 
 <table rules="all" shade="all">
   <tr>
-    <td><p><media type="image" src="media/fig4.png" /></p></td>
+    <td><p><media type="image" src="media/fig4.png" its:translate="no" /></p></td>
     <td><p></p></td>
     <td><p></p></td>
     <td><p></p></td>
     <td><p></p></td>
-    <td><p><media type="image" src="media/fig5.png" /></p></td>
+    <td><p><media type="image" src="media/fig5.png" its:translate="no" /></p></td>
   </tr>
   <tr>
     <td><p></p></td>
@@ -37,16 +38,16 @@
   <tr>
     <td><p></p></td>
     <td><p></p></td>
-    <td><p><media type="image" src="media/part1.jpg" width="90" /></p></td>
-    <td><p> <media type="image" src="media/part2.jpg" width="90" /></p></td>
+    <td><p><media type="image" src="media/part1.jpg" width="90" its:translate="no" /></p></td>
+    <td><p> <media type="image" src="media/part2.jpg" width="90" its:translate="no" /></p></td>
     <td><p></p></td>
     <td><p></p></td>
   </tr>
   <tr>
     <td><p></p></td>
     <td><p></p></td>
-    <td><p><media type="image" src="media/part3.jpg" width="90" /></p></td>
-    <td><p><media type="image" src="media/part4.jpg" width="90" /></p></td>
+    <td><p><media type="image" src="media/part3.jpg" width="90" its:translate="no" /></p></td>
+    <td><p><media type="image" src="media/part4.jpg" width="90" its:translate="no" /></p></td>
     <td><p></p></td>
     <td><p></p></td>
   </tr>
@@ -58,12 +59,12 @@
     <td><p></p></td>
   </tr>
  <tr>
-    <td><p><media type="image" src="media/fig3.png" /></p></td>
+    <td><p><media type="image" src="media/fig3.png" its:translate="no" /></p></td>
     <td><p></p></td>
     <td><p></p></td>
     <td><p></p></td>
     <td><p></p></td>
-    <td><p><media type="image" src="media/fig2.png" /></p></td>
+    <td><p><media type="image" src="media/fig2.png" its:translate="no" /></p></td>
   </tr>
 
 </table>

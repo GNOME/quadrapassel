@@ -1,4 +1,5 @@
 <page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
 	type="topic" style="task"
 	id="translate">
   <info>
@@ -38,8 +39,8 @@ To start translating you will need to <link href="http://l10n.gnome.org">create 
 </p>
 
 <section id="previous-home"><title></title>
- <p><link xref="get-involved"><media type="image" src="media/go-previous.png" />Get Involved</link></p>
- <p><link xref="index"><media type="image" src="media/go-home.png" />HOME</link></p>
+ <p><link xref="get-involved"><media type="image" src="media/go-previous.png" its:translate="no" />Get Involved</link></p>
+ <p><link xref="index"><media type="image" src="media/go-home.png" its:translate="no" />HOME</link></p>
 </section>
 
 </page>

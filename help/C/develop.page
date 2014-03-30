@@ -1,4 +1,5 @@
 <page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
 	type="topic" style="task"
 	id="develop">
 
@@ -25,8 +26,8 @@
  <p>If you would like to <link href="https://wiki.gnome.org/Apps/Games/Contributing">help develop <app>GNOME Games</app></link>, you can get in touch with the developers using <link href="https://cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games">irc</link>, or via our <link href="http://mail.gnome.org/mailman/listinfo/games-list">mailing list</link>.</p>
 
 <section id="previous-home"><title></title>
- <p><link xref="get-involved"><media type="image" src="media/go-previous.png" />Get Involved</link></p>
- <p><link xref="index"><media type="image" src="media/go-home.png" />HOME</link></p>
+ <p><link xref="get-involved"><media type="image" src="media/go-previous.png" its:translate="no" />Get Involved</link></p>
+ <p><link xref="index"><media type="image" src="media/go-home.png" its:translate="no" />HOME</link></p>
 </section>
 
 </page>
