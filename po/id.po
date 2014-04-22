@@ -4,15 +4,15 @@
 #
 # Andika Triwidada <andika@gmail.com>, 2010, 2012, 2013, 2014.
 # Vincent Sebastian The <vincent.s.the@gmail.com>, 2011, 2012.
-# Dirgita <dirgitadevina@yahoo.co.id>, 2012.
+# Dirgita <dirgitadevina@yahoo.co.id>, 2012, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-02-16 17:28+0000\n"
-"PO-Revision-Date: 2014-03-23 15:33+0700\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"POT-Creation-Date: 2014-04-05 23:00+0000\n"
+"PO-Revision-Date: 2014-04-08 11:56+0700\n"
+"Last-Translator: Dirgita <dirgitadevina@yahoo.co.id>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Rosetta-Export-Date: 2007-04-23 05:58:10+0000\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:1
 msgid "Image to use for drawing blocks"
@@ -206,7 +206,7 @@ msgid ""
 msgstr ""
 "Bila Anda mencari tantangan, Quadrapassel memungkinkan Anda meningkatkan "
 "kecepatan awal balok, atau memulai permainan dengan beberapa baris terisi "
-"sebagian oleh balok. Atau sebagai ganti mengijinkan balok jatuh secara acak, "
+"sebagian oleh balok. Atau sebagai ganti mengizinkan balok jatuh secara acak, "
 "ini dapat memilih balok yang akan sulit Anda tempatkan."
 
 #: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
@@ -385,3 +385,4 @@ msgstr "_OK"
 #: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "Tanggal"
+
