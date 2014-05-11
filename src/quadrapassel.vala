@@ -259,10 +259,9 @@ public class Quadrapassel : Gtk.Application
             return;
         }
 
-        preferences_dialog = new Gtk.Dialog.with_buttons (_("Quadrapassel Preferences"),
+        preferences_dialog = new Gtk.Dialog.with_buttons (_("Preferences"),
                                                           window,
-                                                          (Gtk.DialogFlags)0,
-                                                          _("_Close"), Gtk.ResponseType.CLOSE,
+                                                          Gtk.DialogFlags.USE_HEADER_BAR,
                                                           null);
         preferences_dialog.set_border_width (5);
         var vbox = (Gtk.Box) preferences_dialog.get_content_area ();
