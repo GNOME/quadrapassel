@@ -141,9 +141,7 @@ public class Quadrapassel : Gtk.Application
         pause_play_button.add (pause_play_button_image);
         pause_play_button.action_name = "app.new-game";
         pause_play_button.tooltip_text = _("Start a new game");
-        pause_play_button.valign = Gtk.Align.CENTER;
-        pause_play_button.halign = Gtk.Align.CENTER;
-        pause_play_button.relief = Gtk.ReliefStyle.NONE;
+        pause_play_button.margin = 30;
         pause_play_button_image.show ();
         pause_play_button.show ();
 
