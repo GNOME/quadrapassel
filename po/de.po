@@ -23,8 +23,8 @@ msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-23 15:00+0000\n"
-"PO-Revision-Date: 2014-04-06 11:23+0100\n"
+"POT-Creation-Date: 2014-06-10 22:14+0000\n"
+"PO-Revision-Date: 2014-06-11 13:01+0100\n"
 "Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de_DE\n"
@@ -32,7 +32,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.6.3\n"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:1
 msgid "Image to use for drawing blocks"
@@ -204,9 +204,14 @@ msgid ""
 "disappear and you score points. The game is over when the blocks get stacked "
 "too high. As your score gets higher, you level up and the blocks fall faster."
 msgstr ""
+"Quadrapassel ist eine Abwandlung des klassischen russischen Spiels Tetris. "
+"Drehen und verschieben Sie die fallenden Blöcke und versuchen Sie, diese "
+"lückenlos zu stapeln. Sobald eine horizontale Reihe abgeschlossen ist, löst "
+"sich diese auf und Sie erzielen Punkte. Das Spiel endet sobald sich Blöcke "
+"zu hoch stapeln. Mit steigender Punktzahl steigt der Schwierigkeitsgrad und "
+"die Blöcke fallen schneller."
 
 #: ../data/quadrapassel.appdata.xml.in.h:2
-#, fuzzy
 msgid ""
 "If you're looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -215,7 +220,8 @@ msgid ""
 msgstr ""
 "Wenn Sie eine Herausforderung suchen: Quadrapassel ermöglicht es die "
 "anfängliche Geschwindigkeit der Blöcke zu erhöhen oder das Spiel mit "
-"Teilblöcken in einigen der Reihen zu beginnen. "
+"Teilblöcken in einigen der Reihen zu beginnen. Alternativ können statt "
+"zufälliger Blöcke jene neu fallen, die nur schwierig zu platzieren sind."
 
 #: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
 #: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:746
@@ -276,12 +282,10 @@ msgid "Score"
 msgstr "Ergebnis"
 
 #: ../src/quadrapassel.vala:172
-#| msgid "Lines:"
 msgid "Lines"
 msgstr "Reihen"
 
 #: ../src/quadrapassel.vala:182
-#| msgid "Level:"
 msgid "Level"
 msgstr "Spielstufe"
 
@@ -367,10 +371,6 @@ msgid "Pause the game"
 msgstr "Das Spiel vorübergehend anhalten"
 
 #: ../src/quadrapassel.vala:748
-#| msgid ""
-#| "A classic game of fitting falling blocks together.\n"
-#| "\n"
-#| "Quadrapassel is a part of GNOME Games."
 msgid ""
 "A classic game of fitting falling blocks together\n"
 "\n"
