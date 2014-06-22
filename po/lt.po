@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-02-16 17:28+0000\n"
-"PO-Revision-Date: 2014-02-22 20:39+0200\n"
+"POT-Creation-Date: 2014-06-22 10:14+0000\n"
+"PO-Revision-Date: 2014-06-22 17:46+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -122,7 +122,7 @@ msgid "Whether to pick blocks that are hard to place."
 msgstr "Ar parinkti sunkiai padedamus blokus."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:359
+#: ../src/quadrapassel.vala:356
 msgid "Move left"
 msgstr "Eiti kairėn"
 
@@ -131,7 +131,7 @@ msgid "Key press to move left."
 msgstr "Judėjimo į kairę klavišas."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:362
+#: ../src/quadrapassel.vala:359
 msgid "Move right"
 msgstr "Eiti dešinėn"
 
@@ -140,7 +140,7 @@ msgid "Key press to move right."
 msgstr "Judėjimo į dešinę klavišas."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:365
+#: ../src/quadrapassel.vala:362
 msgid "Move down"
 msgstr "Perkelti žemyn"
 
@@ -149,7 +149,7 @@ msgid "Key press to move down."
 msgstr "Judėjimo žemyn klavišas."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:368
+#: ../src/quadrapassel.vala:365
 msgid "Drop"
 msgstr "Mesti"
 
@@ -158,7 +158,7 @@ msgid "Key press to drop."
 msgstr "Pametimo klavišas."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:371
+#: ../src/quadrapassel.vala:368
 msgid "Rotate"
 msgstr "Pasukti"
 
@@ -167,7 +167,7 @@ msgid "Key press to rotate."
 msgstr "Pasukimo klavišas."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:374
+#: ../src/quadrapassel.vala:371
 msgid "Pause"
 msgstr "Pauzė"
 
@@ -188,8 +188,15 @@ msgid "true if the window is maximized"
 msgstr "teigiama, jei langas yra išdidintas"
 
 #: ../data/quadrapassel.appdata.xml.in.h:1
+#| msgid ""
+#| "Quadrapassel is a derivitive of the classic Russian falling-block game. "
+#| "Reposition and rotate the blocks as they fall, and attempt to fit them "
+#| "together. When you form a complete horizontal row of blocks, the row will "
+#| "disappear and you score points. The game is over when the blocks get "
+#| "stacked too high. As your score gets higher, you level up and the blocks "
+#| "fall faster."
 msgid ""
-"Quadrapassel is a derivitive of the classic Russian falling-block game. "
+"Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
 "together. When you form a complete horizontal row of blocks, the row will "
 "disappear and you score points. The game is over when the blocks get stacked "
@@ -197,7 +204,7 @@ msgid ""
 msgstr ""
 "Quadrapassel yra klasikinio rusiško krintančių blokų žaidimo variantas. "
 "Stumdykite ir sukiokite krintančius blokus bandydami juos sudėlioti kartu. "
-"Kai suformuojate pilną horizontalią blokų eilutę, jis pradings ir gausite "
+"Kai suformuojate pilną horizontalią blokų eilutę, ji pradings ir gausite "
 "taškų. Žaidimas baigiamas, kai blokai sukraunami per aukštai. Kuo daugiau "
 "taškų surenkate, tuo aukštesnį lygį pasiekiate ir blokai krinta greičiau."
 
@@ -214,8 +221,8 @@ msgstr ""
 "patalpinti."
 
 #: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
-#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:746
-#: ../src/quadrapassel.vala:786
+#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:743
+#: ../src/quadrapassel.vala:783
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -259,113 +266,104 @@ msgstr "_Apie"
 msgid "_Quit"
 msgstr "_Išeiti"
 
-#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:684
+#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:681
 msgid "Start a new game"
 msgstr "Pradėti naują žaidimą"
 
-#: ../src/quadrapassel.vala:150
+#: ../src/quadrapassel.vala:148
 msgid "Next"
 msgstr "Kitas"
 
-#: ../src/quadrapassel.vala:162 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:160 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "Taškai"
 
-#: ../src/quadrapassel.vala:172
-#| msgid "Lines:"
+#: ../src/quadrapassel.vala:170
 msgid "Lines"
 msgstr "Eilutės"
 
-#: ../src/quadrapassel.vala:182
-#| msgid "Level:"
+#: ../src/quadrapassel.vala:180
 msgid "Level"
 msgstr "Lygis"
 
-#: ../src/quadrapassel.vala:262
-msgid "Quadrapassel Preferences"
-msgstr "Quadrapassel nustatymai"
+#: ../src/quadrapassel.vala:260
+#| msgid "_Preferences"
+msgid "Preferences"
+msgstr "Nustatymai"
 
-#: ../src/quadrapassel.vala:265 ../src/score-dialog.vala:26
-msgid "_Close"
-msgstr "_Užverti"
-
-#: ../src/quadrapassel.vala:281
+#: ../src/quadrapassel.vala:278
 msgid "Game"
 msgstr "Žaidimas"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:285
+#: ../src/quadrapassel.vala:282
 msgid "_Number of pre-filled rows:"
 msgstr "_Iš anksto užpildytų eilučių skaičius:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:300
+#: ../src/quadrapassel.vala:297
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Iš anksto užpildytų blokų tankumas:"
 
 #. starting level
-#: ../src/quadrapassel.vala:314
+#: ../src/quadrapassel.vala:311
 msgid "_Starting level:"
 msgstr "_Pradinis lygis:"
 
-#: ../src/quadrapassel.vala:327
+#: ../src/quadrapassel.vala:324
 msgid "_Enable sounds"
 msgstr "Įj_ungti garsus"
 
-#: ../src/quadrapassel.vala:332
+#: ../src/quadrapassel.vala:329
 msgid "Choose difficult _blocks"
 msgstr "Pasirinkti sudėtingus _blokus"
 
-#: ../src/quadrapassel.vala:337
+#: ../src/quadrapassel.vala:334
 msgid "_Preview next block"
 msgstr "_Kito bloko peržiūra"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:344
+#: ../src/quadrapassel.vala:341
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Sukti blokus prieš laikrodžio rodyklę"
 
-#: ../src/quadrapassel.vala:349
+#: ../src/quadrapassel.vala:346
 msgid "Show _where the block will land"
 msgstr "Rodyti, kur _nusileis blokas"
 
-#: ../src/quadrapassel.vala:393
+#: ../src/quadrapassel.vala:390
 msgid "Controls"
 msgstr "Valdymas"
 
-#: ../src/quadrapassel.vala:399
+#: ../src/quadrapassel.vala:396
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/quadrapassel.vala:411
+#: ../src/quadrapassel.vala:408
 msgid "Plain"
 msgstr "Paprasta"
 
-#: ../src/quadrapassel.vala:416
+#: ../src/quadrapassel.vala:413
 msgid "Tango Flat"
 msgstr "Paprastas tango"
 
-#: ../src/quadrapassel.vala:421
+#: ../src/quadrapassel.vala:418
 msgid "Tango Shaded"
 msgstr "Paslaptingas tango"
 
-#: ../src/quadrapassel.vala:426
+#: ../src/quadrapassel.vala:423
 msgid "Clean"
 msgstr "Išvalyti"
 
-#: ../src/quadrapassel.vala:665
+#: ../src/quadrapassel.vala:662
 msgid "Unpause the game"
 msgstr "Pratęsti žaidimą"
 
-#: ../src/quadrapassel.vala:670
+#: ../src/quadrapassel.vala:667
 msgid "Pause the game"
 msgstr "Pristabdyti žaidimą"
 
-#: ../src/quadrapassel.vala:748
-#| msgid ""
-#| "A classic game of fitting falling blocks together.\n"
-#| "\n"
-#| "Quadrapassel is a part of GNOME Games."
+#: ../src/quadrapassel.vala:745
 msgid ""
 "A classic game of fitting falling blocks together\n"
 "\n"
@@ -375,7 +373,7 @@ msgstr ""
 "\n"
 "Quadrapassel yra GNOME žaidimų dalis."
 
-#: ../src/quadrapassel.vala:753
+#: ../src/quadrapassel.vala:750
 msgid "translator-credits"
 msgstr ""
 "Paskutinieji vertėjai:\n"
@@ -385,6 +383,10 @@ msgstr ""
 "Ankstesnieji vertėjai:\n"
 "Tomas Kuliavas <tokul@users.sf.net>,\n"
 "Gediminas Paulauskas <menesis@chatsubo.lt>"
+
+#: ../src/score-dialog.vala:26
+msgid "_Close"
+msgstr "_Užverti"
 
 #: ../src/score-dialog.vala:27
 msgid "New Game"
