@@ -168,7 +168,7 @@ private const int block_table[448] =
     0, 0, 0, 0
 };
 
-public class Block
+public class Block : Object
 {
     /* Location of block */
     public int x;
@@ -187,7 +187,7 @@ public class Block
     }
 }
 
-public class Shape
+public class Shape : Object
 {
     /* Location of shape */
     public int x;
