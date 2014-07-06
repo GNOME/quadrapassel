@@ -1,4 +1,3 @@
-data/quadrapassel.desktop.in
 src/game.c
 src/game-view.c
 src/preview.c
