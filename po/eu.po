@@ -3,15 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2008, 2009, 2010, 2011, 2012, 2013, 2014.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-24 20:53+0100\n"
-"PO-Revision-Date: 2014-03-24 21:02+0100\n"
+"POT-Creation-Date: 2014-08-07 15:30+0200\n"
+"PO-Revision-Date: 2014-07-29 21:07+0200\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
-"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"Language-Team: Basque <librezale@librezale.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -114,7 +115,7 @@ msgid "Whether to pick blocks that are hard to place."
 msgstr "Kokatzeko zailak diren blokeak hartu edo ez."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:359
+#: ../src/quadrapassel.vala:356
 msgid "Move left"
 msgstr "Mugitu ezkerrera"
 
@@ -123,7 +124,7 @@ msgid "Key press to move left."
 msgstr "Sakatu tekla ezkerrerantz joateko."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:362
+#: ../src/quadrapassel.vala:359
 msgid "Move right"
 msgstr "Mugitu eskuinera"
 
@@ -132,7 +133,7 @@ msgid "Key press to move right."
 msgstr "Sakatu tekla eskuinerantz joateko."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:365
+#: ../src/quadrapassel.vala:362
 msgid "Move down"
 msgstr "Eraman beherantz"
 
@@ -141,7 +142,7 @@ msgid "Key press to move down."
 msgstr "Beherantz joateko tekla."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:368
+#: ../src/quadrapassel.vala:365
 msgid "Drop"
 msgstr "Jaregin"
 
@@ -150,7 +151,7 @@ msgid "Key press to drop."
 msgstr "Jaregiteko tekla."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:371
+#: ../src/quadrapassel.vala:368
 msgid "Rotate"
 msgstr "Biratu"
 
@@ -159,7 +160,7 @@ msgid "Key press to rotate."
 msgstr "Birarazteko tekla."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:374
+#: ../src/quadrapassel.vala:371
 msgid "Pause"
 msgstr "Pausarazi"
 
@@ -181,20 +182,18 @@ msgstr "'true' (egia) leihoa maximizatuta badago"
 
 #: ../data/quadrapassel.appdata.xml.in.h:1
 msgid ""
-"Quadrapassel is a derivitive of the classic Russian falling-block game. "
+"Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
 "together. When you form a complete horizontal row of blocks, the row will "
 "disappear and you score points. The game is over when the blocks get stacked "
 "too high. As your score gets higher, you level up and the blocks fall faster."
 msgstr ""
 "Erortzen diren blokeen joko errusiar ospetsu batean oinarrituta dago "
-"Quadrapassel. "
-"Biratu eta kokatu blokeak erortzen ari diren heinean, eta saiatu elkarrekin "
-"doi "
-"daitezela. Errenkada horizontal bat osatzean errenkada desagertzen da, eta "
-"puntuak lortzen dituzu. Blokeak pila batean goraino iristen direnean amaitzen "
-"da jokoa. Zenbat eta puntuazio altuagoa eduki, orduan eta altuagoa izango "
-"da maila eta blokeak azkarrago eroriko dira."
+"Quadrapassel. Biratu eta kokatu blokeak erortzen ari diren heinean, eta "
+"saiatu elkarrekin doi daitezela. Errenkada horizontal bat osatzean errenkada "
+"desagertzen da, eta puntuak lortzen dituzu. Blokeak pila batean goraino "
+"iristen direnean amaitzen da jokoa. Zenbat eta puntuazio altuagoa eduki, "
+"orduan eta altuagoa izango da maila eta blokeak azkarrago eroriko dira."
 
 #: ../data/quadrapassel.appdata.xml.in.h:2
 msgid ""
@@ -204,13 +203,13 @@ msgid ""
 "select blocks that will be hard for you to place."
 msgstr ""
 "Erronka bila bazabiltza, Quadrapassel-ek blokeen hasierako abiadura "
-"handiagotzea baimentzen dizu, edo errenkada batzuetan bloke zatiekin "
-"has dezakezu jokoa. Edo, blokeak ausaz erortzea utzi ordez, blokeak hauta "
+"handiagotzea baimentzen dizu, edo errenkada batzuetan bloke zatiekin has "
+"dezakezu jokoa. Edo, blokeak ausaz erortzea utzi ordez, blokeak hauta "
 "ditzake leku egokietan jartzea zailtzeko."
 
 #: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
-#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:746
-#: ../src/quadrapassel.vala:786
+#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:743
+#: ../src/quadrapassel.vala:783
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -254,107 +253,103 @@ msgstr "Honi _buruz"
 msgid "_Quit"
 msgstr "_Irten"
 
-#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:684
+#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:681
 msgid "Start a new game"
 msgstr "Beste joko bat hasten du"
 
-#: ../src/quadrapassel.vala:150
+#: ../src/quadrapassel.vala:148
 msgid "Next"
 msgstr "Hurrengoa"
 
-#: ../src/quadrapassel.vala:162 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:160 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "Puntuazioa"
 
-#: ../src/quadrapassel.vala:172
+#: ../src/quadrapassel.vala:170
 msgid "Lines"
 msgstr "Errenkadak"
 
-#: ../src/quadrapassel.vala:182
+#: ../src/quadrapassel.vala:180
 msgid "Level"
 msgstr "Maila"
 
-#: ../src/quadrapassel.vala:262
-msgid "Quadrapassel Preferences"
-msgstr "Quadrapassel-en hobespenak"
+#: ../src/quadrapassel.vala:260
+msgid "Preferences"
+msgstr "Hobespenak"
 
-#: ../src/quadrapassel.vala:265 ../src/score-dialog.vala:26
-msgid "_Close"
-msgstr "It_xi"
-
-#: ../src/quadrapassel.vala:281
+#: ../src/quadrapassel.vala:278
 msgid "Game"
 msgstr "Jokoa"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:285
+#: ../src/quadrapassel.vala:282
 msgid "_Number of pre-filled rows:"
 msgstr "_Aurrez betetako errenkaden kopurua:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:300
+#: ../src/quadrapassel.vala:297
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Bloke-dentsitatea, aurrez betetako errenkada batean:"
 
 #. starting level
-#: ../src/quadrapassel.vala:314
+#: ../src/quadrapassel.vala:311
 msgid "_Starting level:"
 msgstr "_Hasierako maila:"
 
-#: ../src/quadrapassel.vala:327
+#: ../src/quadrapassel.vala:324
 msgid "_Enable sounds"
 msgstr "_Gaitu soinuak"
 
-#: ../src/quadrapassel.vala:332
+#: ../src/quadrapassel.vala:329
 msgid "Choose difficult _blocks"
 msgstr "Aukeratu blokeen _zailtasuna"
 
-#: ../src/quadrapassel.vala:337
+#: ../src/quadrapassel.vala:334
 msgid "_Preview next block"
 msgstr "_Aurreikusi hurrengo blokea"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:344
+#: ../src/quadrapassel.vala:341
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Biratu blokeak erloju-orratzen aurkako noranzkoan"
 
-#: ../src/quadrapassel.vala:349
+#: ../src/quadrapassel.vala:346
 msgid "Show _where the block will land"
 msgstr "Erakutsi _blokea nora helduko den"
 
-#: ../src/quadrapassel.vala:393
+#: ../src/quadrapassel.vala:390
 msgid "Controls"
 msgstr "Kontrolak"
 
-#: ../src/quadrapassel.vala:399
+#: ../src/quadrapassel.vala:396
 msgid "Theme"
 msgstr "Gaia"
 
-#: ../src/quadrapassel.vala:411
+#: ../src/quadrapassel.vala:408
 msgid "Plain"
 msgstr "Soila"
 
-#: ../src/quadrapassel.vala:416
+#: ../src/quadrapassel.vala:413
 msgid "Tango Flat"
 msgstr "Tango laua"
 
-#: ../src/quadrapassel.vala:421
+#: ../src/quadrapassel.vala:418
 msgid "Tango Shaded"
 msgstr "Tango itzaleztatua"
 
-#: ../src/quadrapassel.vala:426
+#: ../src/quadrapassel.vala:423
 msgid "Clean"
 msgstr "Garbitu"
 
-#: ../src/quadrapassel.vala:665
+#: ../src/quadrapassel.vala:662
 msgid "Unpause the game"
 msgstr "Jokoa jarraitzen du"
 
-#: ../src/quadrapassel.vala:670
+#: ../src/quadrapassel.vala:667
 msgid "Pause the game"
 msgstr "Jokoa pausarazten du"
 
-#: ../src/quadrapassel.vala:748
+#: ../src/quadrapassel.vala:745
 msgid ""
 "A classic game of fitting falling blocks together\n"
 "\n"
@@ -364,9 +359,13 @@ msgstr ""
 "\n"
 "GNOME Games-ekoa da GNOME Quadrapassel."
 
-#: ../src/quadrapassel.vala:753
+#: ../src/quadrapassel.vala:750
 msgid "translator-credits"
 msgstr "Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>"
+
+#: ../src/score-dialog.vala:26
+msgid "_Close"
+msgstr "It_xi"
 
 #: ../src/score-dialog.vala:27
 msgid "New Game"
@@ -379,6 +378,9 @@ msgstr "Ado_s"
 #: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "Data"
+
+#~ msgid "Quadrapassel Preferences"
+#~ msgstr "Quadrapassel-en hobespenak"
 
 #~ msgid "true if the window is fullscren"
 #~ msgstr "'true' (egia) leihoa pantaila osoan badago "
@@ -519,9 +521,6 @@ msgstr "Data"
 
 #~ msgid "Difficulty of the opponent chess engine"
 #~ msgstr "Xake motor aurkariaren zailtasuna"
-
-#~ msgid "Preferences"
-#~ msgstr "Hobespenak"
 
 #~ msgid "Play as:"
 #~ msgstr "Jokatu honela:"
