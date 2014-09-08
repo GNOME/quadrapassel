@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
-"POT-Creation-Date: 2014-04-22 22:06+0000\n"
+"POT-Creation-Date: 2014-09-08 10:23+0000\n"
 "PO-Revision-Date: 2014-04-23 10:23+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -198,10 +198,10 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/documentation.page:26
 msgid ""
-"Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
 msgstr ""
-"Užitečné informace obsahuje naše <link href=\"https://live.gnome.org/"
+"Užitečné informace obsahuje naše <link href=\"https://wiki.gnome.org/"
 "DocumentationProject/Contributing\">wikistránka</link>."
 
 #. (itstool) path: page/title
