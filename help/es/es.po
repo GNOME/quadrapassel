@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnometris.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-08 10:06+0000\n"
-"PO-Revision-Date: 2014-05-10 19:23+0200\n"
+"POT-Creation-Date: 2014-09-09 22:22+0000\n"
+"PO-Revision-Date: 2014-09-10 12:16+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -134,7 +134,6 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/bug-filing.page:52 C/develop.page:29 C/documentation.page:29
 #: C/translate.page:42
-#| msgid "<link xref=\"get-involved\">Get involved</link>"
 msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
 msgstr "<link xref=\"get-involved\"><_:media-1/>Involucrarse</link>"
 
@@ -142,9 +141,6 @@ msgstr "<link xref=\"get-involved\"><_:media-1/>Involucrarse</link>"
 #: C/bug-filing.page:53 C/develop.page:30 C/documentation.page:30
 #: C/get-involved.page:23 C/playgame.page:44 C/preferences.page:73
 #: C/score.page:38 C/translate.page:43
-#| msgid ""
-#| "<link xref=\"index\"><media type=\"image\" src=\"media/go-home.png\"/"
-#| ">HOME</link>"
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
 msgstr "<link xref=\"index\"><_:media-1/>Inicio</link>"
 
@@ -162,13 +158,6 @@ msgstr "Contribuir al desarrollo"
 
 #. (itstool) path: page/p
 #: C/develop.page:26
-#| msgid ""
-#| "If you would like to <link href=\"https://live.gnome.org/GnomeGames/"
-#| "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
-#| "touch with the developers using <link href=\"https://cbe005.chat.mibbit."
-#| "com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our "
-#| "<link href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing "
-#| "list</link>."
 msgid ""
 "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
 "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
@@ -209,12 +198,15 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/documentation.page:26
+#| msgid ""
+#| "Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+#| "\">wiki</link> page contains useful information."
 msgid ""
-"Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
 msgstr ""
-"El <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
-"\">wiki</link> contiene información útil."
+"La página del <link href=\"https://wiki.gnome.org/DocumentationProject/"
+"Contributing\">wiki</link> contiene información útil."
 
 #. (itstool) path: page/title
 #: C/get-involved.page:17
@@ -244,15 +236,11 @@ msgstr "Quadrapassel"
 
 #. (itstool) path: media/span
 #: C/index.page:19
-#| msgctxt "link"
-#| msgid "Quadrapassel"
 msgid "Quadrapassel logo"
 msgstr "Logo de Quadrapassel"
 
 #. (itstool) path: page/title
 #: C/index.page:19
-#| msgctxt "link"
-#| msgid "Quadrapassel"
 msgid "<_:media-1/> Quadrapassel"
 msgstr "<_:media-1/> Quadrapassel"
 
@@ -726,11 +714,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/translate.page:30
-#| msgid ""
-#| "To start translating you will need to <link href=\"http:l10n.gnome.org"
-#| "\">create an account</link> and join the <link href=\"http://l10n.gnome."
-#| "org/teams/\">translation team</link> for your language. This will give "
-#| "you the ability to upload new translations."
 msgid ""
 "To start translating you will need to <link href=\"http://l10n.gnome.org"
 "\">create an account</link> and join the <link href=\"http://l10n.gnome.org/"
