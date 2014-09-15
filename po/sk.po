@@ -11,9 +11,9 @@ msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-09 12:32+0000\n"
-"PO-Revision-Date: 2014-03-22 23:34+0100\n"
-"Last-Translator: Peter Mráz <etkinator@gmail.com>\n"
+"POT-Creation-Date: 2014-09-15 10:23+0000\n"
+"PO-Revision-Date: 2014-09-15 23:05+0100\n"
+"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -133,7 +133,7 @@ msgid "Whether to pick blocks that are hard to place."
 msgstr "Určuje, či sa majú voliť ťažko umiestiteľné bloky."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:359
+#: ../src/quadrapassel.vala:356
 msgid "Move left"
 msgstr "Posun doľava"
 
@@ -142,7 +142,7 @@ msgid "Key press to move left."
 msgstr "Kláves na posun doľava."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:362
+#: ../src/quadrapassel.vala:359
 msgid "Move right"
 msgstr "Posun doprava"
 
@@ -153,7 +153,7 @@ msgstr "Kláves na posun doprava."
 # PK: preco nie posunut?
 # PM: Klávesa na posun dole
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:365
+#: ../src/quadrapassel.vala:362
 msgid "Move down"
 msgstr "Posun dole"
 
@@ -164,7 +164,7 @@ msgstr "Kláves na posun doľava."
 # PK: nema tam byt neurcitok
 # PM: Klávesa na spustenie
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:368
+#: ../src/quadrapassel.vala:365
 msgid "Drop"
 msgstr "Spustenie"
 
@@ -173,7 +173,7 @@ msgid "Key press to drop."
 msgstr "Kláves na spustenie."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:371
+#: ../src/quadrapassel.vala:368
 msgid "Rotate"
 msgstr "Otočenie"
 
@@ -182,7 +182,7 @@ msgid "Key press to rotate."
 msgstr "Kláves na otočenie."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:374
+#: ../src/quadrapassel.vala:371
 msgid "Pause"
 msgstr "Pauza"
 
@@ -203,8 +203,15 @@ msgid "true if the window is maximized"
 msgstr "true, ak je okno maximalizované"
 
 #: ../data/quadrapassel.appdata.xml.in.h:1
+#| msgid ""
+#| "Quadrapassel is a derivitive of the classic Russian falling-block game. "
+#| "Reposition and rotate the blocks as they fall, and attempt to fit them "
+#| "together. When you form a complete horizontal row of blocks, the row will "
+#| "disappear and you score points. The game is over when the blocks get "
+#| "stacked too high. As your score gets higher, you level up and the blocks "
+#| "fall faster."
 msgid ""
-"Quadrapassel is a derivitive of the classic Russian falling-block game. "
+"Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
 "together. When you form a complete horizontal row of blocks, the row will "
 "disappear and you score points. The game is over when the blocks get stacked "
@@ -212,8 +219,8 @@ msgid ""
 msgstr ""
 "Hra Štvorbloky je odvodená od klasickej ruskej hry s padajúcimi blokmi. "
 "Premiestnite a otočte bloky pokým padajú tak, aby do seba zapadli. Po "
-"vytvorení celistvého vodorovného riadku sa tento riadok odstrán a pripíšu sa "
-"vám body. Hra končí keď sa bloky dostanú príliš vysoko. S vyšším skóre "
+"vytvorení celistvého vodorovného riadku sa tento riadok odstráni a pripíšu "
+"sa vám body. Hra končí keď sa bloky dostanú príliš vysoko. S vyšším skóre "
 "rastie aj úroveň a bloky padajú rýchlejšie."
 
 #: ../data/quadrapassel.appdata.xml.in.h:2
@@ -230,8 +237,8 @@ msgstr ""
 # PK: neviem ci je tu vhodny preklad
 # PM: aj ine hry su prekladane (roboti, štyri v rade, červík...)
 #: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
-#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:746
-#: ../src/quadrapassel.vala:786
+#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:743
+#: ../src/quadrapassel.vala:783
 msgid "Quadrapassel"
 msgstr "Štvorbloky"
 
@@ -275,109 +282,104 @@ msgstr "_O tejto hre"
 msgid "_Quit"
 msgstr "_Ukončiť"
 
-#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:684
+#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:681
 msgid "Start a new game"
 msgstr "Začať novú hru"
 
 # JK: Myslí sa blok
-#: ../src/quadrapassel.vala:150
+#: ../src/quadrapassel.vala:148
 msgid "Next"
 msgstr "Ďalší"
 
-#: ../src/quadrapassel.vala:162 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:160 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "Skóre"
 
-#: ../src/quadrapassel.vala:172
+#: ../src/quadrapassel.vala:170
 msgid "Lines"
 msgstr "Riadky"
 
-#: ../src/quadrapassel.vala:182
+#: ../src/quadrapassel.vala:180
 msgid "Level"
 msgstr "Úroveň"
 
-# PK: neviem ci to prekladat
-#: ../src/quadrapassel.vala:262
-msgid "Quadrapassel Preferences"
-msgstr "Nastavenia Štvorblokov"
+#: ../src/quadrapassel.vala:260
+msgid "Preferences"
+msgstr "Nastavenia"
 
-#: ../src/quadrapassel.vala:265 ../src/score-dialog.vala:26
-msgid "_Close"
-msgstr "_Zavrieť"
-
-#: ../src/quadrapassel.vala:281
+#: ../src/quadrapassel.vala:278
 msgid "Game"
 msgstr "Hra"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:285
+#: ../src/quadrapassel.vala:282
 msgid "_Number of pre-filled rows:"
 msgstr "Počet pred_vyplnených riadkov:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:300
+#: ../src/quadrapassel.vala:297
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Hustota blokov v predvyplnených riadkoch:"
 
 #. starting level
-#: ../src/quadrapassel.vala:314
+#: ../src/quadrapassel.vala:311
 msgid "_Starting level:"
 msgstr "_Počiatočná úroveň:"
 
-#: ../src/quadrapassel.vala:327
+#: ../src/quadrapassel.vala:324
 msgid "_Enable sounds"
 msgstr "_Povoliť zvuky"
 
-#: ../src/quadrapassel.vala:332
+#: ../src/quadrapassel.vala:329
 msgid "Choose difficult _blocks"
 msgstr "Zvoliť obtiažne _bloky"
 
-#: ../src/quadrapassel.vala:337
+#: ../src/quadrapassel.vala:334
 msgid "_Preview next block"
 msgstr "_Zobrazovať nasledujúci blok"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:344
+#: ../src/quadrapassel.vala:341
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Otáčať proti smeru hodinových ručičiek"
 
-#: ../src/quadrapassel.vala:349
+#: ../src/quadrapassel.vala:346
 msgid "Show _where the block will land"
 msgstr "Zobraziť _miesto dopadu bloku"
 
-#: ../src/quadrapassel.vala:393
+#: ../src/quadrapassel.vala:390
 msgid "Controls"
 msgstr "Ovládanie"
 
-#: ../src/quadrapassel.vala:399
+#: ../src/quadrapassel.vala:396
 msgid "Theme"
 msgstr "Téma"
 
-#: ../src/quadrapassel.vala:411
+#: ../src/quadrapassel.vala:408
 msgid "Plain"
 msgstr "Jednoduchý"
 
-#: ../src/quadrapassel.vala:416
+#: ../src/quadrapassel.vala:413
 msgid "Tango Flat"
 msgstr "Tango - plochý"
 
-#: ../src/quadrapassel.vala:421
+#: ../src/quadrapassel.vala:418
 msgid "Tango Shaded"
 msgstr "Tango - tieňovaný"
 
-#: ../src/quadrapassel.vala:426
+#: ../src/quadrapassel.vala:423
 msgid "Clean"
 msgstr "Čistý"
 
-#: ../src/quadrapassel.vala:665
+#: ../src/quadrapassel.vala:662
 msgid "Unpause the game"
 msgstr "Zruší pozastavenie hry"
 
-#: ../src/quadrapassel.vala:670
+#: ../src/quadrapassel.vala:667
 msgid "Pause the game"
 msgstr "Pozastaví hru"
 
-#: ../src/quadrapassel.vala:748
+#: ../src/quadrapassel.vala:745
 msgid ""
 "A classic game of fitting falling blocks together\n"
 "\n"
@@ -387,13 +389,17 @@ msgstr ""
 "\n"
 "Štvorbloky sú súčasťou Hier GNOME."
 
-#: ../src/quadrapassel.vala:753
+#: ../src/quadrapassel.vala:750
 msgid "translator-credits"
 msgstr ""
 "Stanislav Višňovský (visnovsky@nenya.ms.mff.cuni.cz)\n"
 "Marcel Telka <marcel@telka.sk>\n"
 "Peter Mráz <etkinator@gmail.com>\n"
 "Ján Kyselica <kyselica.jan@gmail.com>"
+
+#: ../src/score-dialog.vala:26
+msgid "_Close"
+msgstr "_Zavrieť"
 
 #: ../src/score-dialog.vala:27
 msgid "New Game"
@@ -406,157 +412,3 @@ msgstr "_OK"
 #: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "Dátum"
-
-#~ msgid "true if the window is fullscren"
-#~ msgstr "true, ak je okno v celoobrazovkovom režime"
-
-#~ msgid "_Pause"
-#~ msgstr "_Pozastaviť"
-
-#~ msgid "_New"
-#~ msgstr "_Nová"
-
-#~ msgid "_Fullscreen"
-#~ msgstr "Na _celú obrazovku"
-
-#~ msgid "Score:"
-#~ msgstr "Skóre:"
-
-#~ msgid "_Leave Fullscreen"
-#~ msgstr "_Opustiť celoobrazovkový režim"
-
-#~ msgid "Res_ume"
-#~ msgstr "Po_kračovať"
-
-#~ msgid "GNOME Games web site"
-#~ msgstr "Webové stránky Hier GNOME"
-
-#~ msgid "Chess"
-#~ msgstr "Šach"
-
-#~ msgid "Play the classic two-player boardgame of chess"
-#~ msgstr "Hrajte klasický stolný šach pre dvoch hráčov"
-
-#~ msgid "_Game"
-#~ msgstr "_Hra"
-
-#~ msgid "_Undo Move"
-#~ msgstr "_Vrátiť ťah"
-
-#~ msgid "_Resign"
-#~ msgstr "V_zdať sa"
-
-#~ msgid "Claim _Draw"
-#~ msgstr "Navrhnúť _remízu"
-
-#~ msgid "_Settings"
-#~ msgstr "_Nastavenia"
-
-#~ msgid "_Contents"
-#~ msgstr "Ob_sah"
-
-#~ msgid "Undo Move"
-#~ msgstr "Vrátiť ťah"
-
-#~ msgid "Resign"
-#~ msgstr "Vzdať sa"
-
-#~ msgid "Rewind to the game start"
-#~ msgstr "Presunie hru na začiatok"
-
-#~ msgid "Show the previous move"
-#~ msgstr "Ukáže predchádzajúci ťah"
-
-#~ msgid "Show the next move"
-#~ msgstr "Ukáže ďalší ťah"
-
-#~ msgid "Show the current move"
-#~ msgstr "Ukáže aktuálny stav hry"
-
-#~ msgid "The width of the window"
-#~ msgstr "Šírka okna"
-
-#~ msgid "The height of the window"
-#~ msgstr "Výška okna"
-
-#~ msgid "A flag to enable maximized mode"
-#~ msgstr "Príznak povoľujúci režim maximalizovaného okna"
-
-#~ msgid "A flag to enable fullscreen mode"
-#~ msgstr "Príznak povoľujúci režim zobrazenia na celú obrazovku"
-
-#~ msgid "The piece to promote pawns to"
-#~ msgstr "Figúrka, na ktorú premieňať pešiakov"
-
-#~ msgid ""
-#~ "The piece to promote to when a human player moves a pawn to the far rank"
-#~ msgstr ""
-#~ "Figúrka, na ktorú sa premení pešiak, keď ho hráč posunie na posledné pole"
-
-#~ msgid "A flag to enable 3D mode"
-#~ msgstr "Príznak povoľujúci 3D režim"
-
-#~ msgid "A flag to smooth (anti-alias) the 3D display"
-#~ msgstr "Príznak vyhladzujúci (anti-alias) 3D zobrazenie"
-
-#~ msgid "The piece theme to use"
-#~ msgstr "Téma figúrok, ktorá sa má použiť"
-
-#~ msgid "A flag to enable move hints"
-#~ msgstr "Príznak povoľujúci zobrazenie možných ťahov"
-
-#~ msgid "A flag to enable board numbering"
-#~ msgstr "Príznak povoľujúci číslovanie šachovnice"
-
-#~ msgid "A flag to enable the move history browser"
-#~ msgstr "Príznak povoľujúci prechádzať históriou ťahov"
-
-#~ msgid "A flag to enable the toolbar"
-#~ msgstr "Príznak povoľujúci lištu nástrojov"
-
-#~ msgid "The directory to open the save game dialog in"
-#~ msgstr "Adresár, ktorý sa má otvoriť v dialógovom okne na uloženie hry"
-
-#~ msgid "The directory to open the load game dialog in"
-#~ msgstr "Adresár, ktorý sa má otvoriť v dialógovom okne na nahranie hry"
-
-#~ msgid "The format to display moves in"
-#~ msgstr "Formát zobrazenia ťahov"
-
-#~ msgid "The side of the board that is in the foreground"
-#~ msgstr "Strana šachovnice, ktorá je vpredu"
-
-#~ msgid "The duration of a game in seconds (0 for no limit)"
-#~ msgstr "Trvanie hry v sekundách (0 znamená bez obmedzenia)"
-
-#~ msgid "true if the human player is playing white"
-#~ msgstr "true, ak človek hrá bielymi figúrkami"
-
-#~ msgid "The opponent player"
-#~ msgstr "Protihráč"
-
-#~ msgid ""
-#~ "Can be 'human' (play against another human player), '' (use the first "
-#~ "available chess engine) or the name of a specific engine to play against"
-#~ msgstr ""
-#~ "Môže byť 'human' (hra proti druhému človeku v úlohe protihráča), "
-#~ "'' (použije prvý dostupný šachový stroj) alebo názov konkrétneho "
-#~ "šachového stroja, proti ktorému sa bude hrať"
-
-#~ msgid "Difficulty of the opponent chess engine"
-#~ msgstr "Obtiažnosť šachového stroja v úlohe protihráča"
-
-#~ msgid "Preferences"
-#~ msgstr "Nastavenia"
-
-#~ msgid "Play as:"
-#~ msgstr "Hrá ako:"
-
-#~ msgid "Opposing Player:"
-#~ msgstr "Protihráč:"
-
-#~ msgid "Difficulty:"
-#~ msgstr "Obtiažnosť:"
-
-#~ msgid "Game Duration:"
-#~ msgstr "Trvanie hry:"
