@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnometris.HEAD.el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-18 22:17+0000\n"
-"PO-Revision-Date: 2014-08-02 17:30+0200\n"
+"POT-Creation-Date: 2014-09-21 10:17+0000\n"
+"PO-Revision-Date: 2014-09-21 20:11+0200\n"
 "Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: www.gnome.gr\n"
 "Language: el\n"
@@ -17,15 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.6.9\n"
 "X-Project-Style: gnome\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Για την Ελληνική μεταφραστική ομάδα GNOME <team@gnome.gr>,2007, 2010, 2012, "
-"2014\n"
+"Ελληνική μεταφραστική ομάδα GNOME <team@gnome.gr>,2007-2014\n"
 "Χρήστος Μπούνταλης <mpounta@gmail.com>, 2007\n"
 "Νικόλαος Μπακαούκας <nikolaosx1@gmail.com>, 2010\n"
 "Μιχάλης Κοτσαρίνης <mk73628@gmail.com>, 2010\n"
@@ -210,10 +209,10 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/documentation.page:26
 msgid ""
-"Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
 msgstr ""
-"Επίσης το <link href=\"https://live.gnome.org/DocumentationProject/"
+"Επίσης το <link href=\"https://wiki.gnome.org/DocumentationProject/"
 "Contributing\">wiki</link> μας περιέχει χρήσιμες πληροφορίες."
 
 #. (itstool) path: page/title
@@ -395,7 +394,7 @@ msgstr ""
 #. (itstool) path: license/p
 #: C/playgame.page:17
 msgid "Creative Commons Attribution Share Alike 3.0"
-msgstr "Creative Commons Attribution-Share Alike 3.0 Unported License"
+msgstr "Άδεια Creative Commons Attribution-Share Alike 3.0 Unported"
 
 #. (itstool) path: page/title
 #: C/playgame.page:21
