@@ -498,7 +498,7 @@ public class BlockTexture : Clutter.CairoTexture
             0.0, 1.0, 1.0
         };
 
-        cr.set_source_rgb(colors[color * 3], colors[color * 3 + 1], colors[color * 3 + 2]);
+        cr.set_source_rgb (colors[color * 3], colors[color * 3 + 1], colors[color * 3 + 2]);
         cr.paint ();
     }
 

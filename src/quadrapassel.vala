@@ -120,7 +120,7 @@ public class Quadrapassel : Gtk.Application
         window.set_titlebar (headerbar);
 
         var game_grid = new Gtk.Grid ();
-        game_grid.set_column_homogeneous(true);
+        game_grid.set_column_homogeneous (true);
         window.add (game_grid);
 
         view = new GameView ();
@@ -134,7 +134,7 @@ public class Quadrapassel : Gtk.Application
 
         bool rtl = Gtk.Widget.get_default_direction () == Gtk.TextDirection.RTL;
 
-        pause_play_button = new Gtk.Button();
+        pause_play_button = new Gtk.Button ();
         pause_play_button_image = new Gtk.Image.from_icon_name (rtl ? "media-playback-start-rtl-symbolic" :
                                                                       "media-playback-start-symbolic",
                                                                 Gtk.IconSize.DIALOG);
@@ -333,7 +333,7 @@ public class Quadrapassel : Gtk.Application
 
         do_preview_toggle = new Gtk.CheckButton.with_mnemonic (_("_Preview next block"));
         do_preview_toggle.set_active (settings.get_boolean ("do-preview"));
-        do_preview_toggle.set_sensitive(!settings.get_boolean ("pick-difficult-blocks"));
+        do_preview_toggle.set_sensitive (!settings.get_boolean ("pick-difficult-blocks"));
         do_preview_toggle.toggled.connect (do_preview_toggle_toggled_cb);
         grid.attach (do_preview_toggle, 0, 5, 2, 1);
 
@@ -450,7 +450,7 @@ public class Quadrapassel : Gtk.Application
     private void difficult_blocks_toggled_cb ()
     {
         settings.set_boolean ("pick-difficult-blocks", difficult_blocks_toggle.get_active ());
-        do_preview_toggle.set_sensitive(!settings.get_boolean ("pick-difficult-blocks"));
+        do_preview_toggle.set_sensitive (!settings.get_boolean ("pick-difficult-blocks"));
         update_preview_settings ();
     }
 
@@ -676,7 +676,7 @@ public class Quadrapassel : Gtk.Application
     private void complete_cb ()
     {
         pause_action.set_enabled (false);
-        pause_play_button_image.set_from_icon_name ( "view-refresh-symbolic" , Gtk.IconSize.DIALOG);
+        pause_play_button_image.set_from_icon_name ("view-refresh-symbolic" , Gtk.IconSize.DIALOG);
         pause_play_button.action_name = "app.new-game";
         pause_play_button.tooltip_text = _("Start a new game");
 

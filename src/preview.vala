@@ -93,7 +93,7 @@ public class Preview : GtkClutter.Embed
         if (game == null || game.next_shape == null || !enabled)
         {
             // If the game is set up for preview but no preview is available, still show preview field
-            set_visible(enabled);
+            set_visible (enabled);
             return;
         }
 

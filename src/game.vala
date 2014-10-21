@@ -386,7 +386,7 @@ public class Game : Object
         if (fast_forward == enable || game_over)
             return;
         if (enable)
-            if(!move_shape (0, 1, 0))
+            if (!move_shape (0, 1, 0))
                 return;
         fast_forward = enable;
         setup_drop_timer ();
