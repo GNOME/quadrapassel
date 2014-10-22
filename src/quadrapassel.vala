@@ -157,7 +157,8 @@ public class Quadrapassel : Gtk.Application
         game_grid.attach (preview_frame, 2, 1, 1, 3);
         game_grid.show ();
 
-        var label = new Gtk.Label (_("Score"));
+        var label = new Gtk.Label (null);
+        label.set_markup ("<span color='gray'>%s</span>".printf (_("Score")));
         label.set_alignment (0.5f, 0.5f);
         label.show ();
         game_grid.attach (label, 2, 5, 1, 1);
@@ -167,7 +168,8 @@ public class Quadrapassel : Gtk.Application
         score_label.show ();
         game_grid.attach (score_label, 2, 6, 1, 2);
 
-        label = new Gtk.Label (_("Lines"));
+        label = new Gtk.Label (null);
+        label.set_markup ("<span color='gray'>%s</span>".printf (_("Lines")));
         label.set_alignment (0.5f, 0.5f);
         label.show ();
         game_grid.attach (label, 2, 9, 1, 1);
@@ -177,7 +179,8 @@ public class Quadrapassel : Gtk.Application
         n_destroyed_label.show ();
         game_grid.attach (n_destroyed_label, 2, 10, 1, 2);
 
-        label = new Gtk.Label (_("Level"));
+        label = new Gtk.Label (null);
+        label.set_markup ("<span color='gray'>%s</span>".printf (_("Level")));
         label.set_alignment (0.5f, 0.5f);
         label.show ();
         game_grid.attach (label, 2, 13, 1, 1);
