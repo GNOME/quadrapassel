@@ -129,8 +129,11 @@ public class Quadrapassel : Gtk.Application
         view.show_shadow = settings.get_boolean ("show-shadow");
         view.game = new Game (20, 14, 1, 20, 10);
         view.show ();
-
-        game_grid.attach (view, 0, 0, 2, 18);
+        var game_aspect = new Gtk.AspectFrame (null, 0.5f, 0.5f, 14.0f/20.0f, false);
+        game_aspect.show ();
+        game_aspect.add (view);
+        game_aspect.border_width = 12;
+        game_grid.attach (game_aspect, 0, 1, 2, 17);
 
         bool rtl = Gtk.Widget.get_default_direction () == Gtk.TextDirection.RTL;
 
