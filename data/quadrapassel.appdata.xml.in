@@ -4,6 +4,8 @@
  <id type="desktop">quadrapassel.desktop</id>
  <metadata_license>CC0-1.0</metadata_license>
  <project_license>GPL-2.0+ and CC-BY-SA-3.0</project_license>
+ <_name>Quadrapassel</_name>
+ <_summary>Fit falling blocks together</_summary>
  <description>
   <_p>
    Quadrapassel is a derivative of a classic Russian falling-block game.
