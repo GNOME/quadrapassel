@@ -9,15 +9,14 @@
 # Laszlo Dvornik <dvornik at gnome dot hu>, 2004.
 # Szabolcs Varga <shirokuma at shirokuma dot hu>, 2005.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2014.
-# Balázs Úr <urbalazs at gmail dot com>, 2013.
-# Balázs Úr <urbalazs@gmail.com>, 2014.
+# Balázs Úr <urbalazs at gmail dot com>, 2013, 2014, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-11 10:22+0000\n"
-"PO-Revision-Date: 2014-09-11 18:52+0200\n"
+"POT-Creation-Date: 2015-01-30 11:34+0000\n"
+"PO-Revision-Date: 2015-01-30 22:17+0100\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
@@ -124,7 +123,7 @@ msgid "Whether to pick blocks that are hard to place."
 msgstr "Nehezen elhelyezhető blokkok kiválasztása."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:356
+#: ../src/quadrapassel.vala:362
 msgid "Move left"
 msgstr "Lépés balra"
 
@@ -133,7 +132,7 @@ msgid "Key press to move left."
 msgstr "Billentyű a balra mozgáshoz."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:359
+#: ../src/quadrapassel.vala:365
 msgid "Move right"
 msgstr "Lépés jobbra"
 
@@ -142,7 +141,7 @@ msgid "Key press to move right."
 msgstr "Billentyű a jobbra mozgáshoz."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:362
+#: ../src/quadrapassel.vala:368
 msgid "Move down"
 msgstr "Lefelé mozgatás"
 
@@ -151,7 +150,7 @@ msgid "Key press to move down."
 msgstr "Billentyű a lefelé mozgáshoz."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:365
+#: ../src/quadrapassel.vala:371
 msgid "Drop"
 msgstr "Ejtés"
 
@@ -160,7 +159,7 @@ msgid "Key press to drop."
 msgstr "Billentyű a leejtéshez."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:368
+#: ../src/quadrapassel.vala:374
 msgid "Rotate"
 msgstr "Forgatás"
 
@@ -169,7 +168,7 @@ msgid "Key press to rotate."
 msgstr "Billentyű a forgatáshoz."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:371
+#: ../src/quadrapassel.vala:377
 msgid "Pause"
 msgstr "Szünet"
 
@@ -189,14 +188,17 @@ msgstr "Az ablak magassága képpontokban"
 msgid "true if the window is maximized"
 msgstr "Az ablak teljes méretű-e"
 
-#: ../data/quadrapassel.appdata.xml.in.h:1
-#| msgid ""
-#| "Quadrapassel is a derivitive of the classic Russian falling-block game. "
-#| "Reposition and rotate the blocks as they fall, and attempt to fit them "
-#| "together. When you form a complete horizontal row of blocks, the row will "
-#| "disappear and you score points. The game is over when the blocks get "
-#| "stacked too high. As your score gets higher, you level up and the blocks "
-#| "fall faster."
+#: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
+#: ../src/quadrapassel.vala:107 ../src/quadrapassel.vala:118
+#: ../src/quadrapassel.vala:749 ../src/quadrapassel.vala:789
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#: ../data/quadrapassel.appdata.xml.in.h:2 ../data/quadrapassel.desktop.in.h:2
+msgid "Fit falling blocks together"
+msgstr "Lehulló blokkok egymáshoz illesztése"
+
+#: ../data/quadrapassel.appdata.xml.in.h:3
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -210,7 +212,7 @@ msgstr ""
 "ha a blokkok rakása túl magassá válik. A pontszám növekedésével szintet "
 "léphet, ekkor a blokkok gyorsabban hullanak."
 
-#: ../data/quadrapassel.appdata.xml.in.h:2
+#: ../data/quadrapassel.appdata.xml.in.h:4
 msgid ""
 "If you're looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -221,16 +223,6 @@ msgstr ""
 "növelését, vagy a játék kezdését néhány blokkokkal részleges feltöltött "
 "sorral. Vagy a véletlenszerűen hulló blokkok helyett választhat nehezen "
 "elhelyezhetőeket is."
-
-#: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
-#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:743
-#: ../src/quadrapassel.vala:783
-msgid "Quadrapassel"
-msgstr "Quadrapassel"
-
-#: ../data/quadrapassel.desktop.in.h:2
-msgid "Fit falling blocks together"
-msgstr "Lehulló blokkok egymáshoz illesztése"
 
 #: ../data/quadrapassel.desktop.in.h:3
 msgid "tetris;"
@@ -268,113 +260,111 @@ msgstr "_Névjegy"
 msgid "_Quit"
 msgstr "_Kilépés"
 
-#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:681
+#: ../src/quadrapassel.vala:146 ../src/quadrapassel.vala:687
 msgid "Start a new game"
 msgstr "Új játék indítása"
 
-#: ../src/quadrapassel.vala:148
+#: ../src/quadrapassel.vala:151
 msgid "Next"
 msgstr "Következő"
 
-#: ../src/quadrapassel.vala:160 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:164 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "Pontszám"
 
-#: ../src/quadrapassel.vala:170
+#: ../src/quadrapassel.vala:175
 msgid "Lines"
 msgstr "Sor"
 
-#: ../src/quadrapassel.vala:180
+#: ../src/quadrapassel.vala:186
 msgid "Level"
 msgstr "Szint"
 
-#: ../src/quadrapassel.vala:260
+#: ../src/quadrapassel.vala:266
 msgid "Preferences"
 msgstr "Beállítások"
 
-#: ../src/quadrapassel.vala:278
+#: ../src/quadrapassel.vala:284
 msgid "Game"
 msgstr "Játék"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:282
+#: ../src/quadrapassel.vala:288
 msgid "_Number of pre-filled rows:"
 msgstr "Az előre _kitöltött sorok száma:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:297
+#: ../src/quadrapassel.vala:303
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "A blokkok _sűrűsége az előre feltöltött sorokban:"
 
 #. starting level
-#: ../src/quadrapassel.vala:311
+#: ../src/quadrapassel.vala:317
 msgid "_Starting level:"
 msgstr "_Kezdőszint:"
 
-#: ../src/quadrapassel.vala:324
+#: ../src/quadrapassel.vala:330
 msgid "_Enable sounds"
 msgstr "_Hangok bekapcsolása"
 
-#: ../src/quadrapassel.vala:329
+#: ../src/quadrapassel.vala:335
 msgid "Choose difficult _blocks"
 msgstr "Nehéz blokkok _választása"
 
-#: ../src/quadrapassel.vala:334
+#: ../src/quadrapassel.vala:340
 msgid "_Preview next block"
 msgstr "A következő blokk _előnézete"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:341
+#: ../src/quadrapassel.vala:347
 msgid "_Rotate blocks counterclockwise"
 msgstr "Blokkok _forgatása az óramutató járásával ellentétes irányba"
 
-#: ../src/quadrapassel.vala:346
+#: ../src/quadrapassel.vala:352
 msgid "Show _where the block will land"
 msgstr "A blokk _várható helyének megjelenítése"
 
-#: ../src/quadrapassel.vala:390
+#: ../src/quadrapassel.vala:396
 msgid "Controls"
 msgstr "Vezérlés"
 
-#: ../src/quadrapassel.vala:396
+#: ../src/quadrapassel.vala:402
 msgid "Theme"
 msgstr "Téma"
 
-#: ../src/quadrapassel.vala:408
+#: ../src/quadrapassel.vala:414
 msgid "Plain"
 msgstr "Egyszerű"
 
-#: ../src/quadrapassel.vala:413
+#: ../src/quadrapassel.vala:419
 msgid "Tango Flat"
 msgstr "Sima Tango"
 
-#: ../src/quadrapassel.vala:418
+#: ../src/quadrapassel.vala:424
 msgid "Tango Shaded"
 msgstr "Árnyékolt Tango"
 
-#: ../src/quadrapassel.vala:423
+#: ../src/quadrapassel.vala:429
 msgid "Clean"
 msgstr "Letisztult"
 
-#: ../src/quadrapassel.vala:662
+#: ../src/quadrapassel.vala:668
 msgid "Unpause the game"
 msgstr "A játék folytatása"
 
-#: ../src/quadrapassel.vala:667
+#: ../src/quadrapassel.vala:673
 msgid "Pause the game"
 msgstr "A játék szüneteltetése"
 
-#: ../src/quadrapassel.vala:745
-msgid ""
-"A classic game of fitting falling blocks together\n"
-"\n"
-"Quadrapassel is a part of GNOME Games."
-msgstr ""
-"A klasszikus, leeső téglákat egymáshoz illesztős játék\n"
-"\n"
-"A Quadrapassel a GNOME játékok része."
+#: ../src/quadrapassel.vala:751
+#| msgid ""
+#| "A classic game of fitting falling blocks together\n"
+#| "\n"
+#| "Quadrapassel is a part of GNOME Games."
+msgid "A classic game of fitting falling blocks together"
+msgstr "A klasszikus, leeső téglákat egymáshoz illesztős játék"
 
-#: ../src/quadrapassel.vala:750
+#: ../src/quadrapassel.vala:756
 msgid "translator-credits"
 msgstr ""
 "Bán Szabolcs <shooby at gnome dot hu>\n"
