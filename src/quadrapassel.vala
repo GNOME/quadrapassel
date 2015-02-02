@@ -105,7 +105,7 @@ public class Quadrapassel : Gtk.Application
         window.icon_name = "quadrapassel";
         window.set_events (window.get_events () | Gdk.EventMask.KEY_PRESS_MASK | Gdk.EventMask.KEY_RELEASE_MASK);
         window.title = _("Quadrapassel");
-        window.configure_event.connect (window_configure_event_cb);
+        window.size_allocate.connect (size_allocate_cb);
         window.window_state_event.connect (window_state_event_cb);
         window.key_press_event.connect (key_press_event_cb);
         window.key_release_event.connect (key_release_event_cb);
@@ -202,15 +202,12 @@ public class Quadrapassel : Gtk.Application
         pause_action.set_enabled (false);
     }
 
-    private bool window_configure_event_cb (Gdk.EventConfigure event)
+    private void size_allocate_cb (Gtk.Allocation allocation)
     {
-        if (!is_maximized)
-        {
-            window_width = event.width;
-            window_height = event.height;
-        }
-
-        return false;
+        if (is_maximized)
+            return;
+        window_width = allocation.width;
+        window_height = allocation.height;
     }
 
     private bool window_state_event_cb (Gdk.EventWindowState event)
