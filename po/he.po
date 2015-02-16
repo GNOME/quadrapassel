@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-06 10:05+0200\n"
-"PO-Revision-Date: 2014-03-06 10:05+0200\n"
+"POT-Creation-Date: 2015-02-17 01:00+0200\n"
+"PO-Revision-Date: 2015-02-17 01:01+0200\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
@@ -121,7 +121,7 @@ msgid "Whether to pick blocks that are hard to place."
 msgstr "Whether to pick blocks that are hard to place."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:359
+#: ../src/quadrapassel.vala:363
 msgid "Move left"
 msgstr "הזזה שמאלה"
 
@@ -130,7 +130,7 @@ msgid "Key press to move left."
 msgstr "Key press to move left."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:362
+#: ../src/quadrapassel.vala:366
 msgid "Move right"
 msgstr "הזזה ימינה"
 
@@ -139,7 +139,7 @@ msgid "Key press to move right."
 msgstr "Key press to move right."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:365
+#: ../src/quadrapassel.vala:369
 msgid "Move down"
 msgstr "הזזה למטה"
 
@@ -148,7 +148,7 @@ msgid "Key press to move down."
 msgstr "Key press to move down."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:368
+#: ../src/quadrapassel.vala:372
 msgid "Drop"
 msgstr "הפלה"
 
@@ -157,7 +157,7 @@ msgid "Key press to drop."
 msgstr "Key press to drop."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:371
+#: ../src/quadrapassel.vala:375
 msgid "Rotate"
 msgstr "סיבוב"
 
@@ -166,7 +166,7 @@ msgid "Key press to rotate."
 msgstr "Key press to rotate."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:374
+#: ../src/quadrapassel.vala:378
 msgid "Pause"
 msgstr "השהה"
 
@@ -186,32 +186,32 @@ msgstr "Height of the window in pixels"
 msgid "true if the window is maximized"
 msgstr "true if the window is maximized"
 
-#: ../data/quadrapassel.appdata.xml.in.h:1
+#: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
+#: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
+#: ../src/quadrapassel.vala:750 ../src/quadrapassel.vala:790
+msgid "Quadrapassel"
+msgstr "קוודראפאזל"
+
+#: ../data/quadrapassel.appdata.xml.in.h:2 ../data/quadrapassel.desktop.in.h:2
+msgid "Fit falling blocks together"
+msgstr "סידור לבנים נופלות"
+
+#: ../data/quadrapassel.appdata.xml.in.h:3
 msgid ""
-"Quadrapassel is a derivitive of the classic Russian falling-block game. "
+"Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
 "together. When you form a complete horizontal row of blocks, the row will "
 "disappear and you score points. The game is over when the blocks get stacked "
 "too high. As your score gets higher, you level up and the blocks fall faster."
 msgstr ""
 
-#: ../data/quadrapassel.appdata.xml.in.h:2
+#: ../data/quadrapassel.appdata.xml.in.h:4
 msgid ""
 "If you're looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
 "of the rows. Or, instead of allowing the blocks to fall randomly, it can "
 "select blocks that will be hard for you to place."
 msgstr ""
-
-#: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
-#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:746
-#: ../src/quadrapassel.vala:786
-msgid "Quadrapassel"
-msgstr "קוודראפאזל"
-
-#: ../data/quadrapassel.desktop.in.h:2
-msgid "Fit falling blocks together"
-msgstr "סידור לבנים נופלות"
 
 #: ../data/quadrapassel.desktop.in.h:3
 msgid "tetris;"
@@ -225,141 +225,131 @@ msgstr "הושהה"
 msgid "Game Over"
 msgstr "המשחק הסתיים"
 
-#: ../src/quadrapassel.vala:92
+#: ../src/quadrapassel.vala:93
 msgid "_New Game"
 msgstr "משחק _חדש"
 
-#: ../src/quadrapassel.vala:93
+#: ../src/quadrapassel.vala:94
 msgid "_Scores"
 msgstr "_תוצאות"
 
-#: ../src/quadrapassel.vala:94
+#: ../src/quadrapassel.vala:95
 msgid "_Preferences"
 msgstr "ה_עדפות"
 
-#: ../src/quadrapassel.vala:97
+#: ../src/quadrapassel.vala:98
 msgid "_Help"
 msgstr "ע_זרה"
 
-#: ../src/quadrapassel.vala:98
+#: ../src/quadrapassel.vala:99
 msgid "_About"
 msgstr "על _אודות"
 
-#: ../src/quadrapassel.vala:99
+#: ../src/quadrapassel.vala:100
 msgid "_Quit"
 msgstr "י_ציאה"
 
-#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:684
+#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:688
 msgid "Start a new game"
 msgstr "התחלת משחק חדש"
 
-#: ../src/quadrapassel.vala:150
+#: ../src/quadrapassel.vala:152
 msgid "Next"
 msgstr "הבא"
 
-#: ../src/quadrapassel.vala:162 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:165 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "ניקוד"
 
-#: ../src/quadrapassel.vala:172
+#: ../src/quadrapassel.vala:176
 msgid "Lines"
 msgstr "שורות"
 
-#: ../src/quadrapassel.vala:182
+#: ../src/quadrapassel.vala:187
 msgid "Level"
 msgstr "רמה"
 
-#: ../src/quadrapassel.vala:262
-msgid "Quadrapassel Preferences"
-msgstr "העדפות קואדרפאזל"
+#: ../src/quadrapassel.vala:267
+msgid "Preferences"
+msgstr "העדפות"
 
-#: ../src/quadrapassel.vala:265 ../src/score-dialog.vala:26
-msgid "_Close"
-msgstr "_סגירה"
-
-#: ../src/quadrapassel.vala:281
+#: ../src/quadrapassel.vala:285
 msgid "Game"
 msgstr "משחק"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:285
+#: ../src/quadrapassel.vala:289
 msgid "_Number of pre-filled rows:"
 msgstr "מ_ספר השורות המלאות מראש:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:300
+#: ../src/quadrapassel.vala:304
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_צפיפות הלבנים בשורות המלאות מראש:"
 
 #. starting level
-#: ../src/quadrapassel.vala:314
+#: ../src/quadrapassel.vala:318
 msgid "_Starting level:"
 msgstr "רמת הת_חלה:"
 
-#: ../src/quadrapassel.vala:327
+#: ../src/quadrapassel.vala:331
 msgid "_Enable sounds"
 msgstr "ה_פעלת צלילים"
 
-#: ../src/quadrapassel.vala:332
+#: ../src/quadrapassel.vala:336
 msgid "Choose difficult _blocks"
 msgstr "בחירת לבנים _קשות"
 
-#: ../src/quadrapassel.vala:337
+#: ../src/quadrapassel.vala:341
 msgid "_Preview next block"
 msgstr "ה_צגה מראש את הלבנה הבא"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:344
+#: ../src/quadrapassel.vala:348
 msgid "_Rotate blocks counterclockwise"
 msgstr "_סיבוב לבנים נגד כיוון השעון"
 
-#: ../src/quadrapassel.vala:349
+#: ../src/quadrapassel.vala:353
 msgid "Show _where the block will land"
 msgstr "להציג _היכן תפגע הלבנה"
 
-#: ../src/quadrapassel.vala:393
+#: ../src/quadrapassel.vala:397
 msgid "Controls"
 msgstr "שליטה"
 
-#: ../src/quadrapassel.vala:399
+#: ../src/quadrapassel.vala:403
 msgid "Theme"
 msgstr "ערכת נושא"
 
-#: ../src/quadrapassel.vala:411
+#: ../src/quadrapassel.vala:415
 msgid "Plain"
 msgstr "רגיל"
 
-#: ../src/quadrapassel.vala:416
+#: ../src/quadrapassel.vala:420
 msgid "Tango Flat"
 msgstr "טנגו אחיד"
 
-#: ../src/quadrapassel.vala:421
+#: ../src/quadrapassel.vala:425
 msgid "Tango Shaded"
 msgstr "טנגו מוצלל"
 
-#: ../src/quadrapassel.vala:426
+#: ../src/quadrapassel.vala:430
 msgid "Clean"
 msgstr "ניקוי"
 
-#: ../src/quadrapassel.vala:665
+#: ../src/quadrapassel.vala:669
 msgid "Unpause the game"
 msgstr "המשכת המשחק"
 
-#: ../src/quadrapassel.vala:670
+#: ../src/quadrapassel.vala:674
 msgid "Pause the game"
 msgstr "השהיית המשחק"
 
-#: ../src/quadrapassel.vala:748
-msgid ""
-"A classic game of fitting falling blocks together\n"
-"\n"
-"Quadrapassel is a part of GNOME Games."
-msgstr ""
-"משחק קלסי של התאמת לבנים נופלות זו לזו.\n"
-"\n"
-"קואדרפאזל הוא חלק ממשחקי GNOME."
+#: ../src/quadrapassel.vala:752
+msgid "A classic game of fitting falling blocks together"
+msgstr "משחק קלסי של התאמת לבנים נופלות זו לזו"
 
-#: ../src/quadrapassel.vala:753
+#: ../src/quadrapassel.vala:757
 msgid "translator-credits"
 msgstr ""
 "גיל אשר <dolfin@rpg.org.il>\n"
@@ -374,6 +364,10 @@ msgstr ""
 "פרויקט תרגום GNOME לעברית:\n"
 "‏http://gnome-il.berlios.de"
 
+#: ../src/score-dialog.vala:26
+msgid "_Close"
+msgstr "_סגירה"
+
 #: ../src/score-dialog.vala:27
 msgid "New Game"
 msgstr "משחק חדש"
@@ -385,6 +379,9 @@ msgstr "_אישור"
 #: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "תאריך"
+
+#~ msgid "Quadrapassel Preferences"
+#~ msgstr "העדפות קואדרפאזל"
 
 #~ msgid "true if the window is fullscren"
 #~ msgstr "true if the window is fullscren"
@@ -529,9 +526,6 @@ msgstr "תאריך"
 
 #~ msgid "Difficulty of the opponent chess engine"
 #~ msgstr "Difficulty of the opponent chess engine"
-
-#~ msgid "Preferences"
-#~ msgstr "העדפות"
 
 #~ msgid "Play as:"
 #~ msgstr "לשחק בתור:"
