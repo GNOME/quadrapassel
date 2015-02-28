@@ -72,7 +72,7 @@ public class Quadrapassel : Gtk.Application
     {
         Object (application_id: "org.gnome.quadrapassel", flags: ApplicationFlags.FLAGS_NONE);
     }
-    
+
     protected override void startup ()
     {
         base.startup ();
@@ -110,7 +110,7 @@ public class Quadrapassel : Gtk.Application
         window.window_state_event.connect (window_state_event_cb);
         window.key_press_event.connect (key_press_event_cb);
         window.key_release_event.connect (key_release_event_cb);
-        window.set_default_size (settings.get_int ("window-width"), settings.get_int ("window-height"));        
+        window.set_default_size (settings.get_int ("window-width"), settings.get_int ("window-height"));
         if (settings.get_boolean ("window-is-maximized"))
             window.maximize ();
 
@@ -635,7 +635,7 @@ public class Quadrapassel : Gtk.Application
     {
         new_game ();
     }
-    
+
     private void new_game ()
     {
         if (game != null)

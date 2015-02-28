@@ -100,7 +100,7 @@ private const int block_table[448] =
     1, 1, 0, 0,
     0, 1, 0, 0,
     0, 0, 0, 0,
-          
+
     /* **  */
     /*  ** */
 
@@ -176,7 +176,7 @@ public class Block : Object
 
     /* Color of block */
     public int color;
-    
+
     public Block copy ()
     {
         var b = new Block ();
@@ -219,7 +219,7 @@ public class Game : Object
 {
     /* Falling shape */
     public Shape? shape = null;
-    
+
     /* Next shape to be used */
     public Shape? next_shape = null;
 
@@ -228,7 +228,7 @@ public class Game : Object
 
     public int width { get { return blocks.length[0]; } }
     public int height { get { return blocks.length[1]; } }
-    
+
     /* Number of lines that have been destroyed */
     public int n_lines_destroyed = 0;
 
@@ -243,7 +243,7 @@ public class Game : Object
 
     /* The current level */
     public int level { get { return starting_level + n_lines_destroyed / 10; } }
-    
+
     /* true if we are in fast forward mode */
     private bool fast_forward = false;
 
@@ -404,7 +404,7 @@ public class Game : Object
     public void stop ()
     {
         if (drop_timeout != 0)
-            Source.remove (drop_timeout);        
+            Source.remove (drop_timeout);
     }
 
     private void setup_drop_timer ()
@@ -512,7 +512,7 @@ public class Game : Object
 
                     /* High metric for each line destroyed */
                     var metric = (g.n_lines_destroyed - orig_lines) * 5000;
-                    
+
                     /* Low metric for large columns */
                     for (var x = 0; x < width; x++)
                     {
@@ -525,7 +525,7 @@ public class Game : Object
 
                         metric -= 5 * (height - y);
                     }
-                    
+
                     if (metric > metrics[type])
                         metrics[type] = metric;
 
@@ -628,7 +628,7 @@ public class Game : Object
                     break;
                 }
             }
-            
+
             if (explode)
             {
                 if (y == height - 1)

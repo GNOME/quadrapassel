@@ -32,7 +32,7 @@ public class Preview : GtkClutter.Embed
     {
         get { return (get_allocated_width () + get_allocated_height ()) / 2 / 5; }
     }
-    
+
     private Game? _game = null;
     public Game? game
     {
@@ -46,7 +46,7 @@ public class Preview : GtkClutter.Embed
             update_block ();
         }
     }
-    
+
     private bool _enabled = true;
     public bool enabled
     {

@@ -76,7 +76,7 @@ public class History : Object
         catch (FileError e)
         {
             warning ("Failed to save history: %s", e.message);
-        }    
+        }
     }
 
     private DateTime? parse_date (string date)
