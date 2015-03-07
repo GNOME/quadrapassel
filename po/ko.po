@@ -8,7 +8,7 @@
 #
 # Updated for quadrapassel:
 #
-# Changwoo Ryu <cwryu@debian.org>, 2013-2014.
+# Changwoo Ryu <cwryu@debian.org>, 2013-2015.
 #
 #
 # 새로 번역하신 분은 아래 "translator-credits"에 추가하세요.
@@ -21,8 +21,8 @@ msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-06 10:21+0000\n"
-"PO-Revision-Date: 2014-09-06 21:00+0900\n"
+"POT-Creation-Date: 2015-03-07 11:44+0000\n"
+"PO-Revision-Date: 2015-03-08 04:58+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: Korean\n"
@@ -126,7 +126,7 @@ msgid "Whether to pick blocks that are hard to place."
 msgstr "놓기 어려운 블럭을 고를지 여부."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:356
+#: ../src/quadrapassel.vala:363
 msgid "Move left"
 msgstr "왼쪽으로 이동"
 
@@ -135,7 +135,7 @@ msgid "Key press to move left."
 msgstr "왼쪽으로 이동할 때 누를 키."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:359
+#: ../src/quadrapassel.vala:366
 msgid "Move right"
 msgstr "오른쪽으로 이동"
 
@@ -144,7 +144,7 @@ msgid "Key press to move right."
 msgstr "오른쪽으로 이동할 때 누를 키."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:362
+#: ../src/quadrapassel.vala:369
 msgid "Move down"
 msgstr "아래로 옮기기"
 
@@ -153,7 +153,7 @@ msgid "Key press to move down."
 msgstr "아래로 이동할 때 누를 키."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:365
+#: ../src/quadrapassel.vala:372
 msgid "Drop"
 msgstr "떨어뜨리기"
 
@@ -162,7 +162,7 @@ msgid "Key press to drop."
 msgstr "떨어뜨릴 때 누를 키."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:368
+#: ../src/quadrapassel.vala:375
 msgid "Rotate"
 msgstr "돌리기"
 
@@ -171,7 +171,7 @@ msgid "Key press to rotate."
 msgstr "돌릴 때 누를 키."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:371
+#: ../src/quadrapassel.vala:378
 msgid "Pause"
 msgstr "일시 중지"
 
@@ -191,7 +191,17 @@ msgstr "창의 높이, 픽셀 단위."
 msgid "true if the window is maximized"
 msgstr "참이면 창을 최대화"
 
-#: ../data/quadrapassel.appdata.xml.in.h:1
+#: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
+#: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
+#: ../src/quadrapassel.vala:750 ../src/quadrapassel.vala:790
+msgid "Quadrapassel"
+msgstr "쿼드러패셀"
+
+#: ../data/quadrapassel.appdata.xml.in.h:2 ../data/quadrapassel.desktop.in.h:2
+msgid "Fit falling blocks together"
+msgstr "떨어지는 블록을 맞춥니다"
+
+#: ../data/quadrapassel.appdata.xml.in.h:3
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -204,7 +214,7 @@ msgstr ""
 "이 사라지고 점수를 얻습니다. 블럭이 너무 높이 쌓이면 게임이 끝납니다. 점수가 "
 "높아질 수록 레벨이 올라가고 블럭이 빠르게 떨어집니다."
 
-#: ../data/quadrapassel.appdata.xml.in.h:2
+#: ../data/quadrapassel.appdata.xml.in.h:4
 msgid ""
 "If you're looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -214,16 +224,6 @@ msgstr ""
 "도전이 필요하면 쿼드러패설에서 블럭의 최초 속도를 높이거나 블럭을 몇 줄 쌓아"
 "놓고 게임을 시작할 수 있습니다. 아니면 임의의 블럭이 떨어지는 게 아니라 맞추"
 "기 어려운 블럭이 떨어지게 만들 수도 있습니다."
-
-#: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
-#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:743
-#: ../src/quadrapassel.vala:783
-msgid "Quadrapassel"
-msgstr "쿼드러패셀"
-
-#: ../data/quadrapassel.desktop.in.h:2
-msgid "Fit falling blocks together"
-msgstr "떨어지는 블록을 맞춥니다"
 
 #: ../data/quadrapassel.desktop.in.h:3
 msgid "tetris;"
@@ -237,137 +237,131 @@ msgstr "일시 중지"
 msgid "Game Over"
 msgstr "게임 끝"
 
-#: ../src/quadrapassel.vala:92
+#: ../src/quadrapassel.vala:93
 msgid "_New Game"
 msgstr "새 게임(_N)"
 
-#: ../src/quadrapassel.vala:93
+#: ../src/quadrapassel.vala:94
 msgid "_Scores"
 msgstr "점수(_S)"
 
-#: ../src/quadrapassel.vala:94
+#: ../src/quadrapassel.vala:95
 msgid "_Preferences"
 msgstr "기본 설정(_P)"
 
-#: ../src/quadrapassel.vala:97
+#: ../src/quadrapassel.vala:98
 msgid "_Help"
 msgstr "도움말(_H)"
 
-#: ../src/quadrapassel.vala:98
+#: ../src/quadrapassel.vala:99
 msgid "_About"
 msgstr "정보(_A)"
 
-#: ../src/quadrapassel.vala:99
+#: ../src/quadrapassel.vala:100
 msgid "_Quit"
 msgstr "끝내기(_Q)"
 
-#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:681
+#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:688
 msgid "Start a new game"
 msgstr "새 게임을 시작합니다"
 
-#: ../src/quadrapassel.vala:148
+#: ../src/quadrapassel.vala:152
 msgid "Next"
 msgstr "다음"
 
-#: ../src/quadrapassel.vala:160 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:165 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "점수"
 
-#: ../src/quadrapassel.vala:170
+#: ../src/quadrapassel.vala:176
 msgid "Lines"
 msgstr "줄 개수"
 
-#: ../src/quadrapassel.vala:180
+#: ../src/quadrapassel.vala:187
 msgid "Level"
 msgstr "단계"
 
-#: ../src/quadrapassel.vala:260
+#: ../src/quadrapassel.vala:267
 msgid "Preferences"
 msgstr "기본 설정"
 
-#: ../src/quadrapassel.vala:278
+#: ../src/quadrapassel.vala:285
 msgid "Game"
 msgstr "게임"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:282
+#: ../src/quadrapassel.vala:289
 msgid "_Number of pre-filled rows:"
 msgstr "미리 채워진 열의 갯수(_N):"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:297
+#: ../src/quadrapassel.vala:304
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "미리 채워진 열에서 블록의 밀도(_D):"
 
 #. starting level
-#: ../src/quadrapassel.vala:311
+#: ../src/quadrapassel.vala:318
 msgid "_Starting level:"
 msgstr "시작 단계(_S):"
 
-#: ../src/quadrapassel.vala:324
+#: ../src/quadrapassel.vala:331
 msgid "_Enable sounds"
 msgstr "사운드 사용(_E)"
 
-#: ../src/quadrapassel.vala:329
+#: ../src/quadrapassel.vala:336
 msgid "Choose difficult _blocks"
 msgstr "어려운 블럭 선택(_B)"
 
-#: ../src/quadrapassel.vala:334
+#: ../src/quadrapassel.vala:341
 msgid "_Preview next block"
 msgstr "다음 블록 미리 보기(_P)"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:341
+#: ../src/quadrapassel.vala:348
 msgid "_Rotate blocks counterclockwise"
 msgstr "시계반대 방향으로 회전(_R)"
 
-#: ../src/quadrapassel.vala:346
+#: ../src/quadrapassel.vala:353
 msgid "Show _where the block will land"
 msgstr "블록이 어디로 떨어질 지 보이기(_W)"
 
-#: ../src/quadrapassel.vala:390
+#: ../src/quadrapassel.vala:397
 msgid "Controls"
 msgstr "조작"
 
-#: ../src/quadrapassel.vala:396
+#: ../src/quadrapassel.vala:403
 msgid "Theme"
 msgstr "테마"
 
-#: ../src/quadrapassel.vala:408
+#: ../src/quadrapassel.vala:415
 msgid "Plain"
 msgstr "단순"
 
-#: ../src/quadrapassel.vala:413
+#: ../src/quadrapassel.vala:420
 msgid "Tango Flat"
 msgstr "탱고 평평함"
 
-#: ../src/quadrapassel.vala:418
+#: ../src/quadrapassel.vala:425
 msgid "Tango Shaded"
 msgstr "탱고 그림자"
 
-#: ../src/quadrapassel.vala:423
+#: ../src/quadrapassel.vala:430
 msgid "Clean"
 msgstr "지우기"
 
-#: ../src/quadrapassel.vala:662
+#: ../src/quadrapassel.vala:669
 msgid "Unpause the game"
 msgstr "게임을 계속 진행합니다"
 
-#: ../src/quadrapassel.vala:667
+#: ../src/quadrapassel.vala:674
 msgid "Pause the game"
 msgstr "게임을 일시 중지합니다"
 
-#: ../src/quadrapassel.vala:745
-msgid ""
-"A classic game of fitting falling blocks together\n"
-"\n"
-"Quadrapassel is a part of GNOME Games."
-msgstr ""
-"떨어지는 블럭을 맞추는 고전적인 게임.\n"
-"\n"
-"쿼드러패셀은 그놈 게임의 일부입니다."
+#: ../src/quadrapassel.vala:752
+msgid "A classic game of fitting falling blocks together"
+msgstr "떨어지는 블럭을 맞추는 고전적인 게임."
 
-#: ../src/quadrapassel.vala:750
+#: ../src/quadrapassel.vala:757
 msgid "translator-credits"
 msgstr "류창우 <cwryu@debian.org>"
 
