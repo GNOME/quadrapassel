@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: bosnianuniversetranslation\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-26 23:48+0000\n"
-"PO-Revision-Date: 2015-02-28 14:39+0100\n"
-"Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
+"POT-Creation-Date: 2015-02-26 23:47+0000\n"
+"PO-Revision-Date: 2015-01-01 19:40+0000\n"
+"Last-Translator: Dženana <dkapetanov1@etf.unsa.ba>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
 "Language: bs\n"
 "MIME-Version: 1.0\n"
@@ -114,7 +114,7 @@ msgid "Whether to pick blocks that are hard to place."
 msgstr "Da li će da pokupi blokove koji su teški za postavljanje."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../src/quadrapassel.vala:356
 msgid "Move left"
 msgstr "Pomjeri ulijevo"
 
@@ -123,7 +123,7 @@ msgid "Key press to move left."
 msgstr "Taster za kretanje u lijevo."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../src/quadrapassel.vala:359
 msgid "Move right"
 msgstr "Pomjeri udesno"
 
@@ -132,7 +132,7 @@ msgid "Key press to move right."
 msgstr "Taster za kretanje u desno."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../src/quadrapassel.vala:362
 msgid "Move down"
 msgstr "Pomjeri nadolje"
 
@@ -141,7 +141,7 @@ msgid "Key press to move down."
 msgstr "Taster za kretanje dolje."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../src/quadrapassel.vala:365
 msgid "Drop"
 msgstr "Ispusti"
 
@@ -150,7 +150,7 @@ msgid "Key press to drop."
 msgstr "Taster za puštanje."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../src/quadrapassel.vala:368
 msgid "Rotate"
 msgstr "Rotacija"
 
@@ -159,7 +159,7 @@ msgid "Key press to rotate."
 msgstr "Taster za rotiranje."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../src/quadrapassel.vala:371
 msgid "Pause"
 msgstr "Pauza"
 
@@ -179,17 +179,7 @@ msgstr "Visina prozora u tačkama"
 msgid "true if the window is maximized"
 msgstr "izabrano ako je prozor uvećan"
 
-#: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
-#: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
-#: ../src/quadrapassel.vala:750 ../src/quadrapassel.vala:790
-msgid "Quadrapassel"
-msgstr "Quadrapassel - varijanta Tetrisa"
-
-#: ../data/quadrapassel.appdata.xml.in.h:2 ../data/quadrapassel.desktop.in.h:2
-msgid "Fit falling blocks together"
-msgstr "Sastavljaj padajuće blokove"
-
-#: ../data/quadrapassel.appdata.xml.in.h:3
+#: ../data/quadrapassel.appdata.xml.in.h:1
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -203,7 +193,7 @@ msgstr ""
 "gotova kada blokovi se slažu previsoko. Kao što je vaš rezultat biva veći, "
 "što višu razinu dostže blokovi padaju brže."
 
-#: ../data/quadrapassel.appdata.xml.in.h:4
+#: ../data/quadrapassel.appdata.xml.in.h:2
 msgid ""
 "If you're looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -214,6 +204,16 @@ msgstr ""
 "brzine od blokova, ili početak igre s djelomičnim blokovima na neki od "
 "redova. Ili, umjesto da dopusti da blokovi padaju slučajno, to može odabrati "
 "blokove tako  da će biti teško za vas da ih stavite."
+
+#: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
+#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:743
+#: ../src/quadrapassel.vala:783
+msgid "Quadrapassel"
+msgstr "Quadrapassel - varijanta Tetrisa"
+
+#: ../data/quadrapassel.desktop.in.h:2
+msgid "Fit falling blocks together"
+msgstr "Sastavljaj padajuće blokove"
 
 #: ../data/quadrapassel.desktop.in.h:3
 msgid "tetris;"
@@ -227,131 +227,137 @@ msgstr "Pauzirano"
 msgid "Game Over"
 msgstr "Igra završena"
 
-#: ../src/quadrapassel.vala:93
+#: ../src/quadrapassel.vala:92
 msgid "_New Game"
 msgstr "_Nova igra"
 
-#: ../src/quadrapassel.vala:94
+#: ../src/quadrapassel.vala:93
 msgid "_Scores"
 msgstr "_Rezultati"
 
-#: ../src/quadrapassel.vala:95
+#: ../src/quadrapassel.vala:94
 msgid "_Preferences"
 msgstr "_Postavke"
 
-#: ../src/quadrapassel.vala:98
+#: ../src/quadrapassel.vala:97
 msgid "_Help"
 msgstr "_Pomoć"
 
-#: ../src/quadrapassel.vala:99
+#: ../src/quadrapassel.vala:98
 msgid "_About"
 msgstr "_O programu"
 
-#: ../src/quadrapassel.vala:100
+#: ../src/quadrapassel.vala:99
 msgid "_Quit"
 msgstr "_Izlaz"
 
-#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:688
+#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:681
 msgid "Start a new game"
 msgstr "Počni novu igru"
 
-#: ../src/quadrapassel.vala:152
+#: ../src/quadrapassel.vala:148
 msgid "Next"
 msgstr "Sljedeći"
 
-#: ../src/quadrapassel.vala:165 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:160 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "Rezultat"
 
-#: ../src/quadrapassel.vala:176
+#: ../src/quadrapassel.vala:170
 msgid "Lines"
 msgstr "Linije"
 
-#: ../src/quadrapassel.vala:187
+#: ../src/quadrapassel.vala:180
 msgid "Level"
 msgstr "Nivo"
 
-#: ../src/quadrapassel.vala:267
+#: ../src/quadrapassel.vala:260
 msgid "Preferences"
 msgstr "Svojstva"
 
-#: ../src/quadrapassel.vala:285
+#: ../src/quadrapassel.vala:278
 msgid "Game"
 msgstr "Igra"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:289
+#: ../src/quadrapassel.vala:282
 msgid "_Number of pre-filled rows:"
 msgstr "_Broj unaprijed popunjenih redova:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:304
+#: ../src/quadrapassel.vala:297
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Gustina blokova u unaprijed popunjenim redovima:"
 
 #. starting level
-#: ../src/quadrapassel.vala:318
+#: ../src/quadrapassel.vala:311
 msgid "_Starting level:"
 msgstr "_Početni nivo:"
 
-#: ../src/quadrapassel.vala:331
+#: ../src/quadrapassel.vala:324
 msgid "_Enable sounds"
 msgstr "_Uključi zvukove"
 
-#: ../src/quadrapassel.vala:336
+#: ../src/quadrapassel.vala:329
 msgid "Choose difficult _blocks"
 msgstr "Odaberi teške _blokove"
 
-#: ../src/quadrapassel.vala:341
+#: ../src/quadrapassel.vala:334
 msgid "_Preview next block"
 msgstr "_Prikaži sljedeći blok"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:348
+#: ../src/quadrapassel.vala:341
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Okreći suprotno smjeru kazaljke na satu"
 
-#: ../src/quadrapassel.vala:353
+#: ../src/quadrapassel.vala:346
 msgid "Show _where the block will land"
 msgstr "Prikaži _gdje će blok biti prizemljen"
 
-#: ../src/quadrapassel.vala:397
+#: ../src/quadrapassel.vala:390
 msgid "Controls"
 msgstr "Kontroliši"
 
-#: ../src/quadrapassel.vala:403
+#: ../src/quadrapassel.vala:396
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/quadrapassel.vala:415
+#: ../src/quadrapassel.vala:408
 msgid "Plain"
 msgstr "Jasan"
 
-#: ../src/quadrapassel.vala:420
+#: ../src/quadrapassel.vala:413
 msgid "Tango Flat"
 msgstr "Ravni tango"
 
-#: ../src/quadrapassel.vala:425
+#: ../src/quadrapassel.vala:418
 msgid "Tango Shaded"
 msgstr "Tango sa senkama"
 
-#: ../src/quadrapassel.vala:430
+#: ../src/quadrapassel.vala:423
 msgid "Clean"
 msgstr "Čisto"
 
-#: ../src/quadrapassel.vala:669
+#: ../src/quadrapassel.vala:662
 msgid "Unpause the game"
 msgstr "Završi pauzu igre"
 
-#: ../src/quadrapassel.vala:674
+#: ../src/quadrapassel.vala:667
 msgid "Pause the game"
 msgstr "Pauziraj igru"
 
-#: ../src/quadrapassel.vala:752
-msgid "A classic game of fitting falling blocks together"
-msgstr "Klasična igra uklapanja padajućih blokova zajedno"
+#: ../src/quadrapassel.vala:745
+msgid ""
+"A classic game of fitting falling blocks together\n"
+"\n"
+"Quadrapassel is a part of GNOME Games."
+msgstr ""
+"Klasična igra dolikuje padu blokova zajedno\n"
+"\n"
+"Quadrapassel je dio GNOME igre."
 
-#: ../src/quadrapassel.vala:757
+#: ../src/quadrapassel.vala:750
 msgid "translator-credits"
 msgstr ""
 "   Dženana https://launchpad.net/~dkapetanov1\n"
