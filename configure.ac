@@ -1,5 +1,5 @@
 AC_PREREQ([2.63])
-AC_INIT([Quadrapassel], [3.15.90], [https://bugzilla.gnome.org/],
+AC_INIT([Quadrapassel], [3.15.92], [https://bugzilla.gnome.org/],
         [quadrapassel], [https://wiki.gnome.org/Apps/Quadrapassel])
 AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-xz foreign])
 AM_SILENT_RULES([yes])
