@@ -3,21 +3,21 @@
 # This file is distributed under the same license as the quadrapassel help.
 #
 # László Ádám Kohajda <kla.kohi at gmail dot com>, 2012.
-# Gabor Kelemen <kelemeng at gnome dot hu>, 2012, 2013.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2012, 2013, 2015.
 # Balázs Úr <urbalazs at gmail dot com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
-"POT-Creation-Date: 2014-09-20 22:24+0000\n"
-"PO-Revision-Date: 2014-09-21 01:16+0200\n"
-"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
+"POT-Creation-Date: 2015-03-20 23:48+0000\n"
+"PO-Revision-Date: 2015-03-21 01:18+0100\n"
+"Last-Translator: Gabor Kelemen <kelemeng at ubuntu dot com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.5\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -135,7 +135,6 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/bug-filing.page:52 C/develop.page:29 C/documentation.page:29
 #: C/translate.page:42
-#| msgid "<link xref=\"get-involved\">Get involved</link>"
 msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
 msgstr "<link xref=\"get-involved\"><_:media-1/>Közreműködés</link>"
 
@@ -143,9 +142,6 @@ msgstr "<link xref=\"get-involved\"><_:media-1/>Közreműködés</link>"
 #: C/bug-filing.page:53 C/develop.page:30 C/documentation.page:30
 #: C/get-involved.page:23 C/playgame.page:44 C/preferences.page:73
 #: C/score.page:38 C/translate.page:43
-#| msgid ""
-#| "<link xref=\"index\"><media type=\"image\" src=\"media/go-home.png\"/"
-#| ">HOME</link>"
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
 msgstr "<link xref=\"index\"><_:media-1/>Kezdőlap</link>"
 
@@ -163,13 +159,6 @@ msgstr "Segítsen a fejlesztésben"
 
 #. (itstool) path: page/p
 #: C/develop.page:26
-#| msgid ""
-#| "If you would like to <link href=\"https://live.gnome.org/GnomeGames/"
-#| "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
-#| "touch with the developers using <link href=\"https://cbe005.chat.mibbit."
-#| "com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our "
-#| "<link href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing "
-#| "list</link>."
 msgid ""
 "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
 "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
@@ -178,12 +167,12 @@ msgid ""
 "href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
 "link>."
 msgstr ""
-"Ha szeretne <link href=\"https://wiki.gnome.org/Apps/Games/Contributing\">"
-"közreműködni a <app>GNOME játékok</app> fejlesztésében</link>, akkor a "
-"fejlesztőkkel a kapcsolatot <link href=\"https://cbe005.chat.mibbit."
-"com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">IRC</link>-n vagy a <link "
-"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">levelezőlistán<"
-"/link> veheti fel."
+"Ha szeretne <link href=\"https://wiki.gnome.org/Apps/Games/Contributing"
+"\">közreműködni a <app>GNOME játékok</app> fejlesztésében</link>, akkor a "
+"fejlesztőkkel a kapcsolatot <link href=\"https://cbe005.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">IRC</link>-n vagy a <link href="
+"\"http://mail.gnome.org/mailman/listinfo/games-list\">levelezőlistán</link> "
+"veheti fel."
 
 #. (itstool) path: info/desc
 #: C/documentation.page:20
@@ -210,16 +199,12 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/documentation.page:26
-#| msgid ""
-#| "Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
-#| "\">wiki</link> page contains useful information."
 msgid ""
 "Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
 msgstr ""
-"A projekt <link href=\"https://wiki.gnome."
-"org/DocumentationProject/Contributing\">wiki</link> oldala tartalmazza a "
-"legfontosabb információkat."
+"A projekt <link href=\"https://wiki.gnome.org/DocumentationProject/"
+"Contributing\">wiki</link> oldala tartalmazza a legfontosabb információkat."
 
 #. (itstool) path: page/title
 #: C/get-involved.page:17
@@ -249,15 +234,11 @@ msgstr "Quadrapassel"
 
 #. (itstool) path: media/span
 #: C/index.page:19
-#| msgctxt "link"
-#| msgid "Quadrapassel"
 msgid "Quadrapassel logo"
 msgstr "Quadrapassel logó"
 
 #. (itstool) path: page/title
 #: C/index.page:19
-#| msgctxt "link"
-#| msgid "Quadrapassel"
 msgid "<_:media-1/> Quadrapassel"
 msgstr "<_:media-1/> Quadrapassel"
 
@@ -490,8 +471,11 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/preferences.page:27
+#| msgid ""
+#| "The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
+#| "<gui>Theme</gui>."
 msgid ""
-"The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
+"The three tabs available are <gui>Controls</gui>, <gui>Game</gui> and "
 "<gui>Theme</gui>."
 msgstr ""
 "Három lap érhető el: <gui>Vezérlés</gui>, <gui>Játék</gui> és <gui>Téma</"
@@ -727,11 +711,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/translate.page:30
-#| msgid ""
-#| "To start translating you will need to <link href=\"http:l10n.gnome.org"
-#| "\">create an account</link> and join the <link href=\"http://l10n.gnome."
-#| "org/teams/\">translation team</link> for your language. This will give "
-#| "you the ability to upload new translations."
 msgid ""
 "To start translating you will need to <link href=\"http://l10n.gnome.org"
 "\">create an account</link> and join the <link href=\"http://l10n.gnome.org/"
