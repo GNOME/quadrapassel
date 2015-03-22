@@ -1,13 +1,14 @@
 # Czech translation of gnometris help.
 # Copyright (C) 2009 the author(s) of gnome-games.
 # This file is distributed under the same license as the gnometris help.
-# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013.
+#
+# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
-"POT-Creation-Date: 2014-09-08 10:23+0000\n"
-"PO-Revision-Date: 2014-04-23 10:23+0200\n"
+"POT-Creation-Date: 2015-03-22 11:44+0000\n"
+"PO-Revision-Date: 2015-03-22 23:14+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -470,7 +471,7 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/preferences.page:27
 msgid ""
-"The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
+"The three tabs available are <gui>Controls</gui>, <gui>Game</gui> and "
 "<gui>Theme</gui>."
 msgstr ""
 "K dispozici jsou tři karty – <gui>Hra</gui>, <gui>Ovládaní</gui> a "
