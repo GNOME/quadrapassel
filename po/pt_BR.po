@@ -28,18 +28,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-05-21 09:52+0000\n"
-"PO-Revision-Date: 2014-05-21 14:05-0300\n"
-"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=quadrapassel&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-03-23 11:48+0000\n"
+"PO-Revision-Date: 2015-03-23 15:33-0300\n"
+"Last-Translator: Antonio Fernandes C. Neto <fernandesn@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.7.4\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:1
@@ -103,24 +102,16 @@ msgid "The number of rows to fill"
 msgstr "O número de linhas a preencher"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:16
-msgid ""
-"The number of rows that are filled with random blocks at the start of the "
-"game."
-msgstr ""
-"O número de linhas que estarão preenchidas com blocos randômicos no começo "
-"do jogo."
+msgid "The number of rows that are filled with random blocks at the start of the game."
+msgstr "O número de linhas que estarão preenchidas com blocos randômicos no começo do jogo."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:17
 msgid "The density of filled rows"
 msgstr "A densidade das linhas preenchidas"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:18
-msgid ""
-"The density of blocks in rows filled at the start of the game. The value is "
-"between 0 (for no blocks) and 10 (for a completely filled row)."
-msgstr ""
-"A densidade de blocos em linhas preenchidas no começo do jogo. O valor pode "
-"variar entre 0 (nenhum bloco) e 10 (pra uma coluna completamente cheia)."
+msgid "The density of blocks in rows filled at the start of the game. The value is between 0 (for no blocks) and 10 (for a completely filled row)."
+msgstr "A densidade de blocos em linhas preenchidas no começo do jogo. O valor pode variar entre 0 (nenhum bloco) e 10 (pra uma coluna completamente cheia)."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:19
 msgid "Whether to play sounds"
@@ -138,8 +129,7 @@ msgstr "Escolher blocos que são difíceis de colocar"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Escolher blocos que são difíceis de colocar."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:358
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:363
 msgid "Move left"
 msgstr "Ir para esquerda"
 
@@ -147,8 +137,7 @@ msgstr "Ir para esquerda"
 msgid "Key press to move left."
 msgstr "Tecla para mover à esquerda."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:361
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:366
 msgid "Move right"
 msgstr "Ir para a direita"
 
@@ -156,8 +145,7 @@ msgstr "Ir para a direita"
 msgid "Key press to move right."
 msgstr "Tecla para mover à direita."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:364
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:369
 msgid "Move down"
 msgstr "Move para baixo"
 
@@ -165,8 +153,7 @@ msgstr "Move para baixo"
 msgid "Key press to move down."
 msgstr "Tecla para mover para baixo."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:367
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:372
 msgid "Drop"
 msgstr "Soltar"
 
@@ -174,8 +161,7 @@ msgstr "Soltar"
 msgid "Key press to drop."
 msgstr "Tecla para soltar."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:370
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:375
 msgid "Rotate"
 msgstr "Girar"
 
@@ -183,8 +169,7 @@ msgstr "Girar"
 msgid "Key press to rotate."
 msgstr "Tecla para girar."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:373
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:378
 msgid "Pause"
 msgstr "Pausar"
 
@@ -204,50 +189,30 @@ msgstr "A altura da janela em pixels."
 msgid "true if the window is maximized"
 msgstr "verdadeiro se a janela estiver maximizada"
 
-#: ../data/quadrapassel.appdata.xml.in.h:1
-#| msgid ""
-#| "Quadrapassel is a derivitive of the classic Russian falling-block game. "
-#| "Reposition and rotate the blocks as they fall, and attempt to fit them "
-#| "together. When you form a complete horizontal row of blocks, the row will "
-#| "disappear and you score points. The game is over when the blocks get "
-#| "stacked too high. As your score gets higher, you level up and the blocks "
-#| "fall faster."
-msgid ""
-"Quadrapassel is a derivative of a classic Russian falling-block game. "
-"Reposition and rotate the blocks as they fall, and attempt to fit them "
-"together. When you form a complete horizontal row of blocks, the row will "
-"disappear and you score points. The game is over when the blocks get stacked "
-"too high. As your score gets higher, you level up and the blocks fall faster."
-msgstr ""
-"Quadrapassel é um derivado do jogo clássico russo de blocos que caem. "
-"Reposicione e gire os blocos a medida que eles caem e tente encaixá-los "
-"juntos. Quando você forma uma linha horizontal completa de blocos, a linha "
-"irá desaparecer e você ganhará pontos. O jogo termina quando os blocos "
-"ficarem empilhados muito alto. Conforme a sua pontuação aumenta, você sobe "
-"de nível e os blocos caem mais rápido."
-
-#: ../data/quadrapassel.appdata.xml.in.h:2
-msgid ""
-"If you're looking for a challenge, Quadrapassel allows you to increase the "
-"initial speed of the blocks, or begin the game with partial blocks on some "
-"of the rows. Or, instead of allowing the blocks to fall randomly, it can "
-"select blocks that will be hard for you to place."
-msgstr ""
-"Se você estiver procurando por um desafio, o Quadrapassel permite aumentar a "
-"velocidade inicial dos blocos, ou começar o jogo com bloqueios parciais em "
-"algumas das linhas. Ou, em vez de permitir que os blocos caiam de forma "
-"aleatória, ele pode selecionar blocos que serão difíceis para você colocar."
-
 # O novo nome do Gnometetris é muito estranho (Quadrapassel), pensei em traduzi-lo simplesmente como Tetris ou utilizar a nomeação antiga, mas as traduções em outros idiomas também mantiveram o nome original (Quadrapassel).
-#: ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:107
-#: ../src/quadrapassel.vala:118 ../src/quadrapassel.vala:745
-#: ../src/quadrapassel.vala:785
+#: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119 ../src/quadrapassel.vala:750 ../src/quadrapassel.vala:790
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
-#: ../data/quadrapassel.desktop.in.h:2
+#: ../data/quadrapassel.appdata.xml.in.h:2 ../data/quadrapassel.desktop.in.h:2
 msgid "Fit falling blocks together"
 msgstr "Encaixe blocos que estão caindo"
+
+#: ../data/quadrapassel.appdata.xml.in.h:3
+msgid ""
+"Quadrapassel is a derivative of a classic Russian falling-block game. Reposition and rotate the blocks as they fall, and attempt to fit them together. When you form a complete horizontal row of blocks, the row will "
+"disappear and you score points. The game is over when the blocks get stacked too high. As your score gets higher, you level up and the blocks fall faster."
+msgstr ""
+"Quadrapassel é um derivado do jogo clássico russo de blocos que caem. Reposicione e gire os blocos a medida que eles caem e tente encaixá-los juntos. Quando você forma uma linha horizontal completa de blocos, a linha irá "
+"desaparecer e você ganhará pontos. O jogo termina quando os blocos ficarem empilhados muito alto. Conforme a sua pontuação aumenta, você sobe de nível e os blocos caem mais rápido."
+
+#: ../data/quadrapassel.appdata.xml.in.h:4
+msgid ""
+"If you're looking for a challenge, Quadrapassel allows you to increase the initial speed of the blocks, or begin the game with partial blocks on some of the rows. Or, instead of allowing the blocks to fall randomly, it "
+"can select blocks that will be hard for you to place."
+msgstr ""
+"Se você estiver procurando por um desafio, o Quadrapassel permite aumentar a velocidade inicial dos blocos, ou começar o jogo com bloqueios parciais em algumas das linhas. Ou, em vez de permitir que os blocos caiam de "
+"forma aleatória, ele pode selecionar blocos que serão difíceis para você colocar."
 
 #: ../data/quadrapassel.desktop.in.h:3
 msgid "tetris;"
@@ -261,137 +226,131 @@ msgstr "Pausado"
 msgid "Game Over"
 msgstr "Fim do jogo"
 
-#: ../src/quadrapassel.vala:92
+#: ../src/quadrapassel.vala:93
 msgid "_New Game"
 msgstr "_Novo jogo"
 
-#: ../src/quadrapassel.vala:93
+#: ../src/quadrapassel.vala:94
 msgid "_Scores"
 msgstr "_Pontuações"
 
-#: ../src/quadrapassel.vala:94
+#: ../src/quadrapassel.vala:95
 msgid "_Preferences"
 msgstr "_Preferências"
 
-#: ../src/quadrapassel.vala:97
+#: ../src/quadrapassel.vala:98
 msgid "_Help"
 msgstr "Aj_uda"
 
-#: ../src/quadrapassel.vala:98
+#: ../src/quadrapassel.vala:99
 msgid "_About"
 msgstr "_Sobre"
 
-#: ../src/quadrapassel.vala:99
+#: ../src/quadrapassel.vala:100
 msgid "_Quit"
 msgstr "Sai_r"
 
-#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:683
+#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:688
 msgid "Start a new game"
 msgstr "Inicia um novo jogo"
 
-#: ../src/quadrapassel.vala:150
+#: ../src/quadrapassel.vala:152
 msgid "Next"
 msgstr "Próximo"
 
-#: ../src/quadrapassel.vala:162 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:165 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "Pontuação"
 
-#: ../src/quadrapassel.vala:172
+#: ../src/quadrapassel.vala:176
 msgid "Lines"
 msgstr "Linhas"
 
-#: ../src/quadrapassel.vala:182
+#: ../src/quadrapassel.vala:187
 msgid "Level"
 msgstr "Nível"
 
-#: ../src/quadrapassel.vala:262
+#: ../src/quadrapassel.vala:267
 msgid "Preferences"
 msgstr "Preferências"
 
-#: ../src/quadrapassel.vala:280
+#: ../src/quadrapassel.vala:285
 msgid "Game"
 msgstr "Jogo"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:284
+#: ../src/quadrapassel.vala:289
 msgid "_Number of pre-filled rows:"
 msgstr "_Número de linhas já preenchidas:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:299
+#: ../src/quadrapassel.vala:304
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Densidade de blocos nas linhas já preenchidas:"
 
 #. starting level
-#: ../src/quadrapassel.vala:313
+#: ../src/quadrapassel.vala:318
 msgid "_Starting level:"
 msgstr "Nível _inicial:"
 
-#: ../src/quadrapassel.vala:326
+#: ../src/quadrapassel.vala:331
 msgid "_Enable sounds"
 msgstr "_Habilitar sons"
 
-#: ../src/quadrapassel.vala:331
+#: ../src/quadrapassel.vala:336
 msgid "Choose difficult _blocks"
 msgstr "Escolher dificuldades dos _blocos"
 
-#: ../src/quadrapassel.vala:336
+#: ../src/quadrapassel.vala:341
 msgid "_Preview next block"
 msgstr "_Visualizar próximo bloco"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:343
+#: ../src/quadrapassel.vala:348
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Girar blocos no sentido anti-horário"
 
-#: ../src/quadrapassel.vala:348
+#: ../src/quadrapassel.vala:353
 msgid "Show _where the block will land"
 msgstr "Mostrar _onde o bloco vai cair"
 
-#: ../src/quadrapassel.vala:392
+#: ../src/quadrapassel.vala:397
 msgid "Controls"
 msgstr "Controles"
 
-#: ../src/quadrapassel.vala:398
+#: ../src/quadrapassel.vala:403
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/quadrapassel.vala:410
+#: ../src/quadrapassel.vala:415
 msgid "Plain"
 msgstr "Plano"
 
-#: ../src/quadrapassel.vala:415
+#: ../src/quadrapassel.vala:420
 msgid "Tango Flat"
 msgstr "Tango Plano"
 
-#: ../src/quadrapassel.vala:420
+#: ../src/quadrapassel.vala:425
 msgid "Tango Shaded"
 msgstr "Tango Sombreado"
 
-#: ../src/quadrapassel.vala:425
+#: ../src/quadrapassel.vala:430
 msgid "Clean"
 msgstr "Limpar"
 
-#: ../src/quadrapassel.vala:664
+#: ../src/quadrapassel.vala:669
 msgid "Unpause the game"
 msgstr "Resume o jogo"
 
-#: ../src/quadrapassel.vala:669
+#: ../src/quadrapassel.vala:674
 msgid "Pause the game"
 msgstr "Pausa o jogo"
 
-#: ../src/quadrapassel.vala:747
-msgid ""
-"A classic game of fitting falling blocks together\n"
-"\n"
-"Quadrapassel is a part of GNOME Games."
-msgstr ""
-"Um jogo clássico de juntar blocos que caem.\n"
-"\n"
-"Quadrapassel faz parte do GNOME Games."
-
 #: ../src/quadrapassel.vala:752
+msgid "A classic game of fitting falling blocks together"
+msgstr "Um jogo clássico de juntar blocos que caem"
+
+#: ../src/quadrapassel.vala:757
 msgid "translator-credits"
 msgstr ""
 "Sandro Nunes Henrique <sandro@conectiva.com.br>\n"
@@ -516,11 +475,8 @@ msgstr "Data"
 #~ msgid "The piece to promote pawns to"
 #~ msgstr "Promover peões para"
 
-#~ msgid ""
-#~ "The piece to promote to when a human player moves a pawn to the far rank"
-#~ msgstr ""
-#~ "A peça a que o peão deve ser promovido quando um jogador humano move um "
-#~ "peão até a última casa"
+#~ msgid "The piece to promote to when a human player moves a pawn to the far rank"
+#~ msgstr "A peça a que o peão deve ser promovido quando um jogador humano move um peão até a última casa"
 
 #~ msgid "A flag to enable 3D mode"
 #~ msgstr "Uma marcação para habilitar modo 3D"
@@ -564,13 +520,8 @@ msgstr "Data"
 #~ msgid "The opponent player"
 #~ msgstr "O jogador oponente"
 
-#~ msgid ""
-#~ "Can be 'human' (play against another human player), '' (use the first "
-#~ "available chess engine) or the name of a specific engine to play against"
-#~ msgstr ""
-#~ "Pode ser 'humano' (joga contra outro jogador humano), '' (usar o primeiro "
-#~ "mecanismo disponível) ou o nome de um mecanismo específico para jogar "
-#~ "contra"
+#~ msgid "Can be 'human' (play against another human player), '' (use the first available chess engine) or the name of a specific engine to play against"
+#~ msgstr "Pode ser 'humano' (joga contra outro jogador humano), '' (usar o primeiro mecanismo disponível) ou o nome de um mecanismo específico para jogar contra"
 
 #~ msgid "Difficulty of the opponent chess engine"
 #~ msgstr "Nível de inteligência do computador"
@@ -961,20 +912,16 @@ msgstr "Data"
 #~ msgstr "O oponente não pode se mover (afogamento)"
 
 #~ msgid "No piece has been taken or pawn moved in the last fifty moves"
-#~ msgstr ""
-#~ "Nenhuma peça foi capturada ou peão movido nos últimos cinqüenta movimentos"
+#~ msgstr "Nenhuma peça foi capturada ou peão movido nos últimos cinqüenta movimentos"
 
 #~ msgid "Opponent has run out of time"
 #~ msgstr "O oponente excedeu o tempo"
 
-#~ msgid ""
-#~ "The same board state has occurred three times (three fold repetition)"
-#~ msgstr ""
-#~ "O mesmo estado do tabuleiro ocorreu três vezes (empate por repetição)"
+#~ msgid "The same board state has occurred three times (three fold repetition)"
+#~ msgstr "O mesmo estado do tabuleiro ocorreu três vezes (empate por repetição)"
 
 #~ msgid "Neither player can cause checkmate (insufficient material)"
-#~ msgstr ""
-#~ "Nenhum dos jogadores pode fazer o xeque-mate (material insuficiente)"
+#~ msgstr "Nenhum dos jogadores pode fazer o xeque-mate (material insuficiente)"
 
 #~ msgid "The black player has resigned"
 #~ msgstr "O jogador de pretas abandonou"
@@ -1045,11 +992,8 @@ msgstr "Data"
 #~ msgid "[FILE] - Play Chess"
 #~ msgstr "[FILE] - Jogar xadrez"
 
-#~ msgid ""
-#~ "Run '%s --help' to see a full list of available command line options."
-#~ msgstr ""
-#~ "Execute \"%s --help\" pare ver uma lista completa de opções de linha de "
-#~ "comando."
+#~ msgid "Run '%s --help' to see a full list of available command line options."
+#~ msgstr "Execute \"%s --help\" pare ver uma lista completa de opções de linha de comando."
 
 #~ msgid "Five or More"
 #~ msgstr "Cinco ou Mais"
@@ -1099,19 +1043,14 @@ msgstr "Data"
 #~ msgid "Playing field size"
 #~ msgstr "Tamanho do campo de jogo"
 
-#~ msgid ""
-#~ "Playing field size. 1=Small, 2=Medium, 3=Large. Any other value is "
-#~ "invalid."
-#~ msgstr ""
-#~ "Tamanho do campo de jogo. 1=Pequeno, 2=Médio, 3=Grande. Qualquer outro "
-#~ "valor é inválido."
+#~ msgid "Playing field size. 1=Small, 2=Medium, 3=Large. Any other value is invalid."
+#~ msgstr "Tamanho do campo de jogo. 1=Pequeno, 2=Médio, 3=Grande. Qualquer outro valor é inválido."
 
 #~ msgid "Ball style"
 #~ msgstr "Estilo da bola"
 
 #~ msgid "Ball style. The filename of the images to use for the balls."
-#~ msgstr ""
-#~ "Estilo da bola. O nome do arquivo das imagens para usar para as bolas."
+#~ msgstr "Estilo da bola. O nome do arquivo das imagens para usar para as bolas."
 
 #~ msgid "Background color"
 #~ msgstr "Cor de fundo"
@@ -1222,42 +1161,24 @@ msgstr "Data"
 #~ msgstr "_Finalizar jogo"
 
 #~ msgid ""
-#~ "%s is free software; you can redistribute it and/or modify it under the "
-#~ "terms of the GNU General Public License as published by the Free Software "
-#~ "Foundation; either version %d of the License, or (at your option) any "
+#~ "%s is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version %d of the License, or (at your option) any "
 #~ "later version."
 #~ msgstr ""
-#~ "%s é software livre; você pode redistribui-lo e/ou modificá-lo sob os "
-#~ "termos da Licença Pública Geral GNU publicada pela Free Software "
-#~ "Foundation; qualquer versão %d da Licença, ou (de acordo com sua opinião) "
-#~ "qualquer versão mais recente."
+#~ "%s é software livre; você pode redistribui-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU publicada pela Free Software Foundation; qualquer versão %d da Licença, ou (de acordo com sua opinião) qualquer "
+#~ "versão mais recente."
 
 #~ msgid ""
-#~ "%s is distributed in the hope that it will be useful, but WITHOUT ANY "
-#~ "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-#~ "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+#~ "%s is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
 #~ "details."
 #~ msgstr ""
-#~ "%s é distribuído na esperança de que seja útil, mas SEM NENHUMA GARANTIA; "
-#~ "sem mesmo implicar garantias de COMERCIABILIDADE ou ADAPTAÇÃO A UM "
-#~ "PROPÓSITO PARTICULAR. Veja a Licença Pública Geral GNU (GPL) para mais "
+#~ "%s é distribuído na esperança de que seja útil, mas SEM NENHUMA GARANTIA; sem mesmo implicar garantias de COMERCIABILIDADE ou ADAPTAÇÃO A UM PROPÓSITO PARTICULAR. Veja a Licença Pública Geral GNU (GPL) para mais "
 #~ "detalhes."
 
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with %s; if not, write to the Free Software Foundation, Inc., 51 Franklin "
-#~ "Street, Fifth Floor, Boston, MA  02110-1301  USA"
-#~ msgstr ""
-#~ "Você deve ter recebido uma cópia da Licença Pública Geral GNU (GPL) junto "
-#~ "com %s; caso contrário, escreva para a Free Software Foundation, Inc., 51 "
-#~ "Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA"
+#~ msgid "You should have received a copy of the GNU General Public License along with %s; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA"
+#~ msgstr "Você deve ter recebido uma cópia da Licença Pública Geral GNU (GPL) junto com %s; caso contrário, escreva para a Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA"
 
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with this program.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com "
-#~ "este programa. Caso contrário, veja <http://www.gnu.org/licenses/>."
+#~ msgid "You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>."
+#~ msgstr "Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este programa. Caso contrário, veja <http://www.gnu.org/licenses/>."
 
 #~ msgctxt "board size"
 #~ msgid "Small"
@@ -1329,12 +1250,8 @@ msgstr "Data"
 #~ msgid "Level of Player One"
 #~ msgstr "Nível do Jogador Um"
 
-#~ msgid ""
-#~ "Zero is human; one through three correspond to the level of the computer "
-#~ "player."
-#~ msgstr ""
-#~ "Zero é humano; um a três correspondem ao nível de inteligência do "
-#~ "computador."
+#~ msgid "Zero is human; one through three correspond to the level of the computer player."
+#~ msgstr "Zero é humano; um a três correspondem ao nível de inteligência do computador."
 
 #~ msgid "Level of Player Two"
 #~ msgstr "Nível do Jogador Dois"
@@ -1407,13 +1324,11 @@ msgstr "Data"
 #~ msgstr "Empatado:"
 
 #~ msgid ""
-#~ "\"Four in a Row\" for GNOME, with a computer player driven by Giuliano "
-#~ "Bertoletti's Velena Engine.\n"
+#~ "\"Four in a Row\" for GNOME, with a computer player driven by Giuliano Bertoletti's Velena Engine.\n"
 #~ "\n"
 #~ "\"Four in a Row\" is a part of GNOME Games."
 #~ msgstr ""
-#~ "\"Quatro em uma linha\" para GNOME, com um jogador do computador "
-#~ "controlado pelo Mecanismo de Velena de Giuliano Bertoletti.\n"
+#~ "\"Quatro em uma linha\" para GNOME, com um jogador do computador controlado pelo Mecanismo de Velena de Giuliano Bertoletti.\n"
 #~ "\n"
 #~ "\"Quatro em uma linha\" faz parte do GNOME Games."
 
@@ -1559,8 +1474,7 @@ msgstr "Data"
 #~ msgstr "Usar movimento relativo"
 
 #~ msgid "Use relative movement (ie. left or right only)."
-#~ msgstr ""
-#~ "Usar movimento relativo (ou seja, apenas para a esquerda e direita)."
+#~ msgstr "Usar movimento relativo (ou seja, apenas para a esquerda e direita)."
 
 #~ msgid "Move up"
 #~ msgstr "Mover para cima"
@@ -1742,8 +1656,7 @@ msgstr "Data"
 #~ msgstr "Mostrar barra de ferramentas"
 
 #~ msgid "Show toolbar. A standard option for toolbars."
-#~ msgstr ""
-#~ "Mostrar barra de ferramentas. Uma opção padrão para barra de ferramentas."
+#~ msgstr "Mostrar barra de ferramentas. Uma opção padrão para barra de ferramentas."
 
 #~ msgid "Robot image theme"
 #~ msgstr "Tema de imagem do robô"
@@ -1761,32 +1674,23 @@ msgstr "Data"
 #~ msgstr "Usar movimentos seguros"
 
 #~ msgid ""
-#~ "Use safe moves. The safe moves option will help you to avoid being killed "
-#~ "due to a mistake. If you try to make a move that would lead to your death "
-#~ "when there is a safe move available you will not be allowed to proceed."
+#~ "Use safe moves. The safe moves option will help you to avoid being killed due to a mistake. If you try to make a move that would lead to your death when there is a safe move available you will not be allowed to "
+#~ "proceed."
 #~ msgstr ""
-#~ "Usar movimentos seguros. A opção de movimentos seguros irá lhe ajudar a "
-#~ "evitar ser morto por um erro. Se você tentar fazer um movimento que "
-#~ "ocasionaria sua morte quando há um movimento seguro disponível, você não "
+#~ "Usar movimentos seguros. A opção de movimentos seguros irá lhe ajudar a evitar ser morto por um erro. Se você tentar fazer um movimento que ocasionaria sua morte quando há um movimento seguro disponível, você não "
 #~ "poderá prosseguir."
 
 #~ msgid "Use super safe moves"
 #~ msgstr "Usar movimentos super seguros"
 
-#~ msgid ""
-#~ "Use super safe moves. The player is alerted when there is no safe move "
-#~ "and the only option is to teleport out."
-#~ msgstr ""
-#~ "Usar movimentos super seguros. O jogador é alertado quando não há "
-#~ "movimento seguro e a única opção é o teletransporte."
+#~ msgid "Use super safe moves. The player is alerted when there is no safe move and the only option is to teleport out."
+#~ msgstr "Usar movimentos super seguros. O jogador é alertado quando não há movimento seguro e a única opção é o teletransporte."
 
 #~ msgid "Enable game sounds"
 #~ msgstr "Habilitar sons do jogo"
 
-#~ msgid ""
-#~ "Enable game sounds. Play sounds for various events throughout the game."
-#~ msgstr ""
-#~ "Habilitar sons do jogo. Reproduz sons para vários eventos durante o jogo."
+#~ msgid "Enable game sounds. Play sounds for various events throughout the game."
+#~ msgstr "Habilitar sons do jogo. Reproduz sons para vários eventos durante o jogo."
 
 #~ msgid "Key to move NW"
 #~ msgstr "Tecla para mover à esquerda e para cima"
@@ -1864,9 +1768,7 @@ msgstr "Data"
 #~ msgstr "Fim do jogo!"
 
 #~ msgid "Great work, but unfortunately your score did not make the top ten."
-#~ msgstr ""
-#~ "Um ótimo trabalho, mas infelizmente sua pontuação não está entre as dez "
-#~ "melhores."
+#~ msgstr "Um ótimo trabalho, mas infelizmente sua pontuação não está entre as dez melhores."
 
 #~ msgid "Robots Scores"
 #~ msgstr "Pontuação do Robôs"
@@ -1953,24 +1855,14 @@ msgstr "Data"
 #~ msgid "No game data could be found."
 #~ msgstr "Nenhum dado de jogo pôde ser localizado."
 
-#~ msgid ""
-#~ "The program Robots was unable to find any valid game configuration files. "
-#~ "Please check that the program is installed correctly."
-#~ msgstr ""
-#~ "O programa Robots não foi capaz de localizar nenhum arquivo de "
-#~ "configuração de jogo válido. Por favor, verifique se o programa está "
-#~ "instalado corretamente."
+#~ msgid "The program Robots was unable to find any valid game configuration files. Please check that the program is installed correctly."
+#~ msgstr "O programa Robots não foi capaz de localizar nenhum arquivo de configuração de jogo válido. Por favor, verifique se o programa está instalado corretamente."
 
 #~ msgid "Some graphics files are missing or corrupt."
 #~ msgstr "Alguns arquivos de gráficos estão faltando ou corrompidos."
 
-#~ msgid ""
-#~ "The program Robots was unable to load all the necessary graphics files. "
-#~ "Please check that the program is installed correctly."
-#~ msgstr ""
-#~ "O programa Robots não foi capaz de carregar todos os gráficos "
-#~ "necessários. Por favor, verifique se o programa está instalado "
-#~ "corretamente."
+#~ msgid "The program Robots was unable to load all the necessary graphics files. Please check that the program is installed correctly."
+#~ msgstr "O programa Robots não foi capaz de carregar todos os gráficos necessários. Por favor, verifique se o programa está instalado corretamente."
 
 #~ msgid "Could not find '%s' pixmap file\n"
 #~ msgstr "Não foi possível localizar o arquivo de imagem \"%s\"\n"
@@ -2124,14 +2016,8 @@ msgstr "Data"
 #~ msgid "There are no more moves."
 #~ msgstr "Não há mais movimentos válidos."
 
-#~ msgid ""
-#~ "Each puzzle has at least one solution.  You can undo your moves and try "
-#~ "and find the solution for a time penalty, restart this game or start an "
-#~ "new one."
-#~ msgstr ""
-#~ "Cada enigma tem pelo menos uma solução. Você pode desfazer seus "
-#~ "movimentos e tentar e encontrar a solução para uma penalidade de tempo, "
-#~ "reiniciar esse jogo ou começar um novo."
+#~ msgid "Each puzzle has at least one solution.  You can undo your moves and try and find the solution for a time penalty, restart this game or start an new one."
+#~ msgstr "Cada enigma tem pelo menos uma solução. Você pode desfazer seus movimentos e tentar e encontrar a solução para uma penalidade de tempo, reiniciar esse jogo ou começar um novo."
 
 #~ msgid "_New game"
 #~ msgstr "_Novo jogo"
@@ -2227,13 +2113,11 @@ msgstr "Data"
 #~ msgstr "GNOME Sudoku"
 
 #~ msgid ""
-#~ "GNOME Sudoku is a simple Sudoku generator and player. Sudoku is a "
-#~ "Japanese logic puzzle.\n"
+#~ "GNOME Sudoku is a simple Sudoku generator and player. Sudoku is a Japanese logic puzzle.\n"
 #~ "\n"
 #~ "GNOME Sudoku is a part of GNOME Games."
 #~ msgstr ""
-#~ "GNOME Sudoku é um jogo simples de sudoku . Sudoku é um quebra-cabeças "
-#~ "japonês.\n"
+#~ "GNOME Sudoku é um jogo simples de sudoku . Sudoku é um quebra-cabeças japonês.\n"
 #~ "\n"
 #~ "GNOME Sudoku faz parte do GNOME Games."
 
@@ -2350,16 +2234,13 @@ msgstr "Data"
 #~ msgstr "Avisar sobre quadrados _não preenchíveis"
 
 #~ msgid "Warn about squares made unfillable by a move"
-#~ msgstr ""
-#~ "Avisar quando uma jogada tornar um quadrado impossível de ser preenchido"
+#~ msgstr "Avisar quando uma jogada tornar um quadrado impossível de ser preenchido"
 
 #~ msgid "_Track Additions"
 #~ msgstr "_Acompanhar adições"
 
-#~ msgid ""
-#~ "Mark new additions in a separate color so you can keep track of them."
-#~ msgstr ""
-#~ "Marcar novas adições em uma cor diferente para você poder acompanhá-las."
+#~ msgid "Mark new additions in a separate color so you can keep track of them."
+#~ msgstr "Marcar novas adições em uma cor diferente para você poder acompanhá-las."
 
 #~ msgid "_Highlighter"
 #~ msgstr "_Destacador"
@@ -2425,8 +2306,7 @@ msgstr "Data"
 #~ msgstr "Números de jogadas preenchíveis instantaneamente por eliminação: "
 
 #~ msgid "Number of moves instantly fillable by filling: "
-#~ msgstr ""
-#~ "Números de jogadas preenchíveis instantaneamente por preenchimento: "
+#~ msgstr "Números de jogadas preenchíveis instantaneamente por preenchimento: "
 
 #~ msgid "Amount of trial-and-error required to solve: "
 #~ msgstr "Quantidade de tentativas e erros para solucionar: "
@@ -2501,26 +2381,19 @@ msgstr "Data"
 #~ msgstr "Usar a bandeira desconhecida"
 
 #~ msgid "Set to true to be able to mark squares as unknown."
-#~ msgstr ""
-#~ "Defina como verdadeiro para poder marcar espaços como desconhecidos."
+#~ msgstr "Defina como verdadeiro para poder marcar espaços como desconhecidos."
 
 #~ msgid "Warning about too many flags"
 #~ msgstr "Aviso sobre muitas bandeiras"
 
 #~ msgid "Set to true to enable warning icons when too many flags are placed."
-#~ msgstr ""
-#~ "Defina como verdadeiro para habilitar ícones de aviso quando muitas "
-#~ "bandeiras forem colocadas."
+#~ msgstr "Defina como verdadeiro para habilitar ícones de aviso quando muitas bandeiras forem colocadas."
 
 #~ msgid "Enable automatic placing of flags"
 #~ msgstr "Habilitar o posicionamento automático de bandeiras"
 
-#~ msgid ""
-#~ "Set to true to have gnomine automatically flag squares as mined when "
-#~ "enough squares are revealed"
-#~ msgstr ""
-#~ "Defina como verdadeiro para ter o gnomine automaticamente marcar os "
-#~ "quadrados como minados, quando suficientes quadrados forem revelados"
+#~ msgid "Set to true to have gnomine automatically flag squares as mined when enough squares are revealed"
+#~ msgstr "Defina como verdadeiro para ter o gnomine automaticamente marcar os quadrados como minados, quando suficientes quadrados forem revelados"
 
 #~ msgid "Number of columns in a custom game"
 #~ msgstr "Número de colunas em um jogo personalizado"
@@ -2598,13 +2471,11 @@ msgstr "Data"
 #~ msgstr "Gráficos:"
 
 #~ msgid ""
-#~ "The popular logic puzzle minesweeper. Clear mines from a board using "
-#~ "hints from squares you have already uncovered.\n"
+#~ "The popular logic puzzle minesweeper. Clear mines from a board using hints from squares you have already uncovered.\n"
 #~ "\n"
 #~ "Mines is a part of GNOME Games."
 #~ msgstr ""
-#~ "O popular quebra-cabeças lógico campo minado. Limpe as minas do tabuleiro "
-#~ "usando dicas dos quadrados que você já descobriu.\n"
+#~ "O popular quebra-cabeças lógico campo minado. Limpe as minas do tabuleiro usando dicas dos quadrados que você já descobriu.\n"
 #~ "\n"
 #~ "Minas faz parte do GNOME Games."
 
@@ -2659,10 +2530,8 @@ msgstr "Data"
 #~ msgid "The size of the playing grid"
 #~ msgstr "O tamanho da grade de jogo"
 
-#~ msgid ""
-#~ "The value of this key is used to decide the size of the playing grid."
-#~ msgstr ""
-#~ "O valor desta chave é usado para decidir o tamanho da grade de jogo."
+#~ msgid "The value of this key is used to decide the size of the playing grid."
+#~ msgstr "O valor desta chave é usado para decidir o tamanho da grade de jogo."
 
 #~ msgid "2×2"
 #~ msgstr "2×2"
@@ -2686,13 +2555,11 @@ msgstr "Data"
 #~ msgstr "Pontuações do Tetravex"
 
 #~ msgid ""
-#~ "GNOME Tetravex is a simple puzzle where pieces must be positioned so that "
-#~ "the same numbers are touching each other.\n"
+#~ "GNOME Tetravex is a simple puzzle where pieces must be positioned so that the same numbers are touching each other.\n"
 #~ "\n"
 #~ "Tetravex is a part of GNOME Games."
 #~ msgstr ""
-#~ "O GNOME Tetravex é um quebra-cabeças simples onde peças devem ser "
-#~ "posicionadas para que números iguais se toquem.\n"
+#~ "O GNOME Tetravex é um quebra-cabeças simples onde peças devem ser posicionadas para que números iguais se toquem.\n"
 #~ "\n"
 #~ "O Tetravex faz parte do GNOME Games."
 
@@ -2875,20 +2742,13 @@ msgstr "Data"
 #~ msgid "Delay between rolls"
 #~ msgstr "Espera entre jogadas"
 
-#~ msgid ""
-#~ "Choose whether or not to insert a delay between the computer's dice rolls "
-#~ "so the player can follow what it is doing."
-#~ msgstr ""
-#~ "Escolha se deseja ou não inserir um intervalo entre o lançamento do dado "
-#~ "pelo computador para que o jogador possa acompanhar o que está "
-#~ "acontecendo."
+#~ msgid "Choose whether or not to insert a delay between the computer's dice rolls so the player can follow what it is doing."
+#~ msgstr "Escolha se deseja ou não inserir um intervalo entre o lançamento do dado pelo computador para que o jogador possa acompanhar o que está acontecendo."
 
 #~ msgid "Display the computer's thoughts"
 #~ msgstr "Exibir pensamentos do computador"
 
-#~ msgid ""
-#~ "If set to true, a dump of the AI's working will be done to standard "
-#~ "output."
+#~ msgid "If set to true, a dump of the AI's working will be done to standard output."
 #~ msgstr "Se verdadeiro, o trabalho da IA será despejado na saída padrão."
 
 #~ msgid "Already used! Where do you want to put that?"
@@ -2965,8 +2825,7 @@ msgstr "Data"
 #~ msgstr "Lançar"
 
 #~ msgid "You are only allowed three rolls. Choose a score slot."
-#~ msgstr ""
-#~ "São permitidos apenas três lançamentos. Selecione uma caixa de pontuação."
+#~ msgstr "São permitidos apenas três lançamentos. Selecione uma caixa de pontuação."
 
 #~ msgid "GNOME version (1998):"
 #~ msgstr "Versão para GNOME (1998):"
@@ -3257,13 +3116,11 @@ msgstr "Data"
 #~ msgstr "Pontuações do Swell Foop"
 
 #~ msgid ""
-#~ "I want to play that game! You know, they all light-up and you click on "
-#~ "them and they vanish!\n"
+#~ "I want to play that game! You know, they all light-up and you click on them and they vanish!\n"
 #~ "\n"
 #~ "Swell Foop is a part of GNOME Games."
 #~ msgstr ""
-#~ "Eu quero jogar esse jogo! Você sabe, eles todos acendem e você clica "
-#~ "neles e eles desaparecem!\n"
+#~ "Eu quero jogar esse jogo! Você sabe, eles todos acendem e você clica neles e eles desaparecem!\n"
 #~ "\n"
 #~ "O Swell Foop faz parte do GNOME Games."
 
@@ -3367,80 +3224,41 @@ msgstr "Data"
 #~ msgid "General"
 #~ msgstr "Geral"
 
-#~ msgid ""
-#~ "The name of the key used to hold still. The name is a standard X key name."
-#~ msgstr ""
-#~ "O nome da tecla usada para ficar parado. O nome é o nome padrão da tecla "
-#~ "no X."
+#~ msgid "The name of the key used to hold still. The name is a standard X key name."
+#~ msgstr "O nome da tecla usada para ficar parado. O nome é o nome padrão da tecla no X."
 
-#~ msgid ""
-#~ "The name of the key used to move east. The name is a standard X key name."
-#~ msgstr ""
-#~ "O nome da tecla par mover à direita. O nome é o nome padrão da tecla no X."
+#~ msgid "The name of the key used to move east. The name is a standard X key name."
+#~ msgstr "O nome da tecla par mover à direita. O nome é o nome padrão da tecla no X."
 
-#~ msgid ""
-#~ "The name of the key used to move north-east. The name is a standard X key "
-#~ "name."
-#~ msgstr ""
-#~ "O nome da tecla usada para mover à direita e para cima. O nome é o nome "
-#~ "padrão da tecla no X."
+#~ msgid "The name of the key used to move north-east. The name is a standard X key name."
+#~ msgstr "O nome da tecla usada para mover à direita e para cima. O nome é o nome padrão da tecla no X."
 
-#~ msgid ""
-#~ "The name of the key used to move north-west. The name is a standard X key "
-#~ "name."
-#~ msgstr ""
-#~ "O nome da tecla usada para mover à esquerda e para cima. O nome é o nome "
-#~ "padrão da tecla no X."
+#~ msgid "The name of the key used to move north-west. The name is a standard X key name."
+#~ msgstr "O nome da tecla usada para mover à esquerda e para cima. O nome é o nome padrão da tecla no X."
 
-#~ msgid ""
-#~ "The name of the key used to move north. The name is a standard X key name."
-#~ msgstr ""
-#~ "O nome da tecla usada para mover para cima. O nome é o nome padrão da "
-#~ "tecla no X."
+#~ msgid "The name of the key used to move north. The name is a standard X key name."
+#~ msgstr "O nome da tecla usada para mover para cima. O nome é o nome padrão da tecla no X."
 
-#~ msgid ""
-#~ "The name of the key used to move south-east. The name is a standard X key "
-#~ "name."
-#~ msgstr ""
-#~ "O nome da tecla usada para mover à direita e abaixo. O nome é o nome "
-#~ "padrão da tecla no X."
+#~ msgid "The name of the key used to move south-east. The name is a standard X key name."
+#~ msgstr "O nome da tecla usada para mover à direita e abaixo. O nome é o nome padrão da tecla no X."
 
-#~ msgid ""
-#~ "The name of the key used to move south-west. The name is a standard X key "
-#~ "name."
-#~ msgstr ""
-#~ "O nome da tecla usada para mover à esquerda e abaixo. O nome é o nome "
-#~ "padrão da tecla no X."
+#~ msgid "The name of the key used to move south-west. The name is a standard X key name."
+#~ msgstr "O nome da tecla usada para mover à esquerda e abaixo. O nome é o nome padrão da tecla no X."
 
-#~ msgid ""
-#~ "The name of the key used to move south. The name is a standard X key name."
-#~ msgstr ""
-#~ "O nome da tecla usada para mover abaixo. O nome é o nome padrão da tecla "
-#~ "no X."
+#~ msgid "The name of the key used to move south. The name is a standard X key name."
+#~ msgstr "O nome da tecla usada para mover abaixo. O nome é o nome padrão da tecla no X."
 
-#~ msgid ""
-#~ "The name of the key used to move west. The name is a standard X key name."
-#~ msgstr ""
-#~ "O nome da tecla usada para mover à esquerda. O nome é o nome padrão da "
-#~ "tecla no X."
+#~ msgid "The name of the key used to move west. The name is a standard X key name."
+#~ msgstr "O nome da tecla usada para mover à esquerda. O nome é o nome padrão da tecla no X."
 
-#~ msgid ""
-#~ "The name of the key used to teleport randomly. The name is a standard X "
-#~ "key name."
-#~ msgstr ""
-#~ "O nome da tecla usada para teletransportar aleatoriamente. O nome é o "
-#~ "nome padrão da tecla no X."
+#~ msgid "The name of the key used to teleport randomly. The name is a standard X key name."
+#~ msgstr "O nome da tecla usada para teletransportar aleatoriamente. O nome é o nome padrão da tecla no X."
 
-#~ msgid ""
-#~ "The name of the key used to teleport safely (if possible). The name is a "
-#~ "standard X key name."
-#~ msgstr ""
-#~ "O nome da tecla usada para teletransportar seguramente (se possível). O "
-#~ "nome é o nome padrão da tecla no X."
+#~ msgid "The name of the key used to teleport safely (if possible). The name is a standard X key name."
+#~ msgstr "O nome da tecla usada para teletransportar seguramente (se possível). O nome é o nome padrão da tecla no X."
 
 #~ msgid "The name of the key used to wait. The name is a standard X key name."
-#~ msgstr ""
-#~ "O nome da tecla usada para esperar. O nome é o nome padrão da tecla no X."
+#~ msgstr "O nome da tecla usada para esperar. O nome é o nome padrão da tecla no X."
 
 #~ msgid "The background color"
 #~ msgstr "A cor do plano de fundo"
@@ -3448,15 +3266,10 @@ msgstr "Data"
 #~ msgid "The background color, in a format gdk_color_parse understands."
 #~ msgstr "A cor do plano de fundo, num formato que gdk_color_parse entende."
 
-#~ msgid ""
-#~ "This selects whether or not to draw the background image over the "
-#~ "background color."
-#~ msgstr ""
-#~ "Isto seleciona se deve desenhar a imagem do plano de fundo sobre a cor do "
-#~ "plano de fundo."
+#~ msgid "This selects whether or not to draw the background image over the background color."
+#~ msgstr "Isto seleciona se deve desenhar a imagem do plano de fundo sobre a cor do plano de fundo."
 
-#~ msgid ""
-#~ "Whether to provide a graphical representation of where a block will land."
+#~ msgid "Whether to provide a graphical representation of where a block will land."
 #~ msgstr "Mostra uma representação gráfica de onde o bloco cairá."
 
 #~ msgid "Whether to provide a target"
@@ -3542,8 +3355,7 @@ msgstr "Data"
 #~ "\n"
 #~ "Please check your installation of gnome-games and its dependencies."
 #~ msgstr ""
-#~ "As imagens requeridas foram localizadas, mas se recusam a ser "
-#~ "carregadas.\n"
+#~ "As imagens requeridas foram localizadas, mas se recusam a ser carregadas.\n"
 #~ "\n"
 #~ "Por favor, verifique sua instalação do gnome-games e de suas dependências."
 
@@ -3634,12 +3446,8 @@ msgstr "Data"
 #~ msgid "Select the style of control"
 #~ msgstr "Selecionar o estilo de controle"
 
-#~ msgid ""
-#~ "Select whether to drag the tiles or to click on the source then the "
-#~ "destination."
-#~ msgstr ""
-#~ "Selecione se os ladrilhos devem ser arrastados ou se devem ser clicados "
-#~ "na origem e no destino."
+#~ msgid "Select whether to drag the tiles or to click on the source then the destination."
+#~ msgstr "Selecione se os ladrilhos devem ser arrastados ou se devem ser clicados na origem e no destino."
 
 #~ msgid "Regular"
 #~ msgstr "Normal"
@@ -3690,9 +3498,7 @@ msgstr "Data"
 #~ msgstr "Opção de lançamento não reconhecida: %d"
 
 #~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr ""
-#~ "Não é possível passar as URIs do documento para uma entrada de desktop do "
-#~ "tipo \"link\""
+#~ msgstr "Não é possível passar as URIs do documento para uma entrada de desktop do tipo \"link\""
 
 #~ msgid "Not a launchable item"
 #~ msgstr "Não é um item lançável"
@@ -3724,12 +3530,8 @@ msgstr "Data"
 #~ msgid "Could not show help for “%s”"
 #~ msgstr "Não foi possível mostrar a ajuda para “%s”"
 
-#~ msgid ""
-#~ "If enabled, the default background color from the user's default GNOME "
-#~ "theme is used to draw the tiles."
-#~ msgstr ""
-#~ "Se habilitado, a cor de fundo do tema padrão do usuário do GNOME é usado "
-#~ "para desenhar as pedras."
+#~ msgid "If enabled, the default background color from the user's default GNOME theme is used to draw the tiles."
+#~ msgstr "Se habilitado, a cor de fundo do tema padrão do usuário do GNOME é usado para desenhar as pedras."
 
 #~ msgid "Whether or not to use the GNOME theme colors"
 #~ msgstr "Usar as cores do tema do GNOME"
@@ -3779,14 +3581,9 @@ msgstr "Data"
 #~ msgid "A list of recently played games."
 #~ msgstr "Uma lista de jogos realizados recentemente."
 
-#~ msgid ""
-#~ "A list of strings that come in the form of a quintuple: name, wins, total "
-#~ "games played, best time (in seconds) and worst time (also in seconds). "
-#~ "Unplayed games do not need to be represented."
+#~ msgid "A list of strings that come in the form of a quintuple: name, wins, total games played, best time (in seconds) and worst time (also in seconds). Unplayed games do not need to be represented."
 #~ msgstr ""
-#~ "Uma lista de mensagens que vem em forma de quíntuplo: nome, vitórias, "
-#~ "total de jogos realizados, melhor tempo (em segundos) e pior tempo "
-#~ "(também em segundos). Não necessitam ser apresentados jogos que não foram "
+#~ "Uma lista de mensagens que vem em forma de quíntuplo: nome, vitórias, total de jogos realizados, melhor tempo (em segundos) e pior tempo (também em segundos). Não necessitam ser apresentados jogos que não foram "
 #~ "realizados."
 
 #~ msgid "Animations"
@@ -3795,12 +3592,8 @@ msgstr "Data"
 #~ msgid "Recently played games"
 #~ msgstr "Jogos realizados recentemente"
 
-#~ msgid ""
-#~ "Select whether to drag the cards or to click on the source then the "
-#~ "destination."
-#~ msgstr ""
-#~ "Selecione se as cartas devem ser arrastadas ou se deve ser clicado na "
-#~ "origem e no destino."
+#~ msgid "Select whether to drag the cards or to click on the source then the destination."
+#~ msgstr "Selecione se as cartas devem ser arrastadas ou se deve ser clicado na origem e no destino."
 
 #~ msgid "Statistics of games played"
 #~ msgstr "Estatísticas de jogos realizados"
@@ -3812,8 +3605,7 @@ msgstr "Data"
 #~ msgstr "O nome do arquivo com os desenhos para as cartas."
 
 #~ msgid "The name of the scheme file containing the solitaire game to play."
-#~ msgstr ""
-#~ "O nome do arquivo de esquema contendo o jogo de paciência a ser jogado."
+#~ msgstr "O nome do arquivo de esquema contendo o jogo de paciência a ser jogado."
 
 #~ msgid "Theme file name"
 #~ msgstr "Nome do arquivo de tema"
@@ -3839,12 +3631,8 @@ msgstr "Data"
 #~ msgid "Play the popular FreeCell card game"
 #~ msgstr "Jogue o popular jogo de cartas FreeCell"
 
-#~ msgid ""
-#~ "Aisleriot cannot load the file “%s”. Please check your Aisleriot "
-#~ "installation."
-#~ msgstr ""
-#~ "O Aisleriot não pôde carregar o arquivo \"%s\". Por favor, verifique a "
-#~ "sua instalação do Aisleriot."
+#~ msgid "Aisleriot cannot load the file “%s”. Please check your Aisleriot installation."
+#~ msgstr "O Aisleriot não pôde carregar o arquivo \"%s\". Por favor, verifique a sua instalação do Aisleriot."
 
 #~ msgctxt "slot type"
 #~ msgid "foundation"
@@ -3889,14 +3677,8 @@ msgstr "Data"
 #~ msgid "Aisleriot cannot find the last game you played."
 #~ msgstr "O Aisleriot não pode localizar o último jogo que você jogou."
 
-#~ msgid ""
-#~ "This usually occurs when you run an older version of Aisleriot which does "
-#~ "not have the game you last played. The default game, Klondike, is being "
-#~ "started instead."
-#~ msgstr ""
-#~ "Isso geralmente ocorre quando você executa uma versão mais antiga do "
-#~ "Aisleriot que não tenha o último jogo que você jogou. O jogo padrão, "
-#~ "Klondike, será iniciado no lugar dele."
+#~ msgid "This usually occurs when you run an older version of Aisleriot which does not have the game you last played. The default game, Klondike, is being started instead."
+#~ msgstr "Isso geralmente ocorre quando você executa uma versão mais antiga do Aisleriot que não tenha o último jogo que você jogou. O jogo padrão, Klondike, será iniciado no lugar dele."
 
 #~ msgid "This game does not have hint support yet."
 #~ msgstr "Este jogo ainda não tem suporte a dicas."
@@ -4478,12 +4260,10 @@ msgstr "Data"
 #~ msgstr "Sobre o AisleRiot"
 
 #~ msgid ""
-#~ "AisleRiot provides a rule-based solitaire card engine that allows many "
-#~ "different games to be played.\n"
+#~ "AisleRiot provides a rule-based solitaire card engine that allows many different games to be played.\n"
 #~ "AisleRiot is a part of GNOME Games."
 #~ msgstr ""
-#~ "O AisleRiot fornece um motor de jogo de paciência baseado em regras que "
-#~ "permitem vários jogos diferentes.\n"
+#~ "O AisleRiot fornece um motor de jogo de paciência baseado em regras que permitem vários jogos diferentes.\n"
 #~ "O AisleRiot faz parte do GNOME Games."
 
 #~ msgid "Play “%s”"
@@ -4542,9 +4322,7 @@ msgstr "Data"
 #~ msgstr "Instalar temas de cartas..."
 
 #~ msgid "Install new card themes from the distribution packages repositories"
-#~ msgstr ""
-#~ "Instala novos temas de cartas pelos repositórios de pacotes da "
-#~ "distribuição"
+#~ msgstr "Instala novos temas de cartas pelos repositórios de pacotes da distribuição"
 
 #~ msgid "_Card Style"
 #~ msgstr "Estilo da _carta"
@@ -4893,12 +4671,8 @@ msgstr "Data"
 #~ msgid "If you're ever lost and alone in the woods, hug a tree"
 #~ msgstr "Se você estiver perdido e sozinho numa floresta, abrace uma árvore"
 
-#~ msgid ""
-#~ "Just because a crosswalk looks like a hopscotch board doesn't mean it is "
-#~ "one"
-#~ msgstr ""
-#~ "O fato de uma faixa de pedestres se parecer com uma amarelinha não a "
-#~ "torna uma"
+#~ msgid "Just because a crosswalk looks like a hopscotch board doesn't mean it is one"
+#~ msgstr "O fato de uma faixa de pedestres se parecer com uma amarelinha não a torna uma"
 
 #~ msgid "Look both ways before you cross the street"
 #~ msgstr "Olhe para os dois lados antes de atravessar a rua"
@@ -4913,8 +4687,7 @@ msgstr "Data"
 #~ msgstr "Odessa é um jogo melhor. Mesmo."
 
 #~ msgid "Tourniquets are not recommended unless in the direst emergency"
-#~ msgstr ""
-#~ "Torniquetes não são recomendados, exceto em caso de grande emergência"
+#~ msgstr "Torniquetes não são recomendados, exceto em caso de grande emergência"
 
 #~ msgid "When without a stapler, a staple and a ruler will work"
 #~ msgstr "Caso não tenha um grampeador, um grampo e uma régua quebram o galho"
@@ -5117,12 +4890,8 @@ msgstr "Data"
 #~ msgid "Base Card:"
 #~ msgstr "Carta base:"
 
-#~ msgid ""
-#~ "Aim to place the suits in the order which fits the current layout most "
-#~ "naturally."
-#~ msgstr ""
-#~ "Tente posicionar os naipes na ordem que se adequa mais naturalmente à "
-#~ "disposição padrão."
+#~ msgid "Aim to place the suits in the order which fits the current layout most naturally."
+#~ msgstr "Tente posicionar os naipes na ordem que se adequa mais naturalmente à disposição padrão."
 
 #~ msgid "Deal new cards from the deck"
 #~ msgstr "Distribuir novas cartas do baralho"
@@ -5134,8 +4903,7 @@ msgstr "Data"
 #~ msgstr "algo"
 
 #~ msgid "Move ~a from the stock to an empty edge or tableau slot"
-#~ msgstr ""
-#~ "Mova ~a do monte para uma borda vazia ou para uma posição da mesa vazia"
+#~ msgstr "Mova ~a do monte para uma borda vazia ou para uma posição da mesa vazia"
 
 #~ msgid "Move ~a to an empty field"
 #~ msgstr "Mover ~a para um campo vazio"
@@ -5177,9 +4945,7 @@ msgstr "Data"
 #~ msgstr "Dois naipes"
 
 #~ msgid "Undo until there are enough cards to fill all tableau piles"
-#~ msgstr ""
-#~ "Desfaça até que existam cartas suficientes para preencher todas as pilhas "
-#~ "da mesa"
+#~ msgstr "Desfaça até que existam cartas suficientes para preencher todas as pilhas da mesa"
 
 #~ msgid "Allow temporary spots use"
 #~ msgstr "Permitir o uso de posições temporárias"
@@ -5235,24 +5001,14 @@ msgstr "Data"
 #~ msgid "Sudoku incorrectly installed"
 #~ msgstr "Sudoku instalado incorretamente"
 
-#~ msgid ""
-#~ "Sudoku is not able to start because required application files are not "
-#~ "installed. If you are currently upgrading your system please wait until "
-#~ "the upgrade has completed."
-#~ msgstr ""
-#~ "O Sudoku não é capaz de iniciar porque os arquivos do aplicativo "
-#~ "requerido não estão instalados. Se você estiver atualizando o seu sistema "
-#~ "neste momento por favor aguarde até que a atualização seja concluída."
+#~ msgid "Sudoku is not able to start because required application files are not installed. If you are currently upgrading your system please wait until the upgrade has completed."
+#~ msgstr "O Sudoku não é capaz de iniciar porque os arquivos do aplicativo requerido não estão instalados. Se você estiver atualizando o seu sistema neste momento por favor aguarde até que a atualização seja concluída."
 
 #~ msgid ""
-#~ "%s is free software; you can redistribute it and/or modify it under the "
-#~ "terms of the GNU General Public License as published by the Free Software "
-#~ "Foundation; either version 2 of the License, or (at your option) any "
+#~ "%s is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any "
 #~ "later version."
 #~ msgstr ""
-#~ "%s é software livre; você pode redistribui-lo e/ou modificá-lo sob os "
-#~ "termos da Licença Pública Geral GNU (GPL) publicada pela Free Software "
-#~ "Foundation; tanto a versão 2 da Licença, ou (de acordo com sua opinião) "
+#~ "%s é software livre; você pode redistribui-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU (GPL) publicada pela Free Software Foundation; tanto a versão 2 da Licença, ou (de acordo com sua opinião) "
 #~ "qualquer versão mais recente."
 
 #~ msgid "Unable to make data directory %(dir)s: %(error)s"
@@ -5358,8 +5114,7 @@ msgstr "Data"
 #~ msgstr "Marcação para mostrar comentários sobre movimentos"
 
 #~ msgid "The amount of time each player has to move in new games"
-#~ msgstr ""
-#~ "A quantidade de tempo que cada jogador tem para o movimento em novos jogos"
+#~ msgstr "A quantidade de tempo que cada jogador tem para o movimento em novos jogos"
 
 #~ msgid "The board side to display"
 #~ msgstr "O lado do tabuleiro a ser exibido"
@@ -5376,26 +5131,17 @@ msgstr "Data"
 #~ msgid "The default player type for white in new games"
 #~ msgstr "O tipo de jogador padrão para as brancas em novos jogos"
 
-#~ msgid ""
-#~ "The format to display moves in, can be either 'human' (human readable), "
-#~ "'lan' (long algebraic notation) or 'san' (standard algebraic notation)"
-#~ msgstr ""
-#~ "O formato para exibir os movimentos pode ser \"humano\" (que pode ser "
-#~ "lido normalmente), \"lan\" (notação algébrica longa), ou \"san\" (notação "
-#~ "algébrica padrão)"
+#~ msgid "The format to display moves in, can be either 'human' (human readable), 'lan' (long algebraic notation) or 'san' (standard algebraic notation)"
+#~ msgstr "O formato para exibir os movimentos pode ser \"humano\" (que pode ser lido normalmente), \"lan\" (notação algébrica longa), ou \"san\" (notação algébrica padrão)"
 
 #~ msgid "The piece style to use. Can be one of: 'simple' or 'fancy'"
 #~ msgstr "O tipo de peça a ser usado. Pode ser: 'simples' ou 'fantasia'"
 
 #~ msgid ""
-#~ "The side of the board that is in the foreground, either 'white', 'black', "
-#~ "'current' (the current player), 'human' (the side of the current human "
-#~ "player) or 'facetoface' (suitable for players on each side of screen, e."
+#~ "The side of the board that is in the foreground, either 'white', 'black', 'current' (the current player), 'human' (the side of the current human player) or 'facetoface' (suitable for players on each side of screen, e."
 #~ "g. handhelds)"
 #~ msgstr ""
-#~ "O lado do tabuleiro que está em primeiro plano, \"branco\", \"preto\", "
-#~ "\"atual\" (o jogador atual), \"humano\" (o lado do jogador humano atual) "
-#~ "ou \"face a face\" (apropriado para jogadores em cada lado da tela, como "
+#~ "O lado do tabuleiro que está em primeiro plano, \"branco\", \"preto\", \"atual\" (o jogador atual), \"humano\" (o lado do jogador humano atual) ou \"face a face\" (apropriado para jogadores em cada lado da tela, como "
 #~ "em dispositivos portáteis)"
 
 #~ msgid "Logs"
@@ -5474,9 +5220,7 @@ msgstr "Data"
 #~ msgstr "_Tempo do movimento:"
 
 #~ msgid "Start the game. The game can be started once all fields are complete"
-#~ msgstr ""
-#~ "Iniciar o jogo. O jogo só pode ser iniciado quando todos os campos "
-#~ "estiverem completos"
+#~ msgstr "Iniciar o jogo. O jogo só pode ser iniciado quando todos os campos estiverem completos"
 
 #~ msgid "W_hite:"
 #~ msgstr "Bran_cas:"
@@ -5511,25 +5255,14 @@ msgstr "Data"
 #~ msgid "Smooth edges of the 3D elements (anti-alias)"
 #~ msgstr "Suaviza bordas dos elementos 3D (anti-alias)"
 
-#~ msgid ""
-#~ "View the chess board by default in 2D mode, or optionally in 3D mode "
-#~ "using OpenGL."
-#~ msgstr ""
-#~ "Vê o tabuleiro de xadrez por padrão no modo 2D, ou opcionalmente no modo "
-#~ "3D usando o OpenGL."
+#~ msgid "View the chess board by default in 2D mode, or optionally in 3D mode using OpenGL."
+#~ msgstr "Vê o tabuleiro de xadrez por padrão no modo 2D, ou opcionalmente no modo 3D usando o OpenGL."
 
 #~ msgid "Chess incorrectly installed"
 #~ msgstr "Xadrez instalado incorretamente"
 
-#~ msgid ""
-#~ "Chess is not able to start because required application files are not "
-#~ "installed. If you are currently upgrading your system please wait until "
-#~ "the upgrade has completed."
-#~ msgstr ""
-#~ "O Xadrez não é capaz de iniciar porque os arquivos do aplicativo "
-#~ "requerido não estão instalados. Se você estiver atualizando o seus "
-#~ "sistema neste momento por favor aguarde até que a atualização seja "
-#~ "concluída."
+#~ msgid "Chess is not able to start because required application files are not installed. If you are currently upgrading your system please wait until the upgrade has completed."
+#~ msgstr "O Xadrez não é capaz de iniciar porque os arquivos do aplicativo requerido não estão instalados. Se você estiver atualizando o seus sistema neste momento por favor aguarde até que a atualização seja concluída."
 
 #~ msgid "Unlimited"
 #~ msgstr "Ilimitado"
@@ -5562,8 +5295,7 @@ msgstr "Data"
 #~ msgstr "∞"
 
 #~ msgid "If you don't save the changes to this game will be permanently lost"
-#~ msgstr ""
-#~ "Se você não salvar as alterações, este jogo será permanentemente perdido"
+#~ msgstr "Se você não salvar as alterações, este jogo será permanentemente perdido"
 
 #~ msgid "Close _without saving"
 #~ msgstr "Fechar _sem salvar"
@@ -5575,29 +5307,24 @@ msgstr "Data"
 #~ "You are unable to play in 3D mode due to the following problems:\n"
 #~ "%(errors)s\n"
 #~ "\n"
-#~ "Please contact your system administrator to resolve these problems, until "
-#~ "then you will be able to play chess in 2D mode."
+#~ "Please contact your system administrator to resolve these problems, until then you will be able to play chess in 2D mode."
 #~ msgstr ""
 #~ "Você não é capaz de jogar em modo 3D devido aos seguintes problemas:\n"
 #~ "%(errors)s\n"
 #~ "\n"
-#~ "Por favor entre em contato com o administrador do seu sistema para "
-#~ "resolver esses problemas, até lá você será capaz de jogar em modo 2D."
+#~ "Por favor entre em contato com o administrador do seu sistema para resolver esses problemas, até lá você será capaz de jogar em modo 2D."
 
 #~ msgid "Unable to claim draw"
 #~ msgstr "Não é possível propor o empate"
 
 #~ msgid ""
 #~ "You may claim a draw when:\n"
-#~ "a) The board has been in the same state three times (Three fold "
-#~ "repetition)\n"
-#~ "b) Fifty moves have occurred where no pawn has moved and no piece has "
-#~ "been captured (50 move rule)"
+#~ "a) The board has been in the same state three times (Three fold repetition)\n"
+#~ "b) Fifty moves have occurred where no pawn has moved and no piece has been captured (50 move rule)"
 #~ msgstr ""
 #~ "Você pode propor um empate quando:\n"
 #~ "a) O tabuleiro estiver no mesmo estado três vezes (empate por repetição)\n"
-#~ "b) Ocorrer cinquenta movimentos sem que um peão seja movido e nenhuma "
-#~ "peça seja capturada (regra dos 50 movimentos)"
+#~ "b) Ocorrer cinquenta movimentos sem que um peão seja movido e nenhuma peça seja capturada (regra dos 50 movimentos)"
 
 #~ msgid "No Python OpenGL support"
 #~ msgstr "Sem suporte a OpenGL sob Python"
@@ -5606,8 +5333,7 @@ msgstr "Data"
 #~ msgstr "Sem suporte a GTKGLExt sob Python"
 
 #~ msgid "OpenGL libraries do not support required display mode"
-#~ msgstr ""
-#~ "Bibliotecas OpenGL não têm suporte para o modo de exibição requerido"
+#~ msgstr "Bibliotecas OpenGL não têm suporte para o modo de exibição requerido"
 
 #~ msgid "White castles long"
 #~ msgstr "Brancas fazem roque longo"
@@ -5788,8 +5514,7 @@ msgstr "Data"
 #~ "glChess has crashed. Please report this bug to http://bugzilla.gnome.org\n"
 #~ "Debug output:"
 #~ msgstr ""
-#~ "O glChess travou. Por favor relate este erro em http://bugzilla.gnome."
-#~ "org\n"
+#~ "O glChess travou. Por favor relate este erro em http://bugzilla.gnome.org\n"
 #~ "Saída de depuração:"
 
 #~ msgid "glChess"
@@ -5844,8 +5569,7 @@ msgstr "Data"
 #~ msgstr "Limpar as notas inferiores"
 
 #~ msgid "You completed the puzzle in %(totalTime)s (%(activeTime)s active)."
-#~ msgstr ""
-#~ "Você concluiu o quebra-cabeça em %(totalTime)s (%(activeTime)s ativo)"
+#~ msgstr "Você concluiu o quebra-cabeça em %(totalTime)s (%(activeTime)s ativo)"
 
 #~ msgid "%(level)s puzzle"
 #~ msgstr "quebra-cabeça nível %(level)s"
@@ -5925,8 +5649,7 @@ msgstr "Data"
 #~ msgstr "<i>Muito difíceis:</i>"
 
 #~ msgid "<span size=\"larger\" weight=\"bold\">Puzzle Generator</span>"
-#~ msgstr ""
-#~ "<span size=\"larger\" weight=\"bold\">Gerador de quebra-cabeças</span>"
+#~ msgstr "<span size=\"larger\" weight=\"bold\">Gerador de quebra-cabeças</span>"
 
 #~ msgid "Criteria:"
 #~ msgstr "Critérios:"
@@ -5976,11 +5699,8 @@ msgstr "Data"
 #~ msgid "Fill _all squares"
 #~ msgstr "Preencher _todos os quadrados"
 
-#~ msgid ""
-#~ "Automatically fill in all squares for which there is only one valid value."
-#~ msgstr ""
-#~ "Preencher automaticamente todos os quadrados para os quais haja apenas um "
-#~ "valor válido."
+#~ msgid "Automatically fill in all squares for which there is only one valid value."
+#~ msgstr "Preencher automaticamente todos os quadrados para os quais haja apenas um valor válido."
 
 #~ msgid "_Generate new puzzles"
 #~ msgstr "_Gerar novos quebra-cabeças"
@@ -5994,12 +5714,8 @@ msgstr "Data"
 #~ msgid "Generate new puzzles _while you play"
 #~ msgstr "Gerar novos quebra-cabeças e_nquanto joga"
 
-#~ msgid ""
-#~ "Generate new puzzles in the background while you play. This will "
-#~ "automatically pause when the game goes into the background."
-#~ msgstr ""
-#~ "Gerar novos quebra-cabeças em segundo plano enquanto joga. Isso é "
-#~ "interrompido quando o jogo não é a janela ativa."
+#~ msgid "Generate new puzzles in the background while you play. This will automatically pause when the game goes into the background."
+#~ msgstr "Gerar novos quebra-cabeças em segundo plano enquanto joga. Isso é interrompido quando o jogo não é a janela ativa."
 
 #~ msgid "_Edit"
 #~ msgstr "_Editar"
@@ -6061,12 +5777,8 @@ msgstr "Data"
 #~ msgid "Display probabilities"
 #~ msgstr "Exibir probabilidades"
 
-#~ msgid ""
-#~ "Display the probabilities of each dealer hand outcome and the expected "
-#~ "value of your hand."
-#~ msgstr ""
-#~ "Exibe as probabilidades de cada mão do carteador e o valor esperado da "
-#~ "sua mão."
+#~ msgid "Display the probabilities of each dealer hand outcome and the expected value of your hand."
+#~ msgstr "Exibe as probabilidades de cada mão do carteador e o valor esperado da sua mão."
 
 #~ msgid "Never take insurance"
 #~ msgstr "Nunca pegar seguro"
@@ -6080,10 +5792,8 @@ msgstr "Data"
 #~ msgid "The amount of money in your bank."
 #~ msgstr "A quantia em dinheiro no seu banco."
 
-#~ msgid ""
-#~ "The name of the rules file containing the variation of the rules to play."
-#~ msgstr ""
-#~ "O nome do arquivo de regras que contém a variação de regras para jogar."
+#~ msgid "The name of the rules file containing the variation of the rules to play."
+#~ msgstr "O nome do arquivo de regras que contém a variação de regras para jogar."
 
 #~ msgid "The variation of the rules file to use"
 #~ msgstr "A variação do arquivo de regras para usar"
@@ -6158,24 +5868,17 @@ msgstr "Data"
 #~ msgstr "Você gostaria de um seguro?"
 
 #~ msgid ""
-#~ "Insurance is a side wager of 50% of the original wager that the dealer "
-#~ "has a natural 21 (aka blackjack) that is offered when the dealer's face "
-#~ "up card is an ace. If the dealer has a natural 21 then the player is paid "
+#~ "Insurance is a side wager of 50% of the original wager that the dealer has a natural 21 (aka blackjack) that is offered when the dealer's face up card is an ace. If the dealer has a natural 21 then the player is paid "
 #~ "double."
 #~ msgstr ""
-#~ "Seguro é uma aposta extra de 50% da aposta original que o carteador tem "
-#~ "um 21 natural (também chamado de blackjack) que é oferecido quando a "
-#~ "carta de cima do carteador é um ás. Se o carteador tem um 21 natural, "
-#~ "então o jogador é pago em dobro."
+#~ "Seguro é uma aposta extra de 50% da aposta original que o carteador tem um 21 natural (também chamado de blackjack) que é oferecido quando a carta de cima do carteador é um ás. Se o carteador tem um 21 natural, então "
+#~ "o jogador é pago em dobro."
 
 #~ msgid "Set your wager and click in the white outline to deal a new hand."
-#~ msgstr ""
-#~ "Defina sua aposta e clique no contorno branco para distribuir uma nova "
-#~ "mão."
+#~ msgstr "Defina sua aposta e clique no contorno branco para distribuir uma nova mão."
 
 #~ msgid "Set your wager or click on the cards to deal a new hand."
-#~ msgstr ""
-#~ "Defina sua aposta ou clique nas cartas para distribuir uma nova mão."
+#~ msgstr "Defina sua aposta ou clique nas cartas para distribuir uma nova mão."
 
 #~ msgid "Blackjack Preferences"
 #~ msgstr "Preferências do Vinte e Um"
@@ -6258,56 +5961,32 @@ msgstr "Data"
 #~ msgid "The best option is to stand"
 #~ msgstr "A melhor opção é ficar"
 
-#~ msgid ""
-#~ "To stand means to stop adding cards to your hand.  Do this by clicking on "
-#~ "the dealer's cards or by selecting the option from the Control menu."
-#~ msgstr ""
-#~ "Ficar significa parar de adicionar cartas à sua mão. Faça isso clicando "
-#~ "nas cartas do carteador ou selecionando a opção do menu Controle."
+#~ msgid "To stand means to stop adding cards to your hand.  Do this by clicking on the dealer's cards or by selecting the option from the Control menu."
+#~ msgstr "Ficar significa parar de adicionar cartas à sua mão. Faça isso clicando nas cartas do carteador ou selecionando a opção do menu Controle."
 
 #~ msgid "The best option is to hit"
 #~ msgstr "A melhor opção é pegar uma carta"
 
-#~ msgid ""
-#~ "To hit means to add another card to your hand.  Do this by clicking once "
-#~ "on your cards or by selecting the option from the Control menu."
-#~ msgstr ""
-#~ "Pegar significa adicionar outra carta à sua mão. Faça isso clicando nas "
-#~ "suas cartas ou selecionando a opção do menu Controle."
+#~ msgid "To hit means to add another card to your hand.  Do this by clicking once on your cards or by selecting the option from the Control menu."
+#~ msgstr "Pegar significa adicionar outra carta à sua mão. Faça isso clicando nas suas cartas ou selecionando a opção do menu Controle."
 
 #~ msgid "The best option is to double down"
 #~ msgstr "A melhor opção é dobrar"
 
-#~ msgid ""
-#~ "To double down means to double the initial wager and receive exactly one "
-#~ "more card.  Do this by clicking once on the chips at the bottom of the "
-#~ "window or by selecting the option from the Control menu."
-#~ msgstr ""
-#~ "Dobrar significa dobrar a aposta inicial e receber exatamente mais uma "
-#~ "carta. Faça isso clicando nos fichas na parte de baixo da janela ou "
-#~ "selecionando a opção do menu Controle."
+#~ msgid "To double down means to double the initial wager and receive exactly one more card.  Do this by clicking once on the chips at the bottom of the window or by selecting the option from the Control menu."
+#~ msgstr "Dobrar significa dobrar a aposta inicial e receber exatamente mais uma carta. Faça isso clicando nos fichas na parte de baixo da janela ou selecionando a opção do menu Controle."
 
 #~ msgid "The best option is to split"
 #~ msgstr "A melhor opção é dividir"
 
-#~ msgid ""
-#~ "To split means to divide your current hand into two separate hands.  Do "
-#~ "this by dragging one of your cards and dropping it off to the side or by "
-#~ "selecting the option from the Control menu."
-#~ msgstr ""
-#~ "Dividir significa dividir a sua mão atual em duas mãos separadas. Faça "
-#~ "isso arrastando uma das suas cartas e soltando-a de lado ou selecionando "
-#~ "a opção do menu Controle."
+#~ msgid "To split means to divide your current hand into two separate hands.  Do this by dragging one of your cards and dropping it off to the side or by selecting the option from the Control menu."
+#~ msgstr "Dividir significa dividir a sua mão atual em duas mãos separadas. Faça isso arrastando uma das suas cartas e soltando-a de lado ou selecionando a opção do menu Controle."
 
 #~ msgid "The best option is to surrender"
 #~ msgstr "A melhor opção é desistir"
 
-#~ msgid ""
-#~ "To surrender means to give up half your wager and not complete the hand.  "
-#~ "Do this by selecting the option from the Control menu."
-#~ msgstr ""
-#~ "Desistir significa desistir de metade da sua aposta e não completar a "
-#~ "mão. Faça isso selecionando a opção do menu Controle."
+#~ msgid "To surrender means to give up half your wager and not complete the hand.  Do this by selecting the option from the Control menu."
+#~ msgstr "Desistir significa desistir de metade da sua aposta e não completar a mão. Faça isso selecionando a opção do menu Controle."
 
 #~ msgid ""
 #~ "Blackjack is a casino-style card game.\n"
@@ -6598,16 +6277,11 @@ msgstr "Data"
 #~ msgid "Local developer server"
 #~ msgstr "Servidor de desenvolvimento local"
 
-#~ msgid ""
-#~ "This is the first time you are running the GTK+ GGZ Gaming Zone client. "
-#~ "Would you like to create some default server profiles?"
-#~ msgstr ""
-#~ "Esta é a primeira vez que você está executando o cliente GTK+ GGZ Gaming "
-#~ "Zone. Você deseja criar algum servidor de perfis padrão?"
+#~ msgid "This is the first time you are running the GTK+ GGZ Gaming Zone client. Would you like to create some default server profiles?"
+#~ msgstr "Esta é a primeira vez que você está executando o cliente GTK+ GGZ Gaming Zone. Você deseja criar algum servidor de perfis padrão?"
 
 #~ msgid "/msg <username> <message> . Private message a player"
-#~ msgstr ""
-#~ "/msg <nomedeusuario> <mensagem> . Envia uma mensagem privada a um jogador"
+#~ msgstr "/msg <nomedeusuario> <mensagem> . Envia uma mensagem privada a um jogador"
 
 #~ msgid "/table <message> .......... Message to your table"
 #~ msgstr "/table <mensagem> .......... Envia uma mensagem à sua mesa"
@@ -6625,23 +6299,16 @@ msgstr "Data"
 #~ msgstr "/friends .................. Lista seus amigos"
 
 #~ msgid "/ignore ................... List people you're ignoring"
-#~ msgstr ""
-#~ "/ignore ................... Lista as pessoas que você está ignorando"
+#~ msgstr "/ignore ................... Lista as pessoas que você está ignorando"
 
 #~ msgid "/kick <username> .......... Kick a player from the room"
 #~ msgstr "/kick <nomedeusuario> .......... Tira um jogador da sala"
 
-#~ msgid ""
-#~ "/gag <username> ........... Gag a player to prevent them from talking"
-#~ msgstr ""
-#~ "/gag <nomedeusuario> ........... Amordaça um usuário para que ele não fale"
+#~ msgid "/gag <username> ........... Gag a player to prevent them from talking"
+#~ msgstr "/gag <nomedeusuario> ........... Amordaça um usuário para que ele não fale"
 
-#~ msgid ""
-#~ "/ungag <username> ......... Reverse the gag operation to allow a player "
-#~ "to talk"
-#~ msgstr ""
-#~ "/ungag <nomedeusuario> ......... Retira a mordaça para permitir que um "
-#~ "jogador fale"
+#~ msgid "/ungag <username> ......... Reverse the gag operation to allow a player to talk"
+#~ msgstr "/ungag <nomedeusuario> ......... Retira a mordaça para permitir que um jogador fale"
 
 #~ msgid "/ban <username> ........... Ban a player from the server"
 #~ msgstr "/ban <nomedeusuario> ........... Bane um jogador do servidor"
@@ -7023,8 +6690,7 @@ msgstr "Data"
 #~ msgstr "Sair do jogo que está jogando atualmente"
 
 #~ msgid "Show the properties dialog to change the client settings"
-#~ msgstr ""
-#~ "Mostra a janela de propriedades para alterar configurações do cliente"
+#~ msgstr "Mostra a janela de propriedades para alterar configurações do cliente"
 
 #~ msgid "Show the game stats for the current room's game type"
 #~ msgstr "Mostra as estatísticas do jogo para o tipo de jogo da sala atual"
@@ -7206,12 +6872,8 @@ msgstr "Data"
 #~ msgid "Gnometris Scores"
 #~ msgstr "Pontuações do Gnometris"
 
-#~ msgid ""
-#~ "The GNOME version of Reversi. The goal is to control the most disks on "
-#~ "the board."
-#~ msgstr ""
-#~ "A versão GNOME do Reversi. O objetivo é controlar a maioria dos discos no "
-#~ "tabuleiro."
+#~ msgid "The GNOME version of Reversi. The goal is to control the most disks on the board."
+#~ msgstr "A versão GNOME do Reversi. O objetivo é controlar a maioria dos discos no tabuleiro."
 
 #~ msgid "Player Chat"
 #~ msgstr "Bate-papo"
@@ -7267,13 +6929,8 @@ msgstr "Data"
 #~ msgid "Height of the custom board"
 #~ msgstr "Altura do tabuleiro personalizado"
 
-#~ msgid ""
-#~ "Setting this to FALSE means the pieces fall slowly, but gracefully. A "
-#~ "setting of TRUE causes the pieces to fall quickly and jerkily."
-#~ msgstr ""
-#~ "Definindo como FALSE significa que as peças caem lenta, mas "
-#~ "graciosamente. Uma configuração como TRUE faz com que as peças caiam "
-#~ "rapidamente."
+#~ msgid "Setting this to FALSE means the pieces fall slowly, but gracefully. A setting of TRUE causes the pieces to fall quickly and jerkily."
+#~ msgstr "Definindo como FALSE significa que as peças caem lenta, mas graciosamente. Uma configuração como TRUE faz com que as peças caiam rapidamente."
 
 #~ msgid "The board size"
 #~ msgstr "O tamanho do tabuleiro"
@@ -7284,12 +6941,8 @@ msgstr "Data"
 #~ msgid "The height of the custom board, 101 &gt; height &gt; 3."
 #~ msgstr "A altura do tabuleiro personalizado: 101 &gt; altura &gt; 3."
 
-#~ msgid ""
-#~ "The size of the board to use. 1 = Custom, 2 = Small, 3 = Medium, 4 = "
-#~ "Large."
-#~ msgstr ""
-#~ "O tamanho do tabuleiro para usar. 1 = Personalizado, 2 = Pequeno, 3 = "
-#~ "Médio, 4 = Grande."
+#~ msgid "The size of the board to use. 1 = Custom, 2 = Small, 3 = Medium, 4 = Large."
+#~ msgstr "O tamanho do tabuleiro para usar. 1 = Personalizado, 2 = Pequeno, 3 = Médio, 4 = Grande."
 
 #~ msgid "The width of the custom board, 101 &gt; width &gt; 3."
 #~ msgstr "A largura do tabuleiro personalizado: 101 &gt; largura &gt; 3."
@@ -7315,12 +6968,8 @@ msgstr "Data"
 #~ msgid "No theme data was found."
 #~ msgstr "Nenhum dado de tema foi localizado."
 
-#~ msgid ""
-#~ "It is impossible to play the game. Please check that the game has been "
-#~ "installed correctly and try again."
-#~ msgstr ""
-#~ "É impossível jogar o jogo. Por favor, verifique se o jogo foi instalado "
-#~ "corretamente e tente novamente."
+#~ msgid "It is impossible to play the game. Please check that the game has been installed correctly and try again."
+#~ msgstr "É impossível jogar o jogo. Por favor, verifique se o jogo foi instalado corretamente e tente novamente."
 
 #~ msgid "Same GNOME (Clutter)"
 #~ msgstr "Same GNOME (Clutter)"
@@ -7519,23 +7168,14 @@ msgstr "Data"
 #~ msgid "%(move)s Black castles short (%(result)s)"
 #~ msgstr "%(move)s Pretas fazem roque curto (%(result)s)"
 
-#~ msgid ""
-#~ "%(move)s White %(piece)s at %1$s takes the black %(victim_piece)s at %2$s "
-#~ "(%(result)s)"
-#~ msgstr ""
-#~ "%(move)s %(piece)s de cor branca em %1$s captura %(victim_piece)s de cor "
-#~ "preta em %2$s (%(result)s)"
+#~ msgid "%(move)s White %(piece)s at %1$s takes the black %(victim_piece)s at %2$s (%(result)s)"
+#~ msgstr "%(move)s %(piece)s de cor branca em %1$s captura %(victim_piece)s de cor preta em %2$s (%(result)s)"
 
-#~ msgid ""
-#~ "%(move)s Black %(piece)s at %1$s takes the white %(victim_piece)s at %2$s "
-#~ "(%(result)s)"
-#~ msgstr ""
-#~ "%(move)s %(piece)s de cor preta em %1$s captura %(victim_piece)s de cor "
-#~ "branca em %2$s (%(result)s)"
+#~ msgid "%(move)s Black %(piece)s at %1$s takes the white %(victim_piece)s at %2$s (%(result)s)"
+#~ msgstr "%(move)s %(piece)s de cor preta em %1$s captura %(victim_piece)s de cor branca em %2$s (%(result)s)"
 
 #~ msgid "%(move)s White %(piece)s moves from %1$s to %2$s (%(result)s)"
-#~ msgstr ""
-#~ "%(move)s %(piece)s de cor branca move de %1$s para %2$s (%(result)s)"
+#~ msgstr "%(move)s %(piece)s de cor branca move de %1$s para %2$s (%(result)s)"
 
 #~ msgid "%(move)s Black %(piece)s moves from %1$s to %2$s (%(result)s)"
 #~ msgstr "%(move)s %(piece)s de cor preta move de %1$s para %2$s (%(result)s)"
@@ -7594,19 +7234,14 @@ msgstr "Data"
 #~ msgid "Error playing sound %s: %s\n"
 #~ msgstr "Erro ao reproduzir o som %s: %s\n"
 
-#~ msgid ""
-#~ "Do you want to finish the current game or start playing with the new map "
-#~ "immediately?"
-#~ msgstr ""
-#~ "Você quer finalizar o jogo atual ou quer jogar com o novo mapa "
-#~ "imediatamente?"
+#~ msgid "Do you want to finish the current game or start playing with the new map immediately?"
+#~ msgstr "Você quer finalizar o jogo atual ou quer jogar com o novo mapa imediatamente?"
 
 #~ msgid "_Finish"
 #~ msgstr "_Finalizar"
 
 #~ msgid "Sorry, I was unable to find a playable configuration."
-#~ msgstr ""
-#~ "Desculpe, não foi possível localizar uma configuração de jogo possível."
+#~ msgstr "Desculpe, não foi possível localizar uma configuração de jogo possível."
 
 #~ msgid "mahjongg|Easy"
 #~ msgstr "Fácil"
@@ -7615,12 +7250,10 @@ msgstr "Data"
 #~ msgstr "Médio"
 
 #~ msgid "Black player is unable to cause checkmate (insufficient material)"
-#~ msgstr ""
-#~ "O jogador de pretas não pode fazer o xeque-mate (material insuficiente)"
+#~ msgstr "O jogador de pretas não pode fazer o xeque-mate (material insuficiente)"
 
 #~ msgid "White player is unable to cause checkmate (insufficient material)"
-#~ msgstr ""
-#~ "O jogador de brancas não pode fazer o xeque-mate (material insuficiente)"
+#~ msgstr "O jogador de brancas não pode fazer o xeque-mate (material insuficiente)"
 
 #~ msgid "at %(time)s"
 #~ msgstr "às %(time)s"
