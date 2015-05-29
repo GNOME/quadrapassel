@@ -1,13 +1,13 @@
 # translation of gnometris.HEAD.po to Español
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2010.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012, 2013, 2014.
 #
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012, 2013, 2014, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnometris.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-09 22:22+0000\n"
-"PO-Revision-Date: 2014-09-10 12:16+0200\n"
+"POT-Creation-Date: 2015-05-28 23:16+0000\n"
+"PO-Revision-Date: 2015-05-29 \n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -21,8 +21,8 @@ msgstr ""
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Daniel Mustieles <daniel.mustieles@gmail.com>, 2012\n"
-"Jorge González <jorgegonz@svn.gnome.org>, 2007-2009"
+"Daniel Mustieles <daniel.mustieles@gmail.com>, 2012 - 2015\n"
+"Jorge González <jorgegonz@svn.gnome.org>, 2007 - 2009"
 
 #. (itstool) path: credit/name
 #: C/bug-filing.page:10 C/develop.page:11 C/documentation.page:9
@@ -192,15 +192,12 @@ msgid ""
 "mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgstr ""
 "Para colaborar con el Proyecto de documentación, póngase en contacto usando "
-"<link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org"
-"%2Fdocs\">irc</link>, o mediante la <link href=\"http://mail.gnome.org/"
+"<link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%"
+"2Fdocs\">irc</link>, o mediante la <link href=\"http://mail.gnome.org/"
 "mailman/listinfo/gnome-doc-list\">lista de correo</link>."
 
 #. (itstool) path: page/p
 #: C/documentation.page:26
-#| msgid ""
-#| "Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
-#| "\">wiki</link> page contains useful information."
 msgid ""
 "Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
@@ -476,8 +473,11 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/preferences.page:27
+#| msgid ""
+#| "The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
+#| "<gui>Theme</gui>."
 msgid ""
-"The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
+"The three tabs available are <gui>Controls</gui>, <gui>Game</gui> and "
 "<gui>Theme</gui>."
 msgstr ""
 "Las tres pestañas disponibles son <gui>Controles</gui>, <gui>Juego</gui> y "
