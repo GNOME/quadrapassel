@@ -5,10 +5,10 @@
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: quadrapassel 3.15.x\n"
+"Project-Id-Version: quadrapassel 3.17.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-10 17:58+0100\n"
-"PO-Revision-Date: 2015-02-10 17:58+0100\n"
+"POT-Creation-Date: 2015-08-11 20:10+0200\n"
+"PO-Revision-Date: 2015-08-11 20:12+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -196,15 +196,16 @@ msgid ""
 "together. When you form a complete horizontal row of blocks, the row will "
 "disappear and you score points. The game is over when the blocks get stacked "
 "too high. As your score gets higher, you level up and the blocks fall faster."
-msgstr ""
+msgstr "Quadrapassel er en etterkommer av et klassisk Russisk spill med fallende blokker. Flytt, og roter blokkene mens de faller, og prøv å få dem til å passe sammen. Når du fyller en hel horisontal rad med blokker vil denne forsvinne, og du får poeng. Spillet er over når blokkene stables for høyt. Etter hvert som poengsummen blir høyere stiger nivåene og blokkene faller fortere."
 
 #: ../data/quadrapassel.appdata.xml.in.h:4
+#, fuzzy
 msgid ""
 "If you're looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
 "of the rows. Or, instead of allowing the blocks to fall randomly, it can "
 "select blocks that will be hard for you to place."
-msgstr ""
+msgstr "Hvis du ser etter en utfordring"
 
 #: ../data/quadrapassel.desktop.in.h:3
 msgid "tetris;"
@@ -340,7 +341,8 @@ msgstr "Sett spillet på pause"
 
 #: ../src/quadrapassel.vala:752
 msgid "A classic game of fitting falling blocks together"
-msgstr "Et klassisk spill som handler om å få fallende blokker til å passe sammen"
+msgstr ""
+"Et klassisk spill som handler om å få fallende blokker til å passe sammen"
 
 #: ../src/quadrapassel.vala:757
 msgid "translator-credits"
