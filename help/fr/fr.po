@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master fr\n"
-"POT-Creation-Date: 2014-09-06 22:00+0000\n"
+"POT-Creation-Date: 2015-08-13 11:32+0000\n"
 "PO-Revision-Date: 2014-09-07 00:05+0200\n"
 "Last-Translator: Mickael Albertus <mickael.albertus@gmail.com>\n"
 "Language-Team: French <gnomefr@traduc.org>\n"
@@ -492,8 +492,12 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/preferences.page:27
+#, fuzzy
+#| msgid ""
+#| "The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
+#| "<gui>Theme</gui>."
 msgid ""
-"The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
+"The three tabs available are <gui>Controls</gui>, <gui>Game</gui> and "
 "<gui>Theme</gui>."
 msgstr ""
 "Les trois onglets disponibles sont <gui>Commandes</gui>, <gui>Jeu</gui> et "
