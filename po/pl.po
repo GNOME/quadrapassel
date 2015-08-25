@@ -21,8 +21,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-04 23:58+0100\n"
-"PO-Revision-Date: 2015-03-04 23:59+0100\n"
+"POT-Creation-Date: 2015-08-25 14:37+0200\n"
+"PO-Revision-Date: 2015-08-25 14:38+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -176,7 +176,7 @@ msgstr "Klawisz obrotu."
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33
 #: ../src/quadrapassel.vala:378
 msgid "Pause"
-msgstr "Wstrzymaj"
+msgstr "Wstrzymanie"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:34
 msgid "Key press to pause."
@@ -192,7 +192,7 @@ msgstr "Wysokość okna w pikselach"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:37
 msgid "true if the window is maximized"
-msgstr "Wartość \"true\" oznacza, że okno jest zmaksymalizowane"
+msgstr "Wartość „true” oznacza, że okno jest zmaksymalizowane"
 
 #: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
 #: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
