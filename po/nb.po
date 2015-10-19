@@ -5,10 +5,10 @@
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: quadrapassel 3.17.x\n"
+"Project-Id-Version: quadrapassel 3.18.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 20:10+0200\n"
-"PO-Revision-Date: 2015-08-11 20:12+0200\n"
+"POT-Creation-Date: 2015-10-19 19:18+0200\n"
+"PO-Revision-Date: 2015-10-19 19:20+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -113,8 +113,7 @@ msgstr "Om det skal velges blokker som er vanskelig å plassere"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Om det skal velges blokker som er vanskelig å plassere."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:363
 msgid "Move left"
 msgstr "Flytt til venstre"
 
@@ -122,8 +121,7 @@ msgstr "Flytt til venstre"
 msgid "Key press to move left."
 msgstr "Tastetrykk for å gå til venstre."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:366
 msgid "Move right"
 msgstr "Flytt til høyre"
 
@@ -131,8 +129,7 @@ msgstr "Flytt til høyre"
 msgid "Key press to move right."
 msgstr "Tastetrykk for å gå til høyre."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:369
 msgid "Move down"
 msgstr "Flytt ned"
 
@@ -140,8 +137,7 @@ msgstr "Flytt ned"
 msgid "Key press to move down."
 msgstr "Tastetrykk for å flytte ned."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:372
 msgid "Drop"
 msgstr "Slipp"
 
@@ -149,8 +145,7 @@ msgstr "Slipp"
 msgid "Key press to drop."
 msgstr "Tastetrykk for å slippe."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:375
 msgid "Rotate"
 msgstr "Roter"
 
@@ -158,8 +153,7 @@ msgstr "Roter"
 msgid "Key press to rotate."
 msgstr "Tastetrykk for å rotere."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:378
 msgid "Pause"
 msgstr "Pause"
 
@@ -196,16 +190,21 @@ msgid ""
 "together. When you form a complete horizontal row of blocks, the row will "
 "disappear and you score points. The game is over when the blocks get stacked "
 "too high. As your score gets higher, you level up and the blocks fall faster."
-msgstr "Quadrapassel er en etterkommer av et klassisk Russisk spill med fallende blokker. Flytt, og roter blokkene mens de faller, og prøv å få dem til å passe sammen. Når du fyller en hel horisontal rad med blokker vil denne forsvinne, og du får poeng. Spillet er over når blokkene stables for høyt. Etter hvert som poengsummen blir høyere stiger nivåene og blokkene faller fortere."
+msgstr ""
+"Quadrapassel er en etterkommer av et klassisk Russisk spill med fallende "
+"blokker. Flytt, og roter blokkene mens de faller, og prøv å få dem til å "
+"passe sammen. Når du fyller en hel horisontal rad med blokker vil denne "
+"forsvinne, og du får poeng. Spillet er over når blokkene stables for høyt. "
+"Etter hvert som poengsummen blir høyere stiger nivåene og blokkene faller "
+"fortere."
 
 #: ../data/quadrapassel.appdata.xml.in.h:4
-#, fuzzy
 msgid ""
 "If you're looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
 "of the rows. Or, instead of allowing the blocks to fall randomly, it can "
 "select blocks that will be hard for you to place."
-msgstr "Hvis du ser etter en utfordring"
+msgstr "Hvis du ser etter en utfordring lar Quadrapassel deg øke blokkenes hastighet, eller starte spille med deler av blokker på noen av radene. Eller hvis du vil la blokkene falle tilfeldig kan du velge å bruke blokker som er vanskelige å plassere."
 
 #: ../data/quadrapassel.desktop.in.h:3
 msgid "tetris;"
