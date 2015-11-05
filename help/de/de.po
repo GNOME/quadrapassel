@@ -4,15 +4,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel manual\n"
-"POT-Creation-Date: 2015-01-13 11:28+0000\n"
-"PO-Revision-Date: 2015-01-27 20:39+0100\n"
-"Last-Translator: Benjamin Steinwender <b@stbe.at>\n"
+"POT-Creation-Date: 2015-11-03 14:09+0000\n"
+"PO-Revision-Date: 2015-11-04 11:48+0100\n"
+"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.1\n"
+"X-Generator: Poedit 1.8.5\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -480,10 +480,10 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/preferences.page:27
 msgid ""
-"The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
+"The three tabs available are <gui>Controls</gui>, <gui>Game</gui> and "
 "<gui>Theme</gui>."
 msgstr ""
-"Die drei Reiter <gui>Steuerung</gui>, <gui>Spiel</gui> und <gui>Thema</gui> "
+"Die drei Reiter <gui>Spiel</gui>,<gui>Steuerung</gui> und <gui>Thema</gui> "
 "sind verfügbar."
 
 #. (itstool) path: section/title
