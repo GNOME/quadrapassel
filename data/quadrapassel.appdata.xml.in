@@ -25,6 +25,13 @@
   <screenshot type="default" width="700" height="448">https://people.gnome.org/~mcatanzaro/quadrapassel.png</screenshot>
  </screenshots>
  <url type="homepage">https://wiki.gnome.org/Apps/Quadrapassel</url>
- <updatecontact>games_list_at_gnome.org</updatecontact>
+ <updatecontact>mcatanzaro_at_gnome.org</updatecontact>
  <project_group>GNOME</project_group>
+ <kudos>
+  <kudo>AppMenu</kudo>
+  <kudo>HiDpiIcon</kudo>
+  <kudo>HighContrast</kudo>
+  <kudo>ModernToolkit</kudo>
+  <kudo>UserDocs</kudo>
+ </kudos>
 </application>
