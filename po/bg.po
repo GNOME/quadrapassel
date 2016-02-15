@@ -213,7 +213,7 @@ msgstr ""
 
 #: ../data/quadrapassel.desktop.in.h:3
 msgid "tetris;"
-msgstr "четрис;тетрис;quadrapassel;tetris"
+msgstr "четрис;тетрис;quadrapassel;tetris;"
 
 #: ../src/game-view.vala:346
 msgid "Paused"
