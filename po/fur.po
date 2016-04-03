@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: quadrapassel gnome-3-18\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-10-20 12:22+0000\n"
-"PO-Revision-Date: 2015-10-20 15:38+0200\n"
+"POT-Creation-Date: 2016-04-03 01:52+0000\n"
+"PO-Revision-Date: 2016-04-03 10:45+0200\n"
+"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "X-Generator: Poedit 1.8.5\n"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:1
@@ -114,7 +114,7 @@ msgid "Whether to pick blocks that are hard to place."
 msgstr "Indiche se sielzi i blocs che a son dificii di plaçâ."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../src/quadrapassel.vala:362
 msgid "Move left"
 msgstr "Sposte a çampe"
 
@@ -123,7 +123,7 @@ msgid "Key press to move left."
 msgstr "Boton di scliçâ par spostâ a çampe."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../src/quadrapassel.vala:365
 msgid "Move right"
 msgstr "Sposte a diestre"
 
@@ -132,25 +132,25 @@ msgid "Key press to move right."
 msgstr "Boton di scliçâ par spostâ a diestre."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../src/quadrapassel.vala:368
 msgid "Move down"
-msgstr "Sposte in ju"
+msgstr "Sposte in jù"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:28
 msgid "Key press to move down."
-msgstr "Boton di scliçâ par spostâ in ju."
+msgstr "Boton di scliçâ par spostâ in jù."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../src/quadrapassel.vala:371
 msgid "Drop"
 msgstr "Mole"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:30
 msgid "Key press to drop."
-msgstr "Boton di scliçâ par molâ ju."
+msgstr "Boton di scliçâ par molâ jù."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../src/quadrapassel.vala:374
 msgid "Rotate"
 msgstr "Zire"
 
@@ -159,7 +159,7 @@ msgid "Key press to rotate."
 msgstr "Boton di scliçâ par voltâ."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../src/quadrapassel.vala:377
 msgid "Pause"
 msgstr "Pause"
 
@@ -181,7 +181,7 @@ msgstr "VÊR se il barcon al è slargjât"
 
 #: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
 #: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
-#: ../src/quadrapassel.vala:750 ../src/quadrapassel.vala:790
+#: ../src/quadrapassel.vala:749 ../src/quadrapassel.vala:789
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -252,7 +252,7 @@ msgstr "_Informazions"
 msgid "_Quit"
 msgstr "_Jes"
 
-#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:688
+#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:687
 msgid "Start a new game"
 msgstr "Tache une gnove partide"
 
@@ -272,87 +272,87 @@ msgstr "Liniis"
 msgid "Level"
 msgstr "Nivel"
 
-#: ../src/quadrapassel.vala:267
+#: ../src/quadrapassel.vala:266
 msgid "Preferences"
 msgstr "Preferencis"
 
-#: ../src/quadrapassel.vala:285
+#: ../src/quadrapassel.vala:284
 msgid "Game"
 msgstr "Zûc"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:289
+#: ../src/quadrapassel.vala:288
 msgid "_Number of pre-filled rows:"
 msgstr "_Numar di riis za jempladis:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:304
+#: ../src/quadrapassel.vala:303
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Densitât dai blocs intes riis za jempladis:"
 
 #. starting level
-#: ../src/quadrapassel.vala:318
+#: ../src/quadrapassel.vala:317
 msgid "_Starting level:"
 msgstr "_Nivel iniziâl:"
 
-#: ../src/quadrapassel.vala:331
+#: ../src/quadrapassel.vala:330
 msgid "_Enable sounds"
 msgstr "_Abilite suns"
 
-#: ../src/quadrapassel.vala:336
+#: ../src/quadrapassel.vala:335
 msgid "Choose difficult _blocks"
 msgstr "Sielzi i _blocs dificii"
 
-#: ../src/quadrapassel.vala:341
+#: ../src/quadrapassel.vala:340
 msgid "_Preview next block"
 msgstr "_Anteprime prossim bloc"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:348
+#: ../src/quadrapassel.vala:347
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Voltâ in sens antiorari"
 
-#: ../src/quadrapassel.vala:353
+#: ../src/quadrapassel.vala:352
 msgid "Show _where the block will land"
 msgstr "Mostrâ _dulà che il bloc al colarà"
 
-#: ../src/quadrapassel.vala:397
+#: ../src/quadrapassel.vala:396
 msgid "Controls"
 msgstr "Controi"
 
-#: ../src/quadrapassel.vala:403
+#: ../src/quadrapassel.vala:402
 msgid "Theme"
 msgstr "Teme"
 
-#: ../src/quadrapassel.vala:415
+#: ../src/quadrapassel.vala:414
 msgid "Plain"
 msgstr "Sempliç"
 
-#: ../src/quadrapassel.vala:420
+#: ../src/quadrapassel.vala:419
 msgid "Tango Flat"
 msgstr "Tango sempliç"
 
-#: ../src/quadrapassel.vala:425
+#: ../src/quadrapassel.vala:424
 msgid "Tango Shaded"
 msgstr "Tango sfumât"
 
-#: ../src/quadrapassel.vala:430
+#: ../src/quadrapassel.vala:429
 msgid "Clean"
 msgstr "Nete"
 
-#: ../src/quadrapassel.vala:669
+#: ../src/quadrapassel.vala:668
 msgid "Unpause the game"
 msgstr "Jes de pause"
 
-#: ../src/quadrapassel.vala:674
+#: ../src/quadrapassel.vala:673
 msgid "Pause the game"
 msgstr "Met la partide in pause"
 
-#: ../src/quadrapassel.vala:752
+#: ../src/quadrapassel.vala:751
 msgid "A classic game of fitting falling blocks together"
 msgstr "Un classic zûc par fâ cometi blocs in cjadude libare"
 
-#: ../src/quadrapassel.vala:757
+#: ../src/quadrapassel.vala:756
 msgid "translator-credits"
 msgstr "Fabio Tomat <f.t.public@gmail.com>"
 
