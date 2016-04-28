@@ -5,22 +5,23 @@
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014.
 # 
 # Pedro Albuquerque <palbuquerque73@openmailbox.com>, 2015.
+# Sérgio Cardeira <cardeira.sergio@gmail.com>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.12\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-06-07 23:24+0000\n"
-"PO-Revision-Date: 2015-06-26 09:15+0100\n"
-"Last-Translator: Pedro Albuquerque <palbuquerque73@openmailbox.com>\n"
-"Language-Team: Português <palbuquerque73@openmailbox.com>\n"
+"POT-Creation-Date: 2016-02-21 14:27+0000\n"
+"PO-Revision-Date: 2016-02-22 00:55-0100\n"
+"Last-Translator: Sérgio Cardeira <cardeira.sergio@gmail.com>\n"
+"Language-Team: Português <gnome_pt@yahoogroups.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:1
 msgid "Image to use for drawing blocks"
@@ -118,8 +119,7 @@ msgstr "Se escolher ou não blocos que são difíceis de colocar"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Se escolher ou não blocos que são difíceis de colocar."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:362
 msgid "Move left"
 msgstr "Mover à esquerda"
 
@@ -127,8 +127,7 @@ msgstr "Mover à esquerda"
 msgid "Key press to move left."
 msgstr "Tecla para mover à esquerda."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:365
 msgid "Move right"
 msgstr "Mover à direita"
 
@@ -136,8 +135,7 @@ msgstr "Mover à direita"
 msgid "Key press to move right."
 msgstr "Tecla para mover à direita."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:368
 msgid "Move down"
 msgstr "Mover abaixo"
 
@@ -145,8 +143,7 @@ msgstr "Mover abaixo"
 msgid "Key press to move down."
 msgstr "Tecla para mover abaixo."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:371
 msgid "Drop"
 msgstr "Largar"
 
@@ -154,8 +151,7 @@ msgstr "Largar"
 msgid "Key press to drop."
 msgstr "Tecla para largar."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:374
 msgid "Rotate"
 msgstr "Rodar"
 
@@ -163,8 +159,7 @@ msgstr "Rodar"
 msgid "Key press to rotate."
 msgstr "Tecla para rodar."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:377
 msgid "Pause"
 msgstr "Pausa"
 
@@ -186,7 +181,7 @@ msgstr "verdadeiro se a janela estiver maximizada"
 
 #: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
 #: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
-#: ../src/quadrapassel.vala:750 ../src/quadrapassel.vala:790
+#: ../src/quadrapassel.vala:749 ../src/quadrapassel.vala:789
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -195,13 +190,6 @@ msgid "Fit falling blocks together"
 msgstr "Encaixar blocos em queda"
 
 #: ../data/quadrapassel.appdata.xml.in.h:3
-#| msgid ""
-#| "Quadrapassel is a derivitive of the classic Russian falling-block game. "
-#| "Reposition and rotate the blocks as they fall, and attempt to fit them "
-#| "together. When you form a complete horizontal row of blocks, the row will "
-#| "disappear and you score points. The game is over when the blocks get "
-#| "stacked too high. As your score gets higher, you level up and the blocks "
-#| "fall faster."
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -254,7 +242,7 @@ msgstr "_Preferências"
 
 #: ../src/quadrapassel.vala:98
 msgid "_Help"
-msgstr "A_Juda"
+msgstr "A_juda"
 
 #: ../src/quadrapassel.vala:99
 msgid "_About"
@@ -264,7 +252,7 @@ msgstr "_Sobre"
 msgid "_Quit"
 msgstr "_Sair"
 
-#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:688
+#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:687
 msgid "Start a new game"
 msgstr "Iniciar um novo jogo"
 
@@ -284,95 +272,90 @@ msgstr "Linhas"
 msgid "Level"
 msgstr "Nível"
 
-#: ../src/quadrapassel.vala:267
-#| msgid "_Preferences"
+#: ../src/quadrapassel.vala:266
 msgid "Preferences"
 msgstr "Preferências"
 
-#: ../src/quadrapassel.vala:285
+#: ../src/quadrapassel.vala:284
 msgid "Game"
 msgstr "Jogo"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:289
+#: ../src/quadrapassel.vala:288
 msgid "_Number of pre-filled rows:"
 msgstr "_Número de linhas inicialmente preenchidas:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:304
+#: ../src/quadrapassel.vala:303
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Densidade dos blocos na linha preenchida:"
 
 #. starting level
-#: ../src/quadrapassel.vala:318
+#: ../src/quadrapassel.vala:317
 msgid "_Starting level:"
 msgstr "_Nível inicial:"
 
-#: ../src/quadrapassel.vala:331
+#: ../src/quadrapassel.vala:330
 msgid "_Enable sounds"
 msgstr "_Ativar sons"
 
-#: ../src/quadrapassel.vala:336
+#: ../src/quadrapassel.vala:335
 msgid "Choose difficult _blocks"
-msgstr "Selecionar _Blocos difíceis"
+msgstr "Selecionar _blocos difíceis"
 
-#: ../src/quadrapassel.vala:341
+#: ../src/quadrapassel.vala:340
 msgid "_Preview next block"
 msgstr "_Antever o bloco seguinte"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:348
+#: ../src/quadrapassel.vala:347
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Rodar blocos no sentido inverso aos ponteiros do relógio"
 
-#: ../src/quadrapassel.vala:353
+#: ../src/quadrapassel.vala:352
 msgid "Show _where the block will land"
 msgstr "_Mostrar onde irá o bloco parar"
 
-#: ../src/quadrapassel.vala:397
+#: ../src/quadrapassel.vala:396
 msgid "Controls"
 msgstr "Controlos"
 
-#: ../src/quadrapassel.vala:403
+#: ../src/quadrapassel.vala:402
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/quadrapassel.vala:415
+#: ../src/quadrapassel.vala:414
 msgid "Plain"
 msgstr "Simples"
 
-#: ../src/quadrapassel.vala:420
+#: ../src/quadrapassel.vala:419
 msgid "Tango Flat"
 msgstr "Tango alisado"
 
-#: ../src/quadrapassel.vala:425
+#: ../src/quadrapassel.vala:424
 msgid "Tango Shaded"
 msgstr "Tango sombreado"
 
-#: ../src/quadrapassel.vala:430
+#: ../src/quadrapassel.vala:429
 msgid "Clean"
 msgstr "Limpar"
 
-#: ../src/quadrapassel.vala:669
+#: ../src/quadrapassel.vala:668
 msgid "Unpause the game"
 msgstr "Prosseguir o jogo"
 
-#: ../src/quadrapassel.vala:674
+#: ../src/quadrapassel.vala:673
 msgid "Pause the game"
 msgstr "Pausar o jogo"
 
-#: ../src/quadrapassel.vala:752
-#| msgid ""
-#| "A classic game of fitting falling blocks together\n"
-#| "\n"
-#| "Quadrapassel is a part of GNOME Games."
+#: ../src/quadrapassel.vala:751
 msgid "A classic game of fitting falling blocks together"
 msgstr ""
 "Um jogo clássico para encaixar blocos em queda\n"
 "\n"
 "Quadrapassel faz parte dos Jogos GNOME."
 
-#: ../src/quadrapassel.vala:757
+#: ../src/quadrapassel.vala:756
 msgid "translator-credits"
 msgstr ""
 "Duarte Loreto <happyguy_pt@hotmail.com>\n"
