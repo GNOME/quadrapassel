@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: oc\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=quadrap"
 "assel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-01-25 20:58+0000\n"
-"PO-Revision-Date: 2016-03-04 13:33+0200\n"
+"POT-Creation-Date: 2016-04-29 14:06+0000\n"
+"PO-Revision-Date: 2016-05-08 18:48+0200\n"
 "Last-Translator: Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>\n"
 "Language-Team: Tot En Òc\n"
 "Language: oc\n"
@@ -128,11 +128,11 @@ msgstr "Tòca de quichar per desplaçar a esquèrra."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:365
 msgid "Move right"
-msgstr "Desplaçar a drecha"
+msgstr "Desplaçar a dreita"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:26
 msgid "Key press to move right."
-msgstr "Tòca de quichar per desplaçar a drecha."
+msgstr "Tòca de quichar per desplaçar a dreita."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:368
 msgid "Move down"
@@ -140,7 +140,7 @@ msgstr "Se desplaçar cap aval"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:28
 msgid "Key press to move down."
-msgstr "Tòca a utilizar per desplaçar en bas."
+msgstr "Tòca d'utilizar per desplaçar en bas."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:371
 msgid "Drop"
@@ -156,7 +156,7 @@ msgstr "Virar"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:32
 msgid "Key press to rotate."
-msgstr "Tòca a utilizar per virar."
+msgstr "Tòca d'utilizar per virar."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:377
 msgid "Pause"
@@ -378,7 +378,7 @@ msgstr "Data"
 #~ msgstr "verai se la fenèstra es en ecran complet"
 
 #~ msgid "_Pause"
-#~ msgstr "_Pause"
+#~ msgstr "_Pausa"
 
 #~ msgid "_New"
 #~ msgstr "_Novèl"
@@ -396,7 +396,7 @@ msgstr "Data"
 #~ msgstr "_Contunhar"
 
 #~ msgid "GNOME Games web site"
-#~ msgstr "Site Web des jòcs GNOME"
+#~ msgstr "Site Web dels jòcs GNOME"
 
 #~ msgid "Chess"
 #~ msgstr "Jòc d'escacs"
@@ -459,13 +459,13 @@ msgstr "Data"
 #~ msgstr "Una bandièra per activar lo mòde ecran complet"
 
 #~ msgid "The piece to promote pawns to"
-#~ msgstr "La pèça cap a la quala promouvoir lo pion"
+#~ msgstr "La pèça cap a la quala promòure lo pion"
 
 #~ msgid ""
 #~ "The piece to promote to when a human player moves a pawn to the far rank"
 #~ msgstr ""
-#~ "La pèça qui deu remplaçar un pion lorsqu'un jogaire uman desplaça ce "
-#~ "pion fins a la rengada opposée"
+#~ "La pèça qui deu remplaçar un pion quand un jogaire uman desplaça ce pion "
+#~ "fins a la rengada opausada"
 
 #~ msgid "A flag to enable 3D mode"
 #~ msgstr "Una bandièra per activar lo mòde 3D"
@@ -483,15 +483,14 @@ msgstr "Data"
 #~ msgstr "Una bandièra per activar la numerotacion des platèus"
 
 #~ msgid "A flag to enable the move history browser"
-#~ msgstr "Una bandièra per activar lo navigateur d'istoric des movements"
+#~ msgstr "Una bandièra per activar lo navigador d'istoric dels movements"
 
 #~ msgid "A flag to enable the toolbar"
 #~ msgstr "Una bandièra per activar la barra d'aisinas"
 
 #~ msgid "The directory to open the save game dialog in"
 #~ msgstr ""
-#~ "Lo repertòri a dobrir dins la bóstia de dialòg d'enregistrament de "
-#~ "partida"
+#~ "Lo repertòri a dobrir dins la bóstia de dialòg d'enregistrament de partida"
 
 #~ msgid "The directory to open the load game dialog in"
 #~ msgstr ""
@@ -516,18 +515,18 @@ msgstr "Data"
 #~ "Can be 'human' (play against another human player), '' (use the first "
 #~ "available chess engine) or the name of a specific engine to play against"
 #~ msgstr ""
-#~ "Peut èsser « human » (partida contra un autre jogaire uman), "
-#~ "« » (utilizacion del primièr motor d'échec disponible) o lo nom d'un "
-#~ "motor spécifique contra lo qual jogar"
+#~ "Pòt èsser « human » (partida contra un autre jogaire uman), « "
+#~ "» (utilizacion del primièr motor d'escac disponible) o lo nom d'un motor "
+#~ "spécifique contra lo qual jogar"
 
 #~ msgid "Difficulty of the opponent chess engine"
-#~ msgstr "Nivèl de dificultat del motor d'échec adversari"
+#~ msgstr "Nivèl de dificultat del motor d'escac adversari"
 
 #~ msgid "Play as:"
 #~ msgstr "Jogar en tant que :"
 
 #~ msgid "Opposing Player:"
-#~ msgstr "Jogaire adverse :"
+#~ msgstr "Jogaire advèrse :"
 
 #~ msgid "Difficulty:"
 #~ msgstr "Dificultat :"
@@ -539,13 +538,13 @@ msgstr "Data"
 #~ msgstr "Tipe de promotion :"
 
 #~ msgid "Changes will take effect for the next game."
-#~ msgstr "Les modificacions prendront effet a la prochaine partida."
+#~ msgstr "Las modificacions prendràn efèit a la partida que ven."
 
 #~ msgid "3_D Chess View"
 #~ msgstr "Afichatge 3_D"
 
 #~ msgid "_Smooth Display"
-#~ msgstr "Afichatge _lissé"
+#~ msgstr "Afichatge _lissat"
 
 #~ msgid "Piece Style:"
 #~ msgstr "Estil de pèça :"
@@ -563,10 +562,10 @@ msgstr "Data"
 #~ msgstr "_Numerotacion del platèu"
 
 #~ msgid "Board Orientation:"
-#~ msgstr "Orientation del platèu :"
+#~ msgstr "Orientacion del platèu :"
 
 #~ msgid "Move Format:"
-#~ msgstr "Notation des còps :"
+#~ msgstr "Notacion dels còps :"
 
 #~ msgid "_Appearance"
 #~ msgstr "_Aparéncia"
@@ -596,16 +595,16 @@ msgstr "Data"
 #~ msgstr "Negre"
 
 #~ msgid "No limit"
-#~ msgstr "Sans limite"
+#~ msgstr "Sens limit"
 
 #~ msgid "One minute"
-#~ msgstr "Una minute"
+#~ msgstr "Una minuta"
 
 #~ msgid "Five minutes"
-#~ msgstr "Cinc minutes"
+#~ msgstr "Cinc minutas"
 
 #~ msgid "30 minutes"
-#~ msgstr "Trente minutes"
+#~ msgstr "Trenta minutas"
 
 #~ msgid "One hour"
 #~ msgstr "Una ora"
@@ -637,7 +636,7 @@ msgstr "Data"
 
 #~ msgctxt "chess-side"
 #~ msgid "Face to Face"
-#~ msgstr "Face a face"
+#~ msgstr "Fàcia a fàcia"
 
 #~ msgctxt "chess-move-format"
 #~ msgid "Human"
@@ -649,7 +648,7 @@ msgstr "Data"
 
 #~ msgctxt "chess-move-format"
 #~ msgid "Figurine"
-#~ msgstr "Figurine"
+#~ msgstr "Figurina"
 
 #~ msgctxt "chess-move-format"
 #~ msgid "Long Algebraic"
@@ -657,7 +656,7 @@ msgstr "Data"
 
 #~ msgctxt "chess-piece"
 #~ msgid "Queen"
-#~ msgstr "Dame"
+#~ msgstr "Reina"
 
 #~ msgctxt "chess-piece"
 #~ msgid "Knight"
@@ -665,11 +664,11 @@ msgstr "Data"
 
 #~ msgctxt "chess-piece"
 #~ msgid "Rook"
-#~ msgstr "Tour"
+#~ msgstr "Torre"
 
 #~ msgctxt "chess-piece"
 #~ msgid "Bishop"
-#~ msgstr "Fou"
+#~ msgstr "Fòl"
 
 #~ msgid "%1$s (%2$s) - Chess"
 #~ msgstr "%1$s (%2$s) - Jòc d'escacs"
@@ -910,7 +909,7 @@ msgstr "Data"
 
 #~ msgid "No piece has been taken or pawn moved in the last fifty moves"
 #~ msgstr ""
-#~ "Aucune pèça n'a été prise e aucun pion n'a bougé lors des cinquante "
+#~ "Aucune pèça n'a été presa e aucun pion n'a bougé lors des cinquante "
 #~ "darrièrs coups"
 
 #~ msgid "Opponent has run out of time"
@@ -918,10 +917,10 @@ msgstr "Data"
 
 #~ msgid ""
 #~ "The same board state has occurred three times (three fold repichonion)"
-#~ msgstr "Una même position s'es produite tres fois"
+#~ msgstr "Una meteissa posicion s'es produita tres còps"
 
 #~ msgid "Neither player can cause checkmate (insufficient material)"
-#~ msgstr "Aucun jogaire ne pòt mater (matériel insufisent)"
+#~ msgstr "Cap de jogaire pòt pas matar (material insufisent)"
 
 #~ msgid "The black player has resigned"
 #~ msgstr "Lo jogaire negre a abandonat"
@@ -930,13 +929,13 @@ msgstr "Data"
 #~ msgstr "Lo jogaire blanc a abandonat"
 
 #~ msgid "The game has been abandoned"
-#~ msgstr "La partida a été abandonada"
+#~ msgstr "La partida es estada abandonada"
 
 #~ msgid "One of the players has died"
-#~ msgstr "L'un des jogaires es mòrt"
+#~ msgstr "Un dels jogaires es mòrt"
 
 #~ msgid "Save this game before starting a new one?"
-#~ msgstr "Enregistrar aquesta partida abans d'en començar una novèla ?"
+#~ msgstr "Enregistrar aquesta partida abans de ne començar una novèla ?"
 
 #~ msgid "_Abandon game"
 #~ msgstr "_Abandonar la partida"
@@ -978,13 +977,13 @@ msgstr "Data"
 #~ msgstr "Totes los fichièrs"
 
 #~ msgid "Failed to save game: %s"
-#~ msgstr "Fracàs lors de l'enregistrament de la partida : %s"
+#~ msgstr "Fracàs al moment de l'enregistrament de la partida : %s"
 
 #~ msgid "Load Chess Game"
 #~ msgstr "Cargar una partida d'escacs"
 
 #~ msgid "Failed to open game: %s"
-#~ msgstr "Fracàs lors de la dobertura de la partida : %s"
+#~ msgstr "Fracàs al moment de la dobertura de la partida : %s"
 
 #~ msgid "Show release version"
 #~ msgstr "Aficha lo numèro de version"
@@ -995,17 +994,17 @@ msgstr "Data"
 #~ msgid ""
 #~ "Run '%s --help' to see a full list of available command line options."
 #~ msgstr ""
-#~ "Exécutez la comanda « %s --help » per voir la lista completa des "
-#~ "options disponibles en linha de comanda."
+#~ "Exécutez la comanda « %s --help » per veire la lista completa des options "
+#~ "disponibles en linha de comanda."
 
 #~ msgid "Five or More"
-#~ msgstr "Cinc o plus"
+#~ msgstr "Cinc o mai"
 
 #~ msgid "Remove colored balls from the board by forming lines"
 #~ msgstr "Levar des billes de color del platèu en formant des linhas"
 
 #~ msgid "Five or More Preferences"
-#~ msgstr "Preferéncias de Cinc o plus"
+#~ msgstr "Preferéncias de Cinc o mai"
 
 #~ msgid "Appearance"
 #~ msgstr "Aparéncia"
@@ -1014,7 +1013,7 @@ msgstr "Data"
 #~ msgstr "_Image :"
 
 #~ msgid "B_ackground color:"
-#~ msgstr "_Color d'arrièr-plan :"
+#~ msgstr "_Color de rèireplan :"
 
 #~ msgid "Board Size"
 #~ msgstr "Talha del platèu"
@@ -1027,16 +1026,16 @@ msgstr "Data"
 #~ msgstr "_Mejana"
 
 #~ msgid "_Large"
-#~ msgstr "_Grande"
+#~ msgstr "_Granda"
 
 #~ msgid "General"
-#~ msgstr "Général"
+#~ msgstr "General"
 
 #~ msgid "_Use fast moves"
 #~ msgstr "_Utilizar des desplaçaments rapides"
 
 #~ msgid "Five or more"
-#~ msgstr "Cinc o plus"
+#~ msgstr "Cinc o mai"
 
 #~ msgid "Scores"
 #~ msgstr "Marcas"
@@ -1051,24 +1050,24 @@ msgstr "Data"
 #~ "Playing field size. 1=Small, 2=Medium, 3=Large. Any other value is "
 #~ "invalid."
 #~ msgstr ""
-#~ "Talha de la table de jòc. 1=pichona, 2=mejana, 3=grande. Toute autre "
-#~ "valor es incorrecte."
+#~ "Talha de la table de jòc. 1=pichona, 2=mejana, 3=grande. Tota autra "
+#~ "valor es incorrècta."
 
 #~ msgid "Ball style"
-#~ msgstr "Estil de billes"
+#~ msgstr "Estil de bilhas"
 
 #~ msgid "Ball style. The filename of the images to use for the balls."
 #~ msgstr ""
-#~ "Style de billes. Lo nom de fichièr des images a utilizar per les billes."
+#~ "Style de billes. Lo nom de fichièr des images d'utilizar per las bilhas."
 
 #~ msgid "Background color"
-#~ msgstr "Color d'arrièr-plan"
+#~ msgstr "Color de rèireplan"
 
 #~ msgid "Background color. The hex specification of the background color."
 #~ msgstr "Color de fons. La descripcion exadecimala de la color de fons."
 
 #~ msgid "Time between moves"
-#~ msgstr "Lo relambi entre deux desplaçaments"
+#~ msgstr "Lo relambi entre dos desplaçaments"
 
 #~ msgid "Time between moves in milliseconds."
 #~ msgstr "Lo relambi entre los desplaçaments, en millisegondas."
@@ -1077,19 +1076,19 @@ msgstr "Data"
 #~ msgstr "Marca del jòc"
 
 #~ msgid "Game score from last saved session."
-#~ msgstr "Marca del jòc de la darrièra session sauvegardée."
+#~ msgstr "Marca del jòc de la darrièra session salvada."
 
 #~ msgid "Game field"
-#~ msgstr "Zone de jòc"
+#~ msgstr "Zòna de jòc"
 
 #~ msgid "Game field from last saved session."
-#~ msgstr "Zone de jòc de la darrièra session sauvegardée."
+#~ msgstr "Zòna de jòc de la darrièra session salvada."
 
 #~ msgid "Game preview"
-#~ msgstr "Aperçu del jòc"
+#~ msgstr "Apercebut del jòc"
 
 #~ msgid "Game preview from last saved session."
-#~ msgstr "Aperçu del jòc de la darrièra session sauvegardée."
+#~ msgstr "Apercebut del jòc de la darrièra session salvada."
 
 #~ msgid "View help for this game"
 #~ msgstr "Aficha l'ajuda per aqueste jòc"
@@ -1101,7 +1100,7 @@ msgstr "Data"
 #~ msgstr "Bascula lo mòde ecran complet"
 
 #~ msgid "Get a hint for your next move"
-#~ msgstr "Aficha una astúcia per votre prochain coup"
+#~ msgstr "Aficha una astúcia per vòstre còp que ven"
 
 #~ msgid "Leave fullscreen mode"
 #~ msgstr "Quita lo mòde ecran complet"
@@ -1113,16 +1112,16 @@ msgstr "Data"
 #~ msgstr "Acaba lo jòc en ret e tòrna sul servidor del ret"
 
 #~ msgid "Show a list of players in the network game"
-#~ msgstr "Aficha una liste de jogaires dins lo jòc en ret"
+#~ msgstr "Aficha una lista de jogaires dins lo jòc en ret"
 
 #~ msgid "Redo the undone move"
-#~ msgstr "Rétablit lo movement anullat"
+#~ msgstr "Restablís lo movement anullat"
 
 #~ msgid "Restart the game"
 #~ msgstr "Recomença la partida"
 
 #~ msgid "Resume the paused game"
-#~ msgstr "Reprend la partida"
+#~ msgstr "Repren la partida"
 
 #~ msgid "View the scores"
 #~ msgstr "Aficha las marcas"
@@ -1131,13 +1130,13 @@ msgstr "Data"
 #~ msgstr "Anulla lo darrièr movement"
 
 #~ msgid "About this game"
-#~ msgstr "A prepaus de aqueste jòc"
+#~ msgstr "A prepaus d'aqueste jòc"
 
 #~ msgid "Close this window"
 #~ msgstr "Tampa aquesta fenèstra"
 
 #~ msgid "Configure the game"
-#~ msgstr "Configure lo jòc"
+#~ msgstr "Configura lo jòc"
 
 #~ msgid "Quit this game"
 #~ msgstr "Quita aqueste jòc"
@@ -1164,7 +1163,7 @@ msgstr "Data"
 #~ msgstr "_Quitar la partida"
 
 #~ msgid "Player _List"
-#~ msgstr "_Liste des jogaires"
+#~ msgstr "_Lista dels jogaires"
 
 #~ msgid "_End Game"
 #~ msgstr "_Fin del jòc"
@@ -1175,10 +1174,10 @@ msgstr "Data"
 #~ "Foundation; either version %d of the License, or (at your option) any "
 #~ "later version."
 #~ msgstr ""
-#~ "%s es un logiciel libre ; podètz lo distribuir et/ou lo modificar "
-#~ "sous los tèrmes de la Licéncia Publique Générale GNU tala coma publiée per "
-#~ "la Free Software Foundation ; siá la version %d de la licéncia, o (à "
-#~ "votre discrétion), tota version seguenta."
+#~ "%s es un logiciel libre ; podètz lo distribuir et/ou lo modificar sous "
+#~ "los tèrmes de la Licéncia Publica Generala GNU tala coma publigada per la "
+#~ "Free Software Foundation ; siá la version %d de la licéncia, o (coma "
+#~ "voldretz), tota version seguenta."
 
 #~ msgid ""
 #~ "%s is distributed in the hope that it will be useful, but WITHOUT ANY "
@@ -1186,17 +1185,17 @@ msgstr "Data"
 #~ "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
 #~ "details."
 #~ msgstr ""
-#~ "%s es distribué dins l'espoir qu'il puisse èsser utile mais SANS AUCUNE "
-#~ "GARANTIE ; sens même una garantie implicite de VALEUR MARCHANDE o "
-#~ "d'ADÉQUATION À UN BESOIN PARTICULIER. Voir la Licéncia Publique Générale "
-#~ "GNU per plus d'informations."
+#~ "%s es distribué dins l'espoir qu'il pòsca èsser utile mas SANS AUCUNE "
+#~ "GARANTIE ; sens même una garantie implicite de VALOR MERCANDA o "
+#~ "d'ADEQÜACION A UN BESONH PARTICULAR. Veire la Licéncia Publica Generala "
+#~ "GNU per plus d'informacions."
 
 #~ msgid ""
 #~ "You should have received a copy of the GNU General Public License along "
 #~ "with %s; if not, write to the Free Software Foundation, Inc., 51 Franklin "
 #~ "Street, Fifth Floor, Boston, MA  02110-1301  USA"
 #~ msgstr ""
-#~ "Vous devriez avoir recebut una copie de la Licéncia Publique Générale GNU "
+#~ "Vous devriez avoir recebut una còpia de la Licéncia Publica Generala GNU "
 #~ "amb %s ; se ce es pas lo cas, écrivez a la Free Software Foundation, "
 #~ "Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA."
 
@@ -1204,7 +1203,7 @@ msgstr "Data"
 #~ "You should have received a copy of the GNU General Public License along "
 #~ "with this program.  If not, see <http://www.gnu.org/licenses/>."
 #~ msgstr ""
-#~ "Vous devriez avoir recebut una copie de la Licéncia Publique Générale GNU "
+#~ "Vous devriez avoir recebut una còpia de la Licéncia Publica Generala GNU "
 #~ "amb ce programa ; se ce es pas lo cas, consultez <http://www.gnu.org/"
 #~ "licenses/>."
 
@@ -1219,7 +1218,7 @@ msgstr "Data"
 
 #~ msgctxt "board size"
 #~ msgid "Large"
-#~ msgstr "Grande"
+#~ msgstr "Granda"
 
 #~ msgid "Could not load theme"
 #~ msgstr "Impossible de cargar lo tèma"
@@ -1233,7 +1232,7 @@ msgstr "Data"
 #~ "Impossible de localizar lo fichièr :\n"
 #~ "%s\n"
 #~ "\n"
-#~ "Lo tèma per defaut sera cargat a sa place."
+#~ "Lo tèma per defaut serà cargat a sa place."
 
 #~ msgid ""
 #~ "Unable to locate file:\n"
@@ -1244,13 +1243,13 @@ msgstr "Data"
 #~ "Impossible de trobar lo fichièr :\n"
 #~ "%s\n"
 #~ "\n"
-#~ "Verificatz que Cinc o plus es corrèctament installat."
+#~ "Verificatz que Cinc o mai es corrèctament installat."
 
 #~ msgid "Match five objects of the same type in a row to score!"
 #~ msgstr "Alignez cinc boules de même color per marcar des points !"
 
 #~ msgid "GNOME Five or More"
-#~ msgstr "GNOME Cinc o plus"
+#~ msgstr "GNOME Cinc o mai"
 
 #~ msgid "_Board size:"
 #~ msgstr "_Talha del platèu :"
@@ -1268,13 +1267,13 @@ msgstr "Data"
 #~ msgstr ""
 #~ "Portage GNOME del jòc autrefois célèbre Linhas Colorées.\n"
 #~ "\n"
-#~ "Cinc o plus fa partida des jòcs GNOME."
+#~ "Cinc o mai fa partida des jòcs GNOME."
 
 #~ msgid "Four-in-a-Row"
-#~ msgstr "Puissance 4"
+#~ msgstr "Poténcia 4"
 
 #~ msgid "Make lines of the same color to win"
-#~ msgstr "Réaliser des linhas de la même color per gagner"
+#~ msgstr "Realizar de linhas de la meteissa color per ganhar"
 
 #~ msgid "Level of Player One"
 #~ msgstr "Nivèl del Jogaire Un"
@@ -1283,23 +1282,23 @@ msgstr "Data"
 #~ "Zero is human; one through three correspond to the level of the computer "
 #~ "player."
 #~ msgstr ""
-#~ "Zéro correspond al choix uman ; un a tres correspondent al nivèl de "
-#~ "l'adversari électronique."
+#~ "Zèro correspond a la cusida uman ; un a tres correspondon al nivèl de "
+#~ "l'adversari electronic"
 
 #~ msgid "Level of Player Two"
-#~ msgstr "Nivèl del deuxième jogaire"
+#~ msgstr "Nivèl del segond jogaire"
 
 #~ msgid "Theme ID"
 #~ msgstr "ID del tèma"
 
 #~ msgid "A number specifying the preferred theme."
-#~ msgstr "Un numèro spécifiant lo tèma préféré."
+#~ msgstr "Un numèro qu'especifica lo tèma preferit."
 
 #~ msgid "Animate"
 #~ msgstr "Animation"
 
 #~ msgid "Whether or not to use animation."
-#~ msgstr "Indica se cal utilizar o pas les animations."
+#~ msgstr "Indica se cal utilizar o pas las animacions."
 
 #~ msgid "Sound"
 #~ msgstr "Son"
@@ -1311,7 +1310,7 @@ msgstr "Data"
 #~ msgstr "Laisser tomber la bille"
 
 #~ msgid "Key press to drop a marble."
-#~ msgstr "Tòca a quichar per laisser tomber una bille."
+#~ msgstr "Tòca a quichar per daissar tombar una bilha."
 
 #~ msgid "Unknown Command"
 #~ msgstr "Comanda desconeguda"
@@ -1327,31 +1326,31 @@ msgstr "Data"
 #~ msgstr "Match nul !"
 
 #~ msgid "You win!"
-#~ msgstr "Avètz gagné !"
+#~ msgstr "Avètz ganhat !"
 
 #~ msgid "It is your move."
-#~ msgstr "À vous de jogar."
+#~ msgstr "A vos de jogar."
 
 #~ msgid "I win!"
-#~ msgstr "J'ai gagné !"
+#~ msgstr "Ai ganhat !"
 
 #~ msgid "Thinking..."
 #~ msgstr "Calculs..."
 
 #~ msgid "%s wins!"
-#~ msgstr "%s a gagné !"
+#~ msgstr "%s a ganhat !"
 
 #~ msgid "Waiting for %s to move."
-#~ msgstr "Attend que %s se déplace."
+#~ msgstr "Espèra que %s se desplaça."
 
 #~ msgid "Hint: Column %d"
 #~ msgstr "Astúcia : colomna %d"
 
 #~ msgid "You:"
-#~ msgstr "Vous :"
+#~ msgstr "Vos :"
 
 #~ msgid "Me:"
-#~ msgstr "Moi :"
+#~ msgstr "Ieu :"
 
 #~ msgid "Drawn:"
 #~ msgstr "Nul :"
@@ -1362,19 +1361,19 @@ msgstr "Data"
 #~ "\n"
 #~ "\"Four in a Row\" is a part of GNOME Games."
 #~ msgstr ""
-#~ "« Puissance 4 » per GNOME, un jòc construit amb lo motor Velena de "
-#~ "Giuliano Bertoletti per l'intelligence artificielle.\n"
+#~ "« Poténcia 4 » per GNOME, un jòc construit amb lo motor Velena de "
+#~ "Giuliano Bertoletti per l'intelligéncia artificiala.\n"
 #~ "\n"
-#~ "Puissance 4 fa partida des jòcs GNOME."
+#~ "Poténcia 4 fa partida dels jòcs GNOME."
 
 #~ msgid "_View"
 #~ msgstr "_Afichatge"
 
 #~ msgid "Four-in-a-row"
-#~ msgstr "Puissance 4"
+#~ msgstr "Poténcia 4"
 
 #~ msgid "Four-in-a-Row Preferences"
-#~ msgstr "Preferéncias de Puissance 4"
+#~ msgstr "Preferéncias de Poténcia 4"
 
 #~ msgid "Player One:"
 #~ msgstr "Jogaire 1 :"
@@ -1386,10 +1385,10 @@ msgstr "Data"
 #~ msgstr "Nivèl un"
 
 #~ msgid "Level two"
-#~ msgstr "Nivèl deux"
+#~ msgstr "Nivèl dos"
 
 #~ msgid "Level three"
-#~ msgstr "Nivèl trois"
+#~ msgstr "Nivèl tres"
 
 #~ msgid "Player Two:"
 #~ msgstr "Jogaire 2 :"
@@ -1398,7 +1397,7 @@ msgstr "Data"
 #~ msgstr "_Tèma :"
 
 #~ msgid "Enable _animation"
-#~ msgstr "Activar les _animations"
+#~ msgstr "Activar las _animacions"
 
 #~ msgid "E_nable sounds"
 #~ msgstr "A_ctivar los sons"
@@ -1410,46 +1409,46 @@ msgstr "Data"
 #~ msgstr "Classic"
 
 #~ msgid "Red"
-#~ msgstr "Rouge"
+#~ msgstr "Roge"
 
 #~ msgid "Yellow"
 #~ msgstr "Jaune"
 
 #~ msgid "High Contrast"
-#~ msgstr "Fort contraste"
+#~ msgstr "Fòrt contraste"
 
 #~ msgid "Circle"
 #~ msgstr "Cercle"
 
 #~ msgid "Cross"
-#~ msgstr "Croix"
+#~ msgstr "Crotz"
 
 #~ msgid "High Contrast Inverse"
-#~ msgstr "Fort contraste inversé"
+#~ msgstr "Fòrt contraste inversat"
 
 #~ msgid "Cream Marbles"
-#~ msgstr "Crème marbrée"
+#~ msgstr "Crèma marbrada"
 
 #~ msgid "Blue"
-#~ msgstr "Bleu"
+#~ msgstr "Blau"
 
 #~ msgid "Glass Marbles"
-#~ msgstr "Verre marbré"
+#~ msgstr "Veire marbrat"
 
 #~ msgid "Nightfall"
-#~ msgstr "Crépuscula"
+#~ msgstr "Crepuscul"
 
 #~ msgid "Blocks"
-#~ msgstr "Blocs"
+#~ msgstr "Blòts"
 
 #~ msgid "Orange"
-#~ msgstr "Orange"
+#~ msgstr "Irange"
 
 #~ msgid "Nibbles"
 #~ msgstr "Nibbles"
 
 #~ msgid "Guide a worm around a maze"
-#~ msgstr "Guider un ver a travers un labyrinthe"
+#~ msgstr "Guidar un vèrm a travèrs un leberint"
 
 #~ msgid "Number of human players"
 #~ msgstr "Nombre de jogaires umans"
@@ -1464,22 +1463,22 @@ msgstr "Data"
 #~ msgstr "Nombre de jogaires IA."
 
 #~ msgid "Game speed"
-#~ msgstr "Vitesse del jòc"
+#~ msgstr "Velocitat del jòc"
 
 #~ msgid "Game speed (1=fast, 4=slow)."
-#~ msgstr "Vitesse del jòc (1=rapide, 4=lent)."
+#~ msgstr "Velocitat del jòc (1=rapid, 4=lent)."
 
 #~ msgid "Enable fake bonuses"
-#~ msgstr "Activar les faux bonus"
+#~ msgstr "Activar los falses bonus"
 
 #~ msgid "Enable fake bonuses."
-#~ msgstr "Activar les faux bonus."
+#~ msgstr "Activar los falses bonus."
 
 #~ msgid "Play levels in random order"
-#~ msgstr "Jogar les nivèls dins un ordre aléatoire"
+#~ msgstr "Jogar los nivèls dins un òrdre aleatòri"
 
 #~ msgid "Play levels in random order."
-#~ msgstr "Jogar les nivèls dins un ordre aléatoire."
+#~ msgstr "Jogar los nivèls dins un òrdre aleatòri."
 
 #~ msgid "Game level to start on"
 #~ msgstr "Nivèl de despart"
@@ -1494,39 +1493,38 @@ msgstr "Data"
 #~ msgstr "Activar los sons."
 
 #~ msgid "Size of game tiles"
-#~ msgstr "Talha des tuiles de jòc"
+#~ msgstr "Talha dels teulas de jòc"
 
 #~ msgid "Size of game tiles."
-#~ msgstr "Talha des tuiles de jòc."
+#~ msgstr "Talha dels teulas de jòc."
 
 #~ msgid "Color to use for worm"
-#~ msgstr "Color a utilizar per lo ver"
+#~ msgstr "Color d'utilizar pel vèrm"
 
 #~ msgid "Color to use for worm."
-#~ msgstr "Color a utilizar per lo ver."
+#~ msgstr "Color d'utilizar pel vèrm."
 
 #~ msgid "Use relative movement"
-#~ msgstr "Utilizar des movement relatifs"
+#~ msgstr "Utilizar de movements relatius"
 
 #~ msgid "Use relative movement (ie. left or right only)."
 #~ msgstr ""
-#~ "Utilizar de movements relatifs (c'est-à-dire drecha e esquèrra "
-#~ "seulement)."
+#~ "Utilizar de movements relatius (es a dire dreita e esquèrra solament)."
 
 #~ msgid "Move up"
 #~ msgstr "Se desplaçar cap amont"
 
 #~ msgid "Key to use for motion up."
-#~ msgstr "Tòca a utilizar per se desplaçar cap amont."
+#~ msgstr "Tòca d'utilizar per se desplaçar cap amont."
 
 #~ msgid "Key to use for motion down."
-#~ msgstr "Tòca a utilizar per se desplaçar cap aval."
+#~ msgstr "Tòca d'utilizar per se desplaçar cap aval."
 
 #~ msgid "Key to use for motion left."
-#~ msgstr "Tòca a utilizar per se desplaçar a esquèrra."
+#~ msgstr "Tòca d'utilizar per se desplaçar a esquèrra."
 
 #~ msgid "Key to use for motion right."
-#~ msgstr "Tòca a utilizar per se desplaçar a drecha."
+#~ msgstr "Tòca d'utilizar per se desplaçar a dreita."
 
 #~ msgid ""
 #~ "Nibbles couldn't load level file:\n"
@@ -1534,10 +1532,10 @@ msgstr "Data"
 #~ "\n"
 #~ "Please check your Nibbles installation"
 #~ msgstr ""
-#~ "Nibbles n'a pu cargar lo fichièr de nivèl :\n"
+#~ "Nibbles a pas pogut cargar lo fichièr de nivèl :\n"
 #~ "%s\n"
 #~ "\n"
-#~ "Verificatz votre installation de Nibbles"
+#~ "Verificatz vòstra installacion de Nibbles"
 
 #~ msgid ""
 #~ "Level file appears to be damaged:\n"
@@ -1545,10 +1543,10 @@ msgstr "Data"
 #~ "\n"
 #~ "Please check your Nibbles installation"
 #~ msgstr ""
-#~ "Lo fichièr de nivèl semble endommagé :\n"
+#~ "Lo fichièr de nivèl semble damatjat :\n"
 #~ "%s\n"
 #~ "\n"
-#~ "Verificatz votre installation de Nibbles"
+#~ "Verificatz vòstra installacion de Nibbles"
 
 #~ msgid ""
 #~ "Nibbles couldn't find pixmap file:\n"
@@ -1556,29 +1554,29 @@ msgstr "Data"
 #~ "\n"
 #~ "Please check your Nibbles installation"
 #~ msgstr ""
-#~ "Nibbles n'a pu trobar l'imatge :\n"
+#~ "Nibbles a pas pogut trobar l'imatge :\n"
 #~ "%s\n"
 #~ "\n"
-#~ "Verificatz votre installation de Nibbles"
+#~ "Verificatz vòstra installacion de Nibbles"
 
 #~ msgid "Nibbles Scores"
 #~ msgstr "Marcas Nibbles"
 
 #~ msgid "Speed:"
-#~ msgstr "Vitesse :"
+#~ msgstr "Velocitat :"
 
 #~ msgid "Congratulations!"
-#~ msgstr "Félicitations !"
+#~ msgstr "Felicitacions !"
 
 #~ msgid "Your score is the best!"
-#~ msgstr "Votre score es lo melhor !"
+#~ msgstr "Vòstra marca es la melhora !"
 
 #~ msgid "Your score has made the top ten."
-#~ msgstr "Votre score es entré al top 10."
+#~ msgstr "Vòstra marca es entrada al top 10."
 
 #~ msgctxt "game speed"
 #~ msgid "Beginner"
-#~ msgstr "Débutant"
+#~ msgstr "Debutant"
 
 #~ msgctxt "game speed"
 #~ msgid "Slow"
@@ -1586,30 +1584,30 @@ msgstr "Data"
 
 #~ msgctxt "game speed"
 #~ msgid "Medium"
-#~ msgstr "Intermèdiaire"
+#~ msgstr "Intermediari"
 
 #~ msgctxt "game speed"
 #~ msgid "Fast"
-#~ msgstr "Rapide"
+#~ msgstr "Rapid"
 
-# sens doute faudrait-il trobar un terme comun per ces « feintes » 
+# sens doute faudrait-il trobar un terme comun per ces « fintas » 
 # (cette entrada e les seguentas) e les « faux bonus » 
 # (qualques entradas plus loin) : dins totes les cas, ce son des « fake ».
 #~ msgctxt "game speed"
 #~ msgid "Beginner with Fakes"
-#~ msgstr "Débutant amb feintes"
+#~ msgstr "Debutant amb fintas"
 
 #~ msgctxt "game speed"
 #~ msgid "Slow with Fakes"
-#~ msgstr "Lent amb feintes"
+#~ msgstr "Lent amb fintas"
 
 #~ msgctxt "game speed"
 #~ msgid "Medium with Fakes"
-#~ msgstr "Intermèdiaire amb feintes"
+#~ msgstr "Intermediari amb fintas"
 
 #~ msgctxt "game speed"
 #~ msgid "Fast with Fakes"
-#~ msgstr "Rapide amb feintes"
+#~ msgstr "Rapide amb fintas"
 
 #~ msgid ""
 #~ "A worm game for GNOME.\n"
@@ -1618,10 +1616,10 @@ msgstr "Data"
 #~ msgstr ""
 #~ "Un jòc de ver per GNOME.\n"
 #~ "\n"
-#~ "Nibbles fa partida des jòcs GNOME."
+#~ "Nibbles fa partida dels jòcs GNOME."
 
 #~ msgid "Game over! The game has been won by %s!"
-#~ msgstr "Partida acabada ! La partida a été gagnée per %s."
+#~ msgstr "Partida acabada ! La partida es estada ganhada per %s."
 
 #~ msgid "A worm game for GNOME."
 #~ msgstr "Un jòc de ver per GNOME."
@@ -1630,10 +1628,10 @@ msgstr "Data"
 #~ msgstr "Preferéncias de Nibbles"
 
 #~ msgid "Speed"
-#~ msgstr "Vitesse"
+#~ msgstr "Velocitat"
 
 #~ msgid "Nibbles newbie"
-#~ msgstr "Débutant a Nibbles"
+#~ msgstr "Debutant a Nibbles"
 
 #~ msgid "My second day"
 #~ msgstr "Mon deuxième jour"
@@ -1642,16 +1640,16 @@ msgstr "Data"
 #~ msgstr "Pas tròp nul"
 
 #~ msgid "Finger-twitching good"
-#~ msgstr "Les doigts dins lo nez"
+#~ msgstr "Les dets dins lo nez"
 
 #~ msgid "Options"
 #~ msgstr "Opcions"
 
 #~ msgid "_Play levels in random order"
-#~ msgstr "J_ouer les nivèls dins un ordre aléatoire"
+#~ msgstr "J_ogar los nivèls dins un òrdre aleatòri"
 
 #~ msgid "_Enable fake bonuses"
-#~ msgstr "_Activar les faux bonus"
+#~ msgstr "_Activar los falses bonus"
 
 #~ msgid "Number of _human players:"
 #~ msgstr "No_mbre de jogaires umans :"
@@ -1666,16 +1664,16 @@ msgstr "Data"
 #~ msgstr "Opcions del clavièr"
 
 #~ msgid "_Use relative movement"
-#~ msgstr "_Utilizar des movement relatifs"
+#~ msgstr "_Utilizar de movement relatius"
 
 #~ msgid "_Worm color:"
-#~ msgstr "Color del _ver :"
+#~ msgstr "Color del _vèrm :"
 
 #~ msgid "Green"
-#~ msgstr "Vert"
+#~ msgstr "Verd"
 
 #~ msgid "Cyan"
-#~ msgstr "Cyan"
+#~ msgstr "Cian"
 
 #~ msgid "Purple"
 #~ msgstr "Violet"
@@ -1684,13 +1682,13 @@ msgstr "Data"
 #~ msgstr "Gris"
 
 #~ msgid "Worm %d:"
-#~ msgstr "Ver %d :"
+#~ msgstr "Vèrm %d :"
 
 #~ msgid "Robots"
 #~ msgstr "Robòts"
 
 #~ msgid "Avoid the robots and make them crash into each other"
-#~ msgstr "Evitar los robòts e faites-les s'espotir les uns sus les autres"
+#~ msgstr "Evitar los robòts e fasètz-los s'espotir les uns sus les autres"
 
 #~ msgid "Show toolbar"
 #~ msgstr "Afichar la barra d'aisinas"
@@ -1700,43 +1698,42 @@ msgstr "Data"
 #~ "Afichar la barra d'aisinas. Una option standard per les barres d'aisinas."
 
 #~ msgid "Robot image theme"
-#~ msgstr "Tèma d'imatges del jòc de Robots"
+#~ msgstr "Tèma d'imatges del jòc de Robòts"
 
 #~ msgid "Robot image theme. The theme of the images to use for the robots."
 #~ msgstr ""
-#~ "Tèma d'imatges del jòc de Robots. Lo tèma d'imatges a utilizar per les "
-#~ "robots."
+#~ "Tèma d'imatges del jòc de Robòts. Lo tèma d'imatges d'utilizar pels "
+#~ "robòts."
 
 #~ msgid "Game type"
 #~ msgstr "Tipe de jòc"
 
 #~ msgid "Game type. The name of the game variation to use."
-#~ msgstr "Tipe de jòc. Lo nom de la varianta del jòc a utilizar."
+#~ msgstr "Tipe de jòc. Lo nom de la varianta del jòc d'utilizar."
 
 #~ msgid "Use safe moves"
-#~ msgstr "Utilizar de movements sens danger"
+#~ msgstr "Utilizar de movements sens dangièr"
 
 #~ msgid ""
 #~ "Use safe moves. The safe moves option will help you to avoid being killed "
 #~ "due to a mistake. If you try to make a move that would lead to your death "
 #~ "when there is a safe move available you will not be allowed to proceed."
 #~ msgstr ""
-#~ "Utilizar de movements sens danger. L'opcion de movements sens danger "
-#~ "va vous aider a éviter d'èsser tué sus una error. Se vous ensajatz de "
-#~ "faire un movement qui va entraîner votre mort alors qu'i a un "
-#~ "movement sens danger possible, vous n'allez pas èsser autorisé a "
-#~ "l'effectuer."
+#~ "Utilizar de movements sens dangièr. L'opcion de movements sens dangièr vos "
+#~ "va ajudar a evitar d'èsser tuat sus una error. Se ensajatz de far "
+#~ "un movement qui va entraîner vòstra mòrt alara qu'i a un movement sens "
+#~ "dangièr possible, seretz pas èsser autorizat a l'efectuar."
 
 #~ msgid "Use super safe moves"
-#~ msgstr "Utilizar de movements *vertadièrament* sens danger"
+#~ msgstr "Utilizar de movements *vertadièrament* sens dangièr"
 
 #~ msgid ""
 #~ "Use super safe moves. The player is alerted when there is no safe move "
 #~ "and the only option is to teleport out."
 #~ msgstr ""
-#~ "Utilizar de movements *vertadièrament* sens danger. Lo jogaire es alerté "
-#~ "quand i a pas de movement sens danger e que la sola option es de "
-#~ "se teleportar ailleurs."
+#~ "Utilizar de movements *vertadièrament* sens dangièr. Lo jogaire es alerté "
+#~ "quand i a pas de movement sens dangièr e que la sola opcion es de se "
+#~ "teleportar endacòm mai."
 
 #~ msgid "Enable game sounds"
 #~ msgstr "Activar los sons del jòc"
@@ -1744,8 +1741,8 @@ msgstr "Data"
 #~ msgid ""
 #~ "Enable game sounds. Play sounds for various events throughout the game."
 #~ msgstr ""
-#~ "Activar los sons del jòc. Jòga des sons per les diferents eveniments al "
-#~ "cours de la partida."
+#~ "Activar los sons del jòc. Jòga des sons per los diferents eveniments al "
+#~ "cors de la partida."
 
 #~ msgid "Key to move NW"
 #~ msgstr "Tòca per se desplaçar cap al nòrd-oèst"
@@ -1806,8 +1803,7 @@ msgstr "Data"
 
 #~ msgid "The key used to teleport safely (if possible)."
 #~ msgstr ""
-#~ "La tòca utilizada per se teleportar en tota sécurité (si c'est "
-#~ "possible)."
+#~ "La tòca utilizada per se teleportar en tota sécurité (si c'est possible)."
 
 #~ msgid "Key to teleport randomly"
 #~ msgstr "Tòca per se teleportar aléatoirement"
@@ -1825,10 +1821,10 @@ msgstr "Data"
 #~ msgstr "Fin de la partida !"
 
 #~ msgid "Great work, but unfortunately your score did not make the top ten."
-#~ msgstr "Bravo mais malorausement votre score es pas rentré al top 10."
+#~ msgstr "Bravo mas malurosament vòstra marca es pas rentré al top 10."
 
 #~ msgid "Robots Scores"
-#~ msgstr "Marcas de Robots"
+#~ msgstr "Marcas de Robòts"
 
 #~ msgid "Map:"
 #~ msgstr "Carte :"
@@ -1837,17 +1833,17 @@ msgstr "Data"
 #~ "Congratulations, You Have Defeated the Robots!! \n"
 #~ "But Can You do it Again?"
 #~ msgstr ""
-#~ "Félicitations, vous avez gagné contra los Robòts !\n"
-#~ "Mais pourrez-vous lo faire a novèl ?"
+#~ "Félicitations, avètz ganhat contra los Robòts !\n"
+#~ "Mais pourrez-vous lo far tornamai ?"
 
 #~ msgid "There are no teleport locations left!!"
-#~ msgstr "Il ne reste plus d'emplaçaments de teleportacion !"
+#~ msgstr "Demòra pas mai d'emplaçaments de teleportacion !"
 
 #~ msgid "There are no safe locations to teleport to!!"
-#~ msgstr "Il ne reste plus d'emplaçaments de teleportacion sens danger !"
+#~ msgstr "Demòra pas mai d'emplaçaments de teleportacion sens dangièr !"
 
 #~ msgid "Set game scenario"
-#~ msgstr "Seleccionatz un scénario"
+#~ msgstr "Seleccionatz un scenari"
 
 #~ msgid "NAME"
 #~ msgstr "NOM"
@@ -1868,67 +1864,67 @@ msgstr "Data"
 #~ msgstr "Robòts classics"
 
 #~ msgid "Classic robots with safe moves"
-#~ msgstr "Robòts classics amb movements sens danger"
+#~ msgstr "Robòts classics amb movements sens dangièr"
 
 #~ msgid "Classic robots with super-safe moves"
-#~ msgstr "Robòts classics amb movements *vertadièrament* sens danger"
+#~ msgstr "Robòts classics amb movements *vertadièrament* sens dangièr"
 
 #~ msgid "Nightmare"
 #~ msgstr "Cachavièlha"
 
 #~ msgid "Nightmare with safe moves"
-#~ msgstr "Cachavièlha amb movements sens danger"
+#~ msgstr "Cachavièlha amb movements sens dangièr"
 
 #~ msgid "Nightmare with super-safe moves"
-#~ msgstr "Cachavièlha amb movements *vertadièrament* sens danger"
+#~ msgstr "Cachavièlha amb movements *vertadièrament* sens dangièr"
 
 #~ msgid "Robots2"
 #~ msgstr "Robòts2"
 
 #~ msgid "Robots2 with safe moves"
-#~ msgstr "Robòts2 amb movements sens danger"
+#~ msgstr "Robòts2 amb movements sens dangièr"
 
 #~ msgid "Robots2 with super-safe moves"
-#~ msgstr "Robòts2 amb movements *vertadièrament* sens danger"
+#~ msgstr "Robòts2 amb movements *vertadièrament* sens dangièr"
 
 #~ msgid "Robots2 easy"
 #~ msgstr "Robòts2 facile"
 
 #~ msgid "Robots2 easy with safe moves"
-#~ msgstr "Robòts2 aisit amb movements sens danger"
+#~ msgstr "Robòts2 aisit amb movements sens dangièr"
 
 #~ msgid "Robots2 easy with super-safe moves"
-#~ msgstr "Robòts2 aisit amb movements *vertadièrament* sens danger"
+#~ msgstr "Robòts2 aisit amb movements *vertadièrament* sens dangièr"
 
 #~ msgid "Robots with safe teleport"
-#~ msgstr "Robòts amb teleportacion sens danger"
+#~ msgstr "Robòts amb teleportacion sens dangièr"
 
 #~ msgid "Robots with safe teleport with safe moves"
-#~ msgstr "Robòts amb teleportacion e movements sens danger"
+#~ msgstr "Robòts amb teleportacion e movements sens dangièr"
 
 #~ msgid "Robots with safe teleport with super-safe moves"
-#~ msgstr "Robòts amb teleportacion e movements *vertadièrament* sens danger"
+#~ msgstr "Robòts amb teleportacion e movements *vertadièrament* sens dangièr"
 
 #~ msgid "No game data could be found."
-#~ msgstr "Aucune donada de jòc pòt pas èsser trobada."
+#~ msgstr "Cap de donada de jòc pòt pas èsser trobada."
 
 #~ msgid ""
 #~ "The program Robots was unable to find any valid game configuration files. "
 #~ "Please check that the program is installed correctly."
 #~ msgstr ""
-#~ "Lo programa Robots n'a pas été capable de trobar un fichièr de "
-#~ "configuration de jòc valide. Verificatz que lo programa es corrèctament "
+#~ "Lo programa Robòts es pas estat capable de trobar un fichièr de "
+#~ "configuracion de jòc valid. Verificatz que lo programa es corrèctament "
 #~ "installat."
 
 #~ msgid "Some graphics files are missing or corrupt."
-#~ msgstr "Certains fichièrs graphiques son manquants o corrompus."
+#~ msgstr "Certans fichièrs grafics son mancants o corromputs."
 
 #~ msgid ""
 #~ "The program Robots was unable to load all the necessary graphics files. "
 #~ "Please check that the program is installed correctly."
 #~ msgstr ""
 #~ "Lo programa Robots n'a pas été capable de cargar tot los fichièrs "
-#~ "graphiques. Verificatz que lo programa es corrèctament installat."
+#~ "grafics. Verificatz que lo programa es corrèctament installat."
 
 #~ msgid "Could not find '%s' pixmap file\n"
 #~ msgstr "Impossible de trobar l'imatge « %s »\n"
@@ -1940,7 +1936,7 @@ msgstr "Data"
 #~ msgstr "_Teleportacion"
 
 #~ msgid "Teleport, safely if possible"
-#~ msgstr "Se teleportar, sens danger se possible"
+#~ msgstr "Se teleportar, sens dangièr se possible"
 
 #~ msgid "_Random"
 #~ msgstr "_Aléatoirement"
@@ -1949,7 +1945,7 @@ msgstr "Data"
 #~ msgstr "Se teleportar aléatoirement"
 
 #~ msgid "_Wait"
-#~ msgstr "A_ttente"
+#~ msgstr "Es_pèra"
 
 #~ msgid "Wait for the robots"
 #~ msgstr "Esperar los robòts"
@@ -1958,45 +1954,45 @@ msgstr "Data"
 #~ msgstr "Barra d'_aisinas"
 
 #~ msgid "Show or hide the toolbar"
-#~ msgstr "Aficha o masque la barra d'aisinas"
+#~ msgstr "Aficha o amaga la barra d'aisinas"
 
 #~ msgid ""
 #~ "Based on classic BSD Robots.\n"
 #~ "\n"
 #~ "Robots is a part of GNOME Games."
 #~ msgstr ""
-#~ "Basé sus los robòts BSD classics.\n"
+#~ "Basat suls robòts BSD classics.\n"
 #~ "\n"
-#~ "Robots fa partida des jòcs GNOME."
+#~ "Robòts fa partida des jòcs GNOME."
 
 #~ msgid "Robots Preferences"
-#~ msgstr "Preferéncias de Robots"
+#~ msgstr "Preferéncias de Robòts"
 
 #~ msgid "Game Type"
 #~ msgstr "Tipe de jòc"
 
 #~ msgid "_Use safe moves"
-#~ msgstr "_Utilizar de movements sens danger"
+#~ msgstr "_Utilizar de movements sens dangièr"
 
 #~ msgid "Prevent accidental moves that result in getting killed."
-#~ msgstr "Evita les movements accidentels qui conduisent a èsser tué."
+#~ msgstr "Evita los movements accidentals que menan a èsser tuat."
 
 #~ msgid "U_se super safe moves"
-#~ msgstr "Ut_ilizar de movements *vertadièrament* sens danger"
+#~ msgstr "Ut_ilizar de movements *vertadièrament* sens dangièr"
 
 #~ msgid "Prevents all moves that result in getting killed."
-#~ msgstr "Evita totes les movements qui conduisent a èsser tué."
+#~ msgstr "Evita totes los movements qui conduisent a èsser tuat."
 
 #~ msgid "Play sounds for events like winning a level and dying."
 #~ msgstr ""
-#~ "Jòga des sons per les eveniments tels que la réussite d'un nivèl o la "
-#~ "mort."
+#~ "Jòga de sons per les eveniments tals coma la reüssida d'un nivèl o la "
+#~ "mòrt."
 
 #~ msgid "_Image theme:"
 #~ msgstr "T_èma d'imatge :"
 
 #~ msgid "_Background color:"
-#~ msgstr "Co_uleur d'arrièr-plan :"
+#~ msgstr "Co_lor de rèireplan :"
 
 #~ msgid "_Restore Defaults"
 #~ msgstr "_Paramètres per defaut"
@@ -2005,7 +2001,7 @@ msgstr "Data"
 #~ msgstr "Clavièr"
 
 #~ msgid "Safe Teleports:"
-#~ msgstr "Teleportacions sens danger :"
+#~ msgstr "Teleportacions sens dangièr :"
 
 #~ msgid "Remaining:"
 #~ msgstr "Restant :"
@@ -2015,7 +2011,7 @@ msgstr "Data"
 
 #~ msgid "Disassemble a pile of tiles by removing matching pairs"
 #~ msgstr ""
-#~ "Désassembler una pile de tuiles en enlevant les paires correspondentas"
+#~ "Desassemblar una pila de teulas en levant las paras correspondentas"
 
 #~ msgctxt "mahjongg map name"
 #~ msgid "The Ziggurat"
@@ -2027,7 +2023,7 @@ msgstr "Data"
 
 #~ msgctxt "mahjongg map name"
 #~ msgid "Cloud"
-#~ msgstr "Nuage"
+#~ msgstr "Nívol"
 
 #~ msgctxt "mahjongg map name"
 #~ msgid "Tic-Tac-Toe"
@@ -2035,15 +2031,15 @@ msgstr "Data"
 
 #~ msgctxt "mahjongg map name"
 #~ msgid "Red Dragon"
-#~ msgstr "Dragon rouge"
+#~ msgstr "Drac roge"
 
 #~ msgctxt "mahjongg map name"
 #~ msgid "Pyramid's Walls"
-#~ msgstr "Les murs de la pyramide"
+#~ msgstr "Los murs de la piramida"
 
 #~ msgctxt "mahjongg map name"
 #~ msgid "Confounding Cross"
-#~ msgstr "Croix de confusion"
+#~ msgstr "Crotz de confusion"
 
 #~ msgctxt "mahjongg map name"
 #~ msgid "Difficult"
@@ -2063,11 +2059,11 @@ msgstr "Data"
 
 #~ msgid "If you contunha playing the next game will use the new map."
 #~ msgstr ""
-#~ "Se vous causissètz de pourseguir aquesta partida, la prochaine partida "
-#~ "utilizara la novèla disposicion."
+#~ "Se causissètz de contunhar aquesta partida, la partida que ven "
+#~ "utilizarà la novèla disposicion."
 
 #~ msgid "_Contunha playing"
-#~ msgstr "_Pourseguir la partida"
+#~ msgstr "_Contunhar la partida"
 
 #~ msgid "Use _new map"
 #~ msgstr "Utilizar la _novèla disposicion"
@@ -2083,20 +2079,20 @@ msgstr "Data"
 
 #~ msgid "You didn't make the top ten, better luck next time."
 #~ msgstr ""
-#~ "Vous n'êtes pas dins lo top 10, vous aurez mai de chance la prochaine "
-#~ "fois."
+#~ "Sètz pas dins lo top 10, auretz mai de chança lo còp que "
+#~ "ven."
 
 #~ msgid "There are no more moves."
-#~ msgstr "O planhèm, il n'y a mai de desplaçament possible."
+#~ msgstr "O planhèm, i a pas mai de desplaçament possible."
 
 #~ msgid ""
 #~ "Each puzzle has at least one solution.  You can undo your moves and try "
 #~ "and find the solution for a time penalty, restart this game or start an "
 #~ "new one."
 #~ msgstr ""
-#~ "Chaque énigme possède al moins una solution. Podètz anullar vos "
-#~ "movements e ensajar de trobar la solution amb una pénalité "
-#~ "temporelle, reaviar aqueste jòc o en démarrer un novèl."
+#~ "Cada enigma possedís al mens una solucion. Podètz anullar vòstres movements "
+#~ "e ensajar de trobar la solution amb una penalitat temporala, reaviar "
+#~ "aqueste jòc o en démarrer un novèl."
 
 #~ msgid "_New game"
 #~ msgstr "_Novèla partida"
@@ -2114,16 +2110,16 @@ msgstr "Data"
 #~ msgstr "Disposicions :"
 
 #~ msgid "Tiles:"
-#~ msgstr "Tuiles :"
+#~ msgstr "Teulas :"
 
 #~ msgid ""
 #~ "A matching game played with Mahjongg tiles.\n"
 #~ "\n"
 #~ "Mahjongg is a part of GNOME Games."
 #~ msgstr ""
-#~ "Un jòc de correspondéncias amb des tuiles Mahjongg.\n"
+#~ "Un jòc de correspondéncias amb des teulas Mahjongg.\n"
 #~ "\n"
-#~ "Mahjongg fa partida des jòcs GNOME."
+#~ "Mahjongg fa partida dels jòcs GNOME."
 
 #~ msgid "Mahjongg - %s"
 #~ msgstr "Mahjongg - %s"
@@ -2136,28 +2132,28 @@ msgstr "Data"
 
 #~ msgid "Test your logic skills in this number grid puzzle"
 #~ msgstr ""
-#~ "Tester vos aptitudes en logique amb ce copacap de nombres en grasilha"
+#~ "Testar vòstras aptituds en logica amb aqueste copacap de nombres en grasilha"
 
 #~ msgid "Print Sudokus"
-#~ msgstr "Imprimir les Sudokus"
+#~ msgstr "Imprimir los Sudokus"
 
 #~ msgid "Print Games"
-#~ msgstr "Imprimir des grasilhas"
+#~ msgstr "Imprimir de grasilhas"
 
 #~ msgid "_Number of sudoku to print: "
-#~ msgstr "_Nombre de sudokus a imprimir : "
+#~ msgstr "_Nombre de sudokus d'imprimir : "
 
 #~ msgid "_Sudokus per page: "
 #~ msgstr "_Sudokus per page : "
 
 #~ msgid "Levels of difficulty to print"
-#~ msgstr "Nivèls de dificultat a imprimir"
+#~ msgstr "Nivèls de dificultat d'imprimir"
 
 #~ msgid "_Easy"
 #~ msgstr "_Aisit"
 
 #~ msgid "_Hard"
-#~ msgstr "_Dificil"
+#~ msgstr "_Dificile"
 
 #~ msgid "_Very Hard"
 #~ msgstr "_Fòrt dificile"
@@ -2166,14 +2162,15 @@ msgstr "Data"
 #~ msgstr "Detalhs"
 
 #~ msgid "_Mark games as played once you've printed them."
-#~ msgstr "_Marquer les grasilhas coma resolgudas aprèp impression."
+#~ msgstr "_Marcar las grasilhas coma resolgudas aprèp impression."
 
 #~ msgid "_Include games you've already played in list of games to print"
 #~ msgstr ""
-#~ "_Inclure des grasilhas ja resolgudas dins la lista des grasilhas a imprimir"
+#~ "_Inclure des grasilhas ja resolgudas dins la lista de las grasilhas a "
+#~ "imprimir"
 
 #~ msgid "_Saved Games"
-#~ msgstr "Partidas enregi_strées"
+#~ msgstr "Partidas enregi_stradas"
 
 #~ msgid "Add a new tracker"
 #~ msgstr "Apond un novèl marcador"
@@ -2182,13 +2179,13 @@ msgstr "Data"
 #~ msgstr "Suprimís lo marcador seleccionat"
 
 #~ msgid "Make the tracked changes permanent"
-#~ msgstr "Rend permanentes les modificacions marquées"
+#~ msgstr "Rend permanentas las modificacions marcadas"
 
 #~ msgid "H_ide"
 #~ msgstr "_Amagar"
 
 #~ msgid "Hide the tracked values"
-#~ msgstr "Amaga les valors marquées"
+#~ msgstr "Amaga las valors marcadas"
 
 #~ msgid "GNOME Sudoku"
 #~ msgstr "GNOME Sudoku"
@@ -2199,10 +2196,10 @@ msgstr "Data"
 #~ "\n"
 #~ "GNOME Sudoku is a part of GNOME Games."
 #~ msgstr ""
-#~ "GNOME Sudoku es un jòc de Sudoku doté d'un générateur de grasilhas. Sudoku "
-#~ "est un jòc de logique japonais.\n"
+#~ "GNOME Sudoku es un jòc de Sudoku doté d'un générateur de grasilhas. "
+#~ "Sudoku es un jòc de logique japonais.\n"
 #~ "\n"
-#~ "GNOME Sudoku fa partida des jòcs GNOME."
+#~ "GNOME Sudoku fa partida dels jòcs GNOME."
 
 #~ msgid "Easy"
 #~ msgstr "Aisit"
@@ -2214,7 +2211,7 @@ msgstr "Data"
 #~ msgstr "Dificil"
 
 #~ msgid "Very hard"
-#~ msgstr "Fòrt dificile"
+#~ msgstr "Fòrt dificil"
 
 #~ msgid "Last played %(n)s second ago"
 #~ msgid_plural "Last played %(n)s seconds ago"
@@ -2223,8 +2220,8 @@ msgstr "Data"
 
 #~ msgid "Last played %(n)s minute ago"
 #~ msgid_plural "Last played %(n)s minutes ago"
-#~ msgstr[0] "Darrièra partida jogada i a %(n)s minute"
-#~ msgstr[1] "Darrièra partida jogada i a %(n)s minutes"
+#~ msgstr[0] "Darrièra partida jogada i a %(n)s minuta"
+#~ msgstr[1] "Darrièra partida jogada i a %(n)s minutas"
 
 #~ msgid "Last played at %I:%M %p"
 #~ msgstr "Darrièra partida jogada a %H:%M"
@@ -2239,16 +2236,16 @@ msgstr "Data"
 #~ msgstr "Darrièra partida jogada lo %e %B %Y"
 
 #~ msgid "Easy puzzle"
-#~ msgstr "Grasilha facile"
+#~ msgstr "Grasilha facila"
 
 #~ msgid "Medium puzzle"
 #~ msgstr "Grasilha mejana"
 
 #~ msgid "Hard puzzle"
-#~ msgstr "Grasilha dificil"
+#~ msgstr "Grasilha dificila"
 
 #~ msgid "Very hard puzzle"
-#~ msgstr "Grasilha très dificil"
+#~ msgstr "Grasilha fòrça dificila"
 
 #~ msgid "Played for %d hour"
 #~ msgid_plural "Played for %d hours"
@@ -2257,8 +2254,8 @@ msgstr "Data"
 
 #~ msgid "Played for %d minute"
 #~ msgid_plural "Played for %d minutes"
-#~ msgstr[0] "Jogada pendent %d minute"
-#~ msgstr[1] "Jogada pendent %d minutes"
+#~ msgstr[0] "Jogada pendent %d minuta"
+#~ msgstr[1] "Jogada pendent %d minutas"
 
 #~ msgid "Played for %d second"
 #~ msgid_plural "Played for %d seconds"
@@ -2266,7 +2263,7 @@ msgstr "Data"
 #~ msgstr[1] "Jogada pendent %d segondas"
 
 #~ msgid "Do you really want to do this?"
-#~ msgstr "Volètz vertadièrament faire cela ?"
+#~ msgstr "Volètz vertadièrament far aquò ?"
 
 #~ msgid "Don't ask me this again."
 #~ msgstr "Pausar pas mai la question."
@@ -2284,7 +2281,7 @@ msgstr "Data"
 #~ msgstr "_Restablir"
 
 #~ msgid "Redo last action"
-#~ msgstr "Rétablit la darrièra accion"
+#~ msgstr "Restablís la darrièra accion"
 
 #~ msgid "Puzzle _Statistics..."
 #~ msgstr "_Estatisticas de la grasilha..."
@@ -2293,7 +2290,7 @@ msgstr "Data"
 #~ msgstr "_Imprimir..."
 
 #~ msgid "Print _Multiple Sudokus..."
-#~ msgstr "Imprimir _plusieurs sudokus..."
+#~ msgstr "Imprimir _mantun sudoku..."
 
 #~ msgid "_Tools"
 #~ msgstr "_Aisinas"
@@ -2305,7 +2302,7 @@ msgstr "Data"
 #~ msgstr "Escafar les no_tes del haut"
 
 #~ msgid "Clear _Bottom Notes"
-#~ msgstr "Escafar les notes del _bas"
+#~ msgstr "Escafar las nòtas del _bas"
 
 #~ msgid "Show _Possible Numbers"
 #~ msgstr "Afichar los nombres _possibles"
@@ -2314,7 +2311,7 @@ msgstr "Data"
 #~ msgstr "Montre totjorn los nombres possibles dins una case"
 
 #~ msgid "Warn About _Unfillable Squares"
-#~ msgstr "Signaler les cases _non remplissables"
+#~ msgstr "Senhalar les cases _non remplissables"
 
 #~ msgid "Warn about squares made unfillable by a move"
 #~ msgstr "Signale les cases qu'un còp rend non remplissables"
@@ -2458,7 +2455,7 @@ msgstr "Data"
 #~ msgstr "Minas"
 
 #~ msgid "Clear hidden mines from a minefield"
-#~ msgstr "Nettoyer un champ de mines de ses mines cachées"
+#~ msgstr "Nettoyer un camp de minas de ses mines cachées"
 
 #~ msgid "minesweeper;"
 #~ msgstr "desminaire;"
@@ -2475,8 +2472,8 @@ msgstr "Data"
 
 #~ msgid "Set to true to enable warning icons when too many flags are placed."
 #~ msgstr ""
-#~ "Definir a verai per activar l'icòna d'avertiment quand tròp de "
-#~ "bandièras son placés."
+#~ "Definir a verai per activar l'icòna d'avertiment quand tròp de bandièras "
+#~ "son placés."
 
 #~ msgid "Enable automatic placing of flags"
 #~ msgstr "Activar lo placement automatique des bandièras"
@@ -2495,7 +2492,7 @@ msgstr "Data"
 #~ msgstr "Nombre de linhas dins una partida personalizada"
 
 #~ msgid "The number of mines in a custom game"
-#~ msgstr "Lo nombre de mines per una partida personalizada"
+#~ msgstr "Lo nombre de minas per una partida personalizada"
 
 #~ msgid "Board size"
 #~ msgstr "Talha del platèu"
@@ -2520,7 +2517,7 @@ msgstr "Data"
 #~ msgstr "_Verticala :"
 
 #~ msgid "_Number of mines:"
-#~ msgstr "_Nombre de mines :"
+#~ msgstr "_Nombre de minas :"
 
 #~ msgid "_Play Game"
 #~ msgstr "_Aviar lo jòc"
@@ -2531,7 +2528,7 @@ msgstr "Data"
 #~ msgstr[1] "<b>%d</b> mines"
 
 #~ msgid "Flags: %u/%u"
-#~ msgstr "Drapeaux : %u/%u"
+#~ msgstr "Bandièras : %u/%u"
 
 #~ msgid "The Mines Have Been Cleared!"
 #~ msgstr "Les mines ont été dégagées !"
@@ -2547,7 +2544,7 @@ msgstr "Data"
 
 #~ msgid "If you start a new game, your current progress will be lost."
 #~ msgstr ""
-#~ "Se començatz una novèla partida, votre avancée actuala sera perduda."
+#~ "Se començatz una novèla partida, votre avancée actuala serà perduda."
 
 #~ msgid "Keep Current Game"
 #~ msgstr "Contunhar la partida en cors"
@@ -2559,7 +2556,7 @@ msgstr "Data"
 #~ msgstr "Redimensionnement e presa en carga de SVG :"
 
 #~ msgid "Faces:"
-#~ msgstr "Figures :"
+#~ msgstr "Figuras :"
 
 #~ msgid "Graphics:"
 #~ msgstr "Grafismes :"
@@ -2570,8 +2567,8 @@ msgstr "Data"
 #~ "\n"
 #~ "Mines is a part of GNOME Games."
 #~ msgstr ""
-#~ "Lo jòc de logique populaire Desminaire. Trobatz les mines dins un damier en "
-#~ "utilisant les indications fournies per les cases qu'avètz ja "
+#~ "Lo jòc de logique populaire Desminaire. Trobatz les mines dins un damier "
+#~ "en utilisant les indications provesidas per les cases qu'avètz ja "
 #~ "décdobèrtas.\n"
 #~ "\n"
 #~ "Mines fa partida des jòcs GNOME."
@@ -2580,7 +2577,7 @@ msgstr "Data"
 #~ msgstr "Preferéncias de GNOME Mines"
 
 #~ msgid "_Use \"I'm not sure\" flags"
-#~ msgstr "_Utilizar la bandièra « Je ne suis pas sûr »"
+#~ msgstr "_Utilizar la bandièra « Soi pas segur »"
 
 #~ msgid "_Warn if too many flags have been placed"
 #~ msgstr "_Avertir quand tròp de bandièras ont été placés"
@@ -2589,7 +2586,7 @@ msgstr "Data"
 #~ msgstr "Tetravex"
 
 #~ msgid "Complete the puzzle by matching numbered tiles"
-#~ msgstr "Compléter lo puzzle en faisant correspondre les pèças numerotadas"
+#~ msgstr "Completar lo puzzle en faisant correspondre les pèças numerotadas"
 
 #~ msgid "_Solve"
 #~ msgstr "Ré_soudre"
@@ -2601,7 +2598,7 @@ msgstr "Data"
 #~ msgstr "_Esquèrra"
 
 #~ msgid "_Right"
-#~ msgstr "_Drecha"
+#~ msgstr "_Dreita"
 
 #~ msgid "_Down"
 #~ msgstr "_Bas"
@@ -2630,7 +2627,7 @@ msgstr "Data"
 #~ msgid ""
 #~ "The value of this key is used to decide the size of the playing grid."
 #~ msgstr ""
-#~ "La valor de aquesta clau es utilizada per decidir de la talha de la "
+#~ "La valor d'aquesta clau es utilizada per decidir de la talha de la "
 #~ "grasilha de jòc."
 
 #~ msgid "2×2"
@@ -2660,8 +2657,8 @@ msgstr "Data"
 #~ "\n"
 #~ "Tetravex is a part of GNOME Games."
 #~ msgstr ""
-#~ "GNOME Tetravex es un simple puzzle ont les pèças devon èsser "
-#~ "posicionadas de manière a ce que les mêmes chifras se tòcan.\n"
+#~ "GNOME Tetravex es un simple puzzle ont les pèças devon èsser posicionadas "
+#~ "de manière a ce que les mêmes chifras se tòcan.\n"
 #~ "\n"
 #~ "Tetravex fa partida des jòcs GNOME."
 
@@ -2678,7 +2675,7 @@ msgstr "Data"
 #~ msgstr "Lo nombre de puzzles ja jogats."
 
 #~ msgid "Only 18 steps"
-#~ msgstr "Seulement 18 coups"
+#~ msgstr "Solament 18 coups"
 
 #~ msgid "Daisy"
 #~ msgstr "Daisy"
@@ -2735,7 +2732,7 @@ msgstr "Data"
 #~ msgstr "Pennon"
 
 #~ msgid "Ithaca"
-#~ msgstr "Ithaque"
+#~ msgstr "Itada"
 
 #~ msgid "Pelopones"
 #~ msgstr "Peloponnèse"
@@ -2762,7 +2759,7 @@ msgstr "Data"
 #~ msgstr "Rayon de solelh"
 
 #~ msgid "Only 18 Steps"
-#~ msgstr "Seulement 18 coups"
+#~ msgstr "Solament 18 coups"
 
 #~ msgid "HuaRong Trail"
 #~ msgstr "Course de Huarong"
@@ -2771,7 +2768,7 @@ msgstr "Data"
 #~ msgstr "Pack Défi"
 
 #~ msgid "Skill Pack"
-#~ msgstr "Pack Compétence"
+#~ msgstr "Pack Competéncia"
 
 #~ msgid "_Restart Puzzle"
 #~ msgstr "_Recomençar la grasilha"
@@ -2805,7 +2802,7 @@ msgstr "Data"
 #~ "\n"
 #~ "Please check that Klotski is installed correctly."
 #~ msgstr ""
-#~ "L'afichatge del tèma de aqueste jòc a fracassat.\n"
+#~ "L'afichatge del tèma d'aqueste jòc a fracassat.\n"
 #~ "\n"
 #~ "Verificatz que Klotski es corrèctament installat."
 
@@ -2849,7 +2846,7 @@ msgstr "Data"
 #~ "so the player can follow what it is doing."
 #~ msgstr ""
 #~ "Causir se un relambi deu èsser inséré entre les lancés de dé de "
-#~ "l'ordenador, per fin que lo jogaire puisse seguir ce qu'il fait, o pas."
+#~ "l'ordenador, per fin que lo jogaire pòsca seguir ce qu'il fait, o pas."
 
 #~ msgid "Display the computer's thoughts"
 #~ msgstr "Afichar les réflexions de l'ordenador"
@@ -2858,7 +2855,7 @@ msgstr "Data"
 #~ "If set to true, a dump of the AI's working will be done to standard "
 #~ "output."
 #~ msgstr ""
-#~ "Se definit a vrai, una sortida del trabalh de l'IA sera affichée sus la "
+#~ "Se definit a vrai, una sortida del trabalh de l'IA serà afichada sus la "
 #~ "sortida standard."
 
 #~ msgid "Already used! Where do you want to put that?"
@@ -2871,7 +2868,7 @@ msgstr "Data"
 #~ msgstr "Grasilha utilizada"
 
 #~ msgid "Delay computer moves"
-#~ msgstr "Retarder les movements de l'ordenador"
+#~ msgstr "Retarder los movements de l'ordenador"
 
 #~ msgid "Display computer thoughts"
 #~ msgstr "Afichar la réflexion de l'ordenador"
@@ -2895,7 +2892,7 @@ msgstr "Data"
 #~ msgstr "Nombre de partidas a jogar unicament per l'ordenador"
 
 #~ msgid "Number of trials for each roll for the computer"
-#~ msgstr "Nombre de tentatives per cada lancer de l'ordenador"
+#~ msgstr "Nombre de temptativas per cada lancer de l'ordenador"
 
 #~ msgctxt "game type"
 #~ msgid "Regular"
@@ -2938,8 +2935,7 @@ msgstr "Data"
 #~ msgstr "Lancer"
 
 #~ msgid "You are only allowed three rolls. Choose a score slot."
-#~ msgstr ""
-#~ "Avètz pas drech qu'à tres jets de dés. Causissètz una combinason."
+#~ msgstr "Avètz pas dreit qu'à tres jets de dés. Causissètz una combinason."
 
 #~ msgid "GNOME version (1998):"
 #~ msgstr "Version GNOME (1998) :"
@@ -2948,14 +2944,14 @@ msgstr "Data"
 #~ msgstr "Version de la console (1992) :"
 
 #~ msgid "Colors game and multi-level AI (2006):"
-#~ msgstr "Jòc en colors e intelligence artificielle multi-nivèls (2006) :"
+#~ msgstr "Jòc en colors e intelligéncia artificiala multi-nivèls (2006) :"
 
 #~ msgid ""
 #~ "A variation on poker with dice and less money.\n"
 #~ "\n"
 #~ "Tali is a part of GNOME Games."
 #~ msgstr ""
-#~ "Un genre de poker amb des dés e moins d'argent.\n"
+#~ "Un genre de poker amb des dés e mens d'argent.\n"
 #~ "\n"
 #~ "Tali fa partida des jòcs GNOME."
 
@@ -3021,7 +3017,7 @@ msgstr "Data"
 #~ msgstr "Pichona suite [30]"
 
 #~ msgid "Large Straight [40]"
-#~ msgstr "Grande suite [40]"
+#~ msgstr "Granda suite [40]"
 
 #~ msgid "5 of a Kind [50]"
 #~ msgstr "5 identics [50]"
@@ -3042,13 +3038,13 @@ msgstr "Data"
 #~ msgstr "Bonus se > 62"
 
 #~ msgid "2 pair Same Color [total]"
-#~ msgstr "2 paires de la même color [total]"
+#~ msgstr "2 paires de la meteissa color [total]"
 
 #~ msgid "Full House [15 + total]"
 #~ msgstr "Man plena [15 + total]"
 
 #~ msgid "Full House Same Color [20 + total]"
-#~ msgstr "Man plena de la même color [20 + total]"
+#~ msgstr "Man plena de la meteissa color [20 + total]"
 
 #~ msgid "Flush (all same color) [35]"
 #~ msgstr "Color [35]"
@@ -3094,7 +3090,7 @@ msgstr "Data"
 #~ "\n"
 #~ "Iagno is a part of GNOME Games."
 #~ msgstr ""
-#~ "Un jòc de retournement de pions dérivé de Reversi.\n"
+#~ "Un jòc de retournement de pions derivat de Reversi.\n"
 #~ "\n"
 #~ "Iagno fa partida des jòcs GNOME."
 
@@ -3123,7 +3119,7 @@ msgstr "Data"
 #~ msgstr "A_fichar la grasilha"
 
 #~ msgid "_Flip final results"
-#~ msgstr "Re_tourner lo résultat final"
+#~ msgstr "Re_tourner lo resultat final"
 
 #~ msgid "_Tile set:"
 #~ msgstr "Je_u de pèças :"
@@ -3168,7 +3164,7 @@ msgstr "Data"
 #~ msgstr "Tèma d'utilizar"
 
 #~ msgid "The title of the tile theme to use."
-#~ msgstr "Lo títol del tèma d'objèctes a utilizar."
+#~ msgstr "Lo títol del tèma d'objèctes d'utilizar."
 
 #~ msgid "The size of the game board."
 #~ msgstr "La talha del platèu de jòc."
@@ -3177,13 +3173,13 @@ msgstr "Data"
 #~ msgstr "Nombre de colors del platèu"
 
 #~ msgid "The number of colors of tiles to use in the game."
-#~ msgstr "Lo nombre de colors d'objèctes a utilizar dins lo jòc."
+#~ msgstr "Lo nombre de colors d'objèctes d'utilizar dins lo jòc."
 
 #~ msgid "Zealous animation"
 #~ msgstr "Animation rapide"
 
 #~ msgid "Use more flashy, but slower, animations."
-#~ msgstr "Utilizar des animations plus riches, mais plus lentes."
+#~ msgstr "Utilizar des animations plus riches, mas plus lentes."
 
 #~ msgid "Swell Foop"
 #~ msgstr "Swell Foop"
@@ -3203,7 +3199,7 @@ msgstr "Data"
 #~ msgid "Clear the screen by removing groups of colored and shaped tiles"
 #~ msgstr ""
 #~ "Vider l'ecran en supprimant des groupes d'objèctes colorées en forme de "
-#~ "tuiles"
+#~ "teulas"
 
 #~ msgid "%u point"
 #~ msgid_plural "%u points"
@@ -3218,7 +3214,7 @@ msgstr "Data"
 #~ msgstr "Normal"
 
 #~ msgid "Large"
-#~ msgstr "Grande"
+#~ msgstr "Granda"
 
 #~ msgid "Score: %4u "
 #~ msgstr "Marca : %4u "
@@ -3262,7 +3258,7 @@ msgstr "Data"
 #~ msgstr "Volètz anullar la partida en cors ?"
 
 #~ msgid "Flags"
-#~ msgstr "Drapeaux"
+#~ msgstr "Bandièras"
 
 #~ msgid "Solve the game"
 #~ msgstr "Resolucion del puzzle"
@@ -3277,7 +3273,7 @@ msgstr "Data"
 #~ msgstr "Blanc"
 
 #~ msgid "Tiles"
-#~ msgstr "Tuiles"
+#~ msgstr "Teulas"
 
 #~ msgid "Maps"
 #~ msgstr "Disposicions"
@@ -3286,7 +3282,7 @@ msgstr "Data"
 #~ msgstr "_Seleccionar la disposicion :"
 
 #~ msgid "Redo the last move"
-#~ msgstr "Rétablit lo darrièr movement"
+#~ msgstr "Restablís lo darrièr movement"
 
 #~ msgid "Block Style"
 #~ msgstr "Estil de blocs"
