@@ -230,7 +230,7 @@ public class Quadrapassel : Gtk.Application
         settings.set_boolean ("window-is-maximized", is_maximized);
 
         /* Record the score if the game isn't over. */
-        if (game != null && game.score > 0)
+        if (game != null && !game.game_over && game.score > 0)
         {
             var date = new DateTime.now_local ();
             var entry = new HistoryEntry (date, game.score);
