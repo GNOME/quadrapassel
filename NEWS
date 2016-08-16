@@ -1,3 +1,10 @@
+quadrapassel 3.21.90
+====================
+
+* Simplify style-checker enabling code(Sahil Sareen)
+* Fix style-checker with new libgnome-games-support(Sahil Sareen)
+* Remove the ugly code for rtl icons(Yosef Or Boczko)
+
 quadrapassel 3.21.2
 ====================
 
