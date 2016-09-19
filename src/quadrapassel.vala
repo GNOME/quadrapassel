@@ -564,7 +564,8 @@ public class Quadrapassel : Gtk.Application
 
         if (keyval == upper_key (settings.get_int ("key-pause")))
         {
-            game.paused = !game.paused;
+            if (!game.game_over)
+                game.paused = !game.paused;
             return true;
         }
 
