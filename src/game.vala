@@ -261,7 +261,7 @@ public class Game : Object
         set
         {
             _paused = value;
-            if (has_started)
+            if (has_started && !game_over)
                 setup_drop_timer ();
             pause_changed ();
         }
