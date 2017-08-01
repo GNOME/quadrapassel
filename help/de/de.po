@@ -1,18 +1,19 @@
 # German translation of the Quadrapassel manual.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2010, 2012, 2013.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2010, 2012-2013, 2017.
+# Christian Kirbach <christian.kirbach@gmail.com>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel manual\n"
-"POT-Creation-Date: 2015-11-03 14:09+0000\n"
-"PO-Revision-Date: 2015-11-04 11:48+0100\n"
-"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
+"POT-Creation-Date: 2017-07-31 12:07+0000\n"
+"PO-Revision-Date: 2017-08-01 22:47+0200\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 2.0.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -36,15 +37,14 @@ msgstr "2012"
 
 #. (itstool) path: credit/name
 #: C/bug-filing.page:15 C/develop.page:16 C/documentation.page:14
-#: C/get-involved.page:8 C/index.page:11 C/playgame.page:8
-#: C/preferences.page:8 C/score.page:8 C/translate.page:14
+#: C/get-involved.page:8 C/index.page:11 C/playgame.page:8 C/preferences.page:8
+#: C/score.page:8 C/translate.page:14
 msgid "Elena Petrevska"
 msgstr "Elena Petrevska"
 
 #. (itstool) path: license/p
 #: C/bug-filing.page:19 C/develop.page:20 C/documentation.page:18
-#: C/get-involved.page:13 C/index.page:16 C/preferences.page:17
-#: C/score.page:17
+#: C/get-involved.page:13 C/index.page:16 C/preferences.page:17 C/score.page:17
 msgid "Creative Commons Share Alike 3.0"
 msgstr "Creative Commons Share Alike 3.0"
 
@@ -113,12 +113,12 @@ msgstr ""
 msgid ""
 "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
 "<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Commit</gui>."
+"click <gui>Submit Bug</gui>."
 msgstr ""
-"Wenn Sie um eine Erweiterung bitten, so wählen Sie <gui>enhancement</gui> "
-"(Erweiterung) im Menü <gui>Severity</gui> (Schweregrad). Füllen Sie die "
-"Abschnitte summary (Zusammenfassung) und description (Beschreibung) aus und "
-"klicken Sie auf <gui>Commit</gui>."
+"Falls Sie eine Anfrage nach einem neuen Funktionsmerkmal stellen, wählen Sie "
+"<gui>enhancement</gui> im Menü <gui>Severity</gui>. Füllen Sie die Felder "
+"»Summary« (Zusammenfassung) und »Description« (Beschreibung) aus und klicken "
+"Sie auf <gui>Submit Bug</gui>."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:47
@@ -755,83 +755,3 @@ msgstr ""
 "Alternativ können Sie das Internationalisierungsteam über dessen <link href="
 "\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">Mailingliste</link> "
 "kontaktieren."
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/quadrapassel22.png' "
-#~ "md5='4d2440a988c86ad179d0f8148263d8b9'"
-#~ msgstr "original"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/quadrapassel.png' "
-#~ "md5='95b96f006d5876090ff7a2305652658c'"
-#~ msgstr "original"
-
-#~ msgctxt "_"
-#~ msgid "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
-#~ msgstr "original"
-
-#~ msgctxt "_"
-#~ msgid "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
-#~ msgstr "original"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
-#~ msgstr "original"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
-#~ msgstr "original"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
-#~ msgstr "original"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
-#~ msgstr "original"
-
-#~ msgctxt "_"
-#~ msgid "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
-#~ msgstr "original"
-
-#~ msgctxt "_"
-#~ msgid "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
-#~ msgstr "original"
-
-#~ msgid ""
-#~ "<media type=\"image\" src=\"media/quadrapassel.png\">Quadrapassel logo</"
-#~ "media>Quadrapassel"
-#~ msgstr ""
-#~ "<media type=\"image\" src=\"figures/quadrapassel.png\">Quadrapassel-Logo</"
-#~ "media>Quadrapassel"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/go-previous.png' "
-#~ "md5='e9ce3da4ee6497ce2f38178c3c929872'"
-#~ msgstr "original"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
-#~ msgstr "original"
-
-#~ msgid ""
-#~ "To file your bug, choose the component <gui>quadrapassel</gui> in the "
-#~ "<gui>Component</gui> menu."
-#~ msgstr ""
-#~ "Um einen Fehler zu melden, wählen Sie <gui>quadrapassel</gui> im "
-#~ "<gui>Component</gui>-Menü."
-
-#~ msgid ""
-#~ "<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous."
-#~ "png\"/>Get Involved</link>"
-#~ msgstr ""
-#~ "<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous."
-#~ "png\"/>Mithelfen</link>"
