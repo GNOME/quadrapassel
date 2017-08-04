@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
-"POT-Creation-Date: 2015-03-22 11:44+0000\n"
+"POT-Creation-Date: 2017-07-31 12:07+0000\n"
 "PO-Revision-Date: 2015-03-22 23:14+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -41,15 +41,14 @@ msgstr "2012"
 
 #. (itstool) path: credit/name
 #: C/bug-filing.page:15 C/develop.page:16 C/documentation.page:14
-#: C/get-involved.page:8 C/index.page:11 C/playgame.page:8
-#: C/preferences.page:8 C/score.page:8 C/translate.page:14
+#: C/get-involved.page:8 C/index.page:11 C/playgame.page:8 C/preferences.page:8
+#: C/score.page:8 C/translate.page:14
 msgid "Elena Petrevska"
 msgstr "Elena Petrevska"
 
 #. (itstool) path: license/p
 #: C/bug-filing.page:19 C/develop.page:20 C/documentation.page:18
-#: C/get-involved.page:13 C/index.page:16 C/preferences.page:17
-#: C/score.page:17
+#: C/get-involved.page:13 C/index.page:16 C/preferences.page:17 C/score.page:17
 msgid "Creative Commons Share Alike 3.0"
 msgstr "Creative Commons Share Alike 3.0"
 
@@ -117,11 +116,11 @@ msgstr ""
 msgid ""
 "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
 "<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Commit</gui>."
+"click <gui>Submit Bug</gui>."
 msgstr ""
 "V případě, že žádáte o novou funkčnost, zvolte v nabídce <gui>Severity</gui> "
 "položku <gui>enhancement</gui>. Vyplňte pole Summary a Description a "
-"klikněte na <gui>Commit</gui>."
+"klikněte na <gui>Submit Bug</gui>."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:47
