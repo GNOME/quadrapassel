@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the quadrapassel help.
 #
 # László Ádám Kohajda <kla.kohi at gmail dot com>, 2012.
-# Gabor Kelemen <kelemeng at gnome dot hu>, 2012, 2013, 2015.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2012, 2013, 2015, 2017.
 # Balázs Úr <urbalazs at gmail dot com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
-"POT-Creation-Date: 2015-03-20 23:48+0000\n"
-"PO-Revision-Date: 2015-03-21 01:18+0100\n"
+"POT-Creation-Date: 2017-07-31 12:07+0000\n"
+"PO-Revision-Date: 2017-08-18 10:38+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng at ubuntu dot com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
@@ -39,15 +39,14 @@ msgstr "2012"
 
 #. (itstool) path: credit/name
 #: C/bug-filing.page:15 C/develop.page:16 C/documentation.page:14
-#: C/get-involved.page:8 C/index.page:11 C/playgame.page:8
-#: C/preferences.page:8 C/score.page:8 C/translate.page:14
+#: C/get-involved.page:8 C/index.page:11 C/playgame.page:8 C/preferences.page:8
+#: C/score.page:8 C/translate.page:14
 msgid "Elena Petrevska"
 msgstr "Elena Petrevska"
 
 #. (itstool) path: license/p
 #: C/bug-filing.page:19 C/develop.page:20 C/documentation.page:18
-#: C/get-involved.page:13 C/index.page:16 C/preferences.page:17
-#: C/score.page:17
+#: C/get-involved.page:13 C/index.page:16 C/preferences.page:17 C/score.page:17
 msgid "Creative Commons Share Alike 3.0"
 msgstr "Creative Commons Share Alike 3.0"
 
@@ -114,14 +113,18 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:43
+#| msgid ""
+#| "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
+#| "<gui>Severity</gui> menu. Fill in the Summary and Description sections "
+#| "and click <gui>Commit</gui>."
 msgid ""
 "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
 "<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Commit</gui>."
+"click <gui>Submit Bug</gui>."
 msgstr ""
 "Ha új szolgáltatást kér, válassza az <gui>enhancement</gui> lehetőséget a "
 "<gui>Severity</gui> menüben. Töltse ki a Summary és Description szakaszokat, "
-"és kattintson a <gui>Commit</gui> gombra."
+"és kattintson a <gui>Submit Bug</gui> gombra."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:47
@@ -471,9 +474,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/preferences.page:27
-#| msgid ""
-#| "The three tabs availabe are <gui>Controls</gui>, <gui>Game</gui> and "
-#| "<gui>Theme</gui>."
 msgid ""
 "The three tabs available are <gui>Controls</gui>, <gui>Game</gui> and "
 "<gui>Theme</gui>."
