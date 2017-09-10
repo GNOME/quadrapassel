@@ -11,15 +11,17 @@
 # Hakan Bekdas <hakanbekdas@yahoo.com>, 2006.
 # Baris Cicek <baris@teamforce.name.tr>, 2004, 2005, 2008, 2009.
 # Muhammet Kara <muhammetk@gmail.com>, 2011, 2014, 2015.
+# Furkan Ahmet Kara <furkanahmetkara.fk@gmail.com>, 2017.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-12-31 14:26+0000\n"
-"PO-Revision-Date: 2015-12-31 21:51+0200\n"
-"Last-Translator: Muhammet Kara <muhammetk@gmail.com>\n"
+"POT-Creation-Date: 2017-09-08 12:09+0000\n"
+"PO-Revision-Date: 2017-09-10 15:04+0300\n"
+"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -54,27 +56,23 @@ msgstr "Başlangıç seviyesi."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:7
 msgid "Whether to preview the next block"
-msgstr "Sonraki bloğu göster"
+msgstr "Sonraki bloğun gösterilip gösterilmeyeceği"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:8
 msgid "Whether to preview the next block."
-msgstr "Sonraki bloğun gösterilmesi."
+msgstr "Sonraki bloğun gösterilip gösterilmeyeceği."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:9
-#, fuzzy
-#| msgid "Show _where the block will land"
 msgid "Whether to show where the moving piece will land"
-msgstr "Bloğun _nereye yerleşeceğini göster"
+msgstr "Bloğun nereye yerleşeceğinin gösterilip gösterilmeyeceği"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:10
-#, fuzzy
-#| msgid "Show _where the block will land"
 msgid "Whether to show where the moving piece will land."
-msgstr "Bloğun _nereye yerleşeceğini göster"
+msgstr "Bloğun nereye yerleşeceğinin gösterilip gösterilmeyeceği."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:11
 msgid "Whether to give blocks random colors"
-msgstr "Bloklara rastgele renk verilecek mi"
+msgstr "Bloklara rastgele renk verilip verilmeyeceği"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:12
 msgid "Whether to give blocks random colors."
@@ -82,11 +80,11 @@ msgstr "Bloklara rastgele renk verilip verilmeyeceği."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:13
 msgid "Whether to rotate counter clock wise"
-msgstr "Saat yönü tersine döndür"
+msgstr "Saat yönünün tersine döndürülüp döndürülmeyeceği"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:14
 msgid "Whether to rotate counter clock wise."
-msgstr "Saat yönü tersine döndürme."
+msgstr "Saat yönünün tersine döndürülüp döndürülmeyeceği."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:15
 msgid "The number of rows to fill"
@@ -111,28 +109,22 @@ msgstr ""
 "(tüm sıra dolu) arasındadır."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:19
-#| msgid "Whether or not to play event sounds"
 msgid "Whether to play sounds"
 msgstr "Seslerin yürütülmesi"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:20
-#| msgid "Whether or not to play event sounds."
 msgid "Whether to play sounds."
 msgstr "Seslerin yürütülmesi."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:21
-#, fuzzy
-#| msgid "Whether to give blocks random colors"
 msgid "Whether to pick blocks that are hard to place"
-msgstr "Bloklara rastgele renk verilecek mi"
+msgstr "Yerleştirilmesi zor blokların seçilip seçilmeyeceği"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:22
-#, fuzzy
-#| msgid "Whether to give blocks random colors."
 msgid "Whether to pick blocks that are hard to place."
-msgstr "Bloklara rastgele renk verilip verilmeyeceği."
+msgstr "Yerleştirilmesi zor blokların seçilip seçilmeyeceği."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:358
 msgid "Move left"
 msgstr "Sola taşı"
 
@@ -140,7 +132,7 @@ msgstr "Sola taşı"
 msgid "Key press to move left."
 msgstr "Sola taşımak için gereken tuş."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:361
 msgid "Move right"
 msgstr "Sağa taşı"
 
@@ -148,7 +140,7 @@ msgstr "Sağa taşı"
 msgid "Key press to move right."
 msgstr "Sağa taşımak için gereken tuş."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:364
 msgid "Move down"
 msgstr "Aşağı taşı"
 
@@ -156,7 +148,7 @@ msgstr "Aşağı taşı"
 msgid "Key press to move down."
 msgstr "Aşağı taşımak için gereken tuş."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:367
 msgid "Drop"
 msgstr "Bırak"
 
@@ -164,7 +156,7 @@ msgstr "Bırak"
 msgid "Key press to drop."
 msgstr "Bırakmak için basılacak tuş."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:370
 msgid "Rotate"
 msgstr "Çevir"
 
@@ -172,7 +164,7 @@ msgstr "Çevir"
 msgid "Key press to rotate."
 msgstr "Çevirmek için gereken tuş."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:373
 msgid "Pause"
 msgstr "Dondur"
 
@@ -181,24 +173,22 @@ msgid "Key press to pause."
 msgstr "Duraklatmak için gereken tuş."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:35
-#| msgid "The width of the main window in pixels."
 msgid "Width of the window in pixels"
 msgstr "Pencerenin piksel olarak genişliği"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:36
-#| msgid "The height of the main window in pixels."
 msgid "Height of the window in pixels"
 msgstr "Pencerenin piksel olarak yüksekliği"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:37
 msgid "true if the window is maximized"
-msgstr ""
+msgstr "eğer pencere en büyük hale getirilmişse işaretle"
 
 #: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
 #: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
-#: ../src/quadrapassel.vala:750 ../src/quadrapassel.vala:790
+#: ../src/quadrapassel.vala:743 ../src/quadrapassel.vala:783
 msgid "Quadrapassel"
-msgstr ""
+msgstr "Quadrapassel"
 
 #: ../data/quadrapassel.appdata.xml.in.h:2 ../data/quadrapassel.desktop.in.h:2
 msgid "Fit falling blocks together"
@@ -212,6 +202,11 @@ msgid ""
 "disappear and you score points. The game is over when the blocks get stacked "
 "too high. As your score gets higher, you level up and the blocks fall faster."
 msgstr ""
+"Quadrapassel, klasik Rus düşen blok oyununun bir türevidir. Düşen blokları "
+"yeniden konumlandırın, döndürün ve onları birbirine uydurmaya çalışın. Tam "
+"bir yatay blok satırı oluşturduğunuzda, satır kaybolur ve puan kazanırsınız. "
+"Bloklar çok yığınlandığında oyun biter. Puanınız yükseldiğinde, seviyenizi "
+"yükseltirsiniz ve bloklar daha hızlı düşer."
 
 #: ../data/quadrapassel.appdata.xml.in.h:4
 msgid ""
@@ -220,6 +215,10 @@ msgid ""
 "of the rows. Or, instead of allowing the blocks to fall randomly, it can "
 "select blocks that will be hard for you to place."
 msgstr ""
+"Eğer bir meydan okuma arıyorsanız, Quadrapassel blokların başlangıç hızını "
+"arttırmanıza veya bazı satırlarda kısmi bloklarla oyuna başlayabilirsiniz. "
+"Ya da, blokların rastgele düşmesine izin vermek yerine, yerleştirmenizin zor "
+"olacağı blokları seçebilir."
 
 #: ../data/quadrapassel.desktop.in.h:3
 msgid "tetris;"
@@ -257,123 +256,107 @@ msgstr "H_akkında"
 msgid "_Quit"
 msgstr "_Çıkış"
 
-#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:688
+#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:681
 msgid "Start a new game"
 msgstr "Yeni bir oyun başlat"
 
-#: ../src/quadrapassel.vala:152
-#, fuzzy
-#| msgid "Next:"
+#: ../src/quadrapassel.vala:148
 msgid "Next"
-msgstr "Sonraki:"
+msgstr "Sonraki"
 
-#: ../src/quadrapassel.vala:165 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:161 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "Puan"
 
-#: ../src/quadrapassel.vala:176
-#, fuzzy
-#| msgid "Lines:"
+#: ../src/quadrapassel.vala:172
 msgid "Lines"
-msgstr "Satır:"
+msgstr "Satırlar"
 
-#: ../src/quadrapassel.vala:187
-#, fuzzy
-#| msgid "Level:"
+#: ../src/quadrapassel.vala:183
 msgid "Level"
-msgstr "Seviye:"
+msgstr "Seviye"
 
-#: ../src/quadrapassel.vala:267
+#: ../src/quadrapassel.vala:262
 msgid "Preferences"
 msgstr "Tercihler"
 
-#: ../src/quadrapassel.vala:285
+#: ../src/quadrapassel.vala:280
 msgid "Game"
 msgstr "Oyun"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:289
+#: ../src/quadrapassel.vala:284
 msgid "_Number of pre-filled rows:"
 msgstr "Önceden _doldurulmuş sıra sayısı:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:304
+#: ../src/quadrapassel.vala:299
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "Önceden doldurulmuş _blok yoğunluğu:"
 
 #. starting level
-#: ../src/quadrapassel.vala:318
+#: ../src/quadrapassel.vala:313
 msgid "_Starting level:"
 msgstr "_Başlangıç seviyesi:"
 
-#: ../src/quadrapassel.vala:331
+#: ../src/quadrapassel.vala:326
 msgid "_Enable sounds"
-msgstr "_Sesleri etkinleştir"
+msgstr "Sesleri _etkinleştir"
+
+#: ../src/quadrapassel.vala:331
+msgid "Choose difficult _blocks"
+msgstr "Zor blokları _seç"
 
 #: ../src/quadrapassel.vala:336
-msgid "Choose difficult _blocks"
-msgstr ""
-
-#: ../src/quadrapassel.vala:341
 msgid "_Preview next block"
-msgstr "_Sonraki bloğu göster"
+msgstr "Sonraki bloğu _göster"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:348
+#: ../src/quadrapassel.vala:343
 msgid "_Rotate blocks counterclockwise"
 msgstr "Blokları saat _yönünün tersine döndür"
 
-#: ../src/quadrapassel.vala:353
+#: ../src/quadrapassel.vala:348
 msgid "Show _where the block will land"
 msgstr "Bloğun _nereye yerleşeceğini göster"
 
-#: ../src/quadrapassel.vala:397
+#: ../src/quadrapassel.vala:392
 msgid "Controls"
-msgstr "Kontroller"
+msgstr "Denetimler"
 
-#: ../src/quadrapassel.vala:403
+#: ../src/quadrapassel.vala:398
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/quadrapassel.vala:415
+#: ../src/quadrapassel.vala:410
 msgid "Plain"
 msgstr "Düz"
 
-#: ../src/quadrapassel.vala:420
+#: ../src/quadrapassel.vala:415
 msgid "Tango Flat"
 msgstr "Tango Düz"
 
-#: ../src/quadrapassel.vala:425
+#: ../src/quadrapassel.vala:420
 msgid "Tango Shaded"
 msgstr "Tango Gölgeli"
 
-#: ../src/quadrapassel.vala:430
+#: ../src/quadrapassel.vala:425
 msgid "Clean"
 msgstr "Temizle"
 
-#: ../src/quadrapassel.vala:669
-#, fuzzy
-#| msgid "Pause the game"
+#: ../src/quadrapassel.vala:662
 msgid "Unpause the game"
-msgstr "Oyunu duraklat"
+msgstr "Oyunu devam ettir"
 
-#: ../src/quadrapassel.vala:674
+#: ../src/quadrapassel.vala:667
 msgid "Pause the game"
 msgstr "Oyunu duraklat"
 
-#: ../src/quadrapassel.vala:752
-#, fuzzy
-#| msgid ""
-#| "A classic game of fitting falling blocks together.\n"
-#| "\n"
-#| "Gnometris is a part of GNOME Games."
+#: ../src/quadrapassel.vala:745
 msgid "A classic game of fitting falling blocks together"
-msgstr ""
-"Klasik bir düşen blokları bir araya getirme oyunu.\n"
-"\n"
-"Gnometris GNOME Oyunları'nın bir parçasıdır."
+msgstr "Klasik bir düşen blokları bir araya getirme oyunu."
 
-#: ../src/quadrapassel.vala:757
+#: ../src/quadrapassel.vala:750
 msgid "translator-credits"
 msgstr ""
 "Barış Çiçek <baris@teamforce.name.tr> \n"
