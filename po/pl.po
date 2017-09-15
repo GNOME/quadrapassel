@@ -1,5 +1,5 @@
 # Polish translation for quadrapassel.
-# Copyright © 1998-2016 the quadrapassel authors.
+# Copyright © 1998-2017 the quadrapassel authors.
 # This file is distributed under the same license as the quadrapassel package.
 # Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1998-2002.
 # Marcin Gorycki <mgo@olicom.dk>, 1999.
@@ -12,15 +12,15 @@
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2008.
 # Joanna Mazgaj <jmazgaj@aviary.pl>, 2009-2010.
 # Wojciech Kapusta <wkapusta@aviary.pl>, 2009.
-# Piotr Drąg <piotrdrag@gmail.com>, 2010-2016.
-# Aviary.pl <community-poland@mozilla.org>, 2007-2016.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2017.
+# Aviary.pl <community-poland@mozilla.org>, 2007-2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-17 12:57+0200\n"
-"PO-Revision-Date: 2016-08-17 12:58+0200\n"
+"POT-Creation-Date: 2017-09-16 01:29+0200\n"
+"PO-Revision-Date: 2017-09-16 01:30+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -32,19 +32,19 @@ msgstr ""
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:1
 msgid "Image to use for drawing blocks"
-msgstr "Obraz użyty do rysowania bloków"
+msgstr "Obraz użyty do rysowania klocków"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:2
 msgid "Image to use for drawing blocks."
-msgstr "Obraz użyty do rysowania bloków."
+msgstr "Obraz użyty do rysowania klocków."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:3
 msgid "The theme used for rendering the blocks"
-msgstr "Motyw używany do wyświetlania bloków"
+msgstr "Motyw używany do wyświetlania klocków"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:4
 msgid "The name of the theme used for rendering the blocks and the background."
-msgstr "Nazwa motywu używanego do wyświetlania bloków i tła."
+msgstr "Nazwa motywu używanego do wyświetlania klocków i tła."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:5
 msgid "Level to start with"
@@ -56,31 +56,31 @@ msgstr "Poziom, od którego zacząć."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:7
 msgid "Whether to preview the next block"
-msgstr "Wyświetlanie podglądu kolejnego bloku"
+msgstr "Wyświetlanie podglądu następnego klocka"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:8
 msgid "Whether to preview the next block."
-msgstr "Podgląd kolejnego bloku."
+msgstr "Podgląd następnego klocka."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:9
 msgid "Whether to show where the moving piece will land"
-msgstr "Określa, czy wyświetlać miejsce lądowania bloku"
+msgstr "Określa, czy wyświetlać miejsce lądowania klocka"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:10
 msgid "Whether to show where the moving piece will land."
-msgstr "Określa, czy wyświetlać miejsca lądowania bloku."
+msgstr "Określa, czy wyświetlać miejsca lądowania klocka."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:11
 msgid "Whether to give blocks random colors"
-msgstr "Nadawanie blokom kolorów losowych"
+msgstr "Nadawanie klockom losowych kolorów"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:12
 msgid "Whether to give blocks random colors."
-msgstr "Losowe kolorowanie bloków."
+msgstr "Losowe kolorowanie klocków."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:13
 msgid "Whether to rotate counter clock wise"
-msgstr "Obracanie bloków przeciwnie do ruchu wskazówek zegara"
+msgstr "Obracanie klocków przeciwnie do ruchu wskazówek zegara"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:14
 msgid "Whether to rotate counter clock wise."
@@ -88,25 +88,25 @@ msgstr "Obrót przeciwny do wskazówek zegara."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:15
 msgid "The number of rows to fill"
-msgstr "Liczba wypełnionych wierszy"
+msgstr "Liczba wypełnionych rzędów"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:16
 msgid ""
 "The number of rows that are filled with random blocks at the start of the "
 "game."
-msgstr "Liczba wierszy wypełnionych losowo blokami na początku gry."
+msgstr "Liczba rzędów wypełnionych losowo klockami na początku gry."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:17
 msgid "The density of filled rows"
-msgstr "Gęstość wypełnionych wierszy"
+msgstr "Gęstość wypełnionych rzędów"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:18
 msgid ""
 "The density of blocks in rows filled at the start of the game. The value is "
 "between 0 (for no blocks) and 10 (for a completely filled row)."
 msgstr ""
-"Gęstość bloków w wierszu na początku gry. Wartość jest z przedziału od 0 "
-"(brak bloków) do 10 (całkowicie wypełniony wiersz)."
+"Gęstość klocków w rzędzie na początku gry. Wartość jest z przedziału od 0 "
+"(brak klocków) do 10 (całkowicie wypełniony rząd)."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:19
 msgid "Whether to play sounds"
@@ -118,11 +118,11 @@ msgstr "Określa, czy odtwarzać dźwięki."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:21
 msgid "Whether to pick blocks that are hard to place"
-msgstr "Określa, czy wybierać bloki trudne do umieszczenia"
+msgstr "Określa, czy wybierać klocki trudne do umieszczenia"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:22
 msgid "Whether to pick blocks that are hard to place."
-msgstr "Określa, czy wybierać bloki trudne do umieszczenia."
+msgstr "Określa, czy wybierać klocki trudne do umieszczenia."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:358
 msgid "Move left"
@@ -186,13 +186,13 @@ msgstr "Wartość „true” oznacza, że okno jest zmaksymalizowane"
 
 #: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
 #: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
-#: ../src/quadrapassel.vala:742 ../src/quadrapassel.vala:782
+#: ../src/quadrapassel.vala:743 ../src/quadrapassel.vala:783
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
 #: ../data/quadrapassel.appdata.xml.in.h:2 ../data/quadrapassel.desktop.in.h:2
 msgid "Fit falling blocks together"
-msgstr "Dopasowywanie spadających bloków"
+msgstr "Dopasowywanie spadających klocków"
 
 #: ../data/quadrapassel.appdata.xml.in.h:3
 msgid ""
@@ -255,7 +255,7 @@ msgstr "_O grze"
 msgid "_Quit"
 msgstr "Za_kończ"
 
-#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:680
+#: ../src/quadrapassel.vala:143 ../src/quadrapassel.vala:681
 msgid "Start a new game"
 msgstr "Rozpoczyna nową grę"
 
@@ -269,7 +269,7 @@ msgstr "Wynik"
 
 #: ../src/quadrapassel.vala:172
 msgid "Lines"
-msgstr "Linie"
+msgstr "Rzędy"
 
 #: ../src/quadrapassel.vala:183
 msgid "Level"
@@ -286,12 +286,12 @@ msgstr "Gra"
 #. pre-filled rows
 #: ../src/quadrapassel.vala:284
 msgid "_Number of pre-filled rows:"
-msgstr "_Liczba początkowo wypełnionych wierszy:"
+msgstr "_Liczba początkowo wypełnionych rzędów:"
 
 #. pre-filled rows density
 #: ../src/quadrapassel.vala:299
 msgid "_Density of blocks in a pre-filled row:"
-msgstr "_Gęstość bloków w wypełnionym początkowo wierszu:"
+msgstr "_Gęstość klocków w początkowo wypełnionym rzędzie:"
 
 #. starting level
 #: ../src/quadrapassel.vala:313
@@ -304,20 +304,20 @@ msgstr "_Dźwięki"
 
 #: ../src/quadrapassel.vala:331
 msgid "Choose difficult _blocks"
-msgstr "Wybór trudnych _bloków"
+msgstr "Wybór trudnych _klocków"
 
 #: ../src/quadrapassel.vala:336
 msgid "_Preview next block"
-msgstr "_Podgląd następnego bloku"
+msgstr "_Podgląd następnego klocka"
 
 #. rotate counter clock wise
 #: ../src/quadrapassel.vala:343
 msgid "_Rotate blocks counterclockwise"
-msgstr "_Obrót bloku w lewo"
+msgstr "_Obrót klocków w lewo"
 
 #: ../src/quadrapassel.vala:348
 msgid "Show _where the block will land"
-msgstr "Wyświetlanie miejsca lą_dowania bloku"
+msgstr "Wyświetlanie miejsca lą_dowania klocka"
 
 #: ../src/quadrapassel.vala:392
 msgid "Controls"
@@ -333,29 +333,30 @@ msgstr "Zwykły"
 
 #: ../src/quadrapassel.vala:415
 msgid "Tango Flat"
-msgstr "Tango płaskie"
+msgstr "Tango płaski"
 
 #: ../src/quadrapassel.vala:420
 msgid "Tango Shaded"
-msgstr "Tango cieniowane"
+msgstr "Tango cieniowany"
 
 #: ../src/quadrapassel.vala:425
 msgid "Clean"
-msgstr "Czysty"
+msgstr "Prosty"
 
-#: ../src/quadrapassel.vala:661
+#: ../src/quadrapassel.vala:662
 msgid "Unpause the game"
 msgstr "Wznawia grę"
 
-#: ../src/quadrapassel.vala:666
+#: ../src/quadrapassel.vala:667
 msgid "Pause the game"
 msgstr "Wstrzymuje grę"
 
-#: ../src/quadrapassel.vala:744
+#: ../src/quadrapassel.vala:745
 msgid "A classic game of fitting falling blocks together"
-msgstr "Klasyczna gra polegająca na dopasowywaniu do siebie spadających bloków"
+msgstr ""
+"Klasyczna gra polegająca na dopasowywaniu do siebie spadających klocków"
 
-#: ../src/quadrapassel.vala:749
+#: ../src/quadrapassel.vala:750
 msgid "translator-credits"
 msgstr ""
 "Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1998-2002\n"
@@ -369,8 +370,8 @@ msgstr ""
 "Tomasz Dominikowski <dominikowski@gmail.com>, 2008\n"
 "Joanna Mazgaj <jmazgaj@aviary.pl>, 2009-2010\n"
 "Wojciech Kapusta <wkapusta@aviary.pl>, 2009\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2010-2016\n"
-"Aviary.pl <community-poland@mozilla.org>, 2007-2016"
+"Piotr Drąg <piotrdrag@gmail.com>, 2010-2017\n"
+"Aviary.pl <community-poland@mozilla.org>, 2007-2017"
 
 #: ../src/score-dialog.vala:26
 msgid "_Close"
