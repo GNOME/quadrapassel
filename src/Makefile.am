@@ -27,7 +27,8 @@ quadrapassel_VALAFLAGS = \
 	--pkg clutter-gtk-1.0 \
 	--pkg cogl-1.0 \
 	--pkg libcanberra \
-	--pkg libcanberra-gtk
+	--pkg libcanberra-gtk \
+	--pkg libmanette-0.2
 
 quadrapassel_LDADD = \
 	$(QUADRAPASSEL_LIBS)
