@@ -9,7 +9,8 @@
     "--socket=wayland",
     "--device=dri", "--socket=pulseaudio",
     "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
-    "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+    "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
+    "--device=all"
   ],
   "build-options" : {
     "cflags": "-O2 -g",
@@ -24,6 +25,25 @@
     "/share/dbus-1", "/share/doc", "/share/gir-1.0"
   ],
   "modules": [
+    {
+      "name": "libevdev",
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://anongit.freedesktop.org/git/libevdev.git"
+        }
+      ]
+    },
+    {
+      "name": "libmanette",
+      "buildsystem": "meson",
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://gitlab.gnome.org/aplazas/libmanette.git"
+        }
+      ]
+    },
     {
       "name": "quadrapassel",
       "sources": [
