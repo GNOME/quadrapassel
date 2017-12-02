@@ -244,6 +244,12 @@ public class Game : Object
     /* The current level */
     public int level { get { return starting_level + n_lines_destroyed / 10; } }
 
+    /* The direction we are moving */
+    private int fast_move_direction = 0;
+
+    /* Timer to animate moving fast */
+    private uint fast_move_timeout = 0;
+
     /* true if we are in fast forward mode */
     private bool fast_forward = false;
 
@@ -344,6 +350,7 @@ public class Game : Object
         g.score = score;
         g.starting_level = starting_level;
         g.pick_difficult_blocks = pick_difficult_blocks;
+        g.fast_move_direction = fast_move_direction;
         g.fast_forward = fast_forward;
         g.has_started = has_started;
         g._paused = _paused;
@@ -363,12 +370,25 @@ public class Game : Object
 
     public bool move_left ()
     {
-        return move_shape (-1, 0, 0);
+        return move_direction (-1);
     }
 
     public bool move_right ()
     {
-        return move_shape (1, 0, 0);
+        return move_direction (1);
+    }
+
+    public bool stop_moving ()
+    {
+        if (game_over)
+            return false;
+
+        if (fast_move_timeout != 0)
+            Source.remove (fast_move_timeout);
+        fast_move_timeout = 0;
+        fast_move_direction = 0;
+
+        return true;
     }
 
     public bool rotate_left ()
@@ -405,6 +425,47 @@ public class Game : Object
     {
         if (drop_timeout != 0)
             Source.remove (drop_timeout);
+    }
+
+    private bool move_direction (int direction)
+    {
+        if (game_over)
+            return false;
+        if (fast_move_direction == direction)
+            return true;
+
+        if (fast_move_timeout != 0)
+            Source.remove (fast_move_timeout);
+        fast_move_timeout = 0;
+        fast_move_direction = direction;
+        if (!move ())
+            return false;
+
+        fast_move_timeout = Timeout.add (500, setup_fast_move_cb);
+
+        return true;
+    }
+
+    private bool setup_fast_move_cb ()
+    {
+        if (!move ())
+            return false;
+        fast_move_timeout = Timeout.add (40, move);
+
+        return false;
+    }
+
+    private bool move ()
+    {
+        if (!move_shape (fast_move_direction, 0, 0))
+        {
+            fast_move_timeout = 0;
+            fast_move_direction = 0;
+
+            return false;
+        }
+
+        return true;
     }
 
     private void setup_drop_timer ()

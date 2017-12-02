@@ -611,7 +611,13 @@ public class Quadrapassel : Gtk.Application
         if (game == null)
             return false;
 
-        if (keyval == upper_key (settings.get_int ("key-down")))
+        if (keyval == upper_key (settings.get_int ("key-left")) ||
+            keyval == upper_key (settings.get_int ("key-right")))
+        {
+            game.stop_moving ();
+            return true;
+        }
+        else if (keyval == upper_key (settings.get_int ("key-down")))
         {
             game.set_fast_forward (false);
             return true;
