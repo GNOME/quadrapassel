@@ -2,6 +2,7 @@ bin_PROGRAMS = quadrapassel
 
 quadrapassel_SOURCES = \
 	config.vapi \
+	input-event-codes.vapi \
 	quadrapassel.vala \
 	preview.vala \
 	game.vala \
