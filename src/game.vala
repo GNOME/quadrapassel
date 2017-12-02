@@ -373,12 +373,12 @@ public class Game : Object
 
     public bool rotate_left ()
     {
-        return move_shape (0, 0, -1);
+        return move_shape (0, 0, 1);
     }
 
     public bool rotate_right ()
     {
-        return move_shape (0, 0, 1);
+        return move_shape (0, 0, -1);
     }
 
     public void set_fast_forward (bool enable)
