@@ -567,7 +567,6 @@ public class Quadrapassel : Gtk.Application
     {
         manette_device.button_press_event.connect (manette_button_press_event_cb);
         manette_device.button_release_event.connect (manette_button_release_event_cb);
-        manette_device.absolute_axis_event.connect (manette_absolute_axis_event_cb);
     }
 
     private void manette_button_press_event_cb (Manette.Event event)
@@ -641,15 +640,6 @@ public class Quadrapassel : Gtk.Application
             game.set_fast_forward (false);
             return;
         }
-    }
-
-    private void manette_absolute_axis_event_cb (Manette.Event event)
-    {
-        // uint16 axis;
-        // double value;
-
-        // if (event.get_absolute (out axis, out value))
-        //     axes[axis] = (int16) (value * int16.MAX);
     }
 
     private bool key_press_event_cb (Gtk.Widget widget, Gdk.EventKey event)
