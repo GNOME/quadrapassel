@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel-help\n"
-"POT-Creation-Date: 2017-09-10 12:07+0000\n"
+"POT-Creation-Date: 2017-12-05 16:08+0000\n"
 "PO-Revision-Date: 2017-09-16 01:30+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
@@ -115,12 +115,12 @@ msgstr ""
 msgid ""
 "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
 "<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Submit Bug</gui>."
+"click <gui>Commit</gui>."
 msgstr ""
 "W przypadku prośby o nową funkcję wybierz <gui>enhancement</gui> "
 "(ulepszenie) w menu <gui>Severity</gui> (Ciężkość). Wypełnij sekcje "
 "„Summary” (Podsumowanie) i „Description” (Opis) w języku angielskim "
-"i kliknij przycisk <gui>Submit Bug</gui> (Wyślij)."
+"i kliknij przycisk <gui>Commit</gui> (Wyślij)."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:47
