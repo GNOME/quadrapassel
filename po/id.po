@@ -7,12 +7,12 @@
 # Dirgita <dirgitadevina@yahoo.co.id>, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-games gnome-3-16\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Project-Id-Version: quadrapassel master\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-11-29 02:14+0000\n"
-"PO-Revision-Date: 2015-11-29 21:04+0700\n"
-"Last-Translator: Andika Triwidada <atriwidada@gnome.org>\n"
+"POT-Creation-Date: 2017-12-05 16:29+0000\n"
+"PO-Revision-Date: 2017-12-06 17:53+0700\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Rosetta-Export-Date: 2007-04-23 05:58:10+0000\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:1
 msgid "Image to use for drawing blocks"
@@ -116,8 +116,7 @@ msgstr "Apakah mengambil blok yang sulit ditempatkan"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Apakah mengambil blok yang sulit ditempatkan."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:366
 msgid "Move left"
 msgstr "Bergerak ke kiri"
 
@@ -125,8 +124,7 @@ msgstr "Bergerak ke kiri"
 msgid "Key press to move left."
 msgstr "Tombol yang ditekan untuk bergerak ke kiri."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:369
 msgid "Move right"
 msgstr "Bergerak ke kanan"
 
@@ -134,8 +132,7 @@ msgstr "Bergerak ke kanan"
 msgid "Key press to move right."
 msgstr "Tombol yang ditekan untuk bergerak ke kanan."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:372
 msgid "Move down"
 msgstr "Bergerak ke bawah"
 
@@ -143,8 +140,7 @@ msgstr "Bergerak ke bawah"
 msgid "Key press to move down."
 msgstr "Tombol untuk bergerak ke bawah."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:375
 msgid "Drop"
 msgstr "Jatuhkan"
 
@@ -152,8 +148,7 @@ msgstr "Jatuhkan"
 msgid "Key press to drop."
 msgstr "Tombol untuk menjatuhkan."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:378
 msgid "Rotate"
 msgstr "Putar"
 
@@ -161,8 +156,7 @@ msgstr "Putar"
 msgid "Key press to rotate."
 msgstr "Tombol untuk memutar."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:381
 msgid "Pause"
 msgstr "Jeda"
 
@@ -183,8 +177,8 @@ msgid "true if the window is maximized"
 msgstr "bernilai \"true\" bila jendela dimaksimalkan"
 
 #: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
-#: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
-#: ../src/quadrapassel.vala:750 ../src/quadrapassel.vala:790
+#: ../src/quadrapassel.vala:110 ../src/quadrapassel.vala:121
+#: ../src/quadrapassel.vala:836 ../src/quadrapassel.vala:876
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -209,15 +203,15 @@ msgstr ""
 
 #: ../data/quadrapassel.appdata.xml.in.h:4
 msgid ""
-"If you're looking for a challenge, Quadrapassel allows you to increase the "
+"If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
 "of the rows. Or, instead of allowing the blocks to fall randomly, it can "
 "select blocks that will be hard for you to place."
 msgstr ""
 "Bila Anda mencari tantangan, Quadrapassel memungkinkan Anda meningkatkan "
 "kecepatan awal balok, atau memulai permainan dengan beberapa baris terisi "
-"sebagian oleh balok. Atau sebagai ganti mengijinkan balok jatuh secara acak, "
-"ini dapat memilih balok yang akan sulit Anda tempatkan."
+"sebagian oleh balok. Atau sebagai gantinya mengizinkan balok jatuh secara "
+"acak, ini dapat memilih balok yang akan sulit Anda tempatkan."
 
 #: ../data/quadrapassel.desktop.in.h:3
 msgid "tetris;"
@@ -231,138 +225,139 @@ msgstr "Jeda"
 msgid "Game Over"
 msgstr "Permainan Usai"
 
-#: ../src/quadrapassel.vala:93
+#: ../src/quadrapassel.vala:95
 msgid "_New Game"
 msgstr "Mai_nkan Permainan Baru"
 
-#: ../src/quadrapassel.vala:94
+#: ../src/quadrapassel.vala:96
 msgid "_Scores"
 msgstr "_Nilai"
 
-#: ../src/quadrapassel.vala:95
+#: ../src/quadrapassel.vala:97
 msgid "_Preferences"
 msgstr "_Preferensi"
 
-#: ../src/quadrapassel.vala:98
+#: ../src/quadrapassel.vala:100
 msgid "_Help"
 msgstr "_Bantuan"
 
-#: ../src/quadrapassel.vala:99
+#: ../src/quadrapassel.vala:101
 msgid "_About"
 msgstr "Tent_ang"
 
-#: ../src/quadrapassel.vala:100
+#: ../src/quadrapassel.vala:102
 msgid "_Quit"
 msgstr "_Keluar"
 
-#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:688
+#: ../src/quadrapassel.vala:145 ../src/quadrapassel.vala:774
 msgid "Start a new game"
 msgstr "Mulai permainan baru"
 
-#: ../src/quadrapassel.vala:152
+#: ../src/quadrapassel.vala:150
 msgid "Next"
 msgstr "Selanjutnya"
 
-#: ../src/quadrapassel.vala:165 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:163 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "Nilai"
 
-#: ../src/quadrapassel.vala:176
+#: ../src/quadrapassel.vala:174
 msgid "Lines"
 msgstr "Baris"
 
-#: ../src/quadrapassel.vala:187
+#: ../src/quadrapassel.vala:185
 msgid "Level"
 msgstr "Tingkat"
 
-#: ../src/quadrapassel.vala:267
+#: ../src/quadrapassel.vala:270
 msgid "Preferences"
 msgstr "Preferensi"
 
-#: ../src/quadrapassel.vala:285
+#: ../src/quadrapassel.vala:288
 msgid "Game"
 msgstr "Permainan"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:289
+#: ../src/quadrapassel.vala:292
 msgid "_Number of pre-filled rows:"
 msgstr "_Jumlah baris terisi pada awal:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:304
+#: ../src/quadrapassel.vala:307
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "Kepa_datan blok dalam baris yang terisi pada awal:"
 
 #. starting level
-#: ../src/quadrapassel.vala:318
+#: ../src/quadrapassel.vala:321
 msgid "_Starting level:"
 msgstr "_Tingkat awal:"
 
-#: ../src/quadrapassel.vala:331
+#: ../src/quadrapassel.vala:334
 msgid "_Enable sounds"
 msgstr "_Aktifkan suara"
 
-#: ../src/quadrapassel.vala:336
+#: ../src/quadrapassel.vala:339
 msgid "Choose difficult _blocks"
 msgstr "Pilih _blok sulit"
 
-#: ../src/quadrapassel.vala:341
+#: ../src/quadrapassel.vala:344
 msgid "_Preview next block"
 msgstr "_Pratilik blok berikutnya"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:348
+#: ../src/quadrapassel.vala:351
 msgid "_Rotate blocks counterclockwise"
 msgstr "Puta_r blok berlawanan arah jarum jam"
 
-#: ../src/quadrapassel.vala:353
+#: ../src/quadrapassel.vala:356
 msgid "Show _where the block will land"
 msgstr "Tampilkan _dimana blok akan mendarat"
 
-#: ../src/quadrapassel.vala:397
+#: ../src/quadrapassel.vala:400
 msgid "Controls"
 msgstr "Kontrol"
 
-#: ../src/quadrapassel.vala:403
+#: ../src/quadrapassel.vala:406
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/quadrapassel.vala:415
+#: ../src/quadrapassel.vala:418
 msgid "Plain"
 msgstr "Polos"
 
-#: ../src/quadrapassel.vala:420
+#: ../src/quadrapassel.vala:423
 msgid "Tango Flat"
 msgstr "Tango rata"
 
-#: ../src/quadrapassel.vala:425
+#: ../src/quadrapassel.vala:428
 msgid "Tango Shaded"
 msgstr "Tango gelap"
 
-#: ../src/quadrapassel.vala:430
+#: ../src/quadrapassel.vala:433
 msgid "Clean"
 msgstr "Kosongkan"
 
-#: ../src/quadrapassel.vala:669
+#: ../src/quadrapassel.vala:755
 msgid "Unpause the game"
 msgstr "Hentikan jeda permainan"
 
-#: ../src/quadrapassel.vala:674
+#: ../src/quadrapassel.vala:760
 msgid "Pause the game"
 msgstr "Istirahatkan permainan"
 
-#: ../src/quadrapassel.vala:752
+#: ../src/quadrapassel.vala:838
 msgid "A classic game of fitting falling blocks together"
 msgstr "Permainan klasik untuk mengepaskan balok-balok jatuh"
 
-#: ../src/quadrapassel.vala:757
+#: ../src/quadrapassel.vala:843
 msgid "translator-credits"
 msgstr ""
 "Mohammad DAMT <mdamt@bisnisweb.com>\n"
 "Ahmad Riza H Nst  <rizahnst@gnome.org>\n"
 "Andika Triwidada <andika@gmail.com>, 2010, 2012, 2013, 2014.\n"
 "Vincent Sebastian The <vincent.s.the@gmail.com>, 2011, 2012.\n"
-"Dirgita <dirgitadevina@yahoo.co.id>, 2012."
+"Dirgita <dirgitadevina@yahoo.co.id>, 2012.\n"
+"Kukuh Syafaat <syafaatkukuh@gmail.com>, 2017."
 
 #: ../src/score-dialog.vala:26
 msgid "_Close"
