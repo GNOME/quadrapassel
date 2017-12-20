@@ -16,15 +16,15 @@
 # Petr Pulc <petrpulc@gmail.com>, 2009.
 # Andre Klapper <ak-47@gmx.net>, 2009.
 # Petr Kovar <pknbe@volny.cz>, 2008, 2012.
-# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2014, 2015.
+# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2014, 2015, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-02 23:34+0000\n"
-"PO-Revision-Date: 2015-02-03 10:18+0100\n"
+"POT-Creation-Date: 2017-12-05 16:29+0000\n"
+"PO-Revision-Date: 2017-12-20 23:12+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -129,8 +129,7 @@ msgstr "Zda volit obtížné bloky"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Zda volit bloky, které půjdou obtížně umístit."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:366
 msgid "Move left"
 msgstr "Pohyb doleva"
 
@@ -138,8 +137,7 @@ msgstr "Pohyb doleva"
 msgid "Key press to move left."
 msgstr "Klávesa pro přesun doleva."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:369
 msgid "Move right"
 msgstr "Pohyb doprava"
 
@@ -147,8 +145,7 @@ msgstr "Pohyb doprava"
 msgid "Key press to move right."
 msgstr "Klávesa pro přesun doprava."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:372
 msgid "Move down"
 msgstr "Posunout dolů"
 
@@ -156,8 +153,7 @@ msgstr "Posunout dolů"
 msgid "Key press to move down."
 msgstr "Klávesa pro přesun dolů."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:375
 msgid "Drop"
 msgstr "Upustit"
 
@@ -165,8 +161,7 @@ msgstr "Upustit"
 msgid "Key press to drop."
 msgstr "Klávesa pro upuštění."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:378
 msgid "Rotate"
 msgstr "Otočit"
 
@@ -174,8 +169,7 @@ msgstr "Otočit"
 msgid "Key press to rotate."
 msgstr "Klávesa pro rotaci."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:381
 msgid "Pause"
 msgstr "Pozastavit"
 
@@ -196,8 +190,8 @@ msgid "true if the window is maximized"
 msgstr "Zapnuto, pokud je okno maximalizováno"
 
 #: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
-#: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
-#: ../src/quadrapassel.vala:750 ../src/quadrapassel.vala:790
+#: ../src/quadrapassel.vala:110 ../src/quadrapassel.vala:121
+#: ../src/quadrapassel.vala:836 ../src/quadrapassel.vala:876
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -222,7 +216,7 @@ msgstr ""
 
 #: ../data/quadrapassel.appdata.xml.in.h:4
 msgid ""
-"If you're looking for a challenge, Quadrapassel allows you to increase the "
+"If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
 "of the rows. Or, instead of allowing the blocks to fall randomly, it can "
 "select blocks that will be hard for you to place."
@@ -244,131 +238,131 @@ msgstr "Pozastaveno"
 msgid "Game Over"
 msgstr "Konec hry"
 
-#: ../src/quadrapassel.vala:93
+#: ../src/quadrapassel.vala:95
 msgid "_New Game"
 msgstr "_Nová hra"
 
-#: ../src/quadrapassel.vala:94
+#: ../src/quadrapassel.vala:96
 msgid "_Scores"
 msgstr "_Skóre"
 
-#: ../src/quadrapassel.vala:95
+#: ../src/quadrapassel.vala:97
 msgid "_Preferences"
 msgstr "_Předvolby"
 
-#: ../src/quadrapassel.vala:98
+#: ../src/quadrapassel.vala:100
 msgid "_Help"
 msgstr "_Nápověda"
 
-#: ../src/quadrapassel.vala:99
+#: ../src/quadrapassel.vala:101
 msgid "_About"
 msgstr "O _aplikaci"
 
-#: ../src/quadrapassel.vala:100
+#: ../src/quadrapassel.vala:102
 msgid "_Quit"
 msgstr "U_končit"
 
-#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:688
+#: ../src/quadrapassel.vala:145 ../src/quadrapassel.vala:774
 msgid "Start a new game"
 msgstr "Začít novou hru"
 
-#: ../src/quadrapassel.vala:152
+#: ../src/quadrapassel.vala:150
 msgid "Next"
 msgstr "Následující"
 
-#: ../src/quadrapassel.vala:165 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:163 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "Skóre"
 
-#: ../src/quadrapassel.vala:176
+#: ../src/quadrapassel.vala:174
 msgid "Lines"
 msgstr "Řad"
 
-#: ../src/quadrapassel.vala:187
+#: ../src/quadrapassel.vala:185
 msgid "Level"
 msgstr "Úroveň"
 
-#: ../src/quadrapassel.vala:267
+#: ../src/quadrapassel.vala:270
 msgid "Preferences"
 msgstr "Předvolby"
 
-#: ../src/quadrapassel.vala:285
+#: ../src/quadrapassel.vala:288
 msgid "Game"
 msgstr "Hra"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:289
+#: ../src/quadrapassel.vala:292
 msgid "_Number of pre-filled rows:"
 msgstr "_Počet předvyplněných řad:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:304
+#: ../src/quadrapassel.vala:307
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Hustota kostek v předvyplněné řadě:"
 
 #. starting level
-#: ../src/quadrapassel.vala:318
+#: ../src/quadrapassel.vala:321
 msgid "_Starting level:"
 msgstr "_Počáteční úroveň:"
 
-#: ../src/quadrapassel.vala:331
+#: ../src/quadrapassel.vala:334
 msgid "_Enable sounds"
 msgstr "_Povolit zvuky"
 
-#: ../src/quadrapassel.vala:336
+#: ../src/quadrapassel.vala:339
 msgid "Choose difficult _blocks"
 msgstr "Zvolit obtížné _bloky"
 
-#: ../src/quadrapassel.vala:341
+#: ../src/quadrapassel.vala:344
 msgid "_Preview next block"
 msgstr "_Náhled dalšího bloku"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:348
+#: ../src/quadrapassel.vala:351
 msgid "_Rotate blocks counterclockwise"
 msgstr "Otáčet bloky p_roti směru hodinových ručiček"
 
-#: ../src/quadrapassel.vala:353
+#: ../src/quadrapassel.vala:356
 msgid "Show _where the block will land"
 msgstr "Ukazovat, _kam blok dopadne"
 
-#: ../src/quadrapassel.vala:397
+#: ../src/quadrapassel.vala:400
 msgid "Controls"
 msgstr "Ovládání"
 
-#: ../src/quadrapassel.vala:403
+#: ../src/quadrapassel.vala:406
 msgid "Theme"
 msgstr "Motiv"
 
-#: ../src/quadrapassel.vala:415
+#: ../src/quadrapassel.vala:418
 msgid "Plain"
 msgstr "Jednoduché"
 
-#: ../src/quadrapassel.vala:420
+#: ../src/quadrapassel.vala:423
 msgid "Tango Flat"
 msgstr "Oblé prosté"
 
-#: ../src/quadrapassel.vala:425
+#: ../src/quadrapassel.vala:428
 msgid "Tango Shaded"
 msgstr "Oblé stínované"
 
-#: ../src/quadrapassel.vala:430
+#: ../src/quadrapassel.vala:433
 msgid "Clean"
 msgstr "Čisté"
 
-#: ../src/quadrapassel.vala:669
+#: ../src/quadrapassel.vala:755
 msgid "Unpause the game"
 msgstr "Pokračovat ve hře"
 
-#: ../src/quadrapassel.vala:674
+#: ../src/quadrapassel.vala:760
 msgid "Pause the game"
 msgstr "Pozastavit hru"
 
-#: ../src/quadrapassel.vala:752
+#: ../src/quadrapassel.vala:838
 msgid "A classic game of fitting falling blocks together"
 msgstr "Klasická hra s umisťováním padajících kamenů do sebe"
 
-#: ../src/quadrapassel.vala:757
+#: ../src/quadrapassel.vala:843
 msgid "translator-credits"
 msgstr ""
 "Jirka Lébl\n"
