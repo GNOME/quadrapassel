@@ -1,19 +1,19 @@
 # Swedish messages for gnome-games.
-# Copyright © 1999-2015 Free Software Foundation, Inc.
+# Copyright © 1999-2017 Free Software Foundation, Inc.
 # Andreas Persenius <ndap@swipnet.se>, 1999.
 # Andreas Hyden <a.hyden@cyberpoint.se>
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
 # Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-14 11:45+0000\n"
-"PO-Revision-Date: 2015-03-14 20:34+0100\n"
+"POT-Creation-Date: 2017-12-05 16:29+0000\n"
+"PO-Revision-Date: 2017-12-26 12:45+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.7.3\n"
+"X-Generator: Poedit 2.0.5\n"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:1
 msgid "Image to use for drawing blocks"
@@ -85,8 +85,10 @@ msgstr "Antalet rader att fylla"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:16
 msgid ""
-"The number of rows that are filled with random blocks at the start of the game."
-msgstr "Antalet rader som är fyllda med slumpmässiga klossar i början på spelet."
+"The number of rows that are filled with random blocks at the start of the "
+"game."
+msgstr ""
+"Antalet rader som är fyllda med slumpmässiga klossar i början på spelet."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:17
 msgid "The density of filled rows"
@@ -116,7 +118,7 @@ msgstr "Huruvida klossar ska väljas som är svåra att placera ut"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Huruvida klossar ska väljas som är svåra att placera ut."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:366
 msgid "Move left"
 msgstr "Flytta vänster"
 
@@ -124,7 +126,7 @@ msgstr "Flytta vänster"
 msgid "Key press to move left."
 msgstr "Tangenttryck för att flytta till vänster."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:369
 msgid "Move right"
 msgstr "Flytta höger"
 
@@ -132,7 +134,7 @@ msgstr "Flytta höger"
 msgid "Key press to move right."
 msgstr "Tangenttryck för att flytta till höger."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:372
 msgid "Move down"
 msgstr "Flytta nedåt"
 
@@ -140,7 +142,7 @@ msgstr "Flytta nedåt"
 msgid "Key press to move down."
 msgstr "Tangenttryck för att flytta nedåt."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:375
 msgid "Drop"
 msgstr "Släpp"
 
@@ -148,7 +150,7 @@ msgstr "Släpp"
 msgid "Key press to drop."
 msgstr "Tangenttryck för att släppa."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:378
 msgid "Rotate"
 msgstr "Rotera"
 
@@ -156,7 +158,7 @@ msgstr "Rotera"
 msgid "Key press to rotate."
 msgstr "Tangenttryck för att rotera."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:381
 msgid "Pause"
 msgstr "Paus"
 
@@ -177,8 +179,8 @@ msgid "true if the window is maximized"
 msgstr "sant om fönstret är maximerat"
 
 #: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
-#: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
-#: ../src/quadrapassel.vala:750 ../src/quadrapassel.vala:790
+#: ../src/quadrapassel.vala:110 ../src/quadrapassel.vala:121
+#: ../src/quadrapassel.vala:836 ../src/quadrapassel.vala:876
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -188,29 +190,30 @@ msgstr "Passa ihop fallande klossar"
 
 #: ../data/quadrapassel.appdata.xml.in.h:3
 msgid ""
-"Quadrapassel is a derivative of a classic Russian falling-block game. Reposition "
-"and rotate the blocks as they fall, and attempt to fit them together. When you "
-"form a complete horizontal row of blocks, the row will disappear and you score "
-"points. The game is over when the blocks get stacked too high. As your score "
-"gets higher, you level up and the blocks fall faster."
+"Quadrapassel is a derivative of a classic Russian falling-block game. "
+"Reposition and rotate the blocks as they fall, and attempt to fit them "
+"together. When you form a complete horizontal row of blocks, the row will "
+"disappear and you score points. The game is over when the blocks get stacked "
+"too high. As your score gets higher, you level up and the blocks fall faster."
 msgstr ""
-"Quadrapassel är inspirerat av det klassiska ryska spelet med fallande klossar. "
-"Flytta och rotera klossarna under tiden de faller, och försök att passa ihop "
-"dem. När du samlat en komplett horisontell rad med klossar så försvinner raden "
-"och du får poäng. Spelet tar slut då klossarna staplats för högt. Allt eftersom "
-"du samlar mer poäng kommer du till högre nivåer och klossarnas hastighet ökar."
+"Quadrapassel är inspirerat av det klassiska ryska spelet med fallande "
+"klossar. Flytta och rotera klossarna under tiden de faller, och försök att "
+"passa ihop dem. När du samlat en komplett horisontell rad med klossar så "
+"försvinner raden och du får poäng. Spelet tar slut då klossarna staplats för "
+"högt. Allt eftersom du samlar mer poäng kommer du till högre nivåer och "
+"klossarnas hastighet ökar."
 
 #: ../data/quadrapassel.appdata.xml.in.h:4
 msgid ""
-"If you're looking for a challenge, Quadrapassel allows you to increase the "
-"initial speed of the blocks, or begin the game with partial blocks on some of "
-"the rows. Or, instead of allowing the blocks to fall randomly, it can select "
-"blocks that will be hard for you to place."
+"If you’re looking for a challenge, Quadrapassel allows you to increase the "
+"initial speed of the blocks, or begin the game with partial blocks on some "
+"of the rows. Or, instead of allowing the blocks to fall randomly, it can "
+"select blocks that will be hard for you to place."
 msgstr ""
 "Om du är ute efter en utmaning tillåter Quadrapassel dig att öka den "
-"ursprungliga hastigheten på klossar, eller börja spelet med partiella klossar på "
-"några av raderna. Eller så kan det, i stället för att klossarna faller "
-"slumpmässigt, välja klossar som kommer vara svåra för dig att placera."
+"ursprungliga hastigheten på klossar, eller börja spelet med partiella "
+"klossar på några av raderna. Eller så kan det, i stället för att klossarna "
+"faller slumpmässigt, välja klossar som kommer vara svåra för dig att placera."
 
 #: ../data/quadrapassel.desktop.in.h:3
 msgid "tetris;"
@@ -224,131 +227,131 @@ msgstr "Pausad"
 msgid "Game Over"
 msgstr "Spelet är slut"
 
-#: ../src/quadrapassel.vala:93
+#: ../src/quadrapassel.vala:95
 msgid "_New Game"
 msgstr "_Nytt spel"
 
-#: ../src/quadrapassel.vala:94
+#: ../src/quadrapassel.vala:96
 msgid "_Scores"
 msgstr "_Poänglista"
 
-#: ../src/quadrapassel.vala:95
+#: ../src/quadrapassel.vala:97
 msgid "_Preferences"
 msgstr "_Inställningar"
 
-#: ../src/quadrapassel.vala:98
+#: ../src/quadrapassel.vala:100
 msgid "_Help"
 msgstr "_Hjälp"
 
-#: ../src/quadrapassel.vala:99
+#: ../src/quadrapassel.vala:101
 msgid "_About"
 msgstr "_Om"
 
-#: ../src/quadrapassel.vala:100
+#: ../src/quadrapassel.vala:102
 msgid "_Quit"
 msgstr "A_vsluta"
 
-#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:688
+#: ../src/quadrapassel.vala:145 ../src/quadrapassel.vala:774
 msgid "Start a new game"
 msgstr "Starta ett nytt spel"
 
-#: ../src/quadrapassel.vala:152
+#: ../src/quadrapassel.vala:150
 msgid "Next"
 msgstr "Nästa"
 
-#: ../src/quadrapassel.vala:165 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:163 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "Poäng"
 
-#: ../src/quadrapassel.vala:176
+#: ../src/quadrapassel.vala:174
 msgid "Lines"
 msgstr "Rader"
 
-#: ../src/quadrapassel.vala:187
+#: ../src/quadrapassel.vala:185
 msgid "Level"
 msgstr "Nivå"
 
-#: ../src/quadrapassel.vala:267
+#: ../src/quadrapassel.vala:270
 msgid "Preferences"
 msgstr "Inställningar"
 
-#: ../src/quadrapassel.vala:285
+#: ../src/quadrapassel.vala:288
 msgid "Game"
 msgstr "Spel"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:289
+#: ../src/quadrapassel.vala:292
 msgid "_Number of pre-filled rows:"
 msgstr "_Antal förifyllda rader:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:304
+#: ../src/quadrapassel.vala:307
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Densiteten på klossar i en förifylld rad:"
 
 #. starting level
-#: ../src/quadrapassel.vala:318
+#: ../src/quadrapassel.vala:321
 msgid "_Starting level:"
 msgstr "_Startnivå:"
 
-#: ../src/quadrapassel.vala:331
+#: ../src/quadrapassel.vala:334
 msgid "_Enable sounds"
 msgstr "A_ktivera ljud"
 
-#: ../src/quadrapassel.vala:336
+#: ../src/quadrapassel.vala:339
 msgid "Choose difficult _blocks"
 msgstr "Välj svåra _klossar"
 
-#: ../src/quadrapassel.vala:341
+#: ../src/quadrapassel.vala:344
 msgid "_Preview next block"
 msgstr "_Förhandsgranska nästa kloss"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:348
+#: ../src/quadrapassel.vala:351
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Rotera klossar moturs"
 
-#: ../src/quadrapassel.vala:353
+#: ../src/quadrapassel.vala:356
 msgid "Show _where the block will land"
 msgstr "Visa _var klossen kommer att landa"
 
-#: ../src/quadrapassel.vala:397
+#: ../src/quadrapassel.vala:400
 msgid "Controls"
 msgstr "Styrning"
 
-#: ../src/quadrapassel.vala:403
+#: ../src/quadrapassel.vala:406
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/quadrapassel.vala:415
+#: ../src/quadrapassel.vala:418
 msgid "Plain"
 msgstr "Enkel"
 
-#: ../src/quadrapassel.vala:420
+#: ../src/quadrapassel.vala:423
 msgid "Tango Flat"
 msgstr "Tango platt"
 
-#: ../src/quadrapassel.vala:425
+#: ../src/quadrapassel.vala:428
 msgid "Tango Shaded"
 msgstr "Tango skuggad"
 
-#: ../src/quadrapassel.vala:430
+#: ../src/quadrapassel.vala:433
 msgid "Clean"
 msgstr "Ren"
 
-#: ../src/quadrapassel.vala:669
+#: ../src/quadrapassel.vala:755
 msgid "Unpause the game"
 msgstr "Fortsätt spelet"
 
-#: ../src/quadrapassel.vala:674
+#: ../src/quadrapassel.vala:760
 msgid "Pause the game"
 msgstr "Gör paus i spelet"
 
-#: ../src/quadrapassel.vala:752
+#: ../src/quadrapassel.vala:838
 msgid "A classic game of fitting falling blocks together"
 msgstr "Ett klassiskt spel där man sätter samman fallande klossar"
 
-#: ../src/quadrapassel.vala:757
+#: ../src/quadrapassel.vala:843
 msgid "translator-credits"
 msgstr ""
 "Daniel Nylander <po@danielnylander.se>\n"
