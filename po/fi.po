@@ -13,10 +13,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-09 11:46+0000\n"
-"PO-Revision-Date: 2015-03-09 17:29+0200\n"
+"POT-Creation-Date: 2017-12-05 16:29+0000\n"
+"PO-Revision-Date: 2018-01-07 12:40+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Launchpad-Export-Date: 2010-09-13 15:09+0000\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-POT-Import-Date: 2012-03-05 14:46:29+0000\n"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:1
@@ -122,8 +122,7 @@ msgstr "Valitaanko vaikeasti sijoitettavat palat"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Valitaanko vaikeasti sijoitettavat palat."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:366
 msgid "Move left"
 msgstr "Siirry vasemmalle"
 
@@ -131,8 +130,7 @@ msgstr "Siirry vasemmalle"
 msgid "Key press to move left."
 msgstr "Näppäin vasemmalle siirtämiseen."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:369
 msgid "Move right"
 msgstr "Siirry oikealle"
 
@@ -140,8 +138,7 @@ msgstr "Siirry oikealle"
 msgid "Key press to move right."
 msgstr "Näppäin oikealle siirtämiseen."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:372
 msgid "Move down"
 msgstr "Liikuta alas"
 
@@ -149,8 +146,7 @@ msgstr "Liikuta alas"
 msgid "Key press to move down."
 msgstr "Näppäin alas siirtämiseen."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:375
 msgid "Drop"
 msgstr "Tiputa"
 
@@ -158,8 +154,7 @@ msgstr "Tiputa"
 msgid "Key press to drop."
 msgstr "Näppäin tiputtamiseen."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:378
 msgid "Rotate"
 msgstr "Pyöritä"
 
@@ -167,8 +162,7 @@ msgstr "Pyöritä"
 msgid "Key press to rotate."
 msgstr "Näppäin kierittämiseen."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:381
 msgid "Pause"
 msgstr "Keskeytä"
 
@@ -189,8 +183,8 @@ msgid "true if the window is maximized"
 msgstr "tosi jos ikkuna on suurennettu"
 
 #: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
-#: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
-#: ../src/quadrapassel.vala:750 ../src/quadrapassel.vala:790
+#: ../src/quadrapassel.vala:110 ../src/quadrapassel.vala:121
+#: ../src/quadrapassel.vala:836 ../src/quadrapassel.vala:876
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -214,7 +208,7 @@ msgstr ""
 
 #: ../data/quadrapassel.appdata.xml.in.h:4
 msgid ""
-"If you're looking for a challenge, Quadrapassel allows you to increase the "
+"If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
 "of the rows. Or, instead of allowing the blocks to fall randomly, it can "
 "select blocks that will be hard for you to place."
@@ -235,138 +229,134 @@ msgstr "Keskeytetty"
 msgid "Game Over"
 msgstr "Peli päättyi."
 
-#: ../src/quadrapassel.vala:93
+#: ../src/quadrapassel.vala:95
 msgid "_New Game"
 msgstr "_Uusi peli"
 
-#: ../src/quadrapassel.vala:94
+#: ../src/quadrapassel.vala:96
 msgid "_Scores"
 msgstr "_Pisteet"
 
-#: ../src/quadrapassel.vala:95
+#: ../src/quadrapassel.vala:97
 msgid "_Preferences"
 msgstr "_Asetukset"
 
-#: ../src/quadrapassel.vala:98
+#: ../src/quadrapassel.vala:100
 msgid "_Help"
 msgstr "O_hje"
 
-#: ../src/quadrapassel.vala:99
+#: ../src/quadrapassel.vala:101
 msgid "_About"
 msgstr "_Tietoja"
 
-#: ../src/quadrapassel.vala:100
+#: ../src/quadrapassel.vala:102
 msgid "_Quit"
 msgstr "_Lopeta"
 
-#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:688
+#: ../src/quadrapassel.vala:145 ../src/quadrapassel.vala:774
 msgid "Start a new game"
 msgstr "Aloita uusi peli"
 
-#: ../src/quadrapassel.vala:152
+#: ../src/quadrapassel.vala:150
 msgid "Next"
 msgstr "Seuraava"
 
-#: ../src/quadrapassel.vala:165 ../src/score-dialog.vala:51
+#: ../src/quadrapassel.vala:163 ../src/score-dialog.vala:51
 msgid "Score"
 msgstr "Pisteet"
 
-#: ../src/quadrapassel.vala:176
+#: ../src/quadrapassel.vala:174
 msgid "Lines"
 msgstr "Rivejä"
 
-#: ../src/quadrapassel.vala:187
+#: ../src/quadrapassel.vala:185
 msgid "Level"
 msgstr "Taso"
 
-#: ../src/quadrapassel.vala:267
+#: ../src/quadrapassel.vala:270
 msgid "Preferences"
 msgstr "Asetukset"
 
-#: ../src/quadrapassel.vala:285
+#: ../src/quadrapassel.vala:288
 msgid "Game"
 msgstr "Peli"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:289
+#: ../src/quadrapassel.vala:292
 msgid "_Number of pre-filled rows:"
 msgstr "_Esitäytettyjen rivien määrä:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:304
+#: ../src/quadrapassel.vala:307
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "E_sitäytetyn rivin vahvuus:"
 
 #. starting level
-#: ../src/quadrapassel.vala:318
+#: ../src/quadrapassel.vala:321
 msgid "_Starting level:"
 msgstr "_Aloitustaso:"
 
-#: ../src/quadrapassel.vala:331
+#: ../src/quadrapassel.vala:334
 msgid "_Enable sounds"
 msgstr "Ää_net päälle"
 
-#: ../src/quadrapassel.vala:336
+#: ../src/quadrapassel.vala:339
 msgid "Choose difficult _blocks"
 msgstr "Valitse vaikeat _palikat"
 
-#: ../src/quadrapassel.vala:341
+#: ../src/quadrapassel.vala:344
 msgid "_Preview next block"
 msgstr "Se_uraavan palikan esikatselu"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:348
+#: ../src/quadrapassel.vala:351
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Pyöritä palikoita vastapäivään"
 
-#: ../src/quadrapassel.vala:353
+#: ../src/quadrapassel.vala:356
 msgid "Show _where the block will land"
 msgstr "Näytä mihin palikka _laskeutuu"
 
-#: ../src/quadrapassel.vala:397
+#: ../src/quadrapassel.vala:400
 msgid "Controls"
 msgstr "Ohjaimet"
 
-#: ../src/quadrapassel.vala:403
+#: ../src/quadrapassel.vala:406
 msgid "Theme"
 msgstr "Teema"
 
-#: ../src/quadrapassel.vala:415
+#: ../src/quadrapassel.vala:418
 msgid "Plain"
 msgstr "Paljas"
 
-#: ../src/quadrapassel.vala:420
+#: ../src/quadrapassel.vala:423
 msgid "Tango Flat"
 msgstr "Tango, litteä"
 
-#: ../src/quadrapassel.vala:425
+#: ../src/quadrapassel.vala:428
 msgid "Tango Shaded"
 msgstr "Tango, varjostettu"
 
-#: ../src/quadrapassel.vala:430
+#: ../src/quadrapassel.vala:433
 msgid "Clean"
 msgstr "Tyhjennä"
 
-#: ../src/quadrapassel.vala:669
+#: ../src/quadrapassel.vala:755
 msgid "Unpause the game"
 msgstr "Jatka peliä"
 
-#: ../src/quadrapassel.vala:674
+#: ../src/quadrapassel.vala:760
 msgid "Pause the game"
 msgstr "Keskeytä peli"
 
-#: ../src/quadrapassel.vala:752
-#| msgid ""
-#| "A classic game of fitting falling blocks together\n"
-#| "\n"
-#| "Quadrapassel is a part of GNOME Games."
+#: ../src/quadrapassel.vala:838
 msgid "A classic game of fitting falling blocks together"
 msgstr "Klassinen putoavien palikoiden peli"
 
-#: ../src/quadrapassel.vala:757
+#: ../src/quadrapassel.vala:843
 msgid "translator-credits"
 msgstr ""
-"Jiri Grönroos, 2012-2015\n"
+"Jiri Grönroos, 2012-2018\n"
 "Timo Jyrinki, 2008\n"
 "Ilkka Tuohela, 2006-2009\n"
 "Sami Pesonen, 2002-2005\n"
