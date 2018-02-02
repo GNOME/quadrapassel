@@ -17,12 +17,13 @@ sounds_DATA = \
 desktopdir = $(datadir)/applications
 desktop_in_files = quadrapassel.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
-@INTLTOOL_DESKTOP_RULE@
+$(desktop_DATA): $(desktop_in_files)
+		$(AM_V_GEN)$(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
 appstream_in_files = quadrapassel.appdata.xml.in
 appstream_XML = $(appstream_in_files:.xml.in=.xml)
-@APPSTREAM_XML_RULES@
-@INTLTOOL_XML_RULE@
+$(appstream_XML): $(appstream_in_files)
+		$(AM_V_GEN)$(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@
 
 man_MANS = quadrapassel.6
 
