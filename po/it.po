@@ -119,8 +119,7 @@ msgstr "Indica se selezionare o meno i blocchi difficili da posizionare"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Indica se selezionare o meno i blocchi difficili da posizionare."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:363
 msgid "Move left"
 msgstr "Sposta a sinistra"
 
@@ -128,8 +127,7 @@ msgstr "Sposta a sinistra"
 msgid "Key press to move left."
 msgstr "Tasto da premere per spostare a sinistra."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:366
 msgid "Move right"
 msgstr "Sposta a destra"
 
@@ -137,8 +135,7 @@ msgstr "Sposta a destra"
 msgid "Key press to move right."
 msgstr "Tasto da premere per spostare a destra."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:369
 msgid "Move down"
 msgstr "Sposta in basso"
 
@@ -146,8 +143,7 @@ msgstr "Sposta in basso"
 msgid "Key press to move down."
 msgstr "Tasto da premere per spostare a sinistra."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:372
 msgid "Drop"
 msgstr "Rilascia"
 
@@ -155,8 +151,7 @@ msgstr "Rilascia"
 msgid "Key press to drop."
 msgstr "Tasto da premere per rilasciare."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:375
 msgid "Rotate"
 msgstr "Ruota"
 
@@ -164,8 +159,7 @@ msgstr "Ruota"
 msgid "Key press to rotate."
 msgstr "Tasto da premere per ruotare."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:378
 msgid "Pause"
 msgstr "Pausa"
 

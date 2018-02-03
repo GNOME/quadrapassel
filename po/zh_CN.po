@@ -362,30 +362,3 @@ msgstr "确定(_O)"
 #: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "日期"
-
-#~ msgid "Quadrapassel Preferences"
-#~ msgstr "俄罗斯方块首选项"
-
-#~ msgid "true if the window is fullscren"
-#~ msgstr "若窗口已全屏则为 true"
-
-#~ msgid "_Pause"
-#~ msgstr "暂停(_P)"
-
-#~ msgid "_New"
-#~ msgstr "新建(_N)"
-
-#~ msgid "_Fullscreen"
-#~ msgstr "全屏(_F)"
-
-#~ msgid "Score:"
-#~ msgstr "得分:"
-
-#~ msgid "_Leave Fullscreen"
-#~ msgstr "离开全屏(_L)"
-
-#~ msgid "Res_ume"
-#~ msgstr "继续(_U)"
-
-#~ msgid "GNOME Games web site"
-#~ msgstr "GNOME 游戏网站"

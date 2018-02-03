@@ -148,8 +148,7 @@ msgstr "Αν θα επιλεχθούν τουβλάκια που είναι δύ
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Αν θα επιλεχθούν τουβλάκια που είναι δύσκολα να τοποθετηθούν."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:363
 msgid "Move left"
 msgstr "Μετακίνηση προς τα αριστερά"
 
@@ -157,8 +156,7 @@ msgstr "Μετακίνηση προς τα αριστερά"
 msgid "Key press to move left."
 msgstr "Πάτημα πλήκτρου για μετακίνηση προς τα αριστερά."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:366
 msgid "Move right"
 msgstr "Μετακίνηση προς τα δεξιά"
 
@@ -166,8 +164,7 @@ msgstr "Μετακίνηση προς τα δεξιά"
 msgid "Key press to move right."
 msgstr "Πάτημα πλήκτρου για μετακίνηση προς τα δεξιά."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:369
 msgid "Move down"
 msgstr "Μετακίνηση προς τα κάτω"
 
@@ -175,8 +172,7 @@ msgstr "Μετακίνηση προς τα κάτω"
 msgid "Key press to move down."
 msgstr "Πάτημα πλήκτρου για κίνηση προς τα κάτω."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:372
 msgid "Drop"
 msgstr "Ρίψη"
 
@@ -184,8 +180,7 @@ msgstr "Ρίψη"
 msgid "Key press to drop."
 msgstr "Πάτημα πλήκτρου για ρίψη."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:375
 msgid "Rotate"
 msgstr "Περιστροφή"
 
@@ -193,8 +188,7 @@ msgstr "Περιστροφή"
 msgid "Key press to rotate."
 msgstr "Πάτημα πλήκτρου για περιστροφή."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:378
 msgid "Pause"
 msgstr "Παύση"
 
@@ -420,243 +414,3 @@ msgstr "Ε_ντάξει"
 #: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "Ημερομηνία"
-
-#~ msgid "Quadrapassel Preferences"
-#~ msgstr "Ρυθμίσεις του Τουβλάκια"
-
-#~ msgid "true if the window is fullscren"
-#~ msgstr "αληθής αν το παράθυρο είναι σε πλήρη οθόνη"
-
-#~ msgid "_Pause"
-#~ msgstr "Π_αύση"
-
-#~ msgid "_New"
-#~ msgstr "_Νέο"
-
-#~ msgid "_Fullscreen"
-#~ msgstr "_Πλήρης οθόνη"
-
-#~ msgid "_Leave Fullscreen"
-#~ msgstr "Έξ_οδος από πλήρη οθόνη"
-
-#~ msgid "Res_ume"
-#~ msgstr "_Συνέχιση"
-
-#~ msgid "GNOME Games web site"
-#~ msgstr "Ιστοσελίδα των παιχνιδιών του GNOME"
-
-#~ msgid "Score:"
-#~ msgstr "Βαθμοί:"
-
-#~ msgid "Chess"
-#~ msgstr "Σκάκι"
-
-#~ msgid "Play the classic two-player boardgame of chess"
-#~ msgstr "Παίξτε το κλασικό σκάκι με δύο παίχτες"
-
-#~ msgid "_Game"
-#~ msgstr "_Παιχνίδι"
-
-#~ msgid "_Undo Move"
-#~ msgstr "_Αναίρεση κίνησης"
-
-#~ msgid "_Resign"
-#~ msgstr "_Παραίτηση"
-
-#~ msgid "Claim _Draw"
-#~ msgstr "Αίτηση για ι_σοπαλία"
-
-#~ msgid "_Settings"
-#~ msgstr "Ρυθμίσεις"
-
-#~ msgid "_Contents"
-#~ msgstr "_Περιεχόμενα"
-
-#~ msgid "Undo Move"
-#~ msgstr "Αναίρεση κίνησης"
-
-#~ msgid "Resign"
-#~ msgstr "Παραίτηση"
-
-#~ msgid "Rewind to the game start"
-#~ msgstr "Επιστροφή στην αρχή του παιχνιδιού"
-
-#~ msgid "Show the previous move"
-#~ msgstr "Προβολή προηγούμενης κίνησης"
-
-#~ msgid "Show the next move"
-#~ msgstr "Προβολή επόμενης κίνησης"
-
-#~ msgid "Show the current move"
-#~ msgstr "Προβολή τρέχουσας κίνησης"
-
-#~ msgid "The width of the window"
-#~ msgstr "Το πλάτος του παραθύρου"
-
-#~ msgid "The width of the main window in pixels."
-#~ msgstr "Το πλάτος του κυρίως παραθύρου σε εικονοστοιχεία."
-
-#~ msgid "The height of the window"
-#~ msgstr "Το ύψος του παραθύρου"
-
-#~ msgid "The height of the main window in pixels."
-#~ msgstr "Το ύψος του κυρίως παραθύρου σε εικονοστοιχεία."
-
-#~ msgid "A flag to enable maximized mode"
-#~ msgstr "Σημαία για την ενεργοποίηση της λειτουργίας μεγιστοποίησης"
-
-#~ msgid "A flag to enable fullscreen mode"
-#~ msgstr "Σημαία για την ενεργοποίηση της λειτουργίας πλήρους οθόνης"
-
-#~ msgid "The piece to promote pawns to"
-#~ msgstr "Το είδος του κομματιού, στο οποίο θα προωθούνται τα πιόνια"
-
-#~ msgid ""
-#~ "The piece to promote to when a human player moves a pawn to the far rank"
-#~ msgstr ""
-#~ "Το είδος του κομματιού, στο οποίο θα προωθούνται τα πιόνια όταν ο παίκτης "
-#~ "φτάσει το πιόνι στην τελευταία αντίπαλη σειρά."
-
-#~ msgid "A flag to enable 3D mode"
-#~ msgstr "Σημαία για την ενεργοποίηση της λειτουργίας 3Δ"
-
-#~ msgid "A flag to smooth (anti-alias) the 3D display"
-#~ msgstr "Επιλογή για εξομάλυνση (anti-alias) της 3Δ απεικόνισης"
-
-#~ msgid "The piece theme to use"
-#~ msgstr "Το στυλ κομματιών που θα χρησιμοποιηθεί"
-
-#~ msgid "A flag to enable move hints"
-#~ msgstr "Σημαία για την ενεργοποίηση υποδείξεων κίνησης"
-
-#~ msgid "A flag to enable board numbering"
-#~ msgstr "Σημαία για την ενεργοποίηση της αρίθμησης σκακιέρας"
-
-#~ msgid "A flag to enable the move history browser"
-#~ msgstr "Σημαία για την ενεργοποίηση του περιηγητή ιστορικού κινήσεων"
-
-#~ msgid "A flag to enable the toolbar"
-#~ msgstr "Σημαία για την ενεργοποίηση της γραμμής εργαλείων"
-
-#~ msgid "The directory to open the save game dialog in"
-#~ msgstr ""
-#~ "Ο κατάλογος στον οποίο ανοίγει το παράθυρο διαλόγου για την αποθήκευση "
-#~ "του παιχνιδιού"
-
-#~ msgid "The directory to open the load game dialog in"
-#~ msgstr ""
-#~ "Ο κατάλογος στον οποίο ανοίγει το παράθυρο διαλόγου για τη φόρτωση του "
-#~ "παιχνιδιού"
-
-#~ msgid "The format to display moves in"
-#~ msgstr "Η μορφή στην οποία εμφανίζονται οι κινήσεις"
-
-#~ msgid "The side of the board that is in the foreground"
-#~ msgstr "Το μέρος της σκακιέρας που βρίσκεται στο προσκήνιο"
-
-#~ msgid "The duration of a game in seconds (0 for no limit)"
-#~ msgstr "Η διάρκεια του παιχνιδιού σε δευτερόλεπτα (0 για χωρίς όριο)"
-
-#~ msgid "true if the human player is playing white"
-#~ msgstr "αληθές αν ο παίχτης, άνθρωπος, παίζει με τα λευκά"
-
-#~ msgid "The opponent player"
-#~ msgstr "Ο αντίπαλος παίχτης"
-
-#~ msgid ""
-#~ "Can be 'human' (play against another human player), '' (use the first "
-#~ "available chess engine) or the name of a specific engine to play against"
-#~ msgstr ""
-#~ "Μπορεί να είναι «άνθρωπος» (παίξτε εναντίον άλλου παίχτη), '' (χρήση της "
-#~ "πρώτης διαθέσιμης μηχανής σκακιού) ή προσδιορίστε το όνομα μια "
-#~ "συγκεκριμένης μηχανής για να παίξετε εναντίον της"
-
-#~ msgid "Difficulty of the opponent chess engine"
-#~ msgstr "Επίπεδο δυσκολίας της μηχανής του σκακιού που παίζεται αντίπαλοι"
-
-#~ msgid "Play as:"
-#~ msgstr "Παίζετε ως:"
-
-#~ msgid "Opposing Player:"
-#~ msgstr "Αντίπαλος παίχτης:"
-
-#~ msgid "Difficulty:"
-#~ msgstr "Δυσκολία:"
-
-#~ msgid "Game Duration:"
-#~ msgstr "Διάρκεια παιχνιδιού:"
-
-#~ msgid "Promotion Type:"
-#~ msgstr "Τύπος προώθησης:"
-
-#~ msgid "Changes will take effect for the next game."
-#~ msgstr "Οι αλλαγές θα εφαρμοστούν στο επόμενο παιχνίδι."
-
-#~ msgid "3_D Chess View"
-#~ msgstr "3_Δ προβολή σκακιού"
-
-#~ msgid "_Smooth Display"
-#~ msgstr "_Ομαλή απεικόνιση"
-
-#~ msgid "Piece Style:"
-#~ msgstr "Στυλ κομματιών:"
-
-#~ msgid "Show _Toolbar"
-#~ msgstr "Προβολή _εργαλειοθήκης"
-
-#~ msgid "Show _History"
-#~ msgstr "Προβολή ι_στορικού"
-
-#~ msgid "_Move Hints"
-#~ msgstr "Υπόδειξη _κινήσεων"
-
-#~ msgid "_Board Numbering"
-#~ msgstr "Αρί_θμηση σκακιέρας"
-
-#~ msgid "Board Orientation:"
-#~ msgstr "Προσανατολισμός σκακιέρας:"
-
-#~ msgid "Move Format:"
-#~ msgstr "Μορφή κινήσεων:"
-
-#~ msgid "_Appearance"
-#~ msgstr "_Εμφάνιση"
-
-#~ msgctxt "difficulty"
-#~ msgid "Easy"
-#~ msgstr "Εύκολο"
-
-#~ msgctxt "difficulty"
-#~ msgid "Normal"
-#~ msgstr "Κανονικό"
-
-#~ msgctxt "difficulty"
-#~ msgid "Hard"
-#~ msgstr "Δύσκολο"
-
-#~ msgctxt "chess-opponent"
-#~ msgid "Human"
-#~ msgstr "Άνθρωπος"
-
-#~ msgctxt "chess-player"
-#~ msgid "White"
-#~ msgstr "Λευκά"
-
-#~ msgctxt "chess-player"
-#~ msgid "Black"
-#~ msgstr "Μαύρα"
-
-#~ msgid "No limit"
-#~ msgstr "Χωρίς όριο"
-
-#~ msgid "One minute"
-#~ msgstr "Ένα λεπτό"
-
-#~ msgid "Five minutes"
-#~ msgstr "Πέντε λεπτά"
-
-#~ msgid "30 minutes"
-#~ msgstr "30 λεπτά"
-
-#~ msgid "One hour"
-#~ msgstr "Μία ώρα"

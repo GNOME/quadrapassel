@@ -125,8 +125,7 @@ msgstr "놓기 어려운 블럭을 고를지 여부"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "놓기 어려운 블럭을 고를지 여부."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:363
 msgid "Move left"
 msgstr "왼쪽으로 이동"
 
@@ -134,8 +133,7 @@ msgstr "왼쪽으로 이동"
 msgid "Key press to move left."
 msgstr "왼쪽으로 이동할 때 누를 키."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:366
 msgid "Move right"
 msgstr "오른쪽으로 이동"
 
@@ -143,8 +141,7 @@ msgstr "오른쪽으로 이동"
 msgid "Key press to move right."
 msgstr "오른쪽으로 이동할 때 누를 키."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:369
 msgid "Move down"
 msgstr "아래로 옮기기"
 
@@ -152,8 +149,7 @@ msgstr "아래로 옮기기"
 msgid "Key press to move down."
 msgstr "아래로 이동할 때 누를 키."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:372
 msgid "Drop"
 msgstr "떨어뜨리기"
 
@@ -161,8 +157,7 @@ msgstr "떨어뜨리기"
 msgid "Key press to drop."
 msgstr "떨어뜨릴 때 누를 키."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:375
 msgid "Rotate"
 msgstr "돌리기"
 
@@ -170,8 +165,7 @@ msgstr "돌리기"
 msgid "Key press to rotate."
 msgstr "돌릴 때 누를 키."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:378
 msgid "Pause"
 msgstr "일시 중지"
 
@@ -380,6 +374,3 @@ msgstr "확인(_O)"
 #: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "시각"
-
-#~ msgid "Quadrapassel Preferences"
-#~ msgstr "쿼드러패셀 기본 설정"

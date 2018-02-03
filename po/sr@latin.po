@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Gnomove igre\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=quadrap"
-"assel&keywords=I18N+L10N&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=quadrapassel&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-04 11:46+0000\n"
 "PO-Revision-Date: 2015-03-04 19:35+0200\n"
 "Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
@@ -19,8 +19,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
-"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:1
@@ -98,8 +98,8 @@ msgid ""
 "The density of blocks in rows filled at the start of the game. The value is "
 "between 0 (for no blocks) and 10 (for a completely filled row)."
 msgstr ""
-"Gustina blokova u redovima koji su već popunjeni na početku igre. Vrednost je "
-"između 0 (bez blokova) i 10 (za potpuno popunjeni red)."
+"Gustina blokova u redovima koji su već popunjeni na početku igre. Vrednost "
+"je između 0 (bez blokova) i 10 (za potpuno popunjeni red)."
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:19
 msgid "Whether to play sounds"
@@ -117,8 +117,7 @@ msgstr "Da li da pokupi blokove koji su teški za postavljanje"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Da li će da pokupi blokove koji su teški za postavljanje."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:363
 msgid "Move left"
 msgstr "Potez u levo"
 
@@ -126,8 +125,7 @@ msgstr "Potez u levo"
 msgid "Key press to move left."
 msgstr "Taster za kretanje u levo."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:366
 msgid "Move right"
 msgstr "Potez u desno"
 
@@ -135,8 +133,7 @@ msgstr "Potez u desno"
 msgid "Key press to move right."
 msgstr "Taster za kretanje u desno."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:369
 msgid "Move down"
 msgstr "Pomeri dole"
 
@@ -144,8 +141,7 @@ msgstr "Pomeri dole"
 msgid "Key press to move down."
 msgstr "Taster za kretanje dole."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:372
 msgid "Drop"
 msgstr "Pusti"
 
@@ -153,8 +149,7 @@ msgstr "Pusti"
 msgid "Key press to drop."
 msgstr "Taster za puštanje."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:375
 msgid "Rotate"
 msgstr "Zaokreni"
 
@@ -162,8 +157,7 @@ msgstr "Zaokreni"
 msgid "Key press to rotate."
 msgstr "Taster za rotiranje."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:378
 msgid "Pause"
 msgstr "Pauziraj"
 
@@ -393,30 +387,3 @@ msgstr "U _redu"
 #: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "Datum"
-
-#~ msgid "Quadrapassel Preferences"
-#~ msgstr "Postavke Četvorke"
-
-#~ msgid "true if the window is fullscren"
-#~ msgstr "izabrano ako je prozor preko celog ekrana"
-
-#~ msgid "_Pause"
-#~ msgstr "_Pauza"
-
-#~ msgid "_New"
-#~ msgstr "_Nova"
-
-#~ msgid "_Fullscreen"
-#~ msgstr "_Ceo ekran"
-
-#~ msgid "Score:"
-#~ msgstr "Razultat:"
-
-#~ msgid "_Leave Fullscreen"
-#~ msgstr "_Napusti ceo ekran"
-
-#~ msgid "Res_ume"
-#~ msgstr "Na_stavi"
-
-#~ msgid "GNOME Games web site"
-#~ msgstr "Veb sajt Gnomovih igara"

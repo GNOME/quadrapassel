@@ -12,7 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games gnome-2-32\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=quadrapassel&keywords=I18N+L10N&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=quadrapassel&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2013-08-25 14:08+0000\n"
 "PO-Revision-Date: 2013-05-10 12:24+0900\n"
 "Last-Translator: OKANO Takayoshi <kano@na.rim.or.jp>\n"
@@ -84,7 +85,9 @@ msgid "The number of rows to fill"
 msgstr "事前に埋めておくブロックの高さ"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:16
-msgid "The number of rows that are filled with random blocks at the start of the game."
+msgid ""
+"The number of rows that are filled with random blocks at the start of the "
+"game."
 msgstr "ゲーム開始時にランダムなブロックで事前に埋めておくブロックの高さです。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:17
@@ -92,8 +95,12 @@ msgid "The density of filled rows"
 msgstr "事前に埋めておくブロックの密度"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:18
-msgid "The density of blocks in rows filled at the start of the game. The value is between 0 (for no blocks) and 10 (for a completely filled row)."
-msgstr "ゲーム開始時に事前に埋めておくブロックの密度です。指定可能な値は 0 (ブロックなし) 〜 10 (すべて埋める) です。"
+msgid ""
+"The density of blocks in rows filled at the start of the game. The value is "
+"between 0 (for no blocks) and 10 (for a completely filled row)."
+msgstr ""
+"ゲーム開始時に事前に埋めておくブロックの密度です。指定可能な値は 0 (ブロック"
+"なし) 〜 10 (すべて埋める) です。"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.in.h:19
 msgid "Whether to play sounds"

@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Гномове игре\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=quadrap"
-"assel&keywords=I18N+L10N&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=quadrapassel&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-04 11:46+0000\n"
 "PO-Revision-Date: 2015-03-04 19:35+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
@@ -19,8 +19,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
-"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:1
@@ -117,8 +117,7 @@ msgstr "Да ли да покупи блокове који су тешки за
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Да ли ће да покупи блокове који су тешки за постављање."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:363
 msgid "Move left"
 msgstr "Потез у лево"
 
@@ -126,8 +125,7 @@ msgstr "Потез у лево"
 msgid "Key press to move left."
 msgstr "Тастер за кретање у лево."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:366
 msgid "Move right"
 msgstr "Потез у десно"
 
@@ -135,8 +133,7 @@ msgstr "Потез у десно"
 msgid "Key press to move right."
 msgstr "Тастер за кретање у десно."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:369
 msgid "Move down"
 msgstr "Помери доле"
 
@@ -144,8 +141,7 @@ msgstr "Помери доле"
 msgid "Key press to move down."
 msgstr "Тастер за кретање доле."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:372
 msgid "Drop"
 msgstr "Пусти"
 
@@ -153,8 +149,7 @@ msgstr "Пусти"
 msgid "Key press to drop."
 msgstr "Тастер за пуштање."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:375
 msgid "Rotate"
 msgstr "Заокрени"
 
@@ -162,8 +157,7 @@ msgstr "Заокрени"
 msgid "Key press to rotate."
 msgstr "Тастер за ротирање."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:378
 msgid "Pause"
 msgstr "Паузирај"
 
@@ -393,30 +387,3 @@ msgstr "У _реду"
 #: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "Датум"
-
-#~ msgid "Quadrapassel Preferences"
-#~ msgstr "Поставке Четворке"
-
-#~ msgid "true if the window is fullscren"
-#~ msgstr "изабрано ако је прозор преко целог екрана"
-
-#~ msgid "_Pause"
-#~ msgstr "_Пауза"
-
-#~ msgid "_New"
-#~ msgstr "_Нова"
-
-#~ msgid "_Fullscreen"
-#~ msgstr "_Цео екран"
-
-#~ msgid "Score:"
-#~ msgstr "Разултат:"
-
-#~ msgid "_Leave Fullscreen"
-#~ msgstr "_Напусти цео екран"
-
-#~ msgid "Res_ume"
-#~ msgstr "На_стави"
-
-#~ msgid "GNOME Games web site"
-#~ msgstr "Веб сајт Гномових игара"

@@ -376,6 +376,3 @@ msgstr "_Aceitar"
 #: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "Data"
-
-#~ msgid "Quadrapassel Preferences"
-#~ msgstr "Preferências do Quadrapassel"

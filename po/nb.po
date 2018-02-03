@@ -204,7 +204,11 @@ msgid ""
 "initial speed of the blocks, or begin the game with partial blocks on some "
 "of the rows. Or, instead of allowing the blocks to fall randomly, it can "
 "select blocks that will be hard for you to place."
-msgstr "Hvis du ser etter en utfordring kan du øke utgangshastigheten for blokkene eller starte spillet med deler av blokker på noen av radene. Eller du kan i stedet for å la blokkene falle tilfeldig la spillet velge blokker som er vanskelig å plassere."
+msgstr ""
+"Hvis du ser etter en utfordring kan du øke utgangshastigheten for blokkene "
+"eller starte spillet med deler av blokker på noen av radene. Eller du kan i "
+"stedet for å la blokkene falle tilfeldig la spillet velge blokker som er "
+"vanskelig å plassere."
 
 #: ../data/quadrapassel.desktop.in.h:3
 msgid "tetris;"

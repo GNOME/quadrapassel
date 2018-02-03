@@ -113,8 +113,7 @@ msgstr "Da li da pokupi blokove koji su teški za postavljanje"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Da li će da pokupi blokove koji su teški za postavljanje."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:363
 msgid "Move left"
 msgstr "Pomjeri ulijevo"
 
@@ -122,8 +121,7 @@ msgstr "Pomjeri ulijevo"
 msgid "Key press to move left."
 msgstr "Taster za kretanje u lijevo."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:366
 msgid "Move right"
 msgstr "Pomjeri udesno"
 
@@ -131,8 +129,7 @@ msgstr "Pomjeri udesno"
 msgid "Key press to move right."
 msgstr "Taster za kretanje u desno."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:369
 msgid "Move down"
 msgstr "Pomjeri nadolje"
 
@@ -140,8 +137,7 @@ msgstr "Pomjeri nadolje"
 msgid "Key press to move down."
 msgstr "Taster za kretanje dolje."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:372
 msgid "Drop"
 msgstr "Ispusti"
 
@@ -149,8 +145,7 @@ msgstr "Ispusti"
 msgid "Key press to drop."
 msgstr "Taster za puštanje."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:375
 msgid "Rotate"
 msgstr "Rotacija"
 
@@ -158,8 +153,7 @@ msgstr "Rotacija"
 msgid "Key press to rotate."
 msgstr "Taster za rotiranje."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:378
 msgid "Pause"
 msgstr "Pauza"
 

@@ -369,30 +369,3 @@ msgstr "_Добра"
 #: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "Дата"
-
-#~ msgid "true if the window is fullscren"
-#~ msgstr "Уключана, калі акно разгорнута на ўвесь экран"
-
-#~ msgid "_Pause"
-#~ msgstr "_Паўза"
-
-#~ msgid "_New"
-#~ msgstr "_Новая партыя"
-
-#~ msgid "_Fullscreen"
-#~ msgstr "_На ўвесь экран"
-
-#~ msgid "Score:"
-#~ msgstr "Лік:"
-
-#~ msgid "_Leave Fullscreen"
-#~ msgstr "_Выйсці з поўнаэкраннага рэжыму"
-
-#~ msgid "Quadrapassel Preferences"
-#~ msgstr "Настройкі Quadrapassel"
-
-#~ msgid "Res_ume"
-#~ msgstr "_Працягнуць"
-
-#~ msgid "GNOME Games web site"
-#~ msgstr "Сеціўная пляцоўка гульняў GNOME"

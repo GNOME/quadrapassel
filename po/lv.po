@@ -119,8 +119,7 @@ msgstr "Vai izvēlēties grūti izvietojamus blokus"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Vai izvēlēties grūti izvietojamus blokus."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:363
 msgid "Move left"
 msgstr "Iet pa kreisi"
 
@@ -128,8 +127,7 @@ msgstr "Iet pa kreisi"
 msgid "Key press to move left."
 msgstr "Taustiņš, ko spiest, lai pārvietotu pa kreisi."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:366
 msgid "Move right"
 msgstr "Iet pa labi"
 
@@ -137,8 +135,7 @@ msgstr "Iet pa labi"
 msgid "Key press to move right."
 msgstr "Taustiņš, ko spiest, lai pārvietotu pa labi."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:369
 msgid "Move down"
 msgstr "Pārvietot uz leju"
 
@@ -146,8 +143,7 @@ msgstr "Pārvietot uz leju"
 msgid "Key press to move down."
 msgstr "Taustiņš, ko spiest, lai pārvietotu lejup."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:372
 msgid "Drop"
 msgstr "Mest"
 
@@ -155,8 +151,7 @@ msgstr "Mest"
 msgid "Key press to drop."
 msgstr "Taustiņš, ko spiest, lai mestu."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:375
 msgid "Rotate"
 msgstr "Pagriezt"
 
@@ -164,8 +159,7 @@ msgstr "Pagriezt"
 msgid "Key press to rotate."
 msgstr "Taustiņš, ko spiest, lai pagrieztu."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:378
 msgid "Pause"
 msgstr "Pauze"
 
@@ -382,4 +376,3 @@ msgstr "_Labi"
 #: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "Datums"
-

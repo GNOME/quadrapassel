@@ -125,8 +125,7 @@ msgstr "Выбирать ли блоки, которые трудно разме
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Выбирать ли блоки, которые трудно размещать."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:363
 msgid "Move left"
 msgstr "Влево"
 
@@ -134,8 +133,7 @@ msgstr "Влево"
 msgid "Key press to move left."
 msgstr "Клавиша для перемещения влево."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:366
 msgid "Move right"
 msgstr "Вправо"
 
@@ -143,8 +141,7 @@ msgstr "Вправо"
 msgid "Key press to move right."
 msgstr "Клавиша для перемещения вправо."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:369
 msgid "Move down"
 msgstr "Двигаться вниз"
 
@@ -152,8 +149,7 @@ msgstr "Двигаться вниз"
 msgid "Key press to move down."
 msgstr "Клавиша для перемещения вниз."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:372
 msgid "Drop"
 msgstr "Бросить"
 
@@ -161,8 +157,7 @@ msgstr "Бросить"
 msgid "Key press to drop."
 msgstr "Клавиша для сброса."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:375
 msgid "Rotate"
 msgstr "Поворот"
 
@@ -170,8 +165,7 @@ msgstr "Поворот"
 msgid "Key press to rotate."
 msgstr "Нажмите клавишу для поворота."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:378
 msgid "Pause"
 msgstr "Пауза"
 
@@ -387,30 +381,3 @@ msgstr "_OK"
 #: ../src/score-dialog.vala:48
 msgid "Date"
 msgstr "Дата"
-
-#~ msgid "Quadrapassel Preferences"
-#~ msgstr "Параметры Quadrapassel"
-
-#~ msgid "true if the window is fullscren"
-#~ msgstr "истинно, если окно раскрыто на полный экран"
-
-#~ msgid "_Pause"
-#~ msgstr "_Пауза"
-
-#~ msgid "_New"
-#~ msgstr "_Новая игра"
-
-#~ msgid "_Fullscreen"
-#~ msgstr "На _весь экран"
-
-#~ msgid "Score:"
-#~ msgstr "Счёт:"
-
-#~ msgid "_Leave Fullscreen"
-#~ msgstr "Выйти из _полноэкранного режима"
-
-#~ msgid "Res_ume"
-#~ msgstr "_Продолжить"
-
-#~ msgid "GNOME Games web site"
-#~ msgstr "Веб-сайт GNOME Games"

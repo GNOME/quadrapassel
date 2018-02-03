@@ -17,8 +17,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
@@ -116,8 +116,7 @@ msgstr "Чи підбирати блоки, які важко покласти"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Чи підбирати блоки, які важко покласти."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23
-#: ../src/quadrapassel.vala:363
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:363
 msgid "Move left"
 msgstr "Ліворуч"
 
@@ -125,8 +124,7 @@ msgstr "Ліворуч"
 msgid "Key press to move left."
 msgstr "Натисніть клавішу руху ліворуч."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25
-#: ../src/quadrapassel.vala:366
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:366
 msgid "Move right"
 msgstr "Праворуч"
 
@@ -134,8 +132,7 @@ msgstr "Праворуч"
 msgid "Key press to move right."
 msgstr "Натисніть клавішу руху праворуч."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27
-#: ../src/quadrapassel.vala:369
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:369
 msgid "Move down"
 msgstr "Пересунути вниз"
 
@@ -143,8 +140,7 @@ msgstr "Пересунути вниз"
 msgid "Key press to move down."
 msgstr "Натисніть клавішу руху вниз."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29
-#: ../src/quadrapassel.vala:372
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:372
 msgid "Drop"
 msgstr "Кидок"
 
@@ -152,8 +148,7 @@ msgstr "Кидок"
 msgid "Key press to drop."
 msgstr "Натисніть клавішу для кидання."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31
-#: ../src/quadrapassel.vala:375
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:375
 msgid "Rotate"
 msgstr "Поворот"
 
@@ -161,8 +156,7 @@ msgstr "Поворот"
 msgid "Key press to rotate."
 msgstr "Натисніть клавішу повороту."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33
-#: ../src/quadrapassel.vala:378
+#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:378
 msgid "Pause"
 msgstr "Пауза"
 

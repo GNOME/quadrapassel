@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=quadrapassel&keywords=I18N"
-"+L10N&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=quadrapassel&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-02-22 11:40+0000\n"
 "PO-Revision-Date: 2015-02-22 16:58+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
@@ -91,7 +91,9 @@ msgid "The number of rows to fill"
 msgstr "Počet riadkov, ktoré sa vyplnia"
 
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:16
-msgid "The number of rows that are filled with random blocks at the start of the game."
+msgid ""
+"The number of rows that are filled with random blocks at the start of the "
+"game."
 msgstr "Počet riadkov, ktoré sa na začiatku hry vyplnia náhodnými blokmi."
 
 # PK: co toto znamena?
@@ -104,11 +106,11 @@ msgstr "Hustota blokov v predvyplnených riadkoch"
 # PM: mozes nastavit kolko riadkov má byt zaplnených blokmi a týmto nastavenim mozes nastavit ako husto majú byt obsadené
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:18
 msgid ""
-"The density of blocks in rows filled at the start of the game. The value is between 0 (for no blocks) and 10 (for a "
-"completely filled row)."
+"The density of blocks in rows filled at the start of the game. The value is "
+"between 0 (for no blocks) and 10 (for a completely filled row)."
 msgstr ""
-"Hustota blokov vo vyplnených riadkoch na začiatku hry. Hodnota môže byť od 0 (žiadne bloky) po 10 (úplne vyplnené "
-"riadky)."
+"Hustota blokov vo vyplnených riadkoch na začiatku hry. Hodnota môže byť od 0 "
+"(žiadne bloky) po 10 (úplne vyplnené riadky)."
 
 # summary
 #: ../data/org.gnome.quadrapassel.gschema.xml.h:19
@@ -196,8 +198,9 @@ msgstr "true, ak je okno maximalizované"
 
 # PK: neviem ci je tu vhodny preklad
 # PM: aj ine hry su prekladane (roboti, štyri v rade, červík...)
-#: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1 ../src/quadrapassel.vala:108
-#: ../src/quadrapassel.vala:119 ../src/quadrapassel.vala:750 ../src/quadrapassel.vala:790
+#: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
+#: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
+#: ../src/quadrapassel.vala:750 ../src/quadrapassel.vala:790
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -207,23 +210,28 @@ msgstr "Poukladajte padajúce bloky"
 
 #: ../data/quadrapassel.appdata.xml.in.h:3
 msgid ""
-"Quadrapassel is a derivative of a classic Russian falling-block game. Reposition and rotate the blocks as they fall, "
-"and attempt to fit them together. When you form a complete horizontal row of blocks, the row will disappear and you "
-"score points. The game is over when the blocks get stacked too high. As your score gets higher, you level up and the "
-"blocks fall faster."
+"Quadrapassel is a derivative of a classic Russian falling-block game. "
+"Reposition and rotate the blocks as they fall, and attempt to fit them "
+"together. When you form a complete horizontal row of blocks, the row will "
+"disappear and you score points. The game is over when the blocks get stacked "
+"too high. As your score gets higher, you level up and the blocks fall faster."
 msgstr ""
-"Hra Quadrapassel je odvodená od klasickej ruskej hry s padajúcimi blokmi. Premiestnite a otočte bloky pokým padajú "
-"tak, aby do seba zapadli. Po vytvorení celistvého vodorovného riadku sa tento riadok odstráni a pripíšu sa vám body. "
-"Hra končí keď sa bloky dostanú príliš vysoko. S vyšším skóre rastie aj úroveň a bloky padajú rýchlejšie."
+"Hra Quadrapassel je odvodená od klasickej ruskej hry s padajúcimi blokmi. "
+"Premiestnite a otočte bloky pokým padajú tak, aby do seba zapadli. Po "
+"vytvorení celistvého vodorovného riadku sa tento riadok odstráni a pripíšu "
+"sa vám body. Hra končí keď sa bloky dostanú príliš vysoko. S vyšším skóre "
+"rastie aj úroveň a bloky padajú rýchlejšie."
 
 #: ../data/quadrapassel.appdata.xml.in.h:4
 msgid ""
-"If you're looking for a challenge, Quadrapassel allows you to increase the initial speed of the blocks, or begin the "
-"game with partial blocks on some of the rows. Or, instead of allowing the blocks to fall randomly, it can select "
-"blocks that will be hard for you to place."
+"If you're looking for a challenge, Quadrapassel allows you to increase the "
+"initial speed of the blocks, or begin the game with partial blocks on some "
+"of the rows. Or, instead of allowing the blocks to fall randomly, it can "
+"select blocks that will be hard for you to place."
 msgstr ""
-"Ak máte radi výzvy, hra Quadrapassel vám umožňuje zvýšiť počiatočnú rýchlosť padania blokov alebo začatie hry s "
-"rozostavanými blokmi. Namiesto náhodných blokov môžete tiež vybrať bloky, ktoré sa vám budú ťažko umiestňovať."
+"Ak máte radi výzvy, hra Quadrapassel vám umožňuje zvýšiť počiatočnú rýchlosť "
+"padania blokov alebo začatie hry s rozostavanými blokmi. Namiesto náhodných "
+"blokov môžete tiež vybrať bloky, ktoré sa vám budú ťažko umiestňovať."
 
 #: ../data/quadrapassel.desktop.in.h:3
 msgid "tetris;"
