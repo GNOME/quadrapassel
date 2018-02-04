@@ -82,11 +82,11 @@ public class Quadrapassel : Gtk.Application
         Gtk.Settings.get_default ().set ("gtk-application-prefer-dark-theme", true);
 
         add_action_entries (action_entries, this);
-        add_accelerator ("<Primary>n", "app.new-game", null);
-        add_accelerator ("Pause", "app.pause", null);
-        add_accelerator ("F11", "app.fullscreen", null);
-        add_accelerator ("F1", "app.help", null);
-        add_accelerator ("<Primary>q", "app.quit", null);
+        set_accels_for_action ("app.new-game", {"<Primary>n"});
+        set_accels_for_action ("app.pause", {"Pause"});
+        set_accels_for_action ("app.fullscreen", {"F11"});
+        set_accels_for_action ("app.help", {"F1"});
+        set_accels_for_action ("app.quit", {"<Primary>q"});
         pause_action = lookup_action ("pause") as SimpleAction;
 
         var menu = new Menu ();
