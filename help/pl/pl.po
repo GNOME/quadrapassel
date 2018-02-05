@@ -1,13 +1,13 @@
 # Polish translation for quadrapassel help.
 # Copyright © 2017 the quadrapassel authors.
-# This file is distributed under the same license as the quadrapassel package.
+# This file is distributed under the same license as the quadrapassel help.
 # Piotr Drąg <piotrdrag@gmail.com>, 2017.
 # Aviary.pl <community-poland@mozilla.org>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel-help\n"
-"POT-Creation-Date: 2017-09-10 12:07+0000\n"
+"POT-Creation-Date: 2018-02-03 16:50+0000\n"
 "PO-Revision-Date: 2017-09-16 01:30+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
