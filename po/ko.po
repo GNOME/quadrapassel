@@ -8,7 +8,7 @@
 #
 # Updated for quadrapassel:
 #
-# Changwoo Ryu <cwryu@debian.org>, 2013-2015.
+# Changwoo Ryu <cwryu@debian.org>, 2013-2015, 2018.
 # Yeol Park <peary2@gmail.com>, 2018.
 #
 # 새로 번역하신 분은 아래 "translator-credits"에 추가하세요.
@@ -19,11 +19,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-02-03 16:50+0000\n"
-"PO-Revision-Date: 2018-02-24 16:51+0900\n"
-"Last-Translator: Yeol Park <peary2@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=quadrapassel&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2018-02-24 08:03+0000\n"
+"PO-Revision-Date: 2018-04-08 01:48+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -223,7 +222,7 @@ msgstr ""
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/quadrapassel.desktop.in:6
 msgid "quadrapassel"
-msgstr "쿼드러패셀"
+msgstr "quadrapassel"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/quadrapassel.desktop.in:12
