@@ -27,10 +27,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-02-03 16:50+0000\n"
-"PO-Revision-Date: 2018-02-16 16:11-0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
+"POT-Creation-Date: 2018-06-05 14:15+0000\n"
+"PO-Revision-Date: 2018-08-08 12:34-0200\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -362,7 +361,7 @@ msgstr "Tango Sombreado"
 
 #: src/quadrapassel.vala:433
 msgid "Clean"
-msgstr "Limpar"
+msgstr "Limpo"
 
 #: src/quadrapassel.vala:755
 msgid "Unpause the game"
