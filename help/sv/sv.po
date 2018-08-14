@@ -1,11 +1,11 @@
 # Erik Sköldås <erik.skoldas@tele2.se>, 2015.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel doc\n"
-"POT-Creation-Date: 2017-07-31 12:07+0000\n"
-"PO-Revision-Date: 2017-08-01 01:49+0200\n"
+"POT-Creation-Date: 2018-08-13 21:41+0000\n"
+"PO-Revision-Date: 2018-08-14 16:05+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.2\n"
+"X-Generator: Poedit 2.1.1\n"
 "X-Project-Style: gnome\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -65,10 +65,11 @@ msgstr "Rapportera ett problem"
 #: C/bug-filing.page:25
 msgid ""
 "If you notice a problem you can file a <em>bug report</em>. To file a bug, "
-"go to <link href=\"https://bugzilla.gnome.org/\"/>."
+"go to <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
 msgstr ""
 "Om du upptäcker ett problem kan du sända in en <em>felrapport</em>. För att "
-"sända in en felrapport gå till <link href=\"https://bugzilla.gnome.org/\"/>."
+"sända in en felrapport gå till <link href=\"https://gitlab.gnome.org/GNOME/"
+"quadrapassel/issues/\"/>."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:28
@@ -85,44 +86,44 @@ msgid ""
 "To participate you need an account which will give you the ability to gain "
 "access, file bugs, and make comments. Also, you need to register so you can "
 "receive updates by e-mail about the status of your bug. If you don't already "
-"have an account, just click on the <gui>New Account</gui> link to create one."
+"have an account, just click on the <gui>Sign in / Register</gui> link to "
+"create one."
 msgstr ""
-"För att delta behöver du ett konto som ger dig möjlighet att få åtkomst, "
-"rapportera fel och kunna lämna synpunkter. Dessutom måste du registrera dig "
-"så att du kan ta emot uppdateringar om status för din felrapport via e-post. "
-"Om du inte redan har ett konto, klicka bara på länken <gui>Nytt konto</gui> "
-"för att skapa ett."
+"För att delta behöver du ett konto som kommer att ge dig möjligheten att få "
+"tillgång, rapportera fel och kommentera. Du måste också registrera dig så "
+"att du kan få uppdateringar via e-post om status för ditt fel. Om du inte "
+"redan har ett konto klickar du helt enkelt på länken <gui>Sign in / "
+"Register</gui> för att skapa ett."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:35
 msgid ""
-"Once you have an account, log in, click on <guiseq><gui>File a Bug</"
-"gui><gui>Applications</gui><gui>quadrapassel</gui></guiseq>. Before "
+"Once you have an account, log in, and click on <gui>New issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
 "page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
-"<link href=\"https://bugzilla.gnome.org/browse.cgi?product=quadrapassel"
-"\">browse</link> for the bug to see if it already exists."
+"<link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues\">browse</"
+"link> for the bug to see if it already exists."
 msgstr ""
-"När du väl har ett konto, logga in, klicka på <guiseq><gui>File a Bug</"
-"gui><gui>Applications</gui><gui>quadrapassel</gui></guiseq>. Innan du "
+"När du har ett konto, logga in och klicka på <gui>New issue</gui>. Innan du "
 "rapporterar ett fel, läs <link href=\"https://bugzilla.gnome.org/page.cgi?"
-"id=bug-writing.html\">riktlinjer för felrapporter</link>, och <link href="
-"\"https://bugzilla.gnome.org/browse.cgi?product=quadrapassel\">sök</link> "
-"för att se om felet redan är rapporterat."
+"id=bug-writing.html\">riktlinjerna för hur man skriver en felrapport</link> "
+"och <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues"
+"\">bläddra</link> genom existerande felrapporter för att se om den redan "
+"finns."
 
 #. (itstool) path: page/p
-#: C/bug-filing.page:43
+#: C/bug-filing.page:40
 msgid ""
-"If you are requesting a new feature, choose <gui>enhancement</gui> in the "
-"<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Submit Bug</gui>."
+"If you are requesting a new feature, choose <gui>1. Feature</gui> in the "
+"<gui>Labels</gui> menu. Fill in the Title and Description sections and click "
+"<gui>Submit Issue</gui>."
 msgstr ""
-"Om du önskar en ny funktion, välj <gui>enhancement</gui> i <gui>Severity</"
-"gui>-menyn. Fyll i sammanfattningen och beskrivningen och klicka <gui>Submit "
-"Bug</gui>."
+"Om du önskar en ny funktion, välj <gui>1. Feature</gui> i menyn <gui>Labels</"
+"gui>. Fyll i avsnitten Title och Description och klicka på <gui>Submit "
+"Issue</gui>."
 
 #. (itstool) path: page/p
-#: C/bug-filing.page:47
+#: C/bug-filing.page:44
 msgid ""
 "Your report will be given an ID number, and its status will be updated as it "
 "is being dealt with."
@@ -131,13 +132,13 @@ msgstr ""
 "uppdateras när den behandlas."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:52 C/develop.page:29 C/documentation.page:29
+#: C/bug-filing.page:49 C/develop.page:29 C/documentation.page:29
 #: C/translate.page:42
 msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
 msgstr "<link xref=\"get-involved\"><_:media-1/>Engagera dig</link>"
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:53 C/develop.page:30 C/documentation.page:30
+#: C/bug-filing.page:50 C/develop.page:30 C/documentation.page:30
 #: C/get-involved.page:23 C/playgame.page:44 C/preferences.page:73
 #: C/score.page:38 C/translate.page:43
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
@@ -200,7 +201,7 @@ msgid ""
 "Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
 msgstr ""
-"Vår <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"Vår <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link>sida innehåller användbar information."
 
 #. (itstool) path: page/title
