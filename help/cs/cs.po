@@ -2,13 +2,13 @@
 # Copyright (C) 2009 the author(s) of gnome-games.
 # This file is distributed under the same license as the gnometris help.
 #
-# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013, 2015.
+# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013, 2015, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
-"POT-Creation-Date: 2017-07-31 12:07+0000\n"
-"PO-Revision-Date: 2015-03-22 23:14+0100\n"
+"POT-Creation-Date: 2018-08-13 21:41+0000\n"
+"PO-Revision-Date: 2018-08-30 17:07+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -66,10 +66,10 @@ msgstr "Hlaste problémy"
 #: C/bug-filing.page:25
 msgid ""
 "If you notice a problem you can file a <em>bug report</em>. To file a bug, "
-"go to <link href=\"https://bugzilla.gnome.org/\"/>."
+"go to <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
 msgstr ""
 "Pokud si povšimnete nějakého problému, můžete vyplnit <em>chybové hlášení</"
-"em> na <link href=\"https://bugzilla.gnome.org/\"/>."
+"em> na <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:28
@@ -87,43 +87,43 @@ msgid ""
 "To participate you need an account which will give you the ability to gain "
 "access, file bugs, and make comments. Also, you need to register so you can "
 "receive updates by e-mail about the status of your bug. If you don't already "
-"have an account, just click on the <gui>New Account</gui> link to create one."
+"have an account, just click on the <gui>Sign in / Register</gui> link to "
+"create one."
 msgstr ""
 "Abyste se mohli zapojit, musíte si vytvořit účet, díky kterému získáte "
 "přistup, můžete hlásit chyby a psát komentáře. Registraci potřebujete také k "
 "tomu, aby vám přicházely na e-mail informace o stavu vaší chyby. Jestli účet "
-"zatím nemáte, stačí pro vytvoření kliknout na odkaz <gui>Nový účet</gui>."
+"zatím nemáte, stačí pro vytvoření kliknout na odkaz <gui>Sign in / Register"
+"</gui>."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:35
 msgid ""
-"Once you have an account, log in, click on <guiseq><gui>File a Bug</"
-"gui><gui>Applications</gui><gui>quadrapassel</gui></guiseq>. Before "
+"Once you have an account, log in, and click on <gui>New issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
 "page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
-"<link href=\"https://bugzilla.gnome.org/browse.cgi?product=quadrapassel"
-"\">browse</link> for the bug to see if it already exists."
+"<link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues\">browse</"
+"link> for the bug to see if it already exists."
 msgstr ""
-"Když už účet máte, přihlaste se, klikněte na <guiseq><gui>File a Bug</"
-"gui><gui>Applications</gui><gui>quadrapassel</gui></guiseq>. Před nahlášením "
-"chyby si prosím přečtěte <link href=\"https://bugzilla.gnome.org/page.cgi?"
-"id=bug-writing.html\">přiručku k hlášení chyb</link> (odkaz je v angličtině) "
-"a <link href=\"https://bugzilla.gnome.org/browse.cgi?product=quadrapassel"
+"Když už účet máte, přihlaste se a klikněte na <gui>New issue</gui>. Před "
+"nahlášením chyby si prosím přečtěte <link href=\"https://bugzilla.gnome.org/"
+"page.cgi?id=bug-writing.html\">přiručku k hlášení chyb</link> (odkaz je v "
+"angličtině) a <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues"
 "\">podívejte</link> se prosím, jestli stejnou chybu nenahlásil už někdo jiný."
 
 #. (itstool) path: page/p
-#: C/bug-filing.page:43
+#: C/bug-filing.page:40
 msgid ""
-"If you are requesting a new feature, choose <gui>enhancement</gui> in the "
-"<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Submit Bug</gui>."
+"If you are requesting a new feature, choose <gui>1. Feature</gui> in the "
+"<gui>Labels</gui> menu. Fill in the Title and Description sections and click "
+"<gui>Submit Issue</gui>."
 msgstr ""
-"V případě, že žádáte o novou funkčnost, zvolte v nabídce <gui>Severity</gui> "
-"položku <gui>enhancement</gui>. Vyplňte pole Summary a Description a "
-"klikněte na <gui>Submit Bug</gui>."
+"V případě, že žádáte o novou funkčnost, zvolte v nabídce <gui>Labels</gui> "
+"položku <gui>1. Feature</gui>. Vyplňte pole Title a Description a klikněte na "
+"<gui>Submit Issue</gui>."
 
 #. (itstool) path: page/p
-#: C/bug-filing.page:47
+#: C/bug-filing.page:44
 msgid ""
 "Your report will be given an ID number, and its status will be updated as it "
 "is being dealt with."
@@ -132,13 +132,13 @@ msgstr ""
 "řešeno, bude se měnit jeho stav."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:52 C/develop.page:29 C/documentation.page:29
+#: C/bug-filing.page:49 C/develop.page:29 C/documentation.page:29
 #: C/translate.page:42
 msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
 msgstr "<link xref=\"get-involved\"><_:media-1/> Zapojte se</link>"
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:53 C/develop.page:30 C/documentation.page:30
+#: C/bug-filing.page:50 C/develop.page:30 C/documentation.page:30
 #: C/get-involved.page:23 C/playgame.page:44 C/preferences.page:73
 #: C/score.page:38 C/translate.page:43
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
