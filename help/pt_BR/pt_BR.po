@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation for quadrapassel help.
-# Copyright (C) 2013 quadrapassel's COPYRIGHT HOLDER
+# Copyright (C) 2018 quadrapassel's COPYRIGHT HOLDER
 # This file is distributed under the same license as the quadrapassel package.
 # Enrico Nicoletto <liverig@gmail.com>, 2013.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2018.
@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: quadrapassel help\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/"
 "enter_bug.cgi?product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-03-11 09:30+0000\n"
-"PO-Revision-Date: 2018-08-08 12:49-0200\n"
+"POT-Creation-Date: 2018-08-13 21:41+0000\n"
+"PO-Revision-Date: 2018-09-02 00:25-0200\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -69,10 +69,11 @@ msgstr "Informe um problema"
 #: C/bug-filing.page:25
 msgid ""
 "If you notice a problem you can file a <em>bug report</em>. To file a bug, "
-"go to <link href=\"https://bugzilla.gnome.org/\"/>."
+"go to <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
 msgstr ""
 "Se você notar um problema, você pode apresentar um <em>relatório de erro</em>"
-". Para relatar um erro, acesse <link href=\"https://bugzilla.gnome.org/\"/>."
+". Para relatar um erro, acesse <link href=\"https://gitlab.gnome.org/GNOME/"
+"quadrapassel/issues/\"/>."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:28
@@ -89,45 +90,44 @@ msgid ""
 "To participate you need an account which will give you the ability to gain "
 "access, file bugs, and make comments. Also, you need to register so you can "
 "receive updates by e-mail about the status of your bug. If you don't already "
-"have an account, just click on the <gui>New Account</gui> link to create one."
+"have an account, just click on the <gui>Sign in / Register</gui> link to "
+"create one."
 msgstr ""
-"Para participar, você precisa de uma conta que lhe dará a capacidade de "
-"obter acesso, relatar errors e fazer comentários. Além disso, você precisa "
-"se registrar para receber atualizações por e-mail sobre o status do seu "
-"erro. Se você ainda não tem uma conta, basta clicar no link <gui>New "
-"Account</gui> para criar uma."
+"Para participar, você precisa de uma conta que lhe concederá a habilidade de "
+"relatar erros e fazer comentários. Também, você precisa se registrar para "
+"receber atualizações por e-mail sobre o status de seu relatório de erro. Se "
+"você não tiver uma conta, basta clicar no link <gui>Sign in / Register</gui> "
+"para criar uma."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:35
 msgid ""
-"Once you have an account, log in, click on <guiseq><gui>File a Bug</"
-"gui><gui>Applications</gui><gui>quadrapassel</gui></guiseq>. Before "
+"Once you have an account, log in, and click on <gui>New issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
 "page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
-"<link href=\"https://bugzilla.gnome.org/browse.cgi?product=quadrapassel"
-"\">browse</link> for the bug to see if it already exists."
+"<link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues\">browse</"
+"link> for the bug to see if it already exists."
 msgstr ""
-"Assim que você tiver uma conta, autentique-se, clique em <guiseq><gui>File a "
-"Bug</gui><gui>Applications</gui><gui>quadrapassel</gui></guiseq>. Antes de "
-"relatar um erro, por favor leia as <link href=\"https://bugzilla.gnome.org/"
-"page.cgi?id=bug-writing.html\">diretrizes de escrita de erro</link>, e por "
-"favor <link href=\"https://bugzilla.gnome.org/browse.cgi?product="
-"quadrapassel\">pesquise</link> por erros relatados para ver se já foi "
-"relatado."
+"Assim que você tiver uma conta, autentique-se, clique em <gui>New issue</gui>"
+". Antes de relatar um erro, por favor leia as <link href=\""
+"https://bugzilla.gnome.org/page.cgi?id=bug-writing.html\">diretrizes de "
+"relatório de erro</link>, e por favor <link href=\"https://bugzilla.gnome."
+"org/browse.cgi?product=quadrapassel\">pesquise</link> por erros relatados "
+"para ver se já foi relatado."
 
 #. (itstool) path: page/p
-#: C/bug-filing.page:43
+#: C/bug-filing.page:40
 msgid ""
-"If you are requesting a new feature, choose <gui>enhancement</gui> in the "
-"<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Submit Bug</gui>."
+"If you are requesting a new feature, choose <gui>1. Feature</gui> in the "
+"<gui>Labels</gui> menu. Fill in the Title and Description sections and click "
+"<gui>Submit Issue</gui>."
 msgstr ""
-"Se você está solicitando um novo recurso, escolha <gui>enhancement</gui> no "
-"menu <gui>Severity</gui>. Preencha as seções Summary e Description e clique "
-"em <gui>Submit Bug</gui>."
+"Se você está requisitando um novo recurso, escolha <gui>1. Feature</gui> no "
+"menu <gui>Labels</gui>. Preencha as seções Title e Description e clique em "
+"<gui>Submit Issue</gui>."
 
 #. (itstool) path: page/p
-#: C/bug-filing.page:47
+#: C/bug-filing.page:44
 msgid ""
 "Your report will be given an ID number, and its status will be updated as it "
 "is being dealt with."
@@ -136,13 +136,13 @@ msgstr ""
 "atualizado à medida que for tratado."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:52 C/develop.page:29 C/documentation.page:29
+#: C/bug-filing.page:49 C/develop.page:29 C/documentation.page:29
 #: C/translate.page:42
 msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
 msgstr "<link xref=\"get-involved\"><_:media-1/>Envolva-se</link>"
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:53 C/develop.page:30 C/documentation.page:30
+#: C/bug-filing.page:50 C/develop.page:30 C/documentation.page:30
 #: C/get-involved.page:23 C/playgame.page:44 C/preferences.page:73
 #: C/score.page:38 C/translate.page:43
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
@@ -170,12 +170,12 @@ msgid ""
 "href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
 "link>."
 msgstr ""
-"Se você quiser <link href=\"https://wiki.gnome.org/Apps/Games/Contributing\">"
-"ajudar a desenvolver <app>GNOME Games</app></link>, você pode entrar em "
-"contato com os desenvolvedores usando <link href=\""
-"https://cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\""
-">irc</link> ou via nossa <link href=\"http://mail.gnome.org/mailman/listinfo/"
-"games-list\">lista de discussão</link>."
+"Se você quiser <link href=\"https://wiki.gnome.org/Apps/Games/Contributing"
+"\">ajudar a desenvolver <app>GNOME Games</app></link>, você pode entrar em "
+"contato com os desenvolvedores usando <link href=\"https://cbe005.chat."
+"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link> ou via "
+"nossa <link href=\"http://mail.gnome.org/mailman/listinfo/games-list\">lista "
+"de discussão</link>."
 
 #. (itstool) path: info/desc
 #: C/documentation.page:20
@@ -196,9 +196,9 @@ msgid ""
 "mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgstr ""
 "Para contribuir com o projeto de documentação, sinta-se à vontade para "
-"entrar em contato conosco usando <link href=\"https://cbe003.chat.mibbit.com/"
-"?url=irc%3A%2F%2Firc.gnome.org%2Fdocs\">irc</link> ou via nossa <link href=\""
-"http://mail.gnome.org/mailman/listinfo/gnome-doc-list\">lista de "
+"entrar em contato conosco usando <link href=\"https://cbe003.chat.mibbit."
+"com/?url=irc%3A%2F%2Firc.gnome.org%2Fdocs\">irc</link> ou via nossa <link "
+"href=\"http://mail.gnome.org/mailman/listinfo/gnome-doc-list\">lista de "
 "discussão</link>."
 
 #. (itstool) path: page/p
@@ -247,8 +247,6 @@ msgstr "Logo do Quadrapassel"
 # O novo nome do Gnometetris é muito estranho (Quadrapassel), pensei em traduzi-lo simplesmente como Tetris ou utilizar a nomeação antiga, mas as traduções em outros idiomas também mantiveram o nome original (Quadrapassel).
 #. (itstool) path: page/title
 #: C/index.page:19
-#| msgctxt "link"
-#| msgid "Quadrapassel"
 msgid "<_:media-1/> Quadrapassel"
 msgstr "<_:media-1/> Quadrapassel"
 
@@ -316,7 +314,7 @@ msgid ""
 "Unported license."
 msgstr ""
 "Essa obra é distribuída sob uma licença CreativeCommons Atribuição-"
-"CompartilhaIgual 3.0 Não Apdatada."
+"CompartilhaIgual 3.0 Não Adaptada."
 
 #. (itstool) path: page/p
 #: C/license.page:20
@@ -386,11 +384,10 @@ msgid ""
 "link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
 "sa/3.0/\">Commons Deed</link>."
 msgstr ""
-"Para o texto integral da licença, veja o <link href=\""
-"https://creativecommons.org/licenses/by-sa/3.0/legalcode\">site da "
-"CreativeCommons</link> ou leia o texto completo da <link href=\""
-"https://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR\">Commons "
-"Deed</link>."
+"Para o texto integral da licença, veja o <link href=\"https://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">site da CreativeCommons</"
+"link> ou leia o texto completo da <link href=\"https://creativecommons.org/"
+"licenses/by-sa/3.0/deed.pt_BR\">Commons Deed</link>."
 
 #. (itstool) path: license/p
 #: C/playgame.page:17
@@ -591,8 +588,8 @@ msgstr "Para mudar o tema:"
 msgid ""
 "click the <guiseq><gui>Quadrapassel menu</gui><gui>Preference</gui></guiseq>."
 msgstr ""
-"clique no menu "
-"<guiseq><gui>Quadrapassel</gui><gui>Preferências</gui></guiseq>."
+"clique no menu <guiseq><gui>Quadrapassel</gui><gui>Preferências</gui></"
+"guiseq>."
 
 #. (itstool) path: item/p
 #: C/preferences.page:59
@@ -602,7 +599,8 @@ msgstr "selecione a aba <gui>Tema</gui>."
 #. (itstool) path: section/p
 #: C/preferences.page:61
 msgid "Four different themes are available for the blocks' contours:"
-msgstr "Quatro temas diferentes estão disponíveis para os contornos dos blocos:"
+msgstr ""
+"Quatro temas diferentes estão disponíveis para os contornos dos blocos:"
 
 #. (itstool) path: item/p
 #: C/preferences.page:65
@@ -662,8 +660,8 @@ msgid ""
 msgstr ""
 "Você pode fazer muitas alterações nos controles do teclado, no contorno dos "
 "blocos, no número e na densidade das linhas com as quais você inicia e na "
-"velocidade da queda. Você pode alterar suas configurações em <link xref=\""
-"preferences\">Preferência</link>. Depois de decidir o que mais se adéqua a "
+"velocidade da queda. Você pode alterar suas configurações em <link xref="
+"\"preferences\">Preferência</link>. Depois de decidir o que mais se adéqua a "
 "você, é hora de mandar bala!"
 
 #. (itstool) path: section/title
@@ -678,9 +676,9 @@ msgid ""
 "gui><gui>Scores</gui></guiseq> you can find the records from the highest to "
 "the lowest score."
 msgstr ""
-"Todo mundo quer estar no topo da lista, certo? Em "
-"<guiseq><gui>Jogo</gui><gui>Pontuações</gui></guiseq> você pode encontrar os "
-"registros da pontuação mais alta para a mais baixa."
+"Todo mundo quer estar no topo da lista, certo? Em <guiseq><gui>Jogo</"
+"gui><gui>Pontuações</gui></guiseq> você pode encontrar os registros da "
+"pontuação mais alta para a mais baixa."
 
 #. (itstool) path: section/p
 #: C/score.page:34
@@ -716,8 +714,8 @@ msgid ""
 "There are <link href=\"http://l10n.gnome.org/module/quadrapassel/\">many "
 "languages</link> for which translations are still needed."
 msgstr ""
-"Há <link href=\"http://l10n.gnome.org/module/quadrapassel/\">muitos "
-"idiomas</link> para os quais traduções ainda são necessárias."
+"Há <link href=\"http://l10n.gnome.org/module/quadrapassel/\">muitos idiomas</"
+"link> para os quais traduções ainda são necessárias."
 
 #. (itstool) path: page/p
 #: C/translate.page:30
@@ -740,10 +738,10 @@ msgid ""
 "channel are located worldwide, so you may not get an immediate response as a "
 "result of timezone differences."
 msgstr ""
-"Você pode conversar com os tradutores do GNOME usando o <link href=\""
-"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\""
-">irc</link>. As pessoas no canal estão localizadas em todo o mundo, pelo que "
-"poderá não obter uma resposta imediata devido a diferenças de fuso horário."
+"Você pode conversar com os tradutores do GNOME usando o <link href=\"https://"
+"cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. "
+"As pessoas no canal estão localizadas em todo o mundo, pelo que poderá não "
+"obter uma resposta imediata devido a diferenças de fuso horário."
 
 #. (itstool) path: page/p
 #: C/translate.page:38
