@@ -1,23 +1,23 @@
 # Hungarian translation for quadrapassel help.
-# Copyright (C) 2012, 2013 Free Software Foundation, Inc.
+# Copyright (C) 2012, 2013, 2014, 2015, 2017, 2018. Free Software Foundation, Inc.
 # This file is distributed under the same license as the quadrapassel help.
 #
 # László Ádám Kohajda <kla.kohi at gmail dot com>, 2012.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2012, 2013, 2015, 2017.
-# Balázs Úr <urbalazs at gmail dot com>, 2014.
+# Balázs Úr <urbalazs at gmail dot com>, 2014, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
-"POT-Creation-Date: 2017-07-31 12:07+0000\n"
-"PO-Revision-Date: 2017-08-18 10:38+0200\n"
-"Last-Translator: Gabor Kelemen <kelemeng at ubuntu dot com>\n"
+"POT-Creation-Date: 2018-08-13 21:41+0000\n"
+"PO-Revision-Date: 2018-09-13 23:52+0200\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 1.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -64,10 +64,10 @@ msgstr "Hiba jelentése"
 #: C/bug-filing.page:25
 msgid ""
 "If you notice a problem you can file a <em>bug report</em>. To file a bug, "
-"go to <link href=\"https://bugzilla.gnome.org/\"/>."
+"go to <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
 msgstr ""
 "Ha hibát észlelt, beküldhet egy <em>hibajelentést</em>. Ehhez keresse fel a "
-"<link href=\"https://bugzilla.gnome.org/\"/> oldalt."
+"<link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/> oldalt."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:28
@@ -85,49 +85,44 @@ msgid ""
 "To participate you need an account which will give you the ability to gain "
 "access, file bugs, and make comments. Also, you need to register so you can "
 "receive updates by e-mail about the status of your bug. If you don't already "
-"have an account, just click on the <gui>New Account</gui> link to create one."
+"have an account, just click on the <gui>Sign in / Register</gui> link to "
+"create one."
 msgstr ""
 "A részvételhez létre kell hoznia egy fiókot, amely lehetővé teszi a "
-"hozzáférést, hibajelentések beküldését és a hibákhoz való hozzászólást. A "
-"regisztráció után a hozzászólásokat e-mailben is megkaphatja. Ha még nincs "
-"fiókja, akkor a <gui>New Account</gui> hivatkozásra kattintva létrehozhat "
-"egyet."
+"hozzáférést, hibajelentések beküldését és a hibákhoz való hozzászólást. Azért "
+"is regisztrálnia kell, hogy frissítéseket kapjon e-mailben a hiba állapotáról."
+" Ha még nincs fiókja, akkor a <gui>Sign in / Register</gui> hivatkozásra "
+"kattintva létrehozhat egyet."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:35
 msgid ""
-"Once you have an account, log in, click on <guiseq><gui>File a Bug</"
-"gui><gui>Applications</gui><gui>quadrapassel</gui></guiseq>. Before "
+"Once you have an account, log in, and click on <gui>New issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
 "page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
-"<link href=\"https://bugzilla.gnome.org/browse.cgi?product=quadrapassel"
-"\">browse</link> for the bug to see if it already exists."
+"<link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues\">browse</"
+"link> for the bug to see if it already exists."
 msgstr ""
-"Ha létrehozta fiókját, jelentkezzen be, kattintson a <guiseq><gui>File a "
-"Bug</gui><gui>Applications</gui><gui>quadrapassel</gui></guiseq> "
-"hivatkozásokra. Hiba jelentése előtt olvassa el a <link href=\"https://"
-"bugzilla.gnome.org/page.cgi?id=bug-writing.html\">hibajelentés-írási "
-"irányelveket</link>, és <link href=\"https://bugzilla.gnome.org/browse.cgi?"
-"product=quadrapassel\">ellenőrizze</link>, hogy nincs-e már a hiba "
+"Ha létrehozta fiókját, jelentkezzen be, kattintson a <gui>New issue</gui> "
+"hivatkozásokra. Hiba jelentése előtt olvassa el a <link "
+"href=\"https://bugzilla.gnome.org/page.cgi?id=bug-writing.html\">"
+"hibajelentés-írási irányelveket</link>, és <link href=\"https://gitlab.gnome."
+"org/GNOME/quadrapassel/issues\">ellenőrizze</link>, hogy nincs-e már a hiba "
 "bejelentve."
 
 #. (itstool) path: page/p
-#: C/bug-filing.page:43
-#| msgid ""
-#| "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
-#| "<gui>Severity</gui> menu. Fill in the Summary and Description sections "
-#| "and click <gui>Commit</gui>."
+#: C/bug-filing.page:40
 msgid ""
-"If you are requesting a new feature, choose <gui>enhancement</gui> in the "
-"<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Submit Bug</gui>."
+"If you are requesting a new feature, choose <gui>1. Feature</gui> in the "
+"<gui>Labels</gui> menu. Fill in the Title and Description sections and click "
+"<gui>Submit Issue</gui>."
 msgstr ""
-"Ha új szolgáltatást kér, válassza az <gui>enhancement</gui> lehetőséget a "
-"<gui>Severity</gui> menüben. Töltse ki a Summary és Description szakaszokat, "
-"és kattintson a <gui>Submit Bug</gui> gombra."
+"Ha új szolgáltatást kér, válassza az <gui>1. Feature</gui> lehetőséget a "
+"<gui>Labels</gui> menüben. Töltse ki a Title és a Description szakaszokat, "
+"és kattintson a <gui>Submit Issue</gui> gombra."
 
 #. (itstool) path: page/p
-#: C/bug-filing.page:47
+#: C/bug-filing.page:44
 msgid ""
 "Your report will be given an ID number, and its status will be updated as it "
 "is being dealt with."
@@ -136,13 +131,13 @@ msgstr ""
 "feldolgozás során frissülni fog."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:52 C/develop.page:29 C/documentation.page:29
+#: C/bug-filing.page:49 C/develop.page:29 C/documentation.page:29
 #: C/translate.page:42
 msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
 msgstr "<link xref=\"get-involved\"><_:media-1/>Közreműködés</link>"
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:53 C/develop.page:30 C/documentation.page:30
+#: C/bug-filing.page:50 C/develop.page:30 C/documentation.page:30
 #: C/get-involved.page:23 C/playgame.page:44 C/preferences.page:73
 #: C/score.page:38 C/translate.page:43
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
@@ -748,100 +743,3 @@ msgstr ""
 "\">kezdőoldalán</link> megtalálja a magyar levelezőlista címét és a "
 "fordítások megkezdéséhez szükséges információkat."
 
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/quadrapassel22.png' "
-#~ "md5='4d2440a988c86ad179d0f8148263d8b9'"
-#~ msgstr ""
-#~ "external ref='media/quadrapassel22.png' "
-#~ "md5='4d2440a988c86ad179d0f8148263d8b9'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/quadrapassel.png' "
-#~ "md5='95b96f006d5876090ff7a2305652658c'"
-#~ msgstr ""
-#~ "external ref='media/quadrapassel.png' "
-#~ "md5='95b96f006d5876090ff7a2305652658c'"
-
-#~ msgctxt "_"
-#~ msgid "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
-#~ msgstr ""
-#~ "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
-
-#~ msgctxt "_"
-#~ msgid "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
-#~ msgstr ""
-#~ "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
-#~ msgstr ""
-#~ "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
-#~ msgstr ""
-#~ "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
-#~ msgstr ""
-#~ "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
-#~ msgstr ""
-#~ "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
-
-#~ msgctxt "_"
-#~ msgid "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
-#~ msgstr ""
-#~ "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
-
-#~ msgctxt "_"
-#~ msgid "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
-#~ msgstr ""
-#~ "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
-
-#~| msgid ""
-#~| "<media type=\"image\" src=\"media/quadrapassel.png\">Quadrapassel logo</"
-#~| "media>Quadrapassel"
-#~ msgid ""
-#~ "<media type=\"image\" src=\"media/quadrapassel.png\">Quadrapassel logo</"
-#~ "media> Quadrapassel"
-#~ msgstr ""
-#~ "<media type=\"image\" src=\"media/quadrapassel.png\">Quadrapassel logó</"
-#~ "media> Quadrapassel"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/go-previous.png' "
-#~ "md5='e9ce3da4ee6497ce2f38178c3c929872'"
-#~ msgstr ""
-#~ "external ref='media/go-previous.png' "
-#~ "md5='e9ce3da4ee6497ce2f38178c3c929872'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
-#~ msgstr ""
-#~ "external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
-
-#~ msgid ""
-#~ "<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous."
-#~ "png\"/>Get Involved</link>"
-#~ msgstr ""
-#~ "<link xref=\"get-involved\"><media type=\"image\" src=\"media/go-previous."
-#~ "png\"/>Közreműködés</link>"
-
-#~ msgid ""
-#~ "To file your bug, choose the component <gui>quadrapassel</gui> in the "
-#~ "<gui>Component</gui> menu."
-#~ msgstr ""
-#~ "A hiba bejelentéséhez válassza ki a <gui>quadrapassel</gui> összetevőt a "
-#~ "<gui>Component</gui> menüben."
