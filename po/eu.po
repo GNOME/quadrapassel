@@ -2,96 +2,95 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2008, 2009, 2010, 2011, 2012, 2013.
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2014, 2015.
 #
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2008, 2009, 2010, 2011, 2012, 2013.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2014, 2015, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-24 15:24+0100\n"
-"PO-Revision-Date: 2015-03-24 15:24+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
+"POT-Creation-Date: 2018-06-05 14:15+0000\n"
+"PO-Revision-Date: 2018-11-17 18:06+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
-"Language-Team: Basque <librezale@librezale.org>\n"
+"Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:1
+#: data/org.gnome.quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
 msgstr "Blokeak marrazteko erabili beharreko irudia"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:2
+#: data/org.gnome.quadrapassel.gschema.xml:6
 msgid "Image to use for drawing blocks."
 msgstr "Blokeak marrazteko erabili beharreko irudia."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:3
+#: data/org.gnome.quadrapassel.gschema.xml:10
 msgid "The theme used for rendering the blocks"
 msgstr "Blokeak errendatzeko erabilitako gaia"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:4
+#: data/org.gnome.quadrapassel.gschema.xml:11
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "Blokeak eta atzeko planoa errendatzeko erabilitako gaiaren izena."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:5
+#: data/org.gnome.quadrapassel.gschema.xml:16
 msgid "Level to start with"
 msgstr "Hasteko maila"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:6
+#: data/org.gnome.quadrapassel.gschema.xml:17
 msgid "Level to start with."
 msgstr "Hasteko maila."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:7
+#: data/org.gnome.quadrapassel.gschema.xml:21
 msgid "Whether to preview the next block"
 msgstr "Hurrengo blokea aurreikusiko den ala ez adierazten du."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:8
+#: data/org.gnome.quadrapassel.gschema.xml:22
 msgid "Whether to preview the next block."
 msgstr "Hurrengo blokea aurreikusiko den ala ez adierazten du."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:9
+#: data/org.gnome.quadrapassel.gschema.xml:26
 msgid "Whether to show where the moving piece will land"
 msgstr "Blokea nora eramango den erakutsi edo ez"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:10
+#: data/org.gnome.quadrapassel.gschema.xml:27
 msgid "Whether to show where the moving piece will land."
 msgstr "Blokea nora eramango den erakutsi edo ez."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:11
+#: data/org.gnome.quadrapassel.gschema.xml:31
 msgid "Whether to give blocks random colors"
 msgstr "Blokeei ausazko koloreak emango zaizkien ala ez adierazten du"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:12
+#: data/org.gnome.quadrapassel.gschema.xml:32
 msgid "Whether to give blocks random colors."
 msgstr "Blokeei ausazko koloreak emango zaizkien ala ez adierazten du."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:13
+#: data/org.gnome.quadrapassel.gschema.xml:36
 msgid "Whether to rotate counter clock wise"
 msgstr "Erloju-orratzen noranzkoan biratuko diren ala ez adierazten du"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:14
+#: data/org.gnome.quadrapassel.gschema.xml:37
 msgid "Whether to rotate counter clock wise."
 msgstr "Erloju-orratzen noranzkoan biratuko diren ala ez adierazten du."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:15
+#: data/org.gnome.quadrapassel.gschema.xml:42
 msgid "The number of rows to fill"
 msgstr "Bete beharreko errenkaden kopurua"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:16
+#: data/org.gnome.quadrapassel.gschema.xml:43
 msgid ""
 "The number of rows that are filled with random blocks at the start of the "
 "game."
 msgstr "Jokoaren hasieran ausazko blokeekin betetako errenkaden kopurua."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:17
+#: data/org.gnome.quadrapassel.gschema.xml:48
 msgid "The density of filled rows"
 msgstr "Betetako errenkaden dentsitatea"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:18
+#: data/org.gnome.quadrapassel.gschema.xml:49
 msgid ""
 "The density of blocks in rows filled at the start of the game. The value is "
 "between 0 (for no blocks) and 10 (for a completely filled row)."
@@ -99,93 +98,93 @@ msgstr ""
 "Joko-hasieran betetako errenkaden bloke-dentsitatea. Balioa 0 (blokerik ez) "
 "eta 10 (errenkada guztiz betea) bitartekoa da."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:19
+#: data/org.gnome.quadrapassel.gschema.xml:53
 msgid "Whether to play sounds"
 msgstr "Soinuak erreproduzituko diren ala ez adierazten du"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:20
+#: data/org.gnome.quadrapassel.gschema.xml:54
 msgid "Whether to play sounds."
 msgstr "Soinuak erreproduzituko diren ala ez adierazten du."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:21
+#: data/org.gnome.quadrapassel.gschema.xml:58
 msgid "Whether to pick blocks that are hard to place"
 msgstr "Kokatzeko zailak diren blokeak hartu edo ez"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:22
+#: data/org.gnome.quadrapassel.gschema.xml:59
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Kokatzeko zailak diren blokeak hartu edo ez."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:363
+#: data/org.gnome.quadrapassel.gschema.xml:63 src/quadrapassel.vala:366
 msgid "Move left"
 msgstr "Mugitu ezkerrera"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:24
+#: data/org.gnome.quadrapassel.gschema.xml:64
 msgid "Key press to move left."
 msgstr "Sakatu tekla ezkerrerantz joateko."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:366
+#: data/org.gnome.quadrapassel.gschema.xml:68 src/quadrapassel.vala:369
 msgid "Move right"
 msgstr "Mugitu eskuinera"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:26
+#: data/org.gnome.quadrapassel.gschema.xml:69
 msgid "Key press to move right."
 msgstr "Sakatu tekla eskuinerantz joateko."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:369
+#: data/org.gnome.quadrapassel.gschema.xml:73 src/quadrapassel.vala:372
 msgid "Move down"
 msgstr "Eraman beherantz"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:28
+#: data/org.gnome.quadrapassel.gschema.xml:74
 msgid "Key press to move down."
 msgstr "Beherantz joateko tekla."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:372
+#: data/org.gnome.quadrapassel.gschema.xml:78 src/quadrapassel.vala:375
 msgid "Drop"
 msgstr "Jaregin"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:30
+#: data/org.gnome.quadrapassel.gschema.xml:79
 msgid "Key press to drop."
 msgstr "Jaregiteko tekla."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:375
+#: data/org.gnome.quadrapassel.gschema.xml:83 src/quadrapassel.vala:378
 msgid "Rotate"
 msgstr "Biratu"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:32
+#: data/org.gnome.quadrapassel.gschema.xml:84
 msgid "Key press to rotate."
 msgstr "Birarazteko tekla."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:378
+#: data/org.gnome.quadrapassel.gschema.xml:88 src/quadrapassel.vala:381
 msgid "Pause"
 msgstr "Pausarazi"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:34
+#: data/org.gnome.quadrapassel.gschema.xml:89
 msgid "Key press to pause."
 msgstr "Pausarazteko tekla."
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:35
+#: data/org.gnome.quadrapassel.gschema.xml:93
 msgid "Width of the window in pixels"
 msgstr "Leihoaren zabalera (pixeletan)"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:36
+#: data/org.gnome.quadrapassel.gschema.xml:97
 msgid "Height of the window in pixels"
 msgstr "Leihoaren altuera (pixeletan)"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:37
+#: data/org.gnome.quadrapassel.gschema.xml:101
 msgid "true if the window is maximized"
 msgstr "'true' (egia) leihoa maximizatuta badago"
 
-#: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
-#: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
-#: ../src/quadrapassel.vala:750 ../src/quadrapassel.vala:790
+#: data/quadrapassel.appdata.xml.in:7 data/quadrapassel.desktop.in:3
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:121
+#: src/quadrapassel.vala:836 src/quadrapassel.vala:876
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
-#: ../data/quadrapassel.appdata.xml.in.h:2 ../data/quadrapassel.desktop.in.h:2
+#: data/quadrapassel.appdata.xml.in:8 data/quadrapassel.desktop.in:4
 msgid "Fit falling blocks together"
 msgstr "Kokatu erortzen diren blokeak"
 
-#: ../data/quadrapassel.appdata.xml.in.h:3
+#: data/quadrapassel.appdata.xml.in:10
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -200,9 +199,14 @@ msgstr ""
 "iristen direnean amaitzen da jokoa. Zenbat eta puntuazio altuagoa eduki, "
 "orduan eta altuagoa izango da maila eta blokeak azkarrago eroriko dira."
 
-#: ../data/quadrapassel.appdata.xml.in.h:4
+#: data/quadrapassel.appdata.xml.in:17
+#| msgid ""
+#| "If you're looking for a challenge, Quadrapassel allows you to increase "
+#| "the initial speed of the blocks, or begin the game with partial blocks on "
+#| "some of the rows. Or, instead of allowing the blocks to fall randomly, it "
+#| "can select blocks that will be hard for you to place."
 msgid ""
-"If you're looking for a challenge, Quadrapassel allows you to increase the "
+"If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
 "of the rows. Or, instead of allowing the blocks to fall randomly, it can "
 "select blocks that will be hard for you to place."
@@ -212,158 +216,166 @@ msgstr ""
 "dezakezu jokoa. Edo, blokeak ausaz erortzea utzi ordez, blokeak hauta "
 "ditzake leku egokietan jartzea zailtzeko."
 
-#: ../data/quadrapassel.desktop.in.h:3
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/quadrapassel.desktop.in:6
+#| msgid "Quadrapassel"
+msgid "quadrapassel"
+msgstr "quadrapassel"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;"
 
-#: ../src/game-view.vala:346
+#: src/game-view.vala:346
 msgid "Paused"
 msgstr "Pausarazita"
 
-#: ../src/game-view.vala:348
+#: src/game-view.vala:348
 msgid "Game Over"
 msgstr "Jokoa amaitu da"
 
-#: ../src/quadrapassel.vala:93
+#: src/quadrapassel.vala:95
 msgid "_New Game"
 msgstr "_Joko berria"
 
-#: ../src/quadrapassel.vala:94
+#: src/quadrapassel.vala:96
 msgid "_Scores"
 msgstr "_Puntuazioak"
 
-#: ../src/quadrapassel.vala:95
+#: src/quadrapassel.vala:97
 msgid "_Preferences"
 msgstr "_Hobespenak"
 
-#: ../src/quadrapassel.vala:98
+#: src/quadrapassel.vala:100
 msgid "_Help"
 msgstr "La_guntza"
 
-#: ../src/quadrapassel.vala:99
+#: src/quadrapassel.vala:101
 msgid "_About"
 msgstr "Honi _buruz"
 
-#: ../src/quadrapassel.vala:100
+#: src/quadrapassel.vala:102
 msgid "_Quit"
 msgstr "_Irten"
 
-#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:688
+#: src/quadrapassel.vala:145 src/quadrapassel.vala:774
 msgid "Start a new game"
 msgstr "Beste joko bat hasten du"
 
-#: ../src/quadrapassel.vala:152
+#: src/quadrapassel.vala:150
 msgid "Next"
 msgstr "Hurrengoa"
 
-#: ../src/quadrapassel.vala:165 ../src/score-dialog.vala:51
+#: src/quadrapassel.vala:163 src/score-dialog.vala:51
 msgid "Score"
 msgstr "Puntuazioa"
 
-#: ../src/quadrapassel.vala:176
+#: src/quadrapassel.vala:174
 msgid "Lines"
 msgstr "Errenkadak"
 
-#: ../src/quadrapassel.vala:187
+#: src/quadrapassel.vala:185
 msgid "Level"
 msgstr "Maila"
 
-#: ../src/quadrapassel.vala:267
+#: src/quadrapassel.vala:270
 msgid "Preferences"
 msgstr "Hobespenak"
 
-#: ../src/quadrapassel.vala:285
+#: src/quadrapassel.vala:288
 msgid "Game"
 msgstr "Jokoa"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:289
+#: src/quadrapassel.vala:292
 msgid "_Number of pre-filled rows:"
 msgstr "_Aurrez betetako errenkaden kopurua:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:304
+#: src/quadrapassel.vala:307
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Bloke-dentsitatea, aurrez betetako errenkada batean:"
 
 #. starting level
-#: ../src/quadrapassel.vala:318
+#: src/quadrapassel.vala:321
 msgid "_Starting level:"
 msgstr "_Hasierako maila:"
 
-#: ../src/quadrapassel.vala:331
+#: src/quadrapassel.vala:334
 msgid "_Enable sounds"
 msgstr "_Gaitu soinuak"
 
-#: ../src/quadrapassel.vala:336
+#: src/quadrapassel.vala:339
 msgid "Choose difficult _blocks"
 msgstr "Aukeratu blokeen _zailtasuna"
 
-#: ../src/quadrapassel.vala:341
+#: src/quadrapassel.vala:344
 msgid "_Preview next block"
 msgstr "_Aurreikusi hurrengo blokea"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:348
+#: src/quadrapassel.vala:351
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Biratu blokeak erloju-orratzen aurkako noranzkoan"
 
-#: ../src/quadrapassel.vala:353
+#: src/quadrapassel.vala:356
 msgid "Show _where the block will land"
 msgstr "Erakutsi _blokea nora helduko den"
 
-#: ../src/quadrapassel.vala:397
+#: src/quadrapassel.vala:400
 msgid "Controls"
 msgstr "Kontrolak"
 
-#: ../src/quadrapassel.vala:403
+#: src/quadrapassel.vala:406
 msgid "Theme"
 msgstr "Gaia"
 
-#: ../src/quadrapassel.vala:415
+#: src/quadrapassel.vala:418
 msgid "Plain"
 msgstr "Soila"
 
-#: ../src/quadrapassel.vala:420
+#: src/quadrapassel.vala:423
 msgid "Tango Flat"
 msgstr "Tango laua"
 
-#: ../src/quadrapassel.vala:425
+#: src/quadrapassel.vala:428
 msgid "Tango Shaded"
 msgstr "Tango itzaleztatua"
 
-#: ../src/quadrapassel.vala:430
+#: src/quadrapassel.vala:433
 msgid "Clean"
 msgstr "Garbitu"
 
-#: ../src/quadrapassel.vala:669
+#: src/quadrapassel.vala:755
 msgid "Unpause the game"
 msgstr "Jokoa jarraitzen du"
 
-#: ../src/quadrapassel.vala:674
+#: src/quadrapassel.vala:760
 msgid "Pause the game"
 msgstr "Jokoa pausarazten du"
 
-#: ../src/quadrapassel.vala:752
+#: src/quadrapassel.vala:838
 msgid "A classic game of fitting falling blocks together"
 msgstr "Erortzen diren blokeak kokatzeko joko klasikoa"
 
-#: ../src/quadrapassel.vala:757
+#: src/quadrapassel.vala:843
 msgid "translator-credits"
 msgstr "Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>"
 
-#: ../src/score-dialog.vala:26
+#: src/score-dialog.vala:26
 msgid "_Close"
 msgstr "It_xi"
 
-#: ../src/score-dialog.vala:27
+#: src/score-dialog.vala:27
 msgid "New Game"
 msgstr "Joko berria"
 
-#: ../src/score-dialog.vala:30
+#: src/score-dialog.vala:30
 msgid "_OK"
 msgstr "Ado_s"
 
-#: ../src/score-dialog.vala:48
+#: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Data"
+
