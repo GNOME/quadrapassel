@@ -89,19 +89,6 @@ public class Quadrapassel : Gtk.Application
         set_accels_for_action ("app.quit", {"<Primary>q"});
         pause_action = lookup_action ("pause") as SimpleAction;
 
-        var menu = new Menu ();
-        var section = new Menu ();
-        menu.append_section (null, section);
-        section.append (_("_New Game"), "app.new-game");
-        section.append (_("_Scores"), "app.scores");
-        section.append (_("_Preferences"), "app.preferences");
-        section = new Menu ();
-        menu.append_section (null, section);
-        section.append (_("_Help"), "app.help");
-        section.append (_("_About"), "app.about");
-        section.append (_("_Quit"), "app.quit");
-        set_app_menu (menu);
-
         settings = new Settings ("org.gnome.quadrapassel");
 
         window = new Gtk.ApplicationWindow (this);
@@ -121,6 +108,22 @@ public class Quadrapassel : Gtk.Application
         headerbar.set_title (_("Quadrapassel"));
         headerbar.show ();
         window.set_titlebar (headerbar);
+
+        var menu = new Menu ();
+        var section = new Menu ();
+        menu.append_section (null, section);
+        section.append (_("_New Game"), "app.new-game");
+        section.append (_("_Scores"), "app.scores");
+        section = new Menu ();
+        menu.append_section (null, section);
+        section.append (_("_Preferences"), "app.preferences");
+        section.append (_("_Help"), "app.help");
+        section.append (_("_About Quadrapassel"), "app.about");
+        var menu_button = new Gtk.MenuButton ();
+        menu_button.set_image (new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.BUTTON));
+        menu_button.show ();
+        menu_button.set_menu_model (menu);
+        headerbar.pack_end(menu_button);
 
         var game_grid = new Gtk.Grid ();
         game_grid.set_column_homogeneous (true);
