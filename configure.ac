@@ -1,5 +1,5 @@
 AC_PREREQ([2.63])
-AC_INIT([Quadrapassel], [3.22.0], [https://bugzilla.gnome.org/],
+AC_INIT([Quadrapassel], [3.31.3], [https://bugzilla.gnome.org/],
         [quadrapassel], [https://wiki.gnome.org/Apps/Quadrapassel])
 AC_CONFIG_MACRO_DIR([m4])
 

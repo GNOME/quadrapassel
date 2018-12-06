@@ -1,3 +1,21 @@
+quadrapassel 3.31.3
+===================
+* Add game controller support using libmanette (Adrien)
+* Update menus for GNOME 3.32 recommendations (Jeremy)
+* Pressing Pause will start a new game if no game has started yet (Chris)
+* Stop using intltool (Robert)
+* Miscellaneous fixes (Anders, Andre, Piotr, Tomi)
+
+Contributors:
+ Jeremy Bicha
+ Piotr Drąg
+ Anders Jonsson
+ Andre Klapper
+ Chris Lamb
+ Tomi Leppänen
+ Adrien Plazas
+ Robert Roth
+
 quadrapassel 3.22.0
 ===================
 
