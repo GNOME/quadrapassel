@@ -47,6 +47,8 @@ public class Quadrapassel : Gtk.Application
 
     private Gtk.Dialog preferences_dialog;
     private Gtk.SpinButton starting_level_spin;
+    private Gtk.SpinButton boardheight_spin;
+    private Gtk.SpinButton boardwidth_spin;
     private Preview theme_preview;
     private Gtk.SpinButton fill_height_spinner;
     private Gtk.SpinButton fill_prob_spinner;
@@ -361,6 +363,33 @@ public class Quadrapassel : Gtk.Application
         show_shadow_toggle.toggled.connect (user_target_toggled_cb);
         grid.attach (show_shadow_toggle, 0, 7, 2, 1);
 
+        /* board height and width spinners */
+        adj = new Gtk.Adjustment (settings.get_int ("board-height"), 1, 20, 1, 5, 0);
+        boardheight_spin = new Gtk.SpinButton (adj, 10, 0);
+        boardheight_spin.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
+        boardheight_spin.set_snap_to_ticks (true);
+        boardheight_spin.value_changed.connect (boardheight_spin_value_changed_cb);
+        grid.attach (boardheight_spin, 1, 8, 1, 1);
+        label.set_mnemonic_widget (boardheight_spin);
+
+        label = new Gtk.Label.with_mnemonic (_("_Board Height:"));
+        label.set_alignment (0, 0.5f);
+        label.set_hexpand (true);
+        grid.attach (label, 0, 8, 1, 1);
+	
+        adj = new Gtk.Adjustment (settings.get_int ("board-width"), 1, 14, 1, 5, 0);
+        boardwidth_spin = new Gtk.SpinButton (adj, 10, 0);
+        boardwidth_spin.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
+        boardwidth_spin.set_snap_to_ticks (true);
+        boardwidth_spin.value_changed.connect (boardwidth_spin_value_changed_cb);
+        grid.attach (boardwidth_spin, 1, 9, 1, 1);
+        label.set_mnemonic_widget (boardwidth_spin);
+
+        label = new Gtk.Label.with_mnemonic (_("_Board Width:"));
+        label.set_alignment (0, 0.5f);
+        label.set_hexpand (true);
+        grid.attach (label, 0, 9, 1, 1);
+
         /* controls page */
         controls_model = new Gtk.ListStore (4, typeof (string), typeof (string), typeof (uint), typeof (uint));
         Gtk.TreeIter iter;
@@ -555,6 +584,22 @@ public class Quadrapassel : Gtk.Application
         settings.set_int ("starting-level", value);
     }
 
+    private void boardheight_spin_value_changed_cb (Gtk.SpinButton spin)
+    {
+        int value = spin.get_value_as_int ();
+        settings.set_int ("board-height", value);
+    }
+
+	
+    private void boardwidth_spin_value_changed_cb (Gtk.SpinButton spin)
+    {
+        int value = spin.get_value_as_int ();
+        settings.set_int ("board-width", value);
+    }
+
+
+
+
     private void pause_cb ()
     {
         if (game != null)
@@ -744,7 +789,8 @@ public class Quadrapassel : Gtk.Application
             SignalHandler.disconnect_matched (game, SignalMatchType.DATA, 0, 0, null, null, this);
         }
 
-        game = new Game (20, 14, settings.get_int ("starting-level"), settings.get_int ("line-fill-height"), settings.get_int ("line-fill-probability"), settings.get_boolean ("pick-difficult-blocks"));
+game = new Game (settings.get_int ("board-height"), settings.get_int ("board-width"), settings.get_int ("starting-level"), 
+settings.get_int ("line-fill-height"), settings.get_int ("line-fill-probability"), settings.get_boolean ("pick-difficult-blocks"));
         game.pause_changed.connect (pause_changed_cb);
         game.shape_landed.connect (shape_landed_cb);
         game.complete.connect (complete_cb);

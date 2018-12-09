@@ -16,6 +16,14 @@
       <summary>Level to start with</summary>
       <description>Level to start with.</description>
     </key>
+    <key name="board-height" type="i">
+       <default>20</default>
+       <range min="1" max="20"/>
+    </key>
+    <key name="board-width" type="i">
+       <default>14</default>
+       <range min="1" max="14"/>
+    </key>
     <key name="do-preview" type="b">
       <default>true</default>
       <summary>Whether to preview the next block</summary>
