@@ -19,7 +19,7 @@ install_data(
 
 # Install gschema
 install_data(
-  '@0@.gschema.xml'.format('org.gnome.quadrapassel'),
+  '@0@.gschema.xml'.format(project_id),
   install_dir : join_paths(get_option('datadir'), 'glib-2.0', 'schemas')
 )
 
