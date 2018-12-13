@@ -46,6 +46,7 @@
     },
     {
       "name": "quadrapassel",
+      "buildsystem": "meson",
       "sources": [
         {
           "type": "git",
