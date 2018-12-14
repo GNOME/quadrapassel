@@ -10,7 +10,7 @@
   <homepage rdf:resource="https://wiki.gnome.org/Apps/Quadrapassel" />
   <mailing-list rdf:resource="http://mail.gnome.org/mailman/listinfo/games-list" />
   <download-page rdf:resource="http://download.gnome.org/sources/quadrapassel/" />
-  <bug-database rdf:resource="https://bugzilla.gnome.org/browse.cgi?product=quadrapassel" />
+  <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/quadrapassel/issues/" />
   <category rdf:resource="http://api.gnome.org/doap-extensions#apps" />
   <programming-language>Vala</programming-language>
 
