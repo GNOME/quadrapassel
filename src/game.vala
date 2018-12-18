@@ -556,10 +556,10 @@ public class Game : Object
 
                     /* Move tile to position from the left */
                     var valid_position = true;
-                    while (g.move_left ());
+                    while (g.move_shape (-1, 0, 0));
                     for (var x = 0; x < pos; x++)
                     {
-                        if (!g.move_right ())
+                        if (!g.move_shape (1, 0, 0))
                         {
                             valid_position = false;
                             break;
