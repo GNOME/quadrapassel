@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2010-2013 Robert Ancell
+ * Copyright (C) 2009 Lubomir Rintel <lkundrak@v3.sk>
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -539,6 +540,7 @@ public class Game : Object
 
     private Shape pick_difficult_shape ()
     {
+	/* The algorithm comes from Federico Poloni's "bastet" game */
         var metrics = new int[NCOLORS];
         for (var type = 0; type < NCOLORS; type++)
         {
