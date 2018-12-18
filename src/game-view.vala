@@ -12,6 +12,10 @@ public class GameView : GtkClutter.Embed
 {
     /* Game being played */
     private Game? _game = null;
+
+    private static Canberra.Context? sound_context = null;
+
+
     public Game? game
     {
         get { return _game; }
@@ -141,12 +145,17 @@ public class GameView : GtkClutter.Embed
         }
     }
 
+    private void init_sound()
+    {
+        if (sound_context == null)
+            Canberra.Context.create(out sound_context);
+    }
+
     private void play_sound (string name)
     {
         if (!mute)
-            CanberraGtk.play_for_widget (this, 0,
-                                         Canberra.PROP_MEDIA_NAME, name,
-                                         Canberra.PROP_MEDIA_FILENAME, Path.build_filename (SOUND_DIRECTORY, "%s.ogg".printf (name)));
+            init_sound();
+            sound_context.play(0, Canberra.PROP_EVENT_ID, Path.build_filename (SOUND_DIRECTORY, "%s.ogg".printf (name)));
     }
 
     private void shape_added_cb ()

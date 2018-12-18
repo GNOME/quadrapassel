@@ -19,7 +19,6 @@ executable(meson.project_name(),
     ],
     dependencies: [
         canberra_dependency,
-        canberra_gtk3_dependency,
         cogl_depepdendy,
         clutter_dependency,
         clutter_gtk_dependency,
