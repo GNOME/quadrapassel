@@ -346,7 +346,6 @@ public class Quadrapassel : Gtk.Application
 
         do_preview_toggle = new Gtk.CheckButton.with_mnemonic (_("_Preview next block"));
         do_preview_toggle.set_active (settings.get_boolean ("do-preview"));
-        do_preview_toggle.set_sensitive (!settings.get_boolean ("pick-difficult-blocks"));
         do_preview_toggle.toggled.connect (do_preview_toggle_toggled_cb);
         grid.attach (do_preview_toggle, 0, 5, 2, 1);
 
@@ -456,22 +455,14 @@ public class Quadrapassel : Gtk.Application
 
     private void do_preview_toggle_toggled_cb ()
     {
-        settings.set_boolean ("do-preview", do_preview_toggle.get_active ());
-        update_preview_settings ();
+        var preview_enabled = do_preview_toggle.get_active ();
+        settings.set_boolean ("do-preview", preview_enabled);
+        preview.enabled = preview_enabled;
     }
 
     private void difficult_blocks_toggled_cb ()
     {
         settings.set_boolean ("pick-difficult-blocks", difficult_blocks_toggle.get_active ());
-        do_preview_toggle.set_sensitive (!settings.get_boolean ("pick-difficult-blocks"));
-        update_preview_settings ();
-    }
-
-    private void update_preview_settings ()
-    {
-        var do_preview = do_preview_toggle.get_active ();
-        var difficult_block_mode = difficult_blocks_toggle.get_active ();
-        preview.enabled = do_preview && !difficult_block_mode;
     }
 
     private void set_rotate_counter_clock_wise ()
