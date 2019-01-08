@@ -20,8 +20,6 @@ pango_depepdency = dependency('pango')
 pango_cairo_dependency = dependency('pangocairo')
 posix_dependency = meson.get_compiler('vala').find_library('posix')
 rsvg_dependency = dependency('librsvg-2.0', version: '>= 2.32.0')
-
-
         
 
 # Set gettext package name
@@ -38,19 +36,13 @@ conf.set_quoted ('DATA_DIRECTORY', datadir)
 conf.set_quoted ('SOUND_DIRECTORY', soundsdir)
 conf.set_quoted ('LOCALEDIR', localedir)
 
-
 configure_file(output: 'config.h', configuration: conf)
 config_h_dir = include_directories('.')
-
-
-
 
 subdir('data')
 subdir('po')
 subdir('help')
 subdir('src')
-
-
 
 meson.add_install_script(python3.find_python().path(), join_paths(meson.source_root(), 
                                                                   'build-aux', 
