@@ -72,7 +72,7 @@ public class Quadrapassel : Gtk.Application
 
     public Quadrapassel ()
     {
-        Object (application_id: "org.gnome.quadrapassel", flags: ApplicationFlags.FLAGS_NONE);
+        Object (application_id: "org.gnome.Quadrapassel", flags: ApplicationFlags.FLAGS_NONE);
     }
 
     protected override void startup ()
@@ -89,10 +89,10 @@ public class Quadrapassel : Gtk.Application
         set_accels_for_action ("app.quit", {"<Primary>q"});
         pause_action = lookup_action ("pause") as SimpleAction;
 
-        settings = new Settings ("org.gnome.quadrapassel");
+        settings = new Settings ("org.gnome.Quadrapassel");
 
         window = new Gtk.ApplicationWindow (this);
-        window.icon_name = "org.gnome.quadrapassel";
+        window.icon_name = "org.gnome.Quadrapassel";
         window.set_events (window.get_events () | Gdk.EventMask.KEY_PRESS_MASK | Gdk.EventMask.KEY_RELEASE_MASK);
         window.title = _("Quadrapassel");
         window.size_allocate.connect (size_allocate_cb);
@@ -843,7 +843,7 @@ public class Quadrapassel : Gtk.Application
                                "authors", authors,
                                "documenters", documenters,
                                "translator-credits", _("translator-credits"),
-                               "logo-icon-name", "org.gnome.quadrapassel",
+                               "logo-icon-name", "org.gnome.Quadrapassel",
                                "website", "https://wiki.gnome.org/Apps/Quadrapassel",
                                null);
     }

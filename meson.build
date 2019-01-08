@@ -1,7 +1,7 @@
 project('quadrapassel', 'vala', 'c',
         version: '3.31.3')
 
-project_id = 'org.gnome.quadrapassel'
+project_id = 'org.gnome.Quadrapassel'
 i18n = import('i18n')
 # used to install help
 gnome = import('gnome')

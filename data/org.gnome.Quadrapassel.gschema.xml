@@ -1,5 +1,5 @@
 <schemalist>
-  <schema id="org.gnome.quadrapassel" path="/org/gnome/quadrapassel/" gettext-domain="quadrapassel">
+  <schema id="org.gnome.Quadrapassel" path="/org/gnome/Quadrapassel/" gettext-domain="quadrapassel">
     <key name="block-pixmap" type="s">
       <default>'7blocks-gw.png'</default>
       <summary>Image to use for drawing blocks</summary>
