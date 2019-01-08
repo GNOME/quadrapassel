@@ -1,3 +1,19 @@
+quadrapassel 3.31.4
+===================
+* Fix and restore preview in difficult mode. Note that the
+  preview lies to you in this mode. (Lubomir)
+* Fix apparent freeze in difficult mode (Lubomir)
+* Convert from autotools to meson (Bilal)
+* Consistently use org.gnome.Quadrapassel app id.
+  Note that this renames the icons, .desktop, and
+  AppStream metadata (Bilal)
+* Miscellaneous fixes (Andre, Jeremy)
+* Translation updates
+
+Contributors:
+ Jeremy Bicha, Bilal Elmoussaoui, Andre Klapper
+ Lubomir Rintel
+
 quadrapassel 3.31.3
 ===================
 * Add game controller support using libmanette (Adrien)
@@ -7,14 +23,9 @@ quadrapassel 3.31.3
 * Miscellaneous fixes (Anders, Andre, Piotr, Tomi)
 
 Contributors:
- Jeremy Bicha
- Piotr Drąg
- Anders Jonsson
- Andre Klapper
- Chris Lamb
- Tomi Leppänen
- Adrien Plazas
- Robert Roth
+ Jeremy Bicha, Piotr Drąg, Anders Jonsson
+ Andre Klapper, Chris Lamb, Tomi Leppänen
+ Adrien Plazas, Robert Roth
 
 quadrapassel 3.22.0
 ===================
