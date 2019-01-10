@@ -87,7 +87,6 @@ public class Quadrapassel : Gtk.Application
         set_accels_for_action ("app.new-game", {"<Primary>n"});
         set_accels_for_action ("app.pause", {"Pause"});
         set_accels_for_action ("app.menu", {"F10"});
-        set_accels_for_action ("app.fullscreen", {"F11"});
         set_accels_for_action ("app.help", {"F1"});
         set_accels_for_action ("app.quit", {"<Primary>q"});
         pause_action = lookup_action ("pause") as SimpleAction;
