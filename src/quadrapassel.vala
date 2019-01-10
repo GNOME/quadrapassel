@@ -127,7 +127,6 @@ public class Quadrapassel : Gtk.Application
         menu_button.show ();
         menu_button.set_menu_model (menu);
 
-        set_accels_for_action ("menu", {"F10"});
         headerbar.pack_end(menu_button);
 
         var game_grid = new Gtk.Grid ();
