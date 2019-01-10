@@ -15,6 +15,7 @@ public class Quadrapassel : Gtk.Application
 
     /* Main window */
     private Gtk.Window window;
+    private Gtk.MenuButton menu_button;
     private int window_width;
     private int window_height;
     private bool is_maximized;
@@ -64,6 +65,7 @@ public class Quadrapassel : Gtk.Application
         { "new-game",      new_game_cb    },
         { "pause",         pause_cb       },
         { "scores",        scores_cb      },
+        { "menu",          menu_cb },
         { "preferences",   preferences_cb },
         { "help",          help_cb        },
         { "about",         about_cb       },
@@ -84,6 +86,7 @@ public class Quadrapassel : Gtk.Application
         add_action_entries (action_entries, this);
         set_accels_for_action ("app.new-game", {"<Primary>n"});
         set_accels_for_action ("app.pause", {"Pause"});
+        set_accels_for_action ("app.menu", {"F10"});
         set_accels_for_action ("app.fullscreen", {"F11"});
         set_accels_for_action ("app.help", {"F1"});
         set_accels_for_action ("app.quit", {"<Primary>q"});
@@ -119,10 +122,12 @@ public class Quadrapassel : Gtk.Application
         section.append (_("_Preferences"), "app.preferences");
         section.append (_("_Help"), "app.help");
         section.append (_("_About Quadrapassel"), "app.about");
-        var menu_button = new Gtk.MenuButton ();
+        menu_button = new Gtk.MenuButton ();
         menu_button.set_image (new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.BUTTON));
         menu_button.show ();
         menu_button.set_menu_model (menu);
+
+        set_accels_for_action ("menu", {"F9"});
         headerbar.pack_end(menu_button);
 
         var game_grid = new Gtk.Grid ();
@@ -846,6 +851,11 @@ public class Quadrapassel : Gtk.Application
                                "logo-icon-name", "org.gnome.Quadrapassel",
                                "website", "https://wiki.gnome.org/Apps/Quadrapassel",
                                null);
+    }
+
+    private void menu_cb ()
+    {
+        menu_button.activate ();
     }
 
     private void scores_cb ()
