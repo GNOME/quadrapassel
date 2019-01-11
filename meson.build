@@ -11,7 +11,7 @@ python3 = import('python3')
 
 canberra_dependency = dependency('libcanberra')
 canberra_gtk3_dependency = dependency('libcanberra-gtk3', version: '>= 0.26')
-cogl_depepdendy = dependency('cogl-1.0')
+cogl_dependency = dependency('cogl-1.0')
 clutter_dependency = dependency('clutter-1.0', version: '>= 1.0.0')
 clutter_gtk_dependency = dependency('clutter-gtk-1.0', version: '>= 0.91.6')
 gtk_dependency = dependency('gtk+-3.0', version: '>= 3.12.0')

@@ -1,4 +1,3 @@
-
 help_media = [
     'media/fig2.png',
     'media/fig3.png',
@@ -27,7 +26,6 @@ help_files = [
     'score.page',
     'translate.page'
 ]
-
 
 gnome.yelp(meson.project_name(),
     sources: help_files,
