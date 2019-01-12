@@ -1,0 +1,23 @@
+include: 'https://gitlab.gnome.org/GNOME/citemplates/raw/master/flatpak/flatpak_ci_initiative.yml'
+
+variables:
+    BUNDLE: "quadrapassel-dev.flatpak"
+
+flatpak:
+    image: 'registry.gitlab.gnome.org/gnome/gnome-runtime-images/gnome:master'
+    variables:
+        MANIFEST_PATH: " flatpak/org.gnome.Quadrapassel.json"
+        FLATPAK_MODULE: "quadrapassel"
+        RUNTIME_REPO: "https://sdk.gnome.org/gnome-nightly.flatpakrepo"
+        APP_ID: " org.gnome.Quadrapassel"
+    extends: .flatpak
+
+review:
+    stage: deploy
+    dependencies:
+        - 'flatpak'
+    extends: '.review'
+
+stop_review:
+    stage: deploy
+    extends: '.stop_review'
