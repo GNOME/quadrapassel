@@ -143,10 +143,16 @@ public class GameView : GtkClutter.Embed
 
     private void play_sound (string name)
     {
-        if (!mute)
-            CanberraGtk.play_for_widget (this, 0,
-                                         Canberra.PROP_MEDIA_NAME, name,
-                                         Canberra.PROP_MEDIA_FILENAME, Path.build_filename (SOUND_DIRECTORY, "%s.ogg".printf (name)));
+        if (!mute){
+            var sound_path = Path.build_filename (SOUND_DIRECTORY, "%s.ogg".printf (name));
+            try{
+                var ctx = new GSound.Context(); 
+                ctx.play_simple(null, GSound.Attribute.MEDIA_NAME, name, GSound.Attribute.MEDIA_FILENAME, sound_path);
+            } catch(GLib.Error e){
+                warning("Failed to init GSound: %s", e.message);
+                warning(sound_path);
+            }        
+        }
     }
 
     private void shape_added_cb ()

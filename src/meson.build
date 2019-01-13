@@ -18,8 +18,7 @@ executable(meson.project_name(),
         '--vapidir', join_paths(meson.current_source_dir(), 'vapi')
     ],
     dependencies: [
-        canberra_dependency,
-        canberra_gtk3_dependency,
+        gsound_dependency,
         cogl_depepdendy,
         clutter_dependency,
         clutter_gtk_dependency,
