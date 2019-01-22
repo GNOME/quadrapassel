@@ -1,28 +1,28 @@
 # translation of gnometris.HEAD.po to Español
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2010.
 # 
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012-2015, 2017.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnometris.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-31 12:07+0000\n"
-"PO-Revision-Date: 2017-08-03 12:34+0200\n"
+"POT-Creation-Date: 2018-08-13 21:41+0000\n"
+"PO-Revision-Date: 2019-01-22 15:41+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
-"Language: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 3.31.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Daniel Mustieles <daniel.mustieles@gmail.com>, 2012 - 2015\n"
+"Daniel Mustieles <daniel.mustieles@gmail.com>, 2012 - 2019\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2007 - 2009"
 
 #. (itstool) path: credit/name
@@ -40,15 +40,14 @@ msgstr "2012"
 
 #. (itstool) path: credit/name
 #: C/bug-filing.page:15 C/develop.page:16 C/documentation.page:14
-#: C/get-involved.page:8 C/index.page:11 C/playgame.page:8
-#: C/preferences.page:8 C/score.page:8 C/translate.page:14
+#: C/get-involved.page:8 C/index.page:11 C/playgame.page:8 C/preferences.page:8
+#: C/score.page:8 C/translate.page:14
 msgid "Elena Petrevska"
 msgstr "Elena Petrevska"
 
 #. (itstool) path: license/p
 #: C/bug-filing.page:19 C/develop.page:20 C/documentation.page:18
-#: C/get-involved.page:13 C/index.page:16 C/preferences.page:17
-#: C/score.page:17
+#: C/get-involved.page:13 C/index.page:16 C/preferences.page:17 C/score.page:17
 msgid "Creative Commons Share Alike 3.0"
 msgstr "Creative Commons Compartir Igual 3.0"
 
@@ -64,12 +63,16 @@ msgstr "Informar de un error"
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:25
+#| msgid ""
+#| "If you notice a problem you can file a <em>bug report</em>. To file a "
+#| "bug, go to <link href=\"https://bugzilla.gnome.org/\"/>."
 msgid ""
 "If you notice a problem you can file a <em>bug report</em>. To file a bug, "
-"go to <link href=\"https://bugzilla.gnome.org/\"/>."
+"go to <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
 msgstr ""
 "Si ha encontrado un error, puede abrir un <em>informe de error</em>. Para "
-"hacerlo, vaya a <link href=\"https://bugzilla.gnome.org/\"/>."
+"hacerlo, vaya a <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/"
+"issues/\"/>."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:28
@@ -83,52 +86,64 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:31
+#| msgid ""
+#| "To participate you need an account which will give you the ability to "
+#| "gain access, file bugs, and make comments. Also, you need to register so "
+#| "you can receive updates by e-mail about the status of your bug. If you "
+#| "don't already have an account, just click on the <gui>New Account</gui> "
+#| "link to create one."
 msgid ""
 "To participate you need an account which will give you the ability to gain "
 "access, file bugs, and make comments. Also, you need to register so you can "
 "receive updates by e-mail about the status of your bug. If you don't already "
-"have an account, just click on the <gui>New Account</gui> link to create one."
+"have an account, just click on the <gui>Sign in / Register</gui> link to "
+"create one."
 msgstr ""
 "Para participar necesita una cuenta, que le permitirá obtener acceso, "
 "informar de errores y hacer comentarios. También debe registrarte para poder "
 "recibir actualizaciones por correo-e sobre el estado de su informe de error. "
-"Si todavía no tiene una cuenta, simplemente pulse en el enlace <gui>New "
-"Account</gui> para crear una."
+"Si todavía no tiene una cuenta, simplemente pulse en el enlace <gui>Sign "
+"in / Register</gui> para crear una."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:35
+#| msgid ""
+#| "Once you have an account, log in, click on <guiseq><gui>File a Bug</"
+#| "gui><gui>Applications</gui><gui>quadrapassel</gui></guiseq>. Before "
+#| "reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
+#| "page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
+#| "<link href=\"https://bugzilla.gnome.org/browse.cgi?product=quadrapassel"
+#| "\">browse</link> for the bug to see if it already exists."
 msgid ""
-"Once you have an account, log in, click on <guiseq><gui>File a Bug</"
-"gui><gui>Applications</gui><gui>quadrapassel</gui></guiseq>. Before "
+"Once you have an account, log in, and click on <gui>New issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
 "page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
-"<link href=\"https://bugzilla.gnome.org/browse.cgi?product=quadrapassel"
-"\">browse</link> for the bug to see if it already exists."
+"<link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues\">browse</"
+"link> for the bug to see if it already exists."
 msgstr ""
-"Una vez que tenga su cuenta, inicie sesión y pulse en <guiseq><gui>Informar "
-"de un error</gui><gui>Aplicaciones</gui><gui>quadrapassel</gui></guiseq>. "
+"Una vez que tenga su cuenta, inicie sesión y pulse en <gui>New issue</gui>>. "
 "Antes de informar de un error, lea las <link href=\"https://bugzilla.gnome."
 "org/page.cgi?id=bug-writing.html\">guías para informar de un error</link> y "
-"<link href=\"https://bugzilla.gnome.org/browse.cgi?product=quadrapassel"
-"\">busque</link> el error para ver si ya existe."
+"<link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues\">busque</"
+"link> el error para ver si ya existe."
 
 #. (itstool) path: page/p
-#: C/bug-filing.page:43
+#: C/bug-filing.page:40
 #| msgid ""
 #| "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
 #| "<gui>Severity</gui> menu. Fill in the Summary and Description sections "
-#| "and click <gui>Commit</gui>."
+#| "and click <gui>Submit Bug</gui>."
 msgid ""
-"If you are requesting a new feature, choose <gui>enhancement</gui> in the "
-"<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Submit Bug</gui>."
+"If you are requesting a new feature, choose <gui>1. Feature</gui> in the "
+"<gui>Labels</gui> menu. Fill in the Title and Description sections and click "
+"<gui>Submit Issue</gui>."
 msgstr ""
-"Si está solicitando una característica nueva, elija <gui>enhancement</gui> "
-"en el menú <gui>Severity</gui>. Rellene las secciones «Summary» y "
-"«Description» y pulse en <gui>Submit Bug</gui>."
+"Si está solicitando una característica nueva, elija <gui>1. Feature</gui> en "
+"el menú <gui>Labels</gui>. Rellene las secciones «Title» y «Description» y "
+"pulse en <gui>Submit Issue</gui>."
 
 #. (itstool) path: page/p
-#: C/bug-filing.page:47
+#: C/bug-filing.page:44
 msgid ""
 "Your report will be given an ID number, and its status will be updated as it "
 "is being dealt with."
@@ -137,13 +152,13 @@ msgstr ""
 "medida que se vaya tratando."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:52 C/develop.page:29 C/documentation.page:29
+#: C/bug-filing.page:49 C/develop.page:29 C/documentation.page:29
 #: C/translate.page:42
 msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
 msgstr "<link xref=\"get-involved\"><_:media-1/>Involucrarse</link>"
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:53 C/develop.page:30 C/documentation.page:30
+#: C/bug-filing.page:50 C/develop.page:30 C/documentation.page:30
 #: C/get-involved.page:23 C/playgame.page:44 C/preferences.page:73
 #: C/score.page:38 C/translate.page:43
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
