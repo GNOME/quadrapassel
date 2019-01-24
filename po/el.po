@@ -36,8 +36,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.el\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2018-12-13 23:01+0000\n"
-"PO-Revision-Date: 2018-12-24 14:51+0200\n"
+"POT-Creation-Date: 2019-01-08 20:07+0000\n"
+"PO-Revision-Date: 2019-01-24 03:03+0200\n"
 "Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
 "Language-Team: Ελληνικά <>\n"
 "Language: el\n"
@@ -45,72 +45,72 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 1.5.7\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.quadrapassel.gschema.xml:5
+#: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
 msgstr "Εικόνα που θα χρησιμοποιείται για τη σχεδίαση με τουβλάκια"
 
-#: data/org.gnome.quadrapassel.gschema.xml:6
+#: data/org.gnome.Quadrapassel.gschema.xml:6
 msgid "Image to use for drawing blocks."
 msgstr "Εικόνα που θα χρησιμοποιείται για τη σχεδίαση με τουβλάκια."
 
-#: data/org.gnome.quadrapassel.gschema.xml:10
+#: data/org.gnome.Quadrapassel.gschema.xml:10
 msgid "The theme used for rendering the blocks"
 msgstr "Το θέμα που χρησιμοποιείται για τη σχεδίαση με τουβλάκια"
 
-#: data/org.gnome.quadrapassel.gschema.xml:11
+#: data/org.gnome.Quadrapassel.gschema.xml:11
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr ""
 "Το όνομα του θέματος που χρησιμοποιείται για την εμφάνιση των τούβλων και "
 "του παρασκηνίου."
 
-#: data/org.gnome.quadrapassel.gschema.xml:16
+#: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "Level to start with"
 msgstr "Επίπεδο εκκίνησης"
 
-#: data/org.gnome.quadrapassel.gschema.xml:17
+#: data/org.gnome.Quadrapassel.gschema.xml:17
 msgid "Level to start with."
 msgstr "Επίπεδο εκκίνησης."
 
-#: data/org.gnome.quadrapassel.gschema.xml:21
+#: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to preview the next block"
 msgstr "Αν θα γίνεται προεπισκόπηση του επόμενου τούβλου"
 
-#: data/org.gnome.quadrapassel.gschema.xml:22
+#: data/org.gnome.Quadrapassel.gschema.xml:22
 msgid "Whether to preview the next block."
 msgstr "Αν θα γίνεται προεπισκόπηση του επόμενου τούβλου."
 
-#: data/org.gnome.quadrapassel.gschema.xml:26
+#: data/org.gnome.Quadrapassel.gschema.xml:26
 msgid "Whether to show where the moving piece will land"
 msgstr "Αν θα εμφανίζεται το που θα προσγειωθεί το κινούμενο κομμάτι"
 
-#: data/org.gnome.quadrapassel.gschema.xml:27
+#: data/org.gnome.Quadrapassel.gschema.xml:27
 msgid "Whether to show where the moving piece will land."
 msgstr "Αν θα εμφανίζεται το που θα προσγειωθεί το κινούμενο κομμάτι."
 
-#: data/org.gnome.quadrapassel.gschema.xml:31
+#: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to give blocks random colors"
 msgstr "Αν θα δοθούν τυχαία χρώματα στα τουβλάκια"
 
-#: data/org.gnome.quadrapassel.gschema.xml:32
+#: data/org.gnome.Quadrapassel.gschema.xml:32
 msgid "Whether to give blocks random colors."
 msgstr "Αν θα δοθούν τυχαία χρώματα στα τουβλάκια."
 
-#: data/org.gnome.quadrapassel.gschema.xml:36
+#: data/org.gnome.Quadrapassel.gschema.xml:36
 msgid "Whether to rotate counter clock wise"
 msgstr "Αν θα γίνει περιστροφή προς τα αριστερά"
 
-#: data/org.gnome.quadrapassel.gschema.xml:37
+#: data/org.gnome.Quadrapassel.gschema.xml:37
 msgid "Whether to rotate counter clock wise."
 msgstr "Αν θα γίνει περιστροφή προς τα αριστερά."
 
-#: data/org.gnome.quadrapassel.gschema.xml:42
+#: data/org.gnome.Quadrapassel.gschema.xml:42
 msgid "The number of rows to fill"
 msgstr "Ο αριθμός γραμμών που πρέπει να συμπληρωθούν"
 
-#: data/org.gnome.quadrapassel.gschema.xml:43
+#: data/org.gnome.Quadrapassel.gschema.xml:43
 msgid ""
 "The number of rows that are filled with random blocks at the start of the "
 "game."
@@ -118,11 +118,11 @@ msgstr ""
 "Ο αριθμός γραμμών που συμπληρώνονται με τυχαία τουβλάκια στην αρχή του "
 "παιχνιδιού."
 
-#: data/org.gnome.quadrapassel.gschema.xml:48
+#: data/org.gnome.Quadrapassel.gschema.xml:48
 msgid "The density of filled rows"
 msgstr "Η πυκνότητα των συμπληρωμένων γραμμών"
 
-#: data/org.gnome.quadrapassel.gschema.xml:49
+#: data/org.gnome.Quadrapassel.gschema.xml:49
 msgid ""
 "The density of blocks in rows filled at the start of the game. The value is "
 "between 0 (for no blocks) and 10 (for a completely filled row)."
@@ -131,95 +131,95 @@ msgstr ""
 "παιχνιδιού. Η τιμή θα πρέπει να είναι μεταξύ 0 (κανένα τουβλάκι) και 10 "
 "(συμπληρωμένη γραμμή)."
 
-#: data/org.gnome.quadrapassel.gschema.xml:53
+#: data/org.gnome.Quadrapassel.gschema.xml:53
 msgid "Whether to play sounds"
 msgstr "Αν θα αναπαράγονται ήχοι"
 
-#: data/org.gnome.quadrapassel.gschema.xml:54
+#: data/org.gnome.Quadrapassel.gschema.xml:54
 msgid "Whether to play sounds."
 msgstr "Αν θα αναπαράγονται ήχοι."
 
-#: data/org.gnome.quadrapassel.gschema.xml:58
+#: data/org.gnome.Quadrapassel.gschema.xml:58
 msgid "Whether to pick blocks that are hard to place"
 msgstr "Αν θα επιλεχθούν τουβλάκια που είναι δύσκολα να τοποθετηθούν"
 
-#: data/org.gnome.quadrapassel.gschema.xml:59
+#: data/org.gnome.Quadrapassel.gschema.xml:59
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Αν θα επιλεχθούν τουβλάκια που είναι δύσκολα να τοποθετηθούν."
 
-#: data/org.gnome.quadrapassel.gschema.xml:63 src/quadrapassel.vala:369
+#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:368
 msgid "Move left"
 msgstr "Μετακίνηση προς τα αριστερά"
 
-#: data/org.gnome.quadrapassel.gschema.xml:64
+#: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "Key press to move left."
 msgstr "Πάτημα πλήκτρου για μετακίνηση προς τα αριστερά."
 
-#: data/org.gnome.quadrapassel.gschema.xml:68 src/quadrapassel.vala:372
+#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:371
 msgid "Move right"
 msgstr "Μετακίνηση προς τα δεξιά"
 
-#: data/org.gnome.quadrapassel.gschema.xml:69
+#: data/org.gnome.Quadrapassel.gschema.xml:69
 msgid "Key press to move right."
 msgstr "Πάτημα πλήκτρου για μετακίνηση προς τα δεξιά."
 
-#: data/org.gnome.quadrapassel.gschema.xml:73 src/quadrapassel.vala:375
+#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:374
 msgid "Move down"
 msgstr "Μετακίνηση προς τα κάτω"
 
-#: data/org.gnome.quadrapassel.gschema.xml:74
+#: data/org.gnome.Quadrapassel.gschema.xml:74
 msgid "Key press to move down."
 msgstr "Πάτημα πλήκτρου για κίνηση προς τα κάτω."
 
-#: data/org.gnome.quadrapassel.gschema.xml:78 src/quadrapassel.vala:378
+#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:377
 msgid "Drop"
 msgstr "Ρίψη"
 
-#: data/org.gnome.quadrapassel.gschema.xml:79
+#: data/org.gnome.Quadrapassel.gschema.xml:79
 msgid "Key press to drop."
 msgstr "Πάτημα πλήκτρου για ρίψη."
 
-#: data/org.gnome.quadrapassel.gschema.xml:83 src/quadrapassel.vala:381
+#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:380
 msgid "Rotate"
 msgstr "Περιστροφή"
 
-#: data/org.gnome.quadrapassel.gschema.xml:84
+#: data/org.gnome.Quadrapassel.gschema.xml:84
 msgid "Key press to rotate."
 msgstr "Πάτημα πλήκτρου για περιστροφή."
 
-#: data/org.gnome.quadrapassel.gschema.xml:88 src/quadrapassel.vala:384
+#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:383
 msgid "Pause"
 msgstr "Παύση"
 
-#: data/org.gnome.quadrapassel.gschema.xml:89
+#: data/org.gnome.Quadrapassel.gschema.xml:89
 msgid "Key press to pause."
 msgstr "Πάτημα πλήκτρου για παύση."
 
-#: data/org.gnome.quadrapassel.gschema.xml:93
+#: data/org.gnome.Quadrapassel.gschema.xml:93
 msgid "Width of the window in pixels"
 msgstr "Το πλάτος του παραθύρου σε εικονοστοιχεία"
 
-#: data/org.gnome.quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:97
 msgid "Height of the window in pixels"
 msgstr "Το ύψος του παραθύρου σε εικονοστοιχεία"
 
-#: data/org.gnome.quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:101
 msgid "true if the window is maximized"
 msgstr "αληθής αν το παράθυρο είναι μεγιστοποιημένο"
 
-#: data/org.gnome.quadrapassel.appdata.xml.in:7
-#: data/org.gnome.quadrapassel.desktop.in:3 src/quadrapassel.vala:97
-#: src/quadrapassel.vala:108 src/quadrapassel.vala:847
-#: src/quadrapassel.vala:887
+#: data/org.gnome.Quadrapassel.appdata.xml.in:7
+#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:97
+#: src/quadrapassel.vala:108 src/quadrapassel.vala:838
+#: src/quadrapassel.vala:878
 msgid "Quadrapassel"
 msgstr "Τουβλάκια"
 
-#: data/org.gnome.quadrapassel.appdata.xml.in:8
-#: data/org.gnome.quadrapassel.desktop.in:4
+#: data/org.gnome.Quadrapassel.appdata.xml.in:8
+#: data/org.gnome.Quadrapassel.desktop.in:4
 msgid "Fit falling blocks together"
 msgstr "Ταιριάξτε τα τουβλάκια που πέφτουν"
 
-#: data/org.gnome.quadrapassel.appdata.xml.in:10
+#: data/org.gnome.Quadrapassel.appdata.xml.in:10
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -235,7 +235,7 @@ msgstr ""
 "σας μεγαλώνει, ανεβαίνει και το επίπεδό σας και τα τουβλάκια πέφτουν "
 "γρηγορότερα."
 
-#: data/org.gnome.quadrapassel.appdata.xml.in:17
+#: data/org.gnome.Quadrapassel.appdata.xml.in:17
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -249,12 +249,13 @@ msgstr ""
 "δύσκολο να ταιριάξετε."
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.quadrapassel.desktop.in:6
-msgid "org.gnome.quadrapassel"
-msgstr "org.gnome.quadrapassel"
+#: data/org.gnome.Quadrapassel.desktop.in:6
+#| msgid "org.gnome.quadrapassel"
+msgid "org.gnome.Quadrapassel"
+msgstr "org.gnome.Quadrapassel"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.quadrapassel.desktop.in:12
+#: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;τέτρις;"
 
@@ -286,7 +287,7 @@ msgstr "_Βοήθεια"
 msgid "_About Quadrapassel"
 msgstr "_Περί του Τουβλάκια"
 
-#: src/quadrapassel.vala:148 src/quadrapassel.vala:785
+#: src/quadrapassel.vala:148 src/quadrapassel.vala:776
 msgid "Start a new game"
 msgstr "Εκκίνηση νέου παιχνιδιού"
 
@@ -342,51 +343,51 @@ msgid "_Preview next block"
 msgstr "Π_ροεπισκόπηση επόμενου τούβλου"
 
 #. rotate counter clock wise
-#: src/quadrapassel.vala:354
+#: src/quadrapassel.vala:353
 msgid "_Rotate blocks counterclockwise"
 msgstr "Π_εριστροφή τούβλου αριστερόστροφα"
 
-#: src/quadrapassel.vala:359
+#: src/quadrapassel.vala:358
 msgid "Show _where the block will land"
 msgstr "Εμφάνιση της _θέσης προσγείωσης του τούβλου"
 
-#: src/quadrapassel.vala:403
+#: src/quadrapassel.vala:402
 msgid "Controls"
 msgstr "Τρόποι ελέγχου"
 
-#: src/quadrapassel.vala:409
+#: src/quadrapassel.vala:408
 msgid "Theme"
 msgstr "Θέμα"
 
-#: src/quadrapassel.vala:421
+#: src/quadrapassel.vala:420
 msgid "Plain"
 msgstr "Απλό"
 
-#: src/quadrapassel.vala:426
+#: src/quadrapassel.vala:425
 msgid "Tango Flat"
 msgstr "Επίπεδο Tango"
 
-#: src/quadrapassel.vala:431
+#: src/quadrapassel.vala:430
 msgid "Tango Shaded"
 msgstr "Σκιασμένο Tango"
 
-#: src/quadrapassel.vala:436
+#: src/quadrapassel.vala:435
 msgid "Clean"
 msgstr "Καθαρό"
 
-#: src/quadrapassel.vala:766
+#: src/quadrapassel.vala:757
 msgid "Unpause the game"
 msgstr "Αναίρεση παύσης παιχνιδιού"
 
-#: src/quadrapassel.vala:771
+#: src/quadrapassel.vala:762
 msgid "Pause the game"
 msgstr "Παύση παιχνιδιού"
 
-#: src/quadrapassel.vala:849
+#: src/quadrapassel.vala:840
 msgid "A classic game of fitting falling blocks together"
 msgstr "Ένα κλασσικό παιχνίδι προσαρμογής τούβλων που πέφτουν μαζί."
 
-#: src/quadrapassel.vala:854
+#: src/quadrapassel.vala:845
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
