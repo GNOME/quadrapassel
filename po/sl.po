@@ -7,13 +7,13 @@
 # Tadej Janež <tadej_janez@email.si>, 2003.
 # Matic Žgur <mr.zgur@gmail.com>, 2006–2007.
 # Andrej Mernik <andrejm@ubuntu.si>, 2017.
-# Matej Urbančič <mateju@svn.gnome.org>, 2007–2018.
+# Matej Urbančič <mateju@svn.gnome.org>, 2007–2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2018-12-09 16:55+0000\n"
-"PO-Revision-Date: 2018-12-09 21:40+0100\n"
+"POT-Creation-Date: 2019-01-25 13:24+0000\n"
+"PO-Revision-Date: 2019-01-25 18:28+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -23,80 +23,80 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.1.1\n"
 
-#: data/org.gnome.quadrapassel.gschema.xml:5
+#: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
 msgstr "Slika, ki bo uporabljena za izrisovanje blokov"
 
-#: data/org.gnome.quadrapassel.gschema.xml:6
+#: data/org.gnome.Quadrapassel.gschema.xml:6
 msgid "Image to use for drawing blocks."
 msgstr "Slika, ki bo uporabljena za izrisovanje blokov."
 
-#: data/org.gnome.quadrapassel.gschema.xml:10
+#: data/org.gnome.Quadrapassel.gschema.xml:10
 msgid "The theme used for rendering the blocks"
 msgstr "Tema, ki bo uporabljena za izrisovanje blokov"
 
-#: data/org.gnome.quadrapassel.gschema.xml:11
+#: data/org.gnome.Quadrapassel.gschema.xml:11
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "Ime teme, ki bo uporabljena za izrisovanje blokov in ozadja."
 
-#: data/org.gnome.quadrapassel.gschema.xml:16
+#: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "Level to start with"
 msgstr "Raven, s katero želite začeti"
 
-#: data/org.gnome.quadrapassel.gschema.xml:17
+#: data/org.gnome.Quadrapassel.gschema.xml:17
 msgid "Level to start with."
 msgstr "Raven, s katero želite začeti."
 
-#: data/org.gnome.quadrapassel.gschema.xml:21
+#: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to preview the next block"
 msgstr "Ali naj bo omogočen predogled naslednjega bloka"
 
-#: data/org.gnome.quadrapassel.gschema.xml:22
+#: data/org.gnome.Quadrapassel.gschema.xml:22
 msgid "Whether to preview the next block."
 msgstr "Ali naj bo omogočen predogled naslednjega bloka."
 
-#: data/org.gnome.quadrapassel.gschema.xml:26
+#: data/org.gnome.Quadrapassel.gschema.xml:26
 msgid "Whether to show where the moving piece will land"
 msgstr "Ali naj se pokaže, kje bo premikajoči se blok pristal"
 
-#: data/org.gnome.quadrapassel.gschema.xml:27
+#: data/org.gnome.Quadrapassel.gschema.xml:27
 msgid "Whether to show where the moving piece will land."
 msgstr "Ali naj se pokaže, kje bo premikajoči se blok pristal."
 
-#: data/org.gnome.quadrapassel.gschema.xml:31
+#: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to give blocks random colors"
 msgstr "Ali naj bodo bloki naključne barve"
 
-#: data/org.gnome.quadrapassel.gschema.xml:32
+#: data/org.gnome.Quadrapassel.gschema.xml:32
 msgid "Whether to give blocks random colors."
 msgstr "Ali naj bodo bloki naključne barve."
 
-#: data/org.gnome.quadrapassel.gschema.xml:36
+#: data/org.gnome.Quadrapassel.gschema.xml:36
 msgid "Whether to rotate counter clock wise"
 msgstr "Vrtenje v nasprotni smeri urinega kazalca"
 
-#: data/org.gnome.quadrapassel.gschema.xml:37
+#: data/org.gnome.Quadrapassel.gschema.xml:37
 msgid "Whether to rotate counter clock wise."
 msgstr "Vrtenje v nasprotni smeri urinega kazalca."
 
-#: data/org.gnome.quadrapassel.gschema.xml:42
+#: data/org.gnome.Quadrapassel.gschema.xml:42
 msgid "The number of rows to fill"
 msgstr "Število vrstic, ki bodo zapolnjene"
 
-#: data/org.gnome.quadrapassel.gschema.xml:43
+#: data/org.gnome.Quadrapassel.gschema.xml:43
 msgid ""
 "The number of rows that are filled with random blocks at the start of the "
 "game."
 msgstr ""
 "Število vrstic, ki naj bodo zapolnjene z naključnimi bloki ob začetku igre."
 
-#: data/org.gnome.quadrapassel.gschema.xml:48
+#: data/org.gnome.Quadrapassel.gschema.xml:48
 msgid "The density of filled rows"
 msgstr "Gostota zapolnjenih vrstic"
 
-#: data/org.gnome.quadrapassel.gschema.xml:49
+#: data/org.gnome.Quadrapassel.gschema.xml:49
 msgid ""
 "The density of blocks in rows filled at the start of the game. The value is "
 "between 0 (for no blocks) and 10 (for a completely filled row)."
@@ -104,93 +104,95 @@ msgstr ""
 "Gostota zapolnjenosti vrstic z bloki ob začetku igranja igre. Vrednost je "
 "določena med 0 (prazno polje) in 10 (polno zapolnjene vrstice)."
 
-#: data/org.gnome.quadrapassel.gschema.xml:53
+#: data/org.gnome.Quadrapassel.gschema.xml:53
 msgid "Whether to play sounds"
 msgstr "Ali naj se predvajajo zvoki"
 
-#: data/org.gnome.quadrapassel.gschema.xml:54
+#: data/org.gnome.Quadrapassel.gschema.xml:54
 msgid "Whether to play sounds."
 msgstr "Ali naj se predvajajo zvoki."
 
-#: data/org.gnome.quadrapassel.gschema.xml:58
+#: data/org.gnome.Quadrapassel.gschema.xml:58
 msgid "Whether to pick blocks that are hard to place"
 msgstr "Ali naj bodo izbrani bloki, ki jih je težko postaviti"
 
-#: data/org.gnome.quadrapassel.gschema.xml:59
+#: data/org.gnome.Quadrapassel.gschema.xml:59
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Ali naj bodo izbrani bloki, ki jih je težko postaviti."
 
-#: data/org.gnome.quadrapassel.gschema.xml:63 src/quadrapassel.vala:369
+#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:371
 msgid "Move left"
 msgstr "Premakni levo"
 
-#: data/org.gnome.quadrapassel.gschema.xml:64
+#: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "Key press to move left."
 msgstr "Pritisk tipke za premik v levo."
 
-#: data/org.gnome.quadrapassel.gschema.xml:68 src/quadrapassel.vala:372
+#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:374
 msgid "Move right"
 msgstr "Premakni desno"
 
-#: data/org.gnome.quadrapassel.gschema.xml:69
+#: data/org.gnome.Quadrapassel.gschema.xml:69
 msgid "Key press to move right."
 msgstr "Pritisk tipke za premik v desno."
 
-#: data/org.gnome.quadrapassel.gschema.xml:73 src/quadrapassel.vala:375
+#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:377
 msgid "Move down"
 msgstr "Premakni dol"
 
-#: data/org.gnome.quadrapassel.gschema.xml:74
+#: data/org.gnome.Quadrapassel.gschema.xml:74
 msgid "Key press to move down."
 msgstr "Tipka za premik navzdol."
 
-#: data/org.gnome.quadrapassel.gschema.xml:78 src/quadrapassel.vala:378
+#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:380
 msgid "Drop"
 msgstr "Spusti"
 
-#: data/org.gnome.quadrapassel.gschema.xml:79
+#: data/org.gnome.Quadrapassel.gschema.xml:79
 msgid "Key press to drop."
 msgstr "Tipka za spust na dno."
 
-#: data/org.gnome.quadrapassel.gschema.xml:83 src/quadrapassel.vala:381
+#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:383
 msgid "Rotate"
 msgstr "Zavrti"
 
-#: data/org.gnome.quadrapassel.gschema.xml:84
+#: data/org.gnome.Quadrapassel.gschema.xml:84
 msgid "Key press to rotate."
 msgstr "Tipka za vrtenje."
 
-#: data/org.gnome.quadrapassel.gschema.xml:88 src/quadrapassel.vala:384
+#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
 msgid "Pause"
 msgstr "Premor"
 
-#: data/org.gnome.quadrapassel.gschema.xml:89
+#: data/org.gnome.Quadrapassel.gschema.xml:89
 msgid "Key press to pause."
 msgstr "Tipka za premor."
 
-#: data/org.gnome.quadrapassel.gschema.xml:93
+#: data/org.gnome.Quadrapassel.gschema.xml:93
 msgid "Width of the window in pixels"
 msgstr "Širina okna v točkah"
 
-#: data/org.gnome.quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:97
 msgid "Height of the window in pixels"
 msgstr "Višina okna v točkah"
 
-#: data/org.gnome.quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:101
 msgid "true if the window is maximized"
 msgstr "prav, če je okno razpeto."
 
-#: data/quadrapassel.appdata.xml.in:7 data/quadrapassel.desktop.in:3
-#: src/quadrapassel.vala:97 src/quadrapassel.vala:108 src/quadrapassel.vala:847
-#: src/quadrapassel.vala:887
+#: data/org.gnome.Quadrapassel.appdata.xml.in:7
+#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
+#: src/quadrapassel.vala:886
 msgid "Quadrapassel"
 msgstr "Kvadetris"
 
-#: data/quadrapassel.appdata.xml.in:8 data/quadrapassel.desktop.in:4
+#: data/org.gnome.Quadrapassel.appdata.xml.in:8
+#: data/org.gnome.Quadrapassel.desktop.in:4
 msgid "Fit falling blocks together"
 msgstr "Zlaganje padajočih blokov"
 
-#: data/quadrapassel.appdata.xml.in:10
+#: data/org.gnome.Quadrapassel.appdata.xml.in:10
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -204,7 +206,7 @@ msgstr ""
 "Igre je konec, ko bloki dosežejo vrh okna. S časom postaja igra tudi "
 "hitrejša."
 
-#: data/quadrapassel.appdata.xml.in:17
+#: data/org.gnome.Quadrapassel.appdata.xml.in:17
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -217,12 +219,13 @@ msgstr ""
 "vrstic."
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/quadrapassel.desktop.in:6
-msgid "quadrapassel"
-msgstr "quadrapassel"
+#: data/org.gnome.Quadrapassel.desktop.in:6
+#| msgid "Quadrapassel"
+msgid "org.gnome.Quadrapassel"
+msgstr "org.gnome.Quadrapassel"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/quadrapassel.desktop.in:12
+#: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;"
 
@@ -234,127 +237,127 @@ msgstr "V premoru"
 msgid "Game Over"
 msgstr "Konec igre"
 
-#: src/quadrapassel.vala:115
+#: src/quadrapassel.vala:117
 msgid "_New Game"
 msgstr "_Nova Igra"
 
-#: src/quadrapassel.vala:116
+#: src/quadrapassel.vala:118
 msgid "_Scores"
 msgstr "Rezul_tati"
 
-#: src/quadrapassel.vala:119
+#: src/quadrapassel.vala:121
 msgid "_Preferences"
 msgstr "_Možnosti"
 
-#: src/quadrapassel.vala:120
+#: src/quadrapassel.vala:122
 msgid "_Help"
 msgstr "Pomo_č"
 
-#: src/quadrapassel.vala:121
+#: src/quadrapassel.vala:123
 msgid "_About Quadrapassel"
 msgstr "_O igri"
 
-#: src/quadrapassel.vala:148 src/quadrapassel.vala:785
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
 msgid "Start a new game"
 msgstr "Začni novo igro"
 
-#: src/quadrapassel.vala:153
+#: src/quadrapassel.vala:156
 msgid "Next"
 msgstr "Naprej "
 
-#: src/quadrapassel.vala:166 src/score-dialog.vala:51
+#: src/quadrapassel.vala:169 src/score-dialog.vala:51
 msgid "Score"
 msgstr "Rezultat"
 
-#: src/quadrapassel.vala:177
+#: src/quadrapassel.vala:180
 msgid "Lines"
 msgstr "Vrstice"
 
-#: src/quadrapassel.vala:188
+#: src/quadrapassel.vala:191
 msgid "Level"
 msgstr "Raven"
 
-#: src/quadrapassel.vala:273
+#: src/quadrapassel.vala:276
 msgid "Preferences"
 msgstr "Možnosti"
 
-#: src/quadrapassel.vala:291
+#: src/quadrapassel.vala:294
 msgid "Game"
 msgstr "Igra"
 
 #. pre-filled rows
-#: src/quadrapassel.vala:295
+#: src/quadrapassel.vala:298
 msgid "_Number of pre-filled rows:"
 msgstr "Število začetno izpolnjenih vrstic:"
 
 #. pre-filled rows density
-#: src/quadrapassel.vala:310
+#: src/quadrapassel.vala:313
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Gostota blokov v začetno zapolnjenih vrsticah:"
 
 #. starting level
-#: src/quadrapassel.vala:324
+#: src/quadrapassel.vala:327
 msgid "_Starting level:"
 msgstr "_Začetna ravni: "
 
-#: src/quadrapassel.vala:337
+#: src/quadrapassel.vala:340
 msgid "_Enable sounds"
 msgstr "_Omogoči zvoke"
 
-#: src/quadrapassel.vala:342
+#: src/quadrapassel.vala:345
 msgid "Choose difficult _blocks"
 msgstr "Izbor težjih _blokov"
 
-#: src/quadrapassel.vala:347
+#: src/quadrapassel.vala:350
 msgid "_Preview next block"
 msgstr "P_redogled naslednjega bloka"
 
 #. rotate counter clock wise
-#: src/quadrapassel.vala:354
+#: src/quadrapassel.vala:356
 msgid "_Rotate blocks counterclockwise"
 msgstr "Z_avrti bloke proti smeri urinega kazalca"
 
-#: src/quadrapassel.vala:359
+#: src/quadrapassel.vala:361
 msgid "Show _where the block will land"
 msgstr "Pokaži kje bo _blok pristal."
 
-#: src/quadrapassel.vala:403
+#: src/quadrapassel.vala:405
 msgid "Controls"
 msgstr "Tipke"
 
-#: src/quadrapassel.vala:409
+#: src/quadrapassel.vala:411
 msgid "Theme"
 msgstr "Tema"
 
-#: src/quadrapassel.vala:421
+#: src/quadrapassel.vala:423
 msgid "Plain"
 msgstr "Običajno"
 
-#: src/quadrapassel.vala:426
+#: src/quadrapassel.vala:428
 msgid "Tango Flat"
 msgstr "Tango Flat"
 
-#: src/quadrapassel.vala:431
+#: src/quadrapassel.vala:433
 msgid "Tango Shaded"
 msgstr "Tango Shaded"
 
-#: src/quadrapassel.vala:436
+#: src/quadrapassel.vala:438
 msgid "Clean"
 msgstr "Počisti"
 
-#: src/quadrapassel.vala:766
+#: src/quadrapassel.vala:760
 msgid "Unpause the game"
 msgstr "Prekliči premor"
 
-#: src/quadrapassel.vala:771
+#: src/quadrapassel.vala:765
 msgid "Pause the game"
 msgstr "Premor igranja"
 
-#: src/quadrapassel.vala:849
+#: src/quadrapassel.vala:843
 msgid "A classic game of fitting falling blocks together"
 msgstr "Igra prilagajanja padajočih likov."
 
-#: src/quadrapassel.vala:854
+#: src/quadrapassel.vala:848
 msgid "translator-credits"
 msgstr ""
 "Matic Žgur <mr.zgur@gmail.com>\n"
@@ -377,6 +380,9 @@ msgstr "_V redu"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Datum"
+
+#~ msgid "quadrapassel"
+#~ msgstr "quadrapassel"
 
 #~ msgid "_About"
 #~ msgstr "_O programu"
