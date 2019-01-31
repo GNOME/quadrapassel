@@ -12,11 +12,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.ro\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/"
-"enter_bug.cgi?product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-02-03 16:50+0000\n"
-"PO-Revision-Date: 2018-03-25 22:14+0200\n"
-"Last-Translator: Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
+"POT-Creation-Date: 2019-01-08 20:07+0000\n"
+"PO-Revision-Date: 2019-01-27 02:29+0200\n"
+"Last-Translator: Florentina Mușat <florentina.musat.28 [at] gmail [dot] "
+"com>\n"
 "Language-Team: Gnome Romanian Translation Team\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -24,82 +24,82 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Launchpad-Export-Date: 2009-11-27 09:12+0000\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.quadrapassel.gschema.xml:5
+#: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
-msgstr "Imaginea folosită pentru desenarea blocurilor "
+msgstr "Imaginea de utilizat pentru desenarea blocurilor"
 
-#: data/org.gnome.quadrapassel.gschema.xml:6
+#: data/org.gnome.Quadrapassel.gschema.xml:6
 msgid "Image to use for drawing blocks."
 msgstr "Imaginea folosită pentru desenarea blocurilor."
 
-#: data/org.gnome.quadrapassel.gschema.xml:10
+#: data/org.gnome.Quadrapassel.gschema.xml:10
 msgid "The theme used for rendering the blocks"
 msgstr "Tema folosită pentru a randa blocurile"
 
-#: data/org.gnome.quadrapassel.gschema.xml:11
+#: data/org.gnome.Quadrapassel.gschema.xml:11
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "Numele temei folosite pentru a randa blocurile și fundalul."
 
-#: data/org.gnome.quadrapassel.gschema.xml:16
+#: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "Level to start with"
 msgstr "Nivelul de pornire"
 
-#: data/org.gnome.quadrapassel.gschema.xml:17
+#: data/org.gnome.Quadrapassel.gschema.xml:17
 msgid "Level to start with."
 msgstr "Nivelul de pornire."
 
-#: data/org.gnome.quadrapassel.gschema.xml:21
+#: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to preview the next block"
 msgstr "Dacă să se arate următorul bloc"
 
-#: data/org.gnome.quadrapassel.gschema.xml:22
+#: data/org.gnome.Quadrapassel.gschema.xml:22
 msgid "Whether to preview the next block."
 msgstr "Dacă să se arate următorul bloc."
 
-#: data/org.gnome.quadrapassel.gschema.xml:26
+#: data/org.gnome.Quadrapassel.gschema.xml:26
 msgid "Whether to show where the moving piece will land"
 msgstr "Dacă să se arate unde piesa mișcătoare va ateriza"
 
-#: data/org.gnome.quadrapassel.gschema.xml:27
+#: data/org.gnome.Quadrapassel.gschema.xml:27
 msgid "Whether to show where the moving piece will land."
 msgstr "Dacă să se arate unde piesa mișcătoare va ateriza."
 
-#: data/org.gnome.quadrapassel.gschema.xml:31
+#: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to give blocks random colors"
 msgstr "Dacă blocurile vor primi culori aleatoarii"
 
-#: data/org.gnome.quadrapassel.gschema.xml:32
+#: data/org.gnome.Quadrapassel.gschema.xml:32
 msgid "Whether to give blocks random colors."
 msgstr "Dacă blocurile vor primi culori aleatorii."
 
-#: data/org.gnome.quadrapassel.gschema.xml:36
+#: data/org.gnome.Quadrapassel.gschema.xml:36
 msgid "Whether to rotate counter clock wise"
 msgstr "Dacă să rotească în sens invers orar"
 
-#: data/org.gnome.quadrapassel.gschema.xml:37
+#: data/org.gnome.Quadrapassel.gschema.xml:37
 msgid "Whether to rotate counter clock wise."
 msgstr "Dacă să rotească în sens invers orar."
 
-#: data/org.gnome.quadrapassel.gschema.xml:42
+#: data/org.gnome.Quadrapassel.gschema.xml:42
 msgid "The number of rows to fill"
 msgstr "Numărul liniilor ce vor fi umplute"
 
-#: data/org.gnome.quadrapassel.gschema.xml:43
+#: data/org.gnome.Quadrapassel.gschema.xml:43
 msgid ""
 "The number of rows that are filled with random blocks at the start of the "
 "game."
 msgstr ""
 "Numărul liniilor ce sunt umplute cu blocuri aleatoare la începutul jocului."
 
-#: data/org.gnome.quadrapassel.gschema.xml:48
+#: data/org.gnome.Quadrapassel.gschema.xml:48
 msgid "The density of filled rows"
 msgstr "Densitatea blocurilor în liniile pre-umplute"
 
-#: data/org.gnome.quadrapassel.gschema.xml:49
+#: data/org.gnome.Quadrapassel.gschema.xml:49
 msgid ""
 "The density of blocks in rows filled at the start of the game. The value is "
 "between 0 (for no blocks) and 10 (for a completely filled row)."
@@ -107,93 +107,95 @@ msgstr ""
 "Densitatea blocurilor din linii umplute la începutul jocului. Valorile sunt "
 "între 0 (pentru niciun bloc) și 10 (pentru o linie umplută complet)."
 
-#: data/org.gnome.quadrapassel.gschema.xml:53
+#: data/org.gnome.Quadrapassel.gschema.xml:53
 msgid "Whether to play sounds"
 msgstr "Dacă se vor reda sunete"
 
-#: data/org.gnome.quadrapassel.gschema.xml:54
+#: data/org.gnome.Quadrapassel.gschema.xml:54
 msgid "Whether to play sounds."
 msgstr "Dacă se vor reda sunete."
 
-#: data/org.gnome.quadrapassel.gschema.xml:58
+#: data/org.gnome.Quadrapassel.gschema.xml:58
 msgid "Whether to pick blocks that are hard to place"
 msgstr "Dacă se vor alege blocuri greu de plasat"
 
-#: data/org.gnome.quadrapassel.gschema.xml:59
+#: data/org.gnome.Quadrapassel.gschema.xml:59
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Dacă se vor alege blocuri greu de plasat."
 
-#: data/org.gnome.quadrapassel.gschema.xml:63 src/quadrapassel.vala:366
+#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:368
 msgid "Move left"
 msgstr "Mută la stânga"
 
-#: data/org.gnome.quadrapassel.gschema.xml:64
+#: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "Key press to move left."
 msgstr "Tasta pentru mișcare la stânga."
 
-#: data/org.gnome.quadrapassel.gschema.xml:68 src/quadrapassel.vala:369
+#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:371
 msgid "Move right"
 msgstr "Mută la dreapta"
 
-#: data/org.gnome.quadrapassel.gschema.xml:69
+#: data/org.gnome.Quadrapassel.gschema.xml:69
 msgid "Key press to move right."
 msgstr "Tasta pentru mișcare la dreapta."
 
-#: data/org.gnome.quadrapassel.gschema.xml:73 src/quadrapassel.vala:372
+#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:374
 msgid "Move down"
 msgstr "Mișcă în jos"
 
-#: data/org.gnome.quadrapassel.gschema.xml:74
+#: data/org.gnome.Quadrapassel.gschema.xml:74
 msgid "Key press to move down."
 msgstr "Tasta apăsată pentru mișcare în jos."
 
-#: data/org.gnome.quadrapassel.gschema.xml:78 src/quadrapassel.vala:375
+#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:377
 msgid "Drop"
 msgstr "Eliberează"
 
-#: data/org.gnome.quadrapassel.gschema.xml:79
+#: data/org.gnome.Quadrapassel.gschema.xml:79
 msgid "Key press to drop."
 msgstr "Tasta apăsată pentru a elibera o piesă."
 
-#: data/org.gnome.quadrapassel.gschema.xml:83 src/quadrapassel.vala:378
+#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:380
 msgid "Rotate"
 msgstr "Rotire"
 
-#: data/org.gnome.quadrapassel.gschema.xml:84
+#: data/org.gnome.Quadrapassel.gschema.xml:84
 msgid "Key press to rotate."
 msgstr "Tasta apăsată pentru rotire."
 
-#: data/org.gnome.quadrapassel.gschema.xml:88 src/quadrapassel.vala:381
+#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:383
 msgid "Pause"
 msgstr "Pauză"
 
-#: data/org.gnome.quadrapassel.gschema.xml:89
+#: data/org.gnome.Quadrapassel.gschema.xml:89
 msgid "Key press to pause."
 msgstr "Tasta apăsată pentru pauză."
 
-#: data/org.gnome.quadrapassel.gschema.xml:93
+#: data/org.gnome.Quadrapassel.gschema.xml:93
 msgid "Width of the window in pixels"
 msgstr "Lățimea ferestrei în pixeli"
 
-#: data/org.gnome.quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:97
 msgid "Height of the window in pixels"
 msgstr "Înălțimea ferestrei în pixeli"
 
-#: data/org.gnome.quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:101
 msgid "true if the window is maximized"
-msgstr "Dacă este adevărat, fereastra este maximizată"
+msgstr "adevărat dacă fereastra este maximizată"
 
-#: data/quadrapassel.appdata.xml.in:7 data/quadrapassel.desktop.in:3
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:121
-#: src/quadrapassel.vala:836 src/quadrapassel.vala:876
+#: data/org.gnome.Quadrapassel.appdata.xml.in:7
+#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:97
+#: src/quadrapassel.vala:108 src/quadrapassel.vala:838
+#: src/quadrapassel.vala:878
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
-#: data/quadrapassel.appdata.xml.in:8 data/quadrapassel.desktop.in:4
+#: data/org.gnome.Quadrapassel.appdata.xml.in:8
+#: data/org.gnome.Quadrapassel.desktop.in:4
 msgid "Fit falling blocks together"
 msgstr "Potrivește blocuri care cad"
 
-#: data/quadrapassel.appdata.xml.in:10
+#: data/org.gnome.Quadrapassel.appdata.xml.in:10
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -207,7 +209,7 @@ msgstr ""
 "rândul va dispărea și veți primi puncte. Pe măsură ce scorul crește, treceți "
 "la nivele noi și blocurile vor cădea mai rapid."
 
-#: data/quadrapassel.appdata.xml.in:17
+#: data/org.gnome.Quadrapassel.appdata.xml.in:17
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -220,13 +222,12 @@ msgstr ""
 "întâmplare, se pot selecta blocuri care pot fi greu de așezat."
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/quadrapassel.desktop.in:6
-#| msgid "Quadrapassel"
-msgid "quadrapassel"
-msgstr "quadrapassel"
+#: data/org.gnome.Quadrapassel.desktop.in:6
+msgid "org.gnome.Quadrapassel"
+msgstr "org.gnome.Quadrapassel"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/quadrapassel.desktop.in:12
+#: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;"
 
@@ -238,136 +239,133 @@ msgstr "Pauză"
 msgid "Game Over"
 msgstr "Jocul s-a terminat"
 
-#: src/quadrapassel.vala:95
+#: src/quadrapassel.vala:115
 msgid "_New Game"
 msgstr "Joc _nou"
 
-#: src/quadrapassel.vala:96
+#: src/quadrapassel.vala:116
 msgid "_Scores"
 msgstr "_Scoruri"
 
-#: src/quadrapassel.vala:97
+#: src/quadrapassel.vala:119
 msgid "_Preferences"
 msgstr "_Preferințe"
 
-#: src/quadrapassel.vala:100
+#: src/quadrapassel.vala:120
 msgid "_Help"
 msgstr "_Ajutor"
 
-#: src/quadrapassel.vala:101
-msgid "_About"
-msgstr "_Despre"
+#: src/quadrapassel.vala:121
+msgid "_About Quadrapassel"
+msgstr "_Despre Quadrapassel"
 
-#: src/quadrapassel.vala:102
-msgid "_Quit"
-msgstr "_Ieșire"
-
-#: src/quadrapassel.vala:145 src/quadrapassel.vala:774
+#: src/quadrapassel.vala:148 src/quadrapassel.vala:776
 msgid "Start a new game"
 msgstr "Pornește un joc nou"
 
-#: src/quadrapassel.vala:150
+#: src/quadrapassel.vala:153
 msgid "Next"
 msgstr "Următorul"
 
-#: src/quadrapassel.vala:163 src/score-dialog.vala:51
+#: src/quadrapassel.vala:166 src/score-dialog.vala:51
 msgid "Score"
 msgstr "Scor"
 
-#: src/quadrapassel.vala:174
+#: src/quadrapassel.vala:177
 msgid "Lines"
 msgstr "Linii"
 
-#: src/quadrapassel.vala:185
+#: src/quadrapassel.vala:188
 msgid "Level"
 msgstr "Nivel"
 
-#: src/quadrapassel.vala:270
+#: src/quadrapassel.vala:273
 msgid "Preferences"
 msgstr "Preferințe"
 
-#: src/quadrapassel.vala:288
+#: src/quadrapassel.vala:291
 msgid "Game"
 msgstr "Joc"
 
 #. pre-filled rows
-#: src/quadrapassel.vala:292
+#: src/quadrapassel.vala:295
 msgid "_Number of pre-filled rows:"
 msgstr "_Numărul liniilor pre-umplute:"
 
 #. pre-filled rows density
-#: src/quadrapassel.vala:307
+#: src/quadrapassel.vala:310
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Densitatea blocurilor în liniile pre-umplute:"
 
 #. starting level
-#: src/quadrapassel.vala:321
+#: src/quadrapassel.vala:324
 msgid "_Starting level:"
 msgstr "Nivelul de î_nceput:"
 
-#: src/quadrapassel.vala:334
+#: src/quadrapassel.vala:337
 msgid "_Enable sounds"
 msgstr "_Activează sunetele"
 
-#: src/quadrapassel.vala:339
+#: src/quadrapassel.vala:342
 msgid "Choose difficult _blocks"
 msgstr "Alege _blocuri dificile"
 
-#: src/quadrapassel.vala:344
+#: src/quadrapassel.vala:347
 msgid "_Preview next block"
 msgstr "_Arată următorul bloc"
 
 #. rotate counter clock wise
-#: src/quadrapassel.vala:351
+#: src/quadrapassel.vala:353
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Rotește blocurile invers acelor de ceas"
 
-#: src/quadrapassel.vala:356
+#: src/quadrapassel.vala:358
 msgid "Show _where the block will land"
 msgstr "Arată _unde va ateriza blocul"
 
-#: src/quadrapassel.vala:400
+#: src/quadrapassel.vala:402
 msgid "Controls"
 msgstr "Controale"
 
-#: src/quadrapassel.vala:406
+#: src/quadrapassel.vala:408
 msgid "Theme"
 msgstr "Teme"
 
-#: src/quadrapassel.vala:418
+#: src/quadrapassel.vala:420
 msgid "Plain"
 msgstr "Simplu"
 
-#: src/quadrapassel.vala:423
+#: src/quadrapassel.vala:425
 msgid "Tango Flat"
 msgstr "Tango plat"
 
-#: src/quadrapassel.vala:428
+#: src/quadrapassel.vala:430
 msgid "Tango Shaded"
 msgstr "Tango umbrit"
 
-#: src/quadrapassel.vala:433
+#: src/quadrapassel.vala:435
 msgid "Clean"
 msgstr "Frumos"
 
-#: src/quadrapassel.vala:755
+#: src/quadrapassel.vala:757
 msgid "Unpause the game"
 msgstr "Reia jocul"
 
-#: src/quadrapassel.vala:760
+#: src/quadrapassel.vala:762
 msgid "Pause the game"
 msgstr "Pune jocul pe pauză"
 
-#: src/quadrapassel.vala:838
+#: src/quadrapassel.vala:840
 msgid "A classic game of fitting falling blocks together"
 msgstr "Un joc clasic de așezare a blocurilor în cădere"
 
-#: src/quadrapassel.vala:843
+#: src/quadrapassel.vala:845
 msgid "translator-credits"
 msgstr ""
 "Mugurel Tudor <mugurelu@gnome.ro>\n"
 "Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
 "Adelin Șerbănescu <sadelin106 [at] gmail [dot] com>, 2018\n"
+"Florentina Mușat <florentina.musat.28 [at] gmail [dot] com>, 2019\n"
 "\n"
 "Launchpad Contributions:\n"
 "  Adi Roiban https://launchpad.net/~adiroiban\n"
@@ -400,3 +398,13 @@ msgstr "_OK"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Dată"
+
+#~| msgid "Quadrapassel"
+#~ msgid "quadrapassel"
+#~ msgstr "quadrapassel"
+
+#~ msgid "_About"
+#~ msgstr "_Despre"
+
+#~ msgid "_Quit"
+#~ msgstr "_Ieșire"
