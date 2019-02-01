@@ -40,7 +40,7 @@ slots:
   quadrapassel:
     interface: dbus
     bus: session
-    name: org.gnome.quadrapassel
+    name: org.gnome.Quadrapassel
 
 apps:
   quadrapassel:
@@ -53,7 +53,7 @@ apps:
       - pulseaudio
       - unity7
       - wayland
-    desktop: usr/share/applications/quadrapassel.desktop
+    desktop: usr/share/applications/or.gnome.Quadrapassel.desktop
     environment:
       GSETTINGS_SCHEMA_DIR: $SNAP/share/glib-2.0/schemas
       LD_LIBRARY_PATH: $LD_LIBRARY_PATH:$SNAP/lib/quadrapassel
@@ -112,25 +112,21 @@ parts:
     after: [desktop-gnome-platform, gsound]
     source: .
     source-type: git
-    plugin: autotools
+    plugin: meson
     # workaround the issue described in https://launchpad.net/bugs/1583250
-    configflags: [--prefix=/snap/quadrapassel/current/usr]
+    meson-parameters: [--prefix=/snap/quadrapassel/current/usr]
     organize:
       snap/quadrapassel/current/usr: usr
     override-build: |
-      sed -i.bak -e 's|=quadrapassel$|=${SNAP}/meta/gui/quadrapassel.png|g' data/quadrapassel.desktop.in
+      sed -i.bak -e 's|=org.gnome.Quadrapassel$|=${SNAP}/meta/gui/org.gnome.Quadrapassel.png|g' data/org.gnome.Quadrapassel.desktop.in
       snapcraftctl build
       mkdir -p $SNAPCRAFT_PART_INSTALL/meta/gui/
-      cp ../src/data/icons/hicolor/48x48/quadrapassel.png $SNAPCRAFT_PART_INSTALL/meta/gui/
-      cp data/quadrapassel.desktop $SNAPCRAFT_PART_INSTALL/meta/gui/
+      cp ../src/data/icons/hicolor/48x48/org.gnome.Quadrapassel.png $SNAPCRAFT_PART_INSTALL/meta/gui/
+      cp ../install/snap/quadrapassel/current/usr/org.gnome.Quadrapassel.desktop $SNAPCRAFT_PART_INSTALL/meta/gui/
     build-packages:
-      - desktop-file-utils
       - gettext
-      - gnome-common
       - gsettings-desktop-schemas-dev
-      - appstream-util
-      - gnome-pkg-tools
-      - intltool
+      - itstool
       - libcanberra-gtk3-dev
       - libclutter-1.0-dev
       - libclutter-gtk-1.0-dev
@@ -138,4 +134,3 @@ parts:
       - libgtk-3-dev
       - librsvg2-dev
       - valac
-      - yelp-tools
