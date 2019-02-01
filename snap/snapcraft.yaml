@@ -103,6 +103,7 @@ parts:
     organize:
       snap/quadrapassel/current/usr: usr
     build-packages:
+      - autoconf-archive
       - intltool
       - libgirepository1.0-dev
       - libglib2.0-dev
