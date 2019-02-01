@@ -1,5 +1,5 @@
 name: quadrapassel
-adopt-info: quadrapassel
+version: git
 summary: Fit falling blocks together
 description: |
   Quadrapassel is a derivative of a classic Russian falling-block game.
