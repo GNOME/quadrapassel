@@ -123,7 +123,7 @@ parts:
       snapcraftctl build
       mkdir -p $SNAPCRAFT_PART_INSTALL/meta/gui/
       cp ../src/data/icons/hicolor/48x48/org.gnome.Quadrapassel.png $SNAPCRAFT_PART_INSTALL/meta/gui/
-      cp ../install/snap/quadrapassel/current/usr/org.gnome.Quadrapassel.desktop $SNAPCRAFT_PART_INSTALL/meta/gui/
+      cp ../install/snap/quadrapassel/current/usr/share/applications/org.gnome.Quadrapassel.desktop $SNAPCRAFT_PART_INSTALL/meta/gui/
     build-packages:
       - gettext
       - gsettings-desktop-schemas-dev
