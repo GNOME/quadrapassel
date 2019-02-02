@@ -44,7 +44,7 @@ slots:
 
 apps:
   quadrapassel:
-    command: desktop-launch quadrapassel
+    command: desktop-launch snapcraft-preload quadrapassel
     plugs:
       - desktop
       - desktop-legacy
@@ -53,12 +53,20 @@ apps:
       - pulseaudio
       - unity7
       - wayland
-    desktop: usr/share/applications/or.gnome.Quadrapassel.desktop
+    desktop: usr/share/applications/org.gnome.Quadrapassel.desktop
     environment:
       GSETTINGS_SCHEMA_DIR: $SNAP/share/glib-2.0/schemas
       LD_LIBRARY_PATH: $LD_LIBRARY_PATH:$SNAP/lib/quadrapassel
 
 parts:
+# needed for clutter to work
+  snapcraft-preload:
+    source: https://github.com/sergiusens/snapcraft-preload.git
+    plugin: cmake
+    build-packages:
+      - gcc-multilib
+      - g++-multilib
+
   desktop-gnome-platform:
     source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
     source-subdir: gtk
@@ -110,7 +118,7 @@ parts:
       - valac
 
   quadrapassel:
-    after: [desktop-gnome-platform, gsound]
+    after: [desktop-gnome-platform, gsound, snapcraft-preload]
     source: .
     source-type: git
     plugin: meson
@@ -133,5 +141,9 @@ parts:
       - libclutter-gtk-1.0-dev
       - libglib2.0-dev
       - libgtk-3-dev
+      - libmanette-0.2-dev
       - librsvg2-dev
       - valac
+    stage-packages:
+      - libclutter-gtk-1.0-0
+      - libmanette-0.2-0
