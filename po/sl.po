@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
 "POT-Creation-Date: 2019-01-25 13:24+0000\n"
-"PO-Revision-Date: 2019-01-25 18:28+0100\n"
+"PO-Revision-Date: 2019-02-16 21:15+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -298,7 +298,7 @@ msgstr "_Gostota blokov v začetno zapolnjenih vrsticah:"
 #. starting level
 #: src/quadrapassel.vala:327
 msgid "_Starting level:"
-msgstr "_Začetna ravni: "
+msgstr "_Začetna raven:"
 
 #: src/quadrapassel.vala:340
 msgid "_Enable sounds"
@@ -315,11 +315,11 @@ msgstr "P_redogled naslednjega bloka"
 #. rotate counter clock wise
 #: src/quadrapassel.vala:356
 msgid "_Rotate blocks counterclockwise"
-msgstr "Z_avrti bloke proti smeri urinega kazalca"
+msgstr "Z_avrti bloke v smeri urinega kazalca"
 
 #: src/quadrapassel.vala:361
 msgid "Show _where the block will land"
-msgstr "Pokaži kje bo _blok pristal."
+msgstr "Pokaži, kje bo _blok pristal"
 
 #: src/quadrapassel.vala:405
 msgid "Controls"
