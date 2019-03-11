@@ -1,5 +1,5 @@
 project('quadrapassel', 'vala', 'c',
-        version: '3.31.90')
+        version: '3.32.0')
 
 project_id = 'org.gnome.Quadrapassel'
 i18n = import('i18n')
