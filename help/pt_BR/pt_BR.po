@@ -1,23 +1,24 @@
 # Brazilian Portuguese translation for quadrapassel help.
-# Copyright (C) 2018 quadrapassel's COPYRIGHT HOLDER
+# Copyright (C) 2019 quadrapassel's COPYRIGHT HOLDER
 # This file is distributed under the same license as the quadrapassel package.
 # Enrico Nicoletto <liverig@gmail.com>, 2013.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2018.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2018-2019.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel help\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/"
-"enter_bug.cgi?product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-08-13 21:41+0000\n"
-"PO-Revision-Date: 2018-09-02 00:25-0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=quadrapassel&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2019-02-01 18:55+0000\n"
+"PO-Revision-Date: 2019-03-24 16:44-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
-"Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
+"Language-Team: Portuguese - Brazil <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Virtaal 1.0.0-beta1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 3.32.0\n"
 "X-Project-Style: gnome\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -25,7 +26,7 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Enrico Nicoletto <liverig@gmail.com>, 2013\n"
-"Rafael Fontenelle <rafaelff@gnome.org>, 2018"
+"Rafael Fontenelle <rafaelff@gnome.org>, 2018, 2019"
 
 #. (itstool) path: credit/name
 #: C/bug-filing.page:10 C/develop.page:11 C/documentation.page:9
@@ -71,9 +72,9 @@ msgid ""
 "If you notice a problem you can file a <em>bug report</em>. To file a bug, "
 "go to <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
 msgstr ""
-"Se você notar um problema, você pode apresentar um <em>relatório de erro</em>"
-". Para relatar um erro, acesse <link href=\"https://gitlab.gnome.org/GNOME/"
-"quadrapassel/issues/\"/>."
+"Se você notar um problema, você pode apresentar um <em>relatório de erro</"
+"em>. Para relatar um erro, acesse <link href=\"https://gitlab.gnome.org/"
+"GNOME/quadrapassel/issues/\"/>."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:28
@@ -108,12 +109,12 @@ msgid ""
 "<link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues\">browse</"
 "link> for the bug to see if it already exists."
 msgstr ""
-"Assim que você tiver uma conta, autentique-se, clique em <gui>New issue</gui>"
-". Antes de relatar um erro, por favor leia as <link href=\""
-"https://bugzilla.gnome.org/page.cgi?id=bug-writing.html\">diretrizes de "
-"relatório de erro</link>, e por favor <link href=\"https://bugzilla.gnome."
-"org/browse.cgi?product=quadrapassel\">pesquise</link> por erros relatados "
-"para ver se já foi relatado."
+"Assim que você tiver uma conta, autentique-se, clique em <gui>New issue</"
+"gui>. Antes de relatar um erro, por favor leia as <link href=\"https://"
+"bugzilla.gnome.org/page.cgi?id=bug-writing.html\">diretrizes de relatório de "
+"erro</link>, e por favor <link href=\"https://bugzilla.gnome.org/browse.cgi?"
+"product=quadrapassel\">pesquise</link> por erros relatados para ver se já "
+"foi relatado."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:40
@@ -561,7 +562,7 @@ msgstr "<gui>Visualizar próximo bloco</gui>"
 #. (itstool) path: item/p
 #: C/preferences.page:48
 msgid "<gui>Choose difficult blocks</gui>"
-msgstr "<gui>Escolher dificuldades dos blocos</gui>"
+msgstr "<gui>Escolher blocos difíceis</gui>"
 
 #. (itstool) path: item/p
 #: C/preferences.page:49
