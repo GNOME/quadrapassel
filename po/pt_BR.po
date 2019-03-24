@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of quadrapassel.
-# Copyright (C) 1999-2018 Free Software Foundation, Inc.
+# Copyright (C) 1999-2019 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-games package.
 # Sandro Nunes Henrique <sandro@conectiva.com.br>, 1999.
 # Cândida Nunes da Silva <candida@zaz.com.br>, 2000-2001.
@@ -29,8 +29,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-02-01 18:55+0000\n"
-"PO-Revision-Date: 2019-02-28 17:47-0300\n"
+"POT-Creation-Date: 2019-02-28 20:49+0000\n"
+"PO-Revision-Date: 2019-03-24 16:42-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese - Brazil <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -38,7 +38,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Gtranslator 3.31.90\n"
+"X-Generator: Gtranslator 3.32.0\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -238,7 +238,6 @@ msgstr ""
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Quadrapassel.desktop.in:6
-#| msgid "Quadrapassel"
 msgid "org.gnome.Quadrapassel"
 msgstr "org.gnome.Quadrapassel"
 
@@ -272,7 +271,6 @@ msgid "_Help"
 msgstr "Aj_uda"
 
 #: src/quadrapassel.vala:123
-#| msgid "Quadrapassel"
 msgid "_About Quadrapassel"
 msgstr "_Sobre o Quadrapassel"
 
@@ -325,7 +323,7 @@ msgstr "_Habilitar sons"
 
 #: src/quadrapassel.vala:345
 msgid "Choose difficult _blocks"
-msgstr "Escolher dificuldades dos _blocos"
+msgstr "Escolher _blocos difíceis"
 
 #: src/quadrapassel.vala:350
 msgid "_Preview next block"
