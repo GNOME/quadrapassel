@@ -57,9 +57,6 @@ public class GameView : GtkClutter.Embed
         }
     }
 
-    /* false to play sound effects */
-    public bool mute;
-
     /* Theme to use */
     public string theme
     {
@@ -139,14 +136,6 @@ public class GameView : GtkClutter.Embed
             block_textures[i].hide ();
             stage.add_child (block_textures[i]);
         }
-    }
-
-    private void play_sound (string name)
-    {
-        if (!mute)
-            CanberraGtk.play_for_widget (this, 0,
-                                         Canberra.PROP_MEDIA_NAME, name,
-                                         Canberra.PROP_MEDIA_FILENAME, Path.build_filename (SOUND_DIRECTORY, "%s.ogg".printf (name)));
     }
 
     private void shape_added_cb ()
@@ -348,6 +337,64 @@ public class GameView : GtkClutter.Embed
             text_overlay.text = _("Game Over");
         else
             text_overlay.text = null;
+    }
+
+    /*\
+    * * Sound
+    \*/
+
+    /* false to play sound effects */
+    internal bool mute { internal set; private get; default = true; }
+
+    private GSound.Context sound_context;
+    private SoundContextState sound_context_state = SoundContextState.INITIAL;
+
+    private enum SoundContextState
+    {
+        INITIAL,
+        WORKING,
+        ERRORED
+    }
+
+    private void init_sound ()
+     // requires (sound_context_state == SoundContextState.INITIAL)
+    {
+        try
+        {
+            sound_context = new GSound.Context ();
+            sound_context_state = SoundContextState.WORKING;
+        }
+        catch (Error e)
+        {
+            warning (e.message);
+            sound_context_state = SoundContextState.ERRORED;
+        }
+    }
+
+    private void play_sound (string name)
+    {
+        if (!mute)
+        {
+            if (sound_context_state == SoundContextState.INITIAL)
+                init_sound ();
+            if (sound_context_state == SoundContextState.WORKING)
+                _play_sound (name, sound_context);
+        }
+    }
+
+    private static void _play_sound (string _name, GSound.Context sound_context)
+    {
+        string name = _name + ".ogg";
+        string path = Path.build_filename (SOUND_DIRECTORY, name);
+        try
+        {
+            sound_context.play_simple (null, GSound.Attribute.MEDIA_NAME, name,
+                                             GSound.Attribute.MEDIA_FILENAME, path);
+        }
+        catch (Error e)
+        {
+            warning (e.message);
+        }
     }
 }
 
