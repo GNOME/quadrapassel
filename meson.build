@@ -2,18 +2,18 @@ project('quadrapassel', 'vala', 'c',
         version: '3.32.0')
 
 project_id = 'org.gnome.Quadrapassel'
-i18n = import('i18n')
+
 # used to install help
 gnome = import('gnome')
+# used for internationalization
+i18n = import('i18n')
 # used to run post install script
 python3 = import('python3')
 
-
-canberra_dependency = dependency('libcanberra')
-canberra_gtk3_dependency = dependency('libcanberra-gtk3', version: '>= 0.26')
-cogl_dependency = dependency('cogl-1.0')
 clutter_dependency = dependency('clutter-1.0', version: '>= 1.0.0')
 clutter_gtk_dependency = dependency('clutter-gtk-1.0', version: '>= 0.91.6')
+cogl_dependency = dependency('cogl-1.0')
+gsound_dependency = dependency('gsound', version: '>= 1.0.2')
 gtk_dependency = dependency('gtk+-3.0', version: '>= 3.12.0')
 manette_dependency = dependency('manette-0.2', version: '>= 0.2.0')
 pango_depepdency = dependency('pango')
@@ -21,7 +21,6 @@ pango_cairo_dependency = dependency('pangocairo')
 posix_dependency = meson.get_compiler('vala').find_library('posix')
 rsvg_dependency = dependency('librsvg-2.0', version: '>= 2.32.0')
         
-
 # Set gettext package name
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language: 'c')
 
