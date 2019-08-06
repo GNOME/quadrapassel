@@ -1,3 +1,11 @@
+quadrapassel 3.33.90
+====================
+* Switch from libcanberra-gtk to gsound (Arnaud)
+* Translation updates
+
+Contributors:
+ Arnaud B
+
 quadrapassel 3.32.0
 ===================
 * Translation updates
