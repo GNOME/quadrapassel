@@ -127,6 +127,8 @@ parts:
     organize:
       snap/quadrapassel/current/usr: usr
     override-build: |
+      sed -i.bak -e "s|'--vapidir'|'--vapidir', '$SNAPCRAFT_STAGE/usr/share/vala/vapi', '--vapidir'|g" src/meson.build
+
       sed -i.bak -e 's|=org.gnome.Quadrapassel$|=${SNAP}/meta/gui/org.gnome.Quadrapassel.png|g' data/org.gnome.Quadrapassel.desktop.in
       snapcraftctl build
       mkdir -p $SNAPCRAFT_PART_INSTALL/meta/gui/
