@@ -1,3 +1,12 @@
+quadrapassel 3.33.91
+====================
+* Updated tranlations files for Korean, Basque and Catalan
+* Fix for a vapi build failure
+* Updated the maintainer to John Ward
+
+Contributors:
+Roger, DaeHyun Sung, John Ward, Ken VanDine, Jordi Mas, Asier Sarasua Garmendia
+
 quadrapassel 3.33.90
 ====================
 * Switch from libcanberra-gtk to gsound (Arnaud)
