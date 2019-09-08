@@ -3,19 +3,21 @@
 # Yukihiro Nakai <Nakai@technologist.com>, 1998.
 # Akira Higuchi <a-higuti@math.sci.hokudai.ac.jp>, 1999.
 # Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
-# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2002, 2010.
 # Takeshi AIHANA <takeshi.aihana@gmail.com>, 2001-2009.
+# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2002, 2010.
 # KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
 # Satoru SATOH <ss@gnome.gr.jp>, 2006.
 # Shushi KUROSE <md81bird@hitaki.net>, 2012.
+# OKANO Takayoshi <kano@na.rim.or.jp>, 2013.
+# sicklylife <translation@sicklylife.jp>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games gnome-2-32\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
 "POT-Creation-Date: 2019-08-04 08:07+0000\n"
-"PO-Revision-Date: 2013-05-10 12:24+0900\n"
-"Last-Translator: OKANO Takayoshi <kano@na.rim.or.jp>\n"
+"PO-Revision-Date: 2019-09-08 18:00+0900\n"
+"Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -236,40 +238,32 @@ msgid "_Help"
 msgstr "ヘルプ(_H)"
 
 #: src/quadrapassel.vala:123
-#, fuzzy
-#| msgid "Quadrapassel"
 msgid "_About Quadrapassel"
-msgstr "Quadrapassel"
+msgstr "Quadrapassel について(_A)"
 
 #: src/quadrapassel.vala:151 src/quadrapassel.vala:779
 msgid "Start a new game"
-msgstr ""
+msgstr "新しいゲームを始める"
 
 #: src/quadrapassel.vala:156
 msgid "Next"
-msgstr ""
+msgstr "次"
 
 #: src/quadrapassel.vala:169 src/score-dialog.vala:51
 msgid "Score"
 msgstr "得点"
 
 #: src/quadrapassel.vala:180
-#, fuzzy
-#| msgid "Lines:"
 msgid "Lines"
-msgstr "ライン数:"
+msgstr "ライン数"
 
 #: src/quadrapassel.vala:191
-#, fuzzy
-#| msgid "Level:"
 msgid "Level"
-msgstr "レベル:"
+msgstr "レベル"
 
 #: src/quadrapassel.vala:276
-#, fuzzy
-#| msgid "_Preferences"
 msgid "Preferences"
-msgstr "設定(_P)"
+msgstr "設定"
 
 #: src/quadrapassel.vala:294
 msgid "Game"
@@ -337,39 +331,35 @@ msgstr "クリーン"
 
 #: src/quadrapassel.vala:760
 msgid "Unpause the game"
-msgstr ""
+msgstr "ゲームを再開"
 
 #: src/quadrapassel.vala:765
 msgid "Pause the game"
-msgstr ""
+msgstr "ゲームを一時停止"
 
 #: src/quadrapassel.vala:843
-#, fuzzy
-#| msgid ""
-#| "A classic game of fitting falling blocks together.\n"
-#| "\n"
-#| "Quadrapassel is a part of GNOME Games."
 msgid "A classic game of fitting falling blocks together"
 msgstr ""
-"落ちてくるブロックを組み合わせていく古典ゲームの一つです。\n"
-"\n"
-"Quadrapassel は GNOME ゲーム集の一部です。"
+"落ちてくるブロックを組み合わせていく古典ゲームの一つです"
 
 #: src/quadrapassel.vala:848
 msgid "translator-credits"
 msgstr ""
 "相花 毅 <takeshi.aihana@gmail.com>\n"
-"佐藤 暁 <ss@gnome.gr.jp>\n"
-"KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>\n"
 "草野 貴之 <AE5T-KSN@asahi-net.or.jp>\n"
-"Yuusuke Tahara <tahara@gnome.gr.jp>\n"
+"佐藤 暁 <ss@gnome.gr.jp>\n"
+"日本 GNOME ユーザー会 <http://www.gnome.gr.jp>\n"
 "Akira Higuchi <a-higuti@math.sci.hokudai.ac.jp>\n"
+"KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>\n"
+"OKANO Takayoshi <kano@na.rim.or.jp>\n"
+"Shushi KUROSE <md81bird@hitaki.net>\n"
+"sicklylife <translation@sicklylife.jp>\n"
 "Yukihiro Nakai <Nakai@technologist.com>\n"
-"日本GNOMEユーザー会 <http://www.gnome.gr.jp>"
+"Yuusuke Tahara <tahara@gnome.gr.jp>"
 
 #: src/score-dialog.vala:26
 msgid "_Close"
-msgstr ""
+msgstr "閉じる(_C)"
 
 #: src/score-dialog.vala:27
 msgid "New Game"
@@ -377,7 +367,7 @@ msgstr "新しいゲーム"
 
 #: src/score-dialog.vala:30
 msgid "_OK"
-msgstr ""
+msgstr "OK(_O)"
 
 #: src/score-dialog.vala:48
 msgid "Date"
