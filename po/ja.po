@@ -1,5 +1,5 @@
 # gnome-games ja.po.
-# Copyright (C) 1998-2013 Free Software Foundation, Inc.
+# Copyright (C) 1998-2019 Free Software Foundation, Inc.
 # Yukihiro Nakai <Nakai@technologist.com>, 1998.
 # Akira Higuchi <a-higuti@math.sci.hokudai.ac.jp>, 1999.
 # Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: gnome-games gnome-2-32\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
 "POT-Creation-Date: 2019-08-04 08:07+0000\n"
-"PO-Revision-Date: 2019-09-08 18:00+0900\n"
+"PO-Revision-Date: 2019-09-09 18:00+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -331,11 +331,11 @@ msgstr "クリーン"
 
 #: src/quadrapassel.vala:760
 msgid "Unpause the game"
-msgstr "ゲームを再開"
+msgstr "ゲームを再開する"
 
 #: src/quadrapassel.vala:765
 msgid "Pause the game"
-msgstr "ゲームを一時停止"
+msgstr "ゲームを一時停止する"
 
 #: src/quadrapassel.vala:843
 msgid "A classic game of fitting falling blocks together"
