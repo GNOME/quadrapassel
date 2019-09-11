@@ -1,3 +1,11 @@
+quadrapassell 3.34.0
+===================
+* Added support for Japanese
+* This release is to keep the application in line with the main GNOME release
+
+Contributors:
+Ryuta Fujii
+
 quadrapassel 3.33.91
 ====================
 * Updated tranlations files for Korean, Basque and Catalan
