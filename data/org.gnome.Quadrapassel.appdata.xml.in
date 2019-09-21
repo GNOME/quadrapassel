@@ -32,8 +32,11 @@
   <url type="help">https://help.gnome.org/users/quadrapassel/stable/</url>
   <update_contact>mcatanzaro_at_gnome.org</update_contact>
   <project_group>GNOME</project_group>
+  <developer_name>The GNOME Project</developer_name>
+  <releases>
+    <release version="3.34.0" date="2019-09-11" />
+  </releases>
   <kudos>
-    <kudo>AppMenu</kudo>
     <kudo>HiDpiIcon</kudo>
     <kudo>HighContrast</kudo>
     <kudo>ModernToolkit</kudo>
