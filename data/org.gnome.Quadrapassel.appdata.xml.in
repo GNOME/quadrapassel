@@ -30,7 +30,7 @@
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/quadrapassel/issues</url>
   <url type="donation">http://www.gnome.org/friends/</url>
   <url type="help">https://help.gnome.org/users/quadrapassel/stable/</url>
-  <update_contact>mcatanzaro_at_gnome.org</update_contact>
+  <update_contact>jward_at_gnome.org</update_contact>
   <project_group>GNOME</project_group>
   <kudos>
     <kudo>AppMenu</kudo>
