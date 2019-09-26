@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-02-01 18:55+0000\n"
-"PO-Revision-Date: 2019-02-24 17:34+0200\n"
+"POT-Creation-Date: 2019-09-25 12:33+0000\n"
+"PO-Revision-Date: 2019-09-26 22:00+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Gtranslator 3.30.1\n"
+"X-Generator: Gtranslator 3.32.1\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -218,22 +218,20 @@ msgstr ""
 "blokams kristi atsitiktinai, galite pasirinkti blokus, kuriuos bus sunku "
 "patalpinti."
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Quadrapassel.desktop.in:6
-#| msgid "Quadrapassel"
-msgid "org.gnome.Quadrapassel"
-msgstr "org.gnome.Quadrapassel"
+#: data/org.gnome.Quadrapassel.appdata.xml.in:33
+msgid "The GNOME Project"
+msgstr "GNOME projektas"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;"
 
-#: src/game-view.vala:346
+#: src/game-view.vala:335
 msgid "Paused"
 msgstr "Pauzė"
 
-#: src/game-view.vala:348
+#: src/game-view.vala:337
 msgid "Game Over"
 msgstr "Žaidimas baigtas"
 
@@ -254,7 +252,6 @@ msgid "_Help"
 msgstr "_Žinynas"
 
 #: src/quadrapassel.vala:123
-#| msgid "Quadrapassel"
 msgid "_About Quadrapassel"
 msgstr "_Apie quadrapassel"
 
@@ -385,6 +382,10 @@ msgstr "_Gerai"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Data"
+
+#~| msgid "Quadrapassel"
+#~ msgid "org.gnome.Quadrapassel"
+#~ msgstr "org.gnome.Quadrapassel"
 
 #~ msgid "quadrapassel"
 #~ msgstr "quadrapassel"
