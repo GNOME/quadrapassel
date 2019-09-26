@@ -17,24 +17,6 @@ grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict
 base: core18
 
-plugs:
-  gnome-3-28-1804:
-    interface: content
-    target: $SNAP/gnome-platform
-    default-provider: gnome-3-28-1804
-  gtk-3-themes:
-    interface: content
-    target: $SNAP/data-dir/themes
-    default-provider: gtk-common-themes
-  icon-themes:
-    interface: content
-    target: $SNAP/data-dir/icons
-    default-provider: gtk-common-themes
-  sound-themes:
-    interface: content
-    target: $SNAP/data-dir/sounds
-    default-provider: gtk-common-themes
-
 slots:
   # for GtkApplication registration
   quadrapassel:
@@ -44,15 +26,12 @@ slots:
 
 apps:
   quadrapassel:
-    command: desktop-launch snapcraft-preload quadrapassel
+    command: usr/bin/quadrapassel
+    extensions: [gnome-3-28]
     plugs:
-      - desktop
-      - desktop-legacy
       - gsettings
       - opengl
       - pulseaudio
-      - unity7
-      - wayland
     desktop: usr/share/applications/org.gnome.Quadrapassel.desktop
     environment:
       GSETTINGS_SCHEMA_DIR: $SNAP/share/glib-2.0/schemas
@@ -66,18 +45,6 @@ parts:
     build-packages:
       - gcc-multilib
       - g++-multilib
-
-  desktop-gnome-platform:
-    source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
-    source-subdir: gtk
-    plugin: make
-    make-parameters: ["FLAVOR=gtk3"]
-    build-packages:
-      - build-essential
-      - libgtk-3-dev
-    override-build: |
-      snapcraftctl build
-      mkdir -pv $SNAPCRAFT_PART_INSTALL/gnome-platform
 
   libcanberra:
     source: git://git.0pointer.de/libcanberra
@@ -118,7 +85,7 @@ parts:
       - valac
 
   quadrapassel:
-    after: [desktop-gnome-platform, gsound, snapcraft-preload]
+    after: [gsound, snapcraft-preload]
     source: .
     source-type: git
     plugin: meson
