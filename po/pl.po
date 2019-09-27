@@ -19,8 +19,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-02-01 18:55+0000\n"
-"PO-Revision-Date: 2019-02-03 18:20+0100\n"
+"POT-Creation-Date: 2019-09-25 12:33+0000\n"
+"PO-Revision-Date: 2019-09-27 19:49+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -221,21 +221,20 @@ msgstr ""
 "rozpoczęcie gry z częściowo wypełnionymi klockami. Można także wybrać klocki "
 "trudne do umieszczenia zamiast losowych."
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Quadrapassel.desktop.in:6
-msgid "org.gnome.Quadrapassel"
-msgstr "org.gnome.Quadrapassel"
+#: data/org.gnome.Quadrapassel.appdata.xml.in:33
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;"
 
-#: src/game-view.vala:346
+#: src/game-view.vala:335
 msgid "Paused"
 msgstr "Wstrzymano"
 
-#: src/game-view.vala:348
+#: src/game-view.vala:337
 msgid "Game Over"
 msgstr "Koniec gry"
 
@@ -337,11 +336,11 @@ msgstr "Zwykły"
 
 #: src/quadrapassel.vala:428
 msgid "Tango Flat"
-msgstr "Tango płaski"
+msgstr "Tango (płaski)"
 
 #: src/quadrapassel.vala:433
 msgid "Tango Shaded"
-msgstr "Tango cieniowany"
+msgstr "Tango (cieniowany)"
 
 #: src/quadrapassel.vala:438
 msgid "Clean"
