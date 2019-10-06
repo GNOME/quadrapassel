@@ -14,15 +14,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-03-26 18:33+0000\n"
-"PO-Revision-Date: 2019-02-13 00:22+0100\n"
-"Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
+"POT-Creation-Date: 2019-09-25 13:29+0000\n"
+"PO-Revision-Date: 2019-10-06 18:49+0200\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -37,8 +38,7 @@ msgid "The theme used for rendering the blocks"
 msgstr "Billede som bruges til at tegne blokke"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:11
-msgid ""
-"The name of the theme used for rendering the blocks and the background."
+msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "Navnet på temaet der benyttes til at tegne klodser og baggrund."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:16
@@ -219,16 +219,20 @@ msgstr ""
 "visse rækker. Eller frem for at blokkene falder tilfældigt, kan den vælge "
 "blokke som er særligt svære for dig at placere."
 
+#: data/org.gnome.Quadrapassel.appdata.xml.in:33
+msgid "The GNOME Project"
+msgstr "GNOME-projektet"
+
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;"
 
-#: src/game-view.vala:346
+#: src/game-view.vala:335
 msgid "Paused"
 msgstr "Pause"
 
-#: src/game-view.vala:348
+#: src/game-view.vala:337
 msgid "Game Over"
 msgstr "Spillet er slut"
 
@@ -393,4 +397,3 @@ msgstr "Dato"
 
 #~ msgid "_Quit"
 #~ msgstr "_Afslut"
-
