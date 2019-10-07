@@ -1,3 +1,11 @@
+quadrapassell 3.34.1
+====================
+* Added translation support updates for Brazilian Portuguese, Spanish, Swedish, Lithuanian, Slovenian, Polish, Hungarian, Persian, Italian, Czech and Danish.
+* Snap, updated the YAML to using the GNOME extension
+
+Contributors:
+Rafael Fontenelle, Daniel Șerbănescu, Daniel Mustieles García, Anders Jonsson, Aurimas Černius, Matej Urbančič, Heather Ellsworth, Ken VanDine, Piotr Drąg, Balázs Úr, Danial Behzadi, Milo Casagrande, Marek Černocký and Alan Mortensen
+
 quadrapassell 3.34.0
 ===================
 * Added support for Japanese
