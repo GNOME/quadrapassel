@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games 3.3.91\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-02-01 18:55+0000\n"
-"PO-Revision-Date: 2019-02-17 23:18+0800\n"
+"POT-Creation-Date: 2019-09-25 12:33+0000\n"
+"PO-Revision-Date: 2019-10-08 18:56+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 18.12.2\n"
+"X-Generator: Lokalize 19.08.1\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -212,22 +212,20 @@ msgstr ""
 "有部分方塊在畫面上。或者，不使用隨機的方式選擇方塊，而是選擇比較難以放置的方"
 "塊給您。"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Quadrapassel.desktop.in:6
-#| msgid "Quadrapassel"
-msgid "org.gnome.Quadrapassel"
-msgstr "org.gnome.Quadrapassel"
+#: data/org.gnome.Quadrapassel.appdata.xml.in:33
+msgid "The GNOME Project"
+msgstr "GNOME 專案"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;俄羅斯方塊;"
 
-#: src/game-view.vala:346
+#: src/game-view.vala:335
 msgid "Paused"
 msgstr "暫停"
 
-#: src/game-view.vala:348
+#: src/game-view.vala:337
 msgid "Game Over"
 msgstr "玩完了"
 
@@ -248,7 +246,6 @@ msgid "_Help"
 msgstr "求助(_H)"
 
 #: src/quadrapassel.vala:123
-#| msgid "Quadrapassel"
 msgid "_About Quadrapassel"
 msgstr "關於俄羅斯方塊(_A)"
 
@@ -377,6 +374,10 @@ msgstr "確定(_O)"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "日期"
+
+#~| msgid "Quadrapassel"
+#~ msgid "org.gnome.Quadrapassel"
+#~ msgstr "org.gnome.Quadrapassel"
 
 #~| msgid "Quadrapassel"
 #~ msgid "quadrapassel"
