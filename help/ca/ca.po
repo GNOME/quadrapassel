@@ -523,7 +523,7 @@ msgstr ""
 msgid ""
 "The <key>←</key> and <key>→</key> keys move the blocks across the screen."
 msgstr ""
-"Les tecles <keycap>←</keycap> i <keycap>→</keycap> mouen els blocs al llarg "
+"Les tecles <key>←</key> i <key>→</key> mouen els blocs al llarg "
 "de la pantalla."
 
 #: C/playgame.page:27(item/p)
