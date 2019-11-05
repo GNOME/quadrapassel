@@ -27,6 +27,7 @@ executable(meson.project_name(),
         pango_depepdency,
         pango_cairo_dependency,
         posix_dependency,
-        rsvg_dependency
+        rsvg_dependency,
+        libm_dependency
     ]
 )

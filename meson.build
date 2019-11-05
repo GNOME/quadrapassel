@@ -10,6 +10,8 @@ i18n = import('i18n')
 # used to run post install script
 python3 = import('python3')
 
+cc = meson.get_compiler('c')
+
 clutter_dependency = dependency('clutter-1.0', version: '>= 1.0.0')
 clutter_gtk_dependency = dependency('clutter-gtk-1.0', version: '>= 0.91.6')
 cogl_dependency = dependency('cogl-1.0')
@@ -20,6 +22,7 @@ pango_depepdency = dependency('pango')
 pango_cairo_dependency = dependency('pangocairo')
 posix_dependency = meson.get_compiler('vala').find_library('posix')
 rsvg_dependency = dependency('librsvg-2.0', version: '>= 2.32.0')
+libm_dependency = cc.find_library('m', required : true)
         
 # Set gettext package name
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language: 'c')
