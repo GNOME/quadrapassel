@@ -1,0 +1,734 @@
+# Indonesian translation for quadrapassel.
+# Copyright (C) 2017 quadrapassel's COPYRIGHT HOLDER
+# This file is distributed under the same license as the quadrapassel package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: quadrapassel master\n"
+"POT-Creation-Date: 2016-12-14 17:01+0000\n"
+"PO-Revision-Date: 2017-01-15 17:06+0700\n"
+"Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
+"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
+"X-Generator: Poedit 1.8.11\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Kukuh Syafaat <syafaatkukuh@gmail.com>, 2017."
+
+#. (itstool) path: credit/name
+#: C/bug-filing.page:10 C/develop.page:11 C/documentation.page:9
+#: C/playgame.page:13 C/preferences.page:13 C/score.page:13 C/translate.page:9
+msgid "Tiffany Antopolski"
+msgstr "Tiffany Antopolski"
+
+#. (itstool) path: credit/years
+#: C/bug-filing.page:12 C/develop.page:13 C/documentation.page:11
+#: C/get-involved.page:10 C/index.page:13 C/playgame.page:10
+#: C/preferences.page:10 C/score.page:10 C/translate.page:11
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: credit/name
+#: C/bug-filing.page:15 C/develop.page:16 C/documentation.page:14
+#: C/get-involved.page:8 C/index.page:11 C/playgame.page:8 C/preferences.page:8
+#: C/score.page:8 C/translate.page:14
+msgid "Elena Petrevska"
+msgstr "Elena Petrevska"
+
+#. (itstool) path: license/p
+#: C/bug-filing.page:19 C/develop.page:20 C/documentation.page:18
+#: C/get-involved.page:13 C/index.page:16 C/preferences.page:17 C/score.page:17
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#. (itstool) path: info/desc
+#: C/bug-filing.page:21
+msgid "Found a problem? Feel free to file a bug."
+msgstr "Menemukan masalah? Jangan ragu untuk mengajukan kutu."
+
+#. (itstool) path: page/title
+#: C/bug-filing.page:24
+msgid "Report a Problem"
+msgstr "Melaporkan Masalah"
+
+#. (itstool) path: page/p
+#: C/bug-filing.page:25
+msgid ""
+"If you notice a problem you can file a <em>bug report</em>. To file a bug, "
+"go to <link href=\"https://bugzilla.gnome.org/\"/>."
+msgstr ""
+"Jika Anda melihat masalah Anda dapat mengajukan <em>laporan kutu</em>. Untuk "
+"mengajukan kutu, pergi ke <link href=\"https://bugzilla.gnome.org/\"/>."
+
+#. (itstool) path: page/p
+#: C/bug-filing.page:28
+msgid ""
+"This is a bug tracking system where users and developers can file details "
+"about bugs, crashes and request enhancements."
+msgstr ""
+"Ini adalah sistem pelacakan kutu dimana pengguna dan pengembang dapat "
+"mengajukan rincian tentang kutu, kres dan permintaan perangkat tambahan."
+
+#. (itstool) path: page/p
+#: C/bug-filing.page:31
+msgid ""
+"To participate you need an account which will give you the ability to gain "
+"access, file bugs, and make comments. Also, you need to register so you can "
+"receive updates by e-mail about the status of your bug. If you don't already "
+"have an account, just click on the <gui>New Account</gui> link to create one."
+msgstr ""
+"Untuk berpartisipasi Anda perlu akun yang akan memberikan Anda kemampuan "
+"untuk mendapatkan akses, mengajukan kutu, dan membuat komentar. Juga, Anda "
+"harus mendaftar sehingga Anda dapat menerima pembaruan melalui surel tentang "
+"status kutu Anda. Jika Anda belum memiliki akun, klik pada <gui>Akun baru</"
+"gui> untuk membuatnya."
+
+#. (itstool) path: page/p
+#: C/bug-filing.page:35
+msgid ""
+"Once you have an account, log in, click on <guiseq><gui>File a Bug</"
+"gui><gui>Applications</gui><gui>quadrapassel</gui></guiseq>. Before "
+"reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
+"page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
+"<link href=\"https://bugzilla.gnome.org/browse.cgi?product=quadrapassel"
+"\">browse</link> for the bug to see if it already exists."
+msgstr ""
+"Setelah Anda memiliki akun, masuk, klik pada <guiseq><gui>Ajukan Kutu</"
+"gui><gui>Aplikasi</gui><gui>quadrapassel</gui></guiseq>.  Sebelum melaporkan "
+"kutu, silakan baca <link href=\"https://bugzilla.gnome.org/page.cgi?id=bug-"
+"writing.html\">pedoman penulisan kutu</link>, dan silakan <link href="
+"\"https://bugzilla.gnome.org/browse.cgi?product=quadrapassel\">cari</link> "
+"untuk melihat apakah sudah ada.."
+
+#. (itstool) path: page/p
+#: C/bug-filing.page:43
+msgid ""
+"If you are requesting a new feature, choose <gui>enhancement</gui> in the "
+"<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
+"click <gui>Commit</gui>."
+msgstr ""
+"Jika Anda meminta fitur baru, pilih <gui>tambahan</gui> dalam menu "
+"<gui>Severity</gui>. Isi bagian Ringkasan dan Deskripsi dan klik <gui>Komit</"
+"gui>."
+
+#. (itstool) path: page/p
+#: C/bug-filing.page:47
+msgid ""
+"Your report will be given an ID number, and its status will be updated as it "
+"is being dealt with."
+msgstr ""
+"Laporan Anda akan diberikan nomor ID, dan statusnya akan diperbarui karena "
+"sedang ditangani. Terima kasih telah membantu membuat <app>Iagno</app> "
+"menjadi lebih baik!"
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:52 C/develop.page:29 C/documentation.page:29
+#: C/translate.page:42
+msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
+msgstr "<link xref=\"get-involved\"><_:media-1/>Terlibat</link>"
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:53 C/develop.page:30 C/documentation.page:30
+#: C/get-involved.page:23 C/playgame.page:44 C/preferences.page:73
+#: C/score.page:38 C/translate.page:43
+msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
+msgstr "<link xref=\"index\"><_:media-1/>BERANDA</link>"
+
+#. (itstool) path: info/desc
+#: C/develop.page:22
+msgid "Have a plan for developing the game? We are always open to new ideas."
+msgstr ""
+"Memiliki rencana untuk mengembangkan permainan? Kami selalu terbuka untuk "
+"ide-ide baru."
+
+#. (itstool) path: page/title
+#: C/develop.page:25
+msgid "Help develop"
+msgstr "Membantu mengembangkan"
+
+#. (itstool) path: page/p
+#: C/develop.page:26
+msgid ""
+"If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
+"Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
+"touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
+"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
+"link>."
+msgstr ""
+"Jika Anda ingin <link href=\"https://wiki.gnome.org/Apps/Games/Contributing"
+"\">membantu mengembangkan <app>Permainan GNOME</app></link>,  Anda dapat "
+"menghubungi pengembang dengan menggunakan <link href=\"https://cbe005.chat."
+"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, atau "
+"melalui <link href=\"http://mail.gnome.org/mailman/listinfo/games-list"
+"\">milis</link>."
+
+#. (itstool) path: info/desc
+#: C/documentation.page:20
+msgid "Contribute to the documentation."
+msgstr "Kontribusi pada dokumentasi."
+
+#. (itstool) path: page/title
+#: C/documentation.page:23
+msgid "Help write documentation"
+msgstr "Membantu menulis dokumentasi"
+
+#. (itstool) path: page/p
+#: C/documentation.page:24
+msgid ""
+"To contribute to the Documentation Project, feel free to get in touch with "
+"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
+"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
+"mailman/listinfo/gnome-doc-list\">mailing list</link>."
+msgstr ""
+"Untuk berkontribusi pada Proyek Dokumentasi, jangan ragu untuk menghubungi "
+"kami menggunakan <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F"
+"%2Firc.gnome.org%2Fdocs\">irc</link>, atau melalui <link href=\"http://mail."
+"gnome.org/mailman/listinfo/gnome-doc-list\">milis</link>."
+
+#. (itstool) path: page/p
+#: C/documentation.page:26
+msgid ""
+"Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
+"\">wiki</link> page contains useful information."
+msgstr ""
+"Halaman <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"\">wiki</link> kami berisi informasi yang berguna."
+
+#. (itstool) path: page/title
+#: C/get-involved.page:17
+msgid "Get Involved"
+msgstr "Terlibat"
+
+#. (itstool) path: page/p
+#: C/get-involved.page:18
+msgid ""
+"<app>Quadrapassel</app> is maintained by a volunteer community. You are "
+"invited to participate in any of the following ways."
+msgstr ""
+"<app>Quadrapassel</app> dikelola oleh komunitas sukarelawan. Anda diundang "
+"untuk berpartisipasi dalam salah satu cara berikut."
+
+#. (itstool) path: info/title
+#: C/index.page:7
+msgctxt "link"
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "text"
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#. (itstool) path: media/span
+#: C/index.page:19
+msgid "Quadrapassel logo"
+msgstr "Logo Quadrapassel"
+
+#. (itstool) path: page/title
+#: C/index.page:19
+msgid "<_:media-1/> Quadrapassel"
+msgstr "<_:media-1/> Quadrapassel"
+
+#. (itstool) path: page/p
+#: C/index.page:21
+msgid ""
+"In Quadrapassel, the GNOME version of Tetris, your goal is to create as many "
+"complete horizontal lines as possible. The lines are made from seven "
+"different shapes. The shapes fall randomly from the top center of the "
+"screen. Your task is to rotate and move the shapes across the screen to make "
+"complete lines. By making complete horizontal lines, you score points and "
+"move up levels. As you progress, the speed of the falling blocks increases."
+msgstr ""
+"Dalam Quadrapassel, versi GNOME dari Tetris, tujuan Anda adalah untuk "
+"membuat banyak garis horizontal selengkap mungkin. Garis terbuat dari tujuh "
+"bentuk yang berbeda. Bentuk jatuh secara acak dari bagian tengah atas layar. "
+"Tugas Anda adalah untuk memutar dan memindahkan bentuk di layar untuk "
+"membuat garis lengkap. Dengan membuat garis horizontal lengkap, Anda "
+"mencetak poin dan naik tingkat. Semakin Anda maju, kecepatan blok jatuh "
+"meningkat."
+
+#. (itstool) path: td/p
+#: C/index.page:34
+msgid "<link xref=\"playgame\">Play the game</link>"
+msgstr "<link xref=\"playgame\">Bermain permainan</link>"
+
+#. (itstool) path: td/p
+#: C/index.page:35
+msgid "<link xref=\"score\">Score points</link>"
+msgstr "<link xref=\"score\">Nilai</link>"
+
+#. (itstool) path: td/p
+#: C/index.page:56
+msgid "<link xref=\"preferences\">Preferences</link>"
+msgstr "<link xref=\"preferences\">Preferensi</link>"
+
+#. (itstool) path: td/p
+#: C/index.page:57
+msgid "<link xref=\"get-involved\">Get involved</link>"
+msgstr "<link xref=\"get-involved\">Terlibat</link>"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Karya ini berada dibawah lisensi <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "Informasi hukum."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "Lisensi"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Karya ini berada dibawah lisensi CreativeCommons Attribution-Share Alike 3.0 "
+"Unported."
+
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr ""
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr ""
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr ""
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+
+#. (itstool) path: license/p
+#: C/playgame.page:17
+msgid "Creative Commons Attribution Share Alike 3.0"
+msgstr "Creative Commons Attribution-Share Alike 3.0 Unported License"
+
+#. (itstool) path: page/title
+#: C/playgame.page:21
+msgid "PLAY PLAY PLAY!"
+msgstr "BERMAIN BERMAIN BERMAIN!"
+
+#. (itstool) path: section/title
+#: C/playgame.page:24
+msgid "How To Play"
+msgstr "Cara Bermain"
+
+#. (itstool) path: item/p
+#: C/playgame.page:27
+msgid ""
+"The <key>←</key> and <key>→</key> keys move the blocks across the screen."
+msgstr "Tombol <key>←</key> and <key>→</key> memindahkan blok di layar."
+
+#. (itstool) path: item/p
+#: C/playgame.page:28
+msgid ""
+"The <key>↑</key> key rotates the block. The rotation (which is "
+"counterclockwise by default) can be changed in the <link xref=\"preferences"
+"\">Preferences</link>."
+msgstr ""
+"Tombol <key>↑</key> merotasikan blok. Rotasi (yang berlawanan secara bawaan) "
+"dapat diubah dalam<link xref=\"preferences\">Preferensi</link>."
+
+#. (itstool) path: item/p
+#: C/playgame.page:29
+msgid ""
+"The <key>SPACEBAR</key> and <key>↓</key> key increase the speed of the drop. "
+"The <key>SPACEBAR</key> causes a hard-drop (instant move to the bottom). The "
+"<key>↓</key> key causes a soft-drop (temporary increase in speed while the "
+"key is held down)."
+msgstr ""
+"Tombol <key>SPACEBAR</key> dan <key>↓</key> meningkatkan kecepatan jatuh. "
+"<key>SPACEBAR</key> menyebabkan hard-drop (bergerak cepat ke bawah). Tombol "
+"<key>↓</key> menyebabkan soft-drop (peningkatan sementara kecepatan saat "
+"kunci ditekan)."
+
+#. (itstool) path: section/title
+#: C/playgame.page:34
+msgid "Rules"
+msgstr "Peraturan"
+
+#. (itstool) path: section/p
+#: C/playgame.page:36
+msgid "There are a couple of rules that you should keep in mind:"
+msgstr "Terdapat beberapa aturan yang harus diingat:"
+
+#. (itstool) path: item/p
+#: C/playgame.page:38
+msgid ""
+"You can pause, end, start a new game, get help or quit the program at any "
+"time."
+msgstr ""
+"Anda dapat menghentikan sebentar, mengakhiri, memulai permainan baru, "
+"mendapatkan bantuan atau keluar dari program setiap saat."
+
+#. (itstool) path: item/p
+#: C/playgame.page:39
+msgid "You can pause the game as many times as you want."
+msgstr ""
+"Anda dapat menghentikan sebentar permainan sebanyak yang Anda inginkan."
+
+#. (itstool) path: info/desc
+#: C/preferences.page:19
+msgid "Preferences for the game and the theme."
+msgstr "Preferensi untuk permainan dan tema."
+
+#. (itstool) path: page/title
+#: C/preferences.page:23
+msgid "Game Preferences"
+msgstr "Preferensi Permainan"
+
+#. (itstool) path: page/p
+#: C/preferences.page:25
+msgid ""
+"To change the game preferences, click the <guiseq><gui>Quadrapassel menu</"
+"gui><gui>Preferences</gui></guiseq>."
+msgstr ""
+"Untuk mengubah preferensi permainan, klik <guiseq><gui>Quadrapassel menu</"
+"gui><gui>Preferensi</gui></guiseq>."
+
+#. (itstool) path: page/p
+#: C/preferences.page:27
+msgid ""
+"The three tabs available are <gui>Controls</gui>, <gui>Game</gui> and "
+"<gui>Theme</gui>."
+msgstr ""
+"Tiga tab yang tersedia adalah <gui>Kontrol</gui>, <gui>Permainan</gui> dan "
+"<gui>Tema</gui>."
+
+#. (itstool) path: section/title
+#: C/preferences.page:30
+msgid "Controls"
+msgstr "Kontrol"
+
+#. (itstool) path: section/p
+#: C/preferences.page:31
+msgid ""
+"By double-clicking on the given controls, thus selecting the new one, you "
+"can change the control keys."
+msgstr ""
+"Dengan mengklik dua kali pada kontrol yang diberikan, sehingga memilih yang "
+"baru, Anda dapat mengubah tombol kontrol."
+
+#. (itstool) path: section/title
+#: C/preferences.page:35
+msgid "Game"
+msgstr "permainan"
+
+#. (itstool) path: section/p
+#: C/preferences.page:36
+msgid ""
+"Under the <gui>Game</gui> tab, you can change the way in which the game "
+"starts:"
+msgstr ""
+"Di bawah tab <gui>Game</gui> Anda dapat mengubah cara di mana permainan "
+"dimulai:"
+
+#. (itstool) path: item/p
+#: C/preferences.page:38
+msgid ""
+"<gui>Number of pre-filled rows</gui> indicates how many rows with blocks "
+"there will be when the game starts."
+msgstr ""
+"<gui>Jumlah baris terisi pada awal</gui> menunjukkan berapa banyak baris "
+"dengan blok akan ada ketika permainan dimulai."
+
+#. (itstool) path: item/p
+#: C/preferences.page:39
+msgid ""
+"<gui>Density of blocks in a pre-filled row</gui> indicates how many blocks "
+"there will be in a pre-filled row when the game starts."
+msgstr ""
+"<gui>Kepadatan blok dalam baris yang terisi pada awal</gui> menunjukkan "
+"berapa banyak blok yang ada pada baris baris yang terisi pada awal ketika "
+"permainan dimulai."
+
+#. (itstool) path: item/p
+#: C/preferences.page:40
+msgid "<gui>Starting level</gui> controls the speed with which you will start."
+msgstr "<gui>Tingkat Awal</gui> mengontrol kecepatan yang Anda akan mulai."
+
+#. (itstool) path: section/p
+#: C/preferences.page:42
+msgid "These options can vary from 0 to 19, 0 to 10, and 1 to 20 respectively."
+msgstr "Pilihan ini dapat bervariasi 0-19, 0-10, dan 1-20 masing-masing."
+
+#. (itstool) path: section/p
+#: C/preferences.page:44
+msgid "Other available options are:"
+msgstr "Pilihan lain yang tersedia adalah:"
+
+#. (itstool) path: item/p
+#: C/preferences.page:46
+msgid "<gui>Enable sounds</gui>"
+msgstr "<gui>Aktifkan suara</gui>."
+
+#. (itstool) path: item/p
+#: C/preferences.page:47
+msgid "<gui>Preview next block</gui>"
+msgstr "<gui>Pratilik blok berikutnya</gui>"
+
+#. (itstool) path: item/p
+#: C/preferences.page:48
+msgid "<gui>Choose difficult blocks</gui>"
+msgstr "<gui>Pilih blok sulit</gui>"
+
+#. (itstool) path: item/p
+#: C/preferences.page:49
+msgid "<gui>Rotate blocks counterclockwise</gui>"
+msgstr "<gui>Putar blok berlawanan arah jarum jam</gui>"
+
+#. (itstool) path: item/p
+#: C/preferences.page:50
+msgid "<gui>Show where the block will land</gui>"
+msgstr "<gui>Tampilkan dimana blok akan mendarat</gui>"
+
+#. (itstool) path: section/title
+#: C/preferences.page:55
+msgid "Theme"
+msgstr "Tema"
+
+#. (itstool) path: section/p
+#: C/preferences.page:56
+msgid "To change the theme:"
+msgstr "To change the theme:"
+
+#. (itstool) path: item/p
+#: C/preferences.page:58
+msgid ""
+"click the <guiseq><gui>Quadrapassel menu</gui><gui>Preference</gui></guiseq>."
+msgstr ""
+"klik <guiseq><gui>menu Quadrapassel</gui><gui>Preferensi</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/preferences.page:59
+msgid "select the <gui>Theme</gui> tab."
+msgstr "pilih tab <gui>Theme</gui>."
+
+#. (itstool) path: section/p
+#: C/preferences.page:61
+msgid "Four different themes are available for the blocks' contours:"
+msgstr "Empat tema yang berbeda tersedia untuk kontur blok:"
+
+#. (itstool) path: item/p
+#: C/preferences.page:65
+msgid "Plain"
+msgstr "Polos"
+
+#. (itstool) path: item/p
+#: C/preferences.page:66
+msgid "Tango Flat"
+msgstr "Tango Rata"
+
+#. (itstool) path: item/p
+#: C/preferences.page:67
+msgid "Tango Shaded"
+msgstr "Tango Gelap"
+
+#. (itstool) path: item/p
+#: C/preferences.page:68
+msgid "Clean"
+msgstr "Kosongkan"
+
+#. (itstool) path: page/title
+#: C/score.page:21
+msgid "Score"
+msgstr "Nilai"
+
+#. (itstool) path: page/p
+#: C/score.page:22
+msgid "Do you think you can reach level 10?"
+msgstr "Apakah Anda pikir Anda dapat mencapai level 10?"
+
+#. (itstool) path: section/title
+#: C/score.page:25
+msgid "Score More"
+msgstr "Nilai Lainnya"
+
+#. (itstool) path: section/p
+#: C/score.page:26
+msgid ""
+"If you start from level 1, the only way to go to the next level is by "
+"completing more lines, that is, scoring more points. In order for you to "
+"have a better score, try to adapt the screen, the keyboard, and the level "
+"(the speed) that fits you the most!"
+msgstr ""
+"Jika Anda mulai dari level 1, satu-satunya cara untuk pergi ke tingkat "
+"berikutnya adalah dengan menyelesaikan baris lebih banyak, yaitu, mencetak "
+"lebih banyak poin. Agar Anda untuk memiliki nilai yang lebih baik, coba "
+"untuk menyesuaikan layar, papan tik, dan tingkat (kecepatan) yang sesuai "
+"dengan pilihan Anda!"
+
+#. (itstool) path: section/p
+#: C/score.page:27
+msgid ""
+"You can make many changes to the keyboard controls, the contour of the "
+"blocks, the number and density of lines with which you start, and the speed "
+"of drop. You can change your settings in in <link xref=\"preferences"
+"\">Preference</link>. After deciding what fits you the most, you will rock!"
+msgstr ""
+"Anda dapat membuat banyak perubahan pada kontrol papan tik, kontur blok, "
+"jumlah dan kepadatan jalur yang Anda mulai, dan kecepatan penurunan. Anda "
+"dapat mengubah pengaturan di dalam <link xref=\"preferences\">Preferensi</"
+"link>.Setelah memutuskan apa yang paling cocok dengan Anda, Anda akan menang!"
+
+#. (itstool) path: section/title
+#: C/score.page:31
+msgid "High Scores"
+msgstr "Nilai Tinggi"
+
+#. (itstool) path: section/p
+#: C/score.page:32
+msgid ""
+"Everyone wants to be on the top of the list, right? In <guiseq><gui>Game</"
+"gui><gui>Scores</gui></guiseq> you can find the records from the highest to "
+"the lowest score."
+msgstr ""
+"Semua orang ingin berada di atas daftar, kan? Dalam <guiseq><gui>Permainan</"
+"gui><gui>Nilai</gui></guiseq> Anda dapat menemukan catatan dari nilai yang "
+"tertinggi ke terendah."
+
+#. (itstool) path: section/p
+#: C/score.page:34
+msgid ""
+"The scores cannot be deleted, so do not worry that someone will remove your "
+"best high score!"
+msgstr ""
+"Skor tidak dapat dihapus, jadi jangan khawatir bahwa seseorang akan "
+"menghapus skor terbaik dan tertinggi Anda!"
+
+#. (itstool) path: info/desc
+#: C/translate.page:17
+msgid "Do you know a world language?"
+msgstr "Apakah Anda tahu bahasa dunia?"
+
+#. (itstool) path: page/title
+#: C/translate.page:20
+msgid "Help translate"
+msgstr "Bantu menerjemahkan"
+
+#. (itstool) path: page/p
+#: C/translate.page:22
+msgid ""
+"The <app>GNOME games</app> user interface and documentation is being "
+"translated by a world-wide volunteer community."
+msgstr ""
+"Antarmuka pengguna dan dokumentasi <app>Permainan GNOME</app> sedang "
+"diterjemahkan oleh komunitas sukarelawan di seluruh dunia. Anda dipersilakan "
+"untuk berpartisipasi."
+
+#. (itstool) path: page/p
+#: C/translate.page:26
+msgid ""
+"There are <link href=\"http://l10n.gnome.org/module/quadrapassel/\">many "
+"languages</link> for which translations are still needed."
+msgstr ""
+"Terdapat <link href=\"http://l10n.gnome.org/module/lightsoff/\">banyak "
+"bahasa</link> yang terjemahannya masih diperlukan."
+
+#. (itstool) path: page/p
+#: C/translate.page:30
+msgid ""
+"To start translating you will need to <link href=\"http://l10n.gnome.org"
+"\">create an account</link> and join the <link href=\"http://l10n.gnome.org/"
+"teams/\">translation team</link> for your language. This will give you the "
+"ability to upload new translations."
+msgstr ""
+"Untuk memulai menerjemahkan Anda akan perlu untuk <link href=\"http://l10n."
+"gnome.org\">membuat akun</link> dan bergabung dengan <link href=\"http://"
+"l10n.gnome.org/teams/\">tim translasi</link> untuk bahasa Anda. Ini akan "
+"memberikan Anda kemampuan untuk mengunggah terjemahan baru."
+
+#. (itstool) path: page/p
+#: C/translate.page:34
+msgid ""
+"You can chat with GNOME translators using <link href=\"https://cbe003.chat."
+"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. People on the "
+"channel are located worldwide, so you may not get an immediate response as a "
+"result of timezone differences."
+msgstr ""
+"Anda dapat mengobrol dengan penerjemah GNOME menggunakan <link href="
+"\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n"
+"\">irc</link>. Orang pada saluran ini terletak di seluruh dunia, sehingga "
+"Anda mungkin tidak mendapatkan tanggapan langsung sebagai akibat dari "
+"perbedaan zona waktu."
+
+#. (itstool) path: page/p
+#: C/translate.page:38
+msgid ""
+"Alternatively, you can contact the Internationalization Team using their "
+"<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+"list</link>."
+msgstr ""
+"Sebagai alternatif, Anda dapat menghubungi Tim Internasionalisasi "
+"menggunakan <link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n"
+"\">milis</link>."
