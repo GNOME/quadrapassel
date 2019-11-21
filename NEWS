@@ -1,3 +1,12 @@
+quadrapassell 3.35.2
+====================
+* Updates for the following translations: Indonesian, Catalan, Finnish, Friulian
+* Correctly added the dependancy for the library m (libm)
+* Added the TODOs to define a short-term roadmap for the game
+
+Contributors: John Ward, Kukuh Syafaat, Fabio Tomat, Jiri Grönroos, Jordi Mas, Kukuh Syafaat, Yi-Jyun Pan
+
+
 quadrapassell 3.34.1
 ====================
 * Added translation support updates for Brazilian Portuguese, Spanish, Swedish, Lithuanian, Slovenian, Polish, Hungarian, Persian, Italian, Czech and Danish.
