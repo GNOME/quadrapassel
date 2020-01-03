@@ -4,7 +4,7 @@
 	id="develop">
 
   <info>
-   <link type="guide" xref="get-involved"/>
+    <link type="guide" xref="index#get-involved"/>
 
     <revision pkgversion="3.5.5" version="0.1" date="2012-08-11" status="review"/>
     <credit type="author copyright">

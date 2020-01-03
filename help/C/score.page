@@ -4,6 +4,7 @@
 	id="score">
   <info>
     <revision pkgversion="3.4.0" version="0.1" date="2012-03-27" status="draft"/>
+    <link type="guide" xref="index#play"/>
     <credit type="author copyright">
       <name>Elena Petrevska</name>
       <email>elenapetrevska77@gmail.com</email>
@@ -16,10 +17,10 @@
     <license>
       <p>Creative Commons Share Alike 3.0</p>
     </license>
+    <desc>High Scores.</desc>
   </info>
 
 <title>Score</title>
-<p>Do you think you can reach level 10?</p>
 
 <section id="score-more">
 <title>Score More</title>

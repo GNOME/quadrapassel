@@ -20,53 +20,11 @@
 
   <p>In Quadrapassel, the GNOME version of Tetris, your goal is to create as many complete horizontal lines as possible. The lines are made from seven different shapes. The shapes fall randomly from the top center of the screen. Your task is to rotate and move the shapes across the screen to make complete lines. By making complete horizontal lines, you score points and move up levels. As you progress, the speed of the falling blocks increases.</p>
 
-<table rules="all" shade="all">
-  <tr>
-    <td><p><media type="image" src="media/fig4.png" its:translate="no" /></p></td>
-    <td><p></p></td>
-    <td><p></p></td>
-    <td><p></p></td>
-    <td><p></p></td>
-    <td><p><media type="image" src="media/fig5.png" its:translate="no" /></p></td>
-  </tr>
-  <tr>
-    <td><p></p></td>
-    <td colspan="2"><p><link xref="playgame">Play the game</link></p></td>
-    <td colspan="2"><p><link xref="score">Score points</link></p></td>
-    <td><p></p></td>
-  </tr>
-  <tr>
-    <td><p></p></td>
-    <td><p></p></td>
-    <td><p><media type="image" src="media/part1.jpg" width="90" its:translate="no" /></p></td>
-    <td><p> <media type="image" src="media/part2.jpg" width="90" its:translate="no" /></p></td>
-    <td><p></p></td>
-    <td><p></p></td>
-  </tr>
-  <tr>
-    <td><p></p></td>
-    <td><p></p></td>
-    <td><p><media type="image" src="media/part3.jpg" width="90" its:translate="no" /></p></td>
-    <td><p><media type="image" src="media/part4.jpg" width="90" its:translate="no" /></p></td>
-    <td><p></p></td>
-    <td><p></p></td>
-  </tr>
-   <tr>
-    <td><p></p></td>
-    <td  colspan="2"><p><link xref="preferences">Preferences</link></p></td>
-    <td  colspan="2"><p><link xref="get-involved">Get involved</link></p></td>
-    <td><p></p></td>
-    <td><p></p></td>
-  </tr>
- <tr>
-    <td><p><media type="image" src="media/fig3.png" its:translate="no" /></p></td>
-    <td><p></p></td>
-    <td><p></p></td>
-    <td><p></p></td>
-    <td><p></p></td>
-    <td><p><media type="image" src="media/fig2.png" its:translate="no" /></p></td>
-  </tr>
-
-</table>
+  <section id="play" style="2column">
+    <title>Game Play</title>
+  </section>
+  <section id="get-involved" style="2column">
+    <title>Get Involved</title>
+  </section>
 
 </page>
