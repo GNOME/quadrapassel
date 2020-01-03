@@ -5,6 +5,7 @@
 
   <info>
     <revision pkgversion="3.5.5" version="0.1" date="2012-08-11" status="review"/>
+    <revision pkgversion="3.34.0" version="0.2" date="2020-01-03" status="draft"/>
     <link type="guide" xref="index#get-involved"/>
     <credit type="author copyright">
       <name>Tiffany Antopolski</name>
@@ -34,7 +35,7 @@
 
    <p>
    Once you have an account, log in, and click on <gui>New issue</gui>.
-   Before reporting a bug, please read the <link href="https://bugzilla.gnome.org/page.cgi?id=bug-writing.html">bug writing guidelines</link>,  and please <link href="https://gitlab.gnome.org/GNOME/quadrapassel/issues">browse</link> for the bug to see if it already exists.
+   Before reporting a bug, please read the <link href="https://wiki.gnome.org/Community/GettingInTouch/Bugzilla/Guidelines">bug writing guidelines</link>,  and please <link href="https://gitlab.gnome.org/GNOME/quadrapassel/issues">browse</link> for the bug to see if it already exists.
    </p>
 
    <p>

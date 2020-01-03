@@ -4,6 +4,7 @@
 	id="translate">
   <info>
     <revision pkgversion="3.4.0" version="0.1" date="2012-03-27" status="draft"/>
+    <revision pkgversion="3.34.0" version="0.2" date="2020-01-03" status="draft"/>
     <link type="guide" xref="index#get-involved"/>
     <credit type="author copyright">
       <name>Tiffany Antopolski</name>
@@ -24,18 +25,18 @@
 </p>
 
 <p>
- There are <link href="http://l10n.gnome.org/module/quadrapassel/">many languages</link> for which translations are still needed.
+ There are <link href="https://l10n.gnome.org/module/quadrapassel/">many languages</link> for which translations are still needed.
 </p>
 
 <p>
-To start translating you will need to <link href="http://l10n.gnome.org">create an account</link> and join the <link href="http://l10n.gnome.org/teams/">translation team</link> for your language. This will give you the ability to upload new translations.
+To start translating you will need to <link href="https://l10n.gnome.org">create an account</link> and join the <link href="https://l10n.gnome.org/teams/">translation team</link> for your language. This will give you the ability to upload new translations.
 </p>
 
 <p>
   You can chat with GNOME translators using <link href="https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n">irc</link>. People on the channel are located worldwide, so you may not get an immediate response as a result of timezone differences.
 </p>
 
-<p>Alternatively, you can contact the Internationalization Team using their <link href="http://mail.gnome.org/mailman/listinfo/gnome-i18n">mailing list</link>.
+<p>Alternatively, you can contact the Internationalization Team using their <link href="https://mail.gnome.org/mailman/listinfo/gnome-i18n">mailing list</link>.
 </p>
 
 <section id="previous-home"><title></title>

@@ -4,6 +4,7 @@
 	id="documentation">
   <info>
     <revision pkgversion="3.5.5" version="0.1" date="2012-08-11" status="review"/>
+    <revision pkgversion="3.34.0" version="0.2" date="2020-01-03" status="draft"/>
     <link type="guide" xref="index#get-involved"/>
     <credit type="author copyright">
       <name>Tiffany Antopolski</name>
@@ -21,7 +22,7 @@
   </info>
 
 <title>Help write documentation</title>
- <p>To contribute to the Documentation Project, feel free to get in touch with us using <link href="https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fdocs">irc</link>, or via our <link href="http://mail.gnome.org/mailman/listinfo/gnome-doc-list">mailing list</link>.</p>
+ <p>To contribute to the Documentation Project, feel free to get in touch with us using <link href="https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fdocs">irc</link>, or via our <link href="https://mail.gnome.org/mailman/listinfo/gnome-doc-list">mailing list</link>.</p>
 
  <p>Our <link href="https://wiki.gnome.org/DocumentationProject/Contributing">wiki</link> page contains useful information.</p>
 
