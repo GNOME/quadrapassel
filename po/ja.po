@@ -1,5 +1,5 @@
 # gnome-games ja.po.
-# Copyright (C) 1998-2019 Free Software Foundation, Inc.
+# Copyright (C) 1998-2013, 2019-2020 Free Software Foundation, Inc.
 # Yukihiro Nakai <Nakai@technologist.com>, 1998.
 # Akira Higuchi <a-higuti@math.sci.hokudai.ac.jp>, 1999.
 # Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
@@ -9,14 +9,14 @@
 # Satoru SATOH <ss@gnome.gr.jp>, 2006.
 # Shushi KUROSE <md81bird@hitaki.net>, 2012.
 # OKANO Takayoshi <kano@na.rim.or.jp>, 2013.
-# sicklylife <translation@sicklylife.jp>, 2019.
+# sicklylife <translation@sicklylife.jp>, 2019-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games gnome-2-32\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
 "POT-Creation-Date: 2019-09-25 12:33+0000\n"
-"PO-Revision-Date: 2019-09-09 18:00+0900\n"
+"PO-Revision-Date: 2020-01-31 00:00+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -169,11 +169,11 @@ msgstr "プレイを一時停止する時に使用するキーです。"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
 msgid "Width of the window in pixels"
-msgstr "ウィンドウの幅 (ピクセル単位) です。"
+msgstr "ウィンドウの幅 (ピクセル単位) です"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:97
 msgid "Height of the window in pixels"
-msgstr "ウィンドウの高さ (ピクセル単位) です。"
+msgstr "ウィンドウの高さ (ピクセル単位) です"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:101
 msgid "true if the window is maximized"
@@ -210,7 +210,7 @@ msgstr ""
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:33
 msgid "The GNOME Project"
-msgstr ""
+msgstr "The GNOME Project"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
