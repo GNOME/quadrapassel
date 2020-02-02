@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games gnome-2-32\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-08-04 08:07+0000\n"
+"POT-Creation-Date: 2019-09-25 12:33+0000\n"
 "PO-Revision-Date: 2019-09-09 18:00+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
@@ -208,6 +208,10 @@ msgid ""
 "select blocks that will be hard for you to place."
 msgstr ""
 
+#: data/org.gnome.Quadrapassel.appdata.xml.in:33
+msgid "The GNOME Project"
+msgstr ""
+
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
@@ -339,8 +343,7 @@ msgstr "ゲームを一時停止する"
 
 #: src/quadrapassel.vala:843
 msgid "A classic game of fitting falling blocks together"
-msgstr ""
-"落ちてくるブロックを組み合わせていく古典ゲームの一つです"
+msgstr "落ちてくるブロックを組み合わせていく古典ゲームの一つです"
 
 #: src/quadrapassel.vala:848
 msgid "translator-credits"
