@@ -5,10 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games 0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-03-17 14:03+0000\n"
-"PO-Revision-Date: 2019-03-26 19:31+0100\n"
-"Last-Translator: Launchpad Translations Administrators <rosetta@launchpad."
-"net>\n"
+"POT-Creation-Date: 2019-09-25 12:33+0000\n"
+"PO-Revision-Date: 2020-02-03 16:34+0100\n"
+"Last-Translator: gogo <linux.hr@protonmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -211,21 +210,20 @@ msgstr ""
 "umjesto dopuštanja padanja blokova naizmjenično, možete odabrati blok koji "
 "će vam biti teže smjestiti."
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Quadrapassel.desktop.in:6
-msgid "org.gnome.Quadrapassel"
-msgstr "org.gnome.Quadrapassel"
+#: data/org.gnome.Quadrapassel.appdata.xml.in:33
+msgid "The GNOME Project"
+msgstr "GNOME projekt"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;"
 
-#: src/game-view.vala:346
+#: src/game-view.vala:335
 msgid "Paused"
 msgstr "Pauzirano"
 
-#: src/game-view.vala:348
+#: src/game-view.vala:337
 msgid "Game Over"
 msgstr "Kraj igre"
 
@@ -370,6 +368,9 @@ msgstr "_U redu"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Datum"
+
+#~ msgid "org.gnome.Quadrapassel"
+#~ msgstr "org.gnome.Quadrapassel"
 
 #~ msgid "quadrapassel"
 #~ msgstr "quadrapassel"
