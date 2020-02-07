@@ -29,8 +29,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-01-08 20:07+0000\n"
-"PO-Revision-Date: 2019-01-25 10:59+0900\n"
+"POT-Creation-Date: 2019-09-25 12:33+0000\n"
+"PO-Revision-Date: 2020-02-08 00:31+0100\n"
 "Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
@@ -136,7 +136,7 @@ msgstr "Indique s’il faut choisir des blocs difficiles à placer"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Indique s’il faut choisir des blocs difficiles à placer."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:368
+#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:371
 msgid "Move left"
 msgstr "Déplacer à gauche"
 
@@ -144,7 +144,7 @@ msgstr "Déplacer à gauche"
 msgid "Key press to move left."
 msgstr "Touche à appuyer pour déplacer à gauche."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:371
+#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:374
 msgid "Move right"
 msgstr "Déplacer à droite"
 
@@ -152,7 +152,7 @@ msgstr "Déplacer à droite"
 msgid "Key press to move right."
 msgstr "Touche à appuyer pour déplacer à droite."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:374
+#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:377
 msgid "Move down"
 msgstr "Se déplacer vers le bas"
 
@@ -160,7 +160,7 @@ msgstr "Se déplacer vers le bas"
 msgid "Key press to move down."
 msgstr "Touche à utiliser pour déplacer en bas."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:377
+#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:380
 msgid "Drop"
 msgstr "Lâcher"
 
@@ -168,7 +168,7 @@ msgstr "Lâcher"
 msgid "Key press to drop."
 msgstr "Touche à utiliser pour lâcher."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:380
+#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:383
 msgid "Rotate"
 msgstr "Tourner"
 
@@ -176,7 +176,7 @@ msgstr "Tourner"
 msgid "Key press to rotate."
 msgstr "Touche à utiliser pour tourner."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:383
+#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
 msgid "Pause"
 msgstr "Pause"
 
@@ -197,9 +197,9 @@ msgid "true if the window is maximized"
 msgstr "vrai si la fenêtre est maximisée"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
-#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:97
-#: src/quadrapassel.vala:108 src/quadrapassel.vala:838
-#: src/quadrapassel.vala:878
+#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
+#: src/quadrapassel.vala:886
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -236,146 +236,144 @@ msgstr ""
 "aléatoires de tomber, il peut sélectionner des blocs qui seront difficiles à "
 "placer."
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Quadrapassel.desktop.in:6
-#| msgid "Quadrapassel"
-msgid "org.gnome.Quadrapassel"
-msgstr "org.gnome.Quadrapassel"
+#: data/org.gnome.Quadrapassel.appdata.xml.in:33
+msgid "The GNOME Project"
+msgstr "Le projet GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;"
 
-#: src/game-view.vala:346
+#: src/game-view.vala:335
 msgid "Paused"
 msgstr "Suspendu"
 
-#: src/game-view.vala:348
+#: src/game-view.vala:337
 msgid "Game Over"
 msgstr "Fin de partie"
 
-#: src/quadrapassel.vala:115
+#: src/quadrapassel.vala:117
 msgid "_New Game"
 msgstr "_Nouvelle partie"
 
-#: src/quadrapassel.vala:116
+#: src/quadrapassel.vala:118
 msgid "_Scores"
 msgstr "_Scores"
 
-#: src/quadrapassel.vala:119
+#: src/quadrapassel.vala:121
 msgid "_Preferences"
 msgstr "_Préférences"
 
-#: src/quadrapassel.vala:120
+#: src/quadrapassel.vala:122
 msgid "_Help"
 msgstr "Aid_e"
 
-#: src/quadrapassel.vala:121
+#: src/quadrapassel.vala:123
 msgid "_About Quadrapassel"
 msgstr "À _propos de Quadrapassel"
 
-#: src/quadrapassel.vala:148 src/quadrapassel.vala:776
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
 msgid "Start a new game"
 msgstr "Commence une nouvelle partie"
 
-#: src/quadrapassel.vala:153
+#: src/quadrapassel.vala:156
 msgid "Next"
 msgstr "Suivante"
 
-#: src/quadrapassel.vala:166 src/score-dialog.vala:51
+#: src/quadrapassel.vala:169 src/score-dialog.vala:51
 msgid "Score"
 msgstr "Score"
 
-#: src/quadrapassel.vala:177
+#: src/quadrapassel.vala:180
 msgid "Lines"
 msgstr "Lignes"
 
-#: src/quadrapassel.vala:188
+#: src/quadrapassel.vala:191
 msgid "Level"
 msgstr "Niveau"
 
-#: src/quadrapassel.vala:273
+#: src/quadrapassel.vala:276
 msgid "Preferences"
 msgstr "Préférences"
 
-#: src/quadrapassel.vala:291
+#: src/quadrapassel.vala:294
 msgid "Game"
 msgstr "Jeu"
 
 #. pre-filled rows
-#: src/quadrapassel.vala:295
+#: src/quadrapassel.vala:298
 msgid "_Number of pre-filled rows:"
 msgstr "_Nombre de lignes pré-remplies :"
 
 #. pre-filled rows density
-#: src/quadrapassel.vala:310
+#: src/quadrapassel.vala:313
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Densité de blocs dans les lignes pré-remplies :"
 
 #. starting level
-#: src/quadrapassel.vala:324
+#: src/quadrapassel.vala:327
 msgid "_Starting level:"
 msgstr "Niveau de dé_part :"
 
-#: src/quadrapassel.vala:337
+#: src/quadrapassel.vala:340
 msgid "_Enable sounds"
 msgstr "A_ctiver les sons"
 
-#: src/quadrapassel.vala:342
+#: src/quadrapassel.vala:345
 msgid "Choose difficult _blocks"
 msgstr "Choisir des _blocs difficiles"
 
-#: src/quadrapassel.vala:347
+#: src/quadrapassel.vala:350
 msgid "_Preview next block"
 msgstr "_Voir le prochain bloc"
 
 #. rotate counter clock wise
-#: src/quadrapassel.vala:353
+#: src/quadrapassel.vala:356
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Tourner les blocs dans le sens inverse des aiguilles d’une montre"
 
-#: src/quadrapassel.vala:358
+#: src/quadrapassel.vala:361
 msgid "Show _where the block will land"
 msgstr "Afficher _où les blocs vont atterrir"
 
-#: src/quadrapassel.vala:402
+#: src/quadrapassel.vala:405
 msgid "Controls"
 msgstr "Contrôles"
 
-#: src/quadrapassel.vala:408
+#: src/quadrapassel.vala:411
 msgid "Theme"
 msgstr "Thème"
 
-#: src/quadrapassel.vala:420
+#: src/quadrapassel.vala:423
 msgid "Plain"
 msgstr "Ordinaire"
 
-#: src/quadrapassel.vala:425
+#: src/quadrapassel.vala:428
 msgid "Tango Flat"
 msgstr "Tango plat"
 
-#: src/quadrapassel.vala:430
+#: src/quadrapassel.vala:433
 msgid "Tango Shaded"
 msgstr "Tango ombré"
 
-#: src/quadrapassel.vala:435
+#: src/quadrapassel.vala:438
 msgid "Clean"
 msgstr "Clean"
 
-#: src/quadrapassel.vala:757
+#: src/quadrapassel.vala:760
 msgid "Unpause the game"
 msgstr "Reprend la partie"
 
-#: src/quadrapassel.vala:762
+#: src/quadrapassel.vala:765
 msgid "Pause the game"
 msgstr "Suspend la partie"
 
-#: src/quadrapassel.vala:840
+#: src/quadrapassel.vala:843
 msgid "A classic game of fitting falling blocks together"
 msgstr "Un jeu classique de blocs qui tombent et qu’il faut assembler"
 
-#: src/quadrapassel.vala:845
+#: src/quadrapassel.vala:848
 msgid "translator-credits"
 msgstr ""
 "Christophe Merlet <redfox@redfoxcenter.org>\n"
@@ -406,6 +404,10 @@ msgstr "_Valider"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Date"
+
+#~| msgid "Quadrapassel"
+#~ msgid "org.gnome.Quadrapassel"
+#~ msgstr "org.gnome.Quadrapassel"
 
 #~ msgid "quadrapassel"
 #~ msgstr "quadrapassel"
