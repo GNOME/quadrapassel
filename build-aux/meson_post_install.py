@@ -4,7 +4,7 @@ from os import environ, path
 from subprocess import call
 
 if not environ.get('DESTDIR', ''):
-    PREFIX = environ.get('MESON_INSTALL_PREFIX', '/usr/local')
+    PREFIX = environ.get('MESON_INSTALL_PREFIX', '/usr')
     DATA_DIR = path.join(PREFIX, 'share')
     print('Updating icon cache...')
     call(['gtk-update-icon-cache', '-qtf', path.join(DATA_DIR, 'icons/hicolor')])
