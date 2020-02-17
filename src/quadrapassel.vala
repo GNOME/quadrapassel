@@ -490,13 +490,31 @@ public class Quadrapassel : Gtk.Application
         if (!controls_model.get_iter (out iter, path))
             return;
 
-        string? key = null;
-        controls_model.get (iter, 0, out key);
-        if (key == null)
-            return;
 
-        controls_model.set (iter, 2, keyval);
-        settings.set_int (key, (int) keyval);
+        if (keyval == settings.get_int ("key-left")|| 
+            keyval == settings.get_int ("key-right") || 
+            keyval == settings.get_int ("key-down") || 
+            keyval == settings.get_int ("key-drop") || 
+            keyval == settings.get_int ("key-rotate") || 
+            keyval == settings.get_int ("key-pause"))
+        {
+            // Throw up a dialog
+            var dialog = new Gtk.MessageDialog (null, Gtk.DialogFlags.MODAL, Gtk.MessageType.WARNING, Gtk.ButtonsType.OK, _("Unable to change key, as this key already exists"));
+            dialog.set_title (Environment.get_application_name ());
+            dialog.run ();
+            dialog.destroy ();
+            return;
+        }
+        else
+        {
+            string? key = null;
+            controls_model.get (iter, 0, out key);
+            if (key == null)
+                return;
+
+            controls_model.set (iter, 2, keyval);
+            settings.set_int (key, (int) keyval);
+        }
     }
 
     private void accel_cleared_cb (Gtk.CellRendererAccel cell, string path_string)
@@ -834,7 +852,7 @@ public class Quadrapassel : Gtk.Application
 
     private void about_cb ()
     {
-        string[] authors = { "GNOME Games Team", null };
+        string[] authors = { "GNOME Games Team", "Maintainer: John Ward<john@johnward.net>", null };
         string[] documenters = { "Angela Boyle", null };
 
         Gtk.show_about_dialog (window,
