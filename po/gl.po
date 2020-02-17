@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: gnome-games-master-po-gl-54590\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
 "POT-Creation-Date: 2019-09-25 12:33+0000\n"
-"PO-Revision-Date: 2020-02-15 21:54+0100\n"
+"PO-Revision-Date: 2020-02-17 22:03+0100\n"
 "Last-Translator: Fran Diéguez <frandieguez@gnome.org>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -113,7 +113,7 @@ msgstr "Indica se reproducir sons"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:54
 msgid "Whether to play sounds."
-msgstr "Indica se reproducir sons"
+msgstr "Indica se reproducir sons."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:58
 msgid "Whether to pick blocks that are hard to place"
@@ -356,7 +356,7 @@ msgstr "Deter o xogo"
 
 #: src/quadrapassel.vala:843
 msgid "A classic game of fitting falling blocks together"
-msgstr "Un xogo clásico no que hai que encaixar os bloques que caen."
+msgstr "Un xogo clásico no que hai que encaixar os bloques que caen"
 
 #: src/quadrapassel.vala:848
 msgid "translator-credits"
