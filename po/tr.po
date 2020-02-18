@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-09-25 12:33+0000\n"
-"PO-Revision-Date: 2020-02-04 19:20+0300\n"
+"POT-Creation-Date: 2020-02-18 07:27+0000\n"
+"PO-Revision-Date: 2020-02-18 13:16+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
@@ -185,8 +185,8 @@ msgstr "eğer pencere en büyük hale getirilmişse işaretle"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
-#: src/quadrapassel.vala:886
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
+#: src/quadrapassel.vala:904
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -258,7 +258,7 @@ msgstr "_Yardım"
 msgid "_About Quadrapassel"
 msgstr "Quadrapassel _Hakkında"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
 msgstr "Yeni bir oyun başlat"
 
@@ -346,19 +346,24 @@ msgstr "Tango Gölgeli"
 msgid "Clean"
 msgstr "Temizle"
 
-#: src/quadrapassel.vala:760
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr "Tuş değiştirilemedi, kısayol tuşu zaten var"
+
+#: src/quadrapassel.vala:778
 msgid "Unpause the game"
 msgstr "Oyunu devam ettir"
 
-#: src/quadrapassel.vala:765
+#: src/quadrapassel.vala:783
 msgid "Pause the game"
 msgstr "Oyunu duraklat"
 
-#: src/quadrapassel.vala:843
+#: src/quadrapassel.vala:861
 msgid "A classic game of fitting falling blocks together"
 msgstr "Klasik bir düşen blokları bir araya getirme oyunu"
 
-#: src/quadrapassel.vala:848
+#: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr ""
 "Barış Çiçek <baris@teamforce.name.tr> \n"
