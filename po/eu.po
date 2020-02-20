@@ -9,8 +9,8 @@
 msgid ""
 msgstr "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-09-25 13:29+0000\n"
-"PO-Revision-Date: 2020-02-15 10:00+0100\n"
+"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"PO-Revision-Date: 2020-02-20 10:00+0100\n"
 "Last-Translator: Asier Sarasua Garmendia <asier.sarasua@gmail.com>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
@@ -173,8 +173,8 @@ msgstr "egia leihoa maximizatuta badago"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
-#: src/quadrapassel.vala:886
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
+#: src/quadrapassel.vala:904
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -237,7 +237,7 @@ msgstr "_Laguntza"
 msgid "_About Quadrapassel"
 msgstr "Quadrapassel jokoari _buruz"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
 msgstr "Hasi joko berria"
 
@@ -325,19 +325,24 @@ msgstr "Tango itzaleztatua"
 msgid "Clean"
 msgstr "Garbitu"
 
-#: src/quadrapassel.vala:760
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr "Ezin izan da gakoa aldatu, gako hori lehendik baitago"
+
+#: src/quadrapassel.vala:778
 msgid "Unpause the game"
 msgstr "Jokoa jarraitzen du"
 
-#: src/quadrapassel.vala:765
+#: src/quadrapassel.vala:783
 msgid "Pause the game"
 msgstr "Pausatu jokoa"
 
-#: src/quadrapassel.vala:843
+#: src/quadrapassel.vala:861
 msgid "A classic game of fitting falling blocks together"
 msgstr "Erortzen diren blokeak kokatzeko joko klasikoa"
 
-#: src/quadrapassel.vala:848
+#: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr "translator-credits"
 
