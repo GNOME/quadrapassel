@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of quadrapassel.
-# Copyright (C) 1999-2019 Free Software Foundation, Inc.
+# Copyright (C) 2020 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-games package.
 # Sandro Nunes Henrique <sandro@conectiva.com.br>, 1999.
 # Cândida Nunes da Silva <candida@zaz.com.br>, 2000-2001.
@@ -23,14 +23,14 @@
 # Djavan Fagundes <djavan@comum.org>, 2012.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2013.
 # Enrico Nicoletto <liverig@gmail.com>, 2014.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2014-2019.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2014-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-09-25 12:33+0000\n"
-"PO-Revision-Date: 2019-09-25 10:24-0300\n"
+"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"PO-Revision-Date: 2020-02-20 07:54-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -199,8 +199,8 @@ msgstr "verdadeiro se a janela estiver maximizada"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
-#: src/quadrapassel.vala:886
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
+#: src/quadrapassel.vala:904
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -273,7 +273,7 @@ msgstr "Aj_uda"
 msgid "_About Quadrapassel"
 msgstr "_Sobre o Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
 msgstr "Inicia um novo jogo"
 
@@ -361,19 +361,24 @@ msgstr "Tango Sombreado"
 msgid "Clean"
 msgstr "Limpo"
 
-#: src/quadrapassel.vala:760
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr "Não foi possível alterar a tecla, pois esta tecla já existe"
+
+#: src/quadrapassel.vala:778
 msgid "Unpause the game"
 msgstr "Resume o jogo"
 
-#: src/quadrapassel.vala:765
+#: src/quadrapassel.vala:783
 msgid "Pause the game"
 msgstr "Pausa o jogo"
 
-#: src/quadrapassel.vala:843
+#: src/quadrapassel.vala:861
 msgid "A classic game of fitting falling blocks together"
 msgstr "Um jogo clássico de juntar blocos que caem"
 
-#: src/quadrapassel.vala:848
+#: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr ""
 "Sandro Nunes Henrique <sandro@conectiva.com.br>\n"
