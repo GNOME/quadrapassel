@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-09-25 12:33+0000\n"
-"PO-Revision-Date: 2019-10-13 10:04+0300\n"
+"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"PO-Revision-Date: 2020-02-22 17:03+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Launchpad-Export-Date: 2010-09-13 15:09+0000\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.3\n"
 "X-POT-Import-Date: 2012-03-05 14:46:29+0000\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -183,8 +183,8 @@ msgstr "tosi jos ikkuna on suurennettu"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
-#: src/quadrapassel.vala:886
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
+#: src/quadrapassel.vala:904
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -255,7 +255,7 @@ msgstr "O_hje"
 msgid "_About Quadrapassel"
 msgstr "_Tietoja - Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
 msgstr "Aloita uusi peli"
 
@@ -343,22 +343,27 @@ msgstr "Tango, varjostettu"
 msgid "Clean"
 msgstr "Tyhjennä"
 
-#: src/quadrapassel.vala:760
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr "Avaimen vaihtaminen ei onnistu, sillä tämä avain on jo olemassa"
+
+#: src/quadrapassel.vala:778
 msgid "Unpause the game"
 msgstr "Jatka peliä"
 
-#: src/quadrapassel.vala:765
+#: src/quadrapassel.vala:783
 msgid "Pause the game"
 msgstr "Keskeytä peli"
 
-#: src/quadrapassel.vala:843
+#: src/quadrapassel.vala:861
 msgid "A classic game of fitting falling blocks together"
 msgstr "Klassinen putoavien palikoiden peli"
 
-#: src/quadrapassel.vala:848
+#: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr ""
-"Jiri Grönroos, 2012-2019\n"
+"Jiri Grönroos, 2012-2020\n"
 "Timo Jyrinki, 2008\n"
 "Ilkka Tuohela, 2006-2009\n"
 "Sami Pesonen, 2002-2005\n"
