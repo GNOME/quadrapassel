@@ -10,7 +10,7 @@
 #
 # Changwoo Ryu <cwryu@debian.org>, 2013-2015, 2018.
 # Yeol Park <peary2@gmail.com>, 2018.
-# DaeHyun Sung <sungdh86@gmail.com>, 2019.
+# DaeHyun Sung <sungdh86@gmail.com>, 2019-2020.
 #
 # 새로 번역하신 분은 아래 "translator-credits"에 추가하세요.
 #
@@ -21,8 +21,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-08-04 08:07+0000\n"
-"PO-Revision-Date: 2019-09-05 02:22+0900\n"
+"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"PO-Revision-Date: 2020-02-24 00:04+0900\n"
 "Last-Translator: DaeHyun Sung <sungdh86+git@gmail.com>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
@@ -30,7 +30,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.3\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -188,8 +188,8 @@ msgstr "참이면 창을 최대화"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
-#: src/quadrapassel.vala:886
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
+#: src/quadrapassel.vala:904
 msgid "Quadrapassel"
 msgstr "쿼드러패셀"
 
@@ -221,6 +221,10 @@ msgstr ""
 "도전이 필요하면 쿼드러패셀에서 블럭의 최초 속도를 높이거나 블럭을 몇 줄 쌓아"
 "놓고 게임을 시작할 수 있습니다. 또는 임의의 블럭이 떨어지는 게 아니라, 더 맞"
 "추기 어려운 블럭이 떨어지게 만들 수도 있습니다."
+
+#: data/org.gnome.Quadrapassel.appdata.xml.in:33
+msgid "The GNOME Project"
+msgstr "그놈 프로젝트"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
@@ -255,7 +259,7 @@ msgstr "도움말(_H)"
 msgid "_About Quadrapassel"
 msgstr "쿼드러패셀 정보(_A)"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
 msgstr "새 게임을 시작합니다"
 
@@ -343,19 +347,24 @@ msgstr "탱고 그림자"
 msgid "Clean"
 msgstr "지우기"
 
-#: src/quadrapassel.vala:760
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr "이 키가 이미 있으므로, 키를 바꿀 수 없습니다."
+
+#: src/quadrapassel.vala:778
 msgid "Unpause the game"
 msgstr "게임을 계속 진행합니다"
 
-#: src/quadrapassel.vala:765
+#: src/quadrapassel.vala:783
 msgid "Pause the game"
 msgstr "게임을 일시 중지합니다"
 
-#: src/quadrapassel.vala:843
+#: src/quadrapassel.vala:861
 msgid "A classic game of fitting falling blocks together"
 msgstr "떨어지는 블럭을 맞추는 고전적인 게임"
 
-#: src/quadrapassel.vala:848
+#: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr ""
 "류창우 <cwryu@debian.org>\n"
