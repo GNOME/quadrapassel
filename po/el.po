@@ -36,8 +36,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.el\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-01-08 20:07+0000\n"
-"PO-Revision-Date: 2019-01-24 03:03+0200\n"
+"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"PO-Revision-Date: 2020-02-28 23:18+0200\n"
 "Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
 "Language-Team: Ελληνικά <>\n"
 "Language: el\n"
@@ -45,7 +45,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 2.3\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -147,7 +147,7 @@ msgstr "Αν θα επιλεχθούν τουβλάκια που είναι δύ
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Αν θα επιλεχθούν τουβλάκια που είναι δύσκολα να τοποθετηθούν."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:368
+#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:371
 msgid "Move left"
 msgstr "Μετακίνηση προς τα αριστερά"
 
@@ -155,7 +155,7 @@ msgstr "Μετακίνηση προς τα αριστερά"
 msgid "Key press to move left."
 msgstr "Πάτημα πλήκτρου για μετακίνηση προς τα αριστερά."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:371
+#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:374
 msgid "Move right"
 msgstr "Μετακίνηση προς τα δεξιά"
 
@@ -163,7 +163,7 @@ msgstr "Μετακίνηση προς τα δεξιά"
 msgid "Key press to move right."
 msgstr "Πάτημα πλήκτρου για μετακίνηση προς τα δεξιά."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:374
+#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:377
 msgid "Move down"
 msgstr "Μετακίνηση προς τα κάτω"
 
@@ -171,7 +171,7 @@ msgstr "Μετακίνηση προς τα κάτω"
 msgid "Key press to move down."
 msgstr "Πάτημα πλήκτρου για κίνηση προς τα κάτω."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:377
+#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:380
 msgid "Drop"
 msgstr "Ρίψη"
 
@@ -179,7 +179,7 @@ msgstr "Ρίψη"
 msgid "Key press to drop."
 msgstr "Πάτημα πλήκτρου για ρίψη."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:380
+#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:383
 msgid "Rotate"
 msgstr "Περιστροφή"
 
@@ -187,7 +187,7 @@ msgstr "Περιστροφή"
 msgid "Key press to rotate."
 msgstr "Πάτημα πλήκτρου για περιστροφή."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:383
+#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
 msgid "Pause"
 msgstr "Παύση"
 
@@ -208,9 +208,9 @@ msgid "true if the window is maximized"
 msgstr "αληθής αν το παράθυρο είναι μεγιστοποιημένο"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
-#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:97
-#: src/quadrapassel.vala:108 src/quadrapassel.vala:838
-#: src/quadrapassel.vala:878
+#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
+#: src/quadrapassel.vala:904
 msgid "Quadrapassel"
 msgstr "Τουβλάκια"
 
@@ -248,146 +248,150 @@ msgstr ""
 "τουβλάκια να πέφτουν τυχαία, μπορεί να επιλέγει τουβλάκια που θα είναι πιο "
 "δύσκολο να ταιριάξετε."
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Quadrapassel.desktop.in:6
-#| msgid "org.gnome.quadrapassel"
-msgid "org.gnome.Quadrapassel"
-msgstr "org.gnome.Quadrapassel"
+#: data/org.gnome.Quadrapassel.appdata.xml.in:33
+msgid "The GNOME Project"
+msgstr "Το έργο GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;τέτρις;"
 
-#: src/game-view.vala:346
+#: src/game-view.vala:335
 msgid "Paused"
 msgstr "Παύση"
 
-#: src/game-view.vala:348
+#: src/game-view.vala:337
 msgid "Game Over"
 msgstr "Τέλος παιχνιδιού"
 
-#: src/quadrapassel.vala:115
+#: src/quadrapassel.vala:117
 msgid "_New Game"
 msgstr "_Νέο παιχνίδι"
 
-#: src/quadrapassel.vala:116
+#: src/quadrapassel.vala:118
 msgid "_Scores"
 msgstr "_Βαθμολογίες"
 
-#: src/quadrapassel.vala:119
+#: src/quadrapassel.vala:121
 msgid "_Preferences"
 msgstr "Π_ροτιμήσεις"
 
-#: src/quadrapassel.vala:120
+#: src/quadrapassel.vala:122
 msgid "_Help"
 msgstr "_Βοήθεια"
 
-#: src/quadrapassel.vala:121
+#: src/quadrapassel.vala:123
 msgid "_About Quadrapassel"
 msgstr "_Περί του Τουβλάκια"
 
-#: src/quadrapassel.vala:148 src/quadrapassel.vala:776
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
 msgstr "Εκκίνηση νέου παιχνιδιού"
 
-#: src/quadrapassel.vala:153
+#: src/quadrapassel.vala:156
 msgid "Next"
 msgstr "Επόμενο"
 
-#: src/quadrapassel.vala:166 src/score-dialog.vala:51
+#: src/quadrapassel.vala:169 src/score-dialog.vala:51
 msgid "Score"
 msgstr "Βαθμολογία"
 
-#: src/quadrapassel.vala:177
+#: src/quadrapassel.vala:180
 msgid "Lines"
 msgstr "Γραμμές"
 
-#: src/quadrapassel.vala:188
+#: src/quadrapassel.vala:191
 msgid "Level"
 msgstr "Επίπεδο"
 
-#: src/quadrapassel.vala:273
+#: src/quadrapassel.vala:276
 msgid "Preferences"
 msgstr "Προτιμήσεις"
 
-#: src/quadrapassel.vala:291
+#: src/quadrapassel.vala:294
 msgid "Game"
 msgstr "Παιχνίδι"
 
 #. pre-filled rows
-#: src/quadrapassel.vala:295
+#: src/quadrapassel.vala:298
 msgid "_Number of pre-filled rows:"
 msgstr "_Αριθμός προ-συμπληρωμένων γραμμών:"
 
 #. pre-filled rows density
-#: src/quadrapassel.vala:310
+#: src/quadrapassel.vala:313
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Πυκνότητα τούβλων στις προ-συμπληρωμένες γραμμές:"
 
 #. starting level
-#: src/quadrapassel.vala:324
+#: src/quadrapassel.vala:327
 msgid "_Starting level:"
 msgstr "_Επίπεδο εκκίνησης:"
 
-#: src/quadrapassel.vala:337
+#: src/quadrapassel.vala:340
 msgid "_Enable sounds"
 msgstr "_Ενεργοποίηση ήχων"
 
-#: src/quadrapassel.vala:342
+#: src/quadrapassel.vala:345
 msgid "Choose difficult _blocks"
 msgstr "Επιλογή δύσκολων _τούβλων"
 
-#: src/quadrapassel.vala:347
+#: src/quadrapassel.vala:350
 msgid "_Preview next block"
 msgstr "Π_ροεπισκόπηση επόμενου τούβλου"
 
 #. rotate counter clock wise
-#: src/quadrapassel.vala:353
+#: src/quadrapassel.vala:356
 msgid "_Rotate blocks counterclockwise"
 msgstr "Π_εριστροφή τούβλου αριστερόστροφα"
 
-#: src/quadrapassel.vala:358
+#: src/quadrapassel.vala:361
 msgid "Show _where the block will land"
 msgstr "Εμφάνιση της _θέσης προσγείωσης του τούβλου"
 
-#: src/quadrapassel.vala:402
+#: src/quadrapassel.vala:405
 msgid "Controls"
 msgstr "Τρόποι ελέγχου"
 
-#: src/quadrapassel.vala:408
+#: src/quadrapassel.vala:411
 msgid "Theme"
 msgstr "Θέμα"
 
-#: src/quadrapassel.vala:420
+#: src/quadrapassel.vala:423
 msgid "Plain"
 msgstr "Απλό"
 
-#: src/quadrapassel.vala:425
+#: src/quadrapassel.vala:428
 msgid "Tango Flat"
 msgstr "Επίπεδο Tango"
 
-#: src/quadrapassel.vala:430
+#: src/quadrapassel.vala:433
 msgid "Tango Shaded"
 msgstr "Σκιασμένο Tango"
 
-#: src/quadrapassel.vala:435
+#: src/quadrapassel.vala:438
 msgid "Clean"
 msgstr "Καθαρό"
 
-#: src/quadrapassel.vala:757
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr ""
+"Δεν είναι δυνατή η αλλαγή του κλειδιού, καθώς αυτό το κλειδί υπάρχει ήδη"
+
+#: src/quadrapassel.vala:778
 msgid "Unpause the game"
 msgstr "Αναίρεση παύσης παιχνιδιού"
 
-#: src/quadrapassel.vala:762
+#: src/quadrapassel.vala:783
 msgid "Pause the game"
 msgstr "Παύση παιχνιδιού"
 
-#: src/quadrapassel.vala:840
+#: src/quadrapassel.vala:861
 msgid "A classic game of fitting falling blocks together"
-msgstr "Ένα κλασσικό παιχνίδι προσαρμογής τούβλων που πέφτουν μαζί."
+msgstr "Ένα κλασσικό παιχνίδι προσαρμογής τούβλων που πέφτουν μαζί"
 
-#: src/quadrapassel.vala:845
+#: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
@@ -397,6 +401,7 @@ msgstr ""
 "Κώστας Παπαδήμας <pkst@gmx.net>\n"
 "Τζένη Πετούμενου <epetoumenou@gmail.com>\n"
 "Μαρία Θουκυδίδου <marablack3@gmail.com>\n"
+"Ευστάθιος Ιωσηφίδης <iosifidis@opensuse.org>\n"
 "Για περισσότερα δείτε: http://gnome.gr"
 
 #: src/score-dialog.vala:26
@@ -414,6 +419,10 @@ msgstr "Ε_ντάξει"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Ημερομηνία"
+
+#~| msgid "org.gnome.quadrapassel"
+#~ msgid "org.gnome.Quadrapassel"
+#~ msgstr "org.gnome.Quadrapassel"
 
 #~ msgid "_About"
 #~ msgstr "_Περί"
