@@ -1,3 +1,11 @@
+quadrapassell 3.35.92
+=====================
+* Updates on the following translations: French, Serbian, Turkish, Basque, Galician, Spanish, Lithuanian, Hungarian, Persian, Swedish, Brazilian, Czech, Korean, Danish, Japanese, Slovenian
+* Defect fix to ensure keys are always unique when they are configured using the settings
+
+Contributors: 
+John Ward, Alexandre Franke, Марко Костић, Sabri Ünal, Asier Sarasua Garmendia, Fran Dieguez, Daniel Mustieles, Aurimas Černius, Balázs Úr, Danial Behzadi, Anders Jonsson, Rafael Fontenelle, Charles Monzat, Jiri Grönroos, Marek Černocký, DaeHyun Sung, Kukuh Syafaat, Zander Brown, Alan Mortensen, Efstathios Iosifidis, sicklylife, Matej Urbančič
+
 quadrapassell 3.35.90
 =====================
 * Updates on the following translations: Croatian, Japanese, Slovak, Malay and Spanish
