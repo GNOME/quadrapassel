@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: gnome-games 0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
 "POT-Creation-Date: 2020-02-17 14:05+0000\n"
-"PO-Revision-Date: 2020-03-01 12:46+0100\n"
+"PO-Revision-Date: 2020-03-01 12:47+0100\n"
 "Last-Translator: gogo <linux.hr@protonmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
@@ -337,7 +337,6 @@ msgstr "Čista"
 
 #. Throw up a dialog
 #: src/quadrapassel.vala:502
-#, fuzzy
 msgid "Unable to change key, as this key already exists"
 msgstr "Nemoguća promjena tipke, jer već ova tipka postoji"
 
