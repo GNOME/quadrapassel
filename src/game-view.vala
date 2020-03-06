@@ -537,19 +537,19 @@ public class BlockTexture : Clutter.CairoTexture
         const double colors[32] =
         {
             /* L */
-            1.0, 0.0, 0.0, /* red */
+            1.0, 0.5, 0.0, /* orange */
             /* J */
-            0.0, 1.0, 0.0, /* green */
-            /* T */
             0.0, 0.0, 1.0, /* blue */
-            /* S */
-            1.0, 1.0, 1.0, /* white */
-            /* Z */
-            1.0, 1.0, 0.0, /* yellow */
-            /* I */
+            /* T */
             1.0, 0.0, 1.0, /* magenta */
+            /* S */
+            0.0, 1.0, 0.0, /* green */
+            /* Z */
+            1.0, 0.0, 0.0, /* red */
+            /* I */
+            0.0, 1.0, 1.0, /* cyan */
             /* O */
-            0.0, 1.0, 1.0  /* cyan */
+            1.0, 1.0, 0.0  /* yellow */
         };
 
         cr.set_source_rgb (colors[color * 3], colors[color * 3 + 1], colors[color * 3 + 2]);
