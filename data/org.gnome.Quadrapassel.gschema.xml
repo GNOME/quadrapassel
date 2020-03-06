@@ -78,10 +78,15 @@
       <summary>Drop</summary>
       <description>Key press to drop.</description>
     </key>
-    <key name="key-rotate" type="i">
+    <key name="key-rotate-clockwise" type="i">
       <default>65362</default>
-      <summary>Rotate</summary>
-      <description>Key press to rotate.</description>
+      <summary>Rotate clockwise</summary>
+      <description>Key press to rotate clockwise.</description>
+    </key>
+    <key name="key-rotate-counter-clockwise" type="i">
+      <default>65507</default>
+      <summary>Rotate counter clockwise</summary>
+      <description>Key press to rotate counter clockwise.</description>
     </key>
     <key name="key-pause" type="i">
       <default>65299</default>

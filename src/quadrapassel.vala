@@ -379,8 +379,11 @@ public class Quadrapassel : Gtk.Application
         keyval = settings.get_int ("key-drop");
         controls_model.set (iter, 0, "key-drop", 1, _("Drop"), 2, keyval);
         controls_model.append (out iter);
-        keyval = settings.get_int ("key-rotate");
-        controls_model.set (iter, 0, "key-rotate", 1, _("Rotate"), 2, keyval);
+        keyval = settings.get_int ("key-rotate-clockwise");
+        controls_model.set (iter, 0, "key-rotate-clockwise", 1, _("Rotate clockwise"), 2, keyval);
+        controls_model.append (out iter);
+        keyval = settings.get_int ("key-rotate-counter-clockwise");
+        controls_model.set (iter, 0, "key-rotate-counter-clockwise", 1, _("Rotate counter clockwise"), 2, keyval);
         controls_model.append (out iter);
         keyval = settings.get_int ("key-pause");
         controls_model.set (iter, 0, "key-pause", 1, _("Pause"), 2, keyval);
@@ -495,7 +498,8 @@ public class Quadrapassel : Gtk.Application
             keyval == settings.get_int ("key-right") || 
             keyval == settings.get_int ("key-down") || 
             keyval == settings.get_int ("key-drop") || 
-            keyval == settings.get_int ("key-rotate") || 
+            keyval == settings.get_int ("key-rotate-clockwise") || 
+            keyval == settings.get_int ("key-rotate-counter-clockwise") || 
             keyval == settings.get_int ("key-pause"))
         {
             // Throw up a dialog
@@ -692,12 +696,14 @@ public class Quadrapassel : Gtk.Application
             game.move_right ();
             return true;
         }
-        else if (keyval == upper_key (settings.get_int ("key-rotate")))
+        else if (keyval == upper_key (settings.get_int ("key-rotate-clockwise")))
         {
-            if (settings.get_boolean ("rotate-counter-clock-wise"))
-                game.rotate_left ();
-            else
-                game.rotate_right ();
+            game.rotate_right ();
+            return true;
+        }
+        else if (keyval == upper_key (settings.get_int ("key-rotate-counter-clockwise")))
+        {
+            game.rotate_left ();
             return true;
         }
         else if (keyval == upper_key (settings.get_int ("key-down")))
