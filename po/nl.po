@@ -37,14 +37,14 @@
 # Tino Meinen <tino.meinen@gmail.com>, 2002–2009.
 # Wouter Bolsterlee <wbolster@gnome.org>, 2008.
 # Redmar <redmar@ubuntu-nl.org>, 2011.
-# Nathan Follens <nthn@unseen.is>, 2016-2019.
+# Nathan Follens <nthn@unseen.is>, 2016-2020.
 # Justin van Steijn <jvs@fsfe.org>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-02-01 18:55+0000\n"
-"PO-Revision-Date: 2019-02-24 16:00+0100\n"
+"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"PO-Revision-Date: 2020-02-24 20:54+0100\n"
 "Last-Translator: Nathan Follens <nthn@unseen.is>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
@@ -53,7 +53,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2011-09-18 07:04+0000\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.3\n"
 
 # BUG
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -222,8 +222,8 @@ msgstr "ingeschakeld als het venster is gemaximaliseerd"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
-#: src/quadrapassel.vala:886
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
+#: src/quadrapassel.vala:904
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -259,23 +259,21 @@ msgstr ""
 "blokken op sommige rijen. Of, in plaats van willekeurige blokken te laten "
 "vallen, kan het spel blokken kiezen die u moeilijk kunt plaatsen."
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Quadrapassel.desktop.in:6
-#| msgid "Quadrapassel"
-msgid "org.gnome.Quadrapassel"
-msgstr "org.gnome.Quadrapassel"
+#: data/org.gnome.Quadrapassel.appdata.xml.in:33
+msgid "The GNOME Project"
+msgstr "Het Gnome-project"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;"
 
-#: src/game-view.vala:346
+#: src/game-view.vala:335
 msgid "Paused"
 msgstr "Gepauzeerd"
 
 # voorbij/afgelopen
-#: src/game-view.vala:348
+#: src/game-view.vala:337
 msgid "Game Over"
 msgstr "Spel afgelopen"
 
@@ -299,7 +297,7 @@ msgstr "_Hulp"
 msgid "_About Quadrapassel"
 msgstr "_Over Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
 msgstr "Een nieuw spel beginnen"
 
@@ -395,19 +393,25 @@ msgstr "Tango (schaduw)"
 msgid "Clean"
 msgstr "Helder"
 
-#: src/quadrapassel.vala:760
+# Ik neem aan dat dit een scenario inhoudt waarbij sleutel A niet aangepast kan worden naar sleutel B, omdat sleutel B al bestaat - Nathan
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr "Kan de sleutel niet wijzigen, want die sleutel bestaat al"
+
+#: src/quadrapassel.vala:778
 msgid "Unpause the game"
 msgstr "Doorgaan met het spel"
 
-#: src/quadrapassel.vala:765
+#: src/quadrapassel.vala:783
 msgid "Pause the game"
 msgstr "Het spel pauzeren"
 
-#: src/quadrapassel.vala:843
+#: src/quadrapassel.vala:861
 msgid "A classic game of fitting falling blocks together"
 msgstr "Een klassiek spel met vallende blokken"
 
-#: src/quadrapassel.vala:848
+#: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr ""
 "Tino Meinen\n"
@@ -456,6 +460,10 @@ msgstr "_Oké"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Datum"
+
+#~| msgid "Quadrapassel"
+#~ msgid "org.gnome.Quadrapassel"
+#~ msgstr "org.gnome.Quadrapassel"
 
 #~| msgid "Quadrapassel"
 #~ msgid "quadrapassel"
