@@ -607,12 +607,12 @@ public class Quadrapassel : Gtk.Application
         }
         else if (button == InputEventCode.BTN_A)
         {
-            game.rotate_left ();
+            game.rotate_counter_clockwise ();
             return;
         }
         else if (button == InputEventCode.BTN_B)
         {
-            game.rotate_right ();
+            game.rotate_clockwise ();
             return;
         }
         else if (button == InputEventCode.BTN_DPAD_DOWN)
@@ -686,12 +686,12 @@ public class Quadrapassel : Gtk.Application
         }
         else if (keyval == upper_key (settings.get_int ("key-rotate-clockwise")))
         {
-            game.rotate_right ();
+            game.rotate_clockwise ();
             return true;
         }
         else if (keyval == upper_key (settings.get_int ("key-rotate-counter-clockwise")))
         {
-            game.rotate_left ();
+            game.rotate_counter_clockwise ();
             return true;
         }
         else if (keyval == upper_key (settings.get_int ("key-down")))

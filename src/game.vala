@@ -392,12 +392,12 @@ public class Game : Object
         return true;
     }
 
-    public bool rotate_left ()
+    public bool rotate_counter_clockwise ()
     {
         return move_shape (0, 0, 1);
     }
 
-    public bool rotate_right ()
+    public bool rotate_clockwise ()
     {
         return move_shape (0, 0, -1);
     }
