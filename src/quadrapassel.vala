@@ -53,7 +53,6 @@ public class Quadrapassel : Gtk.Application
     private Gtk.SpinButton fill_prob_spinner;
     private Gtk.CheckButton do_preview_toggle;
     private Gtk.CheckButton difficult_blocks_toggle;
-    private Gtk.CheckButton rotate_counter_clock_wise_toggle;
     private Gtk.CheckButton show_shadow_toggle;
     private Gtk.CheckButton sound_toggle;
     private Gtk.ListStore controls_model;
@@ -352,12 +351,6 @@ public class Quadrapassel : Gtk.Application
         do_preview_toggle.toggled.connect (do_preview_toggle_toggled_cb);
         grid.attach (do_preview_toggle, 0, 5, 2, 1);
 
-        /* rotate counter clock wise */
-        rotate_counter_clock_wise_toggle = new Gtk.CheckButton.with_mnemonic (_("_Rotate blocks counterclockwise"));
-        rotate_counter_clock_wise_toggle.set_active (settings.get_boolean ("rotate-counter-clock-wise"));
-        rotate_counter_clock_wise_toggle.toggled.connect (set_rotate_counter_clock_wise);
-        grid.attach (rotate_counter_clock_wise_toggle, 0, 6, 2, 1);
-
         show_shadow_toggle = new Gtk.CheckButton.with_mnemonic (_("Show _where the block will land"));
         show_shadow_toggle.set_active (settings.get_boolean ("show-shadow"));
         show_shadow_toggle.toggled.connect (user_target_toggled_cb);
@@ -469,11 +462,6 @@ public class Quadrapassel : Gtk.Application
     private void difficult_blocks_toggled_cb ()
     {
         settings.set_boolean ("pick-difficult-blocks", difficult_blocks_toggle.get_active ());
-    }
-
-    private void set_rotate_counter_clock_wise ()
-    {
-        settings.set_boolean ("rotate-counter-clock-wise", rotate_counter_clock_wise_toggle.get_active ());
     }
 
     private void user_target_toggled_cb ()

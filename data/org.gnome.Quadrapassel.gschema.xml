@@ -31,11 +31,6 @@
       <summary>Whether to give blocks random colors</summary>
       <description>Whether to give blocks random colors.</description>
     </key>
-    <key name="rotate-counter-clock-wise" type="b">
-      <default>true</default>
-      <summary>Whether to rotate counter clock wise</summary>
-      <description>Whether to rotate counter clock wise.</description>
-    </key>
     <key name="line-fill-height" type="i">
       <default>0</default>
       <range min="0" max="19"/>
