@@ -136,9 +136,9 @@ public class Quadrapassel : Gtk.Application
         view.theme = settings.get_string ("theme");
         view.mute = !settings.get_boolean ("sound");
         view.show_shadow = settings.get_boolean ("show-shadow");
-        view.game = new Game (20, 14, 1, 20, 10);
+        view.game = new Game (20, 10, 1, 20, 10);
         view.show ();
-        var game_aspect = new Gtk.AspectFrame (null, 0.5f, 0.5f, 14.0f/20.0f, false);
+        var game_aspect = new Gtk.AspectFrame (null, 0.5f, 0.5f, 10.0f/20.0f, false);
         game_aspect.show ();
         game_aspect.add (view);
         game_aspect.border_width = 12;
@@ -756,7 +756,7 @@ public class Quadrapassel : Gtk.Application
             SignalHandler.disconnect_matched (game, SignalMatchType.DATA, 0, 0, null, null, this);
         }
 
-        game = new Game (20, 14, settings.get_int ("starting-level"), settings.get_int ("line-fill-height"), settings.get_int ("line-fill-probability"), settings.get_boolean ("pick-difficult-blocks"));
+        game = new Game (20, 10, settings.get_int ("starting-level"), settings.get_int ("line-fill-height"), settings.get_int ("line-fill-probability"), settings.get_boolean ("pick-difficult-blocks"));
         game.pause_changed.connect (pause_changed_cb);
         game.shape_landed.connect (shape_landed_cb);
         game.complete.connect (complete_cb);
