@@ -18,21 +18,22 @@
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009-2012.
 # Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2012.
 # Bernd Homuth <dev@hmt.im>, 2015.
+# Wolfgang Stöggl <c72578@yahoo.de>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-09-25 13:29+0000\n"
-"PO-Revision-Date: 2019-11-30 18:08+0100\n"
-"Last-Translator: Tim Sabsch <tim@sabsch.com>\n"
+"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"PO-Revision-Date: 2020-03-18 07:02+0100\n"
+"Last-Translator: Wolfgang Stoeggl <c72578@yahoo.de>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -192,8 +193,8 @@ msgstr "Wahr, falls das Fenster maximiert ist"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
-#: src/quadrapassel.vala:886
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
+#: src/quadrapassel.vala:904
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -267,7 +268,7 @@ msgstr "_Hilfe"
 msgid "_About Quadrapassel"
 msgstr "_Info zu Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
 msgstr "Ein neues Spiel beginnen"
 
@@ -356,19 +357,25 @@ msgstr "Tango schattiert"
 msgid "Clean"
 msgstr "Sauber"
 
-#: src/quadrapassel.vala:760
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr ""
+"Taste kann nicht geändert werden, weil diese Taste bereits verwendet wird"
+
+#: src/quadrapassel.vala:778
 msgid "Unpause the game"
 msgstr "Weiterspielen"
 
-#: src/quadrapassel.vala:765
+#: src/quadrapassel.vala:783
 msgid "Pause the game"
 msgstr "Anhalten"
 
-#: src/quadrapassel.vala:843
+#: src/quadrapassel.vala:861
 msgid "A classic game of fitting falling blocks together"
 msgstr "Ein klassisches Spiel über das Zusammensetzen von fallenden Blöcken"
 
-#: src/quadrapassel.vala:848
+#: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr ""
 "Karl Eichwalder <ke@suse.de>\n"
