@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.ro\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-09-25 12:33+0000\n"
-"PO-Revision-Date: 2019-09-25 18:42+0200\n"
+"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"PO-Revision-Date: 2020-03-31 21:27+0200\n"
 "Last-Translator: Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>\n"
 "Language-Team: Gnome Romanian Translation Team\n"
 "Language: ro\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.3\n"
 "X-Launchpad-Export-Date: 2009-11-27 09:12+0000\n"
 "X-Project-Style: gnome\n"
 
@@ -184,8 +184,8 @@ msgstr "adevărat dacă fereastra este maximizată"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
-#: src/quadrapassel.vala:886
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
+#: src/quadrapassel.vala:904
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -257,7 +257,7 @@ msgstr "_Ajutor"
 msgid "_About Quadrapassel"
 msgstr "_Despre Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
 msgstr "Pornește un joc nou"
 
@@ -345,19 +345,24 @@ msgstr "Tango umbrit"
 msgid "Clean"
 msgstr "Frumos"
 
-#: src/quadrapassel.vala:760
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr "Nu s-a putut modifica cheia pentru că există deja"
+
+#: src/quadrapassel.vala:778
 msgid "Unpause the game"
 msgstr "Reia jocul"
 
-#: src/quadrapassel.vala:765
+#: src/quadrapassel.vala:783
 msgid "Pause the game"
 msgstr "Pune jocul pe pauză"
 
-#: src/quadrapassel.vala:843
+#: src/quadrapassel.vala:861
 msgid "A classic game of fitting falling blocks together"
 msgstr "Un joc clasic de așezare a blocurilor în cădere"
 
-#: src/quadrapassel.vala:848
+#: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr ""
 "Mugurel Tudor <mugurelu@gnome.ro>\n"
