@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel gnome-3-18\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-09-25 12:33+0000\n"
-"PO-Revision-Date: 2019-10-17 15:24+0200\n"
+"POT-Creation-Date: 2020-03-31 19:29+0000\n"
+"PO-Revision-Date: 2020-04-04 14:01+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -118,7 +118,7 @@ msgstr "Sposte a çampe"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "Key press to move left."
-msgstr "Boton di scliçâ par spostâ a çampe."
+msgstr "Tast di fracâ par spostâ a çampe."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:374
 msgid "Move right"
@@ -126,7 +126,7 @@ msgstr "Sposte a diestre"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:69
 msgid "Key press to move right."
-msgstr "Boton di scliçâ par spostâ a diestre."
+msgstr "Tast di fracâ par spostâ a diestre."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:377
 msgid "Move down"
@@ -134,7 +134,7 @@ msgstr "Sposte in jù"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:74
 msgid "Key press to move down."
-msgstr "Boton di scliçâ par spostâ in jù."
+msgstr "Tast di fracâ par spostâ in jù."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:380
 msgid "Drop"
@@ -142,7 +142,7 @@ msgstr "Mole"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:79
 msgid "Key press to drop."
-msgstr "Boton di scliçâ par molâ jù."
+msgstr "Tast di fracâ par molâ jù."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:383
 msgid "Rotate"
@@ -150,7 +150,7 @@ msgstr "Zire"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:84
 msgid "Key press to rotate."
-msgstr "Boton di scliçâ par voltâ."
+msgstr "Tast di fracâ par voltâ."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
 msgid "Pause"
@@ -158,7 +158,7 @@ msgstr "Pause"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:89
 msgid "Key press to pause."
-msgstr "Boton di scliçâ par meti in pause."
+msgstr "Tast di fracâ par meti in pause."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
 msgid "Width of the window in pixels"
@@ -170,12 +170,12 @@ msgstr "Altece dal barcon in pixel"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:101
 msgid "true if the window is maximized"
-msgstr "VÊR se il barcon al è slargjât"
+msgstr "true (vêr) se il barcon al è slargjât"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
-#: src/quadrapassel.vala:886
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
+#: src/quadrapassel.vala:904
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -248,7 +248,7 @@ msgstr "_Jutori"
 msgid "_About Quadrapassel"
 msgstr "_Informazions su Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
 msgstr "Tache une gnove partide"
 
@@ -336,19 +336,24 @@ msgstr "Tango sfumât"
 msgid "Clean"
 msgstr "Nete"
 
-#: src/quadrapassel.vala:760
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr "Impussibil cambiâ tast, viodût che chest tast al esist za"
+
+#: src/quadrapassel.vala:778
 msgid "Unpause the game"
 msgstr "Jes de pause"
 
-#: src/quadrapassel.vala:765
+#: src/quadrapassel.vala:783
 msgid "Pause the game"
 msgstr "Met la partide in pause"
 
-#: src/quadrapassel.vala:843
+#: src/quadrapassel.vala:861
 msgid "A classic game of fitting falling blocks together"
 msgstr "Un classic zûc par fâ cometi blocs in cjadude libare"
 
-#: src/quadrapassel.vala:848
+#: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr "Fabio Tomat <f.t.public@gmail.com>"
 
