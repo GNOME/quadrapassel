@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-02-17 14:05+0000\n"
-"PO-Revision-Date: 2020-03-16 22:02+0200\n"
+"POT-Creation-Date: 2020-06-01 12:23+0000\n"
+"PO-Revision-Date: 2020-06-01 16:20+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -101,86 +101,95 @@ msgstr ""
 "Щільність блоків у наперед заповнених рядах на початку гри. Дозволяються "
 "значення між 0 (немає блоків) і 10 (повністю заповнено)."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:53
+#: data/org.gnome.Quadrapassel.gschema.xml:54
+msgid "The input repeat delay"
+msgstr "Затримка повторення введення"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:55
+msgid ""
+"The input repeat delay in milliseconds. The value is between 0 and 1000."
+msgstr "Затримка повторення введення у мілісекундах. Значення від 0 до 1000."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:59
 msgid "Whether to play sounds"
 msgstr "Чи програвати музику"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:54
+#: data/org.gnome.Quadrapassel.gschema.xml:60
 msgid "Whether to play sounds."
 msgstr "Чи програвати музику."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:58
+#: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "Whether to pick blocks that are hard to place"
 msgstr "Чи підбирати блоки, які важко покласти"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:59
+#: data/org.gnome.Quadrapassel.gschema.xml:65
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Чи підбирати блоки, які важко покласти."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:371
+#: data/org.gnome.Quadrapassel.gschema.xml:69 src/quadrapassel.vala:386
 msgid "Move left"
 msgstr "Ліворуч"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:64
+#: data/org.gnome.Quadrapassel.gschema.xml:70
 msgid "Key press to move left."
 msgstr "Натисніть клавішу руху ліворуч."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:374
+#: data/org.gnome.Quadrapassel.gschema.xml:74 src/quadrapassel.vala:389
 msgid "Move right"
 msgstr "Праворуч"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:69
+#: data/org.gnome.Quadrapassel.gschema.xml:75
 msgid "Key press to move right."
 msgstr "Натисніть клавішу руху праворуч."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:377
+#: data/org.gnome.Quadrapassel.gschema.xml:79 src/quadrapassel.vala:392
 msgid "Move down"
 msgstr "Пересунути вниз"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:74
+#: data/org.gnome.Quadrapassel.gschema.xml:80
 msgid "Key press to move down."
 msgstr "Натисніть клавішу руху вниз."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:380
+#: data/org.gnome.Quadrapassel.gschema.xml:84 src/quadrapassel.vala:395
 msgid "Drop"
 msgstr "Кидок"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:79
+#: data/org.gnome.Quadrapassel.gschema.xml:85
 msgid "Key press to drop."
 msgstr "Натисніть клавішу для кидання."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:383
+#: data/org.gnome.Quadrapassel.gschema.xml:89 src/quadrapassel.vala:398
 msgid "Rotate"
 msgstr "Поворот"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:84
+#: data/org.gnome.Quadrapassel.gschema.xml:90
 msgid "Key press to rotate."
 msgstr "Натисніть клавішу повороту."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
+#: data/org.gnome.Quadrapassel.gschema.xml:94 src/quadrapassel.vala:401
 msgid "Pause"
 msgstr "Пауза"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:89
+#: data/org.gnome.Quadrapassel.gschema.xml:95
 msgid "Key press to pause."
 msgstr "Натисніть клавішу паузи."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:93
+#: data/org.gnome.Quadrapassel.gschema.xml:99
 msgid "Width of the window in pixels"
 msgstr "Ширина вікна, у точках"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:103
 msgid "Height of the window in pixels"
 msgstr "Висота вікна, у точках"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:107
 msgid "true if the window is maximized"
 msgstr "вказано, якщо вікно розгорнуто"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
-#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:100
+#: src/quadrapassel.vala:111 src/quadrapassel.vala:880
+#: src/quadrapassel.vala:925
 msgid "Quadrapassel"
 msgstr "Квадрапасл"
 
@@ -204,11 +213,6 @@ msgstr ""
 "нараховується, рівень збільшується, а блоки падають швидше."
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:17
-#| msgid ""
-#| "If you're looking for a challenge, Quadrapassel allows you to increase "
-#| "the initial speed of the blocks, or begin the game with partial blocks on "
-#| "some of the rows. Or, instead of allowing the blocks to fall randomly, it "
-#| "can select blocks that will be hard for you to place."
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -236,134 +240,138 @@ msgstr "Призупинено"
 msgid "Game Over"
 msgstr "Гру закінчено"
 
-#: src/quadrapassel.vala:117
+#: src/quadrapassel.vala:118
 msgid "_New Game"
 msgstr "_Нова гра"
 
-#: src/quadrapassel.vala:118
+#: src/quadrapassel.vala:119
 msgid "_Scores"
 msgstr "_Результати"
 
-#: src/quadrapassel.vala:121
+#: src/quadrapassel.vala:122
 msgid "_Preferences"
 msgstr "_Параметри"
 
-#: src/quadrapassel.vala:122
+#: src/quadrapassel.vala:123
 msgid "_Help"
 msgstr "_Довідка"
 
-#: src/quadrapassel.vala:123
-#| msgid "Quadrapassel"
+#: src/quadrapassel.vala:124
 msgid "_About Quadrapassel"
 msgstr "_Про «Квадрапасл»"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:152 src/quadrapassel.vala:818
 msgid "Start a new game"
 msgstr "Розпочати нову гру"
 
-#: src/quadrapassel.vala:156
+#: src/quadrapassel.vala:157
 msgid "Next"
 msgstr "Далі"
 
-#: src/quadrapassel.vala:169 src/score-dialog.vala:51
+#: src/quadrapassel.vala:170 src/score-dialog.vala:51
 msgid "Score"
 msgstr "Рахунок"
 
-#: src/quadrapassel.vala:180
+#: src/quadrapassel.vala:181
 msgid "Lines"
 msgstr "Рядів"
 
-#: src/quadrapassel.vala:191
+#: src/quadrapassel.vala:192
 msgid "Level"
 msgstr "Рівень"
 
-#: src/quadrapassel.vala:276
+#: src/quadrapassel.vala:277
 msgid "Preferences"
 msgstr "Параметри"
 
-#: src/quadrapassel.vala:294
+#: src/quadrapassel.vala:295
 msgid "Game"
 msgstr "Гра"
 
 #. pre-filled rows
-#: src/quadrapassel.vala:298
+#: src/quadrapassel.vala:299
 msgid "_Number of pre-filled rows:"
 msgstr "_Кількість наперед заповнених рядів:"
 
 #. pre-filled rows density
-#: src/quadrapassel.vala:313
+#: src/quadrapassel.vala:314
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "_Щільність цегли наперед заповнених рядів:"
 
+#. input repeat delay
+#: src/quadrapassel.vala:328
+msgid "_Input repeat delay:"
+msgstr "За_тримка повторення введення:"
+
 #. starting level
-#: src/quadrapassel.vala:327
+#: src/quadrapassel.vala:342
 msgid "_Starting level:"
 msgstr "_Початковий рівень:"
 
-#: src/quadrapassel.vala:340
+#: src/quadrapassel.vala:355
 msgid "_Enable sounds"
 msgstr "_Увімкнути звуки"
 
-#: src/quadrapassel.vala:345
+#: src/quadrapassel.vala:360
 msgid "Choose difficult _blocks"
 msgstr "Вибрати складні _блоки"
 
-#: src/quadrapassel.vala:350
+#: src/quadrapassel.vala:365
 msgid "_Preview next block"
 msgstr "_Показувати наступний блок"
 
 #. rotate counter clock wise
-#: src/quadrapassel.vala:356
+#: src/quadrapassel.vala:371
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Обертати проти годинникової стрілки"
 
-#: src/quadrapassel.vala:361
+#: src/quadrapassel.vala:376
 msgid "Show _where the block will land"
 msgstr "Показувати _місце попадання блоку"
 
-#: src/quadrapassel.vala:405
+#: src/quadrapassel.vala:420
 msgid "Controls"
 msgstr "Керування"
 
-#: src/quadrapassel.vala:411
+#: src/quadrapassel.vala:426
 msgid "Theme"
 msgstr "Тема"
 
-#: src/quadrapassel.vala:423
+#: src/quadrapassel.vala:438
 msgid "Plain"
 msgstr "Простий"
 
-#: src/quadrapassel.vala:428
+#: src/quadrapassel.vala:443
 msgid "Tango Flat"
 msgstr "Простий Танго"
 
-#: src/quadrapassel.vala:433
+#: src/quadrapassel.vala:448
 msgid "Tango Shaded"
 msgstr "Танго з тінями"
 
-#: src/quadrapassel.vala:438
+#: src/quadrapassel.vala:453
 msgid "Clean"
 msgstr "Очистити"
 
 #. Throw up a dialog
-#: src/quadrapassel.vala:502
+#: src/quadrapassel.vala:517
 msgid "Unable to change key, as this key already exists"
 msgstr ""
 "Не вдалося змінити клавіші, оскільки прив'язка до таких клавіш вже існує"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:799
 msgid "Unpause the game"
 msgstr "Відновити гру"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:804
 msgid "Pause the game"
 msgstr "Призупинити гру"
 
-#: src/quadrapassel.vala:861
+#: src/quadrapassel.vala:882
 msgid "A classic game of fitting falling blocks together"
 msgstr "Класична гра укладання блоків, які падають."
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:887
 msgid "translator-credits"
 msgstr ""
 "Юрій Сирота\n"
