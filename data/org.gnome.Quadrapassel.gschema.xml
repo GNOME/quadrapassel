@@ -48,6 +48,12 @@
       <summary>The density of filled rows</summary>
       <description>The density of blocks in rows filled at the start of the game. The value is between 0 (for no blocks) and 10 (for a completely filled row).</description>
     </key>
+    <key name="input-repeat-delay" type="i">
+      <default>250</default>
+      <range min="0" max="1000"/>
+      <summary>The input repeat delay</summary>
+      <description>The input repeat delay in milliseconds.  The value is between 0 and 1000.</description>
+    </key>
     <key name="sound" type="b">
       <default>true</default>
       <summary>Whether to play sounds</summary>
