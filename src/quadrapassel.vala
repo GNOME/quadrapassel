@@ -51,7 +51,6 @@ public class Quadrapassel : Gtk.Application
     private Preview theme_preview;
     private Gtk.SpinButton fill_height_spinner;
     private Gtk.SpinButton fill_prob_spinner;
-    private Gtk.SpinButton input_repeat_delay_spinner;
     private Gtk.CheckButton do_preview_toggle;
     private Gtk.CheckButton difficult_blocks_toggle;
     private Gtk.CheckButton rotate_counter_clock_wise_toggle;
@@ -324,59 +323,45 @@ public class Quadrapassel : Gtk.Application
         grid.attach (fill_prob_spinner, 1, 1, 1, 1);
         label.set_mnemonic_widget (fill_prob_spinner);
 
-        /* input repeat delay */
-        label = new Gtk.Label.with_mnemonic (_("_Input repeat delay:"));
-        label.set_alignment (0, 0.5f);
-        label.set_hexpand (true);
-        grid.attach (label, 0, 2, 1, 1);
-
-        adj = new Gtk.Adjustment (settings.get_int ("input-repeat-delay"), 0, 1000, 1, 5, 0);
-        input_repeat_delay_spinner = new Gtk.SpinButton (adj, 10, 0);
-        input_repeat_delay_spinner.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
-        input_repeat_delay_spinner.set_snap_to_ticks (true);
-        input_repeat_delay_spinner.value_changed.connect (input_repeat_delay_spinner_value_changed_cb);
-        grid.attach (input_repeat_delay_spinner, 1, 2, 1, 1);
-        label.set_mnemonic_widget (input_repeat_delay_spinner);
-
         /* starting level */
         label = new Gtk.Label.with_mnemonic (_("_Starting level:"));
         label.set_alignment (0, 0.5f);
         label.set_hexpand (true);
-        grid.attach (label, 0, 3, 1, 1);
+        grid.attach (label, 0, 2, 1, 1);
 
         adj = new Gtk.Adjustment (settings.get_int ("starting-level"), 1, 20, 1, 5, 0);
         starting_level_spin = new Gtk.SpinButton (adj, 10.0, 0);
         starting_level_spin.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
         starting_level_spin.set_snap_to_ticks (true);
         starting_level_spin.value_changed.connect (starting_level_value_changed_cb);
-        grid.attach (starting_level_spin, 1, 3, 1, 1);
+        grid.attach (starting_level_spin, 1, 2, 1, 1);
         label.set_mnemonic_widget (starting_level_spin);
 
         sound_toggle = new Gtk.CheckButton.with_mnemonic (_("_Enable sounds"));
         sound_toggle.set_active (settings.get_boolean ("sound"));
         sound_toggle.toggled.connect (sound_toggle_toggled_cb);
-        grid.attach (sound_toggle, 0, 4, 2, 1);
+        grid.attach (sound_toggle, 0, 3, 2, 1);
 
         difficult_blocks_toggle = new Gtk.CheckButton.with_mnemonic (_("Choose difficult _blocks"));
         difficult_blocks_toggle.set_active (settings.get_boolean ("pick-difficult-blocks"));
         difficult_blocks_toggle.toggled.connect (difficult_blocks_toggled_cb);
-        grid.attach (difficult_blocks_toggle, 0, 5, 2, 1);
+        grid.attach (difficult_blocks_toggle, 0, 4, 2, 1);
 
         do_preview_toggle = new Gtk.CheckButton.with_mnemonic (_("_Preview next block"));
         do_preview_toggle.set_active (settings.get_boolean ("do-preview"));
         do_preview_toggle.toggled.connect (do_preview_toggle_toggled_cb);
-        grid.attach (do_preview_toggle, 0, 6, 2, 1);
+        grid.attach (do_preview_toggle, 0, 5, 2, 1);
 
         /* rotate counter clock wise */
         rotate_counter_clock_wise_toggle = new Gtk.CheckButton.with_mnemonic (_("_Rotate blocks counterclockwise"));
         rotate_counter_clock_wise_toggle.set_active (settings.get_boolean ("rotate-counter-clock-wise"));
         rotate_counter_clock_wise_toggle.toggled.connect (set_rotate_counter_clock_wise);
-        grid.attach (rotate_counter_clock_wise_toggle, 0, 7, 2, 1);
+        grid.attach (rotate_counter_clock_wise_toggle, 0, 6, 2, 1);
 
         show_shadow_toggle = new Gtk.CheckButton.with_mnemonic (_("Show _where the block will land"));
         show_shadow_toggle.set_active (settings.get_boolean ("show-shadow"));
         show_shadow_toggle.toggled.connect (user_target_toggled_cb);
-        grid.attach (show_shadow_toggle, 0, 8, 2, 1);
+        grid.attach (show_shadow_toggle, 0, 7, 2, 1);
 
         /* controls page */
         controls_model = new Gtk.ListStore (4, typeof (string), typeof (string), typeof (uint), typeof (uint));
@@ -576,12 +561,6 @@ public class Quadrapassel : Gtk.Application
         settings.set_int ("line-fill-probability", value);
     }
 
-    private void input_repeat_delay_spinner_value_changed_cb (Gtk.SpinButton spin)
-    {
-        int value = spin.get_value_as_int ();
-        settings.set_int ("input-repeat-delay", value);
-    }
-
     private void starting_level_value_changed_cb (Gtk.SpinButton spin)
     {
         int value = spin.get_value_as_int ();
@@ -777,7 +756,7 @@ public class Quadrapassel : Gtk.Application
             SignalHandler.disconnect_matched (game, SignalMatchType.DATA, 0, 0, null, null, this);
         }
 
-        game = new Game (20, 14, settings.get_int ("starting-level"), settings.get_int ("line-fill-height"), settings.get_int ("line-fill-probability"), settings.get_int ("input-repeat-delay"), settings.get_boolean ("pick-difficult-blocks"));
+        game = new Game (20, 14, settings.get_int ("starting-level"), settings.get_int ("line-fill-height"), settings.get_int ("line-fill-probability"), settings.get_boolean ("pick-difficult-blocks"));
         game.pause_changed.connect (pause_changed_cb);
         game.shape_landed.connect (shape_landed_cb);
         game.complete.connect (complete_cb);
