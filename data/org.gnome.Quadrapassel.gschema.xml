@@ -31,11 +31,6 @@
       <summary>Whether to give blocks random colors</summary>
       <description>Whether to give blocks random colors.</description>
     </key>
-    <key name="rotate-counter-clock-wise" type="b">
-      <default>true</default>
-      <summary>Whether to rotate counter clock wise</summary>
-      <description>Whether to rotate counter clock wise.</description>
-    </key>
     <key name="line-fill-height" type="i">
       <default>0</default>
       <range min="0" max="19"/>
@@ -78,10 +73,15 @@
       <summary>Drop</summary>
       <description>Key press to drop.</description>
     </key>
-    <key name="key-rotate" type="i">
+    <key name="key-rotate-clockwise" type="i">
       <default>65362</default>
-      <summary>Rotate</summary>
-      <description>Key press to rotate.</description>
+      <summary>Rotate clockwise</summary>
+      <description>Key press to rotate clockwise.</description>
+    </key>
+    <key name="key-rotate-counter-clockwise" type="i">
+      <default>65507</default>
+      <summary>Rotate counter clockwise</summary>
+      <description>Key press to rotate counter clockwise.</description>
     </key>
     <key name="key-pause" type="i">
       <default>65299</default>

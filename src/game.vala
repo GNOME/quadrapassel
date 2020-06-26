@@ -131,14 +131,14 @@ private const int block_table[448] =
     0, 0, 0, 0,
     0, 0, 0, 0,
 
-    0, 1, 0, 0,
-    0, 1, 0, 0,
-    0, 1, 0, 0,
-    0, 1, 0, 0,
+    0, 0, 1, 0,
+    0, 0, 1, 0,
+    0, 0, 1, 0,
+    0, 0, 1, 0,
 
     0, 0, 0, 0,
-    1, 1, 1, 1,
     0, 0, 0, 0,
+    1, 1, 1, 1,
     0, 0, 0, 0,
 
     0, 1, 0, 0,
@@ -302,7 +302,7 @@ public class Game : Object
     public signal void pause_changed ();
     public signal void complete ();
 
-    public Game (int lines = 20, int columns = 14, int starting_level = 1, int filled_lines = 0, int fill_prob = 5, bool pick_difficult_blocks = false)
+    public Game (int lines = 20, int columns = 10, int starting_level = 1, int filled_lines = 0, int fill_prob = 5, bool pick_difficult_blocks = false)
     {
         this.starting_level = starting_level;
         this.pick_difficult_blocks = pick_difficult_blocks;
@@ -392,12 +392,12 @@ public class Game : Object
         return true;
     }
 
-    public bool rotate_left ()
+    public bool rotate_counter_clockwise ()
     {
         return move_shape (0, 0, 1);
     }
 
-    public bool rotate_right ()
+    public bool rotate_clockwise ()
     {
         return move_shape (0, 0, -1);
     }

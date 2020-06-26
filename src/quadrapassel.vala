@@ -53,7 +53,6 @@ public class Quadrapassel : Gtk.Application
     private Gtk.SpinButton fill_prob_spinner;
     private Gtk.CheckButton do_preview_toggle;
     private Gtk.CheckButton difficult_blocks_toggle;
-    private Gtk.CheckButton rotate_counter_clock_wise_toggle;
     private Gtk.CheckButton show_shadow_toggle;
     private Gtk.CheckButton sound_toggle;
     private Gtk.ListStore controls_model;
@@ -136,9 +135,9 @@ public class Quadrapassel : Gtk.Application
         view.theme = settings.get_string ("theme");
         view.mute = !settings.get_boolean ("sound");
         view.show_shadow = settings.get_boolean ("show-shadow");
-        view.game = new Game (20, 14, 1, 20, 10);
+        view.game = new Game (20, 10, 1, 20, 10);
         view.show ();
-        var game_aspect = new Gtk.AspectFrame (null, 0.5f, 0.5f, 14.0f/20.0f, false);
+        var game_aspect = new Gtk.AspectFrame (null, 0.5f, 0.5f, 10.0f/20.0f, false);
         game_aspect.show ();
         game_aspect.add (view);
         game_aspect.border_width = 12;
@@ -352,12 +351,6 @@ public class Quadrapassel : Gtk.Application
         do_preview_toggle.toggled.connect (do_preview_toggle_toggled_cb);
         grid.attach (do_preview_toggle, 0, 5, 2, 1);
 
-        /* rotate counter clock wise */
-        rotate_counter_clock_wise_toggle = new Gtk.CheckButton.with_mnemonic (_("_Rotate blocks counterclockwise"));
-        rotate_counter_clock_wise_toggle.set_active (settings.get_boolean ("rotate-counter-clock-wise"));
-        rotate_counter_clock_wise_toggle.toggled.connect (set_rotate_counter_clock_wise);
-        grid.attach (rotate_counter_clock_wise_toggle, 0, 6, 2, 1);
-
         show_shadow_toggle = new Gtk.CheckButton.with_mnemonic (_("Show _where the block will land"));
         show_shadow_toggle.set_active (settings.get_boolean ("show-shadow"));
         show_shadow_toggle.toggled.connect (user_target_toggled_cb);
@@ -379,8 +372,11 @@ public class Quadrapassel : Gtk.Application
         keyval = settings.get_int ("key-drop");
         controls_model.set (iter, 0, "key-drop", 1, _("Drop"), 2, keyval);
         controls_model.append (out iter);
-        keyval = settings.get_int ("key-rotate");
-        controls_model.set (iter, 0, "key-rotate", 1, _("Rotate"), 2, keyval);
+        keyval = settings.get_int ("key-rotate-clockwise");
+        controls_model.set (iter, 0, "key-rotate-clockwise", 1, _("Rotate clockwise"), 2, keyval);
+        controls_model.append (out iter);
+        keyval = settings.get_int ("key-rotate-counter-clockwise");
+        controls_model.set (iter, 0, "key-rotate-counter-clockwise", 1, _("Rotate counter clockwise"), 2, keyval);
         controls_model.append (out iter);
         keyval = settings.get_int ("key-pause");
         controls_model.set (iter, 0, "key-pause", 1, _("Pause"), 2, keyval);
@@ -468,11 +464,6 @@ public class Quadrapassel : Gtk.Application
         settings.set_boolean ("pick-difficult-blocks", difficult_blocks_toggle.get_active ());
     }
 
-    private void set_rotate_counter_clock_wise ()
-    {
-        settings.set_boolean ("rotate-counter-clock-wise", rotate_counter_clock_wise_toggle.get_active ());
-    }
-
     private void user_target_toggled_cb ()
     {
         var show_shadow = show_shadow_toggle.get_active ();
@@ -495,7 +486,8 @@ public class Quadrapassel : Gtk.Application
             keyval == settings.get_int ("key-right") || 
             keyval == settings.get_int ("key-down") || 
             keyval == settings.get_int ("key-drop") || 
-            keyval == settings.get_int ("key-rotate") || 
+            keyval == settings.get_int ("key-rotate-clockwise") || 
+            keyval == settings.get_int ("key-rotate-counter-clockwise") || 
             keyval == settings.get_int ("key-pause"))
         {
             // Throw up a dialog
@@ -615,12 +607,12 @@ public class Quadrapassel : Gtk.Application
         }
         else if (button == InputEventCode.BTN_A)
         {
-            game.rotate_left ();
+            game.rotate_counter_clockwise ();
             return;
         }
         else if (button == InputEventCode.BTN_B)
         {
-            game.rotate_right ();
+            game.rotate_clockwise ();
             return;
         }
         else if (button == InputEventCode.BTN_DPAD_DOWN)
@@ -692,12 +684,14 @@ public class Quadrapassel : Gtk.Application
             game.move_right ();
             return true;
         }
-        else if (keyval == upper_key (settings.get_int ("key-rotate")))
+        else if (keyval == upper_key (settings.get_int ("key-rotate-clockwise")))
         {
-            if (settings.get_boolean ("rotate-counter-clock-wise"))
-                game.rotate_left ();
-            else
-                game.rotate_right ();
+            game.rotate_clockwise ();
+            return true;
+        }
+        else if (keyval == upper_key (settings.get_int ("key-rotate-counter-clockwise")))
+        {
+            game.rotate_counter_clockwise ();
             return true;
         }
         else if (keyval == upper_key (settings.get_int ("key-down")))
@@ -756,7 +750,7 @@ public class Quadrapassel : Gtk.Application
             SignalHandler.disconnect_matched (game, SignalMatchType.DATA, 0, 0, null, null, this);
         }
 
-        game = new Game (20, 14, settings.get_int ("starting-level"), settings.get_int ("line-fill-height"), settings.get_int ("line-fill-probability"), settings.get_boolean ("pick-difficult-blocks"));
+        game = new Game (20, 10, settings.get_int ("starting-level"), settings.get_int ("line-fill-height"), settings.get_int ("line-fill-probability"), settings.get_boolean ("pick-difficult-blocks"));
         game.pause_changed.connect (pause_changed_cb);
         game.shape_landed.connect (shape_landed_cb);
         game.complete.connect (complete_cb);
