@@ -23,8 +23,8 @@
     </key>
     <key name="show-shadow" type="b">
       <default>false</default>
-      <summary>Whether to show where the moving piece will land</summary>
-      <description>Whether to show where the moving piece will land.</description>
+      <summary>Whether to show where the moving block will land</summary>
+      <description>Whether to show where the moving block will land.</description>
     </key>
     <key name="random-block-colors" type="b">
       <default>false</default>
