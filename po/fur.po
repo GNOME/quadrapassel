@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel gnome-3-18\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-03-31 19:29+0000\n"
-"PO-Revision-Date: 2020-04-04 14:01+0200\n"
+"POT-Creation-Date: 2020-06-26 09:11+0000\n"
+"PO-Revision-Date: 2020-07-14 13:02+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -50,12 +50,12 @@ msgid "Whether to preview the next block."
 msgstr "Indiche se mostrâ il bloc sucessîf."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
-msgstr "Indiche se mostrâ o no dulà che al colarà il bloc"
+msgid "Whether to show where the moving block will land"
+msgstr "Indiche se mostrâ dulà che al colarà il bloc che si sta spostant"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
-msgstr "Indiche se mostrâ o no dulà che al colarà il bloc."
+msgid "Whether to show where the moving block will land."
+msgstr "Indiche se mostrâ dulà che al colarà il bloc che si sta spostant."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to give blocks random colors"
