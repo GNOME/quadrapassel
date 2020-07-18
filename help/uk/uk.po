@@ -6,14 +6,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel gnome-3-36\n"
-"POT-Creation-Date: 2020-05-06 21:44+0000\n"
-"PO-Revision-Date: 2020-05-07 15:05+0300\n"
+"POT-Creation-Date: 2020-06-04 14:28+0000\n"
+"PO-Revision-Date: 2020-07-18 20:26+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 20.07.70\n"
@@ -65,9 +65,9 @@ msgid ""
 "If you notice a problem you can file a <em>bug report</em>. To file a bug, "
 "go to <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
 msgstr ""
-"Якщо ви виявили проблему у програмі, ви можете створити <em>звіт щодо вади<"
-"/em>. Для створення такого звіту перейдіть на сторінку <link"
-" href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
+"Якщо ви виявили проблему у програмі, ви можете створити <em>звіт щодо вади</"
+"em>. Для створення такого звіту перейдіть на сторінку <link href=\"https://"
+"gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:29
@@ -75,9 +75,9 @@ msgid ""
 "This is a bug tracking system where users and developers can file details "
 "about bugs, crashes and request enhancements."
 msgstr ""
-"Це сторінка системи стеження за вадами, де користувачі і розробники можуть"
-" спілкуватися щодо подробиць вади, аварійного завершення роботи програми або"
-" запитів щодо реалізації додаткових можливостей."
+"Це сторінка системи стеження за вадами, де користувачі і розробники можуть "
+"спілкуватися щодо подробиць вади, аварійного завершення роботи програми або "
+"запитів щодо реалізації додаткових можливостей."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:32
@@ -106,12 +106,11 @@ msgid ""
 msgstr ""
 "Щойно ваш обліковий запис буде зареєстровано, увійдіть до нього і натисніть "
 "кнопку <gui>New issue</gui> («Нова вада»). Перш ніж повідомляти про ваду, "
-"будь ласка, ознайомтеся із <link href=\"https://wiki.gnome.org/Community/Getti"
-"ngInTouch/Bugzilla/Guidelines\">настановами щодо створення "
-"повідомлень про вади</link>, і, будь ласка, <link"
-" href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues\">перегляньте<"
-"/link> список вад, щоб переконатися "
-"у тому, що про виявлену вами ваду ще ніхто не повідомив."
+"будь ласка, ознайомтеся із <link href=\"https://wiki.gnome.org/Community/"
+"GettingInTouch/Bugzilla/Guidelines\">настановами щодо створення повідомлень "
+"про вади</link>, і, будь ласка, <link href=\"https://gitlab.gnome.org/GNOME/"
+"quadrapassel/issues\">перегляньте</link> список вад, щоб переконатися у "
+"тому, що про виявлену вами ваду ще ніхто не повідомив."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:41
@@ -131,8 +130,8 @@ msgid ""
 "Your report will be given an ID number, and its status will be updated as it "
 "is being dealt with."
 msgstr ""
-"Вашому звіту буде надано ідентифікаційного номера, його стан буде оновлено,"
-" щойно над ним попрацює хтось із розробників."
+"Вашому звіту буде надано ідентифікаційного номера, його стан буде оновлено, "
+"щойно над ним попрацює хтось із розробників."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:50 C/develop.page:30 C/documentation.page:30
@@ -166,13 +165,12 @@ msgid ""
 "href=\"https://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
 "link>."
 msgstr ""
-"Якщо ви хочете допомогти у <link href=\"https://wiki.gnome.org/Apps/Games/Cont"
-"ributing\">розробці <app>Ігор GNOME</app></link>, можете зв'язатися із нашими"
-" розробниками за допомогою <link href=\"https://cbe005.chat.mibbit.com/?url=ir"
-"c%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link> або нашого <link"
-" href=\"https://mail.gnome.org/mailman/listinfo/games-list\">списку"
-" листування</"
-"link>."
+"Якщо ви хочете допомогти у <link href=\"https://wiki.gnome.org/Apps/Games/"
+"Contributing\">розробці <app>Ігор GNOME</app></link>, можете зв'язатися із "
+"нашими розробниками за допомогою <link href=\"https://cbe005.chat.mibbit."
+"com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link> або нашого "
+"<link href=\"https://mail.gnome.org/mailman/listinfo/games-list\">списку "
+"листування</link>."
 
 #. (itstool) path: info/desc
 #: C/documentation.page:21
@@ -238,12 +236,12 @@ msgid ""
 "complete lines. By making complete horizontal lines, you score points and "
 "move up levels. As you progress, the speed of the falling blocks increases."
 msgstr ""
-"У «Квадрапасл», версії тетрісу для GNOME, вашою метою є заповнення"
-" горизонтальних рядів блоками. Фігури у грі мають сім різних форм. Випадкові"
-" форми падатимуть з верхньої центральної частини екрана. Ви можете обертати і"
-" пересувати форми екраном з метою заповнення рядів. Заповнення рядів блоками"
-" надасть вам змогу отримати більше очок і перейти на наступні рівні. Із"
-" поступом рівнями зростатиме швидкість падіння форм."
+"У «Квадрапасл», версії тетрісу для GNOME, вашою метою є заповнення "
+"горизонтальних рядів блоками. Фігури у грі мають сім різних форм. Випадкові "
+"форми падатимуть з верхньої центральної частини екрана. Ви можете обертати і "
+"пересувати форми екраном з метою заповнення рядів. Заповнення рядів блоками "
+"надасть вам змогу отримати більше очок і перейти на наступні рівні. Із "
+"поступом рівнями зростатиме швидкість падіння форм."
 
 #. (itstool) path: section/title
 #: C/index.page:25
@@ -352,7 +350,7 @@ msgid ""
 "link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
 "sa/3.0/\">Commons Deed</link>."
 msgstr ""
-"Щоб ознайомитися із повним текстом ліцензційних умов, скористайтеся <link "
+"Щоб ознайомитися із повним текстом ліцензійних умов, скористайтеся <link "
 "href=\"http://creativecommons.org/licenses/by-sa/3.0/legalcode\">сайтом "
 "CreativeCommons</link> або прочитайте повністю <link href=\"http://"
 "creativecommons.org/licenses/by-sa/3.0/\">Commons Deed</link>."
@@ -378,8 +376,8 @@ msgstr "Як грати"
 msgid ""
 "The <key>←</key> and <key>→</key> keys move the blocks across the screen."
 msgstr ""
-"Скористайтеся клавішами <key>←</key> і <key>→</key> для пересування блоків"
-" екраном."
+"Скористайтеся клавішами <key>←</key> і <key>→</key> для пересування блоків "
+"екраном."
 
 #. (itstool) path: item/p
 #: C/playgame.page:31
@@ -388,10 +386,9 @@ msgid ""
 "counterclockwise by default) can be changed in the <link xref=\"preferences"
 "\">Preferences</link>."
 msgstr ""
-"Натискання клавіші <key>↑</key> призводить до обертання блоку. Напрямок"
-" обертання (типово відбувається у напрямку проти годинникової стрілки) можна"
-" змінити у вікні <link xref=\"preferences"
-"\">параметрів програми</link>."
+"Натискання клавіші <key>↑</key> призводить до обертання блоку. Напрямок "
+"обертання (типово відбувається у напрямку проти годинникової стрілки) можна "
+"змінити у вікні <link xref=\"preferences\">параметрів програми</link>."
 
 #. (itstool) path: item/p
 #: C/playgame.page:32
@@ -401,11 +398,11 @@ msgid ""
 "<key>↓</key> key causes a soft-drop (temporary increase in speed while the "
 "key is held down)."
 msgstr ""
-"Натискання клавіш <key>Пробіл</key> і <key>↓</key> збільшуватиме швидкість"
-" падіння форм. Натискання клавіші <key>Пробіл</key> призведе до жорсткого"
-" падіння (негайного пересування блоку вниз). Натискання клавіші <key>↓</key>"
-" зробить падіння м'яким (тимчасово прискорить падіння на час утримання"
-" клавіші натиснутою)."
+"Натискання клавіш <key>Пробіл</key> і <key>↓</key> збільшуватиме швидкість "
+"падіння форм. Натискання клавіші <key>Пробіл</key> призведе до жорсткого "
+"падіння (негайного пересування блоку вниз). Натискання клавіші <key>↓</key> "
+"зробить падіння м'яким (тимчасово прискорить падіння на час утримання "
+"клавіші натиснутою)."
 
 #. (itstool) path: section/title
 #: C/playgame.page:37
@@ -423,8 +420,8 @@ msgid ""
 "You can pause, end, start a new game, get help or quit the program at any "
 "time."
 msgstr ""
-"Ви можете призупинити, завершити гру, розпочати нову гру, отримати довідку"
-" або вийти з програми у будь-який бажаний момент."
+"Ви можете призупинити, завершити гру, розпочати нову гру, отримати довідку "
+"або вийти з програми у будь-який бажаний момент."
 
 #. (itstool) path: item/p
 #: C/playgame.page:42
@@ -447,9 +444,8 @@ msgid ""
 "To change the game preferences, press the menu button in the top-right "
 "corner of the window and select <gui style=\"menuitem\">Preferences</gui>."
 msgstr ""
-"Щоб внести зміни до параметрів гри, натисніть кнопку меню у верхньому правому"
-" куті вікна і виберіть <gui"
-" style=\"menuitem\">Параметри</gui>."
+"Щоб внести зміни до параметрів гри, натисніть кнопку меню у верхньому "
+"правому куті вікна і виберіть <gui style=\"menuitem\">Параметри</gui>."
 
 #. (itstool) path: page/p
 #: C/preferences.page:29
@@ -457,8 +453,8 @@ msgid ""
 "The three tabs available are <gui>Game</gui>, <gui>Controls</gui> and "
 "<gui>Theme</gui>."
 msgstr ""
-"Параметри поділено на три вкладки — <gui>Гра</gui>, <gui>Керування</gui> та <"
-"gui>Тема</gui>."
+"Параметри поділено на три вкладки — <gui>Гра</gui>, <gui>Керування</gui> та "
+"<gui>Тема</gui>."
 
 #. (itstool) path: section/title
 #: C/preferences.page:32
@@ -478,8 +474,8 @@ msgid ""
 "<gui>Number of pre-filled rows</gui> indicates how many rows with blocks "
 "there will be when the game starts."
 msgstr ""
-"Параметр <gui>Кількість наперед заповнених рядів</gui> вказує кількість рядів"
-" із блоками на початку гри."
+"Параметр <gui>Кількість наперед заповнених рядів</gui> вказує кількість "
+"рядів із блоками на початку гри."
 
 #. (itstool) path: item/p
 #: C/preferences.page:36
@@ -487,8 +483,8 @@ msgid ""
 "<gui>Density of blocks in a pre-filled row</gui> indicates how many blocks "
 "there will be in a pre-filled row when the game starts."
 msgstr ""
-"<gui>Щільність цегли наперед заповнених рядів</gui> вказує на те, скільки"
-" блоків буде у попередньо заповненому рядку на початку гри."
+"<gui>Щільність цегли наперед заповнених рядів</gui> вказує на те, скільки "
+"блоків буде у попередньо заповненому рядку на початку гри."
 
 #. (itstool) path: item/p
 #: C/preferences.page:37
@@ -500,8 +496,8 @@ msgstr ""
 #: C/preferences.page:39
 msgid "These options can vary from 0 to 15, 0 to 10, and 1 to 20 respectively."
 msgstr ""
-"Значення цих параметрів може змінюватися у межах від 0 до 15, від 0 до 10 і"
-" від 1 до 20, відповідно."
+"Значення цих параметрів може змінюватися у межах від 0 до 15, від 0 до 10 і "
+"від 1 до 20, відповідно."
 
 #. (itstool) path: section/p
 #: C/preferences.page:41
@@ -544,8 +540,8 @@ msgid ""
 "By double-clicking on the given controls, thus selecting the new one, you "
 "can change the control keys."
 msgstr ""
-"Подвійним клацанням на заданих елементах керування, а отже, позначенням"
-" елементів керування, ви можете змінити клавіші для керування."
+"Подвійним клацанням на заданих елементах керування, а отже, позначенням "
+"елементів керування, ви можете змінити клавіші для керування."
 
 #. (itstool) path: section/title
 #: C/preferences.page:57
@@ -605,10 +601,10 @@ msgid ""
 "have a better score, try to adapt the screen, the keyboard, and the level "
 "(the speed) that fits you the most!"
 msgstr ""
-"Якщо ви починаєте з рівня 1, єдиним способом переходу до наступного рівня є"
-" заповнення рядів, тобто отримання ігрових очок. Щоб отримати більше очок,"
-" спробуйте налаштувати показ, клавіатурні скорочення та рівень (швидкість)"
-" гри так, щоб вам було найзручніше грати!"
+"Якщо ви починаєте з рівня 1, єдиним способом переходу до наступного рівня є "
+"заповнення рядів, тобто отримання ігрових очок. Щоб отримати більше очок, "
+"спробуйте налаштувати показ, клавіатурні скорочення та рівень (швидкість) "
+"гри так, щоб вам було найзручніше грати!"
 
 #. (itstool) path: section/p
 #: C/score.page:29
@@ -618,10 +614,10 @@ msgid ""
 "of drop. You can change your settings in the <link xref=\"preferences"
 "\">Preferences</link>."
 msgstr ""
-"Ви можете внести багато змін до засобів керування за допомогою клавіатури,"
-" параметрів контурів блоків, кількості і щільності рядів блоків на початку"
-" гри та швидкості падіння блоків. Змінити параметри можна за допомогою вікна"
-" <link xref=\"preferences\">параметрів програми</link>."
+"Ви можете внести багато змін до засобів керування за допомогою клавіатури, "
+"параметрів контурів блоків, кількості і щільності рядів блоків на початку "
+"гри та швидкості падіння блоків. Змінити параметри можна за допомогою вікна "
+"<link xref=\"preferences\">параметрів програми</link>."
 
 #. (itstool) path: section/title
 #: C/score.page:33
@@ -635,9 +631,9 @@ msgid ""
 "style=\"menuitem\">Scores</gui> to find the records from the highest to the "
 "lowest score."
 msgstr ""
-"Натисніть кнопку меню у верхньому правому куті вікна і виберіть <gui"
-" style=\"menuitem\">Результати</gui>, щоб ознайомитися із записами від"
-" найкращого до найгіршого."
+"Натисніть кнопку меню у верхньому правому куті вікна і виберіть <gui style="
+"\"menuitem\">Результати</gui>, щоб ознайомитися із записами від найкращого "
+"до найгіршого."
 
 #. (itstool) path: info/desc
 #: C/translate.page:18
@@ -655,8 +651,8 @@ msgid ""
 "The <app>GNOME games</app> user interface and documentation is being "
 "translated by a world-wide volunteer community."
 msgstr ""
-"Перекладом інтерфейсу та документації до <app>Ігор GNOME</app> "
-"переймається спільнота добровольців з усього світу."
+"Перекладом інтерфейсу та документації до <app>Ігор GNOME</app> переймається "
+"спільнота добровольців з усього світу."
 
 #. (itstool) path: page/p
 #: C/translate.page:27
@@ -664,8 +660,8 @@ msgid ""
 "There are <link href=\"https://l10n.gnome.org/module/quadrapassel/\">many "
 "languages</link> for which translations are still needed."
 msgstr ""
-"Маємо ще <link href=\"https://l10n.gnome.org/module/quadrapassel/\">багато"
-" мов</link>, переклад якими далекий від досконалості."
+"Маємо ще <link href=\"https://l10n.gnome.org/module/quadrapassel/\">багато "
+"мов</link>, переклад якими далекий від досконалості."
 
 #. (itstool) path: page/p
 #: C/translate.page:31
