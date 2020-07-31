@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-09-25 12:33+0000\n"
+"POT-Creation-Date: 2020-06-26 09:11+0000\n"
 "PO-Revision-Date: 2019-10-11 07:07+0200\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
@@ -38,7 +38,8 @@ msgid "The theme used for rendering the blocks"
 msgstr "El tema a utilitzar per dibuixar els blocs"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:11
-msgid "The name of the theme used for rendering the blocks and the background."
+msgid ""
+"The name of the theme used for rendering the blocks and the background."
 msgstr ""
 "El nom del tema emprat per dibuixar els blocs i el fons de la pantalla."
 
@@ -59,11 +60,11 @@ msgid "Whether to preview the next block."
 msgstr "Si s'ha de previsualitzar la següent peça."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
+msgid "Whether to show where the moving block will land"
 msgstr "Si s'ha de mostrar on aterrarà la peça que es mou"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
+msgid "Whether to show where the moving block will land."
 msgstr "Si s'ha de mostrar on aterrarà la peça que es mou."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
@@ -182,8 +183,8 @@ msgstr "«true» (cert) si la finestra està maximitzada"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
-#: src/quadrapassel.vala:886
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
+#: src/quadrapassel.vala:904
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -197,13 +198,14 @@ msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
 "together. When you form a complete horizontal row of blocks, the row will "
-"disappear and you score points. The game is over when the blocks get stacked "
-"too high. As your score gets higher, you level up and the blocks fall faster."
+"disappear and you score points. The game is over when the blocks get stacked"
+" too high. As your score gets higher, you level up and the blocks fall "
+"faster."
 msgstr ""
 "El Quadrapassel és un derivat d'un joc rus clàssic de caiguda de blocs. "
 "Reposicioneu i gireu els blocs tal com van caient i proveu de fer-los "
-"encaixar. Quan es forma una fila horitzontal de blocs, aquesta desapareixerà "
-"i aconseguireu punts. El joc s'acaba quan no hi ha espai per ubicar més "
+"encaixar. Quan es forma una fila horitzontal de blocs, aquesta desapareixerà"
+" i aconseguireu punts. El joc s'acaba quan no hi ha espai per ubicar més "
 "blocs. A mesura que aconseguiu punts, augmenta el nivell i els blocs cauen "
 "més ràpidament."
 
@@ -215,15 +217,16 @@ msgid ""
 "select blocks that will be hard for you to place."
 msgstr ""
 "Si esteu cercant un repte, el Quadrapassel us permet incrementar la "
-"velocitat inicial dels blocs o començar el joc amb blocs parcials en algunes "
-"de les files. O també, en lloc de fer caure blocs de forma aleatòria, el "
+"velocitat inicial dels blocs o començar el joc amb blocs parcials en algunes"
+" de les files. O també, en lloc de fer caure blocs de forma aleatòria, el "
 "sistema pot seleccionar blocs que seran més complicats d'encaixar."
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:33
 msgid "The GNOME Project"
 msgstr "El projecte GNOME"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or
+#. localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;"
@@ -256,7 +259,7 @@ msgstr "A_juda"
 msgid "_About Quadrapassel"
 msgstr "_Quant a Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
 msgstr "Comença una partida nova"
 
@@ -344,19 +347,24 @@ msgstr "Tango ombrejat"
 msgid "Clean"
 msgstr "Neteja"
 
-#: src/quadrapassel.vala:760
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr "No es pot canviar la clau, ja que aquesta clau ja existeix"
+
+#: src/quadrapassel.vala:778
 msgid "Unpause the game"
 msgstr "Continua de nou la partida"
 
-#: src/quadrapassel.vala:765
+#: src/quadrapassel.vala:783
 msgid "Pause the game"
 msgstr "Fes una pausa a la partida"
 
-#: src/quadrapassel.vala:843
+#: src/quadrapassel.vala:861
 msgid "A classic game of fitting falling blocks together"
 msgstr "Un joc clàssic en el qual s'encaixen blocs que cauen junts"
 
-#: src/quadrapassel.vala:848
+#: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr ""
 "Jordi Vila <gnome@softcatala.net>\n"
