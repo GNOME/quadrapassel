@@ -1,3 +1,15 @@
+quadrapassel 3.36.05
+====================
+Updates to translations and to the CI
+
+* Jordan Petridis: ci: remove deprecated jobs
+* Jordan Petridis: ci: push to the nightly repo
+* Anders Jonsson: Update Swedish translation
+* Kukuh Syafaat: Update Indonesian translation
+* Marek Černocký: Updated Czech translation
+
+
+
 quadrapassel 3.36.04
 ====================
 
