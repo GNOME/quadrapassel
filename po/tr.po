@@ -11,16 +11,17 @@
 # Hakan Bekdas <hakanbekdas@yahoo.com>, 2006.
 # Baris Cicek <baris@teamforce.name.tr>, 2004, 2005, 2008, 2009.
 # Furkan Ahmet Kara <furkanahmetkara.fk@gmail.com>, 2017.
-# Emin Tufan Çetin <etcetin@gmail.com>, 2017.
 # Muhammet Kara <muhammetk@gmail.com>, 2011, 2014, 2015, 2018.
+# Sabri Ünal <libreajans@gmail.com>, 2020.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2017, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-02-18 07:27+0000\n"
-"PO-Revision-Date: 2020-02-18 13:16+0300\n"
-"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"POT-Creation-Date: 2020-06-26 09:11+0000\n"
+"PO-Revision-Date: 2020-08-19 12:50+0300\n"
+"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -62,11 +63,11 @@ msgid "Whether to preview the next block."
 msgstr "Sonraki bloğun gösterilip gösterilmeyeceği."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
+msgid "Whether to show where the moving block will land"
 msgstr "Bloğun nereye yerleşeceğinin gösterilip gösterilmeyeceği"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
+msgid "Whether to show where the moving block will land."
 msgstr "Bloğun nereye yerleşeceğinin gösterilip gösterilmeyeceği."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
