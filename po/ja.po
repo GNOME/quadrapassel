@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games gnome-2-32\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"POT-Creation-Date: 2020-06-26 09:11+0000\n"
 "PO-Revision-Date: 2020-02-29 20:30+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
@@ -58,11 +58,15 @@ msgid "Whether to preview the next block."
 msgstr "次のブロックのプレビューを表示するかどうかの設定です。"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
+#, fuzzy
+#| msgid "Whether to show where the moving piece will land"
+msgid "Whether to show where the moving block will land"
 msgstr "ブロックを落とす場所を表示する"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
+#, fuzzy
+#| msgid "Whether to show where the moving piece will land."
+msgid "Whether to show where the moving block will land."
 msgstr "ブロックを落とす場所を表示するかどうかの設定です。"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
