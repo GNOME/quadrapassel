@@ -22,23 +22,23 @@
 # Flamarion Jorge <jorge.flamarion@gmail.com>, 2011.
 # Djavan Fagundes <djavan@comum.org>, 2012.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2013.
-# Enrico Nicoletto <liverig@gmail.com>, 2014.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2014-2020.
+# Enrico Nicoletto <liverig@gmail.com>, 2014, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-02-17 14:05+0000\n"
-"PO-Revision-Date: 2020-02-20 07:54-0300\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"POT-Creation-Date: 2020-06-26 09:11+0000\n"
+"PO-Revision-Date: 2020-08-26 09:06-0300\n"
+"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Gtranslator 3.32.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.4.1\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -74,12 +74,12 @@ msgid "Whether to preview the next block."
 msgstr "Visualiza o bloco seguinte."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
-msgstr "Mostrar onde o bloco vai cair"
+msgid "Whether to show where the moving block will land"
+msgstr "Mostrar onde o bloco móvel irá cair"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
-msgstr "Mostrar onde o bloco vai cair."
+msgid "Whether to show where the moving block will land."
+msgstr "Mostrar onde o bloco móvel irá cair."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to give blocks random colors"
