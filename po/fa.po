@@ -5,15 +5,15 @@
 # Elnaz Sarbar <elnaz@farsiweb.info>, 2005, 2006.
 # Meelad Zakaria <meelad@farsiweb.info>, 2005.
 # Farzaneh Sarafraz <farzaneh@farsiweb.info>, 2006.
-# Danial Behzadi <dani.behzi@gmail.com>, 2012, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
+# Danial Behzadi <dani.behzi@gmail.com>, 2012, 2014-2020.
 # Arash Mousavi <mousavi.arash@gmail.com>, 2012, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-02-17 14:05+0000\n"
-"PO-Revision-Date: 2020-02-18 07:25+0000\n"
+"POT-Creation-Date: 2020-06-26 09:11+0000\n"
+"PO-Revision-Date: 2020-08-31 06:42+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -22,23 +22,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
-msgstr "تصویر مورد استفاده برای ترسیم بلوک‌ها"
+msgstr "تصویر مورد استفاده برای ترسیم قطعه‌ها"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:6
 msgid "Image to use for drawing blocks."
-msgstr "تصویر مورد استفاده برای ترسیم بلوک‌ها."
+msgstr "تصویر مورد استفاده برای ترسیم قطعه‌ها."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:10
 msgid "The theme used for rendering the blocks"
-msgstr "زمینهٔ مورد استفاده برای ترسیم بلوک‌ها"
+msgstr "زمینهٔ مورد استفاده برای ترسیم قطعه‌ها"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:11
 msgid "The name of the theme used for rendering the blocks and the background."
-msgstr "نام زمینهٔ مورد استفاده برای پرداخت بلوک‌ها و پس‌زمینه."
+msgstr "نام زمینهٔ مورد استفاده برای پرداخت قطعه‌ها و پس‌زمینه."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "Level to start with"
@@ -50,27 +50,27 @@ msgstr "مرحلهٔ شروع."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to preview the next block"
-msgstr "این که بلوک بعدی پیش‌نمایش شود یا نه"
+msgstr "این که قطعه بعدی پیش‌نمایش شود یا نه"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:22
 msgid "Whether to preview the next block."
-msgstr "این که بلوک بعدی پیش‌نمایش شود یا نه."
+msgstr "این که قطعه بعدی پیش‌نمایش شود یا نه."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
+msgid "Whether to show where the moving block will land"
 msgstr "این که جایی که قطعهٔ متحرک گذاشته می‌شود نمایش داده شود یا نه"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
+msgid "Whether to show where the moving block will land."
 msgstr "این که جایی که قطعهٔ متحرک گذاشته می‌شود نمایش داده شود یا نه."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to give blocks random colors"
-msgstr "این که بلوک‌ها رنگ‌های تصادفی داشته باشند یا نه"
+msgstr "این که قطعه‌ها رنگ‌های تصادفی داشته باشند یا نه"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:32
 msgid "Whether to give blocks random colors."
-msgstr "این که بلوک‌ها رنگ‌های تصادفی داشته باشند. یا نه."
+msgstr "این که قطعه‌ها رنگ‌های تصادفی داشته باشند. یا نه."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:36
 msgid "Whether to rotate counter clock wise"
@@ -87,7 +87,7 @@ msgstr "تعداد سطرهایی که باید پر شوند"
 #: data/org.gnome.Quadrapassel.gschema.xml:43
 msgid ""
 "The number of rows that are filled with random blocks at the start of the game."
-msgstr "تعداد سطرهای پر شده با بلوک‌های تصادفی در ابتدای بازی."
+msgstr "تعداد سطرهای پر شده با قطعه‌های تصادفی در ابتدای بازی."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:48
 msgid "The density of filled rows"
@@ -98,7 +98,7 @@ msgid ""
 "The density of blocks in rows filled at the start of the game. The value is "
 "between 0 (for no blocks) and 10 (for a completely filled row)."
 msgstr ""
-"فشردگی بلوک‌ها در سطرهای پرشده در ابتدای بازی. مقدار بین ۰ (برای بدون بلوک) و "
+"فشردگی قطعه‌ها در سطرهای پرشده در ابتدای بازی. مقدار بین ۰ (برای بدون قطعه) و "
 "۱۰ (برای سطرهای کاملاً پر شده) است."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:53
@@ -111,11 +111,11 @@ msgstr "این که صداها پخش شوند یا نه."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:58
 msgid "Whether to pick blocks that are hard to place"
-msgstr "این که بلوک‌هایی که جاگذاریشان سخت است برداشته شوند یا نه"
+msgstr "این که قطعه‌هایی که جاگذاریشان سخت است برداشته شوند یا نه"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:59
 msgid "Whether to pick blocks that are hard to place."
-msgstr "این که بلوک‌هایی که جاگذاریشان سخت است برداشته شوند یا نه."
+msgstr "این که قطعه‌هایی که جاگذاریشان سخت است برداشته شوند یا نه."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:371
 msgid "Move left"
@@ -186,7 +186,7 @@ msgstr "کوادراپاسل"
 #: data/org.gnome.Quadrapassel.appdata.xml.in:8
 #: data/org.gnome.Quadrapassel.desktop.in:4
 msgid "Fit falling blocks together"
-msgstr "جور کردن بلوک‌های در حال سقوط با یکدیگر"
+msgstr "جور کردن قطعه‌های در حال سقوط با یکدیگر"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:10
 msgid ""
@@ -196,11 +196,11 @@ msgid ""
 "disappear and you score points. The game is over when the blocks get stacked "
 "too high. As your score gets higher, you level up and the blocks fall faster."
 msgstr ""
-"کوادراپاسل یک زیرمجموعه از بازی کلاسیک روسیِ افتادن بلوکه‌ها است. بلوکه‌ها را "
+"کوادراپاسل یک زیرمجموعه از بازی کلاسیک روسیِ افتادن قطعهه‌ها است. قطعهه‌ها را "
 "همانطور که در حال پایین آمدن هستند جابه‌جا کنید و بچرخانید، و سعی کنید آنها را "
 "با هم جور کنید. زمانی که یک ردیف کامل افقی را پر کنید، ردیف پر می‌شود و شما "
-"امتیاز می‌گیرید. بازی زمانی تمام می‌شود که بلوکه‌ها تا ارتفاع زیادی روی هم قرار "
-"بگیرند. هر چقدر که امتیاز شما بالاتر برود، بازی به سطح بالاتر می‌رود و بلوکه با "
+"امتیاز می‌گیرید. بازی زمانی تمام می‌شود که قطعهه‌ها تا ارتفاع زیادی روی هم قرار "
+"بگیرند. هر چقدر که امتیاز شما بالاتر برود، بازی به سطح بالاتر می‌رود و قطعهه با "
 "سرعت بیشتری پایین می‌آیند."
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:17
@@ -210,8 +210,8 @@ msgid ""
 "the rows. Or, instead of allowing the blocks to fall randomly, it can select "
 "blocks that will be hard for you to place."
 msgstr ""
-"اگر به دنبال چالش هستید، کوادراپاسل می‌گذارد سرعت نخستین بلوک‌ها را افزایش داده، "
-"بازی را با ردیف‌های نیمه‌پر شروع کنید یا به‌جای افتادن تصادفی بلوک‌ها، آن‌هایی را "
+"اگر به دنبال چالش هستید، کوادراپاسل می‌گذارد سرعت نخستین قطعه‌ها را افزایش داده، "
+"بازی را با ردیف‌های نیمه‌پر شروع کنید یا به‌جای افتادن تصادفی قطعه‌ها، آن‌هایی را "
 "برگزیند که جاگذاریش برایتان سخت باشد."
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:33
@@ -287,7 +287,7 @@ msgstr "_تعداد سطرهای از پیش پر شده:"
 #. pre-filled rows density
 #: src/quadrapassel.vala:313
 msgid "_Density of blocks in a pre-filled row:"
-msgstr "_فشردگی بلوک‌های سطرهای از پیش پر شده:"
+msgstr "_فشردگی قطعه‌های سطرهای از پیش پر شده:"
 
 #. starting level
 #: src/quadrapassel.vala:327
@@ -300,20 +300,20 @@ msgstr "_به کار انداختن صدا‌ها"
 
 #: src/quadrapassel.vala:345
 msgid "Choose difficult _blocks"
-msgstr "انتخاب _بلوک‌های پیش‌گزیده"
+msgstr "انتخاب _قطعه‌های پیش‌گزیده"
 
 #: src/quadrapassel.vala:350
 msgid "_Preview next block"
-msgstr "_پیش‌نمایش بلوک بعدی"
+msgstr "_پیش‌نمایش قطعه بعدی"
 
 #. rotate counter clock wise
 #: src/quadrapassel.vala:356
 msgid "_Rotate blocks counterclockwise"
-msgstr "_چرخاندن پادساعت‌گرد بلوک‌ها"
+msgstr "_چرخاندن پادساعت‌گرد قطعه‌ها"
 
 #: src/quadrapassel.vala:361
 msgid "Show _where the block will land"
-msgstr "نمایش حایی که بلوک‌ها _قرار می‌گیرند"
+msgstr "نمایش حایی که قطعه‌ها _قرار می‌گیرند"
 
 #: src/quadrapassel.vala:405
 msgid "Controls"
@@ -354,7 +354,7 @@ msgstr "متوقف کردن بازی"
 
 #: src/quadrapassel.vala:861
 msgid "A classic game of fitting falling blocks together"
-msgstr "یک بازی کلاسیک جور کردن بلوک‌های افتادنی با هم"
+msgstr "یک بازی کلاسیک جور کردن قطعه‌های افتادنی با هم"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
