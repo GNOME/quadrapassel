@@ -1,8 +1,8 @@
-# Danish translation of gnome-games.
+# Danish translation of quadrapassel.
 # Copyright (C) 1998-2015, 2018-2019 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-games package.
+# This file is distributed under the same license as the quadrapassel package.
 # Anders Wegge Jakobsen <wegge@wegge.dk>, 1998.
-# Kenneth Christiansen <kenneth@ripen.dk>, 1998-2001
+# Kenneth Christiansen <kenneth@ripen.dk>, 1998-2001.
 # Keld Simonsen <keld@dkuug.dk>, 2000-2002.
 # Ole Laursen <olau@hardworking.dk>, 2001, 02, 03, 04.
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2004, 05.
@@ -10,11 +10,12 @@
 # Ask Hjorth Larsen <asklarsen@gmail.com>, 2007-2015, 2018, 2019.
 #
 # Husk at tilføje dig i credit-listen (besked id "translator-credits")
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-games\n"
+"Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"POT-Creation-Date: 2020-06-01 15:16+0000\n"
 "PO-Revision-Date: 2020-02-26 17:31+0100\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -23,7 +24,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.6\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -39,7 +39,7 @@ msgstr "Billede som bruges til at tegne blokke"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:11
 msgid "The name of the theme used for rendering the blocks and the background."
-msgstr "Navnet på temaet der benyttes til at tegne klodser og baggrund."
+msgstr "Navnet på temaet der benyttes til at tegne blokkene og baggrunden."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "Level to start with"
@@ -59,11 +59,11 @@ msgstr "Om næste blok skal vises på forhånd."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
 msgid "Whether to show where the moving piece will land"
-msgstr "Om der skal vises, hvor den bevægelige klods vil lande"
+msgstr "Om der skal vises, hvor den bevægelige blok vil lande"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
 msgid "Whether to show where the moving piece will land."
-msgstr "Om der skal vises, hvor den bevægelige klods vil lande."
+msgstr "Om der skal vises, hvor den bevægelige blok vil lande."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to give blocks random colors"
@@ -203,8 +203,8 @@ msgstr ""
 "Quadrapassel er afledt af det klassiske russiske spil med faldende blokke. "
 "Omrokér og rotér blokke mens de falder, og forsøg at få dem til at passe "
 "sammen. Når du danner en vandret fuldkommen række af blokke, vil rækken "
-"forsvinde og du får points. Spillet slutter når blokkene stables for højt. "
-"Efterhånden som du får points, går du op i niveau, og blokkene vil falde "
+"forsvinde og du scorer points. Spillet slutter når blokkene stables for højt. "
+"Efterhånden som du scorer points, går du videre til næste niveau, og blokkene vil falde "
 "hurtigere."
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:17
@@ -297,7 +297,7 @@ msgstr "_Tæthed af blokke i en foropfyldt række:"
 #. starting level
 #: src/quadrapassel.vala:327
 msgid "_Starting level:"
-msgstr "_Startbane:"
+msgstr "_Startniveau:"
 
 #: src/quadrapassel.vala:340
 msgid "_Enable sounds"
@@ -318,11 +318,11 @@ msgstr "_Rotér blokke mod uret"
 
 #: src/quadrapassel.vala:361
 msgid "Show _where the block will land"
-msgstr "Vis _hvor klodsen vil lande"
+msgstr "Vis _hvor blokken vil lande"
 
 #: src/quadrapassel.vala:405
 msgid "Controls"
-msgstr "Styreenheder"
+msgstr "Styring"
 
 #: src/quadrapassel.vala:411
 msgid "Theme"
@@ -390,15 +390,3 @@ msgstr "_OK"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Dato"
-
-#~ msgid "org.gnome.Quadrapassel"
-#~ msgstr "org.gnome.Quadrapassel"
-
-#~ msgid "quadrapassel"
-#~ msgstr "quadrapassel"
-
-#~ msgid "_About"
-#~ msgstr "_Om"
-
-#~ msgid "_Quit"
-#~ msgstr "_Afslut"
