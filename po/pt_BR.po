@@ -29,8 +29,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-08-26 09:06-0300\n"
+"POT-Creation-Date: 2020-09-09 20:38+0000\n"
+"PO-Revision-Date: 2020-09-09 18:52-0300\n"
 "Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -375,8 +375,12 @@ msgid "Pause the game"
 msgstr "Pausa o jogo"
 
 #: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Um jogo clássico de juntar blocos que caem"
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Um jogo clássico onde você gira blocos para fazer linhas completas, mas não "
+"empilhe seus blocos muito alto ou é o fim do jogo!"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
@@ -412,15 +416,3 @@ msgstr "_OK"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Data"
-
-#~ msgid "org.gnome.Quadrapassel"
-#~ msgstr "org.gnome.Quadrapassel"
-
-#~ msgid "quadrapassel"
-#~ msgstr "quadrapassel"
-
-#~ msgid "_About"
-#~ msgstr "_Sobre"
-
-#~ msgid "_Quit"
-#~ msgstr "Sai_r"
