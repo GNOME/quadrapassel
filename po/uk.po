@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-06-26 17:21+0300\n"
+"POT-Creation-Date: 2020-09-09 20:38+0000\n"
+"PO-Revision-Date: 2020-09-10 09:27+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
 "=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 20.07.70\n"
+"X-Generator: Lokalize 20.11.70\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -56,12 +56,10 @@ msgid "Whether to preview the next block."
 msgstr "Чи показувати наступний блок."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-#| msgid "Whether to show where the moving piece will land"
 msgid "Whether to show where the moving block will land"
 msgstr "Чи показувати, де приземлиться рухомий блок"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-#| msgid "Whether to show where the moving piece will land."
 msgid "Whether to show where the moving block will land."
 msgstr "Чи показувати, де приземлиться рухомий блок."
 
@@ -356,8 +354,12 @@ msgid "Pause the game"
 msgstr "Призупинити гру"
 
 #: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Класична гра укладання блоків, які падають."
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Класична гра, у якій ви обертаєте блоки для тощо, щоб заповнити горизонтальні"
+" ряди. Але не складайте блоки у надто високі купи, бо гру буде програно!"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
@@ -382,6 +384,9 @@ msgstr "_Гаразд"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Дата"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Класична гра укладання блоків, які падають."
 
 #~ msgid "The input repeat delay"
 #~ msgstr "Затримка повторення введення"
