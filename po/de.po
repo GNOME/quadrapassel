@@ -24,8 +24,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-09-01 20:33+0200\n"
+"POT-Creation-Date: 2020-09-09 20:38+0000\n"
+"PO-Revision-Date: 2020-09-10 18:57+0200\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
@@ -33,7 +33,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.08.0\n"
+"X-Generator: Lokalize 20.08.1\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -70,12 +70,10 @@ msgid "Whether to preview the next block."
 msgstr "Legt fest, ob eine Vorschau auf den nächsten Block angezeigt wird."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-#| msgid "Whether to show where the moving piece will land"
 msgid "Whether to show where the moving block will land"
 msgstr "Legt fest, ob angezeigt werden soll, wo der Block landen wird"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-#| msgid "Whether to show where the moving piece will land."
 msgid "Whether to show where the moving block will land."
 msgstr "Anzeigen, wo der bewegte Block landen wird."
 
@@ -374,8 +372,13 @@ msgid "Pause the game"
 msgstr "Anhalten"
 
 #: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Ein klassisches Spiel über das Zusammensetzen von fallenden Blöcken"
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Ein klassisches Spiel, in dem Sie Blöcke drehen, um Zeilen zu"
+" vervollständigen, aber die Blöcke nicht zu hoch stapeln dürfen, sonst ist"
+" das Spiel vorbei!"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
@@ -411,6 +414,9 @@ msgstr "_OK"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Datum"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Ein klassisches Spiel über das Zusammensetzen von fallenden Blöcken"
 
 #~ msgid "org.gnome.Quadrapassel"
 #~ msgstr "org.gnome.Quadrapassel"
