@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-08-19 09:58+0000\n"
-"PO-Revision-Date: 2020-08-19 21:15+0200\n"
+"POT-Creation-Date: 2020-09-10 17:01+0000\n"
+"PO-Revision-Date: 2020-09-10 21:00+0200\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -357,8 +357,12 @@ msgid "Pause the game"
 msgstr "Premor igranja"
 
 #: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Igra prilagajanja padajočih likov."
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Klasična igra obračanja ploščic in zapolnjevanja vrstic, ki pa se konča, ko "
+"se ti naložijo do vrha!"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
@@ -383,6 +387,9 @@ msgstr "_V redu"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Datum"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Igra prilagajanja padajočih likov."
 
 #~ msgid "The input repeat delay"
 #~ msgstr "Zamik ponovitve vnosa"
