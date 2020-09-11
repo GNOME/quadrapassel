@@ -22,23 +22,23 @@
 # Flamarion Jorge <jorge.flamarion@gmail.com>, 2011.
 # Djavan Fagundes <djavan@comum.org>, 2012.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2013.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2014-2020.
 # Enrico Nicoletto <liverig@gmail.com>, 2014, 2020.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2014-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-09-09 20:38+0000\n"
-"PO-Revision-Date: 2020-09-09 18:52-0300\n"
-"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
+"POT-Creation-Date: 2020-09-10 22:54+0000\n"
+"PO-Revision-Date: 2020-09-11 17:37-0300\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.4.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 3.36.0\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -375,12 +375,9 @@ msgid "Pause the game"
 msgstr "Pausa o jogo"
 
 #: src/quadrapassel.vala:861
-msgid ""
-"A classic game where you rotate blocks to make complete rows, but don't pile "
-"your blocks too high or it's game over!"
-msgstr ""
-"Um jogo clássico onde você gira blocos para fazer linhas completas, mas não "
-"empilhe seus blocos muito alto ou é o fim do jogo!"
+#| msgid "Fit falling blocks together"
+msgid "A classic game of fitting falling blocks together"
+msgstr "Um jogo clássico de encaixar blocos caindo"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
@@ -416,3 +413,10 @@ msgstr "_OK"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Data"
+
+#~ msgid ""
+#~ "A classic game where you rotate blocks to make complete rows, but don't "
+#~ "pile your blocks too high or it's game over!"
+#~ msgstr ""
+#~ "Um jogo clássico onde você gira blocos para fazer linhas completas, mas "
+#~ "não empilhe seus blocos muito alto ou é o fim do jogo!"
