@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-09-10 22:54+0000\n"
-"PO-Revision-Date: 2020-09-12 13:14+0300\n"
+"POT-Creation-Date: 2020-09-14 22:46+0000\n"
+"PO-Revision-Date: 2020-09-15 21:10+0300\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -57,12 +57,10 @@ msgid "Whether to preview the next block."
 msgstr "Vai rādīt nākamo bloku priekšskatījumu."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-#| msgid "Whether to show where the moving piece will land"
 msgid "Whether to show where the moving block will land"
 msgstr "Vai rādīt, kur piezemēsies bloks"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-#| msgid "Whether to show where the moving piece will land."
 msgid "Whether to show where the moving block will land."
 msgstr "Vai rādīt, kur piezemēsies bloks."
 
@@ -356,8 +354,12 @@ msgid "Pause the game"
 msgstr "Pauzēt spēli"
 
 #: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Klasiska spēle, kurā kopā jāsaliek krītoši bloki"
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Klasiska spēle, kur jums jāgriež bloki, lai aizpildītu rindas. Bet nekrājiet"
+" blokus pārāk augstu, citādi spēlei būs beigas!"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
@@ -381,6 +383,9 @@ msgstr "_Labi"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Datums"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Klasiska spēle, kurā kopā jāsaliek krītoši bloki"
 
 #~| msgid "Quadrapassel"
 #~ msgid "org.gnome.Quadrapassel"
