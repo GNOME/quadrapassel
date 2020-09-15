@@ -7,15 +7,16 @@
 # Pedro Albuquerque <palbuquerque73@openmailbox.com>, 2015.
 # Sérgio Cardeira <cardeira.sergio@gmail.com>, 2016.
 # Juliano Camargo <julianosc@pm.me>, 2020.
+# Juliano de Souza Camargo <julianosc@pm.me>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.12\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-09-09 01:04+0100\n"
-"Last-Translator: Juliano Camargo <julianosc@pm.me>\n"
-"Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
+"POT-Creation-Date: 2020-09-14 22:46+0000\n"
+"PO-Revision-Date: 2020-09-15 20:22+0100\n"
+"Last-Translator: Juliano de Souza Camargo <julianosc@pm.me>\n"
+"Language-Team: Portuguese <>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -56,12 +57,10 @@ msgid "Whether to preview the next block."
 msgstr "Se antever ou não o bloco seguinte."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-#| msgid "Whether to show where the moving piece will land"
 msgid "Whether to show where the moving block will land"
 msgstr "Se deve mostrar para onde irá o bloco a ser movimentado"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-#| msgid "Whether to show where the moving piece will land."
 msgid "Whether to show where the moving block will land."
 msgstr "Se deve mostrar para onde irá o bloco a ser movimentado."
 
@@ -209,11 +208,6 @@ msgstr ""
 "blocos caem mais rapidamente."
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:17
-#| msgid ""
-#| "If you're looking for a challenge, Quadrapassel allows you to increase "
-#| "the initial speed of the blocks, or begin the game with partial blocks on "
-#| "some of the rows. Or, instead of allowing the blocks to fall randomly, it "
-#| "can select blocks that will be hard for you to place."
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -259,7 +253,6 @@ msgid "_Help"
 msgstr "A_juda"
 
 #: src/quadrapassel.vala:123
-#| msgid "Quadrapassel"
 msgid "_About Quadrapassel"
 msgstr "_Sobre Quadrapassel"
 
@@ -365,18 +358,19 @@ msgid "Pause the game"
 msgstr "Pausar o jogo"
 
 #: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
 msgstr ""
-"Um jogo clássico para encaixar blocos em queda\n"
-"\n"
-"Quadrapassel faz parte dos Jogos GNOME."
+"Um jogo clássico onde roda blocos para completar linhas, mas não os empilhe "
+"tão alto pois será o fim do jogo!"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr ""
 "Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Pedro Albuquerque <palbuquerque73@gmail.com>\n"
-"Juliano S. Camargo <julianosc@pm.me>"
+"Juliano de Souza Camargo <julianosc@pm.me>"
 
 #: src/score-dialog.vala:26
 msgid "_Close"
@@ -393,6 +387,12 @@ msgstr "_Aceitar"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Data"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr ""
+#~ "Um jogo clássico para encaixar blocos em queda\n"
+#~ "\n"
+#~ "Quadrapassel faz parte dos Jogos GNOME."
 
 #~ msgid "_About"
 #~ msgstr "_Sobre"
