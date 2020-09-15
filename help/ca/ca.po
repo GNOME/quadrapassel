@@ -262,7 +262,7 @@ msgstr "Reconeixement-CompartirIgual 3.0 No adaptada (CC BY-SA 3.0)"
 #. (itstool) path: license/p
 #: C/legal.xml:3
 msgid "This work is licensed under a <_:link-1/>."
-msgstr "Aquesta obra està llicenciada sota una <_:link-1>."
+msgstr "Aquesta obra està llicenciada sota una <_:link-1/>."
 
 #. (itstool) path: info/desc
 #: C/license.page:8
@@ -601,7 +601,7 @@ msgid ""
 "have a better score, try to adapt the screen, the keyboard, and the level "
 "(the speed) that fits you the most!"
 msgstr ""
-"Si comenceu pel nivell 1, l'única manera d'avançar al nivell següent es "
+"Si comenceu pel nivell 1, l'única manera d'avançar al nivell següent és "
 "completant més línies, és a dir, fent més punts. Per a assolir una puntuació "
 "millor, intenteu adaptar la pantalla, el teclat i el nivell (la velocitat) "
 "que us vagi millor!"
