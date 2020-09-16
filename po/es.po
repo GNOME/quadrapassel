@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-06-29 15:47+0200\n"
+"POT-Creation-Date: 2020-09-14 22:46+0000\n"
+"PO-Revision-Date: 2020-09-16 14:10+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -56,12 +56,10 @@ msgid "Whether to preview the next block."
 msgstr "indica si se debe ver próximo bloque."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-#| msgid "Whether to show where the moving piece will land"
 msgid "Whether to show where the moving block will land"
 msgstr "Indica si se debe mostrar dónde aterrizará el bloque"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-#| msgid "Whether to show where the moving piece will land."
 msgid "Whether to show where the moving block will land."
 msgstr "Indica si se debe mostrar dónde aterrizará el bloque."
 
@@ -358,8 +356,12 @@ msgid "Pause the game"
 msgstr "Pausar el juego"
 
 #: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "El clásico juego de encajar bloques que caen"
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Un juego clásico donde debe rotar bloques para completar filas, pero no los "
+"apile demasiado alto o perderá la partida."
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
@@ -385,6 +387,9 @@ msgstr "_Aceptar"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Fecha"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "El clásico juego de encajar bloques que caen"
 
 #~| msgid "org.gnome.quadrapassel"
 #~ msgid "org.gnome.Quadrapassel"
