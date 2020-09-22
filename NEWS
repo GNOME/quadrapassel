@@ -1,4 +1,33 @@
-quadrapassel 3.36.2
+quadrapassel 3.36.05
+====================
+Updates to translations and to the CI
+
+* Jordan Petridis: ci: remove deprecated jobs
+* Jordan Petridis: ci: push to the nightly repo
+* Anders Jonsson: Update Swedish translation
+* Kukuh Syafaat: Update Indonesian translation
+* Marek Černocký: Updated Czech translation
+
+
+
+quadrapassel 3.36.04
+====================
+
+* Tranlations updates: Ukrainian, Chinese, Slovenian, Ukrainian, Romanian, Spanish, Kazakh, Lithuanian, Friulian
+* Update to the icon
+* Let the input delay for fast movement be configurable
+* Change "piece" to "block"
+* snap: Set common-id and use appstream metadata
+* snap: Updated to use latest snapcraft extension
+* Fix to CI
+
+Contributors: Yuri Chornoivan, Yi-Jyun Pan, Yuri Chornoivan, Matej Urbančič, Florentina Mușat, Daniel Mustieles, Baurzhan Muftakhidinov, Aurimas Černius, Fabio Tomat
+
+Luke Bratch, Jakub Steiner, scootergrisen, Arnaud Bonatti, Ken VanDine, John Ward
+
+Special thanks to Luke Bratch for his contribution.
+
+quadrapassel 3.36.02
 ====================
 * Translation updates for Swedish, Czech, Ukrainian, German, French, Romanian and Friulian.
 

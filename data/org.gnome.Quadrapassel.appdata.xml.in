@@ -32,7 +32,9 @@
   <url type="help">https://help.gnome.org/users/quadrapassel/stable/</url>
   <developer_name>The GNOME Project</developer_name>
   <releases>
-    <release date="2020-04-25" version="3.36.2"/>
+    <release date="2020-08-12" version="3.36.05"/>
+    <release date="2020-07-29" version="3.36.04"/>
+    <release date="2020-04-25" version="3.36.02"/>
     <release date="2020-03-08" version="3.36.00"/>
     <release date="2020-03-01" version="3.35.92"/>
     <release date="2020-01-04" version="3.35.90"/>

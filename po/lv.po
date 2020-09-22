@@ -5,13 +5,13 @@
 # Peteris Krisjanis <peteris.krisjanis@os.lv>, 2002.
 # Raivis Dejus <orvils@gmail.com>, 2006, 2007.
 # Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2010, 2011.
-# Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2018, 2019.
+# Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2018, 2019, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-02-01 18:55+0000\n"
-"PO-Revision-Date: 2019-03-03 13:00+0200\n"
+"POT-Creation-Date: 2020-09-14 22:46+0000\n"
+"PO-Revision-Date: 2020-09-15 21:10+0300\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 :"
 " 2);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 19.12.3\n"
 "X-Poedit-Language: Latvian\n"
 "X-Poedit-Country: LATVIA\n"
 
@@ -57,11 +57,11 @@ msgid "Whether to preview the next block."
 msgstr "Vai rādīt nākamo bloku priekšskatījumu."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
+msgid "Whether to show where the moving block will land"
 msgstr "Vai rādīt, kur piezemēsies bloks"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
+msgid "Whether to show where the moving block will land."
 msgstr "Vai rādīt, kur piezemēsies bloks."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
@@ -180,8 +180,8 @@ msgstr "patiess, ja logs ir maksimizēts"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
-#: src/quadrapassel.vala:886
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
+#: src/quadrapassel.vala:904
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -215,22 +215,20 @@ msgstr ""
 "vai arī sākt spēli ar jau nokritušiem blokiem. Vai arī nejaušos krītošos "
 "blokus aizvietot ar neērtiem blokiem."
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Quadrapassel.desktop.in:6
-#| msgid "Quadrapassel"
-msgid "org.gnome.Quadrapassel"
-msgstr "org.gnome.Quadrapassel"
+#: data/org.gnome.Quadrapassel.appdata.xml.in:33
+msgid "The GNOME Project"
+msgstr "GNOME projekts"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;"
 
-#: src/game-view.vala:346
+#: src/game-view.vala:335
 msgid "Paused"
 msgstr "Apturēts"
 
-#: src/game-view.vala:348
+#: src/game-view.vala:337
 msgid "Game Over"
 msgstr "Spēle beigusies"
 
@@ -251,11 +249,10 @@ msgid "_Help"
 msgstr "_Palīdzība"
 
 #: src/quadrapassel.vala:123
-#| msgid "Quadrapassel"
 msgid "_About Quadrapassel"
 msgstr "P_ar Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
 msgstr "Sākt jaunu spēli"
 
@@ -343,19 +340,28 @@ msgstr "Tango ēnots"
 msgid "Clean"
 msgstr "Tīrs"
 
-#: src/quadrapassel.vala:760
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr "Nevarēja mainīt atslēgu, jo šāda atslēga jau eksistē"
+
+#: src/quadrapassel.vala:778
 msgid "Unpause the game"
 msgstr "Turpināt spēli"
 
-#: src/quadrapassel.vala:765
+#: src/quadrapassel.vala:783
 msgid "Pause the game"
 msgstr "Pauzēt spēli"
 
-#: src/quadrapassel.vala:843
-msgid "A classic game of fitting falling blocks together"
-msgstr "Klasiska spēle, kurā kopā jāsaliek krītoši bloki"
+#: src/quadrapassel.vala:861
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Klasiska spēle, kur jums jāgriež bloki, lai aizpildītu rindas. Bet nekrājiet"
+" blokus pārāk augstu, citādi spēlei būs beigas!"
 
-#: src/quadrapassel.vala:848
+#: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr ""
 "Raivis Dejus <orvils@gmail.com>\n"
@@ -377,6 +383,13 @@ msgstr "_Labi"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Datums"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Klasiska spēle, kurā kopā jāsaliek krītoši bloki"
+
+#~| msgid "Quadrapassel"
+#~ msgid "org.gnome.Quadrapassel"
+#~ msgstr "org.gnome.Quadrapassel"
 
 #~| msgid "Quadrapassel"
 #~ msgid "quadrapassel"

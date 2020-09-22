@@ -19,8 +19,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-02-17 14:05+0000\n"
-"PO-Revision-Date: 2020-03-05 14:30+0100\n"
+"POT-Creation-Date: 2020-06-26 09:11+0000\n"
+"PO-Revision-Date: 2020-08-22 20:30+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -63,12 +63,12 @@ msgid "Whether to preview the next block."
 msgstr "Podgląd następnego klocka."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
-msgstr "Określa, czy wyświetlać miejsce lądowania klocka"
+msgid "Whether to show where the moving block will land"
+msgstr "Czy wyświetlać miejsce lądowania klocka"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
-msgstr "Określa, czy wyświetlać miejsca lądowania klocka."
+msgid "Whether to show where the moving block will land."
+msgstr "Czy wyświetlać miejsca lądowania klocka."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to give blocks random colors"
@@ -110,19 +110,19 @@ msgstr ""
 
 #: data/org.gnome.Quadrapassel.gschema.xml:53
 msgid "Whether to play sounds"
-msgstr "Określa, czy odtwarzać dźwięki"
+msgstr "Czy odtwarzać dźwięki"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:54
 msgid "Whether to play sounds."
-msgstr "Określa, czy odtwarzać dźwięki."
+msgstr "Czy odtwarzać dźwięki."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:58
 msgid "Whether to pick blocks that are hard to place"
-msgstr "Określa, czy wybierać klocki trudne do umieszczenia"
+msgstr "Czy wybierać klocki trudne do umieszczenia"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:59
 msgid "Whether to pick blocks that are hard to place."
-msgstr "Określa, czy wybierać klocki trudne do umieszczenia."
+msgstr "Czy wybierać klocki trudne do umieszczenia."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:371
 msgid "Move left"

@@ -11,23 +11,24 @@
 # Hakan Bekdas <hakanbekdas@yahoo.com>, 2006.
 # Baris Cicek <baris@teamforce.name.tr>, 2004, 2005, 2008, 2009.
 # Furkan Ahmet Kara <furkanahmetkara.fk@gmail.com>, 2017.
-# Emin Tufan Çetin <etcetin@gmail.com>, 2017.
 # Muhammet Kara <muhammetk@gmail.com>, 2011, 2014, 2015, 2018.
+# Sabri Ünal <libreajans@gmail.com>, 2020.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2017, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-02-18 07:27+0000\n"
-"PO-Revision-Date: 2020-02-18 13:16+0300\n"
-"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"POT-Creation-Date: 2020-09-14 22:46+0000\n"
+"PO-Revision-Date: 2020-09-16 13:01+0300\n"
+"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -39,19 +40,19 @@ msgstr "Blokları oluştururken kullanılacak resim."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:10
 msgid "The theme used for rendering the blocks"
-msgstr "Blokları oluştururken kullanılacak resim"
+msgstr "Blokları oluştururken kullanılacak tema"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:11
 msgid "The name of the theme used for rendering the blocks and the background."
-msgstr "Blokları ve arkaplanı taramak için kullanılan temanın adı."
+msgstr "Blokları ve arka planı taramak için kullanılan temanın adı."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "Level to start with"
-msgstr "Başlangıç seviyesi"
+msgstr "Başlangıç düzeyi"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:17
 msgid "Level to start with."
-msgstr "Başlangıç seviyesi."
+msgstr "Başlangıç düzeyi."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to preview the next block"
@@ -62,11 +63,11 @@ msgid "Whether to preview the next block."
 msgstr "Sonraki bloğun gösterilip gösterilmeyeceği."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
+msgid "Whether to show where the moving block will land"
 msgstr "Bloğun nereye yerleşeceğinin gösterilip gösterilmeyeceği"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
+msgid "Whether to show where the moving block will land."
 msgstr "Bloğun nereye yerleşeceğinin gösterilip gösterilmeyeceği."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
@@ -157,11 +158,11 @@ msgstr "Bırakmak için basılacak tuş."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:383
 msgid "Rotate"
-msgstr "Çevir"
+msgstr "Döndür"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:84
 msgid "Key press to rotate."
-msgstr "Çevirmek için gereken tuş."
+msgstr "Döndrümek için gereken tuş."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
 msgid "Pause"
@@ -181,7 +182,7 @@ msgstr "Pencerenin piksel olarak yüksekliği"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:101
 msgid "true if the window is maximized"
-msgstr "eğer pencere en büyük hale getirilmişse işaretle"
+msgstr "eğer pencere en büyük hale getirilmişse imle"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
@@ -203,10 +204,10 @@ msgid ""
 "disappear and you score points. The game is over when the blocks get stacked "
 "too high. As your score gets higher, you level up and the blocks fall faster."
 msgstr ""
-"Quadrapassel, klasik Rus düşen blok oyununun bir türevidir. Düşen blokları "
+"Quadrapassel, klasik Rus düşen blok oyununun türevidir. Düşen blokları "
 "yeniden konumlandırın, döndürün ve onları birbirine uydurmaya çalışın. Tam "
-"bir yatay blok satırı oluşturduğunuzda, satır kaybolur ve puan kazanırsınız. "
-"Bloklar çok yığınlandığında oyun biter. Puanınız yükseldiğinde, seviyenizi "
+"yatay blok satırı oluşturduğunuzda, satır kaybolur ve puan kazanırsınız. "
+"Bloklar çok yığıldığında oyun biter. Puanınız yükseldiğinde, düzeyinizi "
 "yükseltirsiniz ve bloklar daha hızlı düşer."
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:17
@@ -216,7 +217,7 @@ msgid ""
 "of the rows. Or, instead of allowing the blocks to fall randomly, it can "
 "select blocks that will be hard for you to place."
 msgstr ""
-"Eğer bir meydan okuma arıyorsanız, Quadrapassel blokların başlangıç hızını "
+"Eğer meydan okuma arıyorsanız, Quadrapassel blokların başlangıç hızını "
 "arttırmanıza veya bazı satırlarda kısmi bloklarla oyuna başlamanıza izin "
 "verir. Ya da, blokların rastgele düşmesine izin vermek yerine, "
 "yerleştirmenizin zor olacağı blokları seçebilir."
@@ -232,7 +233,7 @@ msgstr "tetris;"
 
 #: src/game-view.vala:335
 msgid "Paused"
-msgstr "Dondur"
+msgstr "Duraklatıldı"
 
 #: src/game-view.vala:337
 msgid "Game Over"
@@ -260,7 +261,7 @@ msgstr "Quadrapassel _Hakkında"
 
 #: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
-msgstr "Yeni bir oyun başlat"
+msgstr "Yeni oyun başlat"
 
 #: src/quadrapassel.vala:156
 msgid "Next"
@@ -276,7 +277,7 @@ msgstr "Satırlar"
 
 #: src/quadrapassel.vala:191
 msgid "Level"
-msgstr "Seviye"
+msgstr "Düzey"
 
 #: src/quadrapassel.vala:276
 msgid "Preferences"
@@ -299,7 +300,7 @@ msgstr "Önceden doldurulmuş _blok yoğunluğu:"
 #. starting level
 #: src/quadrapassel.vala:327
 msgid "_Starting level:"
-msgstr "_Başlangıç seviyesi:"
+msgstr "_Başlangıç düzeyi:"
 
 #: src/quadrapassel.vala:340
 msgid "_Enable sounds"
@@ -353,21 +354,26 @@ msgstr "Tuş değiştirilemedi, kısayol tuşu zaten var"
 
 #: src/quadrapassel.vala:778
 msgid "Unpause the game"
-msgstr "Oyunu devam ettir"
+msgstr "Oyunu sürdür"
 
 #: src/quadrapassel.vala:783
 msgid "Pause the game"
 msgstr "Oyunu duraklat"
 
 #: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Klasik bir düşen blokları bir araya getirme oyunu"
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Satırları doldurmak için blokları döndürdüğünüz klasik oyun, bloklarınızı "
+"çok yükseğe yığmayın yoksa oyun biter!"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr ""
 "Barış Çiçek <baris@teamforce.name.tr> \n"
-"Muhammet Kara <muhammetk@gmail.com>"
+"Muhammet Kara <muhammetk@gmail.com>\n"
+"Emin Tufan Çetin <etcetin@gmail.com>"
 
 #: src/score-dialog.vala:26
 msgid "_Close"
@@ -384,6 +390,9 @@ msgstr "_Tamam"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Tarih"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Klasik bir düşen blokları bir araya getirme oyunu"
 
 #~| msgid "org.gnome.quadrapassel"
 #~ msgid "org.gnome.Quadrapassel"

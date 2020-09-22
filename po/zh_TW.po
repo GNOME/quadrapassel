@@ -11,16 +11,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games 3.3.91\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2019-09-25 12:33+0000\n"
-"PO-Revision-Date: 2019-10-08 18:56+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
+"POT-Creation-Date: 2020-03-31 19:29+0000\n"
+"PO-Revision-Date: 2020-06-01 01:25+0800\n"
+"Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 19.08.1\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -52,7 +52,7 @@ msgstr "是否預覽下一個方塊"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:22
 msgid "Whether to preview the next block."
-msgstr "是否預覽下一個方塊"
+msgstr "是否預覽下一個方塊。"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
 msgid "Whether to show where the moving piece will land"
@@ -68,7 +68,7 @@ msgstr "是否將各方塊隨機分配顏色"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:32
 msgid "Whether to give blocks random colors."
-msgstr "是否將各方塊隨機分配顏色"
+msgstr "是否將各方塊隨機分配顏色。"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:36
 msgid "Whether to rotate counter clock wise"
@@ -76,7 +76,7 @@ msgstr "是否逆時針方向旋轉方塊"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:37
 msgid "Whether to rotate counter clock wise."
-msgstr "是否逆時針方向旋轉方塊"
+msgstr "是否逆時針方向旋轉方塊。"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:42
 msgid "The number of rows to fill"
@@ -86,7 +86,7 @@ msgstr "預先填充的列數"
 msgid ""
 "The number of rows that are filled with random blocks at the start of the "
 "game."
-msgstr "遊戲開始時，預先填充指定的列數"
+msgstr "遊戲開始時，預先填充指定的列數。"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:48
 msgid "The density of filled rows"
@@ -178,8 +178,8 @@ msgstr "如果視窗為最大化則設定為‘TRUE’"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
-#: src/quadrapassel.vala:886
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
+#: src/quadrapassel.vala:904
 msgid "Quadrapassel"
 msgstr "俄羅斯方塊"
 
@@ -249,7 +249,7 @@ msgstr "求助(_H)"
 msgid "_About Quadrapassel"
 msgstr "關於俄羅斯方塊(_A)"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
 msgstr "開始另一局"
 
@@ -337,19 +337,24 @@ msgstr "Tango 陰影"
 msgid "Clean"
 msgstr "清除"
 
-#: src/quadrapassel.vala:760
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr "無法變更按鍵，此按鍵已經存在"
+
+#: src/quadrapassel.vala:778
 msgid "Unpause the game"
 msgstr "取消暫停遊戲"
 
-#: src/quadrapassel.vala:765
+#: src/quadrapassel.vala:783
 msgid "Pause the game"
 msgstr "暫停遊戲"
 
-#: src/quadrapassel.vala:843
+#: src/quadrapassel.vala:861
 msgid "A classic game of fitting falling blocks together"
-msgstr "傳統的俄羅斯方塊遊戲。"
+msgstr "傳統的俄羅斯方塊遊戲"
 
-#: src/quadrapassel.vala:848
+#: src/quadrapassel.vala:866
 msgid "translator-credits"
 msgstr ""
 "如對翻譯有任何意見，請送一封電子郵件給\n"

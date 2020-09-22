@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-02-17 14:05+0000\n"
-"PO-Revision-Date: 2020-02-19 19:49+0700\n"
+"POT-Creation-Date: 2020-09-14 22:46+0000\n"
+"PO-Revision-Date: 2020-09-15 08:27+0700\n"
 "Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural= n!=1;\n"
 "X-Rosetta-Export-Date: 2007-04-23 05:58:10+0000\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -55,12 +55,12 @@ msgid "Whether to preview the next block."
 msgstr "Apakah tampilkan pemintas blok selanjutnya."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
-msgstr "Apakah menampilkan dimana blok akan mendarat"
+msgid "Whether to show where the moving block will land"
+msgstr "Apakah menampilkan di mana blok bergerak akan mendarat"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
-msgstr "Apakah menampilkan dimana blok akan mendarat."
+msgid "Whether to show where the moving block will land."
+msgstr "Apakah menampilkan di mana blok bergerak akan mendarat."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to give blocks random colors"
@@ -354,8 +354,13 @@ msgid "Pause the game"
 msgstr "Istirahatkan permainan"
 
 #: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Permainan klasik untuk mengepaskan balok-balok jatuh"
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Sebuah permainan klasik di mana Anda memutar blok untuk membuat baris "
+"lengkap, tetapi jangan menumpuk blok Anda terlalu tinggi atau permainan "
+"berakhir!"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
@@ -382,6 +387,9 @@ msgstr "_OK"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Tanggal"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Permainan klasik untuk mengepaskan balok-balok jatuh"
 
 #~ msgid "org.gnome.Quadrapassel"
 #~ msgstr "org.gnome.Quadrapassel"

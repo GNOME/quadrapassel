@@ -1,18 +1,18 @@
 # Swedish messages for quadrapassel.
-# Copyright © 1999-2019 Free Software Foundation, Inc.
+# Copyright © 1999-2020 Free Software Foundation, Inc.
 # Andreas Persenius <ndap@swipnet.se>, 1999.
 # Andreas Hyden <a.hyden@cyberpoint.se>
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
 # Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015, 2017, 2018, 2019.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015, 2017, 2018, 2019, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-02-17 14:05+0000\n"
-"PO-Revision-Date: 2020-02-18 21:46+0100\n"
+"POT-Creation-Date: 2020-06-26 09:11+0000\n"
+"PO-Revision-Date: 2020-08-03 13:25+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -55,12 +55,12 @@ msgid "Whether to preview the next block."
 msgstr "Huruvida nästa kloss ska förhandsgranskas."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
-msgstr "Huruvida var den flyttade pjäsen kommer att landa ska visas"
+msgid "Whether to show where the moving block will land"
+msgstr "Huruvida var den flyttade klossen kommer att landa ska visas"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
-msgstr "Huruvida var den flyttade pjäsen kommer att landa ska visas."
+msgid "Whether to show where the moving block will land."
+msgstr "Huruvida var den flyttade klossen kommer att landa ska visas."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to give blocks random colors"

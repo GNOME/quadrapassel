@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-04 14:28+0000\n"
-"PO-Revision-Date: 2020-09-17 16:31+0800\n"
+"POT-Creation-Date: 2020-09-09 20:38+0000\n"
+"PO-Revision-Date: 2020-09-10 17:56-0400\n"
 "Last-Translator: Mingcong Bai <jeffbai@aosc.xyz>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -52,11 +52,11 @@ msgid "Whether to preview the next block."
 msgstr "是否预览下一个方块。"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
+msgid "Whether to show where the moving block will land"
 msgstr "是否显示方块将移动到何处"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
+msgid "Whether to show where the moving block will land."
 msgstr "是否显示方块将移动到何处。"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
@@ -212,7 +212,7 @@ msgstr "GNOME 项目"
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
-msgstr "tetris;俄罗斯;方块;"
+msgstr "tetris;俄罗斯方块;"
 
 #: src/game-view.vala:335
 msgid "Paused"
@@ -240,7 +240,7 @@ msgstr "帮助(_H)"
 
 #: src/quadrapassel.vala:123
 msgid "_About Quadrapassel"
-msgstr "关于俄罗斯方块(_A)"
+msgstr "关于俄罗斯方块(_A）"
 
 #: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
@@ -344,8 +344,11 @@ msgid "Pause the game"
 msgstr "暂停游戏"
 
 #: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "经典的组合下落方块（俄罗斯方块）游戏"
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"经典的旋转方块组合成完整行的游戏。但请注意，方块堆积得过高会导致游戏结束！"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
@@ -371,6 +374,9 @@ msgstr "确定(_O)"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "日期"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "经典的组合下落方块（俄罗斯方块）游戏"
 
 #~ msgid "quadrapassel"
 #~ msgstr "俄罗斯方块"

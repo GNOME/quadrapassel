@@ -1,5 +1,5 @@
 # gnome-games ja.po.
-# Copyright (C) 1998-2013, 2019-2020 Free Software Foundation, Inc.
+# Copyright (C) 1998-2010, 2012-2013, 2019-2020 Free Software Foundation, Inc.
 # Yukihiro Nakai <Nakai@technologist.com>, 1998.
 # Akira Higuchi <a-higuti@math.sci.hokudai.ac.jp>, 1999.
 # Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games gnome-2-32\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-02-17 14:05+0000\n"
-"PO-Revision-Date: 2020-02-29 20:30+0900\n"
+"POT-Creation-Date: 2020-06-26 09:11+0000\n"
+"PO-Revision-Date: 2020-08-23 00:16+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -58,11 +58,11 @@ msgid "Whether to preview the next block."
 msgstr "次のブロックのプレビューを表示するかどうかの設定です。"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
+msgid "Whether to show where the moving block will land"
 msgstr "ブロックを落とす場所を表示する"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
+msgid "Whether to show where the moving block will land."
 msgstr "ブロックを落とす場所を表示するかどうかの設定です。"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
@@ -247,7 +247,7 @@ msgstr "Quadrapassel について(_A)"
 
 #: src/quadrapassel.vala:151 src/quadrapassel.vala:797
 msgid "Start a new game"
-msgstr "新しいゲームを始める"
+msgstr "新しいゲームを開始する"
 
 #: src/quadrapassel.vala:156
 msgid "Next"

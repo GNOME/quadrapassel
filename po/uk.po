@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-02-17 14:05+0000\n"
-"PO-Revision-Date: 2020-03-16 22:02+0200\n"
+"POT-Creation-Date: 2020-09-09 20:38+0000\n"
+"PO-Revision-Date: 2020-09-10 09:27+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
 "=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 20.03.70\n"
+"X-Generator: Lokalize 20.11.70\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -56,12 +56,12 @@ msgid "Whether to preview the next block."
 msgstr "Чи показувати наступний блок."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
-msgstr "Чи показувати, де пересування проходитиме"
+msgid "Whether to show where the moving block will land"
+msgstr "Чи показувати, де приземлиться рухомий блок"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
-msgstr "Чи показувати, де пересування проходитиме."
+msgid "Whether to show where the moving block will land."
+msgstr "Чи показувати, де приземлиться рухомий блок."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to give blocks random colors"
@@ -204,11 +204,6 @@ msgstr ""
 "нараховується, рівень збільшується, а блоки падають швидше."
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:17
-#| msgid ""
-#| "If you're looking for a challenge, Quadrapassel allows you to increase "
-#| "the initial speed of the blocks, or begin the game with partial blocks on "
-#| "some of the rows. Or, instead of allowing the blocks to fall randomly, it "
-#| "can select blocks that will be hard for you to place."
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -253,7 +248,6 @@ msgid "_Help"
 msgstr "_Довідка"
 
 #: src/quadrapassel.vala:123
-#| msgid "Quadrapassel"
 msgid "_About Quadrapassel"
 msgstr "_Про «Квадрапасл»"
 
@@ -360,8 +354,12 @@ msgid "Pause the game"
 msgstr "Призупинити гру"
 
 #: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Класична гра укладання блоків, які падають."
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Класична гра, у якій ви обертаєте блоки для тощо, щоб заповнити горизонтальні"
+" ряди. Але не складайте блоки у надто високі купи, бо гру буде програно!"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
@@ -386,6 +384,20 @@ msgstr "_Гаразд"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Дата"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Класична гра укладання блоків, які падають."
+
+#~ msgid "The input repeat delay"
+#~ msgstr "Затримка повторення введення"
+
+#~ msgid ""
+#~ "The input repeat delay in milliseconds. The value is between 0 and 1000."
+#~ msgstr ""
+#~ "Затримка повторення введення у мілісекундах. Значення від 0 до 1000."
+
+#~ msgid "_Input repeat delay:"
+#~ msgstr "За_тримка повторення введення:"
 
 #~ msgid "_About"
 #~ msgstr "_Про програму"

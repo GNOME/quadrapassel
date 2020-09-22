@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-04 14:28+0000\n"
-"PO-Revision-Date: 2020-07-14 08:29+0500\n"
+"POT-Creation-Date: 2020-06-26 09:11+0000\n"
+"PO-Revision-Date: 2020-07-08 08:34+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
@@ -51,11 +51,11 @@ msgid "Whether to preview the next block."
 msgstr "Келесі блокты алдын ала қарау керек пе."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
+msgid "Whether to show where the moving block will land"
 msgstr "Жылжытылатын блоктың қайда түсетінін көрсету керек пе"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
+msgid "Whether to show where the moving block will land."
 msgstr "Жылжытылатын блоктың қайда түсетінін көрсету керек пе."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
@@ -313,7 +313,7 @@ msgstr "Блоктың қа_йда түсетінін көрсету"
 
 #: src/quadrapassel.vala:405
 msgid "Controls"
-msgstr "Басқару пернелері"
+msgstr "Басқару элементтері"
 
 #: src/quadrapassel.vala:411
 msgid "Theme"

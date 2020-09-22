@@ -36,9 +36,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.el\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-02-17 14:05+0000\n"
-"PO-Revision-Date: 2020-02-28 23:18+0200\n"
-"Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
+"POT-Creation-Date: 2020-06-26 09:11+0000\n"
+"PO-Revision-Date: 2020-09-09 22:52+0300\n"
+"Last-Translator: Efstathios Iosifidis <eiosifidis@gnome.org>\n"
 "Language-Team: Ελληνικά <>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
@@ -83,12 +83,12 @@ msgid "Whether to preview the next block."
 msgstr "Αν θα γίνεται προεπισκόπηση του επόμενου τούβλου."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
-msgstr "Αν θα εμφανίζεται το που θα προσγειωθεί το κινούμενο κομμάτι"
+msgid "Whether to show where the moving block will land"
+msgstr "Αν θα εμφανίζεται το που θα προσγειωθεί το κινούμενο τουβλάκι"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
-msgstr "Αν θα εμφανίζεται το που θα προσγειωθεί το κινούμενο κομμάτι."
+msgid "Whether to show where the moving block will land."
+msgstr "Αν θα εμφανίζεται το που θα προσγειωθεί το κινούμενο τουβλάκι."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to give blocks random colors"
