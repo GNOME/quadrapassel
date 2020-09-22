@@ -1,3 +1,49 @@
+quadrapassel 3.38.0
+====================
+* Moving master to version 3.38 to be inline with GNOME's branching strategy
+* Updated game description to provide a better description
+* Fix for incorrect preview shape when difficult blocks is selected
+* Set application avatar in Gitlab.
+
+Contributors:
+Arnaud Bonatti: Set application avatar in Gitlab.
+Asier Sarasua Garmendia: Update Basque translation
+Ask Hjorth Larsen: add da to LINGUAS
+Ask Hjorth Larsen: Updated Danish translation
+Balázs Meskó: Update Hungarian translation
+Boyuan Yang: Update Chinese (China) translation
+Charles Monzat: Update French translation
+DaeHyun Sung: Update Korean translation
+Danial Behzadi: Update Persian translation
+Daniel Mustieles: Updated Spanish translation
+Dušan Kazik: Update Slovak translation
+Efstathios Iosifidis: Update Greek translation
+Emin Tufan Çetin: Update Turkish translation
+Enrico Nicoletto: Update Brazilian Portuguese translation
+Fran Dieguez: Update Galician translation
+Goran Vidović: Update Croatian translation
+Jiri Grönroos: Update Finnish translation
+John Ward: Fix for incorrect preview shape when difficult blocks is selected
+John Ward: Updated game description to provide a better description
+John Ward: Updated the About box
+Jordi Mas i Hernandez: Update Catalan translation
+Jordi Mas: Update Catalan translation
+Juliano Camargo: Update Portuguese translation
+Juliano de Souza Camargo: Update Portuguese translation
+Kukuh Syafaat: Update Indonesian translation
+Marek Černocký: Updated Czech translation
+Mario Blättermann: Update German translation
+Matej Urbančič: Updated Slovenian translation
+Milo Casagrande: Update Italian translation
+Nathan Follens: Update Dutch translation
+Piotr Drąg: Update Polish translation
+Rafael Fontenelle: Update Brazilian Portuguese translation
+Rūdolfs Mazurs: Update Latvian translation
+sicklylife: Update Japanese translation
+Yuri Chornoivan: Update Ukrainian translation
+Zander Brown: Update British English translation
+Марко Костић: Update Serbian translation
+
 quadrapassel 3.36.05
 ====================
 Updates to translations and to the CI
