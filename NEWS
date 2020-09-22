@@ -1,7 +1,18 @@
-quadrapassel 3.36.05
+quadrapassel 3.36.6
+===================
+Updates to translations
+* Updated game description to provide a better description
+* Fix for incorrect preview shape when difficult blocks is selected
+* Bringing the branching strategy inline with the GNOME standard
+
+Contributors:
+I will recognise contributors from the next version onwards. Thank you to the contributers.
+
+quadrapassel 3.36.5
 ====================
 Updates to translations and to the CI
 
+Contributors:
 * Jordan Petridis: ci: remove deprecated jobs
 * Jordan Petridis: ci: push to the nightly repo
 * Anders Jonsson: Update Swedish translation
@@ -10,7 +21,7 @@ Updates to translations and to the CI
 
 
 
-quadrapassel 3.36.04
+quadrapassel 3.36.4
 ====================
 
 * Tranlations updates: Ukrainian, Chinese, Slovenian, Ukrainian, Romanian, Spanish, Kazakh, Lithuanian, Friulian
@@ -27,7 +38,7 @@ Luke Bratch, Jakub Steiner, scootergrisen, Arnaud Bonatti, Ken VanDine, John War
 
 Special thanks to Luke Bratch for his contribution.
 
-quadrapassel 3.36.02
+quadrapassel 3.36.2
 ====================
 * Translation updates for Swedish, Czech, Ukrainian, German, French, Romanian and Friulian.
 
