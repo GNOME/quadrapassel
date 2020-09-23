@@ -14,16 +14,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-09-06 17:59+0200\n"
-"Last-Translator: Meskó Balázs <mesko.balazs@fsf.hu>\n"
+"POT-Creation-Date: 2020-09-22 11:01+0000\n"
+"PO-Revision-Date: 2020-09-23 18:26+0200\n"
+"Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Lokalize 19.12.3\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -359,8 +359,13 @@ msgid "Pause the game"
 msgstr "A játék szüneteltetése"
 
 #: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "A klasszikus, leeső téglákat egymáshoz illesztős játék"
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Egy klasszikus játék, ahol blokkokat kell forgatni a teljes sorok"
+" összeállításához, de ne rakjon egymásra túl sok blokkot, különben vége lesz"
+" a játéknak!"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
@@ -390,3 +395,6 @@ msgstr "_OK"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Dátum"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "A klasszikus, leeső téglákat egymáshoz illesztős játék"
