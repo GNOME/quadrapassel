@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games 0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-09-09 20:38+0000\n"
-"PO-Revision-Date: 2020-09-10 16:46+0200\n"
-"Last-Translator: gogo <trebelnik2@gmail.com>\n"
+"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"PO-Revision-Date: 2020-03-01 12:47+0100\n"
+"Last-Translator: gogo <linux.hr@protonmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Launchpad-Export-Date: 2008-05-28 02:59+0000\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -51,11 +51,11 @@ msgid "Whether to preview the next block."
 msgstr "Treba li prikazati u sljedeći blok."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving block will land"
+msgid "Whether to show where the moving piece will land"
 msgstr "Treba li prikazati gdje će se sljedeći blok spustiti"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving block will land."
+msgid "Whether to show where the moving piece will land."
 msgstr "Treba li prikazati gdje će se sljedeći blok spustiti."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
@@ -349,12 +349,8 @@ msgid "Pause the game"
 msgstr "Pauziraj igru"
 
 #: src/quadrapassel.vala:861
-msgid ""
-"A classic game where you rotate blocks to make complete rows, but don't pile "
-"your blocks too high or it's game over!"
-msgstr ""
-"Klasična igra gdje zakrećete blokove kako bi popunili red, ali nemojte "
-"gomilati blokove previsoko jer će igra biti gotova!"
+msgid "A classic game of fitting falling blocks together"
+msgstr "Klasična igra slaganja padajućih blokova zajedno"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
@@ -377,9 +373,6 @@ msgstr "_U redu"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Datum"
-
-#~ msgid "A classic game of fitting falling blocks together"
-#~ msgstr "Klasična igra slaganja padajućih blokova zajedno"
 
 #~ msgid "org.gnome.Quadrapassel"
 #~ msgstr "org.gnome.Quadrapassel"

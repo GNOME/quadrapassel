@@ -308,7 +308,7 @@ public class Game : Object
         this.pick_difficult_blocks = pick_difficult_blocks;
 
         blocks = new Block[columns, lines];
-        /* Start with some shape_landed-filled spaces */
+        /* Start with some pre-filled spaces */
         for (var y = 0; y < height; y++)
         {
             /* Pick at least one column to be empty */
@@ -363,7 +363,6 @@ public class Game : Object
     public void start ()
     {
         has_started = true;
-        make_next_shape();
         add_shape ();
         setup_drop_timer ();
         started ();
@@ -501,23 +500,18 @@ public class Game : Object
         return true;
     }
 
-    private void make_next_shape ()
+    private void add_shape ()
     {
-        if (pick_difficult_blocks)
-        {
-            next_shape = pick_difficult_shapes ();
+        if (pick_difficult_blocks) {
+            var difficult_shapes = pick_difficult_shapes ();
+            shape = difficult_shapes[0];
+            next_shape = difficult_shapes[1];
         }
         else
         {
+            shape = (owned) next_shape;
             next_shape = pick_random_shape ();
         }
-    }
-
-    private void add_shape ()
-    {
-        shape = (owned) next_shape;
-
-        make_next_shape();
 
         foreach (var b in shape.blocks)
         {
@@ -547,7 +541,7 @@ public class Game : Object
         return make_shape (Random.int_range (0, NCOLORS), Random.int_range (0, 4));
     }
 
-    private Shape pick_difficult_shapes ()
+    private Shape[] pick_difficult_shapes ()
     {
 	/* The algorithm comes from Federico Poloni's "bastet" game */
         var metrics = new int[NCOLORS];
@@ -628,22 +622,24 @@ public class Game : Object
             }
         }
 
-        var new_shape = new Shape();
         /* Actually choose a piece */
         var rnd = Random.int_range (0, 99);
         if (rnd < 75)
-            new_shape = make_shape (possible_types[0], Random.int_range (0, 4));
+            shape = make_shape (possible_types[0], Random.int_range (0, 4));
         else if (rnd < 92)
-            new_shape = make_shape (possible_types[1], Random.int_range (0, 4));
+            shape = make_shape (possible_types[1], Random.int_range (0, 4));
         else if (rnd < 98)
-            new_shape = make_shape (possible_types[2], Random.int_range (0, 4));
+            shape = make_shape (possible_types[2], Random.int_range (0, 4));
         else
-            new_shape = make_shape (possible_types[3], Random.int_range (0, 4));
+            shape = make_shape (possible_types[3], Random.int_range (0, 4));
 
-	    /* Look, this one is a great fit. It would be a shame if it wouldn't be given next */
-	    //next_shape = make_shape (possible_types[NCOLORS - 1], Random.int_range (0, 4));
+	/* Look, this one is a great fit. It would be a shame if it wouldn't be given next */
+	next_shape = make_shape (possible_types[NCOLORS - 1], Random.int_range (0, 4));
 
-	    return new_shape;
+	var shapes = new Shape[2];
+	shapes[0] = shape;
+	shapes[1] = next_shape;
+	return shapes;
     }
 
     private Shape make_shape (int type, int rotation)

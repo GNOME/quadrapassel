@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-09-14 22:46+0000\n"
-"PO-Revision-Date: 2020-09-15 07:13+0200\n"
+"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"PO-Revision-Date: 2020-02-23 11:24+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -67,11 +67,11 @@ msgid "Whether to preview the next block."
 msgstr "Zda zobrazovat náhled dalšího bloku."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving block will land"
+msgid "Whether to show where the moving piece will land"
 msgstr "Zda ukazovat, kam blok dopadne"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving block will land."
+msgid "Whether to show where the moving piece will land."
 msgstr "Zda ukazovat, kam padající blok dopadne."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
@@ -366,12 +366,8 @@ msgid "Pause the game"
 msgstr "Pozastavit hru"
 
 #: src/quadrapassel.vala:861
-msgid ""
-"A classic game where you rotate blocks to make complete rows, but don't pile "
-"your blocks too high or it's game over!"
-msgstr ""
-"Klasická hra, ve které otáčite padající bloky, abyste jimi zaplnili vrstvy, "
-"ale nesmí se vám jich nakupit moc špatně do výšky, jinak hra skončí."
+msgid "A classic game of fitting falling blocks together"
+msgstr "Klasická hra s umisťováním padajících kamenů do sebe"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"

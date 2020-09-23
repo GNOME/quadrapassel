@@ -43,8 +43,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-08-25 14:41+0200\n"
+"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"PO-Revision-Date: 2020-02-24 20:54+0100\n"
 "Last-Translator: Nathan Follens <nthn@unseen.is>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
@@ -53,7 +53,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2011-09-18 07:04+0000\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.3\n"
 
 # BUG
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -92,11 +92,11 @@ msgid "Whether to preview the next block."
 msgstr "Of het volgende blok moet worden getoond."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving block will land"
+msgid "Whether to show where the moving piece will land"
 msgstr "Of getoond wordt waar het blok terecht zal komen"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving block will land."
+msgid "Whether to show where the moving piece will land."
 msgstr "Of getoond wordt waar het blok terecht zal komen."
 
 # Of de blokken willekeurige kleuren krijgen/een willekeurige kleur krijgen

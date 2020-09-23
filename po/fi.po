@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-08-16 15:48+0300\n"
+"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"PO-Revision-Date: 2020-02-22 17:03+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Launchpad-Export-Date: 2010-09-13 15:09+0000\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.3\n"
 "X-POT-Import-Date: 2012-03-05 14:46:29+0000\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -60,11 +60,11 @@ msgid "Whether to preview the next block."
 msgstr "Tulisiko näyttää seuraavan palikan esikatselu."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving block will land"
+msgid "Whether to show where the moving piece will land"
 msgstr "Näytetäänkö mihin liikkuva palikka laskeutuu"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving block will land."
+msgid "Whether to show where the moving piece will land."
 msgstr "Näytetäänkö mihin liikkuva palikka laskeutuu."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
@@ -115,11 +115,11 @@ msgstr "Toistetaanko äänet?"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:58
 msgid "Whether to pick blocks that are hard to place"
-msgstr "Valitaanko vaikeasti sijoitettavat palikat"
+msgstr "Valitaanko vaikeasti sijoitettavat palat"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:59
 msgid "Whether to pick blocks that are hard to place."
-msgstr "Valitaanko vaikeasti sijoitettavat palikat."
+msgstr "Valitaanko vaikeasti sijoitettavat palat."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:371
 msgid "Move left"
@@ -201,10 +201,10 @@ msgid ""
 "disappear and you score points. The game is over when the blocks get stacked "
 "too high. As your score gets higher, you level up and the blocks fall faster."
 msgstr ""
-"Quadrapassel on klassisen venäläisen putoavien palikkojen pelin "
-"johdannainen. Määritä palikoiden pudotessa niiden suunta ja asema, ja yritä "
-"asettaa palikat kiinni toisiinsa. Kun muodostat vaakatasossa palikkarivin, "
-"rivi katoaa ja saat pisteitä. Peli päättyy, kun palikkapino muodostuu liian "
+"Quadrapassel on klassisen venäläisen putoavien palojen pelin johdannainen. "
+"Määritä palikoiden pudotessa niiden suunta ja asema, ja yritä asettaa "
+"palikat kiinni toisiinsa. Kun muodostat vaakatasossa palikkarivin, rivi "
+"katoaa ja saat pisteitä. Peli päättyy, kun palikkapino muodostuu liian "
 "korkeaksi. Mitä enemmän saat pisteitä, sitä nopeampaa palikat putoavat alas."
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:17

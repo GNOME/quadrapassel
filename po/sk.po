@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-09-04 14:49+0200\n"
+"POT-Creation-Date: 2019-09-25 12:33+0000\n"
+"PO-Revision-Date: 2020-02-02 16:08+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -57,12 +57,12 @@ msgstr "Určuje, či sa má zobrazovať nasledujúci blok."
 
 # summary
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving block will land"
-msgstr "Či zobraziť miesto dopadu bloku"
+msgid "Whether to show where the moving piece will land"
+msgstr "Určuje, či zobraziť miesto dopadu bloku"
 
 # description
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving block will land."
+msgid "Whether to show where the moving piece will land."
 msgstr "Určuje, či sa má zobraziť miesto dopadu padajúceho bloku."
 
 # summary
@@ -199,8 +199,8 @@ msgstr "true, ak je okno maximalizované"
 # PM: aj ine hry su prekladane (roboti, štyri v rade, červík...)
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:841
+#: src/quadrapassel.vala:886
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -270,10 +270,11 @@ msgstr "_Pomocník"
 # PK: neviem ci je tu vhodny preklad
 # PM: aj ine hry su prekladane (roboti, štyri v rade, červík...)
 #: src/quadrapassel.vala:123
+#| msgid "Quadrapassel"
 msgid "_About Quadrapassel"
 msgstr "_O aplikácii Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:779
 msgid "Start a new game"
 msgstr "Začať novú hru"
 
@@ -362,24 +363,19 @@ msgstr "Tango - tieňovaný"
 msgid "Clean"
 msgstr "Čistý"
 
-#. Throw up a dialog
-#: src/quadrapassel.vala:502
-msgid "Unable to change key, as this key already exists"
-msgstr "Nie je možné zmeniť klávesu, pretože klávesa už existuje"
-
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:760
 msgid "Unpause the game"
 msgstr "Zruší pozastavenie hry"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:765
 msgid "Pause the game"
 msgstr "Pozastaví hru"
 
-#: src/quadrapassel.vala:861
+#: src/quadrapassel.vala:843
 msgid "A classic game of fitting falling blocks together"
 msgstr "Klasická hra, v ktorej sa ukladajú padajúce bloky"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:848
 msgid "translator-credits"
 msgstr ""
 "Stanislav Višňovský (visnovsky@nenya.ms.mff.cuni.cz)\n"

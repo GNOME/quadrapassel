@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnometris.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-31 17:27+0000\n"
+"POT-Creation-Date: 2020-01-03 18:39+0000\n"
 "PO-Revision-Date: 2020-01-07 16:54+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
@@ -98,6 +98,12 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:36
+#| msgid ""
+#| "Once you have an account, log in, and click on <gui>New issue</gui>. "
+#| "Before reporting a bug, please read the <link href=\"https://bugzilla."
+#| "gnome.org/page.cgi?id=bug-writing.html\">bug writing guidelines</link>, "
+#| "and please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues"
+#| "\">browse</link> for the bug to see if it already exists."
 msgid ""
 "Once you have an account, log in, and click on <gui>New issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
@@ -157,6 +163,13 @@ msgstr "Contribuir al desarrollo"
 
 #. (itstool) path: page/p
 #: C/develop.page:27
+#| msgid ""
+#| "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
+#| "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
+#| "touch with the developers using <link href=\"https://cbe005.chat.mibbit."
+#| "com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our "
+#| "<link href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing "
+#| "list</link>."
 msgid ""
 "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
 "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
@@ -184,6 +197,11 @@ msgstr "Ayudar a escribir la documentación"
 
 #. (itstool) path: page/p
 #: C/documentation.page:25
+#| msgid ""
+#| "To contribute to the Documentation Project, feel free to get in touch "
+#| "with us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F"
+#| "%2Firc.gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail."
+#| "gnome.org/mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgid ""
 "To contribute to the Documentation Project, feel free to get in touch with "
 "us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
@@ -245,6 +263,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: C/index.page:25
+#| msgid "Game"
 msgid "Game Play"
 msgstr "Juego"
 
@@ -450,6 +469,9 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/preferences.page:29
+#| msgid ""
+#| "The three tabs available are <gui>Controls</gui>, <gui>Game</gui> and "
+#| "<gui>Theme</gui>."
 msgid ""
 "The three tabs available are <gui>Game</gui>, <gui>Controls</gui> and "
 "<gui>Theme</gui>."
@@ -496,6 +518,8 @@ msgstr "<gui>Nivel inicial</gui> controla la velocidad con la que empieza."
 
 #. (itstool) path: section/p
 #: C/preferences.page:39
+#| msgid ""
+#| "These options can vary from 0 to 19, 0 to 10, and 1 to 20 respectively."
 msgid "These options can vary from 0 to 15, 0 to 10, and 1 to 20 respectively."
 msgstr ""
 "Estas opciones pueden variar de 0 a 15, 0 a 10 y de 1 a 20, respectivamente."
@@ -581,6 +605,7 @@ msgstr "Limpio"
 
 #. (itstool) path: info/desc
 #: C/score.page:21
+#| msgid "High Scores"
 msgid "High Scores."
 msgstr "Puntuaciones más altas."
 
@@ -609,6 +634,12 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/score.page:29
+#| msgid ""
+#| "You can make many changes to the keyboard controls, the contour of the "
+#| "blocks, the number and density of lines with which you start, and the "
+#| "speed of drop. You can change your settings in in <link xref=\"preferences"
+#| "\">Preference</link>. After deciding what fits you the most, you will "
+#| "rock!"
 msgid ""
 "You can make many changes to the keyboard controls, the contour of the "
 "blocks, the number and density of lines with which you start, and the speed "
@@ -627,6 +658,10 @@ msgstr "Puntuaciones más altas"
 
 #. (itstool) path: section/p
 #: C/score.page:34
+#| msgid ""
+#| "Everyone wants to be on the top of the list, right? In <guiseq><gui>Game</"
+#| "gui><gui>Scores</gui></guiseq> you can find the records from the highest "
+#| "to the lowest score."
 msgid ""
 "Press the menu button in the top-right corner of the window and select <gui "
 "style=\"menuitem\">Scores</gui> to find the records from the highest to the "
@@ -657,6 +692,9 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/translate.page:27
+#| msgid ""
+#| "There are <link href=\"http://l10n.gnome.org/module/quadrapassel/\">many "
+#| "languages</link> for which translations are still needed."
 msgid ""
 "There are <link href=\"https://l10n.gnome.org/module/quadrapassel/\">many "
 "languages</link> for which translations are still needed."
@@ -666,6 +704,11 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/translate.page:31
+#| msgid ""
+#| "To start translating you will need to <link href=\"http://l10n.gnome.org"
+#| "\">create an account</link> and join the <link href=\"http://l10n.gnome."
+#| "org/teams/\">translation team</link> for your language. This will give "
+#| "you the ability to upload new translations."
 msgid ""
 "To start translating you will need to <link href=\"https://l10n.gnome.org"
 "\">create an account</link> and join the <link href=\"https://l10n.gnome.org/"
@@ -693,6 +736,10 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/translate.page:39
+#| msgid ""
+#| "Alternatively, you can contact the Internationalization Team using their "
+#| "<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+#| "list</link>."
 msgid ""
 "Alternatively, you can contact the Internationalization Team using their "
 "<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
@@ -707,7 +754,7 @@ msgstr ""
 #~ "invited to participate in any of the following ways."
 #~ msgstr ""
 #~ "<app>Quadrapassel</app> lo mantiene una comunidad de voluntarios. Si "
-#~ "quiere participar de alguna de las siguientes maneras, es bienvenido/a ."
+#~ "quiere participar de alguna de las siguientes maneras, es bienvenido."
 
 #~ msgid "<link xref=\"playgame\">Play the game</link>"
 #~ msgstr "<link xref=\"playgame\">Jugar</link>"

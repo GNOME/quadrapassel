@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-09-14 22:46+0000\n"
-"PO-Revision-Date: 2020-09-16 09:49+0200\n"
+"POT-Creation-Date: 2020-02-17 14:05+0000\n"
+"PO-Revision-Date: 2020-03-04 08:38+0100\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "Language: it\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -56,11 +56,11 @@ msgid "Whether to preview the next block."
 msgstr "Indica se mostrare il blocco successivo."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving block will land"
+msgid "Whether to show where the moving piece will land"
 msgstr "Indica se mostrare o meno dove atterrerà il blocco"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving block will land."
+msgid "Whether to show where the moving piece will land."
 msgstr "Indica se mostrare o meno dove atterrerà il blocco."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
@@ -356,13 +356,10 @@ msgstr "Riprendi partita"
 msgid "Pause the game"
 msgstr "Sospendi partita"
 
+# to fit together --> combaciare
 #: src/quadrapassel.vala:861
-msgid ""
-"A classic game where you rotate blocks to make complete rows, but don't pile "
-"your blocks too high or it's game over!"
-msgstr ""
-"Un classico gioco in cui devi ruotare dei blocchi per completare le righe, "
-"ma non accumularne troppi uno sopra l'altro o… game over!"
+msgid "A classic game of fitting falling blocks together"
+msgstr "Un classico gioco per far combaciare blocchi in caduta libera"
 
 #: src/quadrapassel.vala:866
 msgid "translator-credits"
