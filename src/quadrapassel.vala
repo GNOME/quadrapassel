@@ -858,7 +858,7 @@ public class Quadrapassel : Gtk.Application
         Gtk.show_about_dialog (window,
                                "program-name", _("Quadrapassel"),
                                "version", VERSION,
-                               "comments", _("A classic game where you rotate blocks to make complete rows, but don't pile your blocks too high or it's game over!"),
+                               "comments", _("A classic game of fitting falling blocks together"),
                                "copyright", "Copyright © 1999 J. Marcin Gorycki, 2000–2015 Others",
                                "license-type", Gtk.License.GPL_2_0,
                                "authors", authors,
