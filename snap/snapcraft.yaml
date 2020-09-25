@@ -85,10 +85,10 @@ parts:
     override-build: |
       sed -i.bak -e "s|'--vapidir'|'--vapidir', '$SNAPCRAFT_STAGE/usr/share/vala/vapi', '--vapidir'|g" src/meson.build
 
-      sed -i.bak -e 's|=org.gnome.Quadrapassel$|=${SNAP}/meta/gui/org.gnome.Quadrapassel.png|g' data/org.gnome.Quadrapassel.desktop.in
+      sed -i.bak -e 's|=org.gnome.Quadrapassel$|=${SNAP}/meta/gui/org.gnome.Quadrapassel.svg|g' data/org.gnome.Quadrapassel.desktop.in
       snapcraftctl build
       mkdir -p $SNAPCRAFT_PART_INSTALL/meta/gui/
-      cp ../src/data/icons/hicolor/48x48/org.gnome.Quadrapassel.png $SNAPCRAFT_PART_INSTALL/meta/gui/
+      cp ../src/data/icons/hicolor/scalable/org.gnome.Quadrapassel.svg $SNAPCRAFT_PART_INSTALL/meta/gui/
       cp ../install/snap/quadrapassel/current/usr/share/applications/org.gnome.Quadrapassel.desktop $SNAPCRAFT_PART_INSTALL/meta/gui/
     build-packages:
       - gettext
