@@ -88,6 +88,11 @@
       <summary>Pause</summary>
       <description>Key press to pause.</description>
     </key>
+    <key name="key-start" type="i">
+      <default>65293</default>
+      <summary>Enter</summary>
+      <description>Key to start the game</description>
+    </key>
     <key name="window-width" type="i">
       <default>585</default>
       <summary>Width of the window in pixels</summary>
