@@ -30,6 +30,7 @@
   <item><p>The <key>&#8592;</key> and <key>&#8594;</key> keys move the blocks across the screen.</p></item>
   <item><p>The <key>&#8593;</key> key rotates the block. The rotation (which is counterclockwise by default) can be changed in the <link xref="preferences">Preferences</link>.</p></item>
   <item><p>The <key>SPACEBAR</key> and <key>&#8595;</key> key increase the speed of the drop. The <key>SPACEBAR</key> causes a hard-drop (instant move to the bottom). The <key>&#8595;</key> key causes a soft-drop (temporary increase in speed while the key is held down).</p></item>
+  <item><p>The <key>Enter</key> will restart the game quickly once it is game over.</p></item>
 </list>
 </section>
 
