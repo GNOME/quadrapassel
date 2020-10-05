@@ -1,3 +1,11 @@
+quadrapassel 3.38.1
+====================
+* snap: Handle icon changes
+* Language tranlations for Hebrew, Czech, Polish and Italian
+
+Contributors: Ken VanDine, Piotr Drąg, Marek Černocký and Yosef Or Boczko
+
+
 quadrapassel 3.38.0
 ====================
 * Moving master to version 3.38 to be inline with GNOME's branching strategy
