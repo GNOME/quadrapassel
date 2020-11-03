@@ -65,7 +65,7 @@
       "sources": [
         {
           "type": "git",
-          "url": "https://gitlab.gnome.org/aplazas/libmanette.git"
+          "url": "https://gitlab.gnome.org/GNOME/libmanette.git"
         }
       ]
     },
