@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel doc\n"
-"POT-Creation-Date: 2020-01-03 18:39+0000\n"
-"PO-Revision-Date: 2020-03-08 20:35+0100\n"
+"POT-Creation-Date: 2020-09-30 11:15+0000\n"
+"PO-Revision-Date: 2020-11-29 02:18+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Project-Style: gnome\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -138,7 +138,7 @@ msgstr "<link xref=\"get-involved\"><_:media-1/>Engagera dig</link>"
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:51 C/develop.page:31 C/documentation.page:31
-#: C/playgame.page:47 C/preferences.page:71 C/score.page:38 C/translate.page:44
+#: C/playgame.page:48 C/preferences.page:71 C/score.page:38 C/translate.page:44
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
 msgstr "<link xref=\"index\"><_:media-1/>HOME</link>"
 
@@ -400,18 +400,25 @@ msgstr ""
 "<key>↓</key>-tangenten orsakar ett mjukt fall (tillfällig fartökning medan "
 "tangenten hålls intryckt)."
 
+#. (itstool) path: item/p
+#: C/playgame.page:33
+msgid ""
+"The <key>Enter</key> will restart the game quickly once it is game over."
+msgstr ""
+"<key>Retur</key> kommer snabbt att starta om spelet efter att det tagit slut."
+
 #. (itstool) path: section/title
-#: C/playgame.page:37
+#: C/playgame.page:38
 msgid "Rules"
 msgstr "Spelregler"
 
 #. (itstool) path: section/p
-#: C/playgame.page:39
+#: C/playgame.page:40
 msgid "There are a couple of rules that you should keep in mind:"
 msgstr "Det finns ett par regler som du bör ha i åtanke:"
 
 #. (itstool) path: item/p
-#: C/playgame.page:41
+#: C/playgame.page:42
 msgid ""
 "You can pause, end, start a new game, get help or quit the program at any "
 "time."
@@ -420,7 +427,7 @@ msgstr ""
 "programmet när som helst."
 
 #. (itstool) path: item/p
-#: C/playgame.page:42
+#: C/playgame.page:43
 msgid "You can pause the game as many times as you want."
 msgstr "Du kan pausa spelet så många gånger du vill."
 
