@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel gnome-3-36\n"
-"POT-Creation-Date: 2020-06-04 14:28+0000\n"
-"PO-Revision-Date: 2020-07-18 20:26+0300\n"
+"POT-Creation-Date: 2020-09-30 11:15+0000\n"
+"PO-Revision-Date: 2020-11-29 09:05+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 20.07.70\n"
+"X-Generator: Lokalize 20.11.70\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -141,7 +141,7 @@ msgstr "<link xref=\"get-involved\"><_:media-1/>Приєднатися до ко
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:51 C/develop.page:31 C/documentation.page:31
-#: C/playgame.page:47 C/preferences.page:71 C/score.page:38 C/translate.page:44
+#: C/playgame.page:48 C/preferences.page:71 C/score.page:38 C/translate.page:44
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
 msgstr "<link xref=\"index\"><_:media-1/>Домівка</link>"
 
@@ -404,18 +404,26 @@ msgstr ""
 "зробить падіння м'яким (тимчасово прискорить падіння на час утримання "
 "клавіші натиснутою)."
 
+#. (itstool) path: item/p
+#: C/playgame.page:33
+msgid ""
+"The <key>Enter</key> will restart the game quickly once it is game over."
+msgstr ""
+"Щоб одразу після завершення поточної гри розпочати нову, просто натисніть"
+" клавішу <key>Enter</key>."
+
 #. (itstool) path: section/title
-#: C/playgame.page:37
+#: C/playgame.page:38
 msgid "Rules"
 msgstr "Правила"
 
 #. (itstool) path: section/p
-#: C/playgame.page:39
+#: C/playgame.page:40
 msgid "There are a couple of rules that you should keep in mind:"
 msgstr "Існує декілька правил, які слід тримати у пам'яті:"
 
 #. (itstool) path: item/p
-#: C/playgame.page:41
+#: C/playgame.page:42
 msgid ""
 "You can pause, end, start a new game, get help or quit the program at any "
 "time."
@@ -424,7 +432,7 @@ msgstr ""
 "або вийти з програми у будь-який бажаний момент."
 
 #. (itstool) path: item/p
-#: C/playgame.page:42
+#: C/playgame.page:43
 msgid "You can pause the game as many times as you want."
 msgstr "Ви можете призупиняти гру довільну кількість разів."
 
