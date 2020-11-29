@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-09-14 22:46+0000\n"
-"PO-Revision-Date: 2020-09-15 07:13+0200\n"
+"POT-Creation-Date: 2020-11-28 21:49+0000\n"
+"PO-Revision-Date: 2020-11-29 02:04+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -114,15 +114,15 @@ msgstr ""
 
 #: data/org.gnome.Quadrapassel.gschema.xml:53
 msgid "Whether to play sounds"
-msgstr "Zda přehrávat zvuky"
+msgstr "Přehrávat zvuky"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:54
 msgid "Whether to play sounds."
-msgstr "Zda přehrávat zvuky."
+msgstr "Zda se mají přehrávat zvuky."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:58
 msgid "Whether to pick blocks that are hard to place"
-msgstr "Zda volit obtížné bloky"
+msgstr "Volit obtížné bloky"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:59
 msgid "Whether to pick blocks that are hard to place."
@@ -134,7 +134,7 @@ msgstr "Pohyb doleva"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "Key press to move left."
-msgstr "Klávesa pro přesun doleva."
+msgstr "Klávesa, kterou se posouvá doleva."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:374
 msgid "Move right"
@@ -142,56 +142,64 @@ msgstr "Pohyb doprava"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:69
 msgid "Key press to move right."
-msgstr "Klávesa pro přesun doprava."
+msgstr "Klávesa, kterou se posouvá doprava."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:377
 msgid "Move down"
-msgstr "Posunout dolů"
+msgstr "Posun dolů"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:74
 msgid "Key press to move down."
-msgstr "Klávesa pro přesun dolů."
+msgstr "Klávesa, kterou se posouvá dolů."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:380
 msgid "Drop"
-msgstr "Upustit"
+msgstr "Přiražení"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:79
 msgid "Key press to drop."
-msgstr "Klávesa pro upuštění."
+msgstr "Klávesa, kterou se přiráží dolů."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:383
 msgid "Rotate"
-msgstr "Otočit"
+msgstr "Otočení"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:84
 msgid "Key press to rotate."
-msgstr "Klávesa pro rotaci."
+msgstr "Klávesa, kterou se otáčí."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
 msgid "Pause"
-msgstr "Pozastavit"
+msgstr "Pozastavení"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:89
 msgid "Key press to pause."
-msgstr "Klávesa pro pozastavení."
+msgstr "Klávesa, kterou se hra pozastaví."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Spuštění"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "Klávesa, kterou se hra začíná."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
-msgstr "Šířka okna v pixelech."
+msgstr "Šířka okna v pixelech"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
-msgstr "Výška okna v pixelech."
+msgstr "Výška okna v pixelech"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "Zapnuto, pokud je okno maximalizováno"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -264,7 +272,7 @@ msgstr "_Nápověda"
 msgid "_About Quadrapassel"
 msgstr "O _aplikaci Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "Začít novou hru"
 
@@ -357,15 +365,15 @@ msgstr "Čisté"
 msgid "Unable to change key, as this key already exists"
 msgstr "Není možné změnit klíč, protože tento klíč již existuje"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "Pokračovat ve hře"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:788
 msgid "Pause the game"
 msgstr "Pozastavit hru"
 
-#: src/quadrapassel.vala:861
+#: src/quadrapassel.vala:866
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -373,7 +381,7 @@ msgstr ""
 "Klasická hra, ve které otáčite padající bloky, abyste jimi zaplnili vrstvy, "
 "ale nesmí se vám jich nakupit moc špatně do výšky, jinak hra skončí."
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr ""
 "Jirka Lébl\n"

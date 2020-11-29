@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
-"POT-Creation-Date: 2020-01-03 18:39+0000\n"
-"PO-Revision-Date: 2020-03-08 22:46+0100\n"
+"POT-Creation-Date: 2020-09-30 11:15+0000\n"
+"PO-Revision-Date: 2020-11-29 02:04+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -107,8 +107,8 @@ msgid ""
 msgstr ""
 "Když už účet máte, přihlaste se a klikněte na <gui>New issue</gui>. Před "
 "nahlášením chyby si prosím přečtěte <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">přiručku k hlášení chyb</link> "
-"(odkaz je v angličtině) a <link href=\"https://gitlab.gnome.org/GNOME/"
+"Community/GettingInTouch/Bugzilla/Guidelines\">přiručku k hlášení chyb</"
+"link> (odkaz je v angličtině) a <link href=\"https://gitlab.gnome.org/GNOME/"
 "quadrapassel/issues\">podívejte</link> se prosím, jestli stejnou chybu "
 "nenahlásil už někdo jiný."
 
@@ -140,7 +140,7 @@ msgstr "<link xref=\"get-involved\"><_:media-1/> Zapojte se</link>"
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:51 C/develop.page:31 C/documentation.page:31
-#: C/playgame.page:47 C/preferences.page:71 C/score.page:38 C/translate.page:44
+#: C/playgame.page:48 C/preferences.page:71 C/score.page:38 C/translate.page:44
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
 msgstr "<link xref=\"index\"><_:media-1/> DOMŮ</link>"
 
@@ -401,18 +401,26 @@ msgstr ""
 "<key>Mezerník</key> způsobí tvrdý pád (okamžitý přesun dolů). <key>↓</key> "
 "vyvolá měkký pád (dočasné zvýšení rychlosti pod dobu držení klávesy)."
 
+#. (itstool) path: item/p
+#: C/playgame.page:33
+msgid ""
+"The <key>Enter</key> will restart the game quickly once it is game over."
+msgstr ""
+"Pomocí klávesy <key>Enter</key> může hru po skončení okamžitě začít znovu od "
+"začátku."
+
 #. (itstool) path: section/title
-#: C/playgame.page:37
+#: C/playgame.page:38
 msgid "Rules"
 msgstr "Pravidla"
 
 #. (itstool) path: section/p
-#: C/playgame.page:39
+#: C/playgame.page:40
 msgid "There are a couple of rules that you should keep in mind:"
 msgstr "Existuje několik pravidel, která byste měli mít na paměti:"
 
 #. (itstool) path: item/p
-#: C/playgame.page:41
+#: C/playgame.page:42
 msgid ""
 "You can pause, end, start a new game, get help or quit the program at any "
 "time."
@@ -421,7 +429,7 @@ msgstr ""
 "kdykoliv můžete program ukončit."
 
 #. (itstool) path: item/p
-#: C/playgame.page:42
+#: C/playgame.page:43
 msgid "You can pause the game as many times as you want."
 msgstr "Hru můžete pozastavit kolikrát jen chcete."
 
@@ -441,8 +449,8 @@ msgid ""
 "To change the game preferences, press the menu button in the top-right "
 "corner of the window and select <gui style=\"menuitem\">Preferences</gui>."
 msgstr ""
-"Když chcete změnit předvolby, zmáčkněte tlačítko nabídky v pravém horním rohu "
-"okna a vyberte <gui style=\"menuitem\">Předvolby</gui>."
+"Když chcete změnit předvolby, zmáčkněte tlačítko nabídky v pravém horním "
+"rohu okna a vyberte <gui style=\"menuitem\">Předvolby</gui>."
 
 #. (itstool) path: page/p
 #: C/preferences.page:29
@@ -626,8 +634,8 @@ msgid ""
 "style=\"menuitem\">Scores</gui> to find the records from the highest to the "
 "lowest score."
 msgstr ""
-"Zmáčkněte tlačítko nabídky v pravém horním rohu okna a vyberte <gui "
-"style=\"menuitem\">Skóre</gui>, abyste se mohli podívat na záznamy skóre od "
+"Zmáčkněte tlačítko nabídky v pravém horním rohu okna a vyberte <gui style="
+"\"menuitem\">Skóre</gui>, abyste se mohli podívat na záznamy skóre od "
 "nejvyššího po nejnižší."
 
 #. (itstool) path: info/desc
