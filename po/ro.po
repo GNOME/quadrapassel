@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.ro\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-06-27 13:27+0300\n"
+"POT-Creation-Date: 2020-11-28 21:49+0000\n"
+"PO-Revision-Date: 2020-12-12 19:30+0200\n"
 "Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
 "Language-Team: Gnome Romanian Translation Team\n"
 "Language: ro\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Launchpad-Export-Date: 2009-11-27 09:12+0000\n"
 "X-Project-Style: gnome\n"
 
@@ -171,21 +171,29 @@ msgid "Key press to pause."
 msgstr "Tasta apăsată pentru pauză."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Intrare"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "Tasta pentru a începe jocul"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Lățimea ferestrei în pixeli"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Înălțimea ferestrei în pixeli"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "adevărat dacă fereastra este maximizată"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -257,7 +265,7 @@ msgstr "_Ajutor"
 msgid "_About Quadrapassel"
 msgstr "_Despre Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "Pornește un joc nou"
 
@@ -350,19 +358,23 @@ msgstr "Frumos"
 msgid "Unable to change key, as this key already exists"
 msgstr "Nu s-a putut modifica cheia pentru că există deja"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "Reia jocul"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:788
 msgid "Pause the game"
 msgstr "Pune jocul pe pauză"
 
-#: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Un joc clasic de așezare a blocurilor în cădere"
-
 #: src/quadrapassel.vala:866
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Un joc clasic în care rotiți blocuri pentru a face rânduri complete, dar nu "
+"vă strângeți blocurile prea sus sau se termină jocul!"
+
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr ""
 "Mugurel Tudor <mugurelu@gnome.ro>\n"
@@ -402,6 +414,9 @@ msgstr "_OK"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Dată"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Un joc clasic de așezare a blocurilor în cădere"
 
 #~ msgid "org.gnome.Quadrapassel"
 #~ msgstr "org.gnome.Quadrapassel"
