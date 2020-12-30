@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel gnome-3-18\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-07-14 13:02+0200\n"
+"POT-Creation-Date: 2020-11-28 21:49+0000\n"
+"PO-Revision-Date: 2020-12-30 11:55+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -161,21 +161,29 @@ msgid "Key press to pause."
 msgstr "Tast di fracâ par meti in pause."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr ""
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "Tast par scomençâ la partide"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Largjece dal barcon in pixel"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Altece dal barcon in pixel"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "true (vêr) se il barcon al è slargjât"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -248,7 +256,7 @@ msgstr "_Jutori"
 msgid "_About Quadrapassel"
 msgstr "_Informazions su Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "Tache une gnove partide"
 
@@ -339,21 +347,25 @@ msgstr "Nete"
 #. Throw up a dialog
 #: src/quadrapassel.vala:502
 msgid "Unable to change key, as this key already exists"
-msgstr "Impussibil cambiâ tast, viodût che chest tast al esist za"
+msgstr "Impussibil cambiâ tast par vie che al esist za"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "Jes de pause"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:788
 msgid "Pause the game"
 msgstr "Met la partide in pause"
 
-#: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Un classic zûc par fâ cometi blocs in cjadude libare"
-
 #: src/quadrapassel.vala:866
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Un classic zûc dulà che tu âs di voltâ i blocs par completâ lis riis, ma no "
+"sta intassâ i tiei blocs masse adalt o la partide e finìs!"
+
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr "Fabio Tomat <f.t.public@gmail.com>"
 
@@ -372,6 +384,9 @@ msgstr "_OK"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Date"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Un classic zûc par fâ cometi blocs in cjadude libare"
 
 #~| msgid "org.gnome.quadrapassel"
 #~ msgid "org.gnome.Quadrapassel"
