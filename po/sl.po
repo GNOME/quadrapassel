@@ -7,13 +7,13 @@
 # Tadej Janež <tadej_janez@email.si>, 2003.
 # Matic Žgur <mr.zgur@gmail.com>, 2006–2007.
 # Andrej Mernik <andrejm@ubuntu.si>, 2017.
-# Matej Urbančič <mateju@svn.gnome.org>, 2007–2020.
+# Matej Urbančič <mateju@svn.gnome.org>, 2007–2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-09-10 17:01+0000\n"
-"PO-Revision-Date: 2020-09-10 21:00+0200\n"
+"POT-Creation-Date: 2021-01-06 13:54+0000\n"
+"PO-Revision-Date: 2021-01-12 19:04+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -169,21 +169,29 @@ msgid "Key press to pause."
 msgstr "Tipka za premor."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Vnos"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "Tipka za začetek igre"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Širina okna v točkah"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Višina okna v točkah"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "prav, če je okno razpeto."
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "Kvadetris"
 
@@ -255,7 +263,7 @@ msgstr "Pomo_č"
 msgid "_About Quadrapassel"
 msgstr "_O igri"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "Začni novo igro"
 
@@ -348,15 +356,15 @@ msgstr "Počisti"
 msgid "Unable to change key, as this key already exists"
 msgstr "Ključa ni mogoče spremeniti v %s, saj ta postaja že obstaja"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "Prekliči premor"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:788
 msgid "Pause the game"
 msgstr "Premor igranja"
 
-#: src/quadrapassel.vala:861
+#: src/quadrapassel.vala:866
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -364,7 +372,7 @@ msgstr ""
 "Klasična igra obračanja ploščic in zapolnjevanja vrstic, ki pa se konča, ko "
 "se ti naložijo do vrha!"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr ""
 "Matej Urbančič <mateju@svn.gnome.org>\n"
@@ -1164,9 +1172,6 @@ msgstr "Datum"
 
 #~ msgid "Redo the undone move"
 #~ msgstr "Obnovi razveljavljeno potezo"
-
-#~ msgid "Restart the game"
-#~ msgstr "Znova začni igro"
 
 #~ msgid "Resume the paused game"
 #~ msgstr "Nadaljevanje prekinjene igre"
