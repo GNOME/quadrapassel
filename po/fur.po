@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel gnome-3-18\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-11-28 21:49+0000\n"
-"PO-Revision-Date: 2020-12-30 11:55+0100\n"
+"POT-Creation-Date: 2020-12-30 10:57+0000\n"
+"PO-Revision-Date: 2021-01-21 07:34+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -162,7 +162,7 @@ msgstr "Tast di fracâ par meti in pause."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
 msgid "Enter"
-msgstr ""
+msgstr "Jentre"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:94
 msgid "Key to start the game"
