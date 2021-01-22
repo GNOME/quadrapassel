@@ -4,7 +4,7 @@ adopt-info: quadrapassel
 
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict
-base: core18
+base: core20
 
 slots:
   # for GtkApplication registration
@@ -16,11 +16,11 @@ slots:
 apps:
   quadrapassel:
     command: usr/bin/quadrapassel
-    extensions: [gnome-3-34]
+    extensions: [gnome-3-38]
     plugs:
       - gsettings
       - opengl
-      - pulseaudio
+      - audio-playback
     desktop: usr/share/applications/org.gnome.Quadrapassel.desktop
     common-id: org.gnome.Quadrapassel.desktop
     environment:
@@ -37,44 +37,8 @@ parts:
           - gcc-multilib
           - g++-multilib
 
-  libcanberra:
-    source: git://git.0pointer.de/libcanberra
-    source-type: git
-    plugin: autotools
-    configflags:
-      - --prefix=/snap/quadrapassel/current/usr
-      - --enable-pulse
-      - --enable-gstreamer
-      - --enable-gtk3
-      - --enable-alsa
-      - --disable-oss
-    organize:
-      snap/quadrapassel/current/usr: usr
-    build-packages:
-      - libltdl-dev
-      - libasound2-dev
-      - libvorbis-dev
-      - libtdb-dev
-      - libpulse-dev
-      - libgstreamer1.0-dev
-      - libudev-dev
-      - gtk-doc-tools
-
-  gsound:
-    after: [libcanberra]
-    source: https://gitlab.gnome.org/GNOME/gsound.git
-    source-type: git
-    plugin: autotools
-    configflags: [--prefix=/snap/quadrapassel/current/usr, --disable-Werror]
-    organize:
-      snap/quadrapassel/current/usr: usr
-    build-packages:
-      - autoconf-archive
-      - intltool
-      - libgirepository1.0-dev
-
   quadrapassel:
-    after: [gsound, snapcraft-preload]
+    after: [snapcraft-preload]
     source: .
     source-type: git
     plugin: meson
@@ -84,9 +48,7 @@ parts:
     organize:
       snap/quadrapassel/current/usr: usr
     override-build: |
-      sed -i.bak -e "s|'--vapidir'|'--vapidir', '$SNAPCRAFT_STAGE/usr/share/vala/vapi', '--vapidir'|g" src/meson.build
-
-      sed -i.bak -e 's|=org.gnome.Quadrapassel$|=${SNAP}/meta/gui/org.gnome.Quadrapassel.svg|g' data/org.gnome.Quadrapassel.desktop.in
+      sed -i.bak -e 's|=org.gnome.Quadrapassel$|=${SNAP}/meta/gui/org.gnome.Quadrapassel.svg|g' $SNAPCRAFT_PART_SRC/data/org.gnome.Quadrapassel.desktop.in
       snapcraftctl build
       mkdir -p $SNAPCRAFT_PART_INSTALL/meta/gui/
       cp ../src/data/icons/hicolor/scalable/org.gnome.Quadrapassel.svg $SNAPCRAFT_PART_INSTALL/meta/gui/
@@ -96,7 +58,6 @@ parts:
       - gsettings-desktop-schemas-dev
       - itstool
       - libmanette-0.2-dev
-      - librsvg2-dev
 
   libraries:
     plugin: nil
