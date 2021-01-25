@@ -10,22 +10,22 @@
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Fran Diéguez <frandieguez@gnome.org>, 2009, 2010, 2011.
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.
-# Fran Dieguez <frandieguez@gnome.gl>, 2011-2020.
+# Fran Dieguez <frandieguez@gnome.org>, 2011-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games-master-po-gl-54590\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-09-09 20:38+0000\n"
-"PO-Revision-Date: 2020-09-10 18:59+0200\n"
-"Last-Translator: Fran Dieguez <frandieguez@gnome.gl>\n"
+"POT-Creation-Date: 2020-11-28 21:49+0000\n"
+"PO-Revision-Date: 2021-01-25 20:45+0100\n"
+"Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: Galician <Proxecto Trasno <proxecto@trasno.gal>>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"X-Generator: Gtranslator 3.38.0\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -172,21 +172,30 @@ msgid "Key press to pause."
 msgstr "Tecla para deter."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Intro"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+#| msgid "Level to start with"
+msgid "Key to start the game"
+msgstr "Tecla para iniciar o xogo"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Largura da xanela en píxeles"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Altura da xanela en píxeles"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "verdadeiro se a xanela está maximizada"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -258,7 +267,7 @@ msgstr "_Axuda"
 msgid "_About Quadrapassel"
 msgstr "_Sobre Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "Comezar un xogo novo"
 
@@ -351,15 +360,15 @@ msgstr "Limpar"
 msgid "Unable to change key, as this key already exists"
 msgstr "Non foi posíbel cambiar a tecla, xa que esta tecla xa existe"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "Reanudar o xogo"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:788
 msgid "Pause the game"
 msgstr "Deter o xogo"
 
-#: src/quadrapassel.vala:861
+#: src/quadrapassel.vala:866
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -367,7 +376,7 @@ msgstr ""
 "Un xogo clásico onde rota bloques para completar filas, pero non apile "
 "bloques demasiado alto ou rematará o xogo!"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr ""
 "Fran Diéguez <frandieguez@gnome.org>, 2009-2020.\n"
