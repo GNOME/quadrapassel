@@ -23,6 +23,8 @@ pango_cairo_dependency = dependency('pangocairo')
 posix_dependency = meson.get_compiler('vala').find_library('posix')
 rsvg_dependency = dependency('librsvg-2.0', version: '>= 2.32.0')
 libm_dependency = cc.find_library('m', required : true)
+gstreamer_dependency = dependency('gstreamer-1.0', version: '>= 1.0')
+
         
 # Set gettext package name
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language: 'c')

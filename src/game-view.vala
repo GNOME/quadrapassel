@@ -396,6 +396,43 @@ public class GameView : GtkClutter.Embed
             warning (e.message);
         }
     }
+
+
+    /* Play Music */
+
+    private StreamPlayer streamPlayer;
+
+    public void play_game_music()
+    {   
+        if (streamPlayer == null) 
+            streamPlayer = new StreamPlayer();
+
+        streamPlayer.stop();
+
+        streamPlayer.play("play.mp3");
+    }
+
+    public void play_menu_music()
+    {   
+        if (streamPlayer == null) 
+            streamPlayer = new StreamPlayer();
+
+        streamPlayer.stop();
+
+        streamPlayer.play("menu.mp3");
+    }
+
+    public void stop_music()
+    {
+        streamPlayer.stop();
+    }
+
+
+    //  private static void _play_music (string _name, StreamPlayer streamPlayer)
+    //  {
+    //      streamPlayer.play("play.mp3");
+    //      //_controller.didUpdatePlayerState.connect( play_callback );
+    //  }
 }
 
 private class BlockActor : Clutter.Clone

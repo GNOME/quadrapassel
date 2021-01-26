@@ -7,7 +7,8 @@ executable(meson.project_name(),
         'history.vala',
         'preview.vala',
         'quadrapassel.vala',
-        'score-dialog.vala'
+        'score-dialog.vala',
+        'stream-player.vala'
     ],
     install: true,
     c_args: [
@@ -28,6 +29,7 @@ executable(meson.project_name(),
         pango_cairo_dependency,
         posix_dependency,
         rsvg_dependency,
-        libm_dependency
+        libm_dependency,
+        gstreamer_dependency
     ]
 )
