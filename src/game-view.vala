@@ -321,6 +321,7 @@ public class GameView : GtkClutter.Embed
     private void pause_changed_cb ()
     {
         update_message ();
+        
     }
 
     private void game_complete_cb ()
@@ -402,29 +403,29 @@ public class GameView : GtkClutter.Embed
 
     private StreamPlayer streamPlayer;
 
-    public void play_game_music()
+    public void play_game_music ()
     {   
         if (streamPlayer == null) 
             streamPlayer = new StreamPlayer();
 
-        streamPlayer.stop();
+        streamPlayer.stop ();
 
-        streamPlayer.play("play.mp3");
+        streamPlayer.play ("play.mp3");
     }
 
-    public void play_menu_music()
+    public void play_menu_music ()
     {   
         if (streamPlayer == null) 
             streamPlayer = new StreamPlayer();
 
-        streamPlayer.stop();
+        streamPlayer.stop ();
 
-        streamPlayer.play("menu.mp3");
+        streamPlayer.play ("menu.mp3");
     }
 
-    public void stop_music()
+    public void stop_music ()
     {
-        streamPlayer.stop();
+        streamPlayer.stop ();
     }
 
 

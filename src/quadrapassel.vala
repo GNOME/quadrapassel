@@ -773,6 +773,8 @@ public class Quadrapassel : Gtk.Application
         update_score ();
         pause_action.set_enabled (true);
         pause_play_button.action_name = "app.pause";
+
+        view.play_game_music ();
     }
 
     private void pause_changed_cb ()
@@ -886,6 +888,8 @@ public class Quadrapassel : Gtk.Application
 
     public static int main (string[] args)
     {
+        Gst.init (ref args);
+     
         Intl.setlocale (LocaleCategory.ALL, "");
         Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
         Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
