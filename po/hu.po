@@ -1,5 +1,5 @@
 # Hungarian translation for quadrapassel.
-# Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2018, 2019, 2020 Free Software Foundation, Inc.
+# Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2018, 2019, 2020, 2021 Free Software Foundation, Inc.
 # This file is distributed under the same license as the quadrapassel package.
 #
 # Szabolcs Ban <shooby at gnome dot hu>, 1999, 2000, 2001.
@@ -9,13 +9,13 @@
 # Laszlo Dvornik <dvornik at gnome dot hu>, 2004.
 # Szabolcs Varga <shirokuma at shirokuma dot hu>, 2005.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2014.
-# Balázs Úr <ur.balazs at fsf dot hu>, 2013, 2014, 2015, 2018, 2019, 2020.
+# Balázs Úr <ur.balazs at fsf dot hu>, 2013, 2014, 2015, 2018, 2019, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-09-22 20:39+0000\n"
-"PO-Revision-Date: 2020-09-23 18:32+0200\n"
+"POT-Creation-Date: 2020-11-28 21:49+0000\n"
+"PO-Revision-Date: 2021-02-14 00:00+0100\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
@@ -170,21 +170,30 @@ msgid "Key press to pause."
 msgstr "Billentyű a szüneteltetéshez."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Enter"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+#| msgid "Level to start with"
+msgid "Key to start the game"
+msgstr "Billentyű a játék indításához"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Az ablak szélessége képpontokban"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Az ablak magassága képpontokban"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "igaz, ha az ablak teljes méretű"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -256,7 +265,7 @@ msgstr "_Súgó"
 msgid "_About Quadrapassel"
 msgstr "A Quadrapassel _névjegye"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "Új játék indítása"
 
@@ -350,24 +359,24 @@ msgid "Unable to change key, as this key already exists"
 msgstr ""
 "Nem lehet megváltoztatni a billentyűt, mivel ez a billentyű már létezik"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "A játék folytatása"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:788
 msgid "Pause the game"
 msgstr "A játék szüneteltetése"
 
-#: src/quadrapassel.vala:861
+#: src/quadrapassel.vala:866
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
 msgstr ""
-"Egy klasszikus játék, ahol blokkokat kell forgatni a teljes sorok"
-" összeállításához, de ne rakjon egymásra túl sok blokkot, különben vége lesz"
-" a játéknak!"
+"Egy klasszikus játék, ahol blokkokat kell forgatni a teljes sorok "
+"összeállításához, de ne rakjon egymásra túl sok blokkot, különben vége lesz "
+"a játéknak!"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr ""
 "Bán Szabolcs <shooby at gnome dot hu>\n"
