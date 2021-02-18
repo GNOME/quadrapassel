@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of quadrapassel.
-# Copyright (C) 2020 Free Software Foundation, Inc.
+# Copyright (C) 2021 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-games package.
 # Sandro Nunes Henrique <sandro@conectiva.com.br>, 1999.
 # Cândida Nunes da Silva <candida@zaz.com.br>, 2000-2001.
@@ -23,14 +23,14 @@
 # Djavan Fagundes <djavan@comum.org>, 2012.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2013.
 # Enrico Nicoletto <liverig@gmail.com>, 2014, 2020.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2014-2020.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2014-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-09-10 22:54+0000\n"
-"PO-Revision-Date: 2020-09-11 17:37-0300\n"
+"POT-Creation-Date: 2020-11-28 21:49+0000\n"
+"PO-Revision-Date: 2021-02-17 23:44-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -38,7 +38,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"X-Generator: Gtranslator 3.38.0\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -186,21 +186,30 @@ msgid "Key press to pause."
 msgstr "Tecla para pausar."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Enter"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+#| msgid "Level to start with"
+msgid "Key to start the game"
+msgstr "Tecla para iniciar o jogo."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "A largura da janela em pixels"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "A altura da janela em pixels"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "verdadeiro se a janela estiver maximizada"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -273,7 +282,7 @@ msgstr "Aj_uda"
 msgid "_About Quadrapassel"
 msgstr "_Sobre o Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "Inicia um novo jogo"
 
@@ -366,20 +375,23 @@ msgstr "Limpo"
 msgid "Unable to change key, as this key already exists"
 msgstr "Não foi possível alterar a tecla, pois esta tecla já existe"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "Resume o jogo"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:788
 msgid "Pause the game"
 msgstr "Pausa o jogo"
 
-#: src/quadrapassel.vala:861
-#| msgid "Fit falling blocks together"
-msgid "A classic game of fitting falling blocks together"
-msgstr "Um jogo clássico de encaixar blocos caindo"
-
 #: src/quadrapassel.vala:866
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Um jogo clássico onde você gira blocos para fazer linhas completas, mas não "
+"empilhe seus blocos muito alto ou é o fim do jogo!"
+
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr ""
 "Sandro Nunes Henrique <sandro@conectiva.com.br>\n"
@@ -414,9 +426,6 @@ msgstr "_OK"
 msgid "Date"
 msgstr "Data"
 
-#~ msgid ""
-#~ "A classic game where you rotate blocks to make complete rows, but don't "
-#~ "pile your blocks too high or it's game over!"
-#~ msgstr ""
-#~ "Um jogo clássico onde você gira blocos para fazer linhas completas, mas "
-#~ "não empilhe seus blocos muito alto ou é o fim do jogo!"
+#~| msgid "Fit falling blocks together"
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Um jogo clássico de encaixar blocos caindo"
