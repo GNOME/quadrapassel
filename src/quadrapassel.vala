@@ -847,7 +847,7 @@ public class Quadrapassel : Gtk.Application
     {
         try
         {
-            Gtk.show_uri (window.get_screen (), "help:quadrapassel", Gtk.get_current_event_time ());
+            Gtk.show_uri_on_window (window, "help:quadrapassel", Gtk.get_current_event_time ());
         }
         catch (Error e)
         {
