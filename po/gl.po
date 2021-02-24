@@ -2,6 +2,7 @@
 # Copyright (C) 2000 Jesús Bravo Álvarez.
 # Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
 # colaborar connosco, podes atopar máis información en http://www.trasno.net
+#
 # Jesús Bravo Álvarez <jba@pobox.com>, 2000.
 # Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2005, 2006.
 # Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2008.
@@ -11,15 +12,14 @@
 # Fran Diéguez <frandieguez@gnome.org>, 2009, 2010, 2011.
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.
 # Fran Dieguez <frandieguez@gnome.org>, 2011-2021.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games-master-po-gl-54590\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-11-28 21:49+0000\n"
-"PO-Revision-Date: 2021-01-25 20:45+0100\n"
+"POT-Creation-Date: 2021-02-22 09:21+0000\n"
+"PO-Revision-Date: 2021-02-23 15:41+0100\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
-"Language-Team: Galician <Proxecto Trasno <proxecto@trasno.gal>>\n"
+"Language-Team: Proxecto Trasno <proxecto@trasno.gal>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -176,7 +176,6 @@ msgid "Enter"
 msgstr "Intro"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:94
-#| msgid "Level to start with"
 msgid "Key to start the game"
 msgstr "Tecla para iniciar o xogo"
 
@@ -227,7 +226,7 @@ msgid ""
 msgstr ""
 "Se está a buscar un reto, Quadrapassel permite aumentar a velocidade de "
 "inicio dos bloques ou comezar o xogo con bloqueos parciais nalgunhas das "
-"liñas. Ou, no canto de facer que os bloºques caian de forma aleatoria, pode "
+"liñas. Ou, no canto de facer que os bloques caian de forma aleatoria, pode "
 "seleccionar bloques que sexan difíciles para colocar."
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:33
@@ -325,7 +324,7 @@ msgstr "_Previsualizar o seguinte bloque"
 #. rotate counter clock wise
 #: src/quadrapassel.vala:356
 msgid "_Rotate blocks counterclockwise"
-msgstr "_Rotar os bloques no sentido contario ás agullas do reloxo"
+msgstr "_Rotar os bloques no sentido contrario ás agullas do reloxo"
 
 #: src/quadrapassel.vala:361
 msgid "Show _where the block will land"
