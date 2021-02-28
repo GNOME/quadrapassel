@@ -4,13 +4,13 @@
 #
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2008, 2009, 2010, 2011, 2012, 2013.
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2014, 2015, 2018.
-# Asier Sarasua Garmendia  <asiersarasua@ni.eus>, 2013, 2019, 2020.
+# Asier Sarasua Garmendia  <asiersarasua@ni.eus>, 2013, 2019, 2020, 2021.
 #
 msgid ""
 msgstr "Project-Id-Version: orca master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/orca/issues\n"
-"POT-Creation-Date: 2020-06-30 15:04+0000\n"
-"PO-Revision-Date: 2020-08-23 10:00+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
+"POT-Creation-Date: 2021-02-22 09:21+0000\n"
+"PO-Revision-Date: 2021-02-28 10:00+0100\n"
 "Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
@@ -149,7 +149,7 @@ msgstr "Biratu"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:84
 msgid "Key press to rotate."
-msgstr "Birarazteko tekla."
+msgstr "Biratzeko tekla."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
 msgid "Pause"
@@ -160,21 +160,29 @@ msgid "Key press to pause."
 msgstr "Pausarazteko tekla."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Sartu"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "Jokoa hasteko tekla"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Leihoaren zabalera (pixeletan)"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Leihoaren altuera (pixeletan)"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "egia leihoa maximizatuta badago"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -237,7 +245,7 @@ msgstr "_Laguntza"
 msgid "_About Quadrapassel"
 msgstr "Quadrapassel jokoari _buruz"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "Hasi joko berria"
 
@@ -330,19 +338,21 @@ msgstr "Garbitu"
 msgid "Unable to change key, as this key already exists"
 msgstr "Ezin izan da gakoa aldatu, gako hori lehendik baitago"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "Jokoa jarraitzen du"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:788
 msgid "Pause the game"
 msgstr "Pausatu jokoa"
 
-#: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Erortzen diren blokeak kokatzeko joko klasikoa"
-
 #: src/quadrapassel.vala:866
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr "Joko klasiko bat: blokeak biratu behar dira errenkada osoak sortzeko, baina ez pilatu blokeak gehiegi, jokoa galduko baituzu!"
+
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr "translator-credits"
 
@@ -361,6 +371,9 @@ msgstr "_Ados"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Data"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Erortzen diren blokeak kokatzeko joko klasikoa"
 
 #~| msgid "Quadrapassel"
 #~ msgid "quadrapassel"
