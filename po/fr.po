@@ -23,14 +23,14 @@
 # Laurent Coudeur <laurentc@iol.ie>, 2009.
 # Bruno Brouard <annoa.b@gmail.com>, 2012, 2014.
 # Guillaume Bernard <associations@guillaume-bernard.fr>, 2018.
-# Charles Monzat <charles.monzat@free.fr>, 2018-2020.
+# Charles Monzat <charles.monzat@free.fr>, 2018-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-08-26 22:54+0200\n"
+"POT-Creation-Date: 2020-11-28 21:49+0000\n"
+"PO-Revision-Date: 2021-02-18 13:32+0100\n"
 "Last-Translator: Charles Monzat <charles.monzat@free.fr>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr_FR\n"
@@ -38,7 +38,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"X-Generator: Gtranslator 3.38.0\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -73,12 +73,10 @@ msgid "Whether to preview the next block."
 msgstr "Prévisualiser ou non le prochain bloc."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-#| msgid "Whether to show where the moving piece will land"
 msgid "Whether to show where the moving block will land"
 msgstr "Afficher ou non là où le bloc en mouvement va atterrir"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-#| msgid "Whether to show where the moving piece will land."
 msgid "Whether to show where the moving block will land."
 msgstr "Afficher ou non là où le bloc en mouvement va atterrir."
 
@@ -144,7 +142,7 @@ msgstr "Déplacer à gauche"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "Key press to move left."
-msgstr "Touche à appuyer pour déplacer à gauche."
+msgstr "Touche à utiliser pour déplacer à gauche."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:374
 msgid "Move right"
@@ -152,7 +150,7 @@ msgstr "Déplacer à droite"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:69
 msgid "Key press to move right."
-msgstr "Touche à appuyer pour déplacer à droite."
+msgstr "Touche à utiliser pour déplacer à droite."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:377
 msgid "Move down"
@@ -187,21 +185,31 @@ msgid "Key press to pause."
 msgstr "Touche à utiliser pour mettre en pause."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Entrée"
+
+# Point final justifié dans la traduction (Charles).
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+#| msgid "Level to start with"
+msgid "Key to start the game"
+msgstr "Touche à utiliser pour commencer la partie."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Largeur de la fenêtre en pixels"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Hauteur de la fenêtre en pixels"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "vrai si la fenêtre est maximisée"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -275,7 +283,7 @@ msgstr "Aid_e"
 msgid "_About Quadrapassel"
 msgstr "À _propos de Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "Commence une nouvelle partie"
 
@@ -368,19 +376,23 @@ msgstr "Clean"
 msgid "Unable to change key, as this key already exists"
 msgstr "Impossible de modifier la touche, car cette touche existe déjà"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "Reprend la partie"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:788
 msgid "Pause the game"
 msgstr "Suspend la partie"
 
-#: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Un jeu classique de blocs qui tombent et qu’il faut assembler"
-
 #: src/quadrapassel.vala:866
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Un jeu classique où vous faites tourner des blocs pour créer des lignes "
+"complètes, mais n’empilez pas vos blocs trop haut ou la partie est finie !"
+
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr ""
 "Christophe Merlet <redfox@redfoxcenter.org>\n"
@@ -394,7 +406,8 @@ msgstr ""
 "Stéphane Raimbault <stephane.raimbault@gmail.com>\n"
 "Didier Vidal <didier-devel@melix.net>\n"
 "Pierre Lemaire <pierre.lemaire@kamick.org>\n"
-"Guillaume Bernard <associations@guillaume-bernard.fr>"
+"Guillaume Bernard <associations@guillaume-bernard.fr>\n"
+"Charles Monzat <charles.monzat@free.fr>"
 
 #: src/score-dialog.vala:26
 msgid "_Close"
@@ -411,6 +424,9 @@ msgstr "_Valider"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Date"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Un jeu classique de blocs qui tombent et qu’il faut assembler"
 
 #~| msgid "Quadrapassel"
 #~ msgid "org.gnome.Quadrapassel"
