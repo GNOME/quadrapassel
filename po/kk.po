@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-07-08 08:34+0500\n"
+"POT-Creation-Date: 2021-03-02 07:10+0000\n"
+"PO-Revision-Date: 2021-03-10 10:28+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -161,21 +161,29 @@ msgid "Key press to pause."
 msgstr "Аялдату үшін перне басуы."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Enter"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "Ойынды бастау пернесі"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Терезе ені, пиксельмен"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Терезе биіктігі, пиксельмен"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "терезе максималды болса, мәні true болады"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -247,7 +255,7 @@ msgstr "_Көмек"
 msgid "_About Quadrapassel"
 msgstr "Quadrapassel тур_алы"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "Жаңа ойынды бастау"
 
@@ -340,19 +348,23 @@ msgstr "Таза"
 msgid "Unable to change key, as this key already exists"
 msgstr "Пернені өзгерту мүмкін емес, өйткені ол перне бар болып тұр"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "Ойынды жалғастыру"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:788
 msgid "Pause the game"
 msgstr "Ойынды аялдату"
 
-#: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Құлап бара жатқан блоктарды бір-біріне қиыстырудың классикалық ойыны"
-
 #: src/quadrapassel.vala:866
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Толық жолдарды жасау үшін блоктарды бұратын классикалық ойын, бірақ "
+"блоктарды тым жоғары жинамаңыз, әйтпесе ойын аяқталады!"
+
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 
@@ -371,6 +383,10 @@ msgstr "_ОК"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Күні"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr ""
+#~ "Құлап бара жатқан блоктарды бір-біріне қиыстырудың классикалық ойыны"
 
 #~ msgid "_About"
 #~ msgstr "О_сы туралы"
