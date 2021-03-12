@@ -11,6 +11,7 @@
 # Changwoo Ryu <cwryu@debian.org>, 2013-2015, 2018.
 # Yeol Park <peary2@gmail.com>, 2018.
 # DaeHyun Sung <sungdh86@gmail.com>, 2019-2020.
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2021.
 #
 # 새로 번역하신 분은 아래 "translator-credits"에 추가하세요.
 #
@@ -21,16 +22,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-08-30 00:31+0900\n"
-"Last-Translator: DaeHyun Sung <sungdh86+git@gmail.com>\n"
+"POT-Creation-Date: 2021-03-02 07:10+0000\n"
+"PO-Revision-Date: 2021-03-12 09:51+0900\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -174,22 +175,31 @@ msgstr "일시 중지"
 msgid "Key press to pause."
 msgstr "일시 중지할 때 누를 키."
 
+# NOTE: Space, ESC 같은 키 이름이므로 번역하지 않는다.
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Enter"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "게임을 시작할 키"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "창의 너비, 픽셀 단위"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "창의 높이, 픽셀 단위"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "참이면 창을 최대화"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "쿼드러패셀"
 
@@ -259,7 +269,7 @@ msgstr "도움말(_H)"
 msgid "_About Quadrapassel"
 msgstr "쿼드러패셀 정보(_A)"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "새 게임을 시작합니다"
 
@@ -352,24 +362,29 @@ msgstr "지우기"
 msgid "Unable to change key, as this key already exists"
 msgstr "이 키가 이미 있으므로, 키를 바꿀 수 없습니다."
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "게임을 계속 진행합니다"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:788
 msgid "Pause the game"
 msgstr "게임을 일시 중지합니다"
 
-#: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "떨어지는 블럭을 맞추는 고전적인 게임"
-
 #: src/quadrapassel.vala:866
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"한 줄을 완성하도록 블록을 회전하는 고전게임입니다만, 블록을 너무 높게 쌓으면 "
+"게임이 끝납니다!"
+
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr ""
 "류창우 <cwryu@debian.org>\n"
 "박열 <peary2@gmail.com>\n"
-"성대현 <sungdh86@gmail.com>"
+"성대현 <sungdh86@gmail.com>\n"
+"조성호 <darkcircle.0426@gmail.com>"
 
 #: src/score-dialog.vala:26
 msgid "_Close"
@@ -386,6 +401,9 @@ msgstr "확인(_O)"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "시각"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "떨어지는 블럭을 맞추는 고전적인 게임"
 
 #~ msgid "quadrapassel"
 #~ msgstr "quadrapassel"
