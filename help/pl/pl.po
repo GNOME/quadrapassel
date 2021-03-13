@@ -1,14 +1,14 @@
 # Polish translation for quadrapassel help.
-# Copyright © 2017-2020 the quadrapassel authors.
+# Copyright © 2017-2021 the quadrapassel authors.
 # This file is distributed under the same license as the quadrapassel help.
-# Piotr Drąg <piotrdrag@gmail.com>, 2017-2020.
-# Aviary.pl <community-poland@mozilla.org>, 2017-2020.
+# Piotr Drąg <piotrdrag@gmail.com>, 2017-2021.
+# Aviary.pl <community-poland@mozilla.org>, 2017-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel-help\n"
-"POT-Creation-Date: 2020-01-03 18:39+0000\n"
-"PO-Revision-Date: 2020-03-05 14:37+0100\n"
+"POT-Creation-Date: 2020-09-30 11:15+0000\n"
+"PO-Revision-Date: 2021-03-13 20:38+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -22,8 +22,8 @@ msgstr ""
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Piotr Drąg <piotrdrag@gmail.com>, 2017-2020\n"
-"Aviary.pl <community-poland@mozilla.org>, 2017-2020"
+"Piotr Drąg <piotrdrag@gmail.com>, 2017-2021\n"
+"Aviary.pl <community-poland@mozilla.org>, 2017-2021"
 
 #. (itstool) path: credit/name
 #: C/bug-filing.page:11 C/develop.page:12 C/documentation.page:10
@@ -138,7 +138,7 @@ msgstr "<link xref=\"get-involved\"><_:media-1/> Dołącz do nas</link>"
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:51 C/develop.page:31 C/documentation.page:31
-#: C/playgame.page:47 C/preferences.page:71 C/score.page:38 C/translate.page:44
+#: C/playgame.page:48 C/preferences.page:71 C/score.page:38 C/translate.page:44
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
 msgstr "<link xref=\"index\"><_:media-1/> Strona główna</link>"
 
@@ -396,18 +396,26 @@ msgstr ""
 "a <key>↓</key> tymczasowe zwiększenie prędkości, kiedy klawisz jest "
 "przytrzymany."
 
+#. (itstool) path: item/p
+#: C/playgame.page:33
+msgid ""
+"The <key>Enter</key> will restart the game quickly once it is game over."
+msgstr ""
+"Klawisz <key>Enter</key> szybko rozpocznie grę od początku po jej "
+"zakończeniu."
+
 #. (itstool) path: section/title
-#: C/playgame.page:37
+#: C/playgame.page:38
 msgid "Rules"
 msgstr "Zasady"
 
 #. (itstool) path: section/p
-#: C/playgame.page:39
+#: C/playgame.page:40
 msgid "There are a couple of rules that you should keep in mind:"
 msgstr "Należy pamiętać o dwóch zasadach:"
 
 #. (itstool) path: item/p
-#: C/playgame.page:41
+#: C/playgame.page:42
 msgid ""
 "You can pause, end, start a new game, get help or quit the program at any "
 "time."
@@ -416,7 +424,7 @@ msgstr ""
 "pomoc lub wyłączyć program."
 
 #. (itstool) path: item/p
-#: C/playgame.page:42
+#: C/playgame.page:43
 msgid "You can pause the game as many times as you want."
 msgstr "Można wstrzymywać grę dowolną liczbę razy."
 

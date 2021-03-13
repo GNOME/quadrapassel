@@ -1,5 +1,5 @@
 # Polish translation for quadrapassel.
-# Copyright © 1998-2020 the quadrapassel authors.
+# Copyright © 1998-2021 the quadrapassel authors.
 # This file is distributed under the same license as the quadrapassel package.
 # Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1998-2002.
 # Marcin Gorycki <mgo@olicom.dk>, 1999.
@@ -12,15 +12,15 @@
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2008.
 # Joanna Mazgaj <jmazgaj@aviary.pl>, 2009-2010.
 # Wojciech Kapusta <wkapusta@aviary.pl>, 2009.
-# Piotr Drąg <piotrdrag@gmail.com>, 2010-2020.
-# Aviary.pl <community-poland@mozilla.org>, 2007-2020.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2021.
+# Aviary.pl <community-poland@mozilla.org>, 2007-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-08-22 20:30+0200\n"
+"POT-Creation-Date: 2021-03-02 07:10+0000\n"
+"PO-Revision-Date: 2021-03-13 20:37+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -173,21 +173,29 @@ msgid "Key press to pause."
 msgstr "Klawisz wstrzymania."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Rozpoczęcie"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "Klawisz rozpoczęcia gry"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Szerokość okna w pikselach"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Wysokość okna w pikselach"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "Wartość „true” oznacza, że okno jest zmaksymalizowane"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -258,7 +266,7 @@ msgstr "Pomo_c"
 msgid "_About Quadrapassel"
 msgstr "_O grze"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "Rozpoczyna nową grę"
 
@@ -351,20 +359,23 @@ msgstr "Prosty"
 msgid "Unable to change key, as this key already exists"
 msgstr "Nie można zmienić klawisza, ponieważ ten klawisz już istnieje"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "Wznawia grę"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:788
 msgid "Pause the game"
 msgstr "Wstrzymuje grę"
 
-#: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr ""
-"Klasyczna gra polegająca na dopasowywaniu do siebie spadających klocków"
-
 #: src/quadrapassel.vala:866
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Klasyczna gra polegająca na obracaniu klocków, aby utworzyć pełne rzędy, ale "
+"za wysokie stosiki klocków kończą grę!"
+
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr ""
 "Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1998-2002\n"
@@ -378,8 +389,8 @@ msgstr ""
 "Tomasz Dominikowski <dominikowski@gmail.com>, 2008\n"
 "Joanna Mazgaj <jmazgaj@aviary.pl>, 2009-2010\n"
 "Wojciech Kapusta <wkapusta@aviary.pl>, 2009\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2010-2020\n"
-"Aviary.pl <community-poland@mozilla.org>, 2007-2020"
+"Piotr Drąg <piotrdrag@gmail.com>, 2010-2021\n"
+"Aviary.pl <community-poland@mozilla.org>, 2007-2021"
 
 #: src/score-dialog.vala:26
 msgid "_Close"
