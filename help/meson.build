@@ -1,9 +1,8 @@
 help_media = [
     'media/go-home.png',
     'media/go-previous.png',
+    'media/org.gnome.Quadrapassel.svg',
     'media/previous.png',
-    'media/quadrapassel.png',
-    'media/quadrapassel22.png'
 ]
 help_files = [
     'bug-filing.page',
