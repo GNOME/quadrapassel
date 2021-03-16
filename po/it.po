@@ -1,19 +1,19 @@
 # Italian translation for quadrapassel
 # Copyright (C) 2002-2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2018 Free Software Foundation, Inc.
-# Copyrighe (C) 2019, 2020 Free Software Foundation, Inc.
+# Copyrighe (C) 2019, 2020, 2021 Free Software Foundation, Inc.
 # This file is distributed under the same license as the quadrapassel package.
 # Fabrizio Stefani <f.stef@it.gnome.org>, 1999-2002;
 # Alessio Frusciante <algol@firenze.linux.it>. 2003.
 # Francesco Marletta <francesco.marletta@tiscali.it>. 2002-2006.
 # Gruppo traduzione Italiano di Ubuntu <gruppo-traduzione@ubuntu-it.org>, 2007-2008
-# Milo Casagrande <milo@milo.name>, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2018, 2019, 2020.
+# Milo Casagrande <milo@milo.name>, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2018, 2019, 2020, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-09-24 22:13+0000\n"
-"PO-Revision-Date: 2020-09-28 09:41+0200\n"
+"POT-Creation-Date: 2021-03-02 07:10+0000\n"
+"PO-Revision-Date: 2021-03-16 09:32+0100\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "Language: it\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -168,21 +168,29 @@ msgid "Key press to pause."
 msgstr "Tasto da premere per mettere in pausa."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Invio"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "Tasto per iniziare il gioco"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Larghezza della finestra in pixel"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Altezza della finestra in pixel"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "VERO se la finestra è massimizzata"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -255,7 +263,7 @@ msgstr "A_iuto"
 msgid "_About Quadrapassel"
 msgstr "I_nformazioni su Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "Inizia una nuova partita"
 
@@ -348,19 +356,23 @@ msgstr "Pulito"
 msgid "Unable to change key, as this key already exists"
 msgstr "Impossibile modificare la chiave, poiché questa chiave esiste già"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "Riprendi partita"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:788
 msgid "Pause the game"
 msgstr "Sospendi partita"
 
-#: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Un classico gioco per far combaciare blocchi in caduta libera"
-
 #: src/quadrapassel.vala:866
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Un classico gioco in cui devi ruotare dei blocchi per completare le righe, "
+"ma non accumularne troppi uno sopra l'altro o… game over!"
+
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr ""
 "Milo Casagrande <milo@milo.name>\n"
