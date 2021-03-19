@@ -1,3 +1,67 @@
+quadrapassel 40.0
+==================
+* Tranlations updated
+* Press return to restart game
+* snap: Handle icon change
+* snap: Updated for core20
+* Update the libmanette URL
+
+Contributors:
+Milo Casagrande - Update Italian translation (Tue Mar 16 08:33:39 2021 +0000)
+Boyuan Yang - Update Chinese (China) translation (Mon Mar 15 02:15:28 2021 +0000)
+Piotr Drąg - Update Polish translation (Sat Mar 13 20:39:37 2021 +0100)
+Seong-ho Cho - Update Korean translation (Fri Mar 12 09:40:48 2021 +0000)
+Baurzhan Muftakhidinov - Update Kazakh translation (Thu Mar 11 03:09:00 2021 +0000)
+Danial Behzadi - Update Persian translation (Wed Mar 10 15:43:42 2021 +0000)
+Rūdolfs Mazurs - Update Latvian translation (Sun Mar 7 18:47:25 2021 +0000)
+Charles Monzat - Update French translation (Sat Mar 6 08:22:40 2021 +0000)
+Mario Blättermann - Update German translation (Fri Mar 5 19:15:00 2021 +0000)
+Balázs Úr - Update Hungarian translation (Tue Mar 2 07:10:45 2021 +0000)
+Balázs Úr - Update Hungarian translation (Tue Mar 2 06:56:17 2021 +0000)
+Asier Sarasua Garmendia - Update Basque translation (Sun Feb 28 18:54:43 2021 +0000)
+Aurimas Černius - Updated Lithuanian translation (Sat Feb 27 14:03:58 2021 +0200)
+Fran Dieguez - Update Galician translation (Wed Feb 24 00:02:27 2021 +0000)
+Jiri Grönroos - Update Finnish translation (Mon Feb 22 09:21:19 2021 +0000)
+Rafael Fontenelle - Update Brazilian Portuguese translation (Thu Feb 18 02:45:06 2021 +0000)
+Марко Костић - Update Serbian translation (Mon Feb 15 15:58:18 2021 +0000)
+Sabri Ünal - Update Turkish translation (Mon Feb 15 13:36:03 2021 +0000)
+Balázs Úr - Update Hungarian translation (Sat Feb 13 23:01:48 2021 +0000)
+John Ward - Merge branch 'libmanette-url' into 'master' (Wed Jan 27 11:59:48 2021 +0000)
+Fran Dieguez - Update Galician translation (Mon Jan 25 19:47:01 2021 +0000)
+Ken VanDine - snap: Updated for core20 (Fri Jan 22 14:43:24 2021 -0500)
+Fabio Tomat - Update Friulian translation (Thu Jan 21 06:35:26 2021 +0000)
+Kukuh Syafaat - Update Indonesian translation (Wed Jan 20 11:48:42 2021 +0000)
+Matej Urbančič - Update Slovenian translation (Tue Jan 12 18:05:18 2021 +0000)
+Hugo Carvalho - Update Portuguese translation (Wed Jan 6 13:53:50 2021 +0000)
+Fabio Tomat - Update Friulian translation (Wed Dec 30 10:56:40 2020 +0000)
+Philipp Kiemle - Update German translation (Sun Dec 27 12:11:35 2020 +0000)
+Jordi Mas i Hernandez - Update Catalan translation (Wed Dec 23 06:42:19 2020 +0000)
+Florentina Mușat - Update Romanian translation (Sat Dec 12 17:31:22 2020 +0000)
+seb128 - snap: don't try to use multilib on arches not having those (Thu Dec 10 15:30:14 2020 +0100)
+Daniel Mustieles - Updated Spanish translation (Wed Dec 2 13:54:56 2020 +0100)
+Yuri Chornoivan - Update Ukrainian translation (Sun Nov 29 08:09:11 2020 +0000)
+Yuri Chornoivan - Update Ukrainian translation (Sun Nov 29 07:06:14 2020 +0000)
+Anders Jonsson - Update Swedish translation (Sun Nov 29 01:18:53 2020 +0000)
+Marek Černocký - Updated Czech translation (Sun Nov 29 02:15:53 2020 +0100)
+Anders Jonsson - Update Swedish translation (Sat Nov 28 21:49:13 2020 +0000)
+Adrien Plazas - flatpak: Update the libmanette URL (Tue Nov 3 12:25:15 2020 +0100)
+John Ward - Updated the text to show this new way to restart the game quickly (Wed Sep 30 12:14:38 2020 +0100)
+John Ward - Press return to restart game (Tue Sep 29 23:01:19 2020 +0100)
+Yosef Or Boczko - Update Hebrew translation (Tue Sep 29 20:02:15 2020 +0000)
+Milo Casagrande - Update Italian translation (Mon Sep 28 07:42:24 2020 +0000)
+Ken VanDine - snap: Handle icon change (Fri Sep 25 09:57:18 2020 -0400)
+Balázs Úr - Update Hungarian translation (Wed Sep 23 16:32:55 2020 +0000)
+Anders Jonsson - Update Swedish translation (Tue Sep 22 12:51:06 2020 +0000)
+Daniel Mustieles - Updated Spanish translation (Wed Sep 16 14:16:50 2020 +0200)
+Emin Tufan Çetin - Update Turkish translation (Wed Sep 16 10:02:38 2020 +0000)
+Milo Casagrande - Update Italian translation (Wed Sep 16 07:50:27 2020 +0000)
+Jordi Mas - Update Catalan translation (Tue Sep 15 21:55:38 2020 +0200)
+Juliano de Souza Camargo - Update Portuguese translation (Tue Sep 15 19:23:22 2020 +0000)
+Rūdolfs Mazurs - Update Latvian translation (Tue Sep 15 18:11:20 2020 +0000)
+Marek Černocký - Updated Czech translation (Tue Sep 15 07:20:08 2020 +0200)
+Kukuh Syafaat - Update Indonesian translation (Tue Sep 15 01:29:12 2020 +0000)
+John Ward - Updated game description to provide a better description (Mon Sep 14 23:46:09 2020 +0100)
+
 quadrapassel 3.38.0
 ====================
 * Moving master to version 3.38 to be inline with GNOME's branching strategy
