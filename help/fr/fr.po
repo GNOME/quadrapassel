@@ -8,13 +8,13 @@
 # Alexandre Franke <alexandre.franke@gmail.com>, 2011.
 # Alain Lojewski <allomervan@gmail.com>, 2012.
 # Mickael Albertus <mickael.albertus@gmail.com>, 2012.
-# Charles Monzat <charles.monzat@free.fr>, 2017-2020.
+# Charles Monzat <charles.monzat@free.fr>, 2017-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master fr\n"
-"POT-Creation-Date: 2020-01-03 18:39+0000\n"
-"PO-Revision-Date: 2020-02-26 19:56+0100\n"
+"POT-Creation-Date: 2020-09-30 11:15+0000\n"
+"PO-Revision-Date: 2021-03-16 22:04+0100\n"
 "Last-Translator: Charles Monzat <charles.monzat@free.fr>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr_FR\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gtranslator 3.34.0\n"
+"X-Generator: Gtranslator 3.38.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -32,7 +32,7 @@ msgstr ""
 "Claude Paroz <claude@2xlibre.net>, 2007-2010\n"
 "Alain Lojewski <allomervan@gmail.com>, 2012\n"
 "Mickael Albertus <mickael.albertus@gmail.com>, 2012\n"
-"Charles Monzat <charles.monzat@free.fr>, 2020"
+"Charles Monzat <charles.monzat@free.fr>, 2020-2021"
 
 #. (itstool) path: credit/name
 #: C/bug-filing.page:11 C/develop.page:12 C/documentation.page:10
@@ -109,12 +109,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:36
-#| msgid ""
-#| "Once you have an account, log in, and click on <gui>New issue</gui>. "
-#| "Before reporting a bug, please read the <link href=\"https://bugzilla."
-#| "gnome.org/page.cgi?id=bug-writing.html\">bug writing guidelines</link>, "
-#| "and please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues"
-#| "\">browse</link> for the bug to see if it already exists."
 msgid ""
 "Once you have an account, log in, and click on <gui>New issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
@@ -158,7 +152,7 @@ msgstr "<link xref=\"get-involved\"><_:media-1/>Comment s’impliquer</link>"
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:51 C/develop.page:31 C/documentation.page:31
-#: C/playgame.page:47 C/preferences.page:71 C/score.page:38 C/translate.page:44
+#: C/playgame.page:48 C/preferences.page:71 C/score.page:38 C/translate.page:44
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
 msgstr "<link xref=\"index\">><_:media-1/>ACCUEIL</link>"
 
@@ -176,13 +170,6 @@ msgstr "Aider au développement"
 
 #. (itstool) path: page/p
 #: C/develop.page:27
-#| msgid ""
-#| "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
-#| "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
-#| "touch with the developers using <link href=\"https://cbe005.chat.mibbit."
-#| "com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our "
-#| "<link href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing "
-#| "list</link>."
 msgid ""
 "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
 "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
@@ -210,11 +197,6 @@ msgstr "Aider à écrire la documentation"
 
 #. (itstool) path: page/p
 #: C/documentation.page:25
-#| msgid ""
-#| "To contribute to the Documentation Project, feel free to get in touch "
-#| "with us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F"
-#| "%2Firc.gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail."
-#| "gnome.org/mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgid ""
 "To contribute to the Documentation Project, feel free to get in touch with "
 "us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
@@ -278,7 +260,6 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: C/index.page:25
-#| msgid "Game"
 msgid "Game Play"
 msgstr "Partie"
 
@@ -442,18 +423,26 @@ msgstr ""
 "chute douce (la vitesse augmente temporairement tant que la touche est "
 "maintenue enfoncée)."
 
+#. (itstool) path: item/p
+#: C/playgame.page:33
+msgid ""
+"The <key>Enter</key> will restart the game quickly once it is game over."
+msgstr ""
+"La touche <key>Entrée</key> redémarre la partie rapidement une fois celle-ci "
+"terminée."
+
 #. (itstool) path: section/title
-#: C/playgame.page:37
+#: C/playgame.page:38
 msgid "Rules"
 msgstr "Règles"
 
 #. (itstool) path: section/p
-#: C/playgame.page:39
+#: C/playgame.page:40
 msgid "There are a couple of rules that you should keep in mind:"
 msgstr "Il y a quelques règles que vous devez garder à l’esprit :"
 
 #. (itstool) path: item/p
-#: C/playgame.page:41
+#: C/playgame.page:42
 msgid ""
 "You can pause, end, start a new game, get help or quit the program at any "
 "time."
@@ -462,7 +451,7 @@ msgstr ""
 "l’aide ou quitter le programme à tout moment."
 
 #. (itstool) path: item/p
-#: C/playgame.page:42
+#: C/playgame.page:43
 msgid "You can pause the game as many times as you want."
 msgstr ""
 "Vous pouvez mettre le jeu en pause autant de fois que vous le souhaitez."
@@ -489,9 +478,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/preferences.page:29
-#| msgid ""
-#| "The three tabs available are <gui>Controls</gui>, <gui>Game</gui> and "
-#| "<gui>Theme</gui>."
 msgid ""
 "The three tabs available are <gui>Game</gui>, <gui>Controls</gui> and "
 "<gui>Theme</gui>."
@@ -539,8 +525,6 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/preferences.page:39
-#| msgid ""
-#| "These options can vary from 0 to 19, 0 to 10, and 1 to 20 respectively."
 msgid "These options can vary from 0 to 15, 0 to 10, and 1 to 20 respectively."
 msgstr ""
 "Ces options peuvent varier respectivement de 0 à 15, de 0 à 10 et de 1 à 20."
@@ -628,7 +612,6 @@ msgstr "Clean"
 
 #. (itstool) path: info/desc
 #: C/score.page:21
-#| msgid "High Scores"
 msgid "High Scores."
 msgstr "Meilleurs scores."
 
@@ -657,12 +640,6 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/score.page:29
-#| msgid ""
-#| "You can make many changes to the keyboard controls, the contour of the "
-#| "blocks, the number and density of lines with which you start, and the "
-#| "speed of drop. You can change your settings in in <link xref=\"preferences"
-#| "\">Preference</link>. After deciding what fits you the most, you will "
-#| "rock!"
 msgid ""
 "You can make many changes to the keyboard controls, the contour of the "
 "blocks, the number and density of lines with which you start, and the speed "
@@ -682,10 +659,6 @@ msgstr "Meilleurs scores"
 
 #. (itstool) path: section/p
 #: C/score.page:34
-#| msgid ""
-#| "Everyone wants to be on the top of the list, right? In <guiseq><gui>Game</"
-#| "gui><gui>Scores</gui></guiseq> you can find the records from the highest "
-#| "to the lowest score."
 msgid ""
 "Press the menu button in the top-right corner of the window and select <gui "
 "style=\"menuitem\">Scores</gui> to find the records from the highest to the "
@@ -716,9 +689,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/translate.page:27
-#| msgid ""
-#| "There are <link href=\"http://l10n.gnome.org/module/quadrapassel/\">many "
-#| "languages</link> for which translations are still needed."
 msgid ""
 "There are <link href=\"https://l10n.gnome.org/module/quadrapassel/\">many "
 "languages</link> for which translations are still needed."
@@ -729,11 +699,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/translate.page:31
-#| msgid ""
-#| "To start translating you will need to <link href=\"http://l10n.gnome.org"
-#| "\">create an account</link> and join the <link href=\"http://l10n.gnome."
-#| "org/teams/\">translation team</link> for your language. This will give "
-#| "you the ability to upload new translations."
 msgid ""
 "To start translating you will need to <link href=\"https://l10n.gnome.org"
 "\">create an account</link> and join the <link href=\"https://l10n.gnome.org/"
@@ -761,10 +726,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/translate.page:39
-#| msgid ""
-#| "Alternatively, you can contact the Internationalization Team using their "
-#| "<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
-#| "list</link>."
 msgid ""
 "Alternatively, you can contact the Internationalization Team using their "
 "<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
