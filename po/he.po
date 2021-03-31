@@ -10,18 +10,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.he\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-09-24 22:13+0000\n"
-"PO-Revision-Date: 2020-09-29 23:01+0300\n"
-"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
+"POT-Creation-Date: 2021-03-02 07:10+0000\n"
+"PO-Revision-Date: 2021-03-31 17:48+0300\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <yoseforb@gmail.com>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Launchpad-Export-Date: 2008-01-13 04:36+0000\n"
-"X-Poedit-Language: Hebrew\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -57,12 +56,10 @@ msgid "Whether to preview the next block."
 msgstr "Whether to preview the next block."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-#| msgid "Whether to show where the moving piece will land"
 msgid "Whether to show where the moving block will land"
 msgstr "Whether to show where the moving block will land"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-#| msgid "Whether to show where the moving piece will land."
 msgid "Whether to show where the moving block will land."
 msgstr "Whether to show where the moving block will land."
 
@@ -171,21 +168,30 @@ msgid "Key press to pause."
 msgstr "Key press to pause."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Enter"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+#| msgid "Level to start with"
+msgid "Key to start the game"
+msgstr "Key to start the game"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Width of the window in pixels"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Height of the window in pixels"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "true if the window is maximized"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "קוודראפאזל"
 
@@ -202,6 +208,10 @@ msgid ""
 "disappear and you score points. The game is over when the blocks get stacked "
 "too high. As your score gets higher, you level up and the blocks fall faster."
 msgstr ""
+"‫קוודראפאזל הוא נגזרת של משחק רוסי קלסי עם לבנים נופלות. יש לשנות את המיקום "
+"ולהטות את הלבנים בעודן נופלות ולנסות להתאים אותן זו לזו. כאשר מתגבשת שורה "
+"אנכית מלאה בלבנים השורה תיעלם ויתווספו לך נקודות. המשחק נגמר עם היערמות של "
+"הלבנים לגובה רב מדי. עליה בניקוד מגבירה את מהירות נפילת הלבנים."
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:17
 msgid ""
@@ -210,6 +220,9 @@ msgid ""
 "of the rows. Or, instead of allowing the blocks to fall randomly, it can "
 "select blocks that will be hard for you to place."
 msgstr ""
+"אם בא לך להתפרע, קוודראפאזל מאפשר לך להגביר את המהירות הראשונית של הלבנים או "
+"להתחיל את המשחק עם לבנים מפוזרות לסירוגין בחלק מהשורות. או, במקום לאפשר "
+"ללבנים ליפול אקראית, יש אפשרות שהמערכת תבחר עבורך לבנים שיהיה לך קשה לשלב."
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:33
 msgid "The GNOME Project"
@@ -245,11 +258,10 @@ msgid "_Help"
 msgstr "ע_זרה"
 
 #: src/quadrapassel.vala:123
-#| msgid "Quadrapassel"
 msgid "_About Quadrapassel"
-msgstr "_על אודות קוודראפאזל"
+msgstr "_על קוודראפאזל"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "התחלת משחק חדש"
 
@@ -311,7 +323,7 @@ msgstr "_סיבוב לבנים נגד כיוון השעון"
 
 #: src/quadrapassel.vala:361
 msgid "Show _where the block will land"
-msgstr "להציג _היכן תפגע הלבנה"
+msgstr "להציג הי_כן תפגע הלבנה"
 
 #: src/quadrapassel.vala:405
 msgid "Controls"
@@ -342,19 +354,23 @@ msgstr "ניקוי"
 msgid "Unable to change key, as this key already exists"
 msgstr "לא ניתן לשנות מפתח זה, כיוון שמפתח זה כבר קיים"
 
-#: src/quadrapassel.vala:778
-msgid "Unpause the game"
-msgstr "המשכת המשחק"
-
 #: src/quadrapassel.vala:783
-msgid "Pause the game"
-msgstr "השהיית המשחק"
+msgid "Unpause the game"
+msgstr "להמשיך במשחק"
 
-#: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "משחק קלסי של התאמת לבנים נופלות זו לזו"
+#: src/quadrapassel.vala:788
+msgid "Pause the game"
+msgstr "להשהות משחק"
 
 #: src/quadrapassel.vala:866
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"משחק קלסי בו עליך לסובב לבנים כדי להשלים שורות אך לא כדאי לערום את הלבנים "
+"לגובה או שהמשחק יסתיים!"
+
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr ""
 "גיל אשר <dolfin@rpg.org.il>\n"
@@ -384,6 +400,9 @@ msgstr "_אישור"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "תאריך"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "משחק קלסי של התאמת לבנים נופלות זו לזו"
 
 #~ msgid "_About"
 #~ msgstr "על _אודות"
