@@ -37,23 +37,23 @@
 # Tino Meinen <tino.meinen@gmail.com>, 2002–2009.
 # Wouter Bolsterlee <wbolster@gnome.org>, 2008.
 # Redmar <redmar@ubuntu-nl.org>, 2011.
-# Nathan Follens <nthn@unseen.is>, 2016-2020.
+# Nathan Follens <nthn@unseen.is>, 2016-2021.
 # Justin van Steijn <jvs@fsfe.org>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-08-25 14:41+0200\n"
+"POT-Creation-Date: 2021-03-02 07:10+0000\n"
+"PO-Revision-Date: 2021-04-01 22:17+0200\n"
 "Last-Translator: Nathan Follens <nthn@unseen.is>\n"
-"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2011-09-18 07:04+0000\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
 # BUG
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -207,23 +207,32 @@ msgstr "Pauzeren"
 msgid "Key press to pause."
 msgstr "Toets waarmee gepauzeerd wordt."
 
+# ? - Nathan
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Enter"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "Toets om het spel te beginnen"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "De breedte van het venster in beeldpunten"
 
 # de gevraagde hoogte/de hoogte
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "De hoogte van het venster in beeldpunten"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "ingeschakeld als het venster is gemaximaliseerd"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
+#: src/quadrapassel.vala:909
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -297,7 +306,7 @@ msgstr "_Hulp"
 msgid "_About Quadrapassel"
 msgstr "_Over Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
 msgid "Start a new game"
 msgstr "Een nieuw spel beginnen"
 
@@ -399,19 +408,23 @@ msgstr "Helder"
 msgid "Unable to change key, as this key already exists"
 msgstr "Kan de sleutel niet wijzigen, want die sleutel bestaat al"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "Doorgaan met het spel"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:788
 msgid "Pause the game"
 msgstr "Het spel pauzeren"
 
-#: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Een klassiek spel met vallende blokken"
-
 #: src/quadrapassel.vala:866
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Een klassiek spel waarbij u blokken draait om volledige rijen te maken, maar "
+"stapel uw blokken niet te hoog of het spel is voorbij!"
+
+#: src/quadrapassel.vala:871
 msgid "translator-credits"
 msgstr ""
 "Tino Meinen\n"
@@ -425,7 +438,7 @@ msgstr ""
 "Meer info over Gnome-NL http://nl.gnome.org/\n"
 "\n"
 "Launchpad-bijdragen:\n"
-"  Balaam's Miracle https://launchpad.net/~balaam-balaamsmiracle\n"
+"  Balaam’s Miracle https://launchpad.net/~balaam-balaamsmiracle\n"
 "  Bert de Bruijn https://launchpad.net/~lpdebruijn\n"
 "  Bram Smulders https://launchpad.net/~bramsmulders\n"
 "  Carl Michiels https://launchpad.net/~carl-michiels\n"
@@ -460,6 +473,9 @@ msgstr "_Oké"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Datum"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Een klassiek spel met vallende blokken"
 
 #~| msgid "Quadrapassel"
 #~ msgid "org.gnome.Quadrapassel"
