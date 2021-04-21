@@ -432,7 +432,7 @@ msgid ""
 "The three tabs available are <gui>Game</gui>, <gui>Controls</gui> and "
 "<gui>Theme</gui>."
 msgstr ""
-"Hiru fitxa daude<: <gui>Jokoa</gui>, <gui>Kontrolak</gui> eta <gui>Gaia</"
+"Hiru fitxa daude: <gui>Jokoa</gui>, <gui>Kontrolak</gui> eta <gui>Gaia</"
 "gui>."
 
 #. (itstool) path: section/title
