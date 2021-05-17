@@ -1,3 +1,11 @@
+quadrapassel 3.38.6
+====================
+* Update Hungarian translation
+* snap: don't try to use multilib on arches not having those
+
+Contributors: Balázs Úr, Sébastien Bacher 
+
+
 quadrapassel 3.38.1
 ====================
 * snap: Handle icon changes
