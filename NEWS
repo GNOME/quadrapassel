@@ -1,3 +1,20 @@
+quadrapassel 40.1
+==================
+* Tranlations: Add Basque, Update Dutch, Update Hebrew, Update French, Update British English
+* Fix broken markup in Basque help translation
+* Changed standard width of game to 10.
+
+Contributors:
+Daniel Mustieles - Updated Spanish translation
+Andre Klapper - Fix broken markup in Basque help translation
+John Ward - Change the width to the standard Tetris size of 10
+Asier Sarasua Garmendia - Add Basque translation
+Nathan Follens - Update Dutch translation
+Yaron Shahrabani - Update Hebrew translation
+Charles Monzat - Update French translation
+Bruce Cowan - Update British English translation
+
+
 quadrapassel 40.0
 ==================
 * Tranlations updated
