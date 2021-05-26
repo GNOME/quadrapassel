@@ -141,7 +141,7 @@ public class Quadrapassel : Gtk.Application
         var game_aspect = new Gtk.AspectFrame (null, 0.5f, 0.5f, 10.0f/20.0f, false); // change to 10 from 14
         game_aspect.show ();
         game_aspect.add (view);
-        game_aspect.border_width = 12;
+        game_aspect.border_width = 1;
         game_grid.attach (game_aspect, 0, 1, 2, 17);
 
         pause_play_button = new Gtk.Button ();
