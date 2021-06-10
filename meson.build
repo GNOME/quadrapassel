@@ -1,5 +1,5 @@
 project('quadrapassel', 'vala', 'c',
-        version: '40.1')
+        version: '40.2')
 
 project_id = 'org.gnome.Quadrapassel'
 
