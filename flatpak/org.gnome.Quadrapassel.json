@@ -83,16 +83,6 @@
       ]
     },
     {
-      "name": "clutter-1.0",
-      "buildsystem": "meson",
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://gitlab.gnome.org/GNOME/clutter"
-        }
-      ]
-    },
-    {
       "name": "quadrapassel",
       "buildsystem": "meson",
       "sources": [
