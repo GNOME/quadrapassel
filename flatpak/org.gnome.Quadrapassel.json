@@ -5,33 +5,44 @@
   "sdk": "org.gnome.Sdk",
   "command": "quadrapassel",
   "finish-args": [
-    "--share=ipc", "--socket=x11",
+    "--share=ipc",
+    "--socket=x11",
     "--socket=wayland",
-    "--device=dri", "--socket=pulseaudio",
-    "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
-    "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
+    "--device=dri",
+    "--socket=pulseaudio",
+    "--filesystem=xdg-run/dconf",
+    "--filesystem=~/.config/dconf:ro",
+    "--talk-name=ca.desrt.dconf",
+    "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
     "--device=all"
   ],
-  "build-options" : {
+  "build-options": {
     "cflags": "-O2 -g",
     "cxxflags": "-O2 -g"
   },
   "cleanup": [
-    "/include", "/lib/pkgconfig",
-    "/share/pkgconfig", "/share/aclocal",
-    "/man", "/share/man", "/share/gtk-doc",
-    "*.la", "*.a",
+    "/include",
+    "/lib/pkgconfig",
+    "/share/pkgconfig",
+    "/share/aclocal",
+    "/man",
+    "/share/man",
+    "/share/gtk-doc",
+    "*.la",
+    "*.a",
     "/lib/girepository-1.0",
-    "/share/dbus-1", "/share/doc", "/share/gir-1.0"
+    "/share/dbus-1",
+    "/share/doc",
+    "/share/gir-1.0"
   ],
   "modules": [
     {
-      "name" : "gsound",
-      "buildsystem" : "autotools",
-      "sources" : [
+      "name": "gsound",
+      "buildsystem": "autotools",
+      "sources": [
         {
-          "type" : "git",
-          "url" : "https://gitlab.gnome.org/GNOME/gsound.git"
+          "type": "git",
+          "url": "https://gitlab.gnome.org/GNOME/gsound.git"
         }
       ],
       "modules": [
@@ -42,11 +53,13 @@
             "--disable-null",
             "--disable-oss"
           ],
-          "sources": [{
-            "type": "archive",
-            "url": "http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz",
-            "sha256": "c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72"
-          }]
+          "sources": [
+            {
+              "type": "archive",
+              "url": "http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz",
+              "sha256": "c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72"
+            }
+          ]
         }
       ]
     },
@@ -66,6 +79,16 @@
         {
           "type": "git",
           "url": "https://gitlab.gnome.org/GNOME/libmanette.git"
+        }
+      ]
+    },
+    {
+      "name": "clutter-1.0",
+      "buildsystem": "meson",
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://gitlab.gnome.org/GNOME/clutter/-/tree/clutter-1.0"
         }
       ]
     },
