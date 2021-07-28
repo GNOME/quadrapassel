@@ -35,7 +35,7 @@
 
    <p>
    Once you have an account, log in, and click on <gui>New issue</gui>.
-   Before reporting a bug, please read the <link href="https://wiki.gnome.org/Community/GettingInTouch/Bugzilla/Guidelines">bug writing guidelines</link>,  and please <link href="https://gitlab.gnome.org/GNOME/quadrapassel/issues">browse</link> for the bug to see if it already exists.
+   Before reporting a bug, please read the <link href="https://wiki.gnome.org/GettingInTouch/BugReportingGuidelines">bug writing guidelines</link>,  and please <link href="https://gitlab.gnome.org/GNOME/quadrapassel/issues">browse</link> for the bug to see if it already exists.
    </p>
 
    <p>
