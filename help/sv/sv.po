@@ -1,11 +1,11 @@
 # Erik Sköldås <erik.skoldas@tele2.se>, 2015.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2018, 2020.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2018, 2020, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel doc\n"
-"POT-Creation-Date: 2020-09-30 11:15+0000\n"
-"PO-Revision-Date: 2020-11-29 02:18+0100\n"
+"POT-Creation-Date: 2021-07-28 20:09+0000\n"
+"PO-Revision-Date: 2021-07-31 21:52+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -100,15 +100,15 @@ msgstr ""
 msgid ""
 "Once you have an account, log in, and click on <gui>New issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
-"link>, and please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/"
-"issues\">browse</link> for the bug to see if it already exists."
+"GettingInTouch/BugReportingGuidelines\">bug writing guidelines</link>, and "
+"please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues"
+"\">browse</link> for the bug to see if it already exists."
 msgstr ""
 "När du har ett konto, logga in och klicka på <gui>New issue</gui>. Innan du "
-"rapporterar ett fel, läs <link href=\"https://wiki.gnome.org/Community/"
-"GettingInTouch/Bugzilla/Guidelines\">riktlinjerna för hur man skriver en "
-"felrapport</link> och <link href=\"https://gitlab.gnome.org/GNOME/"
-"quadrapassel/issues\">sök</link> för att se om felet redan är rapporterat."
+"rapporterar ett fel, läs <link href=\"https://wiki.gnome.org/GettingInTouch/"
+"BugReportingGuidelines\">riktlinjerna för hur man skriver en felrapport</"
+"link> och <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues"
+"\">sök</link> för att se om felet redan är rapporterat."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:41
@@ -700,55 +700,3 @@ msgstr ""
 "Alternativt kan du kontakta internationaliseringsgruppen genom att använda "
 "deras <link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n"
 "\">sändlista</link>."
-
-#~ msgid ""
-#~ "<app>Quadrapassel</app> is maintained by a volunteer community. You are "
-#~ "invited to participate in any of the following ways."
-#~ msgstr ""
-#~ "<app>Quadrapassel</app> underhålls av en frivillig gemenskap. Du är "
-#~ "välkommen att delta på något av följande sätt."
-
-#~ msgid "<link xref=\"playgame\">Play the game</link>"
-#~ msgstr "<link xref=\"playgame\">Spela spelet</link>"
-
-#~ msgid "<link xref=\"score\">Score points</link>"
-#~ msgstr "<link xref=\"score\">Förbättra din poäng</link>"
-
-#~ msgid "<link xref=\"preferences\">Preferences</link>"
-#~ msgstr "<link xref=\"preferences\">Inställningar</link>"
-
-#~ msgid "<link xref=\"get-involved\">Get involved</link>"
-#~ msgstr "<link xref=\"get-involved\">Engagera dig</link>"
-
-#~ msgid "PLAY PLAY PLAY!"
-#~ msgstr "SPELA SPELA SPELA!"
-
-#~ msgid ""
-#~ "To change the game preferences, click the <guiseq><gui>Quadrapassel menu</"
-#~ "gui><gui>Preferences</gui></guiseq>."
-#~ msgstr ""
-#~ "För att ändra spelinställningar, klicka på <guiseq><gui>Quadrapassel "
-#~ "menyn</gui><gui>Inställningar</gui></guiseq>."
-
-#~ msgid "To change the theme:"
-#~ msgstr "För att ändra tema:"
-
-#~ msgid ""
-#~ "click the <guiseq><gui>Quadrapassel menu</gui><gui>Preference</gui></"
-#~ "guiseq>."
-#~ msgstr ""
-#~ "klicka på <guiseq><gui>Quadrapassel-menyn</gui><gui>Inställningar</gui></"
-#~ "guiseq>."
-
-#~ msgid "select the <gui>Theme</gui> tab."
-#~ msgstr "välj <gui>Tema</gui>-fliken."
-
-#~ msgid "Do you think you can reach level 10?"
-#~ msgstr "Tror du att du kan nå nivå 10?"
-
-#~ msgid ""
-#~ "The scores cannot be deleted, so do not worry that someone will remove "
-#~ "your best high score!"
-#~ msgstr ""
-#~ "Poängen kan inte raderas, så oroa dig inte att någon kommer att ta bort "
-#~ "ditt poängrekord!"
