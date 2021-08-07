@@ -388,8 +388,8 @@ msgid ""
 "counterclockwise by default) can be changed in the <link xref=\"preferences"
 "\">Preferences</link>."
 msgstr ""
-"la tecla <key>↑</key> rota el bloc. La rotació (en sentit antihorari per "
-"defecte) pot canviar-se a les <link xref=\"preferences\">preferències</link>."
+"La tecla <key>↑</key> gira el bloc. La rotació (en sentit antihorari per "
+"defecte) pot canviar-se a les <link xref=\"preferences\">Preferències</link>."
 
 #. (itstool) path: item/p
 #: C/playgame.page:32
@@ -426,7 +426,7 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/playgame.page:42
 msgid "You can pause the game as many times as you want."
-msgstr "Podeu aturar el joc tants cops com vulgueu."
+msgstr "Podeu aturar la partida tants cops com vulgueu."
 
 #. (itstool) path: info/desc
 #: C/preferences.page:21
@@ -617,7 +617,7 @@ msgstr ""
 "Podeu fer molts canvis als controls de teclat, el contorn dels blocs, el "
 "nombre i la densitat de línies amb què comenceu, i la velocitat de la "
 "caiguda. Podeu canviar la configuració a les <link xref=\"preferences"
-"\">preferences</link>."
+"\">Preferències</link>."
 
 #. (itstool) path: section/title
 #: C/score.page:33
@@ -697,87 +697,7 @@ msgid ""
 "<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
 "list</link>."
 msgstr ""
-"També podeu contactar amb l’Equip d’Internacionalització mitjançant la seva "
+"També podeu contactar amb l'Equip d'Internacionalització mitjançant la seva "
 "<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">llista de "
 "correu</link>."
 
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/quadrapassel22.png' "
-#~ "md5='4d2440a988c86ad179d0f8148263d8b9'"
-#~ msgstr ""
-#~ "external ref='media/quadrapassel22.png' "
-#~ "md5='4d2440a988c86ad179d0f8148263d8b9'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/quadrapassel.png' "
-#~ "md5='95b96f006d5876090ff7a2305652658c'"
-#~ msgstr ""
-#~ "external ref='media/quadrapassel.png' "
-#~ "md5='95b96f006d5876090ff7a2305652658c'"
-
-#~ msgctxt "_"
-#~ msgid "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
-#~ msgstr ""
-#~ "external ref='media/fig4.png' md5='ee988b962248032139b5099a3a447526'"
-
-#~ msgctxt "_"
-#~ msgid "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
-#~ msgstr ""
-#~ "external ref='media/fig5.png' md5='061b493a297a484698879207b33bccca'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
-#~ msgstr ""
-#~ "external ref='media/part1.jpg' md5='da9058085357725e07c59e19fb331745'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
-#~ msgstr ""
-#~ "external ref='media/part2.jpg' md5='87042d07bd89715812e598d752273dcb'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
-#~ msgstr ""
-#~ "external ref='media/part3.jpg' md5='080ac9ee4e032a54b86e773681feacfc'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
-#~ msgstr ""
-#~ "external ref='media/part4.jpg' md5='eb115674081786f85aa0c998b30cc52b'"
-
-#~ msgctxt "_"
-#~ msgid "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
-#~ msgstr ""
-#~ "external ref='media/fig3.png' md5='59616290e774c4c050bd4ec56a2e529d'"
-
-#~ msgctxt "_"
-#~ msgid "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
-#~ msgstr ""
-#~ "external ref='media/fig2.png' md5='ef1766484f3b9925fc2b6142bd5820a0'"
-
-#~ msgid ""
-#~ "<media type=\"image\" src=\"media/quadrapassel.png\">Quadrapassel logo</"
-#~ "media>Quadrapassel"
-#~ msgstr ""
-#~ "<media type=\"image\" src=\"media/quadrapassel.png\">Logotip del "
-#~ "Quadrapassel</media>Quadrapassel"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/go-previous.png' "
-#~ "md5='e9ce3da4ee6497ce2f38178c3c929872'"
-#~ msgstr ""
-#~ "external ref='media/go-previous.png' "
-#~ "md5='e9ce3da4ee6497ce2f38178c3c929872'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
-#~ msgstr ""
-#~ "external ref='media/go-home.png' md5='a3e5f444349fc0cdabcd0532c1765d56'"
