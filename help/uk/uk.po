@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel gnome-3-36\n"
-"POT-Creation-Date: 2021-07-28 20:09+0000\n"
-"PO-Revision-Date: 2021-07-29 13:15+0300\n"
+"POT-Creation-Date: 2021-08-24 09:55+0000\n"
+"PO-Revision-Date: 2021-08-24 19:56+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -96,13 +96,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:36
-#| msgid ""
-#| "Once you have an account, log in, and click on <gui>New issue</gui>. "
-#| "Before reporting a bug, please read the <link href=\"https://wiki.gnome."
-#| "org/Community/GettingInTouch/Bugzilla/Guidelines\">bug writing "
-#| "guidelines</link>, and please <link href=\"https://gitlab.gnome.org/GNOME/"
-#| "quadrapassel/issues\">browse</link> for the bug to see if it already "
-#| "exists."
 msgid ""
 "Once you have an account, log in, and click on <gui>New issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
@@ -112,10 +105,11 @@ msgid ""
 msgstr ""
 "Щойно ваш обліковий запис буде зареєстровано, увійдіть до нього і натисніть "
 "кнопку <gui>New issue</gui> («Нова вада»). Перш ніж повідомляти про ваду, "
-"будь ласка, ознайомтеся із <link href=\"https://wiki.gnome.org/GettingInTouch/BugReportingGuidelines\">настановами щодо створення повідомлень "
-"про вади</link>, і, будь ласка, <link href=\"https://gitlab.gnome.org/GNOME/"
-"quadrapassel/issues\">перегляньте</link> список вад, щоб переконатися у "
-"тому, що про виявлену вами ваду ще ніхто не повідомив."
+"будь ласка, ознайомтеся із <link href=\"https://wiki.gnome.org/"
+"GettingInTouch/BugReportingGuidelines\">настановами щодо створення "
+"повідомлень про вади</link>, і, будь ласка, <link href=\"https://gitlab."
+"gnome.org/GNOME/quadrapassel/issues\">перегляньте</link> список вад, щоб "
+"переконатися у тому, що про виявлену вами ваду ще ніхто не повідомив."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:41
@@ -210,6 +204,14 @@ msgstr ""
 "Contributing\">сторінці у вікі</link> містяться корисні настанови."
 
 #. (itstool) path: info/title
+#: C/index.page:6
+#| msgctxt "link"
+#| msgid "Quadrapassel"
+msgctxt "link:trail"
+msgid "Quadrapassel"
+msgstr "Квадрапасл"
+
+#. (itstool) path: info/title
 #: C/index.page:7
 msgctxt "link"
 msgid "Quadrapassel"
@@ -220,11 +222,6 @@ msgstr "Квадрапасл"
 msgctxt "text"
 msgid "Quadrapassel"
 msgstr "Квадрапасл"
-
-#. (itstool) path: media/span
-#: C/index.page:20
-msgid "Quadrapassel logo"
-msgstr "Логотип «Квадрапасл»"
 
 #. (itstool) path: page/title
 #: C/index.page:20
@@ -713,3 +710,6 @@ msgstr ""
 "Крім того, ви можете зв'язатися із командою з інтернаціоналізації за "
 "допомогою відповідного <link href=\"https://mail.gnome.org/mailman/listinfo/"
 "gnome-i18n\">списку листування</link>."
+
+#~ msgid "Quadrapassel logo"
+#~ msgstr "Логотип «Квадрапасл»"
