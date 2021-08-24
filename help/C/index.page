@@ -3,7 +3,7 @@
 	type="guide" style="task"
 	id="index">
   <info>
-    <title type='link' role="trail"> <media type="image" src="media/quadrapassel22.png" its:translate="no" /></title>
+    <title type='link' role="trail">Quadrapassel</title>
     <title type='link'>Quadrapassel</title>
     <title type='text'>Quadrapassel</title>
     <revision pkgversion="3.5.5" version="0.1" date="2012-08-11" status="review"/>
@@ -17,7 +17,7 @@
       <p>Creative Commons Share Alike 3.0</p>
     </license>
   </info>
-<title><media type="image" src="media/quadrapassel.png" its:translate="no"><span its:translate="yes">Quadrapassel logo</span></media> Quadrapassel</title>
+<title><media type="image" width="48px" height="48px" src="media/org.gnome.Quadrapassel.svg" its:translate="no"/> Quadrapassel</title>
 
   <p>In Quadrapassel, the GNOME version of Tetris, your goal is to create as many complete horizontal lines as possible. The lines are made from seven different shapes. The shapes fall randomly from the top center of the screen. Your task is to rotate and move the shapes across the screen to make complete lines. By making complete horizontal lines, you score points and move up levels. As you progress, the speed of the falling blocks increases.</p>
 
