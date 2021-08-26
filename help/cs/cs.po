@@ -2,13 +2,13 @@
 # Copyright (C) 2009 the author(s) of gnome-games.
 # This file is distributed under the same license as the gnometris help.
 #
-# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013, 2015, 2018, 2020.
+# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013, 2015, 2018, 2020, 2021.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-games master\n"
-"POT-Creation-Date: 2020-09-30 11:15+0000\n"
-"PO-Revision-Date: 2020-11-29 02:04+0100\n"
+"Project-Id-Version: quadrapassel\n"
+"POT-Creation-Date: 2021-08-24 09:55+0000\n"
+"PO-Revision-Date: 2021-08-26 18:02+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -101,16 +101,16 @@ msgstr ""
 msgid ""
 "Once you have an account, log in, and click on <gui>New issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
-"link>, and please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/"
-"issues\">browse</link> for the bug to see if it already exists."
+"GettingInTouch/BugReportingGuidelines\">bug writing guidelines</link>, and "
+"please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues"
+"\">browse</link> for the bug to see if it already exists."
 msgstr ""
 "Když už účet máte, přihlaste se a klikněte na <gui>New issue</gui>. Před "
 "nahlášením chyby si prosím přečtěte <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">přiručku k hlášení chyb</"
-"link> (odkaz je v angličtině) a <link href=\"https://gitlab.gnome.org/GNOME/"
-"quadrapassel/issues\">podívejte</link> se prosím, jestli stejnou chybu "
-"nenahlásil už někdo jiný."
+"GettingInTouch/BugReportingGuidelines\">přiručku k hlášení chyb</link> (odkaz "
+"je v angličtině) a <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/"
+"issues\">podívejte</link> se prosím, jestli stejnou chybu nenahlásil už někdo "
+"jiný."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:41
@@ -205,6 +205,12 @@ msgstr ""
 "DocumentationProject/Contributing\">wikistránka</link>."
 
 #. (itstool) path: info/title
+#: C/index.page:6
+msgctxt "link:trail"
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#. (itstool) path: info/title
 #: C/index.page:7
 msgctxt "link"
 msgid "Quadrapassel"
@@ -215,11 +221,6 @@ msgstr "Quadrapassel"
 msgctxt "text"
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
-
-#. (itstool) path: media/span
-#: C/index.page:20
-msgid "Quadrapassel logo"
-msgstr "Logo hry Quadrapassel"
 
 #. (itstool) path: page/title
 #: C/index.page:20
@@ -702,3 +703,4 @@ msgstr ""
 "Případně můžete kontaktovat Internacionalizační tým přes jeho <link href="
 "\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">poštovní konferenci</"
 "link>."
+
