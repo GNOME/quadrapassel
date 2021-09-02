@@ -36,8 +36,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.el\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-09-09 22:52+0300\n"
+"POT-Creation-Date: 2021-05-10 11:36+0000\n"
+"PO-Revision-Date: 2021-09-03 00:25+0300\n"
 "Last-Translator: Efstathios Iosifidis <eiosifidis@gnome.org>\n"
 "Language-Team: Ελληνικά <>\n"
 "Language: el\n"
@@ -196,21 +196,29 @@ msgid "Key press to pause."
 msgstr "Πάτημα πλήκτρου για παύση."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Enter"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "Πλήκτρο για εκκίνηση του παιχνιδιού"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Το πλάτος του παραθύρου σε εικονοστοιχεία"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Το ύψος του παραθύρου σε εικονοστοιχεία"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "αληθής αν το παράθυρο είναι μεγιστοποιημένο"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:865
+#: src/quadrapassel.vala:910
 msgid "Quadrapassel"
 msgstr "Τουβλάκια"
 
@@ -285,7 +293,7 @@ msgstr "_Βοήθεια"
 msgid "_About Quadrapassel"
 msgstr "_Περί του Τουβλάκια"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:803
 msgid "Start a new game"
 msgstr "Εκκίνηση νέου παιχνιδιού"
 
@@ -379,19 +387,24 @@ msgid "Unable to change key, as this key already exists"
 msgstr ""
 "Δεν είναι δυνατή η αλλαγή του κλειδιού, καθώς αυτό το κλειδί υπάρχει ήδη"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:784
 msgid "Unpause the game"
 msgstr "Αναίρεση παύσης παιχνιδιού"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:789
 msgid "Pause the game"
 msgstr "Παύση παιχνιδιού"
 
-#: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Ένα κλασσικό παιχνίδι προσαρμογής τούβλων που πέφτουν μαζί"
+#: src/quadrapassel.vala:867
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Ένα κλασικό παιχνίδι όπου περιστρέφετε τουβλάκια για να κάνετε πλήρεις "
+"σειρές, αλλά μην στοιβάζετε τα τουβλάκια σας πολύ ψηλά διότι θα χάσετε το "
+"παιχνίδι!"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:872
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
@@ -419,6 +432,9 @@ msgstr "Ε_ντάξει"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Ημερομηνία"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Ένα κλασσικό παιχνίδι προσαρμογής τούβλων που πέφτουν μαζί"
 
 #~| msgid "org.gnome.quadrapassel"
 #~ msgid "org.gnome.Quadrapassel"
