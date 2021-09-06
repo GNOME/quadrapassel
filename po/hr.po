@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games 0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-09-09 20:38+0000\n"
-"PO-Revision-Date: 2020-09-10 16:46+0200\n"
+"POT-Creation-Date: 2021-05-10 11:36+0000\n"
+"PO-Revision-Date: 2021-09-06 11:28+0200\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
@@ -161,21 +161,29 @@ msgid "Key press to pause."
 msgstr "Pritisnite tipku za pauziranje."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Enter"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "Tipka za pokretanje igre"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Širina prozora u pikselima"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Visina prozora u pikselima"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "istinito ako je prozor uvećan"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:865
+#: src/quadrapassel.vala:910
 msgid "Quadrapassel"
 msgstr "Tetris"
 
@@ -247,7 +255,7 @@ msgstr "_Priručnik"
 msgid "_About Quadrapassel"
 msgstr "_O Tetrisu"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:803
 msgid "Start a new game"
 msgstr "Pokreni novu igru"
 
@@ -340,15 +348,15 @@ msgstr "Čista"
 msgid "Unable to change key, as this key already exists"
 msgstr "Nemoguća promjena tipke, jer već ova tipka postoji"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:784
 msgid "Unpause the game"
 msgstr "Nastavi igru"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:789
 msgid "Pause the game"
 msgstr "Pauziraj igru"
 
-#: src/quadrapassel.vala:861
+#: src/quadrapassel.vala:867
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -356,7 +364,7 @@ msgstr ""
 "Klasična igra gdje zakrećete blokove kako bi popunili red, ali nemojte "
 "gomilati blokove previsoko jer će igra biti gotova!"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:872
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
