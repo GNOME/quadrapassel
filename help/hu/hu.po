@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
-"POT-Creation-Date: 2021-03-02 06:56+0000\n"
-"PO-Revision-Date: 2021-03-02 08:10+0100\n"
+"POT-Creation-Date: 2021-08-24 09:55+0000\n"
+"PO-Revision-Date: 2021-09-12 21:00+0200\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
@@ -96,18 +96,26 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:36
+#| msgid ""
+#| "Once you have an account, log in, and click on <gui>New issue</gui>. "
+#| "Before reporting a bug, please read the <link href=\"https://wiki.gnome."
+#| "org/Community/GettingInTouch/Bugzilla/Guidelines\">bug writing "
+#| "guidelines</link>, and please <link href=\"https://gitlab.gnome.org/GNOME/"
+#| "quadrapassel/issues\">browse</link> for the bug to see if it already "
+#| "exists."
 msgid ""
 "Once you have an account, log in, and click on <gui>New issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
-"link>, and please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/"
-"issues\">browse</link> for the bug to see if it already exists."
+"GettingInTouch/BugReportingGuidelines\">bug writing guidelines</link>, and "
+"please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues"
+"\">browse</link> for the bug to see if it already exists."
 msgstr ""
-"Ha létrehozta fiókját, jelentkezzen be, kattintson a <gui>New issue</gui> "
-"hivatkozásokra. Hiba jelentése előtt olvassa el a <link href=\"https://wiki."
-"gnome.org/Community/GettingInTouch/Bugzilla/Guidelines\">hibajelentés-írási "
-"irányelveket</link>, és <link href=\"https://gitlab.gnome.org/GNOME/"
-"quadrapassel/issues\">ellenőrizze</link>, hogy nincs-e már a hiba bejelentve."
+"Ha létrehozta fiókját, jelentkezzen be, kattintson a <gui>New issue</gui>"
+" hivatkozásokra. Hiba jelentése előtt olvassa el a <link"
+" href=\"https://wiki.gnome.org/GettingInTouch/BugReportingGuidelines\""
+">hibajelentés-írási irányelveket</link>, és <link"
+" href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues\">ellenőrizze<"
+"/link>, hogy nincs-e már a hiba bejelentve."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:41
@@ -203,6 +211,14 @@ msgstr ""
 "Contributing\">wiki</link> oldala tartalmazza a legfontosabb információkat."
 
 #. (itstool) path: info/title
+#: C/index.page:6
+#| msgctxt "link"
+#| msgid "Quadrapassel"
+msgctxt "link:trail"
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#. (itstool) path: info/title
 #: C/index.page:7
 msgctxt "link"
 msgid "Quadrapassel"
@@ -213,11 +229,6 @@ msgstr "Quadrapassel"
 msgctxt "text"
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
-
-#. (itstool) path: media/span
-#: C/index.page:20
-msgid "Quadrapassel logo"
-msgstr "Quadrapassel logó"
 
 #. (itstool) path: page/title
 #: C/index.page:20
@@ -404,8 +415,8 @@ msgstr ""
 msgid ""
 "The <key>Enter</key> will restart the game quickly once it is game over."
 msgstr ""
-"Az <key>Enter</key> billentyű gyorsan újraindítja a játékot, ha a játék véget"
-" ért."
+"Az <key>Enter</key> billentyű gyorsan újraindítja a játékot, ha a játék "
+"véget ért."
 
 #. (itstool) path: section/title
 #: C/playgame.page:38
