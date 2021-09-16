@@ -7,7 +7,7 @@
 # Ole Laursen <olau@hardworking.dk>, 2001, 02, 03, 04.
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2004, 05.
 # flemming christensen <fc@stromata.dk>, 2011.
-# Ask Hjorth Larsen <asklarsen@gmail.com>, 2007-2015, 2018, 2019.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2007-2015, 2018, 2019, 2021.
 #
 # Husk at tilføje dig i credit-listen (besked id "translator-credits")
 #
@@ -15,9 +15,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-01 15:16+0000\n"
-"PO-Revision-Date: 2020-02-26 17:31+0100\n"
-"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"POT-Creation-Date: 2021-05-10 11:36+0000\n"
+"PO-Revision-Date: 2021-09-15 19:45+0200\n"
+"Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -58,11 +58,11 @@ msgid "Whether to preview the next block."
 msgstr "Om næste blok skal vises på forhånd."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:26
-msgid "Whether to show where the moving piece will land"
+msgid "Whether to show where the moving block will land"
 msgstr "Om der skal vises, hvor den bevægelige blok vil lande"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:27
-msgid "Whether to show where the moving piece will land."
+msgid "Whether to show where the moving block will land."
 msgstr "Om der skal vises, hvor den bevægelige blok vil lande."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:31
@@ -169,21 +169,29 @@ msgid "Key press to pause."
 msgstr "Tastetryk for at holde en pause."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Enter"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "Tast til at starte spillet"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Bredden af vinduet i billedpunkter"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Højden af vinduet i billedpunkter"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "sand hvis vinduet er maksimeret"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:865
+#: src/quadrapassel.vala:910
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -203,9 +211,9 @@ msgstr ""
 "Quadrapassel er afledt af det klassiske russiske spil med faldende blokke. "
 "Omrokér og rotér blokke mens de falder, og forsøg at få dem til at passe "
 "sammen. Når du danner en vandret fuldkommen række af blokke, vil rækken "
-"forsvinde og du scorer points. Spillet slutter når blokkene stables for højt. "
-"Efterhånden som du scorer points, går du videre til næste niveau, og blokkene vil falde "
-"hurtigere."
+"forsvinde og du scorer points. Spillet slutter når blokkene stables for "
+"højt. Efterhånden som du scorer points, går du videre til næste niveau, og "
+"blokkene vil falde hurtigere."
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:17
 msgid ""
@@ -256,7 +264,7 @@ msgstr "_Hjælp"
 msgid "_About Quadrapassel"
 msgstr "_Om Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:803
 msgid "Start a new game"
 msgstr "Start et nyt spil"
 
@@ -349,19 +357,21 @@ msgstr "Ren"
 msgid "Unable to change key, as this key already exists"
 msgstr "Kan ikke skifte nøgle, da denne nøgle allerede findes"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:784
 msgid "Unpause the game"
 msgstr "Ophæv pausen"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:789
 msgid "Pause the game"
 msgstr "Sæt spillet på pause"
 
-#: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Et klassisk spil hvor faldende blokke skal stables"
+#: src/quadrapassel.vala:867
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr "Et klassisk spil hvor man udfylder rækker ved at rotere blokke. Men lad være med at stable blokkene for højt, for så er det slut!"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:872
 msgid "translator-credits"
 msgstr ""
 "Anders Wegge Jakobsen\n"
@@ -390,3 +400,6 @@ msgstr "_OK"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Dato"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Et klassisk spil hvor faldende blokke skal stables"
