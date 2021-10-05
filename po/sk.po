@@ -5,21 +5,22 @@
 # Marcel Telka <marcel@telka.sk>, 2005, 2008.
 # Peter Mráz <etkinator@gmail.com>, 2010, 2011.
 # Ján Kyselica <kyselica.jan@gmail.com>, 2013, 2014.
+# Dušan Kazik <prescott66@gmail.com>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-06-26 09:11+0000\n"
-"PO-Revision-Date: 2020-09-04 14:49+0200\n"
+"POT-Creation-Date: 2021-05-10 11:36+0000\n"
+"PO-Revision-Date: 2021-10-05 09:12+0200\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 2.4.1\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0\n"
+"X-Generator: Gtranslator 40.0\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -184,14 +185,23 @@ msgid "Key press to pause."
 msgstr "Kláves na pozastavenie."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Enter"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+#| msgid "Level to start with"
+msgid "Key to start the game"
+msgstr "Kláves na zahájenie hry"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "Šírka okna v pixeloch"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:97
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "Výška okna v pixeloch"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:101
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
 msgstr "true, ak je okno maximalizované"
 
@@ -199,8 +209,8 @@ msgstr "true, ak je okno maximalizované"
 # PM: aj ine hry su prekladane (roboti, štyri v rade, červík...)
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:859
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:865
+#: src/quadrapassel.vala:910
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -273,7 +283,7 @@ msgstr "_Pomocník"
 msgid "_About Quadrapassel"
 msgstr "_O aplikácii Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:797
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:803
 msgid "Start a new game"
 msgstr "Začať novú hru"
 
@@ -367,19 +377,23 @@ msgstr "Čistý"
 msgid "Unable to change key, as this key already exists"
 msgstr "Nie je možné zmeniť klávesu, pretože klávesa už existuje"
 
-#: src/quadrapassel.vala:778
+#: src/quadrapassel.vala:784
 msgid "Unpause the game"
 msgstr "Zruší pozastavenie hry"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:789
 msgid "Pause the game"
 msgstr "Pozastaví hru"
 
-#: src/quadrapassel.vala:861
-msgid "A classic game of fitting falling blocks together"
-msgstr "Klasická hra, v ktorej sa ukladajú padajúce bloky"
+#: src/quadrapassel.vala:867
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Klasická hra, kde otáčate bloky kvôli naplneniu riadkov, ale nemôžete "
+"nastohovať bloky príliš vysoko, lebo hra skončí!"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:872
 msgid "translator-credits"
 msgstr ""
 "Stanislav Višňovský (visnovsky@nenya.ms.mff.cuni.cz)\n"
@@ -403,6 +417,9 @@ msgstr "_OK"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Dátum"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Klasická hra, v ktorej sa ukladajú padajúce bloky"
 
 # PK: neviem ci je tu vhodny preklad
 # PM: aj ine hry su prekladane (roboti, štyri v rade, červík...)
