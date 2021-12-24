@@ -10,17 +10,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-11-28 21:49+0000\n"
-"PO-Revision-Date: 2021-01-20 18:47+0700\n"
+"POT-Creation-Date: 2021-05-26 18:10+0000\n"
+"PO-Revision-Date: 2021-12-24 14:03+0700\n"
 "Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural= n!=1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Rosetta-Export-Date: 2007-04-23 05:58:10+0000\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -186,8 +186,8 @@ msgstr "bernilai \"true\" bila jendela dimaksimalkan"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
-#: src/quadrapassel.vala:909
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:865
+#: src/quadrapassel.vala:910
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -260,7 +260,7 @@ msgstr "_Bantuan"
 msgid "_About Quadrapassel"
 msgstr "Tent_ang Quadrapassel"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:803
 msgid "Start a new game"
 msgstr "Mulai permainan baru"
 
@@ -353,15 +353,15 @@ msgstr "Kosongkan"
 msgid "Unable to change key, as this key already exists"
 msgstr "Tidak dapat mengubah kunci, karena kunci ini sudah ada"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:784
 msgid "Unpause the game"
 msgstr "Hentikan jeda permainan"
 
-#: src/quadrapassel.vala:788
+#: src/quadrapassel.vala:789
 msgid "Pause the game"
 msgstr "Istirahatkan permainan"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:867
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -370,7 +370,7 @@ msgstr ""
 "lengkap, tetapi jangan menumpuk blok Anda terlalu tinggi atau permainan "
 "berakhir!"
 
-#: src/quadrapassel.vala:871
+#: src/quadrapassel.vala:872
 msgid "translator-credits"
 msgstr ""
 "Mohammad DAMT <mdamt@bisnisweb.com>\n"
