@@ -38,7 +38,7 @@
   "modules": [
     {
       "name": "gsound",
-      "buildsystem": "autotools",
+      "buildsystem": "meson",
       "sources": [
         {
           "type": "git",
