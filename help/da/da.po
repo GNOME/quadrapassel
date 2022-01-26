@@ -6,15 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
-"POT-Creation-Date: 2020-02-23 10:27+0000\n"
-"PO-Revision-Date: 2020-09-14 00:00+0200\n"
-"Last-Translator: scootergrisen\n"
+"POT-Creation-Date: 2021-08-24 09:55+0000\n"
+"PO-Revision-Date: 2022-01-25 19:45+0100\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -63,9 +64,9 @@ msgid ""
 "If you notice a problem you can file a <em>bug report</em>. To file a bug, "
 "go to <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
 msgstr ""
-"Hvis du bemærker et problem, kan du oprette en <em>fejlrapport</em>. Rapportér en "
-"fejl ved at gå til <link "
-"href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
+"Hvis du bemærker et problem, kan du oprette en <em>fejlrapport</em>. "
+"Rapportér en fejl ved at gå til <link href=\"https://gitlab.gnome.org/GNOME/"
+"quadrapassel/issues/\"/>."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:29
@@ -73,8 +74,8 @@ msgid ""
 "This is a bug tracking system where users and developers can file details "
 "about bugs, crashes and request enhancements."
 msgstr ""
-"Det er et fejlsporingssystem, hvor brugere og udviklere kan rapportere detaljer "
-"om fejl, nedbrud og anmode om forbedringer."
+"Det er et fejlsporingssystem, hvor brugere og udviklere kan rapportere "
+"detaljer om fejl, nedbrud og anmode om forbedringer."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:32
@@ -85,26 +86,26 @@ msgid ""
 "have an account, just click on the <gui>Sign in / Register</gui> link to "
 "create one."
 msgstr ""
-"For at deltage, skal du have en konto, hvorved du får adgang, mulighed for at "
-"rapportere fejl og skrive kommentarer. Du skal også tilmeldes for at modtage "
-"opdateringer om fejlens status via e-mail. Har du ikke allerede en konto, "
-"så klik blot på linket <gui>Sign in / Register</gui> for at oprette en."
+"For at deltage, skal du have en konto, hvorved du får adgang, mulighed for "
+"at rapportere fejl og skrive kommentarer. Du skal også tilmeldes for at "
+"modtage opdateringer om fejlens status via e-mail. Har du ikke allerede en "
+"konto, så klik blot på linket <gui>Sign in / Register</gui> for at oprette "
+"en."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:36
 msgid ""
 "Once you have an account, log in, and click on <gui>New issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
-"link>, and please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/"
-"issues\">browse</link> for the bug to see if it already exists."
+"GettingInTouch/BugReportingGuidelines\">bug writing guidelines</link>, and "
+"please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues"
+"\">browse</link> for the bug to see if it already exists."
 msgstr ""
 "Når du har en konto, så log ind og klik på <gui>New issue</gui>. Inden du "
-"rapporterer en fejl, så læs venligst <link href=\"https://wiki.gnome.org/Comm"
-"unity/GettingInTouch/Bugzilla/Guidelines\">retningslinjer til "
-"fejlrapportering</link> og <link "
-"href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues\">se</link> venligst "
-"om fejlen allerede er oprettet."
+"rapporterer en fejl, så læs venligst <link href=\"https://wiki.gnome.org/"
+"GettingInTouch/-BugReportingGuidelines\">retningslinjer til "
+"fejlrapportering</link>, og <link href=\"https://gitlab.gnome.org/GNOME/"
+"quadrapassel/issues\">se</link> venligst om fejlen allerede er anmeldt."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:41
@@ -113,9 +114,9 @@ msgid ""
 "<gui>Labels</gui> menu. Fill in the Title and Description sections and click "
 "<gui>Submit Issue</gui>."
 msgstr ""
-"Hvis du anmoder om en ny funktion, så vælg <gui>1. Feature</gui> i "
-"menuen <gui>Labels</gui>. Udfyld titlen og beskrivelsen og klik på "
-"<gui>Submit Issue</gui>."
+"Hvis du anmoder om en ny funktion, så vælg <gui>1. Feature</gui> i menuen "
+"<gui>Labels</gui>. Udfyld titlen og beskrivelsen og klik på <gui>Submit "
+"Issue</gui>."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:45
@@ -134,7 +135,7 @@ msgstr "<link xref=\"get-involved\"><_:media-1/>Vær med</link>"
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:51 C/develop.page:31 C/documentation.page:31
-#: C/playgame.page:47 C/preferences.page:71 C/score.page:38 C/translate.page:44
+#: C/playgame.page:48 C/preferences.page:71 C/score.page:38 C/translate.page:44
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
 msgstr "<link xref=\"index\"><_:media-1/>HJEM</link>"
 
@@ -159,13 +160,11 @@ msgid ""
 "href=\"https://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
 "link>."
 msgstr ""
-"Hvis du vil <link "
-"href=\"https://wiki.gnome.org/Apps/Games/Contributing\">hjælpe med at udvikle "
-"<app>GNOME Spil</app></link>, så kan du kontakte udviklerne med <link "
-"href=\"https://cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-"
-"games\">irc</link> eller via vores <link "
-"href=\"https://mail.gnome.org/mailman/listinfo/games-"
-"list\">mailingliste</link>."
+"Hvis du vil <link href=\"https://wiki.gnome.org/Apps/Games/Contributing"
+"\">hjælpe med at udvikle <app>GNOME Spil</app></link>, så kan du kontakte "
+"udviklerne med <link href=\"https://cbe005.chat.mibbit.com/?url=irc%3A%2F"
+"%2Firc.gnome.org%2Fgnome-games\">irc</link> eller via vores <link href="
+"\"https://mail.gnome.org/mailman/listinfo/games-list\">mailingliste</link>."
 
 #. (itstool) path: info/desc
 #: C/documentation.page:21
@@ -185,11 +184,10 @@ msgid ""
 "gnome.org%2Fdocs\">irc</link>, or via our <link href=\"https://mail.gnome."
 "org/mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgstr ""
-"Hvis du vil bidrage til dokumentationsprojektet, så er du velkommen til at kontakte os med "
-"<link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%"
-"2Firc.gnome.org%2Fdocs\">irc</link> eller via vores <link "
-"href=\"https://mail.gnome.org/mailman/listinfo/gnome-doc-"
-"list\">mailingliste</link>."
+"Hvis du vil bidrage til dokumentationsprojektet, så er du velkommen til at "
+"kontakte os med <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F"
+"%2Firc.gnome.org%2Fdocs\">irc</link> eller via vores <link href=\"https://"
+"mail.gnome.org/mailman/listinfo/gnome-doc-list\">mailingliste</link>."
 
 #. (itstool) path: page/p
 #: C/documentation.page:27
@@ -197,8 +195,14 @@ msgid ""
 "Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
 msgstr ""
-"Vores <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing\">"
-"wikiside</link> indeholder nyttig information."
+"Vores <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
+"\">wikiside</link> indeholder nyttig information."
+
+#. (itstool) path: info/title
+#: C/index.page:6
+msgctxt "link:trail"
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
 
 #. (itstool) path: info/title
 #: C/index.page:7
@@ -211,11 +215,6 @@ msgstr "Quadrapassel"
 msgctxt "text"
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
-
-#. (itstool) path: media/span
-#: C/index.page:20
-msgid "Quadrapassel logo"
-msgstr "Quadrapassel-logo"
 
 #. (itstool) path: page/title
 #: C/index.page:20
@@ -348,10 +347,10 @@ msgid ""
 "link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
 "sa/3.0/\">Commons Deed</link>."
 msgstr ""
-"Se licensens fulde tekst på <link href=\"http://creativecommons.org/licenses"
-"/by-sa/3.0/legalcode\">CreativeCommons-webstedet</link> eller læs den fulde "
-"<link href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Commons "
-"Deed</link>."
+"Se licensens fulde tekst på <link href=\"http://creativecommons.org/licenses/"
+"by-sa/3.0/legalcode\">CreativeCommons-webstedet</link> eller læs den fulde "
+"<link href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Commons Deed</"
+"link>."
 
 #. (itstool) path: license/p
 #: C/playgame.page:19
@@ -398,18 +397,25 @@ msgstr ""
 "<key>↓</key> giver et blødt fald (midlertidigt hurtigere mens tasten holdes "
 "nede)."
 
+#. (itstool) path: item/p
+#: C/playgame.page:33
+msgid ""
+"The <key>Enter</key> will restart the game quickly once it is game over."
+msgstr ""
+"Tasten <key>Enter</gui> genstarter hurtigt spillet, når et spil er slut."
+
 #. (itstool) path: section/title
-#: C/playgame.page:37
+#: C/playgame.page:38
 msgid "Rules"
 msgstr "Regler"
 
 #. (itstool) path: section/p
-#: C/playgame.page:39
+#: C/playgame.page:40
 msgid "There are a couple of rules that you should keep in mind:"
 msgstr "Der findes nogle regler, som du bør huske på:"
 
 #. (itstool) path: item/p
-#: C/playgame.page:41
+#: C/playgame.page:42
 msgid ""
 "You can pause, end, start a new game, get help or quit the program at any "
 "time."
@@ -418,7 +424,7 @@ msgstr ""
 "afslutte programmet."
 
 #. (itstool) path: item/p
-#: C/playgame.page:42
+#: C/playgame.page:43
 msgid "You can pause the game as many times as you want."
 msgstr "Du kan sætte spillet på pause så mange gange, du vil."
 
@@ -438,8 +444,8 @@ msgid ""
 "To change the game preferences, press the menu button in the top-right "
 "corner of the window and select <gui style=\"menuitem\">Preferences</gui>."
 msgstr ""
-"Spillets indstillinger kan ændres ved at trykke på menuknappen i øverste højre "
-"hjørne af vinduet og vælge <gui style=\"menuitem\">Indstillinger</gui>."
+"Spillets indstillinger kan ændres ved at trykke på menuknappen i øverste "
+"højre hjørne af vinduet og vælge <gui style=\"menuitem\">Indstillinger</gui>."
 
 #. (itstool) path: page/p
 #: C/preferences.page:29
@@ -447,8 +453,7 @@ msgid ""
 "The three tabs available are <gui>Game</gui>, <gui>Controls</gui> and "
 "<gui>Theme</gui>."
 msgstr ""
-"De 3 faneblade er <gui>Spil</gui>, <gui>Styring</gui> "
-"og <gui>Tema</gui>."
+"De 3 faneblade er <gui>Spil</gui>, <gui>Styring</gui> og <gui>Tema</gui>."
 
 #. (itstool) path: section/title
 #: C/preferences.page:32
@@ -478,8 +483,8 @@ msgid ""
 "<gui>Density of blocks in a pre-filled row</gui> indicates how many blocks "
 "there will be in a pre-filled row when the game starts."
 msgstr ""
-"<gui>Tæthed af blokke i en foropfyldt række</gui> angiver hvor mange "
-"blokke, der vil være, i en foropfyldt række når spillet begynder."
+"<gui>Tæthed af blokke i en foropfyldt række</gui> angiver hvor mange blokke, "
+"der vil være, i en foropfyldt række når spillet begynder."
 
 #. (itstool) path: item/p
 #: C/preferences.page:37
@@ -533,8 +538,8 @@ msgid ""
 "By double-clicking on the given controls, thus selecting the new one, you "
 "can change the control keys."
 msgstr ""
-"Ved at dobbeltklikke på de givne styringer vælges den "
-"nye, hvorved du kan ændre styringstasterne."
+"Ved at dobbeltklikke på de givne styringer vælges den nye, hvorved du kan "
+"ændre styringstasterne."
 
 #. (itstool) path: section/title
 #: C/preferences.page:57
@@ -594,10 +599,10 @@ msgid ""
 "have a better score, try to adapt the screen, the keyboard, and the level "
 "(the speed) that fits you the most!"
 msgstr ""
-"Hvis du begynder fra niveau 1, så kan du kun komme videre til den næste niveau "
-"ved at lave flere linjer, altså score flere point. For at få et bedre "
-"resultat, kan du prøve at tilpasse skærmen, tastaturet og niveauet (hastigheden), "
-"så det passer bedst til dig!"
+"Hvis du begynder fra niveau 1, så kan du kun komme videre til den næste "
+"niveau ved at lave flere linjer, altså score flere point. For at få et bedre "
+"resultat, kan du prøve at tilpasse skærmen, tastaturet og niveauet "
+"(hastigheden), så det passer bedst til dig!"
 
 #. (itstool) path: section/p
 #: C/score.page:29
@@ -609,8 +614,8 @@ msgid ""
 msgstr ""
 "Du kan lave mange ændringer til tastaturstyringen, blokkenes kontur, "
 "antallet og tætheden af linjer som du begynder med og hvor hurtigt de "
-"falder. Du kan ændre indstillingerne i <link "
-"xref=\"preferences\">Indstillinger</link>."
+"falder. Du kan ændre indstillingerne i <link xref=\"preferences"
+"\">Indstillinger</link>."
 
 #. (itstool) path: section/title
 #: C/score.page:33
@@ -624,9 +629,9 @@ msgid ""
 "style=\"menuitem\">Scores</gui> to find the records from the highest to the "
 "lowest score."
 msgstr ""
-"Tryk på menuknappen i øverste højre hjørne af vinduet og vælg <gui "
-"style=\"menuitem\">Resultater</gui> for at finde registreringerne fra det "
-"højeste og laveste resultat."
+"Tryk på menuknappen i øverste højre hjørne af vinduet og vælg <gui style="
+"\"menuitem\">Resultater</gui> for at finde registreringerne fra det højeste "
+"og laveste resultat."
 
 #. (itstool) path: info/desc
 #: C/translate.page:18
@@ -653,9 +658,8 @@ msgid ""
 "There are <link href=\"https://l10n.gnome.org/module/quadrapassel/\">many "
 "languages</link> for which translations are still needed."
 msgstr ""
-"Der er stadigvæk <link "
-"href=\"https://l10n.gnome.org/module/quadrapassel/\">mange sprog</link> som "
-"har brug for at blive oversat."
+"Der er stadigvæk <link href=\"https://l10n.gnome.org/module/quadrapassel/"
+"\">mange sprog</link> som har brug for at blive oversat."
 
 #. (itstool) path: page/p
 #: C/translate.page:31
@@ -665,10 +669,10 @@ msgid ""
 "teams/\">translation team</link> for your language. This will give you the "
 "ability to upload new translations."
 msgstr ""
-"For at komme i gang med at oversætte, skal du <link "
-"href=\"https://l10n.gnome.org\">oprette en konto</link> og deltage i <link "
-"href=\"https://l10n.gnome.org/teams/\">oversættelsesholdet</link> for dit "
-"sprog. Det giver dig mulighed for at uploade nye oversættelser."
+"For at komme i gang med at oversætte, skal du <link href=\"https://l10n."
+"gnome.org\">oprette en konto</link> og deltage i <link href=\"https://l10n."
+"gnome.org/teams/\">oversættelsesholdet</link> for dit sprog. Det giver dig "
+"mulighed for at uploade nye oversættelser."
 
 #. (itstool) path: page/p
 #: C/translate.page:35
@@ -678,10 +682,10 @@ msgid ""
 "channel are located worldwide, so you may not get an immediate response as a "
 "result of timezone differences."
 msgstr ""
-"Du kan chatte med GNOME-oversættere med <link "
-"href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%"
-"2Fi18n\">irc</link>. Kanalen har folk fra hele verdenen, så det kan være du "
-"ikke får svar med det samme pga. forskelle i tidszoner."
+"Du kan chatte med GNOME-oversættere med <link href=\"https://cbe003.chat."
+"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. Kanalen har "
+"folk fra hele verdenen, så det kan være du ikke får svar med det samme pga. "
+"forskelle i tidszoner."
 
 #. (itstool) path: page/p
 #: C/translate.page:39
@@ -690,6 +694,8 @@ msgid ""
 "<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
 "list</link>."
 msgstr ""
-"Du kan også kontakte internationaliseringsholdet med deres <link "
-"href=\"https://mail.gnome.org/mailman/listinfo/gnome-"
-"i18n\">mailingliste</link>."
+"Du kan også kontakte internationaliseringsholdet med deres <link href="
+"\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailingliste</link>."
+
+#~ msgid "Quadrapassel logo"
+#~ msgstr "Quadrapassel-logo"
