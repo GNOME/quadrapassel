@@ -402,7 +402,7 @@ msgstr ""
 msgid ""
 "The <key>Enter</key> will restart the game quickly once it is game over."
 msgstr ""
-"Tasten <key>Enter</gui> genstarter hurtigt spillet, når et spil er slut."
+"Tasten <key>Enter</key> genstarter hurtigt spillet, når et spil er slut."
 
 #. (itstool) path: section/title
 #: C/playgame.page:38
