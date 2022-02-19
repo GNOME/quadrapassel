@@ -1,0 +1,383 @@
+# Abkhazian translation for quadrapassel.
+# Copyright (C) 2022 quadrapassel's COPYRIGHT HOLDER
+# This file is distributed under the same license as the quadrapassel package.
+# Нанба Наала <naala-nanba@rambler.ru>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: quadrapassel master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
+"POT-Creation-Date: 2022-02-08 13:16+0000\n"
+"PO-Revision-Date: 2022-02-08 13:16+0000\n"
+"Last-Translator: Нанба Наала <naala-nanba@rambler.ru>\n"
+"Language-Team: Abkhazian <ab@li.org>\n"
+"Language: ab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:5
+msgid "Image to use for drawing blocks"
+msgstr "Аблокқәа рзы асахьа"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:6
+msgid "Image to use for drawing blocks."
+msgstr "Аблокқәа рзы асахьа"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:10
+msgid "The theme used for rendering the blocks"
+msgstr " Аблокқәа ртема"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:11
+msgid "The name of the theme used for rendering the blocks and the background."
+msgstr "Аблокқәеи ақәыԥшылареи рҭыхразы ахархәара змоу атема"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:16
+msgid "Level to start with"
+msgstr "Алагамҭатә аҩаӡара"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:17
+msgid "Level to start with."
+msgstr "Алагамҭатә аҩаӡара"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:21
+msgid "Whether to preview the next block"
+msgstr "Анаҩстәи аблок арбара"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:22
+msgid "Whether to preview the next block."
+msgstr "Анаҩстәи аблок арбара"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:26
+msgid "Whether to show where the moving block will land"
+msgstr "Иаарԥштәума аблок ахькаҳаз аҭыԥ"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:27
+msgid "Whether to show where the moving block will land."
+msgstr "Иаарԥштәума аблок ахькаҳаз аҭыԥ"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:31
+msgid "Whether to give blocks random colors"
+msgstr "Зыԥштәеилаԥсоу аблокқәа шәхы иашәырхәа"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:32
+msgid "Whether to give blocks random colors."
+msgstr "Зыԥштәеилаԥсоу аблокқәа шәхы иашәырхәа"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:36
+msgid "Whether to rotate counter clock wise"
+msgstr "Асааҭ ахыцқәа рхырхарҭахь аргьежьра"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:37
+msgid "Whether to rotate counter clock wise."
+msgstr "Асааҭ ахыцқәа рхырхарҭахь аргьежьра"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:42
+msgid "The number of rows to fill"
+msgstr "Ихарҭәаатәу аишьҭагылақәа рхыԥхьаӡара"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:43
+msgid ""
+"The number of rows that are filled with random blocks at the start of the "
+"game."
+msgstr ""
+"Ахәмарра алагамҭазы машәырла ихаарҭәаау аишьҭагылақәа рхыԥхьаӡара"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:48
+msgid "The density of filled rows"
+msgstr "Аблокқәа рыжәпара ихарҭәаау ацәаҳәақәа рҟны"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:49
+msgid ""
+"The density of blocks in rows filled at the start of the game. The value is "
+"between 0 (for no blocks) and 10 (for a completely filled row)."
+msgstr ""
+"Ахәмарра алагамҭазы аблокқәа решьҭагылақәа рхыԥхьаӡара.Иамоуп аҵакқәа 0(аблокқәа ыҟаӡам) инаркны" 
+"10(инагӡаны иҭәу ацәца) аҟынӡа"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:53
+msgid "Whether to play sounds"
+msgstr "Иарҳәатәума абжьы"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:54
+msgid "Whether to play sounds."
+msgstr "Иарҳәатәума абжьы"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:58
+msgid "Whether to pick blocks that are hard to place"
+msgstr "Иалхтәума аблокқәа зҭыԥыркра уадаҩу"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:59
+msgid "Whether to pick blocks that are hard to place."
+msgstr "Иалхтәума аблокқәа зҭыԥыркра уадаҩу"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:371
+msgid "Move left"
+msgstr "Влево"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:64
+msgid "Key press to move left."
+msgstr "Арыд арымарахь аиагаразы"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:374
+msgid "Move right"
+msgstr "Арыӷьарахь"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:69
+msgid "Key press to move right."
+msgstr "Арыд арыӷьарахь аиагаразы"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:377
+msgid "Move down"
+msgstr "Ҵаҟа аиҭаҵра"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:74
+msgid "Key press to move down."
+msgstr "Арыд ҵаҟа аиҭаҵразы"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:380
+msgid "Drop"
+msgstr "Акажьра"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:79
+msgid "Key press to drop."
+msgstr "Акажьразы арыд"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:383
+msgid "Rotate"
+msgstr "Аарҳәра"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:84
+msgid "Key press to rotate."
+msgstr " Шәақәыӷәӷәа арыд ааҳәразы"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
+msgid "Pause"
+msgstr " Аанҿасра"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:89
+msgid "Key press to pause."
+msgstr "Аанҿасразы арыд"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "Аҭагалара"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "Ахәмарра алагаразы арыд"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
+msgid "Width of the window in pixels"
+msgstr "Аԥенџьыр аҭбаара пиксельла"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:102
+msgid "Height of the window in pixels"
+msgstr "Аԥенџьыр аҳаракыра пиксельла"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:106
+msgid "true if the window is maximized"
+msgstr "иҵабыргуп, аԥенџьыр имаксималу ашәагаа амазар"
+
+#: data/org.gnome.Quadrapassel.appdata.xml.in:7
+#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:868
+#: src/quadrapassel.vala:913
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#: data/org.gnome.Quadrapassel.appdata.xml.in:8
+#: data/org.gnome.Quadrapassel.desktop.in:4
+msgid "Fit falling blocks together"
+msgstr "Икаҳаз аблокқәа еидкыланы реиқәҵара"
+
+#: data/org.gnome.Quadrapassel.appdata.xml.in:10
+msgid ""
+"Quadrapassel is a derivative of a classic Russian falling-block game. "    
+"Reposition and rotate the blocks as they fall, and attempt to fit them "
+"together. When you form a complete horizontal row of blocks, the row will "
+"disappear and you score points. The game is over when the blocks get stacked "
+"too high. As your score gets higher, you level up and the blocks fall faster."
+msgstr ""
+"Quadrapassel ари иклассику ахәмарга -атетрис ауп. Еиқәыршәатәуп аблокқәа иахьыԥыруа иргьежьуа, нас рҭыԥ ԥсахуа."
+"Аблокқәа ирылхны ацәаҳәа анеиқәшәаршәалак ашьҭахь, уи ацәаҳәа ыӡоит, шәара ишәоуоит акәатала."
+"Ахәмарра хырқәшахоит, аблокқәа ақәцә аҟынӡа ианнеилак ашьҭахь.Акәаталақәа рхыԥхьаӡара еиҳахацыԥхьаӡа"
+"аблокқәа еиҳа иццакны акаҳара иалагоит."
+
+#: data/org.gnome.Quadrapassel.appdata.xml.in:17
+msgid ""
+"If you’re looking for a challenge, Quadrapassel allows you to increase the "
+"initial speed of the blocks, or begin the game with partial blocks on some "
+"of the rows. Or, instead of allowing the blocks to fall randomly, it can "
+"select blocks that will be hard for you to place."
+msgstr ""
+"Ахәмарра еиҳа ишәарцәгьар шәҭахызар, Quadrapassel аҟны аблокқәа ркаҳара ацҵакышьа еиҳашәтәыр шәылшоит"
+"Шәыхәмарыр шәылшоит аблокқәа ихарҭәааны ишеиқәҵамгьы.Мамзар аблокқәа имашәырны акаҳара азин рыҭара ацынхәрас"
+"Quadrapassel иалшоит иалнахыр аиқәҵаразы иманшәалам аблокқәа"
+
+#: data/org.gnome.Quadrapassel.appdata.xml.in:33
+msgid "The GNOME Project"
+msgstr "Апроект GNOME"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Quadrapassel.desktop.in:12
+msgid "tetris;"
+msgstr "Атетрис"
+
+#: src/game-view.vala:335
+msgid "Paused"
+msgstr "Ааҭгылара"
+
+#: src/game-view.vala:337
+msgid "Game Over"
+msgstr "Ахәмарра хырқәшоуп"
+
+#: src/quadrapassel.vala:117
+msgid "_New Game"
+msgstr "_Ахәмарра ҿыц"
+
+#: src/quadrapassel.vala:118
+msgid "_Scores"
+msgstr "_Алҵшәақәа"
+
+#: src/quadrapassel.vala:121
+msgid "_Preferences"
+msgstr "_Ахышәарақәа"
+
+#: src/quadrapassel.vala:122
+msgid "_Help"
+msgstr "_Аилыркаа"
+
+#: src/quadrapassel.vala:123
+msgid "_About Quadrapassel"
+msgstr "Ахәмарра Quadrapassel иазкны"
+
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:806
+msgid "Start a new game"
+msgstr "Ахәмарра ҿыц алагара"
+
+#: src/quadrapassel.vala:156
+msgid "Next"
+msgstr "Анаҩстәи"
+
+#: src/quadrapassel.vala:169 src/score-dialog.vala:51
+msgid "Score"
+msgstr "Аԥхьаӡара"
+
+#: src/quadrapassel.vala:180
+msgid "Lines"
+msgstr "Ацәаҳәақәа"
+
+#: src/quadrapassel.vala:191
+msgid "Level"
+msgstr "Аҩаӡара"
+
+#: src/quadrapassel.vala:276
+msgid "Preferences"
+msgstr "Ахышәарақәа"
+
+#: src/quadrapassel.vala:294
+msgid "Game"
+msgstr "Ахәмарра"
+
+#. pre-filled rows
+#: src/quadrapassel.vala:298
+msgid "_Number of pre-filled rows:"
+msgstr "_Заа ихарҭәаау ацәаҳәақәа рхыԥхьаӡара"
+
+#. pre-filled rows density
+#: src/quadrapassel.vala:313
+msgid "_Density of blocks in a pre-filled row:"
+msgstr "_Ихарҭәаатәу ацәаҳәақәа рҟны аблокқәа рыжәпара"
+
+#. starting level
+#: src/quadrapassel.vala:327
+msgid "_Starting level:"
+msgstr "_Алагамҭатә ҩаӡара"
+
+#: src/quadrapassel.vala:340
+msgid "_Enable sounds"
+msgstr "_Абжьқәа рҿакра"
+
+#: src/quadrapassel.vala:345
+msgid "Choose difficult _blocks"
+msgstr "иуадаҩу _аблокқәа ралхра"
+
+#: src/quadrapassel.vala:350
+msgid "_Preview next block"
+msgstr "Анаҩстәи _аблок арбара"
+
+#. rotate counter clock wise
+#: src/quadrapassel.vala:356
+msgid "_Rotate blocks counterclockwise"
+msgstr "_Асааҭ ахыц ахырхарҭа иаҿагыланы ахагьежьра"
+
+#: src/quadrapassel.vala:361
+msgid "Show _where the block will land"
+msgstr "_Аблок ахьақәшәаз аҭыԥ арбара"
+
+#: src/quadrapassel.vala:405
+msgid "Controls"
+msgstr "Анаԥхгара"
+
+#: src/quadrapassel.vala:411
+msgid "Theme"
+msgstr "Атема"
+
+#: src/quadrapassel.vala:423
+msgid "Plain"
+msgstr "Имариоу"
+
+#: src/quadrapassel.vala:428
+msgid "Tango Flat"
+msgstr "Танго"
+
+#: src/quadrapassel.vala:433
+msgid "Tango Shaded"
+msgstr "Агагақәа танго рыцкәашара"
+
+#: src/quadrapassel.vala:438
+msgid "Clean"
+msgstr "Ицқьоу"
+
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr "Арыд аԥсахра залшом, избан акәзар уи ахархәара аиухьеит"
+
+#: src/quadrapassel.vala:787
+msgid "Unpause the game"
+msgstr "Ахәмарра аиҭалагара"
+
+#: src/quadrapassel.vala:792
+msgid "Pause the game"
+msgstr "Ахәмарра аамҭала аанкылара"
+
+#: src/quadrapassel.vala:870
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Иклассику ахәмарра, аблокқәа ыргьежьуа цәаҳәа-цәаҳәала ихарҭәааны иахьеиқәҵалатәу ,"
+"аблокқәа амцхә ирацәаны ацәаҳәақәа раанкылара азин рышәымҭан ,мамзар шәара шәаҵахоит!"
+
+#: src/quadrapassel.vala:875
+msgid "translator-credits"
+msgstr ""
+"Нанба Наала <naala-nanba@rambler.ru, 2022"
+
+#: src/score-dialog.vala:26
+msgid "_Close"
+msgstr "_Аркра"
+
+#: src/score-dialog.vala:27
+msgid "New Game"
+msgstr "Ахәмарра ҿыц"
+
+#: src/score-dialog.vala:30
+msgid "_OK"
+msgstr "_ОК"
+
+#: src/score-dialog.vala:48
+msgid "Date"
+msgstr "Аамҭарба"
