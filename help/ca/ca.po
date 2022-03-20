@@ -5,10 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnometris\n"
-"POT-Creation-Date: 2020-05-31 17:27+0000\n"
-"PO-Revision-Date: 2020-09-13 14:59+0200\n"
-"Last-Translator: Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail."
-"com>\n"
+"POT-Creation-Date: 2021-08-24 09:55+0000\n"
+"PO-Revision-Date: 2022-03-20 14:59+0200\n"
+"Last-Translator: Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +25,8 @@ msgstr ""
 
 #. (itstool) path: credit/name
 #: C/bug-filing.page:11 C/develop.page:12 C/documentation.page:10
-#: C/playgame.page:15 C/preferences.page:15 C/score.page:15 C/translate.page:10
+#: C/playgame.page:15 C/preferences.page:15 C/score.page:15
+#: C/translate.page:10
 msgid "Tiffany Antopolski"
 msgstr "Tiffany Antopolski"
 
@@ -67,8 +67,8 @@ msgid ""
 "go to <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
 msgstr ""
 "Si us adoneu d'un problema, podeu enviar un <em>informe d'error</em>. Per a "
-"informar d'un error, aneu a <link href=\"https://gitlab.gnome.org/GNOME/"
-"quadrapassel/issues/\"/>."
+"informar d'un error, aneu a <link "
+"href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:29
@@ -85,8 +85,8 @@ msgstr ""
 msgid ""
 "To participate you need an account which will give you the ability to gain "
 "access, file bugs, and make comments. Also, you need to register so you can "
-"receive updates by e-mail about the status of your bug. If you don't already "
-"have an account, just click on the <gui>Sign in / Register</gui> link to "
+"receive updates by e-mail about the status of your bug. If you don't already"
+" have an account, just click on the <gui>Sign in / Register</gui> link to "
 "create one."
 msgstr ""
 "Per a participar-hi, necessiteu un compte que us donarà la possibilitat "
@@ -99,23 +99,26 @@ msgstr ""
 #: C/bug-filing.page:36
 msgid ""
 "Once you have an account, log in, and click on <gui>New issue</gui>. Before "
-"reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
-"link>, and please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/"
-"issues\">browse</link> for the bug to see if it already exists."
+"reporting a bug, please read the <link "
+"href=\"https://wiki.gnome.org/GettingInTouch/BugReportingGuidelines\">bug "
+"writing guidelines</link>, and please <link "
+"href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues\">browse</link> "
+"for the bug to see if it already exists."
 msgstr ""
-"Quan tingueu un compte, inicieu la sessió i feu clic a <gui>New issue</gui>. "
-"Abans d'informar d'un error, llegiu les <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">pautes d'escriptura d'errors</"
-"link> i <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues"
-"\">cerqueu</link> l'error per a veure si ja existeix."
+"Un cop tingueu un compte, inicieu la sessió i feu clic a <gui>New "
+"issue</gui>. Abans d'informar d'un error, llegiu les instruccions "
+"d'escriptura d'errors <link "
+"href=\"https://wiki.gnome.org/GettingInTouch/BugReportingGuidelines\"></link>,"
+" i si us plau, <link "
+"href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues\">navegueu</link> per"
+" la llista d'errors per a veure si ja existeix."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:41
 msgid ""
 "If you are requesting a new feature, choose <gui>1. Feature</gui> in the "
-"<gui>Labels</gui> menu. Fill in the Title and Description sections and click "
-"<gui>Submit Issue</gui>."
+"<gui>Labels</gui> menu. Fill in the Title and Description sections and click"
+" <gui>Submit Issue</gui>."
 msgstr ""
 "Si sol·liciteu una funció nova, trieu <gui>1. Feature</gui> al menú "
 "<gui>Labels</gui>. Ompliu les seccions del títol i la descripció i feu clic "
@@ -124,8 +127,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/bug-filing.page:45
 msgid ""
-"Your report will be given an ID number, and its status will be updated as it "
-"is being dealt with."
+"Your report will be given an ID number, and its status will be updated as it"
+" is being dealt with."
 msgstr ""
 "S'assignarà un número identificador a l'informe i el seu estat "
 "s'actualitzarà a mesura que es vagi gestionant."
@@ -138,7 +141,8 @@ msgstr "<link xref=\"get-involved\"><_:media-1/>Col·laboració</link>"
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:51 C/develop.page:31 C/documentation.page:31
-#: C/playgame.page:47 C/preferences.page:71 C/score.page:38 C/translate.page:44
+#: C/playgame.page:48 C/preferences.page:71 C/score.page:38
+#: C/translate.page:44
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
 msgstr "<link xref=\"index\"><_:media-1/>Inici</link>"
 
@@ -156,19 +160,23 @@ msgstr "Ajudar en el desenvolupament"
 #. (itstool) path: page/p
 #: C/develop.page:27
 msgid ""
-"If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
-"Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
-"touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
-"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
-"href=\"https://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
-"link>."
+"If you would like to <link "
+"href=\"https://wiki.gnome.org/Apps/Games/Contributing\">help develop "
+"<app>GNOME Games</app></link>, you can get in touch with the developers "
+"using <link "
+"href=\"https://cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-"
+"games\">irc</link>, or via our <link "
+"href=\"https://mail.gnome.org/mailman/listinfo/games-list\">mailing "
+"list</link>."
 msgstr ""
-"Si voleu <link href=\"https://wiki.gnome.org/Apps/Games/Contributing"
-"\">ajudar a desenvolupar els <app>jocs del GNOME</app></link>, podeu posar-"
-"vos en contacte amb els desenvolupadors mitjançant l'<link href=\"https://"
-"cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</"
-"link> o la nostra <link href=\"https://mail.gnome.org/mailman/listinfo/games-"
-"list\">llista de correu</link>."
+"Si voleu <link "
+"href=\"https://wiki.gnome.org/Apps/Games/Contributing\">ajudar a "
+"desenvolupar els <app>jocs del GNOME</app></link>, podeu posar-vos en "
+"contacte amb els desenvolupadors mitjançant l'<link "
+"href=\"https://cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-"
+"games\">irc</link> o la nostra <link "
+"href=\"https://mail.gnome.org/mailman/listinfo/games-list\">llista de "
+"correu</link>."
 
 #. (itstool) path: info/desc
 #: C/documentation.page:21
@@ -184,23 +192,33 @@ msgstr "Ajudar a escriure la documentació"
 #: C/documentation.page:25
 msgid ""
 "To contribute to the Documentation Project, feel free to get in touch with "
-"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
-"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"https://mail.gnome."
-"org/mailman/listinfo/gnome-doc-list\">mailing list</link>."
+"us using <link "
+"href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fdocs\">irc</link>,"
+" or via our <link href=\"https://mail.gnome.org/mailman/listinfo/gnome-doc-"
+"list\">mailing list</link>."
 msgstr ""
-"Per a col·laborar amb el projecte de documentació, no dubteu a contactar amb "
-"nosaltres mitjançant l'<link href=\"https://cbe003.chat.mibbit.com/?url=irc"
-"%3A%2F%2Firc.gnome.org%2Fdocs\">irc</link> o la nostra <link href=\"https://"
-"mail.gnome.org/mailman/listinfo/gnome-doc-list\">llista de correu</link>."
+"Per a col·laborar amb el projecte de documentació, no dubteu a contactar amb"
+" nosaltres mitjançant l'<link "
+"href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fdocs\">irc</link>"
+" o la nostra <link href=\"https://mail.gnome.org/mailman/listinfo/gnome-doc-"
+"list\">llista de correu</link>."
 
 #. (itstool) path: page/p
 #: C/documentation.page:27
 msgid ""
-"Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
-"\">wiki</link> page contains useful information."
+"Our <link "
+"href=\"https://wiki.gnome.org/DocumentationProject/Contributing\">wiki</link>"
+" page contains useful information."
 msgstr ""
-"La nostra pàgina <link href=\"https://wiki.gnome.org/DocumentationProject/"
-"Contributing\">wiki</link> conté informació útil."
+"La nostra pàgina <link "
+"href=\"https://wiki.gnome.org/DocumentationProject/Contributing\">wiki</link>"
+" conté informació útil."
+
+#. (itstool) path: info/title
+#: C/index.page:6
+msgctxt "link:trail"
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
 
 #. (itstool) path: info/title
 #: C/index.page:7
@@ -214,30 +232,23 @@ msgctxt "text"
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
-#. (itstool) path: media/span
-#: C/index.page:20
-msgid "Quadrapassel logo"
-msgstr "Logo del Quadrapassel"
-
 #. (itstool) path: page/title
 #: C/index.page:20
-#| msgctxt "link"
-#| msgid "Quadrapassel"
 msgid "<_:media-1/> Quadrapassel"
 msgstr "<_:media-1/> Quadrapassel"
 
 #. (itstool) path: page/p
 #: C/index.page:22
 msgid ""
-"In Quadrapassel, the GNOME version of Tetris, your goal is to create as many "
-"complete horizontal lines as possible. The lines are made from seven "
+"In Quadrapassel, the GNOME version of Tetris, your goal is to create as many"
+" complete horizontal lines as possible. The lines are made from seven "
 "different shapes. The shapes fall randomly from the top center of the "
-"screen. Your task is to rotate and move the shapes across the screen to make "
-"complete lines. By making complete horizontal lines, you score points and "
+"screen. Your task is to rotate and move the shapes across the screen to make"
+" complete lines. By making complete horizontal lines, you score points and "
 "move up levels. As you progress, the speed of the falling blocks increases."
 msgstr ""
-"Al Quadrapassel, la versió del Tetris del GNOME, el vostre objectiu és crear "
-"tantes línies horitzontals com sigui possible. Les línies es fan amb set "
+"Al Quadrapassel, la versió del Tetris del GNOME, el vostre objectiu és crear"
+" tantes línies horitzontals com sigui possible. Les línies es fan amb set "
 "peces diferents. Les peces cauen aleatòriament des de la part superior "
 "central de la pantalla. La vostra tasca és girar i moure les formes per la "
 "pantalla per a fer línies completes. En fer línies horitzontals completes, "
@@ -277,8 +288,8 @@ msgstr "Llicència"
 #. (itstool) path: page/p
 #: C/license.page:12
 msgid ""
-"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
-"Unported license."
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0"
+" Unported license."
 msgstr ""
 "Aquesta obra es distribueix sota una llicència Reconeixement-CompartirIgual "
 "3.0 No adaptada (CC BY-SA 3.0)."
@@ -322,11 +333,11 @@ msgstr "<em>Reconeixement</em>"
 #: C/license.page:39
 msgid ""
 "You must attribute the work in the manner specified by the author or "
-"licensor (but not in any way that suggests that they endorse you or your use "
-"of the work)."
+"licensor (but not in any way that suggests that they endorse you or your use"
+" of the work)."
 msgstr ""
-"Heu de reconèixer l'obra de la manera especificada per l'autor o llicenciant "
-"(però no d'una manera que suggereixi que us donen suport o patrocinen l'ús "
+"Heu de reconèixer l'obra de la manera especificada per l'autor o llicenciant"
+" (però no d'una manera que suggereixi que us donen suport o patrocinen l'ús "
 "que en feu)."
 
 #. (itstool) path: item/title
@@ -347,15 +358,16 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/license.page:53
 msgid ""
-"For the full text of the license, see the <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
-"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/\">Commons Deed</link>."
+"For the full text of the license, see the <link "
+"href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/legalcode\">CreativeCommons website</link>, or read the full <link "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Commons Deed</link>."
 msgstr ""
-"Per a veure el text complet de la llicència, aneu al <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/legalcode\">lloc web de "
-"CreativeCommons</link> o llegiu el <link href=\"http://creativecommons.org/"
-"licenses/by-sa/3.0/\">Commons Deed</link> complet."
+"Per a veure el text complet de la llicència, aneu al <link "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/legalcode\">lloc web de"
+" CreativeCommons</link> o llegiu el <link "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Commons Deed</link> "
+"complet."
 
 #. (itstool) path: license/p
 #: C/playgame.page:19
@@ -385,37 +397,46 @@ msgstr ""
 #: C/playgame.page:31
 msgid ""
 "The <key>↑</key> key rotates the block. The rotation (which is "
-"counterclockwise by default) can be changed in the <link xref=\"preferences"
-"\">Preferences</link>."
+"counterclockwise by default) can be changed in the <link "
+"xref=\"preferences\">Preferences</link>."
 msgstr ""
 "La tecla <key>↑</key> gira el bloc. La rotació (en sentit antihorari per "
-"defecte) pot canviar-se a les <link xref=\"preferences\">Preferències</link>."
+"defecte) pot canviar-se a les <link "
+"xref=\"preferences\">Preferències</link>."
 
 #. (itstool) path: item/p
 #: C/playgame.page:32
 msgid ""
-"The <key>SPACEBAR</key> and <key>↓</key> key increase the speed of the drop. "
-"The <key>SPACEBAR</key> causes a hard-drop (instant move to the bottom). The "
-"<key>↓</key> key causes a soft-drop (temporary increase in speed while the "
-"key is held down)."
+"The <key>SPACEBAR</key> and <key>↓</key> key increase the speed of the drop."
+" The <key>SPACEBAR</key> causes a hard-drop (instant move to the bottom). "
+"The <key>↓</key> key causes a soft-drop (temporary increase in speed while "
+"the key is held down)."
 msgstr ""
 "La <key>barra espaiadora</key> i la tecla <key>↓</key> augmenten la "
 "velocitat de la caiguda. La <key>barra espaiadora</key> fa que la peça "
 "caigui en picat (directament a terra). La tecla <key>↓</key> fa que la peça "
 "caigui a poc a poc (la caiguda s'accelera mentre es prem la tecla)."
 
+#. (itstool) path: item/p
+#: C/playgame.page:33
+msgid ""
+"The <key>Enter</key> will restart the game quickly once it is game over."
+msgstr ""
+"La tecla <key>Retorn</key> reiniciarà la partida ràpidament una vegada hagi acabat "
+"la partida."
+
 #. (itstool) path: section/title
-#: C/playgame.page:37
+#: C/playgame.page:38
 msgid "Rules"
 msgstr "Regles"
 
 #. (itstool) path: section/p
-#: C/playgame.page:39
+#: C/playgame.page:40
 msgid "There are a couple of rules that you should keep in mind:"
 msgstr "Hi ha un parell de regles que hauríeu de tenir en compte:"
 
 #. (itstool) path: item/p
-#: C/playgame.page:41
+#: C/playgame.page:42
 msgid ""
 "You can pause, end, start a new game, get help or quit the program at any "
 "time."
@@ -424,7 +445,7 @@ msgstr ""
 "programa en qualsevol moment."
 
 #. (itstool) path: item/p
-#: C/playgame.page:42
+#: C/playgame.page:43
 msgid "You can pause the game as many times as you want."
 msgstr "Podeu aturar la partida tants cops com vulgueu."
 
@@ -445,8 +466,8 @@ msgid ""
 "corner of the window and select <gui style=\"menuitem\">Preferences</gui>."
 msgstr ""
 "Per a canviar les preferències del joc, premeu el botó de menú de la "
-"cantonada superior dreta de la finestra i seleccioneu <gui style=\"menuitem"
-"\">Preferències</gui>."
+"cantonada superior dreta de la finestra i seleccioneu <gui "
+"style=\"menuitem\">Preferències</gui>."
 
 #. (itstool) path: page/p
 #: C/preferences.page:29
@@ -454,8 +475,8 @@ msgid ""
 "The three tabs available are <gui>Game</gui>, <gui>Controls</gui> and "
 "<gui>Theme</gui>."
 msgstr ""
-"Les tres pestanyes disponibles són <gui>Partida</gui>, <gui>Controls</gui> i "
-"<gui>Tema</gui>."
+"Les tres pestanyes disponibles són <gui>Partida</gui>, <gui>Controls</gui> i"
+" <gui>Tema</gui>."
 
 #. (itstool) path: section/title
 #: C/preferences.page:32
@@ -490,12 +511,14 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/preferences.page:37
-msgid "<gui>Starting level</gui> controls the speed with which you will start."
+msgid ""
+"<gui>Starting level</gui> controls the speed with which you will start."
 msgstr "<gui>Nivell inicial</gui> controla la velocitat a la qual començareu."
 
 #. (itstool) path: section/p
 #: C/preferences.page:39
-msgid "These options can vary from 0 to 15, 0 to 10, and 1 to 20 respectively."
+msgid ""
+"These options can vary from 0 to 15, 0 to 10, and 1 to 20 respectively."
 msgstr ""
 "Aquestes opcions poden anar de 0 a 15, de 0 a 10 i d'1 a 20 respectivament."
 
@@ -551,7 +574,8 @@ msgstr "Tema"
 #. (itstool) path: section/p
 #: C/preferences.page:58
 msgid "To change the theme, choose a different one from the drop-down menu."
-msgstr "Per a canviar el tema, escolliu-ne un de diferent al menú desplegable."
+msgstr ""
+"Per a canviar el tema, escolliu-ne un de diferent al menú desplegable."
 
 #. (itstool) path: section/p
 #: C/preferences.page:59
@@ -602,8 +626,8 @@ msgid ""
 "(the speed) that fits you the most!"
 msgstr ""
 "Si comenceu pel nivell 1, l'única manera d'avançar al nivell següent és "
-"completant més línies, és a dir, fent més punts. Per a assolir una puntuació "
-"millor, intenteu adaptar la pantalla, el teclat i el nivell (la velocitat) "
+"completant més línies, és a dir, fent més punts. Per a assolir una puntuació"
+" millor, intenteu adaptar la pantalla, el teclat i el nivell (la velocitat) "
 "que us vagi millor!"
 
 #. (itstool) path: section/p
@@ -611,13 +635,13 @@ msgstr ""
 msgid ""
 "You can make many changes to the keyboard controls, the contour of the "
 "blocks, the number and density of lines with which you start, and the speed "
-"of drop. You can change your settings in the <link xref=\"preferences"
-"\">Preferences</link>."
+"of drop. You can change your settings in the <link "
+"xref=\"preferences\">Preferences</link>."
 msgstr ""
 "Podeu fer molts canvis als controls de teclat, el contorn dels blocs, el "
 "nombre i la densitat de línies amb què comenceu, i la velocitat de la "
-"caiguda. Podeu canviar la configuració a les <link xref=\"preferences"
-"\">Preferències</link>."
+"caiguda. Podeu canviar la configuració a les <link "
+"xref=\"preferences\">Preferències</link>."
 
 #. (itstool) path: section/title
 #: C/score.page:33
@@ -666,29 +690,29 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/translate.page:31
 msgid ""
-"To start translating you will need to <link href=\"https://l10n.gnome.org"
-"\">create an account</link> and join the <link href=\"https://l10n.gnome.org/"
-"teams/\">translation team</link> for your language. This will give you the "
-"ability to upload new translations."
+"To start translating you will need to <link "
+"href=\"https://l10n.gnome.org\">create an account</link> and join the <link "
+"href=\"https://l10n.gnome.org/teams/\">translation team</link> for your "
+"language. This will give you the ability to upload new translations."
 msgstr ""
-"Per a començar a traduir, haureu de <link href=\"https://l10n.gnome.org"
-"\">crear un compte</link> i unir-vos a l'<link href=\"https://l10n.gnome.org/"
-"teams/\">equip de traducció</link> de la vostra llengua. Això us permetrà "
-"carregar noves traduccions."
+"Per a començar a traduir, haureu de <link "
+"href=\"https://l10n.gnome.org\">crear un compte</link> i unir-vos a l'<link "
+"href=\"https://l10n.gnome.org/teams/\">equip de traducció</link> de la "
+"vostra llengua. Això us permetrà carregar noves traduccions."
 
 #. (itstool) path: page/p
 #: C/translate.page:35
 msgid ""
-"You can chat with GNOME translators using <link href=\"https://cbe003.chat."
-"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. People on the "
-"channel are located worldwide, so you may not get an immediate response as a "
-"result of timezone differences."
+"You can chat with GNOME translators using <link "
+"href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>."
+" People on the channel are located worldwide, so you may not get an "
+"immediate response as a result of timezone differences."
 msgstr ""
-"Podeu xatejar amb l'equip de traductors del GNOME mitjançant l'<link href="
-"\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n"
-"\">IRC</link>. Els participants d'aquest canal es troben arreu del món, per "
-"la qual cosa pot ser que no obtingueu una resposta immediata a causa de les "
-"diferències horàries."
+"Podeu xatejar amb l'equip de traductors del GNOME mitjançant l'<link "
+"href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">IRC</link>."
+" Els participants d'aquest canal es troben arreu del món, per la qual cosa "
+"pot ser que no obtingueu una resposta immediata a causa de les diferències "
+"horàries."
 
 #. (itstool) path: page/p
 #: C/translate.page:39
