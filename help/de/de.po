@@ -2,19 +2,20 @@
 #
 # Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2010, 2012-2013, 2017-2018, 2020-2021.
 # Christian Kirbach <christian.kirbach@gmail.com>, 2015.
+# Jürgen Benvenuti <gastornis@posteo.org>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel manual\n"
-"POT-Creation-Date: 2021-03-02 07:11+0000\n"
-"PO-Revision-Date: 2021-03-04 18:44+0100\n"
-"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
+"POT-Creation-Date: 2022-07-28 19:44+0000\n"
+"PO-Revision-Date: 2022-09-04 21:57+0200\n"
+"Last-Translator: Tim Sabsch <tim@sabsch.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.12.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -22,7 +23,8 @@ msgid "translator-credits"
 msgstr ""
 "Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2010, 2012, 2018, "
 "2020\n"
-"Christian Kirbach <christian.kirbach@gmail.,com>, 2014-2015"
+"Christian Kirbach <christian.kirbach@gmail.,com>, 2014-2015\n"
+"Jürgen Benvenuti <gastornis@posteo.org>, 2022"
 
 #. (itstool) path: credit/name
 #: C/bug-filing.page:11 C/develop.page:12 C/documentation.page:10
@@ -99,16 +101,16 @@ msgstr ""
 msgid ""
 "Once you have an account, log in, and click on <gui>New issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
-"link>, and please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/"
-"issues\">browse</link> for the bug to see if it already exists."
+"GettingInTouch/BugReportingGuidelines\">bug writing guidelines</link>, and "
+"please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues"
+"\">browse</link> for the bug to see if it already exists."
 msgstr ""
 "Sobald die Erstellung des Kontos abgeschlossen ist, klicken Sie auf <gui>New "
 "issue</gui>. Bevor Sie einen Fehler melden, lesen Sie bitte die <link href="
-"\"https://wiki.gnome.org/Community/GettingInTouch/Bugzilla/Guidelines"
-"\">Richtlinien zum Melden von Fehlern</link> und <link href=\"https://gitlab."
-"gnome.org/GNOME/quadrapassel/issues\">schauen Sie bitte nach</link>, ob der "
-"Fehler vielleicht schon gemeldet wurde."
+"\"https://wiki.gnome.org/GettingInTouch/BugReportingGuidelines\">Richtlinien "
+"zum Melden von Fehlern</link> und <link href=\"https://gitlab.gnome.org/"
+"GNOME/quadrapassel/issues\">schauen Sie bitte nach</link>, ob der Fehler "
+"vielleicht schon gemeldet wurde."
 
 #. (itstool) path: page/p
 #: C/bug-filing.page:41
@@ -205,6 +207,12 @@ msgstr ""
 "\">Wiki</link> enthält eine Reihe nützlicher Informationen für Sie bereit."
 
 #. (itstool) path: info/title
+#: C/index.page:6
+msgctxt "link:trail"
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#. (itstool) path: info/title
 #: C/index.page:7
 msgctxt "link"
 msgid "Quadrapassel"
@@ -215,11 +223,6 @@ msgstr "Quadrapassel"
 msgctxt "text"
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
-
-#. (itstool) path: media/span
-#: C/index.page:20
-msgid "Quadrapassel logo"
-msgstr "Logo von Quadrapassel"
 
 #. (itstool) path: page/title
 #: C/index.page:20
@@ -407,7 +410,7 @@ msgid ""
 msgstr ""
 "Die <key>Leertaste</key> und <key>↓</key>-Taste erhöhen die Geschwindigkeit "
 "des Ablegens. Die <key>Leertaste</key> lässt den Block fallen (direkte "
-"Verschiebung nach untern). Die <key>↓</key>-Taste legt den Block weich ab "
+"Verschiebung nach unten). Die <key>↓</key>-Taste legt den Block weich ab "
 "(vorübergehende Erhöhung der Geschwindigkeit, so lange die Taste gedrückt "
 "gehalten wird)."
 
@@ -416,8 +419,8 @@ msgstr ""
 msgid ""
 "The <key>Enter</key> will restart the game quickly once it is game over."
 msgstr ""
-"Sobald das Spiel vorbei ist, können Sie es mit der <key>Eingabetaste</key>"
-" schnell neu starten."
+"Sobald das Spiel vorbei ist, können Sie es mit der <key>Eingabetaste</key> "
+"schnell neu starten."
 
 #. (itstool) path: section/title
 #: C/playgame.page:38
@@ -514,7 +517,7 @@ msgstr ""
 #: C/preferences.page:39
 msgid "These options can vary from 0 to 15, 0 to 10, and 1 to 20 respectively."
 msgstr ""
-"Diese Options können von 0 bis 15, 0 bis 10 beziehungsweise 1 bis 20 "
+"Diese Optionen können von 0 bis 15, 0 bis 10 beziehungsweise 1 bis 20 "
 "variieren."
 
 #. (itstool) path: section/p
@@ -640,7 +643,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/score.page:33
 msgid "High Scores"
-msgstr "Bestwerte"
+msgstr "Bestenliste"
 
 #. (itstool) path: section/p
 #: C/score.page:34
@@ -718,6 +721,9 @@ msgstr ""
 "Alternativ können Sie das Internationalisierungsteam über dessen <link href="
 "\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">Mailingliste</link> "
 "kontaktieren."
+
+#~ msgid "Quadrapassel logo"
+#~ msgstr "Logo von Quadrapassel"
 
 #~ msgid ""
 #~ "<app>Quadrapassel</app> is maintained by a volunteer community. You are "
