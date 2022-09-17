@@ -8,13 +8,13 @@
 # Alexandre Franke <alexandre.franke@gmail.com>, 2011.
 # Alain Lojewski <allomervan@gmail.com>, 2012.
 # Mickael Albertus <mickael.albertus@gmail.com>, 2012.
-# Charles Monzat <charles.monzat@free.fr>, 2017-2021.
+# Charles Monzat <charles.monzat@free.fr>, 2017-2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master fr\n"
-"POT-Creation-Date: 2020-09-30 11:15+0000\n"
-"PO-Revision-Date: 2021-03-16 22:04+0100\n"
+"POT-Creation-Date: 2021-10-05 07:13+0000\n"
+"PO-Revision-Date: 2022-04-10 23:36+0200\n"
 "Last-Translator: Charles Monzat <charles.monzat@free.fr>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr_FR\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gtranslator 3.38.0\n"
+"X-Generator: Gtranslator 40.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -58,8 +58,7 @@ msgstr "Elena Petrevska"
 #: C/bug-filing.page:20 C/develop.page:21 C/documentation.page:19
 #: C/index.page:17 C/preferences.page:19 C/score.page:19
 msgid "Creative Commons Share Alike 3.0"
-msgstr ""
-"Creative Commons Paternité-Partage des Conditions Initiales à l’Identique 3.0"
+msgstr "Creative Commons Paternité - Partage dans les Mêmes Conditions 3.0"
 
 #. (itstool) path: info/desc
 #: C/bug-filing.page:22
@@ -112,15 +111,15 @@ msgstr ""
 msgid ""
 "Once you have an account, log in, and click on <gui>New issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
-"link>, and please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/"
-"issues\">browse</link> for the bug to see if it already exists."
+"GettingInTouch/BugReportingGuidelines\">bug writing guidelines</link>, and "
+"please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues"
+"\">browse</link> for the bug to see if it already exists."
 msgstr ""
 "Une fois en possession de votre compte, connectez-vous, puis cliquez sur "
 "<gui>New issue</gui>. Avant de signaler une anomalie, lisez le <link href="
-"\"https://wiki.gnome.org/Community/GettingInTouch/Bugzilla/Guidelines\">bug "
-"writing guidelines (guide de rédaction des rapports d’anomalies)</link> et "
-"effectuez une <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues"
+"\"https://wiki.gnome.org/GettingInTouch/BugReportingGuidelines\">bug writing "
+"guidelines (guide de rédaction des rapports d’anomalies)</link> et effectuez "
+"une <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues"
 "\">recherche</link> au sujet de l’anomalie au cas où quelque chose de "
 "similaire existerait déjà."
 
@@ -219,6 +218,12 @@ msgstr ""
 "Contributing\">wiki</link> contient des informations utiles."
 
 #. (itstool) path: info/title
+#: C/index.page:6
+msgctxt "link:trail"
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#. (itstool) path: info/title
 #: C/index.page:7
 msgctxt "link"
 msgid "Quadrapassel"
@@ -229,11 +234,6 @@ msgstr "Quadrapassel"
 msgctxt "text"
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
-
-#. (itstool) path: media/span
-#: C/index.page:20
-msgid "Quadrapassel logo"
-msgstr "Logo de Quadrapassel"
 
 #. (itstool) path: page/title
 #: C/index.page:20
@@ -272,8 +272,8 @@ msgstr "Impliquez-vous !"
 #: C/legal.xml:3
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 msgstr ""
-"Creative Commons Paternité-Partage des Conditions Initiales à l’Identique "
-"3.0 non transposé"
+"Creative Commons Attribution - Partage dans les Mêmes Conditions 3.0 non "
+"transposé"
 
 #. (itstool) path: license/p
 #: C/legal.xml:3
@@ -296,8 +296,8 @@ msgid ""
 "This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
 "Unported license."
 msgstr ""
-"Cette œuvre est distribuée sous licence Creative Commons Paternité-Partage "
-"des Conditions Initiales à l’Identique 3.0 non transposé."
+"Cette œuvre est distribuée sous licence Creative Commons Attribution - "
+"Partage dans les Mêmes Conditions 3.0 non transposé."
 
 #. (itstool) path: page/p
 #: C/license.page:20
@@ -370,15 +370,14 @@ msgid ""
 "sa/3.0/\">Commons Deed</link>."
 msgstr ""
 "Pour prendre connaissance du texte complet de la licence, consultez le <link "
-"href=\"http://creativecommons.org/licenses/by-sa/3.0/legalcode\">site Web "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/legalcode\">site web "
 "CreativeCommons</link> ou lisez in extenso le <link href=\"http://"
 "creativecommons.org/licenses/by-sa/3.0/\">contrat Commons</link>."
 
 #. (itstool) path: license/p
 #: C/playgame.page:19
 msgid "Creative Commons Attribution Share Alike 3.0"
-msgstr ""
-"Creative Commons Paternité-Partage des Conditions Initiales à l’Identique 3.0"
+msgstr "Creative Commons Attribution - Partage dans les Mêmes Conditions 3.0"
 
 #. (itstool) path: info/desc
 #: C/playgame.page:21
@@ -734,6 +733,9 @@ msgstr ""
 "À la place, vous pouvez contacter l’équipe d’internationalisation en "
 "utilisant leur <link href=\"https://mail.gnome.org/mailman/listinfo/gnome-"
 "i18n\">liste de discussion</link>."
+
+#~ msgid "Quadrapassel logo"
+#~ msgstr "Logo de Quadrapassel"
 
 #~ msgid ""
 #~ "<app>Quadrapassel</app> is maintained by a volunteer community. You are "
