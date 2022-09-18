@@ -1,6 +1,6 @@
 # Turkish translation of gnome-quadrapassel.
 # Copyright (C) 2000-2002, 2004, 2005, 2008 Free Software Foundation, Inc.
-# Copyright (C) 2020-2021 gnome-quadrapassel'S COPYRIGHT HOLDER
+# Copyright (C) 2020-2022 gnome-quadrapassel'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-quadrapassel package.
 #
 # Onur Kucuk, <okucuk@yahoo.com>, 2000.
@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-11-28 21:49+0000\n"
+"POT-Creation-Date: 2022-07-23 22:39+0000\n"
 "PO-Revision-Date: 2020-09-16 13:01+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
@@ -191,8 +191,8 @@ msgstr "eğer pencere en büyük hale getirilmişse imle"
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:7
 #: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
-#: src/quadrapassel.vala:909
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:868
+#: src/quadrapassel.vala:913
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -264,7 +264,7 @@ msgstr "_Yardım"
 msgid "_About Quadrapassel"
 msgstr "Quadrapassel _Hakkında"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:806
 msgid "Start a new game"
 msgstr "Yeni oyun başlat"
 
@@ -357,15 +357,15 @@ msgstr "Temizle"
 msgid "Unable to change key, as this key already exists"
 msgstr "Tuş değiştirilemedi, kısayol tuşu zaten var"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:787
 msgid "Unpause the game"
 msgstr "Oyunu sürdür"
 
-#: src/quadrapassel.vala:788
+#: src/quadrapassel.vala:792
 msgid "Pause the game"
 msgstr "Oyunu duraklat"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:870
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -373,7 +373,7 @@ msgstr ""
 "Satırları doldurmak için blokları döndürdüğünüz klasik oyun, bloklarınızı "
 "çok yükseğe yığmayın yoksa oyun biter!"
 
-#: src/quadrapassel.vala:871
+#: src/quadrapassel.vala:875
 msgid "translator-credits"
 msgstr ""
 "Barış Çiçek <baris@teamforce.name.tr> \n"
@@ -395,12 +395,3 @@ msgstr "_Tamam"
 #: src/score-dialog.vala:48
 msgid "Date"
 msgstr "Tarih"
-
-#~ msgid "A classic game of fitting falling blocks together"
-#~ msgstr "Klasik bir düşen blokları bir araya getirme oyunu"
-
-#~ msgid "_About"
-#~ msgstr "H_akkında"
-
-#~ msgid "_Quit"
-#~ msgstr "_Çıkış"
