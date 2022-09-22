@@ -6,371 +6,388 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.ne\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-03 02:54+0100\n"
-"PO-Revision-Date: 2008-02-01 12:10+0545\n"
-"Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
+"POT-Creation-Date: 2022-07-23 22:39+0000\n"
+"PO-Revision-Date: 2022-09-22 12:56+0545\n"
+"Last-Translator: Pawan Chitrakar <chautari@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
 "Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n !=1\n"
-"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n !=1;\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:1
+#: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
 msgstr "खण्ड झार्नका लागि प्रयोग गरिने छवि"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:2
+#: data/org.gnome.Quadrapassel.gschema.xml:6
 msgid "Image to use for drawing blocks."
 msgstr "खण्ड झार्नका लागि प्रयोग छवि ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:3
+#: data/org.gnome.Quadrapassel.gschema.xml:10
 msgid "The theme used for rendering the blocks"
 msgstr "खण्ड रेन्डरिङ गर्नका लागि प्रयोग गरिने विषयवस्तु"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:4
+#: data/org.gnome.Quadrapassel.gschema.xml:11
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "खण्ड र पृष्ठभूमि रेन्डरिङ गर्नका लागि प्रयोग गरिने विषयवस्तुको नाम ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:5
+#: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "Level to start with"
 msgstr "सुरु गरिने स्तर"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:6
+#: data/org.gnome.Quadrapassel.gschema.xml:17
 msgid "Level to start with."
 msgstr "सुरु गरिने स्तर ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:7
+#: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to preview the next block"
 msgstr "पछिल्लो खण्ड पूर्वावलोकन गर्ने या नगर्ने"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:8
+#: data/org.gnome.Quadrapassel.gschema.xml:22
 msgid "Whether to preview the next block."
 msgstr "पछिल्लो खण्ड पूर्वावलोकन गर्ने या नगर्ने ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:9
-#, fuzzy
-msgid "Whether to show where the moving piece will land"
-msgstr "खण्ड रोकिने ठाउँ देखाउनुहोस्"
+#: data/org.gnome.Quadrapassel.gschema.xml:26
+msgid "Whether to show where the moving block will land"
+msgstr "सार्ने ब्लक कहाँ अवतरण हुनेछ भनेर देखाउने या नदेखाउने"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:10
-#, fuzzy
-msgid "Whether to show where the moving piece will land."
-msgstr "खण्ड रोकिने ठाउँ देखाउनुहोस्"
+#: data/org.gnome.Quadrapassel.gschema.xml:27
+msgid "Whether to show where the moving block will land."
+msgstr "सार्ने ब्लक कहाँ अवतरण हुनेछ भनेर देखाउने या नदेखाउने ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:11
+#: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to give blocks random colors"
 msgstr "अनियमित रङका खण्ड दिन्छ या दिदैन"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:12
+#: data/org.gnome.Quadrapassel.gschema.xml:32
 msgid "Whether to give blocks random colors."
 msgstr "अनियमित रङका खण्ड दिन्छ या दिदैन ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:13
+#: data/org.gnome.Quadrapassel.gschema.xml:36
 msgid "Whether to rotate counter clock wise"
 msgstr "घडीको विपरित दिशामा घुमाउने या नघुमाउने"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:14
+#: data/org.gnome.Quadrapassel.gschema.xml:37
 msgid "Whether to rotate counter clock wise."
 msgstr "घडीको विपरित दिशातिर घुमाउने या नघुमाउने ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:15
+#: data/org.gnome.Quadrapassel.gschema.xml:42
 msgid "The number of rows to fill"
 msgstr "भर्नुपर्ने पङ्‌क्तिको सङ्ख्या"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:16
-msgid ""
-"The number of rows that are filled with random blocks at the start of the "
-"game."
+#: data/org.gnome.Quadrapassel.gschema.xml:43
+msgid "The number of rows that are filled with random blocks at the start of the game."
 msgstr "खेलको सुरुमा अनियमित खण्डद्वारा भरिएका पङ्‌क्तिको सङ्ख्या ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:17
+#: data/org.gnome.Quadrapassel.gschema.xml:48
 msgid "The density of filled rows"
 msgstr "भरिएका पङ्‌क्तिको घनत्व"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:18
+#: data/org.gnome.Quadrapassel.gschema.xml:49
 msgid ""
-"The density of blocks in rows filled at the start of the game. The value is "
-"between 0 (for no blocks) and 10 (for a completely filled row)."
+"The density of blocks in rows filled at the start of the game. The value is between 0 "
+"(for no blocks) and 10 (for a completely filled row)."
 msgstr ""
-"खेलको सरुमा भरिने पङ्‌क्तिको खण्डको घनत्व । मान ० (खण्ड नहुनका लागि) र १० (पूर्ण रूपमा "
-"भरिएको पङ्‌क्तिका लागि) ।"
+"खेलको सरुमा भरिने पङ्‌क्तिको खण्डको घनत्व । मान ० (खण्ड नहुनका लागि) र १० (पूर्ण रूपमा भरिएको "
+"पङ्‌क्तिका लागि) ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:19
-#, fuzzy
+#: data/org.gnome.Quadrapassel.gschema.xml:53
 msgid "Whether to play sounds"
-msgstr "घटना ध्वनि प्ले गर्ने या नगर्ने ।"
+msgstr "ध्वनी बजाउने या नबजाउने"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:20
-#, fuzzy
+#: data/org.gnome.Quadrapassel.gschema.xml:54
 msgid "Whether to play sounds."
-msgstr "घटना ध्वनि प्ले गर्ने या नगर्ने ।"
+msgstr "ध्वनी बजाउने या नबजाउने"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:21
-#, fuzzy
+#: data/org.gnome.Quadrapassel.gschema.xml:58
 msgid "Whether to pick blocks that are hard to place"
-msgstr "अनियमित रङका खण्ड दिन्छ या दिदैन"
+msgstr "राख्न गाह्रो भएका ब्लकहरू छनौट गर्ने या नगर्ने"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:22
-#, fuzzy
+#: data/org.gnome.Quadrapassel.gschema.xml:59
 msgid "Whether to pick blocks that are hard to place."
-msgstr "अनियमित रङका खण्ड दिन्छ या दिदैन ।"
+msgstr "राख्न गाह्रो ब्लकहरू छनौट गर्ने कि नगर्ने।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:366
+#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:371
 msgid "Move left"
 msgstr "बाँया सार्नुहोस्"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:24
+#: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "Key press to move left."
 msgstr "बायाँ सार्नलाई कुञ्जी थिच्नुहोस् ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:369
+#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:374
 msgid "Move right"
 msgstr "दाँया सार्नुहोस्"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:26
+#: data/org.gnome.Quadrapassel.gschema.xml:69
 msgid "Key press to move right."
 msgstr "दायाँ सार्नलाई कुञ्जी थिच्नुहोस् ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:372
+#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:377
 msgid "Move down"
 msgstr "तल सार्नुहोस्"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:28
+#: data/org.gnome.Quadrapassel.gschema.xml:74
 msgid "Key press to move down."
 msgstr "तल सार्नलाई कुञ्जी थिच्नुहोस् ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:375
+#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:380
 msgid "Drop"
 msgstr "झार्नुहोस्"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:30
+#: data/org.gnome.Quadrapassel.gschema.xml:79
 msgid "Key press to drop."
 msgstr "झार्नका लागि कुञ्जी थिच्नुहोस् ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:378
+#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:383
 msgid "Rotate"
 msgstr "घुमाउनुहोस्"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:32
+#: data/org.gnome.Quadrapassel.gschema.xml:84
 msgid "Key press to rotate."
 msgstr "घुमाउनलाई कुञ्जी थिच्नुहोस् ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:381
+#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
 msgid "Pause"
 msgstr "पज गर्नुहोस्"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:34
+#: data/org.gnome.Quadrapassel.gschema.xml:89
 msgid "Key press to pause."
 msgstr "रोक्नलाई कुञ्जी थिच्नुहोस् ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:35
-#, fuzzy
+#: data/org.gnome.Quadrapassel.gschema.xml:93
+msgid "Enter"
+msgstr "प्रविष्ट गर्नुहोस्"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:94
+msgid "Key to start the game"
+msgstr "खेल सुरु गर्न कुञ्जी"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:98
 msgid "Width of the window in pixels"
 msgstr "मुख्य सञ्झ्यालको चौडाइ पिक्सेलमा ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:36
-#, fuzzy
+#: data/org.gnome.Quadrapassel.gschema.xml:102
 msgid "Height of the window in pixels"
 msgstr "मुख्य सञ्झ्यालको उचाइ पिक्सेलमा ।"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:37
+#: data/org.gnome.Quadrapassel.gschema.xml:106
 msgid "true if the window is maximized"
-msgstr ""
+msgstr "सत्य यदि सञ्झ्याल अधिकतम छ।"
 
-#: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
-#: ../src/quadrapassel.vala:110 ../src/quadrapassel.vala:121
-#: ../src/quadrapassel.vala:836 ../src/quadrapassel.vala:876
+#: data/org.gnome.Quadrapassel.appdata.xml.in:7 data/org.gnome.Quadrapassel.desktop.in:3
+#: src/quadrapassel.vala:99 src/quadrapassel.vala:110 src/quadrapassel.vala:868
+#: src/quadrapassel.vala:913
 msgid "Quadrapassel"
-msgstr ""
+msgstr "क्वाड्रापासेल"
 
-#: ../data/quadrapassel.appdata.xml.in.h:2 ../data/quadrapassel.desktop.in.h:2
+#: data/org.gnome.Quadrapassel.appdata.xml.in:8 data/org.gnome.Quadrapassel.desktop.in:4
 msgid "Fit falling blocks together"
 msgstr "सँगैसँगै झर्ने खण्डलाई मिलाउनुहोस्"
 
-#: ../data/quadrapassel.appdata.xml.in.h:3
+#: data/org.gnome.Quadrapassel.appdata.xml.in:10
 msgid ""
-"Quadrapassel is a derivative of a classic Russian falling-block game. "
-"Reposition and rotate the blocks as they fall, and attempt to fit them "
-"together. When you form a complete horizontal row of blocks, the row will "
-"disappear and you score points. The game is over when the blocks get stacked "
-"too high. As your score gets higher, you level up and the blocks fall faster."
+"Quadrapassel is a derivative of a classic Russian falling-block game. Reposition and "
+"rotate the blocks as they fall, and attempt to fit them together. When you form a "
+"complete horizontal row of blocks, the row will disappear and you score points. The "
+"game is over when the blocks get stacked too high. As your score gets higher, you "
+"level up and the blocks fall faster."
 msgstr ""
+"क्वाड्रापासेल क्लासिक रूसी पतन-ब्लक खेलको व्युत्पन्न हो। ब्लकहरू पतन को रूप मा पुन: स्थिति र घुमाउनुहोस्, "
+"र तिनीहरूलाई एक साथ फिट गर्न प्रयास गर्नुहोस्। जब तपाईं ब्लकहरूको पूर्ण तेर्सो पङ्क्ति बनाउनुहुन्छ, "
+"पङ्क्ति गायब हुनेछ र तपाईंले अंक प्राप्त गर्नुहुन्छ। खेल समाप्त हुन्छ जब ब्लकहरू धेरै उच्च स्ट्याक हुन्छन्। "
+"तपाईंको स्कोर उच्च हुँदै जाँदा, तपाईं स्तर माथि उठ्नुहुन्छ र ब्लकहरू छिटो झर्छन्।"
 
-#: ../data/quadrapassel.appdata.xml.in.h:4
+#: data/org.gnome.Quadrapassel.appdata.xml.in:17
 msgid ""
-"If you’re looking for a challenge, Quadrapassel allows you to increase the "
-"initial speed of the blocks, or begin the game with partial blocks on some "
-"of the rows. Or, instead of allowing the blocks to fall randomly, it can "
-"select blocks that will be hard for you to place."
+"If you’re looking for a challenge, Quadrapassel allows you to increase the initial "
+"speed of the blocks, or begin the game with partial blocks on some of the rows. Or, "
+"instead of allowing the blocks to fall randomly, it can select blocks that will be "
+"hard for you to place."
 msgstr ""
+"यदि तपाईं चुनौतीखोज्दै हुनुहुन्छ भने, क्वाड्रापासेलले तपाईंलाई ब्लकहरूको प्रारम्भिक गति बढाउन अनुमति "
+"दिन्छ, वा केही पङ्क्तिहरूमा आंशिक ब्लकहरूसँग खेल सुरु गर्न अनुमति दिन्छ। वा, ब्लकहरू अनियमित रूपमा खस्न "
+"दिनुको सट्टा, यसले ब्लकहरू चयन गर्न सक्दछ जुन तपाईंलाई राख्न गाह्रो हुनेछ।"
 
-#: ../data/quadrapassel.desktop.in.h:3
-#, fuzzy
+#: data/org.gnome.Quadrapassel.appdata.xml.in:33
+msgid "The GNOME Project"
+msgstr "जिनोम परियोजना"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
-msgstr "ग्नोमेट्रिस"
+msgstr "टेट्रिस;"
 
-#: ../src/game-view.vala:346
+#: src/game-view.vala:335
 msgid "Paused"
 msgstr "पज गरियो"
 
-#: ../src/game-view.vala:348
+#: src/game-view.vala:337
 msgid "Game Over"
 msgstr "खेल समाप्त"
 
-#: ../src/quadrapassel.vala:95
+#: src/quadrapassel.vala:117
 msgid "_New Game"
 msgstr "नयाँ खेल"
 
-#: ../src/quadrapassel.vala:96
+#: src/quadrapassel.vala:118
 msgid "_Scores"
 msgstr "प्राप्ताङ्क"
 
-#: ../src/quadrapassel.vala:97
-#, fuzzy
+#: src/quadrapassel.vala:121
 msgid "_Preferences"
 msgstr "प्राथमिकता"
 
-#: ../src/quadrapassel.vala:100
+#: src/quadrapassel.vala:122
 msgid "_Help"
 msgstr "मद्दत"
 
-#: ../src/quadrapassel.vala:101
-msgid "_About"
-msgstr "बारेमा"
+#: src/quadrapassel.vala:123
+msgid "_About Quadrapassel"
+msgstr "क्वाड्रापासेल बारेमा"
 
-#: ../src/quadrapassel.vala:102
-#, fuzzy
-msgid "_Quit"
-msgstr "अन्त्य गर्नुहोस्"
-
-#: ../src/quadrapassel.vala:145 ../src/quadrapassel.vala:774
+#: src/quadrapassel.vala:151 src/quadrapassel.vala:806
 msgid "Start a new game"
 msgstr "नयाँ खेल सुरु गर्नुहोस्"
 
-#: ../src/quadrapassel.vala:150
-#, fuzzy
+#: src/quadrapassel.vala:156
 msgid "Next"
-msgstr "पछिल्लो:"
+msgstr "पछिल्लो"
 
-#: ../src/quadrapassel.vala:163 ../src/score-dialog.vala:51
+#: src/quadrapassel.vala:169 src/score-dialog.vala:51
 msgid "Score"
 msgstr "प्राप्ताङ्क"
 
-#: ../src/quadrapassel.vala:174
-#, fuzzy
+#: src/quadrapassel.vala:180
 msgid "Lines"
-msgstr "लाइन:"
+msgstr "लाइन"
 
-#: ../src/quadrapassel.vala:185
-#, fuzzy
+#: src/quadrapassel.vala:191
 msgid "Level"
-msgstr "स्तर:"
+msgstr "निसानी"
 
-#: ../src/quadrapassel.vala:270
+#: src/quadrapassel.vala:276
 msgid "Preferences"
 msgstr "प्राथमिकता"
 
-#: ../src/quadrapassel.vala:288
+#: src/quadrapassel.vala:294
 msgid "Game"
 msgstr "खेल"
 
 #. pre-filled rows
-#: ../src/quadrapassel.vala:292
+#: src/quadrapassel.vala:298
 msgid "_Number of pre-filled rows:"
 msgstr "पहिले भरिएका पङ्‌क्तिको सङ्ख्या:"
 
 #. pre-filled rows density
-#: ../src/quadrapassel.vala:307
+#: src/quadrapassel.vala:313
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "पहिले भरिएका पङ्‌क्तिमा खण्डको घनत्व:"
 
 #. starting level
-#: ../src/quadrapassel.vala:321
+#: src/quadrapassel.vala:327
 msgid "_Starting level:"
 msgstr "सुरुआत स्तर:"
 
-#: ../src/quadrapassel.vala:334
+#: src/quadrapassel.vala:340
 msgid "_Enable sounds"
 msgstr "ध्वनिलाई सक्षम पार्नुहोस्"
 
-#: ../src/quadrapassel.vala:339
+#: src/quadrapassel.vala:345
 msgid "Choose difficult _blocks"
-msgstr ""
+msgstr "कठिन ब्लक हरू रोज्नुहोस्"
 
-#: ../src/quadrapassel.vala:344
+#: src/quadrapassel.vala:350
 msgid "_Preview next block"
 msgstr "पछिल्लो खण्ड पूर्वावलोकन गर्नुहोस्"
 
 #. rotate counter clock wise
-#: ../src/quadrapassel.vala:351
+#: src/quadrapassel.vala:356
 msgid "_Rotate blocks counterclockwise"
 msgstr "खण्डलाई घडीको विपरित दिशामा घुमाउनुहोस्"
 
-#: ../src/quadrapassel.vala:356
+#: src/quadrapassel.vala:361
 msgid "Show _where the block will land"
 msgstr "खण्ड रोकिने ठाउँ देखाउनुहोस्"
 
-#: ../src/quadrapassel.vala:400
+#: src/quadrapassel.vala:405
 msgid "Controls"
 msgstr "नियन्त्रण"
 
-#: ../src/quadrapassel.vala:406
+#: src/quadrapassel.vala:411
 msgid "Theme"
 msgstr "विषयवस्तु"
 
-#: ../src/quadrapassel.vala:418
+#: src/quadrapassel.vala:423
 msgid "Plain"
 msgstr "सादा"
 
-#: ../src/quadrapassel.vala:423
+#: src/quadrapassel.vala:428
 msgid "Tango Flat"
 msgstr "ट्याङ्‌गो फ्ल्याट"
 
-#: ../src/quadrapassel.vala:428
+#: src/quadrapassel.vala:433
 msgid "Tango Shaded"
 msgstr "ट्याङ्‌गो छाया पारिएको"
 
-#: ../src/quadrapassel.vala:433
-#, fuzzy
+#: src/quadrapassel.vala:438
 msgid "Clean"
-msgstr "खाली गर्नुहोस्"
+msgstr "सफा"
 
-#: ../src/quadrapassel.vala:755
-#, fuzzy
+#. Throw up a dialog
+#: src/quadrapassel.vala:502
+msgid "Unable to change key, as this key already exists"
+msgstr "कुञ्जी परिवर्तन गर्न अक्षम, किनकि यो कुञ्जी पहिल्यै अवस्थित छ"
+
+#: src/quadrapassel.vala:787
 msgid "Unpause the game"
-msgstr "खेललाई पज गर्नुहोस्"
+msgstr "खेल नरोक्नुहोस्"
 
-#: ../src/quadrapassel.vala:760
+#: src/quadrapassel.vala:792
 msgid "Pause the game"
 msgstr "खेललाई पज गर्नुहोस्"
 
-#: ../src/quadrapassel.vala:838
-#, fuzzy
-msgid "A classic game of fitting falling blocks together"
+#: src/quadrapassel.vala:870
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile your "
+"blocks too high or it's game over!"
 msgstr ""
-"झर्ने खण्ड सँगसँगै मिलाउने पुरानो खेल ।\n"
-"\n"
-"जिनोमेट्रिक्स जिनोम खेलको भाग हो ।"
+"एक क्लासिक खेल जहाँ तपाईं पूर्ण पङ्क्तिहरू बनाउन ब्लकहरू घुमाउनुहुन्छ, तर तपाईंको ब्लकहरू धेरै उच्च ढेर "
+"नगर्नुहोस् वा यो खेल समाप्त हुन्छ!"
 
-#: ../src/quadrapassel.vala:843
+#: src/quadrapassel.vala:875
 msgid "translator-credits"
 msgstr "अनुवादक श्रेय"
 
-#: ../src/score-dialog.vala:26
+#: src/score-dialog.vala:26
 msgid "_Close"
 msgstr "बन्द गर्नुहोस्"
 
-#: ../src/score-dialog.vala:27
+#: src/score-dialog.vala:27
 msgid "New Game"
 msgstr "नयाँ खेल"
 
-#: ../src/score-dialog.vala:30
+#: src/score-dialog.vala:30
 msgid "_OK"
 msgstr "ठीक छ"
 
-#: ../src/score-dialog.vala:48
+#: src/score-dialog.vala:48
 msgid "Date"
 msgstr "मिति"
+
+#~ msgid "_About"
+#~ msgstr "बारेमा"
+
+#, fuzzy
+#~ msgid "_Quit"
+#~ msgstr "अन्त्य गर्नुहोस्"
+
+#, fuzzy
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr ""
+#~ "झर्ने खण्ड सँगसँगै मिलाउने पुरानो खेल ।\n"
+#~ "\n"
+#~ "जिनोमेट्रिक्स जिनोम खेलको भाग हो ।"
