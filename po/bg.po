@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
 "POT-Creation-Date: 2022-09-22 07:12+0000\n"
-"PO-Revision-Date: 2022-10-08 17:11+0200\n"
+"PO-Revision-Date: 2022-10-13 10:21+0200\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -224,7 +224,7 @@ msgstr ""
 
 #: data/org.gnome.Quadrapassel.appdata.xml.in:33
 msgid "The GNOME Project"
-msgstr "Проектът на GNOME"
+msgstr "Проектът GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
@@ -354,7 +354,7 @@ msgstr "Клавишът не може да се смени, защото веч
 
 #: src/quadrapassel.vala:787
 msgid "Unpause the game"
-msgstr "Продължаване"
+msgstr "Продължаване на играта"
 
 #: src/quadrapassel.vala:792
 msgid "Pause the game"
