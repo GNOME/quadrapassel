@@ -105,7 +105,7 @@ msgid ""
 msgstr ""
 "Setelah Anda memiliki akun, masuk, dan klik <gui>Masalah baru</gui>. Sebelum "
 "melaporkan kutu, silakan baca <link href=\"https://wiki.gnome.org/"
-"GettingInTouch/BugReportingGuidelines\">panduan penulisan kutu, dan silakan "
+"GettingInTouch/BugReportingGuidelines\">panduan penulisan kutu</link>, dan silakan "
 "<link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues\">telusuri</"
 "link> kutu untuk melihat apakah sudah ada."
 
