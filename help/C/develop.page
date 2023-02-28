@@ -24,7 +24,7 @@
   </info>
 
 <title>Help develop</title>
- <p>If you would like to <link href="https://wiki.gnome.org/Apps/Games/Contributing">help develop <app>GNOME Games</app></link>, you can get in touch with the developers using <link href="https://cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games">irc</link>, or via our <link href="https://mail.gnome.org/mailman/listinfo/games-list">mailing list</link>.</p>
+ <p>If you would like to <link href="https://wiki.gnome.org/Apps/Games/Contributing">help develop <app>GNOME Games</app></link>, you can get in touch with the developers using <link href="https://cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games">irc</link>, or via <link href="https://discourse.gnome.org/tag/games">GNOME Discourse</link>.</p>
 
 <section id="previous-home"><title></title>
  <p><link xref="get-involved"><media type="image" src="media/go-previous.png" its:translate="no" />Get Involved</link></p>
