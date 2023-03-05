@@ -1,0 +1,684 @@
+# Korean translation for quadrapassel.
+# Copyright (C) 2023 quadrapassel's COPYRIGHT HOLDER
+# This file is distributed under the same license as the quadrapassel package.
+# Seong-ho Cho <shcho@gnome.org>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: quadrapassel master\n"
+"POT-Creation-Date: 2023-02-28 15:41+0000\n"
+"PO-Revision-Date: 2023-03-05 01:54+0900\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
+"Language-Team: Korean <gnome-kr@googlegroups.com>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.3.1\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "조성호 <shcho@gnome.org>, 2023"
+
+#. (itstool) path: credit/name
+#: C/bug-filing.page:11 C/develop.page:12 C/documentation.page:10
+#: C/playgame.page:15 C/preferences.page:15 C/score.page:15 C/translate.page:10
+msgid "Tiffany Antopolski"
+msgstr "Tiffany Antopolski"
+
+#. (itstool) path: credit/years
+#: C/bug-filing.page:13 C/develop.page:14 C/documentation.page:12
+#: C/index.page:14 C/playgame.page:12 C/preferences.page:12 C/score.page:12
+#: C/translate.page:12
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: credit/name
+#: C/bug-filing.page:16 C/develop.page:17 C/documentation.page:15
+#: C/index.page:12 C/playgame.page:10 C/preferences.page:10 C/score.page:10
+#: C/translate.page:15
+msgid "Elena Petrevska"
+msgstr "Elena Petrevska"
+
+#. (itstool) path: license/p
+#: C/bug-filing.page:20 C/develop.page:21 C/documentation.page:19
+#: C/index.page:17 C/preferences.page:19 C/score.page:19
+msgid "Creative Commons Share Alike 3.0"
+msgstr "크리에이티브 커먼즈 동일조건변경허락 3.0"
+
+#. (itstool) path: info/desc
+#: C/bug-filing.page:22
+msgid "Found a problem? Feel free to file a bug."
+msgstr "문제를 찾았습니까? 자유롭게 버그를 알려주십시오."
+
+#. (itstool) path: page/title
+#: C/bug-filing.page:25
+msgid "Report a Problem"
+msgstr "문제 보고"
+
+#. (itstool) path: page/p
+#: C/bug-filing.page:26
+msgid ""
+"If you notice a problem you can file a <em>bug report</em>. To file a bug, "
+"go to <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/>."
+msgstr ""
+"문제를 찾았따면 <em>버그 보고</em>를 등록할 수 있습니다. 버그를 보고하려면 "
+"<link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/issues/\"/> 링크로 "
+"이동하십시오."
+
+#. (itstool) path: page/p
+#: C/bug-filing.page:29
+msgid ""
+"This is a bug tracking system where users and developers can file details "
+"about bugs, crashes and request enhancements."
+msgstr ""
+"사용자와 개발자가 버그, 치명적 오류, 개선 요청을 제출할 수 있는 버그 추적 시"
+"스템입니다."
+
+#. (itstool) path: page/p
+#: C/bug-filing.page:32
+msgid ""
+"To participate you need an account which will give you the ability to gain "
+"access, file bugs, and make comments. Also, you need to register so you can "
+"receive updates by e-mail about the status of your bug. If you don't already "
+"have an account, just click on the <gui>Sign in / Register</gui> link to "
+"create one."
+msgstr ""
+"참여하려면 접근 권한을 얻어 버그를 보고하고 답글을 올릴 수 있는 계정이 필요합"
+"니다. 버그 처리 상태 최신 내용을 전자메일로 받으려면 가입해야합니다. 계정이 "
+"없다면 <gui>Sign in / Register</gui> 링크를 눌러 만드십시오."
+
+#. (itstool) path: page/p
+#: C/bug-filing.page:36
+msgid ""
+"Once you have an account, log in, and click on <gui>New issue</gui>. Before "
+"reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
+"GettingInTouch/BugReportingGuidelines\">bug writing guidelines</link>, and "
+"please <link href=\"https://gitlab.gnome.org/GNOME/quadrapassel/"
+"issues\">browse</link> for the bug to see if it already exists."
+msgstr ""
+"계정이 있으면 로그인해서 <gui>New issue</gui>를 누릅니다. 버그 보고를 제출하"
+"기 전에 <link href=\"https://wiki.gnome.org/Community/GettingInTouch/"
+"BugReportingGuidelines\">버그 작성 안내서</link>를 읽어 보십시오. 또 버그 보"
+"고를 누군가가 이미 제출했는지 <link href=\"https://gitlab.gnome.org/GNOME/"
+"quadrapassel/issues\">살펴보십시오</link>."
+
+#. (itstool) path: page/p
+#: C/bug-filing.page:41
+msgid ""
+"If you are requesting a new feature, choose <gui>1. Feature</gui> in the "
+"<gui>Labels</gui> menu. Fill in the Title and Description sections and click "
+"<gui>Submit Issue</gui>."
+msgstr ""
+"새 기능을 제안한다면 <gui>Labels</gui> 메뉴에서 <gui>1. Feature</gui>를 선택"
+"하십시오. 제목과 설명 부분을 채워나간 후 <gui>Submit Issue</gui>를 누르십시"
+"오."
+
+#. (itstool) path: page/p
+#: C/bug-filing.page:45
+msgid ""
+"Your report will be given an ID number, and its status will be updated as it "
+"is being dealt with."
+msgstr "보고서에는 ID 번호가 붙으며, 처리하는대로 최신 상태가 바뀝니다."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:50 C/develop.page:30 C/documentation.page:30
+#: C/translate.page:43
+msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
+msgstr "<link xref=\"get-involved\"><_:media-1/>참여하기</link>"
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:51 C/develop.page:31 C/documentation.page:31
+#: C/playgame.page:48 C/preferences.page:71 C/score.page:38 C/translate.page:44
+msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
+msgstr "<link xref=\"index\"><_:media-1/>처음</link>"
+
+#. (itstool) path: info/desc
+#: C/develop.page:23
+msgid "Have a plan for developing the game? We are always open to new ideas."
+msgstr ""
+"게임 개발 계획이 있으신가요? 새 아이디어 제안을 언제든 들을 준비가 되어 있습"
+"니다."
+
+#. (itstool) path: page/title
+#: C/develop.page:26
+msgid "Help develop"
+msgstr "개발 돕기"
+
+#. (itstool) path: page/p
+#: C/develop.page:27
+msgid ""
+"If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
+"Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
+"touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via <link "
+"href=\"https://discourse.gnome.org/tag/games\">GNOME Discourse</link>."
+msgstr ""
+"<link href=\"https://wiki.gnome.org/Apps/Games/Contributing\"><app>그놈 게임"
+"</app> 개발에 도움</link>을 주고 싶다면, <link href=\"https://cbe005.chat."
+"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">IRC</link> 또는 "
+"<link href=\"https://discourse.gnome.org/tag/games\">그놈 디스코스</link>를 "
+"활용하여 개발자와 연락할 수 있습니다."
+
+#. (itstool) path: info/desc
+#: C/documentation.page:21
+msgid "Contribute to the documentation."
+msgstr "문서 작성에 기어합니다."
+
+#. (itstool) path: page/title
+#: C/documentation.page:24
+msgid "Help write documentation"
+msgstr "문서 작성 돕기"
+
+#. (itstool) path: page/p
+#: C/documentation.page:25
+msgid ""
+"To contribute to the Documentation Project, feel free to get in touch with "
+"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
+"gnome.org%2Fdocs\">irc</link>, or via <link href=\"https://discourse.gnome."
+"org/tag/documentation\">GNOME Discourse</link>."
+msgstr ""
+"문서 프로젝트에 기여하려면, <link href=\"https://cbe003.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fdocs\">IRC</link> 또는 <link href=\"https://"
+"discourse.gnome.org/tag/documentation\">그놈 디스코스</link>를 활용하여 자유"
+"롭게 저희에게 연락하십시오."
+
+#. (itstool) path: page/p
+#: C/documentation.page:27
+msgid ""
+"Our <link href=\"https://wiki.gnome.org/DocumentationProject/"
+"Contributing\">wiki</link> page contains useful information."
+msgstr ""
+"<link href=\"https://wiki.gnome.org/DocumentationProject/Contributing\">위키"
+"</link> 페이지에 요긴한 정보가 있습니다."
+
+#. (itstool) path: info/title
+#: C/index.page:6
+msgctxt "link:trail"
+msgid "Quadrapassel"
+msgstr "쿼드러패셀"
+
+#. (itstool) path: info/title
+#: C/index.page:7
+msgctxt "link"
+msgid "Quadrapassel"
+msgstr "쿼드러패셀"
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "text"
+msgid "Quadrapassel"
+msgstr "쿼드러패셀"
+
+#. (itstool) path: page/title
+#: C/index.page:20
+msgid "<_:media-1/> Quadrapassel"
+msgstr "<_:media-1/> 쿼드러패셀"
+
+#. (itstool) path: page/p
+#: C/index.page:22
+msgid ""
+"In Quadrapassel, the GNOME version of Tetris, your goal is to create as many "
+"complete horizontal lines as possible. The lines are made from seven "
+"different shapes. The shapes fall randomly from the top center of the "
+"screen. Your task is to rotate and move the shapes across the screen to make "
+"complete lines. By making complete horizontal lines, you score points and "
+"move up levels. As you progress, the speed of the falling blocks increases."
+msgstr ""
+"테트리스 그놈 버전 쿼드라패셀에서는, 세로 방향의 줄을 가능한한 많이 채워 끝내"
+"는게 목표입니다. 각 줄은 7가지 다른 모양새로 만듭니다. 화면 상단 가운데에서 "
+"블록이 임의로 떨어집니다. 여러분이 할 일은 줄을 채워나가기 위해 블록을 회전하"
+"며 옮기는 동작입니다. 세로줄 채우기가 끝나면 점수가 올라가고 단계가 올락바니"
+"다. 게임을 계속 진행해나갈 때마다 블록이 떨어지는 속도가 늘어납니다."
+
+#. (itstool) path: section/title
+#: C/index.page:25
+msgid "Game Play"
+msgstr "게임 플레이"
+
+#. (itstool) path: section/title
+#: C/index.page:28
+msgid "Get Involved"
+msgstr "참여하기"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "크리에이티브 커먼즈 저작자표시-동일조건변경허락 3.0 Unported 라이선스"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "이 문서는 <_:link-1/>를 따릅니다."
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "법적 정보."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "라이선스"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"이 문서는 크리에이티브 커먼즈 저작자표시-동일조건변경허락 3.0 Unported 라이선"
+"스로 배포됩니다."
+
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "이용자는 다음 권리가 있습니다:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>공유</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr "저작물을 복제, 배포, 전송합니다."
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>조합</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr "저작물을 적용합니다."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "다음 조건을 따라야 합니다:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>저작자 표시</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"저작자 또는 저작권자가 지정한 방법으로 표시해야 합니다. 하지만 저작자나 저작"
+"권자가 귀하에게 권리를 부여한다거나 귀하의 사용을 허가한다는 내용을 나타내서"
+"는 안 됩니다."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>동일 조건</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"이 저작물을 개작, 변형, 이 저작물을 기반으로 또 다른 저작물을 만든다면, 동"
+"일, 유사 또는 호환 라이선스에 따라 저작물을 배포해야 함."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"라이선스 전문을 보려면, <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/legalcode\">크리에이티브 커먼즈 웹사이트 </link> 또는 <link "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/\">일반 권리 증서</link>"
+"를 참조합니다."
+
+#. (itstool) path: license/p
+#: C/playgame.page:19
+msgid "Creative Commons Attribution Share Alike 3.0"
+msgstr "크리에이티브 커먼즈 저작자표시-동일조건변경허락 3.0"
+
+#. (itstool) path: info/desc
+#: C/playgame.page:21
+msgid "Rules and keyboard navigation."
+msgstr "규칙과 키보드 탐색 방법입니다."
+
+#. (itstool) path: page/title
+#. (itstool) path: section/title
+#: C/playgame.page:24 C/playgame.page:27
+msgid "How To Play"
+msgstr "플레이 방법"
+
+#. (itstool) path: item/p
+#: C/playgame.page:30
+msgid ""
+"The <key>←</key> and <key>→</key> keys move the blocks across the screen."
+msgstr "<key>←</key>키와 <key>→</key>키로 블록을 화면에서 이동할 수 있습니다."
+
+#. (itstool) path: item/p
+#: C/playgame.page:31
+msgid ""
+"The <key>↑</key> key rotates the block. The rotation (which is "
+"counterclockwise by default) can be changed in the <link "
+"xref=\"preferences\">Preferences</link>."
+msgstr ""
+"<key>↑</key>키로 블록을 회전합니다. 블록 회전(시계 반대 방향이 기본) 방향은 "
+"<link xref=\"preferences\">기본 설정</link>에서 바꿀 수 있습니다."
+
+#. (itstool) path: item/p
+#: C/playgame.page:32
+msgid ""
+"The <key>SPACEBAR</key> and <key>↓</key> key increase the speed of the drop. "
+"The <key>SPACEBAR</key> causes a hard-drop (instant move to the bottom). The "
+"<key>↓</key> key causes a soft-drop (temporary increase in speed while the "
+"key is held down)."
+msgstr ""
+"<key>SPACEBAR</key>키와 <key>↓</key>키는 떨어지는 속도를 늘립니다. The "
+"<key>SPACEBAR</key>키는 바로 떨어지게(바닥으로 즉시 이동) 합니다. <key>↓</"
+"key>키는 서서히 떨어지게(키를 누르고 있으면 떨어지는 속도가 잠시 늘어남)."
+
+#. (itstool) path: item/p
+#: C/playgame.page:33
+msgid ""
+"The <key>Enter</key> will restart the game quickly once it is game over."
+msgstr "<key>Enter</key>키는 게임이 끝나면 빨리 다시 시작합니다."
+
+#. (itstool) path: section/title
+#: C/playgame.page:38
+msgid "Rules"
+msgstr "규칙"
+
+#. (itstool) path: section/p
+#: C/playgame.page:40
+msgid "There are a couple of rules that you should keep in mind:"
+msgstr "기억해둘 규칙 몇가지가 있습니다:"
+
+#. (itstool) path: item/p
+#: C/playgame.page:42
+msgid ""
+"You can pause, end, start a new game, get help or quit the program at any "
+"time."
+msgstr ""
+"게임을 멈추거나 끝내거나 새로 시작할 수 있고, 언제든 도움을 받거나, 게임 프로"
+"그램을 끝낼 수 있습니다."
+
+#. (itstool) path: item/p
+#: C/playgame.page:43
+msgid "You can pause the game as many times as you want."
+msgstr "원할 때 게임을 멈출 수 있습니다."
+
+#. (itstool) path: info/desc
+#: C/preferences.page:21
+msgid "Preferences for the game and the theme."
+msgstr "게임, 테마의 기본 설정을 알아봅니다."
+
+#. (itstool) path: page/title
+#: C/preferences.page:25
+msgid "Game Preferences"
+msgstr "게임 기본 설정"
+
+#. (itstool) path: page/p
+#: C/preferences.page:27
+msgid ""
+"To change the game preferences, press the menu button in the top-right "
+"corner of the window and select <gui style=\"menuitem\">Preferences</gui>."
+msgstr ""
+"게임 기본 설정을 바꾸려면, 창 우측 상단에 있는 메뉴 단추를 누른 후 <gui "
+"style=\"menuitem\">기본 설정</gui>을 선택합니다."
+
+#. (itstool) path: page/p
+#: C/preferences.page:29
+msgid ""
+"The three tabs available are <gui>Game</gui>, <gui>Controls</gui> and "
+"<gui>Theme</gui>."
+msgstr ""
+"<gui>게임</gui>, <gui>조작</gui>, <gui>테마</gui> 세가지 탭이 있습니다."
+
+#. (itstool) path: section/title
+#: C/preferences.page:32
+msgid "Game"
+msgstr "게임"
+
+#. (itstool) path: section/p
+#: C/preferences.page:33
+msgid ""
+"Under the <gui>Game</gui> tab, you can change the way in which the game "
+"starts:"
+msgstr "<gui>게임</gui> 탭에서 어떤 게임을 시작할 지 방식을 바꿀 수 있습니다:"
+
+#. (itstool) path: item/p
+#: C/preferences.page:35
+msgid ""
+"<gui>Number of pre-filled rows</gui> indicates how many rows with blocks "
+"there will be when the game starts."
+msgstr ""
+"<gui>미리 채워진 열의 수</gui>는 게임을 시작할 때 미리 블록으로 채워둔 열의 "
+"수를 나타냅니다."
+
+#. (itstool) path: item/p
+#: C/preferences.page:36
+msgid ""
+"<gui>Density of blocks in a pre-filled row</gui> indicates how many blocks "
+"there will be in a pre-filled row when the game starts."
+msgstr ""
+"<gui>미리 채워진 열에서 블록의 밀도</gui>는 게임을 시작할 때 미리 채워둔 블"
+"록 갯수를 나타냅니다."
+
+#. (itstool) path: item/p
+#: C/preferences.page:37
+msgid "<gui>Starting level</gui> controls the speed with which you will start."
+msgstr "<gui>시작 단계</gui>는 시작 단계 속도를 제어합니다."
+
+#. (itstool) path: section/p
+#: C/preferences.page:39
+msgid "These options can vary from 0 to 15, 0 to 10, and 1 to 20 respectively."
+msgstr ""
+"위 옵션 값은 각각 0부터 15까지, 0부터 10까지, 1부터 20까지 바꿀 수 있습니다."
+
+#. (itstool) path: section/p
+#: C/preferences.page:41
+msgid "Other available options are:"
+msgstr "다른 가용 옵션은 아래와 같습니다:"
+
+#. (itstool) path: item/p
+#: C/preferences.page:43
+msgid "<gui>Enable sounds</gui>"
+msgstr "<gui>사운드 사용</gui>"
+
+#. (itstool) path: item/p
+#: C/preferences.page:44
+msgid "<gui>Choose difficult blocks</gui>"
+msgstr "<gui>어려운 블럭 선택</gui>"
+
+#. (itstool) path: item/p
+#: C/preferences.page:45
+msgid "<gui>Preview next block</gui>"
+msgstr "<gui>다음 블록 미리 보기</gui>"
+
+#. (itstool) path: item/p
+#: C/preferences.page:46
+msgid "<gui>Rotate blocks counterclockwise</gui>"
+msgstr "<gui>시계 반대 방향으로 회전</gui>"
+
+#. (itstool) path: item/p
+#: C/preferences.page:47
+msgid "<gui>Show where the block will land</gui>"
+msgstr "<gui>블록이 떨어질 위치 보이기</gui>"
+
+#. (itstool) path: section/title
+#: C/preferences.page:52
+msgid "Controls"
+msgstr "조작"
+
+#. (itstool) path: section/p
+#: C/preferences.page:53
+msgid ""
+"By double-clicking on the given controls, thus selecting the new one, you "
+"can change the control keys."
+msgstr ""
+"주어진 조작 키 항목을 두 번 누르고, 새 조작 키를 선택하면, 조작 키를 바꿀 수 "
+"있습니다."
+
+#. (itstool) path: section/title
+#: C/preferences.page:57
+msgid "Theme"
+msgstr "테마"
+
+#. (itstool) path: section/p
+#: C/preferences.page:58
+msgid "To change the theme, choose a different one from the drop-down menu."
+msgstr "테마를 바꾸려면 드롭다운 목록에서 다른 항목을 선택합니다."
+
+#. (itstool) path: section/p
+#: C/preferences.page:59
+msgid "Four different themes are available for the blocks' contours:"
+msgstr "블록 외곽선을 표시하는 테마는 네가지가 있습니다:"
+
+#. (itstool) path: item/p
+#: C/preferences.page:63
+msgid "Plain"
+msgstr "단순"
+
+#. (itstool) path: item/p
+#: C/preferences.page:64
+msgid "Tango Flat"
+msgstr "탱고 평평함"
+
+#. (itstool) path: item/p
+#: C/preferences.page:65
+msgid "Tango Shaded"
+msgstr "탱고 그림자"
+
+#. (itstool) path: item/p
+#: C/preferences.page:66
+msgid "Clean"
+msgstr "깔끔함"
+
+#. (itstool) path: info/desc
+#: C/score.page:21
+msgid "High Scores."
+msgstr "고득점."
+
+#. (itstool) path: page/title
+#: C/score.page:24
+msgid "Score"
+msgstr "점수"
+
+#. (itstool) path: section/title
+#: C/score.page:27
+msgid "Score More"
+msgstr "더 많은 점수 내기"
+
+#. (itstool) path: section/p
+#: C/score.page:28
+msgid ""
+"If you start from level 1, the only way to go to the next level is by "
+"completing more lines, that is, scoring more points. In order for you to "
+"have a better score, try to adapt the screen, the keyboard, and the level "
+"(the speed) that fits you the most!"
+msgstr ""
+"1단계부터 시작하면, 더 많은 점수를 얻기 위해 더 많은 줄을 끝내려면 다음 단계"
+"로 넘어갈 수 밖에 없습니다. 더 많은 점수를 얻으려면, 화면, 키보드, 단계(속도)"
+"를 여러분의 실력에 맞추십시오!"
+
+#. (itstool) path: section/p
+#: C/score.page:29
+msgid ""
+"You can make many changes to the keyboard controls, the contour of the "
+"blocks, the number and density of lines with which you start, and the speed "
+"of drop. You can change your settings in the <link "
+"xref=\"preferences\">Preferences</link>."
+msgstr ""
+"키보드 제어, 블록 외곽선, 시작열 빌도, 떨어지는 속도를 다양한 식으로 바꿀 수 "
+"있습니다. <link href=\"preferences\">기본 설정</link>에서 여러가지 설정을 바"
+"꿀 수 있습니다."
+
+#. (itstool) path: section/title
+#: C/score.page:33
+msgid "High Scores"
+msgstr "고득점"
+
+#. (itstool) path: section/p
+#: C/score.page:34
+msgid ""
+"Press the menu button in the top-right corner of the window and select <gui "
+"style=\"menuitem\">Scores</gui> to find the records from the highest to the "
+"lowest score."
+msgstr ""
+"창 우측 상단에 있는 메뉴 단추를 누른 후 <gui style=\"menuitem\">점수</gui>를 "
+"선택하면 고득점 부터 저득점 순서대로 기록을 볼 수 있습니다."
+
+#. (itstool) path: info/desc
+#: C/translate.page:18
+msgid "Do you know a world language?"
+msgstr "전세계 언어를 알고 계십니까?"
+
+#. (itstool) path: page/title
+#: C/translate.page:21
+msgid "Help translate"
+msgstr "번역 돕기"
+
+#. (itstool) path: page/p
+#: C/translate.page:23
+msgid ""
+"The <app>GNOME games</app> user interface and documentation is being "
+"translated by a world-wide volunteer community."
+msgstr ""
+"<app>그놈 게임</app> 사용자 인터페이스와 문서는 전세계 기여자 집단이 번역합니"
+"다. 여러분의 참여를 환영합니다."
+
+#. (itstool) path: page/p
+#: C/translate.page:27
+msgid ""
+"There are <link href=\"https://l10n.gnome.org/module/quadrapassel/\">many "
+"languages</link> for which translations are still needed."
+msgstr ""
+"여전히 <link href=\"https://l10n.gnome.org/module/quadrapassel/\">수많은 언어"
+"</link>로 번역이 필요합니다."
+
+#. (itstool) path: page/p
+#: C/translate.page:31
+msgid ""
+"To start translating you will need to <link href=\"https://l10n.gnome."
+"org\">create an account</link> and join the <link href=\"https://l10n.gnome."
+"org/teams/\">translation team</link> for your language. This will give you "
+"the ability to upload new translations."
+msgstr ""
+"번역을 시작하려면 <link href=\"https://l10n.gnome.org\">계정 만들기</link>를 "
+"진행하고, 여러분의 언어에 해당하는 <link href=\"https://l10n.gnome.org/teams/"
+"\">번역 팀</link>에 참여해야합니다. 이 과정을 거치면 여러분이 새 번역을 업로"
+"드할 수 있습니다."
+
+#. (itstool) path: page/p
+#: C/translate.page:35
+msgid ""
+"You can chat with GNOME translators using <link href=\"https://cbe003.chat."
+"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. People on the "
+"channel are located worldwide, so you may not get an immediate response as a "
+"result of timezone differences."
+msgstr ""
+"<link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome."
+"org%2Fi18n\">IRC</link>를 사용해 그놈 번역자와 대화할 수 있습니다. 채널에 있"
+"는 사람은 전 세계에 흩어져 있기 때문에, 시간대 차이가 있어서 즉시 응답을 받"
+"지 못할 수도 있습니다."
+
+#. (itstool) path: page/p
+#: C/translate.page:39
+msgid ""
+"Alternatively, you can contact the Internationalization Team using <link "
+"href=\"https://discourse.gnome.org/tag/i18n\">GNOME Discourse</link>."
+msgstr ""
+"대신, 국제화 팀에 <link href=\"https://discourse.gnome.org/tag/i18n\">그놈 디"
+"스코스</link>로 연락할 수도 있습니다."
