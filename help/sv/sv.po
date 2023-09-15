@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel doc\n"
-"POT-Creation-Date: 2023-02-28 12:18+0000\n"
-"PO-Revision-Date: 2023-02-28 16:24+0100\n"
+"POT-Creation-Date: 2023-09-15 00:54+0000\n"
+"PO-Revision-Date: 2023-09-15 22:02+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 "X-Project-Style: gnome\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -131,14 +131,14 @@ msgstr ""
 "uppdateras när den behandlas."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:50 C/develop.page:30 C/documentation.page:30
-#: C/translate.page:43
+#: C/bug-filing.page:50 C/develop.page:35 C/documentation.page:35
+#: C/translate.page:47
 msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
 msgstr "<link xref=\"get-involved\"><_:media-1/>Engagera dig</link>"
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:51 C/develop.page:31 C/documentation.page:31
-#: C/playgame.page:48 C/preferences.page:71 C/score.page:38 C/translate.page:44
+#: C/bug-filing.page:51 C/develop.page:36 C/documentation.page:36
+#: C/playgame.page:48 C/preferences.page:71 C/score.page:38 C/translate.page:48
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
 msgstr "<link xref=\"index\"><_:media-1/>HOME</link>"
 
@@ -157,17 +157,20 @@ msgstr "Hjälp till att utveckla"
 #: C/develop.page:27
 msgid ""
 "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
-"Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
-"touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
-"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via <link "
-"href=\"https://discourse.gnome.org/tag/games\">GNOME Discourse</link>."
+"Contribute\">help develop <app>GNOME Games</app></link>, you can get in "
+"touch with the developers at <link href=\"https://matrix.to/#/#gnome-games:"
+"gnome.org\">#gnome-games:gnome.org</link> on <link xref=\"help:gnome-help/"
+"help-matrix\">Matrix</link> or <link href=\"https://web.libera.chat/#gnome-"
+"games\">#gnome-games</link> on irc.libera.chat, or via <link href=\"https://"
+"discourse.gnome.org/tag/games\">GNOME Discourse</link>."
 msgstr ""
 "Om du vill <link href=\"https://wiki.gnome.org/Apps/Games/"
-"Contributing\">hjälpa till att utveckla <app>GNOME Spel</app></link>, kan du "
-"komma i kontakt med utvecklarna genom <link href=\"https://cbe005.chat."
-"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, eller "
-"via <link href=\"https://discourse.gnome.org/tag/games\">GNOME Discourse</"
-"link>."
+"Contribute\">hjälpa till att utveckla <app>GNOME-spelen</app></link>, kan du "
+"komma i kontakt med utvecklarna genom <link href=\"https://matrix.to/#/"
+"#gnome-games:gnome.org\">#gnome-games:gnome.org</link> på <link xref=\"help:"
+"gnome-help/help-matrix\">Matrix</link> eller <link href=\"https://web.libera."
+"chat/#gnome-games\">#gnome-games</link> på irc.libera.chat, eller via <link "
+"href=\"https://discourse.gnome.org/tag/games\">GNOME Discourse</link>."
 
 #. (itstool) path: info/desc
 #: C/documentation.page:21
@@ -183,17 +186,21 @@ msgstr "Hjälp till att skriva dokumentation"
 #: C/documentation.page:25
 msgid ""
 "To contribute to the Documentation Project, feel free to get in touch with "
-"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
-"gnome.org%2Fdocs\">irc</link>, or via <link href=\"https://discourse.gnome."
-"org/tag/documentation\">GNOME Discourse</link>."
+"us in <link href=\"https://matrix.to/#/#docs:gnome.org\">#docs:gnome.org</"
+"link> on <link xref=\"help:gnome-help/help-matrix\">Matrix</link> or <link "
+"href=\"https://web.libera.chat/#gnome-docs\">#gnome-docs</link> on irc."
+"libera.chat, or via <link href=\"https://discourse.gnome.org/tag/"
+"documentation\">GNOME Discourse</link>."
 msgstr ""
-"Om du vill bidra till dokumentationsprojektet, tveka inte att ta kontakt med "
-"oss via <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
-"gnome.org%2Fdocs\">irc</link>, eller via <link href=\"https://discourse."
-"gnome.org/tag/documentation\">GNOME Discourse</link>."
+"Om du vill bidra till dokumentationsprojektet är du välkommen att ta kontakt "
+"med oss i <link href=\"https://matrix.to/#/#docs:gnome.org\">#docs:gnome."
+"org</link> på <link xref=\"help:gnome-help/help-matrix\">Matrix</link> eller "
+"<link href=\"https://web.libera.chat/#gnome-docs\">#gnome-docs</link> på irc."
+"libera.chat, eller via <link href=\"https://discourse.gnome.org/tag/"
+"documentation\">GNOME Discourse</link>."
 
 #. (itstool) path: page/p
-#: C/documentation.page:27
+#: C/documentation.page:32
 msgid ""
 "Our <link href=\"https://wiki.gnome.org/DocumentationProject/"
 "Contributing\">wiki</link> page contains useful information."
@@ -234,7 +241,7 @@ msgid ""
 "complete lines. By making complete horizontal lines, you score points and "
 "move up levels. As you progress, the speed of the falling blocks increases."
 msgstr ""
-"I Quadrapassel, GNOME:s version av Tetris, är ditt mål att skapa så många "
+"I Quadrapassel, GNOMEs version av Tetris, är ditt mål att skapa så många "
 "kompletta horisontella rader som möjligt. Linjerna är gjorda från sju olika "
 "klossar. Klossarna faller slumpmässigt från skärmens övre mitt. Din uppgift "
 "är att rotera och flytta klossarna över skärmen för att göra kompletta "
@@ -681,18 +688,22 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/translate.page:35
 msgid ""
-"You can chat with GNOME translators using <link href=\"https://cbe003.chat."
-"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. People on the "
-"channel are located worldwide, so you may not get an immediate response as a "
-"result of timezone differences."
+"You can chat with GNOME translators in <link href=\"https://matrix.to/#/"
+"#i18n:gnome.org\">#i18n:gnome.org</link> on <link xref=\"help:gnome-help/"
+"help-matrix\">Matrix</link> or <link href=\"https://web.libera.chat/#gnome-"
+"i18n\">#gnome-i18n</link> on irc.libera.chat. People on the channel are "
+"located worldwide, so you may not get an immediate response as a result of "
+"timezone differences."
 msgstr ""
-"Du kan chatta med GNOME-översättare genom att använda <link href=\"https://"
-"cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. "
-"Översättarna på kanalen finns över hela världen, så du kommer kanske inte få "
-"en omedelbar respons på grund av skillnader i tidszon."
+"Du kan chatta med GNOME-översättare i <link href=\"https://matrix.to/#/#i18n:"
+"gnome.org\">#i18n:gnome.org</link> på <link xref=\"help:gnome-help/help-"
+"matrix\">Matrix</link> eller <link href=\"https://web.libera.chat/#gnome-"
+"i18n\">#gnome-i18n</link> på irc.libera.chat. Folk i kanalen finns över hela "
+"världen, så du kanske inte får ett omedelbart svar på grund av skillnader i "
+"tidszon."
 
 #. (itstool) path: page/p
-#: C/translate.page:39
+#: C/translate.page:43
 msgid ""
 "Alternatively, you can contact the Internationalization Team using <link "
 "href=\"https://discourse.gnome.org/tag/i18n\">GNOME Discourse</link>."
