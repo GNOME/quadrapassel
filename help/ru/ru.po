@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
-"POT-Creation-Date: 2023-02-28 12:18+0000\n"
-"PO-Revision-Date: 2023-03-07 19:48+1000\n"
+"POT-Creation-Date: 2023-09-15 00:54+0000\n"
+"PO-Revision-Date: 2023-09-16 20:52+1000\n"
 "Last-Translator: Ser82-png <asvmail.as@gmail.com>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
@@ -132,14 +132,14 @@ msgstr ""
 "обновляться по мере обработки."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:50 C/develop.page:30 C/documentation.page:30
-#: C/translate.page:43
+#: C/bug-filing.page:50 C/develop.page:35 C/documentation.page:35
+#: C/translate.page:47
 msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
 msgstr "<link xref=\"get-involved\"><_:media-1/>Присоединяйтесь</link>"
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:51 C/develop.page:31 C/documentation.page:31
-#: C/playgame.page:48 C/preferences.page:71 C/score.page:38 C/translate.page:44
+#: C/bug-filing.page:51 C/develop.page:36 C/documentation.page:36
+#: C/playgame.page:48 C/preferences.page:71 C/score.page:38 C/translate.page:48
 msgid "<link xref=\"index\"><_:media-1/>HOME</link>"
 msgstr "<link xref=\"index\"><_:media-1/>ГЛАВНАЯ</link>"
 
@@ -157,17 +157,20 @@ msgstr "Помощь в разработке"
 #: C/develop.page:27
 msgid ""
 "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
-"Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
-"touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
-"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via <link "
-"href=\"https://discourse.gnome.org/tag/games\">GNOME Discourse</link>."
+"Contribute\">help develop <app>GNOME Games</app></link>, you can get in "
+"touch with the developers at <link href=\"https://matrix.to/#/#gnome-games:"
+"gnome.org\">#gnome-games:gnome.org</link> on <link xref=\"help:gnome-help/"
+"help-matrix\">Matrix</link> or <link href=\"https://web.libera.chat/#gnome-"
+"games\">#gnome-games</link> on irc.libera.chat, or via <link href=\"https://"
+"discourse.gnome.org/tag/games\">GNOME Discourse</link>."
 msgstr ""
 "Если вы хотите <link href=\"https://wiki.gnome.org/Apps/Games/"
 "Contribute\">помочь в разработке <app>GNOME Games</app></link>, то можете "
-"связаться с разработчиками, воспользовавшись <link href=\"https://cbe005."
-"chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, "
-"или через <link href=\"https://discourse.gnome.org/tag/games\">GNOME "
-"Discourse</link>."
+"связаться с разработчиками через <link href=\"https://matrix.to/#/#gnome-"
+"games:gnome.org\">#gnome-games:gnome.org</link> на <link xref=\"help:gnome-"
+"help/help-matrix\">Matrix</link> или <link href=\"https://web.libera.chat/"
+"#gnome-games\">#gnome-games</link> на irc.libera.chat, или через <link "
+"href=\"https://discourse.gnome.org/tag/games\">GNOME Discourse</link>."
 
 #. (itstool) path: info/desc
 #: C/documentation.page:21
@@ -183,17 +186,21 @@ msgstr "Помощь в написании документации"
 #: C/documentation.page:25
 msgid ""
 "To contribute to the Documentation Project, feel free to get in touch with "
-"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
-"gnome.org%2Fdocs\">irc</link>, or via <link href=\"https://discourse.gnome."
-"org/tag/documentation\">GNOME Discourse</link>."
+"us in <link href=\"https://matrix.to/#/#docs:gnome.org\">#docs:gnome.org</"
+"link> on <link xref=\"help:gnome-help/help-matrix\">Matrix</link> or <link "
+"href=\"https://web.libera.chat/#gnome-docs\">#gnome-docs</link> on irc."
+"libera.chat, or via <link href=\"https://discourse.gnome.org/tag/"
+"documentation\">GNOME Discourse</link>."
 msgstr ""
-"Чтобы внести свой вклад в проект документации, свяжитесь с нами, используя "
-"<link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome."
-"org%2Fdocs\" >irc</link> или через <link href=\"https://discourse.gnome.org/"
-"tag/documentation\">GNOME Discourse</link>."
+"Чтобы внести свой вклад в проект документации, не стесняйтесь связаться с "
+"нами используя <link href=\"https://matrix.to/#/#docs:gnome.org\">#docs:"
+"gnome.org</link> на <link xref=\"help:gnome-help/help-matrix\">Matrix</link> "
+"или <link href=\"https://web.libera.chat/#gnome-docs\">#gnome-docs</link> на "
+"irc.libera.chat, или через <link href=\"https://discourse.gnome.org/tag/"
+"documentation\">GNOME Discourse</link>."
 
 #. (itstool) path: page/p
-#: C/documentation.page:27
+#: C/documentation.page:32
 msgid ""
 "Our <link href=\"https://wiki.gnome.org/DocumentationProject/"
 "Contributing\">wiki</link> page contains useful information."
@@ -683,18 +690,22 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/translate.page:35
 msgid ""
-"You can chat with GNOME translators using <link href=\"https://cbe003.chat."
-"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. People on the "
-"channel are located worldwide, so you may not get an immediate response as a "
-"result of timezone differences."
+"You can chat with GNOME translators in <link href=\"https://matrix.to/#/"
+"#i18n:gnome.org\">#i18n:gnome.org</link> on <link xref=\"help:gnome-help/"
+"help-matrix\">Matrix</link> or <link href=\"https://web.libera.chat/#gnome-"
+"i18n\">#gnome-i18n</link> on irc.libera.chat. People on the channel are "
+"located worldwide, so you may not get an immediate response as a result of "
+"timezone differences."
 msgstr ""
-"Вы можете общаться с переводчиками GNOME используя <link href=\"https://"
-"cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. "
-"Люди на канале находятся по всему миру, поэтому вы можете не получить "
-"немедленный ответ из-за разницы часовых поясов."
+"Вы можете пообщаться с переводчиками GNOME в <link href=\"https://matrix.to/"
+"#/#i18n:gnome.org\">#i18n:gnome.org</link> на <link xref=\"help:gnome-help/"
+"help-matrix\">Matrix</link> или <link href=\"https://web.libera.chat/#gnome-"
+"i18n\">#gnome-i18n</link> на irc.libera.chat. Люди, подключённые к каналу, "
+"разбросаны по всему миру, поэтому не ждите немедленного ответа из-за разницы "
+"часовых поясов."
 
 #. (itstool) path: page/p
-#: C/translate.page:39
+#: C/translate.page:43
 msgid ""
 "Alternatively, you can contact the Internationalization Team using <link "
 "href=\"https://discourse.gnome.org/tag/i18n\">GNOME Discourse</link>."
