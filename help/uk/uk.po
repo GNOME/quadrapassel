@@ -2,12 +2,12 @@
 # Copyright (C) 2020 quadrapassel's COPYRIGHT HOLDER
 # This file is distributed under the same license as the quadrapassel package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2023.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel gnome-3-36\n"
-"POT-Creation-Date: 2023-09-15 00:54+0000\n"
-"PO-Revision-Date: 2023-09-15 21:06+0300\n"
+"POT-Creation-Date: 2024-03-05 14:18+0000\n"
+"PO-Revision-Date: 2024-03-05 22:48+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -136,8 +136,9 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/bug-filing.page:50 C/develop.page:35 C/documentation.page:35
 #: C/translate.page:47
-msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
-msgstr "<link xref=\"get-involved\"><_:media-1/>Приєднатися до команди</link>"
+#| msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
+msgid "<link xref=\"index#get-involved\"><_:media-1/>Get Involved</link>"
+msgstr "<link xref=\"index#get-involved\">Приєднатися до команди</link>"
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:51 C/develop.page:36 C/documentation.page:36
@@ -157,13 +158,6 @@ msgstr "Допомога у розробці"
 
 #. (itstool) path: page/p
 #: C/develop.page:27
-#| msgid ""
-#| "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
-#| "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
-#| "touch with the developers using <link href=\"https://cbe005.chat.mibbit."
-#| "com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via "
-#| "<link href=\"https://discourse.gnome.org/tag/games\">GNOME Discourse</"
-#| "link>."
 msgid ""
 "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
 "Contribute\">help develop <app>GNOME Games</app></link>, you can get in "
@@ -173,13 +167,12 @@ msgid ""
 "games\">#gnome-games</link> on irc.libera.chat, or via <link href=\"https://"
 "discourse.gnome.org/tag/games\">GNOME Discourse</link>."
 msgstr ""
-"Якщо ви хочете допомогти у <link href=\"https://wiki.gnome.org/Apps/Games/Cont"
-"ribute\">розробці <app>Ігор GNOME</app></link>, можете зв'язатися із "
-"нашими розробниками за допомогою <link href=\"https://matrix.to/#/#gnome-games"
-":"
-"gnome.org\">#gnome-games:gnome.org</link> у <link xref=\"help:gnome-help/"
-"help-matrix\">Matrix</link>, або <link href=\"https://web.libera.chat/#gnome-"
-"games\">#gnome-games</link> на irc.libera.chat, або <link "
+"Якщо ви хочете допомогти у <link href=\"https://wiki.gnome.org/Apps/Games/"
+"Contribute\">розробці <app>Ігор GNOME</app></link>, можете зв'язатися із "
+"нашими розробниками за допомогою <link href=\"https://matrix.to/#/#gnome-"
+"games:gnome.org\">#gnome-games:gnome.org</link> у <link xref=\"help:gnome-"
+"help/help-matrix\">Matrix</link>, або <link href=\"https://web.libera.chat/"
+"#gnome-games\">#gnome-games</link> на irc.libera.chat, або <link "
 "href=\"https://discourse.gnome.org/tag/games\">GNOME Discourse</link>."
 
 #. (itstool) path: info/desc
@@ -194,12 +187,6 @@ msgstr "Допомога у написанні документації"
 
 #. (itstool) path: page/p
 #: C/documentation.page:25
-#| msgid ""
-#| "To contribute to the Documentation Project, feel free to get in touch "
-#| "with us using <link href=\"https://cbe003.chat.mibbit.com/?"
-#| "url=irc%3A%2F%2Firc.gnome.org%2Fdocs\">irc</link>, or via <link "
-#| "href=\"https://discourse.gnome.org/tag/documentation\">GNOME Discourse</"
-#| "link>."
 msgid ""
 "To contribute to the Documentation Project, feel free to get in touch with "
 "us in <link href=\"https://matrix.to/#/#docs:gnome.org\">#docs:gnome.org</"
@@ -209,11 +196,11 @@ msgid ""
 "documentation\">GNOME Discourse</link>."
 msgstr ""
 "Щоб взяти участь у проєкті з документування, можете зв'язатися із нами за "
-"допомогою <link href=\"https://matrix.to/#/#docs:gnome.org\">#docs:gnome.org</"
-"link> у <link xref=\"help:gnome-help/help-matrix\">Matrix</link>, або <link "
-"href=\"https://web.libera.chat/#gnome-docs\">#gnome-docs</link> на irc."
-"libera.chat, або <link href=\"https://discourse.gnome.org/"
-"tag/documentation\">GNOME Discourse</link>."
+"допомогою <link href=\"https://matrix.to/#/#docs:gnome.org\">#docs:gnome."
+"org</link> у <link xref=\"help:gnome-help/help-matrix\">Matrix</link>, або "
+"<link href=\"https://web.libera.chat/#gnome-docs\">#gnome-docs</link> на irc."
+"libera.chat, або <link href=\"https://discourse.gnome.org/tag/"
+"documentation\">GNOME Discourse</link>."
 
 #. (itstool) path: page/p
 #: C/documentation.page:32
@@ -517,13 +504,15 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/preferences.page:37
-msgid "<gui>Starting level</gui> controls the speed with which you will start."
+msgid ""
+"<gui>Starting level</gui> controls the speed with which you will start."
 msgstr ""
 "Параметр <gui>Початковий рівень</gui> керує швидкістю, з якою ви почнете гру."
 
 #. (itstool) path: section/p
 #: C/preferences.page:39
-msgid "These options can vary from 0 to 15, 0 to 10, and 1 to 20 respectively."
+msgid ""
+"These options can vary from 0 to 15, 0 to 10, and 1 to 20 respectively."
 msgstr ""
 "Значення цих параметрів може змінюватися у межах від 0 до 15, від 0 до 10 і "
 "від 1 до 20, відповідно."
@@ -707,11 +696,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/translate.page:35
-#| msgid ""
-#| "You can chat with GNOME translators using <link href=\"https://cbe003."
-#| "chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. "
-#| "People on the channel are located worldwide, so you may not get an "
-#| "immediate response as a result of timezone differences."
 msgid ""
 "You can chat with GNOME translators in <link href=\"https://matrix.to/#/"
 "#i18n:gnome.org\">#i18n:gnome.org</link> on <link xref=\"help:gnome-help/"
@@ -720,14 +704,13 @@ msgid ""
 "located worldwide, so you may not get an immediate response as a result of "
 "timezone differences."
 msgstr ""
-"Ви можете спілкуватися із перекладачами GNOME за допомогою <link"
-" href=\"https://matrix.to/#/"
-"#i18n:gnome.org\">#i18n:gnome.org</link> у <link xref=\"help:gnome-help/"
-"help-matrix\">Matrix</link> або <link href=\"https://web.libera.chat/#gnome-"
-"i18n\">#gnome-i18n</link> на irc.libera.chat. Учасники каналу живуть у різних"
-" кінцях світу, тому, "
-"можливо, відповідь надійде не одразу — це результат того, що люди мешкають у "
-"різних часових поясах."
+"Ви можете спілкуватися із перекладачами GNOME за допомогою <link "
+"href=\"https://matrix.to/#/#i18n:gnome.org\">#i18n:gnome.org</link> у <link "
+"xref=\"help:gnome-help/help-matrix\">Matrix</link> або <link href=\"https://"
+"web.libera.chat/#gnome-i18n\">#gnome-i18n</link> на irc.libera.chat. "
+"Учасники каналу живуть у різних кінцях світу, тому, можливо, відповідь "
+"надійде не одразу — це результат того, що люди мешкають у різних часових "
+"поясах."
 
 #. (itstool) path: page/p
 #: C/translate.page:43
