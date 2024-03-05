@@ -1,11 +1,11 @@
 # Erik Sköldås <erik.skoldas@tele2.se>, 2015.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2018, 2020, 2021, 2023.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2018, 2020, 2021, 2023, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel doc\n"
-"POT-Creation-Date: 2023-09-15 00:54+0000\n"
-"PO-Revision-Date: 2023-09-15 22:02+0200\n"
+"POT-Creation-Date: 2024-03-05 14:18+0000\n"
+"PO-Revision-Date: 2024-03-05 20:48+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Project-Style: gnome\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -133,8 +133,8 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/bug-filing.page:50 C/develop.page:35 C/documentation.page:35
 #: C/translate.page:47
-msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
-msgstr "<link xref=\"get-involved\"><_:media-1/>Engagera dig</link>"
+msgid "<link xref=\"index#get-involved\"><_:media-1/>Get Involved</link>"
+msgstr "<link xref=\"index#get-involved\"><_:media-1/>Engagera dig</link>"
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:51 C/develop.page:36 C/documentation.page:36
