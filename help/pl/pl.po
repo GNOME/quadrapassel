@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel-help\n"
-"POT-Creation-Date: 2023-09-15 00:54+0000\n"
+"POT-Creation-Date: 2024-03-05 14:18+0000\n"
 "PO-Revision-Date: 2023-09-16 15:49+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
@@ -133,8 +133,8 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/bug-filing.page:50 C/develop.page:35 C/documentation.page:35
 #: C/translate.page:47
-msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
-msgstr "<link xref=\"get-involved\"><_:media-1/> Dołącz do nas</link>"
+msgid "<link xref=\"index#get-involved\"><_:media-1/>Get Involved</link>"
+msgstr "<link xref=\"index#get-involved\"><_:media-1/> Dołącz do nas</link>"
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:51 C/develop.page:36 C/documentation.page:36
