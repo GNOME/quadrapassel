@@ -1,15 +1,15 @@
 # Hungarian translation for quadrapassel help.
-# Copyright (C) 2012, 2013, 2014, 2015, 2017, 2018, 2021, 2023 Free Software Foundation, Inc.
+# Copyright (C) 2012, 2013, 2014, 2015, 2017, 2018, 2021, 2023, 2024 Free Software Foundation, Inc.
 # This file is distributed under the same license as the quadrapassel help.
 #
 # László Ádám Kohajda <kla.kohi at gmail dot com>, 2012.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2012, 2013, 2015, 2017.
-# Balázs Úr <ur.balazs at fsf dot hu>, 2014, 2018, 2021, 2023.
+# Balázs Úr <ur.balazs at fsf dot hu>, 2014, 2018, 2021, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
-"POT-Creation-Date: 2023-09-15 00:54+0000\n"
-"PO-Revision-Date: 2023-09-19 21:24+0200\n"
+"POT-Creation-Date: 2024-03-05 14:18+0000\n"
+"PO-Revision-Date: 2024-03-10 18:04+0100\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <openscope at fsf dot hu>\n"
 "Language: hu\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Kohajda László Ádám <kla.kohi at gmail dot com>, 2012"
+msgstr "Úr Balázs <ur.balazs at fsf dot hu>, 2014, 2018, 2021, 2023, 2024"
 
 #. (itstool) path: credit/name
 #: C/bug-filing.page:11 C/develop.page:12 C/documentation.page:10
@@ -132,8 +132,9 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/bug-filing.page:50 C/develop.page:35 C/documentation.page:35
 #: C/translate.page:47
-msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
-msgstr "<link xref=\"get-involved\"><_:media-1/>Közreműködés</link>"
+#| msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
+msgid "<link xref=\"index#get-involved\"><_:media-1/>Get Involved</link>"
+msgstr "<link xref=\"index#get-involved\"><_:media-1/>Közreműködés</link>"
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:51 C/develop.page:36 C/documentation.page:36
