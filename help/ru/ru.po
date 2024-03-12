@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
-"POT-Creation-Date: 2023-09-15 00:54+0000\n"
-"PO-Revision-Date: 2023-09-16 20:52+1000\n"
+"POT-Creation-Date: 2024-03-05 14:18+0000\n"
+"PO-Revision-Date: 2024-03-09 09:50+1000\n"
 "Last-Translator: Ser82-png <asvmail.as@gmail.com>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
@@ -21,7 +21,7 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Ser82-png <asvmail.as@gmail.com>, 2022-2023"
+msgstr "Ser82-png <asvmail.as@gmail.com>, 2022-2024"
 
 #. (itstool) path: credit/name
 #: C/bug-filing.page:11 C/develop.page:12 C/documentation.page:10
@@ -134,8 +134,8 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/bug-filing.page:50 C/develop.page:35 C/documentation.page:35
 #: C/translate.page:47
-msgid "<link xref=\"get-involved\"><_:media-1/>Get Involved</link>"
-msgstr "<link xref=\"get-involved\"><_:media-1/>Присоединяйтесь</link>"
+msgid "<link xref=\"index#get-involved\"><_:media-1/>Get Involved</link>"
+msgstr "<link xref=\"index#get-involved\"><_:media-1/>Присоединяйтесь</link>"
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:51 C/develop.page:36 C/documentation.page:36
