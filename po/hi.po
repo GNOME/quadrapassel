@@ -13,9 +13,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.master.hi\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2023-01-25 21:49+0000\n"
-"PO-Revision-Date: 2024-04-03 12:58+0530\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
+"POT-Creation-Date: 2024-04-22 13:06+0000\n"
+"PO-Revision-Date: 2024-04-22 22:12+0530\n"
 "Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
 "Language-Team: Hindi\n"
 "Language: hi\n"
@@ -383,7 +383,6 @@ msgid "Pause the game"
 msgstr "खेल रोकें"
 
 #: src/quadrapassel.vala:870
-#, fuzzy
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
