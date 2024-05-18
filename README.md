@@ -6,7 +6,7 @@ The goal of the game is to create complete horizontal lines of blocks, which wil
 
 - Homepage: <https://wiki.gnome.org/Apps/Quadrapassel>
 
-- User manual: <http://library.gnome.org/users/quadrapassel/stable/>
+- User manual: <https://help.gnome.org/users/quadrapassel/stable/>
 
 - Report issues: <https://gitlab.gnome.org/GNOME/quadrapassel/issues/>
 
