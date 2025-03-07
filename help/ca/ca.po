@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnometris\n"
 "POT-Creation-Date: 2021-08-24 09:55+0000\n"
-"PO-Revision-Date: 2022-03-20 14:59+0200\n"
+"PO-Revision-Date: 2025-03-07 14:59+0200\n"
 "Last-Translator: Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
@@ -372,7 +372,7 @@ msgstr ""
 #. (itstool) path: license/p
 #: C/playgame.page:19
 msgid "Creative Commons Attribution Share Alike 3.0"
-msgstr "Reconeixement-CompartirIgual 3.0 No adaptada (CC BY-SA 3.0)"
+msgstr "Creative Commons Reconeixement-CompartirIgual 3.0"
 
 #. (itstool) path: info/desc
 #: C/playgame.page:21
