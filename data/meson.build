@@ -16,6 +16,19 @@ install_data(
 )
 
 
+# D-Bus service file
+service_conf = configuration_data()
+service_conf.set('bindir', bindir)
+
+configure_file(
+    input: '@0@.service.in'.format(project_id),
+    output: '@0@.service'.format(project_id),
+    install: true,
+    install_dir: join_paths(get_option('datadir'), 'dbus-1', 'services'),
+    configuration: service_conf
+)
+
+
 # Desktop file
 desktop_file = i18n.merge_file(
     input: '@0@.desktop.in'.format(project_id),

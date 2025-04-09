@@ -28,6 +28,7 @@ add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), la
 localedir = join_paths(get_option('prefix'), get_option('localedir'))
 datadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
 soundsdir = join_paths(datadir, 'sounds')
+bindir = join_paths (get_option ('prefix'), get_option ('bindir'))
 
 conf = configuration_data ()
 conf.set_quoted ('VERSION', meson.project_version())
