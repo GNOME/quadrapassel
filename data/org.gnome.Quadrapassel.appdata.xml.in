@@ -27,9 +27,12 @@
     </screenshot>
   </screenshots>
   <url type="homepage">https://wiki.gnome.org/Apps/Quadrapassel</url>
-  <url type="bugtracker">https://gitlab.gnome.org/GNOME/quadrapassel/issues</url>
-  <url type="donation">http://www.gnome.org/friends/</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/quadrapassel/-/issues</url>
+  <url type="donation">https://www.gnome.org/donate/</url>
   <url type="help">https://help.gnome.org/users/quadrapassel/stable/</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/quadrapassel</url>
+  <url type="translate">https://l10n.gnome.org/module/quadrapassel/</url>
+  <launchable type="desktop-id">org.gnome.Quadrapassel.desktop</launchable>
   <developer_name>The GNOME Project</developer_name>
   <releases>
     <release date="2021-06-10" version="40.2" />
