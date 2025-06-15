@@ -5,10 +5,10 @@ variables:
 
 flatpak:
     variables:
-        MANIFEST_PATH: " flatpak/org.gnome.Quadrapassel.json"
+        MANIFEST_PATH: "flatpak/org.gnome.Quadrapassel.json"
         FLATPAK_MODULE: "quadrapassel"
         RUNTIME_REPO: "https://sdk.gnome.org/gnome-nightly.flatpakrepo"
-        APP_ID: " org.gnome.Quadrapassel"
+        APP_ID: "org.gnome.Quadrapassel"
     extends: .flatpak
 
 nightly:
