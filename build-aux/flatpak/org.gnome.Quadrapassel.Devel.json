@@ -1,5 +1,5 @@
 {
-  "app-id": "org.gnome.Quadrapassel",
+  "app-id": "org.gnome.Quadrapassel.Devel",
   "runtime": "org.gnome.Platform",
   "runtime-version": "master",
   "sdk": "org.gnome.Sdk",
@@ -126,7 +126,7 @@
       "sources": [
         {
           "type": "git",
-          "url": "https://git.gnome.org/browse/quadrapassel"
+          "url": "https://gitlab.gnome.org/GNOME/quadrapassel.git"
         }
       ]
     }
