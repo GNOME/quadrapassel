@@ -8,8 +8,11 @@
  * license.
  */
 
-public class GameView : GtkClutter.Embed
-{
+public class GameView : Gtk.Widget {
+    static construct {
+        set_css_name ("game-view");
+    }
+
     /* Game being played */
     private Game? _game = null;
     public Game? game
@@ -29,9 +32,7 @@ public class GameView : GtkClutter.Embed
             _game.complete.connect (game_complete_cb);
 
             /* Remove any existing block */
-            blocks.remove_all ();
-            playing_field.remove_all_children ();
-            shape_shadow = null;
+            clear_blocks ();
 
             /* Add in the current blocks */
             if (game.shape != null)
@@ -43,11 +44,10 @@ public class GameView : GtkClutter.Embed
                     var block = _game.blocks[x, y];
                     if (block != null)
                     {
-                        var actor = new BlockActor (block, block_textures[block.color]);
-                        blocks.insert (block, actor);
-                        actor.set_size (cell_size, cell_size);
-                        actor.set_position (block.x * cell_size, block.y * cell_size);
-                        playing_field.add (actor);
+                        var widget = new BlockWidget (block, theme);
+                        widget.color = block.color;
+                        blocks.insert (block, widget);
+                        add_block_widget (widget);
                     }
                 }
             }
@@ -57,40 +57,64 @@ public class GameView : GtkClutter.Embed
         }
     }
 
+    private string? _theme;
     /* Theme to use */
     public string theme
     {
+        get { return _theme; }
         set
         {
-            foreach (var texture in block_textures)
-                texture.theme = value;
+            if (_theme != null) {
+                this.remove_css_class ("theme-" + _theme);
+            }
+
+            this.add_css_class ("theme-" + value);
+
+            Block block;
+            BlockWidget widget;
+
+            var iter = HashTableIter<Block, BlockWidget> (blocks);
+            while (true)
+            {
+                if (!iter.next (out block, out widget))
+                    break;
+                widget.theme = value;
+            }
+
+            iter = HashTableIter<Block, BlockWidget> (shape_blocks);
+            while (true)
+            {
+                if (!iter.next (out block, out widget))
+                    break;
+                widget.theme = value;
+            }
+
+            iter = HashTableIter<Block, BlockWidget> (shadow_blocks);
+            while (true)
+            {
+                if (!iter.next (out block, out widget))
+                    break;
+                widget.theme = value;
+            }
+
+            _theme = value;
         }
     }
-
-    private Clutter.Actor playing_field;
-
-    /* The shape currently falling */
-    private Clutter.Actor? shape = null;
-
-    /* Shadow of falling piece */
-    private Clutter.Clone? shape_shadow = null;
 
     private bool _show_shadow = false;
     public bool show_shadow
     {
         get { return _show_shadow; }
-        set { _show_shadow = value; update_shadow (); }
+        set { _show_shadow = value; queue_allocate (); }
     }
 
     /* Overlay to draw messages on */
     private TextOverlay text_overlay;
 
-    /* Textures used to draw blocks */
-    private BlockTexture[] block_textures;
-
     /* Blocks */
-    private HashTable<Block, BlockActor> blocks;
-    private HashTable<Block, BlockActor> shape_blocks;
+    private HashTable<Block, BlockWidget> blocks;
+    private HashTable<Block, BlockWidget> shape_blocks;
+    private HashTable<Block, BlockWidget> shadow_blocks;
 
     /* Number of lines destroyed (required for earthquake effect) */
     private int n_lines_destroyed;
@@ -108,104 +132,152 @@ public class GameView : GtkClutter.Embed
 
     public GameView ()
     {
-        blocks = new HashTable<Block, BlockActor> (direct_hash, direct_equal);
-        shape_blocks = new HashTable<Block, BlockActor> (direct_hash, direct_equal);
-
-        size_allocate.connect (size_allocate_cb);
-
-        var stage = (Clutter.Stage) get_stage ();
-        Clutter.Color stage_color = { 0x10, 0x10, 0x10, 0xff };
-        Clutter.Color field_color = { 0x0, 0x0, 0x0, 0xff };
-        stage.set_background_color (stage_color);
-
-        playing_field = new Clutter.Actor ();
-        playing_field.set_background_color (field_color);
-        stage.add_child (playing_field);
-
         text_overlay = new TextOverlay ();
-        // FIXME: Have to set a size to avoid an assertion in Clutter
-        text_overlay.set_surface_size (1, 1);
-        stage.add (text_overlay);
+        text_overlay.set_parent (this);
 
-        block_textures = new BlockTexture[NCOLORS];
-        for (var i = 0; i < block_textures.length; i++)
-        {
-            block_textures[i] = new BlockTexture (i);
-            // FIXME: Have to set a size to avoid an assertion in Clutter
-            block_textures[i].set_surface_size (1, 1);
-            block_textures[i].hide ();
-            stage.add_child (block_textures[i]);
+        blocks = new HashTable<Block, BlockWidget> (direct_hash, direct_equal);
+        shape_blocks = new HashTable<Block, BlockWidget> (direct_hash, direct_equal);
+        shadow_blocks = new HashTable<Block, BlockWidget> (direct_hash, direct_equal);
+    }
+
+    protected override void size_allocate (int width, int height, int baseline) {
+        var block_width = width / game.width;
+        var block_height = height / game.height;
+
+        var block_widget = get_first_child () as BlockWidget;
+        while (block_widget != null) {
+            // The blocks are always the first children, everything else comes after
+            Graphene.Point pos = Graphene.Point ();
+            bool show = true;
+
+            if (shape_blocks.lookup (block_widget.block) == block_widget) {
+                pos.x = (game.shape.x + block_widget.block.x) * block_width;
+                pos.y = (game.shape.y + block_widget.block.y) * block_height;
+            } else if (shadow_blocks.lookup (block_widget.block) == block_widget) {
+                if (show_shadow) {
+                    pos.x = (game.shape.x + block_widget.block.x) * block_width;
+                    pos.y = (game.shadow_y + block_widget.block.y) * block_height;
+                } else {
+                    show = false;
+                }
+            } else {
+                // Regular blocks or blocks that are currently animating out of view
+                pos.x = block_widget.block.x * block_width;
+                pos.y = block_widget.block.y * block_height;
+            }
+
+            if (show) {
+                int min_width;
+                int min_height;
+                int actual_width;
+                int actual_height;
+
+                block_widget.measure (Gtk.Orientation.VERTICAL, -1, out min_width, null, null, null);
+                actual_width = int.max (min_width, block_width);
+
+                block_widget.measure (Gtk.Orientation.HORIZONTAL, actual_width, out min_height, null, null, null);
+                actual_height = int.max (min_height, block_height);
+
+                // adjust pos to center the block if it is bigger (animating)
+                pos.x -= (actual_width - block_width) / 2;
+                pos.y -= (actual_height - block_height) / 2;
+                var transform = new Gsk.Transform ().translate (pos);
+
+                block_widget.allocate (actual_width, actual_height, -1, transform);
+            }
+
+            block_widget = block_widget.get_next_sibling () as BlockWidget;
         }
+
+        // Text overlay
+        var pos = Graphene.Point () {
+            x = 0,
+            y = 0
+        };
+
+        var transform = new Gsk.Transform ().translate (pos);
+        text_overlay.measure (Gtk.Orientation.VERTICAL, width, null, null, null, null);
+        text_overlay.allocate (width, height, -1, transform);
+    }
+
+    private void add_block_widget (BlockWidget widget) {
+        widget.insert_before (this, text_overlay);
+    }
+
+    private void clear_blocks () {
+        Block block;
+        BlockWidget widget;
+        HashTableIter<Block, BlockWidget> iter;
+
+        iter = HashTableIter<Block, BlockWidget> (blocks);
+        while (true)
+        {
+            if (!iter.next (out block, out widget))
+                break;
+            widget.unparent ();
+        }
+
+        iter = HashTableIter<Block, BlockWidget> (shape_blocks);
+        while (true)
+        {
+            if (!iter.next (out block, out widget))
+                break;
+            widget.unparent ();
+        }
+
+        iter = HashTableIter<Block, BlockWidget> (shadow_blocks);
+        while (true)
+        {
+            if (!iter.next (out block, out widget))
+                break;
+            widget.unparent ();
+        }
+
+        blocks.remove_all ();
+        shape_blocks.remove_all ();
+        shadow_blocks.remove_all ();
+    }
+
+    protected override void dispose () {
+        clear_blocks ();
+        text_overlay.unparent ();
+        base.dispose ();
     }
 
     private void shape_added_cb ()
     {
-        shape = new Clutter.Actor ();
-        playing_field.add (shape);
-        shape.set_position (game.shape.x * cell_size, game.shape.y * cell_size);
-        update_shadow ();
+        if (game.shape != null) {
+            foreach (var block in game.shape.blocks) {
+                var widget = new BlockWidget (block, theme);
+                shape_blocks.insert (block, widget);
+                add_block_widget (widget);
 
-        foreach (var block in game.shape.blocks)
-        {
-            var actor = new BlockActor (block, block_textures[block.color]);
-            shape_blocks.insert (block, actor);
-            shape.add (actor);
-            actor.set_size (cell_size, cell_size);
-            actor.set_position (block.x * cell_size, block.y * cell_size);
+                // Shadow blocks
+                var shadow_widget = new BlockWidget (block, theme);
+                shadow_widget.add_css_class ("shadow");
+                shadow_blocks.insert (block, shadow_widget);
+                add_block_widget (shadow_widget);
+            }
         }
+
+        queue_allocate();
     }
 
     private void shape_moved_cb ()
     {
+        queue_allocate ();
         play_sound ("slide");
-        shape.save_easing_state ();
-        shape.set_easing_mode (Clutter.AnimationMode.EASE_IN_QUAD);
-        shape.set_easing_duration (30);
-        shape.set_x ((float) game.shape.x * cell_size);
-        if (shape_shadow != null)
-            shape_shadow.set_position (game.shape.x * cell_size, game.shadow_y * cell_size);
-        shape.restore_easing_state ();
-    }
-
-    private void update_shadow ()
-    {
-        if (game != null && game.shape != null && show_shadow)
-        {
-            if (shape_shadow == null)
-            {
-                shape_shadow = new Clutter.Clone (shape);
-                shape_shadow.set_opacity (32);
-                playing_field.add (shape_shadow);
-            }
-            shape_shadow.set_position (game.shape.x * cell_size, game.shadow_y * cell_size);
-        }
-        else
-        {
-            if (shape_shadow != null)
-                shape_shadow.destroy ();
-            shape_shadow = null;
-        }
     }
 
     private void shape_dropped_cb ()
     {
-        shape.save_easing_state ();
-        shape.set_easing_mode (Clutter.AnimationMode.EASE_IN_QUAD);
-        shape.set_easing_duration (60);
-        shape.set_y ((float) game.shape.y * cell_size);
-        update_shadow ();
-        shape.restore_easing_state ();
+        queue_allocate ();
     }
 
     private void shape_rotated_cb ()
     {
+        queue_allocate ();
         play_sound ("turn");
-        foreach (var block in game.shape.blocks)
-        {
-            var actor = shape_blocks.lookup (block);
-            actor.set_position (block.x * cell_size, block.y * cell_size);
-        }
-        update_shadow ();
     }
 
     private void shape_landed_cb (int[] lines, List<Block> line_blocks)
@@ -227,95 +299,53 @@ public class GameView : GtkClutter.Embed
             break;
         }
 
-        /* Remove the moving shape */
-        shape.destroy ();
-        shape = null;
-        if (shape_shadow != null)
-            shape_shadow.destroy ();
-        shape_shadow = null;
+        n_lines_destroyed = lines.length;
+
+        var shape_iter = HashTableIter<Block, BlockWidget> (shape_blocks);
+        while (true)
+        {
+            Block block;
+            BlockWidget widget;
+            if (!shape_iter.next (out block, out widget))
+                break;
+            widget.unparent ();
+        }
+
         shape_blocks.remove_all ();
 
-        n_lines_destroyed = lines.length;
+        var shadow_iter = HashTableIter<Block, BlockWidget> (shadow_blocks);
+        while (true)
+        {
+            Block block;
+            BlockWidget widget;
+            if (!shadow_iter.next (out block, out widget))
+                break;
+            widget.unparent ();
+        }
+
+        shadow_blocks.remove_all ();
 
         /* Land the shape blocks */
         foreach (var block in game.shape.blocks)
         {
-            var actor = new BlockActor (block, block_textures[block.color]);
-            playing_field.add (actor);
-            blocks.insert (block, actor);
-            actor.set_size (cell_size, cell_size);
-            actor.set_position (block.x * cell_size, (block.y - n_lines_destroyed) * cell_size);
+            var widget = new BlockWidget (block, theme);
+            blocks.insert (block, widget);
+            add_block_widget (widget);
         }
 
         /* Explode blocks */
         foreach (var block in line_blocks)
         {
-            var actor = blocks.lookup (block);
-            actor.explode ();
+            var widget = blocks.lookup (block);
+            // reorder exploding widgets to be on top
+            add_block_widget (widget);
+
+            // animate widgets
             blocks.remove (block);
+            widget.explode ();
         }
 
-        /* Drop blocks that have moved */
-        if (lines.length > 0)
-        {
-            for (var x = 0; x < game.width; x++)
-            {
-                for (var y = 0; y < game.height; y++)
-                {
-                    var block = game.blocks[x, y];
-                    if (block == null)
-                        continue;
-
-                    var actor = blocks.lookup (block);
-
-                    actor.save_easing_state ();
-                    actor.set_easing_mode (Clutter.AnimationMode.EASE_OUT_BOUNCE);
-                    actor.set_easing_duration ((int) (300 * Math.sqrt (n_lines_destroyed)));
-                    actor.set_position ((float) block.x * cell_size, (float) block.y * cell_size);
-                    actor.restore_easing_state ();
-                }
-            }
-        }
-    }
-
-    private void size_allocate_cb (Gtk.Widget widget, Gtk.Allocation allocation)
-    {
-        if (game == null)
-            return;
-
-        foreach (var texture in block_textures)
-            texture.set_size (cell_size, cell_size);
-
-        var iter = HashTableIter<Block, BlockActor> (blocks);
-        while (true)
-        {
-            Block block;
-            BlockActor actor;
-            if (!iter.next (out block, out actor))
-                break;
-            actor.set_size (cell_size, cell_size);
-            actor.set_position (block.x * cell_size, block.y * cell_size);
-        }
-        var shape_iter = HashTableIter<Block, BlockActor> (shape_blocks);
-        while (true)
-        {
-            Block block;
-            BlockActor actor;
-            if (!shape_iter.next (out block, out actor))
-                break;
-            actor.set_size (cell_size, cell_size);
-            actor.set_position (block.x * cell_size, block.y * cell_size);
-        }
-        if (shape != null)
-            shape.set_position (game.shape.x * cell_size, game.shape.y * cell_size);
-        update_shadow ();
-
-        text_overlay.set_size (get_allocated_width (), get_allocated_height ());
-        text_overlay.get_parent ().set_child_above_sibling (text_overlay, null);
-
-        playing_field.set_size (game.width * cell_size, game.height * cell_size);
-        playing_field.set_position ((get_allocated_width () - playing_field.get_width ()) * 0.5f,
-                                    get_allocated_height () - playing_field.get_height ());
+        queue_allocate ();
     }
 
     private void pause_changed_cb ()
@@ -398,59 +428,34 @@ public class GameView : GtkClutter.Embed
     }
 }
 
-private class BlockActor : Clutter.Clone
+private class TextOverlay : Gtk.DrawingArea
 {
-    public Block block;
-
-    public BlockActor (Block block, Clutter.Actor texture)
-    {
-        Object (source: texture);
-        this.block = block;
+    static construct {
     }
 
-    public void explode ()
-    {
-        get_parent ().set_child_above_sibling (this, null);
-
-        save_easing_state ();
-        set_easing_mode (Clutter.AnimationMode.EASE_OUT_QUINT);
-        set_easing_duration (720);
-        set_opacity (0);
-        set_scale (2f, 2f);
-        transitions_completed.connect (explode_complete_cb);
-        restore_easing_state ();
-    }
-
-    private void explode_complete_cb ()
-    {
-        destroy ();
-    }
-}
-
-private class TextOverlay : Clutter.CairoTexture
-{
     private string? _text = null;
     public string text
     {
         get { return _text; }
-        set { _text = value; invalidate (); }
+        set {
+            _text = value;
+            queue_draw ();
+        }
     }
 
     public TextOverlay ()
     {
-        auto_resize = true;
+        add_css_class ("text-overlay");
+        set_draw_func (draw);
     }
 
-    protected override bool draw (Cairo.Context cr)
+    protected void draw (Gtk.DrawingArea area, Cairo.Context cr, int width, int height)
     {
-        clear ();
-
         if (text == null)
-            return false;
+            return;
 
-        /* Center coordinates */
-        uint w, h;
-        get_surface_size (out w, out h);
+        int w = get_width ();
+        int h = get_height ();
         cr.translate (w / 2, h / 2);
 
         var desc = Pango.FontDescription.from_string ("Sans");
@@ -477,14 +482,16 @@ private class TextOverlay : Clutter.CairoTexture
 
         cr.set_source_rgb (1.0, 1.0, 1.0);
         cr.fill ();
-
-        return false;
     }
 }
 
-public class BlockTexture : Clutter.CairoTexture
+public class BlockWidget: Gtk.Widget
 {
-    private int color;
+    static construct {
+        set_css_name ("block");
+    }
+
+
     private string? _theme = null;
     public string? theme
     {
@@ -494,45 +501,147 @@ public class BlockTexture : Clutter.CairoTexture
             if (_theme == value)
                 return;
             _theme = value;
-            invalidate ();
+            drawing_area.queue_draw ();
+            queue_draw ();
         }
     }
 
-    public BlockTexture (int color)
-    {
-        auto_resize = true;
-        this.color = color.clamp (0, 6);
+    private int _color = -1;
+    public int color {
+        get { return _color; }
+        set {
+            if (_color == value) {
+                return;
+            }
+
+            var old_color_class = "color-%d".printf (_color);
+            this.remove_css_class (old_color_class);
+
+            var new_color = value.clamp (0, 6);
+            var new_color_class = "color-%d".printf (new_color);
+            this.add_css_class (new_color_class);
+            _color = value;
+        }
     }
 
-    protected override bool draw (Cairo.Context cr)
-    {
-        clear ();
+    public Block block;
+    private Gtk.DrawingArea drawing_area;
 
-        uint w, h;
-        get_surface_size (out w, out h);
-        cr.scale (w, h);
+    public BlockWidget (Block block, string? theme)
+    {
+        drawing_area = new Gtk.DrawingArea ();
+        drawing_area.set_draw_func (draw);
+        drawing_area.set_parent (this);
+
+        this.block = block;
+        this.color = block.color;
+        can_target = false;
+        if (theme != null) {
+            this.theme = theme;
+        } else {
+            this.theme = "plain";
+        }
+    }
+
+    protected override void size_allocate (int width, int height, int baseline) {
+        drawing_area.measure (Gtk.Orientation.HORIZONTAL, width, null, null, null, null);
+        var transform = new Gsk.Transform ().translate (Graphene.Point ());
+        drawing_area.allocate (width, height, -1, transform);
+    }
+
+    protected override void snapshot (Gtk.Snapshot snapshot) {
+        switch (theme) {
+        case "modern":
+            snapshot_modern (snapshot);
+            break;
+        default:
+            base.snapshot (snapshot);
+            break;
+        }
+    }
+
+    private void snapshot_modern (Gtk.Snapshot snapshot) {
+        // Colors from GNOME color scheme
+        const float colors[21] =
+        {
+            0.929411765f, 0.2f, 0.231372549f,
+            0.341176471f, 0.890196078f, 0.537254902f,
+            0.384313725f, 0.62745098f, 0.917647059f,
+            0.964705882f, 0.960784314f, 0.956862745f,
+            0.97254902f, 0.894117647f, 0.360784314f,
+            0.752941176f, 0.380392157f, 0.796078431f,
+            1.0f, 0.639215686f, 0.282352941f
+        };
+
+        float border_width = 0.05f;
+
+        var color = Gdk.RGBA () {
+            red = colors[color * 3],
+            green = colors[color * 3 + 1],
+            blue = colors[color * 3 + 2],
+            alpha = 1.0f
+        };
+
+        var rect = Graphene.Rect () {
+            origin = Graphene.Point () {
+                x = border_width * get_width (),
+                y = border_width * get_height ()
+            },
+            size = Graphene.Size () {
+                width = (1 - 2 * border_width) * get_width (),
+                height = (1 - 2 * border_width) * get_height ()
+            }
+        };
+
+        snapshot.append_color (color, rect);
+    }
+
+    private int animation_size_begin = 0;
+
+    public void explode ()
+    {
+        var target = new Adw.CallbackAnimationTarget (explode_animation_cb);
+        var animation = new Adw.TimedAnimation (this, 0.0, 1.0, 720, target);
+        animation.set_easing (Adw.Easing.EASE_OUT_QUINT);
+        animation.done.connect (explode_complete_cb);
+        animation_size_begin = get_width ();
+        animation.play ();
+    }
+
+    private void explode_animation_cb (double val) {
+        opacity = 1 - val;
+        int size = (int)((val + 1) * animation_size_begin);
+        set_size_request (size, size);
+    }
+
+    private void explode_complete_cb (Adw.Animation animation)
+    {
+        unparent ();
+    }
+
+    public void draw (Gtk.DrawingArea area, Cairo.Context cr, int width, int height)
+    {
+        cr.scale (width, height);
 
         switch (theme)
         {
         default:
         case "plain":
-            draw_plain (cr);
+            draw_plain (cr, width, height);
             break;
         case "clean":
-            draw_clean (cr);
+            draw_clean (cr, width, height);
             break;
         case "tangoflat":
-            draw_tango (cr, false);
+            draw_tango (cr, width, height, false);
             break;
         case "tangoshaded":
-            draw_tango (cr, true);
+            draw_tango (cr, width, height, true);
             break;
         }
-
-        return false;
     }
 
-    private void draw_plain (Cairo.Context cr)
+    private void draw_plain (Cairo.Context cr, int width, int height)
     {
         const double colors[32] =
         {
@@ -562,7 +671,7 @@ public class BlockTexture : Clutter.CairoTexture
         cr.curve_to (x, y + r / 2, x + r / 2, y, x + r, y);
     }
 
-    private void draw_clean (Cairo.Context cr)
+    private void draw_clean (Cairo.Context cr, int width, int height)
     {
         /* The colors, first the lighter then the darker fill (for the gradient)
            and then the stroke color  */
@@ -617,7 +726,7 @@ public class BlockTexture : Clutter.CairoTexture
         cr.fill ();
     }
 
-    private void draw_tango (Cairo.Context cr, bool use_gradients)
+    private void draw_tango (Cairo.Context cr, int width, int height, bool use_gradients)
     {
         /* The following garbage is derived from the official tango style guide */
         const double colors[72] =
@@ -662,15 +771,16 @@ public class BlockTexture : Clutter.CairoTexture
              pat.add_color_stop_rgb (1.0, colors[color * 9 + 3], colors[color * 9 + 4], colors[color * 9 + 5]);
              cr.set_source (pat);
         }
-        else
+        else {
              cr.set_source_rgb (colors[color * 9], colors[color * 9 + 1], colors[color * 9 + 2]);
+        }
 
         draw_rounded_rectangle (cr, 0.05, 0.05, 0.9, 0.9, 0.2);
-        cr.fill_preserve ();  /* fill with shaded gradient */
+        cr.fill_preserve ();  // fill with shaded gradient
 
         cr.set_source_rgb (colors[color * 9 + 6], colors[color * 9 + 7], colors[color * 9 + 8]);
 
-        /* Add darker outline */
+        // Add darker outline
         cr.set_line_width (0.1);
         cr.stroke ();
 
@@ -678,7 +788,7 @@ public class BlockTexture : Clutter.CairoTexture
         if (use_gradients)
         {
             var pat = new Cairo.Pattern.linear (-0.3, -0.3, 0.8, 0.8);
-            /* yellow and white blocks need a brighter highlight */
+            // yellow and white blocks need a brighter highlight
             switch (color)
             {
             case 3:
@@ -696,7 +806,8 @@ public class BlockTexture : Clutter.CairoTexture
         else
             cr.set_source_rgba (1.0, 1.0, 1.0, 0.35);
 
-        /* Add inner edge highlight */
+        // Add inner edge highlight
         cr.stroke ();
     }
 }
+

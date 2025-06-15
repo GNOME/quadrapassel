@@ -31,15 +31,12 @@ public class ScoreDialog : Gtk.Dialog
         set_size_request (200, 300);
 
         var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 5);
-        vbox.border_width = 6;
-        vbox.show ();
-        get_content_area ().pack_start (vbox, true, true, 0);
+        get_content_area ().append (vbox);
 
-        var scroll = new Gtk.ScrolledWindow (null, null);
-        scroll.shadow_type = Gtk.ShadowType.ETCHED_IN;
+        var scroll = new Gtk.ScrolledWindow ();
         scroll.set_policy (Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC);
-        scroll.show ();
-        vbox.pack_start (scroll, true, true, 0);
+        scroll.set_vexpand(true);
+        vbox.append (scroll);
 
         score_model = new Gtk.ListStore (3, typeof (string), typeof (string), typeof (int));
 
@@ -50,13 +47,13 @@ public class ScoreDialog : Gtk.Dialog
         renderer.xalign = 1.0f;
         scores.insert_column_with_attributes (-1, _("Score"), renderer, "text", 1, "weight", 2);
         scores.model = score_model;
-        scores.show ();
-        scroll.add (scores);
+        scroll.set_child (scores);
 
         var entries = history.entries.copy ();
         entries.sort (compare_entries);
-        foreach (var entry in entries)
+        foreach (var entry in entries) {
             entry_added_cb (entry);
+        }
     }
 
     private static int compare_entries (HistoryEntry a, HistoryEntry b)

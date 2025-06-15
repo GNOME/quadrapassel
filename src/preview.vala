@@ -6,27 +6,30 @@
  * Foundation, either version 2 of the License, or (at your option) any later
  * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
  * license.
- */
+ */public class Preview : Gtk.Widget {
+    static construct {
+        set_css_name ("preview");
+    }
 
-public class Preview : GtkClutter.Embed
-{
-    /* Textures used to draw blocks */
-    private BlockTexture[] block_textures;
+    private Gtk.AspectFrame? parent_frame = null;
 
-    /* Clutter representation of a piece */
-    private Clutter.Actor? piece = null;
-
-    private Gtk.Frame? parent_frame = null;
-
+    private string _theme;
     public string theme
     {
+        get { return _theme; }
         set
         {
-            foreach (var texture in block_textures)
-                texture.theme = value;
-            update_block ();
+            foreach (var block in block_widgets) {
+                block.theme = value;
+            }
+
+            _theme = value;
         }
     }
+
+    private Array<BlockWidget> block_widgets = new Array<BlockWidget> ();
+    private int piece_width;
+    private int piece_height;
 
     private int cell_size
     {
@@ -54,30 +57,12 @@ public class Preview : GtkClutter.Embed
         set { _enabled = value; update_block (); }
     }
 
-    public Preview (Gtk.Frame? parent)
+    public Preview (Gtk.AspectFrame? parent)
     {
-        size_allocate.connect (size_allocate_cb);
-
         parent_frame = parent;
 
-        /* FIXME: We should scale with the rest of the UI, but that requires
-         * changes to the widget layout - i.e. wrap the preview in an
-         * fixed-aspect box. */
-        set_size_request (120, 120);
-        var stage = (Clutter.Stage) get_stage ();
-
-        Clutter.Color stage_color = { 0x0, 0x0, 0x0, 0xff };
-        stage.set_background_color (stage_color);
-
-        block_textures = new BlockTexture[NCOLORS];
-        for (var i = 0; i < block_textures.length; i++)
-        {
-            block_textures[i] = new BlockTexture (i);
-            // FIXME: Have to set a size to avoid an assertion in Clutter
-            block_textures[i].set_surface_size (1, 1);
-            block_textures[i].hide ();
-            stage.add_child (block_textures[i]);
-        }
+        hexpand = true;
+        vexpand = true;
     }
 
     private void shape_added_cb ()
@@ -85,10 +70,46 @@ public class Preview : GtkClutter.Embed
         update_block ();
     }
 
+    protected override void snapshot (Gtk.Snapshot snapshot) {
+        foreach (var widget in block_widgets) {
+            snapshot_child (widget, snapshot);
+        }
+    }
+
+    protected override void size_allocate (int width, int height, int baseline) {
+        var block_width = width / 5;
+        var block_height = height / 5;
+
+        foreach (var widget in block_widgets) {
+            Graphene.Point pos = Graphene.Point () {
+                x = (5 - piece_width) * block_width / 2 + widget.block.x * block_width,
+                y = (5 - piece_height) * block_height / 2 + widget.block.y * block_height,
+            };
+
+            var transform = new Gsk.Transform ();
+            transform = transform.translate (pos);
+            widget.measure (Gtk.Orientation.HORIZONTAL, 10, null, null, null, null);
+            widget.allocate (block_width, block_height, -1, transform);
+        }
+    }
+
+    protected override void dispose () {
+        clear ();
+    }
+
+    public void clear () {
+        foreach (var widget in block_widgets) {
+            widget.destroy ();
+        }
+
+        block_widgets.remove_range (0, block_widgets.length);
+    }
+
     private void update_block ()
     {
-        if (piece != null)
-            piece.destroy ();
+        if (block_widgets.length != 0) {
+            clear ();
+        }
 
         if (game == null || game.next_shape == null || !enabled)
         {
@@ -99,33 +120,25 @@ public class Preview : GtkClutter.Embed
 
         set_visible (true);
 
-        piece = new Clutter.Actor ();
-        var stage = (Clutter.Stage) get_stage ();
-        stage.add_child (piece);
 
         var min_width = 4, max_width = 0, min_height = 4, max_height = 0;
-        foreach (var b in game.next_shape.blocks)
-        {
+        foreach (var b in game.next_shape.blocks) {
             min_width = int.min (b.x, min_width);
             max_width = int.max (b.x + 1, max_width);
             min_height = int.min (b.y, min_height);
             max_height = int.max (b.y + 1, max_height);
 
-            var a = new Clutter.Clone (block_textures[b.color]);
-            a.set_size (cell_size, cell_size);
-            a.set_position (b.x * cell_size, b.y * cell_size);
-            piece.add_child (a);
+            var widget = new BlockWidget (b, theme);
+            widget.color = b.color;
+            widget.theme = theme;
+            widget.set_parent (this);
+            this.block_widgets.append_val (widget);
         }
 
-        piece.set_pivot_point (0.5f, 0.5f);
-        piece.set_position ((get_allocated_width () - (min_width + max_width) * cell_size) / 2, (get_allocated_height () - (min_height + max_height) * cell_size) / 2);
-        piece.set_scale (0.6, 0.6);
+        piece_width = min_width + max_width;
+        piece_height = min_height + max_height;
 
-        piece.save_easing_state ();
-        piece.set_easing_mode (Clutter.AnimationMode.EASE_IN_OUT_SINE);
-        piece.set_easing_duration (180);
-        piece.set_scale (1.0, 1.0);
-        piece.restore_easing_state ();
+        queue_allocate ();
     }
 
     public new void set_visible (bool visible)
@@ -135,12 +148,5 @@ public class Preview : GtkClutter.Embed
         {
             parent_frame.set_visible (visible);
         }
-    }
-
-    private void size_allocate_cb (Gtk.Allocation allocation)
-    {
-        foreach (var texture in block_textures)
-            texture.set_size (cell_size, cell_size);
-        update_block ();
     }
 }

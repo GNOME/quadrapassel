@@ -12,18 +12,16 @@ python3 = import('python3')
 
 cc = meson.get_compiler('c')
 
-clutter_dependency = dependency('clutter-1.0', version: '>= 1.0.0')
-clutter_gtk_dependency = dependency('clutter-gtk-1.0', version: '>= 0.91.6')
-cogl_dependency = dependency('cogl-1.0')
 gsound_dependency = dependency('gsound', version: '>= 1.0.2')
-gtk_dependency = dependency('gtk+-3.0', version: '>= 3.12.0')
+gtk_dependency = dependency('gtk4', version: '>= 4.4')
+libadwaita_dependency = dependency('libadwaita-1', version: '>= 1.1')
 manette_dependency = dependency('manette-0.2', version: '>= 0.2.0')
-pango_depepdency = dependency('pango')
+pango_dependency = dependency('pango')
 pango_cairo_dependency = dependency('pangocairo')
 posix_dependency = meson.get_compiler('vala').find_library('posix')
 rsvg_dependency = dependency('librsvg-2.0', version: '>= 2.32.0')
 libm_dependency = cc.find_library('m', required : true)
-        
+
 # Set gettext package name
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language: 'c')
 

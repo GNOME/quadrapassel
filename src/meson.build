@@ -1,14 +1,22 @@
+quadrapassel_sources = [
+    'vapi/config.vapi',
+    'vapi/input-event-codes.vapi',
+    'game-view.vala',
+    'game.vala',
+    'history.vala',
+    'preview.vala',
+    'quadrapassel.vala',
+    'score-dialog.vala'
+]
+
+quadrapassel_sources += gnome.compile_resources('quadrapassel-resources',
+    'quadrapassel.gresource.xml',
+    source_dir: 'gresource',
+    c_name: 'quadrapassel'
+)
+
 executable(meson.project_name(),
-    [
-        'vapi/config.vapi',        
-        'vapi/input-event-codes.vapi',
-        'game-view.vala',
-        'game.vala',
-        'history.vala',
-        'preview.vala',
-        'quadrapassel.vala',
-        'score-dialog.vala'
-    ],
+    quadrapassel_sources,
     install: true,
     c_args: [
         '-include', 'config.h'
@@ -18,13 +26,11 @@ executable(meson.project_name(),
         '--vapidir', join_paths(meson.current_source_dir(), 'vapi')
     ],
     dependencies: [
-        clutter_dependency,
-        clutter_gtk_dependency,
-        cogl_dependency,
         gsound_dependency,
         gtk_dependency,
+        libadwaita_dependency,
         manette_dependency,
-        pango_depepdency,
+        pango_dependency,
         pango_cairo_dependency,
         posix_dependency,
         rsvg_dependency,

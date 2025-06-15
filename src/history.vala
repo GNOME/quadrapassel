@@ -90,9 +90,12 @@ public class History : Object
         var hour = int.parse (date.substring (11, 2));
         var minute = int.parse (date.substring (14, 2));
         var seconds = int.parse (date.substring (17, 2));
-        var timezone = date.substring (19);
-
-        return new DateTime (new TimeZone (timezone), year, month, day, hour, minute, seconds);
+        try {
+            var timezone = new GLib.TimeZone.identifier (date.substring (19));
+            return new DateTime (timezone, year, month, day, hour, minute, seconds);
+        } catch (GLib.Error e) {
+            return null;
+        }
     }
 }
 

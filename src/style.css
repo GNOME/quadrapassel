@@ -1,0 +1,19 @@
+game-view, preview {
+  background-color: #000000;
+}
+
+.margin-6 {
+  margin: 6px;
+}
+
+.margin-12 {
+  margin: 12px;
+}
+
+.pause-play-button {
+  margin: 30px;
+}
+
+block.shadow {
+  opacity: 0.5;
+}

@@ -6,7 +6,7 @@
   "command": "quadrapassel",
   "finish-args": [
     "--share=ipc",
-    "--socket=x11",
+    "--socket=fallback-x11",
     "--socket=wayland",
     "--device=dri",
     "--socket=pulseaudio",
@@ -16,10 +16,6 @@
     "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
     "--device=all"
   ],
-  "build-options": {
-    "cflags": "-O2 -g",
-    "cxxflags": "-O2 -g"
-  },
   "cleanup": [
     "/include",
     "/lib/pkgconfig",
@@ -80,43 +76,6 @@
           "type": "git",
           "url": "https://gitlab.gnome.org/GNOME/libmanette.git",
           "branch": "main"
-        }
-      ]
-    },
-    {
-      "name": "cogl",
-      "config-opts": [
-        "--disable-cogl-gst",
-        "--enable-xlib-egl-platform",
-        "--enable-wayland-egl-platform"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://gitlab.gnome.org/GNOME/cogl.git",
-          "branch": "cogl-1.22"
-        }
-      ]
-    },
-    {
-      "name": "clutter",
-      "config-opts": [
-        "--enable-egl-backend",
-        "--enable-wayland-backend"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://gitlab.gnome.org/GNOME/clutter.git"
-        }
-      ]
-    },
-    {
-      "name": "clutter-gtk",
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://gitlab.gnome.org/GNOME/clutter-gtk.git"
         }
       ]
     },

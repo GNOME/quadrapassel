@@ -8,18 +8,18 @@
  * license.
  */
 
-public class Quadrapassel : Gtk.Application
+public class Quadrapassel : Adw.Application
 {
     /* Application settings */
     private Settings settings;
 
     /* Main window */
     private Gtk.Window window;
+    private Gtk.EventControllerKey event_controller_key;
     private Gtk.MenuButton menu_button;
-    private int window_width;
-    private int window_height;
-    private bool is_maximized;
-    private bool is_tiled;
+
+    /* AspectFrame for the game */
+    private Gtk.AspectFrame game_aspect;
 
     /* Game being played */
     private Game? game = null;
@@ -44,7 +44,6 @@ public class Quadrapassel : Gtk.Application
     private SimpleAction pause_action;
 
     private Gtk.Button pause_play_button;
-    private Gtk.Image pause_play_button_image;
 
     private Gtk.Dialog preferences_dialog;
     private Gtk.SpinButton starting_level_spin;
@@ -81,7 +80,7 @@ public class Quadrapassel : Gtk.Application
     {
         base.startup ();
 
-        Gtk.Settings.get_default ().set ("gtk-application-prefer-dark-theme", true);
+        Adw.StyleManager.get_default ().set_color_scheme (FORCE_DARK);
 
         add_action_entries (action_entries, this);
         set_accels_for_action ("app.new-game", {"<Primary>n"});
@@ -95,20 +94,18 @@ public class Quadrapassel : Gtk.Application
 
         window = new Gtk.ApplicationWindow (this);
         window.icon_name = "org.gnome.Quadrapassel";
-        window.set_events (window.get_events () | Gdk.EventMask.KEY_PRESS_MASK | Gdk.EventMask.KEY_RELEASE_MASK);
         window.title = _("Quadrapassel");
-        window.size_allocate.connect (size_allocate_cb);
-        window.window_state_event.connect (window_state_event_cb);
-        window.key_press_event.connect (key_press_event_cb);
-        window.key_release_event.connect (key_release_event_cb);
+
+        event_controller_key = new Gtk.EventControllerKey ();
+        event_controller_key.key_pressed.connect (key_press_event_cb);
+        event_controller_key.key_released.connect (key_release_event_cb);
+        ((Gtk.Widget)window).add_controller (event_controller_key);
+
         window.set_default_size (settings.get_int ("window-width"), settings.get_int ("window-height"));
         if (settings.get_boolean ("window-is-maximized"))
             window.maximize ();
 
         var headerbar = new Gtk.HeaderBar ();
-        headerbar.show_close_button = true;
-        headerbar.set_title (_("Quadrapassel"));
-        headerbar.show ();
         window.set_titlebar (headerbar);
 
         var menu = new Menu ();
@@ -122,80 +119,84 @@ public class Quadrapassel : Gtk.Application
         section.append (_("_Help"), "app.help");
         section.append (_("_About Quadrapassel"), "app.about");
         menu_button = new Gtk.MenuButton ();
-        menu_button.set_image (new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.BUTTON));
-        menu_button.show ();
+        menu_button.set_icon_name ("open-menu-symbolic");
         menu_button.set_menu_model (menu);
 
-        headerbar.pack_end(menu_button);
+        headerbar.pack_end (menu_button);
 
         var game_grid = new Gtk.Grid ();
-        game_grid.set_column_homogeneous (true);
-        window.add (game_grid);
+        window.set_child (game_grid);
 
         view = new GameView ();
+        view.hexpand = true;
+        view.vexpand = true;
         view.theme = settings.get_string ("theme");
         view.mute = !settings.get_boolean ("sound");
         view.show_shadow = settings.get_boolean ("show-shadow");
         view.game = new Game (20, 10, 1, 20, 10); // Game board size, changed width to 10
-        view.show ();
-        var game_aspect = new Gtk.AspectFrame (null, 0.5f, 0.5f, 10.0f/20.0f, false); // change to 10 from 14
-        game_aspect.show ();
-        game_aspect.add (view);
-        game_aspect.border_width = 1;
+        game_aspect = new Gtk.AspectFrame (0.5f, 0.5f, 10.0f/20.0f, false); // change to 10 from 14
+        game_aspect.set_size_request (200, 400);
+        game_aspect.set_child (view);
+        game_aspect.receives_default = true;
+        game_aspect.focusable = true;
+        game_aspect.margin_end = 12;
         game_grid.attach (game_aspect, 0, 1, 2, 17);
 
         pause_play_button = new Gtk.Button ();
-        pause_play_button_image = new Gtk.Image.from_icon_name ("media-playback-start-symbolic", Gtk.IconSize.DIALOG);
-        pause_play_button.add (pause_play_button_image);
+        pause_play_button.set_icon_name ("media-playback-start-symbolic");
         pause_play_button.action_name = "app.new-game";
         pause_play_button.tooltip_text = _("Start a new game");
-        pause_play_button.margin = 30;
-        pause_play_button_image.show ();
-        pause_play_button.show ();
+        pause_play_button.add_css_class ("pause-play-button");
+        pause_play_button.set_receives_default (false);
 
-        var preview_frame = new Gtk.AspectFrame (_("Next"), 0.5f, 0.5f, 1.0f, false);
-        preview_frame.set_label_align (0.5f, 1.0f);
+        var preview_label = new Gtk.Label (null);
+        preview_label.set_markup("<span color='gray'>%s</span>".printf (_("Next")));
+        preview_label.halign = CENTER;
+        preview_label.valign = CENTER;
+        game_grid.attach (preview_label, 2, 0, 1, 1);
+
+        var preview_frame = new Gtk.AspectFrame (0.5f, 0.5f, 1.0f, false);
+        preview_frame.hexpand = true;
+        preview_frame.vexpand = true;
+        preview_frame.set_size_request (120, 120);
         preview = new Preview (preview_frame);
         preview.theme = settings.get_string ("theme");
         preview.enabled = settings.get_boolean ("do-preview");
-        preview_frame.add (preview);
-        preview_frame.show ();
-        preview.show ();
+        preview_frame.set_child (preview);
 
         game_grid.attach (preview_frame, 2, 1, 1, 3);
-        game_grid.show ();
 
         var label = new Gtk.Label (null);
         label.set_markup ("<span color='gray'>%s</span>".printf (_("Score")));
-        label.set_alignment (0.5f, 0.5f);
-        label.show ();
+        label.halign = CENTER;
+        label.valign = CENTER;
         game_grid.attach (label, 2, 5, 1, 1);
         score_label = new Gtk.Label ("<big>-</big>");
-        score_label.set_use_markup (true);
-        score_label.set_alignment (0.5f, 0.0f);
-        score_label.show ();
+        score_label.use_markup = true;
+        score_label.halign = CENTER;
+        score_label.valign = CENTER;
         game_grid.attach (score_label, 2, 6, 1, 2);
 
         label = new Gtk.Label (null);
         label.set_markup ("<span color='gray'>%s</span>".printf (_("Lines")));
-        label.set_alignment (0.5f, 0.5f);
-        label.show ();
+        label.halign = CENTER;
+        label.valign = CENTER;
         game_grid.attach (label, 2, 9, 1, 1);
         n_destroyed_label = new Gtk.Label ("<big>-</big>");
         n_destroyed_label.set_use_markup (true);
-        n_destroyed_label.set_alignment (0.5f, 0.0f);
-        n_destroyed_label.show ();
+        n_destroyed_label.halign = CENTER;
+        n_destroyed_label.valign = CENTER;
         game_grid.attach (n_destroyed_label, 2, 10, 1, 2);
 
         label = new Gtk.Label (null);
         label.set_markup ("<span color='gray'>%s</span>".printf (_("Level")));
-        label.set_alignment (0.5f, 0.5f);
-        label.show ();
+        label.halign = CENTER;
+        label.valign = CENTER;
         game_grid.attach (label, 2, 13, 1, 1);
         level_label = new Gtk.Label ("<big>-</big>");
-        level_label.set_use_markup (true);
-        level_label.set_alignment (0.5f, 0.0f);
-        level_label.show ();
+        level_label.use_markup = true;
+        level_label.halign = CENTER;
+        level_label.valign = CENTER;
         game_grid.attach (level_label, 2, 14, 1, 2);
 
         game_grid.attach (pause_play_button, 2, 16, 1, 2);
@@ -213,31 +214,19 @@ public class Quadrapassel : Gtk.Application
         pause_action.set_enabled (false);
     }
 
-    private void size_allocate_cb (Gtk.Allocation allocation)
-    {
-        if (is_maximized || is_tiled)
-            return;
-        window.get_size (out window_width, out window_height);
-    }
-
-    private bool window_state_event_cb (Gdk.EventWindowState event)
-    {
-        if ((event.changed_mask & Gdk.WindowState.MAXIMIZED) != 0)
-            is_maximized = (event.new_window_state & Gdk.WindowState.MAXIMIZED) != 0;
-        /* We don’t save this state, but track it for saving size allocation */
-        if ((event.changed_mask & Gdk.WindowState.TILED) != 0)
-            is_tiled = (event.new_window_state & Gdk.WindowState.TILED) != 0;
-        return false;
-    }
-
     protected override void shutdown ()
     {
         base.shutdown ();
 
         /* Save window state */
-        settings.set_int ("window-width", window_width);
-        settings.set_int ("window-height", window_height);
-        settings.set_boolean ("window-is-maximized", is_maximized);
+        settings.set_int ("window-width", window.get_width());
+        int width, height;
+        window.get_default_size (out width, out height);
+
+        /* Save window state */
+        settings.set_int ("window-width", width);
+        settings.set_int ("window-height", height);
+        settings.set_boolean ("window-is-maximized", window.maximized);
 
         /* Record the score if the game isn't over. */
         if (game != null && !game.game_over && game.score > 0)
@@ -277,26 +266,27 @@ public class Quadrapassel : Gtk.Application
                                                           window,
                                                           Gtk.DialogFlags.USE_HEADER_BAR,
                                                           null);
-        preferences_dialog.set_border_width (5);
+        preferences_dialog.add_css_class ("margin-6");
         var vbox = (Gtk.Box) preferences_dialog.get_content_area ();
         vbox.set_spacing (2);
         preferences_dialog.close.connect (preferences_dialog_close_cb);
         preferences_dialog.response.connect (preferences_dialog_response_cb);
 
         var notebook = new Gtk.Notebook ();
-        notebook.set_border_width (5);
-        vbox.pack_start (notebook, true, true, 0);
+        notebook.add_css_class ("margin-6");
+        vbox.append (notebook);
 
         var grid = new Gtk.Grid ();
         grid.set_row_spacing (6);
         grid.set_column_spacing (12);
-        grid.border_width = 12;
+        grid.add_css_class ("margin-12");
         var label = new Gtk.Label (_("Game"));
         notebook.append_page (grid, label);
 
         /* pre-filled rows */
         label = new Gtk.Label.with_mnemonic (_("_Number of pre-filled rows:"));
-        label.set_alignment (0, 0.5f);
+        label.valign = CENTER;
+        label.halign = START;
         label.set_hexpand (true);
         grid.attach (label, 0, 0, 1, 1);
 
@@ -311,8 +301,9 @@ public class Quadrapassel : Gtk.Application
 
         /* pre-filled rows density */
         label = new Gtk.Label.with_mnemonic (_("_Density of blocks in a pre-filled row:"));
-        label.set_alignment (0, 0.5f);
-        label.set_hexpand (true);
+        label.valign = CENTER;
+        label.halign = START;
+        label.hexpand = true;
         grid.attach (label, 0, 1, 1, 1);
 
         adj = new Gtk.Adjustment (settings.get_int ("line-fill-probability"), 0, 10, 1, 5, 0);
@@ -325,8 +316,9 @@ public class Quadrapassel : Gtk.Application
 
         /* starting level */
         label = new Gtk.Label.with_mnemonic (_("_Starting level:"));
-        label.set_alignment (0, 0.5f);
-        label.set_hexpand (true);
+        label.valign = CENTER;
+        label.halign = START;
+        label.hexpand = true;
         grid.attach (label, 0, 2, 1, 1);
 
         adj = new Gtk.Adjustment (settings.get_int ("starting-level"), 1, 20, 1, 5, 0);
@@ -396,28 +388,25 @@ public class Quadrapassel : Gtk.Application
         key_renderer.accel_cleared.connect (accel_cleared_cb);
         controls_view.insert_column_with_attributes (-1, "Key", key_renderer, "accel-key", 2, "accel-mods", 3);
 
-        var controls_list = new Gtk.ScrolledWindow (null, null);
-        controls_list.border_width = 12;
+        var controls_list = new Gtk.ScrolledWindow ();
+        controls_list.add_css_class ("margin-12");
+
         controls_list.hscrollbar_policy = Gtk.PolicyType.NEVER;
         controls_list.vscrollbar_policy = Gtk.PolicyType.ALWAYS;
-        controls_list.shadow_type = Gtk.ShadowType.IN;
-        controls_list.add (controls_view);
+        controls_list.set_child (controls_view);
         label = new Gtk.Label (_("Controls"));
         notebook.append_page (controls_list, label);
 
         /* theme page */
         vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        vbox.set_border_width (12);
+        vbox.add_css_class ("margin-12");
         label = new Gtk.Label (_("Theme"));
         notebook.append_page (vbox, label);
 
-        var theme_combo = new Gtk.ComboBox ();
-        vbox.pack_start (theme_combo, false, true, 0);
+        var theme_combo = new Gtk.ComboBoxText ();
+        vbox.append (theme_combo);
         var theme_store = new Gtk.ListStore (2, typeof (string), typeof (string));
         theme_combo.model = theme_store;
-        var renderer = new Gtk.CellRendererText ();
-        theme_combo.pack_start (renderer, true);
-        theme_combo.add_attribute (renderer, "text", 0);
 
         theme_store.append (out iter);
         theme_store.set (iter, 0, _("Plain"), 1, "plain", -1);
@@ -439,14 +428,25 @@ public class Quadrapassel : Gtk.Application
         if (settings.get_string ("theme") == "clean")
             theme_combo.set_active_iter (iter);
 
+        theme_store.append (out iter);
+        theme_store.set (iter, 0, _("Modern"), 1, "modern", -1);
+        if (settings.get_string ("theme") == "modern")
+            theme_combo.set_active_iter (iter);
+
         theme_combo.changed.connect (theme_combo_changed_cb);
 
-        theme_preview = new Preview (null);
-        theme_preview.game = new Game ();
+        var theme_preview_frame = new Gtk.AspectFrame (0.5f, 0.5f, 1.0f, false);
+        theme_preview_frame.hexpand = true;
+        theme_preview_frame.vexpand = true;
+        theme_preview_frame.set_size_request (120, 120);
+        theme_preview = new Preview (theme_preview_frame);
         theme_preview.theme = settings.get_string ("theme");
-        vbox.pack_start (theme_preview, true, true, 0);
+        theme_preview.game = new Game ();
+        theme_preview_frame.set_child (theme_preview);
+        theme_preview.theme = settings.get_string ("theme");
+        vbox.append (theme_preview_frame);
 
-        preferences_dialog.show_all ();
+        preferences_dialog.show ();
     }
 
     private void sound_toggle_toggled_cb ()
@@ -501,7 +501,7 @@ public class Quadrapassel : Gtk.Application
             // Throw up a dialog
             var dialog = new Gtk.MessageDialog (null, Gtk.DialogFlags.MODAL, Gtk.MessageType.WARNING, Gtk.ButtonsType.OK, _("Unable to change key, as this key already exists"));
             dialog.set_title (Environment.get_application_name ());
-            dialog.run ();
+            dialog.show ();
             dialog.destroy ();
             return;
         }
@@ -657,9 +657,12 @@ public class Quadrapassel : Gtk.Application
         }
     }
 
-    private bool key_press_event_cb (Gtk.Widget widget, Gdk.EventKey event)
+    private bool key_press_event_cb (Gtk.EventControllerKey controller,
+                                     uint keyval,
+                                     uint keycode,
+                                     Gdk.ModifierType state)
     {
-        var keyval = upper_key (event.keyval);
+        keyval = upper_key (keyval);
 
         if (game != null)
         {
@@ -722,26 +725,27 @@ public class Quadrapassel : Gtk.Application
         return false;
     }
 
-    private bool key_release_event_cb (Gtk.Widget widget, Gdk.EventKey event)
+    private void key_release_event_cb (Gtk.EventControllerKey controller,
+                                       uint keyval1,
+                                       uint keycode,
+                                       Gdk.ModifierType state)
     {
-        var keyval = upper_key (event.keyval);
+        var keyval = upper_key (keyval1);
 
         if (game == null)
-            return false;
+            return;
 
         if (keyval == upper_key (settings.get_int ("key-left")) ||
             keyval == upper_key (settings.get_int ("key-right")))
         {
             game.stop_moving ();
-            return true;
+            return;
         }
         else if (keyval == upper_key (settings.get_int ("key-down")))
         {
             game.set_fast_forward (false);
-            return true;
+            return;
         }
-
-        return false;
     }
 
     private uint upper_key (uint keyval)
@@ -765,10 +769,16 @@ public class Quadrapassel : Gtk.Application
         }
 
         // Set game dimension, change to 10
-        game = new Game (20, 10, settings.get_int ("starting-level"), settings.get_int ("line-fill-height"), settings.get_int ("line-fill-probability"), settings.get_boolean ("pick-difficult-blocks"));
+        game = new Game (20, 10,
+                         settings.get_int ("starting-level"),
+                         settings.get_int ("line-fill-height"),
+                         settings.get_int ("line-fill-probability"),
+                         settings.get_boolean ("pick-difficult-blocks"));
+
         game.pause_changed.connect (pause_changed_cb);
         game.shape_landed.connect (shape_landed_cb);
         game.complete.connect (complete_cb);
+        game_aspect.grab_focus();
         preview.game = game;
         view.game = game;
 
@@ -783,13 +793,16 @@ public class Quadrapassel : Gtk.Application
     {
         if (game.paused)
         {
-            pause_play_button_image.set_from_icon_name ("media-playback-start-symbolic", Gtk.IconSize.DIALOG);
+            pause_play_button.set_icon_name ("media-playback-start-symbolic");
             pause_play_button.tooltip_text = _("Unpause the game");
         }
         else
         {
-            pause_play_button_image.set_from_icon_name ("media-playback-pause-symbolic", Gtk.IconSize.DIALOG);
+            pause_play_button.set_icon_name ("media-playback-pause-symbolic");
             pause_play_button.tooltip_text = _("Pause the game");
+
+            // Focus the game aspect again
+            game_aspect.grab_focus();
         }
     }
 
@@ -801,7 +814,7 @@ public class Quadrapassel : Gtk.Application
     private void complete_cb ()
     {
         pause_action.set_enabled (false);
-        pause_play_button_image.set_from_icon_name ("view-refresh-symbolic" , Gtk.IconSize.DIALOG);
+        pause_play_button.set_icon_name ("view-refresh-symbolic");
         pause_play_button.action_name = "app.new-game";
         pause_play_button.tooltip_text = _("Start a new game");
 
@@ -812,21 +825,25 @@ public class Quadrapassel : Gtk.Application
             history.add (entry);
             history.save ();
 
-            if (show_scores (entry, true) == Gtk.ResponseType.OK)
-                new_game ();
+            show_scores(entry, true);
         }
     }
 
-    private int show_scores (HistoryEntry? selected_entry = null, bool show_close = false)
+    private void score_dialog_cb(Gtk.Dialog dialog, int response) {
+        if (response == Gtk.ResponseType.OK) {
+            new_game();
+        }
+
+        dialog.destroy();
+    }
+
+    private void show_scores (HistoryEntry? selected_entry = null, bool show_close = false)
     {
         var dialog = new ScoreDialog (history, selected_entry, show_close);
         dialog.modal = true;
         dialog.transient_for = window;
-
-        var result = dialog.run ();
-        dialog.destroy ();
-
-        return result;
+        dialog.response.connect(score_dialog_cb);
+        dialog.show();
     }
 
     private void update_score ()
@@ -849,14 +866,7 @@ public class Quadrapassel : Gtk.Application
 
     private void help_cb ()
     {
-        try
-        {
-            Gtk.show_uri_on_window (window, "help:quadrapassel", Gtk.get_current_event_time ());
-        }
-        catch (Error e)
-        {
-            warning ("Failed to show help: %s", e.message);
-        }
+        Gtk.show_uri (window, "help:quadrapassel", Gdk.CURRENT_TIME);
     }
 
     private void about_cb ()
@@ -895,38 +905,9 @@ public class Quadrapassel : Gtk.Application
         Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
         Intl.textdomain (GETTEXT_PACKAGE);
 
-        var context = new OptionContext ("");
-
-        context.add_group (Gtk.get_option_group (true));
-        context.add_group (Clutter.get_option_group_without_init ());
-
-        try
-        {
-            context.parse (ref args);
-        }
-        catch (Error e)
-        {
-            stderr.printf ("%s\n", e.message);
-            return Posix.EXIT_FAILURE;
-        }
-
         Environment.set_application_name (_("Quadrapassel"));
 
         Gtk.Window.set_default_icon_name ("quadrapassel");
-
-        try
-        {
-            GtkClutter.init_with_args (ref args, "", new OptionEntry[0], null);
-        }
-        catch (Error e)
-        {
-            var dialog = new Gtk.MessageDialog (null, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR, Gtk.ButtonsType.NONE, "Unable to initialize Clutter:\n%s", e.message);
-            dialog.set_title (Environment.get_application_name ());
-            dialog.run ();
-            dialog.destroy ();
-            return Posix.EXIT_FAILURE;
-        }
-
         var app = new Quadrapassel ();
         return app.run (args);
     }
