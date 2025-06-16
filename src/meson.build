@@ -9,12 +9,20 @@ quadrapassel_sources = [
     'score-dialog.vala'
 ]
 
-quadrapassel_sources += gnome.compile_resources('quadrapassel-resources',
-    'quadrapassel.gresource.xml',
+resources_conf = configuration_data()
+resources_conf.set('app-id', app_id)
+resources_conf.set('base-id-slashed', '/' + base_id.replace('.', '/'))
+resources = gnome.compile_resources(
+    'resources',
+    configure_file(
+        input: '@0@.gresource.xml'.format(base_id),
+        output: '@BASENAME@',
+        configuration: resources_conf,
+    ),
     source_dir: 'gresource',
     c_name: 'quadrapassel'
 )
-
+quadrapassel_sources += resources
 executable(meson.project_name(),
     quadrapassel_sources,
     install: true,

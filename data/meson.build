@@ -1,38 +1,56 @@
 # Install scalable icon
 install_data(
-        join_paths('icons', 'hicolor', 'scalable', '@0@.svg'.format(project_id)),
+        join_paths('icons', 'hicolor', 'scalable', '@0@.svg'.format(app_id)),
     install_dir: join_paths(get_option('datadir'), 'icons', 'hicolor', 'scalable', 'apps')
 )
 # Install symbolic icon
 install_data(
-        join_paths('icons', 'hicolor', 'symbolic', '@0@-symbolic.svg'.format(project_id)),
+        join_paths('icons', 'hicolor', 'symbolic', '@0@-symbolic.svg'.format(app_id)),
     install_dir: join_paths(get_option('datadir'), 'icons', 'hicolor', 'symbolic', 'apps')
 )
 
-# Install gschema
-install_data(
-  '@0@.gschema.xml'.format(project_id),
-  install_dir : join_paths(get_option('datadir'), 'glib-2.0', 'schemas')
-)
+base_id = 'org.gnome.Quadrapassel'
 
+# GSchema file
+gschema_conf = configuration_data()
+gschema_conf.set('app-id', app_id)
+gschema_conf.set('base-id-slashed', '/' + base_id.replace('.', '/'))
+gschema_conf.set('gettext-package', meson.project_name())
+
+configure_file(
+  input: '@0@.gschema.xml'.format(base_id),
+  output: '@0@.gschema.xml'.format(app_id),
+  install: true,
+  install_dir: datadir / 'glib-2.0' / 'schemas',
+  configuration: gschema_conf
+)
 
 # D-Bus service file
 service_conf = configuration_data()
+service_conf.set('app-id', app_id)
 service_conf.set('bindir', bindir)
+service_conf.set('exec-name', meson.project_name())
 
 configure_file(
-    input: '@0@.service.in'.format(project_id),
-    output: '@0@.service'.format(project_id),
+    input: '@0@.service.in'.format(base_id),
+    output: '@0@.service'.format(app_id),
     install: true,
     install_dir: join_paths(get_option('datadir'), 'dbus-1', 'services'),
     configuration: service_conf
 )
 
-
 # Desktop file
+desktop_conf = configuration_data()
+desktop_conf.set('app-id', app_id)
+desktop_conf.set('exec-name', meson.project_name())
+
 desktop_file = i18n.merge_file(
-    input: '@0@.desktop.in'.format(project_id),
-    output: '@0@.desktop'.format(project_id),
+    input: configure_file(
+      input: '@0@.desktop.in'.format(base_id),
+      output: '@BASENAME@',
+      configuration: desktop_conf
+    ),
+    output: '@0@.desktop'.format(app_id),
     po_dir: join_paths(meson.source_root(), 'po'),
     type: 'desktop',
     install: true,
@@ -52,9 +70,18 @@ if desktop_file_validate.found()
 endif
 
 # AppData file
+appdata_conf = configuration_data()
+appdata_conf.set('app-id', app_id)
+appdata_conf.set('developer-id', app_id.to_lower())
+appdata_conf.set('project-name', meson.project_name())
+
 appdata_file = i18n.merge_file(
-    input: '@0@.appdata.xml.in'.format(project_id),
-    output: '@0@.appdata.xml'.format(project_id),
+    input: configure_file(
+        input: '@0@.appdata.xml.in'.format(base_id),
+        output: '@BASENAME@',
+        configuration: appdata_conf
+    ),
+    output: '@0@.appdata.xml'.format(app_id),
     po_dir: join_paths(meson.source_root(), 'po'),
     install: true,
     install_dir: join_paths(get_option('datadir'), 'metainfo')
