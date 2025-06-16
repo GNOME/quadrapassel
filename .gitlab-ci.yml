@@ -1,4 +1,10 @@
-include: 'https://gitlab.gnome.org/GNOME/citemplates/raw/master/flatpak/flatpak_ci_initiative.yml'
+include:
+  - project: 'GNOME/citemplates'
+    file: 'flatpak/flatpak_ci_initiative.yml'
+  - component: gitlab.gnome.org/GNOME/citemplates/release-service@master
+    inputs:
+      dist-job-name: "flatpak"
+      tarball-artifact-path: "${TARBALL_ARTIFACT_PATH}"
 
 variables:
     MANIFEST_PATH: "build-aux/flatpak/org.gnome.Quadrapassel.Devel.json"
@@ -6,7 +12,7 @@ variables:
     APP_ID: "org.gnome.Quadrapassel.Devel"
     RUNTIME_REPO: "https://nightly.gnome.org/gnome-nightly.flatpakrepo"
     BUNDLE: "quadrapassel-dev.flatpak"
-
+    TARBALL_ARTIFACT_PATH: ".flatpak-builder/build/${FLATPAK_MODULE}/_flatpak_build/meson-dist/${CI_PROJECT_NAME}-${CI_COMMIT_TAG}.tar.xz"
 
 # Build Flatpak for x86_64
 flatpak@x86_64:
@@ -15,6 +21,7 @@ flatpak@x86_64:
 # Build Flatpak for aarch64
 flatpak@aarch64:
   extends: ['.flatpak@aarch64']
+  allow_failure: true
 
 nightly@x86_64:
   extends: '.publish_nightly'
@@ -23,3 +30,4 @@ nightly@x86_64:
 nightly@aarch64:
   extends: '.publish_nightly'
   needs: ['flatpak@aarch64']
+  allow_failure: true
