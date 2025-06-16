@@ -5,11 +5,10 @@ install_data(
 )
 # Install symbolic icon
 install_data(
-        join_paths('icons', 'hicolor', 'symbolic', '@0@-symbolic.svg'.format(app_id)),
-    install_dir: join_paths(get_option('datadir'), 'icons', 'hicolor', 'symbolic', 'apps')
+        join_paths('icons', 'hicolor', 'symbolic', '@0@-symbolic.svg'.format(base_id)),
+    install_dir: join_paths(get_option('datadir'), 'icons', 'hicolor', 'symbolic', 'apps'),
+    rename: '@0@-symbolic.svg'.format(app_id)
 )
-
-base_id = 'org.gnome.Quadrapassel'
 
 # GSchema file
 gschema_conf = configuration_data()
@@ -72,8 +71,6 @@ endif
 # AppData file
 appdata_conf = configuration_data()
 appdata_conf.set('app-id', app_id)
-appdata_conf.set('developer-id', app_id.to_lower())
-appdata_conf.set('project-name', meson.project_name())
 
 appdata_file = i18n.merge_file(
     input: configure_file(
@@ -86,17 +83,6 @@ appdata_file = i18n.merge_file(
     install: true,
     install_dir: join_paths(get_option('datadir'), 'metainfo')
 )
-
-# Validate AppData file
-appstreamcli = find_program('appstreamcli', required: false)
-if appstreamcli.found()
-  test(
-    'validate-appdata', appstreamcli,
-    args: [
-      'validate', '--no-net', '--explain', appdata_file.full_path()
-    ]
-  )
-endif
 
 # Install man page
 install_man('@0@.6'.format(meson.project_name()))

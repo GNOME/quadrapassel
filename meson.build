@@ -1,6 +1,7 @@
 project('quadrapassel', 'vala', 'c',
         version: '40.2')
 
+base_id = 'org.gnome.Quadrapassel'
 app_id = 'org.gnome.Quadrapassel.Devel'
 
 # used to install help

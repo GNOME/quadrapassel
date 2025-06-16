@@ -2,7 +2,7 @@
 Name=Quadrapassel
 Comment=Fit falling blocks together
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-Icon=org.gnome.Quadrapassel
+Icon=@app-id@
 Exec=quadrapassel
 Terminal=false
 Type=Application

@@ -52,7 +52,7 @@
     <kudo>UserDocs</kudo>
   </kudos>
   <translation type="gettext">quadrapassel</translation>
-  <developer id="@developer-id@">
+  <developer id="org.gnome">
     <name>The GNOME Project</name>
   </developer>
   <content_rating type="oars-1.1" />
