@@ -73,7 +73,7 @@ public class Quadrapassel : Adw.Application
 
     public Quadrapassel ()
     {
-        Object (application_id: "org.gnome.Quadrapassel.Devel", flags: ApplicationFlags.FLAGS_NONE, resource_base_path: "/org/gnome/Quadrapassel");
+        Object (application_id: APP_ID, flags: ApplicationFlags.FLAGS_NONE, resource_base_path: "/org/gnome/Quadrapassel");
     }
 
     protected override void startup ()
@@ -90,10 +90,10 @@ public class Quadrapassel : Adw.Application
         set_accels_for_action ("app.quit", {"<Primary>q"});
         pause_action = lookup_action ("pause") as SimpleAction;
 
-        settings = new Settings ("org.gnome.Quadrapassel");
+        settings = new Settings (APP_ID);
 
         window = new Gtk.ApplicationWindow (this);
-        window.icon_name = "org.gnome.Quadrapassel";
+        window.icon_name = APP_ID;
         window.title = _("Quadrapassel");
 
         event_controller_key = new Gtk.EventControllerKey ();
@@ -871,7 +871,7 @@ public class Quadrapassel : Adw.Application
 
     private void about_cb ()
     {
-        string[] authors = { "GNOME Games Team", "Maintainer: John Ward<john@johnward.net>", null };
+        string[] authors = { "GNOME Games Team", "Maintainer: Will Warner<wwarner@gnome.org>", null };
         string[] documenters = { "Angela Boyle", null };
 
         Gtk.show_about_dialog (window,
@@ -883,7 +883,7 @@ public class Quadrapassel : Adw.Application
                                "authors", authors,
                                "documenters", documenters,
                                "translator-credits", _("translator-credits"),
-                               "logo-icon-name", "org.gnome.Quadrapassel",
+                               "logo-icon-name", APP_ID,
                                "website", "https://wiki.gnome.org/Apps/Quadrapassel",
                                null);
     }

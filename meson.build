@@ -27,11 +27,12 @@ libm_dependency = cc.find_library('m', required : true)
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language: 'c')
 
 localedir = join_paths(get_option('prefix'), get_option('localedir'))
-datadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
+datadir = join_paths(get_option('prefix'), get_option('datadir'))
 soundsdir = join_paths(datadir, 'sounds')
 bindir = join_paths (get_option ('prefix'), get_option ('bindir'))
 
 conf = configuration_data ()
+conf.set_quoted ('APP_ID', app_id)
 conf.set_quoted ('VERSION', meson.project_version())
 conf.set_quoted ('GETTEXT_PACKAGE', meson.project_name())
 conf.set_quoted ('SOUND_DIRECTORY', soundsdir)
@@ -45,6 +46,8 @@ subdir('po')
 subdir('help')
 subdir('src')
 
-meson.add_install_script(python3.find_python().path(), join_paths(meson.source_root(), 
-                                                                  'build-aux', 
-                                                                  'meson_post_install.py'))
+gnome.post_install(
+  gtk_update_icon_cache: true,
+  glib_compile_schemas: true,
+  update_desktop_database: true,
+)
