@@ -3,21 +3,22 @@
 # Aron Xu <aronxu@gnome.org>, 2011.
 # YunQiang Su <wzssyqa@gmail.com>, 2011, 2012.
 # Mingcong Bai <jeffbai@aosc.xyz>, 2018.
+# lumingzh <lumingzh@qq.com>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2021-01-27 12:00+0000\n"
-"PO-Revision-Date: 2021-01-29 17:04+0800\n"
-"Last-Translator: mars <gzhqyz@gmail.com>\n"
-"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
+"POT-Creation-Date: 2025-06-16 21:40+0000\n"
+"PO-Revision-Date: 2025-06-18 08:52+0800\n"
+"Last-Translator: lumingzh <lumingzh@qq.com>\n"
+"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Gtranslator 48.0\n"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -111,7 +112,7 @@ msgstr "是否挑选难以放置的方块"
 msgid "Whether to pick blocks that are hard to place."
 msgstr "是否挑选难以放置的方块。"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:371
+#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:363
 msgid "Move left"
 msgstr "向左移动"
 
@@ -119,7 +120,7 @@ msgstr "向左移动"
 msgid "Key press to move left."
 msgstr "左移的按键。"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:374
+#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:366
 msgid "Move right"
 msgstr "向右移动"
 
@@ -127,7 +128,7 @@ msgstr "向右移动"
 msgid "Key press to move right."
 msgstr "右移的按键。"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:377
+#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:369
 msgid "Move down"
 msgstr "下移"
 
@@ -135,7 +136,7 @@ msgstr "下移"
 msgid "Key press to move down."
 msgstr "下移的按键。"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:380
+#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:372
 msgid "Drop"
 msgstr "掉下"
 
@@ -143,7 +144,7 @@ msgstr "掉下"
 msgid "Key press to drop."
 msgstr "下落的按键。"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:383
+#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:375
 msgid "Rotate"
 msgstr "旋转"
 
@@ -151,7 +152,7 @@ msgstr "旋转"
 msgid "Key press to rotate."
 msgstr "旋转的按键。"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
+#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:378
 msgid "Pause"
 msgstr "暂停"
 
@@ -179,19 +180,18 @@ msgstr "主窗口的高度(像素)"
 msgid "true if the window is maximized"
 msgstr "若窗口已最大化则为 true"
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:7
-#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
-#: src/quadrapassel.vala:909
+#: data/org.gnome.Quadrapassel.appdata.xml.in:8
+#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:97
+#: src/quadrapassel.vala:878 src/quadrapassel.vala:908
 msgid "Quadrapassel"
 msgstr "俄罗斯方块"
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:8
+#: data/org.gnome.Quadrapassel.appdata.xml.in:9
 #: data/org.gnome.Quadrapassel.desktop.in:4
 msgid "Fit falling blocks together"
 msgstr "将下落的方块组合在一起"
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:10
+#: data/org.gnome.Quadrapassel.appdata.xml.in:11
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -203,7 +203,7 @@ msgstr ""
 "动它们，努力使它们堆成墙。每堆平一层，这层就会消失并加分。方块堆积过高堵住时"
 "游戏结束。得分高后，游戏会升级，方块下落会加快。"
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:17
+#: data/org.gnome.Quadrapassel.appdata.xml.in:18
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -213,159 +213,160 @@ msgstr ""
 "如果你想挑战自己，可以设置 Quadrapassel 的方块初始下落速度，或以填充了一些方"
 "块的状态开始游戏。或者，可以选择落下哪种方块而不是随机方块，这样会更难放。"
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:33
-msgid "The GNOME Project"
-msgstr "GNOME 项目"
-
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in:12
 msgid "tetris;"
 msgstr "tetris;俄罗斯方块;"
 
-#: src/game-view.vala:335
+#: src/game-view.vala:365
 msgid "Paused"
 msgstr "暂停"
 
-#: src/game-view.vala:337
+#: src/game-view.vala:367
 msgid "Game Over"
 msgstr "游戏结束"
 
-#: src/quadrapassel.vala:117
+#: src/quadrapassel.vala:114
 msgid "_New Game"
 msgstr "新建游戏(_N)"
 
-#: src/quadrapassel.vala:118
+#: src/quadrapassel.vala:115
 msgid "_Scores"
 msgstr "得分(_S)"
 
-#: src/quadrapassel.vala:121
+#: src/quadrapassel.vala:118
 msgid "_Preferences"
 msgstr "首选项(_P)"
 
-#: src/quadrapassel.vala:122
+#: src/quadrapassel.vala:119
 msgid "_Help"
 msgstr "帮助(_H)"
 
-#: src/quadrapassel.vala:123
+#: src/quadrapassel.vala:120
 msgid "_About Quadrapassel"
 msgstr "关于俄罗斯方块(_A）"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
+#: src/quadrapassel.vala:148 src/quadrapassel.vala:819
 msgid "Start a new game"
 msgstr "开始新游戏"
 
-#: src/quadrapassel.vala:156
+#: src/quadrapassel.vala:153
 msgid "Next"
 msgstr "下一个"
 
-#: src/quadrapassel.vala:169 src/score-dialog.vala:51
+#: src/quadrapassel.vala:170 src/score-dialog.vala:48
 msgid "Score"
 msgstr "得分"
 
-#: src/quadrapassel.vala:180
+#: src/quadrapassel.vala:181
 msgid "Lines"
 msgstr "行数"
 
-#: src/quadrapassel.vala:191
+#: src/quadrapassel.vala:192
 msgid "Level"
 msgstr "级别"
 
-#: src/quadrapassel.vala:276
+#: src/quadrapassel.vala:265
 msgid "Preferences"
 msgstr "首选项"
 
-#: src/quadrapassel.vala:294
+#: src/quadrapassel.vala:283
 msgid "Game"
 msgstr "游戏"
 
 #. pre-filled rows
-#: src/quadrapassel.vala:298
+#: src/quadrapassel.vala:287
 msgid "_Number of pre-filled rows:"
 msgstr "预填充行行数(_N)："
 
 #. pre-filled rows density
-#: src/quadrapassel.vala:313
+#: src/quadrapassel.vala:303
 msgid "_Density of blocks in a pre-filled row:"
 msgstr "预填充行中方块的浓度(_D)："
 
 #. starting level
-#: src/quadrapassel.vala:327
+#: src/quadrapassel.vala:318
 msgid "_Starting level:"
 msgstr "起始级别(_S)："
 
-#: src/quadrapassel.vala:340
+#: src/quadrapassel.vala:332
 msgid "_Enable sounds"
 msgstr "启用声音(_E)"
 
-#: src/quadrapassel.vala:345
+#: src/quadrapassel.vala:337
 msgid "Choose difficult _blocks"
 msgstr "选择困难的方块(_B)"
 
-#: src/quadrapassel.vala:350
+#: src/quadrapassel.vala:342
 msgid "_Preview next block"
 msgstr "预览下一个方块(_P)"
 
 #. rotate counter clock wise
-#: src/quadrapassel.vala:356
+#: src/quadrapassel.vala:348
 msgid "_Rotate blocks counterclockwise"
 msgstr "逆时针旋转块(_R)"
 
-#: src/quadrapassel.vala:361
+#: src/quadrapassel.vala:353
 msgid "Show _where the block will land"
 msgstr "显示方块将落到何处(_W)"
 
-#: src/quadrapassel.vala:405
+#: src/quadrapassel.vala:397
 msgid "Controls"
 msgstr "控制"
 
-#: src/quadrapassel.vala:411
+#: src/quadrapassel.vala:403
 msgid "Theme"
 msgstr "主题"
 
-#: src/quadrapassel.vala:423
+#: src/quadrapassel.vala:412
 msgid "Plain"
 msgstr "朴素"
 
-#: src/quadrapassel.vala:428
+#: src/quadrapassel.vala:417
 msgid "Tango Flat"
 msgstr "Tango 平面"
 
-#: src/quadrapassel.vala:433
+#: src/quadrapassel.vala:422
 msgid "Tango Shaded"
 msgstr "Tango 阴影"
 
-#: src/quadrapassel.vala:438
+#: src/quadrapassel.vala:427
 msgid "Clean"
 msgstr "简洁"
+
+#: src/quadrapassel.vala:432
+msgid "Modern"
+msgstr "现代"
 
 #. Throw up a dialog
 #: src/quadrapassel.vala:502
 msgid "Unable to change key, as this key already exists"
 msgstr "无法更改密钥，因为此密钥已存在"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:797
 msgid "Unpause the game"
 msgstr "继续游戏"
 
-#: src/quadrapassel.vala:788
+#: src/quadrapassel.vala:802
 msgid "Pause the game"
 msgstr "暂停游戏"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:880
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
 msgstr ""
 "经典的旋转方块组合成完整行的游戏。但请注意，方块堆积得过高会导致游戏结束！"
 
-#: src/quadrapassel.vala:871
+#: src/quadrapassel.vala:885
 msgid "translator-credits"
 msgstr ""
 "Yang Zhang <zyangmath@gmail.com>, 2007\n"
 "Ping Z <zpsigma@gmail.com>, 2007\n"
 "Xhacker Liu <liu.dongyuan@gmail.com>, 2010\n"
 "Wylmer Wang <wantinghard@gmail.com>, 2014\n"
-"Mingcong Bai <jeffbai@aosc.xyz>, 2018"
+"Mingcong Bai <jeffbai@aosc.xyz>, 2018\n"
+"lumingzh <lumingzh@qq.com>, 2025"
 
 #: src/score-dialog.vala:26
 msgid "_Close"
@@ -379,9 +380,12 @@ msgstr "新游戏"
 msgid "_OK"
 msgstr "确定(_O)"
 
-#: src/score-dialog.vala:48
+#: src/score-dialog.vala:45
 msgid "Date"
 msgstr "日期"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "GNOME 项目"
 
 #~ msgid "A classic game of fitting falling blocks together"
 #~ msgstr "经典的组合下落方块（俄罗斯方块）游戏"
