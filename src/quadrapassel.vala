@@ -91,7 +91,10 @@ public class Quadrapassel : Adw.Application
         pause_action = lookup_action ("pause") as SimpleAction;
 
         settings = new Settings (APP_ID);
+    }
 
+    private void create_window ()
+    {
         window = new Gtk.ApplicationWindow (this);
         window.icon_name = APP_ID;
         window.title = _("Quadrapassel");
@@ -240,6 +243,9 @@ public class Quadrapassel : Adw.Application
 
     protected override void activate ()
     {
+        if (window == null)
+            create_window ();
+
         window.present ();
     }
 
