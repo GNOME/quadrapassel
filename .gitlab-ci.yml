@@ -1,10 +1,10 @@
-include:
-  - project: 'gnome/citemplates'
-    file: 'flatpak/flatpak_ci_initiative.yml'
+iinclude:
+  - project: "GNOME/citemplates"
+    file: "flatpak/flatpak_ci_initiative.yml"
   - component: gitlab.gnome.org/GNOME/citemplates/release-service@master
     inputs:
-      dist-job-name: 'flatpak@x86_64'
-      tarball-artifact-path: '${TARBALL_ARTIFACT_PATH}'
+      dist-job-name: "flatpak"
+      tarball-artifact-path: "${TARBALL_ARTIFACT_PATH}"
 
 variables:
     MANIFEST_PATH: "build-aux/flatpak/org.gnome.Quadrapassel.Devel.json"
