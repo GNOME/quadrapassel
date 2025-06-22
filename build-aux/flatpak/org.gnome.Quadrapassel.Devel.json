@@ -64,7 +64,7 @@
       "sources": [
         {
           "type": "git",
-          "url": "https://anongit.freedesktop.org/git/libevdev.git"
+          "url": "https://gitlab.freedesktop.org/libevdev/libevdev.git"
         }
       ]
     },
