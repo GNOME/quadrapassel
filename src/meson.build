@@ -1,3 +1,11 @@
+blueprints = custom_target('blueprints',
+  input: files(
+    'help-overlay.blp',
+  ),
+  output: '.',
+  command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
+)
+
 quadrapassel_sources = [
     'vapi/config.vapi',
     'vapi/input-event-codes.vapi',
@@ -20,7 +28,8 @@ resources = gnome.compile_resources(
         configuration: resources_conf,
     ),
     source_dir: 'gresource',
-    c_name: 'quadrapassel'
+    c_name: 'quadrapassel',
+    dependencies: blueprints
 )
 quadrapassel_sources += resources
 executable(meson.project_name(),

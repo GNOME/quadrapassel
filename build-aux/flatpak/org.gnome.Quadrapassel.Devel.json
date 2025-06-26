@@ -1,5 +1,5 @@
 {
-  "app-id": "org.gnome.Quadrapassel.Devel",
+  "id": "org.gnome.Quadrapassel.Devel",
   "runtime": "org.gnome.Platform",
   "runtime-version": "master",
   "sdk": "org.gnome.Sdk",
@@ -60,15 +60,6 @@
       ]
     },
     {
-      "name": "libevdev",
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://gitlab.freedesktop.org/libevdev/libevdev.git"
-        }
-      ]
-    },
-    {
       "name": "libmanette",
       "buildsystem": "meson",
       "sources": [
@@ -77,6 +68,17 @@
           "url": "https://gitlab.gnome.org/GNOME/libmanette.git",
           "branch": "main"
         }
+      ],
+      "modules": [
+      	{
+      	  "name": "libevdev",
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://gitlab.freedesktop.org/libevdev/libevdev.git"
+            }
+	  ]
+	}
       ]
     },
     {

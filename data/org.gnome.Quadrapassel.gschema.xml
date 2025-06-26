@@ -58,47 +58,12 @@
       <summary>Whether to pick blocks that are hard to place</summary>
       <description>Whether to pick blocks that are hard to place.</description>
     </key>
-    <key name="key-left" type="i">
-      <default>65361</default>
-      <summary>Move left</summary>
-      <description>Key press to move left.</description>
-    </key>
-    <key name="key-right" type="i">
-      <default>65363</default>
-      <summary>Move right</summary>
-      <description>Key press to move right.</description>
-    </key>
-    <key name="key-down" type="i">
-      <default>65364</default>
-      <summary>Move down</summary>
-      <description>Key press to move down.</description>
-    </key>
-    <key name="key-drop" type="i">
-      <default>32</default>
-      <summary>Drop</summary>
-      <description>Key press to drop.</description>
-    </key>
-    <key name="key-rotate" type="i">
-      <default>65362</default>
-      <summary>Rotate</summary>
-      <description>Key press to rotate.</description>
-    </key>
-    <key name="key-pause" type="i">
-      <default>65299</default>
-      <summary>Pause</summary>
-      <description>Key press to pause.</description>
-    </key>
-    <key name="key-start" type="i">
-      <default>65293</default>
-      <summary>Enter</summary>
-      <description>Key to start the game</description>
-    </key>
     <key name="window-width" type="i">
-      <default>585</default>
+      <default>420</default>
       <summary>Width of the window in pixels</summary>
     </key>
     <key name="window-height" type="i">
-      <default>555</default>
+      <default>585</default>
       <summary>Height of the window in pixels</summary>
     </key>
     <key name="window-is-maximized" type="b">

@@ -14,7 +14,7 @@ public class Quadrapassel : Adw.Application
     private Settings settings;
 
     /* Main window */
-    private Gtk.Window window;
+    private Adw.ApplicationWindow window;
     private Gtk.EventControllerKey event_controller_key;
     private Gtk.MenuButton menu_button;
 
@@ -45,16 +45,9 @@ public class Quadrapassel : Adw.Application
 
     private Gtk.Button pause_play_button;
 
-    private Gtk.Dialog preferences_dialog;
+    private Adw.PreferencesDialog preferences_dialog;
     private Gtk.SpinButton starting_level_spin;
     private Preview theme_preview;
-    private Gtk.SpinButton fill_height_spinner;
-    private Gtk.SpinButton fill_prob_spinner;
-    private Gtk.CheckButton do_preview_toggle;
-    private Gtk.CheckButton difficult_blocks_toggle;
-    private Gtk.CheckButton rotate_counter_clock_wise_toggle;
-    private Gtk.CheckButton show_shadow_toggle;
-    private Gtk.CheckButton sound_toggle;
     private Gtk.ListStore controls_model;
 
     private Manette.Monitor manette_monitor;
@@ -64,7 +57,8 @@ public class Quadrapassel : Adw.Application
         { "new-game",      new_game_cb    },
         { "pause",         pause_cb       },
         { "scores",        scores_cb      },
-        { "menu",          menu_cb },
+        { "menu",          menu_cb        },
+        { "theme",         theme_cb       },
         { "preferences",   preferences_cb },
         { "help",          help_cb        },
         { "about",         about_cb       },
@@ -82,6 +76,9 @@ public class Quadrapassel : Adw.Application
 
         Adw.StyleManager.get_default ().set_color_scheme (FORCE_DARK);
 
+        Environment.set_application_name (_("Quadrapassel"));
+        Environment.set_prgname (APP_ID);
+
         add_action_entries (action_entries, this);
         set_accels_for_action ("app.new-game", {"<Primary>n"});
         set_accels_for_action ("app.pause", {"Pause"});
@@ -95,7 +92,8 @@ public class Quadrapassel : Adw.Application
 
     private void create_window ()
     {
-        window = new Gtk.ApplicationWindow (this);
+        var builder = new Gtk.Builder ();
+        window = new Adw.ApplicationWindow (this);
         window.icon_name = APP_ID;
         window.title = _("Quadrapassel");
 
@@ -108,17 +106,25 @@ public class Quadrapassel : Adw.Application
         if (settings.get_boolean ("window-is-maximized"))
             window.maximize ();
 
-        var headerbar = new Gtk.HeaderBar ();
-        window.set_titlebar (headerbar);
+        var toolbar_view = new Adw.ToolbarView ();
+        var headerbar = new Adw.HeaderBar ();
+        toolbar_view.add_child (builder, headerbar, "top");
+        window.set_content (toolbar_view);
+
+        var new_game_button = new Gtk.Button.from_icon_name ("view-refresh-symbolic");
+        new_game_button.set_action_name ("app.new-game");
+
+        headerbar.pack_start (new_game_button);
 
         var menu = new Menu ();
         var section = new Menu ();
         menu.append_section (null, section);
-        section.append (_("_New Game"), "app.new-game");
         section.append (_("_Scores"), "app.scores");
+        section.append (_("A_ppearance"), "app.theme");
+        section.append (_("Preferences"), "app.preferences");
         section = new Menu ();
         menu.append_section (null, section);
-        section.append (_("_Preferences"), "app.preferences");
+        section.append (_("_Keyboard Shortcuts"), "win.show-help-overlay");
         section.append (_("_Help"), "app.help");
         section.append (_("_About Quadrapassel"), "app.about");
         menu_button = new Gtk.MenuButton ();
@@ -128,7 +134,7 @@ public class Quadrapassel : Adw.Application
         headerbar.pack_end (menu_button);
 
         var game_grid = new Gtk.Grid ();
-        window.set_child (game_grid);
+        toolbar_view.set_content (game_grid);
 
         view = new GameView ();
         view.hexpand = true;
@@ -143,6 +149,8 @@ public class Quadrapassel : Adw.Application
         game_aspect.receives_default = true;
         game_aspect.focusable = true;
         game_aspect.margin_end = 12;
+        game_aspect.margin_start = 12;
+        game_aspect.margin_bottom = 12;
         game_grid.attach (game_aspect, 0, 1, 2, 17);
 
         pause_play_button = new Gtk.Button ();
@@ -226,7 +234,6 @@ public class Quadrapassel : Adw.Application
         int width, height;
         window.get_default_size (out width, out height);
 
-        /* Save window state */
         settings.set_int ("window-width", width);
         settings.set_int ("window-height", height);
         settings.set_boolean ("window-is-maximized", window.maximized);
@@ -249,171 +256,120 @@ public class Quadrapassel : Adw.Application
         window.present ();
     }
 
-    private void preferences_dialog_close_cb ()
-    {
-        preferences_dialog.destroy ();
-        preferences_dialog = null;
-    }
-
-    private void preferences_dialog_response_cb (int response_id)
-    {
-        preferences_dialog_close_cb ();
-    }
-
     private void preferences_cb ()
     {
-        if (preferences_dialog != null)
-        {
-            preferences_dialog.present ();
-            return;
-        }
+        preferences_dialog = new Adw.PreferencesDialog ();
+        preferences_dialog.set_title (_("Preferences"));
 
-        preferences_dialog = new Gtk.Dialog.with_buttons (_("Preferences"),
-                                                          window,
-                                                          Gtk.DialogFlags.USE_HEADER_BAR,
-                                                          null);
-        preferences_dialog.add_css_class ("margin-6");
-        var vbox = (Gtk.Box) preferences_dialog.get_content_area ();
-        vbox.set_spacing (2);
-        preferences_dialog.close.connect (preferences_dialog_close_cb);
-        preferences_dialog.response.connect (preferences_dialog_response_cb);
+        var game_page = new Adw.PreferencesPage ();
+        game_page.set_title (_("Game"));
 
-        var notebook = new Gtk.Notebook ();
-        notebook.add_css_class ("margin-6");
-        vbox.append (notebook);
-
-        var grid = new Gtk.Grid ();
-        grid.set_row_spacing (6);
-        grid.set_column_spacing (12);
-        grid.add_css_class ("margin-12");
-        var label = new Gtk.Label (_("Game"));
-        notebook.append_page (grid, label);
+        var pre_game_group = new Adw.PreferencesGroup ();
+        pre_game_group.set_title (_("Pre-Game"));
+        pre_game_group.set_description (_("Choose what happens before you start a game"));
 
         /* pre-filled rows */
-        label = new Gtk.Label.with_mnemonic (_("_Number of pre-filled rows:"));
-        label.valign = CENTER;
-        label.halign = START;
-        label.set_hexpand (true);
-        grid.attach (label, 0, 0, 1, 1);
-
-        var adj = new Gtk.Adjustment (settings.get_int ("line-fill-height"), 0, 15, 1, 5, 0);
         // the maximum should be at least 4 less than the new game height but as long as the game height is a magic 20 and not a setting, we can keep it at 15
-        fill_height_spinner = new Gtk.SpinButton (adj, 10, 0);
-        fill_height_spinner.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
-        fill_height_spinner.set_snap_to_ticks (true);
-        fill_height_spinner.value_changed.connect (fill_height_spinner_value_changed_cb);
-        grid.attach (fill_height_spinner, 1, 0, 1, 1);
-        label.set_mnemonic_widget (fill_height_spinner);
+        var adj = new Gtk.Adjustment (settings.get_int ("line-fill-height"), 0, 15, 1, 5, 0);
+        var prefilled_rows_row = new Adw.SpinRow (adj, 10, 0);
+        prefilled_rows_row.set_title (_("_Number of pre-filled rows"));
+        prefilled_rows_row.set_use_underline (true);
+        prefilled_rows_row.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
+        prefilled_rows_row.set_snap_to_ticks (true);
+        prefilled_rows_row.changed.connect (() => settings.set_int ("line-fill-height", (int) prefilled_rows_row.get_value ()));
+        pre_game_group.add (prefilled_rows_row);
 
         /* pre-filled rows density */
-        label = new Gtk.Label.with_mnemonic (_("_Density of blocks in a pre-filled row:"));
-        label.valign = CENTER;
-        label.halign = START;
-        label.hexpand = true;
-        grid.attach (label, 0, 1, 1, 1);
-
         adj = new Gtk.Adjustment (settings.get_int ("line-fill-probability"), 0, 10, 1, 5, 0);
-        fill_prob_spinner = new Gtk.SpinButton (adj, 10, 0);
-        fill_prob_spinner.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
-        fill_prob_spinner.set_snap_to_ticks (true);
-        fill_prob_spinner.value_changed.connect (fill_prob_spinner_value_changed_cb);
-        grid.attach (fill_prob_spinner, 1, 1, 1, 1);
-        label.set_mnemonic_widget (fill_prob_spinner);
+        var fill_prob_row = new Adw.SpinRow (adj, 10, 0);
+        fill_prob_row.set_title (_("_Density of blocks in a pre-filled row"));
+        fill_prob_row.set_use_underline (true);
+        fill_prob_row.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
+        fill_prob_row.set_snap_to_ticks (true);
+        fill_prob_row.changed.connect (() => settings.set_int ("line-fill-probability", (int) fill_prob_row.get_value ()));
+        pre_game_group.add (fill_prob_row);
 
         /* starting level */
-        label = new Gtk.Label.with_mnemonic (_("_Starting level:"));
-        label.valign = CENTER;
-        label.halign = START;
-        label.hexpand = true;
-        grid.attach (label, 0, 2, 1, 1);
-
         adj = new Gtk.Adjustment (settings.get_int ("starting-level"), 1, 20, 1, 5, 0);
-        starting_level_spin = new Gtk.SpinButton (adj, 10.0, 0);
-        starting_level_spin.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
-        starting_level_spin.set_snap_to_ticks (true);
-        starting_level_spin.value_changed.connect (starting_level_value_changed_cb);
-        grid.attach (starting_level_spin, 1, 2, 1, 1);
-        label.set_mnemonic_widget (starting_level_spin);
+        var starting_level_row = new Adw.SpinRow (adj, 10.0, 0);
+        starting_level_row.set_title (_("_Starting level"));
+        starting_level_row.set_use_underline (true);
+        starting_level_row.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
+        starting_level_row.set_snap_to_ticks (true);
+        starting_level_row.changed.connect (() => settings.set_int ("line-fill-height", (int) starting_level_row.get_value ()));
+        pre_game_group.add (starting_level_row);
 
-        sound_toggle = new Gtk.CheckButton.with_mnemonic (_("_Enable sounds"));
+        game_page.add (pre_game_group);
+
+        var in_game_group = new Adw.PreferencesGroup ();
+        in_game_group.set_title (_("In-Game"));
+        in_game_group.set_description (_("Change the experience of playing a game"));
+
+        var sound_toggle = new Adw.SwitchRow ();
+        sound_toggle.set_title (_("_Enable sounds"));
+        sound_toggle.set_use_underline (true);
         sound_toggle.set_active (settings.get_boolean ("sound"));
-        sound_toggle.toggled.connect (sound_toggle_toggled_cb);
-        grid.attach (sound_toggle, 0, 3, 2, 1);
+        sound_toggle.notify["active"].connect (() => {
+            var play_sound = sound_toggle.get_active ();
+            settings.set_boolean ("sound", play_sound);
+            view.mute = !play_sound;
+        });
+        in_game_group.add (sound_toggle);
 
-        difficult_blocks_toggle = new Gtk.CheckButton.with_mnemonic (_("Choose difficult _blocks"));
+        var difficult_blocks_toggle = new Adw.SwitchRow ();
+        difficult_blocks_toggle.set_title (_("Choose difficult _blocks"));
+        difficult_blocks_toggle.set_use_underline (true);
         difficult_blocks_toggle.set_active (settings.get_boolean ("pick-difficult-blocks"));
-        difficult_blocks_toggle.toggled.connect (difficult_blocks_toggled_cb);
-        grid.attach (difficult_blocks_toggle, 0, 4, 2, 1);
+        difficult_blocks_toggle.notify["active"].connect (() => settings.set_boolean ("pick-difficult-blocks", difficult_blocks_toggle.get_active ()));
+        in_game_group.add (difficult_blocks_toggle);
 
-        do_preview_toggle = new Gtk.CheckButton.with_mnemonic (_("_Preview next block"));
+        var do_preview_toggle = new Adw.SwitchRow ();
+        do_preview_toggle.set_title (_("_Preview next block"));
+        do_preview_toggle.set_use_underline (true);
         do_preview_toggle.set_active (settings.get_boolean ("do-preview"));
-        do_preview_toggle.toggled.connect (do_preview_toggle_toggled_cb);
-        grid.attach (do_preview_toggle, 0, 5, 2, 1);
+        do_preview_toggle.notify["active"].connect (() => {
+            var preview_enabled = do_preview_toggle.get_active ();
+            settings.set_boolean ("do-preview", preview_enabled);
+            preview.enabled = preview_enabled;
+        });
+        in_game_group.add (do_preview_toggle);
 
         /* rotate counter clock wise */
-        rotate_counter_clock_wise_toggle = new Gtk.CheckButton.with_mnemonic (_("_Rotate blocks counterclockwise"));
+        var rotate_counter_clock_wise_toggle = new Adw.SwitchRow ();
+        rotate_counter_clock_wise_toggle.set_title (_("_Rotate blocks counterclockwise"));
+        rotate_counter_clock_wise_toggle.set_use_underline (true);
         rotate_counter_clock_wise_toggle.set_active (settings.get_boolean ("rotate-counter-clock-wise"));
-        rotate_counter_clock_wise_toggle.toggled.connect (set_rotate_counter_clock_wise);
-        grid.attach (rotate_counter_clock_wise_toggle, 0, 6, 2, 1);
+        rotate_counter_clock_wise_toggle.notify["active"].connect (() => settings.set_boolean ("rotate-counter-clock-wise", rotate_counter_clock_wise_toggle.get_active ()));
+        in_game_group.add (rotate_counter_clock_wise_toggle);
 
-        show_shadow_toggle = new Gtk.CheckButton.with_mnemonic (_("Show _where the block will land"));
+        var show_shadow_toggle = new Adw.SwitchRow ();
+        show_shadow_toggle.set_title (_("Show _where the block will land"));
+        show_shadow_toggle.set_use_underline (true);
         show_shadow_toggle.set_active (settings.get_boolean ("show-shadow"));
-        show_shadow_toggle.toggled.connect (user_target_toggled_cb);
-        grid.attach (show_shadow_toggle, 0, 7, 2, 1);
+        show_shadow_toggle.notify["active"].connect (() => {
+            var show_shadow = show_shadow_toggle.get_active ();
+            settings.set_boolean ("show-shadow", show_shadow);
+            view.show_shadow = show_shadow;
+        });
+        in_game_group.add (show_shadow_toggle);
 
-        /* controls page */
-        controls_model = new Gtk.ListStore (4, typeof (string), typeof (string), typeof (uint), typeof (uint));
-        Gtk.TreeIter iter;
-        controls_model.append (out iter);
-        var keyval = settings.get_int ("key-left");
-        controls_model.set (iter, 0, "key-left", 1, _("Move left"), 2, keyval);
-        controls_model.append (out iter);
-        keyval = settings.get_int ("key-right");
-        controls_model.set (iter, 0, "key-right", 1, _("Move right"), 2, keyval);
-        controls_model.append (out iter);
-        keyval = settings.get_int ("key-down");
-        controls_model.set (iter, 0, "key-down", 1, _("Move down"), 2, keyval);
-        controls_model.append (out iter);
-        keyval = settings.get_int ("key-drop");
-        controls_model.set (iter, 0, "key-drop", 1, _("Drop"), 2, keyval);
-        controls_model.append (out iter);
-        keyval = settings.get_int ("key-rotate");
-        controls_model.set (iter, 0, "key-rotate", 1, _("Rotate"), 2, keyval);
-        controls_model.append (out iter);
-        keyval = settings.get_int ("key-pause");
-        controls_model.set (iter, 0, "key-pause", 1, _("Pause"), 2, keyval);
-        var controls_view = new Gtk.TreeView.with_model (controls_model);
-        controls_view.headers_visible = false;
-        controls_view.enable_search = false;
-        var label_renderer = new Gtk.CellRendererText ();
-        controls_view.insert_column_with_attributes (-1, "Control", label_renderer, "text", 1);
-        var key_renderer = new Gtk.CellRendererAccel ();
-        key_renderer.editable = true;
-        key_renderer.accel_mode = Gtk.CellRendererAccelMode.OTHER;
-        key_renderer.accel_edited.connect (accel_edited_cb);
-        key_renderer.accel_cleared.connect (accel_cleared_cb);
-        controls_view.insert_column_with_attributes (-1, "Key", key_renderer, "accel-key", 2, "accel-mods", 3);
+        game_page.add (in_game_group);
+        preferences_dialog.add (game_page);
+        preferences_dialog.present (window);
+    }
 
-        var controls_list = new Gtk.ScrolledWindow ();
-        controls_list.add_css_class ("margin-12");
-
-        controls_list.hscrollbar_policy = Gtk.PolicyType.NEVER;
-        controls_list.vscrollbar_policy = Gtk.PolicyType.ALWAYS;
-        controls_list.set_child (controls_view);
-        label = new Gtk.Label (_("Controls"));
-        notebook.append_page (controls_list, label);
-
-        /* theme page */
-        vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        vbox.add_css_class ("margin-12");
-        label = new Gtk.Label (_("Theme"));
-        notebook.append_page (vbox, label);
-
+    private void theme_cb () {
+        var builder = new Gtk.Builder ();
+        var dialog = new Adw.Dialog ();
+        var toolbar_view = new Adw.ToolbarView ();
+        var headerbar = new Adw.HeaderBar ();
+        toolbar_view.add_child (builder, headerbar, "top");
         var theme_combo = new Gtk.ComboBoxText ();
-        vbox.append (theme_combo);
         var theme_store = new Gtk.ListStore (2, typeof (string), typeof (string));
         theme_combo.model = theme_store;
+        headerbar.set_title_widget (theme_combo);
 
+        Gtk.TreeIter iter;
         theme_store.append (out iter);
         theme_store.set (iter, 0, _("Plain"), 1, "plain", -1);
         if (settings.get_string ("theme") == "plain")
@@ -439,138 +395,31 @@ public class Quadrapassel : Adw.Application
         if (settings.get_string ("theme") == "modern")
             theme_combo.set_active_iter (iter);
 
-        theme_combo.changed.connect (theme_combo_changed_cb);
+        theme_combo.changed.connect (() => {
+            theme_combo.get_active_iter (out iter);
+            string theme;
+            theme_combo.model.get (iter, 1, out theme);
+            view.theme = theme;
+            preview.theme = theme;
+            if (theme_preview != null)
+                theme_preview.theme = theme;
+            settings.set_string ("theme", theme);
+        });
 
         var theme_preview_frame = new Gtk.AspectFrame (0.5f, 0.5f, 1.0f, false);
         theme_preview_frame.hexpand = true;
         theme_preview_frame.vexpand = true;
-        theme_preview_frame.set_size_request (120, 120);
+        theme_preview_frame.set_size_request (150, 150);
         theme_preview = new Preview (theme_preview_frame);
         theme_preview.theme = settings.get_string ("theme");
         theme_preview.game = new Game ();
         theme_preview_frame.set_child (theme_preview);
         theme_preview.theme = settings.get_string ("theme");
-        vbox.append (theme_preview_frame);
-
-        preferences_dialog.show ();
-    }
-
-    private void sound_toggle_toggled_cb ()
-    {
-        var play_sound = sound_toggle.get_active ();
-        settings.set_boolean ("sound", play_sound);
-        view.mute = !play_sound;
-    }
-
-    private void do_preview_toggle_toggled_cb ()
-    {
-        var preview_enabled = do_preview_toggle.get_active ();
-        settings.set_boolean ("do-preview", preview_enabled);
-        preview.enabled = preview_enabled;
-    }
-
-    private void difficult_blocks_toggled_cb ()
-    {
-        settings.set_boolean ("pick-difficult-blocks", difficult_blocks_toggle.get_active ());
-    }
-
-    private void set_rotate_counter_clock_wise ()
-    {
-        settings.set_boolean ("rotate-counter-clock-wise", rotate_counter_clock_wise_toggle.get_active ());
-    }
-
-    private void user_target_toggled_cb ()
-    {
-        var show_shadow = show_shadow_toggle.get_active ();
-        settings.set_boolean ("show-shadow", show_shadow);
-        view.show_shadow = show_shadow;
-    }
-
-    private void accel_edited_cb (Gtk.CellRendererAccel cell, string path_string, uint keyval, Gdk.ModifierType mask, uint hardware_keycode)
-    {
-        var path = new Gtk.TreePath.from_string (path_string);
-        if (path == null)
-            return;
-
-        Gtk.TreeIter iter;
-        if (!controls_model.get_iter (out iter, path))
-            return;
-
-
-        if (keyval == settings.get_int ("key-left")|| 
-            keyval == settings.get_int ("key-right") || 
-            keyval == settings.get_int ("key-down") || 
-            keyval == settings.get_int ("key-drop") || 
-            keyval == settings.get_int ("key-rotate") || 
-            keyval == settings.get_int ("key-pause"))
-        {
-            // Throw up a dialog
-            var dialog = new Gtk.MessageDialog (null, Gtk.DialogFlags.MODAL, Gtk.MessageType.WARNING, Gtk.ButtonsType.OK, _("Unable to change key, as this key already exists"));
-            dialog.set_title (Environment.get_application_name ());
-            dialog.show ();
-            dialog.destroy ();
-            return;
-        }
-        else
-        {
-            string? key = null;
-            controls_model.get (iter, 0, out key);
-            if (key == null)
-                return;
-
-            controls_model.set (iter, 2, keyval);
-            settings.set_int (key, (int) keyval);
-        }
-    }
-
-    private void accel_cleared_cb (Gtk.CellRendererAccel cell, string path_string)
-    {
-        var path = new Gtk.TreePath.from_string (path_string);
-        if (path == null)
-            return;
-
-        Gtk.TreeIter iter;
-        if (!controls_model.get_iter (out iter, path))
-            return;
-
-        string? key = null;
-        controls_model.get (iter, 0, out key);
-        if (key == null)
-            return;
-
-        controls_model.set (iter, 2, 0);
-        settings.set_int (key, 0);
-    }
-
-    private void theme_combo_changed_cb (Gtk.ComboBox widget)
-    {
-        Gtk.TreeIter iter;
-        widget.get_active_iter (out iter);
-        string theme;
-        widget.model.get (iter, 1, out theme);
-        view.theme = theme;
-        preview.theme = theme;
-        if (theme_preview != null)
-            theme_preview.theme = theme;
-        settings.set_string ("theme", theme);
-    }
-
-    private void fill_height_spinner_value_changed_cb (Gtk.SpinButton spin)
-    {
-        int value = spin.get_value_as_int ();
-        settings.set_int ("line-fill-height", value);
-    }
-
-    private void fill_prob_spinner_value_changed_cb (Gtk.SpinButton spin)
-    {
-        int value = spin.get_value_as_int ();
-        settings.set_int ("line-fill-probability", value);
-    }
-
-    private void starting_level_value_changed_cb (Gtk.SpinButton spin)
-    {
-        int value = spin.get_value_as_int ();
-        settings.set_int ("starting-level", value);
+        toolbar_view.set_content (theme_preview_frame);
+        dialog.set_child (toolbar_view);
+        dialog.set_content_height (250);
+        dialog.set_content_width (250);
+        dialog.present (window);
     }
 
     private void pause_cb ()
@@ -581,7 +430,8 @@ public class Quadrapassel : Adw.Application
 
     private void quit_cb ()
     {
-        window.destroy ();
+        if (window != null)
+            window.close ();
     }
 
     private void manette_device_connected_cb (Manette.Device manette_device)
@@ -672,7 +522,7 @@ public class Quadrapassel : Adw.Application
 
         if (game != null)
         {
-            if (game.game_over && keyval == upper_key (settings.get_int ("key-start")))
+            if (game.game_over && keyval == upper_key (65293)) // START key
             {
                 new_game();
             }
@@ -680,7 +530,7 @@ public class Quadrapassel : Adw.Application
 
         if (game == null) {
             // Pressing pause with no game will start a new game.
-            if (keyval == upper_key (settings.get_int ("key-pause")))
+            if (keyval == upper_key (65299)) // PAUSE key
             {
                 new_game ();
                 return true;
@@ -689,7 +539,7 @@ public class Quadrapassel : Adw.Application
             return false;
         }
 
-        if (keyval == upper_key (settings.get_int ("key-pause")))
+        if (keyval == upper_key (65299)) // PAUSE key
         {
             if (!game.game_over)
                 game.paused = !game.paused;
@@ -699,17 +549,17 @@ public class Quadrapassel : Adw.Application
         if (game.paused)
             return false;
 
-        if (keyval == upper_key (settings.get_int ("key-left")))
+        if (keyval == upper_key (65361)) // Left key
         {
             game.move_left ();
             return true;
         }
-        else if (keyval == upper_key (settings.get_int ("key-right")))
+        else if (keyval == upper_key (65363)) // Right key
         {
             game.move_right ();
             return true;
         }
-        else if (keyval == upper_key (settings.get_int ("key-rotate")))
+        else if (keyval == upper_key (65362)) // Up key
         {
             if (settings.get_boolean ("rotate-counter-clock-wise"))
                 game.rotate_left ();
@@ -717,12 +567,12 @@ public class Quadrapassel : Adw.Application
                 game.rotate_right ();
             return true;
         }
-        else if (keyval == upper_key (settings.get_int ("key-down")))
+        else if (keyval == upper_key (65364)) // Down key
         {
             game.set_fast_forward (true);
             return true;
         }
-        else if (keyval == upper_key (settings.get_int ("key-drop")))
+        else if (keyval == upper_key (32)) // Spacebar
         {
             game.drop ();
             return true;
@@ -741,13 +591,13 @@ public class Quadrapassel : Adw.Application
         if (game == null)
             return;
 
-        if (keyval == upper_key (settings.get_int ("key-left")) ||
-            keyval == upper_key (settings.get_int ("key-right")))
+        if (keyval == upper_key (65361) || // Left key
+            keyval == upper_key (65363)) // Right key
         {
             game.stop_moving ();
             return;
         }
-        else if (keyval == upper_key (settings.get_int ("key-down")))
+        else if (keyval == upper_key (65364)) // Down key
         {
             game.set_fast_forward (false);
             return;
@@ -877,21 +727,24 @@ public class Quadrapassel : Adw.Application
 
     private void about_cb ()
     {
-        string[] authors = { "GNOME Games Team", "Maintainer: Will Warner<wwarner@gnome.org>", null };
-        string[] documenters = { "Angela Boyle", null };
+        string[] authors = { "J. Marcin Gorycki", "Robert Ancell", "John Ward" }; // TODO get other authors
+        string[] documenters = { "Angela Boyle" };
 
-        Gtk.show_about_dialog (window,
-                               "program-name", _("Quadrapassel"),
-                               "version", VERSION,
-                               "comments", _("A classic game where you rotate blocks to make complete rows, but don't pile your blocks too high or it's game over!"),
-                               "copyright", "Copyright © 1999 J. Marcin Gorycki, 2000–2015 Others",
-                               "license-type", Gtk.License.GPL_2_0,
-                               "authors", authors,
-                               "documenters", documenters,
-                               "translator-credits", _("translator-credits"),
-                               "logo-icon-name", APP_ID,
-                               "website", "https://wiki.gnome.org/Apps/Quadrapassel",
-                               null);
+        var about = new Adw.AboutDialog () {
+            application_name = _("Quadrapassel"),
+            application_icon = APP_ID,
+            developer_name   = _("The GNOME Project"),
+            developers = authors,
+            comments = _("A classic game where you rotate blocks to make complete rows, but don't pile your blocks too high or it's game over!"),
+            copyright = "Copyright © 1999 J. Marcin Gorycki, 2000–2015 Others",
+            license_type = Gtk.License.GPL_2_0,
+            documenters = documenters,
+            translator_credits = _("translator-credits"),
+            version = VERSION,
+            website = "https://wiki.gnome.org/Apps/Quadrapassel",
+        };
+
+        about.present (this.active_window);
     }
 
     private void menu_cb ()
@@ -911,9 +764,6 @@ public class Quadrapassel : Adw.Application
         Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
         Intl.textdomain (GETTEXT_PACKAGE);
 
-        Environment.set_application_name (_("Quadrapassel"));
-
-        Gtk.Window.set_default_icon_name ("quadrapassel");
         var app = new Quadrapassel ();
         return app.run (args);
     }
