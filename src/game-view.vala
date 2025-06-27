@@ -253,10 +253,12 @@ public class GameView : Gtk.Widget {
                 add_block_widget (widget);
 
                 // Shadow blocks
-                var shadow_widget = new BlockWidget (block, theme);
-                shadow_widget.add_css_class ("shadow");
-                shadow_blocks.insert (block, shadow_widget);
-                add_block_widget (shadow_widget);
+                if (show_shadow) {
+                    var shadow_widget = new BlockWidget (block, theme);
+                    shadow_widget.add_css_class ("shadow");
+                    shadow_blocks.insert (block, shadow_widget);
+                    add_block_widget (shadow_widget);
+                }
             }
         }
 
