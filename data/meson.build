@@ -99,5 +99,5 @@ install_data(
         'slide.ogg',
         'turn.ogg'
     ],
-    install_dir: join_paths(get_option('datadir'), meson.project_name(), 'sounds')
+    install_dir: soundsdir
 )
