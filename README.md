@@ -1,15 +1,15 @@
 # GNOME Quadrapassel
 
-The goal of the game is to create complete horizontal lines of blocks, which will disappear. 
+Fit falling blocks together
 
 ## Useful links
 
-- Homepage: <https://wiki.gnome.org/Apps/Quadrapassel>
+- Homepage: <https://wiki.gnome.org/Apps/Quadrapassel/>
+ 
+- Report issues: <https://gitlab.gnome.org/GNOME/quadrapassel/-/issues/>
+
+- Donate: <https://donate.gnome.org/>
 
 - User manual: <https://help.gnome.org/users/quadrapassel/stable/>
 
-- Report issues: <https://gitlab.gnome.org/GNOME/quadrapassel/issues/>
-
-- Donate: <https://www.gnome.org/friends/>
-
-- Translate: <https://wiki.gnome.org/TranslationProject>
+- Translate: <https://l10n.gnome.org/module/quadrapassel/>
