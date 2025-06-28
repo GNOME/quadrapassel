@@ -27,16 +27,29 @@
       <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/master/data/screenshot.png</image>
     </screenshot>
   </screenshots>
-  <url type="homepage">https://wiki.gnome.org/Apps/Quadrapassel</url>
-  <url type="bugtracker">https://gitlab.gnome.org/GNOME/quadrapassel/-/issues</url>
-  <url type="donation">https://www.gnome.org/donate/</url>
+  <url type="homepage">https://wiki.gnome.org/Apps/Quadrapassel/</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/quadrapassel/-/issues/</url>
+  <url type="donation">https://donate.gnome.org/</url>
   <url type="help">https://help.gnome.org/users/quadrapassel/stable/</url>
-  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/quadrapassel</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/quadrapassel/</url>
   <url type="translate">https://l10n.gnome.org/module/quadrapassel/</url>
   <update_contact>wwarner_at_gnome.org</update_contact>
   <launchable type="desktop-id">@app-id@.desktop</launchable>
   <project_group>GNOME</project_group>
   <releases>
+    <release date="2025-28-06" version="49~alpha" type="development">
+      <description>
+        <ul>
+          <li>Updated translations</li>
+          <li>Improved the controls and gameplay</li>
+          <li>Reworked Preferences dialog</li>
+          <li>Made a separate theme chooser dialog (Appearance dialog)</li>
+          <li>Added use of Libadwaita</li>
+          <li>Fixed many issues with the documentation</li>
+          <li>Removed customizable controls</li>
+        </ul>
+      </description>
+    </release>
     <release date="2021-06-10" version="40.2" />
     <release date="2021-03-19" version="40.1" />
     <release date="2021-03-19" version="40.0" />

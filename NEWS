@@ -1,3 +1,17 @@
+quadrapassel 49.alpha
+=================
+* Translations: updated translations, add new Abkhazian and Russian translations. Thanks, translators!
+* Make the theme chooser have a dialog
+* Use Libadwaita widgets (Will Warner)
+* Remove customizable controls
+* Add D-Bus service file (Balló György)
+* Port to GTK4 and libadwaita (Fina Wilke)
+* Appdata updates (Sabri Ünal, Will Warner)
+* Many fixes to help (Andre Klapper)
+* Update game screenshot
+* Remove documentation license (Will Thompson)
+* Major improvements to the controls and gameplay (Charles Benca)
+
 quadrapassel 40.2
 =================
 * Reduced the size of the border so shapes start at the top of the playing area
