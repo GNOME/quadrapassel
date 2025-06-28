@@ -1,5 +1,5 @@
 project('quadrapassel', 'vala', 'c',
-        version: '40.2')
+        version: '49.alpha')
 
 base_id = 'org.gnome.Quadrapassel'
 app_id = 'org.gnome.Quadrapassel.Devel'
