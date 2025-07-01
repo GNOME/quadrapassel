@@ -17,7 +17,7 @@
   <maintainer>
     <foaf:Person>
       <foaf:name>Will Warner</foaf:name>
-      <foaf:mbox rdf:resource="mailto:wwarner@gnome.org" />
+      <foaf:mbox rdf:resource="mailto:willwwarner@proton.me" />
       <gnome:userid>wwarner</gnome:userid>
     </foaf:Person>
   </maintainer>
