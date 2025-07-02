@@ -36,7 +36,7 @@
   <launchable type="desktop-id">@app-id@.desktop</launchable>
   <project_group>GNOME</project_group>
   <releases>
-    <release date="2025-28-06" version="49~alpha" type="development">
+    <release date="2025-06-28" version="49~alpha" type="development">
       <description>
         <ul>
           <li>Updated translations</li>
