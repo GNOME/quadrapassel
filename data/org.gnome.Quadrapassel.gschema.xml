@@ -10,12 +10,6 @@
       <summary>The theme used for rendering the blocks</summary>
       <description>The name of the theme used for rendering the blocks and the background.</description>
     </key>
-    <key name="starting-level" type="i">
-      <default>1</default>
-      <range min="1" max="20"/>
-      <summary>Level to start with</summary>
-      <description>Level to start with.</description>
-    </key>
     <key name="do-preview" type="b">
       <default>true</default>
       <summary>Whether to preview the next block</summary>
@@ -26,27 +20,16 @@
       <summary>Whether to show where the moving block will land</summary>
       <description>Whether to show where the moving block will land.</description>
     </key>
-    <key name="random-block-colors" type="b">
-      <default>false</default>
-      <summary>Whether to give blocks random colors</summary>
-      <description>Whether to give blocks random colors.</description>
-    </key>
     <key name="rotate-counter-clock-wise" type="b">
       <default>true</default>
       <summary>Whether to rotate counter clock wise</summary>
       <description>Whether to rotate counter clock wise.</description>
     </key>
-    <key name="line-fill-height" type="i">
+    <key name="difficulty" type="i">
       <default>0</default>
-      <range min="0" max="19"/>
-      <summary>The number of rows to fill</summary>
-      <description>The number of rows that are filled with random blocks at the start of the game.</description>
-    </key>
-    <key name="line-fill-probability" type="i">
-      <default>5</default>
-      <range min="0" max="10"/>
-      <summary>The density of filled rows</summary>
-      <description>The density of blocks in rows filled at the start of the game. The value is between 0 (for no blocks) and 10 (for a completely filled row).</description>
+      <range min="0" max="15"/>
+      <summary>The difficulty of the game</summary>
+      <description>How difficult the game is, 0 is a normal difficulty.</description>
     </key>
     <key name="sound" type="b">
       <default>true</default>

@@ -11,10 +11,8 @@ quadrapassel_sources = [
     'vapi/input-event-codes.vapi',
     'game-view.vala',
     'game.vala',
-    'history.vala',
     'preview.vala',
-    'quadrapassel.vala',
-    'score-dialog.vala'
+    'quadrapassel.vala'
 ]
 
 resources_conf = configuration_data()
@@ -43,9 +41,11 @@ executable(meson.project_name(),
         '--vapidir', join_paths(meson.current_source_dir(), 'vapi')
     ],
     dependencies: [
+    	gee_dependency,
         gsound_dependency,
         gtk_dependency,
         libadwaita_dependency,
+        libgnome_games_support_dependency,
         manette_dependency,
         pango_dependency,
         pango_cairo_dependency,

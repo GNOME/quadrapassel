@@ -18,6 +18,9 @@ public class Quadrapassel : Adw.Application
     private Gtk.EventControllerKey event_controller_key;
     private Gtk.MenuButton menu_button;
 
+    /* Game scores */
+    private Games.Scores.Context context;
+
     /* AspectFrame for the game */
     private Gtk.AspectFrame game_aspect;
 
@@ -39,16 +42,12 @@ public class Quadrapassel : Adw.Application
     /* Label showing the current level */
     private Gtk.Label level_label;
 
-    private History history;
-
     private SimpleAction pause_action;
 
     private Gtk.Button pause_play_button;
 
     private Adw.PreferencesDialog preferences_dialog;
-    private Gtk.SpinButton starting_level_spin;
     private Preview theme_preview;
-    private Gtk.ListStore controls_model;
 
     private Manette.Monitor manette_monitor;
 
@@ -212,15 +211,21 @@ public class Quadrapassel : Adw.Application
 
         game_grid.attach (pause_play_button, 2, 16, 1, 2);
 
+        context = new Games.Scores.Context.with_importer_and_icon_name ("quadrapassel",
+                                                                        /* Label on the scores dialog */
+                                                                        _("Difficulty:"),
+                                                                        window,
+                                                                        create_category_from_key,
+                                                                        Games.Scores.Style.POINTS_GREATER_IS_BETTER,
+                                                                        new Games.Scores.HistoryFileImporter (parse_old_score),
+                                                                        APP_ID);
+
         manette_monitor = new Manette.Monitor ();
         manette_monitor.device_connected.connect (manette_device_connected_cb);
         var manette_iterator = manette_monitor.iterate ();
         Manette.Device manette_device = null;
         while (manette_iterator.next (out manette_device))
             manette_device_connected_cb (manette_device);
-
-        history = new History (Path.build_filename (Environment.get_user_data_dir (), "quadrapassel", "history"));
-        history.load ();
 
         pause_action.set_enabled (false);
     }
@@ -241,10 +246,16 @@ public class Quadrapassel : Adw.Application
         /* Record the score if the game isn't over. */
         if (game != null && !game.game_over && game.score > 0)
         {
-            var date = new DateTime.now_local ();
-            var entry = new HistoryEntry (date, game.score);
-            history.add (entry);
-            history.save ();
+            context.add_score.begin (game.score, create_category_from_key (game.difficulty.to_string()), null, (object, result) => {
+                try
+                {
+                    context.add_score.end (result);
+                }
+                catch (Error e)
+                {
+                    warning ("%s", e.message);
+                }
+            });
         }
     }
 
@@ -264,42 +275,29 @@ public class Quadrapassel : Adw.Application
         var game_page = new Adw.PreferencesPage ();
         game_page.set_title (_("Game"));
 
-        var pre_game_group = new Adw.PreferencesGroup ();
-        pre_game_group.set_title (_("Pre-Game"));
-        pre_game_group.set_description (_("Choose what happens before you start a game"));
+        var difficulty_group = new Adw.PreferencesGroup ();
+        difficulty_group.set_title (_("Game Difficulty"));
+        difficulty_group.set_description (_("Change how difficult the game is"));
 
-        /* pre-filled rows */
+        /* difficulty */
         // the maximum should be at least 4 less than the new game height but as long as the game height is a magic 20 and not a setting, we can keep it at 15
-        var adj = new Gtk.Adjustment (settings.get_int ("line-fill-height"), 0, 15, 1, 5, 0);
-        var prefilled_rows_row = new Adw.SpinRow (adj, 10, 0);
-        prefilled_rows_row.set_title (_("_Number of pre-filled rows"));
-        prefilled_rows_row.set_use_underline (true);
-        prefilled_rows_row.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
-        prefilled_rows_row.set_snap_to_ticks (true);
-        prefilled_rows_row.changed.connect (() => settings.set_int ("line-fill-height", (int) prefilled_rows_row.get_value ()));
-        pre_game_group.add (prefilled_rows_row);
+        var adj = new Gtk.Adjustment (settings.get_int ("difficulty"), 0, 15, 1, 5, 0);
+        var difficulty_row = new Adw.SpinRow (adj, 10, 0);
+        difficulty_row.set_title (_("Difficulty"));
+        difficulty_row.set_use_underline (true);
+        difficulty_row.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
+        difficulty_row.set_snap_to_ticks (true);
+        difficulty_row.changed.connect (() => settings.set_int ("difficulty", (int) difficulty_row.get_value ()));
+        difficulty_group.add (difficulty_row);
 
-        /* pre-filled rows density */
-        adj = new Gtk.Adjustment (settings.get_int ("line-fill-probability"), 0, 10, 1, 5, 0);
-        var fill_prob_row = new Adw.SpinRow (adj, 10, 0);
-        fill_prob_row.set_title (_("_Density of blocks in a pre-filled row"));
-        fill_prob_row.set_use_underline (true);
-        fill_prob_row.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
-        fill_prob_row.set_snap_to_ticks (true);
-        fill_prob_row.changed.connect (() => settings.set_int ("line-fill-probability", (int) fill_prob_row.get_value ()));
-        pre_game_group.add (fill_prob_row);
+        var difficult_blocks_toggle = new Adw.SwitchRow ();
+        difficult_blocks_toggle.set_title (_("Choose difficult _blocks"));
+        difficult_blocks_toggle.set_use_underline (true);
+        difficult_blocks_toggle.set_active (settings.get_boolean ("pick-difficult-blocks"));
+        difficult_blocks_toggle.notify["active"].connect (() => settings.set_boolean ("pick-difficult-blocks", difficult_blocks_toggle.get_active ()));
+        difficulty_group.add (difficult_blocks_toggle);
 
-        /* starting level */
-        adj = new Gtk.Adjustment (settings.get_int ("starting-level"), 1, 20, 1, 5, 0);
-        var starting_level_row = new Adw.SpinRow (adj, 10.0, 0);
-        starting_level_row.set_title (_("_Starting level"));
-        starting_level_row.set_use_underline (true);
-        starting_level_row.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
-        starting_level_row.set_snap_to_ticks (true);
-        starting_level_row.changed.connect (() => settings.set_int ("line-fill-height", (int) starting_level_row.get_value ()));
-        pre_game_group.add (starting_level_row);
-
-        game_page.add (pre_game_group);
+        game_page.add (difficulty_group);
 
         var in_game_group = new Adw.PreferencesGroup ();
         in_game_group.set_title (_("In-Game"));
@@ -315,13 +313,6 @@ public class Quadrapassel : Adw.Application
             view.mute = !play_sound;
         });
         in_game_group.add (sound_toggle);
-
-        var difficult_blocks_toggle = new Adw.SwitchRow ();
-        difficult_blocks_toggle.set_title (_("Choose difficult _blocks"));
-        difficult_blocks_toggle.set_use_underline (true);
-        difficult_blocks_toggle.set_active (settings.get_boolean ("pick-difficult-blocks"));
-        difficult_blocks_toggle.notify["active"].connect (() => settings.set_boolean ("pick-difficult-blocks", difficult_blocks_toggle.get_active ()));
-        in_game_group.add (difficult_blocks_toggle);
 
         var do_preview_toggle = new Adw.SwitchRow ();
         do_preview_toggle.set_title (_("_Preview next block"));
@@ -626,9 +617,8 @@ public class Quadrapassel : Adw.Application
 
         // Set game dimension, change to 10
         game = new Game (20, 10,
-                         settings.get_int ("starting-level"),
-                         settings.get_int ("line-fill-height"),
-                         settings.get_int ("line-fill-probability"),
+                         settings.get_int ("difficulty") /* The starting level */,
+                         settings.get_int ("difficulty") /* Pre-filled lines */, 5 /* line fill density  */,
                          settings.get_boolean ("pick-difficult-blocks"));
 
         game.pause_changed.connect (pause_changed_cb);
@@ -676,12 +666,16 @@ public class Quadrapassel : Adw.Application
 
         if (game.score > 0)
         {
-            var date = new DateTime.now_local ();
-            var entry = new HistoryEntry (date, game.score);
-            history.add (entry);
-            history.save ();
-
-            show_scores(entry, true);
+            context.add_score.begin (game.score, create_category_from_key (game.difficulty.to_string()), null, (object, result) => {
+                try
+                {
+                    context.add_score.end (result);
+                }
+                catch (Error e)
+                {
+                    warning ("%s", e.message);
+                }
+            });
         }
     }
 
@@ -693,13 +687,58 @@ public class Quadrapassel : Adw.Application
         dialog.destroy();
     }
 
-    private void show_scores (HistoryEntry? selected_entry = null, bool show_close = false)
+    private Games.Scores.Category create_category_from_key (string key)
     {
-        var dialog = new ScoreDialog (history, selected_entry, show_close);
-        dialog.modal = true;
-        dialog.transient_for = window;
-        dialog.response.connect(score_dialog_cb);
-        dialog.show();
+        print (@"key: $key \n");
+        if (key == "old-scores") {
+            return new Games.Scores.Category (key, _("Old Scores"));
+        }
+
+        var tokens = key.split ("-");
+        if (tokens.length != 1)
+            return new Games.Scores.Category (key, tokens[0] + _("Difficult"));
+
+        /* For the scores dialog. Just the difficulty level (a number). */
+        return new Games.Scores.Category (key, key);
+    }
+
+    private int64 parse_date (string date)
+    {
+        if (date.length < 19 || date[4] != '-' || date[7] != '-' || date[10] != 'T' || date[13] != ':' || date[16] != ':')
+            warning ("Failed to parse date: %s", date);
+
+        var year = int.parse (date.substring (0, 4));
+        var month = int.parse (date.substring (5, 2));
+        var day = int.parse (date.substring (8, 2));
+        var hour = int.parse (date.substring (11, 2));
+        var minute = int.parse (date.substring (14, 2));
+        var seconds = int.parse (date.substring (17, 2));
+        try {
+            var timezone = new GLib.TimeZone.identifier (date.substring (19));
+            return new DateTime (timezone, year, month, day, hour, minute, seconds).to_unix ();
+        } catch (GLib.Error e) {
+            warning ("Failed to parse date: %s", date);
+            return 0;
+        }
+    }
+
+    private void parse_old_score (string line, out Games.Scores.Score score, out Games.Scores.Category category)
+    {
+        score = null;
+
+        var tokens = line.split (" ");
+        if (tokens.length != 2)
+            return;
+
+        var date = parse_date (tokens[0]);
+        var points = int.parse (tokens[1]);
+        print (tokens[1]);
+
+        if (date <= 0 || points < 0)
+            return;
+
+        score = new Games.Scores.Score (points, date);
+        category = create_category_from_key ("old-scores");
     }
 
     private void update_score ()
@@ -754,7 +793,7 @@ public class Quadrapassel : Adw.Application
 
     private void scores_cb ()
     {
-        show_scores ();
+        context.present_dialog ();
     }
 
     public static int main (string[] args)

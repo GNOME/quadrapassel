@@ -253,14 +253,14 @@ public class Game : Object
     /* Game score */
     public int score = 0;
 
-    /* Level play started on */
-    private int starting_level = 1;
+    /* The difficulty of the game */
+    public int difficulty = 0;
 
     /* true if should pick difficult blocks to place */
     private bool pick_difficult_blocks = false;
 
     /* The current level */
-    public int level { get { return starting_level + n_lines_destroyed / 10; } }
+    public int level { get { return (difficulty + 1) + (n_lines_destroyed / 10); } }
 
     /* The direction we are moving */
     private int fast_move_direction = 0;
@@ -319,9 +319,9 @@ public class Game : Object
     public signal void pause_changed ();
     public signal void complete ();
 
-    public Game (int lines = 20, int columns = 10, int starting_level = 1, int filled_lines = 0, int fill_prob = 5, bool pick_difficult_blocks = false)
+    public Game (int lines = 20, int columns = 10, int difficulty = 0, int filled_lines = 0, int fill_prob = 5, bool pick_difficult_blocks = false)
     {
-        this.starting_level = starting_level;
+        this.difficulty = difficulty;
         this.pick_difficult_blocks = pick_difficult_blocks;
 
         blocks = new Block[columns, lines];
@@ -366,7 +366,7 @@ public class Game : Object
         }
         g.n_lines_destroyed = n_lines_destroyed;
         g.score = score;
-        g.starting_level = starting_level;
+        g.difficulty = difficulty;
         g.pick_difficult_blocks = pick_difficult_blocks;
         g.fast_move_direction = fast_move_direction;
         g.fast_forward = fast_forward;

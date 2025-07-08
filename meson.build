@@ -13,9 +13,11 @@ python3 = import('python3')
 
 cc = meson.get_compiler('c')
 
+gee_dependency = dependency ('gee-0.8')
 gsound_dependency = dependency('gsound', version: '>= 1.0.2')
 gtk_dependency = dependency('gtk4', version: '>= 4.4')
 libadwaita_dependency = dependency('libadwaita-1', version: '>= 1.1')
+libgnome_games_support_dependency = dependency ('libgnome-games-support-2', version: '>= 2.0.0')
 manette_dependency = dependency('manette-0.2', version: '>= 0.2.0')
 pango_dependency = dependency('pango')
 pango_cairo_dependency = dependency('pangocairo')
