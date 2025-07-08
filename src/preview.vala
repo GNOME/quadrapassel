@@ -6,7 +6,9 @@
  * Foundation, either version 2 of the License, or (at your option) any later
  * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
  * license.
- */public class Preview : Gtk.Widget {
+ */
+
+public class Preview : Gtk.Widget {
     static construct {
         set_css_name ("preview");
     }
@@ -98,7 +100,8 @@
     }
 
     public void clear () {
-        foreach (var widget in block_widgets) {
+        foreach (var widget in block_widgets)
+        {
             widget.destroy ();
         }
 
@@ -147,6 +150,22 @@
         if (parent_frame != null)
         {
             parent_frame.set_visible (visible);
+        }
+    }
+
+    public void hide ()
+    {
+        foreach (var widget in block_widgets)
+        {
+            widget.set_visible (false);
+        }
+    }
+
+    public void show ()
+    {
+        foreach (var widget in block_widgets)
+        {
+            widget.set_visible (true);
         }
     }
 }

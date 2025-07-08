@@ -1,5 +1,6 @@
-game-view, preview {
+game-view, preview, text-overlay {
   background-color: #000000;
+  border-radius: 4px;
 }
 
 .margin-6 {

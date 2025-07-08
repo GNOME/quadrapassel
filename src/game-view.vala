@@ -64,9 +64,8 @@ public class GameView : Gtk.Widget {
         get { return _theme; }
         set
         {
-            if (_theme != null) {
+            if (_theme != null)
                 this.remove_css_class ("theme-" + _theme);
-            }
 
             this.add_css_class ("theme-" + value);
 
@@ -150,23 +149,32 @@ public class GameView : Gtk.Widget {
             Graphene.Point pos = Graphene.Point ();
             bool show = true;
 
-            if (shape_blocks.lookup (block_widget.block) == block_widget) {
+            if (shape_blocks.lookup (block_widget.block) == block_widget)
+            {
                 pos.x = (game.shape.x + block_widget.block.x) * block_width;
                 pos.y = (game.shape.y + block_widget.block.y) * block_height;
-            } else if (shadow_blocks.lookup (block_widget.block) == block_widget) {
-                if (show_shadow) {
+            }
+            else if (shadow_blocks.lookup (block_widget.block) == block_widget)
+            {
+                if (show_shadow)
+                {
                     pos.x = (game.shape.x + block_widget.block.x) * block_width;
                     pos.y = (game.shadow_y + block_widget.block.y) * block_height;
-                } else {
+                }
+                else
+                {
                     show = false;
                 }
-            } else {
+            }
+            else
+            {
                 // Regular blocks or blocks that are currently animating out of view
                 pos.x = block_widget.block.x * block_width;
                 pos.y = block_widget.block.y * block_height;
             }
 
-            if (show) {
+            if (show)
+            {
                 int min_width;
                 int min_height;
                 int actual_width;
@@ -246,14 +254,17 @@ public class GameView : Gtk.Widget {
 
     private void shape_added_cb ()
     {
-        if (game.shape != null) {
-            foreach (var block in game.shape.blocks) {
+        if (game.shape != null)
+        {
+            foreach (var block in game.shape.blocks)
+            {
                 var widget = new BlockWidget (block, theme);
                 shape_blocks.insert (block, widget);
                 add_block_widget (widget);
 
                 // Shadow blocks
-                if (show_shadow) {
+                if (show_shadow)
+                {
                     var shadow_widget = new BlockWidget (block, theme);
                     shadow_widget.add_css_class ("shadow");
                     shadow_blocks.insert (block, shadow_widget);
@@ -364,11 +375,17 @@ public class GameView : Gtk.Widget {
     private void update_message ()
     {
         if (game.paused)
+        {
             text_overlay.text = _("Paused");
+            text_overlay.visible = true;
+        }
         else if (game.game_over)
+        {
             text_overlay.text = _("Game Over");
+            text_overlay.visible = true;
+        }
         else
-            text_overlay.text = null;
+            text_overlay.visible = false;
     }
 
     /*\
@@ -432,7 +449,9 @@ public class GameView : Gtk.Widget {
 
 private class TextOverlay : Gtk.DrawingArea
 {
-    static construct {
+    static construct
+    {
+        set_css_name ("text-overlay");
     }
 
     private string? _text = null;
@@ -447,7 +466,6 @@ private class TextOverlay : Gtk.DrawingArea
 
     public TextOverlay ()
     {
-        add_css_class ("text-overlay");
         set_draw_func (draw);
     }
 
@@ -512,9 +530,8 @@ public class BlockWidget: Gtk.Widget
     public int color {
         get { return _color; }
         set {
-            if (_color == value) {
+            if (_color == value)
                 return;
-            }
 
             var old_color_class = "color-%d".printf (_color);
             this.remove_css_class (old_color_class);
@@ -538,11 +555,10 @@ public class BlockWidget: Gtk.Widget
         this.block = block;
         this.color = block.color;
         can_target = false;
-        if (theme != null) {
+        if (theme != null)
             this.theme = theme;
-        } else {
+        else
             this.theme = "plain";
-        }
     }
 
     protected override void size_allocate (int width, int height, int baseline) {

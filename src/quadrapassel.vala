@@ -401,6 +401,8 @@ public class Quadrapassel : Adw.Application
         theme_preview_frame.hexpand = true;
         theme_preview_frame.vexpand = true;
         theme_preview_frame.set_size_request (150, 150);
+        theme_preview_frame.margin_top = 12;
+        theme_preview_frame.margin_bottom = 12;
         theme_preview = new Preview (theme_preview_frame);
         theme_preview.theme = settings.get_string ("theme");
         theme_preview.game = new Game ();
@@ -519,7 +521,8 @@ public class Quadrapassel : Adw.Application
             }
         }
 
-        if (game == null) {
+        if (game == null)
+        {
             // Pressing pause with no game will start a new game.
             if (keyval == upper_key (65299)) // PAUSE key
             {
@@ -641,11 +644,13 @@ public class Quadrapassel : Adw.Application
         {
             pause_play_button.set_icon_name ("media-playback-start-symbolic");
             pause_play_button.tooltip_text = _("Unpause the game");
+            preview.hide ();
         }
         else
         {
             pause_play_button.set_icon_name ("media-playback-pause-symbolic");
             pause_play_button.tooltip_text = _("Pause the game");
+            preview.show ();
 
             // Focus the game aspect again
             game_aspect.grab_focus();
@@ -680,9 +685,8 @@ public class Quadrapassel : Adw.Application
     }
 
     private void score_dialog_cb(Gtk.Dialog dialog, int response) {
-        if (response == Gtk.ResponseType.OK) {
+        if (response == Gtk.ResponseType.OK)
             new_game();
-        }
 
         dialog.destroy();
     }
