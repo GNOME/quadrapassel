@@ -644,13 +644,13 @@ public class Quadrapassel : Adw.Application
         {
             pause_play_button.set_icon_name ("media-playback-start-symbolic");
             pause_play_button.tooltip_text = _("Unpause the game");
-            preview.hide ();
+            preview.set_hidden (true);
         }
         else
         {
             pause_play_button.set_icon_name ("media-playback-pause-symbolic");
             pause_play_button.tooltip_text = _("Pause the game");
-            preview.show ();
+            preview.set_hidden (false);
 
             // Focus the game aspect again
             game_aspect.grab_focus();
@@ -682,13 +682,6 @@ public class Quadrapassel : Adw.Application
                 }
             });
         }
-    }
-
-    private void score_dialog_cb(Gtk.Dialog dialog, int response) {
-        if (response == Gtk.ResponseType.OK)
-            new_game();
-
-        dialog.destroy();
     }
 
     private Games.Scores.Category create_category_from_key (string key)

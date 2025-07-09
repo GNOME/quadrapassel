@@ -153,19 +153,11 @@ public class Preview : Gtk.Widget {
         }
     }
 
-    public void hide ()
+    public void set_hidden (bool hide)
     {
         foreach (var widget in block_widgets)
         {
-            widget.set_visible (false);
-        }
-    }
-
-    public void show ()
-    {
-        foreach (var widget in block_widgets)
-        {
-            widget.set_visible (true);
+            widget.set_visible (!hide);
         }
     }
 }
