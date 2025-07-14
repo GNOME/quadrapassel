@@ -44,7 +44,7 @@ parts:
     plugin: meson
     # workaround the issue described in https://launchpad.net/bugs/1583250
     meson-parameters: [--prefix=/snap/quadrapassel/current/usr]
-    parse-info: [usr/share/metainfo/org.gnome.Quadrapassel.appdata.xml]
+    parse-info: [usr/share/metainfo/org.gnome.Quadrapassel.metainfo.xml]
     organize:
       snap/quadrapassel/current/usr: usr
     override-build: |
