@@ -1,4 +1,4 @@
-game-view, preview, text-overlay {
+game-view, preview, .text-overlay {
   background-color: #000000;
   border-radius: 4px;
 }
