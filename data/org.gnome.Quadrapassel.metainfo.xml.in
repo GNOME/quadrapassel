@@ -22,6 +22,14 @@
       select blocks that will be hard for you to place.
   </p>
   </description>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
   <screenshots>
     <screenshot type="default" width="700" height="448">
       <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/master/data/screenshot.png</image>
