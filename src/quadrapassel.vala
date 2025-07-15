@@ -45,6 +45,7 @@ public class Quadrapassel : Adw.Application
     private SimpleAction pause_action;
 
     private Gtk.Button pause_play_button;
+    private Gtk.Button new_game_button;
 
     private Adw.PreferencesDialog preferences_dialog;
     private Preview theme_preview;
@@ -110,7 +111,7 @@ public class Quadrapassel : Adw.Application
         toolbar_view.add_child (builder, headerbar, "top");
         window.set_content (toolbar_view);
 
-        var new_game_button = new Gtk.Button.from_icon_name ("view-refresh-symbolic");
+        new_game_button = new Gtk.Button.from_icon_name ("view-refresh-symbolic");
         new_game_button.set_action_name ("app.new-game");
 
         headerbar.pack_start (new_game_button);
@@ -228,6 +229,7 @@ public class Quadrapassel : Adw.Application
             manette_device_connected_cb (manette_device);
 
         pause_action.set_enabled (false);
+        new_game_button.set_sensitive (false);
     }
 
     protected override void shutdown ()
@@ -635,6 +637,7 @@ public class Quadrapassel : Adw.Application
 
         update_score ();
         pause_action.set_enabled (true);
+        new_game_button.set_sensitive (true);
         pause_play_button.action_name = "app.pause";
     }
 
@@ -665,6 +668,7 @@ public class Quadrapassel : Adw.Application
     private void complete_cb ()
     {
         pause_action.set_enabled (false);
+        new_game_button.set_sensitive (false);
         pause_play_button.set_icon_name ("view-refresh-symbolic");
         pause_play_button.action_name = "app.new-game";
         pause_play_button.tooltip_text = _("Start a new game");
