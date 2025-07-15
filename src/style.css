@@ -11,10 +11,6 @@ game-view, preview, .text-overlay {
   margin: 12px;
 }
 
-.pause-play-button {
-  margin: 30px;
-}
-
 block.shadow {
   opacity: 0.5;
 }
