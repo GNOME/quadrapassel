@@ -449,17 +449,16 @@ public class GameView : Gtk.Widget {
 
 private class TextOverlay : Gtk.DrawingArea
 {
-    static construct
-    {
-        set_css_name ("text-overlay");
-    }
-
     private string? _text = null;
     public string text
     {
         get { return _text; }
         set {
             _text = value;
+            if (value == _("Paused"))
+                this.add_css_class ("text-overlay");
+            else
+                this.remove_css_class ("text-overlay");
             queue_draw ();
         }
     }

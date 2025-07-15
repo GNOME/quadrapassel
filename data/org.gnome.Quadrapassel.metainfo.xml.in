@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2013 Michael Catanzaro -->
-<component type="desktop">
+<component type="desktop-application">
   <id>@app-id@</id>
   <metadata_license>CC0-1.0</metadata_license>
 
@@ -22,6 +22,14 @@
       select blocks that will be hard for you to place.
   </p>
   </description>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
   <screenshots>
     <screenshot type="default" width="700" height="448">
       <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/master/data/screenshot.png</image>

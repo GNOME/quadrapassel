@@ -1,4 +1,4 @@
-game-view, preview, text-overlay {
+game-view, preview, .text-overlay {
   background-color: #000000;
   border-radius: 4px;
 }
@@ -9,10 +9,6 @@ game-view, preview, text-overlay {
 
 .margin-12 {
   margin: 12px;
-}
-
-.pause-play-button {
-  margin: 30px;
 }
 
 block.shadow {

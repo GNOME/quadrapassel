@@ -68,17 +68,17 @@ if desktop_file_validate.found()
   )
 endif
 
-# AppData file
-appdata_conf = configuration_data()
-appdata_conf.set('app-id', app_id)
+# Metainfo file
+metainfo_conf = configuration_data()
+metainfo_conf.set('app-id', app_id)
 
-appdata_file = i18n.merge_file(
+metainfo_file = i18n.merge_file(
     input: configure_file(
-        input: '@0@.appdata.xml.in'.format(base_id),
+        input: '@0@.metainfo.xml.in'.format(base_id),
         output: '@BASENAME@',
-        configuration: appdata_conf
+        configuration: metainfo_conf
     ),
-    output: '@0@.appdata.xml'.format(app_id),
+    output: '@0@.metainfo.xml'.format(app_id),
     po_dir: join_paths(meson.source_root(), 'po'),
     install: true,
     install_dir: join_paths(get_option('datadir'), 'metainfo')

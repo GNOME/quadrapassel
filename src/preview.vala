@@ -90,7 +90,7 @@ public class Preview : Gtk.Widget {
 
             var transform = new Gsk.Transform ();
             transform = transform.translate (pos);
-            widget.measure (Gtk.Orientation.HORIZONTAL, 10, null, null, null, null);
+            //widget.measure (Gtk.Orientation.HORIZONTAL, 10, null, null, null, null);
             widget.allocate (block_width, block_height, -1, transform);
         }
     }
