@@ -103,6 +103,7 @@ public class Quadrapassel : Adw.Application
     {
         var builder = new Gtk.Builder ();
         window = new Adw.ApplicationWindow (this);
+        window.set_size_request (360, 525);
         window.icon_name = APP_ID;
         window.title = _("Quadrapassel");
 
@@ -146,6 +147,9 @@ public class Quadrapassel : Adw.Application
         headerbar.pack_end (menu_button);
 
         game_grid = new Gtk.Grid ();
+        game_grid.margin_start = 6;
+        game_grid.margin_end = 6;
+        game_grid.margin_bottom = 6;
         toolbar_view.set_content (game_grid);
         breakpoint.apply.connect (breakpoint_apply_cb);
         breakpoint.unapply.connect (breakpoint_unapply_cb);
@@ -163,8 +167,9 @@ public class Quadrapassel : Adw.Application
         game_aspect.receives_default = true;
         game_aspect.focusable = true;
         game_aspect.margin_end = 12;
-        game_aspect.margin_start = 12;
-        game_aspect.margin_bottom = 12;
+        game_aspect.margin_start = 6;
+        game_aspect.margin_top = 2;
+        game_aspect.margin_bottom = 6;
         game_grid.attach (game_aspect, 0, 0, 2, 17);
 
         pause_play_button = new Gtk.Button ();
@@ -287,15 +292,15 @@ public class Quadrapassel : Adw.Application
             game_grid.remove (game_grid.get_first_child ());
         }
         preview_frame.set_size_request (50, 50);
-        game_grid.attach (game_aspect, 0, 0, 12, 17);
-        game_grid.attach (preview_label, 0, 18, 2, 1);
-        game_grid.attach (preview_frame, 2, 18, 2, 1);
-        game_grid.attach (score_descriptor_label, 4, 18, 2, 1);
-        game_grid.attach (score_label, 6, 18, 1, 1);
-        game_grid.attach (destroyed_descriptor_label, 7, 18, 2, 1);
-        game_grid.attach (n_destroyed_label, 9, 18, 1, 1);
-        game_grid.attach (level_descriptor_label, 10, 18, 2, 1);
-        game_grid.attach (level_label, 12, 18, 1, 1);
+        game_grid.attach (game_aspect, 0, 0, 14, 17);
+        game_grid.attach (score_descriptor_label, 0, 18, 2, 1);
+        game_grid.attach (score_label, 2, 18, 2, 1);
+        game_grid.attach (destroyed_descriptor_label, 4, 18, 2, 1);
+        game_grid.attach (n_destroyed_label, 6, 18, 1, 1);
+        game_grid.attach (level_descriptor_label, 7, 18, 2, 1);
+        game_grid.attach (level_label, 9, 18, 1, 1);
+        game_grid.attach (preview_label, 10, 18, 2, 1);
+        game_grid.attach (preview_frame, 12, 18, 2, 1);
     }
 
     private void breakpoint_unapply_cb () {
@@ -473,6 +478,7 @@ public class Quadrapassel : Adw.Application
     {
         if (window != null)
             window.close ();
+        base.quit ();
     }
 
     private void manette_device_connected_cb (Manette.Device manette_device)
