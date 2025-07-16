@@ -17,6 +17,8 @@ public class Quadrapassel : Adw.Application
     private Adw.ApplicationWindow window;
     private Adw.HeaderBar headerbar;
     private Gtk.EventControllerKey event_controller_key;
+    private Gtk.GestureSwipe swipe_gesture;
+    private Gtk.GestureLongPress long_press_gesture;
     private Gtk.MenuButton menu_button;
 
     /* Game scores */
@@ -115,6 +117,12 @@ public class Quadrapassel : Adw.Application
         event_controller_key.key_released.connect (key_release_event_cb);
         ((Gtk.Widget)window).add_controller (event_controller_key);
 
+        swipe_gesture = new Gtk.GestureSwipe ();
+        swipe_gesture.swipe.connect (swipe_cb);
+        long_press_gesture = new Gtk.GestureLongPress ();
+        long_press_gesture.pressed.connect (long_press_cb);
+        long_press_gesture.end.connect (long_press_end_cb);
+
         window.set_default_size (settings.get_int ("window-width"), settings.get_int ("window-height"));
         if (settings.get_boolean ("window-is-maximized"))
             window.maximize ();
@@ -126,6 +134,7 @@ public class Quadrapassel : Adw.Application
 
         new_game_button = new Gtk.Button.from_icon_name ("view-refresh-symbolic");
         new_game_button.set_action_name ("app.new-game");
+        new_game_button.set_tooltip_text (_("Start a new game"));
 
         headerbar.pack_start (new_game_button);
 
@@ -164,6 +173,8 @@ public class Quadrapassel : Adw.Application
         game_aspect = new Gtk.AspectFrame (0.5f, 0.5f, 10.0f/20.0f, false); // change to 10 from 14
         game_aspect.set_size_request (200, 400);
         game_aspect.set_child (view);
+        game_aspect.add_controller (swipe_gesture);
+        game_aspect.add_controller (long_press_gesture);
         game_aspect.receives_default = true;
         game_aspect.focusable = true;
         game_aspect.margin_end = 12;
@@ -597,17 +608,17 @@ public class Quadrapassel : Adw.Application
         if (game.paused)
             return false;
 
-        if (keyval == upper_key (65361)) // Left key
+        if (keyval == upper_key (65361) || keyval == upper_key (65)) // Left or A key
         {
             game.move_left ();
             return true;
         }
-        else if (keyval == upper_key (65363)) // Right key
+        else if (keyval == upper_key (65363) || keyval == upper_key (68)) // Right or D key
         {
             game.move_right ();
             return true;
         }
-        else if (keyval == upper_key (65362)) // Up key
+        else if (keyval == upper_key (65362) || keyval == upper_key (87)) // Up or W key
         {
             if (settings.get_boolean ("rotate-counter-clock-wise"))
                 game.rotate_left ();
@@ -615,10 +626,18 @@ public class Quadrapassel : Adw.Application
                 game.rotate_right ();
             return true;
         }
-        else if (keyval == upper_key (65364)) // Down key
+        else if (keyval == upper_key (65364) || keyval == upper_key (83)) // Down or S key
         {
             game.set_fast_forward (true);
             return true;
+        }
+        else if (keyval == upper_key (81)) // Q key
+        {
+            game.rotate_left ();
+        }
+        else if (keyval == upper_key (69)) // E key
+        {
+            game.rotate_right ();
         }
         else if (keyval == upper_key (32)) // Spacebar
         {
@@ -639,13 +658,16 @@ public class Quadrapassel : Adw.Application
         if (game == null)
             return;
 
-        if (keyval == upper_key (65361) || // Left key
-            keyval == upper_key (65363)) // Right key
+        if (keyval == upper_key (65361) || // Left  key
+            keyval == upper_key (65363) || // Right key
+            keyval == upper_key (65)    || // A     key
+            keyval == upper_key (68))      // D     key
         {
             game.stop_moving ();
             return;
         }
-        else if (keyval == upper_key (65364)) // Down key
+        else if (keyval == upper_key (65364) || // Down key
+                 keyval == upper_key (83))      // S    key
         {
             game.set_fast_forward (false);
             return;
@@ -657,6 +679,49 @@ public class Quadrapassel : Adw.Application
         if (keyval > 255)
             return keyval;
         return ((char) keyval).toupper ();
+    }
+
+    private void swipe_cb (double velocity_x, double velocity_y)
+    {
+        if (game == null)
+            return;
+
+        double direction = (Math.atan2 (velocity_y, velocity_x) * 180) / Math.PI;
+        if (direction < 0)
+            direction += 360.0;
+
+        if (direction >= 135 && direction < 225)
+        {
+            game.move_left ();
+            game.stop_moving ();
+        }
+
+        else if (direction >= 315 || direction < 45)
+        {
+            game.move_right ();
+            game.stop_moving ();
+        }
+        else if (direction >= 225 && direction < 315)
+        {
+            if (settings.get_boolean ("rotate-counter-clock-wise"))
+                game.rotate_left ();
+            else
+                game.rotate_right ();
+        }
+        else
+            game.drop ();
+    }
+
+    private void long_press_cb (double x, double y)
+    {
+        if (game != null)
+            game.set_fast_forward (true);
+    }
+
+    private void long_press_end_cb (Gdk.EventSequence? sequence)
+    {
+        if (game != null)
+            game.set_fast_forward (false);
     }
 
     private void new_game_cb ()
@@ -720,10 +785,10 @@ public class Quadrapassel : Adw.Application
     private void complete_cb ()
     {
         pause_action.set_enabled (false);
-        new_game_button.set_sensitive (false);
-        pause_play_button.set_icon_name ("view-refresh-symbolic");
+        pause_play_button.set_icon_name ("media-playback-start-symbolic");
         pause_play_button.action_name = "app.new-game";
-        pause_play_button.tooltip_text = _("Start a new game");
+        pause_play_button.tooltip_text = _("Start the game");
+        new_game_button.set_sensitive (false);
 
         if (game.score > 0)
         {
