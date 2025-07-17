@@ -445,6 +445,11 @@ public class Game : Object
         return result;
     }
 
+    public bool get_fast_forward ()
+    {
+        return fast_forward;
+    }
+
     public void set_fast_forward (bool enable)
     {
 		//gamestate check
