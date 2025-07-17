@@ -121,7 +121,6 @@ public class Quadrapassel : Adw.Application
         swipe_gesture.swipe.connect (swipe_cb);
         long_press_gesture = new Gtk.GestureLongPress ();
         long_press_gesture.pressed.connect (long_press_cb);
-        long_press_gesture.end.connect (long_press_end_cb);
 
         window.set_default_size (settings.get_int ("window-width"), settings.get_int ("window-height"));
         if (settings.get_boolean ("window-is-maximized"))
@@ -685,6 +684,29 @@ public class Quadrapassel : Adw.Application
     {
         if (game == null)
             return;
+ 
+/* For some reason tapping/clicking is treated as a swipe, but with 0 velocity.
+ * Annoyingly, the release of a long press is treated as a swipe too,
+ * so it is necessary to check for this. At the same time there is the feature
+ * of clicking/tapping to rotate the blocks, which makes the game a lot easier
+ * on mobile devices.
+ */
+        if (velocity_x == 0 && velocity_y == 0)
+        {
+            if (game.get_fast_forward ())
+                {
+                    game.set_fast_forward (false);
+                }
+            else
+            {
+                if (settings.get_boolean ("rotate-counter-clock-wise"))
+                    game.rotate_left ();
+                else
+                    game.rotate_right ();
+            }
+
+            return;
+        }
 
         double direction = (Math.atan2 (velocity_y, velocity_x) * 180) / Math.PI;
         if (direction < 0)
@@ -702,11 +724,15 @@ public class Quadrapassel : Adw.Application
             game.stop_moving ();
         }
         else if (direction >= 225 && direction < 315)
+        /* Swiping up is an alternative to clicking/tapping,
+         * so we use it to give the user the option of rotating blocks
+         * in the opposite direction of what they set in the preferences
+         */
         {
             if (settings.get_boolean ("rotate-counter-clock-wise"))
-                game.rotate_left ();
-            else
                 game.rotate_right ();
+            else
+                game.rotate_left ();
         }
         else
             game.drop ();
@@ -716,12 +742,6 @@ public class Quadrapassel : Adw.Application
     {
         if (game != null)
             game.set_fast_forward (true);
-    }
-
-    private void long_press_end_cb (Gdk.EventSequence? sequence)
-    {
-        if (game != null)
-            game.set_fast_forward (false);
     }
 
     private void new_game_cb ()
