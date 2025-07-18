@@ -31,13 +31,13 @@
     <control>touch</control>
   </recommends>
   <screenshots>
-    <screenshot type="default" width="480" height="610">
+    <screenshot type="default" width="475" height="610">
       <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/master/data/screenshot-1.png</image>
     </screenshot>
     <screenshot type="default" width="410" height="610">
       <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/master/data/screenshot-2.png</image>
     </screenshot>
-    <screenshot type="default" width="482" height="610">
+    <screenshot type="default" width="475" height="610">
       <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/master/data/screenshot-3.png</image>
     </screenshot>
   </screenshots>
