@@ -158,6 +158,7 @@ public class Quadrapassel : Adw.Application
         game_grid.margin_start = 6;
         game_grid.margin_end = 6;
         game_grid.margin_bottom = 6;
+        game_grid.column_spacing = 4;
         toolbar_view.set_content (game_grid);
         breakpoint.apply.connect (breakpoint_apply_cb);
         breakpoint.unapply.connect (breakpoint_unapply_cb);
@@ -176,8 +177,8 @@ public class Quadrapassel : Adw.Application
         game_aspect.add_controller (long_press_gesture);
         game_aspect.receives_default = true;
         game_aspect.focusable = true;
-        game_aspect.margin_end = 12;
         game_aspect.margin_start = 6;
+        game_aspect.margin_end = 6;
         game_aspect.margin_top = 2;
         game_aspect.margin_bottom = 6;
         game_grid.attach (game_aspect, 0, 0, 2, 17);
@@ -302,15 +303,15 @@ public class Quadrapassel : Adw.Application
             game_grid.remove (game_grid.get_first_child ());
         }
         preview_frame.set_size_request (50, 50);
-        game_grid.attach (game_aspect, 0, 0, 14, 17);
-        game_grid.attach (score_descriptor_label, 0, 18, 2, 1);
-        game_grid.attach (score_label, 2, 18, 2, 1);
-        game_grid.attach (destroyed_descriptor_label, 4, 18, 2, 1);
-        game_grid.attach (n_destroyed_label, 6, 18, 1, 1);
-        game_grid.attach (level_descriptor_label, 7, 18, 2, 1);
-        game_grid.attach (level_label, 9, 18, 1, 1);
-        game_grid.attach (preview_label, 10, 18, 2, 1);
-        game_grid.attach (preview_frame, 12, 18, 2, 1);
+        game_grid.attach (score_descriptor_label, 0, 0, 2, 1);
+        game_grid.attach (score_label, 2, 0, 2, 1);
+        game_grid.attach (destroyed_descriptor_label, 4, 0, 2, 1);
+        game_grid.attach (n_destroyed_label, 6, 0, 1, 1);
+        game_grid.attach (level_descriptor_label, 7, 0, 2, 1);
+        game_grid.attach (level_label, 9, 0, 1, 1);
+        game_grid.attach (preview_label, 10, 0, 2, 1);
+        game_grid.attach (preview_frame, 12, 0, 2, 1);
+        game_grid.attach (game_aspect, 0, 1, 14, 17);
     }
 
     private void breakpoint_unapply_cb () {
@@ -685,12 +686,12 @@ public class Quadrapassel : Adw.Application
         if (game == null)
             return;
  
-/* For some reason tapping/clicking is treated as a swipe, but with 0 velocity.
- * Annoyingly, the release of a long press is treated as a swipe too,
- * so it is necessary to check for this. At the same time there is the feature
- * of clicking/tapping to rotate the blocks, which makes the game a lot easier
- * on mobile devices.
- */
+        /* For some reason tapping/clicking is treated as a swipe, but with 0 velocity.
+         * Annoyingly, the release of a long press is treated as a swipe too,
+         * so it is necessary to check for this. At the same time there is the feature
+         * of clicking/tapping to rotate the blocks, which makes the game a lot easier
+         * on mobile devices.
+         */
         if (velocity_x == 0 && velocity_y == 0)
         {
             if (game.get_fast_forward ())
