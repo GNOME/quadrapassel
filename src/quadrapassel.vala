@@ -88,7 +88,6 @@ public class Quadrapassel : Adw.Application
         Adw.StyleManager.get_default ().set_color_scheme (FORCE_DARK);
 
         Environment.set_application_name (_("Quadrapassel"));
-        Environment.set_prgname (APP_ID);
 
         add_action_entries (action_entries, this);
         set_accels_for_action ("app.new-game", {"<Primary>n"});
