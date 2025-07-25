@@ -32,13 +32,16 @@
   </recommends>
   <screenshots>
     <screenshot type="default" width="475" height="610">
-      <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/master/data/screenshot-1.png</image>
+      <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/main/data/screenshot-1.png</image>
+      <caption>The Quadrapassel window, with a game playing.</caption>
     </screenshot>
     <screenshot type="default" width="410" height="610">
-      <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/master/data/screenshot-2.png</image>
+      <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/main/data/screenshot-2.png</image>
+      <caption>The Quadrapassel window, with a game playing, in small form factor mode.</caption>
     </screenshot>
     <screenshot type="default" width="475" height="610">
-      <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/master/data/screenshot-3.png</image>
+      <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/main/data/screenshot-3.png</image>
+      <caption>The Quadrapassel window, before starting a game.</caption>
     </screenshot>
   </screenshots>
   <url type="homepage">https://wiki.gnome.org/Apps/Quadrapassel/</url>
@@ -48,6 +51,10 @@
   <url type="vcs-browser">https://gitlab.gnome.org/GNOME/quadrapassel/</url>
   <url type="translate">https://l10n.gnome.org/module/quadrapassel/</url>
   <launchable type="desktop-id">@app-id@.desktop</launchable>
+  <branding>
+    <color type="primary" scheme_preference="light">#B73737</color>
+    <color type="primary" scheme_preference="dark">#764B7C</color>
+  </branding>
   <project_group>GNOME</project_group>
   <releases>
     <release date="2025-06-28" version="49~alpha" type="development">
