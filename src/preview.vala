@@ -35,7 +35,7 @@ public class Preview : Gtk.Widget {
 
     private int cell_size
     {
-        get { return (get_allocated_width () + get_allocated_height ()) / 2 / 5; }
+        get { return (get_width () + get_height ()) / 2 / 5; }
     }
 
     private Game? _game = null;

@@ -123,7 +123,7 @@ public class GameView : Gtk.Widget {
         get
         {
             if (game != null)
-                return int.min (get_allocated_width () / game.width, get_allocated_height () / game.height);
+                return int.min (get_width () / game.width, get_height () / game.height);
             else
                 return 0;
         }

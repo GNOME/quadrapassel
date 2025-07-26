@@ -412,51 +412,58 @@ public class Quadrapassel : Adw.Application
         preferences_dialog.present (window);
     }
 
-    private void theme_cb () {
+    private void theme_cb ()
+    {
         var builder = new Gtk.Builder ();
         var dialog = new Adw.Dialog ();
         var toolbar_view = new Adw.ToolbarView ();
         var headerbar = new Adw.HeaderBar ();
         toolbar_view.add_child (builder, headerbar, "top");
-        var theme_combo = new Gtk.ComboBoxText ();
-        var theme_store = new Gtk.ListStore (2, typeof (string), typeof (string));
-        theme_combo.model = theme_store;
-        headerbar.set_title_widget (theme_combo);
+        var theme_drop_down = new Gtk.DropDown.from_strings ({_("Plain"), ("Tango Flat"), _("Tango Shaded"), _("Clean"), _("Modern")});
+        headerbar.set_title_widget (theme_drop_down);
 
-        Gtk.TreeIter iter;
-        theme_store.append (out iter);
-        theme_store.set (iter, 0, _("Plain"), 1, "plain", -1);
         if (settings.get_string ("theme") == "plain")
-            theme_combo.set_active_iter (iter);
+            theme_drop_down.set_selected (0);
 
-        theme_store.append (out iter);
-        theme_store.set (iter, 0, _("Tango Flat"), 1, "tangoflat", -1);
         if (settings.get_string ("theme") == "tangoflat")
-            theme_combo.set_active_iter (iter);
+            theme_drop_down.set_selected (1);
 
-        theme_store.append (out iter);
-        theme_store.set (iter, 0, _("Tango Shaded"), 1, "tangoshaded", -1);
         if (settings.get_string ("theme") == "tangoshaded")
-            theme_combo.set_active_iter (iter);
+            theme_drop_down.set_selected (2);
 
-        theme_store.append (out iter);
-        theme_store.set (iter, 0, _("Clean"), 1, "clean", -1);
         if (settings.get_string ("theme") == "clean")
-            theme_combo.set_active_iter (iter);
+            theme_drop_down.set_selected (3);
 
-        theme_store.append (out iter);
-        theme_store.set (iter, 0, _("Modern"), 1, "modern", -1);
         if (settings.get_string ("theme") == "modern")
-            theme_combo.set_active_iter (iter);
+            theme_drop_down.set_selected (4);
 
-        theme_combo.changed.connect (() => {
-            theme_combo.get_active_iter (out iter);
+        theme_drop_down.notify["selected"].connect (() => {
             string theme;
-            theme_combo.model.get (iter, 1, out theme);
+            var selected_index = theme_drop_down.get_selected();
+
+            if (selected_index == 0)
+                theme = "plain";
+
+            else if (selected_index == 1)
+                theme = "tangoflat";
+
+            else if (selected_index == 2)
+                theme = "tangoshaded";
+
+            else if (selected_index == 3)
+                theme = "clean";
+
+            else if (selected_index == 4)
+                theme = "modern";
+
+            else
+                return;
+
             view.theme = theme;
             preview.theme = theme;
             if (theme_preview != null)
                 theme_preview.theme = theme;
+
             settings.set_string ("theme", theme);
         });
 
@@ -862,6 +869,7 @@ public class Quadrapassel : Adw.Application
     private void parse_old_score (string line, out Games.Scores.Score score, out Games.Scores.Category category)
     {
         score = null;
+        category = null;
 
         var tokens = line.split (" ");
         if (tokens.length != 2)
