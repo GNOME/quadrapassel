@@ -70,6 +70,7 @@
           <li>Added a custom seed preference</li>
         </ul>
       </description>
+    </release>
     <release date="2025-06-28" version="49~alpha" type="development">
       <description>
         <ul>
