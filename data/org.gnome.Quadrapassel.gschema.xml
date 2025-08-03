@@ -31,6 +31,16 @@
       <summary>The difficulty of the game</summary>
       <description>How difficult the game is, 0 is a normal difficulty.</description>
     </key>
+    <key name="use-seed" type="b">
+      <default>false</default>
+      <summary>Whether to use the custom seed</summary>
+      <description>Whether to use the custom seed.</description>
+    </key>
+    <key name="seed" type="u">
+      <default>0</default>
+      <summary>The seed used for the game</summary>
+      <description>Used to determine which blocks are given in a game.</description>
+    </key>
     <key name="sound" type="b">
       <default>true</default>
       <summary>Whether to play sounds</summary>

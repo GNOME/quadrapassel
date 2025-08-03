@@ -114,7 +114,7 @@ public class Quadrapassel : Adw.Application
         event_controller_key = new Gtk.EventControllerKey ();
         event_controller_key.key_pressed.connect (key_press_event_cb);
         event_controller_key.key_released.connect (key_release_event_cb);
-        ((Gtk.Widget)window).add_controller (event_controller_key);
+        ((Gtk.Widget) window).add_controller (event_controller_key);
 
         swipe_gesture = new Gtk.GestureSwipe ();
         swipe_gesture.swipe.connect (swipe_cb);
@@ -140,8 +140,8 @@ public class Quadrapassel : Adw.Application
         var section = new Menu ();
         menu.append_section (null, section);
         section.append (_("_Scores"), "app.scores");
-        section.append (_("A_ppearance"), "app.theme");
-        section.append (_("Preferences"), "app.preferences");
+        section.append (_("App_earance"), "app.theme");
+        section.append (_("_Preferences"), "app.preferences");
         section = new Menu ();
         menu.append_section (null, section);
         section.append (_("_Keyboard Shortcuts"), "win.show-help-overlay");
@@ -346,7 +346,7 @@ public class Quadrapassel : Adw.Application
         // the maximum should be at least 4 less than the new game height but as long as the game height is a magic 20 and not a setting, we can keep it at 15
         var adj = new Gtk.Adjustment (settings.get_int ("difficulty"), 0, 15, 1, 5, 0);
         var difficulty_row = new Adw.SpinRow (adj, 10, 0);
-        difficulty_row.set_title (_("Difficulty"));
+        difficulty_row.set_title (_("_Difficulty"));
         difficulty_row.set_use_underline (true);
         difficulty_row.set_update_policy (Gtk.SpinButtonUpdatePolicy.ALWAYS);
         difficulty_row.set_snap_to_ticks (true);
@@ -406,6 +406,26 @@ public class Quadrapassel : Adw.Application
             view.show_shadow = show_shadow;
         });
         in_game_group.add (show_shadow_toggle);
+
+        var game_seed = new Adw.EntryRow ();
+        game_seed.set_title ("Game _seed");
+        game_seed.set_use_underline (true);
+        game_seed.set_text (settings.get_uint ("seed").to_string ());
+        game_seed.set_sensitive (settings.get_boolean ("use-seed"));
+        game_seed.changed.connect (() => { settings.set_uint ("seed", uint.parse (game_seed.get_text ())); });
+
+        var use_seed_toggle = new Adw.SwitchRow ();
+        use_seed_toggle.set_title (_("_Use a custom seed for the game"));
+        use_seed_toggle.set_use_underline (true);
+        use_seed_toggle.set_active (settings.get_boolean ("use-seed"));
+        use_seed_toggle.notify["active"].connect (() => {
+            bool active = use_seed_toggle.get_active ();
+            settings.set_boolean ("use-seed", active);
+            game_seed.set_sensitive (active);
+        });
+
+        in_game_group.add (use_seed_toggle);
+        in_game_group.add (game_seed);
 
         game_page.add (in_game_group);
         preferences_dialog.add (game_page);
@@ -763,6 +783,9 @@ public class Quadrapassel : Adw.Application
             game.stop ();
             SignalHandler.disconnect_matched (game, SignalMatchType.DATA, 0, 0, null, null, this);
         }
+
+        if (settings.get_boolean ("use-seed"))
+            Random.set_seed (settings.get_uint ("seed"));
 
         // Set game dimension, change to 10
         game = new Game (20, 10,

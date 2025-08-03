@@ -418,7 +418,7 @@ public class Game : Object
     {
         return try_rotate(-1);
     }
-    //will rotate the tetromino and if it doesn't fit, will try to move it a little horizontaly so the rotation has the most chances of succeeding.
+    //will rotate the tetromino and if it doesn't fit, will try to move it a little horizontally so the rotation has the most chances of succeeding.
     //Example use case: The tetromino is on the left of right side of the grid, because it will probably not fit after rotation, we move it a little so it still gets rotated if there is enough space around the tetromino.
     private bool try_rotate (int r_step)
     {
