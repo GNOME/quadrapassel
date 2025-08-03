@@ -1,3 +1,17 @@
+quadrapassel 49.beta
+=================
+* Updated Chinese (China) translation
+* Made the multi-line reward more balanced (Uwe Jugel)
+* Made the scoring use libgnome-games-support
+* Replaced the score dialog with the one from libgnome-games-support
+* Made the game area and block preview hidden on pause
+* Renamed appdata to metainfo and changed component type to 'desktop-application' (Daniel Rusek)
+* Moved the 'New Game' menu entry into a new button
+* Added a new mobile layout and adjusted spacing for the game view
+* Made the game usable on touchscreens, by swiping and tapping the game (Thanks, Bytez)
+* Removed unneeded flatpak permissions
+* Added a custom seed preference
+
 quadrapassel 49.alpha
 =================
 * Translations: updated translations, add new Abkhazian and Russian translations. Thanks, translators!

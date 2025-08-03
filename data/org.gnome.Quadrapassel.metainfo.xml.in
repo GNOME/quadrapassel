@@ -57,6 +57,19 @@
   </branding>
   <project_group>GNOME</project_group>
   <releases>
+    <release date="2025-08-03" version="49~beta" type="development">
+      <description>
+        <ul>
+          <li>Updated Chinese (China) translation</li>
+          <li>Made the multi-line reward more balanced</li>
+          <li>Replaced the score dialog with an improved scoring system</li>
+          <li>Made the game area and block preview hidden on pause</li>
+          <li>Moved the 'New Game' menu entry into a new button</li>
+          <li>Added a new mobile layout and adjusted spacing for the game view</li>
+          <li>Made the game usable on touchscreens, by swiping and tapping</li>
+          <li>Added a custom seed preference</li>
+        </ul>
+      </description>
     <release date="2025-06-28" version="49~alpha" type="development">
       <description>
         <ul>
