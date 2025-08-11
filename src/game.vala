@@ -422,6 +422,10 @@ public class Game : Object
     //Example use case: The tetromino is on the left of right side of the grid, because it will probably not fit after rotation, we move it a little so it still gets rotated if there is enough space around the tetromino.
     private bool try_rotate (int r_step)
     {
+        int vmove = 0;
+        if (shape.y == -1)
+            vmove = 1;
+
         List<int> listHMoves = new List<int>();
         listHMoves.append(0);
         listHMoves.append(1);
@@ -434,7 +438,7 @@ public class Game : Object
         foreach (int hmove in listHMoves)
         {
             //tries to move the shape
-            result = move_shape(hmove, 0, r_step);
+            result = move_shape(hmove, vmove, r_step);
             //if rotation succeeded, we stop
             if (result) {
                 break;
@@ -931,17 +935,13 @@ public class Game : Object
 
             //Raises the appropriate signals. It is possible for multiple moves to be made at once, hence the reason why they are all separated. I have experienced refresh problems when not all concerned signals are called.
             if (x_step != 0)
-            {
                 shape_moved ();
-            }
+
             if (y_step != 0)
-            {
                 shape_dropped ();
-            }
+
             if (r_step != 0)
-            {
                 shape_rotated ();
-            }
         }
         else
             rotate_shape (-r_step);
@@ -954,6 +954,7 @@ public class Game : Object
         var r = shape.rotation + r_step;
         if (r < 0)
             r += 4;
+
         if (r >= 4)
             r -= 4;
 
