@@ -8,4 +8,3 @@ src/game-view.vala
 src/help-overlay.blp
 src/preview.vala
 src/quadrapassel.vala
-src/score-dialog.vala
