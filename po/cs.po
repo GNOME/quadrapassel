@@ -17,22 +17,39 @@
 # Andre Klapper <ak-47@gmx.net>, 2009.
 # Petr Kovar <pknbe@volny.cz>, 2008, 2012.
 # Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2014, 2015, 2017, 2018, 2019, 2020.
+# Daniel Rusek <mail@asciiwolf.com>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2020-11-28 21:49+0000\n"
-"PO-Revision-Date: 2020-11-29 02:04+0100\n"
-"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
+"POT-Creation-Date: 2025-08-17 00:39+0000\n"
+"PO-Revision-Date: 2025-08-22 12:44+0200\n"
+"Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 3.6\n"
 "X-Project-Style: gnome\n"
+
+#: data/org.gnome.Quadrapassel.desktop.in:2
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:8 src/quadrapassel.vala:90
+#: src/quadrapassel.vala:109 src/quadrapassel.vala:940
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#: data/org.gnome.Quadrapassel.desktop.in:3
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:9
+msgid "Fit falling blocks together"
+msgstr "Skládat padací bloky dohromady"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Quadrapassel.desktop.in:11
+msgid "tetris;"
+msgstr "tetris;"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -50,165 +67,83 @@ msgstr "Motiv používaný pro vykreslování bloků"
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "Název motivu používaného pro vykreslování bloků a pozadí."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:16
-msgid "Level to start with"
-msgstr "Počáteční úroveň"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:17
-msgid "Level to start with."
-msgstr "Počáteční úroveň."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:21
+#: data/org.gnome.Quadrapassel.gschema.xml:15
 msgid "Whether to preview the next block"
 msgstr "Zda zobrazovat náhled dalšího bloku"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:22
+#: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "Whether to preview the next block."
 msgstr "Zda zobrazovat náhled dalšího bloku."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:26
+#: data/org.gnome.Quadrapassel.gschema.xml:20
 msgid "Whether to show where the moving block will land"
 msgstr "Zda ukazovat, kam blok dopadne"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:27
+#: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to show where the moving block will land."
 msgstr "Zda ukazovat, kam padající blok dopadne."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:31
-msgid "Whether to give blocks random colors"
-msgstr "Zda dávat blokům náhodné barvy"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:32
-msgid "Whether to give blocks random colors."
-msgstr "Zda mají mít bloky náhodnou barvu."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:36
+#: data/org.gnome.Quadrapassel.gschema.xml:25
 msgid "Whether to rotate counter clock wise"
 msgstr "Zda otáčet proti směru hodinových ručiček"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:37
+#: data/org.gnome.Quadrapassel.gschema.xml:26
 msgid "Whether to rotate counter clock wise."
 msgstr "Zda otáčet proti směru hodinových ručiček."
 
+#: data/org.gnome.Quadrapassel.gschema.xml:31
+msgid "The difficulty of the game"
+msgstr "Obtížnost hry"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:32
+msgid "How difficult the game is, 0 is a normal difficulty."
+msgstr "Jak je hra obtížná, 0 je normální obtížnost."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:36
+msgid "Whether to use the custom seed"
+msgstr "Zda použít vlastní počáteční hodnotu"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:37
+msgid "Whether to use the custom seed."
+msgstr "Zda použít vlastní počáteční hodnotu."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:41
+msgid "The seed used for the game"
+msgstr "Počáteční hodnota použitá pro hru"
+
 #: data/org.gnome.Quadrapassel.gschema.xml:42
-msgid "The number of rows to fill"
-msgstr "Počet řádků k vyplnění"
+msgid "Used to determine which blocks are given in a game."
+msgstr "Používá se k určení, které bloky jsou ve hře dány."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:43
-msgid ""
-"The number of rows that are filled with random blocks at the start of the "
-"game."
-msgstr "Počet řádků, které jsou vyplněny náhodnými bloky na začátku hry."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:48
-msgid "The density of filled rows"
-msgstr "Hustota vyplnění řádků"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:49
-msgid ""
-"The density of blocks in rows filled at the start of the game. The value is "
-"between 0 (for no blocks) and 10 (for a completely filled row)."
-msgstr ""
-"Hustota kostek v řádcích vyplněných při startu hry. Hodnota je mezi 0 (žádné "
-"bloky) a 10 (úplně vyplněný řádek)."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:53
+#: data/org.gnome.Quadrapassel.gschema.xml:46
 msgid "Whether to play sounds"
 msgstr "Přehrávat zvuky"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:54
+#: data/org.gnome.Quadrapassel.gschema.xml:47
 msgid "Whether to play sounds."
 msgstr "Zda se mají přehrávat zvuky."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:58
+#: data/org.gnome.Quadrapassel.gschema.xml:51
 msgid "Whether to pick blocks that are hard to place"
 msgstr "Volit obtížné bloky"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:59
+#: data/org.gnome.Quadrapassel.gschema.xml:52
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Zda volit bloky, které půjdou obtížně umístit."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:371
-msgid "Move left"
-msgstr "Pohyb doleva"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:64
-msgid "Key press to move left."
-msgstr "Klávesa, kterou se posouvá doleva."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:374
-msgid "Move right"
-msgstr "Pohyb doprava"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:69
-msgid "Key press to move right."
-msgstr "Klávesa, kterou se posouvá doprava."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:377
-msgid "Move down"
-msgstr "Posun dolů"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:74
-msgid "Key press to move down."
-msgstr "Klávesa, kterou se posouvá dolů."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:380
-msgid "Drop"
-msgstr "Přiražení"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:79
-msgid "Key press to drop."
-msgstr "Klávesa, kterou se přiráží dolů."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:383
-msgid "Rotate"
-msgstr "Otočení"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:84
-msgid "Key press to rotate."
-msgstr "Klávesa, kterou se otáčí."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
-msgid "Pause"
-msgstr "Pozastavení"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:89
-msgid "Key press to pause."
-msgstr "Klávesa, kterou se hra pozastaví."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:93
-msgid "Enter"
-msgstr "Spuštění"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:94
-msgid "Key to start the game"
-msgstr "Klávesa, kterou se hra začíná."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:98
+#: data/org.gnome.Quadrapassel.gschema.xml:56
 msgid "Width of the window in pixels"
 msgstr "Šířka okna v pixelech"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:102
+#: data/org.gnome.Quadrapassel.gschema.xml:60
 msgid "Height of the window in pixels"
 msgstr "Výška okna v pixelech"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:106
+#: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "true if the window is maximized"
 msgstr "Zapnuto, pokud je okno maximalizováno"
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:7
-#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:864
-#: src/quadrapassel.vala:909
-msgid "Quadrapassel"
-msgstr "Quadrapassel"
-
-#: data/org.gnome.Quadrapassel.appdata.xml.in:8
-#: data/org.gnome.Quadrapassel.desktop.in:4
-msgid "Fit falling blocks together"
-msgstr "Skládat padací bloky dohromady"
-
-#: data/org.gnome.Quadrapassel.appdata.xml.in:10
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:11
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -223,7 +158,7 @@ msgstr ""
 "příliš velkou hromadu. Jak vám narůstá skóre, dostáváte se do vyšších úrovní "
 "a bloky padají rychleji."
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:17
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:18
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -235,145 +170,234 @@ msgstr ""
 "toho, aby padaly náhodné bloky, můžete zvolit, aby schválně padaly bloky, "
 "které bude problém umístit."
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:33
-msgid "The GNOME Project"
-msgstr "Projekt GNOME"
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:36
+msgid "The Quadrapassel window, with a game playing."
+msgstr "Okno Quadrapassel s hrou."
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Quadrapassel.desktop.in:12
-msgid "tetris;"
-msgstr "tetris;"
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:40
+msgid ""
+"The Quadrapassel window, with a game playing, in small form factor mode."
+msgstr "Okno Quadrapassel s hrou, v režimu malého formátu."
 
-#: src/game-view.vala:335
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:44
+msgid "The Quadrapassel window, before starting a game."
+msgstr "Okno Quadrapassel před zahájením hry."
+
+#: src/game-view.vala:379 src/game-view.vala:458
 msgid "Paused"
 msgstr "Pozastaveno"
 
-#: src/game-view.vala:337
+#: src/game-view.vala:384
 msgid "Game Over"
 msgstr "Konec hry"
 
-#: src/quadrapassel.vala:117
-msgid "_New Game"
-msgstr "_Nová hra"
+#: src/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Obecné"
 
-#: src/quadrapassel.vala:118
-msgid "_Scores"
-msgstr "_Skóre"
-
-#: src/quadrapassel.vala:121
-msgid "_Preferences"
-msgstr "_Předvolby"
-
-#: src/quadrapassel.vala:122
-msgid "_Help"
-msgstr "_Nápověda"
-
-#: src/quadrapassel.vala:123
-msgid "_About Quadrapassel"
-msgstr "O _aplikaci Quadrapassel"
-
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:802
-msgid "Start a new game"
+#: src/help-overlay.blp:14
+msgctxt "shortcut window"
+msgid "Start a New Game"
 msgstr "Začít novou hru"
 
-#: src/quadrapassel.vala:156
-msgid "Next"
-msgstr "Následující"
-
-#: src/quadrapassel.vala:169 src/score-dialog.vala:51
-msgid "Score"
-msgstr "Skóre"
-
-#: src/quadrapassel.vala:180
-msgid "Lines"
-msgstr "Řad"
-
-#: src/quadrapassel.vala:191
-msgid "Level"
-msgstr "Úroveň"
-
-#: src/quadrapassel.vala:276
-msgid "Preferences"
-msgstr "Předvolby"
-
-#: src/quadrapassel.vala:294
-msgid "Game"
-msgstr "Hra"
-
-#. pre-filled rows
-#: src/quadrapassel.vala:298
-msgid "_Number of pre-filled rows:"
-msgstr "_Počet předvyplněných řad:"
-
-#. pre-filled rows density
-#: src/quadrapassel.vala:313
-msgid "_Density of blocks in a pre-filled row:"
-msgstr "_Hustota kostek v předvyplněné řadě:"
-
-#. starting level
-#: src/quadrapassel.vala:327
-msgid "_Starting level:"
-msgstr "_Počáteční úroveň:"
-
-#: src/quadrapassel.vala:340
-msgid "_Enable sounds"
-msgstr "_Povolit zvuky"
-
-#: src/quadrapassel.vala:345
-msgid "Choose difficult _blocks"
-msgstr "Zvolit obtížné _bloky"
-
-#: src/quadrapassel.vala:350
-msgid "_Preview next block"
-msgstr "_Náhled dalšího bloku"
-
-#. rotate counter clock wise
-#: src/quadrapassel.vala:356
-msgid "_Rotate blocks counterclockwise"
-msgstr "Otáčet bloky p_roti směru hodinových ručiček"
-
-#: src/quadrapassel.vala:361
-msgid "Show _where the block will land"
-msgstr "Ukazovat, _kam blok dopadne"
-
-#: src/quadrapassel.vala:405
-msgid "Controls"
-msgstr "Ovládání"
-
-#: src/quadrapassel.vala:411
-msgid "Theme"
-msgstr "Motiv"
-
-#: src/quadrapassel.vala:423
-msgid "Plain"
-msgstr "Jednoduché"
-
-#: src/quadrapassel.vala:428
-msgid "Tango Flat"
-msgstr "Oblé prosté"
-
-#: src/quadrapassel.vala:433
-msgid "Tango Shaded"
-msgstr "Oblé stínované"
-
-#: src/quadrapassel.vala:438
-msgid "Clean"
-msgstr "Čisté"
-
-#. Throw up a dialog
-#: src/quadrapassel.vala:502
-msgid "Unable to change key, as this key already exists"
-msgstr "Není možné změnit klíč, protože tento klíč již existuje"
-
-#: src/quadrapassel.vala:783
-msgid "Unpause the game"
-msgstr "Pokračovat ve hře"
-
-#: src/quadrapassel.vala:788
+#: src/help-overlay.blp:20
+msgctxt "shortcut window"
 msgid "Pause the game"
 msgstr "Pozastavit hru"
 
+#: src/help-overlay.blp:24
+msgctxt "shortcut window"
+msgid "Show Help"
+msgstr "Zobrazit nápovědu"
+
+#: src/help-overlay.blp:29
+msgctxt "shortcut window"
+msgid "Open primary menu"
+msgstr "Otevřít hlavní nabídku"
+
+#: src/help-overlay.blp:34
+msgctxt "shortcut window"
+msgid "Show shortcuts"
+msgstr "Zobrazit klávesové zkratky"
+
+#: src/help-overlay.blp:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Ukončit"
+
+#: src/help-overlay.blp:45
+msgctxt "shortcut window"
+msgid "Game"
+msgstr "Hra"
+
+#: src/help-overlay.blp:48
+msgctxt "shortcut window"
+msgid "Rotate"
+msgstr "Otočení"
+
+#: src/help-overlay.blp:53
+msgctxt "shortcut window"
+msgid "Move right"
+msgstr "Pohyb doprava"
+
+#: src/help-overlay.blp:58
+msgctxt "shortcut window"
+msgid "Move left"
+msgstr "Pohyb doleva"
+
+#: src/help-overlay.blp:63
+msgctxt "shortcut window"
+msgid "Move down"
+msgstr "Posun dolů"
+
+#: src/help-overlay.blp:68
+msgctxt "shortcut window"
+msgid "Drop"
+msgstr "Přiražení"
+
+#: src/quadrapassel.vala:135 src/quadrapassel.vala:188
+msgid "Start a new game"
+msgstr "Začít novou hru"
+
+#: src/quadrapassel.vala:142
+msgid "_Scores"
+msgstr "_Skóre"
+
+#: src/quadrapassel.vala:143
+msgid "App_earance"
+msgstr "Vzhl_ed"
+
+#: src/quadrapassel.vala:144
+msgid "_Preferences"
+msgstr "_Předvolby"
+
+#: src/quadrapassel.vala:147
+msgid "_Keyboard Shortcuts"
+msgstr "_Klávesové zkratky"
+
+#: src/quadrapassel.vala:148
+msgid "_Help"
+msgstr "_Nápověda"
+
+#: src/quadrapassel.vala:149
+msgid "_About Quadrapassel"
+msgstr "O _aplikaci Quadrapassel"
+
+#: src/quadrapassel.vala:193
+msgid "Next"
+msgstr "Následující"
+
+#: src/quadrapassel.vala:210
+msgid "Score"
+msgstr "Skóre"
+
+#: src/quadrapassel.vala:221
+msgid "Lines"
+msgstr "Řad"
+
+#: src/quadrapassel.vala:232
+msgid "Level"
+msgstr "Úroveň"
+
+#. Label on the scores dialog
+#: src/quadrapassel.vala:244
+msgid "Difficulty:"
+msgstr "Obtížnost:"
+
+#: src/quadrapassel.vala:336
+msgid "Preferences"
+msgstr "Předvolby"
+
+#: src/quadrapassel.vala:339
+msgid "Game"
+msgstr "Hra"
+
+#: src/quadrapassel.vala:342
+msgid "Game Difficulty"
+msgstr "Obtížnost hry"
+
+#: src/quadrapassel.vala:343
+msgid "Change how difficult the game is"
+msgstr "Změnit, jak je hra obtížná"
+
+#: src/quadrapassel.vala:349
+msgid "_Difficulty"
+msgstr "_Obtížnost"
+
+#: src/quadrapassel.vala:357
+msgid "Choose difficult _blocks"
+msgstr "Zvolit obtížné _bloky"
+
+#: src/quadrapassel.vala:366
+msgid "In-Game"
+msgstr "Ve hře"
+
+#: src/quadrapassel.vala:367
+msgid "Change the experience of playing a game"
+msgstr "Změnit zážitek z hraní hry"
+
+#: src/quadrapassel.vala:370
+msgid "_Enable sounds"
+msgstr "_Povolit zvuky"
+
+#: src/quadrapassel.vala:381
+msgid "_Preview next block"
+msgstr "_Náhled dalšího bloku"
+
+#: src/quadrapassel.vala:393
+msgid "_Rotate blocks counterclockwise"
+msgstr "Otáčet bloky p_roti směru hodinových ručiček"
+
+#: src/quadrapassel.vala:400
+msgid "Show _where the block will land"
+msgstr "Ukazovat, _kam blok dopadne"
+
+#: src/quadrapassel.vala:418
+msgid "_Use a custom seed for the game"
+msgstr "Po_užít pro hru vlastní počáteční hodnotu"
+
+#: src/quadrapassel.vala:442
+msgid "Plain"
+msgstr "Jednoduché"
+
+#: src/quadrapassel.vala:442
+msgid "Tango Shaded"
+msgstr "Oblé stínované"
+
+#: src/quadrapassel.vala:442
+msgid "Clean"
+msgstr "Čisté"
+
+#: src/quadrapassel.vala:442
+msgid "Modern"
+msgstr "Moderní"
+
+#: src/quadrapassel.vala:816
+msgid "Unpause the game"
+msgstr "Pokračovat ve hře"
+
+#: src/quadrapassel.vala:822
+msgid "Pause the game"
+msgstr "Pozastavit hru"
+
+#: src/quadrapassel.vala:840
+msgid "Start the game"
+msgstr "Začít novou hru"
+
+#: src/quadrapassel.vala:861
+msgid "Old Scores"
+msgstr "Staré skóre"
+
 #: src/quadrapassel.vala:866
+msgid "Difficult"
+msgstr "Obtížná"
+
+#: src/quadrapassel.vala:942
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
+
+#: src/quadrapassel.vala:944
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -381,7 +405,7 @@ msgstr ""
 "Klasická hra, ve které otáčite padající bloky, abyste jimi zaplnili vrstvy, "
 "ale nesmí se vám jich nakupit moc špatně do výšky, jinak hra skončí."
 
-#: src/quadrapassel.vala:871
+#: src/quadrapassel.vala:948
 msgid "translator-credits"
 msgstr ""
 "Jirka Lébl\n"
@@ -396,20 +420,95 @@ msgstr ""
 "Kamil Páral <ripper42@gmail.com>\n"
 "Marek Lisý <marek.lisy@centrum.cz>\n"
 "Petr Pulc <petrpulc@gmail.com>\n"
-"Marek Černocký <marek@manet.cz>"
+"Marek Černocký <marek@manet.cz>\n"
+"Daniel Rusek <mail@asciiwolf.com>"
 
-#: src/score-dialog.vala:26
-msgid "_Close"
-msgstr "_Zavřít"
+#~ msgid "Level to start with"
+#~ msgstr "Počáteční úroveň"
 
-#: src/score-dialog.vala:27
-msgid "New Game"
-msgstr "Nová hra"
+#~ msgid "Level to start with."
+#~ msgstr "Počáteční úroveň."
 
-#: src/score-dialog.vala:30
-msgid "_OK"
-msgstr "_Budiž"
+#~ msgid "Whether to give blocks random colors"
+#~ msgstr "Zda dávat blokům náhodné barvy"
 
-#: src/score-dialog.vala:48
-msgid "Date"
-msgstr "Datum"
+#~ msgid "Whether to give blocks random colors."
+#~ msgstr "Zda mají mít bloky náhodnou barvu."
+
+#~ msgid "The number of rows to fill"
+#~ msgstr "Počet řádků k vyplnění"
+
+#~ msgid ""
+#~ "The number of rows that are filled with random blocks at the start of the "
+#~ "game."
+#~ msgstr "Počet řádků, které jsou vyplněny náhodnými bloky na začátku hry."
+
+#~ msgid "The density of filled rows"
+#~ msgstr "Hustota vyplnění řádků"
+
+#~ msgid ""
+#~ "The density of blocks in rows filled at the start of the game. The value "
+#~ "is between 0 (for no blocks) and 10 (for a completely filled row)."
+#~ msgstr ""
+#~ "Hustota kostek v řádcích vyplněných při startu hry. Hodnota je mezi 0 "
+#~ "(žádné bloky) a 10 (úplně vyplněný řádek)."
+
+#~ msgid "Key press to move left."
+#~ msgstr "Klávesa, kterou se posouvá doleva."
+
+#~ msgid "Key press to move right."
+#~ msgstr "Klávesa, kterou se posouvá doprava."
+
+#~ msgid "Key press to move down."
+#~ msgstr "Klávesa, kterou se posouvá dolů."
+
+#~ msgid "Key press to drop."
+#~ msgstr "Klávesa, kterou se přiráží dolů."
+
+#~ msgid "Key press to rotate."
+#~ msgstr "Klávesa, kterou se otáčí."
+
+#~ msgid "Pause"
+#~ msgstr "Pozastavení"
+
+#~ msgid "Key press to pause."
+#~ msgstr "Klávesa, kterou se hra pozastaví."
+
+#~ msgid "Enter"
+#~ msgstr "Spuštění"
+
+#~ msgid "_New Game"
+#~ msgstr "_Nová hra"
+
+#~ msgid "_Number of pre-filled rows:"
+#~ msgstr "_Počet předvyplněných řad:"
+
+#~ msgid "_Density of blocks in a pre-filled row:"
+#~ msgstr "_Hustota kostek v předvyplněné řadě:"
+
+#~ msgid "_Starting level:"
+#~ msgstr "_Počáteční úroveň:"
+
+#~ msgid "Controls"
+#~ msgstr "Ovládání"
+
+#~ msgid "Theme"
+#~ msgstr "Motiv"
+
+#~ msgid "Tango Flat"
+#~ msgstr "Oblé prosté"
+
+#~ msgid "Unable to change key, as this key already exists"
+#~ msgstr "Není možné změnit klíč, protože tento klíč již existuje"
+
+#~ msgid "_Close"
+#~ msgstr "_Zavřít"
+
+#~ msgid "New Game"
+#~ msgstr "Nová hra"
+
+#~ msgid "_OK"
+#~ msgstr "_Budiž"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
