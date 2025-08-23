@@ -1,18 +1,18 @@
 # Swedish messages for quadrapassel.
-# Copyright © 1999-2022 Free Software Foundation, Inc.
+# Copyright © 1999-2025 Free Software Foundation, Inc.
 # Andreas Persenius <ndap@swipnet.se>, 1999.
 # Andreas Hyden <a.hyden@cyberpoint.se>
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
 # Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015, 2017, 2018, 2019, 2020, 2022.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015, 2017, 2018, 2019, 2020, 2022, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2021-05-26 18:10+0000\n"
-"PO-Revision-Date: 2022-02-07 19:27+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
+"POT-Creation-Date: 2025-08-16 12:21+0000\n"
+"PO-Revision-Date: 2025-08-23 23:38+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -20,7 +20,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.7\n"
+
+#: data/org.gnome.Quadrapassel.desktop.in:2
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:8 src/quadrapassel.vala:90
+#: src/quadrapassel.vala:109 src/quadrapassel.vala:940
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#: data/org.gnome.Quadrapassel.desktop.in:3
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:9
+msgid "Fit falling blocks together"
+msgstr "Passa ihop fallande klossar"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Quadrapassel.desktop.in:11
+msgid "tetris;"
+msgstr "tetris;"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -38,166 +54,83 @@ msgstr "Temat som används för rendering av klossarna"
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "Namnet på temat som används för rendering av klossarna och bakgrunden."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:16
-msgid "Level to start with"
-msgstr "Nivå att börja med"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:17
-msgid "Level to start with."
-msgstr "Nivå att börja med."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:21
+#: data/org.gnome.Quadrapassel.gschema.xml:15
 msgid "Whether to preview the next block"
 msgstr "Huruvida nästa kloss ska förhandsgranskas"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:22
+#: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "Whether to preview the next block."
 msgstr "Huruvida nästa kloss ska förhandsgranskas."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:26
+#: data/org.gnome.Quadrapassel.gschema.xml:20
 msgid "Whether to show where the moving block will land"
 msgstr "Huruvida var den flyttade klossen kommer att landa ska visas"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:27
+#: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to show where the moving block will land."
 msgstr "Huruvida var den flyttade klossen kommer att landa ska visas."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:31
-msgid "Whether to give blocks random colors"
-msgstr "Huruvida klossar ska ges slumpmässiga färger"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:32
-msgid "Whether to give blocks random colors."
-msgstr "Huruvida klossar ska ges slumpmässiga färger."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:36
+#: data/org.gnome.Quadrapassel.gschema.xml:25
 msgid "Whether to rotate counter clock wise"
 msgstr "Huruvida rotation ska ske moturs"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:37
+#: data/org.gnome.Quadrapassel.gschema.xml:26
 msgid "Whether to rotate counter clock wise."
 msgstr "Huruvida rotation ska ske moturs."
 
+#: data/org.gnome.Quadrapassel.gschema.xml:31
+msgid "The difficulty of the game"
+msgstr "Spelets svårighetsgrad"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:32
+msgid "How difficult the game is, 0 is a normal difficulty."
+msgstr "Hur svårt spelet är, 0 är normal svårighetsgrad."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:36
+msgid "Whether to use the custom seed"
+msgstr "Huruvida det anpassade fröet ska användas"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:37
+msgid "Whether to use the custom seed."
+msgstr "Huruvida det anpassade fröet ska användas."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:41
+msgid "The seed used for the game"
+msgstr "Fröet som används för spelet"
+
 #: data/org.gnome.Quadrapassel.gschema.xml:42
-msgid "The number of rows to fill"
-msgstr "Antalet rader att fylla"
+msgid "Used to determine which blocks are given in a game."
+msgstr "Används för att avgöra vilka block som ges i ett spel."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:43
-msgid ""
-"The number of rows that are filled with random blocks at the start of the "
-"game."
-msgstr ""
-"Antalet rader som är fyllda med slumpmässiga klossar i början på spelet."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:48
-msgid "The density of filled rows"
-msgstr "Densiteten för ifyllda rader"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:49
-msgid ""
-"The density of blocks in rows filled at the start of the game. The value is "
-"between 0 (for no blocks) and 10 (for a completely filled row)."
-msgstr ""
-"Densiteten för klossar i rader som är ifyllda i början av spelet. Värdet är "
-"mellan 0 (för inga klossar) och 10 (för en helt ifylld rad)."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:53
+#: data/org.gnome.Quadrapassel.gschema.xml:46
 msgid "Whether to play sounds"
 msgstr "Huruvida ljud ska spelas upp"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:54
+#: data/org.gnome.Quadrapassel.gschema.xml:47
 msgid "Whether to play sounds."
 msgstr "Huruvida ljud ska spelas upp."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:58
+#: data/org.gnome.Quadrapassel.gschema.xml:51
 msgid "Whether to pick blocks that are hard to place"
 msgstr "Huruvida klossar ska väljas som är svåra att placera ut"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:59
+#: data/org.gnome.Quadrapassel.gschema.xml:52
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Huruvida klossar ska väljas som är svåra att placera ut."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:371
-msgid "Move left"
-msgstr "Flytta vänster"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:64
-msgid "Key press to move left."
-msgstr "Tangenttryck för att flytta till vänster."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:374
-msgid "Move right"
-msgstr "Flytta höger"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:69
-msgid "Key press to move right."
-msgstr "Tangenttryck för att flytta till höger."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:377
-msgid "Move down"
-msgstr "Flytta nedåt"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:74
-msgid "Key press to move down."
-msgstr "Tangenttryck för att flytta nedåt."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:380
-msgid "Drop"
-msgstr "Släpp"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:79
-msgid "Key press to drop."
-msgstr "Tangenttryck för att släppa."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:383
-msgid "Rotate"
-msgstr "Rotera"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:84
-msgid "Key press to rotate."
-msgstr "Tangenttryck för att rotera."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
-msgid "Pause"
-msgstr "Paus"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:89
-msgid "Key press to pause."
-msgstr "Tangenttryck för att göra paus."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:93
-msgid "Enter"
-msgstr "Retur"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:94
-msgid "Key to start the game"
-msgstr "Tangent för att starta spelet"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:98
+#: data/org.gnome.Quadrapassel.gschema.xml:56
 msgid "Width of the window in pixels"
 msgstr "Bredden på fönstret i bildpunkter"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:102
+#: data/org.gnome.Quadrapassel.gschema.xml:60
 msgid "Height of the window in pixels"
 msgstr "Höjden på fönstret i bildpunkter"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:106
+#: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "true if the window is maximized"
 msgstr "sant om fönstret är maximerat"
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:7
-#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:865
-#: src/quadrapassel.vala:910
-msgid "Quadrapassel"
-msgstr "Quadrapassel"
-
-#: data/org.gnome.Quadrapassel.appdata.xml.in:8
-#: data/org.gnome.Quadrapassel.desktop.in:4
-msgid "Fit falling blocks together"
-msgstr "Passa ihop fallande klossar"
-
-#: data/org.gnome.Quadrapassel.appdata.xml.in:10
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:11
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -212,7 +145,7 @@ msgstr ""
 "högt. Allt eftersom du samlar mer poäng kommer du till högre nivåer och "
 "klossarnas hastighet ökar."
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:17
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:18
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -224,145 +157,234 @@ msgstr ""
 "klossar på några av raderna. Eller så kan det, i stället för att klossarna "
 "faller slumpmässigt, välja klossar som kommer vara svåra för dig att placera."
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:33
-msgid "The GNOME Project"
-msgstr "GNOME-projektet"
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:36
+msgid "The Quadrapassel window, with a game playing."
+msgstr "Quadrapassel-fönstret då ett spel körs."
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Quadrapassel.desktop.in:12
-msgid "tetris;"
-msgstr "tetris;"
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:40
+msgid ""
+"The Quadrapassel window, with a game playing, in small form factor mode."
+msgstr "Quadrapassel-fönstret då ett spel körs i läget för liten formfaktor."
 
-#: src/game-view.vala:335
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:44
+msgid "The Quadrapassel window, before starting a game."
+msgstr "Quadrapassel-fönstret innan ett spel startas."
+
+#: src/game-view.vala:379 src/game-view.vala:458
 msgid "Paused"
 msgstr "Pausad"
 
-#: src/game-view.vala:337
+#: src/game-view.vala:384
 msgid "Game Over"
 msgstr "Spelet är slut"
 
-#: src/quadrapassel.vala:117
-msgid "_New Game"
-msgstr "_Nytt spel"
+#: src/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Allmänt"
 
-#: src/quadrapassel.vala:118
-msgid "_Scores"
-msgstr "_Poänglista"
-
-#: src/quadrapassel.vala:121
-msgid "_Preferences"
-msgstr "_Inställningar"
-
-#: src/quadrapassel.vala:122
-msgid "_Help"
-msgstr "_Hjälp"
-
-#: src/quadrapassel.vala:123
-msgid "_About Quadrapassel"
-msgstr "_Om Quadrapassel"
-
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:803
-msgid "Start a new game"
+#: src/help-overlay.blp:14
+msgctxt "shortcut window"
+msgid "Start a New Game"
 msgstr "Starta ett nytt spel"
 
-#: src/quadrapassel.vala:156
-msgid "Next"
-msgstr "Nästa"
-
-#: src/quadrapassel.vala:169 src/score-dialog.vala:51
-msgid "Score"
-msgstr "Poäng"
-
-#: src/quadrapassel.vala:180
-msgid "Lines"
-msgstr "Rader"
-
-#: src/quadrapassel.vala:191
-msgid "Level"
-msgstr "Nivå"
-
-#: src/quadrapassel.vala:276
-msgid "Preferences"
-msgstr "Inställningar"
-
-#: src/quadrapassel.vala:294
-msgid "Game"
-msgstr "Spel"
-
-#. pre-filled rows
-#: src/quadrapassel.vala:298
-msgid "_Number of pre-filled rows:"
-msgstr "_Antal förifyllda rader:"
-
-#. pre-filled rows density
-#: src/quadrapassel.vala:313
-msgid "_Density of blocks in a pre-filled row:"
-msgstr "_Densiteten på klossar i en förifylld rad:"
-
-#. starting level
-#: src/quadrapassel.vala:327
-msgid "_Starting level:"
-msgstr "_Startnivå:"
-
-#: src/quadrapassel.vala:340
-msgid "_Enable sounds"
-msgstr "A_ktivera ljud"
-
-#: src/quadrapassel.vala:345
-msgid "Choose difficult _blocks"
-msgstr "Välj svåra _klossar"
-
-#: src/quadrapassel.vala:350
-msgid "_Preview next block"
-msgstr "_Förhandsgranska nästa kloss"
-
-#. rotate counter clock wise
-#: src/quadrapassel.vala:356
-msgid "_Rotate blocks counterclockwise"
-msgstr "_Rotera klossar moturs"
-
-#: src/quadrapassel.vala:361
-msgid "Show _where the block will land"
-msgstr "Visa _var klossen kommer att landa"
-
-#: src/quadrapassel.vala:405
-msgid "Controls"
-msgstr "Styrning"
-
-#: src/quadrapassel.vala:411
-msgid "Theme"
-msgstr "Tema"
-
-#: src/quadrapassel.vala:423
-msgid "Plain"
-msgstr "Enkel"
-
-#: src/quadrapassel.vala:428
-msgid "Tango Flat"
-msgstr "Tango platt"
-
-#: src/quadrapassel.vala:433
-msgid "Tango Shaded"
-msgstr "Tango skuggad"
-
-#: src/quadrapassel.vala:438
-msgid "Clean"
-msgstr "Ren"
-
-#. Throw up a dialog
-#: src/quadrapassel.vala:502
-msgid "Unable to change key, as this key already exists"
-msgstr "Kan inte ändra nyckel, då denna nyckel redan finns"
-
-#: src/quadrapassel.vala:784
-msgid "Unpause the game"
-msgstr "Fortsätt spelet"
-
-#: src/quadrapassel.vala:789
+#: src/help-overlay.blp:20
+msgctxt "shortcut window"
 msgid "Pause the game"
 msgstr "Gör paus i spelet"
 
-#: src/quadrapassel.vala:867
+#: src/help-overlay.blp:24
+msgctxt "shortcut window"
+msgid "Show Help"
+msgstr "Visa hjälp"
+
+#: src/help-overlay.blp:29
+msgctxt "shortcut window"
+msgid "Open primary menu"
+msgstr "Öppna primär meny"
+
+#: src/help-overlay.blp:34
+msgctxt "shortcut window"
+msgid "Show shortcuts"
+msgstr "Visa kortkommandon"
+
+#: src/help-overlay.blp:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Avsluta"
+
+#: src/help-overlay.blp:45
+msgctxt "shortcut window"
+msgid "Game"
+msgstr "Spel"
+
+#: src/help-overlay.blp:48
+msgctxt "shortcut window"
+msgid "Rotate"
+msgstr "Rotera"
+
+#: src/help-overlay.blp:53
+msgctxt "shortcut window"
+msgid "Move right"
+msgstr "Flytta höger"
+
+#: src/help-overlay.blp:58
+msgctxt "shortcut window"
+msgid "Move left"
+msgstr "Flytta vänster"
+
+#: src/help-overlay.blp:63
+msgctxt "shortcut window"
+msgid "Move down"
+msgstr "Flytta nedåt"
+
+#: src/help-overlay.blp:68
+msgctxt "shortcut window"
+msgid "Drop"
+msgstr "Släpp"
+
+#: src/quadrapassel.vala:135 src/quadrapassel.vala:188
+msgid "Start a new game"
+msgstr "Starta ett nytt spel"
+
+#: src/quadrapassel.vala:142
+msgid "_Scores"
+msgstr "_Poänglista"
+
+#: src/quadrapassel.vala:143
+msgid "App_earance"
+msgstr "_Utseende"
+
+#: src/quadrapassel.vala:144
+msgid "_Preferences"
+msgstr "_Inställningar"
+
+#: src/quadrapassel.vala:147
+msgid "_Keyboard Shortcuts"
+msgstr "_Tangentbordsgenvägar"
+
+#: src/quadrapassel.vala:148
+msgid "_Help"
+msgstr "_Hjälp"
+
+#: src/quadrapassel.vala:149
+msgid "_About Quadrapassel"
+msgstr "_Om Quadrapassel"
+
+#: src/quadrapassel.vala:193
+msgid "Next"
+msgstr "Nästa"
+
+#: src/quadrapassel.vala:210
+msgid "Score"
+msgstr "Poäng"
+
+#: src/quadrapassel.vala:221
+msgid "Lines"
+msgstr "Rader"
+
+#: src/quadrapassel.vala:232
+msgid "Level"
+msgstr "Nivå"
+
+#. Label on the scores dialog
+#: src/quadrapassel.vala:244
+msgid "Difficulty:"
+msgstr "Svårighetsgrad:"
+
+#: src/quadrapassel.vala:336
+msgid "Preferences"
+msgstr "Inställningar"
+
+#: src/quadrapassel.vala:339
+msgid "Game"
+msgstr "Spel"
+
+#: src/quadrapassel.vala:342
+msgid "Game Difficulty"
+msgstr "Svårighetsgrad på spelet"
+
+#: src/quadrapassel.vala:343
+msgid "Change how difficult the game is"
+msgstr "Ändra hur svårt spelet är"
+
+#: src/quadrapassel.vala:349
+msgid "_Difficulty"
+msgstr "S_vårighetsgrad"
+
+#: src/quadrapassel.vala:357
+msgid "Choose difficult _blocks"
+msgstr "Välj svåra _klossar"
+
+#: src/quadrapassel.vala:366
+msgid "In-Game"
+msgstr "I spelet"
+
+#: src/quadrapassel.vala:367
+msgid "Change the experience of playing a game"
+msgstr "Ändra spelupplevelsen"
+
+#: src/quadrapassel.vala:370
+msgid "_Enable sounds"
+msgstr "A_ktivera ljud"
+
+#: src/quadrapassel.vala:381
+msgid "_Preview next block"
+msgstr "_Förhandsgranska nästa kloss"
+
+#: src/quadrapassel.vala:393
+msgid "_Rotate blocks counterclockwise"
+msgstr "_Rotera klossar moturs"
+
+#: src/quadrapassel.vala:400
+msgid "Show _where the block will land"
+msgstr "Visa _var klossen kommer att landa"
+
+#: src/quadrapassel.vala:418
+msgid "_Use a custom seed for the game"
+msgstr "_Använd ett anpassat frö för spelet"
+
+#: src/quadrapassel.vala:442
+msgid "Plain"
+msgstr "Enkelt"
+
+#: src/quadrapassel.vala:442
+msgid "Tango Shaded"
+msgstr "Tango skuggat"
+
+#: src/quadrapassel.vala:442
+msgid "Clean"
+msgstr "Rent"
+
+#: src/quadrapassel.vala:442
+msgid "Modern"
+msgstr "Modernt"
+
+#: src/quadrapassel.vala:816
+msgid "Unpause the game"
+msgstr "Fortsätt spelet"
+
+#: src/quadrapassel.vala:822
+msgid "Pause the game"
+msgstr "Gör paus i spelet"
+
+#: src/quadrapassel.vala:840
+msgid "Start the game"
+msgstr "Starta spelet"
+
+#: src/quadrapassel.vala:861
+msgid "Old Scores"
+msgstr "Gamla poäng"
+
+#: src/quadrapassel.vala:866
+msgid "Difficult"
+msgstr "Svår"
+
+#: src/quadrapassel.vala:942
+msgid "The GNOME Project"
+msgstr "GNOME-projektet"
+
+#: src/quadrapassel.vala:944
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -370,7 +392,7 @@ msgstr ""
 "Ett klassiskt spel där du roterar fallande klossar för att skapa rader, men "
 "stapla inte klossarna för högt så spelet tar slut!"
 
-#: src/quadrapassel.vala:872
+#: src/quadrapassel.vala:948
 msgid "translator-credits"
 msgstr ""
 "Daniel Nylander <po@danielnylander.se>\n"
@@ -383,18 +405,96 @@ msgstr ""
 "Skicka synpunkter på översättningen till\n"
 "<tp-sv@listor.tp-sv.se>."
 
-#: src/score-dialog.vala:26
-msgid "_Close"
-msgstr "_Stäng"
+#~ msgid "Level to start with"
+#~ msgstr "Nivå att börja med"
 
-#: src/score-dialog.vala:27
-msgid "New Game"
-msgstr "Nytt spel"
+#~ msgid "Level to start with."
+#~ msgstr "Nivå att börja med."
 
-#: src/score-dialog.vala:30
-msgid "_OK"
-msgstr "_OK"
+#~ msgid "Whether to give blocks random colors"
+#~ msgstr "Huruvida klossar ska ges slumpmässiga färger"
 
-#: src/score-dialog.vala:48
-msgid "Date"
-msgstr "Datum"
+#~ msgid "Whether to give blocks random colors."
+#~ msgstr "Huruvida klossar ska ges slumpmässiga färger."
+
+#~ msgid "The number of rows to fill"
+#~ msgstr "Antalet rader att fylla"
+
+#~ msgid ""
+#~ "The number of rows that are filled with random blocks at the start of the "
+#~ "game."
+#~ msgstr ""
+#~ "Antalet rader som är fyllda med slumpmässiga klossar i början på spelet."
+
+#~ msgid "The density of filled rows"
+#~ msgstr "Densiteten för ifyllda rader"
+
+#~ msgid ""
+#~ "The density of blocks in rows filled at the start of the game. The value "
+#~ "is between 0 (for no blocks) and 10 (for a completely filled row)."
+#~ msgstr ""
+#~ "Densiteten för klossar i rader som är ifyllda i början av spelet. Värdet "
+#~ "är mellan 0 (för inga klossar) och 10 (för en helt ifylld rad)."
+
+#~ msgid "Pre-Game"
+#~ msgstr "Före spelet"
+
+#~ msgid "_Number of pre-filled rows"
+#~ msgstr "_Antal förifyllda rader"
+
+#~ msgid "_Density of blocks in a pre-filled row"
+#~ msgstr "_Densiteten på klossar i en förifylld rad"
+
+#~ msgid "_Starting level"
+#~ msgstr "_Startnivå"
+
+#~ msgid "Tango Flat"
+#~ msgstr "Tango platt"
+
+#~ msgid "_Close"
+#~ msgstr "_Stäng"
+
+#~ msgid "New Game"
+#~ msgstr "Nytt spel"
+
+#~ msgid "_OK"
+#~ msgstr "_OK"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Key press to move left."
+#~ msgstr "Tangenttryck för att flytta till vänster."
+
+#~ msgid "Key press to move right."
+#~ msgstr "Tangenttryck för att flytta till höger."
+
+#~ msgid "Key press to move down."
+#~ msgstr "Tangenttryck för att flytta nedåt."
+
+#~ msgid "Key press to drop."
+#~ msgstr "Tangenttryck för att släppa."
+
+#~ msgid "Key press to rotate."
+#~ msgstr "Tangenttryck för att rotera."
+
+#~ msgid "Pause"
+#~ msgstr "Paus"
+
+#~ msgid "Key press to pause."
+#~ msgstr "Tangenttryck för att göra paus."
+
+#~ msgid "Enter"
+#~ msgstr "Retur"
+
+#~ msgid "_New Game"
+#~ msgstr "_Nytt spel"
+
+#~ msgid "Controls"
+#~ msgstr "Styrning"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
+
+#~ msgid "Unable to change key, as this key already exists"
+#~ msgstr "Kan inte ändra nyckel, då denna nyckel redan finns"
