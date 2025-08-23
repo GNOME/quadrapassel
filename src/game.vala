@@ -423,7 +423,7 @@ public class Game : Object
     private bool try_rotate (int r_step)
     {
         int vmove = 0;
-        if (shape.y == -1)
+        if (shape.y < 0)
             vmove = 1;
 
         List<int> listHMoves = new List<int>();
