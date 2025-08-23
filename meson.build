@@ -1,5 +1,6 @@
 project('quadrapassel', 'vala', 'c',
-        version: '49.beta')
+        version: '49.beta',
+        meson_version: '>= 1.1')
 
 base_id = 'org.gnome.Quadrapassel'
 app_id = 'org.gnome.Quadrapassel.Devel'
@@ -8,8 +9,6 @@ app_id = 'org.gnome.Quadrapassel.Devel'
 gnome = import('gnome')
 # used for internationalization
 i18n = import('i18n')
-# used to run post install script
-python3 = import('python3')
 
 cc = meson.get_compiler('c')
 
@@ -24,9 +23,6 @@ pango_cairo_dependency = dependency('pangocairo')
 posix_dependency = meson.get_compiler('vala').find_library('posix')
 rsvg_dependency = dependency('librsvg-2.0', version: '>= 2.32.0')
 libm_dependency = cc.find_library('m', required : true)
-
-# Set gettext package name
-add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language: 'c')
 
 localedir = join_paths(get_option('prefix'), get_option('localedir'))
 datadir = join_paths(get_option('prefix'), get_option('datadir'))
