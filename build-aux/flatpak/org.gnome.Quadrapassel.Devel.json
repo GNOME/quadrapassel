@@ -78,26 +78,14 @@
       ]
     },
     {
-      "name": "libgnome-games-support",
-      "buildsystem": "meson",
+      "name": "libgee",
+      "config-opts": ["--enable-introspection=no"],
       "sources": [
         {
           "type": "git",
-          "url": "https://gitlab.gnome.org/GNOME/libgnome-games-support.git"
+          "url": "https://gitlab.gnome.org/GNOME/libgee.git",
+          "branch": "main"
         }
-      ],
-      "modules": [
-      	{
-      	  "name": "libgee",
-      	  "config-opts": ["--enable-introspection=no"],
-          "sources": [
-            {
-              "type": "git",
-              "url": "https://gitlab.gnome.org/GNOME/libgee.git",
-              "branch": "main"
-            }
-	  ]
-	}
       ]
     },
     {
