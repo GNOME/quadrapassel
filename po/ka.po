@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-06-26 21:05+0000\n"
-"PO-Revision-Date: 2025-06-27 04:54+0200\n"
+"POT-Creation-Date: 2025-08-23 21:59+0000\n"
+"PO-Revision-Date: 2025-08-24 14:05+0200\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: \n"
 "Language: ka\n"
@@ -16,7 +16,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.7\n"
+
+#: data/org.gnome.Quadrapassel.desktop.in:2
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:8 src/quadrapassel.vala:90
+#: src/quadrapassel.vala:109 src/quadrapassel.vala:940
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#: data/org.gnome.Quadrapassel.desktop.in:3
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:9
+msgid "Fit falling blocks together"
+msgstr ""
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Quadrapassel.desktop.in:11
+msgid "tetris;"
+msgstr "tetris;"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -34,106 +50,83 @@ msgstr ""
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr ""
 
-#: data/org.gnome.Quadrapassel.gschema.xml:16
-msgid "Level to start with"
-msgstr ""
-
-#: data/org.gnome.Quadrapassel.gschema.xml:17
-msgid "Level to start with."
-msgstr ""
-
-#: data/org.gnome.Quadrapassel.gschema.xml:21
+#: data/org.gnome.Quadrapassel.gschema.xml:15
 msgid "Whether to preview the next block"
 msgstr ""
 
-#: data/org.gnome.Quadrapassel.gschema.xml:22
+#: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "Whether to preview the next block."
 msgstr ""
 
-#: data/org.gnome.Quadrapassel.gschema.xml:26
+#: data/org.gnome.Quadrapassel.gschema.xml:20
 msgid "Whether to show where the moving block will land"
 msgstr ""
 
-#: data/org.gnome.Quadrapassel.gschema.xml:27
+#: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to show where the moving block will land."
 msgstr ""
 
-#: data/org.gnome.Quadrapassel.gschema.xml:31
-msgid "Whether to give blocks random colors"
-msgstr ""
-
-#: data/org.gnome.Quadrapassel.gschema.xml:32
-msgid "Whether to give blocks random colors."
-msgstr ""
-
-#: data/org.gnome.Quadrapassel.gschema.xml:36
+#: data/org.gnome.Quadrapassel.gschema.xml:25
 msgid "Whether to rotate counter clock wise"
 msgstr ""
 
-#: data/org.gnome.Quadrapassel.gschema.xml:37
+#: data/org.gnome.Quadrapassel.gschema.xml:26
 msgid "Whether to rotate counter clock wise."
 msgstr ""
 
+#: data/org.gnome.Quadrapassel.gschema.xml:31
+msgid "The difficulty of the game"
+msgstr ""
+
+#: data/org.gnome.Quadrapassel.gschema.xml:32
+msgid "How difficult the game is, 0 is a normal difficulty."
+msgstr ""
+
+#: data/org.gnome.Quadrapassel.gschema.xml:36
+msgid "Whether to use the custom seed"
+msgstr ""
+
+#: data/org.gnome.Quadrapassel.gschema.xml:37
+msgid "Whether to use the custom seed."
+msgstr ""
+
+#: data/org.gnome.Quadrapassel.gschema.xml:41
+msgid "The seed used for the game"
+msgstr "თამაშისთვის გამოყენებული თესლი"
+
 #: data/org.gnome.Quadrapassel.gschema.xml:42
-msgid "The number of rows to fill"
-msgstr "შესავსები მწკრივების რაოდენობა"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:43
-msgid ""
-"The number of rows that are filled with random blocks at the start of the "
-"game."
+msgid "Used to determine which blocks are given in a game."
 msgstr ""
 
-#: data/org.gnome.Quadrapassel.gschema.xml:48
-msgid "The density of filled rows"
-msgstr ""
-
-#: data/org.gnome.Quadrapassel.gschema.xml:49
-msgid ""
-"The density of blocks in rows filled at the start of the game. The value is "
-"between 0 (for no blocks) and 10 (for a completely filled row)."
-msgstr ""
-
-#: data/org.gnome.Quadrapassel.gschema.xml:53
+#: data/org.gnome.Quadrapassel.gschema.xml:46
 msgid "Whether to play sounds"
-msgstr ""
+msgstr "იკვრება თუ არა ხმა"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:54
+#: data/org.gnome.Quadrapassel.gschema.xml:47
 msgid "Whether to play sounds."
-msgstr ""
+msgstr "იკვრება თუ არა ხმა."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:58
+#: data/org.gnome.Quadrapassel.gschema.xml:51
 msgid "Whether to pick blocks that are hard to place"
 msgstr ""
 
-#: data/org.gnome.Quadrapassel.gschema.xml:59
+#: data/org.gnome.Quadrapassel.gschema.xml:52
 msgid "Whether to pick blocks that are hard to place."
 msgstr ""
 
-#: data/org.gnome.Quadrapassel.gschema.xml:63
+#: data/org.gnome.Quadrapassel.gschema.xml:56
 msgid "Width of the window in pixels"
 msgstr "ფანჯრის სიგანე, პიქსელებში"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:67
+#: data/org.gnome.Quadrapassel.gschema.xml:60
 msgid "Height of the window in pixels"
 msgstr "ფანჯრის სიმაღლე, პიქსელებში"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:71
+#: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "true if the window is maximized"
 msgstr "ჭეშმარიტია, თუ ფანჯარა მთელ ეკრანზეა"
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:8
-#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:79
-#: src/quadrapassel.vala:98 src/quadrapassel.vala:734
-msgid "Quadrapassel"
-msgstr "Quadrapassel"
-
-#: data/org.gnome.Quadrapassel.appdata.xml.in:9
-#: data/org.gnome.Quadrapassel.desktop.in:4
-msgid "Fit falling blocks together"
-msgstr ""
-
-#: data/org.gnome.Quadrapassel.appdata.xml.in:11
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:11
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -142,7 +135,7 @@ msgid ""
 "too high. As your score gets higher, you level up and the blocks fall faster."
 msgstr ""
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:18
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:18
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -150,16 +143,24 @@ msgid ""
 "select blocks that will be hard for you to place."
 msgstr ""
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Quadrapassel.desktop.in:12
-msgid "tetris;"
-msgstr "tetris;"
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:36
+msgid "The Quadrapassel window, with a game playing."
+msgstr ""
 
-#: src/game-view.vala:365
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:40
+msgid ""
+"The Quadrapassel window, with a game playing, in small form factor mode."
+msgstr ""
+
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:44
+msgid "The Quadrapassel window, before starting a game."
+msgstr ""
+
+#: src/game-view.vala:379 src/game-view.vala:458
 msgid "Paused"
 msgstr "შეჩერებულია"
 
-#: src/game-view.vala:367
+#: src/game-view.vala:384
 msgid "Game Over"
 msgstr "თამაში დასრულდა"
 
@@ -205,8 +206,8 @@ msgstr "თამაში"
 
 #: src/help-overlay.blp:48
 msgctxt "shortcut window"
-msgid "Move left"
-msgstr "მარცხნივ გაწევა"
+msgid "Rotate"
+msgstr "შემობრუნება"
 
 #: src/help-overlay.blp:53
 msgctxt "shortcut window"
@@ -215,172 +216,187 @@ msgstr "მარჯვნივ გაწევა"
 
 #: src/help-overlay.blp:58
 msgctxt "shortcut window"
+msgid "Move left"
+msgstr "მარცხნივ გაწევა"
+
+#: src/help-overlay.blp:63
+msgctxt "shortcut window"
 msgid "Move down"
 msgstr "ქვემოთ ჩამოწევა"
 
-#: src/help-overlay.blp:63
+#: src/help-overlay.blp:68
 msgctxt "shortcut window"
 msgid "Drop"
 msgstr "დაგდება"
 
-#: src/help-overlay.blp:68
-msgctxt "shortcut window"
-msgid "Rotate"
-msgstr "შემობრუნება"
-
-#: src/quadrapassel.vala:122
-msgid "_Scores"
-msgstr "_ქულები"
-
-#: src/quadrapassel.vala:123
-msgid "A_ppearance"
-msgstr "_გარეგნობა"
-
-#: src/quadrapassel.vala:124 src/quadrapassel.vala:262
-msgid "Preferences"
-msgstr "მორგება"
-
-#: src/quadrapassel.vala:127
-msgid "_Keyboard Shortcuts"
-msgstr "_კლავიატურის მალსახმობები"
-
-#: src/quadrapassel.vala:128
-msgid "_Help"
-msgstr "_დახმარება"
-
-#: src/quadrapassel.vala:129
-msgid "_About Quadrapassel"
-msgstr "Quadrapassel-ის შესახებ"
-
-#: src/quadrapassel.vala:159 src/quadrapassel.vala:675
+#: src/quadrapassel.vala:135 src/quadrapassel.vala:188
 msgid "Start a new game"
 msgstr "ახალი თამაშის დაწყება"
 
-#: src/quadrapassel.vala:164
+#: src/quadrapassel.vala:142
+msgid "_Scores"
+msgstr "_ქულები"
+
+#: src/quadrapassel.vala:143
+msgid "App_earance"
+msgstr "გარ_ეგნობა"
+
+#: src/quadrapassel.vala:144
+msgid "_Preferences"
+msgstr "_მორგება"
+
+#: src/quadrapassel.vala:147
+msgid "_Keyboard Shortcuts"
+msgstr "_კლავიატურის მალსახმობები"
+
+#: src/quadrapassel.vala:148
+msgid "_Help"
+msgstr "_დახმარება"
+
+#: src/quadrapassel.vala:149
+msgid "_About Quadrapassel"
+msgstr "Quadrapassel-ის შესახებ"
+
+#: src/quadrapassel.vala:193
 msgid "Next"
 msgstr "შემდეგი"
 
-#: src/quadrapassel.vala:181 src/score-dialog.vala:48
+#: src/quadrapassel.vala:210
 msgid "Score"
 msgstr "ქულები"
 
-#: src/quadrapassel.vala:192
+#: src/quadrapassel.vala:221
 msgid "Lines"
 msgstr "ხაზები"
 
-#: src/quadrapassel.vala:203
+#: src/quadrapassel.vala:232
 msgid "Level"
 msgstr "დონე"
 
-#: src/quadrapassel.vala:265
+#. Label on the scores dialog
+#: src/quadrapassel.vala:244
+msgid "Difficulty:"
+msgstr "სირთულე:"
+
+#: src/quadrapassel.vala:336
+msgid "Preferences"
+msgstr "მორგება"
+
+#: src/quadrapassel.vala:339
 msgid "Game"
 msgstr "თამაში"
 
-#: src/quadrapassel.vala:268
-msgid "Pre-Game"
-msgstr "თამაშწინა"
+#: src/quadrapassel.vala:342
+msgid "Game Difficulty"
+msgstr "თამაშის სირთულე"
 
-#: src/quadrapassel.vala:269
-msgid "Choose what happens before you start a game"
+#: src/quadrapassel.vala:343
+msgid "Change how difficult the game is"
 msgstr ""
 
-#: src/quadrapassel.vala:275
-msgid "_Number of pre-filled rows"
-msgstr ""
+#: src/quadrapassel.vala:349
+msgid "_Difficulty"
+msgstr "სირთუ_ლე"
 
-#: src/quadrapassel.vala:285
-msgid "_Density of blocks in a pre-filled row"
-msgstr ""
-
-#: src/quadrapassel.vala:295
-msgid "_Starting level"
-msgstr ""
-
-#: src/quadrapassel.vala:305
-msgid "In-Game"
-msgstr "თამაშში"
-
-#: src/quadrapassel.vala:306
-msgid "Change the experience of playing a game"
-msgstr ""
-
-#: src/quadrapassel.vala:309
-msgid "_Enable sounds"
-msgstr "ხმების _ჩართვა"
-
-#: src/quadrapassel.vala:320
+#: src/quadrapassel.vala:357
 msgid "Choose difficult _blocks"
 msgstr ""
 
-#: src/quadrapassel.vala:327
+#: src/quadrapassel.vala:366
+msgid "In-Game"
+msgstr "თამაშში"
+
+#: src/quadrapassel.vala:367
+msgid "Change the experience of playing a game"
+msgstr ""
+
+#: src/quadrapassel.vala:370
+msgid "_Enable sounds"
+msgstr "ხმების _ჩართვა"
+
+#: src/quadrapassel.vala:381
 msgid "_Preview next block"
 msgstr ""
 
-#: src/quadrapassel.vala:339
+#: src/quadrapassel.vala:393
 msgid "_Rotate blocks counterclockwise"
 msgstr ""
 
-#: src/quadrapassel.vala:346
+#: src/quadrapassel.vala:400
 msgid "Show _where the block will land"
 msgstr ""
 
-#: src/quadrapassel.vala:374
+#: src/quadrapassel.vala:418
+msgid "_Use a custom seed for the game"
+msgstr ""
+
+#: src/quadrapassel.vala:442
 msgid "Plain"
 msgstr "უბრალო"
 
-#: src/quadrapassel.vala:379
-msgid "Tango Flat"
-msgstr ""
-
-#: src/quadrapassel.vala:384
+#: src/quadrapassel.vala:442
 msgid "Tango Shaded"
 msgstr ""
 
-#: src/quadrapassel.vala:389
+#: src/quadrapassel.vala:442
 msgid "Clean"
 msgstr "გასუფთავება"
 
-#: src/quadrapassel.vala:394
+#: src/quadrapassel.vala:442
 msgid "Modern"
 msgstr "თანამედროვე"
 
-#: src/quadrapassel.vala:653
+#: src/quadrapassel.vala:816
 msgid "Unpause the game"
 msgstr "თამაშის გაგრძელება"
 
-#: src/quadrapassel.vala:658
+#: src/quadrapassel.vala:822
 msgid "Pause the game"
 msgstr "თამაშის შეჩერება"
 
-#: src/quadrapassel.vala:736
+#: src/quadrapassel.vala:840
+msgid "Start the game"
+msgstr "თამაშის დაწყება"
+
+#: src/quadrapassel.vala:861
+msgid "Old Scores"
+msgstr "ძველი ქულები"
+
+#: src/quadrapassel.vala:866
+msgid "Difficult"
+msgstr "რთული"
+
+#: src/quadrapassel.vala:942
 msgid "The GNOME Project"
 msgstr "პროექტი \"GNOME\""
 
-#: src/quadrapassel.vala:738
+#: src/quadrapassel.vala:944
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
 msgstr ""
 
-#: src/quadrapassel.vala:742
+#: src/quadrapassel.vala:948
 msgid "translator-credits"
 msgstr "თემური დოღონაძე"
 
-#: src/score-dialog.vala:26
-msgid "_Close"
-msgstr "და_ხურვა"
+#~ msgid "The number of rows to fill"
+#~ msgstr "შესავსები მწკრივების რაოდენობა"
 
-#: src/score-dialog.vala:27
-msgid "New Game"
-msgstr "ახალი თამაში"
+#~ msgid "Pre-Game"
+#~ msgstr "თამაშწინა"
 
-#: src/score-dialog.vala:30
-msgid "_OK"
-msgstr "_დიახ"
+#~ msgid "_Close"
+#~ msgstr "და_ხურვა"
 
-#: src/score-dialog.vala:45
-msgid "Date"
-msgstr "თარიღი"
+#~ msgid "New Game"
+#~ msgstr "ახალი თამაში"
+
+#~ msgid "_OK"
+#~ msgstr "_დიახ"
+
+#~ msgid "Date"
+#~ msgstr "თარიღი"
 
 #~ msgid "Pause"
 #~ msgstr "შეჩერება"
@@ -390,9 +406,6 @@ msgstr "თარიღი"
 
 #~ msgid "_New Game"
 #~ msgstr "_ახალი თამაში"
-
-#~ msgid "_Preferences"
-#~ msgstr "_მორგება"
 
 #~ msgid "Controls"
 #~ msgstr "მმართველები"
