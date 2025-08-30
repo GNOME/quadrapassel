@@ -939,7 +939,6 @@ public class Quadrapassel : Adw.Application
         var about = new Adw.AboutDialog () {
             application_name = _("Quadrapassel"),
             application_icon = APP_ID,
-            developer_name   = _("The GNOME Project"),
             developers = authors,
             comments = _("A classic game where you rotate blocks to make complete rows, but don't pile your blocks too high or it's game over!"),
             copyright = "Copyright © 1999 J. Marcin Gorycki, 2000–2015 Others",
@@ -974,3 +973,4 @@ public class Quadrapassel : Adw.Application
         return app.run (args);
     }
 }
+
