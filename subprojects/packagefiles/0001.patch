@@ -1,0 +1,34 @@
+From a15e29e0c2034dd786317a4514860607150fad4b Mon Sep 17 00:00:00 2001
+From: Will Warner <willwwarner@proton.me>
+Date: Mon, 25 Aug 2025 17:08:56 -0400
+Subject: [PATCH] dialog: actually fix setting the active category for
+ drop_down
+
+---
+ games/scores/dialog.vala | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+
+diff --git a/games/scores/dialog.vala b/games/scores/dialog.vala
+index b93f923..68ace62 100644
+--- a/games/scores/dialog.vala
++++ b/games/scores/dialog.vala
+@@ -115,11 +115,12 @@ private class Dialog : Adw.Dialog
+                 if (selected_index != -1)
+                     load_scores_for_category (categories.nth_data (selected_index));
+             });
+-            int active_category_index = categories.index (active_category);
+-            if (active_category_index != -1)
+-                drop_down.set_selected (active_category_index - 1);
+-
+-            headerbar.set_title_widget (drop_down);
++            for (int i = 0; i != categories.length (); i++)
++            {
++                var category = categories.nth_data (i);
++                if (category == active_category)
++                    drop_down.set_selected (i);
++            }
+         }
+
+         /* Add the data to the dialog */
+--
+GitLab

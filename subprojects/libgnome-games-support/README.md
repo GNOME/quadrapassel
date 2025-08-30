@@ -25,9 +25,8 @@ And set the ``superproject_name`` (here it is ``gnome-mines``) with the name of 
 [wrap-git]
 directory = libgnome-games-support
 url = https://gitlab.gnome.org/GNOME/libgnome-games-support.git
-revision = 3.0.0
+revision = git hash goes here
 depth = 1
-
 ```
 
 ### libgnome-games-support documentation

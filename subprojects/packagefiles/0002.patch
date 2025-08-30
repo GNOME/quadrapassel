@@ -1,0 +1,27 @@
+From 1f688d811b5920b7d6f2d875fefdbd8b551d9a9b Mon Sep 17 00:00:00 2001
+From: Will Warner <willwwarner@proton.me>
+Date: Fri, 29 Aug 2025 23:18:59 -0400
+Subject: [PATCH] dialog: don't forget to add the drop down to the headerbar!
+
+fixes: #32
+closes: !29
+---
+ games/scores/dialog.vala | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/games/scores/dialog.vala b/games/scores/dialog.vala
+index 68ace62..520a8d3 100644
+--- a/games/scores/dialog.vala
++++ b/games/scores/dialog.vala
+@@ -121,6 +121,8 @@ private class Dialog : Adw.Dialog
+                 if (category == active_category)
+                     drop_down.set_selected (i);
+             }
++
++            headerbar.set_title_widget (drop_down);
+         }
+
+         /* Add the data to the dialog */
+--
+GitLab
+
