@@ -55,8 +55,15 @@
     <color type="primary" scheme_preference="light">#B73737</color>
     <color type="primary" scheme_preference="dark">#764B7C</color>
   </branding>
-  <project_group>GNOME</project_group>
   <releases>
+    <release date="2025-08-30" version="49~rc" type="development">
+      <description>
+        <ul>
+          <li>Updated translations: Ukrainian, Slovenian, Chinese (China), Czech, Swedish, Georgian, and Basque</li>
+          <li>Fixed a bug where game pieces could be rotated so that they appeared above the game area</li>
+        </ul>
+      </description>
+    </release>
     <release date="2025-08-03" version="49~beta" type="development">
       <description>
         <ul>
@@ -99,8 +106,8 @@
     <kudo>UserDocs</kudo>
   </kudos>
   <translation type="gettext">quadrapassel</translation>
-  <developer id="org.gnome">
-    <name>The GNOME Project</name>
+  <developer id="org.gnome.quadrapassel">
+    <name>The Quadrapassel developers</name>
   </developer>
   <content_rating type="oars-1.1" />
 </component>

@@ -1,5 +1,5 @@
 project('quadrapassel', 'vala', 'c',
-        version: '49.beta',
+        version: '49.rc',
         meson_version: '>= 1.1')
 
 base_id = 'org.gnome.Quadrapassel'
