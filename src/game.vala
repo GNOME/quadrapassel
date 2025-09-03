@@ -422,6 +422,9 @@ public class Game : Object
     //Example use case: The tetromino is on the left of right side of the grid, because it will probably not fit after rotation, we move it a little so it still gets rotated if there is enough space around the tetromino.
     private bool try_rotate (int r_step)
     {
+        if (game_over)
+            return false;
+
         int vmove = 0;
         if (shape.y < 0)
             vmove = 1;
