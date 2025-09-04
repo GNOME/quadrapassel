@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games trunk\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-06-27 23:38+0000\n"
-"PO-Revision-Date: 2025-06-28 22:22+1000\n"
+"POT-Creation-Date: 2025-08-27 19:12+0000\n"
+"PO-Revision-Date: 2025-08-30 20:58+1000\n"
 "Last-Translator: Ser82-png <asvmail.as@gmail.com>\n"
 "Language-Team: русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
@@ -29,6 +29,22 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 3.0.1\n"
+
+#: data/org.gnome.Quadrapassel.desktop.in:2
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:8 src/quadrapassel.vala:90
+#: src/quadrapassel.vala:109 src/quadrapassel.vala:940
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#: data/org.gnome.Quadrapassel.desktop.in:3
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:9
+msgid "Fit falling blocks together"
+msgstr "Укладывайте падающие блоки вместе"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Quadrapassel.desktop.in:11
+msgid "tetris;"
+msgstr "tetris;тетрис;"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -46,108 +62,85 @@ msgstr "Тема блоков"
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "Тема, используемая для рисования блоков и фона."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:16
-msgid "Level to start with"
-msgstr "Начальный уровень"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:17
-msgid "Level to start with."
-msgstr "Начальный уровень."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:21
+#: data/org.gnome.Quadrapassel.gschema.xml:15
 msgid "Whether to preview the next block"
 msgstr "Показывать следующий блок"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:22
+#: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "Whether to preview the next block."
 msgstr "Показывать следующий блок."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:26
+#: data/org.gnome.Quadrapassel.gschema.xml:20
 msgid "Whether to show where the moving block will land"
 msgstr "Показывать ли место приземления блока"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:27
+#: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to show where the moving block will land."
 msgstr "Показывать ли место приземления блока."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:31
-msgid "Whether to give blocks random colors"
-msgstr "Использовать разноцветные блоки"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:32
-msgid "Whether to give blocks random colors."
-msgstr "Использовать разноцветные блоки."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:36
+#: data/org.gnome.Quadrapassel.gschema.xml:25
 msgid "Whether to rotate counter clock wise"
 msgstr "Вращать по часовой стрелке"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:37
+#: data/org.gnome.Quadrapassel.gschema.xml:26
 msgid "Whether to rotate counter clock wise."
 msgstr "Вращать по часовой стрелке."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:42
-msgid "The number of rows to fill"
-msgstr "Число заполняемый рядов"
+#: data/org.gnome.Quadrapassel.gschema.xml:31
+msgid "The difficulty of the game"
+msgstr "Сложность игры"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:43
-msgid ""
-"The number of rows that are filled with random blocks at the start of the "
-"game."
-msgstr "Число рядов, заполненных случайными блоками в начале игры."
+#: data/org.gnome.Quadrapassel.gschema.xml:32
+msgid "How difficult the game is, 0 is a normal difficulty."
+msgstr "Насколько сложна игра, 0 — обычная сложность."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:48
-msgid "The density of filled rows"
-msgstr "Плотность блоков в заполненных строках"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:49
-msgid ""
-"The density of blocks in rows filled at the start of the game. The value is "
-"between 0 (for no blocks) and 10 (for a completely filled row)."
+#: data/org.gnome.Quadrapassel.gschema.xml:36
+msgid "Whether to use the custom seed"
 msgstr ""
-"Количество рядов блоков в начале игры. Принимает значения от 0 (нет блоков) "
-"до 10 (полностью заполненный стакан)."
+"Использовать собственное начальное значение генератора случайных значений"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:53
+#: data/org.gnome.Quadrapassel.gschema.xml:37
+msgid "Whether to use the custom seed."
+msgstr ""
+"Использовать собственное начальное значение генератора случайных значений."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:41
+msgid "The seed used for the game"
+msgstr "Значение генератора случайных значений в игре"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:42
+msgid "Used to determine which blocks are given in a game."
+msgstr "Используется для определения, какие блоки будут предоставлены в игре."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:46
 msgid "Whether to play sounds"
 msgstr "Воспроизводить ли звук"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:54
+#: data/org.gnome.Quadrapassel.gschema.xml:47
 msgid "Whether to play sounds."
 msgstr "Воспроизводить ли звук."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:58
+#: data/org.gnome.Quadrapassel.gschema.xml:51
 msgid "Whether to pick blocks that are hard to place"
 msgstr "Выбирать ли блоки, которые трудно размещать"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:59
+#: data/org.gnome.Quadrapassel.gschema.xml:52
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Выбирать ли блоки, которые трудно размещать."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:63
+#: data/org.gnome.Quadrapassel.gschema.xml:56
 msgid "Width of the window in pixels"
 msgstr "Ширина окна в пикселах"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:67
+#: data/org.gnome.Quadrapassel.gschema.xml:60
 msgid "Height of the window in pixels"
 msgstr "Высота окна в пикселах"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:71
+#: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "true if the window is maximized"
 msgstr "«true», если окно имеет максимальный размер"
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:8
-#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:79
-#: src/quadrapassel.vala:98 src/quadrapassel.vala:734
-msgid "Quadrapassel"
-msgstr "Quadrapassel"
-
-#: data/org.gnome.Quadrapassel.appdata.xml.in:9
-#: data/org.gnome.Quadrapassel.desktop.in:4
-msgid "Fit falling blocks together"
-msgstr "Укладывайте падающие блоки вместе"
-
-#: data/org.gnome.Quadrapassel.appdata.xml.in:11
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:11
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -161,7 +154,7 @@ msgstr ""
 "достигнут самого верха. По мере возрастания очков блоки начинают падать всё "
 "быстрее и быстрее."
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:18
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:18
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -173,16 +166,24 @@ msgstr ""
 "того, чтобы разрешать блокам падать в случайном порядке, Quadrapassel может "
 "подбирать неудобные для укладки блоки."
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Quadrapassel.desktop.in:12
-msgid "tetris;"
-msgstr "tetris;тетрис;"
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:36
+msgid "The Quadrapassel window, with a game playing."
+msgstr "Окно «Quadrapassel» во время игры."
 
-#: src/game-view.vala:367
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:40
+msgid ""
+"The Quadrapassel window, with a game playing, in small form factor mode."
+msgstr "Окно «Quadrapassel» во время игры в режиме малого форм-фактора."
+
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:44
+msgid "The Quadrapassel window, before starting a game."
+msgstr "Окно «Quadrapassel» перед началом игры."
+
+#: src/game-view.vala:379 src/game-view.vala:458
 msgid "Paused"
 msgstr "Пауза"
 
-#: src/game-view.vala:369
+#: src/game-view.vala:384
 msgid "Game Over"
 msgstr "Игра окончена"
 
@@ -228,8 +229,8 @@ msgstr "Игра"
 
 #: src/help-overlay.blp:48
 msgctxt "shortcut window"
-msgid "Move left"
-msgstr "Переместить влево"
+msgid "Rotate"
+msgstr "Повернуть"
 
 #: src/help-overlay.blp:53
 msgctxt "shortcut window"
@@ -238,148 +239,162 @@ msgstr "Переместить вправо"
 
 #: src/help-overlay.blp:58
 msgctxt "shortcut window"
+msgid "Move left"
+msgstr "Переместить влево"
+
+#: src/help-overlay.blp:63
+msgctxt "shortcut window"
 msgid "Move down"
 msgstr "Переместить вниз"
 
-#: src/help-overlay.blp:63
+#: src/help-overlay.blp:68
 msgctxt "shortcut window"
 msgid "Drop"
 msgstr "Бросить"
 
-#: src/help-overlay.blp:68
-msgctxt "shortcut window"
-msgid "Rotate"
-msgstr "Повернуть"
-
-#: src/quadrapassel.vala:122
-msgid "_Scores"
-msgstr "_Результаты"
-
-#: src/quadrapassel.vala:123
-msgid "A_ppearance"
-msgstr "_Внешний вид"
-
-#: src/quadrapassel.vala:124 src/quadrapassel.vala:262
-msgid "Preferences"
-msgstr "Параметры"
-
-#: src/quadrapassel.vala:127
-msgid "_Keyboard Shortcuts"
-msgstr "_Комбинации клавиши"
-
-#: src/quadrapassel.vala:128
-msgid "_Help"
-msgstr "_Справка"
-
-#: src/quadrapassel.vala:129
-msgid "_About Quadrapassel"
-msgstr "_ О приложении"
-
-#: src/quadrapassel.vala:159 src/quadrapassel.vala:675
+#: src/quadrapassel.vala:135 src/quadrapassel.vala:188
 msgid "Start a new game"
 msgstr "Начать новую игру"
 
-#: src/quadrapassel.vala:164
+#: src/quadrapassel.vala:142
+msgid "_Scores"
+msgstr "_Результаты"
+
+#: src/quadrapassel.vala:143
+msgid "App_earance"
+msgstr "_Внешний вид"
+
+#: src/quadrapassel.vala:144
+msgid "_Preferences"
+msgstr "_Параметры"
+
+#: src/quadrapassel.vala:147
+msgid "_Keyboard Shortcuts"
+msgstr "_Комбинации клавиши"
+
+#: src/quadrapassel.vala:148
+msgid "_Help"
+msgstr "_Справка"
+
+#: src/quadrapassel.vala:149
+msgid "_About Quadrapassel"
+msgstr "_ О приложении"
+
+#: src/quadrapassel.vala:193
 msgid "Next"
 msgstr "Следующий"
 
-#: src/quadrapassel.vala:181 src/score-dialog.vala:48
+#: src/quadrapassel.vala:210
 msgid "Score"
 msgstr "Счёт"
 
-#: src/quadrapassel.vala:192
+#: src/quadrapassel.vala:221
 msgid "Lines"
 msgstr "Линии"
 
-#: src/quadrapassel.vala:203
+#: src/quadrapassel.vala:232
 msgid "Level"
 msgstr "Уровень"
 
-#: src/quadrapassel.vala:265
+#. Label on the scores dialog
+#: src/quadrapassel.vala:244
+msgid "Difficulty:"
+msgstr "Сложность:"
+
+#: src/quadrapassel.vala:336
+msgid "Preferences"
+msgstr "Параметры"
+
+#: src/quadrapassel.vala:339
 msgid "Game"
 msgstr "Игра"
 
-#: src/quadrapassel.vala:268
-msgid "Pre-Game"
-msgstr "До игры"
+#: src/quadrapassel.vala:342
+msgid "Game Difficulty"
+msgstr "Сложность игры"
 
-#: src/quadrapassel.vala:269
-msgid "Choose what happens before you start a game"
-msgstr "Выберите вариант поведения перед началом игры"
+#: src/quadrapassel.vala:343
+msgid "Change how difficult the game is"
+msgstr "Измените уровень сложности игры"
 
-#: src/quadrapassel.vala:275
-msgid "_Number of pre-filled rows"
-msgstr "_Число заранее заполненных строк"
+#: src/quadrapassel.vala:349
+msgid "_Difficulty"
+msgstr "_Сложность"
 
-#: src/quadrapassel.vala:285
-msgid "_Density of blocks in a pre-filled row"
-msgstr "_Плотность блоков в заполненных строках"
-
-#: src/quadrapassel.vala:295
-msgid "_Starting level"
-msgstr "_Начальный уровень"
-
-#: src/quadrapassel.vala:305
-msgid "In-Game"
-msgstr "В игре"
-
-#: src/quadrapassel.vala:306
-msgid "Change the experience of playing a game"
-msgstr "Изменить игровой процесс"
-
-#: src/quadrapassel.vala:309
-msgid "_Enable sounds"
-msgstr "Включить _звуки"
-
-#: src/quadrapassel.vala:320
+#: src/quadrapassel.vala:357
 msgid "Choose difficult _blocks"
 msgstr "Выбирать _сложные блоки"
 
-#: src/quadrapassel.vala:327
+#: src/quadrapassel.vala:366
+msgid "In-Game"
+msgstr "В игре"
+
+#: src/quadrapassel.vala:367
+msgid "Change the experience of playing a game"
+msgstr "Изменить игровой процесс"
+
+#: src/quadrapassel.vala:370
+msgid "_Enable sounds"
+msgstr "Включить _звуки"
+
+#: src/quadrapassel.vala:381
 msgid "_Preview next block"
 msgstr "Показывать _следующий блок"
 
-#: src/quadrapassel.vala:339
+#: src/quadrapassel.vala:393
 msgid "_Rotate blocks counterclockwise"
 msgstr "Вращение против часовой стр_елки"
 
-#: src/quadrapassel.vala:346
+#: src/quadrapassel.vala:400
 msgid "Show _where the block will land"
 msgstr "Показывать место попадания _блока"
 
-#: src/quadrapassel.vala:374
+#: src/quadrapassel.vala:418
+msgid "_Use a custom seed for the game"
+msgstr ""
+"_Использовать собственное значение генератора случайных значений в игре"
+
+#: src/quadrapassel.vala:442
 msgid "Plain"
 msgstr "Простая"
 
-#: src/quadrapassel.vala:379
-msgid "Tango Flat"
-msgstr "Танго"
-
-#: src/quadrapassel.vala:384
+#: src/quadrapassel.vala:442
 msgid "Tango Shaded"
 msgstr "Танго с тенями"
 
-#: src/quadrapassel.vala:389
+#: src/quadrapassel.vala:442
 msgid "Clean"
 msgstr "Чистая"
 
-#: src/quadrapassel.vala:394
+#: src/quadrapassel.vala:442
 msgid "Modern"
 msgstr "Современная"
 
-#: src/quadrapassel.vala:653
+#: src/quadrapassel.vala:816
 msgid "Unpause the game"
 msgstr "Возобновить игру"
 
-#: src/quadrapassel.vala:658
+#: src/quadrapassel.vala:822
 msgid "Pause the game"
 msgstr "Приостановить игру"
 
-#: src/quadrapassel.vala:736
+#: src/quadrapassel.vala:840
+msgid "Start the game"
+msgstr "Начать игру"
+
+#: src/quadrapassel.vala:861
+msgid "Old Scores"
+msgstr "Предыдущие результаты"
+
+#: src/quadrapassel.vala:866
+msgid "Difficult"
+msgstr "Сложно"
+
+#: src/quadrapassel.vala:942
 msgid "The GNOME Project"
 msgstr "Проект GNOME"
 
-#: src/quadrapassel.vala:738
+#: src/quadrapassel.vala:944
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -388,28 +403,69 @@ msgstr ""
 "полный ряд, не позволяя блокам занять слишком много рядов, иначе вы "
 "проиграете!"
 
-#: src/quadrapassel.vala:742
+#: src/quadrapassel.vala:948
 msgid "translator-credits"
 msgstr ""
 "Юрий Мясоедов <ymyasoedov@yandex.ru>, 2013-2014.\n"
 "Станислав Соловей <whats_up@tut.by>, 2018.\n"
 "Alexey Rubtsov <rushills@gmail.com>, 2021"
 
-#: src/score-dialog.vala:26
-msgid "_Close"
-msgstr "_Закрыть"
+#~ msgid "Level to start with"
+#~ msgstr "Начальный уровень"
 
-#: src/score-dialog.vala:27
-msgid "New Game"
-msgstr "Новая игра"
+#~ msgid "Level to start with."
+#~ msgstr "Начальный уровень."
 
-#: src/score-dialog.vala:30
-msgid "_OK"
-msgstr "_OK"
+#~ msgid "Whether to give blocks random colors"
+#~ msgstr "Использовать разноцветные блоки"
 
-#: src/score-dialog.vala:45
-msgid "Date"
-msgstr "Дата"
+#~ msgid "Whether to give blocks random colors."
+#~ msgstr "Использовать разноцветные блоки."
+
+#~ msgid "The number of rows to fill"
+#~ msgstr "Число заполняемый рядов"
+
+#~ msgid ""
+#~ "The number of rows that are filled with random blocks at the start of the "
+#~ "game."
+#~ msgstr "Число рядов, заполненных случайными блоками в начале игры."
+
+#~ msgid "The density of filled rows"
+#~ msgstr "Плотность блоков в заполненных строках"
+
+#~ msgid ""
+#~ "The density of blocks in rows filled at the start of the game. The value "
+#~ "is between 0 (for no blocks) and 10 (for a completely filled row)."
+#~ msgstr ""
+#~ "Количество рядов блоков в начале игры. Принимает значения от 0 (нет "
+#~ "блоков) до 10 (полностью заполненный стакан)."
+
+#~ msgid "Pre-Game"
+#~ msgstr "До игры"
+
+#~ msgid "_Number of pre-filled rows"
+#~ msgstr "_Число заранее заполненных строк"
+
+#~ msgid "_Density of blocks in a pre-filled row"
+#~ msgstr "_Плотность блоков в заполненных строках"
+
+#~ msgid "_Starting level"
+#~ msgstr "_Начальный уровень"
+
+#~ msgid "Tango Flat"
+#~ msgstr "Танго"
+
+#~ msgid "_Close"
+#~ msgstr "_Закрыть"
+
+#~ msgid "New Game"
+#~ msgstr "Новая игра"
+
+#~ msgid "_OK"
+#~ msgstr "_OK"
+
+#~ msgid "Date"
+#~ msgstr "Дата"
 
 #~ msgid "Key press to move left."
 #~ msgstr "Клавиша для перемещения влево."
@@ -435,14 +491,8 @@ msgstr "Дата"
 #~ msgid "Enter"
 #~ msgstr "Ввод"
 
-#~ msgid "Key to start the game"
-#~ msgstr "Клавиша для начала игры"
-
 #~ msgid "_New Game"
 #~ msgstr "_Новая игра"
-
-#~ msgid "_Preferences"
-#~ msgstr "_Параметры"
 
 #~ msgid "Controls"
 #~ msgstr "Управление"
