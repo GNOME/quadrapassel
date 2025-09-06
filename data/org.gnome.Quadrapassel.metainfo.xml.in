@@ -54,6 +54,14 @@
     <color type="primary" scheme_preference="dark">#764B7C</color>
   </branding>
   <releases>
+    <release date="2025-09-06" version="49~rc~1" type="development">
+      <description>
+        <ul>
+          <li>Updated the Russian translation</li>
+          <li>Fixed a bug where a player could try to rotate a piece after game over</li>
+        </ul>
+      </description>
+    </release>
     <release date="2025-08-30" version="49~rc" type="development">
       <description>
         <ul>

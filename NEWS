@@ -1,3 +1,9 @@
+quadrapassel 49.rc.1
+=================
+* Updated the Russian translation (Sergej A.)
+* Fixed a bug where a player could try to rotate a piece after game over
+* Updated libgnome-games-support (fixes a bug where the lib is installed seperately from Quadrapassel)
+
 quadrapassel 49.rc
 =================
 * Updated translations: Ukrainian (Yuri Chornoivan), Slovenian (Martin S.), 'Chinese (China)' (lumingzh),
