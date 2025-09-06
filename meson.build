@@ -2,8 +2,15 @@ project('quadrapassel', 'vala', 'c',
         version: '49.rc.1',
         meson_version: '>= 1.1')
 
+# App ID
+if get_option('profile') == 'development'
+  profile = '.Devel'
+else
+  profile = ''
+endif
+
 base_id = 'org.gnome.Quadrapassel'
-app_id = 'org.gnome.Quadrapassel.Devel'
+app_id = 'org.gnome.Quadrapassel@0@'.format(profile)
 
 # used to install help
 gnome = import('gnome')

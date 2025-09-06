@@ -1,0 +1,10 @@
+option(
+  'profile',
+  type: 'combo',
+  description: 'Indicate whether this is a nightly build (used for CI purposes)',
+  choices: [
+    'default',
+    'development'
+  ],
+  value: 'default',
+)

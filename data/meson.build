@@ -45,8 +45,8 @@ desktop_conf.set('exec-name', meson.project_name())
 
 desktop_file = i18n.merge_file(
     input: configure_file(
-      input: '@0@.desktop.in'.format(base_id),
-      output: '@BASENAME@',
+      input: '@0@.desktop.in.in'.format(base_id),
+      output: '@0@.desktop.in'.format(base_id),
       configuration: desktop_conf
     ),
     output: '@0@.desktop'.format(app_id),
@@ -74,8 +74,8 @@ metainfo_conf.set('app-id', app_id)
 
 metainfo_file = i18n.merge_file(
     input: configure_file(
-        input: '@0@.metainfo.xml.in'.format(base_id),
-        output: '@BASENAME@',
+        input: '@0@.metainfo.xml.in.in'.format(base_id),
+        output: '@0@.metainfo.xml.in'.format(base_id),
         configuration: metainfo_conf
     ),
     output: '@0@.metainfo.xml'.format(app_id),
