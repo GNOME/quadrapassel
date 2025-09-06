@@ -3,4 +3,4 @@ directory = libgnome-games-support
 url = https://gitlab.gnome.org/GNOME/libgnome-games-support.git
 revision = 3cccc823da7d8c26b0ea351aa3cbfe558f7ef195
 depth = 1
-diff_files = 0001.patch, 0002.patch
+diff_files = 0001.patch, 0002.patch, 0003.patch
