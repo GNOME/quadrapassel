@@ -15,17 +15,33 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-quadrapassel\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2023-01-25 21:49+0000\n"
-"PO-Revision-Date: 2023-03-12 02:13+0300\n"
-"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
+"POT-Creation-Date: 2025-08-27 19:12+0000\n"
+"PO-Revision-Date: 2025-08-29 10:56+0300\n"
+"Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.6\n"
+
+#: data/org.gnome.Quadrapassel.desktop.in:2
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:8 src/quadrapassel.vala:90
+#: src/quadrapassel.vala:109 src/quadrapassel.vala:940
+msgid "Quadrapassel"
+msgstr "Quadrapassel"
+
+#: data/org.gnome.Quadrapassel.desktop.in:3
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:9
+msgid "Fit falling blocks together"
+msgstr "Düşen blokları bir araya oturt"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Quadrapassel.desktop.in:11
+msgid "tetris;"
+msgstr "tetris;"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -43,165 +59,83 @@ msgstr "Blokları oluştururken kullanılacak tema"
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "Blokları ve arka planı taramak için kullanılan temanın adı."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:16
-msgid "Level to start with"
-msgstr "Başlangıç düzeyi"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:17
-msgid "Level to start with."
-msgstr "Başlangıç düzeyi."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:21
+#: data/org.gnome.Quadrapassel.gschema.xml:15
 msgid "Whether to preview the next block"
 msgstr "Sonraki bloğun gösterilip gösterilmeyeceği"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:22
+#: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "Whether to preview the next block."
 msgstr "Sonraki bloğun gösterilip gösterilmeyeceği."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:26
+#: data/org.gnome.Quadrapassel.gschema.xml:20
 msgid "Whether to show where the moving block will land"
 msgstr "Bloğun nereye yerleşeceğinin gösterilip gösterilmeyeceği"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:27
+#: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to show where the moving block will land."
 msgstr "Bloğun nereye yerleşeceğinin gösterilip gösterilmeyeceği."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:31
-msgid "Whether to give blocks random colors"
-msgstr "Bloklara rastgele renk verilip verilmeyeceği"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:32
-msgid "Whether to give blocks random colors."
-msgstr "Bloklara rastgele renk verilip verilmeyeceği."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:36
+#: data/org.gnome.Quadrapassel.gschema.xml:25
 msgid "Whether to rotate counter clock wise"
 msgstr "Saat yönünün tersine döndürülüp döndürülmeyeceği"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:37
+#: data/org.gnome.Quadrapassel.gschema.xml:26
 msgid "Whether to rotate counter clock wise."
 msgstr "Saat yönünün tersine döndürülüp döndürülmeyeceği."
 
+#: data/org.gnome.Quadrapassel.gschema.xml:31
+msgid "The difficulty of the game"
+msgstr "Oyunun zorluğu"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:32
+msgid "How difficult the game is, 0 is a normal difficulty."
+msgstr "Oyunun zorluğu, 0 normal zorluk derecesidir."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:36
+msgid "Whether to use the custom seed"
+msgstr "Özel tohumun kullanılma durumu"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:37
+msgid "Whether to use the custom seed."
+msgstr "Özel tohumun kullanılma durumu."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:41
+msgid "The seed used for the game"
+msgstr "Oyun için kullanılan tohum"
+
 #: data/org.gnome.Quadrapassel.gschema.xml:42
-msgid "The number of rows to fill"
-msgstr "Doldurulacak sıra sayısı"
+msgid "Used to determine which blocks are given in a game."
+msgstr "Oyunda hangi blokların verileceğini belirlemek için kullanılır."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:43
-msgid ""
-"The number of rows that are filled with random blocks at the start of the "
-"game."
-msgstr "Oyunun başında rastgele bloklarla doldurulmuş sıraların sayısı."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:48
-msgid "The density of filled rows"
-msgstr "Önceden doldurulmuş sıraların yoğunluğu"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:49
-msgid ""
-"The density of blocks in rows filled at the start of the game. The value is "
-"between 0 (for no blocks) and 10 (for a completely filled row)."
-msgstr ""
-"Oyunun başında dolu sıraların yoğunluğu. Bu değer 0 (hiç blok yok) ve 10 "
-"(tüm sıra dolu) arasındadır."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:53
+#: data/org.gnome.Quadrapassel.gschema.xml:46
 msgid "Whether to play sounds"
 msgstr "Seslerin yürütülmesi"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:54
+#: data/org.gnome.Quadrapassel.gschema.xml:47
 msgid "Whether to play sounds."
 msgstr "Seslerin yürütülmesi."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:58
+#: data/org.gnome.Quadrapassel.gschema.xml:51
 msgid "Whether to pick blocks that are hard to place"
 msgstr "Yerleştirilmesi zor blokların seçilip seçilmeyeceği"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:59
+#: data/org.gnome.Quadrapassel.gschema.xml:52
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Yerleştirilmesi zor blokların seçilip seçilmeyeceği."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:371
-msgid "Move left"
-msgstr "Sola taşı"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:64
-msgid "Key press to move left."
-msgstr "Sola taşımak için basılacak tuş."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:374
-msgid "Move right"
-msgstr "Sağa taşı"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:69
-msgid "Key press to move right."
-msgstr "Sağa taşımak için basılacak tuş."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:377
-msgid "Move down"
-msgstr "Aşağı taşı"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:74
-msgid "Key press to move down."
-msgstr "Aşağı taşımak için basılacak tuş."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:380
-msgid "Drop"
-msgstr "Bırak"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:79
-msgid "Key press to drop."
-msgstr "Bırakmak için basılacak tuş."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:383
-msgid "Rotate"
-msgstr "Döndür"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:84
-msgid "Key press to rotate."
-msgstr "Döndürmek için basılacak tuş."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
-msgid "Pause"
-msgstr "Duraklat"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:89
-msgid "Key press to pause."
-msgstr "Duraklatmak için basılacak tuş."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:93
-msgid "Enter"
-msgstr "Enter"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:94
-msgid "Key to start the game"
-msgstr "Oyunu başlatmak için basılacak tuş"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:98
+#: data/org.gnome.Quadrapassel.gschema.xml:56
 msgid "Width of the window in pixels"
 msgstr "Pencerenin piksel olarak genişliği"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:102
+#: data/org.gnome.Quadrapassel.gschema.xml:60
 msgid "Height of the window in pixels"
 msgstr "Pencerenin piksel olarak yüksekliği"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:106
+#: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "true if the window is maximized"
 msgstr "eğer pencere en büyük hale getirilmişse imle"
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:7
-#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:868
-#: src/quadrapassel.vala:913
-msgid "Quadrapassel"
-msgstr "Quadrapassel"
-
-#: data/org.gnome.Quadrapassel.appdata.xml.in:8
-#: data/org.gnome.Quadrapassel.desktop.in:4
-msgid "Fit falling blocks together"
-msgstr "Düşen blokları bir araya oturt"
-
-#: data/org.gnome.Quadrapassel.appdata.xml.in:10
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:11
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -215,7 +149,7 @@ msgstr ""
 "Bloklar çok yığıldığında oyun biter. Puanınız yükseldiğinde, düzeyinizi "
 "yükseltirsiniz ve bloklar daha hızlı düşer."
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:17
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:18
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -227,145 +161,234 @@ msgstr ""
 "verir. Ya da, blokların rastgele düşmesine izin vermek yerine, "
 "yerleştirmenizin zor olacağı blokları seçebilir."
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:33
-msgid "The GNOME Project"
-msgstr "GNOME Projesi"
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:36
+msgid "The Quadrapassel window, with a game playing."
+msgstr "Quadrapassel penceresi, oyun oynanırken."
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Quadrapassel.desktop.in:12
-msgid "tetris;"
-msgstr "tetris;"
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:40
+msgid ""
+"The Quadrapassel window, with a game playing, in small form factor mode."
+msgstr "Quadrapassel penceresi, küçük form faktörü kipinde oyun oynanırken."
 
-#: src/game-view.vala:335
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:44
+msgid "The Quadrapassel window, before starting a game."
+msgstr "Quadrapassel penceresi, oyun başlamadan önce."
+
+#: src/game-view.vala:379 src/game-view.vala:458
 msgid "Paused"
 msgstr "Duraklatıldı"
 
-#: src/game-view.vala:337
+#: src/game-view.vala:384
 msgid "Game Over"
 msgstr "Oyun Bitti"
 
-#: src/quadrapassel.vala:117
-msgid "_New Game"
-msgstr "Yeni _Oyun"
+#: src/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Genel"
 
-#: src/quadrapassel.vala:118
-msgid "_Scores"
-msgstr "_Puanlar"
+#: src/help-overlay.blp:14
+msgctxt "shortcut window"
+msgid "Start a New Game"
+msgstr "Yeni Oyun Başlat"
 
-#: src/quadrapassel.vala:121
-msgid "_Preferences"
-msgstr "_Tercihler"
+#: src/help-overlay.blp:20
+msgctxt "shortcut window"
+msgid "Pause the game"
+msgstr "Oyunu Duraklat"
 
-#: src/quadrapassel.vala:122
-msgid "_Help"
-msgstr "_Yardım"
+#: src/help-overlay.blp:24
+msgctxt "shortcut window"
+msgid "Show Help"
+msgstr "Yardımı Göster"
 
-#: src/quadrapassel.vala:123
-msgid "_About Quadrapassel"
-msgstr "Quadrapassel _Hakkında"
+#: src/help-overlay.blp:29
+msgctxt "shortcut window"
+msgid "Open primary menu"
+msgstr "Birincil Menüyü Aç"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:806
-msgid "Start a new game"
-msgstr "Yeni oyun başlat"
+#: src/help-overlay.blp:34
+msgctxt "shortcut window"
+msgid "Show shortcuts"
+msgstr "Kısayolları Göster"
 
-#: src/quadrapassel.vala:156
-msgid "Next"
-msgstr "Sonraki"
+#: src/help-overlay.blp:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Çık"
 
-#: src/quadrapassel.vala:169 src/score-dialog.vala:51
-msgid "Score"
-msgstr "Puan"
-
-#: src/quadrapassel.vala:180
-msgid "Lines"
-msgstr "Satırlar"
-
-#: src/quadrapassel.vala:191
-msgid "Level"
-msgstr "Düzey"
-
-#: src/quadrapassel.vala:276
-msgid "Preferences"
-msgstr "Tercihler"
-
-#: src/quadrapassel.vala:294
+#: src/help-overlay.blp:45
+msgctxt "shortcut window"
 msgid "Game"
 msgstr "Oyun"
 
-#. pre-filled rows
-#: src/quadrapassel.vala:298
-msgid "_Number of pre-filled rows:"
-msgstr "Önceden _doldurulmuş sıra sayısı:"
+#: src/help-overlay.blp:48
+msgctxt "shortcut window"
+msgid "Rotate"
+msgstr "Döndür"
 
-#. pre-filled rows density
-#: src/quadrapassel.vala:313
-msgid "_Density of blocks in a pre-filled row:"
-msgstr "Önceden doldurulmuş _blok yoğunluğu:"
+#: src/help-overlay.blp:53
+msgctxt "shortcut window"
+msgid "Move right"
+msgstr "Sağa Taşı"
 
-#. starting level
-#: src/quadrapassel.vala:327
-msgid "_Starting level:"
-msgstr "_Başlangıç düzeyi:"
+#: src/help-overlay.blp:58
+msgctxt "shortcut window"
+msgid "Move left"
+msgstr "Sola Taşı"
 
-#: src/quadrapassel.vala:340
-msgid "_Enable sounds"
-msgstr "Sesleri _etkinleştir"
+#: src/help-overlay.blp:63
+msgctxt "shortcut window"
+msgid "Move down"
+msgstr "Aşağı Taşı"
 
-#: src/quadrapassel.vala:345
+#: src/help-overlay.blp:68
+msgctxt "shortcut window"
+msgid "Drop"
+msgstr "Bırak"
+
+#: src/quadrapassel.vala:135 src/quadrapassel.vala:188
+msgid "Start a new game"
+msgstr "Yeni oyun başlat"
+
+#: src/quadrapassel.vala:142
+msgid "_Scores"
+msgstr "_Puanlar"
+
+#: src/quadrapassel.vala:143
+msgid "App_earance"
+msgstr "_Görünüm"
+
+#: src/quadrapassel.vala:144
+msgid "_Preferences"
+msgstr "_Tercihler"
+
+#: src/quadrapassel.vala:147
+msgid "_Keyboard Shortcuts"
+msgstr "_Klavye Kısayolları"
+
+#: src/quadrapassel.vala:148
+msgid "_Help"
+msgstr "_Yardım"
+
+#: src/quadrapassel.vala:149
+msgid "_About Quadrapassel"
+msgstr "Quadrapassel _Hakkında"
+
+#: src/quadrapassel.vala:193
+msgid "Next"
+msgstr "Sonraki"
+
+#: src/quadrapassel.vala:210
+msgid "Score"
+msgstr "Puan"
+
+#: src/quadrapassel.vala:221
+msgid "Lines"
+msgstr "Satırlar"
+
+#: src/quadrapassel.vala:232
+msgid "Level"
+msgstr "Düzey"
+
+#. Label on the scores dialog
+#: src/quadrapassel.vala:244
+msgid "Difficulty:"
+msgstr "Zorluk:"
+
+#: src/quadrapassel.vala:336
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: src/quadrapassel.vala:339
+msgid "Game"
+msgstr "Oyun"
+
+#: src/quadrapassel.vala:342
+msgid "Game Difficulty"
+msgstr "Oyun Zorluğu"
+
+#: src/quadrapassel.vala:343
+msgid "Change how difficult the game is"
+msgstr "Oyunun ne kadar zor olduğunu değiştirin"
+
+#: src/quadrapassel.vala:349
+msgid "_Difficulty"
+msgstr "_Zorluk"
+
+#: src/quadrapassel.vala:357
 msgid "Choose difficult _blocks"
 msgstr "Zor blokları _seç"
 
-#: src/quadrapassel.vala:350
+#: src/quadrapassel.vala:366
+msgid "In-Game"
+msgstr "Oyunda"
+
+#: src/quadrapassel.vala:367
+msgid "Change the experience of playing a game"
+msgstr "Oyun oynama deneyimini değiştirin"
+
+#: src/quadrapassel.vala:370
+msgid "_Enable sounds"
+msgstr "Sesleri _etkinleştir"
+
+#: src/quadrapassel.vala:381
 msgid "_Preview next block"
 msgstr "Sonraki bloğu _göster"
 
-#. rotate counter clock wise
-#: src/quadrapassel.vala:356
+#: src/quadrapassel.vala:393
 msgid "_Rotate blocks counterclockwise"
 msgstr "Blokları saat _yönünün tersine döndür"
 
-#: src/quadrapassel.vala:361
+#: src/quadrapassel.vala:400
 msgid "Show _where the block will land"
 msgstr "Bloğun _nereye yerleşeceğini göster"
 
-#: src/quadrapassel.vala:405
-msgid "Controls"
-msgstr "Denetimler"
+#: src/quadrapassel.vala:418
+msgid "_Use a custom seed for the game"
+msgstr "Oyun için özel tohum _kullan"
 
-#: src/quadrapassel.vala:411
-msgid "Theme"
-msgstr "Tema"
-
-#: src/quadrapassel.vala:423
+#: src/quadrapassel.vala:442
 msgid "Plain"
 msgstr "Düz"
 
-#: src/quadrapassel.vala:428
-msgid "Tango Flat"
-msgstr "Tango Düz"
-
-#: src/quadrapassel.vala:433
+#: src/quadrapassel.vala:442
 msgid "Tango Shaded"
 msgstr "Tango Gölgeli"
 
-#: src/quadrapassel.vala:438
+#: src/quadrapassel.vala:442
 msgid "Clean"
 msgstr "Temiz"
 
-#. Throw up a dialog
-#: src/quadrapassel.vala:502
-msgid "Unable to change key, as this key already exists"
-msgstr "Tuş değiştirilemedi, kısayol tuşu zaten var"
+#: src/quadrapassel.vala:442
+msgid "Modern"
+msgstr "Çağdaş"
 
-#: src/quadrapassel.vala:787
+#: src/quadrapassel.vala:816
 msgid "Unpause the game"
 msgstr "Oyunu sürdür"
 
-#: src/quadrapassel.vala:792
+#: src/quadrapassel.vala:822
 msgid "Pause the game"
 msgstr "Oyunu duraklat"
 
-#: src/quadrapassel.vala:870
+#: src/quadrapassel.vala:840
+msgid "Start the game"
+msgstr "Oyunu başlat"
+
+#: src/quadrapassel.vala:861
+msgid "Old Scores"
+msgstr "Eski Puanlar"
+
+#: src/quadrapassel.vala:866
+msgid "Difficult"
+msgstr "Zor"
+
+#: src/quadrapassel.vala:942
+msgid "The GNOME Project"
+msgstr "GNOME Projesi"
+
+#: src/quadrapassel.vala:944
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -373,25 +396,99 @@ msgstr ""
 "Satırları doldurmak için blokları döndürdüğünüz klasik oyun, bloklarınızı "
 "çok yükseğe yığmayın yoksa oyun biter!"
 
-#: src/quadrapassel.vala:875
+#: src/quadrapassel.vala:948
 msgid "translator-credits"
 msgstr ""
 "Barış Çiçek <baris@teamforce.name.tr> \n"
 "Muhammet Kara <muhammetk@gmail.com>\n"
 "Emin Tufan Çetin <etcetin@gmail.com>"
 
-#: src/score-dialog.vala:26
-msgid "_Close"
-msgstr "_Kapat"
+#~ msgid "Level to start with"
+#~ msgstr "Başlangıç düzeyi"
 
-#: src/score-dialog.vala:27
-msgid "New Game"
-msgstr "Yeni Oyun"
+#~ msgid "Level to start with."
+#~ msgstr "Başlangıç düzeyi."
 
-#: src/score-dialog.vala:30
-msgid "_OK"
-msgstr "_Tamam"
+#~ msgid "Whether to give blocks random colors"
+#~ msgstr "Bloklara rastgele renk verilip verilmeyeceği"
 
-#: src/score-dialog.vala:48
-msgid "Date"
-msgstr "Tarih"
+#~ msgid "Whether to give blocks random colors."
+#~ msgstr "Bloklara rastgele renk verilip verilmeyeceği."
+
+#~ msgid "The number of rows to fill"
+#~ msgstr "Doldurulacak sıra sayısı"
+
+#~ msgid ""
+#~ "The number of rows that are filled with random blocks at the start of the "
+#~ "game."
+#~ msgstr "Oyunun başında rastgele bloklarla doldurulmuş sıraların sayısı."
+
+#~ msgid "The density of filled rows"
+#~ msgstr "Önceden doldurulmuş sıraların yoğunluğu"
+
+#~ msgid ""
+#~ "The density of blocks in rows filled at the start of the game. The value "
+#~ "is between 0 (for no blocks) and 10 (for a completely filled row)."
+#~ msgstr ""
+#~ "Oyunun başında dolu sıraların yoğunluğu. Bu değer 0 (hiç blok yok) ve 10 "
+#~ "(tüm sıra dolu) arasındadır."
+
+#~ msgid "Key press to move left."
+#~ msgstr "Sola taşımak için basılacak tuş."
+
+#~ msgid "Key press to move right."
+#~ msgstr "Sağa taşımak için basılacak tuş."
+
+#~ msgid "Key press to move down."
+#~ msgstr "Aşağı taşımak için basılacak tuş."
+
+#~ msgid "Key press to drop."
+#~ msgstr "Bırakmak için basılacak tuş."
+
+#~ msgid "Key press to rotate."
+#~ msgstr "Döndürmek için basılacak tuş."
+
+#~ msgid "Pause"
+#~ msgstr "Duraklat"
+
+#~ msgid "Key press to pause."
+#~ msgstr "Duraklatmak için basılacak tuş."
+
+#~ msgid "Enter"
+#~ msgstr "Enter"
+
+#~ msgid "_New Game"
+#~ msgstr "Yeni _Oyun"
+
+#~ msgid "_Number of pre-filled rows:"
+#~ msgstr "Önceden _doldurulmuş sıra sayısı:"
+
+#~ msgid "_Density of blocks in a pre-filled row:"
+#~ msgstr "Önceden doldurulmuş _blok yoğunluğu:"
+
+#~ msgid "_Starting level:"
+#~ msgstr "_Başlangıç düzeyi:"
+
+#~ msgid "Controls"
+#~ msgstr "Denetimler"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
+
+#~ msgid "Tango Flat"
+#~ msgstr "Tango Düz"
+
+#~ msgid "Unable to change key, as this key already exists"
+#~ msgstr "Tuş değiştirilemedi, kısayol tuşu zaten var"
+
+#~ msgid "_Close"
+#~ msgstr "_Kapat"
+
+#~ msgid "New Game"
+#~ msgstr "Yeni Oyun"
+
+#~ msgid "_OK"
+#~ msgstr "_Tamam"
+
+#~ msgid "Date"
+#~ msgstr "Tarih"
