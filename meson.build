@@ -35,7 +35,7 @@ libm_dependency = cc.find_library('m', required : true)
 
 localedir = join_paths(get_option('prefix'), get_option('localedir'))
 datadir = join_paths(get_option('prefix'), get_option('datadir'))
-soundsdir = join_paths(datadir, 'sounds')
+soundsdir = join_paths(datadir, 'sounds', meson.project_name())
 bindir = join_paths (get_option ('prefix'), get_option ('bindir'))
 
 conf = configuration_data ()
