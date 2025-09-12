@@ -10,7 +10,7 @@
 #
 # Changwoo Ryu <cwryu@debian.org>, 2013-2015, 2018.
 # Yeol Park <peary2@gmail.com>, 2018.
-# DaeHyun Sung <sungdh86@gmail.com>, 2019-2020.
+# DaeHyun Sung <sungdh86@gmail.com>, 2019-2020, 2025.
 # Seong-ho Cho <shcho@gnome.org>, 2021, 2023.
 #
 # 새로 번역하신 분은 아래 "translator-credits"에 추가하세요.
@@ -21,17 +21,33 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues\n"
-"POT-Creation-Date: 2023-01-25 21:49+0000\n"
-"PO-Revision-Date: 2023-03-05 01:36+0900\n"
-"Last-Translator: Seong-ho Cho <shcho@gnome.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
+"POT-Creation-Date: 2025-09-06 19:47+0000\n"
+"PO-Revision-Date: 2025-09-07 22:25+0900\n"
+"Last-Translator: DaeHyun Sung <sungdh86+git@gmail.com>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 3.7\n"
+
+#: data/org.gnome.Quadrapassel.desktop.in:2
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:8 src/quadrapassel.vala:90
+#: src/quadrapassel.vala:109 src/quadrapassel.vala:940
+msgid "Quadrapassel"
+msgstr "쿼드러패셀"
+
+#: data/org.gnome.Quadrapassel.desktop.in:3
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:9
+msgid "Fit falling blocks together"
+msgstr "떨어지는 블록을 맞춥니다"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Quadrapassel.desktop.in:11
+msgid "tetris;"
+msgstr "tetris;테트리스;"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -49,166 +65,83 @@ msgstr "블록을 그릴 때 사용할 테마"
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "블록과 배경을 그릴 때 사용할 테마 이름."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:16
-msgid "Level to start with"
-msgstr "시작할 단계"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:17
-msgid "Level to start with."
-msgstr "시작할 단계."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:21
+#: data/org.gnome.Quadrapassel.gschema.xml:15
 msgid "Whether to preview the next block"
 msgstr "다음 블록 미리 보기 여부"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:22
+#: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "Whether to preview the next block."
 msgstr "다음 블록 미리 보기 여부."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:26
+#: data/org.gnome.Quadrapassel.gschema.xml:20
 msgid "Whether to show where the moving block will land"
 msgstr "이동하는 블록이 어디로 떨어질 지 표시할지 여부"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:27
+#: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to show where the moving block will land."
 msgstr "이동하는 블록이 어디로 떨어질 지 표시할지 여부."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:31
-msgid "Whether to give blocks random colors"
-msgstr "블록의 색을 임의로 부여할 지 여부"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:32
-msgid "Whether to give blocks random colors."
-msgstr "블록의 색깔을 임의로 부여할 지 여부."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:36
+#: data/org.gnome.Quadrapassel.gschema.xml:25
 msgid "Whether to rotate counter clock wise"
 msgstr "시계반대 방향으로 회전할 지 여부"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:37
+#: data/org.gnome.Quadrapassel.gschema.xml:26
 msgid "Whether to rotate counter clock wise."
 msgstr "시계반대 방향으로 회전할 지 여부."
 
+#: data/org.gnome.Quadrapassel.gschema.xml:31
+msgid "The difficulty of the game"
+msgstr "게임의 난이도"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:32
+msgid "How difficult the game is, 0 is a normal difficulty."
+msgstr "게임의 난이도는 0이 일반 난이도입니다."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:36
+msgid "Whether to use the custom seed"
+msgstr "사용자 지정 시드 사용 여부"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:37
+msgid "Whether to use the custom seed."
+msgstr "사용자 지정 시드 사용 여부."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:41
+msgid "The seed used for the game"
+msgstr "게임에 사용된 시드"
+
 #: data/org.gnome.Quadrapassel.gschema.xml:42
-msgid "The number of rows to fill"
-msgstr "채울 줄 수"
+msgid "Used to determine which blocks are given in a game."
+msgstr "게임에서 어떤 블록이 나올지 결정하는데 사용됩니다."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:43
-msgid ""
-"The number of rows that are filled with random blocks at the start of the "
-"game."
-msgstr "게임이 시작할 때 임의로 채워 넣을 줄 수."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:48
-msgid "The density of filled rows"
-msgstr "채워진 줄의 밀도"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:49
-msgid ""
-"The density of blocks in rows filled at the start of the game. The value is "
-"between 0 (for no blocks) and 10 (for a completely filled row)."
-msgstr ""
-"게임이 시작할 때 채워진 줄의 블록 밀도. 이 값은 0(블록 없음)에서 10(완전히 "
-"줄 채움) 사이의 값입니다."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:53
+#: data/org.gnome.Quadrapassel.gschema.xml:46
 msgid "Whether to play sounds"
 msgstr "사운드를 재생할 지 여부"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:54
+#: data/org.gnome.Quadrapassel.gschema.xml:47
 msgid "Whether to play sounds."
 msgstr "사운드를 재생할 지 여부."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:58
+#: data/org.gnome.Quadrapassel.gschema.xml:51
 msgid "Whether to pick blocks that are hard to place"
 msgstr "놓기 어려운 블럭을 고를지 여부"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:59
+#: data/org.gnome.Quadrapassel.gschema.xml:52
 msgid "Whether to pick blocks that are hard to place."
 msgstr "놓기 어려운 블럭을 고를지 여부."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:63 src/quadrapassel.vala:371
-msgid "Move left"
-msgstr "왼쪽으로 이동"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:64
-msgid "Key press to move left."
-msgstr "왼쪽으로 이동할 때 누를 키."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:68 src/quadrapassel.vala:374
-msgid "Move right"
-msgstr "오른쪽으로 이동"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:69
-msgid "Key press to move right."
-msgstr "오른쪽으로 이동할 때 누를 키."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:73 src/quadrapassel.vala:377
-msgid "Move down"
-msgstr "아래로 옮기기"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:74
-msgid "Key press to move down."
-msgstr "아래로 이동할 때 누를 키."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:78 src/quadrapassel.vala:380
-msgid "Drop"
-msgstr "떨어뜨리기"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:79
-msgid "Key press to drop."
-msgstr "떨어뜨릴 때 누를 키."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:83 src/quadrapassel.vala:383
-msgid "Rotate"
-msgstr "돌리기"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:84
-msgid "Key press to rotate."
-msgstr "돌릴 때 누를 키."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:88 src/quadrapassel.vala:386
-msgid "Pause"
-msgstr "일시 중지"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:89
-msgid "Key press to pause."
-msgstr "일시 중지할 때 누를 키."
-
-# NOTE: Space, ESC 같은 키 이름이므로 번역하지 않는다.
-#: data/org.gnome.Quadrapassel.gschema.xml:93
-msgid "Enter"
-msgstr "Enter"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:94
-msgid "Key to start the game"
-msgstr "게임을 시작할 키"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:98
+#: data/org.gnome.Quadrapassel.gschema.xml:56
 msgid "Width of the window in pixels"
 msgstr "창의 너비, 픽셀 단위"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:102
+#: data/org.gnome.Quadrapassel.gschema.xml:60
 msgid "Height of the window in pixels"
 msgstr "창의 높이, 픽셀 단위"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:106
+#: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "true if the window is maximized"
 msgstr "참이면 창을 최대화"
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:7
-#: data/org.gnome.Quadrapassel.desktop.in:3 src/quadrapassel.vala:99
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:868
-#: src/quadrapassel.vala:913
-msgid "Quadrapassel"
-msgstr "쿼드러패셀"
-
-#: data/org.gnome.Quadrapassel.appdata.xml.in:8
-#: data/org.gnome.Quadrapassel.desktop.in:4
-msgid "Fit falling blocks together"
-msgstr "떨어지는 블록을 맞춥니다"
-
-#: data/org.gnome.Quadrapassel.appdata.xml.in:10
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:11
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -221,7 +154,7 @@ msgstr ""
 "이 사라지고 점수를 얻습니다. 블럭이 너무 높이 쌓이면 게임이 끝납니다. 점수가 "
 "높아질 수록 레벨이 올라가고 블럭이 빠르게 떨어집니다."
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:17
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:18
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -232,146 +165,231 @@ msgstr ""
 "놓고 게임을 시작할 수 있습니다. 또는 임의의 블럭이 떨어지는 게 아니라, 더 맞"
 "추기 어려운 블럭이 떨어지게 만들 수도 있습니다."
 
-#: data/org.gnome.Quadrapassel.appdata.xml.in:33
-msgid "The GNOME Project"
-msgstr "그놈 프로젝트"
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:36
+msgid "The Quadrapassel window, with a game playing."
+msgstr "게임 진행중인 쿼드러패셀 창."
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Quadrapassel.desktop.in:12
-msgid "tetris;"
-msgstr "tetris;테트리스;"
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:40
+msgid ""
+"The Quadrapassel window, with a game playing, in small form factor mode."
+msgstr "소형 폼 팩터 모드에서, 게임 진행중인 쿼드러패셀 창."
 
-#: src/game-view.vala:335
+#: data/org.gnome.Quadrapassel.metainfo.xml.in:44
+msgid "The Quadrapassel window, before starting a game."
+msgstr "게임 시작 전 쿼드러패셀 창."
+
+#: src/game-view.vala:379 src/game-view.vala:458
 msgid "Paused"
 msgstr "일시 중지"
 
-#: src/game-view.vala:337
+#: src/game-view.vala:384
 msgid "Game Over"
 msgstr "게임 끝"
 
-#: src/quadrapassel.vala:117
-msgid "_New Game"
-msgstr "새 게임(_N)"
+#: src/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "일반"
 
-#: src/quadrapassel.vala:118
-msgid "_Scores"
-msgstr "점수(_S)"
+#: src/help-overlay.blp:14
+msgctxt "shortcut window"
+msgid "Start a New Game"
+msgstr "새 게임을 시작"
 
-#: src/quadrapassel.vala:121
-msgid "_Preferences"
-msgstr "기본 설정(_P)"
+#: src/help-overlay.blp:20
+msgctxt "shortcut window"
+msgid "Pause the game"
+msgstr "게임을 일시 중지"
 
-#: src/quadrapassel.vala:122
-msgid "_Help"
-msgstr "도움말(_H)"
+#: src/help-overlay.blp:24
+msgctxt "shortcut window"
+msgid "Show Help"
+msgstr "도움말 표시"
 
-#: src/quadrapassel.vala:123
-msgid "_About Quadrapassel"
-msgstr "쿼드러패셀 정보(_A)"
+#: src/help-overlay.blp:29
+msgctxt "shortcut window"
+msgid "Open primary menu"
+msgstr "기본 메뉴 열기"
 
-#: src/quadrapassel.vala:151 src/quadrapassel.vala:806
-msgid "Start a new game"
-msgstr "새 게임을 시작합니다"
+#: src/help-overlay.blp:34
+msgctxt "shortcut window"
+msgid "Show shortcuts"
+msgstr "바로 가기 표시"
 
-#: src/quadrapassel.vala:156
-msgid "Next"
-msgstr "다음"
+#: src/help-overlay.blp:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "끝내기"
 
-#: src/quadrapassel.vala:169 src/score-dialog.vala:51
-msgid "Score"
-msgstr "점수"
-
-#: src/quadrapassel.vala:180
-msgid "Lines"
-msgstr "줄 개수"
-
-#: src/quadrapassel.vala:191
-msgid "Level"
-msgstr "단계"
-
-#: src/quadrapassel.vala:276
-msgid "Preferences"
-msgstr "기본 설정"
-
-#: src/quadrapassel.vala:294
+#: src/help-overlay.blp:45
+msgctxt "shortcut window"
 msgid "Game"
 msgstr "게임"
 
-#. pre-filled rows
-#: src/quadrapassel.vala:298
-msgid "_Number of pre-filled rows:"
-msgstr "미리 채워진 열의 갯수(_N):"
+#: src/help-overlay.blp:48
+msgctxt "shortcut window"
+msgid "Rotate"
+msgstr "돌리기"
 
-#. pre-filled rows density
-#: src/quadrapassel.vala:313
-msgid "_Density of blocks in a pre-filled row:"
-msgstr "미리 채워진 열에서 블록의 밀도(_D):"
+#: src/help-overlay.blp:53
+msgctxt "shortcut window"
+msgid "Move right"
+msgstr "오른쪽으로 이동"
 
-#. starting level
-#: src/quadrapassel.vala:327
-msgid "_Starting level:"
-msgstr "시작 단계(_S):"
+#: src/help-overlay.blp:58
+msgctxt "shortcut window"
+msgid "Move left"
+msgstr "왼쪽으로 이동"
 
-#: src/quadrapassel.vala:340
-msgid "_Enable sounds"
-msgstr "사운드 사용(_E)"
+#: src/help-overlay.blp:63
+msgctxt "shortcut window"
+msgid "Move down"
+msgstr "아래로 옮기기"
 
-#: src/quadrapassel.vala:345
+#: src/help-overlay.blp:68
+msgctxt "shortcut window"
+msgid "Drop"
+msgstr "떨어뜨리기"
+
+#: src/quadrapassel.vala:135 src/quadrapassel.vala:188
+msgid "Start a new game"
+msgstr "새 게임을 시작합니다"
+
+#: src/quadrapassel.vala:142
+msgid "_Scores"
+msgstr "점수(_S)"
+
+#: src/quadrapassel.vala:143
+msgid "App_earance"
+msgstr "모습(_E)"
+
+#: src/quadrapassel.vala:144
+msgid "_Preferences"
+msgstr "기본 설정(_P)"
+
+#: src/quadrapassel.vala:147
+msgid "_Keyboard Shortcuts"
+msgstr "키보드 바로 가기(_K)"
+
+#: src/quadrapassel.vala:148
+msgid "_Help"
+msgstr "도움말(_H)"
+
+#: src/quadrapassel.vala:149
+msgid "_About Quadrapassel"
+msgstr "쿼드러패셀 정보(_A)"
+
+#: src/quadrapassel.vala:193
+msgid "Next"
+msgstr "다음"
+
+#: src/quadrapassel.vala:210
+msgid "Score"
+msgstr "점수"
+
+#: src/quadrapassel.vala:221
+msgid "Lines"
+msgstr "줄 개수"
+
+#: src/quadrapassel.vala:232
+msgid "Level"
+msgstr "단계"
+
+#. Label on the scores dialog
+#: src/quadrapassel.vala:244
+msgid "Difficulty:"
+msgstr "난이도:"
+
+#: src/quadrapassel.vala:336
+msgid "Preferences"
+msgstr "기본 설정"
+
+#: src/quadrapassel.vala:339
+msgid "Game"
+msgstr "게임"
+
+#: src/quadrapassel.vala:342
+msgid "Game Difficulty"
+msgstr "게임 난이도"
+
+#: src/quadrapassel.vala:343
+msgid "Change how difficult the game is"
+msgstr "게임의 난이도를 바꿉니다"
+
+#: src/quadrapassel.vala:349
+msgid "_Difficulty"
+msgstr "난이도(_D)"
+
+#: src/quadrapassel.vala:357
 msgid "Choose difficult _blocks"
 msgstr "어려운 블럭 선택(_B)"
 
-#: src/quadrapassel.vala:350
+#: src/quadrapassel.vala:366
+msgid "In-Game"
+msgstr "게임 내"
+
+#: src/quadrapassel.vala:367
+msgid "Change the experience of playing a game"
+msgstr "게임 플레이의 경험을 바꿈"
+
+#: src/quadrapassel.vala:370
+msgid "_Enable sounds"
+msgstr "사운드 사용(_E)"
+
+#: src/quadrapassel.vala:381
 msgid "_Preview next block"
 msgstr "다음 블록 미리 보기(_P)"
 
-#. rotate counter clock wise
-#: src/quadrapassel.vala:356
+#: src/quadrapassel.vala:393
 msgid "_Rotate blocks counterclockwise"
 msgstr "시계반대 방향으로 회전(_R)"
 
-#: src/quadrapassel.vala:361
+#: src/quadrapassel.vala:400
 msgid "Show _where the block will land"
 msgstr "블록이 떨어질 위치 보이기(_W)"
 
-#: src/quadrapassel.vala:405
-msgid "Controls"
-msgstr "조작"
+#: src/quadrapassel.vala:418
+msgid "_Use a custom seed for the game"
+msgstr "게임을 시작할 키(_U)"
 
-#: src/quadrapassel.vala:411
-msgid "Theme"
-msgstr "테마"
-
-#: src/quadrapassel.vala:423
+#: src/quadrapassel.vala:442
 msgid "Plain"
 msgstr "단순"
 
-#: src/quadrapassel.vala:428
-msgid "Tango Flat"
-msgstr "탱고 평평함"
-
-#: src/quadrapassel.vala:433
+#: src/quadrapassel.vala:442
 msgid "Tango Shaded"
 msgstr "탱고 그림자"
 
 # NOTE: 테마 이름임. 인터페이스 단추 메시지 아니므로 '지우기' 금지
-#: src/quadrapassel.vala:438
+#: src/quadrapassel.vala:442
 msgid "Clean"
 msgstr "깔끔함"
 
-#. Throw up a dialog
-#: src/quadrapassel.vala:502
-msgid "Unable to change key, as this key already exists"
-msgstr "이 키가 이미 있으므로, 키를 바꿀 수 없습니다."
+#: src/quadrapassel.vala:442
+msgid "Modern"
+msgstr "모던"
 
-#: src/quadrapassel.vala:787
+#: src/quadrapassel.vala:816
 msgid "Unpause the game"
 msgstr "게임을 계속 진행합니다"
 
-#: src/quadrapassel.vala:792
+#: src/quadrapassel.vala:822
 msgid "Pause the game"
 msgstr "게임을 일시 중지합니다"
 
-#: src/quadrapassel.vala:870
+#: src/quadrapassel.vala:840
+msgid "Start the game"
+msgstr "새 게임 시작"
+
+#: src/quadrapassel.vala:861
+msgid "Old Scores"
+msgstr "이전 점수"
+
+#: src/quadrapassel.vala:866
+msgid "Difficult"
+msgstr "난이도"
+
+#: src/quadrapassel.vala:943
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -379,7 +397,7 @@ msgstr ""
 "한 줄을 완성하도록 블록을 회전하는 고전게임입니다만, 블록을 너무 높게 쌓으면 "
 "게임이 끝납니다!"
 
-#: src/quadrapassel.vala:875
+#: src/quadrapassel.vala:947
 msgid "translator-credits"
 msgstr ""
 "류창우 <cwryu@debian.org>\n"
@@ -387,21 +405,99 @@ msgstr ""
 "성대현 <sungdh86@gmail.com>\n"
 "조성호 <shcho@gnome.org>"
 
-#: src/score-dialog.vala:26
-msgid "_Close"
-msgstr "닫기(_C)"
+#~ msgid "Level to start with"
+#~ msgstr "시작할 단계"
 
-#: src/score-dialog.vala:27
-msgid "New Game"
-msgstr "새 게임"
+#~ msgid "Level to start with."
+#~ msgstr "시작할 단계."
 
-#: src/score-dialog.vala:30
-msgid "_OK"
-msgstr "확인(_O)"
+#~ msgid "Whether to give blocks random colors"
+#~ msgstr "블록의 색을 임의로 부여할 지 여부"
 
-#: src/score-dialog.vala:48
-msgid "Date"
-msgstr "시각"
+#~ msgid "Whether to give blocks random colors."
+#~ msgstr "블록의 색깔을 임의로 부여할 지 여부."
+
+#~ msgid "The number of rows to fill"
+#~ msgstr "채울 줄 수"
+
+#~ msgid ""
+#~ "The number of rows that are filled with random blocks at the start of the "
+#~ "game."
+#~ msgstr "게임이 시작할 때 임의로 채워 넣을 줄 수."
+
+#~ msgid "The density of filled rows"
+#~ msgstr "채워진 줄의 밀도"
+
+#~ msgid ""
+#~ "The density of blocks in rows filled at the start of the game. The value "
+#~ "is between 0 (for no blocks) and 10 (for a completely filled row)."
+#~ msgstr ""
+#~ "게임이 시작할 때 채워진 줄의 블록 밀도. 이 값은 0(블록 없음)에서 10(완전"
+#~ "히 줄 채움) 사이의 값입니다."
+
+#~ msgid "Key press to move left."
+#~ msgstr "왼쪽으로 이동할 때 누를 키."
+
+#~ msgid "Key press to move right."
+#~ msgstr "오른쪽으로 이동할 때 누를 키."
+
+#~ msgid "Key press to move down."
+#~ msgstr "아래로 이동할 때 누를 키."
+
+#~ msgid "Key press to drop."
+#~ msgstr "떨어뜨릴 때 누를 키."
+
+#~ msgid "Key press to rotate."
+#~ msgstr "돌릴 때 누를 키."
+
+#~ msgid "Pause"
+#~ msgstr "일시 중지"
+
+#~ msgid "Key press to pause."
+#~ msgstr "일시 중지할 때 누를 키."
+
+# NOTE: Space, ESC 같은 키 이름이므로 번역하지 않는다.
+#~ msgid "Enter"
+#~ msgstr "Enter"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "그놈 프로젝트"
+
+#~ msgid "_New Game"
+#~ msgstr "새 게임(_N)"
+
+#~ msgid "_Number of pre-filled rows:"
+#~ msgstr "미리 채워진 열의 갯수(_N):"
+
+#~ msgid "_Density of blocks in a pre-filled row:"
+#~ msgstr "미리 채워진 열에서 블록의 밀도(_D):"
+
+#~ msgid "_Starting level:"
+#~ msgstr "시작 단계(_S):"
+
+#~ msgid "Controls"
+#~ msgstr "조작"
+
+#~ msgid "Theme"
+#~ msgstr "테마"
+
+#~ msgid "Tango Flat"
+#~ msgstr "탱고 평평함"
+
+#~ msgid "Unable to change key, as this key already exists"
+#~ msgstr "이 키가 이미 있으므로, 키를 바꿀 수 없습니다."
+
+#~ msgid "_Close"
+#~ msgstr "닫기(_C)"
+
+#~ msgid "New Game"
+#~ msgstr "새 게임"
+
+#~ msgid "_OK"
+#~ msgstr "확인(_O)"
+
+#~ msgid "Date"
+#~ msgstr "시각"
 
 #~ msgid "A classic game of fitting falling blocks together"
 #~ msgstr "떨어지는 블럭을 맞추는 고전적인 게임"
@@ -411,6 +507,3 @@ msgstr "시각"
 
 #~ msgid "_About"
 #~ msgstr "정보(_A)"
-
-#~ msgid "_Quit"
-#~ msgstr "끝내기(_Q)"
