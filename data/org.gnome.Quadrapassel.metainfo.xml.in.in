@@ -54,6 +54,14 @@
     <color type="primary" scheme_preference="dark">#764B7C</color>
   </branding>
   <releases>
+    <release date="2025-09-13" version="49.0">
+      <description>
+        <ul>
+          <li>Updated translations: Turkish, Finnish, Brazilian Portuguese,	Korean, Persian</li>
+          <li>Fixed a bug where the game area could be swiped and tapped on during pause</li>
+        </ul>
+      </description>
+    </release>
     <release date="2025-09-06" version="49~rc2" type="development" />
     <release date="2025-09-06" version="49~rc1" type="development">
       <description>
