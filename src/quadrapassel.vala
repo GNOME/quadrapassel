@@ -709,7 +709,7 @@ public class Quadrapassel : Adw.Application
 
     private void swipe_cb (double velocity_x, double velocity_y)
     {
-        if (game == null)
+        if (game == null || game.paused)
             return;
  
         /* For some reason tapping/clicking is treated as a swipe, but with 0 velocity.
