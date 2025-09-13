@@ -1,34 +1,69 @@
-From a15e29e0c2034dd786317a4514860607150fad4b Mon Sep 17 00:00:00 2001
+From 0566f4b8ba21466d9b19cdef76d3b1cfe7c917de Mon Sep 17 00:00:00 2001
 From: Will Warner <willwwarner@proton.me>
-Date: Mon, 25 Aug 2025 17:08:56 -0400
-Subject: [PATCH] dialog: actually fix setting the active category for
- drop_down
+Date: Sat, 13 Sep 2025 10:10:27 -0400
+Subject: [PATCH] Revert "Remove add_scores_internal()"
 
+This reverts commit dee87de9e5aefe491bb168557333e8e8d97c89b9.
 ---
- games/scores/dialog.vala | 11 ++++++-----
- 1 file changed, 6 insertions(+), 5 deletions(-)
+ games/scores/context.vala | 28 +++++++++++++++++-----------
+ 1 file changed, 17 insertions(+), 11 deletions(-)
 
-diff --git a/games/scores/dialog.vala b/games/scores/dialog.vala
-index b93f923..68ace62 100644
---- a/games/scores/dialog.vala
-+++ b/games/scores/dialog.vala
-@@ -115,11 +115,12 @@ private class Dialog : Adw.Dialog
-                 if (selected_index != -1)
-                     load_scores_for_category (categories.nth_data (selected_index));
-             });
--            int active_category_index = categories.index (active_category);
--            if (active_category_index != -1)
--                drop_down.set_selected (active_category_index - 1);
+diff --git a/games/scores/context.vala b/games/scores/context.vala
+index a013b77..a291efe 100644
+--- a/games/scores/context.vala
++++ b/games/scores/context.vala
+@@ -253,34 +253,40 @@ public class Context : Object
+         yield stream.write_all_async (line.data, Priority.DEFAULT, cancellable, null);
+     }
+ 
+-    /**
+-     * Returns true if a dialog was launched on attaining high score.
+-     *
++    /* This is separate from add_score() for use by HistoryFileImporter.
++     * At the next API break, we should merge this into add_score().
+      */
+-    public async bool add_score (long score, Category category, Cancellable? cancellable) throws Error
++    internal async bool add_score_internal (Score score, Category category, Cancellable? cancellable) throws Error
+     {
+-        var the_score = new Score (score);
 -
--            headerbar.set_title_widget (drop_down);
-+            for (int i = 0; i != categories.length (); i++)
-+            {
-+                var category = categories.nth_data (i);
-+                if (category == active_category)
-+                    drop_down.set_selected (i);
-+            }
+         /* Check if category exists in the HashTable. Insert one if not. */
+         if (!scores_per_category.has_key (category))
+             scores_per_category.set (category, new Gee.ArrayList<Score> ());
+ 
+-        if (scores_per_category[category].add (the_score))
++        if (scores_per_category[category].add (score))
+             current_category = category;
+ 
+-        var high_score_added = is_high_score (the_score.score, category);
++        var high_score_added = is_high_score (score.score, category);
+         if (high_score_added && game_window != null)
+         {
+-            var dialog = new Dialog (this, category_type, style, the_score, current_category, icon_name);
+-            dialog.closed.connect (() => add_score.callback ());
++            var dialog = new Dialog (this, category_type, style, score, current_category, icon_name);
++            dialog.closed.connect (() => add_score_internal.callback ());
+             dialog.present (game_window);
+             yield;
          }
-
-         /* Add the data to the dialog */
---
+ 
+-        yield save_score_to_file (the_score, category, cancellable);
++        yield save_score_to_file (score, category, cancellable);
+         return high_score_added;
+     }
+ 
++    /**
++     * Returns true if a dialog was launched on attaining high score.
++     *
++     */
++    public async bool add_score (long score, Category category, Cancellable? cancellable) throws Error
++    {
++        return yield add_score_internal (new Score (score), category, cancellable);
++    }
++
+     public delegate void NewGameFunc ();
+     public delegate void QuitAppFunc ();
+ 
+-- 
 GitLab
+

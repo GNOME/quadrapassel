@@ -12,6 +12,7 @@ lggs = static_library('gnome-games-support-3',
     [
         'config.vapi',
         'gridframe.vala',
+        'theme-selector-dialog.vala',
         'scores/category.vala',
         'scores/context.vala',
         'scores/dialog.vala',

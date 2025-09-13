@@ -1,27 +1,546 @@
-From 1f688d811b5920b7d6f2d875fefdbd8b551d9a9b Mon Sep 17 00:00:00 2001
+From a3f358add79254a75233db99f821c08504cd4aa1 Mon Sep 17 00:00:00 2001
 From: Will Warner <willwwarner@proton.me>
-Date: Fri, 29 Aug 2025 23:18:59 -0400
-Subject: [PATCH] dialog: don't forget to add the drop down to the headerbar!
+Date: Sat, 13 Sep 2025 10:10:51 -0400
+Subject: [PATCH] Revert "Remove all deprecated APIs"
 
-fixes: #32
-closes: !29
+This reverts commit b610c747398bbd1f0908a2e91926942532ed2160.
 ---
- games/scores/dialog.vala | 2 ++
- 1 file changed, 2 insertions(+)
+ games/meson.build                       |   5 +-
+ games/scores/context.vala               |  91 +++++++++++++++--
+ games/scores/directory-importer.vala    | 107 ++++++++++++++++++++
+ games/scores/history-file-importer.vala | 127 ++++++++++++++++++++++++
+ games/scores/importer.vala              | 100 +++++++++++++++++++
+ 5 files changed, 423 insertions(+), 7 deletions(-)
+ create mode 100644 games/scores/directory-importer.vala
+ create mode 100644 games/scores/history-file-importer.vala
+ create mode 100644 games/scores/importer.vala
 
-diff --git a/games/scores/dialog.vala b/games/scores/dialog.vala
-index 68ace62..520a8d3 100644
---- a/games/scores/dialog.vala
-+++ b/games/scores/dialog.vala
-@@ -121,6 +121,8 @@ private class Dialog : Adw.Dialog
-                 if (category == active_category)
-                     drop_down.set_selected (i);
-             }
+diff --git a/games/meson.build b/games/meson.build
+index f750fb4..9de6882 100644
+--- a/games/meson.build
++++ b/games/meson.build
+@@ -16,6 +16,9 @@ lggs = static_library('gnome-games-support-3',
+         'scores/category.vala',
+         'scores/context.vala',
+         'scores/dialog.vala',
++        'scores/directory-importer.vala',
++        'scores/history-file-importer.vala',
++        'scores/importer.vala',
+         'scores/score.vala',
+     ],
+     c_args: [
+@@ -25,4 +28,4 @@ lggs = static_library('gnome-games-support-3',
+     ],
+     vala_header: 'libgnome-games-support.h',
+     dependencies: lggs_interface_deps,
+-)
++)
+\ No newline at end of file
+diff --git a/games/scores/context.vala b/games/scores/context.vala
+index a291efe..6686a81 100644
+--- a/games/scores/context.vala
++++ b/games/scores/context.vala
+@@ -75,6 +75,13 @@ public class Context : Object
+      */
+     public string icon_name { get; construct; }
+ 
++    [Version (deprecated=true, deprecated_since="3.0")]
++    /**
++     * The {@link [Games.Scores.Importer]} for the context (eg. HistoryFileImporter).
++     *
++     */
++    public Importer? importer { get; construct; }
 +
-+            headerbar.set_title_widget (drop_down);
-         }
-
-         /* Add the data to the dialog */
---
+     private Category? current_category = null;
+ 
+     private static Gee.HashDataFunc<Category?> category_hash = (a) => {
+@@ -105,6 +112,7 @@ public class Context : Object
+      * Emitted when the score dialog is closed.
+      *
+      */
++    [Version (since="3.0")]
+     public signal void dialog_closed ();
+ 
+     class construct
+@@ -113,6 +121,28 @@ public class Context : Object
+         Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+     }
+ 
++    /**
++     * Creates a new Context.
++     *
++     * ``app_name`` is your App ID (eg. ``org.gnome.Mines``).
++     *
++     * ``category_type`` describes all of the categories, make sure to put a colon at the end (eg. "Minefield:", "Difficulty Level:").
++     *
++     * ``game_window`` is the window that the game will be inside of, this is the window the score dialog will be presented upon.
++     *
++     * ``category_request`` is a function that takes a category key and produces the user-facing name for it/
++     *
++     *
++     */
++    public Context (string app_name,
++                    string category_type,
++                    Gtk.Window? game_window,
++                    CategoryRequestFunc category_request,
++                    Style style)
++    {
++        this.with_importer_and_icon_name (app_name, category_type, game_window, category_request, style, null, null);
++    }
++
+     /**
+      * Creates a new Context.
+      *
+@@ -129,17 +159,41 @@ public class Context : Object
+      * ``icon_name`` is the ID for your app's icon (eg. ``org.gnome.Quadrapassel``).
+      *
+      */
+-    public Context (string app_name,
+-                    string category_type,
+-                    Gtk.Window? game_window,
+-                    CategoryRequestFunc category_request,
+-                    Style style,
+-                    string? icon_name = null)
++    public Context.with_icon_name (string app_name,
++                                   string category_type,
++                                   Gtk.Window? game_window,
++                                   CategoryRequestFunc category_request,
++                                   Style style,
++                                   string icon_name)
++    {
++        this.with_importer_and_icon_name (app_name, category_type, game_window, category_request, style, null, icon_name);
++    }
++
++    [Version (deprecated=true, deprecated_since="3.0")]
++    public Context.with_importer (string app_name,
++                                  string category_type,
++                                  Gtk.Window? game_window,
++                                  CategoryRequestFunc category_request,
++                                  Style style,
++                                  Importer? importer)
++    {
++        this.with_importer_and_icon_name (app_name, category_type, game_window, category_request, style, importer, null);
++    }
++
++    [Version (deprecated=true, deprecated_since="3.0")]
++    public Context.with_importer_and_icon_name (string app_name,
++                                                string category_type,
++                                                Gtk.Window? game_window,
++                                                CategoryRequestFunc category_request,
++                                                Style style,
++                                                Importer? importer = null,
++                                                string? icon_name = null)
+     {
+         Object (app_name: app_name,
+                 category_type: category_type,
+                 game_window: game_window,
+                 style: style,
++                importer: importer,
+                 icon_name: icon_name ?? app_name);
+ 
+         /* Note: the following functionality can be performed manually by
+@@ -163,6 +217,9 @@ public class Context : Object
+     public override void constructed ()
+     {
+         user_score_dir = Path.build_filename (Environment.get_user_data_dir (), app_name, "scores", null);
++
++        if (importer != null)
++            importer.run (this, user_score_dir);
+     }
+ 
+     internal List<Category?> get_categories ()
+@@ -298,6 +355,7 @@ public class Context : Object
+      * ``quit_app_func`` is called when the user presses the 'Quit' button on the dialog
+      *
+      */
++    [Version (since="3.0")]
+     public async bool add_score_full (long score_value, Category category, NewGameFunc new_game_func, QuitAppFunc quit_app_func, Cancellable? cancellable) throws Error
+     {
+         Score score = new Score (score_value);
+@@ -405,10 +463,31 @@ public class Context : Object
+         this.category_request = null;
+     }
+ 
++    /* This code violates the essential rule:
++     *
++     *   Never iterate a context created outside the library, including the
++     *   global-default or thread-default contexts. Otherwise, sources created
++     *   in the application may be dispatched when the application is not
++     *   expecting it, causing re-entrancy problems for the application code.
++     *
++     * This is why gtk_dialog_run() was removed.
++     */
++    [Version (deprecated=true, deprecated_since="3.0")]
++    public void run_dialog ()
++        requires (game_window != null)
++    {
++        var main_loop = new MainLoop (null);
++        var dialog = new Dialog (this, category_type, style, null, current_category, icon_name);
++        dialog.closed.connect (() => main_loop.quit ());
++        dialog.present (game_window);
++        main_loop.run ();
++    }
++
+     /**
+      * Presents the score dialog on top of ``game_window``.
+      *
+      */
++    [Version (since="3.0")]
+     public void present_dialog ()
+         requires (game_window != null)
+     {
+diff --git a/games/scores/directory-importer.vala b/games/scores/directory-importer.vala
+new file mode 100644
+index 0000000..0064ecc
+--- /dev/null
++++ b/games/scores/directory-importer.vala
+@@ -0,0 +1,107 @@
++/* -*- Mode: vala; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-
++ *
++ * Copyright © 2016 Michael Catanzaro <mcatanzaro@gnome.org>
++ *
++ * This file is part of libgnome-games-support.
++ *
++ * libgnome-games-support is free software: you can redistribute it and/or modify
++ * it under the terms of the GNU Lesser General Public License as published by
++ * the Free Software Foundation, either version 3 of the License, or
++ * (at your option) any later version.
++ *
++ * libgnome-games-support is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU Lesser General Public License for more details.
++ *
++ * You should have received a copy of the GNU Lesser General Public License
++ * along with libgnome-games-support.  If not, see <http://www.gnu.org/licenses/>.
++ */
++
++namespace Games {
++namespace Scores {
++
++/* Imports scores from an old scores directory, where each category of scores is
++ * saved in a separate file. This is the format used by old C games that were
++ * never converted to Vala before switching to libgnome-games-support. This class
++ * should probably be used by Five or More, Nibbles, Robots, Tali, and nothing
++ * else.
++ */
++[Version (deprecated=true, deprecated_since="3.0")]
++public class DirectoryImporter : Importer
++{
++    /* A function provided by the game that converts the old category key to a
++     * new key. If the keys have not been changed, this function should return
++     * the same string. If the key is invalid, it should return null, as this
++     * function will be called once for each file in the game's local data
++     * directory, and some of those files might not be valid categories.
++     */
++    [Version (deprecated=true, deprecated_since="3.0")]
++    public delegate string? CategoryConvertFunc (string old_key);
++    private CategoryConvertFunc? category_convert;
++
++    construct
++    {
++        /* Unset this manually because it holds a circular ref the Importer. */
++        this.finished.connect (() => this.category_convert = null);
++    }
++
++    [Version (deprecated=true, deprecated_since="3.0")]
++    public DirectoryImporter ()
++    {
++        /* Default converter for games that don't require category migration. */
++        set_category_convert_func ((old_key) => { return old_key; });
++    }
++
++    [Version (deprecated=true, deprecated_since="3.0")]
++    public DirectoryImporter.with_convert_func (CategoryConvertFunc category_convert)
++    {
++        set_category_convert_func (category_convert);
++    }
++
++    [Version (deprecated=true, deprecated_since="3.0")]
++    public void set_category_convert_func (CategoryConvertFunc category_convert)
++    {
++        this.category_convert = (old_key) => { return category_convert (old_key); };
++    }
++
++    /* This scores format is mostly-compatible with the current format, the only
++     * differences are (a) the scores file nowadays has a column for the player
++     * name, (b) scores nowadays are kept under ~/.local/share/APPNAME/scores
++     * whereas they used to be saved one level up, and (c) some category names
++     * have changed. All we have to do here is copy the files from the parent
++     * directory to the subdirectory, and rename them according to the new
++     * category names. Context.load_scores_from_file handles the missing player
++     * name column by assuming it matches the current UNIX account if missing.
++     * Notice that we are importing only home directory scores, not any scores
++     * from /var/games, since it's been several years since scores were removed
++     * from there and most players will have lost them by now anyway.
++     */
++    protected override void importOldScores (Context context, File new_scores_dir) throws Error
++    {
++        var original_scores_dir = new_scores_dir.get_parent ();
++        assert (original_scores_dir != null);
++
++        var enumerator = original_scores_dir.enumerate_children (FileAttribute.STANDARD_NAME, 0);
++        FileInfo file_info;
++        while ((file_info = enumerator.next_file ()) != null)
++        {
++            /* We just created this.... */
++            if (file_info.get_name () == "scores")
++                continue;
++
++            var new_key = category_convert (file_info.get_name ());
++            if (new_key == null)
++                continue;
++
++            var new_file = new_scores_dir.get_child (new_key);
++            var original_file = original_scores_dir.resolve_relative_path (file_info.get_name ());
++            debug ("Moving scores from %s to %s", original_file.get_path (), new_file.get_path ());
++            original_file.copy (new_file, FileCopyFlags.NONE);
++            original_file.@delete ();
++        }
++    }
++}
++
++} /* namespace Scores */
++} /* namespace Games */
+diff --git a/games/scores/history-file-importer.vala b/games/scores/history-file-importer.vala
+new file mode 100644
+index 0000000..302afd4
+--- /dev/null
++++ b/games/scores/history-file-importer.vala
+@@ -0,0 +1,127 @@
++/* -*- Mode: vala; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-
++ *
++ * Copyright © 2016 Michael Catanzaro <mcatanzaro@gnome.org>
++ *
++ * This file is part of libgnome-games-support.
++ *
++ * libgnome-games-support is free software: you can redistribute it and/or modify
++ * it under the terms of the GNU Lesser General Public License as published by
++ * the Free Software Foundation, either version 3 of the License, or
++ * (at your option) any later version.
++ *
++ * libgnome-games-support is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU Lesser General Public License for more details.
++ *
++ * You should have received a copy of the GNU Lesser General Public License
++ * along with libgnome-games-support.  If not, see <http://www.gnu.org/licenses/>.
++ */
++
++namespace Games {
++namespace Scores {
++
++/* Imports scores from a Vala game's history file directory, where each category
++ * of scores is saved together in the same file. This is the format used by
++ * games that were converted to Vala before switching to libgnome-games-support. This
++ * class should probably be used by Klotski, Mines, Swell Foop, Mahjongg,
++ * Tetravex, Quadrapassel, and nothing else.
++ */
++[Version (deprecated=true, deprecated_since="3.0")]
++public class HistoryFileImporter : Importer
++{
++    /* A function provided by the game that converts a line in its history file
++     * to a Score and Category we can use.
++     */
++    [Version (deprecated=true, deprecated_since="3.0")]
++    public delegate void HistoryConvertFunc (string line, out Score score, out Category category);
++    private HistoryConvertFunc? history_convert;
++
++    construct
++    {
++        /* Unset this manually because it holds a circular ref the Importer. */
++        this.finished.connect (() => this.history_convert = null);
++    }
++
++    [Version (deprecated=true, deprecated_since="3.0")]
++    public HistoryFileImporter (HistoryConvertFunc history_convert)
++    {
++        set_history_convert_func (history_convert);
++    }
++
++    [Version (deprecated=true, deprecated_since="3.0")]
++    public void set_history_convert_func (HistoryConvertFunc history_convert)
++    {
++        this.history_convert = (line, out score, out category) => {
++            history_convert (line, out score, out category);
++        };
++    }
++
++    [Version (deprecated=true, deprecated_since="3.0")]
++    public static int64 parse_date (string date)
++    {
++        var date_time = new DateTime.from_iso8601 (date, null);
++        if (date_time == null)
++            warning ("Failed to parse date: %s", date);
++        return date_time.to_unix ();
++    }
++
++    /* Each game uses a somewhat different format for its scores; one game might
++     * use one column to store the category, while another might use two or
++     * more. Pass the game one line of the history file at a time, and let the
++     * game convert it to a Score and Category for us.
++     */
++    protected override void importOldScores (Context context, File new_scores_dir) throws GLib.Error
++    {
++        var history_filename = Path.build_filename (new_scores_dir.get_path (), "..", "history", null);
++        var stream = FileStream.open (history_filename, "r");
++        if (stream == null)
++            return;
++
++        debug ("Importing scores from %s", history_filename);
++
++        string line;
++        while ((line = stream.read_line ()) != null)
++        {
++            Score score;
++            Category category;
++            history_convert (line, out score, out category);
++            if (score == null || category == null)
++                warning ("Failed to import from %s score line %s", history_filename, line);
++            add_score_sync (context, score, category);
++        }
++
++        var history_file = File.new_for_path (history_filename);
++        history_file.@delete ();
++    }
++
++    private bool add_score_sync (Context context, Score score, Category category) throws Error
++    {
++        var main_context = new MainContext ();
++        var main_loop = new MainLoop (main_context);
++        var ret = false;
++        Error error = null;
++
++        main_context.push_thread_default ();
++        context.add_score_internal.begin (score, category, null, (object, result) => {
++            try
++            {
++                ret = context.add_score_internal.end (result);
++            }
++            catch (Error e)
++            {
++                error = e;
++            }
++            main_loop.quit ();
++        });
++        main_loop.run ();
++        main_context.pop_thread_default ();
++
++        if (error != null)
++            throw error;
++        return ret;
++    }
++}
++
++} /* namespace Scores */
++} /* namespace Games */
+diff --git a/games/scores/importer.vala b/games/scores/importer.vala
+new file mode 100644
+index 0000000..06d4774
+--- /dev/null
++++ b/games/scores/importer.vala
+@@ -0,0 +1,100 @@
++/* -*- Mode: vala; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-
++ *
++ * Copyright © 2016 Michael Catanzaro <mcatanzaro@gnome.org>
++ *
++ * This file is part of libgnome-games-support.
++ *
++ * libgnome-games-support is free software: you can redistribute it and/or modify
++ * it under the terms of the GNU Lesser General Public License as published by
++ * the Free Software Foundation, either version 3 of the License, or
++ * (at your option) any later version.
++ *
++ * libgnome-games-support is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU Lesser General Public License for more details.
++ *
++ * You should have received a copy of the GNU Lesser General Public License
++ * along with libgnome-games-support.  If not, see <http://www.gnu.org/licenses/>.
++ */
++
++namespace Games {
++namespace Scores {
++
++/* Time for a history lesson. Once upon a time, scores were stored under
++ * /var/games in a format basically the same as what we use now, split into
++ * different files based on category. Games were installed setgid for the games
++ * group, allowing scores to be shared between users (fun in a computer lab or
++ * shared machine) while preventing cheating, since editing the scores file
++ * would require some privilege escalation exploit.
++ *
++ * When Robert started rewriting games in Vala, he changed the scores format so
++ * that all scores for a game would be saved in one file, in the home directory.
++ * Placing the file in the home directory has an important advantage in that you
++ * do not lose your scores if you copy your home directory to another computer.
++ * Of course, this had the one-time cost that scores were lost upon upgrading
++ * to the new Vala version of the game, as there was no score importer. It also
++ * makes importing a bit tricky, because the columns in the scores file are
++ * different for each game.
++ *
++ * Then, for GNOME 3.12, I (Michael) changed all the remaining C games to store
++ * scores in the home directory, without changing the format except for removing
++ * the player name column, since it didn't seem relevant if all scores were in
++ * the home directory. Again, all users' scores were lost in this transition.
++ * Currently, scores use this same format, except the player name column is back
++ * because it turns out people share user accounts and want to record scores
++ * separately.
++ *
++ * These importers exist so that we don't delete everyone's scores a second
++ * time.
++ *
++ * Some users have complained that scores are now saved in the home directory.
++ * Using /var/games was a clever setup and it's a bit of a shame to see it go;
++ * bug #749682 exists to restore that old behavior. It has been suggested that
++ * we could hardlink scores files from the home directory to /var/games to get
++ * the best of both worlds. I don't see why not, except some distro folks really
++ * don't like using the setgid bit. Another possibility would be to make this
++ * some configurable option. Few enough people have been complaining that I
++ * don't plan to spend more time on this, though.
++ */
++
++/* Note that importers must operate synchronously. This is fine because the
++ * importer is only used before scores are loaded, and we ensure scores are
++ * loaded before showing the main window.
++ */
++
++[Version (deprecated=true, deprecated_since="3.0")]
++public abstract class Importer : Object
++{
++    [Version (deprecated=true, deprecated_since="3.0")]
++    protected abstract void importOldScores (Context context, File new_scores_dir) throws Error;
++
++    /* This would be much nicer as an abstract function rather than a signal;
++     * however, adding a new abstract function would enlarge the class struct,
++     * breaking ABI.
++     */
++    [Version (since="3.0", deprecated=true, deprecated_since="3.0")]
++    public signal void finished ();
++
++    internal void run (Context context, string new_scores_dir)
++    {
++        var new_dir = File.new_for_path (new_scores_dir);
++        if (!new_dir.query_exists ())
++        {
++            try
++            {
++                new_dir.make_directory_with_parents ();
++                importOldScores (context, new_dir);
++            }
++            catch (Error e)
++            {
++                warning ("Failed to import scores: %s", e.message);
++            }
++        }
++
++        finished ();
++    }
++}
++
++} /* namespace Scores */
++} /* namespace Games */
+-- 
 GitLab
 
