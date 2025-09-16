@@ -50,8 +50,8 @@
   <url type="translate">https://l10n.gnome.org/module/quadrapassel/</url>
   <launchable type="desktop-id">@app-id@.desktop</launchable>
   <branding>
-    <color type="primary" scheme_preference="light">#B73737</color>
-    <color type="primary" scheme_preference="dark">#764B7C</color>
+    <color type="primary" scheme_preference="light">#f1c8f7</color>
+    <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
     <release date="2025-09-13" version="49.0">
