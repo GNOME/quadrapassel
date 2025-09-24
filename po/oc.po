@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: oc\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
 "POT-Creation-Date: 2025-09-16 19:12+0000\n"
-"PO-Revision-Date: 2025-09-24 09:38+0200\n"
+"PO-Revision-Date: 2025-09-24 10:50+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: Tot En Òc\n"
 "Language: oc\n"
@@ -53,12 +53,6 @@ msgstr ""
 "blòts tomban mai rapidament."
 
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:18
-#, fuzzy
-#| msgid ""
-#| "If you're looking for a challenge, Quadrapassel allows you to increase "
-#| "the initial speed of the blocks, or begin the game with partial blocks on "
-#| "some of the rows. Or, instead of allowing the blocks to fall randomly, it "
-#| "can select blocks that will be hard for you to place."
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
@@ -72,16 +66,18 @@ msgstr ""
 
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:36
 msgid "The Quadrapassel window, with a game playing."
-msgstr ""
+msgstr "La fenèstra de Quadrapassel, amb una partida en cors."
 
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:40
 msgid ""
 "The Quadrapassel window, with a game playing, in small form factor mode."
 msgstr ""
+"La fenèstra de Quadrapassel, amb una partida en cors, en mòde pichonetas "
+"fòrmas."
 
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:44
 msgid "The Quadrapassel window, before starting a game."
-msgstr ""
+msgstr "La fenèstra de Quadrapassel, abans de començar una partida."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -133,7 +129,7 @@ msgstr "La dificultat del jòc"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:32
 msgid "How difficult the game is, 0 is a normal difficulty."
-msgstr ""
+msgstr "La dificultat de la partida, 0 es la dificultat normala."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:36
 #, fuzzy
@@ -155,7 +151,7 @@ msgstr "Lo tèma utilizat per afichar los blòts"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:42
 msgid "Used to determine which blocks are given in a game."
-msgstr ""
+msgstr "Utilizat per determinar los blòcs qu’òm fornirà pendent la partida."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:46
 msgid "Whether to play sounds"
@@ -405,7 +401,9 @@ msgstr ""
 
 #: src/quadrapassel.vala:947
 msgid "translator-credits"
-msgstr "Cédric Valmary (totenox.eu) <cvalmary@yahoo.fr>"
+msgstr ""
+"Cédric Valmary (totenox.eu) <cvalmary@yahoo.fr>\n"
+"Quentin PAGÈS"
 
 #~ msgid "Level to start with"
 #~ msgstr "Nivèl de despart"
