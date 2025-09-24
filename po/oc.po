@@ -8,187 +8,36 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: oc\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=quadrapassel&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-05-23 20:13+0000\n"
-"PO-Revision-Date: 2016-05-08 18:48+0200\n"
-"Last-Translator: Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
+"POT-Creation-Date: 2025-09-16 19:12+0000\n"
+"PO-Revision-Date: 2025-09-24 09:38+0200\n"
+"Last-Translator: Quentin PAGÈS\n"
 "Language-Team: Tot En Òc\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Poedit 3.7\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:1
-msgid "Image to use for drawing blocks"
-msgstr "Imatge d'utilizar per dessenhar los blòts"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:2
-msgid "Image to use for drawing blocks."
-msgstr "Imatge d'utilizar per dessenhar los blòts."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:3
-msgid "The theme used for rendering the blocks"
-msgstr "Lo tèma utilizat per afichar los blòts"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:4
-msgid "The name of the theme used for rendering the blocks and the background."
-msgstr "Lo nom del tèma utilizat per afichar los blòts e lo rèireplan."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:5
-msgid "Level to start with"
-msgstr "Nivèl de despart"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:6
-msgid "Level to start with."
-msgstr "Nivèl de despart."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:7
-msgid "Whether to preview the next block"
-msgstr "Previsualizar o pas lo blòt que ven"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:8
-msgid "Whether to preview the next block."
-msgstr "Previsualizar o pas lo blòt que ven."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:9
-msgid "Whether to show where the moving piece will land"
-msgstr "Afichar o pas ont la pèça en movement va aterrir"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:10
-msgid "Whether to show where the moving piece will land."
-msgstr "Afichar o pas ont la pèça en movement va aterrir."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:11
-msgid "Whether to give blocks random colors"
-msgstr "Colors aleatòrias dels blòts o pas"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:12
-msgid "Whether to give blocks random colors."
-msgstr "Colors aleatòrias dels blòts o pas."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:13
-msgid "Whether to rotate counter clock wise"
-msgstr "Virar dins lo sens invèrse de las agulhas d'una mòstra o pas"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:14
-msgid "Whether to rotate counter clock wise."
-msgstr "Virar dins lo sens invèrse de las agulhas d'una mòstra o pas."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:15
-msgid "The number of rows to fill"
-msgstr "Lo nombre de linhas d'emplenar"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:16
-msgid ""
-"The number of rows that are filled with random blocks at the start of the "
-"game."
-msgstr ""
-"Lo nombre de linhas que son emplenadas amb de blòts aleatòris al començament "
-"del jòc."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:17
-msgid "The density of filled rows"
-msgstr "La densitat de blòts dins las linhas emplenadas"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:18
-msgid ""
-"The density of blocks in rows filled at the start of the game. The value is "
-"between 0 (for no blocks) and 10 (for a completely filled row)."
-msgstr ""
-"La densitat de blòts en linhas emplenadas al començament del jòc. La valor "
-"es entre 0 (per cap de blòt) e 10 (per una linha plena)."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:19
-msgid "Whether to play sounds"
-msgstr "Indica se cal jogar los sons"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:20
-msgid "Whether to play sounds."
-msgstr "Indica se cal jogar los sons."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:21
-msgid "Whether to pick blocks that are hard to place"
-msgstr "Indica se cal causir de blòts de mal plaçar"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:22
-msgid "Whether to pick blocks that are hard to place."
-msgstr "Indica se cal causir de blòts de mal placer."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:23 ../src/quadrapassel.vala:362
-msgid "Move left"
-msgstr "Desplaçar a esquèrra"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:24
-msgid "Key press to move left."
-msgstr "Tòca de quichar per desplaçar a esquèrra."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:25 ../src/quadrapassel.vala:365
-msgid "Move right"
-msgstr "Desplaçar a dreita"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:26
-msgid "Key press to move right."
-msgstr "Tòca de quichar per desplaçar a dreita."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:27 ../src/quadrapassel.vala:368
-msgid "Move down"
-msgstr "Se desplaçar cap aval"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:28
-msgid "Key press to move down."
-msgstr "Tòca d'utilizar per desplaçar en bas."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:29 ../src/quadrapassel.vala:371
-msgid "Drop"
-msgstr "Daissar anar"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:30
-msgid "Key press to drop."
-msgstr "Tòca d'utilizar per daissar anar."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:31 ../src/quadrapassel.vala:374
-msgid "Rotate"
-msgstr "Virar"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:32
-msgid "Key press to rotate."
-msgstr "Tòca d'utilizar per virar."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:33 ../src/quadrapassel.vala:377
-msgid "Pause"
-msgstr "Pausa"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:34
-msgid "Key press to pause."
-msgstr "Tòca d'utilizar per metre en pausa."
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:35
-msgid "Width of the window in pixels"
-msgstr "Largor de la fenèstra en pixèls"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:36
-msgid "Height of the window in pixels"
-msgstr "Nautor de la fenèstra en pixèls"
-
-#: ../data/org.gnome.quadrapassel.gschema.xml.h:37
-msgid "true if the window is maximized"
-msgstr "verai se la fenèstra es maximizada"
-
-#: ../data/quadrapassel.appdata.xml.in.h:1 ../data/quadrapassel.desktop.in.h:1
-#: ../src/quadrapassel.vala:108 ../src/quadrapassel.vala:119
-#: ../src/quadrapassel.vala:749 ../src/quadrapassel.vala:789
+#: data/org.gnome.Quadrapassel.desktop.in.in:2
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:90
+#: src/quadrapassel.vala:109 src/quadrapassel.vala:940
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
-#: ../data/quadrapassel.appdata.xml.in.h:2 ../data/quadrapassel.desktop.in.h:2
+#: data/org.gnome.Quadrapassel.desktop.in.in:3
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:9
 msgid "Fit falling blocks together"
 msgstr "Far correspondre los blòts que tomban"
 
-#: ../data/quadrapassel.appdata.xml.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Quadrapassel.desktop.in.in:11
+msgid "tetris;"
+msgstr "tetris;"
+
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:11
 msgid ""
 "Quadrapassel is a derivative of a classic Russian falling-block game. "
 "Reposition and rotate the blocks as they fall, and attempt to fit them "
@@ -203,9 +52,15 @@ msgstr ""
 "pila tròp nauta. A mesura que vòstra marca aumenta, aumentatz de nivèl e los "
 "blòts tomban mai rapidament."
 
-#: ../data/quadrapassel.appdata.xml.in.h:4
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:18
+#, fuzzy
+#| msgid ""
+#| "If you're looking for a challenge, Quadrapassel allows you to increase "
+#| "the initial speed of the blocks, or begin the game with partial blocks on "
+#| "some of the rows. Or, instead of allowing the blocks to fall randomly, it "
+#| "can select blocks that will be hard for you to place."
 msgid ""
-"If you're looking for a challenge, Quadrapassel allows you to increase the "
+"If you’re looking for a challenge, Quadrapassel allows you to increase the "
 "initial speed of the blocks, or begin the game with partial blocks on some "
 "of the rows. Or, instead of allowing the blocks to fall randomly, it can "
 "select blocks that will be hard for you to place."
@@ -215,158 +70,431 @@ msgstr ""
 "plaçats dins certanas linhas. O alara, al luòc de permetre a de blòts "
 "aleatòris de tombar, pòt seleccionar de blòts que seràn de mal plaçar."
 
-#: ../data/quadrapassel.desktop.in.h:3
-msgid "tetris;"
-msgstr "tetris;"
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:36
+msgid "The Quadrapassel window, with a game playing."
+msgstr ""
 
-#: ../src/game-view.vala:346
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:40
+msgid ""
+"The Quadrapassel window, with a game playing, in small form factor mode."
+msgstr ""
+
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:44
+msgid "The Quadrapassel window, before starting a game."
+msgstr ""
+
+#: data/org.gnome.Quadrapassel.gschema.xml:5
+msgid "Image to use for drawing blocks"
+msgstr "Imatge d'utilizar per dessenhar los blòts"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:6
+msgid "Image to use for drawing blocks."
+msgstr "Imatge d'utilizar per dessenhar los blòts."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:10
+msgid "The theme used for rendering the blocks"
+msgstr "Lo tèma utilizat per afichar los blòts"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:11
+msgid "The name of the theme used for rendering the blocks and the background."
+msgstr "Lo nom del tèma utilizat per afichar los blòts e lo rèireplan."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:15
+msgid "Whether to preview the next block"
+msgstr "Previsualizar o pas lo blòt que ven"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:16
+msgid "Whether to preview the next block."
+msgstr "Previsualizar o pas lo blòt que ven."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:20
+#, fuzzy
+#| msgid "Whether to show where the moving piece will land"
+msgid "Whether to show where the moving block will land"
+msgstr "Afichar o pas ont la pèça en movement va aterrir"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:21
+#, fuzzy
+#| msgid "Whether to show where the moving piece will land."
+msgid "Whether to show where the moving block will land."
+msgstr "Afichar o pas ont la pèça en movement va aterrir."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:25
+msgid "Whether to rotate counter clock wise"
+msgstr "Virar dins lo sens invèrse de las agulhas d'una mòstra o pas"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:26
+msgid "Whether to rotate counter clock wise."
+msgstr "Virar dins lo sens invèrse de las agulhas d'una mòstra o pas."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:31
+msgid "The difficulty of the game"
+msgstr "La dificultat del jòc"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:32
+msgid "How difficult the game is, 0 is a normal difficulty."
+msgstr ""
+
+#: data/org.gnome.Quadrapassel.gschema.xml:36
+#, fuzzy
+#| msgid "Whether to rotate counter clock wise"
+msgid "Whether to use the custom seed"
+msgstr "Virar dins lo sens invèrse de las agulhas d'una mòstra o pas"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:37
+#, fuzzy
+#| msgid "Whether to rotate counter clock wise."
+msgid "Whether to use the custom seed."
+msgstr "Virar dins lo sens invèrse de las agulhas d'una mòstra o pas."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:41
+#, fuzzy
+#| msgid "The theme used for rendering the blocks"
+msgid "The seed used for the game"
+msgstr "Lo tèma utilizat per afichar los blòts"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:42
+msgid "Used to determine which blocks are given in a game."
+msgstr ""
+
+#: data/org.gnome.Quadrapassel.gschema.xml:46
+msgid "Whether to play sounds"
+msgstr "Indica se cal jogar los sons"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:47
+msgid "Whether to play sounds."
+msgstr "Indica se cal jogar los sons."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:51
+msgid "Whether to pick blocks that are hard to place"
+msgstr "Indica se cal causir de blòts de mal plaçar"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:52
+msgid "Whether to pick blocks that are hard to place."
+msgstr "Indica se cal causir de blòts de mal placer."
+
+#: data/org.gnome.Quadrapassel.gschema.xml:56
+msgid "Width of the window in pixels"
+msgstr "Largor de la fenèstra en pixèls"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:60
+msgid "Height of the window in pixels"
+msgstr "Nautor de la fenèstra en pixèls"
+
+#: data/org.gnome.Quadrapassel.gschema.xml:64
+msgid "true if the window is maximized"
+msgstr "verai se la fenèstra es maximizada"
+
+#: src/game-view.vala:379 src/game-view.vala:458
 msgid "Paused"
 msgstr "En pausa"
 
-#: ../src/game-view.vala:348
+#: src/game-view.vala:384
 msgid "Game Over"
 msgstr "Fin de partida"
 
-#: ../src/quadrapassel.vala:93
-msgid "_New Game"
-msgstr "Partida _novèla"
+#: src/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "General"
 
-#: ../src/quadrapassel.vala:94
-msgid "_Scores"
-msgstr "_Marcas"
-
-#: ../src/quadrapassel.vala:95
-msgid "_Preferences"
-msgstr "_Preferéncias"
-
-#: ../src/quadrapassel.vala:98
-msgid "_Help"
-msgstr "A_juda"
-
-#: ../src/quadrapassel.vala:99
-msgid "_About"
-msgstr "A _prepaus"
-
-#: ../src/quadrapassel.vala:100
-msgid "_Quit"
-msgstr "_Quitar"
-
-#: ../src/quadrapassel.vala:147 ../src/quadrapassel.vala:687
-msgid "Start a new game"
+#: src/help-overlay.blp:14
+msgctxt "shortcut window"
+msgid "Start a New Game"
 msgstr "Comença una novèla partida"
 
-#: ../src/quadrapassel.vala:152
-msgid "Next"
-msgstr "Seguenta"
-
-#: ../src/quadrapassel.vala:165 ../src/score-dialog.vala:51
-msgid "Score"
-msgstr "Marca"
-
-#: ../src/quadrapassel.vala:176
-msgid "Lines"
-msgstr "Linhas"
-
-#: ../src/quadrapassel.vala:187
-msgid "Level"
-msgstr "Nivèl"
-
-#: ../src/quadrapassel.vala:266
-msgid "Preferences"
-msgstr "Preferéncias"
-
-#: ../src/quadrapassel.vala:284
-msgid "Game"
-msgstr "Jòc"
-
-#. pre-filled rows
-#: ../src/quadrapassel.vala:288
-msgid "_Number of pre-filled rows:"
-msgstr "_Nombre de linhas pre-emplenadas :"
-
-#. pre-filled rows density
-#: ../src/quadrapassel.vala:303
-msgid "_Density of blocks in a pre-filled row:"
-msgstr "_Densitat de blòts dins las linhas pre-emplenadas :"
-
-#. starting level
-#: ../src/quadrapassel.vala:317
-msgid "_Starting level:"
-msgstr "Nivèl de des_part :"
-
-#: ../src/quadrapassel.vala:330
-msgid "_Enable sounds"
-msgstr "A_ctivar los sons"
-
-#: ../src/quadrapassel.vala:335
-msgid "Choose difficult _blocks"
-msgstr "Causir de _blòts dificils"
-
-#: ../src/quadrapassel.vala:340
-msgid "_Preview next block"
-msgstr "_Veire lo blòt que ven"
-
-#. rotate counter clock wise
-#: ../src/quadrapassel.vala:347
-msgid "_Rotate blocks counterclockwise"
-msgstr "_Virar los blòts dins lo sens invèrse de las agulhas d'una mòstra"
-
-#: ../src/quadrapassel.vala:352
-msgid "Show _where the block will land"
-msgstr "Afichar _ont los blòts van aterrir"
-
-#: ../src/quadrapassel.vala:396
-msgid "Controls"
-msgstr "Contraròtles"
-
-#: ../src/quadrapassel.vala:402
-msgid "Theme"
-msgstr "Tèma"
-
-#: ../src/quadrapassel.vala:414
-msgid "Plain"
-msgstr "Ordinari"
-
-#: ../src/quadrapassel.vala:419
-msgid "Tango Flat"
-msgstr "Tango plat"
-
-#: ../src/quadrapassel.vala:424
-msgid "Tango Shaded"
-msgstr "Tango escur"
-
-#: ../src/quadrapassel.vala:429
-msgid "Clean"
-msgstr "Clean"
-
-#: ../src/quadrapassel.vala:668
-msgid "Unpause the game"
-msgstr "Repren la partida"
-
-#: ../src/quadrapassel.vala:673
+#: src/help-overlay.blp:20
+msgctxt "shortcut window"
 msgid "Pause the game"
 msgstr "Met la partida en pausa"
 
-#: ../src/quadrapassel.vala:751
-msgid "A classic game of fitting falling blocks together"
-msgstr "Un jòc classic de blòts que tomban e que cal assemblar."
+#: src/help-overlay.blp:24
+msgctxt "shortcut window"
+msgid "Show Help"
+msgstr "Afichar l'ajuda"
 
-#: ../src/quadrapassel.vala:756
+#: src/help-overlay.blp:29
+msgctxt "shortcut window"
+msgid "Open primary menu"
+msgstr "Dobrir lo menú principal"
+
+#: src/help-overlay.blp:34
+msgctxt "shortcut window"
+msgid "Show shortcuts"
+msgstr "Afichar los acorchis"
+
+#: src/help-overlay.blp:39
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Quitar"
+
+#: src/help-overlay.blp:45
+msgctxt "shortcut window"
+msgid "Game"
+msgstr "Jòc"
+
+#: src/help-overlay.blp:48
+msgctxt "shortcut window"
+msgid "Rotate"
+msgstr "Virar"
+
+#: src/help-overlay.blp:53
+msgctxt "shortcut window"
+msgid "Move right"
+msgstr "Desplaçar a drecha"
+
+#: src/help-overlay.blp:58
+msgctxt "shortcut window"
+msgid "Move left"
+msgstr "Desplaçar a esquèrra"
+
+#: src/help-overlay.blp:63
+msgctxt "shortcut window"
+msgid "Move down"
+msgstr "Se desplaçar cap aval"
+
+#: src/help-overlay.blp:68
+msgctxt "shortcut window"
+msgid "Drop"
+msgstr "Daissar anar"
+
+#: src/quadrapassel.vala:135 src/quadrapassel.vala:188
+msgid "Start a new game"
+msgstr "Comença una novèla partida"
+
+#: src/quadrapassel.vala:142
+msgid "_Scores"
+msgstr "_Marcas"
+
+#: src/quadrapassel.vala:143
+msgid "App_earance"
+msgstr "Ap_aréncia"
+
+#: src/quadrapassel.vala:144
+msgid "_Preferences"
+msgstr "_Preferéncias"
+
+#: src/quadrapassel.vala:147
+msgid "_Keyboard Shortcuts"
+msgstr "_Acorchis clavièr"
+
+#: src/quadrapassel.vala:148
+msgid "_Help"
+msgstr "A_juda"
+
+#: src/quadrapassel.vala:149
+msgid "_About Quadrapassel"
+msgstr "_A prepaus de Quadrapassel"
+
+#: src/quadrapassel.vala:193
+msgid "Next"
+msgstr "Seguenta"
+
+#: src/quadrapassel.vala:210
+msgid "Score"
+msgstr "Marca"
+
+#: src/quadrapassel.vala:221
+msgid "Lines"
+msgstr "Linhas"
+
+#: src/quadrapassel.vala:232
+msgid "Level"
+msgstr "Nivèl"
+
+#. Label on the scores dialog
+#: src/quadrapassel.vala:244
+msgid "Difficulty:"
+msgstr "Dificultat :"
+
+#: src/quadrapassel.vala:336
+msgid "Preferences"
+msgstr "Preferéncias"
+
+#: src/quadrapassel.vala:339
+msgid "Game"
+msgstr "Jòc"
+
+#: src/quadrapassel.vala:342
+msgid "Game Difficulty"
+msgstr "Dificultat del jòc"
+
+#: src/quadrapassel.vala:343
+msgid "Change how difficult the game is"
+msgstr "Cambiar la dificultat de l jòc"
+
+#: src/quadrapassel.vala:349
+msgid "_Difficulty"
+msgstr "_Dificultat"
+
+#: src/quadrapassel.vala:357
+msgid "Choose difficult _blocks"
+msgstr "Causir de _blòts dificils"
+
+#: src/quadrapassel.vala:366
+msgid "In-Game"
+msgstr "Pendent la partida"
+
+#: src/quadrapassel.vala:367
+msgid "Change the experience of playing a game"
+msgstr "Cambiar l’experiéncia de jòc"
+
+#: src/quadrapassel.vala:370
+msgid "_Enable sounds"
+msgstr "A_ctivar los sons"
+
+#: src/quadrapassel.vala:381
+msgid "_Preview next block"
+msgstr "_Veire lo blòt que ven"
+
+#: src/quadrapassel.vala:393
+msgid "_Rotate blocks counterclockwise"
+msgstr "_Virar los blòts dins lo sens invèrse de las agulhas d'una mòstra"
+
+#: src/quadrapassel.vala:400
+msgid "Show _where the block will land"
+msgstr "Afichar _ont los blòts van aterrir"
+
+#: src/quadrapassel.vala:418
+msgid "_Use a custom seed for the game"
+msgstr ""
+
+#: src/quadrapassel.vala:442
+msgid "Plain"
+msgstr "Ordinari"
+
+#: src/quadrapassel.vala:442
+msgid "Tango Shaded"
+msgstr "Tango escur"
+
+#: src/quadrapassel.vala:442
+msgid "Clean"
+msgstr "Clean"
+
+#: src/quadrapassel.vala:442
+msgid "Modern"
+msgstr "Modèrne"
+
+#: src/quadrapassel.vala:816
+msgid "Unpause the game"
+msgstr "Repren la partida"
+
+#: src/quadrapassel.vala:822
+msgid "Pause the game"
+msgstr "Met la partida en pausa"
+
+#: src/quadrapassel.vala:840
+msgid "Start the game"
+msgstr "Començar la partida"
+
+#: src/quadrapassel.vala:861
+msgid "Old Scores"
+msgstr "Marcas ancianas"
+
+#: src/quadrapassel.vala:866
+msgid "Difficult"
+msgstr "Dificile"
+
+#: src/quadrapassel.vala:943
+msgid ""
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
+msgstr ""
+"Un jòc classic ont fasètz virar de blòcs per far de linhas complètas, mas "
+"amassa pas tròp los blòcs o la partida es acabada !"
+
+#: src/quadrapassel.vala:947
 msgid "translator-credits"
 msgstr "Cédric Valmary (totenox.eu) <cvalmary@yahoo.fr>"
 
-#: ../src/score-dialog.vala:26
-msgid "_Close"
-msgstr "_Tampar"
+#~ msgid "Level to start with"
+#~ msgstr "Nivèl de despart"
 
-#: ../src/score-dialog.vala:27
-msgid "New Game"
-msgstr "Novèla partida"
+#~ msgid "Level to start with."
+#~ msgstr "Nivèl de despart."
 
-#: ../src/score-dialog.vala:30
-msgid "_OK"
-msgstr "_Validar"
+#~ msgid "Whether to give blocks random colors"
+#~ msgstr "Colors aleatòrias dels blòts o pas"
 
-#: ../src/score-dialog.vala:48
-msgid "Date"
-msgstr "Data"
+#~ msgid "Whether to give blocks random colors."
+#~ msgstr "Colors aleatòrias dels blòts o pas."
+
+#~ msgid "The number of rows to fill"
+#~ msgstr "Lo nombre de linhas d'emplenar"
+
+#~ msgid ""
+#~ "The number of rows that are filled with random blocks at the start of the "
+#~ "game."
+#~ msgstr ""
+#~ "Lo nombre de linhas que son emplenadas amb de blòts aleatòris al "
+#~ "començament del jòc."
+
+#~ msgid "The density of filled rows"
+#~ msgstr "La densitat de blòts dins las linhas emplenadas"
+
+#~ msgid ""
+#~ "The density of blocks in rows filled at the start of the game. The value "
+#~ "is between 0 (for no blocks) and 10 (for a completely filled row)."
+#~ msgstr ""
+#~ "La densitat de blòts en linhas emplenadas al començament del jòc. La "
+#~ "valor es entre 0 (per cap de blòt) e 10 (per una linha plena)."
+
+#~ msgid "Key press to move left."
+#~ msgstr "Tòca de quichar per desplaçar a esquèrra."
+
+#~ msgid "Key press to move right."
+#~ msgstr "Tòca de quichar per desplaçar a dreita."
+
+#~ msgid "Key press to move down."
+#~ msgstr "Tòca d'utilizar per desplaçar en bas."
+
+#~ msgid "Key press to drop."
+#~ msgstr "Tòca d'utilizar per daissar anar."
+
+#~ msgid "Key press to rotate."
+#~ msgstr "Tòca d'utilizar per virar."
+
+#~ msgid "Pause"
+#~ msgstr "Pausa"
+
+#~ msgid "Key press to pause."
+#~ msgstr "Tòca d'utilizar per metre en pausa."
+
+#~ msgid "_New Game"
+#~ msgstr "Partida _novèla"
+
+#~ msgid "_About"
+#~ msgstr "A _prepaus"
+
+#~ msgid "_Number of pre-filled rows:"
+#~ msgstr "_Nombre de linhas pre-emplenadas :"
+
+#~ msgid "_Density of blocks in a pre-filled row:"
+#~ msgstr "_Densitat de blòts dins las linhas pre-emplenadas :"
+
+#~ msgid "_Starting level:"
+#~ msgstr "Nivèl de des_part :"
+
+#~ msgid "Controls"
+#~ msgstr "Contraròtles"
+
+#~ msgid "Theme"
+#~ msgstr "Tèma"
+
+#~ msgid "Tango Flat"
+#~ msgstr "Tango plat"
+
+#~ msgid "A classic game of fitting falling blocks together"
+#~ msgstr "Un jòc classic de blòts que tomban e que cal assemblar."
+
+#~ msgid "_Close"
+#~ msgstr "_Tampar"
+
+#~ msgid "New Game"
+#~ msgstr "Novèla partida"
+
+#~ msgid "_OK"
+#~ msgstr "_Validar"
+
+#~ msgid "Date"
+#~ msgstr "Data"
