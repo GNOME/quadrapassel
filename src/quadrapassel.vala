@@ -62,6 +62,7 @@ public class Quadrapassel : Adw.Application
     private Preview theme_preview;
 
     private Manette.Monitor manette_monitor;
+    private bool is_manette_button_down = false;
 
     private const GLib.ActionEntry[] action_entries =
     {
@@ -526,19 +527,35 @@ public class Quadrapassel : Adw.Application
 
     private void manette_button_press_event_cb (Manette.Event event)
     {
-        if (game == null)
+        if (is_manette_button_down)
             return;
 
         uint16 button;
         if (!event.get_button (out button))
             return;
 
-        if (button == InputEventCode.BTN_START || button == InputEventCode.BTN_SELECT)
+        is_manette_button_down = true;
+
+        if (button == InputEventCode.BTN_SELECT)
         {
-            if (!game.game_over)
-                game.paused = !game.paused;
+            new_game();
             return;
         }
+
+        if (button == InputEventCode.BTN_START)
+        {
+            if (game == null)
+                new_game();
+            else if (!game.game_over)
+                game.paused = !game.paused;
+            else
+                new_game();
+
+            return;
+        }
+
+        if (game == null)
+            return;
 
         if (game.paused)
             return;
@@ -577,11 +594,13 @@ public class Quadrapassel : Adw.Application
 
     private void manette_button_release_event_cb (Manette.Event event)
     {
-        if (game == null)
-            return;
-
         uint16 button;
         if (!event.get_button (out button))
+            return;
+
+        is_manette_button_down = false;
+
+        if (game == null)
             return;
 
         if (button == InputEventCode.BTN_DPAD_LEFT ||

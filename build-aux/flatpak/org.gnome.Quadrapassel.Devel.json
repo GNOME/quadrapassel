@@ -62,7 +62,7 @@
         {
           "type": "git",
           "url": "https://gitlab.gnome.org/GNOME/libmanette.git",
-          "branch": "main"
+          "branch": "libmanette-0-2"
         }
       ],
       "modules": [
@@ -79,7 +79,7 @@
     },
     {
       "name": "libgee",
-      "config-opts": ["--enable-introspection=no"],
+      "buildsystem": "autotools",
       "sources": [
         {
           "type": "git",
