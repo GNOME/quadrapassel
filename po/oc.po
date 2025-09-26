@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: oc\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
 "POT-Creation-Date: 2025-09-16 19:12+0000\n"
-"PO-Revision-Date: 2025-09-24 10:50+0200\n"
+"PO-Revision-Date: 2025-09-26 10:31+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: Tot En Òc\n"
 "Language: oc\n"
@@ -104,16 +104,12 @@ msgid "Whether to preview the next block."
 msgstr "Previsualizar o pas lo blòt que ven."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:20
-#, fuzzy
-#| msgid "Whether to show where the moving piece will land"
 msgid "Whether to show where the moving block will land"
-msgstr "Afichar o pas ont la pèça en movement va aterrir"
+msgstr "Afichar o pas ont lo blòt en movement va aterrir"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:21
-#, fuzzy
-#| msgid "Whether to show where the moving piece will land."
 msgid "Whether to show where the moving block will land."
-msgstr "Afichar o pas ont la pèça en movement va aterrir."
+msgstr "Afichar o pas ont lo blòts en movement va aterrir."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:25
 msgid "Whether to rotate counter clock wise"
@@ -132,22 +128,16 @@ msgid "How difficult the game is, 0 is a normal difficulty."
 msgstr "La dificultat de la partida, 0 es la dificultat normala."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:36
-#, fuzzy
-#| msgid "Whether to rotate counter clock wise"
 msgid "Whether to use the custom seed"
-msgstr "Virar dins lo sens invèrse de las agulhas d'una mòstra o pas"
+msgstr "Indica se cal utilizar una generacion personala"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:37
-#, fuzzy
-#| msgid "Whether to rotate counter clock wise."
 msgid "Whether to use the custom seed."
-msgstr "Virar dins lo sens invèrse de las agulhas d'una mòstra o pas."
+msgstr "Indica se cal utilizar una generacion personala."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:41
-#, fuzzy
-#| msgid "The theme used for rendering the blocks"
 msgid "The seed used for the game"
-msgstr "Lo tèma utilizat per afichar los blòts"
+msgstr "La generacion utilizada per la partida"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:42
 msgid "Used to determine which blocks are given in a game."
@@ -353,7 +343,7 @@ msgstr "Afichar _ont los blòts van aterrir"
 
 #: src/quadrapassel.vala:418
 msgid "_Use a custom seed for the game"
-msgstr ""
+msgstr "_Utilizar una generacion personala per la partida"
 
 #: src/quadrapassel.vala:442
 msgid "Plain"
