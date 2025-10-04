@@ -433,61 +433,19 @@ public class Quadrapassel : Adw.Application
         preferences_dialog.present (window);
     }
 
+    private Gtk.Widget theme_update (string theme_name, Gtk.Widget theme_preview_widget)
+    {
+        var theme_preview_frame = theme_preview_widget as Gtk.AspectFrame;
+        theme_preview = theme_preview_frame.get_child () as Preview;
+        view.theme = theme_name;
+        preview.theme = theme_name;
+        theme_preview.theme = theme_name;
+        settings.set_string ("theme", theme_name);
+        return theme_preview_widget;
+    }
+
     private void theme_cb ()
     {
-        var builder = new Gtk.Builder ();
-        var dialog = new Adw.Dialog ();
-        var toolbar_view = new Adw.ToolbarView ();
-        var headerbar = new Adw.HeaderBar ();
-        toolbar_view.add_child (builder, headerbar, "top");
-        var theme_drop_down = new Gtk.DropDown.from_strings ({_("Plain"), ("Tango Flat"), _("Tango Shaded"), _("Clean"), _("Modern")});
-        headerbar.set_title_widget (theme_drop_down);
-
-        if (settings.get_string ("theme") == "plain")
-            theme_drop_down.set_selected (0);
-
-        if (settings.get_string ("theme") == "tangoflat")
-            theme_drop_down.set_selected (1);
-
-        if (settings.get_string ("theme") == "tangoshaded")
-            theme_drop_down.set_selected (2);
-
-        if (settings.get_string ("theme") == "clean")
-            theme_drop_down.set_selected (3);
-
-        if (settings.get_string ("theme") == "modern")
-            theme_drop_down.set_selected (4);
-
-        theme_drop_down.notify["selected"].connect (() => {
-            string theme;
-            var selected_index = theme_drop_down.get_selected();
-
-            if (selected_index == 0)
-                theme = "plain";
-
-            else if (selected_index == 1)
-                theme = "tangoflat";
-
-            else if (selected_index == 2)
-                theme = "tangoshaded";
-
-            else if (selected_index == 3)
-                theme = "clean";
-
-            else if (selected_index == 4)
-                theme = "modern";
-
-            else
-                return;
-
-            view.theme = theme;
-            preview.theme = theme;
-            if (theme_preview != null)
-                theme_preview.theme = theme;
-
-            settings.set_string ("theme", theme);
-        });
-
         var theme_preview_frame = new Gtk.AspectFrame (0.5f, 0.5f, 1.0f, false);
         theme_preview_frame.hexpand = true;
         theme_preview_frame.vexpand = true;
@@ -498,11 +456,10 @@ public class Quadrapassel : Adw.Application
         theme_preview.theme = settings.get_string ("theme");
         theme_preview.game = new Game ();
         theme_preview_frame.set_child (theme_preview);
-        theme_preview.theme = settings.get_string ("theme");
-        toolbar_view.set_content (theme_preview_frame);
-        dialog.set_child (toolbar_view);
-        dialog.set_content_height (250);
-        dialog.set_content_width (250);
+        var dialog = new Games.ThemeSelectorDialog ({"plain", "tangoflat", "tangoshaded", "clean", "modern"},
+                                                    settings.get_string ("theme"),
+                                                    theme_preview_frame,
+                                                    theme_update);
         dialog.present (window);
     }
 

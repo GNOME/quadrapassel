@@ -19,6 +19,15 @@
  * along with libgnome-games-support.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/* Remove workaround once https://gitlab.gnome.org/GNOME/vala/-/issues/1429 is fixed. */
+namespace Workaround
+{
+    [CCode (cheader_filename = "gtk/gtk.h", cname = "gtk_style_context_add_provider_for_display")]
+    extern static void gtk_style_context_add_provider_for_display (
+        Gdk.Display display, Gtk.StyleProvider provider, uint priority
+    );
+}
+
 namespace Games {
 namespace Scores {
 
@@ -119,6 +128,17 @@ public class Context : Object
     {
         Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
         Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+
+        /* Dialog styling */
+        var display = Gdk.Display.get_default ();
+        if (display != null)
+        {
+            var provider = new Gtk.CssProvider ();
+            provider.load_from_string (DIALOG_STYLE);
+            Workaround.gtk_style_context_add_provider_for_display (
+                display, provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+            );
+         }
     }
 
     /**
