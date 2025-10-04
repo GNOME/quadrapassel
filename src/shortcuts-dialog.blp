@@ -1,0 +1,57 @@
+using Gtk 4.0;
+using Adw 1;
+
+Adw.ShortcutsDialog shortcuts_dialog {
+  Adw.ShortcutsSection {
+    title: C_("shortcut window", "General");
+
+    Adw.ShortcutsItem {
+      title: C_("shortcut window", "Start a New Game");
+      action-name: "app.new-game";
+    }
+    Adw.ShortcutsItem {
+      accelerator: "Pause";
+      title: C_("shortcut window", "Pause the game");
+    }
+    Adw.ShortcutsItem {
+      title: C_("shortcut window", "Show Help");
+      accelerator: "F1";
+    }
+    Adw.ShortcutsItem {
+      title: C_("shortcut window", "Open primary menu");
+      accelerator: "F10";
+    }
+    Adw.ShortcutsItem {
+      title: C_("shortcut window", "Show shortcuts");
+      action-name: "app.shortcuts";
+    }
+    Adw.ShortcutsItem {
+      title: C_("shortcut window", "Quit");
+      action-name: "app.quit";
+    }
+  }
+  Adw.ShortcutsSection {
+    title: C_("shortcut window", "Game");
+
+    Adw.ShortcutsItem {
+      title: C_("shortcut window", "Rotate");
+      accelerator: "Up W";
+    }
+    Adw.ShortcutsItem {
+      title: C_("shortcut window", "Move right");
+      accelerator: "Right A";
+    }
+    Adw.ShortcutsItem {
+      title: C_("shortcut window", "Move left");
+      accelerator: "Left D";
+    }
+    Adw.ShortcutsItem {
+      title: C_("shortcut window", "Move down");
+      accelerator: "Down S";
+    }
+    Adw.ShortcutsItem {
+      title: C_("shortcut window", "Drop");
+      accelerator: "space";
+    }
+  }
+}

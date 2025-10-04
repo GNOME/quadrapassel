@@ -5,6 +5,6 @@ data/org.gnome.Quadrapassel.metainfo.xml.in.in
 data/org.gnome.Quadrapassel.gschema.xml
 src/game.vala
 src/game-view.vala
-src/help-overlay.blp
+src/shortcuts-dialog.blp
 src/preview.vala
 src/quadrapassel.vala

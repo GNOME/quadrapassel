@@ -145,7 +145,7 @@ public class Quadrapassel : Adw.Application
         section.append (_("_Preferences"), "app.preferences");
         section = new Menu ();
         menu.append_section (null, section);
-        section.append (_("_Keyboard Shortcuts"), "win.show-help-overlay");
+        section.append (_("_Keyboard Shortcuts"), "app.shortcuts");
         section.append (_("_Help"), "app.help");
         section.append (_("_About Quadrapassel"), "app.about");
         menu_button = new Gtk.MenuButton ();
