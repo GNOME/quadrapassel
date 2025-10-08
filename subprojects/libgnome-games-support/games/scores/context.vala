@@ -54,14 +54,13 @@ public enum Style
 public class Context : Object
 {
     /**
-     * An App ID (eg. ``org.gnome.Mines``).
+     * An App ID (e.g. ``org.gnome.Mines``).
      *
      */
     public string app_name { get; construct; }
 
     /**
-     * Describes all of the categories.
-     * Make sure to put a colon at the end (eg. "Minefield:", "Difficulty Level:").
+     * Describes all of the categories (e.g. "Minefield", "Level").
      *
      */
     public string category_type { get; construct; }
@@ -79,7 +78,7 @@ public class Context : Object
     public Style style { get; construct; }
 
     /**
-     * The ID for the icon that will be used in the score dialog's empty screen (eg. ``org.gnome.Quadrapassel``).
+     * The ID for the icon that will be used in the score dialog's empty screen (e.g. ``org.gnome.Quadrapassel``).
      *
      */
     public string icon_name { get; construct; }
@@ -166,9 +165,9 @@ public class Context : Object
     /**
      * Creates a new Context.
      *
-     * ``app_name`` is your App ID (eg. ``org.gnome.Mines``)
+     * ``app_name`` is your App ID (e.g. ``org.gnome.Mines``)
      *
-     * ``category_type`` describes all of the categories, make sure to put a colon at the end (eg. "Minefield:", "Difficulty Level:").
+     * ``category_type`` describes all of the categories (e.g. "Minefield", "Level").
      *
      * ``game_window`` is the window that the game will be inside of, this is the window the score dialog will be presented upon.
      *
@@ -176,7 +175,7 @@ public class Context : Object
      *
      * ``style changes`` the way {@link Games.Scores.Score}s are presented.
      *
-     * ``icon_name`` is the ID for your app's icon (eg. ``org.gnome.Quadrapassel``).
+     * ``icon_name`` is the ID for your app's icon (e.g. ``org.gnome.Quadrapassel``).
      *
      */
     public Context.with_icon_name (string app_name,
@@ -280,20 +279,17 @@ public class Context : Object
             return result;
 
         if (style == Style.POINTS_GREATER_IS_BETTER || style == Style.TIME_GREATER_IS_BETTER)
-        {
-            scores_per_category[category].sort ((a,b) => {
-                return (int) (b.score > a.score) - (int) (a.score > b.score);
-            });
-        }
+            scores_per_category[category].sort (Score.score_greater_sorter);
         else
-        {
-            scores_per_category[category].sort ((a,b) => {
-                return (int) (b.score < a.score) - (int) (a.score < b.score);
-            });
-        }
+            scores_per_category[category].sort (Score.score_less_sorter);
 
         for (int i = 0; i < n && i < scores_per_category[category].size; i++)
-            result.add (scores_per_category[category][i]);
+        {
+            var score = scores_per_category[category][i];
+            score.rank = i + 1;
+            result.add (score);
+        }
+
         return result;
     }
 

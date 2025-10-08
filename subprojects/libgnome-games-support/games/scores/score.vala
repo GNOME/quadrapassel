@@ -59,6 +59,8 @@ public class Score : Object
         set { _user = (value == null ? Environment.get_real_name () : value); }
     }
 
+    internal uint rank;
+
     /**
      * Creates a new Score.
      *
@@ -82,6 +84,14 @@ public class Score : Object
     public static bool equals (Score a, Score b)
     {
         return a.score == b.score && a.time == b.time && a.user == b.user;
+    }
+
+    internal static int score_greater_sorter (Score a, Score b) {
+        return (int) (a.score < b.score) - (int) (a.score > b.score);
+    }
+
+    internal static int score_less_sorter (Score a, Score b) {
+        return (int) (a.score > b.score) - (int) (a.score < b.score);
     }
 }
 

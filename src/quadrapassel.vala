@@ -242,7 +242,7 @@ public class Quadrapassel : Adw.Application
 
         context = new Games.Scores.Context.with_importer_and_icon_name ("quadrapassel",
                                                                         /* Label on the scores dialog */
-                                                                        _("Difficulty:"),
+                                                                        _("Difficulty"),
                                                                         window,
                                                                         create_category_from_key,
                                                                         Games.Scores.Style.POINTS_GREATER_IS_BETTER,
