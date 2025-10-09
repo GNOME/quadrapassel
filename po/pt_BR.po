@@ -31,21 +31,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-09-11 08:22+0000\n"
-"PO-Revision-Date: 2025-09-12 10:27-0300\n"
+"POT-Creation-Date: 2025-10-08 23:46+0000\n"
+"PO-Revision-Date: 2025-10-09 09:36-0300\n"
 "Last-Translator: Juliano de Souza Camargo <julianosc@pm.me>\n"
-"Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao>\n"
+"Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gtranslator 48.0\n"
+"X-Generator: Gtranslator 49.0\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:90
-#: src/quadrapassel.vala:109 src/quadrapassel.vala:940
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:91
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:916
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -201,209 +201,193 @@ msgstr "Pausado"
 msgid "Game Over"
 msgstr "Fim do jogo"
 
-#: src/help-overlay.blp:11
+#: src/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Geral"
 
-#: src/help-overlay.blp:14
+#: src/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Start a New Game"
 msgstr "Inicia um novo jogo"
 
-#: src/help-overlay.blp:20
+#: src/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "Pause the game"
 msgstr "Pausa o jogo"
 
-#: src/help-overlay.blp:24
+#: src/shortcuts-dialog.blp:17
 msgctxt "shortcut window"
 msgid "Show Help"
 msgstr "Mostra a ajuda"
 
-#: src/help-overlay.blp:29
+#: src/shortcuts-dialog.blp:21
 msgctxt "shortcut window"
 msgid "Open primary menu"
 msgstr "Abre o menu primário"
 
-#: src/help-overlay.blp:34
+#: src/shortcuts-dialog.blp:25
 msgctxt "shortcut window"
 msgid "Show shortcuts"
 msgstr "Mostra os atalhos"
 
-#: src/help-overlay.blp:39
+#: src/shortcuts-dialog.blp:29
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Sai"
 
-#: src/help-overlay.blp:45
+#: src/shortcuts-dialog.blp:34
 msgctxt "shortcut window"
 msgid "Game"
 msgstr "Jogo"
 
-#: src/help-overlay.blp:48
+#: src/shortcuts-dialog.blp:37
 msgctxt "shortcut window"
 msgid "Rotate"
 msgstr "Gira"
 
-#: src/help-overlay.blp:53
+#: src/shortcuts-dialog.blp:41
 msgctxt "shortcut window"
 msgid "Move right"
 msgstr "Move para a direita"
 
-#: src/help-overlay.blp:58
+#: src/shortcuts-dialog.blp:45
 msgctxt "shortcut window"
 msgid "Move left"
 msgstr "Move para a esquerda"
 
-#: src/help-overlay.blp:63
+#: src/shortcuts-dialog.blp:49
 msgctxt "shortcut window"
 msgid "Move down"
 msgstr "Move para baixo"
 
-#: src/help-overlay.blp:68
+#: src/shortcuts-dialog.blp:53
 msgctxt "shortcut window"
 msgid "Drop"
 msgstr "Soltar"
 
-#: src/quadrapassel.vala:135 src/quadrapassel.vala:188
+#: src/quadrapassel.vala:136 src/quadrapassel.vala:189
 msgid "Start a new game"
 msgstr "Inicia um novo jogo"
 
-#: src/quadrapassel.vala:142
+#: src/quadrapassel.vala:143
 msgid "_Scores"
 msgstr "_Pontuações"
 
-#: src/quadrapassel.vala:143
+#: src/quadrapassel.vala:144
 msgid "App_earance"
 msgstr "_Aparência"
 
-#: src/quadrapassel.vala:144
+#: src/quadrapassel.vala:145
 msgid "_Preferences"
 msgstr "_Preferências"
 
-#: src/quadrapassel.vala:147
+#: src/quadrapassel.vala:148
 msgid "_Keyboard Shortcuts"
 msgstr "A_talhos de teclado"
 
-#: src/quadrapassel.vala:148
+#: src/quadrapassel.vala:149
 msgid "_Help"
 msgstr "Aj_uda"
 
-#: src/quadrapassel.vala:149
+#: src/quadrapassel.vala:150
 msgid "_About Quadrapassel"
 msgstr "_Sobre o Quadrapassel"
 
-#: src/quadrapassel.vala:193
+#: src/quadrapassel.vala:194
 msgid "Next"
 msgstr "Próximo"
 
-#: src/quadrapassel.vala:210
+#: src/quadrapassel.vala:211
 msgid "Score"
 msgstr "Pontuação"
 
-#: src/quadrapassel.vala:221
+#: src/quadrapassel.vala:222
 msgid "Lines"
 msgstr "Linhas"
 
-#: src/quadrapassel.vala:232
+#: src/quadrapassel.vala:233
 msgid "Level"
 msgstr "Nível"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:244
-msgid "Difficulty:"
-msgstr "Dificuldade:"
+#: src/quadrapassel.vala:245
+msgid "Difficulty"
+msgstr "Dificuldade"
 
-#: src/quadrapassel.vala:336
+#: src/quadrapassel.vala:337
 msgid "Preferences"
 msgstr "Preferências"
 
-#: src/quadrapassel.vala:339
+#: src/quadrapassel.vala:340
 msgid "Game"
 msgstr "Jogo"
 
-#: src/quadrapassel.vala:342
+#: src/quadrapassel.vala:343
 msgid "Game Difficulty"
 msgstr "Dificuldade do jogo"
 
-#: src/quadrapassel.vala:343
+#: src/quadrapassel.vala:344
 msgid "Change how difficult the game is"
 msgstr "Mude o quão difícil o jogo é"
 
-#: src/quadrapassel.vala:349
+#: src/quadrapassel.vala:350
 msgid "_Difficulty"
 msgstr "_Dificuldade"
 
-#: src/quadrapassel.vala:357
+#: src/quadrapassel.vala:358
 msgid "Choose difficult _blocks"
 msgstr "Escolher _blocos difíceis"
 
-#: src/quadrapassel.vala:366
+#: src/quadrapassel.vala:367
 msgid "In-Game"
 msgstr "No jogo"
 
-#: src/quadrapassel.vala:367
+#: src/quadrapassel.vala:368
 msgid "Change the experience of playing a game"
 msgstr "Mude a experiência de jogar um jogo"
 
-#: src/quadrapassel.vala:370
+#: src/quadrapassel.vala:371
 msgid "_Enable sounds"
 msgstr "_Habilitar sons"
 
-#: src/quadrapassel.vala:381
+#: src/quadrapassel.vala:382
 msgid "_Preview next block"
 msgstr "_Visualizar próximo bloco"
 
-#: src/quadrapassel.vala:393
+#: src/quadrapassel.vala:394
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Girar blocos no sentido anti-horário"
 
-#: src/quadrapassel.vala:400
+#: src/quadrapassel.vala:401
 msgid "Show _where the block will land"
 msgstr "Mostrar _onde o bloco vai cair"
 
-#: src/quadrapassel.vala:418
+#: src/quadrapassel.vala:419
 msgid "_Use a custom seed for the game"
 msgstr "_Use uma semente personalizada para o jogo"
 
-#: src/quadrapassel.vala:442
-msgid "Plain"
-msgstr "Plano"
-
-#: src/quadrapassel.vala:442
-msgid "Tango Shaded"
-msgstr "Tango Sombreado"
-
-#: src/quadrapassel.vala:442
-msgid "Clean"
-msgstr "Limpo"
-
-#: src/quadrapassel.vala:442
-msgid "Modern"
-msgstr "Moderno"
-
-#: src/quadrapassel.vala:816
+#: src/quadrapassel.vala:792
 msgid "Unpause the game"
 msgstr "Resume o jogo"
 
-#: src/quadrapassel.vala:822
+#: src/quadrapassel.vala:798
 msgid "Pause the game"
 msgstr "Pausa o jogo"
 
-#: src/quadrapassel.vala:840
+#: src/quadrapassel.vala:816
 msgid "Start the game"
 msgstr "Inicia o jogo"
 
-#: src/quadrapassel.vala:861
+#: src/quadrapassel.vala:837
 msgid "Old Scores"
 msgstr "Pontuações anteriores"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:842
 msgid "Difficult"
 msgstr "Difícil"
 
-#: src/quadrapassel.vala:943
+#: src/quadrapassel.vala:919
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -411,7 +395,7 @@ msgstr ""
 "Um jogo clássico onde você gira blocos para fazer linhas completas, mas não "
 "empilhe seus blocos muito alto ou é o fim do jogo!"
 
-#: src/quadrapassel.vala:947
+#: src/quadrapassel.vala:923
 msgid "translator-credits"
 msgstr ""
 "Sandro Nunes Henrique <sandro@conectiva.com.br>\n"
@@ -430,6 +414,18 @@ msgstr ""
 "Rodrigo Padula de Oliveira <contato@rodrigopadula.com>\n"
 "Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Juliano de Souza Camargo <julianosc@pm.me>"
+
+#~ msgid "Plain"
+#~ msgstr "Plano"
+
+#~ msgid "Tango Shaded"
+#~ msgstr "Tango Sombreado"
+
+#~ msgid "Clean"
+#~ msgstr "Limpo"
+
+#~ msgid "Modern"
+#~ msgstr "Moderno"
 
 #~ msgid "Level to start with"
 #~ msgstr "Nível inicial"
