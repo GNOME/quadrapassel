@@ -1,3 +1,16 @@
+quadrapassel 49.1
+=================
+* Updated translations: Occitan (Quentin PAGÈS), 'Chinese (China)' (lumingzh),
+			Brazilian Portuguese (Juliano de Souza Camargo),
+			Slovenian (Martin S.), Ukrainian (Yuri Chornoivan),
+			Georgian (Ekaterine Papava)
+* Fixed metainfo brand colors
+* Fixed compatibility with newer versions of libmanette
+* Use the new libadwaita shortcuts dialog
+* Updated libmanette & libadwaita minimum version
+* Updated libgnome-games-support
+* Switched to the libgnome-games-support theme dialog
+
 quadrapassel 49.0
 =================
 * Updated translations: Turkish (Sabri Ünal), Finnish (Jiri Grönroos),

@@ -1,6 +1,6 @@
 [wrap-git]
 directory = libgnome-games-support
 url = https://gitlab.gnome.org/GNOME/libgnome-games-support.git
-revision = e65a2f063b947229438925e5b9e181fe9c53b7d6
+revision = 32b29dcb807d4bee8b580c699d446755915d3c62
 depth = 1
 diff_files = 0001.patch, 0002.patch

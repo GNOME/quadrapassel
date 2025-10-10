@@ -1,5 +1,5 @@
 project('quadrapassel', 'vala', 'c',
-        version: '49.0',
+        version: '49.1',
         meson_version: '>= 1.1')
 
 # App ID
@@ -22,11 +22,11 @@ cc = meson.get_compiler('c')
 gee_dependency = dependency ('gee-0.8')
 gsound_dependency = dependency('gsound', version: '>= 1.0.2')
 gtk_dependency = dependency('gtk4', version: '>= 4.4')
-libadwaita_dependency = dependency('libadwaita-1', version: '>= 1.1')
+libadwaita_dependency = dependency('libadwaita-1', version: '>= 1.8')
 libgnome_games_support = subproject ('libgnome-games-support',
 	    		             default_options: 'superproject_name=quadrapassel')
 libgnome_games_support_dependency = libgnome_games_support.get_variable ('lggs_dependency')
-manette_dependency = dependency('manette-0.2', version: '>= 0.2.0')
+manette_dependency = dependency('manette-0.2', version: '>= 0.2.10')
 pango_dependency = dependency('pango')
 pango_cairo_dependency = dependency('pangocairo')
 posix_dependency = meson.get_compiler('vala').find_library('posix')
