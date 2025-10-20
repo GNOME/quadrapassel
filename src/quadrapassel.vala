@@ -578,20 +578,18 @@ public class Quadrapassel : Adw.Application
                                      uint keycode,
                                      Gdk.ModifierType state)
     {
-        keyval = upper_key (keyval);
+        string key = Gdk.keyval_name (Gdk.keyval_to_upper (keyval));
 
         if (game != null)
         {
-            if (game.game_over && keyval == upper_key (65293)) // START key
+            if (game.game_over && key == "Return")
             {
                 new_game();
             }
         }
-
-        if (game == null)
+        else
         {
-            // Pressing pause with no game will start a new game.
-            if (keyval == upper_key (65299)) // PAUSE key
+            if (key == "Return")
             {
                 new_game ();
                 return true;
@@ -600,7 +598,7 @@ public class Quadrapassel : Adw.Application
             return false;
         }
 
-        if (keyval == upper_key (65299)) // PAUSE key
+        if (key == "Pause" || key == "P")
         {
             if (!game.game_over)
                 game.paused = !game.paused;
@@ -610,17 +608,17 @@ public class Quadrapassel : Adw.Application
         if (game.paused)
             return false;
 
-        if (keyval == upper_key (65361) || keyval == upper_key (65)) // Left or A key
+        if (key == "Left" || key == "A")
         {
             game.move_left ();
             return true;
         }
-        else if (keyval == upper_key (65363) || keyval == upper_key (68)) // Right or D key
+        else if (key == "Right" || key == "D")
         {
             game.move_right ();
             return true;
         }
-        else if (keyval == upper_key (65362) || keyval == upper_key (87)) // Up or W key
+        else if (key == "Up" || key == "W")
         {
             if (settings.get_boolean ("rotate-counter-clock-wise"))
                 game.rotate_left ();
@@ -628,20 +626,20 @@ public class Quadrapassel : Adw.Application
                 game.rotate_right ();
             return true;
         }
-        else if (keyval == upper_key (65364) || keyval == upper_key (83)) // Down or S key
+        else if (key == "Down" || key == "S")
         {
             game.set_fast_forward (true);
             return true;
         }
-        else if (keyval == upper_key (81)) // Q key
+        else if (key == "Q")
         {
             game.rotate_left ();
         }
-        else if (keyval == upper_key (69)) // E key
+        else if (key == "E")
         {
             game.rotate_right ();
         }
-        else if (keyval == upper_key (32)) // Spacebar
+        else if (key == "space")
         {
             game.drop ();
             return true;
@@ -651,36 +649,29 @@ public class Quadrapassel : Adw.Application
     }
 
     private void key_release_event_cb (Gtk.EventControllerKey controller,
-                                       uint keyval1,
+                                       uint keyval,
                                        uint keycode,
                                        Gdk.ModifierType state)
     {
-        var keyval = upper_key (keyval1);
+        string key = Gdk.keyval_name (Gdk.keyval_to_upper (keyval));
 
         if (game == null)
             return;
 
-        if (keyval == upper_key (65361) || // Left  key
-            keyval == upper_key (65363) || // Right key
-            keyval == upper_key (65)    || // A     key
-            keyval == upper_key (68))      // D     key
+        if (key == "Left"  ||
+            key == "Right" ||
+            key == "A"     ||
+            key == "D")
         {
             game.stop_moving ();
             return;
         }
-        else if (keyval == upper_key (65364) || // Down key
-                 keyval == upper_key (83))      // S    key
+        else if (key == "Down" ||
+                 key == "S")
         {
             game.set_fast_forward (false);
             return;
         }
-    }
-
-    private uint upper_key (uint keyval)
-    {
-        if (keyval > 255)
-            return keyval;
-        return ((char) keyval).toupper ();
     }
 
     private void swipe_cb (double velocity_x, double velocity_y)
