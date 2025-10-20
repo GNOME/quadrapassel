@@ -1,0 +1,42 @@
+using Gtk 4.0;
+using Adw 1;
+
+Adw.PreferencesDialog rules_dialog {
+  content-width: 400;
+  content-height: 400;
+  title: _("Game Rules");
+  Adw.PreferencesPage {
+    Adw.PreferencesGroup {
+      Adw.ActionRow {
+        title: C_("game rules", "Rotate and Move pieces to fill rows");
+        subtitle: C_("game rules", "Rows explode when they are completely Filled");
+        [prefix]
+        Image game_symbolic {}
+      }
+      Adw.ActionRow {
+        title: C_("game rules", "You gain points for each row removed");
+        subtitle: C_("game rules", "Points are calculated per move by rows destroyed times the current level");
+        [prefix]
+        Image {
+          icon-name: "list-add-symbolic";
+        }
+      }
+      Adw.ActionRow {
+        title: C_("game rules", "You can pause the game");
+        subtitle: C_("game rules", "The next piece and the game view will be hidden");
+        [prefix]
+        Image {
+          icon-name: "media-playback-pause-symbolic";
+        }
+      }
+      Adw.ActionRow {
+        title: C_("game rules", "You can change how the game works using the preferences");
+        subtitle: C_("game rules", "You can also adjust the difficulty");
+        [prefix]
+        Image {
+          icon-name: "preferences-other-symbolic";
+        }
+      }
+    }
+  }
+}

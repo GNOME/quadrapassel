@@ -50,7 +50,6 @@ config_h_dir = include_directories('.')
 
 subdir('data')
 subdir('po')
-subdir('help')
 subdir('src')
 
 gnome.post_install(

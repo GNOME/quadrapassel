@@ -72,7 +72,7 @@ public class Quadrapassel : Adw.Application
         { "menu",          menu_cb        },
         { "theme",         theme_cb       },
         { "preferences",   preferences_cb },
-        { "help",          help_cb        },
+        { "rules",         rules_cb       },
         { "about",         about_cb       },
         { "quit",          quit_cb        }
     };
@@ -94,7 +94,7 @@ public class Quadrapassel : Adw.Application
         set_accels_for_action ("app.new-game", {"<Primary>n"});
         set_accels_for_action ("app.pause", {"Pause"});
         set_accels_for_action ("app.menu", {"F10"});
-        set_accels_for_action ("app.help", {"F1"});
+        set_accels_for_action ("app.rules", {"F1"});
         set_accels_for_action ("app.quit", {"<Primary>q"});
         pause_action = lookup_action ("pause") as SimpleAction;
 
@@ -146,7 +146,7 @@ public class Quadrapassel : Adw.Application
         section = new Menu ();
         menu.append_section (null, section);
         section.append (_("_Keyboard Shortcuts"), "app.shortcuts");
-        section.append (_("_Help"), "app.help");
+        section.append (_("Game _Rules"), "app.rules");
         section.append (_("_About Quadrapassel"), "app.about");
         menu_button = new Gtk.MenuButton ();
         menu_button.set_icon_name ("open-menu-symbolic");
@@ -893,9 +893,21 @@ public class Quadrapassel : Adw.Application
         n_destroyed_label.set_markup ("<big>%d</big>".printf (n_lines_destroyed));
     }
 
-    private void help_cb ()
+    private void rules_cb ()
     {
-        Gtk.show_uri (window, "help:quadrapassel", Gdk.CURRENT_TIME);
+        var dialog_builder = new Gtk.Builder ();
+        try
+        {
+            dialog_builder.add_from_resource ("/org/gnome/Quadrapassel/rules-dialog.ui");
+        }
+        catch (Error e)
+        {
+            critical ("Could not load rules dialog: %s", e.message);
+        }
+        var rules_dialog = (Adw.Dialog) dialog_builder.get_object ("rules_dialog");
+        var game_symbolic = (Gtk.Image) dialog_builder.get_object ("game_symbolic");
+        game_symbolic.set_from_icon_name ("%s-symbolic".printf (APP_ID));
+        rules_dialog.present (window);
     }
 
     private void about_cb ()
