@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-10-08 23:21+0000\n"
-"PO-Revision-Date: 2025-10-09 07:44+0800\n"
+"POT-Creation-Date: 2025-10-20 19:30+0000\n"
+"PO-Revision-Date: 2025-10-21 08:26+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:91
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:916
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:919
 msgid "Quadrapassel"
 msgstr "俄罗斯方块"
 
@@ -171,6 +171,51 @@ msgstr "暂停"
 msgid "Game Over"
 msgstr "游戏结束"
 
+#: src/rules-dialog.blp:7
+msgid "Game Rules"
+msgstr "游戏规则"
+
+#: src/rules-dialog.blp:11
+msgctxt "game rules"
+msgid "Rotate and Move pieces to fill rows"
+msgstr "旋转和移动方块以填充方块行"
+
+#: src/rules-dialog.blp:12
+msgctxt "game rules"
+msgid "Rows explode when they are completely Filled"
+msgstr "方块行完全填满时会消失"
+
+#: src/rules-dialog.blp:17
+msgctxt "game rules"
+msgid "You gain points for each row removed"
+msgstr "每个方块行消失您都会获得分数"
+
+#: src/rules-dialog.blp:18
+msgctxt "game rules"
+msgid ""
+"Points are calculated per move by rows destroyed times the current level"
+msgstr "分数是由每次消除的方块行乘以当前级别计算得出"
+
+#: src/rules-dialog.blp:25
+msgctxt "game rules"
+msgid "You can pause the game"
+msgstr "您可以暂停游戏"
+
+#: src/rules-dialog.blp:26
+msgctxt "game rules"
+msgid "The next piece and the game view will be hidden"
+msgstr "下个方块和游戏视图将被隐藏"
+
+#: src/rules-dialog.blp:33
+msgctxt "game rules"
+msgid "You can change how the game works using the preferences"
+msgstr "您可以使用首选项更改游戏工作方式"
+
+#: src/rules-dialog.blp:34
+msgctxt "game rules"
+msgid "You can also adjust the difficulty"
+msgstr "您也可以调整游戏难度"
+
 #: src/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
@@ -188,8 +233,8 @@ msgstr "暂停游戏"
 
 #: src/shortcuts-dialog.blp:17
 msgctxt "shortcut window"
-msgid "Show Help"
-msgstr "显示帮助"
+msgid "Show game Rules"
+msgstr "显示游戏规则"
 
 #: src/shortcuts-dialog.blp:21
 msgctxt "shortcut window"
@@ -257,8 +302,8 @@ msgid "_Keyboard Shortcuts"
 msgstr "键盘快捷键(_K)"
 
 #: src/quadrapassel.vala:149
-msgid "_Help"
-msgstr "帮助(_H)"
+msgid "Game _Rules"
+msgstr "游戏规则(_R)"
 
 #: src/quadrapassel.vala:150
 msgid "_About Quadrapassel"
@@ -337,34 +382,34 @@ msgstr "显示方块将落到何处(_W)"
 msgid "_Use a custom seed for the game"
 msgstr "为游戏使用自定义种子(_U)"
 
-#: src/quadrapassel.vala:792
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "继续游戏"
 
-#: src/quadrapassel.vala:798
+#: src/quadrapassel.vala:789
 msgid "Pause the game"
 msgstr "暂停游戏"
 
-#: src/quadrapassel.vala:816
+#: src/quadrapassel.vala:807
 msgid "Start the game"
 msgstr "开始游戏"
 
-#: src/quadrapassel.vala:837
+#: src/quadrapassel.vala:828
 msgid "Old Scores"
 msgstr "之前得分"
 
-#: src/quadrapassel.vala:842
+#: src/quadrapassel.vala:833
 msgid "Difficult"
 msgstr "难度"
 
-#: src/quadrapassel.vala:919
+#: src/quadrapassel.vala:922
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
 msgstr ""
 "经典的旋转方块组合成完整行的游戏。但请注意，方块堆积得过高会导致游戏结束！"
 
-#: src/quadrapassel.vala:923
+#: src/quadrapassel.vala:926
 msgid "translator-credits"
 msgstr ""
 "Yang Zhang <zyangmath@gmail.com>, 2007\n"
@@ -373,6 +418,13 @@ msgstr ""
 "Wylmer Wang <wantinghard@gmail.com>, 2014\n"
 "Mingcong Bai <jeffbai@aosc.xyz>, 2018\n"
 "lumingzh <lumingzh@qq.com>, 2025"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show Help"
+#~ msgstr "显示帮助"
+
+#~ msgid "_Help"
+#~ msgstr "帮助(_H)"
 
 #~ msgid "Plain"
 #~ msgstr "朴素"
