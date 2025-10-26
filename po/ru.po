@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games trunk\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-10-08 23:46+0000\n"
-"PO-Revision-Date: 2025-10-09 20:30+1000\n"
+"POT-Creation-Date: 2025-10-21 00:29+0000\n"
+"PO-Revision-Date: 2025-10-21 21:52+1000\n"
 "Last-Translator: Ser82-png <asvmail.as@gmail.com>\n"
 "Language-Team: русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
@@ -32,7 +32,7 @@ msgstr ""
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:91
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:916
+#: src/quadrapassel.vala:110 src/quadrapassel.vala:919
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -187,6 +187,53 @@ msgstr "Пауза"
 msgid "Game Over"
 msgstr "Игра окончена"
 
+#: src/rules-dialog.blp:7
+msgid "Game Rules"
+msgstr "Правила игры"
+
+#: src/rules-dialog.blp:11
+msgctxt "game rules"
+msgid "Rotate and Move pieces to fill rows"
+msgstr "Вращайте и перемещайте фигуры, чтобы заполнить ряды"
+
+#: src/rules-dialog.blp:12
+msgctxt "game rules"
+msgid "Rows explode when they are completely Filled"
+msgstr "Полностью заполненные ряды уничтожаются"
+
+#: src/rules-dialog.blp:17
+msgctxt "game rules"
+msgid "You gain points for each row removed"
+msgstr "За каждый исчезнувший ряд вы получаете очки"
+
+#: src/rules-dialog.blp:18
+msgctxt "game rules"
+msgid ""
+"Points are calculated per move by rows destroyed times the current level"
+msgstr ""
+"Баллы за ход рассчитывают как произведение уничтоженных рядов на номер "
+"текущего уровня"
+
+#: src/rules-dialog.blp:25
+msgctxt "game rules"
+msgid "You can pause the game"
+msgstr "Вы можете приостановить игру"
+
+#: src/rules-dialog.blp:26
+msgctxt "game rules"
+msgid "The next piece and the game view will be hidden"
+msgstr "Следующая фигура и вид игрового поля будут скрыты"
+
+#: src/rules-dialog.blp:33
+msgctxt "game rules"
+msgid "You can change how the game works using the preferences"
+msgstr "Вы можете изменить характер игры с помощью настроек"
+
+#: src/rules-dialog.blp:34
+msgctxt "game rules"
+msgid "You can also adjust the difficulty"
+msgstr "Также вы можете настроить сложность игры"
+
 #: src/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
@@ -204,8 +251,8 @@ msgstr "Приостановить игру"
 
 #: src/shortcuts-dialog.blp:17
 msgctxt "shortcut window"
-msgid "Show Help"
-msgstr "Показать справку"
+msgid "Show game Rules"
+msgstr "Показать правила игры"
 
 #: src/shortcuts-dialog.blp:21
 msgctxt "shortcut window"
@@ -273,12 +320,12 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Комбинации клавиши"
 
 #: src/quadrapassel.vala:149
-msgid "_Help"
-msgstr "_Справка"
+msgid "Game _Rules"
+msgstr "Правила _игры"
 
 #: src/quadrapassel.vala:150
 msgid "_About Quadrapassel"
-msgstr "_ О приложении"
+msgstr "_О приложении"
 
 #: src/quadrapassel.vala:194
 msgid "Next"
@@ -354,27 +401,27 @@ msgid "_Use a custom seed for the game"
 msgstr ""
 "_Использовать собственное значение генератора случайных значений в игре"
 
-#: src/quadrapassel.vala:792
+#: src/quadrapassel.vala:783
 msgid "Unpause the game"
 msgstr "Возобновить игру"
 
-#: src/quadrapassel.vala:798
+#: src/quadrapassel.vala:789
 msgid "Pause the game"
 msgstr "Приостановить игру"
 
-#: src/quadrapassel.vala:816
+#: src/quadrapassel.vala:807
 msgid "Start the game"
 msgstr "Начать игру"
 
-#: src/quadrapassel.vala:837
+#: src/quadrapassel.vala:828
 msgid "Old Scores"
 msgstr "Предыдущие результаты"
 
-#: src/quadrapassel.vala:842
+#: src/quadrapassel.vala:833
 msgid "Difficult"
 msgstr "Сложно"
 
-#: src/quadrapassel.vala:919
+#: src/quadrapassel.vala:922
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -383,12 +430,19 @@ msgstr ""
 "полный ряд, не позволяя блокам занять слишком много рядов, иначе вы "
 "проиграете!"
 
-#: src/quadrapassel.vala:923
+#: src/quadrapassel.vala:926
 msgid "translator-credits"
 msgstr ""
 "Юрий Мясоедов <ymyasoedov@yandex.ru>, 2013-2014.\n"
 "Станислав Соловей <whats_up@tut.by>, 2018.\n"
 "Alexey Rubtsov <rushills@gmail.com>, 2021"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show Help"
+#~ msgstr "Показать справку"
+
+#~ msgid "_Help"
+#~ msgstr "_Справка"
 
 #~ msgid "Plain"
 #~ msgstr "Простая"
