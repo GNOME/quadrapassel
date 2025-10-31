@@ -151,6 +151,8 @@ public class Quadrapassel : Adw.Application
         menu_button = new Gtk.MenuButton ();
         menu_button.set_icon_name ("open-menu-symbolic");
         menu_button.set_menu_model (menu);
+        menu_button.focus_on_click = false;
+        menu_button.can_focus = false;
 
         headerbar.pack_end (menu_button);
 
