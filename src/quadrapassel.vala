@@ -64,6 +64,8 @@ public class Quadrapassel : Adw.Application
     private Manette.Monitor manette_monitor;
     private bool is_manette_button_down = false;
 
+    private bool pause_requested = false;
+
     private const GLib.ActionEntry[] action_entries =
     {
         { "new-game",      new_game_cb    },
@@ -125,6 +127,8 @@ public class Quadrapassel : Adw.Application
         window.set_default_size (settings.get_int ("window-width"), settings.get_int ("window-height"));
         if (settings.get_boolean ("window-is-maximized"))
             window.maximize ();
+
+        window.notify["is-active"].connect (on_window_focus_change);
 
         var toolbar_view = new Adw.ToolbarView ();
         headerbar = new Adw.HeaderBar ();
@@ -333,6 +337,30 @@ public class Quadrapassel : Adw.Application
         game_grid.attach (level_label, 2, 14, 1, 2);
     }
 
+    private void on_window_focus_change ()
+    {
+        if (game != null && !game.game_over)
+        {
+            if (window.is_active)
+            {
+                if (!pause_requested)
+                    game.paused = false;
+            }
+            else
+            {
+                game.paused = true;
+            }
+        }
+    }
+
+    /* NOTE: This is a fragile system, only this and
+     * on_window_focus_change () should change pause state */
+    private void user_pause ()
+    {
+        game.paused = !game.paused;
+        pause_requested = game.paused;
+    }
+
     private void preferences_cb ()
     {
         preferences_dialog = new Adw.PreferencesDialog ();
@@ -468,7 +496,7 @@ public class Quadrapassel : Adw.Application
     private void pause_cb ()
     {
         if (game != null)
-            game.paused = !game.paused;
+            user_pause ();
     }
 
     private void quit_cb ()
@@ -506,7 +534,7 @@ public class Quadrapassel : Adw.Application
             if (game == null)
                 new_game();
             else if (!game.game_over)
-                game.paused = !game.paused;
+                user_pause ();
             else
                 new_game();
 
@@ -603,7 +631,7 @@ public class Quadrapassel : Adw.Application
         if (key == "Pause" || key == "P")
         {
             if (!game.game_over)
-                game.paused = !game.paused;
+                user_pause ();
             return true;
         }
 
@@ -752,6 +780,8 @@ public class Quadrapassel : Adw.Application
             game.stop ();
             SignalHandler.disconnect_matched (game, SignalMatchType.DATA, 0, 0, null, null, this);
         }
+
+        pause_requested = false;
 
         if (settings.get_boolean ("use-seed"))
             Random.set_seed (settings.get_uint ("seed"));
