@@ -499,12 +499,17 @@ public class Context : Object
     /**
      * Presents the score dialog on top of ``game_window``.
      *
+     * ``selected_category`` is the score category to select by default (optional)
+     *
      */
     [Version (since="3.0")]
-    public void present_dialog ()
+    public void present_dialog (Category? selected_category = null)
         requires (game_window != null)
     {
-        var dialog = new Dialog (this, category_type, style, null, current_category, icon_name);
+        if (selected_category == null || !scores_per_category.contains (selected_category))
+            selected_category = current_category;
+
+        var dialog = new Dialog (this, category_type, style, null, selected_category, icon_name);
         dialog.closed.connect (() => dialog_closed ());
         dialog.present (game_window);
     }

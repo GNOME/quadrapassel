@@ -982,7 +982,7 @@ public class Quadrapassel : Adw.Application
 
     private void scores_cb ()
     {
-        context.present_dialog ();
+        context.present_dialog (create_category_from_key (settings.get_int ("difficulty").to_string()));
     }
 
     public static int main (string[] args)

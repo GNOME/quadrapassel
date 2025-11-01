@@ -1,6 +1,6 @@
-From 837cb716bdd0e91f9eb78317034a105d1fc80c96 Mon Sep 17 00:00:00 2001
+From bf5f630fd6d52e47de67813997a1218f74d38615 Mon Sep 17 00:00:00 2001
 From: Will Warner <willwwarner@proton.me>
-Date: Fri, 31 Oct 2025 12:52:33 -0400
+Date: Sat, 1 Nov 2025 12:43:16 -0400
 Subject: [PATCH] Revert "Remove all deprecated APIs"
 
 This reverts commit b610c747398bbd1f0908a2e91926942532ed2160.
@@ -37,7 +37,7 @@ index 3bb665b..13387c9 100644
 +)
 \ No newline at end of file
 diff --git a/games/scores/context.vala b/games/scores/context.vala
-index abd144e..bf99b13 100644
+index 67c8ded..f389cce 100644
 --- a/games/scores/context.vala
 +++ b/games/scores/context.vala
 @@ -83,6 +83,13 @@ public class Context : Object
@@ -151,7 +151,7 @@ index abd144e..bf99b13 100644
      }
  
      public Category[] get_categories ()
-@@ -310,6 +367,7 @@ public class Context : Object
+@@ -311,6 +368,7 @@ public class Context : Object
       * ``quit_app_func`` is called when the user presses the 'Quit' button on the dialog
       *
       */
@@ -159,7 +159,7 @@ index abd144e..bf99b13 100644
      public async bool add_score_full (long score_value, Category category, NewGameFunc new_game_func, QuitAppFunc quit_app_func, Cancellable? cancellable) throws Error
      {
          Score score = new Score (score_value);
-@@ -417,10 +475,31 @@ public class Context : Object
+@@ -418,12 +476,33 @@ public class Context : Object
          this.category_request = null;
      }
  
@@ -186,9 +186,11 @@ index abd144e..bf99b13 100644
      /**
       * Presents the score dialog on top of ``game_window``.
       *
+      * ``selected_category`` is the score category to select by default (optional)
+      *
       */
 +    [Version (since="3.0")]
-     public void present_dialog ()
+     public void present_dialog (Category? selected_category = null)
          requires (game_window != null)
      {
 diff --git a/games/scores/directory-importer.vala b/games/scores/directory-importer.vala

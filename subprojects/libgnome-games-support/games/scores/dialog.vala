@@ -142,17 +142,18 @@ private class Dialog : Adw.Dialog
             drop_down.set_factory (button_factory);
             drop_down.set_list_factory (list_factory);
 
+            for (int i = 0; i != categories.length; i++)
+            {
+                var category = categories[i];
+                if (category.key == active_category.key)
+                    drop_down.set_selected (i);
+            }
+
             drop_down.notify["selected"].connect(() => {
                 var selected_index = drop_down.get_selected();
                 if (selected_index != -1)
                     load_scores_for_category (categories[selected_index]);
             });
-            for (int i = 0; i != categories.length; i++)
-            {
-                var category = categories[i];
-                if (category == active_category)
-                    drop_down.set_selected (i);
-            }
 
             unowned var popover = drop_down.get_last_child () as Gtk.Popover;
             popover.halign = Gtk.Align.CENTER;
