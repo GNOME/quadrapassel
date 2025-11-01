@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-10-20 19:30+0000\n"
-"PO-Revision-Date: 2025-10-21 08:26+0800\n"
+"POT-Creation-Date: 2025-11-01 21:58+0000\n"
+"PO-Revision-Date: 2025-11-02 07:39+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -21,8 +21,8 @@ msgstr ""
 "X-Generator: Gtranslator 49.0\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:91
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:919
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:93
+#: src/quadrapassel.vala:112 src/quadrapassel.vala:963
 msgid "Quadrapassel"
 msgstr "俄罗斯方块"
 
@@ -182,19 +182,20 @@ msgstr "旋转和移动方块以填充方块行"
 
 #: src/rules-dialog.blp:12
 msgctxt "game rules"
-msgid "Rows explode when they are completely Filled"
+msgid "Rows explode when they are completely filled"
 msgstr "方块行完全填满时会消失"
 
 #: src/rules-dialog.blp:17
 msgctxt "game rules"
-msgid "You gain points for each row removed"
+msgid "You gain points for each row destroyed"
 msgstr "每个方块行消失您都会获得分数"
 
 #: src/rules-dialog.blp:18
 msgctxt "game rules"
 msgid ""
-"Points are calculated per move by rows destroyed times the current level"
-msgstr "分数是由每次消除的方块行乘以当前级别计算得出"
+"You can also get a bonus of 2500 × level × rows destroyed if the bottom "
+"layer is destroyed."
+msgstr "如果底层消失您也会获得 2500 × 级别 × 方块行消失的奖励分数。"
 
 #: src/rules-dialog.blp:25
 msgctxt "game rules"
@@ -215,6 +216,35 @@ msgstr "您可以使用首选项更改游戏工作方式"
 msgctxt "game rules"
 msgid "You can also adjust the difficulty"
 msgstr "您也可以调整游戏难度"
+
+#: src/rules-dialog.blp:49
+msgid "Rows Destroyed"
+msgstr "消失的方块行"
+
+#: src/rules-dialog.blp:61
+msgctxt "points calculation"
+msgid "Equation"
+msgstr "等式"
+
+#: src/rules-dialog.blp:122
+msgctxt "points calculation"
+msgid "40 × level"
+msgstr "40 × 级别"
+
+#: src/rules-dialog.blp:133
+msgctxt "points calculation"
+msgid "100 × level"
+msgstr "100 × 级别"
+
+#: src/rules-dialog.blp:144
+msgctxt "points calculation"
+msgid "300 × level"
+msgstr "300 × 级别"
+
+#: src/rules-dialog.blp:155
+msgctxt "points calculation"
+msgid "1200 × level"
+msgstr "1200 × 级别"
 
 #: src/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
@@ -281,135 +311,152 @@ msgctxt "shortcut window"
 msgid "Drop"
 msgstr "落下"
 
-#: src/quadrapassel.vala:136 src/quadrapassel.vala:189
+#: src/quadrapassel.vala:140 src/quadrapassel.vala:195
 msgid "Start a new game"
 msgstr "开始新游戏"
 
-#: src/quadrapassel.vala:143
+#: src/quadrapassel.vala:147
 msgid "_Scores"
 msgstr "得分(_S)"
 
-#: src/quadrapassel.vala:144
+#: src/quadrapassel.vala:148
 msgid "App_earance"
 msgstr "外观(_E)"
 
-#: src/quadrapassel.vala:145
+#: src/quadrapassel.vala:149
 msgid "_Preferences"
 msgstr "首选项(_P)"
 
-#: src/quadrapassel.vala:148
+#: src/quadrapassel.vala:152
 msgid "_Keyboard Shortcuts"
 msgstr "键盘快捷键(_K)"
 
-#: src/quadrapassel.vala:149
+#: src/quadrapassel.vala:153
 msgid "Game _Rules"
 msgstr "游戏规则(_R)"
 
-#: src/quadrapassel.vala:150
+#: src/quadrapassel.vala:154
 msgid "_About Quadrapassel"
 msgstr "关于俄罗斯方块(_A）"
 
-#: src/quadrapassel.vala:194
+#: src/quadrapassel.vala:200
 msgid "Next"
 msgstr "下一个"
 
-#: src/quadrapassel.vala:211
+#: src/quadrapassel.vala:217
 msgid "Score"
 msgstr "得分"
 
-#: src/quadrapassel.vala:222
+#: src/quadrapassel.vala:228
 msgid "Lines"
 msgstr "行数"
 
-#: src/quadrapassel.vala:233
+#: src/quadrapassel.vala:239
 msgid "Level"
 msgstr "级别"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:245
+#: src/quadrapassel.vala:251
 msgid "Difficulty"
 msgstr "难度"
 
-#: src/quadrapassel.vala:337
+#: src/quadrapassel.vala:367
 msgid "Preferences"
 msgstr "首选项"
 
-#: src/quadrapassel.vala:340
+#: src/quadrapassel.vala:370
 msgid "Game"
 msgstr "游戏"
 
-#: src/quadrapassel.vala:343
+#: src/quadrapassel.vala:373
 msgid "Game Difficulty"
 msgstr "游戏难度"
 
-#: src/quadrapassel.vala:344
+#: src/quadrapassel.vala:374
 msgid "Change how difficult the game is"
 msgstr "更改游戏难度"
 
-#: src/quadrapassel.vala:350
+#: src/quadrapassel.vala:376
+msgid ""
+"The Difficulty affects the level you start at and how many rows are pre-"
+"filled."
+msgstr "难度会影响您开始游戏时的级别以及预填充的方块行数量。"
+
+#: src/quadrapassel.vala:383
 msgid "_Difficulty"
 msgstr "难度(_D)"
 
-#: src/quadrapassel.vala:358
+#: src/quadrapassel.vala:391
 msgid "Choose difficult _blocks"
 msgstr "选择困难的方块(_B)"
 
-#: src/quadrapassel.vala:367
+#: src/quadrapassel.vala:400
 msgid "In-Game"
 msgstr "游戏中"
 
-#: src/quadrapassel.vala:368
+#: src/quadrapassel.vala:401
 msgid "Change the experience of playing a game"
 msgstr "更改游戏游玩的体验"
 
-#: src/quadrapassel.vala:371
+#: src/quadrapassel.vala:404
 msgid "_Enable sounds"
 msgstr "启用声音(_E)"
 
-#: src/quadrapassel.vala:382
+#: src/quadrapassel.vala:415
 msgid "_Preview next block"
 msgstr "预览下一个方块(_P)"
 
-#: src/quadrapassel.vala:394
+#: src/quadrapassel.vala:427
 msgid "_Rotate blocks counterclockwise"
 msgstr "逆时针旋转块(_R)"
 
-#: src/quadrapassel.vala:401
+#: src/quadrapassel.vala:434
 msgid "Show _where the block will land"
 msgstr "显示方块将落到何处(_W)"
 
-#: src/quadrapassel.vala:419
+#: src/quadrapassel.vala:451
+msgid ""
+"The seed is used to determine which blocks you get. While a seed is set, the "
+"game will be the same every time."
+msgstr "种子用来决定您获取的方块类型。一旦种子设定，每次游玩的游戏都是相同的。"
+
+#: src/quadrapassel.vala:455
 msgid "_Use a custom seed for the game"
 msgstr "为游戏使用自定义种子(_U)"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:821
 msgid "Unpause the game"
 msgstr "继续游戏"
 
-#: src/quadrapassel.vala:789
+#: src/quadrapassel.vala:827
 msgid "Pause the game"
 msgstr "暂停游戏"
 
-#: src/quadrapassel.vala:807
+#: src/quadrapassel.vala:845
 msgid "Start the game"
 msgstr "开始游戏"
 
-#: src/quadrapassel.vala:828
+#: src/quadrapassel.vala:866
 msgid "Old Scores"
 msgstr "之前得分"
 
-#: src/quadrapassel.vala:833
+#: src/quadrapassel.vala:871
 msgid "Difficult"
 msgstr "难度"
 
-#: src/quadrapassel.vala:922
+#: src/quadrapassel.vala:950
+msgctxt "game rules"
+msgid "Points are calculated based on how many rows are destroyed."
+msgstr "分数是基于每次消除的方块行数量计算得出。"
+
+#: src/quadrapassel.vala:966
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
 msgstr ""
 "经典的旋转方块组合成完整行的游戏。但请注意，方块堆积得过高会导致游戏结束！"
 
-#: src/quadrapassel.vala:926
+#: src/quadrapassel.vala:970
 msgid "translator-credits"
 msgstr ""
 "Yang Zhang <zyangmath@gmail.com>, 2007\n"
