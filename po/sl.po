@@ -12,22 +12,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-10-20 16:47+0000\n"
-"PO-Revision-Date: 2025-10-20 18:55+0200\n"
+"POT-Creation-Date: 2025-11-01 20:33+0000\n"
+"PO-Revision-Date: 2025-11-01 22:57+0100\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
+"n%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 3.8\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:91
-#: src/quadrapassel.vala:110 src/quadrapassel.vala:919
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:93
+#: src/quadrapassel.vala:112 src/quadrapassel.vala:963
 msgid "Quadrapassel"
 msgstr "Kvadetris"
 
@@ -191,21 +191,22 @@ msgstr "Sukajte in premikajte kose, da zapolnite vrstice"
 
 #: src/rules-dialog.blp:12
 msgctxt "game rules"
-msgid "Rows explode when they are completely Filled"
+msgid "Rows explode when they are completely filled"
 msgstr "Vrstice eksplodirajo, ko so popolnoma zapolnjene"
 
 #: src/rules-dialog.blp:17
 msgctxt "game rules"
-msgid "You gain points for each row removed"
-msgstr "Za vsako odstranjeno vrstico pridobite točke"
+msgid "You gain points for each row destroyed"
+msgstr "Za vsako uničeno vrstico pridobite točke"
 
 #: src/rules-dialog.blp:18
 msgctxt "game rules"
 msgid ""
-"Points are calculated per move by rows destroyed times the current level"
+"You can also get a bonus of 2500 × level × rows destroyed if the bottom "
+"layer is destroyed."
 msgstr ""
-"Točke se izračunajo na potezo po številu uničenih vrstic, pomnoženem s "
-"trenutno ravnjo"
+"Če je spodnja plast uničena, lahko dobite tudi bonus 2500 × stopnja × "
+"uničene vrstice."
 
 #: src/rules-dialog.blp:25
 msgctxt "game rules"
@@ -226,6 +227,35 @@ msgstr "Način poteka igre lahko spremenite z nastavitvami"
 msgctxt "game rules"
 msgid "You can also adjust the difficulty"
 msgstr "Težavnost lahko tudi prilagodite"
+
+#: src/rules-dialog.blp:49
+msgid "Rows Destroyed"
+msgstr "Uničene vrstice"
+
+#: src/rules-dialog.blp:61
+msgctxt "points calculation"
+msgid "Equation"
+msgstr "Enačba"
+
+#: src/rules-dialog.blp:122
+msgctxt "points calculation"
+msgid "40 × level"
+msgstr "40 × stopnja"
+
+#: src/rules-dialog.blp:133
+msgctxt "points calculation"
+msgid "100 × level"
+msgstr "100 × stopnja"
+
+#: src/rules-dialog.blp:144
+msgctxt "points calculation"
+msgid "300 × level"
+msgstr "300 × stopnja"
+
+#: src/rules-dialog.blp:155
+msgctxt "points calculation"
+msgid "1200 × level"
+msgstr "1200 × stopnja"
 
 #: src/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
@@ -292,128 +322,148 @@ msgctxt "shortcut window"
 msgid "Drop"
 msgstr "Spusti"
 
-#: src/quadrapassel.vala:136 src/quadrapassel.vala:189
+#: src/quadrapassel.vala:140 src/quadrapassel.vala:195
 msgid "Start a new game"
 msgstr "Začni novo igro"
 
-#: src/quadrapassel.vala:143
+#: src/quadrapassel.vala:147
 msgid "_Scores"
 msgstr "Rezul_tati"
 
-#: src/quadrapassel.vala:144
+#: src/quadrapassel.vala:148
 msgid "App_earance"
 msgstr "_Videz"
 
-#: src/quadrapassel.vala:145
+#: src/quadrapassel.vala:149
 msgid "_Preferences"
 msgstr "_Nastavitve"
 
-#: src/quadrapassel.vala:148
+#: src/quadrapassel.vala:152
 msgid "_Keyboard Shortcuts"
 msgstr "_Tipkovne bližnjice‫"
 
-#: src/quadrapassel.vala:149
+#: src/quadrapassel.vala:153
 msgid "Game _Rules"
 msgstr "Pravi_la igre"
 
-#: src/quadrapassel.vala:150
+#: src/quadrapassel.vala:154
 msgid "_About Quadrapassel"
 msgstr "_O igri"
 
-#: src/quadrapassel.vala:194
+#: src/quadrapassel.vala:200
 msgid "Next"
 msgstr "Naprej"
 
-#: src/quadrapassel.vala:211
+#: src/quadrapassel.vala:217
 msgid "Score"
 msgstr "Rezultat"
 
-#: src/quadrapassel.vala:222
+#: src/quadrapassel.vala:228
 msgid "Lines"
 msgstr "Vrstice"
 
-#: src/quadrapassel.vala:233
+#: src/quadrapassel.vala:239
 msgid "Level"
 msgstr "Raven"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:245
+#: src/quadrapassel.vala:251
 msgid "Difficulty"
 msgstr "Zahtevnost"
 
-#: src/quadrapassel.vala:337
+#: src/quadrapassel.vala:367
 msgid "Preferences"
 msgstr "Možnosti"
 
-#: src/quadrapassel.vala:340
+#: src/quadrapassel.vala:370
 msgid "Game"
 msgstr "Igra"
 
-#: src/quadrapassel.vala:343
+#: src/quadrapassel.vala:373
 msgid "Game Difficulty"
 msgstr "Zahtevnost igre"
 
-#: src/quadrapassel.vala:344
+#: src/quadrapassel.vala:374
 msgid "Change how difficult the game is"
 msgstr "Spremenite zahtevnost igre"
 
-#: src/quadrapassel.vala:350
+#: src/quadrapassel.vala:376
+msgid ""
+"The Difficulty affects the level you start at and how many rows are pre-"
+"filled."
+msgstr ""
+"Težavnost vpliva na začetno stopnjo in število vnaprej izpolnjenih vrstic."
+
+#: src/quadrapassel.vala:383
 msgid "_Difficulty"
 msgstr "Za_htevnost"
 
-#: src/quadrapassel.vala:358
+#: src/quadrapassel.vala:391
 msgid "Choose difficult _blocks"
 msgstr "Izbor težjih _blokov"
 
-#: src/quadrapassel.vala:367
+#: src/quadrapassel.vala:400
 msgid "In-Game"
 msgstr "Med igro"
 
-#: src/quadrapassel.vala:368
+#: src/quadrapassel.vala:401
 msgid "Change the experience of playing a game"
 msgstr "Spremenite izkušnjo igranja igre"
 
-#: src/quadrapassel.vala:371
+#: src/quadrapassel.vala:404
 msgid "_Enable sounds"
 msgstr "_Omogoči zvoke"
 
-#: src/quadrapassel.vala:382
+#: src/quadrapassel.vala:415
 msgid "_Preview next block"
 msgstr "P_redogled naslednjega bloka"
 
-#: src/quadrapassel.vala:394
+#: src/quadrapassel.vala:427
 msgid "_Rotate blocks counterclockwise"
 msgstr "Z_avrti bloke v smeri urinega kazalca"
 
-#: src/quadrapassel.vala:401
+#: src/quadrapassel.vala:434
 msgid "Show _where the block will land"
 msgstr "Pokaži, kje bo _blok pristal"
 
-#: src/quadrapassel.vala:419
+#: src/quadrapassel.vala:451
+msgid ""
+"The seed is used to determine which blocks you get. While a seed is set, the "
+"game will be the same every time."
+msgstr ""
+"Na podlagi semena se določi, katere bloke boste dobili. Ko je nastavljeno "
+"seme, je igra vsakič enaka."
+
+#: src/quadrapassel.vala:455
 msgid "_Use a custom seed for the game"
 msgstr "_Uporabi seme po meri za igro"
 
-#: src/quadrapassel.vala:783
+#: src/quadrapassel.vala:821
 msgid "Unpause the game"
 msgstr "Prekliči premor"
 
-#: src/quadrapassel.vala:789
+#: src/quadrapassel.vala:827
 msgid "Pause the game"
 msgstr "Premor igranja"
 
-#: src/quadrapassel.vala:807
+#: src/quadrapassel.vala:845
 msgid "Start the game"
 msgstr "Začni igro"
 
-#: src/quadrapassel.vala:828
+#: src/quadrapassel.vala:866
 msgid "Old Scores"
 msgstr "Stari rezultati"
 
-#: src/quadrapassel.vala:833
+#: src/quadrapassel.vala:871
 msgid "Difficult"
 msgstr "Težko"
 
-#: src/quadrapassel.vala:922
+#: src/quadrapassel.vala:950
+msgctxt "game rules"
+msgid "Points are calculated based on how many rows are destroyed."
+msgstr "Točke se izračunajo na potezo po številu uničenih vrstic."
+
+#: src/quadrapassel.vala:966
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -421,7 +471,7 @@ msgstr ""
 "Klasična igra obračanja ploščic in zapolnjevanja vrstic, ki pa se konča, ko "
 "se ti naložijo do vrha!"
 
-#: src/quadrapassel.vala:926
+#: src/quadrapassel.vala:970
 msgid "translator-credits"
 msgstr ""
 "Matej Urbančič <mateju@svn.gnome.org>\n"
