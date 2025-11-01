@@ -9,13 +9,13 @@ Adw.PreferencesDialog rules_dialog {
     Adw.PreferencesGroup {
       Adw.ActionRow {
         title: C_("game rules", "Rotate and Move pieces to fill rows");
-        subtitle: C_("game rules", "Rows explode when they are completely Filled");
+        subtitle: C_("game rules", "Rows explode when they are completely filled");
         [prefix]
         Image game_symbolic {}
       }
-      Adw.ActionRow {
-        title: C_("game rules", "You gain points for each row removed");
-        subtitle: C_("game rules", "Points are calculated per move by rows destroyed times the current level");
+      Adw.ActionRow points_row {
+        title: C_("game rules", "You gain points for each row destroyed");
+        subtitle: C_("game rules", "You can also get a bonus of 2500 × level × rows destroyed if the bottom layer is destroyed.");
         [prefix]
         Image {
           icon-name: "list-add-symbolic";
@@ -37,6 +37,128 @@ Adw.PreferencesDialog rules_dialog {
           icon-name: "preferences-other-symbolic";
         }
       }
+    }
+  }
+}
+
+Grid points_info {
+  hexpand: true;
+  row-spacing: 6;
+
+  Label {
+    label: _("Rows Destroyed");
+    halign: start;
+
+    styles [ "dim-label", "heading" ]
+
+    layout {
+      row: 0;
+      column: 0;
+    }
+  }
+
+  Label {
+    label: C_("points calculation", "Equation");
+    halign: end;
+    hexpand: true;
+
+    styles [ "heading" ]
+
+    layout {
+      row: 0;
+      column: 1;
+    }
+  }
+
+  Label {
+    label: "1";
+    halign: start;
+
+    styles [ "dim-label" ]
+
+    layout {
+      row: 1;
+      column: 0;
+    }
+  }
+
+  Label {
+    label: "2";
+    halign: start;
+
+    styles [ "dim-label" ]
+
+    layout {
+      row: 2;
+      column: 0;
+    }
+  }
+
+  Label {
+    label: "3";
+    halign: start;
+
+    styles [ "dim-label" ]
+
+    layout {
+      row: 3;
+      column: 0;
+    }
+  }
+
+  Label {
+    label: "4";
+    halign: start;
+
+    styles [ "dim-label" ]
+
+    layout {
+      row: 4;
+      column: 0;
+    }
+  }
+
+  Label {
+    label: C_("points calculation", "40 × level");
+    halign: end;
+    hexpand: true;
+
+    layout {
+      row: 1;
+      column: 1;
+    }
+  }
+
+  Label {
+    label: C_("points calculation", "100 × level");
+    halign: end;
+    hexpand: true;
+
+    layout {
+      row: 2;
+      column: 1;
+    }
+  }
+
+  Label {
+    label: C_("points calculation", "300 × level");
+    halign: end;
+    hexpand: true;
+
+    layout {
+      row: 3;
+      column: 1;
+    }
+  }
+
+  Label {
+    label: C_("points calculation", "1200 × level");
+    halign: end;
+    hexpand: true;
+
+    layout {
+      row: 4;
+      column: 1;
     }
   }
 }

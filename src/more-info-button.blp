@@ -1,0 +1,40 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $MoreInfoButton: Adw.Bin {
+  valign: center;
+
+  MenuButton button {
+    tooltip-text: _("More Information");
+    icon-name: "info-outline-symbolic";
+
+    styles [
+      "flat",
+    ]
+
+    popover: Popover popover {
+      Box {
+        orientation: vertical;
+
+        Label info_label {
+          halign: center;
+          valign: center;
+          margin-bottom: 8;
+          margin-end: 8;
+          margin-start: 8;
+          margin-top: 8;
+          max-width-chars: 35;
+          wrap: true;
+        }
+
+        Adw.Bin extra_widget_bin {
+          visible: false;
+          margin-bottom: 8;
+          margin-end: 8;
+          margin-start: 8;
+          margin-top: 8;
+        }
+      }
+    };
+  }
+}

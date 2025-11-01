@@ -1,10 +1,11 @@
 blueprints = custom_target('blueprints',
-  input: files(
-    'rules-dialog.blp',
-    'shortcuts-dialog.blp'
-  ),
-  output: '.',
-  command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
+    input: files(
+        'more-info-button.blp',
+        'rules-dialog.blp',
+        'shortcuts-dialog.blp'
+    ),
+    output: '.',
+    command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
 )
 
 quadrapassel_sources = [
@@ -12,6 +13,7 @@ quadrapassel_sources = [
     'vapi/input-event-codes.vapi',
     'game-view.vala',
     'game.vala',
+    'more-info-button.vala',
     'preview.vala',
     'quadrapassel.vala'
 ]

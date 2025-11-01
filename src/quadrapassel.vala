@@ -372,6 +372,9 @@ public class Quadrapassel : Adw.Application
         var difficulty_group = new Adw.PreferencesGroup ();
         difficulty_group.set_title (_("Game Difficulty"));
         difficulty_group.set_description (_("Change how difficult the game is"));
+        var more_info = new MoreInfoButton ();
+        more_info.text = _("The Difficulty affects the level you start at and how many rows are pre-filled.");
+        difficulty_group.set_header_suffix (more_info);
 
         /* difficulty */
         // the maximum should be at least 4 less than the new game height but as long as the game height is a magic 20 and not a setting, we can keep it at 15
@@ -444,6 +447,9 @@ public class Quadrapassel : Adw.Application
         game_seed.set_text (settings.get_uint ("seed").to_string ());
         game_seed.set_sensitive (settings.get_boolean ("use-seed"));
         game_seed.changed.connect (() => { settings.set_uint ("seed", uint.parse (game_seed.get_text ())); });
+        more_info = new MoreInfoButton ();
+        more_info.text = _("The seed is used to determine which blocks you get. While a seed is set, the game will be the same every time.");
+        game_seed.add_suffix (more_info);
 
         var use_seed_toggle = new Adw.SwitchRow ();
         use_seed_toggle.set_title (_("_Use a custom seed for the game"));
@@ -708,7 +714,7 @@ public class Quadrapassel : Adw.Application
     {
         if (game == null || game.paused)
             return;
- 
+
         /* For some reason tapping/clicking is treated as a swipe, but with 0 velocity.
          * Annoyingly, the release of a long press is treated as a swipe too,
          * so it is necessary to check for this. At the same time there is the feature
@@ -938,6 +944,12 @@ public class Quadrapassel : Adw.Application
         }
         var rules_dialog = (Adw.Dialog) dialog_builder.get_object ("rules_dialog");
         var game_symbolic = (Gtk.Image) dialog_builder.get_object ("game_symbolic");
+        var points_row = (Adw.ActionRow) dialog_builder.get_object ("points_row");
+        var points_info = (Gtk.Grid) dialog_builder.get_object ("points_info");
+        var more_info = new MoreInfoButton ();
+        more_info.text = C_("game rules", "Points are calculated based on how many rows are destroyed.");
+        more_info.extra_child = points_info;
+        points_row.add_suffix (more_info);
         game_symbolic.set_from_icon_name ("%s-symbolic".printf (APP_ID));
         rules_dialog.present (window);
     }
