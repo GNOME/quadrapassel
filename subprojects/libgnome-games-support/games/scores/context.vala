@@ -92,14 +92,11 @@ public class Context : Object
 
     private Category? current_category = null;
 
-    private static Gee.HashDataFunc<Category?> category_hash = (a) => {
-        return str_hash (a.key);
-    };
-    private static Gee.EqualDataFunc<Category?> category_equal = (a,b) => {
-        return str_equal (a.key, b.key);
-    };
-    private Gee.HashMap<Category?, Gee.List<Score>> scores_per_category =
-        new Gee.HashMap<Category?, Gee.List<Score>> ((owned) category_hash, (owned) category_equal);
+    private HashTable<Category, GenericArray<Score>> scores_per_category =
+        new HashTable<Category, GenericArray<Score>> (
+            (a) => str_hash (a.key),
+            (a, b) => str_equal (a.key, b.key)
+        );
 
     private string user_score_dir;
     private bool scores_loaded = false;
@@ -165,7 +162,7 @@ public class Context : Object
     /**
      * Creates a new Context.
      *
-     * ``app_name`` is your App ID (e.g. ``org.gnome.Mines``)
+     * ``app_name`` is your App ID (eg. ``org.gnome.Mines``)
      *
      * ``category_type`` describes all of the categories (e.g. "Minefield", "Level").
      *
@@ -241,17 +238,16 @@ public class Context : Object
             importer.run (this, user_score_dir);
     }
 
-    internal List<Category?> get_categories ()
+    public Category[] get_categories ()
     {
-        var categories = new List<Category?> ();
-        var iterator = scores_per_category.map_iterator ();
-
-        while (iterator.next ())
+        var categories = scores_per_category.get_keys ();
+        categories.sort ((a, b) => strcmp (a.name, b.name));
+        var cat_array = new Category[0];
+        foreach (var category in categories)
         {
-            categories.append (iterator.get_key ());
+            cat_array += category;
         }
-
-        return categories;
+        return cat_array;
     }
 
     /* Primarily used to change name of player and save the changed score to file */
@@ -272,22 +268,23 @@ public class Context : Object
      * Get the best n scores from the given category, sorted.
      *
      */
-    public Gee.List<Score> get_high_scores (Category category, int n = 10)
+    public Score[] get_high_scores (Category category, int n = 10)
     {
-        var result = new Gee.ArrayList<Score> ();
-        if (!scores_per_category.has_key (category))
+        var result = new Score[0];
+        if (!scores_per_category.contains (category))
             return result;
+
+        unowned var scores = scores_per_category[category];
 
         if (style == Style.POINTS_GREATER_IS_BETTER || style == Style.TIME_GREATER_IS_BETTER)
             scores_per_category[category].sort (Score.score_greater_sorter);
         else
             scores_per_category[category].sort (Score.score_less_sorter);
 
-        for (int i = 0; i < n && i < scores_per_category[category].size; i++)
-        {
-            var score = scores_per_category[category][i];
+        for (int i = 0; i < n && i < scores.length; i++) {
+            var score = scores[i];
             score.rank = i + 1;
-            result.add (score);
+            result += score;
         }
 
         return result;
@@ -301,10 +298,10 @@ public class Context : Object
         if (best_scores == null)
             return true;
 
-        if (best_scores.size < 10)
+        if (best_scores.length < 10)
             return true;
 
-        var lowest = best_scores.@get (9).score;
+        var lowest = best_scores[9].score;
 
         if (style == Style.POINTS_LESS_IS_BETTER || style == Style.TIME_LESS_IS_BETTER)
             return score_value < lowest;
@@ -332,11 +329,11 @@ public class Context : Object
     internal async bool add_score_internal (Score score, Category category, Cancellable? cancellable) throws Error
     {
         /* Check if category exists in the HashTable. Insert one if not. */
-        if (!scores_per_category.has_key (category))
-            scores_per_category.set (category, new Gee.ArrayList<Score> ());
+        if (!scores_per_category.contains (category))
+            scores_per_category[category] = new GenericArray<Score> ();
 
-        if (scores_per_category[category].add (score))
-            current_category = category;
+        scores_per_category[category].add (score);
+        current_category = category;
 
         var high_score_added = is_high_score (score.score, category);
         if (high_score_added && game_window != null)
@@ -376,11 +373,11 @@ public class Context : Object
     {
         Score score = new Score (score_value);
         /* Check if category exists in the HashTable. Insert one if not. */
-        if (!scores_per_category.has_key (category))
-            scores_per_category.set (category, new Gee.ArrayList<Score> ());
+        if (!scores_per_category.contains (category))
+            scores_per_category[category] = new GenericArray<Score> ();
 
-        if (scores_per_category[category].add (score))
-            current_category = category;
+        scores_per_category[category].add (score);
+        current_category = category;
 
         var high_score_added = is_high_score (score.score, category);
         if (high_score_added)
@@ -404,7 +401,7 @@ public class Context : Object
             return;
 
         var filename = Path.build_filename (user_score_dir, category_key);
-        var scores_of_single_category = new Gee.ArrayList<Score> ();
+        var scores_of_single_category = new GenericArray<Score> ();
         var stream = FileStream.open (filename, "r");
         string line;
         while ((line = stream.read_line ()) != null)
@@ -436,7 +433,7 @@ public class Context : Object
             scores_of_single_category.add (new Score (score_value, time, user));
         }
 
-        scores_per_category.set (category, scores_of_single_category);
+        scores_per_category[category] = scores_of_single_category;
     }
 
     private void load_scores_from_files () throws Error
@@ -518,9 +515,9 @@ public class Context : Object
      */
     public bool has_scores ()
     {
-        foreach (var scores in scores_per_category.values)
+        foreach (var scores in scores_per_category.get_values ())
         {
-            if (scores.size > 0)
+            if (scores.length > 0)
                 return true;
         }
         return false;

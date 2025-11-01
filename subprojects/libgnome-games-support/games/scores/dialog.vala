@@ -37,7 +37,6 @@ private class Dialog : Adw.Dialog
 {
     private Context context;
     private Category? active_category = null;
-    private List<Category?> categories = null;
     private ListStore? score_model = null;
 
     private Adw.ToolbarView toolbar;
@@ -80,13 +79,14 @@ private class Dialog : Adw.Dialog
         }
 
         scores_style = style;
-        categories = context.get_categories ();
+
+        var categories = context.get_categories ();
         active_category = current_cat;
 
         add_css_class ("scores");
 
         if (active_category == null)
-            active_category = new Category (categories.nth_data (0).key, categories.nth_data (0).name);
+            active_category = new Category (categories[0].key, categories[0].name);
         
         score_or_time = "";
         string new_score_or_time = "";
@@ -105,20 +105,20 @@ private class Dialog : Adw.Dialog
         }
 
         /* Decide what the title should be */
-        categories = context.get_categories ();
         if (new_high_score != null)
         {
             var title_widget = new Adw.WindowTitle (_("Congratulations!"), new_score_or_time);
             headerbar.set_title_widget (title_widget);
         }
-        else if (categories.length () == 1)
+        else if (categories.length == 1)
         {
-            active_category = ((!) categories.first ()).data;
-            set_title (active_category.name);
+            active_category = categories[0];
+            /* Translators: %1$s is the category type, %2$s is the category (e.g. "Level: 1") */
+            set_title (_("%1$s: %2$s").printf (category_type, active_category.name));
         }
         else
         {
-            drop_down = new Gtk.DropDown.from_strings (load_categories ());
+            drop_down = new Gtk.DropDown.from_strings (category_names (categories));
             var list_factory = drop_down.get_factory ();
             var button_factory = new Gtk.SignalListItemFactory ();
 
@@ -145,11 +145,11 @@ private class Dialog : Adw.Dialog
             drop_down.notify["selected"].connect(() => {
                 var selected_index = drop_down.get_selected();
                 if (selected_index != -1)
-                    load_scores_for_category (categories.nth_data (selected_index));
+                    load_scores_for_category (categories[selected_index]);
             });
-            for (int i = 0; i != categories.length (); i++)
+            for (int i = 0; i != categories.length; i++)
             {
-                var category = categories.nth_data (i);
+                var category = categories[i];
                 if (category == active_category)
                     drop_down.set_selected (i);
             }
@@ -173,11 +173,11 @@ private class Dialog : Adw.Dialog
     }
 
     /* load names of all categories into a string array */
-    private string[] load_categories ()
+    private string[] category_names (Category[] categories)
     {
         string[] categories_array = {};
 
-        categories.foreach ((x) => categories_array += x.name);
+        foreach (var cat in categories) { categories_array += cat.name; }
 
         return categories_array;
     }
