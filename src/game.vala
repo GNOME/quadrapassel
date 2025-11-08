@@ -257,7 +257,7 @@ public class Game : Object
     public int difficulty = 0;
 
     /* true if should pick difficult blocks to place */
-    private bool pick_difficult_blocks = false;
+    public bool pick_difficult_blocks = false;
 
     /* The current level */
     public int level { get { return (difficulty + 1) + (n_lines_destroyed / 10); } }

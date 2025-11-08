@@ -66,12 +66,6 @@ public class Context : Object
     public string category_type { get; construct; }
 
     /**
-     * The window that the game will be inside of, this is the window the score dialog will be presented upon.
-     *
-     */
-    public Gtk.Window? game_window { get; construct; }
-
-    /**
      * The {@link Games.Scores.Style} that the context should use.
      *
      */
@@ -83,11 +77,17 @@ public class Context : Object
      */
     public string icon_name { get; construct; }
 
-    [Version (deprecated=true, deprecated_since="3.0")]
+    /**
+     * The maximum size of the high score list in the score dialog (``-1`` for unlimited).
+     *
+     */
+    public int max_high_scores { get; construct; }
+
     /**
      * The {@link [Games.Scores.Importer]} for the context (eg. HistoryFileImporter).
      *
      */
+    [Version (deprecated=true, deprecated_since="3.0")]
     public Importer? importer { get; construct; }
 
     private Category? current_category = null;
@@ -140,33 +140,9 @@ public class Context : Object
     /**
      * Creates a new Context.
      *
-     * ``app_name`` is your App ID (eg. ``org.gnome.Mines``).
-     *
-     * ``category_type`` describes all of the categories, make sure to put a colon at the end (eg. "Minefield:", "Difficulty Level:").
-     *
-     * ``game_window`` is the window that the game will be inside of, this is the window the score dialog will be presented upon.
-     *
-     * ``category_request`` is a function that takes a category key and produces the user-facing name for it/
-     *
-     *
-     */
-    public Context (string app_name,
-                    string category_type,
-                    Gtk.Window? game_window,
-                    CategoryRequestFunc category_request,
-                    Style style)
-    {
-        this.with_importer_and_icon_name (app_name, category_type, game_window, category_request, style, null, null);
-    }
-
-    /**
-     * Creates a new Context.
-     *
-     * ``app_name`` is your App ID (eg. ``org.gnome.Mines``)
+     * ``app_name`` is your App ID (e.g. ``org.gnome.Mines``).
      *
      * ``category_type`` describes all of the categories (e.g. "Minefield", "Level").
-     *
-     * ``game_window`` is the window that the game will be inside of, this is the window the score dialog will be presented upon.
      *
      * ``category_request`` is a function that takes a category key and produces the user-facing name for it.
      *
@@ -174,43 +150,55 @@ public class Context : Object
      *
      * ``icon_name`` is the ID for your app's icon (e.g. ``org.gnome.Quadrapassel``).
      *
+     * ``max_high_scores`` is the maximum size of the high score list in the score dialog (``-1`` for unlimited).
+     *
      */
+    public Context (string app_name,
+                    string category_type,
+                    CategoryRequestFunc category_request,
+                    Style style,
+                    string? icon_name = null,
+                    int max_high_scores = 10)
+    {
+        this.with_importer_and_icon_name (app_name, category_type, category_request, style, null, null, max_high_scores);
+    }
+
     public Context.with_icon_name (string app_name,
                                    string category_type,
-                                   Gtk.Window? game_window,
                                    CategoryRequestFunc category_request,
                                    Style style,
-                                   string icon_name)
+                                   string icon_name,
+                                   int max_high_scores = 10)
     {
-        this.with_importer_and_icon_name (app_name, category_type, game_window, category_request, style, null, icon_name);
+        this.with_importer_and_icon_name (app_name, category_type, category_request, style, null, icon_name, max_high_scores);
     }
 
     [Version (deprecated=true, deprecated_since="3.0")]
     public Context.with_importer (string app_name,
                                   string category_type,
-                                  Gtk.Window? game_window,
                                   CategoryRequestFunc category_request,
                                   Style style,
-                                  Importer? importer)
+                                  Importer? importer,
+                                  int max_high_scores = 10)
     {
-        this.with_importer_and_icon_name (app_name, category_type, game_window, category_request, style, importer, null);
+        this.with_importer_and_icon_name (app_name, category_type, category_request, style, importer, null, max_high_scores);
     }
 
     [Version (deprecated=true, deprecated_since="3.0")]
     public Context.with_importer_and_icon_name (string app_name,
                                                 string category_type,
-                                                Gtk.Window? game_window,
                                                 CategoryRequestFunc category_request,
                                                 Style style,
                                                 Importer? importer = null,
-                                                string? icon_name = null)
+                                                string? icon_name = null,
+                                                int max_high_scores = 10)
     {
         Object (app_name: app_name,
                 category_type: category_type,
-                game_window: game_window,
                 style: style,
                 importer: importer,
-                icon_name: icon_name ?? app_name);
+                icon_name: icon_name ?? app_name,
+                max_high_scores: max_high_scores <= -1 ? int.MAX : max_high_scores);
 
         /* Note: the following functionality can be performed manually by
          * calling Context.load_scores, to ensure Context is usable even if
@@ -241,7 +229,11 @@ public class Context : Object
     public Category[] get_categories ()
     {
         var categories = scores_per_category.get_keys ();
-        categories.sort ((a, b) => strcmp (a.name, b.name));
+        categories.sort ((a, b) => {
+            string key_1 = a.name.collate_key_for_filename ();
+            string key_2 = b.name.collate_key_for_filename ();
+            return strcmp (key_1, key_2);
+        });
         var cat_array = new Category[0];
         foreach (var category in categories)
         {
@@ -268,7 +260,7 @@ public class Context : Object
      * Get the best n scores from the given category, sorted.
      *
      */
-    public Score[] get_high_scores (Category category, int n = 10)
+    public Score[] get_high_scores (Category category, int n = -1)
     {
         var result = new Score[0];
         if (!scores_per_category.contains (category))
@@ -280,6 +272,9 @@ public class Context : Object
             scores_per_category[category].sort (Score.score_greater_sorter);
         else
             scores_per_category[category].sort (Score.score_less_sorter);
+
+        if (n <= -1)
+            n = max_high_scores;
 
         for (int i = 0; i < n && i < scores.length; i++) {
             var score = scores[i];
@@ -298,10 +293,10 @@ public class Context : Object
         if (best_scores == null)
             return true;
 
-        if (best_scores.length < 10)
+        if (best_scores.length < max_high_scores)
             return true;
 
-        var lowest = best_scores[9].score;
+        var lowest = best_scores[max_high_scores - 1].score;
 
         if (style == Style.POINTS_LESS_IS_BETTER || style == Style.TIME_LESS_IS_BETTER)
             return score_value < lowest;
@@ -318,7 +313,7 @@ public class Context : Object
 
         var file = File.new_for_path (Path.build_filename (user_score_dir, category.key));
         var stream = file.append_to (FileCreateFlags.NONE);
-        var line = @"$(score.score) $(score.time) $(score.user)\n";
+        var line = @"$(score.score)$(score.get_internal_extra_info ()) $(score.time) $(score.user)\n";
 
         yield stream.write_all_async (line.data, Priority.DEFAULT, cancellable, null);
     }
@@ -328,6 +323,68 @@ public class Context : Object
      */
     internal async bool add_score_internal (Score score, Category category, Cancellable? cancellable) throws Error
     {
+        //* Check if category exists in the HashTable. Insert one if not. */
+        if (!scores_per_category.contains (category))
+            scores_per_category[category] = new GenericArray<Score> ();
+
+        scores_per_category[category].add (score);
+        current_category = category;
+
+        var high_score_added = is_high_score (score.score, category);
+        yield save_score_to_file (score, category, cancellable);
+        return high_score_added;
+    }
+
+    /**
+     * Returns true if a dialog was launched on attaining high score.
+     *
+     */
+    public async bool add_score (long score, Category category, Gtk.Window? game_window, Cancellable? cancellable) throws Error
+    {
+        var the_score = new Score (score);
+
+        /* Check if category exists in the HashTable. Insert one if not. */
+        if (!scores_per_category.contains (category))
+            scores_per_category[category] = new GenericArray<Score> ();
+
+        scores_per_category[category].add (the_score);
+        current_category = category;
+
+        var high_score_added = is_high_score (the_score.score, category);
+        if (high_score_added && game_window != null)
+        {
+            var dialog = new Dialog (this, category_type, style, the_score, current_category, icon_name);
+            dialog.closed.connect (() => add_score.callback ());
+            dialog.present (game_window);
+            yield;
+        }
+
+        yield save_score_to_file (the_score, category, cancellable);
+        return high_score_added;
+    }
+
+    public delegate void NewGameFunc ();
+    public delegate void QuitAppFunc ();
+
+    /**
+     * Adds extra info to the score, and optionally, some buttons to the bottom of the dialog that aid the flow of a game.
+     *
+     * ``new_game_func`` is called when the user presses the 'New Game' button on the dialog
+     *
+     * ``quit_app_func`` is called when the user presses the 'Quit' button on the dialog
+     *
+     */
+    [Version (since="3.0")]
+    public async bool add_score_full (long score_value,
+                                      Category category,
+                                      string? extra_info,
+                                      Gtk.Window? game_window,
+                                      NewGameFunc? new_game_func,
+                                      QuitAppFunc? quit_app_func,
+                                      Cancellable? cancellable) throws Error
+    {
+        Score score = new Score (score_value);
+        score.extra_info = extra_info;
         /* Check if category exists in the HashTable. Insert one if not. */
         if (!scores_per_category.contains (category))
             scores_per_category[category] = new GenericArray<Score> ();
@@ -339,53 +396,11 @@ public class Context : Object
         if (high_score_added && game_window != null)
         {
             var dialog = new Dialog (this, category_type, style, score, current_category, icon_name);
-            dialog.closed.connect (() => add_score_internal.callback ());
-            dialog.present (game_window);
-            yield;
-        }
-
-        yield save_score_to_file (score, category, cancellable);
-        return high_score_added;
-    }
-
-    /**
-     * Returns true if a dialog was launched on attaining high score.
-     *
-     */
-    public async bool add_score (long score, Category category, Cancellable? cancellable) throws Error
-    {
-        return yield add_score_internal (new Score (score), category, cancellable);
-    }
-
-    public delegate void NewGameFunc ();
-    public delegate void QuitAppFunc ();
-
-    /**
-     * Adds some buttons to the bottom of the dialog that aid the flow of a game that chooses to use it.
-     *
-     * ``new_game_func`` is called when the user presses the 'New Game' button on the dialog
-     *
-     * ``quit_app_func`` is called when the user presses the 'Quit' button on the dialog
-     *
-     */
-    [Version (since="3.0")]
-    public async bool add_score_full (long score_value, Category category, NewGameFunc new_game_func, QuitAppFunc quit_app_func, Cancellable? cancellable) throws Error
-    {
-        Score score = new Score (score_value);
-        /* Check if category exists in the HashTable. Insert one if not. */
-        if (!scores_per_category.contains (category))
-            scores_per_category[category] = new GenericArray<Score> ();
-
-        scores_per_category[category].add (score);
-        current_category = category;
-
-        var high_score_added = is_high_score (score.score, category);
-        if (high_score_added)
-        {
-            var dialog = new Dialog (this, category_type, style, score, current_category, icon_name);
             dialog.closed.connect (() => add_score_full.callback ());
             dialog.present (game_window);
-            dialog.add_bottom_buttons (new_game_func, quit_app_func);
+            if (new_game_func != null && quit_app_func != null)
+                dialog.add_bottom_buttons (new_game_func, quit_app_func);
+
             yield;
         }
 
@@ -415,10 +430,14 @@ public class Context : Object
                 continue;
             }
 
-            var score_value = long.parse (tokens[0]);
+            long score_value = 0;
+
+            /* '#' adds extra info */
+            var score_tokens = tokens[0].split ("#", 2);
+            score_value = long.parse (score_tokens[0]);
             var time = int64.parse (tokens[1]);
 
-            if (score_value == 0 && tokens[0] != "0" ||
+            if (score_value == 0 && score_tokens[0] != "0" ||
                 time == 0 && tokens[1] != "0")
             {
                 warning ("Failed to read malformed score %s in %s.", line, filename);
@@ -430,7 +449,11 @@ public class Context : Object
             else
                 debug ("Assuming current username for old score %s in %s.", line, filename);
 
-            scores_of_single_category.add (new Score (score_value, time, user));
+            var score = new Score (score_value, time, user);
+            if (score_tokens.length == 2)
+                score._extra_info = score_tokens[1];
+
+            scores_of_single_category.add (score);
         }
 
         scores_per_category[category] = scores_of_single_category;
@@ -440,14 +463,6 @@ public class Context : Object
         requires (!scores_loaded)
     {
         scores_loaded = true;
-
-        if (game_window != null && game_window.visible)
-        {
-            error ("The application window associated with the GamesScoresContext " +
-                   "was set visible before loading scores. The Context performs " +
-                   "synchronous I/O in the default main context to load scores, so " +
-                   "so you should do this before showing your main window.");
-        }
 
         var directory = File.new_for_path (user_score_dir);
         if (!directory.query_exists ())
@@ -486,8 +501,7 @@ public class Context : Object
      * This is why gtk_dialog_run() was removed.
      */
     [Version (deprecated=true, deprecated_since="3.0")]
-    public void run_dialog ()
-        requires (game_window != null)
+    public void run_dialog (Gtk.Window game_window)
     {
         var main_loop = new MainLoop (null);
         var dialog = new Dialog (this, category_type, style, null, current_category, icon_name);
@@ -503,8 +517,7 @@ public class Context : Object
      *
      */
     [Version (since="3.0")]
-    public void present_dialog (Category? selected_category = null)
-        requires (game_window != null)
+    public void present_dialog (Gtk.Window game_window, Category? selected_category = null)
     {
         if (selected_category == null || !scores_per_category.contains (selected_category))
             selected_category = current_category;

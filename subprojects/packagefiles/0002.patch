@@ -1,16 +1,16 @@
-From bf5f630fd6d52e47de67813997a1218f74d38615 Mon Sep 17 00:00:00 2001
+From cb9fe607ab246619419ca668eaedb9c2b388c63c Mon Sep 17 00:00:00 2001
 From: Will Warner <willwwarner@proton.me>
-Date: Sat, 1 Nov 2025 12:43:16 -0400
+Date: Sat, 8 Nov 2025 08:35:13 -0500
 Subject: [PATCH] Revert "Remove all deprecated APIs"
 
 This reverts commit b610c747398bbd1f0908a2e91926942532ed2160.
 ---
  games/meson.build                       |   5 +-
- games/scores/context.vala               |  93 +++++++++++++++--
+ games/scores/context.vala               |  76 +++++++++++++-
  games/scores/directory-importer.vala    | 107 ++++++++++++++++++++
  games/scores/history-file-importer.vala | 127 ++++++++++++++++++++++++
  games/scores/importer.vala              | 100 +++++++++++++++++++
- 5 files changed, 424 insertions(+), 8 deletions(-)
+ 5 files changed, 409 insertions(+), 6 deletions(-)
  create mode 100644 games/scores/directory-importer.vala
  create mode 100644 games/scores/history-file-importer.vala
  create mode 100644 games/scores/importer.vala
@@ -37,18 +37,18 @@ index 3bb665b..13387c9 100644
 +)
 \ No newline at end of file
 diff --git a/games/scores/context.vala b/games/scores/context.vala
-index 67c8ded..f389cce 100644
+index 77e0b6e..2432d79 100644
 --- a/games/scores/context.vala
 +++ b/games/scores/context.vala
 @@ -83,6 +83,13 @@ public class Context : Object
       */
-     public string icon_name { get; construct; }
+     public int max_high_scores { get; construct; }
  
-+    [Version (deprecated=true, deprecated_since="3.0")]
 +    /**
 +     * The {@link [Games.Scores.Importer]} for the context (eg. HistoryFileImporter).
 +     *
 +     */
++    [Version (deprecated=true, deprecated_since="3.0")]
 +    public Importer? importer { get; construct; }
 +
      private Category? current_category = null;
@@ -62,86 +62,52 @@ index 67c8ded..f389cce 100644
      public signal void dialog_closed ();
  
      class construct
-@@ -132,7 +140,29 @@ public class Context : Object
-     /**
-      * Creates a new Context.
-      *
--     * ``app_name`` is your App ID (e.g. ``org.gnome.Mines``)
-+     * ``app_name`` is your App ID (eg. ``org.gnome.Mines``).
-+     *
-+     * ``category_type`` describes all of the categories, make sure to put a colon at the end (eg. "Minefield:", "Difficulty Level:").
-+     *
-+     * ``game_window`` is the window that the game will be inside of, this is the window the score dialog will be presented upon.
-+     *
-+     * ``category_request`` is a function that takes a category key and produces the user-facing name for it/
-+     *
-+     *
-+     */
-+    public Context (string app_name,
-+                    string category_type,
-+                    Gtk.Window? game_window,
-+                    CategoryRequestFunc category_request,
-+                    Style style)
+@@ -151,10 +159,44 @@ public class Context : Object
+                     Style style,
+                     string? icon_name = null,
+                     int max_high_scores = 10)
 +    {
-+        this.with_importer_and_icon_name (app_name, category_type, game_window, category_request, style, null, null);
++        this.with_importer_and_icon_name (app_name, category_type, category_request, style, null, null, max_high_scores);
 +    }
 +
-+    /**
-+     * Creates a new Context.
-+     *
-+     * ``app_name`` is your App ID (eg. ``org.gnome.Mines``)
-      *
-      * ``category_type`` describes all of the categories (e.g. "Minefield", "Level").
-      *
-@@ -145,17 +175,41 @@ public class Context : Object
-      * ``icon_name`` is the ID for your app's icon (e.g. ``org.gnome.Quadrapassel``).
-      *
-      */
--    public Context (string app_name,
--                    string category_type,
--                    Gtk.Window? game_window,
--                    CategoryRequestFunc category_request,
--                    Style style,
--                    string? icon_name = null)
 +    public Context.with_icon_name (string app_name,
 +                                   string category_type,
-+                                   Gtk.Window? game_window,
 +                                   CategoryRequestFunc category_request,
 +                                   Style style,
-+                                   string icon_name)
++                                   string icon_name,
++                                   int max_high_scores = 10)
 +    {
-+        this.with_importer_and_icon_name (app_name, category_type, game_window, category_request, style, null, icon_name);
++        this.with_importer_and_icon_name (app_name, category_type, category_request, style, null, icon_name, max_high_scores);
 +    }
 +
 +    [Version (deprecated=true, deprecated_since="3.0")]
 +    public Context.with_importer (string app_name,
 +                                  string category_type,
-+                                  Gtk.Window? game_window,
 +                                  CategoryRequestFunc category_request,
 +                                  Style style,
-+                                  Importer? importer)
++                                  Importer? importer,
++                                  int max_high_scores = 10)
 +    {
-+        this.with_importer_and_icon_name (app_name, category_type, game_window, category_request, style, importer, null);
++        this.with_importer_and_icon_name (app_name, category_type, category_request, style, importer, null, max_high_scores);
 +    }
 +
 +    [Version (deprecated=true, deprecated_since="3.0")]
 +    public Context.with_importer_and_icon_name (string app_name,
 +                                                string category_type,
-+                                                Gtk.Window? game_window,
 +                                                CategoryRequestFunc category_request,
 +                                                Style style,
 +                                                Importer? importer = null,
-+                                                string? icon_name = null)
++                                                string? icon_name = null,
++                                                int max_high_scores = 10)
      {
          Object (app_name: app_name,
                  category_type: category_type,
-                 game_window: game_window,
                  style: style,
 +                importer: importer,
-                 icon_name: icon_name ?? app_name);
+                 icon_name: icon_name ?? app_name,
+                 max_high_scores: max_high_scores <= -1 ? int.MAX : max_high_scores);
  
-         /* Note: the following functionality can be performed manually by
-@@ -179,6 +233,9 @@ public class Context : Object
+@@ -179,6 +221,9 @@ public class Context : Object
      public override void constructed ()
      {
          user_score_dir = Path.build_filename (Environment.get_user_data_dir (), app_name, "scores", null);
@@ -151,15 +117,33 @@ index 67c8ded..f389cce 100644
      }
  
      public Category[] get_categories ()
-@@ -311,6 +368,7 @@ public class Context : Object
+@@ -278,12 +323,12 @@ public class Context : Object
+      */
+     internal async bool add_score_internal (Score score, Category category, Cancellable? cancellable) throws Error
+     {
+-        /* Check if category exists in the HashTable. Insert one if not. */
+-        if (!scores_per_category.has_key (category))
+-            scores_per_category.set (category, new Gee.ArrayList<Score> ());
++        //* Check if category exists in the HashTable. Insert one if not. */
++        if (!scores_per_category.contains (category))
++            scores_per_category[category] = new GenericArray<Score> ();
+ 
+-        if (scores_per_category[category].add (score))
+-            current_category = category;
++        scores_per_category[category].add (score);
++        current_category = category;
+ 
+         var high_score_added = is_high_score (score.score, category);
+         yield save_score_to_file (score, category, cancellable);
+@@ -329,6 +374,7 @@ public class Context : Object
       * ``quit_app_func`` is called when the user presses the 'Quit' button on the dialog
       *
       */
 +    [Version (since="3.0")]
-     public async bool add_score_full (long score_value, Category category, NewGameFunc new_game_func, QuitAppFunc quit_app_func, Cancellable? cancellable) throws Error
-     {
-         Score score = new Score (score_value);
-@@ -418,12 +476,33 @@ public class Context : Object
+     public async bool add_score_full (long score_value,
+                                       Category category,
+                                       string? extra_info,
+@@ -445,12 +491,32 @@ public class Context : Object
          this.category_request = null;
      }
  
@@ -173,8 +157,7 @@ index 67c8ded..f389cce 100644
 +     * This is why gtk_dialog_run() was removed.
 +     */
 +    [Version (deprecated=true, deprecated_since="3.0")]
-+    public void run_dialog ()
-+        requires (game_window != null)
++    public void run_dialog (Gtk.Window game_window)
 +    {
 +        var main_loop = new MainLoop (null);
 +        var dialog = new Dialog (this, category_type, style, null, current_category, icon_name);
@@ -190,9 +173,9 @@ index 67c8ded..f389cce 100644
       *
       */
 +    [Version (since="3.0")]
-     public void present_dialog (Category? selected_category = null)
-         requires (game_window != null)
+     public void present_dialog (Gtk.Window game_window, Category? selected_category = null)
      {
+         if (selected_category == null || !scores_per_category.contains (selected_category))
 diff --git a/games/scores/directory-importer.vala b/games/scores/directory-importer.vala
 new file mode 100644
 index 0000000..0064ecc

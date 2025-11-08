@@ -36,8 +36,7 @@ public class Score : Object
 
     private int64 _time;
     /**
-     * Although the scores dialog does not currently display the time a
-     * score was achieved, it did in the past and it might again in the future.
+     * The (unix) time the player achieved the score.
      *
      */
     public int64 time
@@ -60,6 +59,44 @@ public class Score : Object
     }
 
     internal uint rank;
+
+    internal string _extra_info = "";
+    /**
+     * An optional __translated__ string to be shown to the user when
+     * they hover over a score in the score dialog.
+     * You may want to append a newline for formatting.
+     *
+     */
+    public string extra_info
+    {
+        set
+        {
+            if (value == null)
+            {
+                _extra_info = "";
+                return;
+            }
+
+            _extra_info = Base64.encode(value.data);
+        }
+    }
+
+    /**
+     * Gets extra_info as a user readable string.
+     *
+     */
+    public string get_user_extra_info ()
+    {
+        return (string) Base64.decode (_extra_info);
+    }
+
+    internal string get_internal_extra_info ()
+    {
+        if (_extra_info == "")
+            return "";
+        else
+            return "#" + _extra_info;
+    }
 
     /**
      * Creates a new Score.

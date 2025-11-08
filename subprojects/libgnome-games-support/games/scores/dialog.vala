@@ -192,7 +192,7 @@ private class Dialog : Adw.Dialog
     private void load_scores_for_category (Category category)
     {
         score_model.remove_all ();
-        var best_n_scores = context.get_high_scores (category, 10);
+        var best_n_scores = context.get_high_scores (category);
         foreach (var score in best_n_scores)
             score_model.append (score);
 
@@ -331,7 +331,15 @@ private class Dialog : Adw.Dialog
             }
             else
             {
-                list_item.child = new Gtk.Inscription (score.user);
+                var label = new Gtk.Inscription (score.user);
+                label.has_tooltip = true;
+                label.query_tooltip.connect ((x, y, keyboard_tooltip, tooltip) => {
+                    tooltip.set_text ("%s\n%s\n%s".printf (
+                        score.user, score.get_user_extra_info (), new DateTime.from_unix_utc (score.time).format ("%x")
+                    ));
+                    return true;
+                });
+                list_item.child = label;
             }
         });
 

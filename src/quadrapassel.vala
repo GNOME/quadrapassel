@@ -225,7 +225,7 @@ public class Quadrapassel : Adw.Application
         game_grid.attach (score_label, 2, 6, 1, 2);
 
         destroyed_descriptor_label = new Gtk.Label (null);
-        destroyed_descriptor_label.set_markup ("<span color='gray'>%s</span>".printf (_("Lines")));
+        destroyed_descriptor_label.set_markup ("<span color='gray'>%s</span>".printf (_("Rows")));
         destroyed_descriptor_label.halign = CENTER;
         destroyed_descriptor_label.valign = CENTER;
         game_grid.attach (destroyed_descriptor_label, 2, 9, 1, 1);
@@ -249,11 +249,11 @@ public class Quadrapassel : Adw.Application
         context = new Games.Scores.Context.with_importer_and_icon_name ("quadrapassel",
                                                                         /* Label on the scores dialog */
                                                                         _("Difficulty"),
-                                                                        window,
                                                                         create_category_from_key,
                                                                         Games.Scores.Style.POINTS_GREATER_IS_BETTER,
                                                                         new Games.Scores.HistoryFileImporter (parse_old_score),
-                                                                        APP_ID);
+                                                                        APP_ID,
+                                                                        -1);
 
         manette_monitor = new Manette.Monitor ();
         manette_monitor.device_connected.connect (manette_device_connected_cb);
@@ -278,21 +278,6 @@ public class Quadrapassel : Adw.Application
         settings.set_int ("window-width", width);
         settings.set_int ("window-height", height);
         settings.set_boolean ("window-is-maximized", window.maximized);
-
-        /* Record the score if the game isn't over. */
-        if (game != null && !game.game_over && game.score > 0)
-        {
-            context.add_score.begin (game.score, create_category_from_key (game.difficulty.to_string()), null, (object, result) => {
-                try
-                {
-                    context.add_score.end (result);
-                }
-                catch (Error e)
-                {
-                    warning ("%s", e.message);
-                }
-            });
-        }
     }
 
     protected override void activate ()
@@ -509,6 +494,26 @@ public class Quadrapassel : Adw.Application
     {
         if (window != null)
             window.close ();
+
+        /* Record the score if the game isn't over. */
+        if (game != null && !game.game_over && game.score > 0)
+        {
+            var category_key = game.difficulty.to_string();
+            if (game.pick_difficult_blocks)
+                category_key = category_key + "-difficult";
+
+            context.add_score_full.begin (game.score, create_category_from_key (category_key), get_game_extra_info (), null, null, null, null, (object, result) => {
+                try
+                {
+                    context.add_score_full.end (result);
+                }
+                catch (Error e)
+                {
+                    warning ("%s", e.message);
+                }
+            });
+        }
+
         base.quit ();
     }
 
@@ -837,6 +842,11 @@ public class Quadrapassel : Adw.Application
         update_score ();
     }
 
+    private string get_game_extra_info ()
+    {
+        return "%s: %i\n%s: %i\n".printf (_("Rows"), game.n_lines_destroyed, _("Level"), game.level);
+    }
+
     private void complete_cb ()
     {
         pause_action.set_enabled (false);
@@ -847,10 +857,14 @@ public class Quadrapassel : Adw.Application
 
         if (game.score > 0)
         {
-            context.add_score.begin (game.score, create_category_from_key (game.difficulty.to_string()), null, (object, result) => {
+            var category_key = game.difficulty.to_string();
+            if (game.pick_difficult_blocks)
+                category_key = category_key + "-difficult";
+
+            context.add_score_full.begin (game.score, create_category_from_key (category_key), get_game_extra_info (), window, new_game, quit_cb, null, (object, result) => {
                 try
                 {
-                    context.add_score.end (result);
+                    context.add_score_full.end (result);
                 }
                 catch (Error e)
                 {
@@ -868,7 +882,7 @@ public class Quadrapassel : Adw.Application
 
         var tokens = key.split ("-");
         if (tokens.length != 1)
-            return new Games.Scores.Category (key, tokens[0] + _("Difficult"));
+            return new Games.Scores.Category (key, tokens[0] + "-" + _("Difficult"));
 
         /* For the scores dialog. Just the difficulty level (a number). */
         return new Games.Scores.Category (key, key);
@@ -982,7 +996,11 @@ public class Quadrapassel : Adw.Application
 
     private void scores_cb ()
     {
-        context.present_dialog (create_category_from_key (settings.get_int ("difficulty").to_string()));
+        var category_key = settings.get_int ("difficulty").to_string();
+        if (settings.get_boolean ("pick-difficult-blocks"))
+            category_key = category_key + "-difficult";
+
+        context.present_dialog (window, create_category_from_key (category_key));
     }
 
     public static int main (string[] args)
