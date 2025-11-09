@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-11-01 21:58+0000\n"
-"PO-Revision-Date: 2025-11-02 07:39+0800\n"
+"POT-Creation-Date: 2025-11-08 17:13+0000\n"
+"PO-Revision-Date: 2025-11-09 09:08+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:93
-#: src/quadrapassel.vala:112 src/quadrapassel.vala:963
+#: src/quadrapassel.vala:112 src/quadrapassel.vala:977
 msgid "Quadrapassel"
 msgstr "俄罗斯方块"
 
@@ -347,11 +347,11 @@ msgstr "下一个"
 msgid "Score"
 msgstr "得分"
 
-#: src/quadrapassel.vala:228
-msgid "Lines"
+#: src/quadrapassel.vala:228 src/quadrapassel.vala:847
+msgid "Rows"
 msgstr "行数"
 
-#: src/quadrapassel.vala:239
+#: src/quadrapassel.vala:239 src/quadrapassel.vala:847
 msgid "Level"
 msgstr "级别"
 
@@ -360,103 +360,103 @@ msgstr "级别"
 msgid "Difficulty"
 msgstr "难度"
 
-#: src/quadrapassel.vala:367
+#: src/quadrapassel.vala:352
 msgid "Preferences"
 msgstr "首选项"
 
-#: src/quadrapassel.vala:370
+#: src/quadrapassel.vala:355
 msgid "Game"
 msgstr "游戏"
 
-#: src/quadrapassel.vala:373
+#: src/quadrapassel.vala:358
 msgid "Game Difficulty"
 msgstr "游戏难度"
 
-#: src/quadrapassel.vala:374
+#: src/quadrapassel.vala:359
 msgid "Change how difficult the game is"
 msgstr "更改游戏难度"
 
-#: src/quadrapassel.vala:376
+#: src/quadrapassel.vala:361
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
 msgstr "难度会影响您开始游戏时的级别以及预填充的方块行数量。"
 
-#: src/quadrapassel.vala:383
+#: src/quadrapassel.vala:368
 msgid "_Difficulty"
 msgstr "难度(_D)"
 
-#: src/quadrapassel.vala:391
+#: src/quadrapassel.vala:376
 msgid "Choose difficult _blocks"
 msgstr "选择困难的方块(_B)"
 
-#: src/quadrapassel.vala:400
+#: src/quadrapassel.vala:385
 msgid "In-Game"
 msgstr "游戏中"
 
-#: src/quadrapassel.vala:401
+#: src/quadrapassel.vala:386
 msgid "Change the experience of playing a game"
 msgstr "更改游戏游玩的体验"
 
-#: src/quadrapassel.vala:404
+#: src/quadrapassel.vala:389
 msgid "_Enable sounds"
 msgstr "启用声音(_E)"
 
-#: src/quadrapassel.vala:415
+#: src/quadrapassel.vala:400
 msgid "_Preview next block"
 msgstr "预览下一个方块(_P)"
 
-#: src/quadrapassel.vala:427
+#: src/quadrapassel.vala:412
 msgid "_Rotate blocks counterclockwise"
 msgstr "逆时针旋转块(_R)"
 
-#: src/quadrapassel.vala:434
+#: src/quadrapassel.vala:419
 msgid "Show _where the block will land"
 msgstr "显示方块将落到何处(_W)"
 
-#: src/quadrapassel.vala:451
+#: src/quadrapassel.vala:436
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
 msgstr "种子用来决定您获取的方块类型。一旦种子设定，每次游玩的游戏都是相同的。"
 
-#: src/quadrapassel.vala:455
+#: src/quadrapassel.vala:440
 msgid "_Use a custom seed for the game"
 msgstr "为游戏使用自定义种子(_U)"
 
-#: src/quadrapassel.vala:821
+#: src/quadrapassel.vala:826
 msgid "Unpause the game"
 msgstr "继续游戏"
 
-#: src/quadrapassel.vala:827
+#: src/quadrapassel.vala:832
 msgid "Pause the game"
 msgstr "暂停游戏"
 
-#: src/quadrapassel.vala:845
+#: src/quadrapassel.vala:855
 msgid "Start the game"
 msgstr "开始游戏"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:880
 msgid "Old Scores"
 msgstr "之前得分"
 
-#: src/quadrapassel.vala:871
+#: src/quadrapassel.vala:885
 msgid "Difficult"
 msgstr "难度"
 
-#: src/quadrapassel.vala:950
+#: src/quadrapassel.vala:964
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr "分数是基于每次消除的方块行数量计算得出。"
 
-#: src/quadrapassel.vala:966
+#: src/quadrapassel.vala:980
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
 msgstr ""
 "经典的旋转方块组合成完整行的游戏。但请注意，方块堆积得过高会导致游戏结束！"
 
-#: src/quadrapassel.vala:970
+#: src/quadrapassel.vala:984
 msgid "translator-credits"
 msgstr ""
 "Yang Zhang <zyangmath@gmail.com>, 2007\n"
@@ -465,6 +465,9 @@ msgstr ""
 "Wylmer Wang <wantinghard@gmail.com>, 2014\n"
 "Mingcong Bai <jeffbai@aosc.xyz>, 2018\n"
 "lumingzh <lumingzh@qq.com>, 2025"
+
+#~ msgid "Lines"
+#~ msgstr "行数"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Show Help"
