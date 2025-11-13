@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-11-01 18:32+0000\n"
-"PO-Revision-Date: 2025-11-01 22:32+0200\n"
+"POT-Creation-Date: 2025-11-10 12:43+0000\n"
+"PO-Revision-Date: 2025-11-13 15:40+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:93
-#: src/quadrapassel.vala:112 src/quadrapassel.vala:963
+#: src/quadrapassel.vala:112 src/quadrapassel.vala:977
 msgid "Quadrapassel"
 msgstr "Квадрапасл"
 
@@ -188,15 +188,11 @@ msgid "Rotate and Move pieces to fill rows"
 msgstr "Обертайте і пересувайте плитки з метою заповнення рядків"
 
 #: src/rules-dialog.blp:12
-#| msgctxt "game rules"
-#| msgid "Rows explode when they are completely Filled"
 msgctxt "game rules"
 msgid "Rows explode when they are completely filled"
 msgstr "Рядки буде знищено, коли їх буде повністю заповнено"
 
 #: src/rules-dialog.blp:17
-#| msgctxt "game rules"
-#| msgid "You gain points for each row removed"
 msgctxt "game rules"
 msgid "You gain points for each row destroyed"
 msgstr "Ви отримуватимете бали за кожен знищений рядок"
@@ -207,8 +203,8 @@ msgid ""
 "You can also get a bonus of 2500 × level × rows destroyed if the bottom "
 "layer is destroyed."
 msgstr ""
-"Крім того, ви можете отримати бонус у 2500 × рівень × кількість знищених"
-" рядків, якщо знищено нижній шар."
+"Крім того, ви можете отримати бонус у 2500 × рівень × кількість знищених "
+"рядків, якщо знищено нижній шар."
 
 #: src/rules-dialog.blp:25
 msgctxt "game rules"
@@ -360,11 +356,11 @@ msgstr "Далі"
 msgid "Score"
 msgstr "Рахунок"
 
-#: src/quadrapassel.vala:228
-msgid "Lines"
-msgstr "Рядів"
+#: src/quadrapassel.vala:228 src/quadrapassel.vala:847
+msgid "Rows"
+msgstr "Рядки"
 
-#: src/quadrapassel.vala:239
+#: src/quadrapassel.vala:239 src/quadrapassel.vala:847
 msgid "Level"
 msgstr "Рівень"
 
@@ -373,103 +369,100 @@ msgstr "Рівень"
 msgid "Difficulty"
 msgstr "Складність"
 
-#: src/quadrapassel.vala:367
+#: src/quadrapassel.vala:352
 msgid "Preferences"
 msgstr "Параметри"
 
-#: src/quadrapassel.vala:370
+#: src/quadrapassel.vala:355
 msgid "Game"
 msgstr "Гра"
 
-#: src/quadrapassel.vala:373
+#: src/quadrapassel.vala:358
 msgid "Game Difficulty"
 msgstr "Складність гри"
 
-#: src/quadrapassel.vala:374
+#: src/quadrapassel.vala:359
 msgid "Change how difficult the game is"
 msgstr "Змініть складність гри"
 
-#: src/quadrapassel.vala:376
+#: src/quadrapassel.vala:361
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
 msgstr ""
-"Складність впливає на рівень, з якого ви починатимете, і кількість"
-" попередньо заповнених рядків."
+"Складність впливає на рівень, з якого ви починатимете, і кількість "
+"попередньо заповнених рядків."
 
-#: src/quadrapassel.vala:383
+#: src/quadrapassel.vala:368
 msgid "_Difficulty"
 msgstr "С_кладність"
 
-#: src/quadrapassel.vala:391
+#: src/quadrapassel.vala:376
 msgid "Choose difficult _blocks"
 msgstr "Вибрати складні _блоки"
 
-#: src/quadrapassel.vala:400
+#: src/quadrapassel.vala:385
 msgid "In-Game"
 msgstr "У грі"
 
-#: src/quadrapassel.vala:401
+#: src/quadrapassel.vala:386
 msgid "Change the experience of playing a game"
 msgstr "Змінити поведінку гри"
 
-#: src/quadrapassel.vala:404
+#: src/quadrapassel.vala:389
 msgid "_Enable sounds"
 msgstr "_Увімкнути звуки"
 
-#: src/quadrapassel.vala:415
+#: src/quadrapassel.vala:400
 msgid "_Preview next block"
 msgstr "_Показувати наступний блок"
 
-#: src/quadrapassel.vala:427
+#: src/quadrapassel.vala:412
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Обертати проти годинникової стрілки"
 
-#: src/quadrapassel.vala:434
+#: src/quadrapassel.vala:419
 msgid "Show _where the block will land"
 msgstr "Показувати _місце попадання блоку"
 
-#: src/quadrapassel.vala:451
+#: src/quadrapassel.vala:436
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
 msgstr ""
-"Базу використовують для визначення отриманих вами блоків. Якщо зафіксувати"
-" базу, початкове компонування гри не змінюватиметься."
+"Базу використовують для визначення отриманих вами блоків. Якщо зафіксувати "
+"базу, початкове компонування гри не змінюватиметься."
 
-#: src/quadrapassel.vala:455
+#: src/quadrapassel.vala:440
 msgid "_Use a custom seed for the game"
 msgstr "_Нетипова база випадковості для гри"
 
-#: src/quadrapassel.vala:821
+#: src/quadrapassel.vala:826
 msgid "Unpause the game"
 msgstr "Відновити гру"
 
-#: src/quadrapassel.vala:827
+#: src/quadrapassel.vala:832
 msgid "Pause the game"
 msgstr "Призупинити гру"
 
-#: src/quadrapassel.vala:845
+#: src/quadrapassel.vala:855
 msgid "Start the game"
 msgstr "Почати гру"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:880
 msgid "Old Scores"
 msgstr "Попередні результати"
 
-#: src/quadrapassel.vala:871
+#: src/quadrapassel.vala:885
 msgid "Difficult"
 msgstr "Складна"
 
-#: src/quadrapassel.vala:950
-#| msgctxt "game rules"
-#| msgid ""
-#| "Points are calculated per move by rows destroyed times the current level"
+#: src/quadrapassel.vala:964
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr "Бали обчислюють на основі кількості знищених рядків."
 
-#: src/quadrapassel.vala:966
+#: src/quadrapassel.vala:980
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -478,13 +471,16 @@ msgstr ""
 "горизонтальні ряди. Але не складайте блоки у надто високі купи, бо гру буде "
 "програно!"
 
-#: src/quadrapassel.vala:970
+#: src/quadrapassel.vala:984
 msgid "translator-credits"
 msgstr ""
 "Юрій Сирота\n"
 "Максим Дзюманенко <dziumanenko@gmail.com>\n"
 "Wanderlust <wanderlust@ukr.net\n"
 ">Daniel Korostil <ted.korostiled@gmail.com>"
+
+#~ msgid "Lines"
+#~ msgstr "Рядів"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Show Help"
