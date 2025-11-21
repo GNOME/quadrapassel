@@ -54,6 +54,18 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
+    <release date="2025-11-20" version="49.2">
+      <description>
+        <ul>
+          <li>Updated translations: Ukrainian, Russian, Brazilian Portuguese,	Chinese (China), Slovenian, Georgian</li>
+          <li>Made the 'P' key pause the game</li>
+          <li>Replaced the user help docs with a 'Rules' dialog</li>
+          <li>Stopped the menu button taking focus</li>
+          <li>Fixed a bug where the game's score would not be recorded when the app was quit</li>
+          <li>Added total rows and level information to scores</li>
+        </ul>
+      </description>
+    </release>
     <release date="2025-10-10" version="49.1">
       <description>
         <ul>

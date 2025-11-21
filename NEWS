@@ -1,3 +1,16 @@
+quadrapassel 49.2
+=================
+* Updated translations: Ukrainian (Yuri Chornoivan), Russian (Sergej A.),
+			Brazilian Portuguese (Juliano de Souza Camargo),
+			'Chinese (China)' (lumingzh), Slovenian (Martin S.),
+			Georgian (Ekaterine Papava)
+* Made the 'P' key pause the game
+* Replaced the user help docs with a 'Rules' dialog
+* Stopped the menu button taking focus
+* Removed the libgee dependency & updated libgnome-games-support
+* Fixed a bug where the game's score would not be recorded when the app was quit
+* Added total rows and level information to scores
+
 quadrapassel 49.1
 =================
 * Updated translations: Occitan (Quentin PAGÈS), 'Chinese (China)' (lumingzh),
