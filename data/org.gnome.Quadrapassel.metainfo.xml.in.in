@@ -50,7 +50,7 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
-    <release date="2025-11-20" version="49.2">
+    <release date="2025-11-20" version="49.2.1">
       <description>
         <ul>
           <li>Updated translations: Ukrainian, Russian, Brazilian Portuguese, Chinese (China), Slovenian, Georgian</li>
