@@ -35,13 +35,9 @@
       <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/main/data/screenshot-1.png</image>
       <caption>The Quadrapassel window, with a game playing.</caption>
     </screenshot>
-    <screenshot type="default" width="410" height="610">
+    <screenshot width="410" height="610">
       <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/main/data/screenshot-2.png</image>
       <caption>The Quadrapassel window, with a game playing, in small form factor mode.</caption>
-    </screenshot>
-    <screenshot type="default" width="475" height="610">
-      <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/main/data/screenshot-3.png</image>
-      <caption>The Quadrapassel window, before starting a game.</caption>
     </screenshot>
   </screenshots>
   <url type="homepage">https://wiki.gnome.org/Apps/Quadrapassel/</url>
@@ -57,9 +53,9 @@
     <release date="2025-11-20" version="49.2">
       <description>
         <ul>
-          <li>Updated translations: Ukrainian, Russian, Brazilian Portuguese,	Chinese (China), Slovenian, Georgian</li>
+          <li>Updated translations: Ukrainian, Russian, Brazilian Portuguese, Chinese (China), Slovenian, Georgian</li>
           <li>Made the 'P' key pause the game</li>
-          <li>Replaced the user help docs with a 'Rules' dialog</li>
+          <li>Replaced the user help docs with a 'Game Rules' dialog</li>
           <li>Stopped the menu button taking focus</li>
           <li>Fixed a bug where the game's score would not be recorded when the app was quit</li>
           <li>Added total rows and level information to scores</li>
