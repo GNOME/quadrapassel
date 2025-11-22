@@ -153,10 +153,24 @@ public class Quadrapassel : Adw.Application
         section.append (_("Game _Rules"), "app.rules");
         section.append (_("_About Quadrapassel"), "app.about");
         menu_button = new Gtk.MenuButton ();
+        menu_button.primary = true;
+        menu_button.tooltip_text = _("Main Menu");
         menu_button.set_icon_name ("open-menu-symbolic");
         menu_button.set_menu_model (menu);
-        menu_button.focus_on_click = false;
-        menu_button.can_focus = false;
+        var toggle_button = menu_button.get_first_child ();
+        bool popover_shown = false;
+
+        window.notify["focus-widget"].connect (() => {
+            if (window.focus_widget == toggle_button &&
+                !menu_button.popover.visible &&
+                popover_shown == true)
+            {
+                game_aspect.grab_focus ();
+                popover_shown = false;
+            }
+        });
+
+        menu_button.popover.show.connect (() => popover_shown = true);
 
         headerbar.pack_end (menu_button);
 
@@ -807,7 +821,7 @@ public class Quadrapassel : Adw.Application
         game.pause_changed.connect (pause_changed_cb);
         game.shape_landed.connect (shape_landed_cb);
         game.complete.connect (complete_cb);
-        game_aspect.grab_focus();
+        game_aspect.grab_focus ();
         preview.game = game;
         view.game = game;
 
@@ -834,7 +848,7 @@ public class Quadrapassel : Adw.Application
             preview.set_hidden (false);
 
             // Focus the game aspect again
-            game_aspect.grab_focus();
+            game_aspect.grab_focus ();
         }
     }
 
