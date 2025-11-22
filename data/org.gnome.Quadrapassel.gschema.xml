@@ -56,7 +56,7 @@
       <summary>Width of the window in pixels</summary>
     </key>
     <key name="window-height" type="i">
-      <default>560</default>
+      <default>540</default>
       <summary>Height of the window in pixels</summary>
     </key>
     <key name="window-is-maximized" type="b">

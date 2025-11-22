@@ -161,10 +161,11 @@ public class Quadrapassel : Adw.Application
         headerbar.pack_end (menu_button);
 
         game_grid = new Gtk.Grid ();
-        game_grid.margin_start = 6;
-        game_grid.margin_end = 6;
-        game_grid.margin_bottom = 6;
-        game_grid.column_spacing = 4;
+        game_grid.margin_start = 12;
+        game_grid.margin_end = 12;
+        game_grid.margin_bottom = 12;
+        game_grid.column_spacing = 12;
+        game_grid.row_spacing = 6;
         toolbar_view.set_content (game_grid);
         breakpoint.apply.connect (breakpoint_apply_cb);
         breakpoint.unapply.connect (breakpoint_unapply_cb);
@@ -183,10 +184,7 @@ public class Quadrapassel : Adw.Application
         game_aspect.add_controller (long_press_gesture);
         game_aspect.receives_default = true;
         game_aspect.focusable = true;
-        game_aspect.margin_start = 6;
-        game_aspect.margin_end = 6;
         game_aspect.margin_top = 2;
-        game_aspect.margin_bottom = 6;
         game_grid.attach (game_aspect, 0, 0, 2, 17);
 
         pause_play_button = new Gtk.Button ();
@@ -219,6 +217,7 @@ public class Quadrapassel : Adw.Application
         score_descriptor_label.valign = CENTER;
         game_grid.attach (score_descriptor_label, 2, 5, 1, 1);
         score_label = new Gtk.Label ("<big>-</big>");
+        score_label.width_request = 120;
         score_label.use_markup = true;
         score_label.halign = CENTER;
         score_label.valign = CENTER;
@@ -294,6 +293,7 @@ public class Quadrapassel : Adw.Application
             game_grid.remove (game_grid.get_first_child ());
         }
         preview_frame.set_size_request (50, 50);
+        score_label.width_request = -1;
         game_grid.attach (score_descriptor_label, 0, 0, 2, 1);
         game_grid.attach (score_label, 2, 0, 2, 1);
         game_grid.attach (destroyed_descriptor_label, 4, 0, 2, 1);
@@ -311,6 +311,7 @@ public class Quadrapassel : Adw.Application
             game_grid.remove (game_grid.get_first_child ());
         }
         preview_frame.set_size_request (120, 120);
+        score_label.width_request = 120;
         game_grid.attach (game_aspect, 0, 0, 2, 18);
         game_grid.attach (preview_label, 2, 0, 1, 1);
         game_grid.attach (preview_frame, 2, 1, 1, 3);
