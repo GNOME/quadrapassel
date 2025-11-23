@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-11-08 17:13+0000\n"
-"PO-Revision-Date: 2025-11-09 09:08+0800\n"
+"POT-Creation-Date: 2025-11-22 20:58+0000\n"
+"PO-Revision-Date: 2025-11-23 08:04+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:93
-#: src/quadrapassel.vala:112 src/quadrapassel.vala:977
+#: src/quadrapassel.vala:112 src/quadrapassel.vala:992
 msgid "Quadrapassel"
 msgstr "俄罗斯方块"
 
@@ -66,10 +66,6 @@ msgstr "正在运行游戏的俄罗斯方块窗口。"
 msgid ""
 "The Quadrapassel window, with a game playing, in small form factor mode."
 msgstr "小尺寸模式中正在运行游戏的俄罗斯方块窗口。"
-
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:44
-msgid "The Quadrapassel window, before starting a game."
-msgstr "开始游戏前的俄罗斯方块窗口。"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -311,7 +307,7 @@ msgctxt "shortcut window"
 msgid "Drop"
 msgstr "落下"
 
-#: src/quadrapassel.vala:140 src/quadrapassel.vala:195
+#: src/quadrapassel.vala:140 src/quadrapassel.vala:207
 msgid "Start a new game"
 msgstr "开始新游戏"
 
@@ -339,124 +335,128 @@ msgstr "游戏规则(_R)"
 msgid "_About Quadrapassel"
 msgstr "关于俄罗斯方块(_A）"
 
-#: src/quadrapassel.vala:200
+#: src/quadrapassel.vala:157
+msgid "Main Menu"
+msgstr "主菜单"
+
+#: src/quadrapassel.vala:212
 msgid "Next"
 msgstr "下一个"
 
-#: src/quadrapassel.vala:217
+#: src/quadrapassel.vala:229
 msgid "Score"
 msgstr "得分"
 
-#: src/quadrapassel.vala:228 src/quadrapassel.vala:847
+#: src/quadrapassel.vala:241 src/quadrapassel.vala:862
 msgid "Rows"
 msgstr "行数"
 
-#: src/quadrapassel.vala:239 src/quadrapassel.vala:847
+#: src/quadrapassel.vala:252 src/quadrapassel.vala:862
 msgid "Level"
 msgstr "级别"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:251
+#: src/quadrapassel.vala:264
 msgid "Difficulty"
 msgstr "难度"
 
-#: src/quadrapassel.vala:352
+#: src/quadrapassel.vala:367
 msgid "Preferences"
 msgstr "首选项"
 
-#: src/quadrapassel.vala:355
+#: src/quadrapassel.vala:370
 msgid "Game"
 msgstr "游戏"
 
-#: src/quadrapassel.vala:358
+#: src/quadrapassel.vala:373
 msgid "Game Difficulty"
 msgstr "游戏难度"
 
-#: src/quadrapassel.vala:359
+#: src/quadrapassel.vala:374
 msgid "Change how difficult the game is"
 msgstr "更改游戏难度"
 
-#: src/quadrapassel.vala:361
+#: src/quadrapassel.vala:376
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
 msgstr "难度会影响您开始游戏时的级别以及预填充的方块行数量。"
 
-#: src/quadrapassel.vala:368
+#: src/quadrapassel.vala:383
 msgid "_Difficulty"
 msgstr "难度(_D)"
 
-#: src/quadrapassel.vala:376
+#: src/quadrapassel.vala:391
 msgid "Choose difficult _blocks"
 msgstr "选择困难的方块(_B)"
 
-#: src/quadrapassel.vala:385
+#: src/quadrapassel.vala:400
 msgid "In-Game"
 msgstr "游戏中"
 
-#: src/quadrapassel.vala:386
+#: src/quadrapassel.vala:401
 msgid "Change the experience of playing a game"
 msgstr "更改游戏游玩的体验"
 
-#: src/quadrapassel.vala:389
+#: src/quadrapassel.vala:404
 msgid "_Enable sounds"
 msgstr "启用声音(_E)"
 
-#: src/quadrapassel.vala:400
+#: src/quadrapassel.vala:415
 msgid "_Preview next block"
 msgstr "预览下一个方块(_P)"
 
-#: src/quadrapassel.vala:412
+#: src/quadrapassel.vala:427
 msgid "_Rotate blocks counterclockwise"
 msgstr "逆时针旋转块(_R)"
 
-#: src/quadrapassel.vala:419
+#: src/quadrapassel.vala:434
 msgid "Show _where the block will land"
 msgstr "显示方块将落到何处(_W)"
 
-#: src/quadrapassel.vala:436
+#: src/quadrapassel.vala:451
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
 msgstr "种子用来决定您获取的方块类型。一旦种子设定，每次游玩的游戏都是相同的。"
 
-#: src/quadrapassel.vala:440
+#: src/quadrapassel.vala:455
 msgid "_Use a custom seed for the game"
 msgstr "为游戏使用自定义种子(_U)"
 
-#: src/quadrapassel.vala:826
+#: src/quadrapassel.vala:841
 msgid "Unpause the game"
 msgstr "继续游戏"
 
-#: src/quadrapassel.vala:832
+#: src/quadrapassel.vala:847
 msgid "Pause the game"
 msgstr "暂停游戏"
 
-#: src/quadrapassel.vala:855
+#: src/quadrapassel.vala:870
 msgid "Start the game"
 msgstr "开始游戏"
 
-#: src/quadrapassel.vala:880
+#: src/quadrapassel.vala:895
 msgid "Old Scores"
 msgstr "之前得分"
 
-#: src/quadrapassel.vala:885
+#: src/quadrapassel.vala:900
 msgid "Difficult"
 msgstr "难度"
 
-#: src/quadrapassel.vala:964
+#: src/quadrapassel.vala:979
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr "分数是基于每次消除的方块行数量计算得出。"
 
-#: src/quadrapassel.vala:980
+#: src/quadrapassel.vala:995
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
 msgstr ""
 "经典的旋转方块组合成完整行的游戏。但请注意，方块堆积得过高会导致游戏结束！"
 
-#: src/quadrapassel.vala:984
+#: src/quadrapassel.vala:999
 msgid "translator-credits"
 msgstr ""
 "Yang Zhang <zyangmath@gmail.com>, 2007\n"
@@ -465,6 +465,9 @@ msgstr ""
 "Wylmer Wang <wantinghard@gmail.com>, 2014\n"
 "Mingcong Bai <jeffbai@aosc.xyz>, 2018\n"
 "lumingzh <lumingzh@qq.com>, 2025"
+
+#~ msgid "The Quadrapassel window, before starting a game."
+#~ msgstr "开始游戏前的俄罗斯方块窗口。"
 
 #~ msgid "Lines"
 #~ msgstr "行数"
