@@ -157,10 +157,12 @@ public class Quadrapassel : Adw.Application
         menu_button.tooltip_text = _("Main Menu");
         menu_button.set_icon_name ("open-menu-symbolic");
         menu_button.set_menu_model (menu);
+
         var toggle_button = menu_button.get_first_child ();
         bool popover_shown = false;
 
         window.notify["focus-widget"].connect (() => {
+            // Un-focus the Main Menu if it is not in use
             if (window.focus_widget == toggle_button &&
                 !menu_button.popover.visible &&
                 popover_shown == true)
@@ -168,6 +170,7 @@ public class Quadrapassel : Adw.Application
                 game_aspect.grab_focus ();
                 popover_shown = false;
             }
+            on_window_focus_change ();
         });
 
         menu_button.popover.show.connect (() => popover_shown = true);
@@ -341,7 +344,7 @@ public class Quadrapassel : Adw.Application
     {
         if (game != null && !game.game_over)
         {
-            if (window.is_active)
+            if (game_aspect.has_focus && window.is_active)
             {
                 if (!pause_requested)
                     game.paused = false;
