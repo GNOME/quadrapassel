@@ -843,15 +843,15 @@ public class Quadrapassel : Adw.Application
             pause_play_button.set_icon_name ("media-playback-start-symbolic");
             pause_play_button.tooltip_text = _("Unpause the game");
             preview.set_hidden (true);
+
+            // Focus the game aspect again
+            game_aspect.grab_focus ();
         }
         else
         {
             pause_play_button.set_icon_name ("media-playback-pause-symbolic");
             pause_play_button.tooltip_text = _("Pause the game");
             preview.set_hidden (false);
-
-            // Focus the game aspect again
-            game_aspect.grab_focus ();
         }
     }
 
