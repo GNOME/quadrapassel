@@ -47,6 +47,7 @@ private class Dialog : Adw.Dialog
     private Gtk.ColumnViewColumn? rank_column;
     private Gtk.ColumnViewColumn? score_column;
     private Gtk.ColumnViewColumn? player_column;
+    private Gtk.Entry? player_entry;
 
     private Style scores_style;
     private Score? new_high_score;
@@ -230,7 +231,7 @@ private class Dialog : Adw.Dialog
         controller.enter.connect (() => {
             Idle.add (() => {
                 score_view.scroll_to (new_high_score.rank - 1, null, Gtk.ListScrollFlags.FOCUS, null);
-                score_view.child_focus (Gtk.DirectionType.TAB_FORWARD);  // Focus the text entry
+                player_entry.grab_focus ();
                 return false;
             });
         });
@@ -312,22 +313,22 @@ private class Dialog : Adw.Dialog
 
             if (score == new_high_score)
             {
-                var entry = new Gtk.Entry ();
-                entry.text = score.user;
-                entry.set_has_frame (false);
-                entry.add_css_class ("heading");
-                entry.notify["text"].connect (() => {
-                    context.update_score_name (score, active_category, entry.get_text ());
-                    score.user = entry.get_text ();
+                player_entry = new Gtk.Entry ();
+                player_entry.text = score.user;
+                player_entry.set_has_frame (false);
+                player_entry.add_css_class ("heading");
+                player_entry.notify["text"].connect (() => {
+                    context.update_score_name (score, active_category, player_entry.get_text ());
+                    score.user = player_entry.get_text ();
                 });
-                entry.activate.connect (() => {
+                player_entry.activate.connect (() => {
                     if (new_game_button != null)
                         new_game_button.activate ();
                     else
                         this.close ();
                 });
 
-                list_item.child = entry;
+                list_item.child = player_entry;
             }
             else
             {
