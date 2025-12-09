@@ -1,3 +1,14 @@
+quadrapassel 49.2.2
+=================
+* Updated translations: Lithuanian (Aurimas Černius), Russian (Sergej A.),
+			Turkish (Sabri Ünal), 'Chinese (China)' (lumingzh),
+			Ukrainian (Yuri Chornoivan), Slovenian (Martin S.)
+* Fixed incorrect margins for the statistics when the next block preview was disabled
+* Fixed focus for the main menu, enabling screen readers and keyboard navigation
+* The game now pauses when it loses focus (pauses when the main menu is shown)
+* Updated libgnome-games-support
+* Fixed a bug where on a new score, the player name entry wouldn't be focused if its rank was less than 10
+
 quadrapassel 49.2
 =================
 * Updated translations: Ukrainian (Yuri Chornoivan), Russian (Sergej A.),

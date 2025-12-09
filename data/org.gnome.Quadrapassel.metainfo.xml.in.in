@@ -50,7 +50,18 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
-    <release date="2025-11-20" version="49.2">
+    <release date="2025-12-08" version="49.2.2">
+      <description>
+        <ul>
+          <li>Updated translations: Lithuanian, Russian, Turkish, Chinese (China), Ukrainian, Slovenian</li>
+          <li>Fixed incorrect margins for the statistics when the next block preview was disabled</li>
+          <li>Fixed focus for the main menu, enabling screen readers and keyboard navigation</li>
+          <li>The game now pauses when the main menu is shown</li>
+          <li>Fixed a bug where on a new score, the player name entry wouldn't be focused if its rank was less than 10</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2025-11-20" version="49.2.1">
       <description>
         <ul>
           <li>Updated translations: Ukrainian, Russian, Brazilian Portuguese, Chinese (China), Slovenian, Georgian</li>
