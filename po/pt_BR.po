@@ -31,8 +31,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-11-09 01:09+0000\n"
-"PO-Revision-Date: 2025-11-09 10:22-0300\n"
+"POT-Creation-Date: 2025-12-08 19:23+0000\n"
+"PO-Revision-Date: 2025-12-10 10:02-0300\n"
 "Last-Translator: Juliano de Souza Camargo <julianosc@pm.me>\n"
 "Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao/>\n"
 "Language: pt_BR\n"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:93
-#: src/quadrapassel.vala:112 src/quadrapassel.vala:977
+#: src/quadrapassel.vala:112 src/quadrapassel.vala:995
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -96,10 +96,6 @@ msgid ""
 msgstr ""
 "A janela do Quadrapassel, com um jogo rodando, no modo de fator de pequeno "
 "formato."
-
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:44
-msgid "The Quadrapassel window, before starting a game."
-msgstr "A janela do Quadrapassel, antes de iniciar um jogo."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -343,7 +339,7 @@ msgctxt "shortcut window"
 msgid "Drop"
 msgstr "Soltar"
 
-#: src/quadrapassel.vala:140 src/quadrapassel.vala:195
+#: src/quadrapassel.vala:140 src/quadrapassel.vala:210
 msgid "Start a new game"
 msgstr "Inicia um novo jogo"
 
@@ -371,44 +367,48 @@ msgstr "_Regras do jogo"
 msgid "_About Quadrapassel"
 msgstr "_Sobre o Quadrapassel"
 
-#: src/quadrapassel.vala:200
+#: src/quadrapassel.vala:157
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#: src/quadrapassel.vala:215
 msgid "Next"
 msgstr "Próximo"
 
-#: src/quadrapassel.vala:217
+#: src/quadrapassel.vala:232
 msgid "Score"
 msgstr "Pontuação"
 
-#: src/quadrapassel.vala:228 src/quadrapassel.vala:847
+#: src/quadrapassel.vala:244 src/quadrapassel.vala:865
 msgid "Rows"
 msgstr "Linhas"
 
-#: src/quadrapassel.vala:239 src/quadrapassel.vala:847
+#: src/quadrapassel.vala:255 src/quadrapassel.vala:865
 msgid "Level"
 msgstr "Nível"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:251
+#: src/quadrapassel.vala:267
 msgid "Difficulty"
 msgstr "Dificuldade"
 
-#: src/quadrapassel.vala:352
+#: src/quadrapassel.vala:370
 msgid "Preferences"
 msgstr "Preferências"
 
-#: src/quadrapassel.vala:355
+#: src/quadrapassel.vala:373
 msgid "Game"
 msgstr "Jogo"
 
-#: src/quadrapassel.vala:358
+#: src/quadrapassel.vala:376
 msgid "Game Difficulty"
 msgstr "Dificuldade do jogo"
 
-#: src/quadrapassel.vala:359
+#: src/quadrapassel.vala:377
 msgid "Change how difficult the game is"
 msgstr "Mude o quão difícil o jogo é"
 
-#: src/quadrapassel.vala:361
+#: src/quadrapassel.vala:379
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
@@ -416,39 +416,39 @@ msgstr ""
 "A dificuldade afeta o nível em que você inicia e quantas linhas são pré-"
 "preenchidas."
 
-#: src/quadrapassel.vala:368
+#: src/quadrapassel.vala:386
 msgid "_Difficulty"
 msgstr "_Dificuldade"
 
-#: src/quadrapassel.vala:376
+#: src/quadrapassel.vala:394
 msgid "Choose difficult _blocks"
 msgstr "Escolher _blocos difíceis"
 
-#: src/quadrapassel.vala:385
+#: src/quadrapassel.vala:403
 msgid "In-Game"
 msgstr "No jogo"
 
-#: src/quadrapassel.vala:386
+#: src/quadrapassel.vala:404
 msgid "Change the experience of playing a game"
 msgstr "Mude a experiência de jogar um jogo"
 
-#: src/quadrapassel.vala:389
+#: src/quadrapassel.vala:407
 msgid "_Enable sounds"
 msgstr "_Habilitar sons"
 
-#: src/quadrapassel.vala:400
+#: src/quadrapassel.vala:418
 msgid "_Preview next block"
 msgstr "_Visualizar próximo bloco"
 
-#: src/quadrapassel.vala:412
+#: src/quadrapassel.vala:430
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Girar blocos no sentido anti-horário"
 
-#: src/quadrapassel.vala:419
+#: src/quadrapassel.vala:437
 msgid "Show _where the block will land"
 msgstr "Mostrar _onde o bloco vai cair"
 
-#: src/quadrapassel.vala:436
+#: src/quadrapassel.vala:454
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
@@ -456,36 +456,36 @@ msgstr ""
 "A semente é usada para determinar quais blocos você obtém. Quando uma "
 "semente é definida, o jogo será sempre o mesmo."
 
-#: src/quadrapassel.vala:440
+#: src/quadrapassel.vala:458
 msgid "_Use a custom seed for the game"
 msgstr "_Use uma semente personalizada para o jogo"
 
-#: src/quadrapassel.vala:826
+#: src/quadrapassel.vala:844
 msgid "Unpause the game"
 msgstr "Resume o jogo"
 
-#: src/quadrapassel.vala:832
+#: src/quadrapassel.vala:853
 msgid "Pause the game"
 msgstr "Pausa o jogo"
 
-#: src/quadrapassel.vala:855
+#: src/quadrapassel.vala:873
 msgid "Start the game"
 msgstr "Inicia o jogo"
 
-#: src/quadrapassel.vala:880
+#: src/quadrapassel.vala:898
 msgid "Old Scores"
 msgstr "Pontuações anteriores"
 
-#: src/quadrapassel.vala:885
+#: src/quadrapassel.vala:903
 msgid "Difficult"
 msgstr "Difícil"
 
-#: src/quadrapassel.vala:964
+#: src/quadrapassel.vala:982
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr "Os pontos são calculados baseados em quantas linhas são destruídas."
 
-#: src/quadrapassel.vala:980
+#: src/quadrapassel.vala:998
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -493,7 +493,7 @@ msgstr ""
 "Um jogo clássico onde você gira blocos para fazer linhas completas, mas não "
 "empilhe seus blocos muito alto ou é o fim do jogo!"
 
-#: src/quadrapassel.vala:984
+#: src/quadrapassel.vala:1002
 msgid "translator-credits"
 msgstr ""
 "Sandro Nunes Henrique <sandro@conectiva.com.br>\n"
@@ -512,6 +512,9 @@ msgstr ""
 "Rodrigo Padula de Oliveira <contato@rodrigopadula.com>\n"
 "Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Juliano de Souza Camargo <julianosc@pm.me>"
+
+#~ msgid "The Quadrapassel window, before starting a game."
+#~ msgstr "A janela do Quadrapassel, antes de iniciar um jogo."
 
 #~ msgctxt "shortcut window"
 #~ msgid "Show Help"
