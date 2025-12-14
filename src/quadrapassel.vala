@@ -351,7 +351,7 @@ public class Quadrapassel : Adw.Application
             }
             else
             {
-                if (!pause_play_button.has_focus)
+                if (!pause_play_button.has_focus && !new_game_button.has_focus)
                     game.paused = true;
             }
         }
