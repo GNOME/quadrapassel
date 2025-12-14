@@ -11,21 +11,12 @@
 
 const int NCOLORS = 7;
 
-
-/* When the player holds either the left or right key, the game will begin automatically moving the tetrominos in that direction.
- * To accomplish that in a way expected by the player, there is 2 important delay. The "activation" delay and the "interval" delay.(These are made up names to explain).
- * 
- * The "activation" delay is the amount of time it takes until de auto move starts.
+/*
+ * The "activation" delay is the amount of time it takes until automatic movement starts.
  * The "interval" delay is the speed of the auto move.
- *
- * The interval delay is naturally (i think) expected by the players to be faster than the activation period/delay.
- * My subjective favorite values are 200 for activation and 40 for interval.
  */
-const int AUTOMOVE_ACTIVATION_TIME = 200; // 200
-const int AUTOMOVE_INTERVAL = 40; // 40
-
-
-
+const int AUTOMOVE_ACTIVATION_TIME = 200;
+const int AUTOMOVE_INTERVAL = 40;
 
 private const int block_table[448] =
 {
@@ -418,8 +409,9 @@ public class Game : Object
     {
         return try_rotate(-1);
     }
-    //will rotate the tetromino and if it doesn't fit, will try to move it a little horizontally so the rotation has the most chances of succeeding.
-    //Example use case: The tetromino is on the left of right side of the grid, because it will probably not fit after rotation, we move it a little so it still gets rotated if there is enough space around the tetromino.
+
+    /* This rotates the blocks and if they don't fit, will try to move them a little horizontally,
+     * so the rotation has the most chances of succeeding. */
     private bool try_rotate (int r_step)
     {
         if (game_over)
@@ -440,15 +432,13 @@ public class Game : Object
 
         foreach (int hmove in listHMoves)
         {
-            //tries to move the shape
             result = move_shape(hmove, vmove, r_step);
-            //if rotation succeeded, we stop
+            // if rotation succeeded, we stop
             if (result) {
                 break;
             }
         }
 
-        //we return if any of our tries succeeded
         return result;
     }
 
@@ -459,11 +449,9 @@ public class Game : Object
 
     public void set_fast_forward (bool enable)
     {
-		//gamestate check
         if (fast_forward == enable || game_over)
             return;
 
-		//we move the shape down a little, according to parameters
         if (enable)
             if (!move_shape (0, 1, 0))
                 return;
@@ -506,18 +494,11 @@ public class Game : Object
         return true;
     }
 
-    // Following are the two callbacks who manages the auto moving of tetrominos. setup_fast_move_cb() and move().
-    // Why two? As explained in a more detailled manner above the declaration of the constants AUTOMOVE_INTERVAL and AUTOMOVE_ACTIVATION_TIME,
-    // the logic of auto moving is kinda separated in 2 phases : the "activating" and the "activated" phase, both of which have different delays.
-
     private bool setup_fast_move_cb ()
     {
         if (!move ())
         {
-            //it should not stop trying to move the block until the player releases the left or right key. it could happens that on the edge of the screen
-            //we rotate the block then it can move a little bit more.
-
-            //return false;
+            return false;
         }
         fast_move_timeout = Timeout.add (AUTOMOVE_INTERVAL, move);
 
@@ -528,12 +509,9 @@ public class Game : Object
     {
         if (!move_shape (fast_move_direction, 0, 0))
         {
-            //it should not stop trying to move the block until the player releases the left or right key. it could happens that on the edge of the screen
-            //we rotate the block then it can move a little bit more.
-
-            //fast_move_timeout = 0;
-            //fast_move_direction = 0;
-            //return false;
+            fast_move_timeout = 0;
+            fast_move_direction = 0;
+            return false;
         }
 
         return true;
@@ -612,17 +590,17 @@ public class Game : Object
     }
 
 
-    //array to keep track of the amount of each shape we have created. it's used for a better random shape distribution algorithm
-    private int[] distshapecount = { 0, 0, 0, 0, 0, 0, 0 }; //there are 7 different shapes
+    /* This keeps track of the amount of each shape we've created, there are 7 types. */
+    private int[] distshapecount = { 0, 0, 0, 0, 0, 0, 0 };
 
 
     private Shape pick_random_shape ()
     {
         
-        int shapecount = 7; //number of existing shapes, at least in distshapecount
+        int shapecount = 7;
 
-        //find the smallest number in distshapecount
-        int lowerbound = distshapecount[0]; //pick the first. maybe it already the smallest, but we will look for smaller ones
+        // Find the shape we've used the least.
+        int lowerbound = distshapecount[0];
         for (int i = 0; i < shapecount; i++)
         {
             if (distshapecount[i] < lowerbound) {
@@ -631,11 +609,11 @@ public class Game : Object
         }
 
         double sum = 0d;
-        //we compute the sum of the weigh of each shape. the less the shape has been given to the player, the bigger the weigh
+        // Compute the sum of the weighs of all the shapes.
         for (int i = 0; i < shapecount; i++)
         {
             int rel = distshapecount[i] - lowerbound;
-            //we have to make sure it's not 0
+            // make sure it's not 0
             if (rel < 1) { rel = 1; }
 
             double weigh = 1d / (double)(rel * rel);
@@ -643,23 +621,22 @@ public class Game : Object
             sum += weigh;
         }
 
-        //we pick the random shape
         double rndshape = sum * Random.next_double ();
 
-        //we figure out in which area the random number landed
-        double currentpos = 0d; //our current position
-        int newshape = 0; //increases by one every loop, until we find the area
+        // Figure out in which area the random number landed
+        double currentpos = 0d;
+        int newshape = 0; // increases by one every loop, until we find the area
         for (int i = 0; i < shapecount; i++)
         {
             int rel = distshapecount[i] - lowerbound;
-            //we have to make sure it's not 0
+
             if (rel < 1) { rel = 1; }
 
             double weigh = 1d / (double)(rel * rel);
 
             currentpos += weigh;
 
-            //if it's inside we break
+            // if the shape is inside, break
             if (rndshape < currentpos) {
                 break;
             }
@@ -673,7 +650,7 @@ public class Game : Object
 
     private Shape pick_difficult_shapes ()
     {
-	/* The algorithm comes from Federico Poloni's "bastet" game */
+        /* The algorithm comes from Federico Poloni's "bastet" game */
         var metrics = new int[NCOLORS];
         for (var type = 0; type < NCOLORS; type++)
         {
@@ -765,7 +742,7 @@ public class Game : Object
             new_shape = make_shape (possible_types[3], Random.int_range (0, 4));
 
 	    /* Look, this one is a great fit. It would be a shame if it wouldn't be given next */
-	    //next_shape = make_shape (possible_types[NCOLORS - 1], Random.int_range (0, 4));
+	    // next_shape = make_shape (possible_types[NCOLORS - 1], Random.int_range (0, 4));
 
 	    return new_shape;
     }
@@ -936,7 +913,6 @@ public class Game : Object
             shape.x += x_step;
             shape.y += y_step;
 
-            //Raises the appropriate signals. It is possible for multiple moves to be made at once, hence the reason why they are all separated. I have experienced refresh problems when not all concerned signals are called.
             if (x_step != 0)
                 shape_moved ();
 

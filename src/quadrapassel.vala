@@ -63,6 +63,7 @@ public class Quadrapassel : Adw.Application
 
     private Manette.Monitor manette_monitor;
     private bool is_manette_button_down = false;
+    private GLib.Timer manette_axis_timer = new GLib.Timer ();
 
     private bool pause_requested = false;
 
@@ -540,6 +541,7 @@ public class Quadrapassel : Adw.Application
     {
         manette_device.button_press_event.connect (manette_button_press_event_cb);
         manette_device.button_release_event.connect (manette_button_release_event_cb);
+        manette_device.absolute_axis_event.connect (manette_absolute_axis_event_cb);
     }
 
     private void manette_button_press_event_cb (Manette.Event event)
@@ -587,25 +589,32 @@ public class Quadrapassel : Adw.Application
             game.move_right ();
             return;
         }
-        else if (button == InputEventCode.BTN_A)
+        else if (button == InputEventCode.BTN_TL2 || button == InputEventCode.BTN_TL)
         {
             game.rotate_left ();
             return;
         }
-        else if (button == InputEventCode.BTN_B)
+        else if (button == InputEventCode.BTN_TR2 || button == InputEventCode.BTN_TR)
         {
             game.rotate_right ();
             return;
         }
-        else if (button == InputEventCode.BTN_DPAD_DOWN)
+        else if (button == InputEventCode.BTN_B || button == InputEventCode.BTN_A)
         {
             game.set_fast_forward (true);
             return;
         }
-        else if (button == InputEventCode.BTN_DPAD_UP)
+        else if (button == InputEventCode.BTN_DPAD_DOWN)
         {
             game.drop ();
             return;
+        }
+        else if (button == InputEventCode.BTN_DPAD_UP)
+        {
+            if (settings.get_boolean ("rotate-counter-clock-wise"))
+                game.rotate_left ();
+            else
+                game.rotate_right ();
         }
     }
 
@@ -626,11 +635,43 @@ public class Quadrapassel : Adw.Application
             game.stop_moving ();
             return;
         }
-        else if (button == InputEventCode.BTN_DPAD_DOWN)
+        else if (button == InputEventCode.BTN_B || button == InputEventCode.BTN_A)
         {
             game.set_fast_forward (false);
             return;
         }
+    }
+
+    private void manette_absolute_axis_event_cb (Manette.Event event)
+    {
+        if (game == null || game.paused)
+            return;
+
+        uint16 axis;
+        double val;
+        event.get_absolute (out axis, out val);
+
+        if (axis != InputEventCode.ABS_X)
+            return;
+
+        var abs = val.abs();
+        if (abs < 0.5)
+        {
+            game.stop_moving ();
+            return;
+        }
+
+        ulong elapsed;
+        manette_axis_timer.elapsed (out elapsed);
+        if (elapsed < 50000)
+            return;
+
+        manette_axis_timer.start ();
+
+        if (val > 0)
+            game.move_right ();
+        else if (val < 0)
+            game.move_left ();
     }
 
     private bool key_press_event_cb (Gtk.EventControllerKey controller,
