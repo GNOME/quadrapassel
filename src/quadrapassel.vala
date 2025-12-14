@@ -24,8 +24,8 @@ public class Quadrapassel : Adw.Application
     /* Game scores */
     private Games.Scores.Context context;
 
-    /* AspectFrame for the game */
-    private Gtk.AspectFrame game_aspect;
+    /* GridFrame for the game */
+    private Games.GridFrame game_aspect;
 
     /* Game being played */
     private Game? game = null;
@@ -188,15 +188,15 @@ public class Quadrapassel : Adw.Application
         breakpoint.unapply.connect (breakpoint_unapply_cb);
 
         view = new GameView ();
-        view.hexpand = true;
-        view.vexpand = true;
         view.theme = settings.get_string ("theme");
         view.mute = !settings.get_boolean ("sound");
         view.show_shadow = settings.get_boolean ("show-shadow");
         view.game = new Game (20, 10, 1, 20, 10); // Game board size, changed width to 10
-        game_aspect = new Gtk.AspectFrame (0.5f, 0.5f, 10.0f/20.0f, false); // change to 10 from 14
+        game_aspect = new Games.GridFrame (10, 20);
+        game_aspect.hexpand = true;
+        game_aspect.vexpand = true;
         game_aspect.set_size_request (200, 400);
-        game_aspect.set_child (view);
+        game_aspect.child = view;
         game_aspect.add_controller (swipe_gesture);
         game_aspect.add_controller (long_press_gesture);
         game_aspect.receives_default = true;
