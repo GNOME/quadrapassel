@@ -498,8 +498,8 @@ public class Quadrapassel : Adw.Application
         theme_preview_frame.set_child (theme_preview);
         var dialog = new Games.ThemeSelectorDialog ({"plain", "tangoflat", "tangoshaded", "clean", "modern"},
                                                     settings.get_string ("theme"),
-                                                    theme_preview_frame,
-                                                    theme_update);
+                                                    theme_preview_frame);
+        dialog.change_theme.connect (theme_update);
         dialog.present (window);
     }
 
@@ -521,7 +521,7 @@ public class Quadrapassel : Adw.Application
             if (game.pick_difficult_blocks)
                 category_key = category_key + "-difficult";
 
-            context.add_score_full.begin (game.score, create_category_from_key (category_key), get_game_extra_info (), null, null, null, null, (object, result) => {
+            context.add_score_full.begin (game.score, create_category_from_key (category_key), get_game_extra_info (), null, false, null, (object, result) => {
                 try
                 {
                     context.add_score_full.end (result);
@@ -880,10 +880,14 @@ public class Quadrapassel : Adw.Application
             if (game.pick_difficult_blocks)
                 category_key = category_key + "-difficult";
 
-            context.add_score_full.begin (game.score, create_category_from_key (category_key), get_game_extra_info (), window, new_game, quit_cb, null, (object, result) => {
+            context.add_score_full.begin (game.score, create_category_from_key (category_key), get_game_extra_info (), window, true, null, (object, result) => {
                 try
                 {
-                    context.add_score_full.end (result);
+                    var score_result = context.add_score_full.end (result).action;
+                    if (score_result == Games.Scores.AddScoreAction.NEW_GAME)
+                        new_game ();
+                    else if (score_result == Games.Scores.AddScoreAction.QUIT)
+                        quit_cb ();
                 }
                 catch (Error e)
                 {

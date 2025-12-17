@@ -1,22 +1,22 @@
-From cb9fe607ab246619419ca668eaedb9c2b388c63c Mon Sep 17 00:00:00 2001
+From e87c1ad0b342c7c5c2da6bb687dde1390f7f6000 Mon Sep 17 00:00:00 2001
 From: Will Warner <willwwarner@proton.me>
-Date: Sat, 8 Nov 2025 08:35:13 -0500
+Date: Mon, 15 Dec 2025 15:15:06 -0500
 Subject: [PATCH] Revert "Remove all deprecated APIs"
 
 This reverts commit b610c747398bbd1f0908a2e91926942532ed2160.
 ---
- games/meson.build                       |   5 +-
- games/scores/context.vala               |  76 +++++++++++++-
+ games/meson.build                       |   3 +
+ games/scores/context.vala               |  66 ++++++++++++
  games/scores/directory-importer.vala    | 107 ++++++++++++++++++++
  games/scores/history-file-importer.vala | 127 ++++++++++++++++++++++++
  games/scores/importer.vala              | 100 +++++++++++++++++++
- 5 files changed, 409 insertions(+), 6 deletions(-)
+ 5 files changed, 403 insertions(+)
  create mode 100644 games/scores/directory-importer.vala
  create mode 100644 games/scores/history-file-importer.vala
  create mode 100644 games/scores/importer.vala
 
 diff --git a/games/meson.build b/games/meson.build
-index 3bb665b..13387c9 100644
+index 3bb665b..a7b2818 100644
 --- a/games/meson.build
 +++ b/games/meson.build
 @@ -15,6 +15,9 @@ lggs = static_library('gnome-games-support-3',
@@ -29,15 +29,8 @@ index 3bb665b..13387c9 100644
          'scores/score.vala',
      ],
      c_args: [
-@@ -24,4 +27,4 @@ lggs = static_library('gnome-games-support-3',
-     ],
-     vala_header: 'libgnome-games-support.h',
-     dependencies: lggs_interface_deps,
--)
-+)
-\ No newline at end of file
 diff --git a/games/scores/context.vala b/games/scores/context.vala
-index 77e0b6e..2432d79 100644
+index 2f1f160..f6361b9 100644
 --- a/games/scores/context.vala
 +++ b/games/scores/context.vala
 @@ -83,6 +83,13 @@ public class Context : Object
@@ -117,33 +110,15 @@ index 77e0b6e..2432d79 100644
      }
  
      public Category[] get_categories ()
-@@ -278,12 +323,12 @@ public class Context : Object
-      */
-     internal async bool add_score_internal (Score score, Category category, Cancellable? cancellable) throws Error
-     {
--        /* Check if category exists in the HashTable. Insert one if not. */
--        if (!scores_per_category.has_key (category))
--            scores_per_category.set (category, new Gee.ArrayList<Score> ());
-+        //* Check if category exists in the HashTable. Insert one if not. */
-+        if (!scores_per_category.contains (category))
-+            scores_per_category[category] = new GenericArray<Score> ();
- 
--        if (scores_per_category[category].add (score))
--            current_category = category;
-+        scores_per_category[category].add (score);
-+        current_category = category;
- 
-         var high_score_added = is_high_score (score.score, category);
-         yield save_score_to_file (score, category, cancellable);
-@@ -329,6 +374,7 @@ public class Context : Object
-      * ``quit_app_func`` is called when the user presses the 'Quit' button on the dialog
+@@ -307,6 +352,7 @@ public class Context : Object
+      * ``show_action_buttons`` specifies if 'New Game' and 'Quit' buttons should be shown on the dialog
       *
       */
 +    [Version (since="3.0")]
-     public async bool add_score_full (long score_value,
-                                       Category category,
-                                       string? extra_info,
-@@ -445,12 +491,32 @@ public class Context : Object
+     public async AddScoreResult add_score_full (long score_value,
+                                                 Category category,
+                                                 string? extra_info,
+@@ -425,12 +471,32 @@ public class Context : Object
          this.category_request = null;
      }
  

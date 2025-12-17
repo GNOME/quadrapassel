@@ -53,6 +53,8 @@ private class Dialog : Adw.Dialog
     private Score? new_high_score;
     private string? score_or_time;
 
+    public AddScoreAction action { get; set; default = AddScoreAction.NONE; }
+
     public Dialog (Context context, string category_type, Style style, Score? new_high_score, Category? current_cat, string icon_name)
     {
         this.context = context;
@@ -347,7 +349,7 @@ private class Dialog : Adw.Dialog
         player_column = new Gtk.ColumnViewColumn (_("Player"), factory);
     }
 
-    internal void add_bottom_buttons (Context.NewGameFunc new_game_func, Context.QuitAppFunc quit_app_func)
+    internal void add_bottom_buttons ()
     {
         headerbar.set_show_end_title_buttons (true);
         new_game_button = new Gtk.Button.with_label (_("_New Game")) {
@@ -355,8 +357,8 @@ private class Dialog : Adw.Dialog
             use_underline = true
         };
         new_game_button.clicked.connect (() => {
+            this.action = AddScoreAction.NEW_GAME;
             this.close ();
-            new_game_func ();
         });
 
         Adw.ButtonContent quit_button_content = new Adw.ButtonContent () {
@@ -371,8 +373,8 @@ private class Dialog : Adw.Dialog
             valign = Gtk.Align.CENTER
         };
         quit_button.clicked.connect (() => {
+            this.action = AddScoreAction.QUIT;
             this.close ();
-            quit_app_func ();
         });
 
         var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
