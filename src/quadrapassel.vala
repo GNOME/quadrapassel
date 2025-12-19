@@ -67,6 +67,22 @@ public class Quadrapassel : Adw.Application
 
     private bool pause_requested = false;
 
+    /* Keyboard Keys */
+    private uint return_key = Gdk.keyval_from_name ("Return");
+    private uint pause_key = Gdk.keyval_from_name ("Pause");
+    private uint w_key = Gdk.keyval_from_name ("W");
+    private uint a_key = Gdk.keyval_from_name ("A");
+    private uint s_key = Gdk.keyval_from_name ("S");
+    private uint d_key = Gdk.keyval_from_name ("D");
+    private uint q_key = Gdk.keyval_from_name ("Q");
+    private uint e_key = Gdk.keyval_from_name ("E");
+    private uint p_key = Gdk.keyval_from_name ("P");
+    private uint space_key = Gdk.keyval_from_name ("space");
+    private uint up_key = Gdk.keyval_from_name ("Up");
+    private uint down_key = Gdk.keyval_from_name ("Down");
+    private uint left_key = Gdk.keyval_from_name ("Left");
+    private uint right_key = Gdk.keyval_from_name ("Right");
+
     private const GLib.ActionEntry[] action_entries =
     {
         { "new-game",      new_game_cb    },
@@ -95,7 +111,6 @@ public class Quadrapassel : Adw.Application
 
         add_action_entries (action_entries, this);
         set_accels_for_action ("app.new-game", {"<Primary>n"});
-        set_accels_for_action ("app.pause", {"Pause"});
         set_accels_for_action ("app.menu", {"F10"});
         set_accels_for_action ("app.rules", {"F1"});
         set_accels_for_action ("app.quit", {"<Primary>q"});
@@ -679,18 +694,16 @@ public class Quadrapassel : Adw.Application
                                      uint keycode,
                                      Gdk.ModifierType state)
     {
-        string key = Gdk.keyval_name (Gdk.keyval_to_upper (keyval));
-
         if (game != null)
         {
-            if (game.game_over && key == "Return")
+            if (game.game_over && keyval == return_key)
             {
                 new_game();
             }
         }
         else
         {
-            if (key == "Return")
+            if (keyval == return_key)
             {
                 new_game ();
                 return true;
@@ -699,7 +712,7 @@ public class Quadrapassel : Adw.Application
             return false;
         }
 
-        if (key == "Pause" || key == "P")
+        if (keyval == pause_key || keyval == p_key)
         {
             if (!game.game_over)
                 user_pause ();
@@ -709,17 +722,17 @@ public class Quadrapassel : Adw.Application
         if (game.paused)
             return false;
 
-        if (key == "Left" || key == "A")
+        if (keyval == left_key || keyval == a_key)
         {
             game.move_left ();
             return true;
         }
-        else if (key == "Right" || key == "D")
+        else if (keyval == right_key || keyval == d_key)
         {
             game.move_right ();
             return true;
         }
-        else if (key == "Up" || key == "W")
+        else if (keyval == up_key || keyval == w_key)
         {
             if (settings.get_boolean ("rotate-counter-clock-wise"))
                 game.rotate_left ();
@@ -727,20 +740,20 @@ public class Quadrapassel : Adw.Application
                 game.rotate_right ();
             return true;
         }
-        else if (key == "Down" || key == "S")
+        else if (keyval == down_key || keyval == s_key)
         {
             game.set_fast_forward (true);
             return true;
         }
-        else if (key == "Q")
+        else if (keyval == q_key)
         {
             game.rotate_left ();
         }
-        else if (key == "E")
+        else if (keyval == e_key)
         {
             game.rotate_right ();
         }
-        else if (key == "space")
+        else if (keyval == space_key)
         {
             game.drop ();
             return true;
@@ -754,21 +767,19 @@ public class Quadrapassel : Adw.Application
                                        uint keycode,
                                        Gdk.ModifierType state)
     {
-        string key = Gdk.keyval_name (Gdk.keyval_to_upper (keyval));
-
         if (game == null)
             return;
 
-        if (key == "Left"  ||
-            key == "Right" ||
-            key == "A"     ||
-            key == "D")
+        if (keyval == left_key  ||
+            keyval == right_key ||
+            keyval == a_key     ||
+            keyval == d_key)
         {
             game.stop_moving ();
             return;
         }
-        else if (key == "Down" ||
-                 key == "S")
+        else if (keyval == down_key ||
+                 keyval == s_key)
         {
             game.set_fast_forward (false);
             return;
