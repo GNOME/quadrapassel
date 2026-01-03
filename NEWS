@@ -1,3 +1,13 @@
+quadrapassel 50.alpha
+=================
+* Updated the Swedish translation (Anders Jonsson)
+* Made game view and preview exactly fit the blocks
+* Fixed a bug where the game would pause when the new game button got focused
+* Updated libgnome-games-support
+* Improved game controller support
+* Fixed a bug where the statistics labels would expand past the window
+* Reduced the minimum window height
+
 quadrapassel 49.2.3
 =================
 * Updated Brazilian Portuguese translation (Juliano de Souza Camargo)

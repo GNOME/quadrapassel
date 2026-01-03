@@ -50,6 +50,18 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
+    <release date="2026-01-03" version="50~alpha" type="development">
+      <description>
+        <ul>
+          <li>Updated the Swedish translation</li>
+          <li>Made game view and preview exactly fit the blocks</li>
+          <li>Fixed a bug where the game would pause when the new game button got focused</li>
+          <li>Improved game controller support</li>
+          <li>Fixed a bug where the statistics labels would expand past the window</li>
+          <li>Reduced the minimum window height</li>
+        </ul>
+      </description>
+    </release>
     <release date="2025-12-10" version="49.2.3">
       <description>
         <ul>
