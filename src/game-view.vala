@@ -208,6 +208,26 @@ public class GameView : Gtk.Widget {
         text_overlay.allocate (width, height, -1, transform);
     }
 
+    protected override void measure (Gtk.Orientation orientation,
+                                     int for_size,
+                                     out int minimum,
+                                     out int natural,
+                                     out int minimum_baseline,
+                                     out int natural_baseline)
+    {
+        if (orientation == Gtk.Orientation.VERTICAL)
+        {
+            minimum = 100;
+            natural = 400;
+        }
+        else
+        {
+            minimum = 50;
+            natural = 200;
+        }
+        minimum_baseline = natural_baseline = -1;
+    }
+
     private void add_block_widget (BlockWidget widget) {
         widget.insert_before (this, text_overlay);
     }

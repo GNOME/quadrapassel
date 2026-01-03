@@ -38,7 +38,7 @@ public class Quadrapassel : Adw.Application
 
     /* Preview of the next shape */
     private Preview preview;
-    private Gtk.AspectFrame preview_frame;
+    private Games.GridFrame preview_frame;
     private Gtk.Label preview_label;
 
     /* Label showing current score */
@@ -123,7 +123,7 @@ public class Quadrapassel : Adw.Application
     {
         var builder = new Gtk.Builder ();
         window = new Adw.ApplicationWindow (this);
-        window.set_size_request (360, 525);
+        window.set_size_request (360, 320);
         window.icon_name = APP_ID;
         window.title = _("Quadrapassel");
 
@@ -211,7 +211,6 @@ public class Quadrapassel : Adw.Application
         game_aspect = new Games.GridFrame (10, 20);
         game_aspect.hexpand = true;
         game_aspect.vexpand = true;
-        game_aspect.set_size_request (200, 400);
         game_aspect.child = view;
         game_aspect.add_controller (swipe_gesture);
         game_aspect.add_controller (long_press_gesture);
@@ -231,16 +230,16 @@ public class Quadrapassel : Adw.Application
         preview_label.set_markup("<span color='gray'>%s</span>".printf (_("Next")));
         preview_label.halign = CENTER;
         preview_label.valign = CENTER;
+        preview_label.ellipsize = Pango.EllipsizeMode.END;
         game_grid.attach (preview_label, 2, 0, 1, 1);
 
-        preview_frame = new Gtk.AspectFrame (0.5f, 0.5f, 1.0f, false);
-        preview_frame.hexpand = true;
+        preview_frame = new Games.GridFrame (5, 5);
         preview_frame.vexpand = true;
-        preview_frame.set_size_request (120, 120);
-        preview = new Preview (preview_frame);
+        preview_frame.set_size_request (50, 50);
+        preview = new Preview ();
         preview.theme = settings.get_string ("theme");
         preview.enabled = settings.get_boolean ("do-preview");
-        preview_frame.set_child (preview);
+        preview_frame.child = preview;
 
         game_grid.attach (preview_frame, 2, 1, 1, 3);
 
@@ -248,6 +247,7 @@ public class Quadrapassel : Adw.Application
         score_descriptor_label.set_markup ("<span color='gray'>%s</span>".printf (_("Score")));
         score_descriptor_label.halign = CENTER;
         score_descriptor_label.valign = CENTER;
+        score_descriptor_label.ellipsize = Pango.EllipsizeMode.END;
         game_grid.attach (score_descriptor_label, 2, 5, 1, 1);
         score_label = new Gtk.Label ("<big>-</big>");
         score_label.width_request = 120;
@@ -260,6 +260,7 @@ public class Quadrapassel : Adw.Application
         destroyed_descriptor_label.set_markup ("<span color='gray'>%s</span>".printf (_("Rows")));
         destroyed_descriptor_label.halign = CENTER;
         destroyed_descriptor_label.valign = CENTER;
+        destroyed_descriptor_label.ellipsize = Pango.EllipsizeMode.END;
         game_grid.attach (destroyed_descriptor_label, 2, 9, 1, 1);
         n_destroyed_label = new Gtk.Label ("<big>-</big>");
         n_destroyed_label.set_use_markup (true);
@@ -271,6 +272,7 @@ public class Quadrapassel : Adw.Application
         level_descriptor_label.set_markup ("<span color='gray'>%s</span>".printf (_("Level")));
         level_descriptor_label.halign = CENTER;
         level_descriptor_label.valign = CENTER;
+        level_descriptor_label.ellipsize = Pango.EllipsizeMode.END;
         game_grid.attach (level_descriptor_label, 2, 13, 1, 1);
         level_label = new Gtk.Label ("<big>-</big>");
         level_label.use_markup = true;
@@ -325,7 +327,6 @@ public class Quadrapassel : Adw.Application
         {
             game_grid.remove (game_grid.get_first_child ());
         }
-        preview_frame.set_size_request (50, 50);
         score_label.width_request = -1;
         game_grid.attach (score_descriptor_label, 0, 0, 2, 1);
         game_grid.attach (score_label, 2, 0, 2, 1);
@@ -343,7 +344,6 @@ public class Quadrapassel : Adw.Application
         {
             game_grid.remove (game_grid.get_first_child ());
         }
-        preview_frame.set_size_request (120, 120);
         score_label.width_request = 120;
         game_grid.attach (game_aspect, 0, 0, 2, 18);
         game_grid.attach (preview_label, 2, 0, 1, 1);
@@ -502,16 +502,16 @@ public class Quadrapassel : Adw.Application
 
     private void theme_cb ()
     {
-        var theme_preview_frame = new Gtk.AspectFrame (0.5f, 0.5f, 1.0f, false);
+        var theme_preview_frame = new Games.GridFrame (5, 5);
         theme_preview_frame.hexpand = true;
         theme_preview_frame.vexpand = true;
         theme_preview_frame.set_size_request (150, 150);
         theme_preview_frame.margin_top = 12;
         theme_preview_frame.margin_bottom = 12;
-        theme_preview = new Preview (theme_preview_frame);
+        theme_preview = new Preview ();
         theme_preview.theme = settings.get_string ("theme");
         theme_preview.game = new Game ();
-        theme_preview_frame.set_child (theme_preview);
+        theme_preview_frame.child = theme_preview;
         var dialog = new Games.ThemeSelectorDialog ({"plain", "tangoflat", "tangoshaded", "clean", "modern"},
                                                     settings.get_string ("theme"),
                                                     theme_preview_frame);
