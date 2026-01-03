@@ -52,7 +52,7 @@
       <description>Whether to pick blocks that are hard to place.</description>
     </key>
     <key name="window-width" type="i">
-      <default>425</default>
+      <default>400</default>
       <summary>Width of the window in pixels</summary>
     </key>
     <key name="window-height" type="i">
