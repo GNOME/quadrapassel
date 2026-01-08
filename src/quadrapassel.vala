@@ -70,13 +70,13 @@ public class Quadrapassel : Adw.Application
     /* Keyboard Keys */
     private uint return_key = Gdk.keyval_from_name ("Return");
     private uint pause_key = Gdk.keyval_from_name ("Pause");
-    private uint w_key = Gdk.keyval_from_name ("W");
-    private uint a_key = Gdk.keyval_from_name ("A");
-    private uint s_key = Gdk.keyval_from_name ("S");
-    private uint d_key = Gdk.keyval_from_name ("D");
-    private uint q_key = Gdk.keyval_from_name ("Q");
-    private uint e_key = Gdk.keyval_from_name ("E");
-    private uint p_key = Gdk.keyval_from_name ("P");
+    private uint w_key = Gdk.keyval_from_name ("w");
+    private uint a_key = Gdk.keyval_from_name ("a");
+    private uint s_key = Gdk.keyval_from_name ("s");
+    private uint d_key = Gdk.keyval_from_name ("d");
+    private uint q_key = Gdk.keyval_from_name ("q");
+    private uint e_key = Gdk.keyval_from_name ("e");
+    private uint p_key = Gdk.keyval_from_name ("p");
     private uint space_key = Gdk.keyval_from_name ("space");
     private uint up_key = Gdk.keyval_from_name ("Up");
     private uint down_key = Gdk.keyval_from_name ("Down");
