@@ -19,12 +19,10 @@ i18n = import('i18n')
 
 cc = meson.get_compiler('c')
 
-gee_dependency = dependency ('gee-0.8')
-gsound_dependency = dependency('gsound', version: '>= 1.0.2')
 gtk_dependency = dependency('gtk4', version: '>= 4.4')
 libadwaita_dependency = dependency('libadwaita-1', version: '>= 1.8')
 libgnome_games_support = subproject ('libgnome-games-support',
-	    		             default_options: 'superproject_name=quadrapassel')
+	    		             default_options: [ 'superproject_name=quadrapassel', 'sounds=true' ])
 libgnome_games_support_dependency = libgnome_games_support.get_variable ('lggs_dependency')
 manette_dependency = dependency('manette-0.2', version: '>= 0.2.10')
 pango_dependency = dependency('pango')

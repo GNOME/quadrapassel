@@ -83,13 +83,6 @@ public class Context : Object
      */
     public int max_high_scores { get; construct; }
 
-    /**
-     * The {@link [Games.Scores.Importer]} for the context (eg. HistoryFileImporter).
-     *
-     */
-    [Version (deprecated=true, deprecated_since="3.0")]
-    public Importer? importer { get; construct; }
-
     private Category? current_category = null;
 
     private HashTable<Category, GenericArray<Score>> scores_per_category =
@@ -116,7 +109,6 @@ public class Context : Object
      * Emitted when the score dialog is closed.
      *
      */
-    [Version (since="3.0")]
     public signal void dialog_closed ();
 
     class construct
@@ -159,43 +151,9 @@ public class Context : Object
                     string? icon_name = null,
                     int max_high_scores = 10)
     {
-        this.with_importer_and_icon_name (app_name, category_type, category_request, style, null, null, max_high_scores);
-    }
-
-    public Context.with_icon_name (string app_name,
-                                   string category_type,
-                                   CategoryRequestFunc category_request,
-                                   Style style,
-                                   string icon_name,
-                                   int max_high_scores = 10)
-    {
-        this.with_importer_and_icon_name (app_name, category_type, category_request, style, null, icon_name, max_high_scores);
-    }
-
-    [Version (deprecated=true, deprecated_since="3.0")]
-    public Context.with_importer (string app_name,
-                                  string category_type,
-                                  CategoryRequestFunc category_request,
-                                  Style style,
-                                  Importer? importer,
-                                  int max_high_scores = 10)
-    {
-        this.with_importer_and_icon_name (app_name, category_type, category_request, style, importer, null, max_high_scores);
-    }
-
-    [Version (deprecated=true, deprecated_since="3.0")]
-    public Context.with_importer_and_icon_name (string app_name,
-                                                string category_type,
-                                                CategoryRequestFunc category_request,
-                                                Style style,
-                                                Importer? importer = null,
-                                                string? icon_name = null,
-                                                int max_high_scores = 10)
-    {
         Object (app_name: app_name,
                 category_type: category_type,
                 style: style,
-                importer: importer,
                 icon_name: icon_name ?? app_name,
                 max_high_scores: max_high_scores <= -1 ? int.MAX : max_high_scores);
 
@@ -216,9 +174,6 @@ public class Context : Object
     public override void constructed ()
     {
         user_score_dir = Path.build_filename (Environment.get_user_data_dir (), app_name, "scores", null);
-
-        if (importer != null)
-            importer.run (this, user_score_dir);
     }
 
     public Category[] get_categories ()
@@ -348,7 +303,6 @@ public class Context : Object
      * ``show_action_buttons`` specifies if 'New Game' and 'Quit' buttons should be shown on the dialog
      *
      */
-    [Version (since="3.0")]
     public async AddScoreResult add_score_full (long score_value,
                                                 Category category,
                                                 string? extra_info,
@@ -460,32 +414,12 @@ public class Context : Object
         }
     }
 
-    /* This code violates the essential rule:
-     *
-     *   Never iterate a context created outside the library, including the
-     *   global-default or thread-default contexts. Otherwise, sources created
-     *   in the application may be dispatched when the application is not
-     *   expecting it, causing re-entrancy problems for the application code.
-     *
-     * This is why gtk_dialog_run() was removed.
-     */
-    [Version (deprecated=true, deprecated_since="3.0")]
-    public void run_dialog (Gtk.Window game_window)
-    {
-        var main_loop = new MainLoop (null);
-        var dialog = new Dialog (this, category_type, style, null, current_category, icon_name);
-        dialog.closed.connect (() => main_loop.quit ());
-        dialog.present (game_window);
-        main_loop.run ();
-    }
-
     /**
      * Presents the score dialog on top of ``game_window``.
      *
      * ``selected_category`` is the score category to select by default (optional)
      *
      */
-    [Version (since="3.0")]
     public void present_dialog (Gtk.Window game_window, Category? selected_category = null)
     {
         if (selected_category == null || !scores_per_category.contains (selected_category))

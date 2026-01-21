@@ -139,6 +139,23 @@ public class GameView : Gtk.Widget {
         }
     }
 
+    /*\
+    * * Sound
+    \*/
+
+    /* false to play sound effects */
+    internal bool mute { internal set; private get; default = true; }
+
+    internal Games.Sounds sounds;
+
+    private void play_sound (string name)
+    {
+        if (!mute)
+        {
+            sounds.play (name + ".ogg");
+        }
+    }
+
     public GameView ()
     {
         text_overlay = new TextOverlay ();
@@ -147,6 +164,16 @@ public class GameView : Gtk.Widget {
         blocks = new HashTable<Block, BlockWidget> (direct_hash, direct_equal);
         shape_blocks = new HashTable<Block, BlockWidget> (direct_hash, direct_equal);
         shadow_blocks = new HashTable<Block, BlockWidget> (direct_hash, direct_equal);
+
+        try
+        {
+            sounds = new Games.Sounds (SOUND_DIRECTORY);
+        }
+        catch (Error e)
+        {
+            critical ("Failed to create sounds: %s".printf (e.message));
+            mute = true;
+        }
     }
 
     protected override void size_allocate (int width, int height, int baseline) {
@@ -416,64 +443,6 @@ public class GameView : Gtk.Widget {
         }
         else
             text_overlay.visible = false;
-    }
-
-    /*\
-    * * Sound
-    \*/
-
-    /* false to play sound effects */
-    internal bool mute { internal set; private get; default = true; }
-
-    private GSound.Context sound_context;
-    private SoundContextState sound_context_state = SoundContextState.INITIAL;
-
-    private enum SoundContextState
-    {
-        INITIAL,
-        WORKING,
-        ERRORED
-    }
-
-    private void init_sound ()
-     // requires (sound_context_state == SoundContextState.INITIAL)
-    {
-        try
-        {
-            sound_context = new GSound.Context ();
-            sound_context_state = SoundContextState.WORKING;
-        }
-        catch (Error e)
-        {
-            warning (e.message);
-            sound_context_state = SoundContextState.ERRORED;
-        }
-    }
-
-    private void play_sound (string name)
-    {
-        if (!mute)
-        {
-            if (sound_context_state == SoundContextState.INITIAL)
-                init_sound ();
-            if (sound_context_state == SoundContextState.WORKING)
-                _play_sound (name, sound_context);
-        }
-    }
-
-    private static void _play_sound (string _name, GSound.Context sound_context)
-    {
-        string name = _name + ".ogg";
-        string path = Path.build_filename (SOUND_DIRECTORY, name);
-        try
-        {
-            sound_context.play_simple (null, GSound.Attribute.MEDIA_NAME, name,
-                                             GSound.Attribute.MEDIA_FILENAME, path);
-        }
-        catch (Error e)
-        {
-            warning (e.message);
-        }
     }
 }
 

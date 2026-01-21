@@ -44,8 +44,6 @@ executable(meson.project_name(),
         '--vapidir', join_paths(meson.current_source_dir(), 'vapi')
     ],
     dependencies: [
-    	gee_dependency,
-        gsound_dependency,
         gtk_dependency,
         libadwaita_dependency,
         libgnome_games_support_dependency,
