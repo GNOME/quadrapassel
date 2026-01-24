@@ -93,17 +93,17 @@ public class Quadrapassel : Adw.Application
     private uint left_key = Gdk.keyval_from_name ("Left");
     private uint right_key = Gdk.keyval_from_name ("Right");
 
-    private const GLib.ActionEntry[] action_entries =
+    private const GLib.ActionEntry[] ACTION_ENTRIES =
     {
-        { "new-game",      new_game_cb    },
-        { "pause",         pause_cb       },
-        { "scores",        scores_cb      },
-        { "menu",          menu_cb        },
-        { "theme",         theme_cb       },
-        { "preferences",   preferences_cb },
-        { "rules",         rules_cb       },
-        { "about",         about_cb       },
-        { "quit",          quit_cb        }
+        { "new-game", new_game_cb },
+        { "pause", pause_cb },
+        { "scores", scores_cb },
+        { "menu", menu_cb },
+        { "theme", theme_cb },
+        { "preferences", preferences_cb },
+        { "rules", rules_cb },
+        { "about", about_cb },
+        { "quit", quit_cb }
     };
 
     public Quadrapassel ()
@@ -119,7 +119,7 @@ public class Quadrapassel : Adw.Application
 
         Environment.set_application_name (_("Quadrapassel"));
 
-        add_action_entries (action_entries, this);
+        add_action_entries (ACTION_ENTRIES, this);
         set_accels_for_action ("app.new-game", {"<Primary>n"});
         set_accels_for_action ("app.menu", {"F10"});
         set_accels_for_action ("app.rules", {"F1"});
@@ -237,7 +237,7 @@ public class Quadrapassel : Adw.Application
         headerbar.pack_end (pause_play_button);
 
         preview_label = new Gtk.Label (null);
-        preview_label.set_markup("<span color='gray'>%s</span>".printf (_("Next")));
+        preview_label.set_markup ("<span color='gray'>%s</span>".printf (_("Next")));
         preview_label.halign = CENTER;
         preview_label.valign = CENTER;
         preview_label.ellipsize = Pango.EllipsizeMode.END;
@@ -315,7 +315,7 @@ public class Quadrapassel : Adw.Application
         base.shutdown ();
 
         /* Save window state */
-        settings.set_int ("window-width", window.get_width());
+        settings.set_int ("window-width", window.get_width ());
         int width, height;
         window.get_default_size (out width, out height);
 
@@ -543,7 +543,7 @@ public class Quadrapassel : Adw.Application
         /* Record the score if the game isn't over. */
         if (game != null && !game.game_over && game.score > 0)
         {
-            var category_key = game.difficulty.to_string();
+            var category_key = game.difficulty.to_string ();
             if (game.pick_difficult_blocks)
                 category_key = category_key + "-difficult";
 
@@ -582,18 +582,18 @@ public class Quadrapassel : Adw.Application
 
         if (button == InputEventCode.BTN_SELECT)
         {
-            new_game();
+            new_game ();
             return;
         }
 
         if (button == InputEventCode.BTN_START)
         {
             if (game == null)
-                new_game();
+                new_game ();
             else if (!game.game_over)
                 user_pause ();
             else
-                new_game();
+                new_game ();
 
             return;
         }
@@ -679,7 +679,7 @@ public class Quadrapassel : Adw.Application
         if (axis != InputEventCode.ABS_X)
             return;
 
-        var abs = val.abs();
+        var abs = val.abs ();
         if (abs < 0.5)
         {
             game.stop_moving ();
@@ -708,7 +708,7 @@ public class Quadrapassel : Adw.Application
         {
             if (game.game_over && keyval == return_key)
             {
-                new_game();
+                new_game ();
             }
         }
         else
@@ -780,10 +780,7 @@ public class Quadrapassel : Adw.Application
         if (game == null)
             return;
 
-        if (keyval == left_key  ||
-            keyval == right_key ||
-            keyval == a_key     ||
-            keyval == d_key)
+        if (keyval == left_key || keyval == right_key || keyval == a_key || keyval == d_key)
         {
             game.stop_moving ();
             return;
@@ -938,7 +935,7 @@ public class Quadrapassel : Adw.Application
 
         if (game.score > 0)
         {
-            var category_key = game.difficulty.to_string();
+            var category_key = game.difficulty.to_string ();
             if (game.pick_difficult_blocks)
                 category_key = category_key + "-difficult";
 
@@ -1081,7 +1078,7 @@ public class Quadrapassel : Adw.Application
 
     private void scores_cb ()
     {
-        var category_key = settings.get_int ("difficulty").to_string();
+        var category_key = settings.get_int ("difficulty").to_string ();
         if (settings.get_boolean ("pick-difficult-blocks"))
             category_key = category_key + "-difficult";
 
@@ -1099,4 +1096,3 @@ public class Quadrapassel : Adw.Application
         return app.run (args);
     }
 }
-

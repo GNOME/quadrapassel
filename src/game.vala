@@ -28,7 +28,7 @@ const int NCOLORS = 7;
 const int AUTOMOVE_ACTIVATION_TIME = 200;
 const int AUTOMOVE_INTERVAL = 40;
 
-private const int block_table[448] =
+private const int BLOCK_TABLE[448] =
 {
 
     /* *** */
@@ -381,7 +381,7 @@ public class Game : Object
     public void start ()
     {
         has_started = true;
-        make_next_shape();
+        make_next_shape ();
         add_shape ();
         setup_drop_timer ();
         started ();
@@ -413,11 +413,11 @@ public class Game : Object
 
     public bool rotate_left ()
     {
-        return try_rotate(1);
+        return try_rotate (1);
     }
     public bool rotate_right ()
     {
-        return try_rotate(-1);
+        return try_rotate (-1);
     }
 
     /* This rotates the blocks and if they don't fit, will try to move them a little horizontally,
@@ -431,18 +431,18 @@ public class Game : Object
         if (shape.y < 0)
             vmove = 1;
 
-        List<int> listHMoves = new List<int>();
-        listHMoves.append(0);
-        listHMoves.append(1);
-        listHMoves.append(-1);
-        listHMoves.append(2);
-        listHMoves.append(-2);
+        List<int> hmoves = new List<int> ();
+        hmoves.append (0);
+        hmoves.append (1);
+        hmoves.append (-1);
+        hmoves.append (2);
+        hmoves.append (-2);
 
         bool result = false;
 
-        foreach (int hmove in listHMoves)
+        foreach (int hmove in hmoves)
         {
-            result = move_shape(hmove, vmove, r_step);
+            result = move_shape (hmove, vmove, r_step);
             // if rotation succeeded, we stop
             if (result) {
                 break;
@@ -574,7 +574,7 @@ public class Game : Object
     {
         shape = (owned) next_shape;
 
-        make_next_shape();
+        make_next_shape ();
 
         foreach (var b in shape.blocks)
         {
@@ -606,7 +606,6 @@ public class Game : Object
 
     private Shape pick_random_shape ()
     {
-        
         int shapecount = 7;
 
         // Find the shape we've used the least.
@@ -739,7 +738,7 @@ public class Game : Object
             }
         }
 
-        var new_shape = new Shape();
+        var new_shape = new Shape ();
         /* Actually choose a piece */
         var rnd = Random.int_range (0, 99);
         if (rnd < 75)
@@ -751,10 +750,10 @@ public class Game : Object
         else
             new_shape = make_shape (possible_types[3], Random.int_range (0, 4));
 
-	    /* Look, this one is a great fit. It would be a shame if it wouldn't be given next */
-	    // next_shape = make_shape (possible_types[NCOLORS - 1], Random.int_range (0, 4));
+        /* Look, this one is a great fit. It would be a shame if it wouldn't be given next */
+        // next_shape = make_shape (possible_types[NCOLORS - 1], Random.int_range (0, 4));
 
-	    return new_shape;
+        return new_shape;
     }
 
     private Shape make_shape (int type, int rotation)
@@ -770,7 +769,7 @@ public class Game : Object
         {
             for (var y = 0; y < 4; y++)
             {
-                if (block_table[offset + y * 4 + x] == 0)
+                if (BLOCK_TABLE[offset + y * 4 + x] == 0)
                     continue;
 
                 min_width = int.min (x, min_width);
@@ -958,7 +957,7 @@ public class Game : Object
         {
             for (var y = 0; y < 4; y++)
             {
-                if (block_table[offset + y * 4 + x] != 0)
+                if (BLOCK_TABLE[offset + y * 4 + x] != 0)
                 {
                     b.data.x = x;
                     b.data.y = y;

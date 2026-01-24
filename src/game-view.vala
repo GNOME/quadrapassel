@@ -330,7 +330,7 @@ public class GameView : Gtk.Widget {
             }
         }
 
-        queue_allocate();
+        queue_allocate ();
     }
 
     private void shape_moved_cb ()
@@ -490,7 +490,7 @@ private class TextOverlay : Gtk.DrawingArea
         layout.set_font_description (desc);
 
         layout.get_size (out lw, out lh);
-        cr.move_to (-((double)lw / Pango.SCALE) / 2, -((double)lh / Pango.SCALE) / 2);
+        cr.move_to (- ((double) lw / Pango.SCALE) / 2, - ((double) lh / Pango.SCALE) / 2);
         Pango.cairo_layout_path (cr, layout);
         cr.set_source_rgb (0.333333333333, 0.341176470588, 0.32549019607);
 
@@ -578,7 +578,7 @@ public class BlockWidget: Gtk.Widget
 
     private void snapshot_modern (Gtk.Snapshot snapshot) {
         // Colors from GNOME color scheme
-        const float colors[21] =
+        const float COLORS[21] =
         {
             0.929411765f, 0.2f, 0.231372549f,
             0.341176471f, 0.890196078f, 0.537254902f,
@@ -592,9 +592,9 @@ public class BlockWidget: Gtk.Widget
         float border_width = 0.05f;
 
         var color = Gdk.RGBA () {
-            red = colors[color * 3],
-            green = colors[color * 3 + 1],
-            blue = colors[color * 3 + 2],
+            red = COLORS[color * 3],
+            green = COLORS[color * 3 + 1],
+            blue = COLORS[color * 3 + 2],
             alpha = 1.0f
         };
 
@@ -659,7 +659,7 @@ public class BlockWidget: Gtk.Widget
 
     private void draw_plain (Cairo.Context cr, int width, int height)
     {
-        const double colors[32] =
+        const double COLORS[32] =
         {
             1.0, 0.0, 0.0,
             0.0, 1.0, 0.0,
@@ -670,7 +670,7 @@ public class BlockWidget: Gtk.Widget
             0.0, 1.0, 1.0
         };
 
-        cr.set_source_rgb (colors[color * 3], colors[color * 3 + 1], colors[color * 3 + 2]);
+        cr.set_source_rgb (COLORS[color * 3], COLORS[color * 3 + 1], COLORS[color * 3 + 2]);
         cr.paint ();
     }
 
@@ -678,7 +678,7 @@ public class BlockWidget: Gtk.Widget
     {
         cr.move_to (x + r, y);
         cr.line_to (x + w - r, y);
-        cr.curve_to (x + w - (r/2), y, x + w, y + r / 2, x + w, y + r);
+        cr.curve_to (x + w - (r / 2), y, x + w, y + r / 2, x + w, y + r);
         cr.line_to (x + w, y + h - r);
         cr.curve_to (x + w, y + h - r / 2, x + w - r / 2, y + h, x + w - r, y + h);
         cr.line_to (x + r, y + h);
@@ -689,9 +689,9 @@ public class BlockWidget: Gtk.Widget
 
     private void draw_clean (Cairo.Context cr, int width, int height)
     {
-        /* The colors, first the lighter then the darker fill (for the gradient)
+        /* The COLORS, first the lighter then the darker fill (for the gradient)
            and then the stroke color  */
-        const double colors[72] =
+        const double COLORS[72] =
         {
             0.780392156863, 0.247058823529, 0.247058823529,
             0.713725490196, 0.192156862745, 0.192156862745,
@@ -730,14 +730,14 @@ public class BlockWidget: Gtk.Widget
         draw_rounded_rectangle (cr, 0.05, 0.05, 0.9, 0.9, 0.05);
 
         /* Draw outline */
-        cr.set_source_rgb (colors[color * 9 + 6], colors[color * 9 + 7], colors[color * 9 + 8]);
+        cr.set_source_rgb (COLORS[color * 9 + 6], COLORS[color * 9 + 7], COLORS[color * 9 + 8]);
         cr.set_line_width (0.1);
         cr.stroke_preserve ();
 
         /* Fill with gradient */
         var pat = new Cairo.Pattern.linear (0.35, 0, 0.55, 0.9);
-        pat.add_color_stop_rgb (0.0, colors[color * 9], colors[color * 9 + 1], colors[color * 9 + 2]);
-        pat.add_color_stop_rgb (1.0, colors[color * 9 + 3], colors[color * 9 + 4], colors[color * 9 + 5]);
+        pat.add_color_stop_rgb (0.0, COLORS[color * 9], COLORS[color * 9 + 1], COLORS[color * 9 + 2]);
+        pat.add_color_stop_rgb (1.0, COLORS[color * 9 + 3], COLORS[color * 9 + 4], COLORS[color * 9 + 5]);
         cr.set_source (pat);
         cr.fill ();
     }
@@ -745,7 +745,7 @@ public class BlockWidget: Gtk.Widget
     private void draw_tango (Cairo.Context cr, int width, int height, bool use_gradients)
     {
         /* The following garbage is derived from the official tango style guide */
-        const double colors[72] =
+        const double COLORS[72] =
         {
             0.93725490196078431, 0.16078431372549021, 0.16078431372549021,
             0.8, 0.0, 0.0,
@@ -783,18 +783,18 @@ public class BlockWidget: Gtk.Widget
         if (use_gradients)
         {
              var pat = new Cairo.Pattern.linear (0.35, 0, 0.55, 0.9);
-             pat.add_color_stop_rgb (0.0, colors[color * 9], colors[color * 9 + 1], colors[color * 9 + 2]);
-             pat.add_color_stop_rgb (1.0, colors[color * 9 + 3], colors[color * 9 + 4], colors[color * 9 + 5]);
+             pat.add_color_stop_rgb (0.0, COLORS[color * 9], COLORS[color * 9 + 1], COLORS[color * 9 + 2]);
+             pat.add_color_stop_rgb (1.0, COLORS[color * 9 + 3], COLORS[color * 9 + 4], COLORS[color * 9 + 5]);
              cr.set_source (pat);
         }
         else {
-             cr.set_source_rgb (colors[color * 9], colors[color * 9 + 1], colors[color * 9 + 2]);
+             cr.set_source_rgb (COLORS[color * 9], COLORS[color * 9 + 1], COLORS[color * 9 + 2]);
         }
 
         draw_rounded_rectangle (cr, 0.05, 0.05, 0.9, 0.9, 0.2);
         cr.fill_preserve ();  // fill with shaded gradient
 
-        cr.set_source_rgb (colors[color * 9 + 6], colors[color * 9 + 7], colors[color * 9 + 8]);
+        cr.set_source_rgb (COLORS[color * 9 + 6], COLORS[color * 9 + 7], COLORS[color * 9 + 8]);
 
         // Add darker outline
         cr.set_line_width (0.1);
@@ -826,4 +826,3 @@ public class BlockWidget: Gtk.Widget
         cr.stroke ();
     }
 }
-
