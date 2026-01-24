@@ -12,20 +12,35 @@ variables:
     RUNTIME_REPO: "https://nightly.gnome.org/gnome-nightly.flatpakrepo"
     BUNDLE: "org.gnome.Quadrapassel.Devel.flatpak"
 
+stages:
+  - lint
+  - build
+  - deploy
+
+lint:
+    image: valalang/lint:latest
+    stage: lint
+    script:
+      - io.elementary.vala-lint src -c vala-lint.conf
+
 # Build Flatpak for x86_64
 flatpak@x86_64:
   extends: [".flatpak@x86_64"]
+  stage: build
 
 # Build Flatpak for aarch64
 flatpak@aarch64:
   extends: [".flatpak@aarch64"]
   allow_failure: true
+  stage: build
 
 nightly@x86_64:
   extends: ".publish_nightly"
+  stage: deploy
   needs: ["flatpak@x86_64"]
 
 nightly@aarch64:
   extends: ".publish_nightly"
+  stage: deploy
   needs: ["flatpak@aarch64"]
   allow_failure: true
