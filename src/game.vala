@@ -491,6 +491,8 @@ public class Game : Object
             return false;
         if (fast_move_direction == direction)
             return true;
+        if (fast_move_direction != 0)
+            return false;
 
         if (fast_move_timeout != 0)
             Source.remove (fast_move_timeout);

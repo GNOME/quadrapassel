@@ -92,6 +92,7 @@ public class Quadrapassel : Adw.Application
     private uint down_key = Gdk.keyval_from_name ("Down");
     private uint left_key = Gdk.keyval_from_name ("Left");
     private uint right_key = Gdk.keyval_from_name ("Right");
+    private bool rotate_key_pressed = false;
 
     private const GLib.ActionEntry[] ACTION_ENTRIES =
     {
@@ -709,6 +710,7 @@ public class Quadrapassel : Adw.Application
             if (game.game_over && keyval == return_key)
             {
                 new_game ();
+                return true;
             }
         }
         else
@@ -744,10 +746,14 @@ public class Quadrapassel : Adw.Application
         }
         else if (keyval == up_key || keyval == w_key)
         {
-            if (settings.get_boolean ("rotate-counter-clock-wise"))
-                game.rotate_left ();
-            else
-                game.rotate_right ();
+            if (!rotate_key_pressed)
+            {
+                if (settings.get_boolean ("rotate-counter-clock-wise"))
+                    game.rotate_left ();
+                else
+                    game.rotate_right ();
+                rotate_key_pressed = true;
+            }
             return true;
         }
         else if (keyval == down_key || keyval == s_key)
@@ -755,13 +761,17 @@ public class Quadrapassel : Adw.Application
             game.set_fast_forward (true);
             return true;
         }
-        else if (keyval == q_key)
+        else if (keyval == q_key && !rotate_key_pressed)
         {
             game.rotate_left ();
+            rotate_key_pressed = true;
+            return true;
         }
-        else if (keyval == e_key)
+        else if (keyval == e_key && !rotate_key_pressed)
         {
             game.rotate_right ();
+            rotate_key_pressed = true;
+            return true;
         }
         else if (keyval == space_key)
         {
@@ -791,6 +801,8 @@ public class Quadrapassel : Adw.Application
             game.set_fast_forward (false);
             return;
         }
+        else if (keyval == up_key || keyval == w_key || keyval == q_key || keyval == e_key)
+            rotate_key_pressed = false;
     }
 
     private void swipe_cb (double velocity_x, double velocity_y)
