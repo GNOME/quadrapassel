@@ -72,8 +72,26 @@ public class Quadrapassel : Adw.Application
     private Preview theme_preview;
 
     private Manette.Monitor manette_monitor;
-    private bool is_manette_button_down = false;
-    private GLib.Timer manette_axis_timer = new GLib.Timer ();
+    private const uint16[] manette_buttons = {
+        InputEventCode.BTN_A,
+        InputEventCode.BTN_B,
+        InputEventCode.BTN_X,
+        InputEventCode.BTN_Y,
+        InputEventCode.BTN_TL,
+        InputEventCode.BTN_TR,
+        InputEventCode.BTN_TL2,
+        InputEventCode.BTN_TR2,
+        InputEventCode.BTN_SELECT,
+        InputEventCode.BTN_START,
+        InputEventCode.BTN_MODE,
+        InputEventCode.BTN_THUMBL,
+        InputEventCode.BTN_THUMBR,
+        InputEventCode.BTN_DPAD_UP,
+        InputEventCode.BTN_DPAD_DOWN,
+        InputEventCode.BTN_DPAD_LEFT,
+        InputEventCode.BTN_DPAD_RIGHT,
+    };
+    private HashTable<uint16, bool> buttons_state = new HashTable<uint16, bool> (direct_hash, direct_equal);
 
     private bool pause_requested = false;
 
@@ -299,6 +317,9 @@ public class Quadrapassel : Adw.Application
                                                                         new Games.Scores.HistoryFileImporter (parse_old_score),
                                                                         APP_ID,
                                                                         -1);
+
+        foreach (unowned var button in manette_buttons)
+            buttons_state[button] = false;
 
         manette_monitor = new Manette.Monitor ();
         manette_monitor.device_connected.connect (manette_device_connected_cb);
@@ -572,14 +593,14 @@ public class Quadrapassel : Adw.Application
 
     private void manette_button_press_event_cb (Manette.Event event)
     {
-        if (is_manette_button_down)
-            return;
-
         uint16 button;
         if (!event.get_button (out button))
             return;
 
-        is_manette_button_down = true;
+        if (buttons_state[button])
+            return;
+
+        buttons_state[button] = true;
 
         if (button == InputEventCode.BTN_SELECT)
         {
@@ -650,7 +671,10 @@ public class Quadrapassel : Adw.Application
         if (!event.get_button (out button))
             return;
 
-        is_manette_button_down = false;
+        if (!buttons_state[button])
+            return;
+
+        buttons_state[button] = false;
 
         if (game == null)
             return;
@@ -686,13 +710,6 @@ public class Quadrapassel : Adw.Application
             game.stop_moving ();
             return;
         }
-
-        ulong elapsed;
-        manette_axis_timer.elapsed (out elapsed);
-        if (elapsed < 50000)
-            return;
-
-        manette_axis_timer.start ();
 
         if (val > 0)
             game.move_right ();
