@@ -1,18 +1,18 @@
 # Swedish messages for quadrapassel.
-# Copyright © 1999-2025 Free Software Foundation, Inc.
+# Copyright © 1999-2026 Free Software Foundation, Inc.
 # Andreas Persenius <ndap@swipnet.se>, 1999.
 # Andreas Hyden <a.hyden@cyberpoint.se>
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
 # Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015, 2017, 2018, 2019, 2020, 2022, 2025.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015, 2017, 2018, 2019, 2020, 2022, 2025, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-12-10 22:06+0000\n"
-"PO-Revision-Date: 2025-12-11 21:57+0100\n"
+"POT-Creation-Date: 2026-01-26 00:20+0000\n"
+"PO-Revision-Date: 2026-01-26 02:12+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -23,8 +23,8 @@ msgstr ""
 "X-Generator: Poedit 3.8\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:93
-#: src/quadrapassel.vala:112 src/quadrapassel.vala:996
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:121
+#: src/quadrapassel.vala:139 src/quadrapassel.vala:1071
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -166,11 +166,11 @@ msgstr "Höjden på fönstret i bildpunkter"
 msgid "true if the window is maximized"
 msgstr "sant om fönstret är maximerat"
 
-#: src/game-view.vala:379 src/game-view.vala:458
+#: src/game-view.vala:436 src/game-view.vala:457
 msgid "Paused"
 msgstr "Pausad"
 
-#: src/game-view.vala:384
+#: src/game-view.vala:441
 msgid "Game Over"
 msgstr "Spelet är slut"
 
@@ -298,94 +298,104 @@ msgstr "Rotera"
 
 #: src/shortcuts-dialog.blp:41
 msgctxt "shortcut window"
+msgid "Rotate Left"
+msgstr "Rotera vänster"
+
+#: src/shortcuts-dialog.blp:45
+msgctxt "shortcut window"
+msgid "Rotate Right"
+msgstr "Rotera höger"
+
+#: src/shortcuts-dialog.blp:49
+msgctxt "shortcut window"
 msgid "Move right"
 msgstr "Flytta höger"
 
-#: src/shortcuts-dialog.blp:45
+#: src/shortcuts-dialog.blp:53
 msgctxt "shortcut window"
 msgid "Move left"
 msgstr "Flytta vänster"
 
-#: src/shortcuts-dialog.blp:49
+#: src/shortcuts-dialog.blp:57
 msgctxt "shortcut window"
 msgid "Move down"
 msgstr "Flytta nedåt"
 
-#: src/shortcuts-dialog.blp:53
+#: src/shortcuts-dialog.blp:61
 msgctxt "shortcut window"
 msgid "Drop"
 msgstr "Släpp"
 
-#: src/quadrapassel.vala:140 src/quadrapassel.vala:210
+#: src/quadrapassel.vala:167 src/quadrapassel.vala:236
 msgid "Start a new game"
 msgstr "Starta ett nytt spel"
 
-#: src/quadrapassel.vala:147
+#: src/quadrapassel.vala:174
 msgid "_Scores"
 msgstr "_Poänglista"
 
-#: src/quadrapassel.vala:148
+#: src/quadrapassel.vala:175
 msgid "App_earance"
 msgstr "_Utseende"
 
-#: src/quadrapassel.vala:149
+#: src/quadrapassel.vala:176
 msgid "_Preferences"
 msgstr "_Inställningar"
 
-#: src/quadrapassel.vala:152
+#: src/quadrapassel.vala:179
 msgid "_Keyboard Shortcuts"
 msgstr "_Tangentbordsgenvägar"
 
-#: src/quadrapassel.vala:153
+#: src/quadrapassel.vala:180
 msgid "Game _Rules"
 msgstr "Spel_regler"
 
-#: src/quadrapassel.vala:154
+#: src/quadrapassel.vala:181
 msgid "_About Quadrapassel"
 msgstr "_Om Quadrapassel"
 
-#: src/quadrapassel.vala:157
+#: src/quadrapassel.vala:184
 msgid "Main Menu"
 msgstr "Huvudmeny"
 
-#: src/quadrapassel.vala:215
+#: src/quadrapassel.vala:241
 msgid "Next"
 msgstr "Nästa"
 
-#: src/quadrapassel.vala:232
+#: src/quadrapassel.vala:258
 msgid "Score"
 msgstr "Poäng"
 
-#: src/quadrapassel.vala:244 src/quadrapassel.vala:866
+#: src/quadrapassel.vala:271 src/quadrapassel.vala:937
 msgid "Rows"
 msgstr "Rader"
 
-#: src/quadrapassel.vala:255 src/quadrapassel.vala:866
+#: src/quadrapassel.vala:283 src/quadrapassel.vala:937
 msgid "Level"
 msgstr "Nivå"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:267
+#: src/quadrapassel.vala:296
 msgid "Difficulty"
 msgstr "Svårighetsgrad"
 
-#: src/quadrapassel.vala:371
+#: src/quadrapassel.vala:398
 msgid "Preferences"
 msgstr "Inställningar"
 
-#: src/quadrapassel.vala:374
+#: src/quadrapassel.vala:401
 msgid "Game"
 msgstr "Spel"
 
-#: src/quadrapassel.vala:377
+#: src/quadrapassel.vala:404
 msgid "Game Difficulty"
 msgstr "Svårighetsgrad på spelet"
 
-#: src/quadrapassel.vala:378
+#: src/quadrapassel.vala:405
 msgid "Change how difficult the game is"
 msgstr "Ändra hur svårt spelet är"
 
-#: src/quadrapassel.vala:380
+#: src/quadrapassel.vala:407
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
@@ -393,39 +403,39 @@ msgstr ""
 "Svårighetsgraden påverkar nivån du startar på och hur många rader som är "
 "förifyllda."
 
-#: src/quadrapassel.vala:387
+#: src/quadrapassel.vala:414
 msgid "_Difficulty"
 msgstr "S_vårighetsgrad"
 
-#: src/quadrapassel.vala:395
+#: src/quadrapassel.vala:422
 msgid "Choose difficult _blocks"
 msgstr "Välj svåra _klossar"
 
-#: src/quadrapassel.vala:404
+#: src/quadrapassel.vala:431
 msgid "In-Game"
 msgstr "I spelet"
 
-#: src/quadrapassel.vala:405
+#: src/quadrapassel.vala:432
 msgid "Change the experience of playing a game"
 msgstr "Ändra spelupplevelsen"
 
-#: src/quadrapassel.vala:408
+#: src/quadrapassel.vala:435
 msgid "_Enable sounds"
 msgstr "A_ktivera ljud"
 
-#: src/quadrapassel.vala:419
+#: src/quadrapassel.vala:446
 msgid "_Preview next block"
 msgstr "_Förhandsgranska nästa kloss"
 
-#: src/quadrapassel.vala:431
+#: src/quadrapassel.vala:458
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Rotera klossar moturs"
 
-#: src/quadrapassel.vala:438
+#: src/quadrapassel.vala:465
 msgid "Show _where the block will land"
 msgstr "Visa _var klossen kommer att landa"
 
-#: src/quadrapassel.vala:455
+#: src/quadrapassel.vala:482
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
@@ -433,36 +443,36 @@ msgstr ""
 "Fröet används för att avgöra vilka block du får. Då ett frö har ställts in "
 "kommer spelet vara detsamma varje gång."
 
-#: src/quadrapassel.vala:459
+#: src/quadrapassel.vala:486
 msgid "_Use a custom seed for the game"
 msgstr "_Använd ett anpassat frö för spelet"
 
-#: src/quadrapassel.vala:845
+#: src/quadrapassel.vala:916
 msgid "Unpause the game"
 msgstr "Fortsätt spelet"
 
-#: src/quadrapassel.vala:851
+#: src/quadrapassel.vala:922
 msgid "Pause the game"
 msgstr "Gör paus i spelet"
 
-#: src/quadrapassel.vala:874
+#: src/quadrapassel.vala:945
 msgid "Start the game"
 msgstr "Starta spelet"
 
-#: src/quadrapassel.vala:899
+#: src/quadrapassel.vala:974
 msgid "Old Scores"
 msgstr "Gamla poäng"
 
-#: src/quadrapassel.vala:904
+#: src/quadrapassel.vala:979
 msgid "Difficult"
 msgstr "Svår"
 
-#: src/quadrapassel.vala:983
+#: src/quadrapassel.vala:1058
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr "Poäng beräknas baserat på hur många rader som förstörs."
 
-#: src/quadrapassel.vala:999
+#: src/quadrapassel.vala:1074
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -470,7 +480,7 @@ msgstr ""
 "Ett klassiskt spel där du roterar fallande klossar för att skapa rader, men "
 "stapla inte klossarna för högt så spelet tar slut!"
 
-#: src/quadrapassel.vala:1003
+#: src/quadrapassel.vala:1078
 msgid "translator-credits"
 msgstr ""
 "Daniel Nylander <po@danielnylander.se>\n"
