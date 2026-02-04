@@ -72,7 +72,7 @@ public class Quadrapassel : Adw.Application
     private Preview theme_preview;
 
     private Manette.Monitor manette_monitor;
-    private const uint16[] manette_buttons = {
+    private const uint16[] MANETTE_BUTTONS = {
         InputEventCode.BTN_A,
         InputEventCode.BTN_B,
         InputEventCode.BTN_X,
@@ -318,7 +318,7 @@ public class Quadrapassel : Adw.Application
                                                                         APP_ID,
                                                                         -1);
 
-        foreach (unowned var button in manette_buttons)
+        foreach (unowned var button in MANETTE_BUTTONS)
             buttons_state[button] = false;
 
         manette_monitor = new Manette.Monitor ();

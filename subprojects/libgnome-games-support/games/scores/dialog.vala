@@ -1,6 +1,7 @@
 /* -*- Mode: vala; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-
  *
  * Copyright © 2014 Nikhar Agrawal
+ * Copyright © 2014-2026 libgnome-games-support Contributors
  *
  * This file is part of libgnome-games-support.
  *
@@ -48,10 +49,12 @@ private class Dialog : Adw.Dialog
     private Gtk.ColumnViewColumn? score_column;
     private Gtk.ColumnViewColumn? player_column;
     private Gtk.Entry? player_entry;
+    private Category[] categories;
 
     private Style scores_style;
     private Score? new_high_score;
     private string? score_or_time;
+    private string category_type;
 
     public AddScoreAction action { get; set; default = AddScoreAction.NONE; }
 
@@ -59,6 +62,7 @@ private class Dialog : Adw.Dialog
     {
         this.context = context;
         this.new_high_score = new_high_score;
+        this.category_type = category_type;
 
         toolbar = new Adw.ToolbarView ();
         headerbar = new Adw.HeaderBar ();
@@ -81,9 +85,17 @@ private class Dialog : Adw.Dialog
             return;
         }
 
+        if (new_high_score == null)
+        {
+            var delete_button = new Gtk.Button.from_icon_name ("user-trash-symbolic");
+            delete_button.tooltip_text = _("Clear Scores…");
+            delete_button.clicked.connect (show_clear_scores_dialog);
+            headerbar.pack_start (delete_button);
+        }
+
         scores_style = style;
 
-        var categories = context.get_categories ();
+        categories = context.get_categories ();
         active_category = current_cat;
 
         add_css_class ("scores");
@@ -133,14 +145,7 @@ private class Dialog : Adw.Dialog
                     xalign = 0
                 };
             });
-            button_factory.bind.connect ((factory, object) => {
-                unowned var list_item = object as Gtk.ListItem;
-                unowned var string_object = list_item.item as Gtk.StringObject;
-                unowned var label = list_item.child as Gtk.Label;
-
-                /* Translators: %1$s is the category type, %2$s is the category (e.g. "Level: 1") */
-                label.label = _("%1$s: %2$s").printf (category_type, string_object.@string);
-            });
+            button_factory.bind.connect (drop_down_button_cb);
 
             drop_down.set_factory (button_factory);
             drop_down.set_list_factory (list_factory);
@@ -152,11 +157,10 @@ private class Dialog : Adw.Dialog
                     drop_down.set_selected (i);
             }
 
-            drop_down.notify["selected"].connect (() => {
-                var selected_index = drop_down.get_selected ();
-                if (selected_index != -1)
-                    load_scores_for_category (categories[selected_index]);
-            });
+            drop_down.notify["selected"].connect (drop_down_selected_cb);
+
+            unowned var button = drop_down.get_first_child () as Gtk.Button;
+            button.has_frame = false;
 
             unowned var popover = drop_down.get_last_child () as Gtk.Popover;
             popover.halign = Gtk.Align.CENTER;
@@ -176,6 +180,23 @@ private class Dialog : Adw.Dialog
         this.focus_widget = score_view;
     }
 
+    private void drop_down_selected_cb ()
+    {
+        var selected_index = drop_down.get_selected ();
+        if (selected_index != -1)
+            load_scores_for_category (categories[selected_index]);
+    }
+
+    private void drop_down_button_cb (Gtk.SignalListItemFactory factory, Object object)
+    {
+        unowned var list_item = object as Gtk.ListItem;
+        unowned var string_object = list_item.item as Gtk.StringObject;
+        unowned var label = list_item.child as Gtk.Label;
+
+        /* Translators: %1$s is the category type, %2$s is the category (e.g. "Level: 1") */
+        label.label = _("%1$s: %2$s").printf (category_type, string_object.@string);
+    }
+
     /* load names of all categories into a string array */
     private string[] category_names (Category[] categories)
     {
@@ -185,12 +206,6 @@ private class Dialog : Adw.Dialog
 
         return categories_array;
     }
-
-    /*
-     * Most of the code below is from gnome-mahjongg
-     * Copyright 2010-2013 Robert Ancell
-     * Copyright 2010-2025 Mahjongg Contributors
-     */
 
     private void load_scores_for_category (Category category)
     {
@@ -346,6 +361,16 @@ private class Dialog : Adw.Dialog
                 list_item.child = label;
             }
         });
+        if (new_high_score != null)
+        {
+            factory.unbind.connect ((factory, object) => {
+                unowned var list_item = object as Gtk.ListItem;
+                unowned var score = list_item.item as Score;
+
+                if (score == new_high_score)
+                    player_entry = null;
+            });
+        }
 
         player_column = new Gtk.ColumnViewColumn (_("Player"), factory);
     }
@@ -391,6 +416,34 @@ private class Dialog : Adw.Dialog
         box.add_css_class ("toolbar");
         bottom_bar.add_css_class ("toolbar");
         toolbar.add_bottom_bar (box);
+    }
+
+    private async void show_clear_scores_dialog ()
+    {
+        var dialog = new Adw.AlertDialog (
+            _("Clear All Scores?"),
+            _("This will clear every score for every layout.")
+        );
+        dialog.default_response = "cancel";
+        dialog.add_response ("cancel", _("_Cancel"));
+        dialog.add_response ("clear", _("Clear All"));
+        dialog.set_response_appearance ("clear", Adw.ResponseAppearance.DESTRUCTIVE);
+
+        var response = yield dialog.choose (this, null);
+        if (response == "clear")
+        {
+            this.close ();
+            context.delete_scores.begin ((obj, res) => {
+                try
+                {
+                    context.delete_scores.end (res);
+                }
+                catch (Error e)
+                {
+                    warning ("Failed to delete scores: %s", e.message);
+                }
+            });
+        }
     }
 }
 

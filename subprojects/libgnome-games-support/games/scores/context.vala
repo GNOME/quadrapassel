@@ -32,6 +32,17 @@ namespace Games {
 namespace Scores {
 
 /**
+ * A function provided by the game that converts the category key to a category.
+ *
+ * Why do we have this, instead of expecting games to pass in a list
+ * of categories? Because some games need to create categories on the
+ * fly, like Mines, which allows for custom board sizes. These games do not
+ * know in advance which categories may be in use.
+ *
+ */
+public delegate Category? CategoryRequestFunc (string category_key);
+
+/**
  * The style that a {@link Games.Scores.Score} uses.
  *
  * This tells the score dialog if it should display the scores as a time or as points.
@@ -100,17 +111,6 @@ public class Context : Object
 
     private string user_score_dir;
     private bool scores_loaded = false;
-
-    /**
-     * A function provided by the game that converts the category key to a category.
-     *
-     * Why do we have this, instead of expecting games to pass in a list
-     * of categories? Because some games need to create categories on the
-     * fly, like Mines, which allows for custom board sizes. These games do not
-     * know in advance which categories may be in use.
-     *
-     */
-    public delegate Category? CategoryRequestFunc (string category_key);
 
     /**
      * Emitted when the score dialog is closed.
@@ -297,6 +297,24 @@ public class Context : Object
             return score_value < lowest;
 
         return score_value > lowest;
+    }
+
+    public async void delete_scores () throws Error
+    {
+        scores_per_category.remove_all ();
+        var directory = File.new_for_path (user_score_dir);
+        if ((yield directory.query_info_async (FileAttribute.STANDARD_TYPE, 0)) != null)
+        {
+            var enumerator = yield directory.enumerate_children_async (FileAttribute.STANDARD_NAME, 0);
+            FileInfo file_info;
+            while ((file_info = (yield enumerator.next_files_async (1)).nth_data (0)) != null)
+            {
+                var file_name = file_info.get_name ();
+                var file = directory.get_child (file_name);
+                yield file.delete_async ();
+            }
+            yield directory.delete_async ();
+        }
     }
 
     private async void save_score_to_file (Score score, Category category, Cancellable? cancellable) throws Error
@@ -517,7 +535,7 @@ public class Context : Object
  */
 [SimpleType]
 public enum AddScoreAction {
-    NONE = 0,
+    NONE,
     NEW_GAME,
     QUIT
 }
