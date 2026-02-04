@@ -1,3 +1,15 @@
+quadrapassel 50.beta
+====================
+* Upgraded the project license to GPLv3
+* Updated translations: Ukrainian (Yuri Chornoivan), Georgian (Ekaterine Papava),
+			Slovenian (Martin S.), Kazakh (Baurzhan Muftakhidinov),
+			'Chinese (China)' (lumingzh), Russian (Sergej A.),
+			Swedish (Anders Jonsson)
+* Replaced gsound and libcanberra with a new sound player
+* Fixed keyboard controls to not produce duplicate rotations and movement
+* Fixed miscellaneous controls bugs
+* Updated libgnome-games-support which fixed some memory leaks and added score removal
+
 quadrapassel 50.alpha
 =================
 * Updated the Swedish translation (Anders Jonsson)

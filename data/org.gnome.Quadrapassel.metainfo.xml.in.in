@@ -50,6 +50,19 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
+    <release date="2026-02-03" version="50~beta" type="development">
+      <description>
+        <ul>
+          <li>Upgraded the project license to GPLv3</li>
+          <li>Updated translations: Ukrainian, Georgian, Slovenian, Kazakh, Chinese (China),
+            Russian, Swedish</li>
+          <li>Upgraded the sound player</li>
+          <li>Fixed keyboard controls to not produce duplicate rotations and movement</li>
+          <li>Fixed miscellaneous controls bugs</li>
+          <li>Added a 'Clear Scores' button to the scores dialog</li>
+        </ul>
+      </description>
+    </release>
     <release date="2026-01-03" version="50~alpha" type="development">
       <description>
         <ul>
