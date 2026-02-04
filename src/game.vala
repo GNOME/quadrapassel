@@ -519,12 +519,7 @@ public class Game : Object
 
     private bool move ()
     {
-        if (!move_shape (fast_move_direction, 0, 0))
-        {
-            fast_move_timeout = 0;
-            fast_move_direction = 0;
-            return false;
-        }
+        move_shape (fast_move_direction, 0, 0);
 
         return true;
     }
