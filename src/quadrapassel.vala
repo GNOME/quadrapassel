@@ -142,7 +142,8 @@ public class Quadrapassel : Adw.Application
         set_accels_for_action ("app.new-game", {"<Primary>n"});
         set_accels_for_action ("app.menu", {"F10"});
         set_accels_for_action ("app.rules", {"F1"});
-        set_accels_for_action ("app.quit", {"<Primary>q"});
+        set_accels_for_action ("app.preferences", {"<Primary>comma"});
+        set_accels_for_action ("app.quit", {"<Primary>q", "<Primary>w"});
         pause_action = lookup_action ("pause") as SimpleAction;
 
         settings = new Settings (APP_ID);
