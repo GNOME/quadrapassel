@@ -79,32 +79,8 @@ public class GameView : Gtk.Widget {
 
             this.add_css_class ("theme-" + value);
 
-            Block block;
-            BlockWidget widget;
-
-            var iter = HashTableIter<Block, BlockWidget> (blocks);
-            while (true)
-            {
-                if (!iter.next (out block, out widget))
-                    break;
+            foreach (var widget in get_block_widgets ())
                 widget.theme = value;
-            }
-
-            iter = HashTableIter<Block, BlockWidget> (shape_blocks);
-            while (true)
-            {
-                if (!iter.next (out block, out widget))
-                    break;
-                widget.theme = value;
-            }
-
-            iter = HashTableIter<Block, BlockWidget> (shadow_blocks);
-            while (true)
-            {
-                if (!iter.next (out block, out widget))
-                    break;
-                widget.theme = value;
-            }
 
             _theme = value;
         }
@@ -269,17 +245,18 @@ public class GameView : Gtk.Widget {
         widget.insert_before (this, text_overlay);
     }
 
-    private void clear_blocks () {
+    private BlockWidget[] get_block_widgets () {
         Block block;
         BlockWidget widget;
         HashTableIter<Block, BlockWidget> iter;
+        var widgets = new BlockWidget[0];
 
         iter = HashTableIter<Block, BlockWidget> (blocks);
         while (true)
         {
             if (!iter.next (out block, out widget))
                 break;
-            widget.unparent ();
+            widgets += widget;
         }
 
         iter = HashTableIter<Block, BlockWidget> (shape_blocks);
@@ -287,7 +264,7 @@ public class GameView : Gtk.Widget {
         {
             if (!iter.next (out block, out widget))
                 break;
-            widget.unparent ();
+            widgets += widget;
         }
 
         iter = HashTableIter<Block, BlockWidget> (shadow_blocks);
@@ -295,8 +272,15 @@ public class GameView : Gtk.Widget {
         {
             if (!iter.next (out block, out widget))
                 break;
-            widget.unparent ();
+            widgets += widget;
         }
+
+        return widgets;
+    }
+
+    private void clear_blocks () {
+        foreach (var widget in get_block_widgets ())
+            widget.unparent ();
 
         blocks.remove_all ();
         shape_blocks.remove_all ();
@@ -435,6 +419,8 @@ public class GameView : Gtk.Widget {
         {
             text_overlay.text = _("Paused");
             text_overlay.visible = true;
+            foreach (var widget in get_block_widgets ())
+                widget.visible = false;
         }
         else if (game.game_over)
         {
@@ -442,7 +428,11 @@ public class GameView : Gtk.Widget {
             text_overlay.visible = true;
         }
         else
+        {
             text_overlay.visible = false;
+            foreach (var widget in get_block_widgets ())
+                widget.visible = true;
+        }
     }
 }
 
@@ -454,10 +444,6 @@ private class TextOverlay : Gtk.DrawingArea
         get { return _text; }
         set {
             _text = value;
-            if (value == _("Paused"))
-                this.add_css_class ("text-overlay");
-            else
-                this.remove_css_class ("text-overlay");
             queue_draw ();
         }
     }
