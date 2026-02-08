@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-09-10 22:53+0000\n"
-"PO-Revision-Date: 2025-09-11 11:19+0300\n"
+"POT-Creation-Date: 2026-02-07 17:04+0000\n"
+"PO-Revision-Date: 2026-02-08 14:38+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -24,12 +24,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Launchpad-Export-Date: 2010-09-13 15:09+0000\n"
-"X-Generator: Poedit 3.7\n"
+"X-Generator: Poedit 3.8\n"
 "X-POT-Import-Date: 2012-03-05 14:46:29+0000\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:90
-#: src/quadrapassel.vala:109 src/quadrapassel.vala:940
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:139
+#: src/quadrapassel.vala:159 src/quadrapassel.vala:1124
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -77,10 +77,6 @@ msgid ""
 "The Quadrapassel window, with a game playing, in small form factor mode."
 msgstr ""
 "Quadrapasselin ikkuna ja käynnissä oleva peli pienimuotoisessa tilassa."
-
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:44
-msgid "The Quadrapassel window, before starting a game."
-msgstr "Quadrapasselin ikkuna ennen pelin aloittamista."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -174,217 +170,310 @@ msgstr "Ikkunan korkeus kuvapisteinä"
 msgid "true if the window is maximized"
 msgstr "tosi jos ikkuna on suurennettu"
 
-#: src/game-view.vala:379 src/game-view.vala:458
+#: src/game-view.vala:420
 msgid "Paused"
 msgstr "Keskeytetty"
 
-#: src/game-view.vala:384
+#: src/game-view.vala:427
 msgid "Game Over"
 msgstr "Peli päättyi"
 
-#: src/help-overlay.blp:11
+#: src/rules-dialog.blp:7
+msgid "Game Rules"
+msgstr "Pelin säännöt"
+
+#: src/rules-dialog.blp:11
+msgctxt "game rules"
+msgid "Rotate and Move pieces to fill rows"
+msgstr "Kierrä ja siirrä palikoita täyttääksesi rivit"
+
+#: src/rules-dialog.blp:12
+msgctxt "game rules"
+msgid "Rows explode when they are completely filled"
+msgstr "Rivit tuhoutuvat, kun ne on täysin täytetty"
+
+#: src/rules-dialog.blp:17
+msgctxt "game rules"
+msgid "You gain points for each row destroyed"
+msgstr "Saat pisteitä jokaisesta tuhotusta rivistä"
+
+#: src/rules-dialog.blp:18
+msgctxt "game rules"
+msgid ""
+"You can also get a bonus of 2500 × level × rows destroyed if the bottom "
+"layer is destroyed."
+msgstr ""
+"Voit saada myös bonuksen 2500 × taso × tuhotut rivit, jos alin rivi tuhotaan."
+
+#: src/rules-dialog.blp:25
+msgctxt "game rules"
+msgid "You can pause the game"
+msgstr "Voit keskeyttää pelin"
+
+#: src/rules-dialog.blp:26
+msgctxt "game rules"
+msgid "The next piece and the game view will be hidden"
+msgstr "Seuraava palikka ja pelinäkymä piilotetaan"
+
+#: src/rules-dialog.blp:33
+msgctxt "game rules"
+msgid "You can change how the game works using the preferences"
+msgstr "Voit muuttaa pelin toimintaa asetuksista"
+
+#: src/rules-dialog.blp:34
+msgctxt "game rules"
+msgid "You can also adjust the difficulty"
+msgstr "Voit säätää myös vaikeustasoa"
+
+#: src/rules-dialog.blp:49
+msgid "Rows Destroyed"
+msgstr "Tuhotut rivit"
+
+#: src/rules-dialog.blp:61
+msgctxt "points calculation"
+msgid "Equation"
+msgstr "Laskukaava"
+
+#: src/rules-dialog.blp:122
+msgctxt "points calculation"
+msgid "40 × level"
+msgstr "40 × taso"
+
+#: src/rules-dialog.blp:133
+msgctxt "points calculation"
+msgid "100 × level"
+msgstr "100 × taso"
+
+#: src/rules-dialog.blp:144
+msgctxt "points calculation"
+msgid "300 × level"
+msgstr "300 × taso"
+
+#: src/rules-dialog.blp:155
+msgctxt "points calculation"
+msgid "1200 × level"
+msgstr "1200 × taso"
+
+#: src/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Yleiset"
 
-#: src/help-overlay.blp:14
+#: src/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Start a New Game"
 msgstr "Aloita uusi peli"
 
-#: src/help-overlay.blp:20
+#: src/shortcuts-dialog.blp:14
 msgctxt "shortcut window"
 msgid "Pause the game"
 msgstr "Keskeytä peli"
 
-#: src/help-overlay.blp:24
+#: src/shortcuts-dialog.blp:17
 msgctxt "shortcut window"
-msgid "Show Help"
-msgstr "Näytä ohje"
+msgid "Show game Rules"
+msgstr "Näytä pelin säännöt"
 
-#: src/help-overlay.blp:29
+#: src/shortcuts-dialog.blp:21
 msgctxt "shortcut window"
 msgid "Open primary menu"
 msgstr "Avaa ensisijainen valikko"
 
-#: src/help-overlay.blp:34
+#: src/shortcuts-dialog.blp:25
 msgctxt "shortcut window"
 msgid "Show shortcuts"
 msgstr "Näytä pikanäppäimet"
 
-#: src/help-overlay.blp:39
+#: src/shortcuts-dialog.blp:29
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Lopeta"
 
-#: src/help-overlay.blp:45
+#: src/shortcuts-dialog.blp:34
 msgctxt "shortcut window"
 msgid "Game"
 msgstr "Peli"
 
-#: src/help-overlay.blp:48
+#: src/shortcuts-dialog.blp:37
 msgctxt "shortcut window"
 msgid "Rotate"
 msgstr "Kierrä"
 
-#: src/help-overlay.blp:53
+#: src/shortcuts-dialog.blp:41
+msgctxt "shortcut window"
+msgid "Rotate Left"
+msgstr "Kierrä vasemmalle"
+
+#: src/shortcuts-dialog.blp:45
+msgctxt "shortcut window"
+msgid "Rotate Right"
+msgstr "Kierrä oikealle"
+
+#: src/shortcuts-dialog.blp:49
 msgctxt "shortcut window"
 msgid "Move right"
 msgstr "Siirrä oikealle"
 
-#: src/help-overlay.blp:58
+#: src/shortcuts-dialog.blp:53
 msgctxt "shortcut window"
 msgid "Move left"
 msgstr "Siirrä vasemmalle"
 
-#: src/help-overlay.blp:63
+#: src/shortcuts-dialog.blp:57
 msgctxt "shortcut window"
 msgid "Move down"
 msgstr "Siirrä alas"
 
-#: src/help-overlay.blp:68
+#: src/shortcuts-dialog.blp:61
 msgctxt "shortcut window"
 msgid "Drop"
 msgstr "Tiputa"
 
-#: src/quadrapassel.vala:135 src/quadrapassel.vala:188
+#: src/quadrapassel.vala:187 src/quadrapassel.vala:256
 msgid "Start a new game"
 msgstr "Aloita uusi peli"
 
-#: src/quadrapassel.vala:142
+#: src/quadrapassel.vala:194
 msgid "_Scores"
 msgstr "_Pisteet"
 
-#: src/quadrapassel.vala:143
+#: src/quadrapassel.vala:195
 msgid "App_earance"
 msgstr "_Ulkoasu"
 
-#: src/quadrapassel.vala:144
+#: src/quadrapassel.vala:196
 msgid "_Preferences"
 msgstr "_Asetukset"
 
-#: src/quadrapassel.vala:147
+#: src/quadrapassel.vala:199
 msgid "_Keyboard Shortcuts"
 msgstr "_Pikanäppäimet"
 
-#: src/quadrapassel.vala:148
-msgid "_Help"
-msgstr "O_hje"
+#: src/quadrapassel.vala:200
+msgid "Game _Rules"
+msgstr "Pelin _säännöt"
 
-#: src/quadrapassel.vala:149
+#: src/quadrapassel.vala:201
 msgid "_About Quadrapassel"
 msgstr "_Tietoja - Quadrapassel"
 
-#: src/quadrapassel.vala:193
+#: src/quadrapassel.vala:204
+msgid "Main Menu"
+msgstr "Päävalikko"
+
+#: src/quadrapassel.vala:261
 msgid "Next"
 msgstr "Seuraava"
 
-#: src/quadrapassel.vala:210
+#: src/quadrapassel.vala:278
 msgid "Score"
 msgstr "Pisteet"
 
-#: src/quadrapassel.vala:221
-msgid "Lines"
-msgstr "Rivejä"
+#: src/quadrapassel.vala:291 src/quadrapassel.vala:990
+msgid "Rows"
+msgstr "Rivit"
 
-#: src/quadrapassel.vala:232
+#: src/quadrapassel.vala:303 src/quadrapassel.vala:990
 msgid "Level"
 msgstr "Taso"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:244
-msgid "Difficulty:"
-msgstr "Vaikeustaso:"
+#: src/quadrapassel.vala:316
+msgid "Difficulty"
+msgstr "Vaikeustaso"
 
-#: src/quadrapassel.vala:336
+#: src/quadrapassel.vala:441
 msgid "Preferences"
 msgstr "Asetukset"
 
-#: src/quadrapassel.vala:339
+#: src/quadrapassel.vala:444
 msgid "Game"
 msgstr "Peli"
 
-#: src/quadrapassel.vala:342
+#: src/quadrapassel.vala:447
 msgid "Game Difficulty"
 msgstr "Pelin vaikeustaso"
 
-#: src/quadrapassel.vala:343
+#: src/quadrapassel.vala:448
 msgid "Change how difficult the game is"
 msgstr "Vaihda pelin vaikeustasoa"
 
-#: src/quadrapassel.vala:349
+#: src/quadrapassel.vala:450
+msgid ""
+"The Difficulty affects the level you start at and how many rows are pre-"
+"filled."
+msgstr "Vaikeustaso vaikuttaa aloitustasoon ja esitäytettyjen rivien määrään."
+
+#: src/quadrapassel.vala:457
 msgid "_Difficulty"
 msgstr "_Vaikeustaso"
 
-#: src/quadrapassel.vala:357
+#: src/quadrapassel.vala:465
 msgid "Choose difficult _blocks"
 msgstr "Valitse vaikeat _palikat"
 
-#: src/quadrapassel.vala:366
+#: src/quadrapassel.vala:474
 msgid "In-Game"
 msgstr "Pelissä"
 
-#: src/quadrapassel.vala:367
+#: src/quadrapassel.vala:475
 msgid "Change the experience of playing a game"
 msgstr "Vaihda pelikokemusta"
 
-#: src/quadrapassel.vala:370
+#: src/quadrapassel.vala:478
 msgid "_Enable sounds"
 msgstr "Ää_net päälle"
 
-#: src/quadrapassel.vala:381
+#: src/quadrapassel.vala:489
 msgid "_Preview next block"
 msgstr "Se_uraavan palikan esikatselu"
 
-#: src/quadrapassel.vala:393
+#: src/quadrapassel.vala:501
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Pyöritä palikoita vastapäivään"
 
-#: src/quadrapassel.vala:400
+#: src/quadrapassel.vala:508
 msgid "Show _where the block will land"
 msgstr "Näytä mihin palikka _laskeutuu"
 
-#: src/quadrapassel.vala:418
+#: src/quadrapassel.vala:525
+msgid ""
+"The seed is used to determine which blocks you get. While a seed is set, the "
+"game will be the same every time."
+msgstr ""
+"Siementä käytetään saatavien palikoiden päättelyyn. Kun siemen on asetettu, "
+"peli pysyy samanlaisena joka kerta."
+
+#: src/quadrapassel.vala:529
 msgid "_Use a custom seed for the game"
 msgstr "_Käytä omaa siemenlukua"
 
-#: src/quadrapassel.vala:442
-msgid "Plain"
-msgstr "Paljas"
-
-#: src/quadrapassel.vala:442
-msgid "Tango Shaded"
-msgstr "Tango, varjostettu"
-
-#: src/quadrapassel.vala:442
-msgid "Clean"
-msgstr "Tyhjennä"
-
-#: src/quadrapassel.vala:442
-msgid "Modern"
-msgstr "Moderni"
-
-#: src/quadrapassel.vala:816
+#: src/quadrapassel.vala:969
 msgid "Unpause the game"
 msgstr "Jatka peliä"
 
-#: src/quadrapassel.vala:822
+#: src/quadrapassel.vala:975
 msgid "Pause the game"
 msgstr "Keskeytä peli"
 
-#: src/quadrapassel.vala:840
+#: src/quadrapassel.vala:998
 msgid "Start the game"
 msgstr "Aloita peli"
 
-#: src/quadrapassel.vala:861
+#: src/quadrapassel.vala:1027
 msgid "Old Scores"
 msgstr "Vanhat pisteet"
 
-#: src/quadrapassel.vala:866
+#: src/quadrapassel.vala:1032
 msgid "Difficult"
 msgstr "Vaikea"
 
-#: src/quadrapassel.vala:943
+#: src/quadrapassel.vala:1111
+msgctxt "game rules"
+msgid "Points are calculated based on how many rows are destroyed."
+msgstr "Pisteiden laskenta perustuu tuhottujen rivien määrään."
+
+#: src/quadrapassel.vala:1127
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -393,10 +482,10 @@ msgstr ""
 "kokonaisia rivejä. Älä kuitenkaan pinoa palikoita liian korkealle tai peli "
 "loppuu!"
 
-#: src/quadrapassel.vala:947
+#: src/quadrapassel.vala:1131
 msgid "translator-credits"
 msgstr ""
-"Jiri Grönroos, 2012-2025\n"
+"Jiri Grönroos, 2012-2026\n"
 "Timo Jyrinki, 2008\n"
 "Ilkka Tuohela, 2006-2009\n"
 "Sami Pesonen, 2002-2005\n"
@@ -413,6 +502,31 @@ msgstr ""
 "  Saku Laukkanen https://launchpad.net/~nollapiste\n"
 "  Timo Jyrinki https://launchpad.net/~timo-jyrinki\n"
 "  eGetin https://launchpad.net/~egetin"
+
+#~ msgid "The Quadrapassel window, before starting a game."
+#~ msgstr "Quadrapasselin ikkuna ennen pelin aloittamista."
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show Help"
+#~ msgstr "Näytä ohje"
+
+#~ msgid "_Help"
+#~ msgstr "O_hje"
+
+#~ msgid "Lines"
+#~ msgstr "Rivejä"
+
+#~ msgid "Plain"
+#~ msgstr "Paljas"
+
+#~ msgid "Tango Shaded"
+#~ msgstr "Tango, varjostettu"
+
+#~ msgid "Clean"
+#~ msgstr "Tyhjennä"
+
+#~ msgid "Modern"
+#~ msgstr "Moderni"
 
 #~ msgid "Level to start with"
 #~ msgstr "Aloituskenttä"
