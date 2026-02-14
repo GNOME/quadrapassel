@@ -545,8 +545,8 @@ public class Quadrapassel : Adw.Application
 
     private Gtk.Widget theme_update (string theme_name, Gtk.Widget theme_preview_widget)
     {
-        var theme_preview_frame = theme_preview_widget as Gtk.AspectFrame;
-        theme_preview = theme_preview_frame.get_child () as Preview;
+        var theme_preview_frame = theme_preview_widget as Games.GridFrame;
+        theme_preview = theme_preview_frame.child as Preview;
         view.theme = theme_name;
         preview.theme = theme_name;
         theme_preview.theme = theme_name;
