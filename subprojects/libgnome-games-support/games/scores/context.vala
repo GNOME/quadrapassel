@@ -65,10 +65,11 @@ public enum Style
 public class Context : Object
 {
     /**
-     * An App ID (e.g. ``org.gnome.Mines``).
+     * The name for the directory, inside the user's data_dir, that holds the scores.
+     * This is not a complete path and is usually an app id.
      *
      */
-    public string app_name { get; construct; }
+    public string score_directory { get; construct; }
 
     /**
      * Describes all of the categories (e.g. "Minefield", "Level").
@@ -83,7 +84,8 @@ public class Context : Object
     public Style style { get; construct; }
 
     /**
-     * The ID for the icon that will be used in the score dialog's empty screen (e.g. ``org.gnome.Quadrapassel``).
+     * The ID for the icon that will be used in the score dialog's empty screen
+     * (e.g. ``org.gnome.Mines``). This defaults to ``score_directory``.
      *
      */
     public string icon_name { get; construct; }
@@ -95,10 +97,17 @@ public class Context : Object
     public int max_high_scores { get; construct; }
 
     /**
+     * Custom header for the scores column in the scores dialog (e.g. "Moves").
+     * This should be translated.
+     *
+     */
+    public string? score_type { get; construct; }
+
+    [Version (deprecated=true, deprecated_since="3.0")]
+    /**
      * The {@link [Games.Scores.Importer]} for the context (eg. HistoryFileImporter).
      *
      */
-    [Version (deprecated=true, deprecated_since="3.0")]
     public Importer? importer { get; construct; }
 
     private Category? current_category = null;
@@ -139,7 +148,7 @@ public class Context : Object
     /**
      * Creates a new Context.
      *
-     * ``app_name`` is your App ID (e.g. ``org.gnome.Mines``).
+     * ``app_name`` is your App ID (eg. ``org.gnome.Mines``)
      *
      * ``category_type`` describes all of the categories (e.g. "Minefield", "Level").
      *
@@ -147,57 +156,29 @@ public class Context : Object
      *
      * ``style changes`` the way {@link Games.Scores.Score}s are presented.
      *
-     * ``icon_name`` is the ID for your app's icon (e.g. ``org.gnome.Quadrapassel``).
+     * ``icon_name`` is the ID for your app's icon (e.g. ``org.gnome.Mines``). This defaults to ``score_directory``.
      *
      * ``max_high_scores`` is the maximum size of the high score list in the score dialog (``-1`` for unlimited).
      *
+     * ``score_type`` is a custom header for the scores column in the scores dialog (e.g. "Moves").
+     *
      */
-    public Context (string app_name,
+    public Context (string score_directory,
                     string category_type,
                     CategoryRequestFunc category_request,
                     Style style,
                     string? icon_name = null,
-                    int max_high_scores = 10)
+                    int max_high_scores = 10,
+                    Importer? importer = null,
+                    string? score_type = null)
     {
-        this.with_importer_and_icon_name (app_name, category_type, category_request, style, null, null, max_high_scores);
-    }
-
-    public Context.with_icon_name (string app_name,
-                                   string category_type,
-                                   CategoryRequestFunc category_request,
-                                   Style style,
-                                   string icon_name,
-                                   int max_high_scores = 10)
-    {
-        this.with_importer_and_icon_name (app_name, category_type, category_request, style, null, icon_name, max_high_scores);
-    }
-
-    [Version (deprecated=true, deprecated_since="3.0")]
-    public Context.with_importer (string app_name,
-                                  string category_type,
-                                  CategoryRequestFunc category_request,
-                                  Style style,
-                                  Importer? importer,
-                                  int max_high_scores = 10)
-    {
-        this.with_importer_and_icon_name (app_name, category_type, category_request, style, importer, null, max_high_scores);
-    }
-
-    [Version (deprecated=true, deprecated_since="3.0")]
-    public Context.with_importer_and_icon_name (string app_name,
-                                                string category_type,
-                                                CategoryRequestFunc category_request,
-                                                Style style,
-                                                Importer? importer = null,
-                                                string? icon_name = null,
-                                                int max_high_scores = 10)
-    {
-        Object (app_name: app_name,
+        Object (score_directory: score_directory,
                 category_type: category_type,
                 style: style,
+                icon_name: icon_name ?? score_directory,
+                max_high_scores: max_high_scores <= -1 ? int.MAX : max_high_scores,
                 importer: importer,
-                icon_name: icon_name ?? app_name,
-                max_high_scores: max_high_scores <= -1 ? int.MAX : max_high_scores);
+                score_type: score_type);
 
         /* Note: the following functionality can be performed manually by
          * calling Context.load_scores, to ensure Context is usable even if
@@ -215,7 +196,7 @@ public class Context : Object
 
     public override void constructed ()
     {
-        user_score_dir = Path.build_filename (Environment.get_user_data_dir (), app_name, "scores", null);
+        user_score_dir = Path.build_filename (Environment.get_user_data_dir (), score_directory, "scores", null);
 
         if (importer != null)
             importer.run (this, user_score_dir);
@@ -336,7 +317,7 @@ public class Context : Object
      */
     internal async bool add_score_internal (Score score, Category category, Cancellable? cancellable) throws Error
     {
-        /* Check if category exists in the HashTable. Insert one if not. */
+        //* Check if category exists in the HashTable. Insert one if not. */
         if (!scores_per_category.contains (category))
             scores_per_category[category] = new GenericArray<Score> ();
 
@@ -344,7 +325,6 @@ public class Context : Object
         current_category = category;
 
         var high_score_added = is_high_score (score.score, category);
-
         yield save_score_to_file (score, category, cancellable);
         return high_score_added;
     }
@@ -387,7 +367,7 @@ public class Context : Object
         var action = AddScoreAction.NONE;
         if (high_score_added && game_window != null)
         {
-            var dialog = new Dialog (this, category_type, style, score, current_category, icon_name);
+            var dialog = new Dialog (this, category_type, style, score, current_category, icon_name, score_type);
             dialog.closed.connect (() => add_score_full.callback ());
             dialog.present (game_window);
             if (show_action_buttons)
@@ -478,25 +458,6 @@ public class Context : Object
         }
     }
 
-    /* This code violates the essential rule:
-     *
-     *   Never iterate a context created outside the library, including the
-     *   global-default or thread-default contexts. Otherwise, sources created
-     *   in the application may be dispatched when the application is not
-     *   expecting it, causing re-entrancy problems for the application code.
-     *
-     * This is why gtk_dialog_run() was removed.
-     */
-    [Version (deprecated=true, deprecated_since="3.0")]
-    public void run_dialog (Gtk.Window game_window)
-    {
-        var main_loop = new MainLoop (null);
-        var dialog = new Dialog (this, category_type, style, null, current_category, icon_name);
-        dialog.closed.connect (() => main_loop.quit ());
-        dialog.present (game_window);
-        main_loop.run ();
-    }
-
     /**
      * Presents the score dialog on top of ``game_window``.
      *
@@ -509,7 +470,7 @@ public class Context : Object
         if (selected_category == null || !scores_per_category.contains (selected_category))
             selected_category = current_category;
 
-        var dialog = new Dialog (this, category_type, style, null, selected_category, icon_name);
+        var dialog = new Dialog (this, category_type, style, null, selected_category, icon_name, score_type);
         dialog.closed.connect (() => dialog_closed ());
         dialog.present (game_window);
     }

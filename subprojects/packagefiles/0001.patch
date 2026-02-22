@@ -1,18 +1,18 @@
-From 7e12afa24b9e74bd33ff6c2a5d0ecf30594aa3b2 Mon Sep 17 00:00:00 2001
+From 4385f3cb5a13b7e1ad8fae5c52c151d5b5953432 Mon Sep 17 00:00:00 2001
 From: Will Warner <willwwarner@proton.me>
-Date: Mon, 15 Dec 2025 15:05:28 -0500
+Date: Sun, 22 Feb 2026 09:29:30 -0500
 Subject: [PATCH] Revert "Remove add_scores_internal()"
 
 This reverts commit dee87de9e5aefe491bb168557333e8e8d97c89b9.
 ---
- games/scores/context.vala | 18 ++++++++++++++++++
- 1 file changed, 18 insertions(+)
+ games/scores/context.vala | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
 
 diff --git a/games/scores/context.vala b/games/scores/context.vala
-index c802d6a..2f1f160 100644
+index 58ed9dd..f1491c4 100644
 --- a/games/scores/context.vala
 +++ b/games/scores/context.vala
-@@ -273,6 +273,24 @@ public class Context : Object
+@@ -299,6 +299,23 @@ public class Context : Object
          yield stream.write_all_async (line.data, Priority.DEFAULT, cancellable, null);
      }
 
@@ -21,7 +21,7 @@ index c802d6a..2f1f160 100644
 +     */
 +    internal async bool add_score_internal (Score score, Category category, Cancellable? cancellable) throws Error
 +    {
-+        /* Check if category exists in the HashTable. Insert one if not. */
++        //* Check if category exists in the HashTable. Insert one if not. */
 +        if (!scores_per_category.contains (category))
 +            scores_per_category[category] = new GenericArray<Score> ();
 +
@@ -29,7 +29,6 @@ index c802d6a..2f1f160 100644
 +        current_category = category;
 +
 +        var high_score_added = is_high_score (score.score, category);
-+
 +        yield save_score_to_file (score, category, cancellable);
 +        return high_score_added;
 +    }

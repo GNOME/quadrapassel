@@ -311,14 +311,14 @@ public class Quadrapassel : Adw.Application
         level_label.valign = CENTER;
         game_grid.attach (level_label, 2, 14, 1, 2);
 
-        context = new Games.Scores.Context.with_importer_and_icon_name ("quadrapassel",
-                                                                        /* Label on the scores dialog */
-                                                                        _("Difficulty"),
-                                                                        create_category_from_key,
-                                                                        Games.Scores.Style.POINTS_GREATER_IS_BETTER,
-                                                                        new Games.Scores.HistoryFileImporter (parse_old_score),
-                                                                        APP_ID,
-                                                                        -1);
+        context = new Games.Scores.Context ("quadrapassel",
+                                            /* Label on the scores dialog */
+                                            _("Difficulty"),
+                                            create_category_from_key,
+                                            Games.Scores.Style.POINTS_GREATER_IS_BETTER,
+                                            APP_ID,
+                                            -1,
+                                            new Games.Scores.HistoryFileImporter (parse_old_score));
 
         foreach (unowned var button in MANETTE_BUTTONS)
             buttons_state[button] = false;

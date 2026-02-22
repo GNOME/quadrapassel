@@ -53,12 +53,18 @@ private class Dialog : Adw.Dialog
 
     private Style scores_style;
     private Score? new_high_score;
-    private string? score_or_time;
+    private string? score_type;
     private string category_type;
 
     public AddScoreAction action { get; set; default = AddScoreAction.NONE; }
 
-    public Dialog (Context context, string category_type, Style style, Score? new_high_score, Category? current_cat, string icon_name)
+    public Dialog (Context context,
+                   string category_type,
+                   Style style,
+                   Score? new_high_score,
+                   Category? current_cat,
+                   string icon_name,
+                   string? score_type)
     {
         this.context = context;
         this.new_high_score = new_high_score;
@@ -103,33 +109,38 @@ private class Dialog : Adw.Dialog
         if (active_category == null)
             active_category = new Category (categories[0].key, categories[0].name);
 
-        score_or_time = "";
+        this.score_type = "";
         string new_score_or_time = "";
 
         if (scores_style == Style.POINTS_GREATER_IS_BETTER || scores_style == Style.POINTS_LESS_IS_BETTER)
         {
             /* Translators: %1$s is the category type, %2$s is the category (e.g. "New Score for Level: 1") */
             new_score_or_time = _("New Score for %1$s: %2$s").printf (category_type, active_category.name);
-            score_or_time = _("Score");
+            this.score_type = _("Score");
         }
         else
         {
             /* Translators: %1$s is the category type, %2$s is the category (e.g. "New Time for Level: 1") */
             new_score_or_time = _("New Time for %1$s: %2$s").printf (category_type, active_category.name);
-            score_or_time = _("Time");
+            this.score_type = _("Time");
         }
+
+        if (score_type != null)
+            this.score_type = score_type;
 
         /* Decide what the title should be */
         if (new_high_score != null)
         {
             var title_widget = new Adw.WindowTitle (_("Congratulations!"), new_score_or_time);
             headerbar.set_title_widget (title_widget);
+            this.focus_widget = score_view;
         }
         else if (categories.length == 1)
         {
             active_category = categories[0];
             /* Translators: %1$s is the category type, %2$s is the category (e.g. "Level: 1") */
             set_title (_("%1$s: %2$s").printf (category_type, active_category.name));
+            this.focus_widget = score_view;
         }
         else
         {
@@ -166,6 +177,7 @@ private class Dialog : Adw.Dialog
             popover.halign = Gtk.Align.CENTER;
 
             headerbar.set_title_widget (drop_down);
+            this.focus_widget = drop_down;
         }
 
         /* Add the data to the dialog */
@@ -177,7 +189,6 @@ private class Dialog : Adw.Dialog
         load_scores_for_category (active_category);
         scroll.set_child (score_view);
         toolbar.set_content (scroll);
-        this.focus_widget = score_view;
     }
 
     private void drop_down_selected_cb ()
@@ -318,7 +329,7 @@ private class Dialog : Adw.Dialog
             });
         }
 
-        score_column = new Gtk.ColumnViewColumn (score_or_time, factory);
+        score_column = new Gtk.ColumnViewColumn (score_type, factory);
         score_column.sorter = rank_column.sorter;
     }
 

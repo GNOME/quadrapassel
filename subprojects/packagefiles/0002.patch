@@ -1,53 +1,53 @@
-From e87c1ad0b342c7c5c2da6bb687dde1390f7f6000 Mon Sep 17 00:00:00 2001
+From fd207133357549d73f58f2d8f3e4b62ba341c793 Mon Sep 17 00:00:00 2001
 From: Will Warner <willwwarner@proton.me>
-Date: Mon, 15 Dec 2025 15:15:06 -0500
+Date: Sun, 22 Feb 2026 10:02:02 -0500
 Subject: [PATCH] Revert "Remove all deprecated APIs"
 
 This reverts commit b610c747398bbd1f0908a2e91926942532ed2160.
 ---
  games/meson.build                       |   3 +
- games/scores/context.vala               |  66 ++++++++++++
+ games/scores/context.vala               |  17 +++-
  games/scores/directory-importer.vala    | 107 ++++++++++++++++++++
  games/scores/history-file-importer.vala | 127 ++++++++++++++++++++++++
  games/scores/importer.vala              | 100 +++++++++++++++++++
- 5 files changed, 403 insertions(+)
+ 5 files changed, 353 insertions(+), 1 deletion(-)
  create mode 100644 games/scores/directory-importer.vala
  create mode 100644 games/scores/history-file-importer.vala
  create mode 100644 games/scores/importer.vala
 
 diff --git a/games/meson.build b/games/meson.build
-index 3bb665b..a7b2818 100644
+index 667a21b..09ae0a4 100644
 --- a/games/meson.build
 +++ b/games/meson.build
-@@ -15,6 +15,9 @@ lggs = static_library('gnome-games-support-3',
-         'scores/category.vala',
-         'scores/context.vala',
-         'scores/dialog.vala',
-+        'scores/directory-importer.vala',
-+        'scores/history-file-importer.vala',
-+        'scores/importer.vala',
-         'scores/score.vala',
-     ],
-     c_args: [
+@@ -14,6 +14,9 @@ files = [
+     'scores/category.vala',
+     'scores/context.vala',
+     'scores/dialog.vala',
++    'scores/directory-importer.vala',
++    'scores/history-file-importer.vala',
++    'scores/importer.vala',
+     'scores/score.vala',
+ ]
+
 diff --git a/games/scores/context.vala b/games/scores/context.vala
-index 2f1f160..f6361b9 100644
+index f1491c4..99a3395 100644
 --- a/games/scores/context.vala
 +++ b/games/scores/context.vala
-@@ -83,6 +83,13 @@ public class Context : Object
+@@ -103,6 +103,13 @@ public class Context : Object
       */
-     public int max_high_scores { get; construct; }
+     public string? score_type { get; construct; }
  
++    [Version (deprecated=true, deprecated_since="3.0")]
 +    /**
 +     * The {@link [Games.Scores.Importer]} for the context (eg. HistoryFileImporter).
 +     *
 +     */
-+    [Version (deprecated=true, deprecated_since="3.0")]
 +    public Importer? importer { get; construct; }
 +
      private Category? current_category = null;
  
      private HashTable<Category, GenericArray<Score>> scores_per_category =
-@@ -110,6 +117,7 @@ public class Context : Object
+@@ -118,6 +125,7 @@ public class Context : Object
       * Emitted when the score dialog is closed.
       *
       */
@@ -55,62 +55,42 @@ index 2f1f160..f6361b9 100644
      public signal void dialog_closed ();
  
      class construct
-@@ -151,10 +159,44 @@ public class Context : Object
+@@ -140,7 +148,7 @@ public class Context : Object
+     /**
+      * Creates a new Context.
+      *
+-     * ``score_directory`` is the name for the directory, inside the user's data_dir, that holds the scores.
++     * ``app_name`` is your App ID (eg. ``org.gnome.Mines``)
+      *
+      * ``category_type`` describes all of the categories (e.g. "Minefield", "Level").
+      *
+@@ -161,6 +169,7 @@ public class Context : Object
                      Style style,
                      string? icon_name = null,
-                     int max_high_scores = 10)
-+    {
-+        this.with_importer_and_icon_name (app_name, category_type, category_request, style, null, null, max_high_scores);
-+    }
-+
-+    public Context.with_icon_name (string app_name,
-+                                   string category_type,
-+                                   CategoryRequestFunc category_request,
-+                                   Style style,
-+                                   string icon_name,
-+                                   int max_high_scores = 10)
-+    {
-+        this.with_importer_and_icon_name (app_name, category_type, category_request, style, null, icon_name, max_high_scores);
-+    }
-+
-+    [Version (deprecated=true, deprecated_since="3.0")]
-+    public Context.with_importer (string app_name,
-+                                  string category_type,
-+                                  CategoryRequestFunc category_request,
-+                                  Style style,
-+                                  Importer? importer,
-+                                  int max_high_scores = 10)
-+    {
-+        this.with_importer_and_icon_name (app_name, category_type, category_request, style, importer, null, max_high_scores);
-+    }
-+
-+    [Version (deprecated=true, deprecated_since="3.0")]
-+    public Context.with_importer_and_icon_name (string app_name,
-+                                                string category_type,
-+                                                CategoryRequestFunc category_request,
-+                                                Style style,
-+                                                Importer? importer = null,
-+                                                string? icon_name = null,
-+                                                int max_high_scores = 10)
+                     int max_high_scores = 10,
++                    Importer? importer = null,
+                     string? score_type = null)
      {
-         Object (app_name: app_name,
-                 category_type: category_type,
+         Object (score_directory: score_directory,
+@@ -168,6 +177,7 @@ public class Context : Object
                  style: style,
+                 icon_name: icon_name ?? score_directory,
+                 max_high_scores: max_high_scores <= -1 ? int.MAX : max_high_scores,
 +                importer: importer,
-                 icon_name: icon_name ?? app_name,
-                 max_high_scores: max_high_scores <= -1 ? int.MAX : max_high_scores);
+                 score_type: score_type);
  
-@@ -179,6 +221,9 @@ public class Context : Object
+         /* Note: the following functionality can be performed manually by
+@@ -187,6 +197,9 @@ public class Context : Object
      public override void constructed ()
      {
-         user_score_dir = Path.build_filename (Environment.get_user_data_dir (), app_name, "scores", null);
+         user_score_dir = Path.build_filename (Environment.get_user_data_dir (), score_directory, "scores", null);
 +
 +        if (importer != null)
 +            importer.run (this, user_score_dir);
      }
  
      public Category[] get_categories ()
-@@ -307,6 +352,7 @@ public class Context : Object
+@@ -333,6 +346,7 @@ public class Context : Object
       * ``show_action_buttons`` specifies if 'New Game' and 'Quit' buttons should be shown on the dialog
       *
       */
@@ -118,32 +98,7 @@ index 2f1f160..f6361b9 100644
      public async AddScoreResult add_score_full (long score_value,
                                                  Category category,
                                                  string? extra_info,
-@@ -425,12 +471,32 @@ public class Context : Object
-         this.category_request = null;
-     }
- 
-+    /* This code violates the essential rule:
-+     *
-+     *   Never iterate a context created outside the library, including the
-+     *   global-default or thread-default contexts. Otherwise, sources created
-+     *   in the application may be dispatched when the application is not
-+     *   expecting it, causing re-entrancy problems for the application code.
-+     *
-+     * This is why gtk_dialog_run() was removed.
-+     */
-+    [Version (deprecated=true, deprecated_since="3.0")]
-+    public void run_dialog (Gtk.Window game_window)
-+    {
-+        var main_loop = new MainLoop (null);
-+        var dialog = new Dialog (this, category_type, style, null, current_category, icon_name);
-+        dialog.closed.connect (() => main_loop.quit ());
-+        dialog.present (game_window);
-+        main_loop.run ();
-+    }
-+
-     /**
-      * Presents the score dialog on top of ``game_window``.
-      *
+@@ -450,6 +464,7 @@ public class Context : Object
       * ``selected_category`` is the score category to select by default (optional)
       *
       */

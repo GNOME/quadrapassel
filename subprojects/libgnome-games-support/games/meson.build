@@ -14,9 +14,9 @@ files = [
     'scores/category.vala',
     'scores/context.vala',
     'scores/dialog.vala',
-        'scores/directory-importer.vala',
-        'scores/history-file-importer.vala',
-        'scores/importer.vala',
+    'scores/directory-importer.vala',
+    'scores/history-file-importer.vala',
+    'scores/importer.vala',
     'scores/score.vala',
 ]
 
