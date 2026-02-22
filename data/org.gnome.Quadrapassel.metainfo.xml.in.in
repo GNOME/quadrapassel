@@ -50,8 +50,18 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
-    <release date="2026-02-03" version="50~beta" type="development">
+    <release date="2026-02-22" version="50~rc" type="development">
       <description>
+        <ul>
+          <li>Updated the Finnish translation</li>
+          <li>Fixed the game view to make blocks invisible on pause instead of covering them up</li>
+          <li>Fixed an error in the theme dialog</li>
+          <li>Updated the score dialog</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2026-02-03" version="50~beta" type="development">
+    <description>
         <ul>
           <li>Upgraded the project license to GPLv3</li>
           <li>Updated translations: Ukrainian, Georgian, Slovenian, Kazakh, Chinese (China),
