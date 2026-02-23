@@ -133,14 +133,12 @@ private class Dialog : Adw.Dialog
         {
             var title_widget = new Adw.WindowTitle (_("Congratulations!"), new_score_or_time);
             headerbar.set_title_widget (title_widget);
-            this.focus_widget = score_view;
         }
         else if (categories.length == 1)
         {
             active_category = categories[0];
             /* Translators: %1$s is the category type, %2$s is the category (e.g. "Level: 1") */
             set_title (_("%1$s: %2$s").printf (category_type, active_category.name));
-            this.focus_widget = score_view;
         }
         else
         {
@@ -177,7 +175,6 @@ private class Dialog : Adw.Dialog
             popover.halign = Gtk.Align.CENTER;
 
             headerbar.set_title_widget (drop_down);
-            this.focus_widget = drop_down;
         }
 
         /* Add the data to the dialog */
@@ -189,6 +186,10 @@ private class Dialog : Adw.Dialog
         load_scores_for_category (active_category);
         scroll.set_child (score_view);
         toolbar.set_content (scroll);
+        if (drop_down != null)
+            this.focus_widget = drop_down;
+        else
+            this.focus_widget = score_view;
     }
 
     private void drop_down_selected_cb ()
