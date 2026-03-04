@@ -112,11 +112,13 @@ public class Preview : Gtk.Widget {
 
     protected override void dispose () {
         clear ();
+        base.dispose ();
     }
 
     public void clear () {
         foreach (var widget in block_widgets)
         {
+            widget.unparent ();
             widget.destroy ();
         }
 
