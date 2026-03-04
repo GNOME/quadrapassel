@@ -96,20 +96,6 @@ public class Quadrapassel : Adw.Application
     private bool pause_requested = false;
 
     /* Keyboard Keys */
-    private uint return_key = Gdk.keyval_from_name ("Return");
-    private uint pause_key = Gdk.keyval_from_name ("Pause");
-    private uint w_key = Gdk.keyval_from_name ("w");
-    private uint a_key = Gdk.keyval_from_name ("a");
-    private uint s_key = Gdk.keyval_from_name ("s");
-    private uint d_key = Gdk.keyval_from_name ("d");
-    private uint q_key = Gdk.keyval_from_name ("q");
-    private uint e_key = Gdk.keyval_from_name ("e");
-    private uint p_key = Gdk.keyval_from_name ("p");
-    private uint space_key = Gdk.keyval_from_name ("space");
-    private uint up_key = Gdk.keyval_from_name ("Up");
-    private uint down_key = Gdk.keyval_from_name ("Down");
-    private uint left_key = Gdk.keyval_from_name ("Left");
-    private uint right_key = Gdk.keyval_from_name ("Right");
     private HashTable<uint, bool> keys_state = new HashTable<uint16, bool> (direct_hash, direct_equal);
 
     private const GLib.ActionEntry[] ACTION_ENTRIES =
@@ -331,20 +317,20 @@ public class Quadrapassel : Adw.Application
             manette_device_connected_cb (manette_device);
 
         uint[] keys = {
-            return_key,
-            pause_key,
-            w_key,
-            a_key,
-            s_key,
-            d_key,
-            q_key,
-            e_key,
-            p_key,
-            space_key,
-            up_key,
-            down_key,
-            left_key,
-            right_key,
+            Gdk.Key.Return,
+            Gdk.Key.Pause,
+            Gdk.Key.w,
+            Gdk.Key.a,
+            Gdk.Key.s,
+            Gdk.Key.d,
+            Gdk.Key.q,
+            Gdk.Key.e,
+            Gdk.Key.p,
+            Gdk.Key.space,
+            Gdk.Key.Up,
+            Gdk.Key.Down,
+            Gdk.Key.Left,
+            Gdk.Key.Right,
         };
 
         foreach (unowned var key in keys)
@@ -751,7 +737,7 @@ public class Quadrapassel : Adw.Application
 
         if (game != null)
         {
-            if (game.game_over && keyval == return_key)
+            if (game.game_over && keyval == Gdk.Key.Return)
             {
                 new_game ();
                 return true;
@@ -759,7 +745,7 @@ public class Quadrapassel : Adw.Application
         }
         else
         {
-            if (keyval == return_key)
+            if (keyval == Gdk.Key.Return)
             {
                 new_game ();
                 return true;
@@ -768,7 +754,7 @@ public class Quadrapassel : Adw.Application
             return false;
         }
 
-        if (keyval == pause_key || keyval == p_key)
+        if (keyval == Gdk.Key.Pause || keyval == Gdk.Key.p)
         {
             if (!game.game_over)
                 user_pause ();
@@ -778,17 +764,17 @@ public class Quadrapassel : Adw.Application
         if (game.paused)
             return false;
 
-        if (keyval == left_key || keyval == a_key)
+        if (keyval == Gdk.Key.Left || keyval == Gdk.Key.a)
         {
             game.move_left ();
             return true;
         }
-        else if (keyval == right_key || keyval == d_key)
+        else if (keyval == Gdk.Key.Right || keyval == Gdk.Key.d)
         {
             game.move_right ();
             return true;
         }
-        else if (keyval == up_key || keyval == w_key)
+        else if (keyval == Gdk.Key.Up || keyval == Gdk.Key.w)
         {
             if (settings.get_boolean ("rotate-counter-clock-wise"))
                 game.rotate_left ();
@@ -797,22 +783,22 @@ public class Quadrapassel : Adw.Application
 
             return true;
         }
-        else if (keyval == down_key || keyval == s_key)
+        else if (keyval == Gdk.Key.Down || keyval == Gdk.Key.s)
         {
             game.set_fast_forward (true);
             return true;
         }
-        else if (keyval == q_key)
+        else if (keyval == Gdk.Key.q)
         {
             game.rotate_left ();
             return true;
         }
-        else if (keyval == e_key)
+        else if (keyval == Gdk.Key.e)
         {
             game.rotate_right ();
             return true;
         }
-        else if (keyval == space_key)
+        else if (keyval == Gdk.Key.space)
         {
             game.drop ();
             return true;
@@ -834,24 +820,24 @@ public class Quadrapassel : Adw.Application
 
         keys_state[keyval] = false;
 
-        if (keyval == left_key || keyval == a_key)
+        if (keyval == Gdk.Key.Left || keyval == Gdk.Key.a)
         {
             game.stop_moving ();
-            if (keys_state[right_key] || keys_state[d_key])
+            if (keys_state[Gdk.Key.Right] || keys_state[Gdk.Key.d])
                 game.move_right ();
 
             return;
         }
-        else if (keyval == right_key || keyval == d_key)
+        else if (keyval == Gdk.Key.Right || keyval == Gdk.Key.d)
         {
             game.stop_moving ();
-            if (keys_state[left_key] || keys_state[a_key])
+            if (keys_state[Gdk.Key.Left] || keys_state[Gdk.Key.a])
                 game.move_left ();
 
             return;
         }
-        else if (keyval == down_key ||
-                 keyval == s_key)
+        else if (keyval == Gdk.Key.Down ||
+                 keyval == Gdk.Key.s)
         {
             game.set_fast_forward (false);
             return;
