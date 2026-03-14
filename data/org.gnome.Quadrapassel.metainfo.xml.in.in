@@ -50,6 +50,15 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
+    <release date="2026-03-14" version="50.0">
+      <description>
+        <ul>
+          <li>Updated translations: Basque, Czech, Hungarian, Turkish</li>
+          <li>Fixed an error when the piece preview was destroyed</li>
+          <li>Switched to a better method of key recognition</li>
+        </ul>
+      </description>
+    </release>
     <release date="2026-02-22" version="50~rc" type="development">
       <description>
         <ul>

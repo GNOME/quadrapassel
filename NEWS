@@ -1,3 +1,13 @@
+quadrapassel 50.0
+=================
+* Updated translations: Basque (Asier Saratsua Garmendia), Czech (Daniel Rusek),
+			Hungarian (Balázs Úr), Turkish (Sabri Ünal)
+* Fixed a bug where the Preview would not unparent its children before destroying them
+* Switched key recognition to make use of Gdk.Key constants instead of variables
+* Removed the GitLab project icon (logo.png) from the repository
+* Updated the app screenshots
+* Updated libgnome-games-support
+
 quadrapassel 50.rc
 ==================
 * Updated the Finnish translation (Jiri Grönroos)
