@@ -29,28 +29,6 @@
   ],
   "modules": [
     {
-      "name": "libmanette",
-      "buildsystem": "meson",
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://gitlab.gnome.org/GNOME/libmanette.git",
-          "branch": "libmanette-0-2"
-        }
-      ],
-      "modules": [
-        {
-          "name": "libevdev",
-          "sources": [
-            {
-              "type": "git",
-              "url": "https://gitlab.freedesktop.org/libevdev/libevdev.git"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "quadrapassel",
       "buildsystem": "meson",
       "config-opts": [
