@@ -52,14 +52,14 @@ public class ThemeSelectorDialog : Adw.Dialog
         var builder = new Gtk.Builder ();
         Adw.ToolbarView toolbar = new Adw.ToolbarView ();
         Adw.HeaderBar headerbar = new Adw.HeaderBar ();
-        set_title ("Select Theme");
+        set_title (_("Select Theme"));
         headerbar.set_show_start_title_buttons (true);
         headerbar.set_show_end_title_buttons (true);
         Gtk.Box buttons_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
         prev_button = new Gtk.Button.from_icon_name ("go-previous-symbolic");
         next_button = new Gtk.Button.from_icon_name ("go-next-symbolic");
-        prev_button.set_tooltip_text ("Previous");
-        next_button.set_tooltip_text ("Next");
+        prev_button.set_tooltip_text (_("Previous"));
+        next_button.set_tooltip_text (_("Next"));
         next_button.clicked.connect (() => {
             ++active_index;
             update ();

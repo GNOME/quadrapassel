@@ -502,7 +502,7 @@ public class Quadrapassel : Adw.Application
         in_game_group.add (show_shadow_toggle);
 
         var game_seed = new Adw.EntryRow ();
-        game_seed.set_title ("Game _seed");
+        game_seed.set_title (_("Game _seed"));
         game_seed.set_use_underline (true);
         game_seed.set_text (settings.get_uint ("seed").to_string ());
         game_seed.set_sensitive (settings.get_boolean ("use-seed"));
