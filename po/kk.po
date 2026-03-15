@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2026-01-26 00:20+0000\n"
-"PO-Revision-Date: 2026-01-26 20:29+0500\n"
+"POT-Creation-Date: 2026-03-15 15:43+0000\n"
+"PO-Revision-Date: 2026-03-15 23:40+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:121
-#: src/quadrapassel.vala:139 src/quadrapassel.vala:1071
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:125
+#: src/quadrapassel.vala:145 src/quadrapassel.vala:1110
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -29,8 +29,7 @@ msgstr "Quadrapassel"
 msgid "Fit falling blocks together"
 msgstr "Құлап бара жатқан блоктарды қиыстыру"
 
-#. Translators: Search terms to find this application. Do NOT translate or
-#. localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in.in:11
 msgid "tetris;"
 msgstr "tetris;тетрис;"
@@ -52,9 +51,9 @@ msgstr ""
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:18
 msgid ""
 "If you’re looking for a challenge, Quadrapassel allows you to increase the "
-"initial speed of the blocks, or begin the game with partial blocks on some of "
-"the rows. Or, instead of allowing the blocks to fall randomly, it can select "
-"blocks that will be hard for you to place."
+"initial speed of the blocks, or begin the game with partial blocks on some "
+"of the rows. Or, instead of allowing the blocks to fall randomly, it can "
+"select blocks that will be hard for you to place."
 msgstr ""
 "Егер сынаманы іздеп жатсаңыз, Quadrapassel блоктардың бастапқы жылдамдығын "
 "арттыруға мүмкіндік береді немесе кейбір жолдар бойынша жартылай блоктармен "
@@ -66,7 +65,8 @@ msgid "The Quadrapassel window, with a game playing."
 msgstr "Quadrapassel терезесі, ойын ойналуда."
 
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:40
-msgid "The Quadrapassel window, with a game playing, in small form factor mode."
+msgid ""
+"The Quadrapassel window, with a game playing, in small form factor mode."
 msgstr "Quadrapassel терезесі, ойын ойналуда, шағын өлшемді режимде."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -161,13 +161,17 @@ msgstr "Терезе биіктігі, пиксельмен"
 msgid "true if the window is maximized"
 msgstr "терезе максималды болса, мәні true болады"
 
-#: src/game-view.vala:436 src/game-view.vala:457
+#: src/game-view.vala:420
 msgid "Paused"
 msgstr "Аялдатылған"
 
-#: src/game-view.vala:441
+#: src/game-view.vala:427
 msgid "Game Over"
 msgstr "Ойын аяқталды"
+
+#: src/more-info-button.blp:8
+msgid "More Information"
+msgstr "Көбірек ақпарат"
 
 #: src/rules-dialog.blp:7
 msgid "Game Rules"
@@ -191,8 +195,8 @@ msgstr "Әрбір жойылған қатар үшін ұпай аласыз"
 #: src/rules-dialog.blp:18
 msgctxt "game rules"
 msgid ""
-"You can also get a bonus of 2500 × level × rows destroyed if the bottom layer "
-"is destroyed."
+"You can also get a bonus of 2500 × level × rows destroyed if the bottom "
+"layer is destroyed."
 msgstr ""
 "Төменгі қабат жойылса, сіз сонымен қатар 2500 × деңгей × жойылған қатарлар "
 "мөлшерінде бонус ала аласыз."
@@ -321,115 +325,120 @@ msgctxt "shortcut window"
 msgid "Drop"
 msgstr "Тастау"
 
-#: src/quadrapassel.vala:167 src/quadrapassel.vala:236
+#: src/quadrapassel.vala:173 src/quadrapassel.vala:242
 msgid "Start a new game"
 msgstr "Жаңа ойынды бастау"
 
-#: src/quadrapassel.vala:174
+#: src/quadrapassel.vala:180
 msgid "_Scores"
 msgstr "_Есептер"
 
-#: src/quadrapassel.vala:175
+#: src/quadrapassel.vala:181
 msgid "App_earance"
 msgstr "Сыртқы _түрі"
 
-#: src/quadrapassel.vala:176
+#: src/quadrapassel.vala:182
 msgid "_Preferences"
 msgstr "_Баптаулар"
 
-#: src/quadrapassel.vala:179
+#: src/quadrapassel.vala:185
 msgid "_Keyboard Shortcuts"
 msgstr "_Пернетақта жарлықтары"
 
-#: src/quadrapassel.vala:180
+#: src/quadrapassel.vala:186
 msgid "Game _Rules"
 msgstr "Ойын _ережелері"
 
-#: src/quadrapassel.vala:181
+#: src/quadrapassel.vala:187
 msgid "_About Quadrapassel"
 msgstr "Quadrapassel тур_алы"
 
-#: src/quadrapassel.vala:184
+#: src/quadrapassel.vala:190
 msgid "Main Menu"
 msgstr "Негізгі мәзір"
 
-#: src/quadrapassel.vala:241
+#: src/quadrapassel.vala:247
 msgid "Next"
 msgstr "Келесі"
 
-#: src/quadrapassel.vala:258
+#: src/quadrapassel.vala:264
 msgid "Score"
 msgstr "Нәтиже"
 
-#: src/quadrapassel.vala:271 src/quadrapassel.vala:937
+#: src/quadrapassel.vala:277 src/quadrapassel.vala:976
 msgid "Rows"
 msgstr "Қатарлар"
 
-#: src/quadrapassel.vala:283 src/quadrapassel.vala:937
+#: src/quadrapassel.vala:289 src/quadrapassel.vala:976
 msgid "Level"
 msgstr "Деңгейі"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:296
+#: src/quadrapassel.vala:302
 msgid "Difficulty"
 msgstr "Қиындық"
 
-#: src/quadrapassel.vala:398
+#: src/quadrapassel.vala:427
 msgid "Preferences"
 msgstr "Қалаулар"
 
-#: src/quadrapassel.vala:401
+#: src/quadrapassel.vala:430
 msgid "Game"
 msgstr "Ойын"
 
-#: src/quadrapassel.vala:404
+#: src/quadrapassel.vala:433
 msgid "Game Difficulty"
 msgstr "Ойын қиындығы"
 
-#: src/quadrapassel.vala:405
+#: src/quadrapassel.vala:434
 msgid "Change how difficult the game is"
 msgstr "Ойынның қиындығын өзгерту"
 
-#: src/quadrapassel.vala:407
+#: src/quadrapassel.vala:436
 msgid ""
-"The Difficulty affects the level you start at and how many rows are pre-filled."
+"The Difficulty affects the level you start at and how many rows are pre-"
+"filled."
 msgstr ""
 "Қиындық деңгейі сіз бастайтын деңгейге және алдын ала толтырылған қатарлар "
 "санына әсер етеді."
 
-#: src/quadrapassel.vala:414
+#: src/quadrapassel.vala:443
 msgid "_Difficulty"
 msgstr "Қ_иындық"
 
-#: src/quadrapassel.vala:422
+#: src/quadrapassel.vala:451
 msgid "Choose difficult _blocks"
 msgstr "Қиын _блоктарды таңдау"
 
-#: src/quadrapassel.vala:431
+#: src/quadrapassel.vala:460
 msgid "In-Game"
 msgstr "Ойын ішінде"
 
-#: src/quadrapassel.vala:432
+#: src/quadrapassel.vala:461
 msgid "Change the experience of playing a game"
 msgstr "Ойын ойнау тәжірибесін өзгерту"
 
-#: src/quadrapassel.vala:435
+#: src/quadrapassel.vala:464
 msgid "_Enable sounds"
 msgstr "Дыбыстарды іск_е қосу"
 
-#: src/quadrapassel.vala:446
+#: src/quadrapassel.vala:475
 msgid "_Preview next block"
 msgstr "Келесі блокты алдын ала қ_арау"
 
-#: src/quadrapassel.vala:458
+#: src/quadrapassel.vala:487
 msgid "_Rotate blocks counterclockwise"
 msgstr "Сағат тілі бағытына қарсы бұ_ру"
 
-#: src/quadrapassel.vala:465
+#: src/quadrapassel.vala:494
 msgid "Show _where the block will land"
 msgstr "Блоктың қа_йда түсетінін көрсету"
 
-#: src/quadrapassel.vala:482
+#: src/quadrapassel.vala:505
+msgid "Game _seed"
+msgstr "Ойынның _сид мәні"
+
+#: src/quadrapassel.vala:511
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
@@ -437,44 +446,44 @@ msgstr ""
 "Сид қандай блоктарды алатыныңызды анықтау үшін қолданылады. Сид орнатылған "
 "кезде, ойын әр уақытта бірдей болады."
 
-#: src/quadrapassel.vala:486
+#: src/quadrapassel.vala:515
 msgid "_Use a custom seed for the game"
 msgstr "Ойын үшін _арнайы сидті қолдану"
 
-#: src/quadrapassel.vala:916
+#: src/quadrapassel.vala:955
 msgid "Unpause the game"
 msgstr "Ойынды жалғастыру"
 
-#: src/quadrapassel.vala:922
+#: src/quadrapassel.vala:961
 msgid "Pause the game"
 msgstr "Ойынды аялдату"
 
-#: src/quadrapassel.vala:945
+#: src/quadrapassel.vala:984
 msgid "Start the game"
 msgstr "Ойынды бастау"
 
-#: src/quadrapassel.vala:974
+#: src/quadrapassel.vala:1013
 msgid "Old Scores"
 msgstr "Ескі нәтижелер"
 
-#: src/quadrapassel.vala:979
+#: src/quadrapassel.vala:1018
 msgid "Difficult"
 msgstr "Қиын"
 
-#: src/quadrapassel.vala:1058
+#: src/quadrapassel.vala:1097
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr "Ұпайлар қанша қатар жойылғанына байланысты есептеледі."
 
-#: src/quadrapassel.vala:1074
+#: src/quadrapassel.vala:1113
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
 msgstr ""
-"Толық жолдарды жасау үшін блоктарды бұратын классикалық ойын, бірақ блоктарды "
-"тым жоғары жинамаңыз, әйтпесе ойын аяқталады!"
+"Толық жолдарды жасау үшін блоктарды бұратын классикалық ойын, бірақ "
+"блоктарды тым жоғары жинамаңыз, әйтпесе ойын аяқталады!"
 
-#: src/quadrapassel.vala:1078
+#: src/quadrapassel.vala:1117
 msgid "translator-credits"
 msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 
@@ -502,11 +511,11 @@ msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 #~ msgstr "Толтырылатын жолдар тығыздығы"
 
 #~ msgid ""
-#~ "The density of blocks in rows filled at the start of the game. The value is "
-#~ "between 0 (for no blocks) and 10 (for a completely filled row)."
+#~ "The density of blocks in rows filled at the start of the game. The value "
+#~ "is between 0 (for no blocks) and 10 (for a completely filled row)."
 #~ msgstr ""
-#~ "Ойын басында толтырылған жолдардағы блоктардың тығыздығы. Мәні 0 (блоксыз) "
-#~ "және 10 (толық толтырылған жол үшін) арасында болады."
+#~ "Ойын басында толтырылған жолдардағы блоктардың тығыздығы. Мәні 0 "
+#~ "(блоксыз) және 10 (толық толтырылған жол үшін) арасында болады."
 
 #~ msgid "Key press to move left."
 #~ msgstr "Солға жылжыту үшін пернелер басуы."
@@ -587,7 +596,8 @@ msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 #~ msgstr "Күні"
 
 #~ msgid "A classic game of fitting falling blocks together"
-#~ msgstr "Құлап бара жатқан блоктарды бір-біріне қиыстырудың классикалық ойыны"
+#~ msgstr ""
+#~ "Құлап бара жатқан блоктарды бір-біріне қиыстырудың классикалық ойыны"
 
 #~ msgid "_About"
 #~ msgstr "О_сы туралы"
