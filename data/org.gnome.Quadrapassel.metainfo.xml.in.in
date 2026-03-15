@@ -50,6 +50,13 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
+    <release date="2026-03-15" version="49.3">
+      <description>
+        <ul>
+          <li>Updated translations: Hungarian, Swedish, Kazakh</li>
+        </ul>
+      </description>
+    </release>
     <release date="2025-12-10" version="49.2.3">
       <description>
         <ul>
