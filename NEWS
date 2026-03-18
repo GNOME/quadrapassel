@@ -1,3 +1,10 @@
+quadrapassel 50.0.1
+===================
+* Updated translations: Ukrainian (Yuri Chornoivan), Kazakh (Baurzhan Muftakhidinov),
+			Slovenian (Martin S.)
+* Fixed a bug where some user visible strings were not marked for translation (Sabri Ünal)
+* Fixed the screenshot size and an issue where the pause button was highlighted
+
 quadrapassel 50.0
 =================
 * Updated translations: Basque (Asier Saratsua Garmendia), Czech (Daniel Rusek),

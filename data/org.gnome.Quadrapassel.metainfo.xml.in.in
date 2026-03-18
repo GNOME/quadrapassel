@@ -50,6 +50,14 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
+    <release date="2026-03-18" version="50.0.1">
+      <description>
+        <ul>
+          <li>Updated translations: Ukrainian, Kazakh, Slovenian</li>
+          <li>Fixed a bug where some text was not translated</li>
+        </ul>
+      </description>
+    </release>
     <release date="2026-03-14" version="50.0">
       <description>
         <ul>
