@@ -31,7 +31,7 @@
     <control>touch</control>
   </recommends>
   <screenshots>
-    <screenshot type="default" width="475" height="610">
+    <screenshot type="default" width="450" height="575">
       <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/main/data/screenshot-1.png</image>
       <caption>The Quadrapassel window, with a game playing.</caption>
     </screenshot>
