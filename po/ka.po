@@ -5,22 +5,22 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2026-01-26 00:20+0000\n"
-"PO-Revision-Date: 2026-01-26 07:21+0100\n"
+"POT-Creation-Date: 2026-03-18 21:45+0000\n"
+"PO-Revision-Date: 2026-03-19 09:16+0100\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
-"Language-Team: \n"
+"Language-Team: Georgian <(nothing)>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:121
-#: src/quadrapassel.vala:139 src/quadrapassel.vala:1071
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:125
+#: src/quadrapassel.vala:145 src/quadrapassel.vala:1110
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -152,13 +152,17 @@ msgstr "ფანჯრის სიმაღლე, პიქსელებშ
 msgid "true if the window is maximized"
 msgstr "ჭეშმარიტია, თუ ფანჯარა მთელ ეკრანზეა"
 
-#: src/game-view.vala:436 src/game-view.vala:457
+#: src/game-view.vala:420
 msgid "Paused"
 msgstr "შეჩერებულია"
 
-#: src/game-view.vala:441
+#: src/game-view.vala:427
 msgid "Game Over"
 msgstr "თამაში დასრულდა"
+
+#: src/more-info-button.blp:8
+msgid "More Information"
+msgstr "მეტი ინფორმაცია"
 
 #: src/rules-dialog.blp:7
 msgid "Game Rules"
@@ -310,157 +314,161 @@ msgctxt "shortcut window"
 msgid "Drop"
 msgstr "დაგდება"
 
-#: src/quadrapassel.vala:167 src/quadrapassel.vala:236
+#: src/quadrapassel.vala:173 src/quadrapassel.vala:242
 msgid "Start a new game"
 msgstr "ახალი თამაშის დაწყება"
 
-#: src/quadrapassel.vala:174
+#: src/quadrapassel.vala:180
 msgid "_Scores"
 msgstr "_ქულები"
 
-#: src/quadrapassel.vala:175
+#: src/quadrapassel.vala:181
 msgid "App_earance"
 msgstr "გარ_ეგნობა"
 
-#: src/quadrapassel.vala:176
+#: src/quadrapassel.vala:182
 msgid "_Preferences"
 msgstr "_მორგება"
 
-#: src/quadrapassel.vala:179
+#: src/quadrapassel.vala:185
 msgid "_Keyboard Shortcuts"
 msgstr "_კლავიატურის მალსახმობები"
 
-#: src/quadrapassel.vala:180
+#: src/quadrapassel.vala:186
 msgid "Game _Rules"
 msgstr "თამაშის _წესები"
 
-#: src/quadrapassel.vala:181
+#: src/quadrapassel.vala:187
 msgid "_About Quadrapassel"
 msgstr "Quadrapassel-ის შესახებ"
 
-#: src/quadrapassel.vala:184
+#: src/quadrapassel.vala:190
 msgid "Main Menu"
 msgstr "მთავარი მენიუ"
 
-#: src/quadrapassel.vala:241
+#: src/quadrapassel.vala:247
 msgid "Next"
 msgstr "შემდეგი"
 
-#: src/quadrapassel.vala:258
+#: src/quadrapassel.vala:264
 msgid "Score"
 msgstr "ქულები"
 
-#: src/quadrapassel.vala:271 src/quadrapassel.vala:937
+#: src/quadrapassel.vala:277 src/quadrapassel.vala:976
 msgid "Rows"
 msgstr "მწკრივები"
 
-#: src/quadrapassel.vala:283 src/quadrapassel.vala:937
+#: src/quadrapassel.vala:289 src/quadrapassel.vala:976
 msgid "Level"
 msgstr "დონე"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:296
+#: src/quadrapassel.vala:302
 msgid "Difficulty"
 msgstr "სირთულე"
 
-#: src/quadrapassel.vala:398
+#: src/quadrapassel.vala:427
 msgid "Preferences"
 msgstr "მორგება"
 
-#: src/quadrapassel.vala:401
+#: src/quadrapassel.vala:430
 msgid "Game"
 msgstr "თამაში"
 
-#: src/quadrapassel.vala:404
+#: src/quadrapassel.vala:433
 msgid "Game Difficulty"
 msgstr "თამაშის სირთულე"
 
-#: src/quadrapassel.vala:405
+#: src/quadrapassel.vala:434
 msgid "Change how difficult the game is"
 msgstr ""
 
-#: src/quadrapassel.vala:407
+#: src/quadrapassel.vala:436
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
 msgstr ""
 
-#: src/quadrapassel.vala:414
+#: src/quadrapassel.vala:443
 msgid "_Difficulty"
 msgstr "სირთუ_ლე"
 
-#: src/quadrapassel.vala:422
+#: src/quadrapassel.vala:451
 msgid "Choose difficult _blocks"
 msgstr ""
 
-#: src/quadrapassel.vala:431
+#: src/quadrapassel.vala:460
 msgid "In-Game"
 msgstr "თამაშში"
 
-#: src/quadrapassel.vala:432
+#: src/quadrapassel.vala:461
 msgid "Change the experience of playing a game"
 msgstr ""
 
-#: src/quadrapassel.vala:435
+#: src/quadrapassel.vala:464
 msgid "_Enable sounds"
 msgstr "ხმების _ჩართვა"
 
-#: src/quadrapassel.vala:446
+#: src/quadrapassel.vala:475
 msgid "_Preview next block"
 msgstr "_წინა ბლოკის მინიატურა"
 
-#: src/quadrapassel.vala:458
+#: src/quadrapassel.vala:487
 msgid "_Rotate blocks counterclockwise"
 msgstr ""
 
-#: src/quadrapassel.vala:465
+#: src/quadrapassel.vala:494
 msgid "Show _where the block will land"
 msgstr ""
 
-#: src/quadrapassel.vala:482
+#: src/quadrapassel.vala:505
+msgid "Game _seed"
+msgstr "თამაშის თე_სლი"
+
+#: src/quadrapassel.vala:511
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
 msgstr ""
 
-#: src/quadrapassel.vala:486
+#: src/quadrapassel.vala:515
 msgid "_Use a custom seed for the game"
 msgstr ""
 
-#: src/quadrapassel.vala:916
+#: src/quadrapassel.vala:955
 msgid "Unpause the game"
 msgstr "თამაშის გაგრძელება"
 
-#: src/quadrapassel.vala:922
+#: src/quadrapassel.vala:961
 msgid "Pause the game"
 msgstr "თამაშის შეჩერება"
 
-#: src/quadrapassel.vala:945
+#: src/quadrapassel.vala:984
 msgid "Start the game"
 msgstr "თამაშის დაწყება"
 
-#: src/quadrapassel.vala:974
+#: src/quadrapassel.vala:1013
 msgid "Old Scores"
 msgstr "ძველი ქულები"
 
-#: src/quadrapassel.vala:979
+#: src/quadrapassel.vala:1018
 msgid "Difficult"
 msgstr "რთული"
 
-#: src/quadrapassel.vala:1058
+#: src/quadrapassel.vala:1097
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr ""
 
-#: src/quadrapassel.vala:1074
+#: src/quadrapassel.vala:1113
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
 msgstr ""
 
-#: src/quadrapassel.vala:1078
+#: src/quadrapassel.vala:1117
 msgid "translator-credits"
-msgstr "თემური დოღონაძე"
+msgstr "ეკატერინე პაპავა"
 
 #~ msgid "Lines"
 #~ msgstr "ხაზები"
