@@ -884,7 +884,7 @@ public class Game : Object
         }
         /* You get a bonus for getting back to the base */
         if (base_line_destroyed)
-            score += 2500 * level * n_lines;
+            score += 100 * level * n_lines;
 
         /* Increase speed if level has changed */
         if (level != old_level)
