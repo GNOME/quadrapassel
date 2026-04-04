@@ -550,7 +550,7 @@ public class Quadrapassel : Adw.Application
         theme_preview_frame.margin_bottom = 12;
         theme_preview = new Preview ();
         theme_preview.theme = settings.get_string ("theme");
-        theme_preview.game = new Game ();
+        theme_preview.update_block (new Game ().next_shape);
         theme_preview_frame.child = theme_preview;
         var dialog = new Games.ThemeSelectorDialog ({"plain", "tangoflat", "tangoshaded", "clean", "modern"},
                                                     settings.get_string ("theme"),
@@ -934,9 +934,9 @@ public class Quadrapassel : Adw.Application
 
         game.pause_changed.connect (pause_changed_cb);
         game.shape_landed.connect (shape_landed_cb);
+        game.shape_added.connect (shape_added_cb);
         game.complete.connect (complete_cb);
         game_aspect.grab_focus ();
-        preview.game = game;
         view.game = game;
 
         game.start ();
@@ -969,6 +969,12 @@ public class Quadrapassel : Adw.Application
     private void shape_landed_cb (int[] lines, List<Block> line_blocks)
     {
         update_score ();
+    }
+
+    private void shape_added_cb ()
+    {
+        if (game.shape != null)
+            preview.update_block (game.next_shape);
     }
 
     private string get_game_extra_info ()

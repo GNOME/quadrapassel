@@ -46,33 +46,14 @@ public class Preview : Gtk.Widget {
         get { return (get_width () + get_height ()) / 2 / 5; }
     }
 
-    private Game? _game = null;
-    public Game? game
-    {
-        get { return _game; }
-        set
-        {
-            if (_game != null)
-                SignalHandler.disconnect_matched (_game, SignalMatchType.DATA, 0, 0, null, null, this);
-            _game = value;
-            _game.shape_added.connect (shape_added_cb);
-            update_block ();
-        }
-    }
-
     private bool _enabled = true;
     public bool enabled
     {
         get { return _enabled; }
-        set { _enabled = value; update_block (); }
+        set { _enabled = value; update_block (null); }
     }
 
     public Preview () {}
-
-    private void shape_added_cb ()
-    {
-        update_block ();
-    }
 
     protected override void snapshot (Gtk.Snapshot snapshot) {
         foreach (var widget in block_widgets) {
@@ -125,24 +106,22 @@ public class Preview : Gtk.Widget {
         block_widgets.remove_range (0, block_widgets.length);
     }
 
-    private void update_block ()
+    public void update_block (Shape? shape)
     {
         if (block_widgets.length != 0) {
             clear ();
         }
 
-        if (game == null || game.next_shape == null || !enabled)
+        if (!enabled || shape == null)
         {
-            // If the game is set up for preview but no preview is available, still show preview field
             set_visible (enabled);
             return;
         }
 
         set_visible (true);
 
-
         var min_width = 4, max_width = 0, min_height = 4, max_height = 0;
-        foreach (var b in game.next_shape.blocks) {
+        foreach (var b in shape.blocks) {
             min_width = int.min (b.x, min_width);
             max_width = int.max (b.x + 1, max_width);
             min_height = int.min (b.y, min_height);
