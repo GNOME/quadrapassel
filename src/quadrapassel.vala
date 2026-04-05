@@ -49,6 +49,8 @@ public class Quadrapassel : Adw.Application
     /* Preview of the next shape */
     private Preview preview;
     private Games.GridFrame preview_frame;
+    string next_markup = "<span color='gray'>%s</span>".printf (_("Next"));
+    string hold_markup = "<span color='gray'>%s</span>".printf (_("Hold"));
     private Gtk.Label preview_label;
 
     /* Label showing current score */
@@ -244,7 +246,7 @@ public class Quadrapassel : Adw.Application
         headerbar.pack_end (pause_play_button);
 
         preview_label = new Gtk.Label (null);
-        preview_label.set_markup ("<span color='gray'>%s</span>".printf (_("Next")));
+        preview_label.set_markup (next_markup);
         preview_label.halign = CENTER;
         preview_label.valign = CENTER;
         preview_label.ellipsize = Pango.EllipsizeMode.END;
@@ -325,6 +327,7 @@ public class Quadrapassel : Adw.Application
             Gdk.Key.d,
             Gdk.Key.q,
             Gdk.Key.e,
+            Gdk.Key.h,
             Gdk.Key.p,
             Gdk.Key.space,
             Gdk.Key.Up,
@@ -659,6 +662,11 @@ public class Quadrapassel : Adw.Application
             game.set_fast_forward (true);
             return;
         }
+        else if (button == InputEventCode.BTN_X)
+        {
+            game.hold ();
+            return;
+        }
         else if (button == InputEventCode.BTN_DPAD_DOWN)
         {
             game.drop ();
@@ -803,6 +811,11 @@ public class Quadrapassel : Adw.Application
             game.drop ();
             return true;
         }
+        else if (keyval == Gdk.Key.h)
+        {
+            game.hold ();
+            return true;
+        }
 
         return false;
     }
@@ -935,6 +948,7 @@ public class Quadrapassel : Adw.Application
         game.pause_changed.connect (pause_changed_cb);
         game.shape_landed.connect (shape_landed_cb);
         game.shape_added.connect (shape_added_cb);
+        game.shape_held.connect (shape_held_cb);
         game.complete.connect (complete_cb);
         game_aspect.grab_focus ();
         view.game = game;
@@ -973,8 +987,20 @@ public class Quadrapassel : Adw.Application
 
     private void shape_added_cb ()
     {
-        if (game.shape != null)
-            preview.update_block (game.next_shape);
+        if (game.shape == null || game.held_shape != null)
+            return;
+
+        preview_label.label = next_markup;
+        preview.update_block (game.next_shape);
+    }
+
+    private void shape_held_cb ()
+    {
+        if (game.held_shape == null)
+            return;
+
+        preview_label.label = hold_markup;
+        preview.update_block (game.held_shape);
     }
 
     private string get_game_extra_info ()

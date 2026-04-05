@@ -242,6 +242,9 @@ public class Game : Object
     /* Next shape to be used */
     public Shape? next_shape = null;
 
+    /* The shape that is currently held */
+    public Shape? held_shape = null;
+
     /* Placed blocks */
     public Block[,] blocks;
 
@@ -278,6 +281,9 @@ public class Game : Object
     /* true if the game has started */
     private bool has_started = false;
 
+    /* true if the player has held a piece and no pieces have been placed subsequently */
+    private bool is_hold_used = false;
+
     /* true if games is paused */
     private bool _paused = false;
     public bool paused
@@ -313,7 +319,9 @@ public class Game : Object
 
     public signal void started ();
     public signal void shape_added ();
+    public signal void shape_held ();
     public signal void shape_moved ();
+    public signal void shape_removed ();
     public signal void shape_dropped ();
     public signal void shape_rotated ();
     public signal void shape_landed (int[] lines, List<Block> line_blocks);
@@ -479,6 +487,33 @@ public class Game : Object
         fall_timeout_cb ();
     }
 
+    public void hold ()
+    {
+        if (shape == null || is_hold_used)
+            return;
+
+        is_hold_used = true;
+
+        Shape? removed_shape = shape;
+        remove_shape ();
+
+        if (held_shape == null)
+        {
+            add_shape ();
+            /* re-make the shapes because it is easier than resetting positions */
+            held_shape = make_shape (removed_shape.type, 0);
+            shape_held ();
+        }
+        else
+        {
+
+            shape = held_shape;
+            next_shape = make_shape (removed_shape.type, 0);
+            held_shape = null;
+            add_shape_internal ();
+        }
+    }
+
     public void stop ()
     {
         if (drop_timeout != 0)
@@ -573,6 +608,11 @@ public class Game : Object
 
         make_next_shape ();
 
+        add_shape_internal ();
+    }
+
+    private void add_shape_internal ()
+    {
         foreach (var b in shape.blocks)
         {
             var x = shape.x + b.x;
@@ -892,6 +932,7 @@ public class Game : Object
 
         shape_landed (lines, line_blocks);
         shape = null;
+        is_hold_used = false;
     }
 
     private bool move_shape (int x_step, int y_step, int r_step)
@@ -962,5 +1003,15 @@ public class Game : Object
                 }
             }
         }
+    }
+
+    private void remove_shape ()
+    {
+        if (shape == null)
+            return;
+
+        shape = null;
+
+        shape_removed ();
     }
 }

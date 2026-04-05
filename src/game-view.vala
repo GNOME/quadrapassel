@@ -35,6 +35,7 @@ public class GameView : Gtk.Widget {
             _game = value;
             _game.shape_added.connect (shape_added_cb);
             _game.shape_moved.connect (shape_moved_cb);
+            _game.shape_removed.connect (shape_removed_cb);
             _game.shape_dropped.connect (shape_dropped_cb);
             _game.shape_rotated.connect (shape_rotated_cb);
             _game.shape_landed.connect (shape_landed_cb);
@@ -323,6 +324,39 @@ public class GameView : Gtk.Widget {
         play_sound ("slide");
     }
 
+    private void shape_removed_cb ()
+    {
+        remove_shape_blocks ();
+        queue_allocate ();
+    }
+
+    private void remove_shape_blocks ()
+    {
+        var shape_iter = HashTableIter<Block, BlockWidget> (shape_blocks);
+        while (true)
+        {
+            Block block;
+            BlockWidget widget;
+            if (!shape_iter.next (out block, out widget))
+                break;
+            widget.unparent ();
+        }
+
+        shape_blocks.remove_all ();
+
+        var shadow_iter = HashTableIter<Block, BlockWidget> (shadow_blocks);
+        while (true)
+        {
+            Block block;
+            BlockWidget widget;
+            if (!shadow_iter.next (out block, out widget))
+                break;
+            widget.unparent ();
+        }
+
+        shadow_blocks.remove_all ();
+    }
+
     private void shape_dropped_cb ()
     {
         queue_allocate ();
@@ -355,29 +389,7 @@ public class GameView : Gtk.Widget {
 
         n_lines_destroyed = lines.length;
 
-        var shape_iter = HashTableIter<Block, BlockWidget> (shape_blocks);
-        while (true)
-        {
-            Block block;
-            BlockWidget widget;
-            if (!shape_iter.next (out block, out widget))
-                break;
-            widget.unparent ();
-        }
-
-        shape_blocks.remove_all ();
-
-        var shadow_iter = HashTableIter<Block, BlockWidget> (shadow_blocks);
-        while (true)
-        {
-            Block block;
-            BlockWidget widget;
-            if (!shadow_iter.next (out block, out widget))
-                break;
-            widget.unparent ();
-        }
-
-        shadow_blocks.remove_all ();
+        remove_shape_blocks ();
 
         /* Land the shape blocks */
         foreach (var block in game.shape.blocks)
