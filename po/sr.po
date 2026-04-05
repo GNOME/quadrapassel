@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Гномове игре\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2026-03-18 21:45+0000\n"
+"POT-Creation-Date: 2026-04-05 00:46+0000\n"
 "PO-Revision-Date: 2026-03-25 23:39+0100\n"
 "Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <gnome-sr@googlegroups.org>\n"
@@ -20,17 +20,19 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || "
-"n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 "X-Generator: Poedit 3.9\n"
 
-#: data/org.gnome.Quadrapassel.desktop.in.in:2 data/org.gnome.Quadrapassel.metainfo.xml.in.in:8
-#: src/quadrapassel.vala:125 src/quadrapassel.vala:145 src/quadrapassel.vala:1110
+#: data/org.gnome.Quadrapassel.desktop.in.in:2
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:127
+#: src/quadrapassel.vala:147 src/quadrapassel.vala:1142
 msgid "Quadrapassel"
 msgstr "Четворка"
 
-#: data/org.gnome.Quadrapassel.desktop.in.in:3 data/org.gnome.Quadrapassel.metainfo.xml.in.in:9
+#: data/org.gnome.Quadrapassel.desktop.in.in:3
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:9
 msgid "Fit falling blocks together"
 msgstr "Састављај падајуће блокове"
 
@@ -41,32 +43,38 @@ msgstr "тетрис;блокови;падање;tetris;"
 
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:11
 msgid ""
-"Quadrapassel is a derivative of a classic Russian falling-block game. Reposition and rotate the blocks as they "
-"fall, and attempt to fit them together. When you form a complete horizontal row of blocks, the row will "
-"disappear and you score points. The game is over when the blocks get stacked too high. As your score gets "
-"higher, you level up and the blocks fall faster."
+"Quadrapassel is a derivative of a classic Russian falling-block game. "
+"Reposition and rotate the blocks as they fall, and attempt to fit them "
+"together. When you form a complete horizontal row of blocks, the row will "
+"disappear and you score points. The game is over when the blocks get stacked "
+"too high. As your score gets higher, you level up and the blocks fall faster."
 msgstr ""
-"Четворка је изведеница класичне руске игре падајућих блокова. Измените положај и заокрените блокове док падају, "
-"и покушајте да их наслажете заједно. Када испуните један положени ред блокова, исти ће нестати а ви ћете "
-"зарадити поене. Игра се завршава када се блокови нанижу све до врха. Како расте број ваших освојених поена, "
-"тако се пребацујете на виши ниво а блокови падају све брже и брже."
+"Четворка је изведеница класичне руске игре падајућих блокова. Измените "
+"положај и заокрените блокове док падају, и покушајте да их наслажете "
+"заједно. Када испуните један положени ред блокова, исти ће нестати а ви ћете "
+"зарадити поене. Игра се завршава када се блокови нанижу све до врха. Како "
+"расте број ваших освојених поена, тако се пребацујете на виши ниво а блокови "
+"падају све брже и брже."
 
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:18
 msgid ""
-"If you’re looking for a challenge, Quadrapassel allows you to increase the initial speed of the blocks, or "
-"begin the game with partial blocks on some of the rows. Or, instead of allowing the blocks to fall randomly, it "
-"can select blocks that will be hard for you to place."
+"If you’re looking for a challenge, Quadrapassel allows you to increase the "
+"initial speed of the blocks, or begin the game with partial blocks on some "
+"of the rows. Or, instead of allowing the blocks to fall randomly, it can "
+"select blocks that will be hard for you to place."
 msgstr ""
-"Ако тражите изазов, Четворка вам омогућава да повећате почетну брзину блокова, или да почнете игру са "
-"делимичним блоковима на неким од редова. Или, уместо да омогући блоковима да падају насумично, може изабрати "
-"блокове које ћете врло тешко моћи да поставите на одговарајуће место."
+"Ако тражите изазов, Четворка вам омогућава да повећате почетну брзину "
+"блокова, или да почнете игру са делимичним блоковима на неким од редова. "
+"Или, уместо да омогући блоковима да падају насумично, може изабрати блокове "
+"које ћете врло тешко моћи да поставите на одговарајуће место."
 
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:36
 msgid "The Quadrapassel window, with a game playing."
 msgstr "Прозор Четворке, са игром у току."
 
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:40
-msgid "The Quadrapassel window, with a game playing, in small form factor mode."
+msgid ""
+"The Quadrapassel window, with a game playing, in small form factor mode."
 msgstr "Прозор Четворке, са игром у току, у режиму малог фактора облика."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
@@ -161,11 +169,11 @@ msgstr "Висина прозора у тачкама"
 msgid "true if the window is maximized"
 msgstr "изабрано ако је прозор увећан"
 
-#: src/game-view.vala:420
+#: src/game-view.vala:432
 msgid "Paused"
 msgstr "Паузирано"
 
-#: src/game-view.vala:427
+#: src/game-view.vala:439
 msgid "Game Over"
 msgstr "Игра је завршена"
 
@@ -194,8 +202,10 @@ msgstr "Добијате поене за сваки уништени ред"
 
 #: src/rules-dialog.blp:18
 msgctxt "game rules"
-msgid "You can also get a bonus of 2500 × level × rows destroyed if the bottom layer is destroyed."
-msgstr "Такође можете добити бонус од 2500 × ниво × уништених редова ако је доњи слој уништен."
+msgid ""
+"You can also get a bonus of 100 × level × rows destroyed if the bottom layer "
+"is destroyed."
+msgstr "Такође можете добити бонус од 100 × ниво × број уништених редова ако је доњи слој уништен."
 
 #: src/rules-dialog.blp:25
 msgctxt "game rules"
@@ -321,158 +331,173 @@ msgctxt "shortcut window"
 msgid "Drop"
 msgstr "Испуштање"
 
-#: src/quadrapassel.vala:173 src/quadrapassel.vala:242
-msgid "Start a new game"
-msgstr "Почните нову игру"
+#: src/shortcuts-dialog.blp:65
+msgctxt "shortcut window"
+msgid "Hold the active peice"
+msgstr "Задржите активну фигуру"
 
-#: src/quadrapassel.vala:180
-msgid "_Scores"
-msgstr "_Резултати"
-
-#: src/quadrapassel.vala:181
-msgid "App_earance"
-msgstr "Изг_лед"
-
-#: src/quadrapassel.vala:182
-msgid "_Preferences"
-msgstr "_Поставке"
-
-#: src/quadrapassel.vala:185
-msgid "_Keyboard Shortcuts"
-msgstr "Пречице _тастатуре"
-
-#: src/quadrapassel.vala:186
-msgid "Game _Rules"
-msgstr "П_равила игре"
-
-#: src/quadrapassel.vala:187
-msgid "_About Quadrapassel"
-msgstr "_О Четворци"
-
-#: src/quadrapassel.vala:190
-msgid "Main Menu"
-msgstr "Главни мени"
-
-#: src/quadrapassel.vala:247
+#: src/quadrapassel.vala:52
 msgid "Next"
 msgstr "Даље"
 
-#: src/quadrapassel.vala:264
+#: src/quadrapassel.vala:53
+msgid "Hold"
+msgstr "Задржи"
+
+#: src/quadrapassel.vala:175 src/quadrapassel.vala:244
+msgid "Start a new game"
+msgstr "Почните нову игру"
+
+#: src/quadrapassel.vala:182
+msgid "_Scores"
+msgstr "_Резултати"
+
+#: src/quadrapassel.vala:183
+msgid "App_earance"
+msgstr "Изг_лед"
+
+#: src/quadrapassel.vala:184
+msgid "_Preferences"
+msgstr "_Поставке"
+
+#: src/quadrapassel.vala:187
+msgid "_Keyboard Shortcuts"
+msgstr "Пречице _тастатуре"
+
+#: src/quadrapassel.vala:188
+msgid "Game _Rules"
+msgstr "П_равила игре"
+
+#: src/quadrapassel.vala:189
+msgid "_About Quadrapassel"
+msgstr "_О Четворци"
+
+#: src/quadrapassel.vala:192
+msgid "Main Menu"
+msgstr "Главни мени"
+
+#: src/quadrapassel.vala:266
 msgid "Score"
 msgstr "Резултат"
 
-#: src/quadrapassel.vala:277 src/quadrapassel.vala:976
+#: src/quadrapassel.vala:279 src/quadrapassel.vala:1008
 msgid "Rows"
 msgstr "Редови"
 
-#: src/quadrapassel.vala:289 src/quadrapassel.vala:976
+#: src/quadrapassel.vala:291 src/quadrapassel.vala:1008
 msgid "Level"
 msgstr "Ниво"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:302
+#: src/quadrapassel.vala:304
 msgid "Difficulty"
 msgstr "Тежина"
 
-#: src/quadrapassel.vala:427
+#: src/quadrapassel.vala:430
 msgid "Preferences"
 msgstr "Поставке"
 
-#: src/quadrapassel.vala:430
+#: src/quadrapassel.vala:433
 msgid "Game"
 msgstr "Игра"
 
-#: src/quadrapassel.vala:433
+#: src/quadrapassel.vala:436
 msgid "Game Difficulty"
 msgstr "Тежина игре"
 
-#: src/quadrapassel.vala:434
+#: src/quadrapassel.vala:437
 msgid "Change how difficult the game is"
 msgstr "Промените тежину игре"
 
-#: src/quadrapassel.vala:436
-msgid "The Difficulty affects the level you start at and how many rows are pre-filled."
-msgstr "Тежина утиче на ниво са којим почињете и колико редова је унапред попуњено."
+#: src/quadrapassel.vala:439
+msgid ""
+"The Difficulty affects the level you start at and how many rows are pre-"
+"filled."
+msgstr ""
+"Тежина утиче на ниво са којим почињете и колико редова је унапред попуњено."
 
-#: src/quadrapassel.vala:443
+#: src/quadrapassel.vala:446
 msgid "_Difficulty"
 msgstr "_Тежина"
 
-#: src/quadrapassel.vala:451
+#: src/quadrapassel.vala:454
 msgid "Choose difficult _blocks"
 msgstr "Одабери тешке _блокове"
 
-#: src/quadrapassel.vala:460
+#: src/quadrapassel.vala:463
 msgid "In-Game"
 msgstr "У игри"
 
-#: src/quadrapassel.vala:461
+#: src/quadrapassel.vala:464
 msgid "Change the experience of playing a game"
 msgstr "Промените искуство играња игре"
 
-#: src/quadrapassel.vala:464
+#: src/quadrapassel.vala:467
 msgid "_Enable sounds"
 msgstr "_Укључи звукове"
 
-#: src/quadrapassel.vala:475
+#: src/quadrapassel.vala:478
 msgid "_Preview next block"
 msgstr "_Прикажи следећи блок"
 
-#: src/quadrapassel.vala:487
+#: src/quadrapassel.vala:490
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Окрећи супротно смеру казаљке на сату"
 
-#: src/quadrapassel.vala:494
+#: src/quadrapassel.vala:497
 msgid "Show _where the block will land"
 msgstr "Прикажи _где ће блок бити приземљен"
 
-#: src/quadrapassel.vala:505
+#: src/quadrapassel.vala:508
 msgid "Game _seed"
 msgstr "_Семе игре"
 
-#: src/quadrapassel.vala:511
+#: src/quadrapassel.vala:514
 msgid ""
-"The seed is used to determine which blocks you get. While a seed is set, the game will be the same every time."
-msgstr "Семе се користи за одређивање блокова које добијате. Док је семе постављено, игра ће бити иста сваки пут."
+"The seed is used to determine which blocks you get. While a seed is set, the "
+"game will be the same every time."
+msgstr ""
+"Семе се користи за одређивање блокова које добијате. Док је семе постављено, "
+"игра ће бити иста сваки пут."
 
-#: src/quadrapassel.vala:515
+#: src/quadrapassel.vala:518
 msgid "_Use a custom seed for the game"
 msgstr "_Користи произвољно семе за игру"
 
-#: src/quadrapassel.vala:955
+#: src/quadrapassel.vala:969
 msgid "Unpause the game"
 msgstr "Отпаузирајте игру"
 
-#: src/quadrapassel.vala:961
+#: src/quadrapassel.vala:975
 msgid "Pause the game"
 msgstr "Паузирајте игру"
 
-#: src/quadrapassel.vala:984
+#: src/quadrapassel.vala:1016
 msgid "Start the game"
 msgstr "Започни игру"
 
-#: src/quadrapassel.vala:1013
+#: src/quadrapassel.vala:1045
 msgid "Old Scores"
 msgstr "Стари резултати"
 
-#: src/quadrapassel.vala:1018
+#: src/quadrapassel.vala:1050
 msgid "Difficult"
 msgstr "Тешко"
 
-#: src/quadrapassel.vala:1097
+#: src/quadrapassel.vala:1129
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr "Поени се израчунавају на основу тога колико је редова уништено."
 
-#: src/quadrapassel.vala:1113
+#: src/quadrapassel.vala:1145
 msgid ""
-"A classic game where you rotate blocks to make complete rows, but don't pile your blocks too high or it's game "
-"over!"
+"A classic game where you rotate blocks to make complete rows, but don't pile "
+"your blocks too high or it's game over!"
 msgstr ""
-"Класична игра у којој окрећете блокове да бисте направили целе редове али немојте нагомилати блокове сувише "
-"високо да не бисте изгубили!"
+"Класична игра у којој окрећете блокове да бисте направили целе редове али "
+"немојте нагомилати блокове сувише високо да не бисте изгубили!"
 
-#: src/quadrapassel.vala:1117
+#: src/quadrapassel.vala:1149
 msgid "translator-credits"
 msgstr ""
 "Душан Марјановић <madafaka@root.co.yu>\n"
