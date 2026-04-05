@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Гномове игре\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2026-04-05 00:46+0000\n"
+"POT-Creation-Date: 2026-03-15 15:38+0000\n"
 "PO-Revision-Date: 2026-03-25 23:39+0100\n"
 "Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <gnome-sr@googlegroups.org>\n"
@@ -26,8 +26,8 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:127
-#: src/quadrapassel.vala:147 src/quadrapassel.vala:1142
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:93
+#: src/quadrapassel.vala:112 src/quadrapassel.vala:996
 msgid "Quadrapassel"
 msgstr "Четворка"
 
@@ -169,17 +169,13 @@ msgstr "Висина прозора у тачкама"
 msgid "true if the window is maximized"
 msgstr "изабрано ако је прозор увећан"
 
-#: src/game-view.vala:432
+#: src/game-view.vala:379 src/game-view.vala:458
 msgid "Paused"
 msgstr "Паузирано"
 
-#: src/game-view.vala:439
+#: src/game-view.vala:384
 msgid "Game Over"
 msgstr "Игра је завршена"
-
-#: src/more-info-button.blp:8
-msgid "More Information"
-msgstr "Више информација"
 
 #: src/rules-dialog.blp:7
 msgid "Game Rules"
@@ -203,9 +199,9 @@ msgstr "Добијате поене за сваки уништени ред"
 #: src/rules-dialog.blp:18
 msgctxt "game rules"
 msgid ""
-"You can also get a bonus of 100 × level × rows destroyed if the bottom layer "
-"is destroyed."
-msgstr "Такође можете добити бонус од 100 × ниво × број уништених редова ако је доњи слој уништен."
+"You can also get a bonus of 2500 × level × rows destroyed if the bottom "
+"layer is destroyed."
+msgstr "Такође можете добити бонус од 2500 × ниво × уништених редова ако је доњи слој уништен."
 
 #: src/rules-dialog.blp:25
 msgctxt "game rules"
@@ -303,156 +299,133 @@ msgstr "Rotate"
 
 #: src/shortcuts-dialog.blp:41
 msgctxt "shortcut window"
-msgid "Rotate Left"
-msgstr "Окрени на лево"
-
-#: src/shortcuts-dialog.blp:45
-msgctxt "shortcut window"
-msgid "Rotate Right"
-msgstr "Окрени на десно"
-
-#: src/shortcuts-dialog.blp:49
-msgctxt "shortcut window"
 msgid "Move right"
 msgstr "Потез у десно"
 
-#: src/shortcuts-dialog.blp:53
+#: src/shortcuts-dialog.blp:45
 msgctxt "shortcut window"
 msgid "Move left"
 msgstr "Потез у лево"
 
-#: src/shortcuts-dialog.blp:57
+#: src/shortcuts-dialog.blp:49
 msgctxt "shortcut window"
 msgid "Move down"
 msgstr "Помери доле"
 
-#: src/shortcuts-dialog.blp:61
+#: src/shortcuts-dialog.blp:53
 msgctxt "shortcut window"
 msgid "Drop"
 msgstr "Испуштање"
 
-#: src/shortcuts-dialog.blp:65
-msgctxt "shortcut window"
-msgid "Hold the active peice"
-msgstr "Задржите активну фигуру"
-
-#: src/quadrapassel.vala:52
-msgid "Next"
-msgstr "Даље"
-
-#: src/quadrapassel.vala:53
-msgid "Hold"
-msgstr "Задржи"
-
-#: src/quadrapassel.vala:175 src/quadrapassel.vala:244
+#: src/quadrapassel.vala:140 src/quadrapassel.vala:210
 msgid "Start a new game"
 msgstr "Почните нову игру"
 
-#: src/quadrapassel.vala:182
+#: src/quadrapassel.vala:147
 msgid "_Scores"
 msgstr "_Резултати"
 
-#: src/quadrapassel.vala:183
+#: src/quadrapassel.vala:148
 msgid "App_earance"
 msgstr "Изг_лед"
 
-#: src/quadrapassel.vala:184
+#: src/quadrapassel.vala:149
 msgid "_Preferences"
 msgstr "_Поставке"
 
-#: src/quadrapassel.vala:187
+#: src/quadrapassel.vala:152
 msgid "_Keyboard Shortcuts"
 msgstr "Пречице _тастатуре"
 
-#: src/quadrapassel.vala:188
+#: src/quadrapassel.vala:153
 msgid "Game _Rules"
 msgstr "П_равила игре"
 
-#: src/quadrapassel.vala:189
+#: src/quadrapassel.vala:154
 msgid "_About Quadrapassel"
 msgstr "_О Четворци"
 
-#: src/quadrapassel.vala:192
+#: src/quadrapassel.vala:157
 msgid "Main Menu"
 msgstr "Главни мени"
 
-#: src/quadrapassel.vala:266
+#: src/quadrapassel.vala:215
+msgid "Next"
+msgstr "Даље"
+
+#: src/quadrapassel.vala:232
 msgid "Score"
 msgstr "Резултат"
 
-#: src/quadrapassel.vala:279 src/quadrapassel.vala:1008
+#: src/quadrapassel.vala:244 src/quadrapassel.vala:866
 msgid "Rows"
 msgstr "Редови"
 
-#: src/quadrapassel.vala:291 src/quadrapassel.vala:1008
+#: src/quadrapassel.vala:255 src/quadrapassel.vala:866
 msgid "Level"
 msgstr "Ниво"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:304
+#: src/quadrapassel.vala:267
 msgid "Difficulty"
 msgstr "Тежина"
 
-#: src/quadrapassel.vala:430
+#: src/quadrapassel.vala:371
 msgid "Preferences"
 msgstr "Поставке"
 
-#: src/quadrapassel.vala:433
+#: src/quadrapassel.vala:374
 msgid "Game"
 msgstr "Игра"
 
-#: src/quadrapassel.vala:436
+#: src/quadrapassel.vala:377
 msgid "Game Difficulty"
 msgstr "Тежина игре"
 
-#: src/quadrapassel.vala:437
+#: src/quadrapassel.vala:378
 msgid "Change how difficult the game is"
 msgstr "Промените тежину игре"
 
-#: src/quadrapassel.vala:439
+#: src/quadrapassel.vala:380
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
 msgstr ""
 "Тежина утиче на ниво са којим почињете и колико редова је унапред попуњено."
 
-#: src/quadrapassel.vala:446
+#: src/quadrapassel.vala:387
 msgid "_Difficulty"
 msgstr "_Тежина"
 
-#: src/quadrapassel.vala:454
+#: src/quadrapassel.vala:395
 msgid "Choose difficult _blocks"
 msgstr "Одабери тешке _блокове"
 
-#: src/quadrapassel.vala:463
+#: src/quadrapassel.vala:404
 msgid "In-Game"
 msgstr "У игри"
 
-#: src/quadrapassel.vala:464
+#: src/quadrapassel.vala:405
 msgid "Change the experience of playing a game"
 msgstr "Промените искуство играња игре"
 
-#: src/quadrapassel.vala:467
+#: src/quadrapassel.vala:408
 msgid "_Enable sounds"
 msgstr "_Укључи звукове"
 
-#: src/quadrapassel.vala:478
+#: src/quadrapassel.vala:419
 msgid "_Preview next block"
 msgstr "_Прикажи следећи блок"
 
-#: src/quadrapassel.vala:490
+#: src/quadrapassel.vala:431
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Окрећи супротно смеру казаљке на сату"
 
-#: src/quadrapassel.vala:497
+#: src/quadrapassel.vala:438
 msgid "Show _where the block will land"
 msgstr "Прикажи _где ће блок бити приземљен"
 
-#: src/quadrapassel.vala:508
-msgid "Game _seed"
-msgstr "_Семе игре"
-
-#: src/quadrapassel.vala:514
+#: src/quadrapassel.vala:455
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
@@ -460,36 +433,36 @@ msgstr ""
 "Семе се користи за одређивање блокова које добијате. Док је семе постављено, "
 "игра ће бити иста сваки пут."
 
-#: src/quadrapassel.vala:518
+#: src/quadrapassel.vala:459
 msgid "_Use a custom seed for the game"
 msgstr "_Користи произвољно семе за игру"
 
-#: src/quadrapassel.vala:969
+#: src/quadrapassel.vala:845
 msgid "Unpause the game"
 msgstr "Отпаузирајте игру"
 
-#: src/quadrapassel.vala:975
+#: src/quadrapassel.vala:851
 msgid "Pause the game"
 msgstr "Паузирајте игру"
 
-#: src/quadrapassel.vala:1016
+#: src/quadrapassel.vala:874
 msgid "Start the game"
 msgstr "Започни игру"
 
-#: src/quadrapassel.vala:1045
+#: src/quadrapassel.vala:899
 msgid "Old Scores"
 msgstr "Стари резултати"
 
-#: src/quadrapassel.vala:1050
+#: src/quadrapassel.vala:904
 msgid "Difficult"
 msgstr "Тешко"
 
-#: src/quadrapassel.vala:1129
+#: src/quadrapassel.vala:983
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr "Поени се израчунавају на основу тога колико је редова уништено."
 
-#: src/quadrapassel.vala:1145
+#: src/quadrapassel.vala:999
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -497,7 +470,7 @@ msgstr ""
 "Класична игра у којој окрећете блокове да бисте направили целе редове али "
 "немојте нагомилати блокове сувише високо да не бисте изгубили!"
 
-#: src/quadrapassel.vala:1149
+#: src/quadrapassel.vala:1003
 msgid "translator-credits"
 msgstr ""
 "Душан Марјановић <madafaka@root.co.yu>\n"
@@ -506,3 +479,24 @@ msgstr ""
 "Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Марко Костић <marko.m.kostic@gmail.com\n"
 "Превод Гнома на српски језик https://гном.срб"
+
+#~ msgid "More Information"
+#~ msgstr "Више информација"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Rotate Left"
+#~ msgstr "Окрени на лево"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Rotate Right"
+#~ msgstr "Окрени на десно"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Hold the active peice"
+#~ msgstr "Задржите активну фигуру"
+
+#~ msgid "Hold"
+#~ msgstr "Задржи"
+
+#~ msgid "Game _seed"
+#~ msgstr "_Семе игре"
