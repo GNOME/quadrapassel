@@ -10,22 +10,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2026-03-15 15:43+0000\n"
-"PO-Revision-Date: 2026-03-15 19:59+0200\n"
+"POT-Creation-Date: 2026-04-05 00:46+0000\n"
+"PO-Revision-Date: 2026-04-06 18:02+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
-"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 23.04.3\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:125
-#: src/quadrapassel.vala:145 src/quadrapassel.vala:1110
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:127
+#: src/quadrapassel.vala:147 src/quadrapassel.vala:1142
 msgid "Quadrapassel"
 msgstr "Квадрапасл"
 
@@ -86,7 +86,8 @@ msgid "The theme used for rendering the blocks"
 msgstr "Тема блоків"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:11
-msgid "The name of the theme used for rendering the blocks and the background."
+msgid ""
+"The name of the theme used for rendering the blocks and the background."
 msgstr "Тема, що використовується для малювання блоків та фону."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:15
@@ -165,11 +166,11 @@ msgstr "Висота вікна, у точках"
 msgid "true if the window is maximized"
 msgstr "вказано, якщо вікно розгорнуто"
 
-#: src/game-view.vala:420
+#: src/game-view.vala:432
 msgid "Paused"
 msgstr "Призупинено"
 
-#: src/game-view.vala:427
+#: src/game-view.vala:439
 msgid "Game Over"
 msgstr "Гру закінчено"
 
@@ -197,12 +198,16 @@ msgid "You gain points for each row destroyed"
 msgstr "Ви отримуватимете бали за кожен знищений рядок"
 
 #: src/rules-dialog.blp:18
+#| msgctxt "game rules"
+#| msgid ""
+#| "You can also get a bonus of 2500 × level × rows destroyed if the bottom "
+#| "layer is destroyed."
 msgctxt "game rules"
 msgid ""
-"You can also get a bonus of 2500 × level × rows destroyed if the bottom "
-"layer is destroyed."
+"You can also get a bonus of 100 × level × rows destroyed if the bottom layer "
+"is destroyed."
 msgstr ""
-"Крім того, ви можете отримати бонус у 2500 × рівень × кількість знищених "
+"Крім того, ви можете отримати бонус у 100 × рівень × кількість знищених "
 "рядків, якщо знищено нижній шар."
 
 #: src/rules-dialog.blp:25
@@ -329,76 +334,85 @@ msgctxt "shortcut window"
 msgid "Drop"
 msgstr "Кидок"
 
-#: src/quadrapassel.vala:173 src/quadrapassel.vala:242
-msgid "Start a new game"
-msgstr "Розпочати нову гру"
+#: src/shortcuts-dialog.blp:65
+msgctxt "shortcut window"
+msgid "Hold the active peice"
+msgstr "Притримати активну плитку"
 
-#: src/quadrapassel.vala:180
-msgid "_Scores"
-msgstr "_Результати"
-
-#: src/quadrapassel.vala:181
-msgid "App_earance"
-msgstr "_Вигляд"
-
-#: src/quadrapassel.vala:182
-msgid "_Preferences"
-msgstr "_Параметри"
-
-#: src/quadrapassel.vala:185
-msgid "_Keyboard Shortcuts"
-msgstr "_Клавіатурні скорочення"
-
-#: src/quadrapassel.vala:186
-msgid "Game _Rules"
-msgstr "П_равила гри"
-
-#: src/quadrapassel.vala:187
-msgid "_About Quadrapassel"
-msgstr "_Про «Квадрапасл»"
-
-#: src/quadrapassel.vala:190
-msgid "Main Menu"
-msgstr "Головне меню"
-
-#: src/quadrapassel.vala:247
+#: src/quadrapassel.vala:52
 msgid "Next"
 msgstr "Далі"
 
-#: src/quadrapassel.vala:264
+#: src/quadrapassel.vala:53
+msgid "Hold"
+msgstr "Притримати"
+
+#: src/quadrapassel.vala:175 src/quadrapassel.vala:244
+msgid "Start a new game"
+msgstr "Розпочати нову гру"
+
+#: src/quadrapassel.vala:182
+msgid "_Scores"
+msgstr "_Результати"
+
+#: src/quadrapassel.vala:183
+msgid "App_earance"
+msgstr "_Вигляд"
+
+#: src/quadrapassel.vala:184
+msgid "_Preferences"
+msgstr "_Параметри"
+
+#: src/quadrapassel.vala:187
+msgid "_Keyboard Shortcuts"
+msgstr "_Клавіатурні скорочення"
+
+#: src/quadrapassel.vala:188
+msgid "Game _Rules"
+msgstr "П_равила гри"
+
+#: src/quadrapassel.vala:189
+msgid "_About Quadrapassel"
+msgstr "_Про «Квадрапасл»"
+
+#: src/quadrapassel.vala:192
+msgid "Main Menu"
+msgstr "Головне меню"
+
+#: src/quadrapassel.vala:266
 msgid "Score"
 msgstr "Рахунок"
 
-#: src/quadrapassel.vala:277 src/quadrapassel.vala:976
+#: src/quadrapassel.vala:279 src/quadrapassel.vala:1008
 msgid "Rows"
 msgstr "Рядки"
 
-#: src/quadrapassel.vala:289 src/quadrapassel.vala:976
+#: src/quadrapassel.vala:291 src/quadrapassel.vala:1008
 msgid "Level"
 msgstr "Рівень"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:302
+#: src/quadrapassel.vala:304
 msgid "Difficulty"
 msgstr "Складність"
 
-#: src/quadrapassel.vala:427
+#: src/quadrapassel.vala:430
 msgid "Preferences"
 msgstr "Параметри"
 
-#: src/quadrapassel.vala:430
+#: src/quadrapassel.vala:433
 msgid "Game"
 msgstr "Гра"
 
-#: src/quadrapassel.vala:433
+#: src/quadrapassel.vala:436
 msgid "Game Difficulty"
 msgstr "Складність гри"
 
-#: src/quadrapassel.vala:434
+#: src/quadrapassel.vala:437
 msgid "Change how difficult the game is"
 msgstr "Змініть складність гри"
 
-#: src/quadrapassel.vala:436
+#: src/quadrapassel.vala:439
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
@@ -406,44 +420,43 @@ msgstr ""
 "Складність впливає на рівень, з якого ви починатимете, і кількість "
 "попередньо заповнених рядків."
 
-#: src/quadrapassel.vala:443
+#: src/quadrapassel.vala:446
 msgid "_Difficulty"
 msgstr "С_кладність"
 
-#: src/quadrapassel.vala:451
+#: src/quadrapassel.vala:454
 msgid "Choose difficult _blocks"
 msgstr "Вибрати складні _блоки"
 
-#: src/quadrapassel.vala:460
+#: src/quadrapassel.vala:463
 msgid "In-Game"
 msgstr "У грі"
 
-#: src/quadrapassel.vala:461
+#: src/quadrapassel.vala:464
 msgid "Change the experience of playing a game"
 msgstr "Змінити поведінку гри"
 
-#: src/quadrapassel.vala:464
+#: src/quadrapassel.vala:467
 msgid "_Enable sounds"
 msgstr "_Увімкнути звуки"
 
-#: src/quadrapassel.vala:475
+#: src/quadrapassel.vala:478
 msgid "_Preview next block"
 msgstr "_Показувати наступний блок"
 
-#: src/quadrapassel.vala:487
+#: src/quadrapassel.vala:490
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Обертати проти годинникової стрілки"
 
-#: src/quadrapassel.vala:494
+#: src/quadrapassel.vala:497
 msgid "Show _where the block will land"
 msgstr "Показувати _місце попадання блоку"
 
-#: src/quadrapassel.vala:505
-#| msgid "Game _Rules"
+#: src/quadrapassel.vala:508
 msgid "Game _seed"
 msgstr "_Основа випадковості гри"
 
-#: src/quadrapassel.vala:511
+#: src/quadrapassel.vala:514
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
@@ -451,36 +464,36 @@ msgstr ""
 "Базу використовують для визначення отриманих вами блоків. Якщо зафіксувати "
 "базу, початкове компонування гри не змінюватиметься."
 
-#: src/quadrapassel.vala:515
+#: src/quadrapassel.vala:518
 msgid "_Use a custom seed for the game"
 msgstr "_Нетипова база випадковості для гри"
 
-#: src/quadrapassel.vala:955
+#: src/quadrapassel.vala:969
 msgid "Unpause the game"
 msgstr "Відновити гру"
 
-#: src/quadrapassel.vala:961
+#: src/quadrapassel.vala:975
 msgid "Pause the game"
 msgstr "Призупинити гру"
 
-#: src/quadrapassel.vala:984
+#: src/quadrapassel.vala:1016
 msgid "Start the game"
 msgstr "Почати гру"
 
-#: src/quadrapassel.vala:1013
+#: src/quadrapassel.vala:1045
 msgid "Old Scores"
 msgstr "Попередні результати"
 
-#: src/quadrapassel.vala:1018
+#: src/quadrapassel.vala:1050
 msgid "Difficult"
 msgstr "Складна"
 
-#: src/quadrapassel.vala:1097
+#: src/quadrapassel.vala:1129
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr "Бали обчислюють на основі кількості знищених рядків."
 
-#: src/quadrapassel.vala:1113
+#: src/quadrapassel.vala:1145
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -489,7 +502,7 @@ msgstr ""
 "горизонтальні ряди. Але не складайте блоки у надто високі купи, бо гру буде "
 "програно!"
 
-#: src/quadrapassel.vala:1117
+#: src/quadrapassel.vala:1149
 msgid "translator-credits"
 msgstr ""
 "Юрій Сирота\n"
