@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2026-04-05 00:46+0000\n"
-"PO-Revision-Date: 2026-04-06 18:02+0300\n"
+"POT-Creation-Date: 2026-04-07 05:14+0000\n"
+"PO-Revision-Date: 2026-04-07 22:50+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -198,10 +198,6 @@ msgid "You gain points for each row destroyed"
 msgstr "Ви отримуватимете бали за кожен знищений рядок"
 
 #: src/rules-dialog.blp:18
-#| msgctxt "game rules"
-#| msgid ""
-#| "You can also get a bonus of 2500 × level × rows destroyed if the bottom "
-#| "layer is destroyed."
 msgctxt "game rules"
 msgid ""
 "You can also get a bonus of 100 × level × rows destroyed if the bottom layer "
@@ -335,8 +331,10 @@ msgid "Drop"
 msgstr "Кидок"
 
 #: src/shortcuts-dialog.blp:65
+#| msgctxt "shortcut window"
+#| msgid "Hold the active peice"
 msgctxt "shortcut window"
-msgid "Hold the active peice"
+msgid "Hold the active piece"
 msgstr "Притримати активну плитку"
 
 #: src/quadrapassel.vala:52
