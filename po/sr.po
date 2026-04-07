@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Гномове игре\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2026-04-05 00:46+0000\n"
+"POT-Creation-Date: 2026-04-07 05:14+0000\n"
 "PO-Revision-Date: 2026-03-25 23:39+0100\n"
 "Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <gnome-sr@googlegroups.org>\n"
@@ -205,7 +205,9 @@ msgctxt "game rules"
 msgid ""
 "You can also get a bonus of 100 × level × rows destroyed if the bottom layer "
 "is destroyed."
-msgstr "Такође можете добити бонус од 100 × ниво × број уништених редова ако је доњи слој уништен."
+msgstr ""
+"Такође можете добити бонус од 100 × ниво × број уништених редова ако је доњи "
+"слој уништен."
 
 #: src/rules-dialog.blp:25
 msgctxt "game rules"
@@ -333,7 +335,7 @@ msgstr "Испуштање"
 
 #: src/shortcuts-dialog.blp:65
 msgctxt "shortcut window"
-msgid "Hold the active peice"
+msgid "Hold the active piece"
 msgstr "Задржите активну фигуру"
 
 #: src/quadrapassel.vala:52
