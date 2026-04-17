@@ -115,7 +115,7 @@ public class Quadrapassel : Adw.Application
 
     public Quadrapassel ()
     {
-        Object (application_id: APP_ID, flags: ApplicationFlags.FLAGS_NONE, resource_base_path: "/org/gnome/Quadrapassel");
+        Object (application_id: APP_ID, flags: ApplicationFlags.DEFAULT_FLAGS, resource_base_path: "/org/gnome/Quadrapassel");
     }
 
     protected override void startup ()
