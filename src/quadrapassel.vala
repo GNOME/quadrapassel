@@ -615,12 +615,17 @@ public class Quadrapassel : Adw.Application
 
         if (button == InputEventCode.BTN_SELECT)
         {
-            new_game ();
+            if (game_aspect.has_focus)
+                new_game ();
+
             return;
         }
 
         if (button == InputEventCode.BTN_START)
         {
+            if (!game_aspect.has_focus)
+                return;
+
             if (game == null)
                 new_game ();
             else if (!game.game_over)
