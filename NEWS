@@ -1,3 +1,14 @@
+quadrapassel 50.1
+===================
+* Updated translations: Georgian (Ekaterine Papava), Occitan (Quentin PAGÈS),
+			'Chinese (China)' (lumingzh), Serbian (Марко Костић),
+			Russian (Sergej A.), Ukrainian (Yuri Chornoivan),
+			Slovenian (Martin S.), Kazakh (Baurzhan Muftakhidinov)
+* Reduced the bonus for destroying the bottom row
+* Added the ability to hold pieces
+* Fixed a bug where the gamepad could start or unpause games when not in focus
+* Changed the GioApplicationFlags to 'G_APPLICATION_DEFAULT_FLAGS'
+
 quadrapassel 50.0.1
 ===================
 * Updated translations: Ukrainian (Yuri Chornoivan), Kazakh (Baurzhan Muftakhidinov),

@@ -1,5 +1,5 @@
 project('quadrapassel', 'vala', 'c',
-        version: '50.0.1',
+        version: '50.1',
         meson_version: '>= 1.1')
 
 # App ID

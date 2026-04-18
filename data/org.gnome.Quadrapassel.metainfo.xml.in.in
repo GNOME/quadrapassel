@@ -50,6 +50,17 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
+    <release date="2026-04-18" version="50.1">
+      <description>
+        <ul>
+          <li>Updated translations: Georgian, Occitan, Chinese (China), Serbian,
+            Russian, Ukrainian, Slovenian, Kazakh</li>
+          <li>Reduced the bonus for destroying the bottom row</li>
+          <li>Added the ability to hold pieces</li>
+          <li>Fixed a bug where the gamepad could start or unpause games when not in focus</li>
+        </ul>
+      </description>
+    </release>
     <release date="2026-03-18" version="50.0.1">
       <description>
         <ul>
