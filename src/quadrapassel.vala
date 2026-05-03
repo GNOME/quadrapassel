@@ -345,6 +345,25 @@ public class Quadrapassel : Adw.Application
 
     protected override void shutdown ()
     {
+        /* Record the score if the game isn't over. */
+        if (game != null && !game.game_over && game.score > 0)
+        {
+            var category_key = game.difficulty.to_string ();
+            if (game.pick_difficult_blocks)
+                category_key = category_key + "-difficult";
+
+            context.add_score_full.begin (game.score, create_category_from_key (category_key), get_game_extra_info (), null, false, null, (object, result) => {
+                try
+                {
+                    context.add_score_full.end (result);
+                }
+                catch (Error e)
+                {
+                    warning ("%s", e.message);
+                }
+            });
+        }
+
         base.shutdown ();
 
         /* Save window state */
@@ -572,25 +591,6 @@ public class Quadrapassel : Adw.Application
     {
         if (window != null)
             window.close ();
-
-        /* Record the score if the game isn't over. */
-        if (game != null && !game.game_over && game.score > 0)
-        {
-            var category_key = game.difficulty.to_string ();
-            if (game.pick_difficult_blocks)
-                category_key = category_key + "-difficult";
-
-            context.add_score_full.begin (game.score, create_category_from_key (category_key), get_game_extra_info (), null, false, null, (object, result) => {
-                try
-                {
-                    context.add_score_full.end (result);
-                }
-                catch (Error e)
-                {
-                    warning ("%s", e.message);
-                }
-            });
-        }
 
         base.quit ();
     }
