@@ -70,9 +70,6 @@ public class Quadrapassel : Adw.Application
     private Gtk.Button pause_play_button;
     private Gtk.Button new_game_button;
 
-    private Adw.PreferencesDialog preferences_dialog;
-    private Preview theme_preview;
-
     private Manette.Monitor manette_monitor;
     private const uint16[] MANETTE_BUTTONS = {
         InputEventCode.BTN_A,
@@ -445,7 +442,7 @@ public class Quadrapassel : Adw.Application
 
     private void preferences_cb ()
     {
-        preferences_dialog = new Adw.PreferencesDialog ();
+        var preferences_dialog = new Adw.PreferencesDialog ();
         preferences_dialog.set_title (_("Preferences"));
 
         var game_page = new Adw.PreferencesPage ();
@@ -554,7 +551,7 @@ public class Quadrapassel : Adw.Application
     private Gtk.Widget theme_update (string theme_name, Gtk.Widget theme_preview_widget)
     {
         var theme_preview_frame = theme_preview_widget as Games.GridFrame;
-        theme_preview = theme_preview_frame.child as Preview;
+        var theme_preview = theme_preview_frame.child as Preview;
         view.theme = theme_name;
         preview.theme = theme_name;
         theme_preview.theme = theme_name;
@@ -570,7 +567,7 @@ public class Quadrapassel : Adw.Application
         theme_preview_frame.set_size_request (150, 150);
         theme_preview_frame.margin_top = 12;
         theme_preview_frame.margin_bottom = 12;
-        theme_preview = new Preview ();
+        var theme_preview = new Preview ();
         theme_preview.theme = settings.get_string ("theme");
         theme_preview.update_block (new Game ().next_shape);
         theme_preview_frame.child = theme_preview;
