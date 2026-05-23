@@ -1,3 +1,9 @@
+quadrapassel 50.2
+=================
+* Updated the Turkish translation
+* Fixed the game not getting saved when the window was closed
+* Updated libgnome-games-support
+
 quadrapassel 50.1
 ===================
 * Updated translations: Georgian (Ekaterine Papava), Occitan (Quentin PAGÈS),

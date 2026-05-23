@@ -50,6 +50,15 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
+    <release date="2026-05-23" version="50.2">
+      <description>
+        <ul>
+          <li>Updated the Turkish translation</li>
+          <li>Fixed the game not getting saved when the window was closed</li>
+          <li>Updated translations for the score dialog</li>
+        </ul>
+      </description>
+    </release>
     <release date="2026-04-18" version="50.1">
       <description>
         <ul>
