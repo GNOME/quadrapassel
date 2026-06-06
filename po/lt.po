@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-12-02 16:48+0000\n"
-"PO-Revision-Date: 2025-12-08 21:22+0200\n"
+"POT-Creation-Date: 2026-05-23 17:57+0000\n"
+"PO-Revision-Date: 2026-06-06 22:35+0300\n"
 "Last-Translator: Aurimas Černius <aurimas.cernius@mailo.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -24,11 +24,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:93
-#: src/quadrapassel.vala:112 src/quadrapassel.vala:995
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:124
+#: src/quadrapassel.vala:144 src/quadrapassel.vala:1144
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -169,13 +169,17 @@ msgstr "Lango aukštis pikseliais"
 msgid "true if the window is maximized"
 msgstr "teigiama, jei langas yra išdidintas"
 
-#: src/game-view.vala:379 src/game-view.vala:458
+#: src/game-view.vala:432
 msgid "Paused"
 msgstr "Pauzė"
 
-#: src/game-view.vala:384
+#: src/game-view.vala:439
 msgid "Game Over"
 msgstr "Žaidimas baigtas"
+
+#: src/more-info-button.blp:8
+msgid "More Information"
+msgstr "Daugiau informacijos"
 
 #: src/rules-dialog.blp:7
 msgid "Game Rules"
@@ -199,10 +203,10 @@ msgstr "Gaunate taškus už kiekvieną susprogdintą eilutę"
 #: src/rules-dialog.blp:18
 msgctxt "game rules"
 msgid ""
-"You can also get a bonus of 2500 × level × rows destroyed if the bottom "
-"layer is destroyed."
+"You can also get a bonus of 100 × level × rows destroyed if the bottom layer "
+"is destroyed."
 msgstr ""
-"Taip pat gaunate 2500 × lygio × sunaikintų eilučių priedą, jei sunaikinamas "
+"Taip pat gaunate 100 × lygio × sunaikintų eilučių priedą, jei sunaikinamas "
 "apatinis lygis."
 
 #: src/rules-dialog.blp:25
@@ -301,133 +305,156 @@ msgstr "Pasukti"
 
 #: src/shortcuts-dialog.blp:41
 msgctxt "shortcut window"
+msgid "Rotate Left"
+msgstr "Pasukti kairėn"
+
+#: src/shortcuts-dialog.blp:45
+msgctxt "shortcut window"
+msgid "Rotate Right"
+msgstr "Pasukti dešinėn"
+
+#: src/shortcuts-dialog.blp:49
+msgctxt "shortcut window"
 msgid "Move right"
 msgstr "Perkelti dešinėn"
 
-#: src/shortcuts-dialog.blp:45
+#: src/shortcuts-dialog.blp:53
 msgctxt "shortcut window"
 msgid "Move left"
 msgstr "Perkelti kairėn"
 
-#: src/shortcuts-dialog.blp:49
+#: src/shortcuts-dialog.blp:57
 msgctxt "shortcut window"
 msgid "Move down"
 msgstr "Perkelti žemyn"
 
-#: src/shortcuts-dialog.blp:53
+#: src/shortcuts-dialog.blp:61
 msgctxt "shortcut window"
 msgid "Drop"
 msgstr "Numesti"
 
-#: src/quadrapassel.vala:140 src/quadrapassel.vala:210
-msgid "Start a new game"
-msgstr "Pradėti naują žaidimą"
+#: src/shortcuts-dialog.blp:65
+msgctxt "shortcut window"
+msgid "Hold the active piece"
+msgstr "Laikyti aktyvią detatę"
 
-#: src/quadrapassel.vala:147
-msgid "_Scores"
-msgstr "_Taškai"
-
-#: src/quadrapassel.vala:148
-msgid "App_earance"
-msgstr "Iš_vaizda"
-
-#: src/quadrapassel.vala:149
-msgid "_Preferences"
-msgstr "_Nuostatos"
-
-#: src/quadrapassel.vala:152
-msgid "_Keyboard Shortcuts"
-msgstr "_Klaviatūros trumpiniai"
-
-#: src/quadrapassel.vala:153
-msgid "Game _Rules"
-msgstr "Žaidimo _taisyklės"
-
-#: src/quadrapassel.vala:154
-msgid "_About Quadrapassel"
-msgstr "_Apie quadrapassel"
-
-#: src/quadrapassel.vala:157
-msgid "Main Menu"
-msgstr "Pagrindinis meniu"
-
-#: src/quadrapassel.vala:215
+#: src/quadrapassel.vala:52
 msgid "Next"
 msgstr "Kitas"
 
-#: src/quadrapassel.vala:232
+#: src/quadrapassel.vala:53
+msgid "Hold"
+msgstr "Laikyti"
+
+#: src/quadrapassel.vala:172 src/quadrapassel.vala:241
+msgid "Start a new game"
+msgstr "Pradėti naują žaidimą"
+
+#: src/quadrapassel.vala:179
+msgid "_Scores"
+msgstr "_Taškai"
+
+#: src/quadrapassel.vala:180
+msgid "App_earance"
+msgstr "Iš_vaizda"
+
+#: src/quadrapassel.vala:181
+msgid "_Preferences"
+msgstr "_Nuostatos"
+
+#: src/quadrapassel.vala:184
+msgid "_Keyboard Shortcuts"
+msgstr "_Klaviatūros trumpiniai"
+
+#: src/quadrapassel.vala:185
+msgid "Game _Rules"
+msgstr "Žaidimo _taisyklės"
+
+#: src/quadrapassel.vala:186
+msgid "_About Quadrapassel"
+msgstr "_Apie quadrapassel"
+
+#: src/quadrapassel.vala:189
+msgid "Main Menu"
+msgstr "Pagrindinis meniu"
+
+#: src/quadrapassel.vala:263
 msgid "Score"
 msgstr "Taškai"
 
-#: src/quadrapassel.vala:244 src/quadrapassel.vala:865
+#: src/quadrapassel.vala:276 src/quadrapassel.vala:1010
 msgid "Rows"
 msgstr "Eilutės"
 
-#: src/quadrapassel.vala:255 src/quadrapassel.vala:865
+#: src/quadrapassel.vala:288 src/quadrapassel.vala:1010
 msgid "Level"
 msgstr "Lygis"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:267
+#: src/quadrapassel.vala:301
 msgid "Difficulty"
 msgstr "Sudėtingumas"
 
-#: src/quadrapassel.vala:370
+#: src/quadrapassel.vala:446
 msgid "Preferences"
 msgstr "Nuostatos"
 
-#: src/quadrapassel.vala:373
+#: src/quadrapassel.vala:449
 msgid "Game"
 msgstr "Žaidimas"
 
-#: src/quadrapassel.vala:376
+#: src/quadrapassel.vala:452
 msgid "Game Difficulty"
 msgstr "Žaidimo sudėtingumas"
 
-#: src/quadrapassel.vala:377
+#: src/quadrapassel.vala:453
 msgid "Change how difficult the game is"
 msgstr "Keiskite žaidimo sudėtingumą"
 
-#: src/quadrapassel.vala:379
+#: src/quadrapassel.vala:455
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
 msgstr ""
 "Sudėtingumas pakeičia pradinį lygį ir kiek eilučių jau yra pripildytos."
 
-#: src/quadrapassel.vala:386
+#: src/quadrapassel.vala:462
 msgid "_Difficulty"
 msgstr "_Sudėtingumas"
 
-#: src/quadrapassel.vala:394
+#: src/quadrapassel.vala:470
 msgid "Choose difficult _blocks"
 msgstr "Pasirinkti sudėtingus _blokus"
 
-#: src/quadrapassel.vala:403
+#: src/quadrapassel.vala:479
 msgid "In-Game"
 msgstr "Žaidime"
 
-#: src/quadrapassel.vala:404
+#: src/quadrapassel.vala:480
 msgid "Change the experience of playing a game"
 msgstr "Keisti žaidimo potyrius"
 
-#: src/quadrapassel.vala:407
+#: src/quadrapassel.vala:483
 msgid "_Enable sounds"
 msgstr "Įj_ungti garsus"
 
-#: src/quadrapassel.vala:418
+#: src/quadrapassel.vala:494
 msgid "_Preview next block"
 msgstr "_Kito bloko peržiūra"
 
-#: src/quadrapassel.vala:430
+#: src/quadrapassel.vala:506
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Sukti blokus prieš laikrodžio rodyklę"
 
-#: src/quadrapassel.vala:437
+#: src/quadrapassel.vala:513
 msgid "Show _where the block will land"
 msgstr "Rodyti, kur _nusileis blokas"
 
-#: src/quadrapassel.vala:454
+#: src/quadrapassel.vala:524
+msgid "Game _seed"
+msgstr "Žaidimo _greitis"
+
+#: src/quadrapassel.vala:530
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
@@ -435,36 +462,36 @@ msgstr ""
 "Išvarstymas naudojamas nustatyti, kuriuos blokus gausite. Kai išbarstymas "
 "yra nustatytas, žaidimas jį naudos kiekvieną kartą."
 
-#: src/quadrapassel.vala:458
+#: src/quadrapassel.vala:534
 msgid "_Use a custom seed for the game"
 msgstr "Na_udoti žaidimui pasirinktinį išbarstymą"
 
-#: src/quadrapassel.vala:844
+#: src/quadrapassel.vala:971
 msgid "Unpause the game"
 msgstr "Pratęsti žaidimą"
 
-#: src/quadrapassel.vala:853
+#: src/quadrapassel.vala:977
 msgid "Pause the game"
 msgstr "Pristabdyti žaidimą"
 
-#: src/quadrapassel.vala:873
+#: src/quadrapassel.vala:1018
 msgid "Start the game"
 msgstr "Pradėti žaidimą"
 
-#: src/quadrapassel.vala:898
+#: src/quadrapassel.vala:1047
 msgid "Old Scores"
 msgstr "Seni rezultatai"
 
-#: src/quadrapassel.vala:903
+#: src/quadrapassel.vala:1052
 msgid "Difficult"
 msgstr "Sudėtingas"
 
-#: src/quadrapassel.vala:982
+#: src/quadrapassel.vala:1131
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
-msgstr "Taškai skaičiuojami pagal tai, kiek eilučių yra sunaikinama"
+msgstr "Taškai skaičiuojami pagal tai, kiek eilučių yra sunaikinama."
 
-#: src/quadrapassel.vala:998
+#: src/quadrapassel.vala:1147
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -472,7 +499,7 @@ msgstr ""
 "Klasikinis žaidimas, kuriame jūs sukiojate blokus ir siekiate užpildyti "
 "eilutes, bet neprikraukite blokų per aukštai, nes žaidimas baigsis!"
 
-#: src/quadrapassel.vala:1002
+#: src/quadrapassel.vala:1151
 msgid "translator-credits"
 msgstr ""
 "Aurimas Černius <aurimas.cernius@mailo.com>\n"
