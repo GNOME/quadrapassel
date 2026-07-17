@@ -746,11 +746,6 @@ public class Quadrapassel : Adw.Application
                                      uint keycode,
                                      Gdk.ModifierType state)
     {
-        if (keys_state[keyval])
-            return true;
-
-        keys_state[keyval] = true;
-
         if (game != null)
         {
             if (game.game_over && keyval == Gdk.Key.Return)
@@ -779,6 +774,11 @@ public class Quadrapassel : Adw.Application
 
         if (game.paused)
             return false;
+
+        if (keys_state[keyval])
+            return true;
+
+        keys_state[keyval] = true;
 
         if (keyval == Gdk.Key.Left || keyval == Gdk.Key.a)
         {
