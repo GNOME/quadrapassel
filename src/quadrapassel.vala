@@ -92,6 +92,24 @@ public class Quadrapassel : Adw.Application
     };
     private HashTable<uint16, bool> buttons_state = new HashTable<uint16, bool> (direct_hash, direct_equal);
 
+    private const uint[] KEYS = {
+        Gdk.Key.Return,
+        Gdk.Key.Pause,
+        Gdk.Key.w,
+        Gdk.Key.a,
+        Gdk.Key.s,
+        Gdk.Key.d,
+        Gdk.Key.q,
+        Gdk.Key.e,
+        Gdk.Key.h,
+        Gdk.Key.p,
+        Gdk.Key.space,
+        Gdk.Key.Up,
+        Gdk.Key.Down,
+        Gdk.Key.Left,
+        Gdk.Key.Right,
+    };
+
     private bool pause_requested = false;
 
     /* Keyboard Keys */
@@ -315,25 +333,7 @@ public class Quadrapassel : Adw.Application
         while (manette_iterator.next (out manette_device))
             manette_device_connected_cb (manette_device);
 
-        uint[] keys = {
-            Gdk.Key.Return,
-            Gdk.Key.Pause,
-            Gdk.Key.w,
-            Gdk.Key.a,
-            Gdk.Key.s,
-            Gdk.Key.d,
-            Gdk.Key.q,
-            Gdk.Key.e,
-            Gdk.Key.h,
-            Gdk.Key.p,
-            Gdk.Key.space,
-            Gdk.Key.Up,
-            Gdk.Key.Down,
-            Gdk.Key.Left,
-            Gdk.Key.Right,
-        };
-
-        foreach (unowned var key in keys)
+        foreach (unowned var key in KEYS)
             keys_state[key] = false;
 
         pause_action.set_enabled (false);
@@ -427,7 +427,13 @@ public class Quadrapassel : Adw.Application
             else
             {
                 if (!pause_play_button.has_focus && !new_game_button.has_focus)
+                {
+                    foreach (unowned var key in KEYS)
+                        if (keys_state[key])
+                            key_release_event_cb (event_controller_key, key, 0, Gdk.ModifierType.NO_MODIFIER_MASK);
+
                     game.paused = true;
+                }
             }
         }
     }
