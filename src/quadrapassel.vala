@@ -1161,6 +1161,7 @@ public class Quadrapassel : Adw.Application
             application_name = _("Quadrapassel"),
             application_icon = APP_ID,
             developers = authors,
+            issue_url = "https://gitlab.gnome.org/GNOME/quadrapassel/-/issues",
             comments = _("A classic game where you rotate blocks to make complete rows, but don't pile your blocks too high or it's game over!"),
             copyright = "Copyright © 1999 J. Marcin Gorycki, 2000–2015 Others",
             license_type = Gtk.License.GPL_3_0,
