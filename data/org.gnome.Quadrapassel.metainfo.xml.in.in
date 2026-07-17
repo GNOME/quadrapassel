@@ -50,6 +50,17 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
+    <release date="2026-07-17" version="51~alpha" type="development">
+      <description>
+        <ul>
+          <li>Updated translations: Lithuanian, Russian, Belarusian</li>
+          <li>Fixed a bug where blocks would not stop moving if the game lost focus</li>
+          <li>Fixed a bug where game keys wouldn't work once if they were pressed before to
+            starting a game</li>
+          <li>Added a -1 difficulty, where the level never increases</li>
+        </ul>
+      </description>
+    </release>
     <release date="2026-05-23" version="50.2">
       <description>
         <ul>

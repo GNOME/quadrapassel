@@ -1,3 +1,11 @@
+quadrapassel 51.alpha
+=====================
+* Updated translations: Lithuanian (Aurimas Aurimas Černius), Russian (Sergej A.),
+			Belarusian (Vasil Pupkin)
+* Fixed a bug where blocks would not stop moving if the game lost focus
+* Fixed a bug where game keys wouldn't work once if they were pressed before to starting a game
+* Added a -1 difficulty, where the level never increases
+
 quadrapassel 50.2
 =================
 * Updated the Turkish translation
