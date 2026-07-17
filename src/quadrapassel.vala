@@ -463,7 +463,7 @@ public class Quadrapassel : Adw.Application
 
         /* difficulty */
         // the maximum should be at least 4 less than the new game height but as long as the game height is a magic 20 and not a setting, we can keep it at 15
-        var adj = new Gtk.Adjustment (settings.get_int ("difficulty"), 0, 15, 1, 5, 0);
+        var adj = new Gtk.Adjustment (settings.get_int ("difficulty"), -1, 15, 1, 5, 0);
         var difficulty_row = new Adw.SpinRow (adj, 10, 0);
         difficulty_row.set_title (_("_Difficulty"));
         difficulty_row.set_use_underline (true);
@@ -947,10 +947,17 @@ public class Quadrapassel : Adw.Application
         if (settings.get_boolean ("use-seed"))
             Random.set_seed (settings.get_uint ("seed"));
 
+        int pre_filled = settings.get_int ("difficulty");
+
+        if (pre_filled < 0)
+            pre_filled = 0;
+
         // Set game dimension, change to 10
-        game = new Game (20, 10,
+        game = new Game (20,
+                         10,
                          settings.get_int ("difficulty") /* The starting level */,
-                         settings.get_int ("difficulty") /* Pre-filled lines */, 5 /* line fill density  */,
+                         pre_filled,
+                         5 /* line fill density  */,
                          settings.get_boolean ("pick-difficult-blocks"));
 
         game.pause_changed.connect (pause_changed_cb);
@@ -1053,9 +1060,13 @@ public class Quadrapassel : Adw.Application
             return new Games.Scores.Category (key, _("Old Scores"));
         }
 
-        var tokens = key.split ("-");
-        if (tokens.length != 1)
-            return new Games.Scores.Category (key, tokens[0] + "-" + _("Difficult"));
+        int index = key.last_index_of_char ('-');
+
+        if (index > 0)
+        {
+            string level = key.substring (0, index);
+            return new Games.Scores.Category (key, level + "-" + _("Difficult"));
+        }
 
         /* For the scores dialog. Just the difficulty level (a number). */
         return new Games.Scores.Category (key, key);

@@ -27,7 +27,7 @@
     </key>
     <key name="difficulty" type="i">
       <default>0</default>
-      <range min="0" max="15"/>
+      <range min="-1" max="15"/>
       <summary>The difficulty of the game</summary>
       <description>How difficult the game is, 0 is a normal difficulty.</description>
     </key>

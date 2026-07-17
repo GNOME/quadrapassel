@@ -264,7 +264,14 @@ public class Game : Object
     public bool pick_difficult_blocks = false;
 
     /* The current level */
-    public int level { get { return (difficulty + 1) + (n_lines_destroyed / 10); } }
+    public int level {
+        get {
+            if (difficulty < 0)
+                return 1;
+            else
+                return (difficulty + 1) + (n_lines_destroyed / 10);
+        }
+    }
 
     /* The direction we are moving */
     private int fast_move_direction = 0;
