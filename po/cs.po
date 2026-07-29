@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2026-02-22 15:57+0000\n"
-"PO-Revision-Date: 2026-02-27 15:26+0100\n"
+"POT-Creation-Date: 2026-07-17 17:11+0000\n"
+"PO-Revision-Date: 2026-07-29 17:42+0200\n"
 "Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -32,12 +32,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:139
-#: src/quadrapassel.vala:159 src/quadrapassel.vala:1124
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:142
+#: src/quadrapassel.vala:162 src/quadrapassel.vala:1161
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -179,13 +179,17 @@ msgstr "Výška okna v pixelech"
 msgid "true if the window is maximized"
 msgstr "Zapnuto, pokud je okno maximalizováno"
 
-#: src/game-view.vala:420
+#: src/game-view.vala:432
 msgid "Paused"
 msgstr "Pozastaveno"
 
-#: src/game-view.vala:427
+#: src/game-view.vala:439
 msgid "Game Over"
 msgstr "Konec hry"
+
+#: src/more-info-button.blp:8
+msgid "More Information"
+msgstr "Další informace"
 
 #: src/rules-dialog.blp:7
 msgid "Game Rules"
@@ -209,10 +213,10 @@ msgstr "Za každou zničenou řadu získáváte body"
 #: src/rules-dialog.blp:18
 msgctxt "game rules"
 msgid ""
-"You can also get a bonus of 2500 × level × rows destroyed if the bottom "
-"layer is destroyed."
+"You can also get a bonus of 100 × level × rows destroyed if the bottom layer "
+"is destroyed."
 msgstr ""
-"Také můžete získat bonus 2500 × úroveň × řad zničených, pokud je zničena "
+"Také můžete získat bonus 100 × úroveň × řad zničených, pokud je zničena "
 "spodní vrstva."
 
 #: src/rules-dialog.blp:25
@@ -339,115 +343,128 @@ msgctxt "shortcut window"
 msgid "Drop"
 msgstr "Přiražení"
 
-#: src/quadrapassel.vala:187 src/quadrapassel.vala:256
-msgid "Start a new game"
-msgstr "Začít novou hru"
+#: src/shortcuts-dialog.blp:65
+msgctxt "shortcut window"
+msgid "Hold the active piece"
+msgstr "Držet aktivní dílek"
 
-#: src/quadrapassel.vala:194
-msgid "_Scores"
-msgstr "_Skóre"
-
-#: src/quadrapassel.vala:195
-msgid "App_earance"
-msgstr "Vzhl_ed"
-
-#: src/quadrapassel.vala:196
-msgid "_Preferences"
-msgstr "_Předvolby"
-
-#: src/quadrapassel.vala:199
-msgid "_Keyboard Shortcuts"
-msgstr "_Klávesové zkratky"
-
-#: src/quadrapassel.vala:200
-msgid "Game _Rules"
-msgstr "Pravidla h_ry"
-
-#: src/quadrapassel.vala:201
-msgid "_About Quadrapassel"
-msgstr "O _aplikaci Quadrapassel"
-
-#: src/quadrapassel.vala:204
-msgid "Main Menu"
-msgstr "Hlavní nabídka"
-
-#: src/quadrapassel.vala:261
+#: src/quadrapassel.vala:52
 msgid "Next"
 msgstr "Následující"
 
-#: src/quadrapassel.vala:278
+#: src/quadrapassel.vala:53
+msgid "Hold"
+msgstr "Držet"
+
+#: src/quadrapassel.vala:190 src/quadrapassel.vala:259
+msgid "Start a new game"
+msgstr "Začít novou hru"
+
+#: src/quadrapassel.vala:197
+msgid "_Scores"
+msgstr "_Skóre"
+
+#: src/quadrapassel.vala:198
+msgid "App_earance"
+msgstr "Vzhl_ed"
+
+#: src/quadrapassel.vala:199
+msgid "_Preferences"
+msgstr "_Předvolby"
+
+#: src/quadrapassel.vala:202
+msgid "_Keyboard Shortcuts"
+msgstr "_Klávesové zkratky"
+
+#: src/quadrapassel.vala:203
+msgid "Game _Rules"
+msgstr "Pravidla h_ry"
+
+#: src/quadrapassel.vala:204
+msgid "_About Quadrapassel"
+msgstr "O _aplikaci Quadrapassel"
+
+#: src/quadrapassel.vala:207
+msgid "Main Menu"
+msgstr "Hlavní nabídka"
+
+#: src/quadrapassel.vala:281
 msgid "Score"
 msgstr "Skóre"
 
-#: src/quadrapassel.vala:291 src/quadrapassel.vala:990
+#: src/quadrapassel.vala:294 src/quadrapassel.vala:1023
 msgid "Rows"
 msgstr "Řady"
 
-#: src/quadrapassel.vala:303 src/quadrapassel.vala:990
+#: src/quadrapassel.vala:306 src/quadrapassel.vala:1023
 msgid "Level"
 msgstr "Úroveň"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:316
+#: src/quadrapassel.vala:319
 msgid "Difficulty"
 msgstr "Obtížnost"
 
-#: src/quadrapassel.vala:441
+#: src/quadrapassel.vala:452
 msgid "Preferences"
 msgstr "Předvolby"
 
-#: src/quadrapassel.vala:444
+#: src/quadrapassel.vala:455
 msgid "Game"
 msgstr "Hra"
 
-#: src/quadrapassel.vala:447
+#: src/quadrapassel.vala:458
 msgid "Game Difficulty"
 msgstr "Obtížnost hry"
 
-#: src/quadrapassel.vala:448
+#: src/quadrapassel.vala:459
 msgid "Change how difficult the game is"
 msgstr "Změnit, jak je hra obtížná"
 
-#: src/quadrapassel.vala:450
+#: src/quadrapassel.vala:461
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
 msgstr ""
 "Obtížnost ovlivňuje úroveň, na které začínáte, a počet předvyplněných řad."
 
-#: src/quadrapassel.vala:457
+#: src/quadrapassel.vala:468
 msgid "_Difficulty"
 msgstr "_Obtížnost"
 
-#: src/quadrapassel.vala:465
+#: src/quadrapassel.vala:476
 msgid "Choose difficult _blocks"
 msgstr "Zvolit obtížné _bloky"
 
-#: src/quadrapassel.vala:474
+#: src/quadrapassel.vala:485
 msgid "In-Game"
 msgstr "Ve hře"
 
-#: src/quadrapassel.vala:475
+#: src/quadrapassel.vala:486
 msgid "Change the experience of playing a game"
 msgstr "Změnit zážitek z hraní hry"
 
-#: src/quadrapassel.vala:478
+#: src/quadrapassel.vala:489
 msgid "_Enable sounds"
 msgstr "_Povolit zvuky"
 
-#: src/quadrapassel.vala:489
+#: src/quadrapassel.vala:500
 msgid "_Preview next block"
 msgstr "_Náhled dalšího bloku"
 
-#: src/quadrapassel.vala:501
+#: src/quadrapassel.vala:512
 msgid "_Rotate blocks counterclockwise"
 msgstr "Otáčet bloky p_roti směru hodinových ručiček"
 
-#: src/quadrapassel.vala:508
+#: src/quadrapassel.vala:519
 msgid "Show _where the block will land"
 msgstr "Ukazovat, _kam blok dopadne"
 
-#: src/quadrapassel.vala:525
+#: src/quadrapassel.vala:530
+msgid "Game _seed"
+msgstr "Počáteční hodnot_a hry"
+
+#: src/quadrapassel.vala:536
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
@@ -455,36 +472,36 @@ msgstr ""
 "Počáteční hodnota se používá k určení, které bloky získáte. Když je "
 "počáteční hodnota nastavena, hra bude pokaždé stejná."
 
-#: src/quadrapassel.vala:529
+#: src/quadrapassel.vala:540
 msgid "_Use a custom seed for the game"
 msgstr "Po_užít pro hru vlastní počáteční hodnotu"
 
-#: src/quadrapassel.vala:969
+#: src/quadrapassel.vala:984
 msgid "Unpause the game"
 msgstr "Pokračovat ve hře"
 
-#: src/quadrapassel.vala:975
+#: src/quadrapassel.vala:990
 msgid "Pause the game"
 msgstr "Pozastavit hru"
 
-#: src/quadrapassel.vala:998
+#: src/quadrapassel.vala:1031
 msgid "Start the game"
 msgstr "Začít novou hru"
 
-#: src/quadrapassel.vala:1027
+#: src/quadrapassel.vala:1060
 msgid "Old Scores"
 msgstr "Staré skóre"
 
-#: src/quadrapassel.vala:1032
+#: src/quadrapassel.vala:1068
 msgid "Difficult"
 msgstr "Obtížná"
 
-#: src/quadrapassel.vala:1111
+#: src/quadrapassel.vala:1148
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr "Body se počítají na základě počtu zničených řad."
 
-#: src/quadrapassel.vala:1127
+#: src/quadrapassel.vala:1165
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -492,7 +509,7 @@ msgstr ""
 "Klasická hra, ve které otáčíte padající bloky, abyste jimi zaplnili vrstvy, "
 "ale nesmí se vám jich nakupit moc špatně do výšky, jinak hra skončí."
 
-#: src/quadrapassel.vala:1131
+#: src/quadrapassel.vala:1169
 msgid "translator-credits"
 msgstr ""
 "Jirka Lébl\n"
