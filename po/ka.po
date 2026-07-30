@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2026-03-18 21:45+0000\n"
-"PO-Revision-Date: 2026-03-19 09:16+0100\n"
+"POT-Creation-Date: 2026-07-17 17:11+0000\n"
+"PO-Revision-Date: 2026-07-30 05:27+0200\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: Georgian <(nothing)>\n"
 "Language: ka\n"
@@ -19,8 +19,8 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:125
-#: src/quadrapassel.vala:145 src/quadrapassel.vala:1110
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:142
+#: src/quadrapassel.vala:162 src/quadrapassel.vala:1161
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -32,7 +32,7 @@ msgstr ""
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Quadrapassel.desktop.in.in:11
 msgid "tetris;"
-msgstr "tetris;"
+msgstr "tetris;ტეტრისი;"
 
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:11
 msgid ""
@@ -59,6 +59,10 @@ msgstr ""
 msgid ""
 "The Quadrapassel window, with a game playing, in small form factor mode."
 msgstr ""
+
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:237
+msgid "The Quadrapassel developers"
+msgstr "Quadrapassel-ის პროგრამისტები"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -152,11 +156,11 @@ msgstr "ფანჯრის სიმაღლე, პიქსელებშ
 msgid "true if the window is maximized"
 msgstr "ჭეშმარიტია, თუ ფანჯარა მთელ ეკრანზეა"
 
-#: src/game-view.vala:420
+#: src/game-view.vala:432
 msgid "Paused"
 msgstr "შეჩერებულია"
 
-#: src/game-view.vala:427
+#: src/game-view.vala:439
 msgid "Game Over"
 msgstr "თამაში დასრულდა"
 
@@ -186,8 +190,8 @@ msgstr ""
 #: src/rules-dialog.blp:18
 msgctxt "game rules"
 msgid ""
-"You can also get a bonus of 2500 × level × rows destroyed if the bottom "
-"layer is destroyed."
+"You can also get a bonus of 100 × level × rows destroyed if the bottom layer "
+"is destroyed."
 msgstr ""
 
 #: src/rules-dialog.blp:25
@@ -314,159 +318,168 @@ msgctxt "shortcut window"
 msgid "Drop"
 msgstr "დაგდება"
 
-#: src/quadrapassel.vala:173 src/quadrapassel.vala:242
-msgid "Start a new game"
-msgstr "ახალი თამაშის დაწყება"
+#: src/shortcuts-dialog.blp:65
+msgctxt "shortcut window"
+msgid "Hold the active piece"
+msgstr ""
 
-#: src/quadrapassel.vala:180
-msgid "_Scores"
-msgstr "_ქულები"
-
-#: src/quadrapassel.vala:181
-msgid "App_earance"
-msgstr "გარ_ეგნობა"
-
-#: src/quadrapassel.vala:182
-msgid "_Preferences"
-msgstr "_მორგება"
-
-#: src/quadrapassel.vala:185
-msgid "_Keyboard Shortcuts"
-msgstr "_კლავიატურის მალსახმობები"
-
-#: src/quadrapassel.vala:186
-msgid "Game _Rules"
-msgstr "თამაშის _წესები"
-
-#: src/quadrapassel.vala:187
-msgid "_About Quadrapassel"
-msgstr "Quadrapassel-ის შესახებ"
-
-#: src/quadrapassel.vala:190
-msgid "Main Menu"
-msgstr "მთავარი მენიუ"
-
-#: src/quadrapassel.vala:247
+#: src/quadrapassel.vala:52
 msgid "Next"
 msgstr "შემდეგი"
 
-#: src/quadrapassel.vala:264
+#: src/quadrapassel.vala:53
+msgid "Hold"
+msgstr "შეყოვნება"
+
+#: src/quadrapassel.vala:190 src/quadrapassel.vala:259
+msgid "Start a new game"
+msgstr "ახალი თამაშის დაწყება"
+
+#: src/quadrapassel.vala:197
+msgid "_Scores"
+msgstr "_ქულები"
+
+#: src/quadrapassel.vala:198
+msgid "App_earance"
+msgstr "გარ_ეგნობა"
+
+#: src/quadrapassel.vala:199
+msgid "_Preferences"
+msgstr "_მორგება"
+
+#: src/quadrapassel.vala:202
+msgid "_Keyboard Shortcuts"
+msgstr "_კლავიატურის მალსახმობები"
+
+#: src/quadrapassel.vala:203
+msgid "Game _Rules"
+msgstr "თამაშის _წესები"
+
+#: src/quadrapassel.vala:204
+msgid "_About Quadrapassel"
+msgstr "Quadrapassel-ის შესახებ"
+
+#: src/quadrapassel.vala:207
+msgid "Main Menu"
+msgstr "მთავარი მენიუ"
+
+#: src/quadrapassel.vala:281
 msgid "Score"
 msgstr "ქულები"
 
-#: src/quadrapassel.vala:277 src/quadrapassel.vala:976
+#: src/quadrapassel.vala:294 src/quadrapassel.vala:1023
 msgid "Rows"
 msgstr "მწკრივები"
 
-#: src/quadrapassel.vala:289 src/quadrapassel.vala:976
+#: src/quadrapassel.vala:306 src/quadrapassel.vala:1023
 msgid "Level"
 msgstr "დონე"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:302
+#: src/quadrapassel.vala:319
 msgid "Difficulty"
 msgstr "სირთულე"
 
-#: src/quadrapassel.vala:427
+#: src/quadrapassel.vala:452
 msgid "Preferences"
 msgstr "მორგება"
 
-#: src/quadrapassel.vala:430
+#: src/quadrapassel.vala:455
 msgid "Game"
 msgstr "თამაში"
 
-#: src/quadrapassel.vala:433
+#: src/quadrapassel.vala:458
 msgid "Game Difficulty"
 msgstr "თამაშის სირთულე"
 
-#: src/quadrapassel.vala:434
+#: src/quadrapassel.vala:459
 msgid "Change how difficult the game is"
 msgstr ""
 
-#: src/quadrapassel.vala:436
+#: src/quadrapassel.vala:461
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
 msgstr ""
 
-#: src/quadrapassel.vala:443
+#: src/quadrapassel.vala:468
 msgid "_Difficulty"
 msgstr "სირთუ_ლე"
 
-#: src/quadrapassel.vala:451
+#: src/quadrapassel.vala:476
 msgid "Choose difficult _blocks"
 msgstr ""
 
-#: src/quadrapassel.vala:460
+#: src/quadrapassel.vala:485
 msgid "In-Game"
 msgstr "თამაშში"
 
-#: src/quadrapassel.vala:461
+#: src/quadrapassel.vala:486
 msgid "Change the experience of playing a game"
 msgstr ""
 
-#: src/quadrapassel.vala:464
+#: src/quadrapassel.vala:489
 msgid "_Enable sounds"
 msgstr "ხმების _ჩართვა"
 
-#: src/quadrapassel.vala:475
+#: src/quadrapassel.vala:500
 msgid "_Preview next block"
 msgstr "_წინა ბლოკის მინიატურა"
 
-#: src/quadrapassel.vala:487
+#: src/quadrapassel.vala:512
 msgid "_Rotate blocks counterclockwise"
 msgstr ""
 
-#: src/quadrapassel.vala:494
+#: src/quadrapassel.vala:519
 msgid "Show _where the block will land"
 msgstr ""
 
-#: src/quadrapassel.vala:505
+#: src/quadrapassel.vala:530
 msgid "Game _seed"
 msgstr "თამაშის თე_სლი"
 
-#: src/quadrapassel.vala:511
+#: src/quadrapassel.vala:536
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
 msgstr ""
 
-#: src/quadrapassel.vala:515
+#: src/quadrapassel.vala:540
 msgid "_Use a custom seed for the game"
 msgstr ""
 
-#: src/quadrapassel.vala:955
+#: src/quadrapassel.vala:984
 msgid "Unpause the game"
 msgstr "თამაშის გაგრძელება"
 
-#: src/quadrapassel.vala:961
+#: src/quadrapassel.vala:990
 msgid "Pause the game"
 msgstr "თამაშის შეჩერება"
 
-#: src/quadrapassel.vala:984
+#: src/quadrapassel.vala:1031
 msgid "Start the game"
 msgstr "თამაშის დაწყება"
 
-#: src/quadrapassel.vala:1013
+#: src/quadrapassel.vala:1060
 msgid "Old Scores"
 msgstr "ძველი ქულები"
 
-#: src/quadrapassel.vala:1018
+#: src/quadrapassel.vala:1068
 msgid "Difficult"
 msgstr "რთული"
 
-#: src/quadrapassel.vala:1097
+#: src/quadrapassel.vala:1148
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr ""
 
-#: src/quadrapassel.vala:1113
+#: src/quadrapassel.vala:1165
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
 msgstr ""
 
-#: src/quadrapassel.vala:1117
+#: src/quadrapassel.vala:1169
 msgid "translator-credits"
 msgstr "ეკატერინე პაპავა"
 
