@@ -84,9 +84,6 @@ metainfo_file = i18n.merge_file(
     install_dir: join_paths(get_option('datadir'), 'metainfo')
 )
 
-# Install man page
-install_man('@0@.6'.format(meson.project_name()))
-
 # Install sounds
 install_data(
     [
