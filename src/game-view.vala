@@ -55,8 +55,8 @@ public class GameView : Gtk.Widget {
                     var block = _game.blocks[x, y];
                     if (block != null)
                     {
-                        var widget = new BlockWidget (block, theme);
-                        widget.color = block.color;
+                        var widget = new BlockWidget (block);
+                        widget.add_css_class (theme);
                         blocks.insert (block, widget);
                         add_block_widget (widget);
                     }
@@ -75,13 +75,11 @@ public class GameView : Gtk.Widget {
         get { return _theme; }
         set
         {
-            if (_theme != null)
-                this.remove_css_class ("theme-" + _theme);
-
-            this.add_css_class ("theme-" + value);
-
             foreach (var widget in get_block_widgets ())
-                widget.theme = value;
+            {
+                widget.remove_css_class (_theme);
+                widget.add_css_class (value);
+            }
 
             _theme = value;
         }
@@ -301,14 +299,16 @@ public class GameView : Gtk.Widget {
         {
             foreach (var block in game.shape.blocks)
             {
-                var widget = new BlockWidget (block, theme);
+                var widget = new BlockWidget (block);
+                widget.add_css_class (theme);
                 shape_blocks.insert (block, widget);
                 add_block_widget (widget);
 
                 // Shadow blocks
                 if (show_shadow)
                 {
-                    var shadow_widget = new BlockWidget (block, theme);
+                    var shadow_widget = new BlockWidget (block);
+                    shadow_widget.add_css_class (theme);
                     shadow_widget.add_css_class ("shadow");
                     shadow_blocks.insert (block, shadow_widget);
                     add_block_widget (shadow_widget);
@@ -395,7 +395,8 @@ public class GameView : Gtk.Widget {
         /* Land the shape blocks */
         foreach (var block in game.shape.blocks)
         {
-            var widget = new BlockWidget (block, theme);
+            var widget = new BlockWidget (block);
+            widget.add_css_class (theme);
             blocks.insert (block, widget);
             add_block_widget (widget);
         }
@@ -457,107 +458,43 @@ public class BlockWidget: Gtk.Widget
         set_css_name ("block");
     }
 
-
-    private string? _theme = null;
-    public string? theme
-    {
-        get { return _theme; }
-        set
-        {
-            if (_theme == value)
-                return;
-            _theme = value;
-            drawing_area.queue_draw ();
-            queue_draw ();
-        }
-    }
-
-    private int _color = -1;
-    public int color {
-        get { return _color; }
-        set {
-            if (_color == value)
-                return;
-
-            var old_color_class = "color-%d".printf (_color);
-            this.remove_css_class (old_color_class);
-
-            var new_color = value.clamp (0, 6);
-            var new_color_class = "color-%d".printf (new_color);
-            this.add_css_class (new_color_class);
-            _color = value;
-        }
-    }
-
     public Block block;
-    private Gtk.DrawingArea drawing_area;
 
-    public BlockWidget (Block block, string? theme)
+    public BlockWidget (Block block)
     {
-        drawing_area = new Gtk.DrawingArea ();
-        drawing_area.set_draw_func (draw);
-        drawing_area.set_parent (this);
-
         this.block = block;
-        this.color = block.color;
-        can_target = false;
-        if (theme != null)
-            this.theme = theme;
-        else
-            this.theme = "plain";
-    }
-
-    protected override void size_allocate (int width, int height, int baseline) {
-        drawing_area.measure (Gtk.Orientation.HORIZONTAL, width, null, null, null, null);
-        var transform = new Gsk.Transform ().translate (Graphene.Point ());
-        drawing_area.allocate (width, height, -1, transform);
-    }
-
-    protected override void snapshot (Gtk.Snapshot snapshot) {
-        switch (theme) {
-        case "modern":
-            snapshot_modern (snapshot);
-            break;
-        default:
-            base.snapshot (snapshot);
-            break;
-        }
-    }
-
-    private void snapshot_modern (Gtk.Snapshot snapshot) {
-        // Colors from GNOME color scheme
-        const float COLORS[21] =
+        switch (block.color)
         {
-            0.929411765f, 0.2f, 0.231372549f,
-            0.341176471f, 0.890196078f, 0.537254902f,
-            0.384313725f, 0.62745098f, 0.917647059f,
-            0.964705882f, 0.960784314f, 0.956862745f,
-            0.97254902f, 0.894117647f, 0.360784314f,
-            0.752941176f, 0.380392157f, 0.796078431f,
-            1.0f, 0.639215686f, 0.282352941f
-        };
+            case 0:
+                this.add_css_class ("red");
+                break;
 
-        float border_width = 0.05f;
+            case 1:
+                this.add_css_class ("green");
+                break;
 
-        var color = Gdk.RGBA () {
-            red = COLORS[color * 3],
-            green = COLORS[color * 3 + 1],
-            blue = COLORS[color * 3 + 2],
-            alpha = 1.0f
-        };
+            case 2:
+                this.add_css_class ("blue");
+                break;
 
-        var rect = Graphene.Rect () {
-            origin = Graphene.Point () {
-                x = border_width * get_width (),
-                y = border_width * get_height ()
-            },
-            size = Graphene.Size () {
-                width = (1 - 2 * border_width) * get_width (),
-                height = (1 - 2 * border_width) * get_height ()
-            }
-        };
+            case 3:
+                this.add_css_class ("gray");
+                break;
 
-        snapshot.append_color (color, rect);
+            case 4:
+                this.add_css_class ("yellow");
+                break;
+
+            case 5:
+                this.add_css_class ("purple");
+                break;
+
+            case 6:
+                this.add_css_class ("orange");
+                break;
+        }
+
+        can_target = false;
     }
 
     private int animation_size_begin = 0;
@@ -581,196 +518,5 @@ public class BlockWidget: Gtk.Widget
     private void explode_complete_cb (Adw.Animation animation)
     {
         unparent ();
-    }
-
-    public void draw (Gtk.DrawingArea area, Cairo.Context cr, int width, int height)
-    {
-        cr.scale (width, height);
-
-        switch (theme)
-        {
-        default:
-        case "plain":
-            draw_plain (cr, width, height);
-            break;
-        case "clean":
-            draw_clean (cr, width, height);
-            break;
-        case "tangoflat":
-            draw_tango (cr, width, height, false);
-            break;
-        case "tangoshaded":
-            draw_tango (cr, width, height, true);
-            break;
-        }
-    }
-
-    private void draw_plain (Cairo.Context cr, int width, int height)
-    {
-        const double COLORS[32] =
-        {
-            1.0, 0.0, 0.0,
-            0.0, 1.0, 0.0,
-            0.0, 0.0, 1.0,
-            1.0, 1.0, 1.0,
-            1.0, 1.0, 0.0,
-            1.0, 0.0, 1.0,
-            0.0, 1.0, 1.0
-        };
-
-        cr.set_source_rgb (COLORS[color * 3], COLORS[color * 3 + 1], COLORS[color * 3 + 2]);
-        cr.paint ();
-    }
-
-    private void draw_rounded_rectangle (Cairo.Context cr, double x, double y, double w, double h, double r)
-    {
-        cr.move_to (x + r, y);
-        cr.line_to (x + w - r, y);
-        cr.curve_to (x + w - (r / 2), y, x + w, y + r / 2, x + w, y + r);
-        cr.line_to (x + w, y + h - r);
-        cr.curve_to (x + w, y + h - r / 2, x + w - r / 2, y + h, x + w - r, y + h);
-        cr.line_to (x + r, y + h);
-        cr.curve_to (x + r / 2, y + h, x, y + h - r / 2, x, y + h - r);
-        cr.line_to (x, y + r);
-        cr.curve_to (x, y + r / 2, x + r / 2, y, x + r, y);
-    }
-
-    private void draw_clean (Cairo.Context cr, int width, int height)
-    {
-        /* The COLORS, first the lighter then the darker fill (for the gradient)
-           and then the stroke color  */
-        const double COLORS[72] =
-        {
-            0.780392156863, 0.247058823529, 0.247058823529,
-            0.713725490196, 0.192156862745, 0.192156862745,
-            0.61568627451, 0.164705882353, 0.164705882353, /* red */
-
-            0.552941176471, 0.788235294118, 0.32549019607,
-            0.474509803922, 0.713725490196, 0.243137254902,
-            0.388235294118, 0.596078431373, 0.18431372549, /* green */
-
-            0.313725490196, 0.450980392157, 0.623529411765,
-            0.239215686275, 0.345098039216, 0.474509803922,
-            0.21568627451, 0.313725490196, 0.435294117647, /* blue */
-
-            1.0, 1.0, 1.0,
-            0.909803921569, 0.909803921569, 0.898039215686,
-            0.701960784314, 0.701960784314, 0.670588235294, /* white */
-
-            0.945098039216, 0.878431372549, 0.321568627451,
-            0.929411764706, 0.839215686275, 0.113725490196,
-            0.760784313725, 0.682352941176, 0.0274509803922, /* yellow */
-
-            0.576470588235, 0.364705882353, 0.607843137255,
-            0.443137254902, 0.282352941176, 0.46666666666,
-            0.439215686275, 0.266666666667, 0.46666666666, /* purple */
-
-            0.890196078431, 0.572549019608, 0.258823529412,
-            0.803921568627, 0.450980392157, 0.101960784314,
-            0.690196078431, 0.388235294118, 0.0901960784314, /* orange */
-
-            0.392156862745, 0.392156862745, 0.392156862745,
-            0.262745098039, 0.262745098039, 0.262745098039,
-            0.21568627451, 0.235294117647, 0.23921568627 /* grey */
-        };
-
-        /* Layout the block */
-        draw_rounded_rectangle (cr, 0.05, 0.05, 0.9, 0.9, 0.05);
-
-        /* Draw outline */
-        cr.set_source_rgb (COLORS[color * 9 + 6], COLORS[color * 9 + 7], COLORS[color * 9 + 8]);
-        cr.set_line_width (0.1);
-        cr.stroke_preserve ();
-
-        /* Fill with gradient */
-        var pat = new Cairo.Pattern.linear (0.35, 0, 0.55, 0.9);
-        pat.add_color_stop_rgb (0.0, COLORS[color * 9], COLORS[color * 9 + 1], COLORS[color * 9 + 2]);
-        pat.add_color_stop_rgb (1.0, COLORS[color * 9 + 3], COLORS[color * 9 + 4], COLORS[color * 9 + 5]);
-        cr.set_source (pat);
-        cr.fill ();
-    }
-
-    private void draw_tango (Cairo.Context cr, int width, int height, bool use_gradients)
-    {
-        /* The following garbage is derived from the official tango style guide */
-        const double COLORS[72] =
-        {
-            0.93725490196078431, 0.16078431372549021, 0.16078431372549021,
-            0.8, 0.0, 0.0,
-            0.64313725490196083, 0.0, 0.0, /* red */
-
-            0.54117647058823526, 0.88627450980392153, 0.20392156862745098,
-            0.45098039215686275, 0.82352941176470584, 0.086274509803921567,
-            0.30588235294117649, 0.60392156862745094, 0.023529411764705882, /* green */
-
-            0.44705882352941179, 0.62352941176470589, 0.81176470588235294,
-            0.20392156862745098, 0.396078431372549, 0.64313725490196083,
-            0.12549019607843137, 0.29019607843137257, 0.52941176470588236, /* blue */
-
-            0.93333333333333335, 0.93333333333333335, 0.92549019607843142,
-            0.82745098039215681, 0.84313725490196079, 0.81176470588235294,
-            0.72941176470588232, 0.74117647058823533, 0.71372549019607845, /* white */
-
-            0.9882352941176471, 0.9137254901960784, 0.30980392156862746,
-            0.92941176470588238, 0.83137254901960789, 0.0,
-            0.7686274509803922, 0.62745098039215685, 0.0, /* yellow */
-
-            0.67843137254901964, 0.49803921568627452, 0.6588235294117647,
-            0.45882352941176469, 0.31372549019607843, 0.4823529411764706,
-            0.36078431372549019, 0.20784313725490197, 0.4, /* purple */
-
-            0.9882352941176471, 0.68627450980392157, 0.24313725490196078,
-            0.96078431372549022, 0.47450980392156861, 0.0,
-            0.80784313725490198, 0.36078431372549019, 0.0, /* orange (replacing cyan) */
-
-            0.33, 0.34, 0.32,
-            0.18, 0.2, 0.21,
-            0.10, 0.12, 0.13 /* grey */
-        };
-
-        if (use_gradients)
-        {
-             var pat = new Cairo.Pattern.linear (0.35, 0, 0.55, 0.9);
-             pat.add_color_stop_rgb (0.0, COLORS[color * 9], COLORS[color * 9 + 1], COLORS[color * 9 + 2]);
-             pat.add_color_stop_rgb (1.0, COLORS[color * 9 + 3], COLORS[color * 9 + 4], COLORS[color * 9 + 5]);
-             cr.set_source (pat);
-        }
-        else {
-             cr.set_source_rgb (COLORS[color * 9], COLORS[color * 9 + 1], COLORS[color * 9 + 2]);
-        }
-
-        draw_rounded_rectangle (cr, 0.05, 0.05, 0.9, 0.9, 0.2);
-        cr.fill_preserve ();  // fill with shaded gradient
-
-        cr.set_source_rgb (COLORS[color * 9 + 6], COLORS[color * 9 + 7], COLORS[color * 9 + 8]);
-
-        // Add darker outline
-        cr.set_line_width (0.1);
-        cr.stroke ();
-
-        draw_rounded_rectangle (cr, 0.15, 0.15, 0.7, 0.7, 0.08);
-        if (use_gradients)
-        {
-            var pat = new Cairo.Pattern.linear (-0.3, -0.3, 0.8, 0.8);
-            // yellow and white blocks need a brighter highlight
-            switch (color)
-            {
-            case 3:
-            case 4:
-                pat.add_color_stop_rgba (0.0, 1.0, 1.0, 1.0, 1.0);
-                pat.add_color_stop_rgba (1.0, 1.0, 1.0, 1.0, 0.0);
-                break;
-            default:
-                pat.add_color_stop_rgba (0.0, 0.9295, 0.9295, 0.9295, 1.0);
-                pat.add_color_stop_rgba (1.0, 0.9295, 0.9295, 0.9295, 0.0);
-                break;
-            }
-            cr.set_source (pat);
-        }
-        else
-            cr.set_source_rgba (1.0, 1.0, 1.0, 0.35);
-
-        // Add inner edge highlight
-        cr.stroke ();
     }
 }

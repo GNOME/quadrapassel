@@ -3,12 +3,68 @@ game-view, preview {
   border-radius: 4px;
 }
 
-.margin-6 {
-  margin: 6px;
+block.red {
+  background-color: var(--red-4);
 }
 
-.margin-12 {
-  margin: 12px;
+block.green {
+  background-color: var(--green-5);
+}
+
+block.blue {
+  background-color: var(--blue-5);
+}
+
+block.gray {
+  background-color: var(--light-2);
+}
+
+block.yellow {
+  background-color: var(--yellow-4);
+}
+
+block.purple {
+  background-color: var(--purple-5);
+}
+
+block.orange {
+  background-color: var(--orange-4);
+}
+
+block.red.clean {
+  border: 1px solid var(--red-2);
+}
+
+block.green.clean {
+  border: 1px solid #007c3d;
+}
+
+block.blue.clean {
+  border: 1px solid var(--blue-4);
+}
+
+block.gray.clean {
+  border: 1px solid var(--light-4);
+}
+
+block.yellow.clean {
+  border: 1px solid var(--yellow-5);
+}
+
+block.purple.clean {
+  border: 1px solid var(--purple-4);
+}
+
+block.orange.clean {
+  border: 1px solid var(--orange-5);
+}
+
+block.clean {
+  border-radius: 15%;
+}
+
+block.modern {
+  border: 1px solid #000000;
 }
 
 block.shadow {

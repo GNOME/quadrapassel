@@ -577,7 +577,7 @@ public class Quadrapassel : Adw.Application
         theme_preview.theme = settings.get_string ("theme");
         theme_preview.update_block (new Game ().next_shape);
         theme_preview_frame.child = theme_preview;
-        var dialog = new Games.ThemeSelectorDialog ({"plain", "tangoflat", "tangoshaded", "clean", "modern"},
+        var dialog = new Games.ThemeSelectorDialog ({"plain", "clean", "modern"},
                                                     settings.get_string ("theme"),
                                                     theme_preview_frame);
         dialog.change_theme.connect (theme_update);

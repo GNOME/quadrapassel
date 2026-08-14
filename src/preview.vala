@@ -29,8 +29,10 @@ public class Preview : Gtk.Widget {
         get { return _theme; }
         set
         {
-            foreach (var block in block_widgets) {
-                block.theme = value;
+            foreach (var block in block_widgets)
+            {
+                block.remove_css_class (_theme);
+                block.add_css_class (value);
             }
 
             _theme = value;
@@ -86,8 +88,12 @@ public class Preview : Gtk.Widget {
                                      out int natural_baseline)
     {
 
-        minimum = 50;
-        natural = 120;
+        // if (for_size <= 50)
+            minimum = 50;
+        // else
+            // minimum = for_size;
+
+        natural = 50;
         minimum_baseline = natural_baseline = -1;
     }
 
@@ -127,9 +133,8 @@ public class Preview : Gtk.Widget {
             min_height = int.min (b.y, min_height);
             max_height = int.max (b.y + 1, max_height);
 
-            var widget = new BlockWidget (b, theme);
-            widget.color = b.color;
-            widget.theme = theme;
+            var widget = new BlockWidget (b);
+            widget.add_css_class (theme);
             widget.set_parent (this);
             this.block_widgets.append_val (widget);
         }

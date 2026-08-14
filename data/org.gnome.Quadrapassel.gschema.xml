@@ -6,7 +6,12 @@
       <description>Image to use for drawing blocks.</description>
     </key>
     <key name="theme" type="s">
-      <default>'clean'</default>
+      <default>'modern'</default>
+      <choices>
+        <choice value='plain'/>
+        <choice value='clean'/>
+        <choice value='modern'/>
+      </choices>
       <summary>The theme used for rendering the blocks</summary>
       <description>The name of the theme used for rendering the blocks and the background.</description>
     </key>
