@@ -25,10 +25,6 @@ libgnome_games_support = subproject ('libgnome-games-support',
 	    		             default_options: [ 'superproject_name=quadrapassel', 'sounds=true' ])
 libgnome_games_support_dependency = libgnome_games_support.get_variable ('lggs_dependency')
 manette_dependency = dependency('manette-0.2', version: '>= 0.2.10')
-pango_dependency = dependency('pango')
-pango_cairo_dependency = dependency('pangocairo')
-posix_dependency = meson.get_compiler('vala').find_library('posix')
-rsvg_dependency = dependency('librsvg-2.0', version: '>= 2.32.0')
 libm_dependency = cc.find_library('m', required : true)
 
 localedir = join_paths(get_option('prefix'), get_option('localedir'))

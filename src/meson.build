@@ -48,10 +48,6 @@ executable(meson.project_name(),
         libadwaita_dependency,
         libgnome_games_support_dependency,
         manette_dependency,
-        pango_dependency,
-        pango_cairo_dependency,
-        posix_dependency,
-        rsvg_dependency,
         libm_dependency
     ]
 )
