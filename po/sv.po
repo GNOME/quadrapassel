@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2026-01-26 00:20+0000\n"
-"PO-Revision-Date: 2026-01-26 02:12+0100\n"
+"POT-Creation-Date: 2026-08-14 17:43+0000\n"
+"PO-Revision-Date: 2026-08-12 13:51+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -20,11 +20,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:121
-#: src/quadrapassel.vala:139 src/quadrapassel.vala:1071
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:142
+#: src/quadrapassel.vala:162 src/quadrapassel.vala:1161
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -74,6 +74,10 @@ msgid ""
 "The Quadrapassel window, with a game playing, in small form factor mode."
 msgstr "Quadrapassel-fönstret då ett spel körs i läget för liten formfaktor."
 
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:237
+msgid "The Quadrapassel developers"
+msgstr "Quadrapassel-utvecklarna"
+
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
 msgstr "Bild att använda för uppritning av klossar"
@@ -82,97 +86,101 @@ msgstr "Bild att använda för uppritning av klossar"
 msgid "Image to use for drawing blocks."
 msgstr "Bild att använda för uppritning av klossar."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:10
+#: data/org.gnome.Quadrapassel.gschema.xml:15
 msgid "The theme used for rendering the blocks"
 msgstr "Temat som används för rendering av klossarna"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:11
+#: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "Namnet på temat som används för rendering av klossarna och bakgrunden."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:15
+#: data/org.gnome.Quadrapassel.gschema.xml:20
 msgid "Whether to preview the next block"
 msgstr "Huruvida nästa kloss ska förhandsgranskas"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:16
+#: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to preview the next block."
 msgstr "Huruvida nästa kloss ska förhandsgranskas."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:20
+#: data/org.gnome.Quadrapassel.gschema.xml:25
 msgid "Whether to show where the moving block will land"
 msgstr "Huruvida var den flyttade klossen kommer att landa ska visas"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:21
+#: data/org.gnome.Quadrapassel.gschema.xml:26
 msgid "Whether to show where the moving block will land."
 msgstr "Huruvida var den flyttade klossen kommer att landa ska visas."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:25
+#: data/org.gnome.Quadrapassel.gschema.xml:30
 msgid "Whether to rotate counter clock wise"
 msgstr "Huruvida rotation ska ske moturs"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:26
+#: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to rotate counter clock wise."
 msgstr "Huruvida rotation ska ske moturs."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:31
+#: data/org.gnome.Quadrapassel.gschema.xml:36
 msgid "The difficulty of the game"
 msgstr "Spelets svårighetsgrad"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:32
+#: data/org.gnome.Quadrapassel.gschema.xml:37
 msgid "How difficult the game is, 0 is a normal difficulty."
 msgstr "Hur svårt spelet är, 0 är normal svårighetsgrad."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:36
+#: data/org.gnome.Quadrapassel.gschema.xml:41
 msgid "Whether to use the custom seed"
 msgstr "Huruvida det anpassade fröet ska användas"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:37
+#: data/org.gnome.Quadrapassel.gschema.xml:42
 msgid "Whether to use the custom seed."
 msgstr "Huruvida det anpassade fröet ska användas."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:41
+#: data/org.gnome.Quadrapassel.gschema.xml:46
 msgid "The seed used for the game"
 msgstr "Fröet som används för spelet"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:42
+#: data/org.gnome.Quadrapassel.gschema.xml:47
 msgid "Used to determine which blocks are given in a game."
 msgstr "Används för att avgöra vilka block som ges i ett spel."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:46
+#: data/org.gnome.Quadrapassel.gschema.xml:51
 msgid "Whether to play sounds"
 msgstr "Huruvida ljud ska spelas upp"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:47
+#: data/org.gnome.Quadrapassel.gschema.xml:52
 msgid "Whether to play sounds."
 msgstr "Huruvida ljud ska spelas upp."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:51
+#: data/org.gnome.Quadrapassel.gschema.xml:56
 msgid "Whether to pick blocks that are hard to place"
 msgstr "Huruvida klossar ska väljas som är svåra att placera ut"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:52
+#: data/org.gnome.Quadrapassel.gschema.xml:57
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Huruvida klossar ska väljas som är svåra att placera ut."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:56
+#: data/org.gnome.Quadrapassel.gschema.xml:61
 msgid "Width of the window in pixels"
 msgstr "Bredden på fönstret i bildpunkter"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:60
+#: data/org.gnome.Quadrapassel.gschema.xml:65
 msgid "Height of the window in pixels"
 msgstr "Höjden på fönstret i bildpunkter"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:64
+#: data/org.gnome.Quadrapassel.gschema.xml:69
 msgid "true if the window is maximized"
 msgstr "sant om fönstret är maximerat"
 
-#: src/game-view.vala:436 src/game-view.vala:457
+#: src/game-view.vala:434
 msgid "Paused"
 msgstr "Pausad"
 
 #: src/game-view.vala:441
 msgid "Game Over"
 msgstr "Spelet är slut"
+
+#: src/more-info-button.blp:8
+msgid "More Information"
+msgstr "Mer information"
 
 #: src/rules-dialog.blp:7
 msgid "Game Rules"
@@ -196,10 +204,10 @@ msgstr "Du får poäng för varje förstörd rad"
 #: src/rules-dialog.blp:18
 msgctxt "game rules"
 msgid ""
-"You can also get a bonus of 2500 × level × rows destroyed if the bottom "
-"layer is destroyed."
+"You can also get a bonus of 100 × level × rows destroyed if the bottom layer "
+"is destroyed."
 msgstr ""
-"Du kan också få en bonus på 2500 × nivå × förstörda rader om det nedersta "
+"Du kan också få en bonus på 100 × nivå × förstörda rader om det nedersta "
 "lagret förstörs."
 
 #: src/rules-dialog.blp:25
@@ -326,76 +334,85 @@ msgctxt "shortcut window"
 msgid "Drop"
 msgstr "Släpp"
 
-#: src/quadrapassel.vala:167 src/quadrapassel.vala:236
-msgid "Start a new game"
-msgstr "Starta ett nytt spel"
+#: src/shortcuts-dialog.blp:65
+msgctxt "shortcut window"
+msgid "Hold the active piece"
+msgstr "Håll den aktiva pjäsen"
 
-#: src/quadrapassel.vala:174
-msgid "_Scores"
-msgstr "_Poänglista"
-
-#: src/quadrapassel.vala:175
-msgid "App_earance"
-msgstr "_Utseende"
-
-#: src/quadrapassel.vala:176
-msgid "_Preferences"
-msgstr "_Inställningar"
-
-#: src/quadrapassel.vala:179
-msgid "_Keyboard Shortcuts"
-msgstr "_Tangentbordsgenvägar"
-
-#: src/quadrapassel.vala:180
-msgid "Game _Rules"
-msgstr "Spel_regler"
-
-#: src/quadrapassel.vala:181
-msgid "_About Quadrapassel"
-msgstr "_Om Quadrapassel"
-
-#: src/quadrapassel.vala:184
-msgid "Main Menu"
-msgstr "Huvudmeny"
-
-#: src/quadrapassel.vala:241
+#: src/quadrapassel.vala:52
 msgid "Next"
 msgstr "Nästa"
 
-#: src/quadrapassel.vala:258
+#: src/quadrapassel.vala:53
+msgid "Hold"
+msgstr "Lager"
+
+#: src/quadrapassel.vala:190 src/quadrapassel.vala:259
+msgid "Start a new game"
+msgstr "Starta ett nytt spel"
+
+#: src/quadrapassel.vala:197
+msgid "_Scores"
+msgstr "_Poänglista"
+
+#: src/quadrapassel.vala:198
+msgid "App_earance"
+msgstr "_Utseende"
+
+#: src/quadrapassel.vala:199
+msgid "_Preferences"
+msgstr "_Inställningar"
+
+#: src/quadrapassel.vala:202
+msgid "_Keyboard Shortcuts"
+msgstr "_Tangentbordsgenvägar"
+
+#: src/quadrapassel.vala:203
+msgid "Game _Rules"
+msgstr "Spel_regler"
+
+#: src/quadrapassel.vala:204
+msgid "_About Quadrapassel"
+msgstr "_Om Quadrapassel"
+
+#: src/quadrapassel.vala:207
+msgid "Main Menu"
+msgstr "Huvudmeny"
+
+#: src/quadrapassel.vala:281
 msgid "Score"
 msgstr "Poäng"
 
-#: src/quadrapassel.vala:271 src/quadrapassel.vala:937
+#: src/quadrapassel.vala:294 src/quadrapassel.vala:1023
 msgid "Rows"
 msgstr "Rader"
 
-#: src/quadrapassel.vala:283 src/quadrapassel.vala:937
+#: src/quadrapassel.vala:306 src/quadrapassel.vala:1023
 msgid "Level"
 msgstr "Nivå"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:296
+#: src/quadrapassel.vala:319
 msgid "Difficulty"
 msgstr "Svårighetsgrad"
 
-#: src/quadrapassel.vala:398
+#: src/quadrapassel.vala:452
 msgid "Preferences"
 msgstr "Inställningar"
 
-#: src/quadrapassel.vala:401
+#: src/quadrapassel.vala:455
 msgid "Game"
 msgstr "Spel"
 
-#: src/quadrapassel.vala:404
+#: src/quadrapassel.vala:458
 msgid "Game Difficulty"
 msgstr "Svårighetsgrad på spelet"
 
-#: src/quadrapassel.vala:405
+#: src/quadrapassel.vala:459
 msgid "Change how difficult the game is"
 msgstr "Ändra hur svårt spelet är"
 
-#: src/quadrapassel.vala:407
+#: src/quadrapassel.vala:461
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
@@ -403,39 +420,43 @@ msgstr ""
 "Svårighetsgraden påverkar nivån du startar på och hur många rader som är "
 "förifyllda."
 
-#: src/quadrapassel.vala:414
+#: src/quadrapassel.vala:468
 msgid "_Difficulty"
 msgstr "S_vårighetsgrad"
 
-#: src/quadrapassel.vala:422
+#: src/quadrapassel.vala:476
 msgid "Choose difficult _blocks"
 msgstr "Välj svåra _klossar"
 
-#: src/quadrapassel.vala:431
+#: src/quadrapassel.vala:485
 msgid "In-Game"
 msgstr "I spelet"
 
-#: src/quadrapassel.vala:432
+#: src/quadrapassel.vala:486
 msgid "Change the experience of playing a game"
 msgstr "Ändra spelupplevelsen"
 
-#: src/quadrapassel.vala:435
+#: src/quadrapassel.vala:489
 msgid "_Enable sounds"
 msgstr "A_ktivera ljud"
 
-#: src/quadrapassel.vala:446
+#: src/quadrapassel.vala:500
 msgid "_Preview next block"
 msgstr "_Förhandsgranska nästa kloss"
 
-#: src/quadrapassel.vala:458
+#: src/quadrapassel.vala:512
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Rotera klossar moturs"
 
-#: src/quadrapassel.vala:465
+#: src/quadrapassel.vala:519
 msgid "Show _where the block will land"
 msgstr "Visa _var klossen kommer att landa"
 
-#: src/quadrapassel.vala:482
+#: src/quadrapassel.vala:530
+msgid "Game _seed"
+msgstr "Spel_frö"
+
+#: src/quadrapassel.vala:536
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
@@ -443,36 +464,36 @@ msgstr ""
 "Fröet används för att avgöra vilka block du får. Då ett frö har ställts in "
 "kommer spelet vara detsamma varje gång."
 
-#: src/quadrapassel.vala:486
+#: src/quadrapassel.vala:540
 msgid "_Use a custom seed for the game"
 msgstr "_Använd ett anpassat frö för spelet"
 
-#: src/quadrapassel.vala:916
+#: src/quadrapassel.vala:984
 msgid "Unpause the game"
 msgstr "Fortsätt spelet"
 
-#: src/quadrapassel.vala:922
+#: src/quadrapassel.vala:990
 msgid "Pause the game"
 msgstr "Gör paus i spelet"
 
-#: src/quadrapassel.vala:945
+#: src/quadrapassel.vala:1031
 msgid "Start the game"
 msgstr "Starta spelet"
 
-#: src/quadrapassel.vala:974
+#: src/quadrapassel.vala:1060
 msgid "Old Scores"
 msgstr "Gamla poäng"
 
-#: src/quadrapassel.vala:979
+#: src/quadrapassel.vala:1068
 msgid "Difficult"
 msgstr "Svår"
 
-#: src/quadrapassel.vala:1058
+#: src/quadrapassel.vala:1148
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr "Poäng beräknas baserat på hur många rader som förstörs."
 
-#: src/quadrapassel.vala:1074
+#: src/quadrapassel.vala:1165
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -480,7 +501,7 @@ msgstr ""
 "Ett klassiskt spel där du roterar fallande klossar för att skapa rader, men "
 "stapla inte klossarna för högt så spelet tar slut!"
 
-#: src/quadrapassel.vala:1078
+#: src/quadrapassel.vala:1169
 msgid "translator-credits"
 msgstr ""
 "Daniel Nylander <po@danielnylander.se>\n"
