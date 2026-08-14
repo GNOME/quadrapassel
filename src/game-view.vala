@@ -95,7 +95,7 @@ public class GameView : Gtk.Widget {
     }
 
     /* Overlay to draw messages on */
-    private TextOverlay text_overlay;
+    private Gtk.Label text_overlay;
 
     /* Blocks */
     private HashTable<Block, BlockWidget> blocks;
@@ -135,8 +135,9 @@ public class GameView : Gtk.Widget {
 
     public GameView ()
     {
-        text_overlay = new TextOverlay ();
+        text_overlay = new Gtk.Label (null);
         text_overlay.set_parent (this);
+        text_overlay.add_css_class ("title-1");
 
         blocks = new HashTable<Block, BlockWidget> (direct_hash, direct_equal);
         shape_blocks = new HashTable<Block, BlockWidget> (direct_hash, direct_equal);
@@ -429,15 +430,17 @@ public class GameView : Gtk.Widget {
     {
         if (game.paused)
         {
-            text_overlay.text = _("Paused");
+            text_overlay.label = _("Paused");
             text_overlay.visible = true;
             foreach (var widget in get_block_widgets ())
                 widget.visible = false;
         }
         else if (game.game_over)
         {
-            text_overlay.text = _("Game Over");
+            text_overlay.label = _("Game Over");
             text_overlay.visible = true;
+            foreach (var widget in get_block_widgets ())
+                widget.visible = false;
         }
         else
         {
@@ -445,59 +448,6 @@ public class GameView : Gtk.Widget {
             foreach (var widget in get_block_widgets ())
                 widget.visible = true;
         }
-    }
-}
-
-private class TextOverlay : Gtk.DrawingArea
-{
-    private string? _text = null;
-    public string text
-    {
-        get { return _text; }
-        set {
-            _text = value;
-            queue_draw ();
-        }
-    }
-
-    public TextOverlay ()
-    {
-        set_draw_func (draw);
-    }
-
-    protected void draw (Gtk.DrawingArea area, Cairo.Context cr, int width, int height)
-    {
-        if (text == null)
-            return;
-
-        int w = get_width ();
-        int h = get_height ();
-        cr.translate (w / 2, h / 2);
-
-        var desc = Pango.FontDescription.from_string ("Sans");
-
-        var layout = Pango.cairo_create_layout (cr);
-        layout.set_text (text, -1);
-
-        var dummy_layout = layout.copy ();
-        dummy_layout.set_font_description (desc);
-        int lw, lh;
-        dummy_layout.get_size (out lw, out lh);
-
-        desc.set_absolute_size (((float) lh / lw) * Pango.SCALE * w * 0.7);
-        layout.set_font_description (desc);
-
-        layout.get_size (out lw, out lh);
-        cr.move_to (- ((double) lw / Pango.SCALE) / 2, - ((double) lh / Pango.SCALE) / 2);
-        Pango.cairo_layout_path (cr, layout);
-        cr.set_source_rgb (0.333333333333, 0.341176470588, 0.32549019607);
-
-        /* A linewidth of 2 pixels at the default size. */
-        cr.set_line_width (width / 100.0);
-        cr.stroke_preserve ();
-
-        cr.set_source_rgb (1.0, 1.0, 1.0);
-        cr.fill ();
     }
 }
 
