@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of quadrapassel.
-# Copyright (C) 2021 Free Software Foundation, Inc.
+# Copyright (C) 2026 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-games package.
 # Sandro Nunes Henrique <sandro@conectiva.com.br>, 1999.
 # Cândida Nunes da Silva <candida@zaz.com.br>, 2000-2001.
@@ -23,29 +23,35 @@
 # Djavan Fagundes <djavan@comum.org>, 2012.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2013.
 # Enrico Nicoletto <liverig@gmail.com>, 2014, 2020.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2014-2021.
 # Álvaro Burns <>, 2025.
 # Juliano de Souza Camargo <julianosc@pm.me>, 2025.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2014-2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-12-08 19:23+0000\n"
-"PO-Revision-Date: 2025-12-10 10:02-0300\n"
-"Last-Translator: Juliano de Souza Camargo <julianosc@pm.me>\n"
+"POT-Creation-Date: 2026-07-17 17:09+0000\n"
+"PO-Revision-Date: 2026-08-14 16:31-0300\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gtranslator 49.0\n"
+"X-Generator: Gtranslator 50.0\n"
 "X-Project-Style: gnome\n"
+"X-DL-VCS-Web: https://gitlab.gnome.org/GNOME/quadrapassel\n"
+"X-DL-Lang: pt_BR\n"
+"X-DL-Module: quadrapassel\n"
+"X-DL-Branch: gnome-50\n"
+"X-DL-Domain: po\n"
+"X-DL-State: Translating\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:93
-#: src/quadrapassel.vala:112 src/quadrapassel.vala:995
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:142
+#: src/quadrapassel.vala:162 src/quadrapassel.vala:1161
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -96,6 +102,10 @@ msgid ""
 msgstr ""
 "A janela do Quadrapassel, com um jogo rodando, no modo de fator de pequeno "
 "formato."
+
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:226
+msgid "The Quadrapassel developers"
+msgstr "Os desenvolvedores do Quadrapassel"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
@@ -189,13 +199,17 @@ msgstr "A altura da janela em pixels"
 msgid "true if the window is maximized"
 msgstr "verdadeiro se a janela estiver maximizada"
 
-#: src/game-view.vala:379 src/game-view.vala:458
+#: src/game-view.vala:432
 msgid "Paused"
 msgstr "Pausado"
 
-#: src/game-view.vala:384
+#: src/game-view.vala:439
 msgid "Game Over"
 msgstr "Fim do jogo"
+
+#: src/more-info-button.blp:8
+msgid "More Information"
+msgstr "Mais informações"
 
 #: src/rules-dialog.blp:7
 msgid "Game Rules"
@@ -219,11 +233,11 @@ msgstr "Você ganha pontos por cada linha destruída"
 #: src/rules-dialog.blp:18
 msgctxt "game rules"
 msgid ""
-"You can also get a bonus of 2500 × level × rows destroyed if the bottom "
-"layer is destroyed."
+"You can also get a bonus of 100 × level × rows destroyed if the bottom layer "
+"is destroyed."
 msgstr ""
-"Você pode obter um bônus de 2500 x nível x linhas destruídas se a camada "
-"abaixo é destruída."
+"Você também pode obter um bônus de 100 x nível x linhas destruídas se a "
+"camada abaixo é destruída."
 
 #: src/rules-dialog.blp:25
 msgctxt "game rules"
@@ -321,94 +335,114 @@ msgstr "Gira"
 
 #: src/shortcuts-dialog.blp:41
 msgctxt "shortcut window"
+msgid "Rotate Left"
+msgstr "Gira para esquerda"
+
+#: src/shortcuts-dialog.blp:45
+msgctxt "shortcut window"
+msgid "Rotate Right"
+msgstr "Gira para direita"
+
+#: src/shortcuts-dialog.blp:49
+msgctxt "shortcut window"
 msgid "Move right"
 msgstr "Move para a direita"
 
-#: src/shortcuts-dialog.blp:45
+#: src/shortcuts-dialog.blp:53
 msgctxt "shortcut window"
 msgid "Move left"
 msgstr "Move para a esquerda"
 
-#: src/shortcuts-dialog.blp:49
+#: src/shortcuts-dialog.blp:57
 msgctxt "shortcut window"
 msgid "Move down"
 msgstr "Move para baixo"
 
-#: src/shortcuts-dialog.blp:53
+#: src/shortcuts-dialog.blp:61
 msgctxt "shortcut window"
 msgid "Drop"
-msgstr "Soltar"
+msgstr "Solta"
 
-#: src/quadrapassel.vala:140 src/quadrapassel.vala:210
-msgid "Start a new game"
-msgstr "Inicia um novo jogo"
+#: src/shortcuts-dialog.blp:65
+msgctxt "shortcut window"
+msgid "Hold the active piece"
+msgstr "Retém a peça ativa"
 
-#: src/quadrapassel.vala:147
-msgid "_Scores"
-msgstr "_Pontuações"
-
-#: src/quadrapassel.vala:148
-msgid "App_earance"
-msgstr "_Aparência"
-
-#: src/quadrapassel.vala:149
-msgid "_Preferences"
-msgstr "_Preferências"
-
-#: src/quadrapassel.vala:152
-msgid "_Keyboard Shortcuts"
-msgstr "A_talhos de teclado"
-
-#: src/quadrapassel.vala:153
-msgid "Game _Rules"
-msgstr "_Regras do jogo"
-
-#: src/quadrapassel.vala:154
-msgid "_About Quadrapassel"
-msgstr "_Sobre o Quadrapassel"
-
-#: src/quadrapassel.vala:157
-msgid "Main Menu"
-msgstr "Menu principal"
-
-#: src/quadrapassel.vala:215
+#: src/quadrapassel.vala:52
 msgid "Next"
 msgstr "Próximo"
 
-#: src/quadrapassel.vala:232
+# Rótulo da uma peça retida com atalho de teclado H no Quadrapassel - Rafael
+#: src/quadrapassel.vala:53
+msgid "Hold"
+msgstr "Retida"
+
+#: src/quadrapassel.vala:190 src/quadrapassel.vala:259
+msgid "Start a new game"
+msgstr "Inicia um novo jogo"
+
+#: src/quadrapassel.vala:197
+msgid "_Scores"
+msgstr "_Pontuações"
+
+#: src/quadrapassel.vala:198
+msgid "App_earance"
+msgstr "_Aparência"
+
+#: src/quadrapassel.vala:199
+msgid "_Preferences"
+msgstr "_Preferências"
+
+#: src/quadrapassel.vala:202
+msgid "_Keyboard Shortcuts"
+msgstr "A_talhos de teclado"
+
+#: src/quadrapassel.vala:203
+msgid "Game _Rules"
+msgstr "_Regras do jogo"
+
+#: src/quadrapassel.vala:204
+msgid "_About Quadrapassel"
+msgstr "_Sobre o Quadrapassel"
+
+#: src/quadrapassel.vala:207
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#: src/quadrapassel.vala:281
 msgid "Score"
 msgstr "Pontuação"
 
-#: src/quadrapassel.vala:244 src/quadrapassel.vala:865
+#: src/quadrapassel.vala:294 src/quadrapassel.vala:1023
 msgid "Rows"
 msgstr "Linhas"
 
-#: src/quadrapassel.vala:255 src/quadrapassel.vala:865
+#: src/quadrapassel.vala:306 src/quadrapassel.vala:1023
 msgid "Level"
 msgstr "Nível"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:267
+#: src/quadrapassel.vala:319
 msgid "Difficulty"
 msgstr "Dificuldade"
 
-#: src/quadrapassel.vala:370
+#: src/quadrapassel.vala:452
 msgid "Preferences"
 msgstr "Preferências"
 
-#: src/quadrapassel.vala:373
+#: src/quadrapassel.vala:455
 msgid "Game"
 msgstr "Jogo"
 
-#: src/quadrapassel.vala:376
+#: src/quadrapassel.vala:458
 msgid "Game Difficulty"
 msgstr "Dificuldade do jogo"
 
-#: src/quadrapassel.vala:377
+#: src/quadrapassel.vala:459
 msgid "Change how difficult the game is"
 msgstr "Mude o quão difícil o jogo é"
 
-#: src/quadrapassel.vala:379
+#: src/quadrapassel.vala:461
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
@@ -416,39 +450,43 @@ msgstr ""
 "A dificuldade afeta o nível em que você inicia e quantas linhas são pré-"
 "preenchidas."
 
-#: src/quadrapassel.vala:386
+#: src/quadrapassel.vala:468
 msgid "_Difficulty"
 msgstr "_Dificuldade"
 
-#: src/quadrapassel.vala:394
+#: src/quadrapassel.vala:476
 msgid "Choose difficult _blocks"
 msgstr "Escolher _blocos difíceis"
 
-#: src/quadrapassel.vala:403
+#: src/quadrapassel.vala:485
 msgid "In-Game"
 msgstr "No jogo"
 
-#: src/quadrapassel.vala:404
+#: src/quadrapassel.vala:486
 msgid "Change the experience of playing a game"
 msgstr "Mude a experiência de jogar um jogo"
 
-#: src/quadrapassel.vala:407
+#: src/quadrapassel.vala:489
 msgid "_Enable sounds"
 msgstr "_Habilitar sons"
 
-#: src/quadrapassel.vala:418
+#: src/quadrapassel.vala:500
 msgid "_Preview next block"
 msgstr "_Visualizar próximo bloco"
 
-#: src/quadrapassel.vala:430
+#: src/quadrapassel.vala:512
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Girar blocos no sentido anti-horário"
 
-#: src/quadrapassel.vala:437
+#: src/quadrapassel.vala:519
 msgid "Show _where the block will land"
 msgstr "Mostrar _onde o bloco vai cair"
 
-#: src/quadrapassel.vala:454
+#: src/quadrapassel.vala:530
+msgid "Game _seed"
+msgstr "_Semente de jogo"
+
+#: src/quadrapassel.vala:536
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
@@ -456,36 +494,36 @@ msgstr ""
 "A semente é usada para determinar quais blocos você obtém. Quando uma "
 "semente é definida, o jogo será sempre o mesmo."
 
-#: src/quadrapassel.vala:458
+#: src/quadrapassel.vala:540
 msgid "_Use a custom seed for the game"
-msgstr "_Use uma semente personalizada para o jogo"
+msgstr "_Usar uma semente personalizada para o jogo"
 
-#: src/quadrapassel.vala:844
+#: src/quadrapassel.vala:984
 msgid "Unpause the game"
 msgstr "Resume o jogo"
 
-#: src/quadrapassel.vala:853
+#: src/quadrapassel.vala:990
 msgid "Pause the game"
 msgstr "Pausa o jogo"
 
-#: src/quadrapassel.vala:873
+#: src/quadrapassel.vala:1031
 msgid "Start the game"
 msgstr "Inicia o jogo"
 
-#: src/quadrapassel.vala:898
+#: src/quadrapassel.vala:1060
 msgid "Old Scores"
 msgstr "Pontuações anteriores"
 
-#: src/quadrapassel.vala:903
+#: src/quadrapassel.vala:1068
 msgid "Difficult"
 msgstr "Difícil"
 
-#: src/quadrapassel.vala:982
+#: src/quadrapassel.vala:1148
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr "Os pontos são calculados baseados em quantas linhas são destruídas."
 
-#: src/quadrapassel.vala:998
+#: src/quadrapassel.vala:1165
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -493,7 +531,7 @@ msgstr ""
 "Um jogo clássico onde você gira blocos para fazer linhas completas, mas não "
 "empilhe seus blocos muito alto ou é o fim do jogo!"
 
-#: src/quadrapassel.vala:1002
+#: src/quadrapassel.vala:1169
 msgid "translator-credits"
 msgstr ""
 "Sandro Nunes Henrique <sandro@conectiva.com.br>\n"
