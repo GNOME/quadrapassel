@@ -43,14 +43,17 @@ public class Quadrapassel : Adw.Application
     /* Rendering of game */
     private GameView view;
 
-    /* The grid that holds the game view and stats */
-    private Gtk.Grid game_grid;
+    /* The box that holds the game view and stats box */
+    private Gtk.Box game_box;
+
+    /* The box that holds the stats */
+    private Gtk.Box stats_box;
 
     /* Preview of the next shape */
     private Preview preview;
     private Games.GridFrame preview_frame;
-    string next_markup = "<span color='gray'>%s</span>".printf (_("Next"));
-    string hold_markup = "<span color='gray'>%s</span>".printf (_("Hold"));
+    string next_string = _("Next");
+    string hold_string = _("Hold");
     private Gtk.Label preview_label;
 
     /* Label showing current score */
@@ -157,11 +160,11 @@ public class Quadrapassel : Adw.Application
     {
         var builder = new Gtk.Builder ();
         window = new Adw.ApplicationWindow (this);
-        window.set_size_request (360, 320);
+        window.set_size_request (360, 330);
         window.icon_name = APP_ID;
         window.title = _("Quadrapassel");
 
-        var breakpoint = new Adw.Breakpoint (new Adw.BreakpointCondition.length (MAX_WIDTH, 380, PX));
+        var breakpoint = new Adw.Breakpoint (new Adw.BreakpointCondition.length (MAX_WIDTH, 400, PX));
         window.add_child (builder, breakpoint, null);
 
         event_controller_key = new Gtk.EventControllerKey ();
@@ -227,13 +230,11 @@ public class Quadrapassel : Adw.Application
 
         headerbar.pack_end (menu_button);
 
-        game_grid = new Gtk.Grid ();
-        game_grid.margin_start = 12;
-        game_grid.margin_end = 12;
-        game_grid.margin_bottom = 12;
-        game_grid.column_spacing = 12;
-        game_grid.row_spacing = 6;
-        toolbar_view.set_content (game_grid);
+        game_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
+        game_box.margin_start = 12;
+        game_box.margin_end = 12;
+        game_box.margin_bottom = 12;
+        toolbar_view.set_content (game_box);
         breakpoint.apply.connect (breakpoint_apply_cb);
         breakpoint.unapply.connect (breakpoint_unapply_cb);
 
@@ -250,8 +251,7 @@ public class Quadrapassel : Adw.Application
         game_aspect.add_controller (long_press_gesture);
         game_aspect.receives_default = true;
         game_aspect.focusable = true;
-        game_aspect.margin_top = 2;
-        game_grid.attach (game_aspect, 0, 0, 2, 17);
+        game_box.append (game_aspect);
 
         pause_play_button = new Gtk.Button ();
         pause_play_button.set_icon_name ("media-playback-start-symbolic");
@@ -260,59 +260,82 @@ public class Quadrapassel : Adw.Application
         pause_play_button.set_receives_default (false);
         headerbar.pack_end (pause_play_button);
 
-        preview_label = new Gtk.Label (null);
-        preview_label.set_markup (next_markup);
+        stats_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 6);
+        game_box.append (stats_box);
+
+        preview_label = new Gtk.Label (next_string);
         preview_label.halign = CENTER;
-        preview_label.valign = CENTER;
         preview_label.ellipsize = Pango.EllipsizeMode.END;
-        game_grid.attach (preview_label, 2, 0, 1, 1);
+        preview_label.add_css_class ("dimmed");
 
         preview_frame = new Games.GridFrame (5, 5);
         preview_frame.vexpand = true;
-        preview_frame.set_size_request (50, 50);
         preview = new Preview ();
         preview.theme = settings.get_string ("theme");
         preview.enabled = settings.get_boolean ("do-preview");
         preview_frame.child = preview;
 
-        game_grid.attach (preview_frame, 2, 1, 1, 3);
+        var preview_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 3);
+        preview_box.append (preview_label);
+        preview_box.append (preview_frame);
+        stats_box.append (preview_box);
+        preview_box.vexpand = true;
+        preview_box.add_css_class ("card");
 
-        score_descriptor_label = new Gtk.Label (null);
-        score_descriptor_label.set_markup ("<span color='gray'>%s</span>".printf (_("Score")));
+        score_descriptor_label = new Gtk.Label (_("Score"));
         score_descriptor_label.halign = CENTER;
-        score_descriptor_label.valign = CENTER;
         score_descriptor_label.ellipsize = Pango.EllipsizeMode.END;
-        game_grid.attach (score_descriptor_label, 2, 5, 1, 1);
-        score_label = new Gtk.Label ("<big>-</big>");
-        score_label.width_request = 120;
-        score_label.use_markup = true;
+        score_descriptor_label.add_css_class ("dimmed");
+
+        score_label = new Gtk.Label ("0");
+        score_label.margin_bottom = 2;
+        score_label.width_request = 100;
         score_label.halign = CENTER;
-        score_label.valign = CENTER;
-        game_grid.attach (score_label, 2, 6, 1, 2);
+        score_label.vexpand = true;
+        score_label.add_css_class ("title-4");
 
-        destroyed_descriptor_label = new Gtk.Label (null);
-        destroyed_descriptor_label.set_markup ("<span color='gray'>%s</span>".printf (_("Rows")));
+        var score_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 3);
+        score_box.append (score_descriptor_label);
+        score_box.append (score_label);
+        stats_box.append (score_box);
+        score_box.vexpand = true;
+        score_box.add_css_class ("card");
+
+        destroyed_descriptor_label = new Gtk.Label (_("Rows"));
         destroyed_descriptor_label.halign = CENTER;
-        destroyed_descriptor_label.valign = CENTER;
         destroyed_descriptor_label.ellipsize = Pango.EllipsizeMode.END;
-        game_grid.attach (destroyed_descriptor_label, 2, 9, 1, 1);
-        n_destroyed_label = new Gtk.Label ("<big>-</big>");
-        n_destroyed_label.set_use_markup (true);
-        n_destroyed_label.halign = CENTER;
-        n_destroyed_label.valign = CENTER;
-        game_grid.attach (n_destroyed_label, 2, 10, 1, 2);
+        destroyed_descriptor_label.add_css_class ("dimmed");
 
-        level_descriptor_label = new Gtk.Label (null);
-        level_descriptor_label.set_markup ("<span color='gray'>%s</span>".printf (_("Level")));
+        n_destroyed_label = new Gtk.Label ("0");
+        n_destroyed_label.margin_bottom = 2;
+        n_destroyed_label.halign = CENTER;
+        n_destroyed_label.vexpand = true;
+        n_destroyed_label.add_css_class ("title-4");
+
+        var destroyed_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 3);
+        destroyed_box.append (destroyed_descriptor_label);
+        destroyed_box.append (n_destroyed_label);
+        stats_box.append (destroyed_box);
+        destroyed_box.vexpand = true;
+        destroyed_box.add_css_class ("card");
+
+        level_descriptor_label = new Gtk.Label (_("Level"));
         level_descriptor_label.halign = CENTER;
-        level_descriptor_label.valign = CENTER;
         level_descriptor_label.ellipsize = Pango.EllipsizeMode.END;
-        game_grid.attach (level_descriptor_label, 2, 13, 1, 1);
-        level_label = new Gtk.Label ("<big>-</big>");
-        level_label.use_markup = true;
+        level_descriptor_label.add_css_class ("dimmed");
+
+        level_label = new Gtk.Label ("0");
+        level_label.margin_bottom = 2;
         level_label.halign = CENTER;
-        level_label.valign = CENTER;
-        game_grid.attach (level_label, 2, 14, 1, 2);
+        level_label.vexpand = true;
+        level_label.add_css_class ("title-4");
+
+        var level_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 3);
+        level_box.append (level_descriptor_label);
+        level_box.append (level_label);
+        stats_box.append (level_box);
+        level_box.vexpand = true;
+        level_box.add_css_class ("card");
 
         context = new Games.Scores.Context ("quadrapassel",
                                             /* Label on the scores dialog */
@@ -382,37 +405,61 @@ public class Quadrapassel : Adw.Application
     }
 
     private void breakpoint_apply_cb () {
-        for (uint n_children = game_grid.observe_children ().get_n_items (); n_children > 0; n_children--)
-        {
-            game_grid.remove (game_grid.get_first_child ());
-        }
         score_label.width_request = -1;
-        game_grid.attach (score_descriptor_label, 0, 0, 2, 1);
-        game_grid.attach (score_label, 2, 0, 2, 1);
-        game_grid.attach (destroyed_descriptor_label, 4, 0, 2, 1);
-        game_grid.attach (n_destroyed_label, 6, 0, 1, 1);
-        game_grid.attach (level_descriptor_label, 7, 0, 2, 1);
-        game_grid.attach (level_label, 9, 0, 1, 1);
-        game_grid.attach (preview_label, 10, 0, 2, 1);
-        game_grid.attach (preview_frame, 12, 0, 2, 1);
-        game_grid.attach (game_aspect, 0, 1, 14, 17);
+        game_box.remove (stats_box);
+        game_box.orientation = Gtk.Orientation.VERTICAL;
+        game_box.prepend (stats_box);
+        stats_box.orientation = Gtk.Orientation.HORIZONTAL;
+
+        Gtk.Box stat_box = (Gtk.Box) stats_box.get_first_child ();
+        stats_box.remove (stat_box);
+        stats_box.append (stat_box);
+        stat_box.orientation = Gtk.Orientation.HORIZONTAL;
+        stat_box.remove_css_class ("card");
+        stat_box.vexpand = false;
+        stat_box.get_first_child ().margin_end = 4;
+        stat_box = (Gtk.Box) stats_box.get_first_child ();
+
+        for (uint i = 0; i < 3; i++)
+        {
+            stat_box.orientation = Gtk.Orientation.HORIZONTAL;
+            stat_box.remove_css_class ("card");
+            stat_box.vexpand = false;
+            var stat_label = stat_box.get_last_child ();
+            stat_label.hexpand = true;
+            stat_label.margin_bottom = 0;
+
+            stat_box = (Gtk.Box) stat_box.get_next_sibling ();
+        }
     }
 
     private void breakpoint_unapply_cb () {
-        for (uint n_children = game_grid.observe_children ().get_n_items (); n_children > 0; n_children--)
+        score_label.width_request = 100;
+        game_box.remove (stats_box);
+        game_box.orientation = Gtk.Orientation.HORIZONTAL;
+        game_box.append (stats_box);
+        stats_box.orientation = Gtk.Orientation.VERTICAL;
+
+        Gtk.Box stat_box = (Gtk.Box) stats_box.get_last_child ();
+        stats_box.remove (stat_box);
+        stats_box.prepend (stat_box);
+        stat_box.orientation = Gtk.Orientation.VERTICAL;
+        stat_box.add_css_class ("card");
+        stat_box.vexpand = true;
+        stat_box.get_first_child ().margin_end = 0;
+        stat_box = (Gtk.Box) stat_box.get_next_sibling ();
+
+        for (uint i = 0; i < 3; i++)
         {
-            game_grid.remove (game_grid.get_first_child ());
+            stat_box.orientation = Gtk.Orientation.VERTICAL;
+            stat_box.add_css_class ("card");
+            stat_box.vexpand = true;
+            var stat_label = stat_box.get_last_child ();
+            stat_label.hexpand = false;
+            stat_label.margin_bottom = 2;
+
+            stat_box = (Gtk.Box) stat_box.get_next_sibling ();
         }
-        score_label.width_request = 120;
-        game_grid.attach (game_aspect, 0, 0, 2, 18);
-        game_grid.attach (preview_label, 2, 0, 1, 1);
-        game_grid.attach (preview_frame, 2, 1, 1, 3);
-        game_grid.attach (score_descriptor_label, 2, 5, 1, 1);
-        game_grid.attach (score_label, 2, 6, 1, 2);
-        game_grid.attach (destroyed_descriptor_label, 2, 9, 1, 1);
-        game_grid.attach (n_destroyed_label, 2, 10, 1, 2);
-        game_grid.attach (level_descriptor_label, 2, 13, 1, 1);
-        game_grid.attach (level_label, 2, 14, 1, 2);
     }
 
     private void on_window_focus_change ()
@@ -1005,7 +1052,7 @@ public class Quadrapassel : Adw.Application
         if (game.shape == null || game.held_shape != null)
             return;
 
-        preview_label.label = next_markup;
+        preview_label.label = next_string;
         preview.update_block (game.next_shape);
     }
 
@@ -1014,7 +1061,7 @@ public class Quadrapassel : Adw.Application
         if (game.held_shape == null)
             return;
 
-        preview_label.label = hold_markup;
+        preview_label.label = hold_string;
         preview.update_block (game.held_shape);
     }
 
@@ -1124,9 +1171,9 @@ public class Quadrapassel : Adw.Application
             n_lines_destroyed = game.n_lines_destroyed;
         }
 
-        score_label.set_markup ("<big>%d</big>".printf (score));
-        level_label.set_markup ("<big>%d</big>".printf (level));
-        n_destroyed_label.set_markup ("<big>%d</big>".printf (n_lines_destroyed));
+        score_label.set_markup (score.to_string ());
+        level_label.set_markup (level.to_string ());
+        n_destroyed_label.set_markup (n_lines_destroyed.to_string ());
     }
 
     private void rules_cb ()
