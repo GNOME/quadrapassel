@@ -239,6 +239,19 @@ public class GridFrame : Gtk.Widget
 
         old_allocation = child_allocation;
     }
+
+    public override void measure (Gtk.Orientation orientation,
+                                  int for_size,
+                                  out int minimum,
+                                  out int natural,
+                                  out int minimum_baseline,
+                                  out int natural_baseline)
+    {
+        if (child != null && child.get_visible ())
+            child.measure (orientation, for_size, out minimum, out natural, out minimum_baseline, out natural_baseline);
+        else
+            base.measure (orientation, for_size, out minimum, out natural, out minimum_baseline, out natural_baseline);
+    }
 }
 
 }  // namespace Games
