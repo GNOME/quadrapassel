@@ -1,6 +1,7 @@
 /* quadrapassel.vala
  *
  * Copyright 2010-2013 Robert Ancell
+ * Copyright 2025-2026 Will Warner
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
