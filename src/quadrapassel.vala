@@ -1,5 +1,5 @@
 /* quadrapassel.vala
- * 
+ *
  * Copyright 2010-2013 Robert Ancell
  *
  * This program is free software: you can redistribute it and/or modify
@@ -58,15 +58,12 @@ public class Quadrapassel : Adw.Application
 
     /* Label showing current score */
     private Gtk.Label score_label;
-    private Gtk.Label score_descriptor_label;
 
     /* Label showing the number of lines destroyed */
     private Gtk.Label n_destroyed_label;
-    private Gtk.Label destroyed_descriptor_label;
 
     /* Label showing the current level */
     private Gtk.Label level_label;
-    private Gtk.Label level_descriptor_label;
 
     private SimpleAction pause_action;
 
@@ -263,10 +260,9 @@ public class Quadrapassel : Adw.Application
         stats_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 6);
         game_box.append (stats_box);
 
-        preview_label = new Gtk.Label (next_string);
-        preview_label.halign = CENTER;
-        preview_label.ellipsize = Pango.EllipsizeMode.END;
-        preview_label.add_css_class ("dimmed");
+        var preview_card = new AdaptiveCard (next_string, "");
+        preview_label = preview_card.info_type;
+        preview_card.info.visible = false;
 
         preview_frame = new Games.GridFrame (5, 5);
         preview_frame.vexpand = true;
@@ -275,67 +271,21 @@ public class Quadrapassel : Adw.Application
         preview.enabled = settings.get_boolean ("do-preview");
         preview_frame.child = preview;
 
-        var preview_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 3);
-        preview_box.append (preview_label);
-        preview_box.append (preview_frame);
-        stats_box.append (preview_box);
-        preview_box.vexpand = true;
-        preview_box.add_css_class ("card");
+        preview_card.box.append (preview_frame);
+        stats_box.append (preview_card);
 
-        score_descriptor_label = new Gtk.Label (_("Score"));
-        score_descriptor_label.halign = CENTER;
-        score_descriptor_label.ellipsize = Pango.EllipsizeMode.END;
-        score_descriptor_label.add_css_class ("dimmed");
-
-        score_label = new Gtk.Label ("0");
-        score_label.margin_bottom = 2;
+        var score_card = new AdaptiveCard (_("Score"), "0");
+        score_label = score_card.info;
         score_label.width_request = 100;
-        score_label.halign = CENTER;
-        score_label.vexpand = true;
-        score_label.add_css_class ("title-4");
+        stats_box.append (score_card);
 
-        var score_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 3);
-        score_box.append (score_descriptor_label);
-        score_box.append (score_label);
-        stats_box.append (score_box);
-        score_box.vexpand = true;
-        score_box.add_css_class ("card");
+        var destroyed_card = new AdaptiveCard (_("Rows"), "0");
+        n_destroyed_label = destroyed_card.info;
+        stats_box.append (destroyed_card);
 
-        destroyed_descriptor_label = new Gtk.Label (_("Rows"));
-        destroyed_descriptor_label.halign = CENTER;
-        destroyed_descriptor_label.ellipsize = Pango.EllipsizeMode.END;
-        destroyed_descriptor_label.add_css_class ("dimmed");
-
-        n_destroyed_label = new Gtk.Label ("0");
-        n_destroyed_label.margin_bottom = 2;
-        n_destroyed_label.halign = CENTER;
-        n_destroyed_label.vexpand = true;
-        n_destroyed_label.add_css_class ("title-4");
-
-        var destroyed_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 3);
-        destroyed_box.append (destroyed_descriptor_label);
-        destroyed_box.append (n_destroyed_label);
-        stats_box.append (destroyed_box);
-        destroyed_box.vexpand = true;
-        destroyed_box.add_css_class ("card");
-
-        level_descriptor_label = new Gtk.Label (_("Level"));
-        level_descriptor_label.halign = CENTER;
-        level_descriptor_label.ellipsize = Pango.EllipsizeMode.END;
-        level_descriptor_label.add_css_class ("dimmed");
-
-        level_label = new Gtk.Label ("0");
-        level_label.margin_bottom = 2;
-        level_label.halign = CENTER;
-        level_label.vexpand = true;
-        level_label.add_css_class ("title-4");
-
-        var level_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 3);
-        level_box.append (level_descriptor_label);
-        level_box.append (level_label);
-        stats_box.append (level_box);
-        level_box.vexpand = true;
-        level_box.add_css_class ("card");
+        var level_card = new AdaptiveCard (_("Level"), "0");
+        level_label = level_card.info;
+        stats_box.append (level_card);
 
         context = new Games.Scores.Context ("quadrapassel",
                                             /* Label on the scores dialog */
@@ -411,25 +361,18 @@ public class Quadrapassel : Adw.Application
         game_box.prepend (stats_box);
         stats_box.orientation = Gtk.Orientation.HORIZONTAL;
 
-        Gtk.Box stat_box = (Gtk.Box) stats_box.get_first_child ();
-        stats_box.remove (stat_box);
-        stats_box.append (stat_box);
-        stat_box.orientation = Gtk.Orientation.HORIZONTAL;
-        stat_box.remove_css_class ("card");
-        stat_box.vexpand = false;
-        stat_box.get_first_child ().margin_end = 4;
-        stat_box = (Gtk.Box) stats_box.get_first_child ();
+        AdaptiveCard card = (AdaptiveCard) stats_box.get_first_child ();
+        stats_box.remove (card);
+        stats_box.append (card);
+        card.orientation = Gtk.Orientation.HORIZONTAL;
+        card.box.get_first_child ().margin_end = 4;
+        card = (AdaptiveCard) stats_box.get_first_child ();
 
         for (uint i = 0; i < 3; i++)
         {
-            stat_box.orientation = Gtk.Orientation.HORIZONTAL;
-            stat_box.remove_css_class ("card");
-            stat_box.vexpand = false;
-            var stat_label = stat_box.get_last_child ();
-            stat_label.hexpand = true;
-            stat_label.margin_bottom = 0;
+            card.orientation = Gtk.Orientation.HORIZONTAL;
 
-            stat_box = (Gtk.Box) stat_box.get_next_sibling ();
+            card = (AdaptiveCard) card.get_next_sibling ();
         }
     }
 
@@ -440,25 +383,18 @@ public class Quadrapassel : Adw.Application
         game_box.append (stats_box);
         stats_box.orientation = Gtk.Orientation.VERTICAL;
 
-        Gtk.Box stat_box = (Gtk.Box) stats_box.get_last_child ();
-        stats_box.remove (stat_box);
-        stats_box.prepend (stat_box);
-        stat_box.orientation = Gtk.Orientation.VERTICAL;
-        stat_box.add_css_class ("card");
-        stat_box.vexpand = true;
-        stat_box.get_first_child ().margin_end = 0;
-        stat_box = (Gtk.Box) stat_box.get_next_sibling ();
+        AdaptiveCard card = (AdaptiveCard) stats_box.get_last_child ();
+        stats_box.remove (card);
+        stats_box.prepend (card);
+        card.orientation = Gtk.Orientation.VERTICAL;
+        card.box.get_first_child ().margin_end = 0;
+        card = (AdaptiveCard) card.get_next_sibling ();
 
         for (uint i = 0; i < 3; i++)
         {
-            stat_box.orientation = Gtk.Orientation.VERTICAL;
-            stat_box.add_css_class ("card");
-            stat_box.vexpand = true;
-            var stat_label = stat_box.get_last_child ();
-            stat_label.hexpand = false;
-            stat_label.margin_bottom = 2;
+            card.orientation = Gtk.Orientation.VERTICAL;
 
-            stat_box = (Gtk.Box) stat_box.get_next_sibling ();
+            card = (AdaptiveCard) card.get_next_sibling ();
         }
     }
 
