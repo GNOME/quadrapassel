@@ -1,0 +1,41 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $AdaptiveCard: Adw.Bin {
+  accessible-role: list_item;
+  focusable: true;
+
+  accessibility {
+    labelled-by: info_type;
+    described-by: info;
+  }
+
+  Gtk.Box box {
+    spacing: 3;
+    orientation: vertical;
+    vexpand: true;
+
+    styles [
+      "card",
+    ]
+
+    Gtk.Label info_type {
+      halign: center;
+      ellipsize: end;
+
+      styles [
+        "dimmed",
+      ]
+    }
+
+    Gtk.Label info {
+      margin-bottom: 2;
+      halign: center;
+      vexpand: true;
+
+      styles [
+        "title-4",
+      ]
+    }
+  }
+}

@@ -1,5 +1,6 @@
 blueprints = custom_target('blueprints',
     input: files(
+        'adaptive-card.blp',
         'more-info-button.blp',
         'rules-dialog.blp',
         'shortcuts-dialog.blp'
@@ -11,6 +12,7 @@ blueprints = custom_target('blueprints',
 quadrapassel_sources = [
     'vapi/config.vapi',
     'vapi/input-event-codes.vapi',
+    'adaptive-card.vala',
     'game-view.vala',
     'game.vala',
     'more-info-button.vala',
