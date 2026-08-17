@@ -248,6 +248,8 @@ public class Quadrapassel : Adw.Application
         game_aspect.add_controller (long_press_gesture);
         game_aspect.receives_default = true;
         game_aspect.focusable = true;
+        game_aspect.accessible_role = Gtk.AccessibleRole.LABEL;
+        game_aspect.update_property (Gtk.AccessibleProperty.LABEL, _("Game View"), -1);
         game_box.append (game_aspect);
 
         pause_play_button = new Gtk.Button ();
