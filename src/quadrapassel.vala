@@ -1140,8 +1140,14 @@ public class Quadrapassel : Adw.Application
 
     private void about_cb ()
     {
-        string[] authors = { "J. Marcin Gorycki", "Robert Ancell", "John Ward" }; // TODO get other authors
-        string[] documenters = { "Angela Boyle" };
+        string[] authors =
+        {
+            "J. Marcin Gorycki",
+            "Lubomir Rintel",
+            "Robert Ancell",
+            "John Ward",
+            "Will Warner",
+        };
 
         var about = new Adw.AboutDialog () {
             application_name = _("Quadrapassel"),
@@ -1151,7 +1157,6 @@ public class Quadrapassel : Adw.Application
             comments = _("A classic game where you rotate blocks to make complete rows, but don't pile your blocks too high or it's game over!"),
             copyright = "Copyright © 1999 J. Marcin Gorycki, 2000–2015 Others",
             license_type = Gtk.License.GPL_3_0,
-            documenters = documenters,
             translator_credits = _("translator-credits"),
             version = VERSION,
             website = "https://wiki.gnome.org/Apps/Quadrapassel",
