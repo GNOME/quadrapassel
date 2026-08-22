@@ -7,4 +7,7 @@
     <file>shortcuts-dialog.ui</file>
     <file>style.css</file>
   </gresource>
+  <gresource prefix="/org/gnome/Quadrapassel/icons/scalable/actions/">
+    <file alias="gamepad2-symbolic.svg">../data/icons/gamepad2-symbolic.svg</file>
+  </gresource>
 </gresources>
