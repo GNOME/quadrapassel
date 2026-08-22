@@ -19,6 +19,8 @@
  * along with libgnome-games-support.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+namespace Games {
+
 /* Remove workaround once https://gitlab.gnome.org/GNOME/vala/-/issues/1429 is fixed. */
 namespace Workaround
 {
@@ -28,7 +30,6 @@ namespace Workaround
     );
 }
 
-namespace Games {
 namespace Scores {
 
 /**

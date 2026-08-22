@@ -1,2 +1,3 @@
 option('superproject_name', type: 'string', yield: true)
 option('sounds', type: 'boolean', value: false)
+option('introspection', type : 'combo', choices : ['none', 'gir', 'typelib'], value : 'none')

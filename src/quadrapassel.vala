@@ -122,7 +122,6 @@ public class Quadrapassel : Adw.Application
         { "pause", pause_cb },
         { "scores", scores_cb },
         { "menu", menu_cb },
-        { "theme", theme_cb },
         { "preferences", preferences_cb },
         { "rules", rules_cb },
         { "about", about_cb },
@@ -196,7 +195,6 @@ public class Quadrapassel : Adw.Application
         var section = new Menu ();
         menu.append_section (null, section);
         section.append (_("_Scores"), "app.scores");
-        section.append (_("App_earance"), "app.theme");
         section.append (_("_Preferences"), "app.preferences");
         section = new Menu ();
         menu.append_section (null, section);
@@ -437,8 +435,48 @@ public class Quadrapassel : Adw.Application
         var preferences_dialog = new Adw.PreferencesDialog ();
         preferences_dialog.set_title (_("Preferences"));
 
+        var appearance_page = new Adw.PreferencesPage ();
+        appearance_page.title = _("Appearance");
+        appearance_page.icon_name = "preferences-desktop-appearance-symbolic";
+
+        var theme_preview_frame = new Games.GridFrame (5, 5);
+        theme_preview_frame.hexpand = true;
+        theme_preview_frame.vexpand = true;
+        theme_preview_frame.set_size_request (150, 150);
+
+        var preview_view = new GameView ();
+        var preview_game = new Game (5, 5, 1, 5, 8);
+        preview_view.theme = settings.get_string ("theme");
+        preview_view.game = preview_game;
+        var shape = preview_game.next_shape;
+        theme_preview_frame.child = preview_view;
+
+        var appearance_group = new Games.AppearanceGroup ();
+
+        string[] themes = {"plain", "clean", "modern"};
+        foreach (string theme in themes)
+        {
+            var thumbnail_frame = new Games.GridFrame (5, 5);
+            var preview_thumbnail = new Preview ();
+            preview_thumbnail.theme = theme;
+            preview_thumbnail.update_block (shape);
+            thumbnail_frame.child = preview_thumbnail;
+
+            appearance_group.add_theme (theme, thumbnail_frame);
+        }
+
+        appearance_group.set_preview (preview_view.theme, theme_preview_frame);
+
+        appearance_group.change_theme.connect (theme_update);
+
+        appearance_group.title = null;
+
+        appearance_page.add (appearance_group);
+        preferences_dialog.add (appearance_page);
+
         var game_page = new Adw.PreferencesPage ();
-        game_page.set_title (_("Game"));
+        game_page.title = _("Game");
+        game_page.icon_name = "gamepad2-symbolic";
 
         var difficulty_group = new Adw.PreferencesGroup ();
         difficulty_group.set_title (_("Game Difficulty"));
@@ -543,31 +581,12 @@ public class Quadrapassel : Adw.Application
     private Gtk.Widget theme_update (string theme_name, Gtk.Widget theme_preview_widget)
     {
         var theme_preview_frame = theme_preview_widget as Games.GridFrame;
-        var theme_preview = theme_preview_frame.child as Preview;
+        var theme_preview = theme_preview_frame.child as GameView;
         view.theme = theme_name;
         preview.theme = theme_name;
         theme_preview.theme = theme_name;
         settings.set_string ("theme", theme_name);
         return theme_preview_widget;
-    }
-
-    private void theme_cb ()
-    {
-        var theme_preview_frame = new Games.GridFrame (5, 5);
-        theme_preview_frame.hexpand = true;
-        theme_preview_frame.vexpand = true;
-        theme_preview_frame.set_size_request (150, 150);
-        theme_preview_frame.margin_top = 12;
-        theme_preview_frame.margin_bottom = 12;
-        var theme_preview = new Preview ();
-        theme_preview.theme = settings.get_string ("theme");
-        theme_preview.update_block (new Game ().next_shape);
-        theme_preview_frame.child = theme_preview;
-        var dialog = new Games.ThemeSelectorDialog ({"plain", "clean", "modern"},
-                                                    settings.get_string ("theme"),
-                                                    theme_preview_frame);
-        dialog.change_theme.connect (theme_update);
-        dialog.present (window);
     }
 
     private void pause_cb ()
