@@ -1,3 +1,18 @@
+quadrapassel 51.rc
+==================
+* Added the Cornish translation (Flynn Peck)
+* Updated translations: Czech (Daniel Rusek), Ukrainian (Yuri Chornoivan),
+			Georgian (Ekaterine Papava), 'Chinese (China)' (lumingzh),
+			Slovenian (Martin S.), Swedish (Anders Jonsson),
+			Brazilian Portuguese (Rafael Fontenelle), Kazakh (Baurzhan Muftakhidinov)
+* Removed the man page
+* Modernized the 'Game Over' view
+* Removed the pango, pangocairo, posix, and rsvg dependencies
+* Replaced the cairo drawn blocks with css styling
+* Removed the tango and tango flat styles
+* Changed the game stats to use cards
+* Replaced the 'Appearance' dialog with an 'Appearance' page in the preferences
+
 quadrapassel 51.alpha
 =====================
 * Updated translations: Lithuanian (Aurimas Aurimas Černius), Russian (Sergej A.),

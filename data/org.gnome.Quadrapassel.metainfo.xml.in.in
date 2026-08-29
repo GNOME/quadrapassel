@@ -50,6 +50,19 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
+    <release date="2026-08-29" version="51~rc" type="development">
+      <description>
+        <ul>
+          <li>Added the Cornish translation</li>
+          <li>Updated translations: Czech, Ukrainian, Georgian, Chinese (China), Slovenian,
+            Swedish, Brazilian Portuguese, Kazakh</li>
+          <li>Modernized the 'Game Over' view
+          <li>Modernized the game themes and removed the tango and tango flat styles</li>
+          <li>Changed the game stats to use cards</li>
+          <li>Replaced the 'Appearance' dialog with an 'Appearance' page in the preferences</li>
+        </ul>
+      </description>
+    </release>
     <release date="2026-07-17" version="51~alpha" type="development">
       <description>
         <ul>

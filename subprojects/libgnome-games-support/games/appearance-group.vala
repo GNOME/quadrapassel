@@ -76,25 +76,15 @@ thumbnail {
   border-radius: 8px;
 }
 
+thumbnail.selected {
+  box-shadow: none;
+}
+
 thumbnail.selected image {
   border-radius: 9999px;
   background-color: @theme_selected_bg_color;
   color: @theme_selected_fg_color;
   padding: 2px;
-}
-
-/* shadows taken from gnome-text-editor, licensed under GPLv3, see COPYING */
-thumbnail {
-  box-shadow: 0 0 0 1px alpha(black, 0.03),
-              0 1px 3px 1px alpha(black, .07),
-              0 2px 6px 2px alpha(black, .03);
-}
-@media (prefers-contrast: more) {
-  thumbnail {
-    box-shadow: 0 0 0 1px @borders,
-                0 1px 3px 1px alpha(black, .07),
-                0 2px 6px 2px alpha(black, .03);
-  }
 }
 """;
 

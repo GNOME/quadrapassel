@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libgnome-games-support\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/libgnome-games-support/"
 "issues\n"
-"POT-Creation-Date: 2026-01-25 21:30+0000\n"
-"PO-Revision-Date: 2026-01-26 00:45+0100\n"
+"POT-Creation-Date: 2026-08-24 19:54+0000\n"
+"PO-Revision-Date: 2026-08-25 19:11+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -17,76 +17,80 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
+
+#: games/appearance-group.vala:144
+msgid "Appearance"
+msgstr "Utseende"
 
 #. Empty State
-#: games/scores/dialog.vala:73
+#: games/scores/dialog.vala:83
 msgid "No scores yet"
 msgstr "Inga poäng än"
 
-#: games/scores/dialog.vala:78
+#: games/scores/dialog.vala:88
 msgid "Play some games and your scores will show up here."
 msgstr "Spela några spel så kommer dina poäng att visas här."
 
-#: games/scores/dialog.vala:87
+#: games/scores/dialog.vala:97
 msgid "Clear Scores…"
 msgstr "Rensa poäng…"
 
 #. Translators: %1$s is the category type, %2$s is the category (e.g. "New Score for Level: 1")
-#: games/scores/dialog.vala:108
+#: games/scores/dialog.vala:118
 #, c-format
 msgid "New Score for %1$s: %2$s"
 msgstr "Ny poäng för %1$s: %2$s"
 
-#: games/scores/dialog.vala:109
+#: games/scores/dialog.vala:119
 msgid "Score"
 msgstr "Poäng"
 
 #. Translators: %1$s is the category type, %2$s is the category (e.g. "New Time for Level: 1")
-#: games/scores/dialog.vala:114
+#: games/scores/dialog.vala:124
 #, c-format
 msgid "New Time for %1$s: %2$s"
 msgstr "Ny tid för %1$s: %2$s"
 
-#: games/scores/dialog.vala:115
+#: games/scores/dialog.vala:125
 msgid "Time"
 msgstr "Tid"
 
-#: games/scores/dialog.vala:121
+#: games/scores/dialog.vala:134
 msgid "Congratulations!"
 msgstr "Gratulerar!"
 
 #. Translators: %1$s is the category type, %2$s is the category (e.g. "Level: 1")
-#: games/scores/dialog.vala:128 games/scores/dialog.vala:150
+#: games/scores/dialog.vala:141 games/scores/dialog.vala:209
 #, c-format
 msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
 
-#: games/scores/dialog.vala:358
+#: games/scores/dialog.vala:387
 msgid "Player"
 msgstr "Spelare"
 
-#: games/scores/dialog.vala:364
+#: games/scores/dialog.vala:393
 msgid "_New Game"
 msgstr "_Nytt spel"
 
-#: games/scores/dialog.vala:375
+#: games/scores/dialog.vala:404
 msgid "_Quit"
 msgstr "A_vsluta"
 
-#: games/scores/dialog.vala:407
+#: games/scores/dialog.vala:436
 msgid "Clear All Scores?"
 msgstr "Rensa alla poäng?"
 
-#: games/scores/dialog.vala:408
+#: games/scores/dialog.vala:437
 msgid "This will clear every score for every layout."
 msgstr "Detta kommer rensa alla poäng för alla layouter."
 
-#: games/scores/dialog.vala:411
+#: games/scores/dialog.vala:440
 msgid "_Cancel"
 msgstr "A_vbryt"
 
-#: games/scores/dialog.vala:412
+#: games/scores/dialog.vala:441
 msgid "Clear All"
 msgstr "Rensa alla"
 
