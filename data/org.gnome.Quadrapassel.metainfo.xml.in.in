@@ -56,7 +56,7 @@
           <li>Added the Cornish translation</li>
           <li>Updated translations: Czech, Ukrainian, Georgian, Chinese (China), Slovenian,
             Swedish, Brazilian Portuguese, Kazakh</li>
-          <li>Modernized the 'Game Over' view
+          <li>Modernized the 'Game Over' view</li>
           <li>Modernized the game themes and removed the tango and tango flat styles</li>
           <li>Changed the game stats to use cards</li>
           <li>Replaced the 'Appearance' dialog with an 'Appearance' page in the preferences</li>
