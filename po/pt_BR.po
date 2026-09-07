@@ -24,16 +24,16 @@
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2013.
 # Enrico Nicoletto <liverig@gmail.com>, 2014, 2020.
 # Álvaro Burns <>, 2025.
-# Juliano de Souza Camargo <julianosc@pm.me>, 2025.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2014-2026.
+# Juliano de Souza Camargo <julianosc@pm.me>, 2025-2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2026-07-17 17:09+0000\n"
-"PO-Revision-Date: 2026-08-14 16:31-0300\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"POT-Creation-Date: 2026-08-29 16:33+0000\n"
+"PO-Revision-Date: 2026-09-07 16:49-0300\n"
+"Last-Translator: Juliano de Souza Camargo <julianosc@pm.me>\n"
 "Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +51,7 @@ msgstr ""
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:142
-#: src/quadrapassel.vala:162 src/quadrapassel.vala:1161
+#: src/quadrapassel.vala:162 src/quadrapassel.vala:1172
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -103,7 +103,7 @@ msgstr ""
 "A janela do Quadrapassel, com um jogo rodando, no modo de fator de pequeno "
 "formato."
 
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:226
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:250
 msgid "The Quadrapassel developers"
 msgstr "Os desenvolvedores do Quadrapassel"
 
@@ -115,95 +115,95 @@ msgstr "Imagem para usar para desenhar os blocos"
 msgid "Image to use for drawing blocks."
 msgstr "Imagem para usar para desenhar os blocos."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:10
+#: data/org.gnome.Quadrapassel.gschema.xml:15
 msgid "The theme used for rendering the blocks"
 msgstr "O tema usado para desenhar os blocos"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:11
+#: data/org.gnome.Quadrapassel.gschema.xml:16
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "O nome do tema usado para desenhar os blocos e o plano de fundo."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:15
+#: data/org.gnome.Quadrapassel.gschema.xml:20
 msgid "Whether to preview the next block"
 msgstr "Visualizar ou não o bloco seguinte"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:16
+#: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to preview the next block."
 msgstr "Visualiza o bloco seguinte."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:20
+#: data/org.gnome.Quadrapassel.gschema.xml:25
 msgid "Whether to show where the moving block will land"
 msgstr "Mostrar onde o bloco móvel irá cair"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:21
+#: data/org.gnome.Quadrapassel.gschema.xml:26
 msgid "Whether to show where the moving block will land."
 msgstr "Mostrar onde o bloco móvel irá cair."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:25
+#: data/org.gnome.Quadrapassel.gschema.xml:30
 msgid "Whether to rotate counter clock wise"
 msgstr "Girar no sentido anti-horário"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:26
+#: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "Whether to rotate counter clock wise."
 msgstr "Gira ou não no sentido anti-horário."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:31
+#: data/org.gnome.Quadrapassel.gschema.xml:36
 msgid "The difficulty of the game"
 msgstr "A dificuldade do jogo"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:32
+#: data/org.gnome.Quadrapassel.gschema.xml:37
 msgid "How difficult the game is, 0 is a normal difficulty."
 msgstr "O quão difícil o jogo é, 0 é a dificuldade normal."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:36
+#: data/org.gnome.Quadrapassel.gschema.xml:41
 msgid "Whether to use the custom seed"
 msgstr "Se deve usar uma semente personalizada"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:37
+#: data/org.gnome.Quadrapassel.gschema.xml:42
 msgid "Whether to use the custom seed."
 msgstr "Se deve usar uma semente personalizada."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:41
+#: data/org.gnome.Quadrapassel.gschema.xml:46
 msgid "The seed used for the game"
 msgstr "A semente usada para o jogo"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:42
+#: data/org.gnome.Quadrapassel.gschema.xml:47
 msgid "Used to determine which blocks are given in a game."
 msgstr "Usada para determinar quais blocos são dados num jugo."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:46
+#: data/org.gnome.Quadrapassel.gschema.xml:51
 msgid "Whether to play sounds"
 msgstr "Reproduzir sons"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:47
+#: data/org.gnome.Quadrapassel.gschema.xml:52
 msgid "Whether to play sounds."
 msgstr "Reproduzir sons."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:51
+#: data/org.gnome.Quadrapassel.gschema.xml:56
 msgid "Whether to pick blocks that are hard to place"
 msgstr "Escolher blocos que são difíceis de colocar"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:52
+#: data/org.gnome.Quadrapassel.gschema.xml:57
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Escolher blocos que são difíceis de colocar."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:56
+#: data/org.gnome.Quadrapassel.gschema.xml:61
 msgid "Width of the window in pixels"
 msgstr "A largura da janela em pixels"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:60
+#: data/org.gnome.Quadrapassel.gschema.xml:65
 msgid "Height of the window in pixels"
 msgstr "A altura da janela em pixels"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:64
+#: data/org.gnome.Quadrapassel.gschema.xml:69
 msgid "true if the window is maximized"
 msgstr "verdadeiro se a janela estiver maximizada"
 
-#: src/game-view.vala:432
+#: src/game-view.vala:434
 msgid "Paused"
 msgstr "Pausado"
 
-#: src/game-view.vala:439
+#: src/game-view.vala:441
 msgid "Game Over"
 msgstr "Fim do jogo"
 
@@ -368,16 +368,16 @@ msgctxt "shortcut window"
 msgid "Hold the active piece"
 msgstr "Retém a peça ativa"
 
-#: src/quadrapassel.vala:52
+#: src/quadrapassel.vala:56
 msgid "Next"
 msgstr "Próximo"
 
 # Rótulo da uma peça retida com atalho de teclado H no Quadrapassel - Rafael
-#: src/quadrapassel.vala:53
+#: src/quadrapassel.vala:57
 msgid "Hold"
 msgstr "Retida"
 
-#: src/quadrapassel.vala:190 src/quadrapassel.vala:259
+#: src/quadrapassel.vala:190 src/quadrapassel.vala:257
 msgid "Start a new game"
 msgstr "Inicia um novo jogo"
 
@@ -386,63 +386,67 @@ msgid "_Scores"
 msgstr "_Pontuações"
 
 #: src/quadrapassel.vala:198
-msgid "App_earance"
-msgstr "_Aparência"
-
-#: src/quadrapassel.vala:199
 msgid "_Preferences"
 msgstr "_Preferências"
 
-#: src/quadrapassel.vala:202
+#: src/quadrapassel.vala:201
 msgid "_Keyboard Shortcuts"
 msgstr "A_talhos de teclado"
 
-#: src/quadrapassel.vala:203
+#: src/quadrapassel.vala:202
 msgid "Game _Rules"
 msgstr "_Regras do jogo"
 
-#: src/quadrapassel.vala:204
+#: src/quadrapassel.vala:203
 msgid "_About Quadrapassel"
 msgstr "_Sobre o Quadrapassel"
 
-#: src/quadrapassel.vala:207
+#: src/quadrapassel.vala:206
 msgid "Main Menu"
 msgstr "Menu principal"
 
-#: src/quadrapassel.vala:281
+#: src/quadrapassel.vala:251
+msgid "Game View"
+msgstr "Visualização do jogo"
+
+#: src/quadrapassel.vala:278
 msgid "Score"
 msgstr "Pontuação"
 
-#: src/quadrapassel.vala:294 src/quadrapassel.vala:1023
+#: src/quadrapassel.vala:283 src/quadrapassel.vala:1028
 msgid "Rows"
 msgstr "Linhas"
 
-#: src/quadrapassel.vala:306 src/quadrapassel.vala:1023
+#: src/quadrapassel.vala:287 src/quadrapassel.vala:1028
 msgid "Level"
 msgstr "Nível"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:319
+#: src/quadrapassel.vala:293
 msgid "Difficulty"
 msgstr "Dificuldade"
 
-#: src/quadrapassel.vala:452
+#: src/quadrapassel.vala:436
 msgid "Preferences"
 msgstr "Preferências"
 
-#: src/quadrapassel.vala:455
+#: src/quadrapassel.vala:439
+msgid "Appearance"
+msgstr "Aparência"
+
+#: src/quadrapassel.vala:478
 msgid "Game"
 msgstr "Jogo"
 
-#: src/quadrapassel.vala:458
+#: src/quadrapassel.vala:482
 msgid "Game Difficulty"
 msgstr "Dificuldade do jogo"
 
-#: src/quadrapassel.vala:459
+#: src/quadrapassel.vala:483
 msgid "Change how difficult the game is"
 msgstr "Mude o quão difícil o jogo é"
 
-#: src/quadrapassel.vala:461
+#: src/quadrapassel.vala:485
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
@@ -450,43 +454,43 @@ msgstr ""
 "A dificuldade afeta o nível em que você inicia e quantas linhas são pré-"
 "preenchidas."
 
-#: src/quadrapassel.vala:468
+#: src/quadrapassel.vala:492
 msgid "_Difficulty"
 msgstr "_Dificuldade"
 
-#: src/quadrapassel.vala:476
+#: src/quadrapassel.vala:500
 msgid "Choose difficult _blocks"
 msgstr "Escolher _blocos difíceis"
 
-#: src/quadrapassel.vala:485
+#: src/quadrapassel.vala:509
 msgid "In-Game"
 msgstr "No jogo"
 
-#: src/quadrapassel.vala:486
+#: src/quadrapassel.vala:510
 msgid "Change the experience of playing a game"
 msgstr "Mude a experiência de jogar um jogo"
 
-#: src/quadrapassel.vala:489
+#: src/quadrapassel.vala:513
 msgid "_Enable sounds"
 msgstr "_Habilitar sons"
 
-#: src/quadrapassel.vala:500
+#: src/quadrapassel.vala:524
 msgid "_Preview next block"
 msgstr "_Visualizar próximo bloco"
 
-#: src/quadrapassel.vala:512
+#: src/quadrapassel.vala:536
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Girar blocos no sentido anti-horário"
 
-#: src/quadrapassel.vala:519
+#: src/quadrapassel.vala:543
 msgid "Show _where the block will land"
 msgstr "Mostrar _onde o bloco vai cair"
 
-#: src/quadrapassel.vala:530
+#: src/quadrapassel.vala:554
 msgid "Game _seed"
 msgstr "_Semente de jogo"
 
-#: src/quadrapassel.vala:536
+#: src/quadrapassel.vala:560
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
@@ -494,36 +498,36 @@ msgstr ""
 "A semente é usada para determinar quais blocos você obtém. Quando uma "
 "semente é definida, o jogo será sempre o mesmo."
 
-#: src/quadrapassel.vala:540
+#: src/quadrapassel.vala:564
 msgid "_Use a custom seed for the game"
 msgstr "_Usar uma semente personalizada para o jogo"
 
-#: src/quadrapassel.vala:984
+#: src/quadrapassel.vala:989
 msgid "Unpause the game"
 msgstr "Resume o jogo"
 
-#: src/quadrapassel.vala:990
+#: src/quadrapassel.vala:995
 msgid "Pause the game"
 msgstr "Pausa o jogo"
 
-#: src/quadrapassel.vala:1031
+#: src/quadrapassel.vala:1036
 msgid "Start the game"
 msgstr "Inicia o jogo"
 
-#: src/quadrapassel.vala:1060
+#: src/quadrapassel.vala:1065
 msgid "Old Scores"
 msgstr "Pontuações anteriores"
 
-#: src/quadrapassel.vala:1068
+#: src/quadrapassel.vala:1073
 msgid "Difficult"
 msgstr "Difícil"
 
-#: src/quadrapassel.vala:1148
+#: src/quadrapassel.vala:1153
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr "Os pontos são calculados baseados em quantas linhas são destruídas."
 
-#: src/quadrapassel.vala:1165
+#: src/quadrapassel.vala:1176
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -531,7 +535,7 @@ msgstr ""
 "Um jogo clássico onde você gira blocos para fazer linhas completas, mas não "
 "empilhe seus blocos muito alto ou é o fim do jogo!"
 
-#: src/quadrapassel.vala:1169
+#: src/quadrapassel.vala:1179
 msgid "translator-credits"
 msgstr ""
 "Sandro Nunes Henrique <sandro@conectiva.com.br>\n"
