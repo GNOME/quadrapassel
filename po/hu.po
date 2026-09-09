@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2025-12-10 22:50+0000\n"
-"PO-Revision-Date: 2026-03-11 00:49+0100\n"
+"POT-Creation-Date: 2026-03-15 15:38+0000\n"
+"PO-Revision-Date: 2026-09-09 16:08+0200\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <openscope at fsf dot hu>\n"
 "Language: hu\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.08.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:93
@@ -76,6 +76,11 @@ msgid ""
 "The Quadrapassel window, with a game playing, in small form factor mode."
 msgstr "A Quadrapassel ablaka játék közben, kis méretű módban."
 
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:161
+#| msgid "Quadrapassel"
+msgid "The Quadrapassel developers"
+msgstr "A Quadrapassel fejlesztői"
+
 #: data/org.gnome.Quadrapassel.gschema.xml:5
 msgid "Image to use for drawing blocks"
 msgstr "A blokkok rajzolásához használt kép"
@@ -125,17 +130,14 @@ msgid "How difficult the game is, 0 is a normal difficulty."
 msgstr "Mennyire nehéz a játék, 0 a normál nehézség."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:36
-#| msgid "Whether to rotate counter clock wise"
 msgid "Whether to use the custom seed"
 msgstr "Használja-e az egyéni kiindulóértéket"
 
 #: data/org.gnome.Quadrapassel.gschema.xml:37
-#| msgid "Whether to rotate counter clock wise."
 msgid "Whether to use the custom seed."
 msgstr "Használja-e az egyéni kiindulóértéket."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:41
-#| msgid "The theme used for rendering the blocks"
 msgid "The seed used for the game"
 msgstr "A játékhoz használt kiindulóérték"
 
@@ -182,7 +184,6 @@ msgid "Game Over"
 msgstr "Vége a játéknak"
 
 #: src/rules-dialog.blp:7
-#| msgid "Game Over"
 msgid "Game Rules"
 msgstr "Játékszabályok"
 
@@ -211,7 +212,6 @@ msgstr ""
 "megsemmisül."
 
 #: src/rules-dialog.blp:25
-#| msgid "Unpause the game"
 msgctxt "game rules"
 msgid "You can pause the game"
 msgstr "Szüneteltetheti a játékot"
@@ -266,13 +266,11 @@ msgid "General"
 msgstr "Általános"
 
 #: src/shortcuts-dialog.blp:9
-#| msgid "Start a new game"
 msgctxt "shortcut window"
 msgid "Start a New Game"
 msgstr "Új játék indítása"
 
 #: src/shortcuts-dialog.blp:14
-#| msgid "Pause the game"
 msgctxt "shortcut window"
 msgid "Pause the game"
 msgstr "A játék szüneteltetése"
@@ -298,37 +296,31 @@ msgid "Quit"
 msgstr "Kilépés"
 
 #: src/shortcuts-dialog.blp:34
-#| msgid "Game"
 msgctxt "shortcut window"
 msgid "Game"
 msgstr "Játék"
 
 #: src/shortcuts-dialog.blp:37
-#| msgid "Rotate"
 msgctxt "shortcut window"
 msgid "Rotate"
 msgstr "Forgatás"
 
 #: src/shortcuts-dialog.blp:41
-#| msgid "Move right"
 msgctxt "shortcut window"
 msgid "Move right"
 msgstr "Mozgatás jobbra"
 
 #: src/shortcuts-dialog.blp:45
-#| msgid "Move left"
 msgctxt "shortcut window"
 msgid "Move left"
 msgstr "Mozgatás balra"
 
 #: src/shortcuts-dialog.blp:49
-#| msgid "Move down"
 msgctxt "shortcut window"
 msgid "Move down"
 msgstr "Mozgatás le"
 
 #: src/shortcuts-dialog.blp:53
-#| msgid "Drop"
 msgctxt "shortcut window"
 msgid "Drop"
 msgstr "Ejtés"
@@ -354,7 +346,6 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Gyorsbillentyűk"
 
 #: src/quadrapassel.vala:153
-#| msgid "Game Over"
 msgid "Game _Rules"
 msgstr "Játék_szabályok"
 
@@ -420,7 +411,6 @@ msgid "Choose difficult _blocks"
 msgstr "Nehéz blokkok _választása"
 
 #: src/quadrapassel.vala:404
-#| msgid "Game"
 msgid "In-Game"
 msgstr "Játék közben"
 
@@ -454,7 +444,6 @@ msgstr ""
 "lesz."
 
 #: src/quadrapassel.vala:459
-#| msgid "Key to start the game"
 msgid "_Use a custom seed for the game"
 msgstr "_Egyéni kiindulóérték használata a játékhoz"
 
@@ -467,12 +456,10 @@ msgid "Pause the game"
 msgstr "A játék szüneteltetése"
 
 #: src/quadrapassel.vala:874
-#| msgid "Start a new game"
 msgid "Start the game"
 msgstr "A játék indítása"
 
 #: src/quadrapassel.vala:899
-#| msgid "_Scores"
 msgid "Old Scores"
 msgstr "Régi pontszámok"
 
