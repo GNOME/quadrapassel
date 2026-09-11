@@ -58,6 +58,8 @@ private class Dialog : Adw.Dialog
 
     public AddScoreAction action { get; set; default = AddScoreAction.NONE; }
 
+    public signal void trigger_close ();
+
     public Dialog (Context context,
                    string category_type,
                    Style style,
@@ -355,7 +357,7 @@ private class Dialog : Adw.Dialog
                     if (new_game_button != null)
                         new_game_button.activate ();
                     else
-                        this.close ();
+                        trigger_close ();
                 });
 
                 list_item.child = player_entry;
@@ -396,7 +398,7 @@ private class Dialog : Adw.Dialog
         };
         new_game_button.clicked.connect (() => {
             this.action = AddScoreAction.NEW_GAME;
-            this.close ();
+            trigger_close ();
         });
 
         Adw.ButtonContent quit_button_content = new Adw.ButtonContent () {
@@ -412,7 +414,7 @@ private class Dialog : Adw.Dialog
         };
         quit_button.clicked.connect (() => {
             this.action = AddScoreAction.QUIT;
-            this.close ();
+            trigger_close ();
         });
 
         var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
@@ -444,7 +446,7 @@ private class Dialog : Adw.Dialog
         var response = yield dialog.choose (this, null);
         if (response == "clear")
         {
-            this.close ();
+            trigger_close ();
             context.delete_scores.begin ((obj, res) => {
                 try
                 {

@@ -1,15 +1,15 @@
 # Bulgarian translation of libgnome-games-support po-file.
 # Copyright (C) 2016, 2017 Free Software Foundation, Inc.
-# Copyright (C) 2022 Alexander Shopov <ash@kambanaria.org>.
-# Alexander Shopov <ash@kambanaria.org>, 2016, 2017, 2022.
+# Copyright (C) 2022, 2026 Alexander Shopov <ash@kambanaria.org>.
+# Alexander Shopov <ash@kambanaria.org>, 2016, 2017, 2022, 2026.
 # kraft_werk <kraft_werk@tutanota.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: libgnome-games-support master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/libgnome-games-support/"
 "issues\n"
-"POT-Creation-Date: 2026-02-23 16:11+0000\n"
-"PO-Revision-Date: 2026-02-24 14:03+0100\n"
+"POT-Creation-Date: 2026-08-24 19:54+0000\n"
+"PO-Revision-Date: 2026-09-09 16:28+0200\n"
 "Last-Translator: kraft_werk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -18,6 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.8\n"
+
+#: games/appearance-group.vala:144
+msgid "Appearance"
+msgstr "Външен вид"
 
 #. Empty State
 #: games/scores/dialog.vala:83
@@ -89,33 +93,3 @@ msgstr "_Отказване"
 #: games/scores/dialog.vala:441
 msgid "Clear All"
 msgstr "Изчистване на всички"
-
-#~ msgid "High Scores"
-#~ msgstr "Най-високи резултати"
-
-#~ msgid "Best Times"
-#~ msgstr "Най-добри времена"
-
-#~ msgid "Rank"
-#~ msgstr "Място"
-
-#~ msgid "_Done"
-#~ msgstr "_Готово"
-
-#, c-format
-#~ msgid "%ld minute"
-#~ msgid_plural "%ld minutes"
-#~ msgstr[0] "%ld минута"
-#~ msgstr[1] "%ld минути"
-
-#, c-format
-#~ msgid "%ld second"
-#~ msgid_plural "%ld seconds"
-#~ msgstr[0] "%ld секунда"
-#~ msgstr[1] "%ld секунди"
-
-#~ msgid "Your score is the best!"
-#~ msgstr "Вашият резултат е най-добрият!"
-
-#~ msgid "Your score has made the top ten."
-#~ msgstr "Вашият резултат е измежду десетте най-добри."

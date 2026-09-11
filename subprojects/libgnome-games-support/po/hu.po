@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: libgames-scores master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/libgnome-games-support/is"
 "sues\n"
-"POT-Creation-Date: 2026-02-23 16:11+0000\n"
-"PO-Revision-Date: 2026-03-06 01:32+0100\n"
+"POT-Creation-Date: 2026-08-24 19:54+0000\n"
+"PO-Revision-Date: 2026-09-03 12:06+0200\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <openscope at fsf dot hu>\n"
 "Language: hu\n"
@@ -18,7 +18,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.08.1\n"
+"X-Generator: Lokalize 25.12.3\n"
+
+#: games/appearance-group.vala:144
+msgid "Appearance"
+msgstr "Megjelenés"
 
 #. Empty State
 #: games/scores/dialog.vala:83

@@ -369,7 +369,11 @@ public class Context : Object
         if (high_score_added && game_window != null)
         {
             var dialog = new Dialog (this, category_type, style, score, current_category, icon_name, score_type);
-            dialog.closed.connect (() => add_score_full.callback ());
+            dialog.close_attempt.connect (() => add_score_full.callback ());
+            dialog.trigger_close.connect (() => {
+                dialog.force_close ();
+                add_score_full.callback ();
+            });
             dialog.present (game_window);
             if (show_action_buttons)
                 dialog.add_bottom_buttons ();
