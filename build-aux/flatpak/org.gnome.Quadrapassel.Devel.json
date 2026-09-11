@@ -8,7 +8,7 @@
     "--share=ipc",
     "--socket=fallback-x11",
     "--socket=wayland",
-    "--socket=pulseaudio",
+    "--filesystem=xdg-run/pipewire-0",
     "--device=dri",
     "--device=all"
   ],
