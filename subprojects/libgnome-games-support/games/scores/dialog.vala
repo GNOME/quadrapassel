@@ -339,12 +339,24 @@ private class Dialog : Adw.Dialog
     private void set_up_player_column () {
         var factory = new Gtk.SignalListItemFactory ();
 
+        factory.setup.connect ((factory, object) => {
+            unowned var list_item = object as Gtk.ListItem;
+
+            var label = new Gtk.Inscription (null);
+            label.has_tooltip = true;
+
+            list_item.child = label;
+        });
+
         factory.bind.connect ((factory, object) => {
             unowned var list_item = object as Gtk.ListItem;
             unowned var score = list_item.item as Score;
 
             if (score == new_high_score)
             {
+                if (list_item.child is Gtk.Entry)
+                    return;
+
                 player_entry = new Gtk.Entry ();
                 player_entry.text = score.user;
                 player_entry.set_has_frame (false);
@@ -364,15 +376,15 @@ private class Dialog : Adw.Dialog
             }
             else
             {
-                var label = new Gtk.Inscription (score.user);
-                label.has_tooltip = true;
+                unowned var label = list_item.child as Gtk.Inscription;
+
+                label.text = score.user;
                 label.query_tooltip.connect ((x, y, keyboard_tooltip, tooltip) => {
                     tooltip.set_text ("%s\n%s\n%s".printf (
                         score.user, score.get_user_extra_info (), new DateTime.from_unix_utc (score.time).format ("%x")
                     ));
                     return true;
                 });
-                list_item.child = label;
             }
         });
         if (new_high_score != null)
@@ -385,6 +397,22 @@ private class Dialog : Adw.Dialog
                     player_entry = null;
             });
         }
+
+        uint query_tooltip_id = Signal.lookup ("query-tooltip", Type.from_name ("GtkWidget"));
+
+        factory.unbind.connect ((factory, object) => {
+            unowned var list_item = object as Gtk.ListItem;
+            unowned var score = list_item.item as Score;
+
+            if (score != new_high_score)
+                SignalHandler.disconnect_matched (list_item.child,
+                                                  SignalMatchType.ID,
+                                                  query_tooltip_id,
+                                                  0,
+                                                  null,
+                                                  null,
+                                                  null);
+        });
 
         player_column = new Gtk.ColumnViewColumn (_("Player"), factory);
     }

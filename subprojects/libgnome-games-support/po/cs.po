@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libgames-scores master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/libgnome-games-support/"
 "issues\n"
-"POT-Creation-Date: 2026-02-22 15:40+0000\n"
-"PO-Revision-Date: 2026-02-23 15:20+0100\n"
+"POT-Creation-Date: 2026-09-12 02:34+0000\n"
+"PO-Revision-Date: 2026-09-12 11:44+0200\n"
 "Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -17,76 +17,80 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
+
+#: games/appearance-group.vala:144
+msgid "Appearance"
+msgstr "Vzhled"
 
 #. Empty State
-#: games/scores/dialog.vala:83
+#: games/scores/dialog.vala:85
 msgid "No scores yet"
 msgstr "Zatím není žádné skóre"
 
-#: games/scores/dialog.vala:88
+#: games/scores/dialog.vala:90
 msgid "Play some games and your scores will show up here."
 msgstr "Zahrajte si pár her a vaše skóre se zde objeví."
 
-#: games/scores/dialog.vala:97
+#: games/scores/dialog.vala:99
 msgid "Clear Scores…"
 msgstr "Vymazat skóre…"
 
 #. Translators: %1$s is the category type, %2$s is the category (e.g. "New Score for Level: 1")
-#: games/scores/dialog.vala:118
+#: games/scores/dialog.vala:120
 #, c-format
 msgid "New Score for %1$s: %2$s"
 msgstr "Nové skóre pro %1$s: %2$s"
 
-#: games/scores/dialog.vala:119
+#: games/scores/dialog.vala:121
 msgid "Score"
 msgstr "Skóre"
 
 #. Translators: %1$s is the category type, %2$s is the category (e.g. "New Time for Level: 1")
-#: games/scores/dialog.vala:124
+#: games/scores/dialog.vala:126
 #, c-format
 msgid "New Time for %1$s: %2$s"
 msgstr "Nový čas pro %1$s: %2$s"
 
-#: games/scores/dialog.vala:125
+#: games/scores/dialog.vala:127
 msgid "Time"
 msgstr "Čas"
 
-#: games/scores/dialog.vala:134
+#: games/scores/dialog.vala:136
 msgid "Congratulations!"
 msgstr "Gratulujeme!"
 
 #. Translators: %1$s is the category type, %2$s is the category (e.g. "Level: 1")
-#: games/scores/dialog.vala:142 games/scores/dialog.vala:208
+#: games/scores/dialog.vala:143 games/scores/dialog.vala:211
 #, c-format
 msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
 
-#: games/scores/dialog.vala:386
+#: games/scores/dialog.vala:415
 msgid "Player"
 msgstr "Hráč"
 
-#: games/scores/dialog.vala:392
+#: games/scores/dialog.vala:421
 msgid "_New Game"
 msgstr "_Nová hra"
 
-#: games/scores/dialog.vala:403
+#: games/scores/dialog.vala:432
 msgid "_Quit"
 msgstr "U_končit"
 
-#: games/scores/dialog.vala:435
+#: games/scores/dialog.vala:464
 msgid "Clear All Scores?"
 msgstr "Vymazat všechna skóre?"
 
-#: games/scores/dialog.vala:436
+#: games/scores/dialog.vala:465
 msgid "This will clear every score for every layout."
 msgstr "Toto vymaže každé skóre pro každé rozvržení."
 
-#: games/scores/dialog.vala:439
+#: games/scores/dialog.vala:468
 msgid "_Cancel"
 msgstr "_Zrušit"
 
-#: games/scores/dialog.vala:440
+#: games/scores/dialog.vala:469
 msgid "Clear All"
 msgstr "Vymazat vše"
 
