@@ -50,6 +50,14 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
+    <release date="2026-09-12" version="51.0">
+      <description>
+        <ul>
+          <li>Updated translations: Lithuanian, Belarusian, Brazilian Portuguese, Hungarian,
+            Czech</li>
+        </ul>
+      </description>
+    </release>
     <release date="2026-08-29" version="51~rc" type="development">
       <description>
         <ul>

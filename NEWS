@@ -1,3 +1,11 @@
+quadrapassel 51.0
+=================
+* Updated translations: Lithuanian (Aurimas Černius), Belarusian (Vasil Pupkin),
+			Brazilian Portuguese (Juliano de Souza Camargo), Hungarian (Balázs Úr),
+			Czech (Daniel Rusek)
+* Changed preferred audio backend to pipewire
+* Updated libgnome-games-support
+
 quadrapassel 51.rc
 ==================
 * Added the Cornish translation (Flynn Peck)
