@@ -444,7 +444,7 @@ public class Quadrapassel : Adw.Application
         theme_preview_frame.vexpand = true;
         theme_preview_frame.set_size_request (150, 150);
 
-        var preview_view = new GameView ();
+        var preview_view = new GameView (false);
         var preview_game = new Game (5, 5, 1, 5, 8);
         preview_view.theme = settings.get_string ("theme");
         preview_view.game = preview_game;

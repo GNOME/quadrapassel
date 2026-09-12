@@ -131,7 +131,7 @@ public class GameView : Gtk.Widget {
         }
     }
 
-    public GameView ()
+    public GameView (bool do_sounds = true)
     {
         text_overlay = new Gtk.Label (null);
         text_overlay.set_parent (this);
@@ -140,6 +140,9 @@ public class GameView : Gtk.Widget {
         blocks = new HashTable<Block, BlockWidget> (direct_hash, direct_equal);
         shape_blocks = new HashTable<Block, BlockWidget> (direct_hash, direct_equal);
         shadow_blocks = new HashTable<Block, BlockWidget> (direct_hash, direct_equal);
+
+        if (!do_sounds)
+            return;
 
         try
         {
