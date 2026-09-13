@@ -366,12 +366,14 @@ public class Quadrapassel : Adw.Application
         stats_box.remove (card);
         stats_box.append (card);
         card.orientation = Gtk.Orientation.HORIZONTAL;
-        card.box.get_first_child ().margin_end = 4;
+        var next_label = card.box.get_first_child ();
+        next_label.margin_end = 4;
+        next_label.margin_top = 3;
         card = (AdaptiveCard) stats_box.get_first_child ();
 
         for (uint i = 0; i < 3; i++)
         {
-            card.orientation = Gtk.Orientation.HORIZONTAL;
+            card.compact = true;
 
             card = (AdaptiveCard) card.get_next_sibling ();
         }
@@ -388,12 +390,14 @@ public class Quadrapassel : Adw.Application
         stats_box.remove (card);
         stats_box.prepend (card);
         card.orientation = Gtk.Orientation.VERTICAL;
-        card.box.get_first_child ().margin_end = 0;
+        var next_label = card.box.get_first_child ();
+        next_label.margin_end = 0;
+        next_label.margin_top = 0;
         card = (AdaptiveCard) card.get_next_sibling ();
 
         for (uint i = 0; i < 3; i++)
         {
-            card.orientation = Gtk.Orientation.VERTICAL;
+            card.compact = false;
 
             card = (AdaptiveCard) card.get_next_sibling ();
         }
