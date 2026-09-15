@@ -480,7 +480,7 @@ public class Quadrapassel : Adw.Application
 
         var game_page = new Adw.PreferencesPage ();
         game_page.title = _("Game");
-        game_page.icon_name = "gamepad2-symbolic";
+        game_page.icon_name = "gamepad-symbolic";
 
         var difficulty_group = new Adw.PreferencesGroup ();
         difficulty_group.set_title (_("Game Difficulty"));

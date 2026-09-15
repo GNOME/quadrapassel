@@ -8,6 +8,6 @@
     <file>style.css</file>
   </gresource>
   <gresource prefix="/org/gnome/Quadrapassel/icons/scalable/actions/">
-    <file alias="gamepad2-symbolic.svg">../data/icons/gamepad2-symbolic.svg</file>
+    <file alias="gamepad-symbolic.svg">../data/icons/gamepad-symbolic.svg</file>
   </gresource>
 </gresources>
