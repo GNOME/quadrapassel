@@ -133,6 +133,8 @@ public class GameView : Gtk.Widget {
 
     public GameView (bool do_sounds = true)
     {
+        add_css_class ("card");
+
         text_overlay = new Gtk.Label (null);
         text_overlay.set_parent (this);
         text_overlay.add_css_class ("title-1");
