@@ -269,7 +269,6 @@ public class Quadrapassel : Adw.Application
         preview_frame.vexpand = true;
         preview = new Preview ();
         preview.theme = settings.get_string ("theme");
-        preview.enabled = settings.get_boolean ("do-preview");
         preview_frame.child = preview;
 
         preview_card.box.append (preview_frame);
@@ -523,17 +522,6 @@ public class Quadrapassel : Adw.Application
             view.mute = !play_sound;
         });
         in_game_group.add (sound_toggle);
-
-        var do_preview_toggle = new Adw.SwitchRow ();
-        do_preview_toggle.set_title (_("_Preview next block"));
-        do_preview_toggle.set_use_underline (true);
-        do_preview_toggle.set_active (settings.get_boolean ("do-preview"));
-        do_preview_toggle.notify["active"].connect (() => {
-            var preview_enabled = do_preview_toggle.get_active ();
-            settings.set_boolean ("do-preview", preview_enabled);
-            preview.enabled = preview_enabled;
-        });
-        in_game_group.add (do_preview_toggle);
 
         /* rotate counter clock wise */
         var rotate_counter_clock_wise_toggle = new Adw.SwitchRow ();

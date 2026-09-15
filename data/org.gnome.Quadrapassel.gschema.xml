@@ -15,11 +15,6 @@
       <summary>The theme used for rendering the blocks</summary>
       <description>The name of the theme used for rendering the blocks and the background.</description>
     </key>
-    <key name="do-preview" type="b">
-      <default>true</default>
-      <summary>Whether to preview the next block</summary>
-      <description>Whether to preview the next block.</description>
-    </key>
     <key name="show-shadow" type="b">
       <default>false</default>
       <summary>Whether to show where the moving block will land</summary>

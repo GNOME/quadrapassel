@@ -48,13 +48,6 @@ public class Preview : Gtk.Widget {
         get { return (get_width () + get_height ()) / 2 / 5; }
     }
 
-    private bool _enabled = true;
-    public bool enabled
-    {
-        get { return _enabled; }
-        set { _enabled = value; update_block (null); }
-    }
-
     public Preview () {}
 
     protected override void snapshot (Gtk.Snapshot snapshot) {
@@ -116,12 +109,6 @@ public class Preview : Gtk.Widget {
     {
         if (block_widgets.length != 0) {
             clear ();
-        }
-
-        if (!enabled || shape == null)
-        {
-            set_visible (enabled);
-            return;
         }
 
         set_visible (true);
