@@ -8,33 +8,25 @@ Adw.PreferencesDialog rules_dialog {
   Adw.PreferencesPage {
     Adw.PreferencesGroup {
       Adw.ActionRow {
-        title: C_("game rules", "Rotate and Move pieces to fill rows");
-        subtitle: C_("game rules", "Rows explode when they are completely filled");
+        title: C_("game rules", "Rotate and move pieces to fill rows, filled rows explode");
+
         [prefix]
         Image game_symbolic {}
       }
       Adw.ActionRow points_row {
         title: C_("game rules", "You gain points for each row destroyed");
-        subtitle: C_("game rules", "You can also get a bonus of 100 × level × rows destroyed if the bottom layer is destroyed.");
+
         [prefix]
         Image {
           icon-name: "list-add-symbolic";
         }
       }
       Adw.ActionRow {
-        title: C_("game rules", "You can pause the game");
-        subtitle: C_("game rules", "The next piece and the game view will be hidden");
+        title: C_("game rules", "When the game is paused, the next piece and the game view will be hidden");
+
         [prefix]
         Image {
           icon-name: "media-playback-pause-symbolic";
-        }
-      }
-      Adw.ActionRow {
-        title: C_("game rules", "You can change how the game works using the preferences");
-        subtitle: C_("game rules", "You can also adjust the difficulty");
-        [prefix]
-        Image {
-          icon-name: "preferences-other-symbolic";
         }
       }
     }
@@ -159,6 +151,21 @@ Grid points_info {
     layout {
       row: 4;
       column: 1;
+    }
+  }
+
+  Label {
+    label: C_("game rules", "A bonus of <i>100 × level × rows destroyed</i> is applied if the bottom row is destroyed.");
+    halign: start;
+    margin-top: 12;
+    use-markup: true;
+    wrap: true;
+    max-width-chars: 35;
+
+    layout {
+      row: 5;
+      column: 0;
+      column-span: 2;
     }
   }
 }
