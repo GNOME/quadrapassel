@@ -1170,7 +1170,7 @@ public class Quadrapassel : Adw.Application
             license_type = Gtk.License.GPL_3_0,
             translator_credits = _("translator-credits"),
             version = VERSION,
-            website = "https://wiki.gnome.org/Apps/Quadrapassel",
+            website = "https://gitlab.gnome.org/GNOME/quadrapassel",
         };
 
         about.present (this.active_window);

@@ -40,7 +40,7 @@
       <caption>The Quadrapassel window, with a game playing, in small form factor mode.</caption>
     </screenshot>
   </screenshots>
-  <url type="homepage">https://wiki.gnome.org/Apps/Quadrapassel/</url>
+  <url type="homepage">https://gitlab.gnome.org/GNOME/quadrapassel</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/quadrapassel/-/issues/</url>
   <url type="vcs-browser">https://gitlab.gnome.org/GNOME/quadrapassel/</url>
   <url type="translate">https://l10n.gnome.org/module/quadrapassel/</url>

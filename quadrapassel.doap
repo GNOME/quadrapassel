@@ -7,7 +7,7 @@
   <name xml:lang="en">quadrapassel</name>
   <shortdesc xml:lang="en">Fit falling blocks together</shortdesc>
   <description xml:lang="en">Fit falling blocks together</description>
-  <homepage rdf:resource="https://wiki.gnome.org/Apps/Quadrapassel" />
+  <homepage rdf:resource="https://gitlab.gnome.org/GNOME/quadrapassel" />
   <support-forum rdf:resource="https://discourse.gnome.org/tag/games" />
   <download-page rdf:resource="http://download.gnome.org/sources/quadrapassel/" />
   <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/quadrapassel/issues/" />
