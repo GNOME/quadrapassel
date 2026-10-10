@@ -1,10 +1,7 @@
-# Turkish translation for libgnome-games-support.
-# Copyright (C) 2015-2022 libgnome-games-support's COPYRIGHT HOLDER
+# Norwegian Nynorsk translation for libgnome-games-support.
+# Copyright (C) 2026 libgnome-games-support's COPYRIGHT HOLDER
 # This file is distributed under the same license as the libgnome-games-support package.
-#
-# Necdet Yücel <necdetyucel@gmail.com>, 2015.
-# Emin Tufan Çetin <etcetin@gmail.com>, 2017.
-# Muhammet Kara <muhammetk@gmail.com>, 2015-2026.
+# Roy-Magne Mo <rmo@sunnmore.net>, 2026.
 #
 msgid ""
 msgstr ""
@@ -12,57 +9,55 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/libgnome-games-support/"
 "issues\n"
 "POT-Creation-Date: 2026-09-12 11:54+0000\n"
-"PO-Revision-Date: 2026-09-20 01:34+0300\n"
-"Last-Translator: Muhammet Kara <muhammetk@gmail.com>\n"
-"Language-Team: Turkish <takim@gnome.org.tr>\n"
-"Language: tr\n"
+"PO-Revision-Date: 2026-09-21 20:00+0200\n"
+"Last-Translator: Roy-Magne Mo <rmo@sunnmore.net>\n"
+"Language-Team: Norwegian Nynorsk <nn@li.org>\n"
+"Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Gtranslator 49.0\n"
-"X-POOTLE-MTIME: 1423957720.000000\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: games/appearance-group.vala:144
 msgid "Appearance"
-msgstr "Görünüm"
+msgstr "Utsjånad"
 
 #. Empty State
 #: games/scores/dialog.vala:85
 msgid "No scores yet"
-msgstr "Henüz kayıtlı puan yok"
+msgstr "Enno ingen poeng"
 
 #: games/scores/dialog.vala:90
 msgid "Play some games and your scores will show up here."
-msgstr "Biraz oyun oynarsanız puanlarınız burada görünecektir."
+msgstr "Spel nokre spel, så kjem poenga dine til syne her."
 
 #: games/scores/dialog.vala:99
 msgid "Clear Scores…"
-msgstr "Puanları Temizle…"
+msgstr "Tøm poeng …"
 
 #. Translators: %1$s is the category type, %2$s is the category (e.g. "New Score for Level: 1")
 #: games/scores/dialog.vala:120
 #, c-format
 msgid "New Score for %1$s: %2$s"
-msgstr "%1$s: %2$s İçin Yeni Puan"
+msgstr "Ny poengsum for %1$s: %2$s"
 
 #: games/scores/dialog.vala:121
 msgid "Score"
-msgstr "Puan"
+msgstr "Poengsum"
 
 #. Translators: %1$s is the category type, %2$s is the category (e.g. "New Time for Level: 1")
 #: games/scores/dialog.vala:126
 #, c-format
 msgid "New Time for %1$s: %2$s"
-msgstr "%1$s: %2$s İçin Yeni Zaman"
+msgstr "Ny tid for %1$s: %2$s"
 
 #: games/scores/dialog.vala:127
 msgid "Time"
-msgstr "Zaman"
+msgstr "Tid"
 
 #: games/scores/dialog.vala:136
 msgid "Congratulations!"
-msgstr "Tebrikler!"
+msgstr "Gratulerer!"
 
 #. Translators: %1$s is the category type, %2$s is the category (e.g. "Level: 1")
 #: games/scores/dialog.vala:143 games/scores/dialog.vala:211
@@ -72,62 +67,28 @@ msgstr "%1$s: %2$s"
 
 #: games/scores/dialog.vala:417
 msgid "Player"
-msgstr "Oyuncu"
+msgstr "Spelar"
 
 #: games/scores/dialog.vala:423
 msgid "_New Game"
-msgstr "_Yeni Oyun"
+msgstr "_Nytt spel"
 
 #: games/scores/dialog.vala:434
 msgid "_Quit"
-msgstr "_Çık"
+msgstr "_Avslutt"
 
 #: games/scores/dialog.vala:466
 msgid "Clear All Scores?"
-msgstr "Tüm Puanlar Temizlensin Mi?"
+msgstr "Tøm alle poeng?"
 
 #: games/scores/dialog.vala:467
 msgid "This will clear every score for every layout."
-msgstr "Bu, tüm düzenlerdeki puanları temizleyecek."
+msgstr "Dette vil slette alle poeng for alle oppsett."
 
 #: games/scores/dialog.vala:470
 msgid "_Cancel"
-msgstr "İ_ptal"
+msgstr "_Avbryt"
 
 #: games/scores/dialog.vala:471
 msgid "Clear All"
-msgstr "Tümünü Temizle"
-
-#~ msgid "New Score in"
-#~ msgstr "Yeni Puan"
-
-#~ msgid "New Time in"
-#~ msgstr "Yeni Zaman"
-
-#~ msgid "Done"
-#~ msgstr "Bitti"
-
-#~ msgid "High Scores"
-#~ msgstr "Yüksek Puanlar"
-
-#~ msgid "Best Times"
-#~ msgstr "En İyi Zamanlar"
-
-#~ msgid "Rank"
-#~ msgstr "Sıralama"
-
-#, c-format
-#~ msgid "%ld minute"
-#~ msgid_plural "%ld minutes"
-#~ msgstr[0] "%ld dakika"
-
-#, c-format
-#~ msgid "%ld second"
-#~ msgid_plural "%ld seconds"
-#~ msgstr[0] "%ld saniye"
-
-#~ msgid "Your score is the best!"
-#~ msgstr "En iyi puan sizinki!"
-
-#~ msgid "Your score has made the top ten."
-#~ msgstr "Puanınız en iyi on listesine girdi."
+msgstr "Tøm alt"

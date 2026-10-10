@@ -170,9 +170,6 @@ private class Dialog : Adw.Dialog
 
             drop_down.notify["selected"].connect (drop_down_selected_cb);
 
-            unowned var button = drop_down.get_first_child () as Gtk.Button;
-            button.has_frame = false;
-
             unowned var popover = drop_down.get_last_child () as Gtk.Popover;
             popover.halign = Gtk.Align.CENTER;
 
@@ -276,8 +273,10 @@ private class Dialog : Adw.Dialog
         factory.setup.connect ((factory, object) => {
             unowned var list_item = object as Gtk.ListItem;
             var label = new Gtk.Inscription (null);
+
             label.add_css_class ("caption");
             label.add_css_class ("numeric");
+            label.text_overflow = Gtk.InscriptionOverflow.ELLIPSIZE_END;
             label.xalign = 0.5f;
             list_item.child = label;
         });
@@ -315,6 +314,7 @@ private class Dialog : Adw.Dialog
                 unowned var label = list_item.child as Gtk.Inscription;
                 unowned var score = list_item.item as Score;
 
+                label.text_overflow = Gtk.InscriptionOverflow.ELLIPSIZE_END;
                 label.text = "%'ld".printf (score.score);
             });
         }
@@ -341,9 +341,10 @@ private class Dialog : Adw.Dialog
 
         factory.setup.connect ((factory, object) => {
             unowned var list_item = object as Gtk.ListItem;
-
             var label = new Gtk.Inscription (null);
+
             label.has_tooltip = true;
+            label.text_overflow = Gtk.InscriptionOverflow.ELLIPSIZE_END;
 
             list_item.child = label;
         });

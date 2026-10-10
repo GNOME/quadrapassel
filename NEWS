@@ -1,3 +1,12 @@
+quadrapassel 51.1
+=================
+* Updated the Basque translation (Asier Saratsua Garmendia)
+* Made the game statistics in the compact mode into cards
+* Made miscellaneous style changes
+* Added a focus ring to the game cards
+* Documented the Return key shortcut for starting a game
+* Updated libgnome-games-support
+
 quadrapassel 51.0
 =================
 * Updated translations: Lithuanian (Aurimas Černius), Belarusian (Vasil Pupkin),

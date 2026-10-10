@@ -32,12 +32,8 @@
   </recommends>
   <screenshots>
     <screenshot type="default" width="450" height="575">
-      <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/main/data/screenshot-1.png</image>
+      <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/blob/5f4e898df3bd4de506cf095ba4a28aec9c2a2e19/data/screenshot-1.png</image>
       <caption>The Quadrapassel window, with a game playing.</caption>
-    </screenshot>
-    <screenshot width="410" height="610">
-      <image>https://gitlab.gnome.org/GNOME/quadrapassel/-/raw/main/data/screenshot-2.png</image>
-      <caption>The Quadrapassel window, with a game playing, in small form factor mode.</caption>
     </screenshot>
   </screenshots>
   <url type="homepage">https://wiki.gnome.org/Apps/Quadrapassel/</url>
@@ -50,6 +46,17 @@
     <color type="primary" scheme_preference="dark">#672e6f</color>
   </branding>
   <releases>
+    <release date="2026-10-10" version="51.1">
+      <description>
+        <ul>
+          <li>Updated the Basque translation (Asier Saratsua Garmendia)</li>
+          <li>Made the game statistics in the compact mode into cards</li>
+          <li>Made miscellaneous style changes</li>
+          <li>Added a focus ring to the game cards</li>
+          <li>Documented the Return key shortcut for starting a game</li>
+        </ul>
+      </description>
+    </release>
     <release date="2026-09-12" version="51.0">
       <description>
         <ul>
@@ -195,56 +202,6 @@
         </ul>
       </description>
     </release>
-    <release date="2025-09-06" version="49~rc2" type="development" />
-    <release date="2025-09-06" version="49~rc1" type="development">
-      <description>
-        <ul>
-          <li>Updated the Russian translation</li>
-          <li>Fixed a bug where a player could try to rotate a piece after game over</li>
-        </ul>
-      </description>
-    </release>
-    <release date="2025-08-30" version="49~rc" type="development">
-      <description>
-        <ul>
-          <li>Updated translations: Ukrainian, Slovenian, Chinese (China), Czech, Swedish, Georgian, and Basque</li>
-          <li>Fixed a bug where game pieces could be rotated so that they appeared above the game area</li>
-        </ul>
-      </description>
-    </release>
-    <release date="2025-08-03" version="49~beta" type="development">
-      <description>
-        <ul>
-          <li>Updated Chinese (China) translation</li>
-          <li>Made the multi-line reward more balanced</li>
-          <li>Replaced the score dialog with an improved scoring system</li>
-          <li>Made the game area and block preview hidden on pause</li>
-          <li>Moved the 'New Game' menu entry into a new button</li>
-          <li>Added a new mobile layout and adjusted spacing for the game view</li>
-          <li>Made the game usable on touchscreens, by swiping and tapping</li>
-          <li>Added a custom seed preference</li>
-        </ul>
-      </description>
-    </release>
-    <release date="2025-06-28" version="49~alpha" type="development">
-      <description>
-        <ul>
-          <li>Updated translations</li>
-          <li>Improved the controls and gameplay</li>
-          <li>Reworked Preferences dialog</li>
-          <li>Made a separate theme chooser dialog (Appearance dialog)</li>
-          <li>Added use of Libadwaita</li>
-          <li>Fixed many issues with the documentation</li>
-          <li>Removed customizable controls</li>
-        </ul>
-      </description>
-    </release>
-    <release date="2021-06-10" version="40.2" />
-    <release date="2021-03-19" version="40.1" />
-    <release date="2021-03-19" version="40.0" />
-    <release date="2020-08-12" version="3.38" />
-    <release date="2020-08-12" version="3.36.05" />
-    <release date="2020-07-29" version="3.36.04" />
   </releases>
   <kudos>
     <kudo>AppMenu</kudo>
