@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
-"POT-Creation-Date: 2026-08-29 16:33+0000\n"
-"PO-Revision-Date: 2026-08-30 13:58+0300\n"
+"POT-Creation-Date: 2026-10-09 13:30+0000\n"
+"PO-Revision-Date: 2026-10-11 22:43+0300\n"
 "Last-Translator: Aurimas Černius <aurimas.cernius@mailo.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -28,7 +28,7 @@ msgstr ""
 
 #: data/org.gnome.Quadrapassel.desktop.in.in:2
 #: data/org.gnome.Quadrapassel.metainfo.xml.in.in:8 src/quadrapassel.vala:142
-#: src/quadrapassel.vala:162 src/quadrapassel.vala:1172
+#: src/quadrapassel.vala:162 src/quadrapassel.vala:1164
 msgid "Quadrapassel"
 msgstr "Quadrapassel"
 
@@ -77,7 +77,7 @@ msgid ""
 "The Quadrapassel window, with a game playing, in small form factor mode."
 msgstr "Quadrapassel langas su žaidžiama žaidimu mažo faktoriaus veiksena."
 
-#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:250
+#: data/org.gnome.Quadrapassel.metainfo.xml.in.in:258
 msgid "The Quadrapassel developers"
 msgstr "Quadrapassel kūrėjai"
 
@@ -98,86 +98,78 @@ msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "Temos, naudojamos vaizduoti blokams ir fonui, pavadinimas."
 
 #: data/org.gnome.Quadrapassel.gschema.xml:20
-msgid "Whether to preview the next block"
-msgstr "Ar rodyti būsimą bloką"
-
-#: data/org.gnome.Quadrapassel.gschema.xml:21
-msgid "Whether to preview the next block."
-msgstr "Ar rodyti būsimą bloką."
-
-#: data/org.gnome.Quadrapassel.gschema.xml:25
 msgid "Whether to show where the moving block will land"
 msgstr "Ar rodyti, kur nusileis blokas"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:26
+#: data/org.gnome.Quadrapassel.gschema.xml:21
 msgid "Whether to show where the moving block will land."
 msgstr "Ar rodyti, kur nusileis blokas."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:30
+#: data/org.gnome.Quadrapassel.gschema.xml:25
 msgid "Whether to rotate counter clock wise"
 msgstr "Ar sukti prieš laikrodžio rodyklę"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:31
+#: data/org.gnome.Quadrapassel.gschema.xml:26
 msgid "Whether to rotate counter clock wise."
 msgstr "Ar sukti prieš laikrodžio rodyklę."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:36
+#: data/org.gnome.Quadrapassel.gschema.xml:31
 msgid "The difficulty of the game"
 msgstr "Žaidimo sudėtingumas"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:37
+#: data/org.gnome.Quadrapassel.gschema.xml:32
 msgid "How difficult the game is, 0 is a normal difficulty."
 msgstr "Žaidimo sudėtingumas, 0 yra įprastinis sudėtingumas."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:41
+#: data/org.gnome.Quadrapassel.gschema.xml:36
 msgid "Whether to use the custom seed"
 msgstr "Ar naudoti pasirinktinį išbarstymą"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:42
+#: data/org.gnome.Quadrapassel.gschema.xml:37
 msgid "Whether to use the custom seed."
 msgstr "Ar naudoti pasirinktinį išbarstymą."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:46
+#: data/org.gnome.Quadrapassel.gschema.xml:41
 msgid "The seed used for the game"
 msgstr "Žaidimui naudojamas išbarstymas"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:47
+#: data/org.gnome.Quadrapassel.gschema.xml:42
 msgid "Used to determine which blocks are given in a game."
 msgstr "Naudojamas blokams pateiktame žaidime nustatyti."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:51
+#: data/org.gnome.Quadrapassel.gschema.xml:46
 msgid "Whether to play sounds"
 msgstr "Ar groti garsus"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:52
+#: data/org.gnome.Quadrapassel.gschema.xml:47
 msgid "Whether to play sounds."
 msgstr "Ar groti garsus."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:56
+#: data/org.gnome.Quadrapassel.gschema.xml:51
 msgid "Whether to pick blocks that are hard to place"
 msgstr "Ar parinkti sunkiai padedamus blokus"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:57
+#: data/org.gnome.Quadrapassel.gschema.xml:52
 msgid "Whether to pick blocks that are hard to place."
 msgstr "Ar parinkti sunkiai padedamus blokus."
 
-#: data/org.gnome.Quadrapassel.gschema.xml:61
+#: data/org.gnome.Quadrapassel.gschema.xml:56
 msgid "Width of the window in pixels"
 msgstr "Lango plotis pikseliais"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:65
+#: data/org.gnome.Quadrapassel.gschema.xml:60
 msgid "Height of the window in pixels"
 msgstr "Lango aukštis pikseliais"
 
-#: data/org.gnome.Quadrapassel.gschema.xml:69
+#: data/org.gnome.Quadrapassel.gschema.xml:64
 msgid "true if the window is maximized"
 msgstr "teigiama, jei langas yra išdidintas"
 
-#: src/game-view.vala:434
+#: src/game-view.vala:439
 msgid "Paused"
 msgstr "Pauzė"
 
-#: src/game-view.vala:441
+#: src/game-view.vala:446
 msgid "Game Over"
 msgstr "Žaidimas baigtas"
 
@@ -191,83 +183,66 @@ msgstr "Žaidimo taisyklės"
 
 #: src/rules-dialog.blp:11
 msgctxt "game rules"
-msgid "Rotate and Move pieces to fill rows"
-msgstr "Sukiokite ir stumdykite detales eilutėms užpildyti"
-
-#: src/rules-dialog.blp:12
-msgctxt "game rules"
-msgid "Rows explode when they are completely filled"
-msgstr "Eilutės sprogsta, kai yra visiškai užpildytos"
+msgid "Rotate and move pieces to fill rows, filled rows explode"
+msgstr ""
+"Sukiokite ir stumdykite detales eilutėms užpildyti, užpildytos eilutės "
+"sprogsta"
 
 #: src/rules-dialog.blp:17
 msgctxt "game rules"
 msgid "You gain points for each row destroyed"
 msgstr "Gaunate taškus už kiekvieną susprogdintą eilutę"
 
-#: src/rules-dialog.blp:18
-msgctxt "game rules"
-msgid ""
-"You can also get a bonus of 100 × level × rows destroyed if the bottom layer "
-"is destroyed."
-msgstr ""
-"Taip pat gaunate 100 × lygio × sunaikintų eilučių priedą, jei sunaikinamas "
-"apatinis lygis."
-
 #: src/rules-dialog.blp:25
 msgctxt "game rules"
-msgid "You can pause the game"
-msgstr "Galite pristabdyti žaidimą"
+msgid ""
+"When the game is paused, the next piece and the game view will be hidden"
+msgstr "Kai žaidimas pristabdomas, kita detalė ir žaidimo rodinys bus paslėpti"
 
-#: src/rules-dialog.blp:26
-msgctxt "game rules"
-msgid "The next piece and the game view will be hidden"
-msgstr "Žaidimas ir kita detalė bus paslėpti"
-
-#: src/rules-dialog.blp:33
-msgctxt "game rules"
-msgid "You can change how the game works using the preferences"
-msgstr "Galite keisti žaidimo veikimą nuostatose"
-
-#: src/rules-dialog.blp:34
-msgctxt "game rules"
-msgid "You can also adjust the difficulty"
-msgstr "Taip pat galite priderinti sudėtingumą"
-
-#: src/rules-dialog.blp:49
+#: src/rules-dialog.blp:41
 msgid "Rows Destroyed"
 msgstr "Eilutės sunaikintos"
 
-#: src/rules-dialog.blp:61
+#: src/rules-dialog.blp:53
 msgctxt "points calculation"
 msgid "Equation"
 msgstr "Lygtis"
 
-#: src/rules-dialog.blp:122
+#: src/rules-dialog.blp:114
 msgctxt "points calculation"
 msgid "40 × level"
 msgstr "40 × lygio"
 
-#: src/rules-dialog.blp:133
+#: src/rules-dialog.blp:125
 msgctxt "points calculation"
 msgid "100 × level"
 msgstr "100 × lygio"
 
-#: src/rules-dialog.blp:144
+#: src/rules-dialog.blp:136
 msgctxt "points calculation"
 msgid "300 × level"
 msgstr "300 × lygio"
 
-#: src/rules-dialog.blp:155
+#: src/rules-dialog.blp:147
 msgctxt "points calculation"
 msgid "1200 × level"
 msgstr "1200 × lygio"
+
+#: src/rules-dialog.blp:158
+msgctxt "game rules"
+msgid ""
+"A bonus of <i>100 × level × rows destroyed</i> is applied if the bottom row "
+"is destroyed."
+msgstr ""
+"Taip pat gaunate <i>100 × lygio × sunaikintų eilučių</i> priedą, jei "
+"sunaikinamas apatinis lygis."
 
 #: src/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Esmė"
 
-#: src/shortcuts-dialog.blp:9
+#: src/shortcuts-dialog.blp:10
 msgctxt "shortcut window"
 msgid "Start a New Game"
 msgstr "Pradėti naują žaidimą"
@@ -382,87 +357,83 @@ msgstr "Pagrindinis meniu"
 msgid "Game View"
 msgstr "Žaidimo rodinys"
 
-#: src/quadrapassel.vala:278
+#: src/quadrapassel.vala:277
 msgid "Score"
 msgstr "Taškai"
 
-#: src/quadrapassel.vala:283 src/quadrapassel.vala:1028
+#: src/quadrapassel.vala:282 src/quadrapassel.vala:1020
 msgid "Rows"
 msgstr "Eilutės"
 
-#: src/quadrapassel.vala:287 src/quadrapassel.vala:1028
+#: src/quadrapassel.vala:286 src/quadrapassel.vala:1020
 msgid "Level"
 msgstr "Lygis"
 
 #. Label on the scores dialog
-#: src/quadrapassel.vala:293
+#: src/quadrapassel.vala:292
 msgid "Difficulty"
 msgstr "Sudėtingumas"
 
-#: src/quadrapassel.vala:436
+#: src/quadrapassel.vala:439
 msgid "Preferences"
 msgstr "Nuostatos"
 
-#: src/quadrapassel.vala:439
+#: src/quadrapassel.vala:442
 msgid "Appearance"
 msgstr "Išvaizda"
 
-#: src/quadrapassel.vala:478
+#: src/quadrapassel.vala:481
 msgid "Game"
 msgstr "Žaidimas"
 
-#: src/quadrapassel.vala:482
+#: src/quadrapassel.vala:485
 msgid "Game Difficulty"
 msgstr "Žaidimo sudėtingumas"
 
-#: src/quadrapassel.vala:483
+#: src/quadrapassel.vala:486
 msgid "Change how difficult the game is"
 msgstr "Keiskite žaidimo sudėtingumą"
 
-#: src/quadrapassel.vala:485
+#: src/quadrapassel.vala:488
 msgid ""
 "The Difficulty affects the level you start at and how many rows are pre-"
 "filled."
 msgstr ""
 "Sudėtingumas pakeičia pradinį lygį ir kiek eilučių jau yra pripildytos."
 
-#: src/quadrapassel.vala:492
+#: src/quadrapassel.vala:495
 msgid "_Difficulty"
 msgstr "_Sudėtingumas"
 
-#: src/quadrapassel.vala:500
+#: src/quadrapassel.vala:503
 msgid "Choose difficult _blocks"
 msgstr "Pasirinkti sudėtingus _blokus"
 
-#: src/quadrapassel.vala:509
+#: src/quadrapassel.vala:512
 msgid "In-Game"
 msgstr "Žaidime"
 
-#: src/quadrapassel.vala:510
+#: src/quadrapassel.vala:513
 msgid "Change the experience of playing a game"
 msgstr "Keisti žaidimo potyrius"
 
-#: src/quadrapassel.vala:513
+#: src/quadrapassel.vala:516
 msgid "_Enable sounds"
 msgstr "Įj_ungti garsus"
 
-#: src/quadrapassel.vala:524
-msgid "_Preview next block"
-msgstr "_Kito bloko peržiūra"
-
-#: src/quadrapassel.vala:536
+#: src/quadrapassel.vala:528
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Sukti blokus prieš laikrodžio rodyklę"
 
-#: src/quadrapassel.vala:543
+#: src/quadrapassel.vala:535
 msgid "Show _where the block will land"
 msgstr "Rodyti, kur _nusileis blokas"
 
-#: src/quadrapassel.vala:554
+#: src/quadrapassel.vala:546
 msgid "Game _seed"
 msgstr "Žaidimo _greitis"
 
-#: src/quadrapassel.vala:560
+#: src/quadrapassel.vala:552
 msgid ""
 "The seed is used to determine which blocks you get. While a seed is set, the "
 "game will be the same every time."
@@ -470,36 +441,36 @@ msgstr ""
 "Išvarstymas naudojamas nustatyti, kuriuos blokus gausite. Kai išbarstymas "
 "yra nustatytas, žaidimas jį naudos kiekvieną kartą."
 
-#: src/quadrapassel.vala:564
+#: src/quadrapassel.vala:556
 msgid "_Use a custom seed for the game"
 msgstr "Na_udoti žaidimui pasirinktinį išbarstymą"
 
-#: src/quadrapassel.vala:989
+#: src/quadrapassel.vala:981
 msgid "Unpause the game"
 msgstr "Pratęsti žaidimą"
 
-#: src/quadrapassel.vala:995
+#: src/quadrapassel.vala:987
 msgid "Pause the game"
 msgstr "Pristabdyti žaidimą"
 
-#: src/quadrapassel.vala:1036
+#: src/quadrapassel.vala:1028
 msgid "Start the game"
 msgstr "Pradėti žaidimą"
 
-#: src/quadrapassel.vala:1065
+#: src/quadrapassel.vala:1057
 msgid "Old Scores"
 msgstr "Seni rezultatai"
 
-#: src/quadrapassel.vala:1073
+#: src/quadrapassel.vala:1065
 msgid "Difficult"
 msgstr "Sudėtingas"
 
-#: src/quadrapassel.vala:1153
+#: src/quadrapassel.vala:1145
 msgctxt "game rules"
 msgid "Points are calculated based on how many rows are destroyed."
 msgstr "Taškai skaičiuojami pagal tai, kiek eilučių yra sunaikinama."
 
-#: src/quadrapassel.vala:1176
+#: src/quadrapassel.vala:1168
 msgid ""
 "A classic game where you rotate blocks to make complete rows, but don't pile "
 "your blocks too high or it's game over!"
@@ -507,7 +478,7 @@ msgstr ""
 "Klasikinis žaidimas, kuriame jūs sukiojate blokus ir siekiate užpildyti "
 "eilutes, bet neprikraukite blokų per aukštai, nes žaidimas baigsis!"
 
-#: src/quadrapassel.vala:1179
+#: src/quadrapassel.vala:1171
 msgid "translator-credits"
 msgstr ""
 "Aurimas Černius <aurimas.cernius@mailo.com>\n"
@@ -515,6 +486,31 @@ msgstr ""
 "Justina Klingaitė <justina.klingaite@gmail.com>,\n"
 "Tomas Kuliavas <tokul@users.sf.net>,\n"
 "Gediminas Paulauskas <menesis@chatsubo.lt>"
+
+#~ msgid "Whether to preview the next block"
+#~ msgstr "Ar rodyti būsimą bloką"
+
+#~ msgid "Whether to preview the next block."
+#~ msgstr "Ar rodyti būsimą bloką."
+
+#~ msgctxt "game rules"
+#~ msgid "Rows explode when they are completely filled"
+#~ msgstr "Eilutės sprogsta, kai yra visiškai užpildytos"
+
+#~ msgctxt "game rules"
+#~ msgid "You can pause the game"
+#~ msgstr "Galite pristabdyti žaidimą"
+
+#~ msgctxt "game rules"
+#~ msgid "You can change how the game works using the preferences"
+#~ msgstr "Galite keisti žaidimo veikimą nuostatose"
+
+#~ msgctxt "game rules"
+#~ msgid "You can also adjust the difficulty"
+#~ msgstr "Taip pat galite priderinti sudėtingumą"
+
+#~ msgid "_Preview next block"
+#~ msgstr "_Kito bloko peržiūra"
 
 #~ msgid "Level to start with"
 #~ msgstr "Pradinis žaidimo lygis"
