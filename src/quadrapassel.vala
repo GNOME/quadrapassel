@@ -200,8 +200,6 @@ public class Quadrapassel : Adw.Application
         view.show_shadow = settings.get_boolean ("show-shadow");
         view.game = new Game (20, 10, 1);
         game_aspect = new Games.GridFrame (10, 20);
-        game_aspect.hexpand = true;
-        game_aspect.vexpand = true;
         game_aspect.child = view;
         game_aspect.add_controller (swipe_gesture);
         game_aspect.add_controller (long_press_gesture);
@@ -210,6 +208,7 @@ public class Quadrapassel : Adw.Application
         game_aspect.accessible_role = Gtk.AccessibleRole.LABEL;
         game_aspect.update_property (Gtk.AccessibleProperty.LABEL, _("Game View"), -1);
         game_box.prepend (game_aspect);
+        game_box.layout_manager = new PriorityLayout (6, 30, game_aspect);
 
         var toggle_button = menu_button.get_first_child ();
         bool popover_shown = false;

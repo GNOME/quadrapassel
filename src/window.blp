@@ -37,7 +37,7 @@ Adw.ApplicationWindow window {
   width-request: 320;
 
   Adw.Breakpoint breakpoint {
-    condition ("max-width: 400px")
+    condition ("max-aspect-ratio: 10/15")
   }
 
   content: Adw.ToolbarView toolbar {
@@ -68,11 +68,10 @@ Adw.ApplicationWindow window {
     }
 
     content: Box game_box {
-      spacing: 6;
       orientation: horizontal;
-      margin-start: 12;
-      margin-end: 12;
-      margin-bottom: 12;
+      margin-start: 9;
+      margin-end: 9;
+      margin-bottom: 9;
 
       Box stats_box {
         spacing: 24;
