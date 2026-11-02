@@ -45,6 +45,7 @@ executable(meson.project_name(),
     ],
     vala_args: [
         '--target-glib', '2.44',
+        '--enable-experimental',
         '--vapidir', join_paths(meson.current_source_dir(), 'vapi')
     ],
     dependencies: [
