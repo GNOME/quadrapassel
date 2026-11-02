@@ -18,11 +18,15 @@ template $AdaptiveCard: Adw.Bin {
     spacing: 3;
     orientation: vertical;
     vexpand: true;
+    valign: center;
 
-    styles [
-      "card",
-      "padding",
-    ]
+    Gtk.Label info {
+      halign: center;
+
+      styles [
+        "title-2",
+      ]
+    }
 
     Gtk.Label info_type {
       halign: center;
@@ -30,18 +34,9 @@ template $AdaptiveCard: Adw.Bin {
       ellipsize: end;
 
       styles [
-        "dimmed",
+        "caption-heading",
       ]
     }
 
-    Gtk.Label info {
-      margin-bottom: 2;
-      halign: center;
-      vexpand: true;
-
-      styles [
-        "title-4",
-      ]
-    }
   }
 }

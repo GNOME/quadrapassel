@@ -48,10 +48,6 @@ block.orange {
   background-color: var(--orange-4);
 }
 
-.padding {
-  padding: 6px 12px;
-}
-
 block.shadow {
   opacity: 0.5;
 }

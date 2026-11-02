@@ -170,7 +170,7 @@ public class Quadrapassel : Adw.Application
 
         window.icon_name = APP_ID;
 
-        var breakpoint = (Adw.Breakpoint) builder.get_object ("breakpoint");
+        // var breakpoint = (Adw.Breakpoint) builder.get_object ("breakpoint");
 
         event_controller_key = new Gtk.EventControllerKey ();
         event_controller_key.key_pressed.connect (key_press_event_cb);
@@ -236,15 +236,15 @@ public class Quadrapassel : Adw.Application
         preview_frame.vexpand = true;
         preview = new Preview ();
         preview_frame.child = preview;
-        preview_card.box.append (preview_frame);
+        preview_card.box.prepend (preview_frame);
+        preview_card.box.valign = Gtk.Align.FILL;
 
         score_label = ((AdaptiveCard) builder.get_object ("score_card")).info;
-        score_label.width_request = 100;
         n_destroyed_label = ((AdaptiveCard) builder.get_object ("destroyed_card")).info;
         level_label = ((AdaptiveCard) builder.get_object ("level_card")).info;
 
-        breakpoint.apply.connect (breakpoint_apply_cb);
-        breakpoint.unapply.connect (breakpoint_unapply_cb);
+        // breakpoint.apply.connect (breakpoint_apply_cb);
+        // breakpoint.unapply.connect (breakpoint_unapply_cb);
 
         context = new Games.Scores.Context ("quadrapassel",
                                             /* Label on the scores dialog */
@@ -319,14 +319,13 @@ public class Quadrapassel : Adw.Application
         game_box.orientation = Gtk.Orientation.VERTICAL;
         game_box.prepend (stats_box);
         stats_box.orientation = Gtk.Orientation.HORIZONTAL;
+        game_aspect.margin_top = 3;
 
         AdaptiveCard card = (AdaptiveCard) stats_box.get_first_child ();
         stats_box.remove (card);
         stats_box.append (card);
         card.orientation = Gtk.Orientation.HORIZONTAL;
-        var next_label = card.box.get_first_child ();
-        next_label.margin_end = 4;
-        next_label.margin_top = 3;
+        preview_label.margin_end = 3;
         card = (AdaptiveCard) stats_box.get_first_child ();
 
         for (uint i = 0; i < 3; i++)
@@ -343,6 +342,7 @@ public class Quadrapassel : Adw.Application
         game_box.orientation = Gtk.Orientation.HORIZONTAL;
         game_box.append (stats_box);
         stats_box.orientation = Gtk.Orientation.VERTICAL;
+        game_aspect.margin_top = 0;
 
         AdaptiveCard card = (AdaptiveCard) stats_box.get_last_child ();
         stats_box.remove (card);
@@ -350,7 +350,6 @@ public class Quadrapassel : Adw.Application
         card.orientation = Gtk.Orientation.VERTICAL;
         var next_label = card.box.get_first_child ();
         next_label.margin_end = 0;
-        next_label.margin_top = 0;
         card = (AdaptiveCard) card.get_next_sibling ();
 
         for (uint i = 0; i < 3; i++)
