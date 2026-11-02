@@ -1,6 +1,18 @@
-game-view, preview {
-  background-color: #000000;
-  border-radius: 8px;
+preview, game-view {
+  background-color: /*entry color: color-mix(in srgb, currentColor 10%, transparent)*/#fff;
+  border: 1px solid var(--border-color);
+  border-radius: 9px;
+}
+
+game-view {
+  padding: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  preview, game-view {
+    background-color: #000000;
+    border: 1px solid var(--dark-3);
+  }
 }
 
 block.red {
@@ -16,7 +28,7 @@ block.blue {
 }
 
 block.gray {
-  background-color: var(--light-2);
+  background-color: var(--brown-4);
 }
 
 block.yellow {
@@ -31,44 +43,9 @@ block.orange {
   background-color: var(--orange-4);
 }
 
-block.red.clean {
-  border: 1px solid var(--red-2);
-}
-
-block.green.clean {
-  border: 1px solid #007c3d;
-}
-
-block.blue.clean {
-  border: 1px solid var(--blue-4);
-}
-
-block.gray.clean {
-  border: 1px solid var(--light-4);
-}
-
-block.yellow.clean {
-  border: 1px solid var(--yellow-5);
-}
-
-block.purple.clean {
-  border: 1px solid var(--purple-4);
-}
-
-block.orange.clean {
-  border: 1px solid var(--orange-5);
-}
-
-block.clean {
-  border-radius: 15%;
-}
-
-block.modern {
-  border: 1px solid #000000;
-}
-
-.padding {
-  padding: 6px 12px;
+block {
+  margin: 1px;
+  border-radius: 3px;
 }
 
 block.shadow {
