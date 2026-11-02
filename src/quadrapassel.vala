@@ -233,13 +233,12 @@ public class Quadrapassel : Adw.Application
         preview_card.info.visible = false;
 
         preview_frame = new Games.GridFrame (5, 5);
-        preview_frame.vexpand = true;
         preview = new Preview ();
         preview_frame.child = preview;
-        preview_card.append (preview_frame);
+        preview_frame.width_request = 100;
+        preview_card.prepend (preview_frame);
 
         score_label = ((AdaptiveCard) builder.get_object ("score_card")).info;
-        score_label.width_request = 100;
         n_destroyed_label = ((AdaptiveCard) builder.get_object ("destroyed_card")).info;
         level_label = ((AdaptiveCard) builder.get_object ("level_card")).info;
 
@@ -314,19 +313,20 @@ public class Quadrapassel : Adw.Application
     }
 
     private void breakpoint_apply_cb () {
-        score_label.width_request = -1;
         game_box.remove (stats_box);
         game_box.orientation = Gtk.Orientation.VERTICAL;
         game_box.prepend (stats_box);
         stats_box.orientation = Gtk.Orientation.HORIZONTAL;
+        stats_box.homogeneous = true;
+        stats_box.spacing = 3;
 
         AdaptiveCard card = (AdaptiveCard) stats_box.get_first_child ();
         stats_box.remove (card);
         stats_box.append (card);
-        card.direction = Gtk.Orientation.HORIZONTAL;
-        var next_label = card.get_first_child ();
-        next_label.margin_end = 4;
-        next_label.margin_top = 3;
+        preview_label.visible = false;
+        preview.compact = true;
+        preview_frame.width_request = -1;
+        card.compact = true;
         card = (AdaptiveCard) stats_box.get_first_child ();
 
         for (uint i = 0; i < 3; i++)
@@ -338,19 +338,20 @@ public class Quadrapassel : Adw.Application
     }
 
     private void breakpoint_unapply_cb () {
-        score_label.width_request = 100;
         game_box.remove (stats_box);
         game_box.orientation = Gtk.Orientation.HORIZONTAL;
         game_box.append (stats_box);
         stats_box.orientation = Gtk.Orientation.VERTICAL;
+        stats_box.homogeneous = false;
+        stats_box.spacing = 24;
 
         AdaptiveCard card = (AdaptiveCard) stats_box.get_last_child ();
         stats_box.remove (card);
         stats_box.prepend (card);
-        card.direction = Gtk.Orientation.VERTICAL;
-        var next_label = card.get_first_child ();
-        next_label.margin_end = 0;
-        next_label.margin_top = 0;
+        preview_label.visible = true;
+        preview.compact = false;
+        preview_frame.width_request = 100;
+        card.compact = false;
         card = (AdaptiveCard) card.get_next_sibling ();
 
         for (uint i = 0; i < 3; i++)

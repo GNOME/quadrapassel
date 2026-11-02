@@ -5,12 +5,10 @@ template $AdaptiveCard: Gtk.Box {
   focusable: true;
   spacing: 3;
   orientation: vertical;
-  vexpand: true;
+  valign: center;
 
   styles [
     "focusable-card",
-    "card",
-    "padding",
   ]
 
   accessibility {
@@ -18,23 +16,21 @@ template $AdaptiveCard: Gtk.Box {
     described-by: info;
   }
 
-  Gtk.Label info_type {
+  Gtk.Label info {
     halign: center;
-    valign: start;
-    ellipsize: end;
 
     styles [
-      "dimmed",
+      "title-2",
     ]
   }
 
-  Gtk.Label info {
-    margin-bottom: 2;
+  Gtk.Label info_type {
     halign: center;
-    vexpand: true;
+    ellipsize: end;
 
     styles [
-      "title-4",
+      "caption-heading",
+      "dimmed",
     ]
   }
 }

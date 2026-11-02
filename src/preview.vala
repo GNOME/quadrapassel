@@ -23,6 +23,8 @@ public class Preview : Gtk.Widget {
         set_css_name ("preview");
     }
 
+    public bool compact = false;
+
     private Array<BlockWidget> block_widgets = new Array<BlockWidget> ();
     private int piece_width;
     private int piece_height;
@@ -64,13 +66,13 @@ public class Preview : Gtk.Widget {
                                      out int minimum_baseline,
                                      out int natural_baseline)
     {
+        minimum = 50;
 
-        // if (for_size <= 50)
-            minimum = 50;
-        // else
-            // minimum = for_size;
+        if (compact)
+            natural = 50;
+        else
+            natural = 100;
 
-        natural = 50;
         minimum_baseline = natural_baseline = -1;
     }
 
