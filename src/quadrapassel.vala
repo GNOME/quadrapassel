@@ -137,7 +137,7 @@ public class Quadrapassel : Adw.Application
     {
         base.startup ();
 
-        Adw.StyleManager.get_default ().set_color_scheme (FORCE_DARK);
+        Adw.StyleManager.get_default ().set_color_scheme (PREFER_DARK);
 
         Environment.set_application_name (_("Quadrapassel"));
 
@@ -162,7 +162,7 @@ public class Quadrapassel : Adw.Application
         window.title = _("Quadrapassel");
 
         var breakpoint = new Adw.Breakpoint (new Adw.BreakpointCondition.length (MAX_WIDTH, 400, PX));
-        window.add_child (builder, breakpoint, null);
+        // window.add_child (builder, breakpoint, null);
 
         event_controller_key = new Gtk.EventControllerKey ();
         event_controller_key.key_pressed.connect (key_press_event_cb);
@@ -238,7 +238,7 @@ public class Quadrapassel : Adw.Application
         view.theme = settings.get_string ("theme");
         view.mute = !settings.get_boolean ("sound");
         view.show_shadow = settings.get_boolean ("show-shadow");
-        view.game = new Game (20, 10, 1, 20, 10); // Game board size, changed width to 10
+        view.game = new Game (20, 10, 1); // Game board size, changed width to 10
         game_aspect = new Games.GridFrame (10, 20);
         game_aspect.hexpand = true;
         game_aspect.vexpand = true;
@@ -259,6 +259,8 @@ public class Quadrapassel : Adw.Application
         headerbar.pack_end (pause_play_button);
 
         stats_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 6);
+        stats_box.homogeneous = true;
+        stats_box.hexpand = true;
         game_box.append (stats_box);
 
         var preview_card = new AdaptiveCard (next_string, "");
@@ -271,12 +273,12 @@ public class Quadrapassel : Adw.Application
         preview.theme = settings.get_string ("theme");
         preview_frame.child = preview;
 
-        preview_card.box.append (preview_frame);
+        preview_card.box.prepend (preview_frame);
+        preview_card.box.valign = Gtk.Align.FILL;
         stats_box.append (preview_card);
 
         var score_card = new AdaptiveCard (_("Score"), "0");
         score_label = score_card.info;
-        score_label.width_request = 100;
         stats_box.append (score_card);
 
         var destroyed_card = new AdaptiveCard (_("Rows"), "0");
@@ -360,14 +362,13 @@ public class Quadrapassel : Adw.Application
         game_box.orientation = Gtk.Orientation.VERTICAL;
         game_box.prepend (stats_box);
         stats_box.orientation = Gtk.Orientation.HORIZONTAL;
+        game_aspect.margin_top = 3;
 
         AdaptiveCard card = (AdaptiveCard) stats_box.get_first_child ();
         stats_box.remove (card);
         stats_box.append (card);
         card.orientation = Gtk.Orientation.HORIZONTAL;
-        var next_label = card.box.get_first_child ();
-        next_label.margin_end = 4;
-        next_label.margin_top = 3;
+        preview_label.margin_end = 3;
         card = (AdaptiveCard) stats_box.get_first_child ();
 
         for (uint i = 0; i < 3; i++)
@@ -384,6 +385,7 @@ public class Quadrapassel : Adw.Application
         game_box.orientation = Gtk.Orientation.HORIZONTAL;
         game_box.append (stats_box);
         stats_box.orientation = Gtk.Orientation.VERTICAL;
+        game_aspect.margin_top = 0;
 
         AdaptiveCard card = (AdaptiveCard) stats_box.get_last_child ();
         stats_box.remove (card);
@@ -391,7 +393,6 @@ public class Quadrapassel : Adw.Application
         card.orientation = Gtk.Orientation.VERTICAL;
         var next_label = card.box.get_first_child ();
         next_label.margin_end = 0;
-        next_label.margin_top = 0;
         card = (AdaptiveCard) card.get_next_sibling ();
 
         for (uint i = 0; i < 3; i++)

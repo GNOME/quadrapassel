@@ -30,45 +30,6 @@ namespace Games {
  */
 public class GridFrame : Gtk.Widget
 {
-
-    private int _xpadding = 0;
-    /**
-     * The horizontal padding of the GridFrame.
-     *
-     */
-    public int xpadding
-    {
-        get { return _xpadding; }
-
-        set
-        {
-            if (value >= 0)
-            {
-                _xpadding = value;
-                queue_resize ();
-            }
-        }
-    }
-
-    private int _ypadding = 0;
-    /**
-     * The vertical padding of the GridFrame.
-     *
-     */
-    public int ypadding
-    {
-        get { return _ypadding; }
-
-        set
-        {
-            if (value >= 0)
-            {
-                _ypadding = value;
-                queue_resize ();
-            }
-        }
-    }
-
     private int _xmult = 1;
     /**
      * The width of the GridFrame.
@@ -104,40 +65,6 @@ public class GridFrame : Gtk.Widget
                 _ymult = value;
                 queue_resize ();
             }
-        }
-    }
-
-    private float _xalign = 0.5f;
-    /**
-     * The horizontal alignment of the GridFrame.
-     * ranges from zero to one, .5 makes the GridFrame centered.
-     *
-     */
-    public float xalign
-    {
-        get { return _xalign; }
-
-        set
-        {
-            _xalign = value.clamp (0.0f, 1.0f);
-            queue_resize ();
-        }
-    }
-
-    private float _yalign = 0.5f;
-    /**
-     * The vertical alignment of the GridFrame.
-     * ranges from zero to one, .5 makes the GridFrame centered.
-     *
-     */
-    public float yalign
-    {
-        get { return _yalign; }
-
-        set
-        {
-            _yalign = value.clamp (0.0f, 1.0f);
-            queue_resize ();
         }
     }
 
@@ -195,28 +122,6 @@ public class GridFrame : Gtk.Widget
     }
 
     /**
-     * Sets the horizontal and vertical (x and y) padding of the GridFrame.
-     *
-     */
-    public void set_padding (int xpadding, int ypadding)
-    {
-        this.xpadding = xpadding;
-        this.ypadding = ypadding;
-    }
-
-    /**
-     * Sets the horizontal and vertical (x and y) alignment of the GridFrame.
-     *
-     * ``xalign`` and ``yalign`` range from zero to one, if both are set to .5 the GridFrame will be centered.
-     *
-     */
-    public void set_alignment (float xalign, float yalign)
-    {
-        this.xalign = xalign;
-        this.yalign = yalign;
-    }
-
-    /**
      * {@link Gtk.Widget.size_allocate}
      *
      */
@@ -224,15 +129,21 @@ public class GridFrame : Gtk.Widget
     {
         base.size_allocate (width, height, baseline);
 
-        int xsize = int.max (1, (width - _xpadding) / _xmult);
-        int ysize = int.max (1, (height - _ypadding) / _ymult);
+        Graphene.Rect bounds;
+        child.compute_bounds (this, out bounds);
+
+        int xpadding = (int) bounds.get_width () - child.get_width ();
+        int ypadding = (int) bounds.get_height () - child.get_height ();
+
+        int xsize = int.max (1, (width - xpadding) / _xmult);
+        int ysize = int.max (1, (height - ypadding) / _ymult);
         int size = int.min (xsize, ysize);
 
         Gtk.Allocation child_allocation = { 0, 0, 0, 0 };
-        child_allocation.width = size * _xmult + _xpadding;
-        child_allocation.height = size * _ymult + _ypadding;
-        child_allocation.x = (int) ((width - child_allocation.width) * _xalign);
-        child_allocation.y = (int) ((height - child_allocation.height) * _yalign);
+        child_allocation.width = size * _xmult + xpadding;
+        child_allocation.height = size * _ymult + ypadding;
+        child_allocation.x = (int) ((width - child_allocation.width) * 0.5);
+        child_allocation.y = (int) ((height - child_allocation.height) * 0.5);
 
         if (child != null && child.get_visible ())
             child.allocate_size (child_allocation, -1);
@@ -251,6 +162,26 @@ public class GridFrame : Gtk.Widget
             child.measure (orientation, for_size, out minimum, out natural, out minimum_baseline, out natural_baseline);
         else
             base.measure (orientation, for_size, out minimum, out natural, out minimum_baseline, out natural_baseline);
+
+        if (for_size == -1)
+            return;
+
+        Graphene.Rect bounds;
+        child.compute_bounds (this, out bounds);
+
+        int xpadding = (int) bounds.get_width () - child.get_width ();
+        int ypadding = (int) bounds.get_height () - child.get_height ();
+
+        if (orientation == Gtk.Orientation.VERTICAL)
+        {
+            int size = (for_size - xpadding) / _xmult;
+            minimum = natural = size * _ymult + ypadding;
+        }
+        else
+        {
+            int size = (for_size  - ypadding) / _ymult;
+            minimum = natural = size * _xmult + xpadding;
+        }
     }
 }
 
