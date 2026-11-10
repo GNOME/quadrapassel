@@ -27,6 +27,20 @@ public class AdaptiveCard : Adw.Bin {
     [GtkChild]
     public unowned Gtk.Label info;
 
+    public string info_type_string {
+        set
+        {
+            info_type.label = value;
+        }
+    }
+
+    public string info_string {
+        set
+        {
+            info.label = value;
+        }
+    }
+
     public Gtk.Orientation orientation {
         set
         {

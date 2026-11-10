@@ -26,7 +26,6 @@ public class Quadrapassel : Adw.Application
 
     /* Main window */
     private Adw.ApplicationWindow window;
-    private Adw.HeaderBar headerbar;
     private Gtk.EventControllerKey event_controller_key;
     private Gtk.GestureSwipe swipe_gesture;
     private Gtk.GestureLongPress long_press_gesture;
@@ -156,13 +155,22 @@ public class Quadrapassel : Adw.Application
     private void create_window ()
     {
         var builder = new Gtk.Builder ();
-        window = new Adw.ApplicationWindow (this);
-        window.set_size_request (360, 330);
-        window.icon_name = APP_ID;
-        window.title = _("Quadrapassel");
+        try
+        {
+            builder.add_from_resource ("/org/gnome/Quadrapassel/window.ui");
+        }
+        catch (Error e)
+        {
+            critical ("Could not load window: %s", e.message);
+        }
 
-        var breakpoint = new Adw.Breakpoint (new Adw.BreakpointCondition.length (MAX_WIDTH, 400, PX));
-        window.add_child (builder, breakpoint, null);
+        window = (Adw.ApplicationWindow) builder.get_object ("window");
+
+        this.add_window (window);
+
+        window.icon_name = APP_ID;
+
+        var breakpoint = (Adw.Breakpoint) builder.get_object ("breakpoint");
 
         event_controller_key = new Gtk.EventControllerKey ();
         event_controller_key.key_pressed.connect (key_press_event_cb);
@@ -180,32 +188,29 @@ public class Quadrapassel : Adw.Application
 
         window.notify["is-active"].connect (on_window_focus_change);
 
-        var toolbar_view = new Adw.ToolbarView ();
-        headerbar = new Adw.HeaderBar ();
-        toolbar_view.add_child (builder, headerbar, "top");
-        window.set_content (toolbar_view);
+        new_game_button = (Gtk.Button) builder.get_object ("new_game");
+        menu_button = (Gtk.MenuButton) builder.get_object ("menu_button");
+        pause_play_button = (Gtk.Button) builder.get_object ("pause_play");
 
-        new_game_button = new Gtk.Button.from_icon_name ("view-refresh-symbolic");
-        new_game_button.set_action_name ("app.new-game");
-        new_game_button.set_tooltip_text (_("Start a new game"));
+        game_box = (Gtk.Box) builder.get_object ("game_box");
+        stats_box = (Gtk.Box) builder.get_object ("stats_box");
 
-        headerbar.pack_start (new_game_button);
-
-        var menu = new Menu ();
-        var section = new Menu ();
-        menu.append_section (null, section);
-        section.append (_("_Scores"), "app.scores");
-        section.append (_("_Preferences"), "app.preferences");
-        section = new Menu ();
-        menu.append_section (null, section);
-        section.append (_("_Keyboard Shortcuts"), "app.shortcuts");
-        section.append (_("Game _Rules"), "app.rules");
-        section.append (_("_About Quadrapassel"), "app.about");
-        menu_button = new Gtk.MenuButton ();
-        menu_button.primary = true;
-        menu_button.tooltip_text = _("Main Menu");
-        menu_button.set_icon_name ("open-menu-symbolic");
-        menu_button.set_menu_model (menu);
+        view = new GameView ();
+        view.theme = settings.get_string ("theme");
+        view.mute = !settings.get_boolean ("sound");
+        view.show_shadow = settings.get_boolean ("show-shadow");
+        view.game = new Game (20, 10, 1, 20, 10); // Game board size, changed width to 10
+        game_aspect = new Games.GridFrame (10, 20);
+        game_aspect.hexpand = true;
+        game_aspect.vexpand = true;
+        game_aspect.child = view;
+        game_aspect.add_controller (swipe_gesture);
+        game_aspect.add_controller (long_press_gesture);
+        game_aspect.receives_default = true;
+        game_aspect.focusable = true;
+        game_aspect.accessible_role = Gtk.AccessibleRole.LABEL;
+        game_aspect.update_property (Gtk.AccessibleProperty.LABEL, _("Game View"), -1);
+        game_box.prepend (game_aspect);
 
         var toggle_button = menu_button.get_first_child ();
         bool popover_shown = false;
@@ -224,44 +229,7 @@ public class Quadrapassel : Adw.Application
 
         menu_button.popover.show.connect (() => popover_shown = true);
 
-        headerbar.pack_end (menu_button);
-
-        game_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        game_box.margin_start = 12;
-        game_box.margin_end = 12;
-        game_box.margin_bottom = 12;
-        toolbar_view.set_content (game_box);
-        breakpoint.apply.connect (breakpoint_apply_cb);
-        breakpoint.unapply.connect (breakpoint_unapply_cb);
-
-        view = new GameView ();
-        view.theme = settings.get_string ("theme");
-        view.mute = !settings.get_boolean ("sound");
-        view.show_shadow = settings.get_boolean ("show-shadow");
-        view.game = new Game (20, 10, 1, 20, 10); // Game board size, changed width to 10
-        game_aspect = new Games.GridFrame (10, 20);
-        game_aspect.hexpand = true;
-        game_aspect.vexpand = true;
-        game_aspect.child = view;
-        game_aspect.add_controller (swipe_gesture);
-        game_aspect.add_controller (long_press_gesture);
-        game_aspect.receives_default = true;
-        game_aspect.focusable = true;
-        game_aspect.accessible_role = Gtk.AccessibleRole.LABEL;
-        game_aspect.update_property (Gtk.AccessibleProperty.LABEL, _("Game View"), -1);
-        game_box.append (game_aspect);
-
-        pause_play_button = new Gtk.Button ();
-        pause_play_button.set_icon_name ("media-playback-start-symbolic");
-        pause_play_button.action_name = "app.new-game";
-        pause_play_button.tooltip_text = _("Start a new game");
-        pause_play_button.set_receives_default (false);
-        headerbar.pack_end (pause_play_button);
-
-        stats_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 6);
-        game_box.append (stats_box);
-
-        var preview_card = new AdaptiveCard (next_string, "");
+        var preview_card = (AdaptiveCard) builder.get_object ("preview_card");
         preview_label = preview_card.info_type;
         preview_card.info.visible = false;
 
@@ -270,22 +238,15 @@ public class Quadrapassel : Adw.Application
         preview = new Preview ();
         preview.theme = settings.get_string ("theme");
         preview_frame.child = preview;
-
         preview_card.box.append (preview_frame);
-        stats_box.append (preview_card);
 
-        var score_card = new AdaptiveCard (_("Score"), "0");
-        score_label = score_card.info;
+        score_label = ((AdaptiveCard) builder.get_object ("score_card")).info;
         score_label.width_request = 100;
-        stats_box.append (score_card);
+        n_destroyed_label = ((AdaptiveCard) builder.get_object ("destroyed_card")).info;
+        level_label = ((AdaptiveCard) builder.get_object ("level_card")).info;
 
-        var destroyed_card = new AdaptiveCard (_("Rows"), "0");
-        n_destroyed_label = destroyed_card.info;
-        stats_box.append (destroyed_card);
-
-        var level_card = new AdaptiveCard (_("Level"), "0");
-        level_label = level_card.info;
-        stats_box.append (level_card);
+        breakpoint.apply.connect (breakpoint_apply_cb);
+        breakpoint.unapply.connect (breakpoint_unapply_cb);
 
         context = new Games.Scores.Context ("quadrapassel",
                                             /* Label on the scores dialog */
@@ -1139,12 +1100,6 @@ public class Quadrapassel : Adw.Application
         }
         var rules_dialog = (Adw.Dialog) dialog_builder.get_object ("rules_dialog");
         var game_symbolic = (Gtk.Image) dialog_builder.get_object ("game_symbolic");
-        var points_row = (Adw.ActionRow) dialog_builder.get_object ("points_row");
-        var points_info = (Gtk.Grid) dialog_builder.get_object ("points_info");
-        var more_info = new MoreInfoButton ();
-        more_info.text = C_("game rules", "Points are calculated based on how many rows are destroyed.");
-        more_info.extra_child = points_info;
-        points_row.add_suffix (more_info);
         game_symbolic.set_from_icon_name ("%s-symbolic".printf (APP_ID));
         rules_dialog.present (window);
     }
@@ -1198,6 +1153,7 @@ public class Quadrapassel : Adw.Application
         Intl.textdomain (GETTEXT_PACKAGE);
 
         typeof (MoreInfoButton).ensure ();
+        typeof (AdaptiveCard).ensure ();
 
         var app = new Quadrapassel ();
         return app.run (args);

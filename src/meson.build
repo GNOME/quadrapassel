@@ -3,7 +3,8 @@ blueprints = custom_target('blueprints',
         'adaptive-card.blp',
         'more-info-button.blp',
         'rules-dialog.blp',
-        'shortcuts-dialog.blp'
+        'shortcuts-dialog.blp',
+        'window.blp'
     ),
     output: '.',
     command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],

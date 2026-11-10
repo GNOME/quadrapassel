@@ -1,0 +1,103 @@
+using Gtk 4.0;
+using Adw 1;
+
+menu primary_menu {
+  section {
+    item {
+      label: _("_Scores");
+      action: "app.scores";
+    }
+
+    item {
+      label: _("_Preferences");
+      action: "app.preferences";
+    }
+  }
+  section {
+    item {
+      label: _("_Keyboard Shortcuts");
+      action: "app.shortcuts";
+    }
+
+    item {
+      label: _("Game _Rules");
+      action: "app.rules";
+    }
+
+    item {
+      label: _("_About Quadrapassel");
+      action: "app.about";
+    }
+  }
+}
+
+Adw.ApplicationWindow window {
+  title: _("Quadrapassel");
+  height-request: 360;
+  width-request: 330;
+
+  Adw.Breakpoint breakpoint {
+    condition ("max-width: 400px")
+  }
+
+  content: Adw.ToolbarView toolbar {
+    [top]
+    Adw.HeaderBar headerbar {
+      [start]
+      Button new_game {
+        icon-name: "view-refresh-symbolic";
+        action-name: "app.new-game";
+        tooltip-text: _("Start a new game");
+      }
+
+      [end]
+      MenuButton menu_button {
+        primary: true;
+        icon-name: "open-menu-symbolic";
+        tooltip-text: _("Main Menu");
+        menu-model: primary_menu;
+      }
+
+      [end]
+      Button pause_play {
+        icon-name: "media-playback-start-symbolic";
+        action-name: "app.new-game";
+        tooltip-text: _("Start a new game");
+        receives-default: false;
+      }
+    }
+
+    content: Box game_box {
+      spacing: 6;
+      orientation: horizontal;
+      margin-start: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+
+      Box stats_box {
+        spacing: 6;
+        orientation: vertical;
+
+        $AdaptiveCard preview_card {
+          info-type-string: _("Next");
+          info-string: "";
+        }
+
+        $AdaptiveCard score_card {
+          info-type-string: _("Score");
+          info-string: "0";
+        }
+
+        $AdaptiveCard destroyed_card {
+          info-type-string: _("Rows");
+          info-string: "0";
+        }
+
+        $AdaptiveCard level_card {
+          info-type-string: _("Level");
+          info-string: "0";
+        }
+      }
+    };
+  };
+}

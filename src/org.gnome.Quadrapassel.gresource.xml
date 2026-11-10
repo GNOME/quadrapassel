@@ -5,6 +5,7 @@
     <file>more-info-button.ui</file>
     <file>rules-dialog.ui</file>
     <file>shortcuts-dialog.ui</file>
+    <file>window.ui</file>
     <file>style.css</file>
   </gresource>
   <gresource prefix="/org/gnome/Quadrapassel/icons/scalable/actions/">
