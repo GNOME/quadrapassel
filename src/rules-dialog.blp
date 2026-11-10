@@ -13,12 +13,18 @@ Adw.PreferencesDialog rules_dialog {
         [prefix]
         Image game_symbolic {}
       }
-      Adw.ActionRow points_row {
+      Adw.ActionRow {
         title: C_("game rules", "You gain points for each row destroyed");
 
         [prefix]
         Image {
           icon-name: "list-add-symbolic";
+        }
+
+        [suffix]
+        $MoreInfoButton {
+          text: C_("game rules", "Points are calculated based on how many rows are destroyed.");
+          extra-child: points_info;
         }
       }
       Adw.ActionRow {

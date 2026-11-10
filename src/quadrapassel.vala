@@ -1197,6 +1197,8 @@ public class Quadrapassel : Adw.Application
         Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
         Intl.textdomain (GETTEXT_PACKAGE);
 
+        typeof (MoreInfoButton).ensure ();
+
         var app = new Quadrapassel ();
         return app.run (args);
     }
