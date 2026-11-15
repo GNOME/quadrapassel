@@ -1012,6 +1012,15 @@ public class Quadrapassel : Adw.Application
 
     private void update_score ()
     {
+        string get_locale_string (int number)
+        {
+            if (number < 10000)
+                return "%'ld".printf (number);
+            number = number / 1000;
+            /* Translators: %'ld is replaced with a localized number, k is an abbreviation for 1,000 in English locales */
+            return _("%'ldk").printf (number);
+        }
+
         var score = 0;
         var level = 0;
         var n_lines_destroyed = 0;
@@ -1023,9 +1032,9 @@ public class Quadrapassel : Adw.Application
             n_lines_destroyed = game.n_lines_destroyed;
         }
 
-        score_label.set_markup (score.to_string ());
-        level_label.set_markup (level.to_string ());
-        n_destroyed_label.set_markup (n_lines_destroyed.to_string ());
+        score_label.set_label (get_locale_string (score));
+        level_label.set_label (get_locale_string (level));
+        n_destroyed_label.set_label (get_locale_string (n_lines_destroyed));
     }
 
     private void rules_cb ()
