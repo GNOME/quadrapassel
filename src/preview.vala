@@ -23,6 +23,8 @@ public class Preview : Gtk.Widget {
         set_css_name ("preview");
     }
 
+    public bool compact = false;
+
     private string _theme;
     public string theme
     {
@@ -81,13 +83,38 @@ public class Preview : Gtk.Widget {
                                      out int natural_baseline)
     {
 
-        // if (for_size <= 50)
-            minimum = 50;
-        // else
-            // minimum = for_size;
+        if (compact)
+        {
+            minimum = natural = 50;
+        }
+        else
+        {
+            minimum = 60;
 
-        natural = 50;
+            if (orientation == Gtk.Orientation.VERTICAL)
+            {
+                if (for_size == -1)
+                    natural = 150;
+                else if (for_size > 50 && for_size < 150)
+                    natural = for_size;
+                else
+                    natural = 150;
+            }
+            else
+            {
+                if (for_size < 150)
+                    natural = int.max (for_size, 100);
+                else
+                    natural = 150;
+            }
+        }
+
         minimum_baseline = natural_baseline = -1;
+    }
+
+    public override Gtk.SizeRequestMode get_request_mode ()
+    {
+        return Gtk.SizeRequestMode.WIDTH_FOR_HEIGHT;
     }
 
     protected override void dispose () {

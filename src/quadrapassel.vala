@@ -170,7 +170,7 @@ public class Quadrapassel : Adw.Application
 
         window.icon_name = APP_ID;
 
-        // var breakpoint = (Adw.Breakpoint) builder.get_object ("breakpoint");
+        var breakpoint = (Adw.Breakpoint) builder.get_object ("breakpoint");
 
         event_controller_key = new Gtk.EventControllerKey ();
         event_controller_key.key_pressed.connect (key_press_event_cb);
@@ -201,8 +201,6 @@ public class Quadrapassel : Adw.Application
         view.show_shadow = settings.get_boolean ("show-shadow");
         view.game = new Game (20, 10, 1);
         game_aspect = new Games.GridFrame (10, 20);
-        game_aspect.hexpand = true;
-        game_aspect.vexpand = true;
         game_aspect.child = view;
         game_aspect.add_controller (swipe_gesture);
         game_aspect.add_controller (long_press_gesture);
@@ -211,6 +209,7 @@ public class Quadrapassel : Adw.Application
         game_aspect.accessible_role = Gtk.AccessibleRole.LABEL;
         game_aspect.update_property (Gtk.AccessibleProperty.LABEL, _("Game View"), -1);
         game_box.prepend (game_aspect);
+        game_box.layout_manager = new PriorityLayout (6, 30, game_aspect);
 
         var toggle_button = menu_button.get_first_child ();
         bool popover_shown = false;
@@ -234,19 +233,17 @@ public class Quadrapassel : Adw.Application
         preview_card.info.visible = false;
 
         preview_frame = new Games.GridFrame (5, 5);
-        preview_frame.vexpand = true;
         preview = new Preview ();
         preview.theme = settings.get_string ("theme");
         preview_frame.child = preview;
-        preview_card.box.prepend (preview_frame);
-        preview_card.box.valign = Gtk.Align.FILL;
+        preview_card.prepend (preview_frame);
 
         score_label = ((AdaptiveCard) builder.get_object ("score_card")).info;
         n_destroyed_label = ((AdaptiveCard) builder.get_object ("destroyed_card")).info;
         level_label = ((AdaptiveCard) builder.get_object ("level_card")).info;
 
-        // breakpoint.apply.connect (breakpoint_apply_cb);
-        // breakpoint.unapply.connect (breakpoint_unapply_cb);
+        breakpoint.apply.connect (breakpoint_apply_cb);
+        breakpoint.unapply.connect (breakpoint_unapply_cb);
 
         context = new Games.Scores.Context ("quadrapassel",
                                             /* Label on the scores dialog */
@@ -316,18 +313,17 @@ public class Quadrapassel : Adw.Application
     }
 
     private void breakpoint_apply_cb () {
-        score_label.width_request = -1;
         game_box.remove (stats_box);
         game_box.orientation = Gtk.Orientation.VERTICAL;
         game_box.prepend (stats_box);
         stats_box.orientation = Gtk.Orientation.HORIZONTAL;
-        game_aspect.margin_top = 3;
 
         AdaptiveCard card = (AdaptiveCard) stats_box.get_first_child ();
         stats_box.remove (card);
         stats_box.append (card);
-        card.orientation = Gtk.Orientation.HORIZONTAL;
-        preview_label.margin_end = 3;
+        preview_label.visible = false;
+        preview.compact = true;
+        card.compact = true;
         card = (AdaptiveCard) stats_box.get_first_child ();
 
         for (uint i = 0; i < 3; i++)
@@ -339,19 +335,17 @@ public class Quadrapassel : Adw.Application
     }
 
     private void breakpoint_unapply_cb () {
-        score_label.width_request = 100;
         game_box.remove (stats_box);
         game_box.orientation = Gtk.Orientation.HORIZONTAL;
         game_box.append (stats_box);
         stats_box.orientation = Gtk.Orientation.VERTICAL;
-        game_aspect.margin_top = 0;
 
         AdaptiveCard card = (AdaptiveCard) stats_box.get_last_child ();
         stats_box.remove (card);
         stats_box.prepend (card);
-        card.orientation = Gtk.Orientation.VERTICAL;
-        var next_label = card.box.get_first_child ();
-        next_label.margin_end = 0;
+        preview_label.visible = true;
+        preview.compact = false;
+        card.compact = false;
         card = (AdaptiveCard) card.get_next_sibling ();
 
         for (uint i = 0; i < 3; i++)

@@ -175,13 +175,18 @@ public class GridFrame : Gtk.Widget
         if (orientation == Gtk.Orientation.VERTICAL)
         {
             int size = (for_size - xpadding) / _xmult;
-            minimum = natural = size * _ymult + ypadding;
+            natural = int.max (size * _ymult + ypadding, natural);
         }
         else
         {
             int size = (for_size  - ypadding) / _ymult;
-            minimum = natural = size * _xmult + xpadding;
+            natural = int.max (size * _xmult + xpadding, natural);
         }
+    }
+
+    public override Gtk.SizeRequestMode get_request_mode ()
+    {
+        return Gtk.SizeRequestMode.HEIGHT_FOR_WIDTH;
     }
 }
 
