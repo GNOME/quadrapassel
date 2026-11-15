@@ -18,6 +18,7 @@ quadrapassel_sources = [
     'game.vala',
     'more-info-button.vala',
     'preview.vala',
+    'priority-layout.vala',
     'quadrapassel.vala'
 ]
 

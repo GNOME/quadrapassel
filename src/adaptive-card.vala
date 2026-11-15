@@ -19,9 +19,7 @@
  */
 
 [GtkTemplate (ui = "/org/gnome/Quadrapassel/adaptive-card.ui")]
-public class AdaptiveCard : Adw.Bin {
-    [GtkChild]
-    public unowned Gtk.Box box;
+public class AdaptiveCard : Gtk.Box {
     [GtkChild]
     public unowned Gtk.Label info_type;
     [GtkChild]
@@ -41,27 +39,6 @@ public class AdaptiveCard : Adw.Bin {
         }
     }
 
-    public Gtk.Orientation orientation {
-        set
-        {
-            box.orientation = value;
-
-            if (value == Gtk.Orientation.HORIZONTAL)
-            {
-                this.vexpand = false;
-                this.info.hexpand = true;
-                this.info.margin_bottom = 0;
-            }
-            else
-            {
-                this.vexpand = true;
-                this.info.hexpand = false;
-                if (_compact == false)
-                    this.info.margin_bottom = 2;
-            }
-        }
-    }
-
     private bool _compact = false;
 
     public bool compact {
@@ -71,23 +48,11 @@ public class AdaptiveCard : Adw.Bin {
 
             if (value == true)
             {
-                this.vexpand = false;
-                this.info.margin_top = 2;
-                this.info.hexpand = true;
-                this.info.vexpand = false;
-                this.info.margin_bottom = 0;
-                this.info.halign = Gtk.Align.START;
-                this.info_type.halign = Gtk.Align.START;
+                this.info.set_css_classes ({ "title-4" });
             }
             else
             {
-                this.vexpand = true;
-                this.info.margin_top = 0;
-                this.info.hexpand = false;
-                this.info.vexpand = true;
-                this.info.margin_bottom = 2;
-                this.info.halign = Gtk.Align.CENTER;
-                this.info_type.halign = Gtk.Align.CENTER;
+                this.info.set_css_classes ({ "title-2" });
             }
         }
     }

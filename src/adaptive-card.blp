@@ -1,9 +1,11 @@
 using Gtk 4.0;
-using Adw 1;
 
-template $AdaptiveCard: Adw.Bin {
+template $AdaptiveCard: Gtk.Box  {
   accessible-role: list_item;
   focusable: true;
+  spacing: 3;
+  orientation: vertical;
+  valign: center;
 
   styles [
     "focusable-card",
@@ -14,29 +16,20 @@ template $AdaptiveCard: Adw.Bin {
     described-by: info;
   }
 
-  Gtk.Box box {
-    spacing: 3;
-    orientation: vertical;
-    vexpand: true;
-    valign: center;
+  Gtk.Label info {
+    halign: center;
 
-    Gtk.Label info {
-      halign: center;
+    styles [
+      "title-2",
+    ]
+  }
 
-      styles [
-        "title-2",
-      ]
-    }
+  Gtk.Label info_type {
+    halign: center;
+    ellipsize: end;
 
-    Gtk.Label info_type {
-      halign: center;
-      valign: start;
-      ellipsize: end;
-
-      styles [
-        "caption-heading",
-      ]
-    }
-
+    styles [
+      "caption-heading",
+    ]
   }
 }
