@@ -196,7 +196,6 @@ public class Quadrapassel : Adw.Application
         stats_box = (Gtk.Box) builder.get_object ("stats_box");
 
         view = new GameView ();
-        view.theme = settings.get_string ("theme");
         view.mute = !settings.get_boolean ("sound");
         view.show_shadow = settings.get_boolean ("show-shadow");
         view.game = new Game (20, 10, 1, 20, 10); // Game board size, changed width to 10
@@ -236,7 +235,6 @@ public class Quadrapassel : Adw.Application
         preview_frame = new Games.GridFrame (5, 5);
         preview_frame.vexpand = true;
         preview = new Preview ();
-        preview.theme = settings.get_string ("theme");
         preview_frame.child = preview;
         preview_card.box.append (preview_frame);
 
@@ -399,45 +397,6 @@ public class Quadrapassel : Adw.Application
         var preferences_dialog = new Adw.PreferencesDialog ();
         preferences_dialog.set_title (_("Preferences"));
 
-        var appearance_page = new Adw.PreferencesPage ();
-        appearance_page.title = _("Appearance");
-        appearance_page.icon_name = "preferences-desktop-appearance-symbolic";
-
-        var theme_preview_frame = new Games.GridFrame (5, 5);
-        theme_preview_frame.hexpand = true;
-        theme_preview_frame.vexpand = true;
-        theme_preview_frame.set_size_request (150, 150);
-
-        var preview_view = new GameView (false);
-        var preview_game = new Game (5, 5, 1, 5, 8);
-        preview_view.theme = settings.get_string ("theme");
-        preview_view.game = preview_game;
-        var shape = preview_game.next_shape;
-        theme_preview_frame.child = preview_view;
-
-        var appearance_group = new Games.AppearanceGroup ();
-
-        string[] themes = {"plain", "clean", "modern"};
-        foreach (string theme in themes)
-        {
-            var thumbnail_frame = new Games.GridFrame (5, 5);
-            var preview_thumbnail = new Preview ();
-            preview_thumbnail.theme = theme;
-            preview_thumbnail.update_block (shape);
-            thumbnail_frame.child = preview_thumbnail;
-
-            appearance_group.add_theme (theme, thumbnail_frame);
-        }
-
-        appearance_group.set_preview (preview_view.theme, theme_preview_frame);
-
-        appearance_group.change_theme.connect (theme_update);
-
-        appearance_group.title = null;
-
-        appearance_page.add (appearance_group);
-        preferences_dialog.add (appearance_page);
-
         var game_page = new Adw.PreferencesPage ();
         game_page.title = _("Game");
         game_page.icon_name = "gamepad-symbolic";
@@ -529,17 +488,6 @@ public class Quadrapassel : Adw.Application
         game_page.add (in_game_group);
         preferences_dialog.add (game_page);
         preferences_dialog.present (window);
-    }
-
-    private Gtk.Widget theme_update (string theme_name, Gtk.Widget theme_preview_widget)
-    {
-        var theme_preview_frame = theme_preview_widget as Games.GridFrame;
-        var theme_preview = theme_preview_frame.child as GameView;
-        view.theme = theme_name;
-        preview.theme = theme_name;
-        theme_preview.theme = theme_name;
-        settings.set_string ("theme", theme_name);
-        return theme_preview_widget;
     }
 
     private void pause_cb ()

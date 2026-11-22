@@ -5,16 +5,6 @@
       <summary>Image to use for drawing blocks</summary>
       <description>Image to use for drawing blocks.</description>
     </key>
-    <key name="theme" type="s">
-      <default>'modern'</default>
-      <choices>
-        <choice value='plain'/>
-        <choice value='clean'/>
-        <choice value='modern'/>
-      </choices>
-      <summary>The theme used for rendering the blocks</summary>
-      <description>The name of the theme used for rendering the blocks and the background.</description>
-    </key>
     <key name="show-shadow" type="b">
       <default>false</default>
       <summary>Whether to show where the moving block will land</summary>

@@ -56,7 +56,6 @@ public class GameView : Gtk.Widget {
                     if (block != null)
                     {
                         var widget = new BlockWidget (block);
-                        widget.add_css_class (theme);
                         blocks.insert (block, widget);
                         add_block_widget (widget);
                     }
@@ -65,23 +64,6 @@ public class GameView : Gtk.Widget {
 
             set_size_request (_game.width * 190 / _game.height, 190);
             update_message ();
-        }
-    }
-
-    private string? _theme;
-    /* Theme to use */
-    public string theme
-    {
-        get { return _theme; }
-        set
-        {
-            foreach (var widget in get_block_widgets ())
-            {
-                widget.remove_css_class (_theme);
-                widget.add_css_class (value);
-            }
-
-            _theme = value;
         }
     }
 
@@ -305,7 +287,6 @@ public class GameView : Gtk.Widget {
             foreach (var block in game.shape.blocks)
             {
                 var widget = new BlockWidget (block);
-                widget.add_css_class (theme);
                 shape_blocks.insert (block, widget);
                 add_block_widget (widget);
 
@@ -313,7 +294,6 @@ public class GameView : Gtk.Widget {
                 if (show_shadow)
                 {
                     var shadow_widget = new BlockWidget (block);
-                    shadow_widget.add_css_class (theme);
                     shadow_widget.add_css_class ("shadow");
                     shadow_blocks.insert (block, shadow_widget);
                     add_block_widget (shadow_widget);
@@ -401,7 +381,6 @@ public class GameView : Gtk.Widget {
         foreach (var block in game.shape.blocks)
         {
             var widget = new BlockWidget (block);
-            widget.add_css_class (theme);
             blocks.insert (block, widget);
             add_block_widget (widget);
         }

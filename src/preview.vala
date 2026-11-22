@@ -23,22 +23,6 @@ public class Preview : Gtk.Widget {
         set_css_name ("preview");
     }
 
-    private string _theme;
-    public string theme
-    {
-        get { return _theme; }
-        set
-        {
-            foreach (var block in block_widgets)
-            {
-                block.remove_css_class (_theme);
-                block.add_css_class (value);
-            }
-
-            _theme = value;
-        }
-    }
-
     private Array<BlockWidget> block_widgets = new Array<BlockWidget> ();
     private int piece_width;
     private int piece_height;
@@ -121,7 +105,6 @@ public class Preview : Gtk.Widget {
             max_height = int.max (b.y + 1, max_height);
 
             var widget = new BlockWidget (b);
-            widget.add_css_class (theme);
             widget.set_parent (this);
             this.block_widgets.append_val (widget);
         }
