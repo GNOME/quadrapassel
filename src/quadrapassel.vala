@@ -198,7 +198,7 @@ public class Quadrapassel : Adw.Application
         view = new GameView ();
         view.mute = !settings.get_boolean ("sound");
         view.show_shadow = settings.get_boolean ("show-shadow");
-        view.game = new Game (20, 10, 1, 20, 10); // Game board size, changed width to 10
+        view.game = new Game (20, 10, 1);
         game_aspect = new Games.GridFrame (10, 20);
         game_aspect.hexpand = true;
         game_aspect.vexpand = true;
