@@ -136,7 +136,7 @@ public class Quadrapassel : Adw.Application
     {
         base.startup ();
 
-        Adw.StyleManager.get_default ().set_color_scheme (FORCE_DARK);
+        Adw.StyleManager.get_default ().set_color_scheme (PREFER_DARK);
 
         Environment.set_application_name (_("Quadrapassel"));
 

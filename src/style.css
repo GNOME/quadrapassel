@@ -1,6 +1,18 @@
-game-view, preview {
-  background-color: #000000;
-  border-radius: 8px;
+preview, game-view {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 9px;
+}
+
+game-view {
+  padding: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  preview, game-view {
+    background-color: #000000;
+    border: 1px solid var(--dark-3);
+  }
 }
 
 block {
