@@ -33,7 +33,7 @@ menu primary_menu {
 
 Adw.ApplicationWindow window {
   title: _("Quadrapassel");
-  height-request: 395;
+  height-request: 400;
   width-request: 320;
 
   Adw.Breakpoint breakpoint {
@@ -74,10 +74,8 @@ Adw.ApplicationWindow window {
       margin-bottom: 9;
 
       Box stats_box {
-        spacing: 6;
+        spacing: 24;
         orientation: vertical;
-        homogeneous: true;
-        valign: start;
 
         $AdaptiveCard preview_card {
           info-type-string: _("Next");

@@ -315,6 +315,8 @@ public class Quadrapassel : Adw.Application
         game_box.orientation = Gtk.Orientation.VERTICAL;
         game_box.prepend (stats_box);
         stats_box.orientation = Gtk.Orientation.HORIZONTAL;
+        stats_box.homogeneous = true;
+        stats_box.spacing = 3;
 
         AdaptiveCard card = (AdaptiveCard) stats_box.get_first_child ();
         stats_box.remove (card);
@@ -337,6 +339,8 @@ public class Quadrapassel : Adw.Application
         game_box.orientation = Gtk.Orientation.HORIZONTAL;
         game_box.append (stats_box);
         stats_box.orientation = Gtk.Orientation.VERTICAL;
+        stats_box.homogeneous = false;
+        stats_box.spacing = 24;
 
         AdaptiveCard card = (AdaptiveCard) stats_box.get_last_child ();
         stats_box.remove (card);
