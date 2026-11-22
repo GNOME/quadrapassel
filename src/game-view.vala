@@ -462,7 +462,7 @@ public class BlockWidget: Gtk.Widget
                 break;
 
             case 3:
-                this.add_css_class ("gray");
+                this.add_css_class ("brown");
                 break;
 
             case 4:
