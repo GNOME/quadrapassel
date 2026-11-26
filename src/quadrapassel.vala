@@ -236,7 +236,7 @@ public class Quadrapassel : Adw.Application
         preview_frame.vexpand = true;
         preview = new Preview ();
         preview_frame.child = preview;
-        preview_card.box.append (preview_frame);
+        preview_card.append (preview_frame);
 
         score_label = ((AdaptiveCard) builder.get_object ("score_card")).info;
         score_label.width_request = 100;
@@ -323,8 +323,8 @@ public class Quadrapassel : Adw.Application
         AdaptiveCard card = (AdaptiveCard) stats_box.get_first_child ();
         stats_box.remove (card);
         stats_box.append (card);
-        card.orientation = Gtk.Orientation.HORIZONTAL;
-        var next_label = card.box.get_first_child ();
+        card.direction = Gtk.Orientation.HORIZONTAL;
+        var next_label = card.get_first_child ();
         next_label.margin_end = 4;
         next_label.margin_top = 3;
         card = (AdaptiveCard) stats_box.get_first_child ();
@@ -347,8 +347,8 @@ public class Quadrapassel : Adw.Application
         AdaptiveCard card = (AdaptiveCard) stats_box.get_last_child ();
         stats_box.remove (card);
         stats_box.prepend (card);
-        card.orientation = Gtk.Orientation.VERTICAL;
-        var next_label = card.box.get_first_child ();
+        card.direction = Gtk.Orientation.VERTICAL;
+        var next_label = card.get_first_child ();
         next_label.margin_end = 0;
         next_label.margin_top = 0;
         card = (AdaptiveCard) card.get_next_sibling ();

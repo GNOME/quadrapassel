@@ -19,9 +19,7 @@
  */
 
 [GtkTemplate (ui = "/org/gnome/Quadrapassel/adaptive-card.ui")]
-public class AdaptiveCard : Adw.Bin {
-    [GtkChild]
-    public unowned Gtk.Box box;
+public class AdaptiveCard : Gtk.Box {
     [GtkChild]
     public unowned Gtk.Label info_type;
     [GtkChild]
@@ -41,10 +39,10 @@ public class AdaptiveCard : Adw.Bin {
         }
     }
 
-    public Gtk.Orientation orientation {
+    public Gtk.Orientation direction {
         set
         {
-            box.orientation = value;
+            orientation = value;
 
             if (value == Gtk.Orientation.HORIZONTAL)
             {
