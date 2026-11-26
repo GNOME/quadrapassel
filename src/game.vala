@@ -248,8 +248,8 @@ public class Game : Object
     /* Placed blocks */
     public Block[,] blocks;
 
-    public int width { get { return blocks.length[0]; } }
-    public int height { get { return blocks.length[1]; } }
+    public int width;
+    public int height;
 
     /* Number of lines that have been destroyed */
     public int n_lines_destroyed = 0;
@@ -339,6 +339,8 @@ public class Game : Object
     {
         this.difficulty = difficulty;
         this.pick_difficult_blocks = pick_difficult_blocks;
+        this.width = columns;
+        this.height = lines;
 
         blocks = new Block[columns, lines];
         /* Start with some shape_landed-filled spaces */

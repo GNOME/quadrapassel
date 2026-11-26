@@ -34,8 +34,8 @@ public class Quadrapassel : Adw.Application
     /* Game scores */
     private Games.Scores.Context context;
 
-    /* GridFrame for the game */
-    private Games.GridFrame game_aspect;
+    /* AspectFrame for the game */
+    private Gtk.AspectFrame game_aspect;
 
     /* Game being played */
     private Game? game = null;
@@ -51,7 +51,7 @@ public class Quadrapassel : Adw.Application
 
     /* Preview of the next shape */
     private Preview preview;
-    private Games.GridFrame preview_frame;
+    private Gtk.AspectFrame preview_frame;
     string next_string = _("Next");
     string hold_string = _("Hold");
     private Gtk.Label preview_label;
@@ -170,7 +170,8 @@ public class Quadrapassel : Adw.Application
 
         window.icon_name = APP_ID;
 
-        var breakpoint = (Adw.Breakpoint) builder.get_object ("breakpoint");
+        var breakpoint_thin = (Adw.Breakpoint) builder.get_object ("breakpoint_thin");
+        var breakpoint_wide = (Adw.Breakpoint) builder.get_object ("breakpoint_wide");
 
         event_controller_key = new Gtk.EventControllerKey ();
         event_controller_key.key_pressed.connect (key_press_event_cb);
@@ -199,7 +200,7 @@ public class Quadrapassel : Adw.Application
         view.mute = !settings.get_boolean ("sound");
         view.show_shadow = settings.get_boolean ("show-shadow");
         view.game = new Game (20, 10, 1);
-        game_aspect = new Games.GridFrame (10, 20);
+        game_aspect = new Gtk.AspectFrame (0.5f, 0f, 0.5f, false);
         game_aspect.child = view;
         game_aspect.add_controller (swipe_gesture);
         game_aspect.add_controller (long_press_gesture);
@@ -231,17 +232,20 @@ public class Quadrapassel : Adw.Application
         preview_label = preview_card.info_type;
         preview_card.info.visible = false;
 
-        preview_frame = new Games.GridFrame (5, 5);
+        preview_frame = new Gtk.AspectFrame (0.5f, 0.5f, 1, false);
         preview = new Preview ();
         preview_frame.child = preview;
+        preview_frame.width_request = 100;
         preview_card.prepend (preview_frame);
 
         score_label = ((AdaptiveCard) builder.get_object ("score_card")).info;
         n_destroyed_label = ((AdaptiveCard) builder.get_object ("destroyed_card")).info;
         level_label = ((AdaptiveCard) builder.get_object ("level_card")).info;
 
-        breakpoint.apply.connect (breakpoint_apply_cb);
-        breakpoint.unapply.connect (breakpoint_unapply_cb);
+        breakpoint_thin.apply.connect (breakpoint_thin_apply_cb);
+        breakpoint_thin.unapply.connect (breakpoint_thin_unapply_cb);
+        breakpoint_wide.apply.connect (breakpoint_wide_apply_cb);
+        breakpoint_wide.unapply.connect (breakpoint_wide_unapply_cb);
 
         context = new Games.Scores.Context ("quadrapassel",
                                             /* Label on the scores dialog */
@@ -310,7 +314,7 @@ public class Quadrapassel : Adw.Application
         window.present ();
     }
 
-    private void breakpoint_apply_cb () {
+    private void breakpoint_thin_apply_cb () {
         game_box.remove (stats_box);
         game_box.orientation = Gtk.Orientation.VERTICAL;
         game_box.prepend (stats_box);
@@ -323,6 +327,7 @@ public class Quadrapassel : Adw.Application
         stats_box.append (card);
         preview_label.visible = false;
         preview.compact = true;
+        preview_frame.width_request = -1;
         card.compact = true;
         card = (AdaptiveCard) stats_box.get_first_child ();
 
@@ -334,7 +339,7 @@ public class Quadrapassel : Adw.Application
         }
     }
 
-    private void breakpoint_unapply_cb () {
+    private void breakpoint_thin_unapply_cb () {
         game_box.remove (stats_box);
         game_box.orientation = Gtk.Orientation.HORIZONTAL;
         game_box.append (stats_box);
@@ -347,6 +352,7 @@ public class Quadrapassel : Adw.Application
         stats_box.prepend (card);
         preview_label.visible = true;
         preview.compact = false;
+        preview_frame.width_request = 100;
         card.compact = false;
         card = (AdaptiveCard) card.get_next_sibling ();
 
@@ -356,6 +362,14 @@ public class Quadrapassel : Adw.Application
 
             card = (AdaptiveCard) card.get_next_sibling ();
         }
+    }
+
+    private void breakpoint_wide_apply_cb () {
+        preview_frame.width_request = 150;
+    }
+
+    private void breakpoint_wide_unapply_cb () {
+        preview_frame.width_request = 100;
     }
 
     private void on_window_focus_change ()

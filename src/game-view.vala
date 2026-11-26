@@ -137,27 +137,30 @@ public class GameView : Gtk.Widget {
         }
     }
 
-    protected override void size_allocate (int width, int height, int baseline) {
-        var block_width = width / game.width;
-        var block_height = height / game.height;
+    protected override void size_allocate (int this_width, int this_height, int baseline) {
+        var block_width = this_width / game.width;
+        var block_height = this_height / game.height;
+        var x_offset = (this_width % game.width) / 2;
+        var y_offset = this_height % game.height;
+
 
         var block_widget = get_first_child () as BlockWidget;
         while (block_widget != null) {
             // The blocks are always the first children, everything else comes after
-            Graphene.Point pos = Graphene.Point ();
+            var allocation = Gtk.Allocation ();
             bool show = true;
 
             if (shape_blocks.lookup (block_widget.block) == block_widget)
             {
-                pos.x = (game.shape.x + block_widget.block.x) * block_width;
-                pos.y = (game.shape.y + block_widget.block.y) * block_height;
+                allocation.x = (game.shape.x + block_widget.block.x) * block_width;
+                allocation.y = (game.shape.y + block_widget.block.y) * block_height;
             }
             else if (shadow_blocks.lookup (block_widget.block) == block_widget)
             {
                 if (show_shadow)
                 {
-                    pos.x = (game.shape.x + block_widget.block.x) * block_width;
-                    pos.y = (game.shadow_y + block_widget.block.y) * block_height;
+                    allocation.x = (game.shape.x + block_widget.block.x) * block_width;
+                    allocation.y = (game.shadow_y + block_widget.block.y) * block_height;
                 }
                 else
                 {
@@ -167,43 +170,50 @@ public class GameView : Gtk.Widget {
             else
             {
                 // Regular blocks or blocks that are currently animating out of view
-                pos.x = block_widget.block.x * block_width;
-                pos.y = block_widget.block.y * block_height;
+                allocation.x = block_widget.block.x * block_width;
+                allocation.y = block_widget.block.y * block_height;
             }
 
             if (show)
             {
-                int min_width;
-                int min_height;
-                int actual_width;
-                int actual_height;
+                int width;
+                int height;
 
-                block_widget.measure (Gtk.Orientation.VERTICAL, -1, out min_width, null, null, null);
-                actual_width = int.max (min_width, block_width);
+                /* The block is animating */
+                if (block_width < block_widget.width_request)
+                {
+                    width = block_widget.width_request;
+                    height = block_widget.height_request;
 
-                block_widget.measure (Gtk.Orientation.HORIZONTAL, actual_width, out min_height, null, null, null);
-                actual_height = int.max (min_height, block_height);
+                    allocation.x -= (width - block_width) / 2;
+                    allocation.y -= (width - block_height) / 2;
+                }
+                else
+                {
+                    width = block_width;
+                    height = block_height;
+                }
 
-                // adjust pos to center the block if it is bigger (animating)
-                pos.x -= (actual_width - block_width) / 2;
-                pos.y -= (actual_height - block_height) / 2;
-                var transform = new Gsk.Transform ().translate (pos);
+                allocation.width = width;
+                allocation.height = height;
+                allocation.x += x_offset;
+                allocation.y += y_offset;
 
-                block_widget.allocate (actual_width, actual_height, -1, transform);
+                block_widget.allocate_size (allocation, -1);
             }
 
             block_widget = block_widget.get_next_sibling () as BlockWidget;
         }
 
         // Text overlay
-        var pos = Graphene.Point () {
+        var allocation = Gtk.Allocation () {
             x = 0,
-            y = 0
+            y = 0,
+            height = this_height,
+            width = this_width,
         };
 
-        var transform = new Gsk.Transform ().translate (pos);
-        text_overlay.measure (Gtk.Orientation.VERTICAL, width, null, null, null, null);
-        text_overlay.allocate (width, height, -1, transform);
+        text_overlay.allocate_size (allocation, -1);
     }
 
     protected override void measure (Gtk.Orientation orientation,

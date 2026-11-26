@@ -66,39 +66,19 @@ public class Preview : Gtk.Widget {
                                      out int minimum_baseline,
                                      out int natural_baseline)
     {
+        minimum = 50;
 
         if (compact)
-        {
-            minimum = natural = 50;
-        }
+            natural = 50;
         else
-        {
-            minimum = 60;
-
-            if (orientation == Gtk.Orientation.VERTICAL)
-            {
-                if (for_size == -1)
-                    natural = 150;
-                else if (for_size > 50 && for_size < 150)
-                    natural = for_size;
-                else
-                    natural = 150;
-            }
-            else
-            {
-                if (for_size < 150)
-                    natural = int.max (for_size, 100);
-                else
-                    natural = 150;
-            }
-        }
+            natural = 100;
 
         minimum_baseline = natural_baseline = -1;
     }
 
     public override Gtk.SizeRequestMode get_request_mode ()
     {
-        return Gtk.SizeRequestMode.WIDTH_FOR_HEIGHT;
+        return Gtk.SizeRequestMode.HEIGHT_FOR_WIDTH;
     }
 
     protected override void dispose () {
