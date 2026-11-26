@@ -47,15 +47,14 @@ public class Preview : Gtk.Widget {
         var block_height = height / 5;
 
         foreach (var widget in block_widgets) {
-            Graphene.Point pos = Graphene.Point () {
+            var allocation = Gtk.Allocation () {
                 x = (5 - piece_width) * block_width / 2 + widget.block.x * block_width,
                 y = (5 - piece_height) * block_height / 2 + widget.block.y * block_height,
+                width = block_width,
+                height = block_height,
             };
 
-            var transform = new Gsk.Transform ();
-            transform = transform.translate (pos);
-            //widget.measure (Gtk.Orientation.HORIZONTAL, 10, null, null, null, null);
-            widget.allocate (block_width, block_height, -1, transform);
+            widget.allocate_size (allocation, -1);
         }
     }
 
