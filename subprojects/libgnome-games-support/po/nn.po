@@ -1,0 +1,94 @@
+# Norwegian Nynorsk translation for libgnome-games-support.
+# Copyright (C) 2026 libgnome-games-support's COPYRIGHT HOLDER
+# This file is distributed under the same license as the libgnome-games-support package.
+# Roy-Magne Mo <rmo@sunnmore.net>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libgnome-games-support master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/libgnome-games-support/"
+"issues\n"
+"POT-Creation-Date: 2026-09-12 11:54+0000\n"
+"PO-Revision-Date: 2026-09-21 20:00+0200\n"
+"Last-Translator: Roy-Magne Mo <rmo@sunnmore.net>\n"
+"Language-Team: Norwegian Nynorsk <nn@li.org>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: games/appearance-group.vala:144
+msgid "Appearance"
+msgstr "Utsjånad"
+
+#. Empty State
+#: games/scores/dialog.vala:85
+msgid "No scores yet"
+msgstr "Enno ingen poeng"
+
+#: games/scores/dialog.vala:90
+msgid "Play some games and your scores will show up here."
+msgstr "Spel nokre spel, så kjem poenga dine til syne her."
+
+#: games/scores/dialog.vala:99
+msgid "Clear Scores…"
+msgstr "Tøm poeng …"
+
+#. Translators: %1$s is the category type, %2$s is the category (e.g. "New Score for Level: 1")
+#: games/scores/dialog.vala:120
+#, c-format
+msgid "New Score for %1$s: %2$s"
+msgstr "Ny poengsum for %1$s: %2$s"
+
+#: games/scores/dialog.vala:121
+msgid "Score"
+msgstr "Poengsum"
+
+#. Translators: %1$s is the category type, %2$s is the category (e.g. "New Time for Level: 1")
+#: games/scores/dialog.vala:126
+#, c-format
+msgid "New Time for %1$s: %2$s"
+msgstr "Ny tid for %1$s: %2$s"
+
+#: games/scores/dialog.vala:127
+msgid "Time"
+msgstr "Tid"
+
+#: games/scores/dialog.vala:136
+msgid "Congratulations!"
+msgstr "Gratulerer!"
+
+#. Translators: %1$s is the category type, %2$s is the category (e.g. "Level: 1")
+#: games/scores/dialog.vala:143 games/scores/dialog.vala:211
+#, c-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: games/scores/dialog.vala:417
+msgid "Player"
+msgstr "Spelar"
+
+#: games/scores/dialog.vala:423
+msgid "_New Game"
+msgstr "_Nytt spel"
+
+#: games/scores/dialog.vala:434
+msgid "_Quit"
+msgstr "_Avslutt"
+
+#: games/scores/dialog.vala:466
+msgid "Clear All Scores?"
+msgstr "Tøm alle poeng?"
+
+#: games/scores/dialog.vala:467
+msgid "This will clear every score for every layout."
+msgstr "Dette vil slette alle poeng for alle oppsett."
+
+#: games/scores/dialog.vala:470
+msgid "_Cancel"
+msgstr "_Avbryt"
+
+#: games/scores/dialog.vala:471
+msgid "Clear All"
+msgstr "Tøm alt"

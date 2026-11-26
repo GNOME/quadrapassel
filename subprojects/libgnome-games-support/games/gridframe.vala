@@ -30,45 +30,6 @@ namespace Games {
  */
 public class GridFrame : Gtk.Widget
 {
-
-    private int _xpadding = 0;
-    /**
-     * The horizontal padding of the GridFrame.
-     *
-     */
-    public int xpadding
-    {
-        get { return _xpadding; }
-
-        set
-        {
-            if (value >= 0)
-            {
-                _xpadding = value;
-                queue_resize ();
-            }
-        }
-    }
-
-    private int _ypadding = 0;
-    /**
-     * The vertical padding of the GridFrame.
-     *
-     */
-    public int ypadding
-    {
-        get { return _ypadding; }
-
-        set
-        {
-            if (value >= 0)
-            {
-                _ypadding = value;
-                queue_resize ();
-            }
-        }
-    }
-
     private int _xmult = 1;
     /**
      * The width of the GridFrame.
@@ -195,16 +156,6 @@ public class GridFrame : Gtk.Widget
     }
 
     /**
-     * Sets the horizontal and vertical (x and y) padding of the GridFrame.
-     *
-     */
-    public void set_padding (int xpadding, int ypadding)
-    {
-        this.xpadding = xpadding;
-        this.ypadding = ypadding;
-    }
-
-    /**
      * Sets the horizontal and vertical (x and y) alignment of the GridFrame.
      *
      * ``xalign`` and ``yalign`` range from zero to one, if both are set to .5 the GridFrame will be centered.
@@ -224,13 +175,19 @@ public class GridFrame : Gtk.Widget
     {
         base.size_allocate (width, height, baseline);
 
-        int xsize = int.max (1, (width - _xpadding) / _xmult);
-        int ysize = int.max (1, (height - _ypadding) / _ymult);
+        Graphene.Rect bounds;
+        child.compute_bounds (this, out bounds);
+
+        int xpadding = (int) bounds.get_width () - child.get_width ();
+        int ypadding = (int) bounds.get_height () - child.get_height ();
+
+        int xsize = int.max (1, (width - xpadding) / _xmult);
+        int ysize = int.max (1, (height - ypadding) / _ymult);
         int size = int.min (xsize, ysize);
 
         Gtk.Allocation child_allocation = { 0, 0, 0, 0 };
-        child_allocation.width = size * _xmult + _xpadding;
-        child_allocation.height = size * _ymult + _ypadding;
+        child_allocation.width = size * _xmult + xpadding;
+        child_allocation.height = size * _ymult + ypadding;
         child_allocation.x = (int) ((width - child_allocation.width) * _xalign);
         child_allocation.y = (int) ((height - child_allocation.height) * _yalign);
 

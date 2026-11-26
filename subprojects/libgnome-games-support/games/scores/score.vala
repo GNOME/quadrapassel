@@ -132,6 +132,16 @@ public class Score : Object
     {
         return (int) (a.score > b.score) - (int) (a.score < b.score);
     }
+
+    internal static int rank_greater_sorter (Score a, Score b)
+    {
+        return (int) (a.rank < b.rank) - (int) (a.rank > b.rank);
+    }
+
+    internal static int rank_less_sorter (Score a, Score b)
+    {
+        return (int) (a.rank > b.rank) - (int) (a.rank < b.rank);
+    }
 }
 
 } /* namespace Scores */
