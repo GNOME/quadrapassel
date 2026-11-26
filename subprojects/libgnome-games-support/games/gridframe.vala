@@ -208,6 +208,31 @@ public class GridFrame : Gtk.Widget
             child.measure (orientation, for_size, out minimum, out natural, out minimum_baseline, out natural_baseline);
         else
             base.measure (orientation, for_size, out minimum, out natural, out minimum_baseline, out natural_baseline);
+
+        if (for_size == -1)
+            return;
+
+        Graphene.Rect bounds;
+        child.compute_bounds (this, out bounds);
+
+        int xpadding = (int) bounds.get_width () - child.get_width ();
+        int ypadding = (int) bounds.get_height () - child.get_height ();
+
+        if (orientation == Gtk.Orientation.VERTICAL)
+        {
+            int size = (for_size - xpadding) / _xmult;
+            natural = int.max (size * _ymult + ypadding, natural);
+        }
+        else
+        {
+            int size = (for_size - ypadding) / _ymult;
+            natural = int.max (size * _xmult + xpadding, natural);
+        }
+    }
+
+    public override Gtk.SizeRequestMode get_request_mode ()
+    {
+        return Gtk.SizeRequestMode.HEIGHT_FOR_WIDTH;
     }
 }
 

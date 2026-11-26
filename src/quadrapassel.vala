@@ -201,6 +201,7 @@ public class Quadrapassel : Adw.Application
         view.show_shadow = settings.get_boolean ("show-shadow");
         view.game = new Game (20, 10, 1);
         game_aspect = new Games.GridFrame (10, 20);
+        game_aspect.yalign = 0f;
         game_aspect.child = view;
         game_aspect.add_controller (swipe_gesture);
         game_aspect.add_controller (long_press_gesture);
@@ -235,6 +236,7 @@ public class Quadrapassel : Adw.Application
         preview_frame = new Games.GridFrame (5, 5);
         preview = new Preview ();
         preview_frame.child = preview;
+        preview_frame.yalign = 0f;
         preview_frame.width_request = 100;
         preview_card.prepend (preview_frame);
 
