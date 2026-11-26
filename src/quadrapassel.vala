@@ -170,7 +170,8 @@ public class Quadrapassel : Adw.Application
 
         window.icon_name = APP_ID;
 
-        var breakpoint = (Adw.Breakpoint) builder.get_object ("breakpoint");
+        var breakpoint_thin = (Adw.Breakpoint) builder.get_object ("breakpoint_thin");
+        var breakpoint_wide = (Adw.Breakpoint) builder.get_object ("breakpoint_wide");
 
         event_controller_key = new Gtk.EventControllerKey ();
         event_controller_key.key_pressed.connect (key_press_event_cb);
@@ -241,8 +242,10 @@ public class Quadrapassel : Adw.Application
         n_destroyed_label = ((AdaptiveCard) builder.get_object ("destroyed_card")).info;
         level_label = ((AdaptiveCard) builder.get_object ("level_card")).info;
 
-        breakpoint.apply.connect (breakpoint_apply_cb);
-        breakpoint.unapply.connect (breakpoint_unapply_cb);
+        breakpoint_thin.apply.connect (breakpoint_thin_apply_cb);
+        breakpoint_thin.unapply.connect (breakpoint_thin_unapply_cb);
+        breakpoint_wide.apply.connect (breakpoint_wide_apply_cb);
+        breakpoint_wide.unapply.connect (breakpoint_wide_unapply_cb);
 
         context = new Games.Scores.Context ("quadrapassel",
                                             /* Label on the scores dialog */
@@ -311,7 +314,7 @@ public class Quadrapassel : Adw.Application
         window.present ();
     }
 
-    private void breakpoint_apply_cb () {
+    private void breakpoint_thin_apply_cb () {
         game_box.remove (stats_box);
         game_box.orientation = Gtk.Orientation.VERTICAL;
         game_box.prepend (stats_box);
@@ -336,7 +339,7 @@ public class Quadrapassel : Adw.Application
         }
     }
 
-    private void breakpoint_unapply_cb () {
+    private void breakpoint_thin_unapply_cb () {
         game_box.remove (stats_box);
         game_box.orientation = Gtk.Orientation.HORIZONTAL;
         game_box.append (stats_box);
@@ -359,6 +362,14 @@ public class Quadrapassel : Adw.Application
 
             card = (AdaptiveCard) card.get_next_sibling ();
         }
+    }
+
+    private void breakpoint_wide_apply_cb () {
+        preview_frame.width_request = 150;
+    }
+
+    private void breakpoint_wide_unapply_cb () {
+        preview_frame.width_request = 100;
     }
 
     private void on_window_focus_change ()

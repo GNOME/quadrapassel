@@ -36,8 +36,12 @@ Adw.ApplicationWindow window {
   height-request: 400;
   width-request: 320;
 
-  Adw.Breakpoint breakpoint {
+  Adw.Breakpoint breakpoint_thin {
     condition ("max-aspect-ratio: 10/15")
+  }
+
+  Adw.Breakpoint breakpoint_wide {
+    condition ("min-aspect-ratio: 12/10 and min-height: 500px")
   }
 
   content: Adw.ToolbarView toolbar {
