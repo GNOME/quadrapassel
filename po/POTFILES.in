@@ -10,3 +10,4 @@ src/rules-dialog.blp
 src/shortcuts-dialog.blp
 src/preview.vala
 src/quadrapassel.vala
+src/window.blp
