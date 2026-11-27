@@ -236,8 +236,7 @@ public class Quadrapassel : Adw.Application
         preview_frame = new Games.GridFrame (5, 5);
         preview = new Preview ();
         preview_frame.child = preview;
-        preview_frame.yalign = 0f;
-        preview_frame.width_request = 100;
+        preview_frame.width_request = 102;
         preview_card.prepend (preview_frame);
 
         score_label = ((AdaptiveCard) builder.get_object ("score_card")).info;
@@ -354,7 +353,7 @@ public class Quadrapassel : Adw.Application
         stats_box.prepend (card);
         preview_label.visible = true;
         preview.compact = false;
-        preview_frame.width_request = 100;
+        preview_frame.width_request = 102;
         card.compact = false;
         card = (AdaptiveCard) card.get_next_sibling ();
 
@@ -367,11 +366,11 @@ public class Quadrapassel : Adw.Application
     }
 
     private void breakpoint_wide_apply_cb () {
-        preview_frame.width_request = 150;
+        preview_frame.width_request = 152;
     }
 
     private void breakpoint_wide_unapply_cb () {
-        preview_frame.width_request = 100;
+        preview_frame.width_request = 102;
     }
 
     private void on_window_focus_change ()
