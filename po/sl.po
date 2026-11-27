@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: quadrapassel master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/quadrapassel/issues/\n"
 "POT-Creation-Date: 2026-11-26 19:45+0000\n"
-"PO-Revision-Date: 2026-11-26 21:30+0100\n"
+"PO-Revision-Date: 2026-11-27 09:10+0100\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -429,9 +429,9 @@ msgstr "Težko"
 
 #. Translators: %'ld is replaced with a localized number, k is an abbreviation for a thousand in English locales
 #: src/quadrapassel.vala:1041
-#, fuzzy, c-format
+#, c-format
 msgid "%'ldk"
-msgstr "%'ld k"
+msgstr "%'ldk"
 
 #: src/quadrapassel.vala:1093
 msgid ""
